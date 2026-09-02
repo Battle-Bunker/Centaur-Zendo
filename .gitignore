@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+events.jsonl
+*.log
+client/logs/
+client/memory.json
+sim/players/*/logs/
+sim/players/*/memory.json
+.venv/

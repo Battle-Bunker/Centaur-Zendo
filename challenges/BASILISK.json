@@ -1,0 +1,8 @@
+{
+ "name": "BASILISK",
+ "author": "optim-agent",
+ "description": "Base re-encoding. Clue is 'DIGITS:FROM>TO' e.g. '1f4:16>7': read DIGITS in base FROM and\nwrite the same value in base TO, lowercase, no leading zero. Value is 20..5000, bases 2..16.\nDIFFICULTY: easy (deliberate freebie / morale anchor).\nDISCOVERY PATH: BASilisk hides 'base'; the clue is nearly self-documenting and one demo\nsettles direction (FROM>TO, not TO>FROM) and the lowercase/no-leading-zero convention.\nThe scorer uses int(s,base) inside try/except so junk simply scores 0.",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    n = r.randrange(20, 5000)\n    a = r.choice([2, 3, 5, 7, 8, 9, 16])\n    b = r.choice([x for x in [2, 3, 5, 7, 8, 9, 16] if x != a])\n    d = '0123456789abcdef'\n    v, s = n, ''\n    while v:\n        s = d[v % a] + s\n        v //= a\n    return s + ':' + str(a) + '>' + str(b)\n",
+ "solve": "def solve(clue):\n    v, b = clue.split('>')\n    n, a = v.split(':')\n    x = int(n, int(a))\n    b = int(b)\n    d = '0123456789abcdef'\n    s = ''\n    while x:\n        s = d[x % b] + s\n        x //= b\n    return s or '0'\n",
+ "score": "def score(c,s):\n v,b=c.split('>');n,a=v.split(':')\n try:x=int(s,int(b))\n except Exception:return 0\n return int(s.isalnum()and s[:1]!='0'and x==int(n,int(a)))\n"
+}

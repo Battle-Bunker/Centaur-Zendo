@@ -1,0 +1,8 @@
+{
+ "name": "TARE",
+ "author": "optim-agent",
+ "description": "Subset-sum with a bitmask answer. Clue is 'a b c ...|T': 6-9 positive ints and a target\nT that is the sum of some non-empty subset (guaranteed solvable, built that way). A solution\nis a 0/1 string of exactly the same length as the number list; the selected numbers must sum\nto T exactly. DIFFICULTY: easy (the anchor of my batch).\nDISCOVERY PATH: the name (tare = the weight you subtract on a balance) plus one demo, which\nshows a mask whose length equals the count of numbers -- an AI immediately checks 'sum of the\nmarked numbers == the number after the bar'. Gradient: teams that send the chosen *numbers*\ninstead of a mask score 0 every time until the demo, then it is a 2^9 brute force.",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    n = r.randint(6, 9)\n    a = [r.randint(3, 60) for _ in range(n)]\n    while True:\n        m = [r.randint(0, 1) for _ in range(n)]\n        if any(m) and not all(m):\n            break\n    t = sum(v for v, b in zip(a, m) if b)\n    return ' '.join(str(v) for v in a) + '|' + str(t)\n",
+ "solve": "def solve(clue):\n    a, t = clue.split('|')\n    a = [int(x) for x in a.split()]\n    t = int(t)\n    n = len(a)\n    for m in range(1, 1 << n):\n        if sum(a[i] for i in range(n) if m >> i & 1) == t:\n            return ''.join('1' if m >> i & 1 else '0' for i in range(n))\n    return ''\n",
+ "score": "def score(c,s):\n a,t=c.split('|');a=a.split()\n if len(s)!=len(a)or set(s)-{'0','1'}:return 0\n return int(sum(int(v)for v,b in zip(a,s)if b=='1')==int(t))\n"
+}

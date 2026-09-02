@@ -1,8 +1,8 @@
 {
   "name": "PP",
   "author": "orchestrator",
-  "description": "Palindromic prime containing the clue digits as a substring. Clue: a random 3-5 digit string. Solution: decimal string of a palindromic prime containing it.",
-  "generate": "def generate(seed):\n    r = random.Random(seed)\n    n = r.choice([3, 4, 4, 5])\n    return ''.join(r.choice('0123456789') for _ in range(n))\n",
+  "description": "Palindromic prime containing the clue digits as a substring. Clue: a random 3-4 digit string. Solution: decimal string of a palindromic prime containing it.",
+  "generate": "def generate(seed):\n    r = random.Random(seed)\n    n = r.choice([3, 3, 4, 4])\n    return ''.join(r.choice('0123456789') for _ in range(n))\n",
   "solve": "def isp(n):\n    if n < 2: return False\n    if n % 2 == 0: return n == 2\n    for p in range(3, int(n ** 0.5) + 1, 2):\n        if n % p == 0: return False\n    return True\n\ndef solve(clue):\n    # build palindromes of odd length around the clue: L + clue + R such that whole is a palindrome\n    for total in range(len(clue), len(clue) + 12):\n        half = (total + 1) // 2\n        for left in itertools.product('0123456789', repeat=half):\n            s = ''.join(left)\n            if s[0] == '0': continue\n            pal = s + s[-2::-1] if total % 2 else s + s[::-1]\n            if clue in pal and isp(int(pal)):\n                return pal\n    return ''\n",
-  "score": "def score(c,s):\n s=s.strip();n=int(s)\n return int(s==s[::-1] and c in s and n>1 and all(n%p for p in range(2,int(n**.5)+1)))\n"
+  "score": "def score(c,s):\n s=s.strip();n=int(s)\n return int(s==s[::-1] and c in s and n>2 and n%2 and all(n%p for p in range(3,int(n**.5)+1,2)))\n"
 }

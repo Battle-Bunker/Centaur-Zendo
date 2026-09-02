@@ -1,0 +1,8 @@
+{
+  "name": "SUNZI",
+  "author": "numbers-agent",
+  "description": "Chinese Remainder Theorem (Sun Zi's theorem -- hence the name). Clue is 3-5 terms 'r%m' with distinct prime moduli, e.g. '1%3 4%7 2%5'. Solution: the unique x with 0 < x < product(m) and x %% m == r for every term.\nDIFFICULTY: easy. DISCOVERY PATH: the '%' in the clue is the giveaway that these are remainders; a demo shows one integer answer. Round 1 a bot may try x = first r (fails); round 2 brute-force over range(prod) already scores 1 on every item (prod <= ~4e9 is too big to scan blindly, but sieving on the largest modulus is instant). Uniqueness of the answer means no partial credit for satisfying only some congruences, but the format is obvious enough that teams should get this within 2-3 rounds. Moduli are always distinct primes so a plain CRT merge works.",
+  "generate": "def generate(seed):\n    r = random.Random(seed)\n    ps = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]\n    k = r.choice([3,3,4,4,5])\n    ms = r.sample(ps, k)\n    while True:\n        rs = [r.randrange(m) for m in ms]\n        if any(rs):\n            return ' '.join(str(a) + '%' + str(m) for a, m in zip(rs, ms))\n",
+  "solve": "def solve(clue):\n    x, P = 0, 1\n    for t in clue.split():\n        a, b = t.split('%')\n        r, m = int(a), int(b)\n        # merge x (mod P) with r (mod m); P and m coprime\n        k = 0\n        while (x + P * k) % m != r:\n            k += 1\n        x = x + P * k\n        P = P * m\n    return str(x)\n",
+  "score": "def score(c,s):\n s=s.strip()\n if not s.isdecimal() or len(s)>15:return 0\n x=int(s);P=1\n for t in c.split():\n  r,m=t.split('%');m=int(m);P*=m\n  if x%m!=int(r):return 0\n return int(0<x<P)\n"
+}

@@ -1,0 +1,971 @@
+{"ts": 1788347145.3354163, "dir": "out", "msg": {"type": "join", "team": "quaichb", "token": "0d44a87bd291"}}
+{"ts": 1788347145.3362305, "dir": "in", "msg": {"type": "welcome", "team": "quaichb", "phase": "training", "challenges": ["quaich"], "config": {"round_seconds": 0.5, "final_seconds": 3.0, "cooldown_seconds": 5.0, "max_training_rounds": 6, "max_solution_chars": 1024, "max_clue_chars": 1024, "training_ends_at": 1788366612.3627791, "final_ends_at": 1788370212.3627791}, "rounds_used": 4, "next_round_available_at": 1788346790.7268393, "demo_available": false, "server_time": 1788347145.3358557}}
+{"ts": 1788347145.3364217, "dir": "out", "msg": {"type": "start_round"}}
+{"ts": 1788347145.3373735, "dir": "in", "msg": {"type": "round_started", "round_id": "319dfcf6ae744ed2b676fba09211a858", "kind": "training", "duration_ms": 500, "started_at": 1788347145.3371007, "deadline": 1788347145.8371007}}
+{"ts": 1788347145.3385913, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 0, "name": "quaich", "clue": "-/-/|/-|-/|-"}}
+{"ts": 1788347145.3392487, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 0, "solution": "/|/---|/-|/-"}}
+{"ts": 1788347145.3401353, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 0, "score": 0}}
+{"ts": 1788347145.3402393, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 1, "name": "quaich", "clue": "-/|--|/||-//-///||"}}
+{"ts": 1788347145.3406117, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 1, "solution": "/|//-|/-|/-||-|//-"}}
+{"ts": 1788347145.3424118, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 1, "score": 0}}
+{"ts": 1788347145.3424253, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 2, "name": "quaich", "clue": "|/|/|/|-|//||/||-/"}}
+{"ts": 1788347145.34274, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 2, "solution": "//|/|/|/|/|||-||/-"}}
+{"ts": 1788347145.343452, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 2, "score": 0}}
+{"ts": 1788347145.3435266, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 3, "name": "quaich", "clue": "/|----///-/--|||"}}
+{"ts": 1788347145.344285, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 3, "solution": "//-|/--|/-|--|/-"}}
+{"ts": 1788347145.3450975, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 3, "score": 0}}
+{"ts": 1788347145.3451715, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 4, "name": "quaich", "clue": "//-|//-//-/-|-/|--"}}
+{"ts": 1788347145.345826, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 4, "solution": "////--|/-|/---/|/-"}}
+{"ts": 1788347145.3465226, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 4, "score": 0}}
+{"ts": 1788347145.346591, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 5, "name": "quaich", "clue": "/-/|//|-|||---"}}
+{"ts": 1788347145.3468752, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 5, "solution": "/|/-||/-|--|/-"}}
+{"ts": 1788347145.3475764, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 5, "score": 0}}
+{"ts": 1788347145.347641, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 6, "name": "quaich", "clue": "///|---/---/||-|"}}
+{"ts": 1788347145.347974, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 6, "solution": "//-|-|/-|/|/----"}}
+{"ts": 1788347145.3486402, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 6, "score": 0}}
+{"ts": 1788347145.3487644, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 7, "name": "quaich", "clue": "|/||-|-|-/|/|-"}}
+{"ts": 1788347145.3493214, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 7, "solution": "/|/|-|-|||-|/-"}}
+{"ts": 1788347145.3503232, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 7, "score": 0}}
+{"ts": 1788347145.3504033, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 8, "name": "quaich", "clue": "|/--/-//-//|/-/|-|"}}
+{"ts": 1788347145.351049, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 8, "solution": "////-|/-|//--||/--"}}
+{"ts": 1788347145.351862, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 8, "score": 0}}
+{"ts": 1788347145.3519375, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 9, "name": "quaich", "clue": "-/|-||/-/----|"}}
+{"ts": 1788347145.3521276, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 9, "solution": "/|/-|-|/-|----"}}
+{"ts": 1788347145.3530748, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 9, "score": 0}}
+{"ts": 1788347145.3530838, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 10, "name": "quaich", "clue": "-/|/|--///-|"}}
+{"ts": 1788347145.3532553, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 10, "solution": "//-|/-|/|/--"}}
+{"ts": 1788347145.354128, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 10, "score": 0}}
+{"ts": 1788347145.3542178, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 11, "name": "quaich", "clue": "|//||/|//--|/|"}}
+{"ts": 1788347145.3548737, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 11, "solution": "/|/|/|/|-|/|/-"}}
+{"ts": 1788347145.3556325, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 11, "score": 1}}
+{"ts": 1788347145.3557458, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 12, "name": "quaich", "clue": "|--|/-|-|/-||/"}}
+{"ts": 1788347145.3561969, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 12, "solution": "/|-|/|-|-|-|/-"}}
+{"ts": 1788347145.3570359, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 12, "score": 1}}
+{"ts": 1788347145.3571022, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 13, "name": "quaich", "clue": "-|--//-|--|-|/"}}
+{"ts": 1788347145.3572867, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 13, "solution": "/|/-|-|/-|----"}}
+{"ts": 1788347145.3579836, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 13, "score": 0}}
+{"ts": 1788347145.3580432, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 14, "name": "quaich", "clue": "--/|-/||-|-|/-|--|"}}
+{"ts": 1788347145.3582673, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 14, "solution": "/|-|/|/-|-|-|-|---"}}
+{"ts": 1788347145.3588777, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 14, "score": 0}}
+{"ts": 1788347145.3589416, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 15, "name": "quaich", "clue": "|-||-|--/|--|--/"}}
+{"ts": 1788347145.3595135, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 15, "solution": "/|/-|-|-|-|-|---"}}
+{"ts": 1788347145.3604605, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 15, "score": 0}}
+{"ts": 1788347145.3605628, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 16, "name": "quaich", "clue": "-/|/--/|//||-|//"}}
+{"ts": 1788347145.3612552, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 16, "solution": "//|//|/|/-|-|/--"}}
+{"ts": 1788347145.362156, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 16, "score": 1}}
+{"ts": 1788347145.3622432, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 17, "name": "quaich", "clue": "|--||//||//-"}}
+{"ts": 1788347145.3625362, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 17, "solution": "/|/||/-|-|/-"}}
+{"ts": 1788347145.3634071, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 17, "score": 1}}
+{"ts": 1788347145.3634887, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 18, "name": "quaich", "clue": "--/|//-|-|/|"}}
+{"ts": 1788347145.3638024, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 18, "solution": "//|/-|-|-|/-"}}
+{"ts": 1788347145.3646615, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 18, "score": 1}}
+{"ts": 1788347145.3647795, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 19, "name": "quaich", "clue": "//---//|/-|/|-//"}}
+{"ts": 1788347145.3656278, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 19, "solution": "////-|//-|/-|/--"}}
+{"ts": 1788347145.3664997, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 19, "score": 1}}
+{"ts": 1788347145.3665872, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 20, "name": "quaich", "clue": "|-|-///||/|/"}}
+{"ts": 1788347145.3672624, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 20, "solution": "/||/|/-|/|/-"}}
+{"ts": 1788347145.368108, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 20, "score": 1}}
+{"ts": 1788347145.36819, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 21, "name": "quaich", "clue": "/-|//|-|----|-"}}
+{"ts": 1788347145.3684964, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 21, "solution": "/|-|/---|--|/-"}}
+{"ts": 1788347145.3694375, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 21, "score": 0}}
+{"ts": 1788347145.369518, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 22, "name": "quaich", "clue": "--///-/|//|/-|-|-/"}}
+{"ts": 1788347145.3700135, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 22, "solution": "//-/-|/-|//-|/-|/-"}}
+{"ts": 1788347145.3709679, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 22, "score": 0}}
+{"ts": 1788347145.3710494, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 23, "name": "quaich", "clue": "//-|//-///|---|/|-"}}
+{"ts": 1788347145.3720863, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 23, "solution": "//|/-|///---|/-|/-"}}
+{"ts": 1788347145.373089, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 23, "score": 0}}
+{"ts": 1788347145.373184, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 24, "name": "quaich", "clue": "|-|/||-////-/|"}}
+{"ts": 1788347145.3738945, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 24, "solution": "//|-|/|/|//|--"}}
+{"ts": 1788347145.3747978, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 24, "score": 0}}
+{"ts": 1788347145.3748937, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 25, "name": "quaich", "clue": "/|/|/-/-/-/||/||"}}
+{"ts": 1788347145.3752444, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 25, "solution": "/|/-|//-|/||/|/-"}}
+{"ts": 1788347145.375988, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 25, "score": 0}}
+{"ts": 1788347145.3760684, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 26, "name": "quaich", "clue": "-/|-/|//|/|/|/"}}
+{"ts": 1788347145.3762918, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 26, "solution": "//|/-|/|/|/|/-"}}
+{"ts": 1788347145.3769567, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 26, "score": 1}}
+{"ts": 1788347145.3770325, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 27, "name": "quaich", "clue": "---/-/-|||/-/-|/"}}
+{"ts": 1788347145.3778465, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 27, "solution": "//-|/-|/-|/-|---"}}
+{"ts": 1788347145.3788123, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 27, "score": 0}}
+{"ts": 1788347145.3788905, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 28, "name": "quaich", "clue": "--//|/-|||//"}}
+{"ts": 1788347145.3793247, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 28, "solution": "//|/|-|/|/--"}}
+{"ts": 1788347145.380076, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 28, "score": 1}}
+{"ts": 1788347145.3801677, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 29, "name": "quaich", "clue": "///|///|--||-||--/"}}
+{"ts": 1788347145.3805397, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 29, "solution": "//|/-|-|-|/|/|/-/-"}}
+{"ts": 1788347145.381483, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 29, "score": 0}}
+{"ts": 1788347145.3815613, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 30, "name": "quaich", "clue": "|//-/--/-/|||-/-"}}
+{"ts": 1788347145.3819563, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 30, "solution": "/|/-|//-|/|/----"}}
+{"ts": 1788347145.382827, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 30, "score": 0}}
+{"ts": 1788347145.3828385, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 31, "name": "quaich", "clue": "|||---|-|--|-//|-|"}}
+{"ts": 1788347145.3836496, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 31, "solution": "/|/|-||-|--|-|-|--"}}
+{"ts": 1788347145.384659, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 31, "score": 0}}
+{"ts": 1788347145.3847747, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 32, "name": "quaich", "clue": "/-----/|//-||//|"}}
+{"ts": 1788347145.3854144, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 32, "solution": "/|/-/-|/-|//-|--"}}
+{"ts": 1788347145.3862467, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 32, "score": 0}}
+{"ts": 1788347145.3863797, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 33, "name": "quaich", "clue": "----//-///|/--/|-|"}}
+{"ts": 1788347145.3866253, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 33, "solution": "//--|//--|/--|/-/-"}}
+{"ts": 1788347145.3872404, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 33, "score": 0}}
+{"ts": 1788347145.3873026, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 34, "name": "quaich", "clue": "|---/|//--/-/|"}}
+{"ts": 1788347145.3876112, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 34, "solution": "//--|/|/-|/---"}}
+{"ts": 1788347145.3884804, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 34, "score": 0}}
+{"ts": 1788347145.3885534, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 35, "name": "quaich", "clue": "-|-/-/||--//"}}
+{"ts": 1788347145.389086, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 35, "solution": "//-|/--|-|/-"}}
+{"ts": 1788347145.3897662, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 35, "score": 0}}
+{"ts": 1788347145.389831, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 36, "name": "quaich", "clue": "||/|--//-|||-//-|-"}}
+{"ts": 1788347145.390524, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 36, "solution": "/|/|-|-||--|//-|/-"}}
+{"ts": 1788347145.3918173, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 36, "score": 0}}
+{"ts": 1788347145.3919072, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 37, "name": "quaich", "clue": "-|-||-|-/-|//|||"}}
+{"ts": 1788347145.3922517, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 37, "solution": "/||/-||-|-|-||/-"}}
+{"ts": 1788347145.393151, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 37, "score": 0}}
+{"ts": 1788347145.3932443, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 38, "name": "quaich", "clue": "|/|-||/|/-|//---"}}
+{"ts": 1788347145.3936157, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 38, "solution": "/|//-|-|-|-|/|/-"}}
+{"ts": 1788347145.394524, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 38, "score": 1}}
+{"ts": 1788347145.394607, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 39, "name": "quaich", "clue": "-||-|-////|-"}}
+{"ts": 1788347145.395337, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 39, "solution": "/|/--|-|/|/-"}}
+{"ts": 1788347145.3962681, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 39, "score": 0}}
+{"ts": 1788347145.396369, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 40, "name": "quaich", "clue": "/|/-||/|//-/"}}
+{"ts": 1788347145.3969646, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 40, "solution": "/|/|/-|//|/-"}}
+{"ts": 1788347145.3978345, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 40, "score": 0}}
+{"ts": 1788347145.3979208, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 41, "name": "quaich", "clue": "-/||---|///|"}}
+{"ts": 1788347145.3981895, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 41, "solution": "/|-|-|//-|/-"}}
+{"ts": 1788347145.3992052, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 41, "score": 1}}
+{"ts": 1788347145.39929, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 42, "name": "quaich", "clue": "-///-|-||-|--/--||"}}
+{"ts": 1788347145.399731, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 42, "solution": "/|/-|/-|/-|-|-|---"}}
+{"ts": 1788347145.4005055, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 42, "score": 0}}
+{"ts": 1788347145.4005878, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 43, "name": "quaich", "clue": "|||/|-///-|-/-|--/"}}
+{"ts": 1788347145.4015594, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 43, "solution": "//-|/|/|/-|-|/-|--"}}
+{"ts": 1788347145.4024935, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 43, "score": 0}}
+{"ts": 1788347145.402611, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 44, "name": "quaich", "clue": "//-|/--||||/|//-"}}
+{"ts": 1788347145.403421, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 44, "solution": "/|-|/|//|/|-|/--"}}
+{"ts": 1788347145.4043345, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 44, "score": 1}}
+{"ts": 1788347145.4044273, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 45, "name": "quaich", "clue": "-///---//|--//-||-"}}
+{"ts": 1788347145.4048975, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 45, "solution": "//-|/-|/--|///----"}}
+{"ts": 1788347145.4057627, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 45, "score": 0}}
+{"ts": 1788347145.4058452, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 46, "name": "quaich", "clue": "-|///|/---///-/|"}}
+{"ts": 1788347145.406224, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 46, "solution": "//-|/-|//--|///-"}}
+{"ts": 1788347145.4071565, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 46, "score": 0}}
+{"ts": 1788347145.4072416, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 47, "name": "quaich", "clue": "/|///-/-|/----|/"}}
+{"ts": 1788347145.408107, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 47, "solution": "//-|/|///-|/----"}}
+{"ts": 1788347145.4090228, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 47, "score": 0}}
+{"ts": 1788347145.4091136, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 48, "name": "quaich", "clue": "-/--|/-/-|--|||/"}}
+{"ts": 1788347145.4099495, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 48, "solution": "/|/--|/-|/|-|---"}}
+{"ts": 1788347145.4110048, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 48, "score": 0}}
+{"ts": 1788347145.411092, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 49, "name": "quaich", "clue": "-/||||-|//-/|/---/"}}
+{"ts": 1788347145.411504, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 49, "solution": "/|/-|//-|/|-|/-|--"}}
+{"ts": 1788347145.412308, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 49, "score": 0}}
+{"ts": 1788347145.4124017, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 50, "name": "quaich", "clue": "-/--//-||-||"}}
+{"ts": 1788347145.4126492, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 50, "solution": "/|/|-|/--|--"}}
+{"ts": 1788347145.4134064, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 50, "score": 0}}
+{"ts": 1788347145.4135332, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 51, "name": "quaich", "clue": "|///|-||---/-|"}}
+{"ts": 1788347145.4144027, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 51, "solution": "/|/|/-|--|-|/-"}}
+{"ts": 1788347145.4153686, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 51, "score": 0}}
+{"ts": 1788347145.4154582, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 52, "name": "quaich", "clue": "/|//---||/-/|///||"}}
+{"ts": 1788347145.4162824, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 52, "solution": "///|//-|-|/|/|-|/-"}}
+{"ts": 1788347145.4171205, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 52, "score": 0}}
+{"ts": 1788347145.4171903, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 53, "name": "quaich", "clue": "-||-||///-|-"}}
+{"ts": 1788347145.4174592, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 53, "solution": "/|-|/-||-|/-"}}
+{"ts": 1788347145.4184096, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 53, "score": 0}}
+{"ts": 1788347145.4185035, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 54, "name": "quaich", "clue": "|-//--|--|-//-|-/-"}}
+{"ts": 1788347145.4188411, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 54, "solution": "//-|/--|/-|/-|----"}}
+{"ts": 1788347145.419626, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 54, "score": 0}}
+{"ts": 1788347145.419731, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 55, "name": "quaich", "clue": "-|/|-//|/-|//-"}}
+{"ts": 1788347145.4205046, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 55, "solution": "///|/-|-|/-|/-"}}
+{"ts": 1788347145.4212623, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 55, "score": 1}}
+{"ts": 1788347145.4213502, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 56, "name": "quaich", "clue": "-----||/-||/-///"}}
+{"ts": 1788347145.4219308, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 56, "solution": "///|--|/-|/-|---"}}
+{"ts": 1788347145.4230008, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 56, "score": 0}}
+{"ts": 1788347145.4231067, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 57, "name": "quaich", "clue": "||||////-///-|"}}
+{"ts": 1788347145.423396, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 57, "solution": "/|//|//|/|-|/-"}}
+{"ts": 1788347145.4240952, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 57, "score": 0}}
+{"ts": 1788347145.424166, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 58, "name": "quaich", "clue": "|--|//---|///---"}}
+{"ts": 1788347145.4244306, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 58, "solution": "//-|/-|/-|/-----"}}
+{"ts": 1788347145.425076, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 58, "score": 0}}
+{"ts": 1788347145.4251614, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 59, "name": "quaich", "clue": "/--/|-/--|//-/||"}}
+{"ts": 1788347145.4259431, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 59, "solution": "//-|/-|/-|//-|--"}}
+{"ts": 1788347145.4268675, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 59, "score": 0}}
+{"ts": 1788347145.4269328, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 60, "name": "quaich", "clue": "//--|-|/--/-"}}
+{"ts": 1788347145.4273512, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 60, "solution": "//---|/|/---"}}
+{"ts": 1788347145.4280481, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 60, "score": 0}}
+{"ts": 1788347145.428134, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 61, "name": "quaich", "clue": "--|/|||--/||"}}
+{"ts": 1788347145.4283679, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 61, "solution": "/||-|-||-|/-"}}
+{"ts": 1788347145.428982, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 61, "score": 0}}
+{"ts": 1788347145.4290562, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 62, "name": "quaich", "clue": "-|/|-||/---|"}}
+{"ts": 1788347145.4292183, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 62, "solution": "/|/|-|-|-|--"}}
+{"ts": 1788347145.4297783, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 62, "score": 0}}
+{"ts": 1788347145.4298484, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 63, "name": "quaich", "clue": "|-|-|-//-|||"}}
+{"ts": 1788347145.4305053, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 63, "solution": "/|||-|-|-|/-"}}
+{"ts": 1788347145.43135, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 63, "score": 0}}
+{"ts": 1788347145.4314268, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 64, "name": "quaich", "clue": "-/||/||/-/|--|"}}
+{"ts": 1788347145.432198, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 64, "solution": "/|/|-|/||/-|--"}}
+{"ts": 1788347145.432965, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 64, "score": 0}}
+{"ts": 1788347145.4330673, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 65, "name": "quaich", "clue": "-//-///|--||/-"}}
+{"ts": 1788347145.4332876, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 65, "solution": "//-|/---|//|/-"}}
+{"ts": 1788347145.4343586, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 65, "score": 0}}
+{"ts": 1788347145.4344296, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 66, "name": "quaich", "clue": "-//|//|-/-/---/-"}}
+{"ts": 1788347145.4346492, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 66, "solution": "//-|/-|///---/--"}}
+{"ts": 1788347145.4356236, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 66, "score": 0}}
+{"ts": 1788347145.4357388, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 67, "name": "quaich", "clue": "---//|-||//-"}}
+{"ts": 1788347145.436181, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 67, "solution": "/|/-|/-|/---"}}
+{"ts": 1788347145.4369075, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 67, "score": 0}}
+{"ts": 1788347145.4369724, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 68, "name": "quaich", "clue": "|/|--|--/-//|/"}}
+{"ts": 1788347145.4374342, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 68, "solution": "//-|/|/-|/|---"}}
+{"ts": 1788347145.4380822, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 68, "score": 0}}
+{"ts": 1788347145.4381516, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 69, "name": "quaich", "clue": "|//-///|-/---//-"}}
+{"ts": 1788347145.438457, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 69, "solution": "//-|/-|/-////---"}}
+{"ts": 1788347145.4393623, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 69, "score": 0}}
+{"ts": 1788347145.4394317, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 70, "name": "quaich", "clue": "/||/--/-/--/-//|-/"}}
+{"ts": 1788347145.4397292, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 70, "solution": "///-|//--/-|/-|/--"}}
+{"ts": 1788347145.440374, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 70, "score": 0}}
+{"ts": 1788347145.4403808, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 71, "name": "quaich", "clue": "|-//||/-/|-/"}}
+{"ts": 1788347145.4409177, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 71, "solution": "/|/-|/-|/|/-"}}
+{"ts": 1788347145.44165, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 71, "score": 0}}
+{"ts": 1788347145.441779, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 72, "name": "quaich", "clue": "|/-|-//|--/-"}}
+{"ts": 1788347145.4421546, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 72, "solution": "/|/-|/-|/---"}}
+{"ts": 1788347145.4428473, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 72, "score": 0}}
+{"ts": 1788347145.442909, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 73, "name": "quaich", "clue": "/-/|//--//|||||/"}}
+{"ts": 1788347145.4431224, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 73, "solution": "/|/-|//|/|/|-|/-"}}
+{"ts": 1788347145.4437616, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 73, "score": 0}}
+{"ts": 1788347145.4438214, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 74, "name": "quaich", "clue": "/||--|-/-|-//-"}}
+{"ts": 1788347145.4440093, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 74, "solution": "/|/-|--|/--|/-"}}
+{"ts": 1788347145.444601, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 74, "score": 0}}
+{"ts": 1788347145.4447286, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 75, "name": "quaich", "clue": "////|--||-//-|/|"}}
+{"ts": 1788347145.4453642, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 75, "solution": "/|/-|//-|/-|/|/-"}}
+{"ts": 1788347145.4460876, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 75, "score": 0}}
+{"ts": 1788347145.4461558, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 76, "name": "quaich", "clue": "|-/|||---|||/-"}}
+{"ts": 1788347145.4466536, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 76, "solution": "//||||-|-|-|--"}}
+{"ts": 1788347145.4474378, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 76, "score": 0}}
+{"ts": 1788347145.447519, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 77, "name": "quaich", "clue": "|--/-/|||-|-"}}
+{"ts": 1788347145.447743, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 77, "solution": "/|/|-|-|-|--"}}
+{"ts": 1788347145.4484766, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 77, "score": 0}}
+{"ts": 1788347145.4485424, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 78, "name": "quaich", "clue": "-/|-//--|-////||/-"}}
+{"ts": 1788347145.4488416, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 78, "solution": "//-|/|/|/-|//-/---"}}
+{"ts": 1788347145.4495986, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 78, "score": 0}}
+{"ts": 1788347145.449709, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 79, "name": "quaich", "clue": "/-/-|/-/-//--|"}}
+{"ts": 1788347145.4502406, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 79, "solution": "///-|//--|/---"}}
+{"ts": 1788347145.450963, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 79, "score": 0}}
+{"ts": 1788347145.4510252, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 80, "name": "quaich", "clue": "-/|||/|||/-/|/-//|"}}
+{"ts": 1788347145.4515986, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 80, "solution": "/|/|/||-|/|/-|/|/-"}}
+{"ts": 1788347145.4523485, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 80, "score": 1}}
+{"ts": 1788347145.4524355, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 81, "name": "quaich", "clue": "//-|/|/||//||||-|-"}}
+{"ts": 1788347145.452736, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 81, "solution": "/|||/|/|-|/-||/|/-"}}
+{"ts": 1788347145.453405, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 81, "score": 0}}
+{"ts": 1788347145.4535024, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 82, "name": "quaich", "clue": "||-|---||/-///||/|"}}
+{"ts": 1788347145.4538698, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 82, "solution": "/|/|/-|-|/|-|-||/-"}}
+{"ts": 1788347145.4545777, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 82, "score": 0}}
+{"ts": 1788347145.4546447, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 83, "name": "quaich", "clue": "-|-/-/|//-/|-/-/-/"}}
+{"ts": 1788347145.4553962, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 83, "solution": "//---|///-|/--|//-"}}
+{"ts": 1788347145.4560497, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 83, "score": 0}}
+{"ts": 1788347145.4561074, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 84, "name": "quaich", "clue": "||-//|||-///|//--|"}}
+{"ts": 1788347145.4569137, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 84, "solution": "/|/|/|/||/-|-|//--"}}
+{"ts": 1788347145.4576967, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 84, "score": 1}}
+{"ts": 1788347145.4577794, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 85, "name": "quaich", "clue": "-/-|--/|/||-"}}
+{"ts": 1788347145.4579463, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 85, "solution": "/|/-|-|/-|--"}}
+{"ts": 1788347145.4585955, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 85, "score": 0}}
+{"ts": 1788347145.4587297, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 86, "name": "quaich", "clue": "//||/|-||/--"}}
+{"ts": 1788347145.4588904, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 86, "solution": "/|/-|/-|||/-"}}
+{"ts": 1788347145.4598157, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 86, "score": 0}}
+{"ts": 1788347145.459883, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 87, "name": "quaich", "clue": "/-/||/-/|--|"}}
+{"ts": 1788347145.4603353, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 87, "solution": "/|/-|/-|-|/-"}}
+{"ts": 1788347145.46102, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 87, "score": 0}}
+{"ts": 1788347145.4610825, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 88, "name": "quaich", "clue": "||--|-/|-//|"}}
+{"ts": 1788347145.4614627, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 88, "solution": "/|-|-|-|/|/-"}}
+{"ts": 1788347145.4621632, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 88, "score": 1}}
+{"ts": 1788347145.4622288, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 89, "name": "quaich", "clue": "/|||---|--/-"}}
+{"ts": 1788347145.462429, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 89, "solution": "/|/-|-|-|---"}}
+{"ts": 1788347145.4631443, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 89, "score": 0}}
+{"ts": 1788347145.4632018, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 90, "name": "quaich", "clue": "||/|/-/|-|/|"}}
+{"ts": 1788347145.4633648, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 90, "solution": "/|/|/|||-|/-"}}
+{"ts": 1788347145.464265, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 90, "score": 0}}
+{"ts": 1788347145.4642766, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 91, "name": "quaich", "clue": "-|//|-|-/---|---||"}}
+{"ts": 1788347145.4651086, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 91, "solution": "/|--|-|/-|--|/-|--"}}
+{"ts": 1788347145.4658878, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 91, "score": 0}}
+{"ts": 1788347145.4659727, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 92, "name": "quaich", "clue": "/||-/////-|//--/--"}}
+{"ts": 1788347145.4668415, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 92, "solution": "//////-|/---|-|//-"}}
+{"ts": 1788347145.4675937, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 92, "score": 0}}
+{"ts": 1788347145.4676857, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 93, "name": "quaich", "clue": "||/--|/||/-/|-"}}
+{"ts": 1788347145.467896, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 93, "solution": "/|/-||-|-|/|/-"}}
+{"ts": 1788347145.4689767, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 93, "score": 0}}
+{"ts": 1788347145.469039, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 94, "name": "quaich", "clue": "/|/-|-/||-/|-|"}}
+{"ts": 1788347145.4692543, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 94, "solution": "/|-|/-|/||-|/-"}}
+{"ts": 1788347145.4701803, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 94, "score": 0}}
+{"ts": 1788347145.4702406, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 95, "name": "quaich", "clue": "/|///|-|--|--||/-/"}}
+{"ts": 1788347145.471083, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 95, "solution": "/|/|/-|/|/-|/-|---"}}
+{"ts": 1788347145.4719207, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 95, "score": 0}}
+{"ts": 1788347145.4719892, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 96, "name": "quaich", "clue": "--///|-/-/|/"}}
+{"ts": 1788347145.4723642, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 96, "solution": "/|//---|///-"}}
+{"ts": 1788347145.4729376, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 96, "score": 0}}
+{"ts": 1788347145.4729955, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 97, "name": "quaich", "clue": "/-|/|/|-/|/|"}}
+{"ts": 1788347145.4731557, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 97, "solution": "/|/|-|/|/|/-"}}
+{"ts": 1788347145.474174, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 97, "score": 1}}
+{"ts": 1788347145.474232, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 98, "name": "quaich", "clue": "//|//-/|-/--"}}
+{"ts": 1788347145.4744368, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 98, "solution": "//--|/-|///-"}}
+{"ts": 1788347145.4754477, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 98, "score": 0}}
+{"ts": 1788347145.4755042, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 99, "name": "quaich", "clue": "//|/--|-|--|//--"}}
+{"ts": 1788347145.4761658, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 99, "solution": "/|/-|/-|/--|/---"}}
+{"ts": 1788347145.4768138, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 99, "score": 0}}
+{"ts": 1788347145.4768732, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 100, "name": "quaich", "clue": "|//||-|/||///-"}}
+{"ts": 1788347145.4773378, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 100, "solution": "/||/|-|/|//|/-"}}
+{"ts": 1788347145.4781876, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 100, "score": 1}}
+{"ts": 1788347145.4782445, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 101, "name": "quaich", "clue": "||//|//|/-|||-/-//"}}
+{"ts": 1788347145.4785686, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 101, "solution": "/|//-|/-|/|/|/||/-"}}
+{"ts": 1788347145.4792957, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 101, "score": 0}}
+{"ts": 1788347145.4793613, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 102, "name": "quaich", "clue": "||-/|//||//-//-|"}}
+{"ts": 1788347145.4795797, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 102, "solution": "/|/-|/|/|/-|/|/-"}}
+{"ts": 1788347145.4802353, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 102, "score": 0}}
+{"ts": 1788347145.4802985, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 103, "name": "quaich", "clue": "/-||//--/-|///"}}
+{"ts": 1788347145.4808784, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 103, "solution": "////-|/-|/-|/-"}}
+{"ts": 1788347145.4816108, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 103, "score": 1}}
+{"ts": 1788347145.4816842, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 104, "name": "quaich", "clue": "//--||-|--/-"}}
+{"ts": 1788347145.4820902, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 104, "solution": "//-|--|--|/-"}}
+{"ts": 1788347145.48297, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 104, "score": 0}}
+{"ts": 1788347145.483034, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 105, "name": "quaich", "clue": "||||/-|/----|/"}}
+{"ts": 1788347145.4832191, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 105, "solution": "/|/-|-|-|||/--"}}
+{"ts": 1788347145.483867, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 105, "score": 0}}
+{"ts": 1788347145.4839337, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 106, "name": "quaich", "clue": "|-/|||/||-/-"}}
+{"ts": 1788347145.4840922, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 106, "solution": "/|||-|/|-|/-"}}
+{"ts": 1788347145.4848998, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 106, "score": 0}}
+{"ts": 1788347145.4849634, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 107, "name": "quaich", "clue": "|--/-/|--/-/|-/-/-"}}
+{"ts": 1788347145.4856446, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 107, "solution": "//-|/-|/-|/-----/-"}}
+{"ts": 1788347145.486554, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 107, "score": 0}}
+{"ts": 1788347145.4866145, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 108, "name": "quaich", "clue": "-|/--|-|//||--"}}
+{"ts": 1788347145.4870937, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 108, "solution": "/|-|-|-|/-|/--"}}
+{"ts": 1788347145.4879751, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 108, "score": 0}}
+{"ts": 1788347145.488037, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 109, "name": "quaich", "clue": "/--/-|-|/|//|//|-/"}}
+{"ts": 1788347145.4883041, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 109, "solution": "/|/|/-|/-|//-|/-/-"}}
+{"ts": 1788347145.4889007, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 109, "score": 0}}
+{"ts": 1788347145.4889634, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 110, "name": "quaich", "clue": "-||/|||-/---/|--/-"}}
+{"ts": 1788347145.4891937, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 110, "solution": "/|/-|--|/|--|--|/-"}}
+{"ts": 1788347145.4902794, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 110, "score": 0}}
+{"ts": 1788347145.4903376, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 111, "name": "quaich", "clue": "|-||///|--||/|"}}
+{"ts": 1788347145.49136, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 111, "solution": "/|/||/|-|-||/-"}}
+{"ts": 1788347145.492342, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 111, "score": 0}}
+{"ts": 1788347145.492437, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 112, "name": "quaich", "clue": "-/|/-/-/|/--"}}
+{"ts": 1788347145.493045, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 112, "solution": "/|///-|/----"}}
+{"ts": 1788347145.4939947, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 112, "score": 0}}
+{"ts": 1788347145.4940832, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 113, "name": "quaich", "clue": "|--////|---//-"}}
+{"ts": 1788347145.4944427, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 113, "solution": "///-|/---|//--"}}
+{"ts": 1788347145.4954138, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 113, "score": 0}}
+{"ts": 1788347145.495511, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 114, "name": "quaich", "clue": "---|/-|||-/-/||-"}}
+{"ts": 1788347145.4958975, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 114, "solution": "/|/-|-|-|--|-|/-"}}
+{"ts": 1788347145.4967253, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 114, "score": 0}}
+{"ts": 1788347145.4968224, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 115, "name": "quaich", "clue": "--||---|-//|//"}}
+{"ts": 1788347145.4975789, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 115, "solution": "//-|/-|/-|-|--"}}
+{"ts": 1788347145.498563, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 115, "score": 0}}
+{"ts": 1788347145.4986916, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 116, "name": "quaich", "clue": "-|//|-/-|/--|/-///"}}
+{"ts": 1788347145.4994519, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 116, "solution": "///-/-|/|/-|/|/---"}}
+{"ts": 1788347145.5004115, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 116, "score": 0}}
+{"ts": 1788347145.5004988, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 117, "name": "quaich", "clue": "-||/|//-||--|-|/"}}
+{"ts": 1788347145.500935, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 117, "solution": "/|/-|/||-|-|-|/-"}}
+{"ts": 1788347145.5017674, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 117, "score": 0}}
+{"ts": 1788347145.5018642, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 118, "name": "quaich", "clue": "/|//--//|-||-/-/"}}
+{"ts": 1788347145.5022395, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 118, "solution": "////-|/--|-|/|/-"}}
+{"ts": 1788347145.5031605, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 118, "score": 1}}
+{"ts": 1788347145.503243, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 119, "name": "quaich", "clue": "-//|/|-|--||||"}}
+{"ts": 1788347145.5039902, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 119, "solution": "/|-|/|-|-|||/-"}}
+{"ts": 1788347145.5049, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 119, "score": 0}}
+{"ts": 1788347145.5049942, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 120, "name": "quaich", "clue": "-|/-/--||-|||///"}}
+{"ts": 1788347145.5058331, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 120, "solution": "//-||/-|/-||-|/-"}}
+{"ts": 1788347145.5068183, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 120, "score": 0}}
+{"ts": 1788347145.5069072, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 121, "name": "quaich", "clue": "|/--|/-///--"}}
+{"ts": 1788347145.50718, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 121, "solution": "///-|/--|/--"}}
+{"ts": 1788347145.5080168, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 121, "score": 0}}
+{"ts": 1788347145.5081122, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 122, "name": "quaich", "clue": "--|--|--|--/||/-||"}}
+{"ts": 1788347145.508529, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 122, "solution": "/|--|/|-|-|-|-|---"}}
+{"ts": 1788347145.5093014, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 122, "score": 0}}
+{"ts": 1788347145.5093846, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 123, "name": "quaich", "clue": "-/--|||-/||/||-|"}}
+{"ts": 1788347145.5102372, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 123, "solution": "/|/||-|-|-||-|/-"}}
+{"ts": 1788347145.511507, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 123, "score": 0}}
+{"ts": 1788347145.5115154, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 124, "name": "quaich", "clue": "|-|--||-/-/|||--//"}}
+{"ts": 1788347145.5122976, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 124, "solution": "//|-|--|/-||/|-|--"}}
+{"ts": 1788347145.5133154, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 124, "score": 0}}
+{"ts": 1788347145.513405, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 125, "name": "quaich", "clue": "/|/-/|-||-/|/|"}}
+{"ts": 1788347145.5137951, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 125, "solution": "/|/|-|/||/-|/-"}}
+{"ts": 1788347145.5147989, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 125, "score": 1}}
+{"ts": 1788347145.5149035, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 126, "name": "quaich", "clue": "-/-/|//--/||--||/-"}}
+{"ts": 1788347145.5153203, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 126, "solution": "//-|/-|/--|/-|/|--"}}
+{"ts": 1788347145.5161302, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 126, "score": 0}}
+{"ts": 1788347145.5162127, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 127, "name": "quaich", "clue": "-|///|//--/---"}}
+{"ts": 1788347145.5169902, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 127, "solution": "//-|/-|///----"}}
+{"ts": 1788347145.5178902, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 127, "score": 0}}
+{"ts": 1788347145.5179856, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 128, "name": "quaich", "clue": "//|||-|//||-/-/-"}}
+{"ts": 1788347145.5187912, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 128, "solution": "//||-|/-|/|/-|/-"}}
+{"ts": 1788347145.5196247, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 128, "score": 1}}
+{"ts": 1788347145.5197418, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 129, "name": "quaich", "clue": "|--|/-/|/|-|"}}
+{"ts": 1788347145.5199769, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 129, "solution": "/|/|-|-|-|/-"}}
+{"ts": 1788347145.521075, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 129, "score": 1}}
+{"ts": 1788347145.5211582, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 130, "name": "quaich", "clue": "//|///|--/|||-"}}
+{"ts": 1788347145.52149, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 130, "solution": "/|//-|/|/|-|/-"}}
+{"ts": 1788347145.5223997, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 130, "score": 1}}
+{"ts": 1788347145.522488, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 131, "name": "quaich", "clue": "|/--/|||-/||-|/--|"}}
+{"ts": 1788347145.5234368, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 131, "solution": "/|-|/-|/-||-||-|/-"}}
+{"ts": 1788347145.5243502, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 131, "score": 0}}
+{"ts": 1788347145.5244365, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 132, "name": "quaich", "clue": "/|-//|//-|-|-/"}}
+{"ts": 1788347145.525117, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 132, "solution": "/|/|/|/--|//--"}}
+{"ts": 1788347145.526006, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 132, "score": 0}}
+{"ts": 1788347145.5260885, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 133, "name": "quaich", "clue": "--|//--//|/|"}}
+{"ts": 1788347145.5264301, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 133, "solution": "//-|/-|/-|/-"}}
+{"ts": 1788347145.527287, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 133, "score": 0}}
+{"ts": 1788347145.527378, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 134, "name": "quaich", "clue": "-||////---|-//-|/|"}}
+{"ts": 1788347145.5278265, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 134, "solution": "/|/|//-|/-|/-|/---"}}
+{"ts": 1788347145.5286372, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 134, "score": 0}}
+{"ts": 1788347145.528762, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 135, "name": "quaich", "clue": "--/|/--|/|/-"}}
+{"ts": 1788347145.5294015, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 135, "solution": "/|/--|/-|/--"}}
+{"ts": 1788347145.5303566, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 135, "score": 0}}
+{"ts": 1788347145.5304568, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 136, "name": "quaich", "clue": "|-|---/-||/|--/|-/"}}
+{"ts": 1788347145.5313697, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 136, "solution": "//-|/--|||--|/-|--"}}
+{"ts": 1788347145.5323198, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 136, "score": 0}}
+{"ts": 1788347145.5323305, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 137, "name": "quaich", "clue": "/||/|/--|-||-/-|"}}
+{"ts": 1788347145.532761, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 137, "solution": "/|/-|/-|-||-||/-"}}
+{"ts": 1788347145.5337105, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 137, "score": 0}}
+{"ts": 1788347145.533733, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 138, "name": "quaich", "clue": "-|-//-|-////"}}
+{"ts": 1788347145.5340137, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 138, "solution": "//-|/-|///--"}}
+{"ts": 1788347145.5350251, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 138, "score": 0}}
+{"ts": 1788347145.535036, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 139, "name": "quaich", "clue": "-||-///|/||/"}}
+{"ts": 1788347145.5358331, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 139, "solution": "/|-|/|/|/|/-"}}
+{"ts": 1788347145.5368028, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 139, "score": 1}}
+{"ts": 1788347145.5368133, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 140, "name": "quaich", "clue": "-|-/--///|-/|/"}}
+{"ts": 1788347145.5375757, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 140, "solution": "//--|/-|//-|/-"}}
+{"ts": 1788347145.5384014, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 140, "score": 0}}
+{"ts": 1788347145.5384126, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 141, "name": "quaich", "clue": "--/|-|||/--/--"}}
+{"ts": 1788347145.5388026, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 141, "solution": "/|/-|/-|--|---"}}
+{"ts": 1788347145.5396523, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 141, "score": 0}}
+{"ts": 1788347145.539804, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 142, "name": "quaich", "clue": "-/-|/||-|//--/"}}
+{"ts": 1788347145.5401528, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 142, "solution": "//-|/-|/|/-|--"}}
+{"ts": 1788347145.5408833, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 142, "score": 0}}
+{"ts": 1788347145.5409825, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 143, "name": "quaich", "clue": "-/|-|--||/-/|--|--"}}
+{"ts": 1788347145.542204, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 143, "solution": "/|/-|-|-|/--|-|---"}}
+{"ts": 1788347145.5432389, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 143, "score": 0}}
+{"ts": 1788347145.543254, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 144, "name": "quaich", "clue": "/|||--|///--|/"}}
+{"ts": 1788347145.5440876, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 144, "solution": "/|//|-|/|-|/--"}}
+{"ts": 1788347145.5449183, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 144, "score": 1}}
+{"ts": 1788347145.5449305, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 145, "name": "quaich", "clue": "-/--//--/||//-//"}}
+{"ts": 1788347145.5453112, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 145, "solution": "////--|/-|/-//--"}}
+{"ts": 1788347145.546393, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 145, "score": 0}}
+{"ts": 1788347145.5464036, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 146, "name": "quaich", "clue": "/||/-|/|-|--|/"}}
+{"ts": 1788347145.5467966, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 146, "solution": "/|/|-|/|-|-|/-"}}
+{"ts": 1788347145.547603, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 146, "score": 1}}
+{"ts": 1788347145.54773, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 147, "name": "quaich", "clue": "|/-||-/|-/-/--///-"}}
+{"ts": 1788347145.5490553, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 147, "solution": "//-|/-|/--|//|/---"}}
+{"ts": 1788347145.5501668, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 147, "score": 0}}
+{"ts": 1788347145.5501776, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 148, "name": "quaich", "clue": "-//||/-///|/--"}}
+{"ts": 1788347145.5510216, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 148, "solution": "//-|/-|//-|//-"}}
+{"ts": 1788347145.5518863, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 148, "score": 0}}
+{"ts": 1788347145.5519876, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 149, "name": "quaich", "clue": "|-|/-|/--///"}}
+{"ts": 1788347145.5522714, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 149, "solution": "//-|/|/-|/--"}}
+{"ts": 1788347145.5533044, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 149, "score": 0}}
+{"ts": 1788347145.553407, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 150, "name": "quaich", "clue": "-|//---//||-|/"}}
+{"ts": 1788347145.5538163, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 150, "solution": "//-|/-|/-|/|--"}}
+{"ts": 1788347145.5549297, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 150, "score": 0}}
+{"ts": 1788347145.5549414, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 151, "name": "quaich", "clue": "-|-//|/|//--"}}
+{"ts": 1788347145.555804, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 151, "solution": "//|/-|/--|/-"}}
+{"ts": 1788347145.5567846, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 151, "score": 0}}
+{"ts": 1788347145.5568895, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 152, "name": "quaich", "clue": "|--|-|/|----|/"}}
+{"ts": 1788347145.5576236, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 152, "solution": "/|/-|--|-|-|--"}}
+{"ts": 1788347145.558599, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 152, "score": 0}}
+{"ts": 1788347145.5587475, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 153, "name": "quaich", "clue": "//|-/-/||/|/"}}
+{"ts": 1788347145.5590098, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 153, "solution": "/|/|/|//-|/-"}}
+{"ts": 1788347145.5600464, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 153, "score": 1}}
+{"ts": 1788347145.5600605, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 154, "name": "quaich", "clue": "---/||--|/||/|"}}
+{"ts": 1788347145.5603797, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 154, "solution": "/|/|-|-|-|-|/-"}}
+{"ts": 1788347145.561503, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 154, "score": 1}}
+{"ts": 1788347145.5615141, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 155, "name": "quaich", "clue": "--||----/-|-/||/"}}
+{"ts": 1788347145.5627186, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 155, "solution": "/|/-|---|/-|-|--"}}
+{"ts": 1788347145.5637286, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 155, "score": 0}}
+{"ts": 1788347145.5637393, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 156, "name": "quaich", "clue": "|-//-///|----/-|-|"}}
+{"ts": 1788347145.5647388, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 156, "solution": "/|//---|/-|//|----"}}
+{"ts": 1788347145.5656157, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 156, "score": 0}}
+{"ts": 1788347145.5656297, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 157, "name": "quaich", "clue": "---/-|-||/-||-"}}
+{"ts": 1788347145.565994, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 157, "solution": "//|-|-|-|-|---"}}
+{"ts": 1788347145.567051, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 157, "score": 0}}
+{"ts": 1788347145.5670617, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 158, "name": "quaich", "clue": "-|/||//|-|/|||/-|-"}}
+{"ts": 1788347145.567478, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 158, "solution": "/|/|/|/|-|||-|-|/-"}}
+{"ts": 1788347145.568354, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 158, "score": 0}}
+{"ts": 1788347145.5684571, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 159, "name": "quaich", "clue": "/-/|/|/-|/-/"}}
+{"ts": 1788347145.5693238, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 159, "solution": "//-|/-|/|//-"}}
+{"ts": 1788347145.5705383, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 159, "score": 0}}
+{"ts": 1788347145.5706348, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 160, "name": "quaich", "clue": "||||/----|-/|/"}}
+{"ts": 1788347145.571495, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 160, "solution": "/||-|-|/-|-|/-"}}
+{"ts": 1788347145.5725129, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 160, "score": 1}}
+{"ts": 1788347145.5725238, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 161, "name": "quaich", "clue": "-||--//-///--||-"}}
+{"ts": 1788347145.5729718, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 161, "solution": "/|/|/|/-|/------"}}
+{"ts": 1788347145.5739095, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 161, "score": 0}}
+{"ts": 1788347145.5740128, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 162, "name": "quaich", "clue": "--|/||-/---////-"}}
+{"ts": 1788347145.574445, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 162, "solution": "//--|/-|//-|/---"}}
+{"ts": 1788347145.5753121, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 162, "score": 0}}
+{"ts": 1788347145.5753233, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 163, "name": "quaich", "clue": "|//||/||--/|/--/"}}
+{"ts": 1788347145.5765202, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 163, "solution": "/|/-|/|/|-|/-|/-"}}
+{"ts": 1788347145.577556, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 163, "score": 0}}
+{"ts": 1788347145.5775669, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 164, "name": "quaich", "clue": "|||//|/---/--||/"}}
+{"ts": 1788347145.5785596, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 164, "solution": "//-||/-|/-||-|/-"}}
+{"ts": 1788347145.579477, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 164, "score": 0}}
+{"ts": 1788347145.5794873, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 165, "name": "quaich", "clue": "-|/||-|-|//|-/|-"}}
+{"ts": 1788347145.5799263, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 165, "solution": "/|/|-|-|/|/|-|--"}}
+{"ts": 1788347145.5809724, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 165, "score": 0}}
+{"ts": 1788347145.581076, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 166, "name": "quaich", "clue": "-|//---|/-/-/-//|/"}}
+{"ts": 1788347145.5815046, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 166, "solution": "///-|/-|//-|/---/-"}}
+{"ts": 1788347145.582471, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 166, "score": 0}}
+{"ts": 1788347145.5824845, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 167, "name": "quaich", "clue": "/||||/||---|--"}}
+{"ts": 1788347145.5833545, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 167, "solution": "/|-|-||-|-||/-"}}
+{"ts": 1788347145.5843918, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 167, "score": 0}}
+{"ts": 1788347145.5845, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 168, "name": "quaich", "clue": "|-||---//|/---"}}
+{"ts": 1788347145.5853055, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 168, "solution": "/|/-|-|---|/--"}}
+{"ts": 1788347145.5864534, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 168, "score": 0}}
+{"ts": 1788347145.5864644, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 169, "name": "quaich", "clue": "-/-/|-/|-/|/|--///"}}
+{"ts": 1788347145.5869737, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 169, "solution": "///|///-|/-|/-|---"}}
+{"ts": 1788347145.5879695, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 169, "score": 0}}
+{"ts": 1788347145.5880718, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 170, "name": "quaich", "clue": "-||//|-|--//"}}
+{"ts": 1788347145.588398, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 170, "solution": "/|/-|/-|-|/-"}}
+{"ts": 1788347145.5893576, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 170, "score": 0}}
+{"ts": 1788347145.5893686, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 171, "name": "quaich", "clue": "////|/|/--|--||-"}}
+{"ts": 1788347145.5906587, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 171, "solution": "//-|/-|/-|-|/|/-"}}
+{"ts": 1788347145.59181, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 171, "score": 0}}
+{"ts": 1788347145.591821, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 172, "name": "quaich", "clue": "-/-||/---|-/"}}
+{"ts": 1788347145.5925078, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 172, "solution": "/|/---|/-|--"}}
+{"ts": 1788347145.5935729, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 172, "score": 0}}
+{"ts": 1788347145.593583, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 173, "name": "quaich", "clue": "-|-/|//--||/|-//|-"}}
+{"ts": 1788347145.594121, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 173, "solution": "//|/|/|/-|-|/--|--"}}
+{"ts": 1788347145.5952172, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 173, "score": 0}}
+{"ts": 1788347145.595319, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 174, "name": "quaich", "clue": "|//|-|/--|/|||"}}
+{"ts": 1788347145.5957212, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 174, "solution": "/|/|/|-|||-|/-"}}
+{"ts": 1788347145.5966055, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 174, "score": 0}}
+{"ts": 1788347145.5966198, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 175, "name": "quaich", "clue": "|//|-/|-/||-"}}
+{"ts": 1788347145.597449, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 175, "solution": "/|/|/|-|-|/-"}}
+{"ts": 1788347145.5985613, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 175, "score": 1}}
+{"ts": 1788347145.5985715, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 176, "name": "quaich", "clue": "/-/-|-/////|-|"}}
+{"ts": 1788347145.5993543, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 176, "solution": "//-|///|/--|/-"}}
+{"ts": 1788347145.6004279, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 176, "score": 1}}
+{"ts": 1788347145.6004424, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 177, "name": "quaich", "clue": "-||/|||//|--|/-|/-"}}
+{"ts": 1788347145.6009371, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 177, "solution": "/|/-|-|/|-|/||-|/-"}}
+{"ts": 1788347145.6020088, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 177, "score": 0}}
+{"ts": 1788347145.6020198, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 178, "name": "quaich", "clue": "/---/||///||-/"}}
+{"ts": 1788347145.6024728, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 178, "solution": "/|/|/-|/-|/-/-"}}
+{"ts": 1788347145.6034377, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 178, "score": 0}}
+{"ts": 1788347145.6034484, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 179, "name": "quaich", "clue": "---//--||/////-/"}}
+{"ts": 1788347145.6046412, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 179, "solution": "///-|/-|////----"}}
+{"ts": 1788347145.6059365, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 179, "score": 1}}
+{"ts": 1788347145.6060612, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 180, "name": "quaich", "clue": "--|///|-||/-||/-/|"}}
+{"ts": 1788347145.6072266, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 180, "solution": "/|/|/-|-|/|/|/|---"}}
+{"ts": 1788347145.6083515, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 180, "score": 0}}
+{"ts": 1788347145.608363, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 181, "name": "quaich", "clue": "--||---//////|"}}
+{"ts": 1788347145.6087534, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 181, "solution": "//-|//-|//-|--"}}
+{"ts": 1788347145.6097295, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 181, "score": 0}}
+{"ts": 1788347145.6097414, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 182, "name": "quaich", "clue": "//-|//-|/|--"}}
+{"ts": 1788347145.610039, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 182, "solution": "//-|/-|/-|/-"}}
+{"ts": 1788347145.6110914, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 182, "score": 0}}
+{"ts": 1788347145.611102, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 183, "name": "quaich", "clue": "|/--|/--||--|-"}}
+{"ts": 1788347145.612085, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 183, "solution": "/|/-|-|-|-|---"}}
+{"ts": 1788347145.6133142, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 183, "score": 0}}
+{"ts": 1788347145.6133249, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 184, "name": "quaich", "clue": "-|/|--/-//-/||-/|/"}}
+{"ts": 1788347145.61427, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 184, "solution": "/|-|/-/-|///-|-|/-"}}
+{"ts": 1788347145.6152866, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 184, "score": 0}}
+{"ts": 1788347145.6153827, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 185, "name": "quaich", "clue": "|/|/-|-/|///|-/|"}}
+{"ts": 1788347145.6158185, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 185, "solution": "/|/|/|//|/-|-|/-"}}
+{"ts": 1788347145.61683, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 185, "score": 1}}
+{"ts": 1788347145.6168401, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 186, "name": "quaich", "clue": "|/--/-/||-|/||-/"}}
+{"ts": 1788347145.6172335, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 186, "solution": "/|/-|/-|/|/|-|--"}}
+{"ts": 1788347145.618123, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 186, "score": 0}}
+{"ts": 1788347145.6181366, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 187, "name": "quaich", "clue": "-/----||/-//||"}}
+{"ts": 1788347145.6191914, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 187, "solution": "/|-|/---|/-|/-"}}
+{"ts": 1788347145.6204114, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 187, "score": 0}}
+{"ts": 1788347145.6204226, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 188, "name": "quaich", "clue": "-|/||/-/|-/|--/---"}}
+{"ts": 1788347145.6214252, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 188, "solution": "/|/|/-|--|/--|/---"}}
+{"ts": 1788347145.6226134, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 188, "score": 0}}
+{"ts": 1788347145.6226234, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 189, "name": "quaich", "clue": "|/---||-|/|/|//-"}}
+{"ts": 1788347145.6230383, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 189, "solution": "/|/||/---|/|-|/-"}}
+{"ts": 1788347145.62407, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 189, "score": 0}}
+{"ts": 1788347145.6240888, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 190, "name": "quaich", "clue": "//|-//-|//-|-/-/|/"}}
+{"ts": 1788347145.6245437, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 190, "solution": "///-//-|/-|/-|/|/-"}}
+{"ts": 1788347145.6257656, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 190, "score": 1}}
+{"ts": 1788347145.6257815, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 191, "name": "quaich", "clue": "-/--//-|/-|///-|"}}
+{"ts": 1788347145.627049, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 191, "solution": "//-|/-|/-|///---"}}
+{"ts": 1788347145.6281705, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 191, "score": 0}}
+{"ts": 1788347145.6281822, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 192, "name": "quaich", "clue": "-||--/|-||-/-|//"}}
+{"ts": 1788347145.6290793, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 192, "solution": "/|-|/-|-|/|-|/--"}}
+{"ts": 1788347145.6299932, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 192, "score": 0}}
+{"ts": 1788347145.6300042, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 193, "name": "quaich", "clue": "--/||||//-|-||--/-"}}
+{"ts": 1788347145.630502, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 193, "solution": "/|-||/-|-|/-|--|/-"}}
+{"ts": 1788347145.631401, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 193, "score": 0}}
+{"ts": 1788347145.6315062, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 194, "name": "quaich", "clue": "/||/|-/|||/|-/"}}
+{"ts": 1788347145.6318932, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 194, "solution": "/||/|/|/||-|/-"}}
+{"ts": 1788347145.6328218, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 194, "score": 0}}
+{"ts": 1788347145.632936, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 195, "name": "quaich", "clue": "/|-/||/-|//---"}}
+{"ts": 1788347145.6339502, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 195, "solution": "/|/|/-|/-|/---"}}
+{"ts": 1788347145.6350985, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 195, "score": 0}}
+{"ts": 1788347145.6352181, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 196, "name": "quaich", "clue": "-||/--|//-|/-/|--|"}}
+{"ts": 1788347145.636249, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 196, "solution": "/|--||/-|/-|/|/---"}}
+{"ts": 1788347145.637246, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 196, "score": 0}}
+{"ts": 1788347145.6372614, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 197, "name": "quaich", "clue": "|-|----//|||//||"}}
+{"ts": 1788347145.6377227, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 197, "solution": "/|-|-||/-|/|-|/-"}}
+{"ts": 1788347145.6388755, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 197, "score": 1}}
+{"ts": 1788347145.63898, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 198, "name": "quaich", "clue": "-//|/||/-|||-|"}}
+{"ts": 1788347145.639283, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 198, "solution": "/|-|/|/||-||/-"}}
+{"ts": 1788347145.6402411, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 198, "score": 0}}
+{"ts": 1788347145.6402524, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 199, "name": "quaich", "clue": "|--/|-|--/||---/"}}
+{"ts": 1788347145.64139, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 199, "solution": "/|/-|-|/-|-|----"}}
+{"ts": 1788347145.6424572, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 199, "score": 0}}
+{"ts": 1788347145.642467, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 200, "name": "quaich", "clue": "/--|/-///-/-/-|-/-"}}
+{"ts": 1788347145.643519, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 200, "solution": "//---|///-/--|//--"}}
+{"ts": 1788347145.6444736, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 200, "score": 0}}
+{"ts": 1788347145.6444855, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 201, "name": "quaich", "clue": "--||||-/////||||"}}
+{"ts": 1788347145.64493, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 201, "solution": "/|-||/||-|/|/|/-"}}
+{"ts": 1788347145.6460567, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 201, "score": 0}}
+{"ts": 1788347145.6460674, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 202, "name": "quaich", "clue": "|-|///--/-||"}}
+{"ts": 1788347145.6464233, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 202, "solution": "//-|/|-|-|/-"}}
+{"ts": 1788347145.6473286, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 202, "score": 1}}
+{"ts": 1788347145.6473393, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 203, "name": "quaich", "clue": "|-|/|-|---|/"}}
+{"ts": 1788347145.6481388, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 203, "solution": "/|/-|-|-||--"}}
+{"ts": 1788347145.6493554, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 203, "score": 0}}
+{"ts": 1788347145.6493673, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 204, "name": "quaich", "clue": "/||-|--//---|||/"}}
+{"ts": 1788347145.6502402, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 204, "solution": "//-|-|-|/|-||/--"}}
+{"ts": 1788347145.651283, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 204, "score": 0}}
+{"ts": 1788347145.651294, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 205, "name": "quaich", "clue": "/---//-|/---////|-"}}
+{"ts": 1788347145.6518097, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 205, "solution": "//-//---|//--|//--"}}
+{"ts": 1788347145.6527886, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 205, "score": 0}}
+{"ts": 1788347145.6529062, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 206, "name": "quaich", "clue": "--/||/---/|--/|-"}}
+{"ts": 1788347145.6532912, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 206, "solution": "//-|/--|-|/|----"}}
+{"ts": 1788347145.6540825, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 206, "score": 0}}
+{"ts": 1788347145.6540935, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 207, "name": "quaich", "clue": "|/-//|||-|/|/|//||"}}
+{"ts": 1788347145.6553555, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 207, "solution": "/|/|/|/|/|/|||-|/-"}}
+{"ts": 1788347145.656567, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 207, "score": 0}}
+{"ts": 1788347145.6565778, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 208, "name": "quaich", "clue": "---//---/|||"}}
+{"ts": 1788347145.657224, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 208, "solution": "/|/---|/-|--"}}
+{"ts": 1788347145.6581802, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 208, "score": 0}}
+{"ts": 1788347145.6581903, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 209, "name": "quaich", "clue": "|--||/||-|//|/|//|"}}
+{"ts": 1788347145.6586473, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 209, "solution": "/|||/|/|-|-|/||//-"}}
+{"ts": 1788347145.659815, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 209, "score": 0}}
+{"ts": 1788347145.6599088, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 210, "name": "quaich", "clue": "/--/-//|---/|/|/"}}
+{"ts": 1788347145.6602995, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 210, "solution": "/|/-|//----|///-"}}
+{"ts": 1788347145.6612415, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 210, "score": 0}}
+{"ts": 1788347145.6612532, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 211, "name": "quaich", "clue": "---|/|///||/-//|"}}
+{"ts": 1788347145.662659, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 211, "solution": "/|/-|//-|/|/-|/-"}}
+{"ts": 1788347145.663869, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 211, "score": 0}}
+{"ts": 1788347145.6638837, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 212, "name": "quaich", "clue": "//|||-|/||-|----"}}
+{"ts": 1788347145.664833, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 212, "solution": "/|-|/|-|-|-||/--"}}
+{"ts": 1788347145.665778, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 212, "score": 0}}
+{"ts": 1788347145.6657906, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 213, "name": "quaich", "clue": "|/|/---|//||-||/"}}
+{"ts": 1788347145.6661625, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 213, "solution": "/|/|/|/-|-||-|/-"}}
+{"ts": 1788347145.6672218, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 213, "score": 0}}
+{"ts": 1788347145.6673381, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 214, "name": "quaich", "clue": "-|--|||////-|-"}}
+{"ts": 1788347145.667715, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 214, "solution": "/|/-|/|/-|-|--"}}
+{"ts": 1788347145.6685514, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 214, "score": 0}}
+{"ts": 1788347145.6685622, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 215, "name": "quaich", "clue": "/--||//||-/-|||/||"}}
+{"ts": 1788347145.6698596, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 215, "solution": "/||/|-||/|/|-|-|/-"}}
+{"ts": 1788347145.6710854, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 215, "score": 0}}
+{"ts": 1788347145.6711857, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 216, "name": "quaich", "clue": "/||||//-/|-|-/"}}
+{"ts": 1788347145.6719687, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 216, "solution": "/|/|/-|-||/|/-"}}
+{"ts": 1788347145.6731434, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 216, "score": 0}}
+{"ts": 1788347145.6732423, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 217, "name": "quaich", "clue": "/||///|----||/-|/|"}}
+{"ts": 1788347145.6737287, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 217, "solution": "/|-|-|/-|/-|/|/|/-"}}
+{"ts": 1788347145.6748147, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 217, "score": 0}}
+{"ts": 1788347145.6748245, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 218, "name": "quaich", "clue": "--/-|/|||///"}}
+{"ts": 1788347145.6751227, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 218, "solution": "/|/|-|//-|/-"}}
+{"ts": 1788347145.6759353, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 218, "score": 1}}
+{"ts": 1788347145.676036, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 219, "name": "quaich", "clue": "/|-||/||-|//|/"}}
+{"ts": 1788347145.6770284, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 219, "solution": "/|/|/|/|||-|/-"}}
+{"ts": 1788347145.6781197, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 219, "score": 0}}
+{"ts": 1788347145.6781304, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 220, "name": "quaich", "clue": "-|/|///--|-|"}}
+{"ts": 1788347145.6789422, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 220, "solution": "/|/--|/|-|/-"}}
+{"ts": 1788347145.6799057, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 220, "score": 0}}
+{"ts": 1788347145.679917, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 221, "name": "quaich", "clue": "--|//-//|/|-///-"}}
+{"ts": 1788347145.6802788, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 221, "solution": "/////-|/-|/-|/--"}}
+{"ts": 1788347145.6813192, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 221, "score": 1}}
+{"ts": 1788347145.68133, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 222, "name": "quaich", "clue": "/||//-/---/||-|/"}}
+{"ts": 1788347145.6817985, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 222, "solution": "///-|/-|/|-|-|/-"}}
+{"ts": 1788347145.682613, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 222, "score": 1}}
+{"ts": 1788347145.6827955, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 223, "name": "quaich", "clue": "||/-|-/--|-//|"}}
+{"ts": 1788347145.6837668, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 223, "solution": "/|-|/-|-|/-|/-"}}
+{"ts": 1788347145.6846516, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 223, "score": 0}}
+{"ts": 1788347145.6847, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 224, "name": "quaich", "clue": "--//|/|--|||/|/||/"}}
+{"ts": 1788347145.685641, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 224, "solution": "/|//|-||-|/|-|/|/-"}}
+{"ts": 1788347145.6866276, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 224, "score": 0}}
+{"ts": 1788347145.6867785, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 225, "name": "quaich", "clue": "///|//||||||///-|-"}}
+{"ts": 1788347145.6871836, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 225, "solution": "//|/|||/|/|/|/-|/-"}}
+{"ts": 1788347145.6881762, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 225, "score": 0}}
+{"ts": 1788347145.6882675, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 226, "name": "quaich", "clue": "/|//|--|-///"}}
+{"ts": 1788347145.6885662, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 226, "solution": "///-|/-|/|/-"}}
+{"ts": 1788347145.6894464, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 226, "score": 1}}
+{"ts": 1788347145.6894572, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 227, "name": "quaich", "clue": "/-|-//-|//|/"}}
+{"ts": 1788347145.690425, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 227, "solution": "//|/-|//-|/-"}}
+{"ts": 1788347145.691299, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 227, "score": 1}}
+{"ts": 1788347145.691394, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 228, "name": "quaich", "clue": "|/|/-///||---|"}}
+{"ts": 1788347145.6922264, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 228, "solution": "//-|/|/|/|-|--"}}
+{"ts": 1788347145.693282, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 228, "score": 0}}
+{"ts": 1788347145.6934, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 229, "name": "quaich", "clue": "||/-///-/|/--|"}}
+{"ts": 1788347145.6937792, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 229, "solution": "//|/--|/-|/|/-"}}
+{"ts": 1788347145.695013, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 229, "score": 0}}
+{"ts": 1788347145.695116, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 230, "name": "quaich", "clue": "//--/|-||//-"}}
+{"ts": 1788347145.6953828, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 230, "solution": "/|//--|/-|/-"}}
+{"ts": 1788347145.696495, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 230, "score": 0}}
+{"ts": 1788347145.6965082, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 231, "name": "quaich", "clue": "|//|/-|--|//--"}}
+{"ts": 1788347145.6974645, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 231, "solution": "//|/-|/-|/-|--"}}
+{"ts": 1788347145.6985106, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 231, "score": 0}}
+{"ts": 1788347145.6986141, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 232, "name": "quaich", "clue": "|--|/-////|-||--"}}
+{"ts": 1788347145.6994658, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 232, "solution": "/|/-|-|/-|/--|/-"}}
+{"ts": 1788347145.7003834, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 232, "score": 0}}
+{"ts": 1788347145.7003942, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 233, "name": "quaich", "clue": "----/|||//|-|-|///"}}
+{"ts": 1788347145.7008657, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 233, "solution": "//-|/|-|--|/|/-|/-"}}
+{"ts": 1788347145.702066, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 233, "score": 1}}
+{"ts": 1788347145.702076, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 234, "name": "quaich", "clue": "-|-|//|----/"}}
+{"ts": 1788347145.7024026, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 234, "solution": "/|/-|/-|----"}}
+{"ts": 1788347145.7032557, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 234, "score": 0}}
+{"ts": 1788347145.703266, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 235, "name": "quaich", "clue": "|-|-//||-|||/-"}}
+{"ts": 1788347145.704252, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 235, "solution": "/|/|-|||-|-|/-"}}
+{"ts": 1788347145.7052834, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 235, "score": 0}}
+{"ts": 1788347145.7052934, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 236, "name": "quaich", "clue": "///--//|-|--"}}
+{"ts": 1788347145.7060165, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 236, "solution": "///-|/--|/--"}}
+{"ts": 1788347145.7070386, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 236, "score": 0}}
+{"ts": 1788347145.7070537, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 237, "name": "quaich", "clue": "-|-|/----/-/|/|-"}}
+{"ts": 1788347145.707521, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 237, "solution": "/|/-|/---|/--|--"}}
+{"ts": 1788347145.708492, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 237, "score": 0}}
+{"ts": 1788347145.70863, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 238, "name": "quaich", "clue": "///||/|-|//-"}}
+{"ts": 1788347145.708982, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 238, "solution": "//|/|/|/-|/-"}}
+{"ts": 1788347145.7097821, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 238, "score": 1}}
+{"ts": 1788347145.7097929, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 239, "name": "quaich", "clue": "----|/-/|-|/|-"}}
+{"ts": 1788347145.710791, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 239, "solution": "/|/|--|-|/----"}}
+{"ts": 1788347145.711777, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 239, "score": 0}}
+{"ts": 1788347145.7117913, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 240, "name": "quaich", "clue": "-|--||-|||/---//"}}
+{"ts": 1788347145.712707, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 240, "solution": "//-|--|-|-||-|/-"}}
+{"ts": 1788347145.7135594, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 240, "score": 1}}
+{"ts": 1788347145.71357, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 241, "name": "quaich", "clue": "/|/--////-/-|-/-"}}
+{"ts": 1788347145.7140052, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 241, "solution": "///--|/-|/-//-/-"}}
+{"ts": 1788347145.7150738, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 241, "score": 0}}
+{"ts": 1788347145.715087, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 242, "name": "quaich", "clue": "|-|-/-|/|/-|"}}
+{"ts": 1788347145.7153645, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 242, "solution": "/|/|-|-|-|/-"}}
+{"ts": 1788347145.7162743, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 242, "score": 1}}
+{"ts": 1788347145.7162929, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 243, "name": "quaich", "clue": "--///-/-/-/-||//"}}
+{"ts": 1788347145.7174804, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 243, "solution": "//-|///-|///----"}}
+{"ts": 1788347145.7185402, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 243, "score": 1}}
+{"ts": 1788347145.718637, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 244, "name": "quaich", "clue": "//|/-//|-||/||"}}
+{"ts": 1788347145.719481, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 244, "solution": "/|/|/|/||/-|/-"}}
+{"ts": 1788347145.7203653, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 244, "score": 1}}
+{"ts": 1788347145.7203758, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 245, "name": "quaich", "clue": "//-|-||//-/|||-/"}}
+{"ts": 1788347145.7208114, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 245, "solution": "/|/-|/|/|/|/-|--"}}
+{"ts": 1788347145.7218027, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 245, "score": 0}}
+{"ts": 1788347145.7218134, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 246, "name": "quaich", "clue": "||//---///--"}}
+{"ts": 1788347145.722073, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 246, "solution": "//-|/--|/-/-"}}
+{"ts": 1788347145.7233632, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 246, "score": 0}}
+{"ts": 1788347145.723374, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 247, "name": "quaich", "clue": "/||-//|//|//--"}}
+{"ts": 1788347145.7244794, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 247, "solution": "/|///-|/|/-|/-"}}
+{"ts": 1788347145.7257276, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 247, "score": 1}}
+{"ts": 1788347145.7257376, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 248, "name": "quaich", "clue": "|-----|-||//"}}
+{"ts": 1788347145.726398, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 248, "solution": "//|-|-|--|--"}}
+{"ts": 1788347145.727337, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 248, "score": 0}}
+{"ts": 1788347145.7273571, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 249, "name": "quaich", "clue": "/-|//|/---||//|/"}}
+{"ts": 1788347145.7278256, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 249, "solution": "/|/-|//|/|/--|/-"}}
+{"ts": 1788347145.7288082, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 249, "score": 0}}
+{"ts": 1788347145.728823, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 250, "name": "quaich", "clue": "||//--||||////||"}}
+{"ts": 1788347145.7291725, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 250, "solution": "/|/|/|/|/|||-|/-"}}
+{"ts": 1788347145.7299578, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 250, "score": 0}}
+{"ts": 1788347145.7299716, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 251, "name": "quaich", "clue": "-|||/|/|//|-/|/---"}}
+{"ts": 1788347145.7312791, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 251, "solution": "/|/-|-|/|/-|/-||/-"}}
+{"ts": 1788347145.7324784, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 251, "score": 0}}
+{"ts": 1788347145.7324896, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 252, "name": "quaich", "clue": "/||||--|/|//"}}
+{"ts": 1788347145.7331536, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 252, "solution": "//|/||/|||--"}}
+{"ts": 1788347145.7341475, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 252, "score": 0}}
+{"ts": 1788347145.7342541, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 253, "name": "quaich", "clue": "-/////|/--|--/"}}
+{"ts": 1788347145.7347212, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 253, "solution": "///---|///-|/-"}}
+{"ts": 1788347145.7355793, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 253, "score": 0}}
+{"ts": 1788347145.7357166, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 254, "name": "quaich", "clue": "///|//|-----/-|-"}}
+{"ts": 1788347145.7360613, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 254, "solution": "//-|//-|/---|/--"}}
+{"ts": 1788347145.7370045, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 254, "score": 0}}
+{"ts": 1788347145.7370968, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 255, "name": "quaich", "clue": "-|/|||--|-/|--//"}}
+{"ts": 1788347145.7381845, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 255, "solution": "/|-|/-|/-|-|-|/-"}}
+{"ts": 1788347145.7392426, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 255, "score": 0}}
+{"ts": 1788347145.7392528, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 256, "name": "quaich", "clue": "/-/|/-/||//|"}}
+{"ts": 1788347145.7399044, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 256, "solution": "//|/-|/|/|/-"}}
+{"ts": 1788347145.7410202, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 256, "score": 1}}
+{"ts": 1788347145.741154, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 257, "name": "quaich", "clue": "--//-//|-//|/|"}}
+{"ts": 1788347145.741484, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 257, "solution": "/|/-|////-|/--"}}
+{"ts": 1788347145.7427435, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 257, "score": 0}}
+{"ts": 1788347145.7428594, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 258, "name": "quaich", "clue": "-|-|--|-/|///-||-/"}}
+{"ts": 1788347145.7431207, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 258, "solution": "//-|/|/|/-|-|-|---"}}
+{"ts": 1788347145.7443244, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 258, "score": 0}}
+{"ts": 1788347145.744333, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 259, "name": "quaich", "clue": "---///-/-/|-|-||"}}
+{"ts": 1788347145.7451413, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 259, "solution": "//-|/-|/-|-|/---"}}
+{"ts": 1788347145.7463257, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 259, "score": 0}}
+{"ts": 1788347145.7463403, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 260, "name": "quaich", "clue": "/|/|-/-|/|/|---/"}}
+{"ts": 1788347145.7469943, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 260, "solution": "/|/-|/-|/|//-|--"}}
+{"ts": 1788347145.7481167, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 260, "score": 0}}
+{"ts": 1788347145.7481244, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 261, "name": "quaich", "clue": "||||--/-|-/-||"}}
+{"ts": 1788347145.748331, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 261, "solution": "/|/||-||-|-|--"}}
+{"ts": 1788347145.749275, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 261, "score": 0}}
+{"ts": 1788347145.749285, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 262, "name": "quaich", "clue": "-|-///|-///--/"}}
+{"ts": 1788347145.7495077, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 262, "solution": "///-|/-/-|//--"}}
+{"ts": 1788347145.7503612, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 262, "score": 1}}
+{"ts": 1788347145.750374, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 263, "name": "quaich", "clue": "--||--/||/|//-//"}}
+{"ts": 1788347145.751514, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 263, "solution": "//-|/-|/-|/-||/-"}}
+{"ts": 1788347145.7527082, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 263, "score": 0}}
+{"ts": 1788347145.7527187, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 264, "name": "quaich", "clue": "||-/-|-|-|||--//"}}
+{"ts": 1788347145.7535403, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 264, "solution": "//|-|-||-|/|-|--"}}
+{"ts": 1788347145.7545204, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 264, "score": 0}}
+{"ts": 1788347145.754531, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 265, "name": "quaich", "clue": "-|/-|||-|/--//"}}
+{"ts": 1788347145.754806, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 265, "solution": "/|/-|-|-|/-|/-"}}
+{"ts": 1788347145.755755, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 265, "score": 0}}
+{"ts": 1788347145.7558331, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 266, "name": "quaich", "clue": "|-/|-/-//|||/|"}}
+{"ts": 1788347145.7560873, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 266, "solution": "/|/-|/|/||-|/-"}}
+{"ts": 1788347145.7571962, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 266, "score": 0}}
+{"ts": 1788347145.7572043, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 267, "name": "quaich", "clue": "/|||/|///|///|-||-"}}
+{"ts": 1788347145.7579892, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 267, "solution": "/|/|/|/|/|/|/|-|/-"}}
+{"ts": 1788347145.7590837, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 267, "score": 1}}
+{"ts": 1788347145.7591612, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 268, "name": "quaich", "clue": "|||///-/|--/-/"}}
+{"ts": 1788347145.759763, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 268, "solution": "//|//|/-|/-|--"}}
+{"ts": 1788347145.7606072, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 268, "score": 0}}
+{"ts": 1788347145.760688, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 269, "name": "quaich", "clue": "|-//|--|/|/---|/"}}
+{"ts": 1788347145.7609158, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 269, "solution": "//-|/|/-|/-|-|--"}}
+{"ts": 1788347145.761627, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 269, "score": 0}}
+{"ts": 1788347145.7617254, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 270, "name": "quaich", "clue": "//-//----/---/||//"}}
+{"ts": 1788347145.761961, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 270, "solution": "/////-|/-|/-----/-"}}
+{"ts": 1788347145.7631586, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 270, "score": 0}}
+{"ts": 1788347145.763275, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 271, "name": "quaich", "clue": "//|-//|/|||---|-|-"}}
+{"ts": 1788347145.7645361, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 271, "solution": "/|-|/-|/|/-|-|-|/-"}}
+{"ts": 1788347145.7654948, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 271, "score": 0}}
+{"ts": 1788347145.765508, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 272, "name": "quaich", "clue": "--/|||-//--||/"}}
+{"ts": 1788347145.7662854, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 272, "solution": "/|/-|-|-|/|/--"}}
+{"ts": 1788347145.7673795, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 272, "score": 0}}
+{"ts": 1788347145.7674837, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 273, "name": "quaich", "clue": "|--||-|/|-|/|-/-"}}
+{"ts": 1788347145.7678974, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 273, "solution": "/|/-|/||-|-|-|--"}}
+{"ts": 1788347145.7687864, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 273, "score": 0}}
+{"ts": 1788347145.7688851, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 274, "name": "quaich", "clue": "||///-//--//--"}}
+{"ts": 1788347145.769273, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 274, "solution": "//-/-|///--|/-"}}
+{"ts": 1788347145.7701867, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 274, "score": 1}}
+{"ts": 1788347145.770345, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 275, "name": "quaich", "clue": "-|-|-|/--//-|/-|"}}
+{"ts": 1788347145.7714267, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 275, "solution": "/|-|/--|-|/-|/--"}}
+{"ts": 1788347145.7722933, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 275, "score": 0}}
+{"ts": 1788347145.7723753, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 276, "name": "quaich", "clue": "||/-//-/-/----|--/"}}
+{"ts": 1788347145.773331, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 276, "solution": "//|/-|/-----|/-/--"}}
+{"ts": 1788347145.7743747, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 276, "score": 0}}
+{"ts": 1788347145.7743905, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 277, "name": "quaich", "clue": "--|||--/---||////|"}}
+{"ts": 1788347145.7748415, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 277, "solution": "/||/|/---|--|/-|/-"}}
+{"ts": 1788347145.775947, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 277, "score": 0}}
+{"ts": 1788347145.7759585, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 278, "name": "quaich", "clue": "/-||-/---|/|"}}
+{"ts": 1788347145.7761984, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 278, "solution": "/|/-|-|-|/--"}}
+{"ts": 1788347145.7771306, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 278, "score": 0}}
+{"ts": 1788347145.7772045, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 279, "name": "quaich", "clue": "|/|/|-/||||--/////"}}
+{"ts": 1788347145.7779956, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 279, "solution": "/|/|/|/|/|/|/--|/-"}}
+{"ts": 1788347145.7788281, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 279, "score": 0}}
+{"ts": 1788347145.7789323, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 280, "name": "quaich", "clue": "/-|/--/||-|-//|-//"}}
+{"ts": 1788347145.7795384, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 280, "solution": "/||/-|/--|--|////-"}}
+{"ts": 1788347145.7803428, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 280, "score": 0}}
+{"ts": 1788347145.7804043, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 281, "name": "quaich", "clue": "/|--|||||//|-/"}}
+{"ts": 1788347145.7806017, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 281, "solution": "/||/|/-|-|||/-"}}
+{"ts": 1788347145.7815719, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 281, "score": 0}}
+{"ts": 1788347145.7816465, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 282, "name": "quaich", "clue": "/|---/|-|/-||/-/"}}
+{"ts": 1788347145.781992, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 282, "solution": "/|/-|/-|/-|/-|--"}}
+{"ts": 1788347145.7850387, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 282, "score": 0}}
+{"ts": 1788347145.785109, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 283, "name": "quaich", "clue": "-/--|-///--/-/-||-"}}
+{"ts": 1788347145.7859213, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 283, "solution": "//-|/-|/-|//------"}}
+{"ts": 1788347145.7869627, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 283, "score": 0}}
+{"ts": 1788347145.7870562, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 284, "name": "quaich", "clue": "|-/-|--|/|-/-|"}}
+{"ts": 1788347145.78777, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 284, "solution": "/|-|/|--|/-|--"}}
+{"ts": 1788347145.7886434, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 284, "score": 0}}
+{"ts": 1788347145.78876, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 285, "name": "quaich", "clue": "/-||/-/-/-|/"}}
+{"ts": 1788347145.78895, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 285, "solution": "//|/|/-|/---"}}
+{"ts": 1788347145.7900243, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 285, "score": 0}}
+{"ts": 1788347145.7900867, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 286, "name": "quaich", "clue": "|--|-/|/-/|//|"}}
+{"ts": 1788347145.7902784, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 286, "solution": "/|-|/|//-|-|/-"}}
+{"ts": 1788347145.791248, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 286, "score": 1}}
+{"ts": 1788347145.791346, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 287, "name": "quaich", "clue": "-//-|/-/-//-|//-/-"}}
+{"ts": 1788347145.7922146, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 287, "solution": "//-|//-|/////-----"}}
+{"ts": 1788347145.7929566, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 287, "score": 1}}
+{"ts": 1788347145.793028, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 288, "name": "quaich", "clue": "-/|//--/----|/"}}
+{"ts": 1788347145.7934856, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 288, "solution": "//----|/-/-|/-"}}
+{"ts": 1788347145.7944746, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 288, "score": 0}}
+{"ts": 1788347145.794545, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 289, "name": "quaich", "clue": "|-/-|//////-|-"}}
+{"ts": 1788347145.794821, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 289, "solution": "///|//-|/-|/--"}}
+{"ts": 1788347145.7954726, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 289, "score": 1}}
+{"ts": 1788347145.7955356, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 290, "name": "quaich", "clue": "|/-///|||-|/"}}
+{"ts": 1788347145.795821, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 290, "solution": "/|/|/|/|-|/-"}}
+{"ts": 1788347145.7965882, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 290, "score": 1}}
+{"ts": 1788347145.7966506, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 291, "name": "quaich", "clue": "///-|||--|||"}}
+{"ts": 1788347145.7971826, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 291, "solution": "/|-|/|||-|/-"}}
+{"ts": 1788347145.797921, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 291, "score": 0}}
+{"ts": 1788347145.79804, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 292, "name": "quaich", "clue": "|-|-|///--//|--/--"}}
+{"ts": 1788347145.7986603, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 292, "solution": "/|/-/-|/-|/-|/----"}}
+{"ts": 1788347145.7996926, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 292, "score": 0}}
+{"ts": 1788347145.7997735, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 293, "name": "quaich", "clue": "-||-/|-///-/"}}
+{"ts": 1788347145.7999501, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 293, "solution": "//-|--|//|/-"}}
+{"ts": 1788347145.8010054, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 293, "score": 0}}
+{"ts": 1788347145.801095, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 294, "name": "quaich", "clue": "|//-/-|-|/|/"}}
+{"ts": 1788347145.8012764, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 294, "solution": "//|/-|/|-|/-"}}
+{"ts": 1788347145.8020842, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 294, "score": 1}}
+{"ts": 1788347145.8021646, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 295, "name": "quaich", "clue": "/||/-//|/|//|--|--"}}
+{"ts": 1788347145.8030794, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 295, "solution": "/|/-|/-|/-|/|/-|/-"}}
+{"ts": 1788347145.8038907, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 295, "score": 0}}
+{"ts": 1788347145.8039544, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 296, "name": "quaich", "clue": "|/|/||--|--|-//|"}}
+{"ts": 1788347145.804478, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 296, "solution": "//|/-|-|||/|-|--"}}
+{"ts": 1788347145.8052347, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 296, "score": 0}}
+{"ts": 1788347145.8053048, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 297, "name": "quaich", "clue": "-||||/-////|//|--|"}}
+{"ts": 1788347145.8055646, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 297, "solution": "/|-|/|/|/-|/|/-|/-"}}
+{"ts": 1788347145.8067684, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 297, "score": 0}}
+{"ts": 1788347145.8068728, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 298, "name": "quaich", "clue": "-/||--/|--|--||-"}}
+{"ts": 1788347145.8070724, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 298, "solution": "//-|-|-|-|-|-|--"}}
+{"ts": 1788347145.807945, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 298, "score": 0}}
+{"ts": 1788347145.808012, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 299, "name": "quaich", "clue": "|/||-/-|-/||||///-"}}
+{"ts": 1788347145.808759, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 299, "solution": "/|/|/-|/|-||/|-|/-"}}
+{"ts": 1788347145.809616, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 299, "score": 0}}
+{"ts": 1788347145.809731, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 300, "name": "quaich", "clue": "-|/|---|/-|||/"}}
+{"ts": 1788347145.810165, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 300, "solution": "//|-|-||-|-|/-"}}
+{"ts": 1788347145.8110266, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 300, "score": 0}}
+{"ts": 1788347145.8110929, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 301, "name": "quaich", "clue": "-|--/||--//|-|-|"}}
+{"ts": 1788347145.811313, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 301, "solution": "/|-|/-|-|-|/|---"}}
+{"ts": 1788347145.8122032, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 301, "score": 0}}
+{"ts": 1788347145.8122714, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 302, "name": "quaich", "clue": "--||/|||/--/"}}
+{"ts": 1788347145.8124332, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 302, "solution": "/|/|-|-|-|/-"}}
+{"ts": 1788347145.8131528, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 302, "score": 1}}
+{"ts": 1788347145.8132396, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 303, "name": "quaich", "clue": "--||-|-|/-|/-/"}}
+{"ts": 1788347145.8138402, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 303, "solution": "/|/-|/-|-|-|--"}}
+{"ts": 1788347145.814619, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 303, "score": 0}}
+{"ts": 1788347145.8147185, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 304, "name": "quaich", "clue": "|-----/|//-//-"}}
+{"ts": 1788347145.8151815, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 304, "solution": "//-|//---|/---"}}
+{"ts": 1788347145.8160105, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 304, "score": 0}}
+{"ts": 1788347145.8161206, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 305, "name": "quaich", "clue": "--|-//|///-/-|/-|-"}}
+{"ts": 1788347145.8164282, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 305, "solution": "/|//-|-|/-|///----"}}
+{"ts": 1788347145.8174233, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 305, "score": 0}}
+{"ts": 1788347145.8174822, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 306, "name": "quaich", "clue": "|||//|-|-/-/-/"}}
+{"ts": 1788347145.8177216, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 306, "solution": "/|/|//|/-|-|--"}}
+{"ts": 1788347145.8184414, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 306, "score": 0}}
+{"ts": 1788347145.81851, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 307, "name": "quaich", "clue": "|-//|/--|/|/-/||"}}
+{"ts": 1788347145.8192534, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 307, "solution": "/|/-|/|/|/-|-|/-"}}
+{"ts": 1788347145.8199608, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 307, "score": 0}}
+{"ts": 1788347145.820019, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 308, "name": "quaich", "clue": "-/-//|||--|-/-"}}
+{"ts": 1788347145.82055, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 308, "solution": "//-|/-||-|/---"}}
+{"ts": 1788347145.8213246, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 308, "score": 0}}
+{"ts": 1788347145.821386, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 309, "name": "quaich", "clue": "|-/|-|/|-//||||//|"}}
+{"ts": 1788347145.8216276, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 309, "solution": "/|/|/|/|-||-|/||/-"}}
+{"ts": 1788347145.8222334, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 309, "score": 0}}
+{"ts": 1788347145.8223348, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 310, "name": "quaich", "clue": "|//|-/|||-/--/--||"}}
+{"ts": 1788347145.8225691, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 310, "solution": "/|/|-|--|/|-|/-|/-"}}
+{"ts": 1788347145.823288, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 310, "score": 1}}
+{"ts": 1788347145.8233533, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 311, "name": "quaich", "clue": "||/-//////-|-|"}}
+{"ts": 1788347145.823973, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 311, "solution": "//|/-|//|/-|/-"}}
+{"ts": 1788347145.8246026, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 311, "score": 1}}
+{"ts": 1788347145.824686, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 312, "name": "quaich", "clue": "|//|-///-/--"}}
+{"ts": 1788347145.8251126, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 312, "solution": "///-|//-|/--"}}
+{"ts": 1788347145.8257723, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 312, "score": 1}}
+{"ts": 1788347145.8258398, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 313, "name": "quaich", "clue": "/---//-----//-||/|"}}
+{"ts": 1788347145.8260763, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 313, "solution": "/|/-/--|//--|/----"}}
+{"ts": 1788347145.8268962, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 313, "score": 0}}
+{"ts": 1788347145.8269691, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 314, "name": "quaich", "clue": "|/-|||/--/-|"}}
+{"ts": 1788347145.8271332, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 314, "solution": "/|/|-|-|-|/-"}}
+{"ts": 1788347145.8280566, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 314, "score": 1}}
+{"ts": 1788347145.828118, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 315, "name": "quaich", "clue": "/|/--/|//-||/---"}}
+{"ts": 1788347145.828766, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 315, "solution": "//-|/-|/|/--|/--"}}
+{"ts": 1788347145.8295982, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 315, "score": 0}}
+{"ts": 1788347145.8297055, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 316, "name": "quaich", "clue": "/|-/-|/|-/-|/|//"}}
+{"ts": 1788347145.830361, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 316, "solution": "///-|-|/|/|/-|/-"}}
+{"ts": 1788347145.8311257, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 316, "score": 1}}
+{"ts": 1788347145.8311918, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 317, "name": "quaich", "clue": "/-//--||/|/-"}}
+{"ts": 1788347145.8313644, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 317, "solution": "/|/-|/-|/-/-"}}
+{"ts": 1788347145.8323667, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 317, "score": 0}}
+{"ts": 1788347145.832427, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 318, "name": "quaich", "clue": "-/-|--/|--|/"}}
+{"ts": 1788347145.8325827, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 318, "solution": "/|/-|/-|----"}}
+{"ts": 1788347145.8335774, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 318, "score": 0}}
+{"ts": 1788347145.8336391, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 319, "name": "quaich", "clue": "|-/|/||/|---//"}}
+{"ts": 1788347145.8342502, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 319, "solution": "/|/-|/-|/-||/-"}}
+{"ts": 1788347145.8350806, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 319, "score": 0}}
+{"ts": 1788347145.8351452, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 320, "name": "quaich", "clue": "|////|||---/"}}
+{"ts": 1788347145.835528, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 320, "solution": "/|/-|-|/|//-"}}
+{"ts": 1788347145.836355, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 320, "score": 0}}
+{"ts": 1788347145.8363633, "dir": "in", "msg": {"type": "challenge", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 321, "name": "quaich", "clue": "-|///-//--||-/"}}
+{"ts": 1788347145.8366084, "dir": "out", "msg": {"type": "answer", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 321, "solution": "/|/-|//-|//---"}}
+{"ts": 1788347145.837466, "dir": "in", "msg": {"type": "result", "round_id": "319dfcf6ae744ed2b676fba09211a858", "index": 321, "score": 0}}
+{"ts": 1788347145.8411467, "dir": "in", "msg": {"type": "round_over", "round_id": "319dfcf6ae744ed2b676fba09211a858", "kind": "training", "presented": 322, "answered": 322, "correct": 64, "items": [{"index": 0, "name": "quaich", "clue": "-/-/|/-|-/|-", "solution": "/|/---|/-|/-", "score": 0}, {"index": 1, "name": "quaich", "clue": "-/|--|/||-//-///||", "solution": "/|//-|/-|/-||-|//-", "score": 0}, {"index": 2, "name": "quaich", "clue": "|/|/|/|-|//||/||-/", "solution": "//|/|/|/|/|||-||/-", "score": 0}, {"index": 3, "name": "quaich", "clue": "/|----///-/--|||", "solution": "//-|/--|/-|--|/-", "score": 0}, {"index": 4, "name": "quaich", "clue": "//-|//-//-/-|-/|--", "solution": "////--|/-|/---/|/-", "score": 0}, {"index": 5, "name": "quaich", "clue": "/-/|//|-|||---", "solution": "/|/-||/-|--|/-", "score": 0}, {"index": 6, "name": "quaich", "clue": "///|---/---/||-|", "solution": "//-|-|/-|/|/----", "score": 0}, {"index": 7, "name": "quaich", "clue": "|/||-|-|-/|/|-", "solution": "/|/|-|-|||-|/-", "score": 0}, {"index": 8, "name": "quaich", "clue": "|/--/-//-//|/-/|-|", "solution": "////-|/-|//--||/--", "score": 0}, {"index": 9, "name": "quaich", "clue": "-/|-||/-/----|", "solution": "/|/-|-|/-|----", "score": 0}, {"index": 10, "name": "quaich", "clue": "-/|/|--///-|", "solution": "//-|/-|/|/--", "score": 0}, {"index": 11, "name": "quaich", "clue": "|//||/|//--|/|", "solution": "/|/|/|/|-|/|/-", "score": 1}, {"index": 12, "name": "quaich", "clue": "|--|/-|-|/-||/", "solution": "/|-|/|-|-|-|/-", "score": 1}, {"index": 13, "name": "quaich", "clue": "-|--//-|--|-|/", "solution": "/|/-|-|/-|----", "score": 0}, {"index": 14, "name": "quaich", "clue": "--/|-/||-|-|/-|--|", "solution": "/|-|/|/-|-|-|-|---", "score": 0}, {"index": 15, "name": "quaich", "clue": "|-||-|--/|--|--/", "solution": "/|/-|-|-|-|-|---", "score": 0}, {"index": 16, "name": "quaich", "clue": "-/|/--/|//||-|//", "solution": "//|//|/|/-|-|/--", "score": 1}, {"index": 17, "name": "quaich", "clue": "|--||//||//-", "solution": "/|/||/-|-|/-", "score": 1}, {"index": 18, "name": "quaich", "clue": "--/|//-|-|/|", "solution": "//|/-|-|-|/-", "score": 1}, {"index": 19, "name": "quaich", "clue": "//---//|/-|/|-//", "solution": "////-|//-|/-|/--", "score": 1}, {"index": 20, "name": "quaich", "clue": "|-|-///||/|/", "solution": "/||/|/-|/|/-", "score": 1}, {"index": 21, "name": "quaich", "clue": "/-|//|-|----|-", "solution": "/|-|/---|--|/-", "score": 0}, {"index": 22, "name": "quaich", "clue": "--///-/|//|/-|-|-/", "solution": "//-/-|/-|//-|/-|/-", "score": 0}, {"index": 23, "name": "quaich", "clue": "//-|//-///|---|/|-", "solution": "//|/-|///---|/-|/-", "score": 0}, {"index": 24, "name": "quaich", "clue": "|-|/||-////-/|", "solution": "//|-|/|/|//|--", "score": 0}, {"index": 25, "name": "quaich", "clue": "/|/|/-/-/-/||/||", "solution": "/|/-|//-|/||/|/-", "score": 0}, {"index": 26, "name": "quaich", "clue": "-/|-/|//|/|/|/", "solution": "//|/-|/|/|/|/-", "score": 1}, {"index": 27, "name": "quaich", "clue": "---/-/-|||/-/-|/", "solution": "//-|/-|/-|/-|---", "score": 0}, {"index": 28, "name": "quaich", "clue": "--//|/-|||//", "solution": "//|/|-|/|/--", "score": 1}, {"index": 29, "name": "quaich", "clue": "///|///|--||-||--/", "solution": "//|/-|-|-|/|/|/-/-", "score": 0}, {"index": 30, "name": "quaich", "clue": "|//-/--/-/|||-/-", "solution": "/|/-|//-|/|/----", "score": 0}, {"index": 31, "name": "quaich", "clue": "|||---|-|--|-//|-|", "solution": "/|/|-||-|--|-|-|--", "score": 0}, {"index": 32, "name": "quaich", "clue": "/-----/|//-||//|", "solution": "/|/-/-|/-|//-|--", "score": 0}, {"index": 33, "name": "quaich", "clue": "----//-///|/--/|-|", "solution": "//--|//--|/--|/-/-", "score": 0}, {"index": 34, "name": "quaich", "clue": "|---/|//--/-/|", "solution": "//--|/|/-|/---", "score": 0}, {"index": 35, "name": "quaich", "clue": "-|-/-/||--//", "solution": "//-|/--|-|/-", "score": 0}, {"index": 36, "name": "quaich", "clue": "||/|--//-|||-//-|-", "solution": "/|/|-|-||--|//-|/-", "score": 0}, {"index": 37, "name": "quaich", "clue": "-|-||-|-/-|//|||", "solution": "/||/-||-|-|-||/-", "score": 0}, {"index": 38, "name": "quaich", "clue": "|/|-||/|/-|//---", "solution": "/|//-|-|-|-|/|/-", "score": 1}, {"index": 39, "name": "quaich", "clue": "-||-|-////|-", "solution": "/|/--|-|/|/-", "score": 0}, {"index": 40, "name": "quaich", "clue": "/|/-||/|//-/", "solution": "/|/|/-|//|/-", "score": 0}, {"index": 41, "name": "quaich", "clue": "-/||---|///|", "solution": "/|-|-|//-|/-", "score": 1}, {"index": 42, "name": "quaich", "clue": "-///-|-||-|--/--||", "solution": "/|/-|/-|/-|-|-|---", "score": 0}, {"index": 43, "name": "quaich", "clue": "|||/|-///-|-/-|--/", "solution": "//-|/|/|/-|-|/-|--", "score": 0}, {"index": 44, "name": "quaich", "clue": "//-|/--||||/|//-", "solution": "/|-|/|//|/|-|/--", "score": 1}, {"index": 45, "name": "quaich", "clue": "-///---//|--//-||-", "solution": "//-|/-|/--|///----", "score": 0}, {"index": 46, "name": "quaich", "clue": "-|///|/---///-/|", "solution": "//-|/-|//--|///-", "score": 0}, {"index": 47, "name": "quaich", "clue": "/|///-/-|/----|/", "solution": "//-|/|///-|/----", "score": 0}, {"index": 48, "name": "quaich", "clue": "-/--|/-/-|--|||/", "solution": "/|/--|/-|/|-|---", "score": 0}, {"index": 49, "name": "quaich", "clue": "-/||||-|//-/|/---/", "solution": "/|/-|//-|/|-|/-|--", "score": 0}, {"index": 50, "name": "quaich", "clue": "-/--//-||-||", "solution": "/|/|-|/--|--", "score": 0}, {"index": 51, "name": "quaich", "clue": "|///|-||---/-|", "solution": "/|/|/-|--|-|/-", "score": 0}, {"index": 52, "name": "quaich", "clue": "/|//---||/-/|///||", "solution": "///|//-|-|/|/|-|/-", "score": 0}, {"index": 53, "name": "quaich", "clue": "-||-||///-|-", "solution": "/|-|/-||-|/-", "score": 0}, {"index": 54, "name": "quaich", "clue": "|-//--|--|-//-|-/-", "solution": "//-|/--|/-|/-|----", "score": 0}, {"index": 55, "name": "quaich", "clue": "-|/|-//|/-|//-", "solution": "///|/-|-|/-|/-", "score": 1}, {"index": 56, "name": "quaich", "clue": "-----||/-||/-///", "solution": "///|--|/-|/-|---", "score": 0}, {"index": 57, "name": "quaich", "clue": "||||////-///-|", "solution": "/|//|//|/|-|/-", "score": 0}, {"index": 58, "name": "quaich", "clue": "|--|//---|///---", "solution": "//-|/-|/-|/-----", "score": 0}, {"index": 59, "name": "quaich", "clue": "/--/|-/--|//-/||", "solution": "//-|/-|/-|//-|--", "score": 0}, {"index": 60, "name": "quaich", "clue": "//--|-|/--/-", "solution": "//---|/|/---", "score": 0}, {"index": 61, "name": "quaich", "clue": "--|/|||--/||", "solution": "/||-|-||-|/-", "score": 0}, {"index": 62, "name": "quaich", "clue": "-|/|-||/---|", "solution": "/|/|-|-|-|--", "score": 0}, {"index": 63, "name": "quaich", "clue": "|-|-|-//-|||", "solution": "/|||-|-|-|/-", "score": 0}, {"index": 64, "name": "quaich", "clue": "-/||/||/-/|--|", "solution": "/|/|-|/||/-|--", "score": 0}, {"index": 65, "name": "quaich", "clue": "-//-///|--||/-", "solution": "//-|/---|//|/-", "score": 0}, {"index": 66, "name": "quaich", "clue": "-//|//|-/-/---/-", "solution": "//-|/-|///---/--", "score": 0}, {"index": 67, "name": "quaich", "clue": "---//|-||//-", "solution": "/|/-|/-|/---", "score": 0}, {"index": 68, "name": "quaich", "clue": "|/|--|--/-//|/", "solution": "//-|/|/-|/|---", "score": 0}, {"index": 69, "name": "quaich", "clue": "|//-///|-/---//-", "solution": "//-|/-|/-////---", "score": 0}, {"index": 70, "name": "quaich", "clue": "/||/--/-/--/-//|-/", "solution": "///-|//--/-|/-|/--", "score": 0}, {"index": 71, "name": "quaich", "clue": "|-//||/-/|-/", "solution": "/|/-|/-|/|/-", "score": 0}, {"index": 72, "name": "quaich", "clue": "|/-|-//|--/-", "solution": "/|/-|/-|/---", "score": 0}, {"index": 73, "name": "quaich", "clue": "/-/|//--//|||||/", "solution": "/|/-|//|/|/|-|/-", "score": 0}, {"index": 74, "name": "quaich", "clue": "/||--|-/-|-//-", "solution": "/|/-|--|/--|/-", "score": 0}, {"index": 75, "name": "quaich", "clue": "////|--||-//-|/|", "solution": "/|/-|//-|/-|/|/-", "score": 0}, {"index": 76, "name": "quaich", "clue": "|-/|||---|||/-", "solution": "//||||-|-|-|--", "score": 0}, {"index": 77, "name": "quaich", "clue": "|--/-/|||-|-", "solution": "/|/|-|-|-|--", "score": 0}, {"index": 78, "name": "quaich", "clue": "-/|-//--|-////||/-", "solution": "//-|/|/|/-|//-/---", "score": 0}, {"index": 79, "name": "quaich", "clue": "/-/-|/-/-//--|", "solution": "///-|//--|/---", "score": 0}, {"index": 80, "name": "quaich", "clue": "-/|||/|||/-/|/-//|", "solution": "/|/|/||-|/|/-|/|/-", "score": 1}, {"index": 81, "name": "quaich", "clue": "//-|/|/||//||||-|-", "solution": "/|||/|/|-|/-||/|/-", "score": 0}, {"index": 82, "name": "quaich", "clue": "||-|---||/-///||/|", "solution": "/|/|/-|-|/|-|-||/-", "score": 0}, {"index": 83, "name": "quaich", "clue": "-|-/-/|//-/|-/-/-/", "solution": "//---|///-|/--|//-", "score": 0}, {"index": 84, "name": "quaich", "clue": "||-//|||-///|//--|", "solution": "/|/|/|/||/-|-|//--", "score": 1}, {"index": 85, "name": "quaich", "clue": "-/-|--/|/||-", "solution": "/|/-|-|/-|--", "score": 0}, {"index": 86, "name": "quaich", "clue": "//||/|-||/--", "solution": "/|/-|/-|||/-", "score": 0}, {"index": 87, "name": "quaich", "clue": "/-/||/-/|--|", "solution": "/|/-|/-|-|/-", "score": 0}, {"index": 88, "name": "quaich", "clue": "||--|-/|-//|", "solution": "/|-|-|-|/|/-", "score": 1}, {"index": 89, "name": "quaich", "clue": "/|||---|--/-", "solution": "/|/-|-|-|---", "score": 0}, {"index": 90, "name": "quaich", "clue": "||/|/-/|-|/|", "solution": "/|/|/|||-|/-", "score": 0}, {"index": 91, "name": "quaich", "clue": "-|//|-|-/---|---||", "solution": "/|--|-|/-|--|/-|--", "score": 0}, {"index": 92, "name": "quaich", "clue": "/||-/////-|//--/--", "solution": "//////-|/---|-|//-", "score": 0}, {"index": 93, "name": "quaich", "clue": "||/--|/||/-/|-", "solution": "/|/-||-|-|/|/-", "score": 0}, {"index": 94, "name": "quaich", "clue": "/|/-|-/||-/|-|", "solution": "/|-|/-|/||-|/-", "score": 0}, {"index": 95, "name": "quaich", "clue": "/|///|-|--|--||/-/", "solution": "/|/|/-|/|/-|/-|---", "score": 0}, {"index": 96, "name": "quaich", "clue": "--///|-/-/|/", "solution": "/|//---|///-", "score": 0}, {"index": 97, "name": "quaich", "clue": "/-|/|/|-/|/|", "solution": "/|/|-|/|/|/-", "score": 1}, {"index": 98, "name": "quaich", "clue": "//|//-/|-/--", "solution": "//--|/-|///-", "score": 0}, {"index": 99, "name": "quaich", "clue": "//|/--|-|--|//--", "solution": "/|/-|/-|/--|/---", "score": 0}, {"index": 100, "name": "quaich", "clue": "|//||-|/||///-", "solution": "/||/|-|/|//|/-", "score": 1}, {"index": 101, "name": "quaich", "clue": "||//|//|/-|||-/-//", "solution": "/|//-|/-|/|/|/||/-", "score": 0}, {"index": 102, "name": "quaich", "clue": "||-/|//||//-//-|", "solution": "/|/-|/|/|/-|/|/-", "score": 0}, {"index": 103, "name": "quaich", "clue": "/-||//--/-|///", "solution": "////-|/-|/-|/-", "score": 1}, {"index": 104, "name": "quaich", "clue": "//--||-|--/-", "solution": "//-|--|--|/-", "score": 0}, {"index": 105, "name": "quaich", "clue": "||||/-|/----|/", "solution": "/|/-|-|-|||/--", "score": 0}, {"index": 106, "name": "quaich", "clue": "|-/|||/||-/-", "solution": "/|||-|/|-|/-", "score": 0}, {"index": 107, "name": "quaich", "clue": "|--/-/|--/-/|-/-/-", "solution": "//-|/-|/-|/-----/-", "score": 0}, {"index": 108, "name": "quaich", "clue": "-|/--|-|//||--", "solution": "/|-|-|-|/-|/--", "score": 0}, {"index": 109, "name": "quaich", "clue": "/--/-|-|/|//|//|-/", "solution": "/|/|/-|/-|//-|/-/-", "score": 0}, {"index": 110, "name": "quaich", "clue": "-||/|||-/---/|--/-", "solution": "/|/-|--|/|--|--|/-", "score": 0}, {"index": 111, "name": "quaich", "clue": "|-||///|--||/|", "solution": "/|/||/|-|-||/-", "score": 0}, {"index": 112, "name": "quaich", "clue": "-/|/-/-/|/--", "solution": "/|///-|/----", "score": 0}, {"index": 113, "name": "quaich", "clue": "|--////|---//-", "solution": "///-|/---|//--", "score": 0}, {"index": 114, "name": "quaich", "clue": "---|/-|||-/-/||-", "solution": "/|/-|-|-|--|-|/-", "score": 0}, {"index": 115, "name": "quaich", "clue": "--||---|-//|//", "solution": "//-|/-|/-|-|--", "score": 0}, {"index": 116, "name": "quaich", "clue": "-|//|-/-|/--|/-///", "solution": "///-/-|/|/-|/|/---", "score": 0}, {"index": 117, "name": "quaich", "clue": "-||/|//-||--|-|/", "solution": "/|/-|/||-|-|-|/-", "score": 0}, {"index": 118, "name": "quaich", "clue": "/|//--//|-||-/-/", "solution": "////-|/--|-|/|/-", "score": 1}, {"index": 119, "name": "quaich", "clue": "-//|/|-|--||||", "solution": "/|-|/|-|-|||/-", "score": 0}, {"index": 120, "name": "quaich", "clue": "-|/-/--||-|||///", "solution": "//-||/-|/-||-|/-", "score": 0}, {"index": 121, "name": "quaich", "clue": "|/--|/-///--", "solution": "///-|/--|/--", "score": 0}, {"index": 122, "name": "quaich", "clue": "--|--|--|--/||/-||", "solution": "/|--|/|-|-|-|-|---", "score": 0}, {"index": 123, "name": "quaich", "clue": "-/--|||-/||/||-|", "solution": "/|/||-|-|-||-|/-", "score": 0}, {"index": 124, "name": "quaich", "clue": "|-|--||-/-/|||--//", "solution": "//|-|--|/-||/|-|--", "score": 0}, {"index": 125, "name": "quaich", "clue": "/|/-/|-||-/|/|", "solution": "/|/|-|/||/-|/-", "score": 1}, {"index": 126, "name": "quaich", "clue": "-/-/|//--/||--||/-", "solution": "//-|/-|/--|/-|/|--", "score": 0}, {"index": 127, "name": "quaich", "clue": "-|///|//--/---", "solution": "//-|/-|///----", "score": 0}, {"index": 128, "name": "quaich", "clue": "//|||-|//||-/-/-", "solution": "//||-|/-|/|/-|/-", "score": 1}, {"index": 129, "name": "quaich", "clue": "|--|/-/|/|-|", "solution": "/|/|-|-|-|/-", "score": 1}, {"index": 130, "name": "quaich", "clue": "//|///|--/|||-", "solution": "/|//-|/|/|-|/-", "score": 1}, {"index": 131, "name": "quaich", "clue": "|/--/|||-/||-|/--|", "solution": "/|-|/-|/-||-||-|/-", "score": 0}, {"index": 132, "name": "quaich", "clue": "/|-//|//-|-|-/", "solution": "/|/|/|/--|//--", "score": 0}, {"index": 133, "name": "quaich", "clue": "--|//--//|/|", "solution": "//-|/-|/-|/-", "score": 0}, {"index": 134, "name": "quaich", "clue": "-||////---|-//-|/|", "solution": "/|/|//-|/-|/-|/---", "score": 0}, {"index": 135, "name": "quaich", "clue": "--/|/--|/|/-", "solution": "/|/--|/-|/--", "score": 0}, {"index": 136, "name": "quaich", "clue": "|-|---/-||/|--/|-/", "solution": "//-|/--|||--|/-|--", "score": 0}, {"index": 137, "name": "quaich", "clue": "/||/|/--|-||-/-|", "solution": "/|/-|/-|-||-||/-", "score": 0}, {"index": 138, "name": "quaich", "clue": "-|-//-|-////", "solution": "//-|/-|///--", "score": 0}, {"index": 139, "name": "quaich", "clue": "-||-///|/||/", "solution": "/|-|/|/|/|/-", "score": 1}, {"index": 140, "name": "quaich", "clue": "-|-/--///|-/|/", "solution": "//--|/-|//-|/-", "score": 0}, {"index": 141, "name": "quaich", "clue": "--/|-|||/--/--", "solution": "/|/-|/-|--|---", "score": 0}, {"index": 142, "name": "quaich", "clue": "-/-|/||-|//--/", "solution": "//-|/-|/|/-|--", "score": 0}, {"index": 143, "name": "quaich", "clue": "-/|-|--||/-/|--|--", "solution": "/|/-|-|-|/--|-|---", "score": 0}, {"index": 144, "name": "quaich", "clue": "/|||--|///--|/", "solution": "/|//|-|/|-|/--", "score": 1}, {"index": 145, "name": "quaich", "clue": "-/--//--/||//-//", "solution": "////--|/-|/-//--", "score": 0}, {"index": 146, "name": "quaich", "clue": "/||/-|/|-|--|/", "solution": "/|/|-|/|-|-|/-", "score": 1}, {"index": 147, "name": "quaich", "clue": "|/-||-/|-/-/--///-", "solution": "//-|/-|/--|//|/---", "score": 0}, {"index": 148, "name": "quaich", "clue": "-//||/-///|/--", "solution": "//-|/-|//-|//-", "score": 0}, {"index": 149, "name": "quaich", "clue": "|-|/-|/--///", "solution": "//-|/|/-|/--", "score": 0}, {"index": 150, "name": "quaich", "clue": "-|//---//||-|/", "solution": "//-|/-|/-|/|--", "score": 0}, {"index": 151, "name": "quaich", "clue": "-|-//|/|//--", "solution": "//|/-|/--|/-", "score": 0}, {"index": 152, "name": "quaich", "clue": "|--|-|/|----|/", "solution": "/|/-|--|-|-|--", "score": 0}, {"index": 153, "name": "quaich", "clue": "//|-/-/||/|/", "solution": "/|/|/|//-|/-", "score": 1}, {"index": 154, "name": "quaich", "clue": "---/||--|/||/|", "solution": "/|/|-|-|-|-|/-", "score": 1}, {"index": 155, "name": "quaich", "clue": "--||----/-|-/||/", "solution": "/|/-|---|/-|-|--", "score": 0}, {"index": 156, "name": "quaich", "clue": "|-//-///|----/-|-|", "solution": "/|//---|/-|//|----", "score": 0}, {"index": 157, "name": "quaich", "clue": "---/-|-||/-||-", "solution": "//|-|-|-|-|---", "score": 0}, {"index": 158, "name": "quaich", "clue": "-|/||//|-|/|||/-|-", "solution": "/|/|/|/|-|||-|-|/-", "score": 0}, {"index": 159, "name": "quaich", "clue": "/-/|/|/-|/-/", "solution": "//-|/-|/|//-", "score": 0}, {"index": 160, "name": "quaich", "clue": "||||/----|-/|/", "solution": "/||-|-|/-|-|/-", "score": 1}, {"index": 161, "name": "quaich", "clue": "-||--//-///--||-", "solution": "/|/|/|/-|/------", "score": 0}, {"index": 162, "name": "quaich", "clue": "--|/||-/---////-", "solution": "//--|/-|//-|/---", "score": 0}, {"index": 163, "name": "quaich", "clue": "|//||/||--/|/--/", "solution": "/|/-|/|/|-|/-|/-", "score": 0}, {"index": 164, "name": "quaich", "clue": "|||//|/---/--||/", "solution": "//-||/-|/-||-|/-", "score": 0}, {"index": 165, "name": "quaich", "clue": "-|/||-|-|//|-/|-", "solution": "/|/|-|-|/|/|-|--", "score": 0}, {"index": 166, "name": "quaich", "clue": "-|//---|/-/-/-//|/", "solution": "///-|/-|//-|/---/-", "score": 0}, {"index": 167, "name": "quaich", "clue": "/||||/||---|--", "solution": "/|-|-||-|-||/-", "score": 0}, {"index": 168, "name": "quaich", "clue": "|-||---//|/---", "solution": "/|/-|-|---|/--", "score": 0}, {"index": 169, "name": "quaich", "clue": "-/-/|-/|-/|/|--///", "solution": "///|///-|/-|/-|---", "score": 0}, {"index": 170, "name": "quaich", "clue": "-||//|-|--//", "solution": "/|/-|/-|-|/-", "score": 0}, {"index": 171, "name": "quaich", "clue": "////|/|/--|--||-", "solution": "//-|/-|/-|-|/|/-", "score": 0}, {"index": 172, "name": "quaich", "clue": "-/-||/---|-/", "solution": "/|/---|/-|--", "score": 0}, {"index": 173, "name": "quaich", "clue": "-|-/|//--||/|-//|-", "solution": "//|/|/|/-|-|/--|--", "score": 0}, {"index": 174, "name": "quaich", "clue": "|//|-|/--|/|||", "solution": "/|/|/|-|||-|/-", "score": 0}, {"index": 175, "name": "quaich", "clue": "|//|-/|-/||-", "solution": "/|/|/|-|-|/-", "score": 1}, {"index": 176, "name": "quaich", "clue": "/-/-|-/////|-|", "solution": "//-|///|/--|/-", "score": 1}, {"index": 177, "name": "quaich", "clue": "-||/|||//|--|/-|/-", "solution": "/|/-|-|/|-|/||-|/-", "score": 0}, {"index": 178, "name": "quaich", "clue": "/---/||///||-/", "solution": "/|/|/-|/-|/-/-", "score": 0}, {"index": 179, "name": "quaich", "clue": "---//--||/////-/", "solution": "///-|/-|////----", "score": 1}, {"index": 180, "name": "quaich", "clue": "--|///|-||/-||/-/|", "solution": "/|/|/-|-|/|/|/|---", "score": 0}, {"index": 181, "name": "quaich", "clue": "--||---//////|", "solution": "//-|//-|//-|--", "score": 0}, {"index": 182, "name": "quaich", "clue": "//-|//-|/|--", "solution": "//-|/-|/-|/-", "score": 0}, {"index": 183, "name": "quaich", "clue": "|/--|/--||--|-", "solution": "/|/-|-|-|-|---", "score": 0}, {"index": 184, "name": "quaich", "clue": "-|/|--/-//-/||-/|/", "solution": "/|-|/-/-|///-|-|/-", "score": 0}, {"index": 185, "name": "quaich", "clue": "|/|/-|-/|///|-/|", "solution": "/|/|/|//|/-|-|/-", "score": 1}, {"index": 186, "name": "quaich", "clue": "|/--/-/||-|/||-/", "solution": "/|/-|/-|/|/|-|--", "score": 0}, {"index": 187, "name": "quaich", "clue": "-/----||/-//||", "solution": "/|-|/---|/-|/-", "score": 0}, {"index": 188, "name": "quaich", "clue": "-|/||/-/|-/|--/---", "solution": "/|/|/-|--|/--|/---", "score": 0}, {"index": 189, "name": "quaich", "clue": "|/---||-|/|/|//-", "solution": "/|/||/---|/|-|/-", "score": 0}, {"index": 190, "name": "quaich", "clue": "//|-//-|//-|-/-/|/", "solution": "///-//-|/-|/-|/|/-", "score": 1}, {"index": 191, "name": "quaich", "clue": "-/--//-|/-|///-|", "solution": "//-|/-|/-|///---", "score": 0}, {"index": 192, "name": "quaich", "clue": "-||--/|-||-/-|//", "solution": "/|-|/-|-|/|-|/--", "score": 0}, {"index": 193, "name": "quaich", "clue": "--/||||//-|-||--/-", "solution": "/|-||/-|-|/-|--|/-", "score": 0}, {"index": 194, "name": "quaich", "clue": "/||/|-/|||/|-/", "solution": "/||/|/|/||-|/-", "score": 0}, {"index": 195, "name": "quaich", "clue": "/|-/||/-|//---", "solution": "/|/|/-|/-|/---", "score": 0}, {"index": 196, "name": "quaich", "clue": "-||/--|//-|/-/|--|", "solution": "/|--||/-|/-|/|/---", "score": 0}, {"index": 197, "name": "quaich", "clue": "|-|----//|||//||", "solution": "/|-|-||/-|/|-|/-", "score": 1}, {"index": 198, "name": "quaich", "clue": "-//|/||/-|||-|", "solution": "/|-|/|/||-||/-", "score": 0}, {"index": 199, "name": "quaich", "clue": "|--/|-|--/||---/", "solution": "/|/-|-|/-|-|----", "score": 0}, {"index": 200, "name": "quaich", "clue": "/--|/-///-/-/-|-/-", "solution": "//---|///-/--|//--", "score": 0}, {"index": 201, "name": "quaich", "clue": "--||||-/////||||", "solution": "/|-||/||-|/|/|/-", "score": 0}, {"index": 202, "name": "quaich", "clue": "|-|///--/-||", "solution": "//-|/|-|-|/-", "score": 1}, {"index": 203, "name": "quaich", "clue": "|-|/|-|---|/", "solution": "/|/-|-|-||--", "score": 0}, {"index": 204, "name": "quaich", "clue": "/||-|--//---|||/", "solution": "//-|-|-|/|-||/--", "score": 0}, {"index": 205, "name": "quaich", "clue": "/---//-|/---////|-", "solution": "//-//---|//--|//--", "score": 0}, {"index": 206, "name": "quaich", "clue": "--/||/---/|--/|-", "solution": "//-|/--|-|/|----", "score": 0}, {"index": 207, "name": "quaich", "clue": "|/-//|||-|/|/|//||", "solution": "/|/|/|/|/|/|||-|/-", "score": 0}, {"index": 208, "name": "quaich", "clue": "---//---/|||", "solution": "/|/---|/-|--", "score": 0}, {"index": 209, "name": "quaich", "clue": "|--||/||-|//|/|//|", "solution": "/|||/|/|-|-|/||//-", "score": 0}, {"index": 210, "name": "quaich", "clue": "/--/-//|---/|/|/", "solution": "/|/-|//----|///-", "score": 0}, {"index": 211, "name": "quaich", "clue": "---|/|///||/-//|", "solution": "/|/-|//-|/|/-|/-", "score": 0}, {"index": 212, "name": "quaich", "clue": "//|||-|/||-|----", "solution": "/|-|/|-|-|-||/--", "score": 0}, {"index": 213, "name": "quaich", "clue": "|/|/---|//||-||/", "solution": "/|/|/|/-|-||-|/-", "score": 0}, {"index": 214, "name": "quaich", "clue": "-|--|||////-|-", "solution": "/|/-|/|/-|-|--", "score": 0}, {"index": 215, "name": "quaich", "clue": "/--||//||-/-|||/||", "solution": "/||/|-||/|/|-|-|/-", "score": 0}, {"index": 216, "name": "quaich", "clue": "/||||//-/|-|-/", "solution": "/|/|/-|-||/|/-", "score": 0}, {"index": 217, "name": "quaich", "clue": "/||///|----||/-|/|", "solution": "/|-|-|/-|/-|/|/|/-", "score": 0}, {"index": 218, "name": "quaich", "clue": "--/-|/|||///", "solution": "/|/|-|//-|/-", "score": 1}, {"index": 219, "name": "quaich", "clue": "/|-||/||-|//|/", "solution": "/|/|/|/|||-|/-", "score": 0}, {"index": 220, "name": "quaich", "clue": "-|/|///--|-|", "solution": "/|/--|/|-|/-", "score": 0}, {"index": 221, "name": "quaich", "clue": "--|//-//|/|-///-", "solution": "/////-|/-|/-|/--", "score": 1}, {"index": 222, "name": "quaich", "clue": "/||//-/---/||-|/", "solution": "///-|/-|/|-|-|/-", "score": 1}, {"index": 223, "name": "quaich", "clue": "||/-|-/--|-//|", "solution": "/|-|/-|-|/-|/-", "score": 0}, {"index": 224, "name": "quaich", "clue": "--//|/|--|||/|/||/", "solution": "/|//|-||-|/|-|/|/-", "score": 0}, {"index": 225, "name": "quaich", "clue": "///|//||||||///-|-", "solution": "//|/|||/|/|/|/-|/-", "score": 0}, {"index": 226, "name": "quaich", "clue": "/|//|--|-///", "solution": "///-|/-|/|/-", "score": 1}, {"index": 227, "name": "quaich", "clue": "/-|-//-|//|/", "solution": "//|/-|//-|/-", "score": 1}, {"index": 228, "name": "quaich", "clue": "|/|/-///||---|", "solution": "//-|/|/|/|-|--", "score": 0}, {"index": 229, "name": "quaich", "clue": "||/-///-/|/--|", "solution": "//|/--|/-|/|/-", "score": 0}, {"index": 230, "name": "quaich", "clue": "//--/|-||//-", "solution": "/|//--|/-|/-", "score": 0}, {"index": 231, "name": "quaich", "clue": "|//|/-|--|//--", "solution": "//|/-|/-|/-|--", "score": 0}, {"index": 232, "name": "quaich", "clue": "|--|/-////|-||--", "solution": "/|/-|-|/-|/--|/-", "score": 0}, {"index": 233, "name": "quaich", "clue": "----/|||//|-|-|///", "solution": "//-|/|-|--|/|/-|/-", "score": 1}, {"index": 234, "name": "quaich", "clue": "-|-|//|----/", "solution": "/|/-|/-|----", "score": 0}, {"index": 235, "name": "quaich", "clue": "|-|-//||-|||/-", "solution": "/|/|-|||-|-|/-", "score": 0}, {"index": 236, "name": "quaich", "clue": "///--//|-|--", "solution": "///-|/--|/--", "score": 0}, {"index": 237, "name": "quaich", "clue": "-|-|/----/-/|/|-", "solution": "/|/-|/---|/--|--", "score": 0}, {"index": 238, "name": "quaich", "clue": "///||/|-|//-", "solution": "//|/|/|/-|/-", "score": 1}, {"index": 239, "name": "quaich", "clue": "----|/-/|-|/|-", "solution": "/|/|--|-|/----", "score": 0}, {"index": 240, "name": "quaich", "clue": "-|--||-|||/---//", "solution": "//-|--|-|-||-|/-", "score": 1}, {"index": 241, "name": "quaich", "clue": "/|/--////-/-|-/-", "solution": "///--|/-|/-//-/-", "score": 0}, {"index": 242, "name": "quaich", "clue": "|-|-/-|/|/-|", "solution": "/|/|-|-|-|/-", "score": 1}, {"index": 243, "name": "quaich", "clue": "--///-/-/-/-||//", "solution": "//-|///-|///----", "score": 1}, {"index": 244, "name": "quaich", "clue": "//|/-//|-||/||", "solution": "/|/|/|/||/-|/-", "score": 1}, {"index": 245, "name": "quaich", "clue": "//-|-||//-/|||-/", "solution": "/|/-|/|/|/|/-|--", "score": 0}, {"index": 246, "name": "quaich", "clue": "||//---///--", "solution": "//-|/--|/-/-", "score": 0}, {"index": 247, "name": "quaich", "clue": "/||-//|//|//--", "solution": "/|///-|/|/-|/-", "score": 1}, {"index": 248, "name": "quaich", "clue": "|-----|-||//", "solution": "//|-|-|--|--", "score": 0}, {"index": 249, "name": "quaich", "clue": "/-|//|/---||//|/", "solution": "/|/-|//|/|/--|/-", "score": 0}, {"index": 250, "name": "quaich", "clue": "||//--||||////||", "solution": "/|/|/|/|/|||-|/-", "score": 0}, {"index": 251, "name": "quaich", "clue": "-|||/|/|//|-/|/---", "solution": "/|/-|-|/|/-|/-||/-", "score": 0}, {"index": 252, "name": "quaich", "clue": "/||||--|/|//", "solution": "//|/||/|||--", "score": 0}, {"index": 253, "name": "quaich", "clue": "-/////|/--|--/", "solution": "///---|///-|/-", "score": 0}, {"index": 254, "name": "quaich", "clue": "///|//|-----/-|-", "solution": "//-|//-|/---|/--", "score": 0}, {"index": 255, "name": "quaich", "clue": "-|/|||--|-/|--//", "solution": "/|-|/-|/-|-|-|/-", "score": 0}, {"index": 256, "name": "quaich", "clue": "/-/|/-/||//|", "solution": "//|/-|/|/|/-", "score": 1}, {"index": 257, "name": "quaich", "clue": "--//-//|-//|/|", "solution": "/|/-|////-|/--", "score": 0}, {"index": 258, "name": "quaich", "clue": "-|-|--|-/|///-||-/", "solution": "//-|/|/|/-|-|-|---", "score": 0}, {"index": 259, "name": "quaich", "clue": "---///-/-/|-|-||", "solution": "//-|/-|/-|-|/---", "score": 0}, {"index": 260, "name": "quaich", "clue": "/|/|-/-|/|/|---/", "solution": "/|/-|/-|/|//-|--", "score": 0}, {"index": 261, "name": "quaich", "clue": "||||--/-|-/-||", "solution": "/|/||-||-|-|--", "score": 0}, {"index": 262, "name": "quaich", "clue": "-|-///|-///--/", "solution": "///-|/-/-|//--", "score": 1}, {"index": 263, "name": "quaich", "clue": "--||--/||/|//-//", "solution": "//-|/-|/-|/-||/-", "score": 0}, {"index": 264, "name": "quaich", "clue": "||-/-|-|-|||--//", "solution": "//|-|-||-|/|-|--", "score": 0}, {"index": 265, "name": "quaich", "clue": "-|/-|||-|/--//", "solution": "/|/-|-|-|/-|/-", "score": 0}, {"index": 266, "name": "quaich", "clue": "|-/|-/-//|||/|", "solution": "/|/-|/|/||-|/-", "score": 0}, {"index": 267, "name": "quaich", "clue": "/|||/|///|///|-||-", "solution": "/|/|/|/|/|/|/|-|/-", "score": 1}, {"index": 268, "name": "quaich", "clue": "|||///-/|--/-/", "solution": "//|//|/-|/-|--", "score": 0}, {"index": 269, "name": "quaich", "clue": "|-//|--|/|/---|/", "solution": "//-|/|/-|/-|-|--", "score": 0}, {"index": 270, "name": "quaich", "clue": "//-//----/---/||//", "solution": "/////-|/-|/-----/-", "score": 0}, {"index": 271, "name": "quaich", "clue": "//|-//|/|||---|-|-", "solution": "/|-|/-|/|/-|-|-|/-", "score": 0}, {"index": 272, "name": "quaich", "clue": "--/|||-//--||/", "solution": "/|/-|-|-|/|/--", "score": 0}, {"index": 273, "name": "quaich", "clue": "|--||-|/|-|/|-/-", "solution": "/|/-|/||-|-|-|--", "score": 0}, {"index": 274, "name": "quaich", "clue": "||///-//--//--", "solution": "//-/-|///--|/-", "score": 1}, {"index": 275, "name": "quaich", "clue": "-|-|-|/--//-|/-|", "solution": "/|-|/--|-|/-|/--", "score": 0}, {"index": 276, "name": "quaich", "clue": "||/-//-/-/----|--/", "solution": "//|/-|/-----|/-/--", "score": 0}, {"index": 277, "name": "quaich", "clue": "--|||--/---||////|", "solution": "/||/|/---|--|/-|/-", "score": 0}, {"index": 278, "name": "quaich", "clue": "/-||-/---|/|", "solution": "/|/-|-|-|/--", "score": 0}, {"index": 279, "name": "quaich", "clue": "|/|/|-/||||--/////", "solution": "/|/|/|/|/|/|/--|/-", "score": 0}, {"index": 280, "name": "quaich", "clue": "/-|/--/||-|-//|-//", "solution": "/||/-|/--|--|////-", "score": 0}, {"index": 281, "name": "quaich", "clue": "/|--|||||//|-/", "solution": "/||/|/-|-|||/-", "score": 0}, {"index": 282, "name": "quaich", "clue": "/|---/|-|/-||/-/", "solution": "/|/-|/-|/-|/-|--", "score": 0}, {"index": 283, "name": "quaich", "clue": "-/--|-///--/-/-||-", "solution": "//-|/-|/-|//------", "score": 0}, {"index": 284, "name": "quaich", "clue": "|-/-|--|/|-/-|", "solution": "/|-|/|--|/-|--", "score": 0}, {"index": 285, "name": "quaich", "clue": "/-||/-/-/-|/", "solution": "//|/|/-|/---", "score": 0}, {"index": 286, "name": "quaich", "clue": "|--|-/|/-/|//|", "solution": "/|-|/|//-|-|/-", "score": 1}, {"index": 287, "name": "quaich", "clue": "-//-|/-/-//-|//-/-", "solution": "//-|//-|/////-----", "score": 1}, {"index": 288, "name": "quaich", "clue": "-/|//--/----|/", "solution": "//----|/-/-|/-", "score": 0}, {"index": 289, "name": "quaich", "clue": "|-/-|//////-|-", "solution": "///|//-|/-|/--", "score": 1}, {"index": 290, "name": "quaich", "clue": "|/-///|||-|/", "solution": "/|/|/|/|-|/-", "score": 1}, {"index": 291, "name": "quaich", "clue": "///-|||--|||", "solution": "/|-|/|||-|/-", "score": 0}, {"index": 292, "name": "quaich", "clue": "|-|-|///--//|--/--", "solution": "/|/-/-|/-|/-|/----", "score": 0}, {"index": 293, "name": "quaich", "clue": "-||-/|-///-/", "solution": "//-|--|//|/-", "score": 0}, {"index": 294, "name": "quaich", "clue": "|//-/-|-|/|/", "solution": "//|/-|/|-|/-", "score": 1}, {"index": 295, "name": "quaich", "clue": "/||/-//|/|//|--|--", "solution": "/|/-|/-|/-|/|/-|/-", "score": 0}, {"index": 296, "name": "quaich", "clue": "|/|/||--|--|-//|", "solution": "//|/-|-|||/|-|--", "score": 0}, {"index": 297, "name": "quaich", "clue": "-||||/-////|//|--|", "solution": "/|-|/|/|/-|/|/-|/-", "score": 0}, {"index": 298, "name": "quaich", "clue": "-/||--/|--|--||-", "solution": "//-|-|-|-|-|-|--", "score": 0}, {"index": 299, "name": "quaich", "clue": "|/||-/-|-/||||///-", "solution": "/|/|/-|/|-||/|-|/-", "score": 0}, {"index": 300, "name": "quaich", "clue": "-|/|---|/-|||/", "solution": "//|-|-||-|-|/-", "score": 0}, {"index": 301, "name": "quaich", "clue": "-|--/||--//|-|-|", "solution": "/|-|/-|-|-|/|---", "score": 0}, {"index": 302, "name": "quaich", "clue": "--||/|||/--/", "solution": "/|/|-|-|-|/-", "score": 1}, {"index": 303, "name": "quaich", "clue": "--||-|-|/-|/-/", "solution": "/|/-|/-|-|-|--", "score": 0}, {"index": 304, "name": "quaich", "clue": "|-----/|//-//-", "solution": "//-|//---|/---", "score": 0}, {"index": 305, "name": "quaich", "clue": "--|-//|///-/-|/-|-", "solution": "/|//-|-|/-|///----", "score": 0}, {"index": 306, "name": "quaich", "clue": "|||//|-|-/-/-/", "solution": "/|/|//|/-|-|--", "score": 0}, {"index": 307, "name": "quaich", "clue": "|-//|/--|/|/-/||", "solution": "/|/-|/|/|/-|-|/-", "score": 0}, {"index": 308, "name": "quaich", "clue": "-/-//|||--|-/-", "solution": "//-|/-||-|/---", "score": 0}, {"index": 309, "name": "quaich", "clue": "|-/|-|/|-//||||//|", "solution": "/|/|/|/|-||-|/||/-", "score": 0}, {"index": 310, "name": "quaich", "clue": "|//|-/|||-/--/--||", "solution": "/|/|-|--|/|-|/-|/-", "score": 1}, {"index": 311, "name": "quaich", "clue": "||/-//////-|-|", "solution": "//|/-|//|/-|/-", "score": 1}, {"index": 312, "name": "quaich", "clue": "|//|-///-/--", "solution": "///-|//-|/--", "score": 1}, {"index": 313, "name": "quaich", "clue": "/---//-----//-||/|", "solution": "/|/-/--|//--|/----", "score": 0}, {"index": 314, "name": "quaich", "clue": "|/-|||/--/-|", "solution": "/|/|-|-|-|/-", "score": 1}, {"index": 315, "name": "quaich", "clue": "/|/--/|//-||/---", "solution": "//-|/-|/|/--|/--", "score": 0}, {"index": 316, "name": "quaich", "clue": "/|-/-|/|-/-|/|//", "solution": "///-|-|/|/|/-|/-", "score": 1}, {"index": 317, "name": "quaich", "clue": "/-//--||/|/-", "solution": "/|/-|/-|/-/-", "score": 0}, {"index": 318, "name": "quaich", "clue": "-/-|--/|--|/", "solution": "/|/-|/-|----", "score": 0}, {"index": 319, "name": "quaich", "clue": "|-/|/||/|---//", "solution": "/|/-|/-|/-||/-", "score": 0}, {"index": 320, "name": "quaich", "clue": "|////|||---/", "solution": "/|/-|-|/|//-", "score": 0}, {"index": 321, "name": "quaich", "clue": "-|///-//--||-/", "solution": "/|/-|//-|//---", "score": 0}], "rounds_used": 5, "next_round_available_at": 1788347150.3371007, "demo_available": true}}

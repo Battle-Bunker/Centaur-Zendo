@@ -200,3 +200,105 @@ move rule and add a second everyday clause the demos cannot show negatively — 
 also read as a valid clock time, or the moved sticks must all come from one digit. If it comes
 back "neither cracked", soften by fixing N=1 for a third of clues and letting `solve()` prefer
 single-digit moves, which makes the 0<->9 / 2<->3 tell louder in a single demo.
+
+---
+
+## Iteration 2 — RESULT: both players cracked v2, one FASTER than v1
+
+| player | rounds (correct/answered) | final | demos | cracked |
+|---|---|---|---|---|
+| quilm2a | 3/498, 5/604, 14/452, 19/438, 490/495, 465/465 | 2698/2698 (100 %) | 3 | round 5 |
+| quilm2b | 0/0, 25/485, 496/496, 544/544, 522/522, 579/579 | 2817/2817 (100 %) | 3 | **round 3** |
+
+The relational rewrite did what it was designed to do — no one ran an identification scan,
+and nobody memorised a clue — and the class still got *easier* (crack in round 3 vs round 4
+in v1). What actually happened:
+
+* quilm2b spent round 2 on eight cycling edit variants at Hamming distance k-1/k/k+1 from the
+  clue, which produced 485 labelled examples in one round. Isolating the accepted
+  single-digit edits (9->0, 2->3, 3->2 accepted; 7->6, 5->4, 0->1 rejected) showed segment
+  counts being conserved, and the whole rule followed at once.
+* quilm2a reached the same k=1 substitution table (3<->2, 6<->9, 0<->9) two rounds later.
+
+### Diagnosis: the object was not the leak — the *genre* was
+
+v1's leak was structural: `property(answer) == clue` is an oracle for that property, so a
+fixed answer scanned across clues reads it off. v2 removed that and lost anyway, for a
+different reason: **"move k matchsticks on a seven-segment display" is a famous puzzle
+genre.** The moment a handful of accepted single-digit edits are visible, the model does not
+*infer* the rule, it *recognises* it — and everything else (the balance clause, multi-digit
+compensation, the exact counting) comes free with the recognition, because it is part of the
+genre's definition.
+
+The general lesson, and the thing to design against next time: recognising the object must be
+**necessary but not sufficient**. In v1 and v2 the object admitted exactly one natural
+relation, so "which object" and "which rule" were the same question. Difficulty has to live in
+a second, independent question. A cheap pre-build test: *if you can name the puzzle in three
+words — "move one matchstick", "knight dialer", "calculator upside down", "opposite faces sum
+to seven" — a model already holds a prior over the whole rule, not just the object.*
+
+### Second lesson: no negative-only clauses
+
+v2's "Y must not be a rearrangement of X" only ever manifested as a rejection. Demos show
+satisfying examples only, so a clause that no demo can exhibit is invisible: both players hit
+it, neither could motivate it, and quilm2a called it "undiscoverable except by accident". It
+cost them real rounds for no design benefit. **Constraints of that shape belong in
+`generate()`, not in `score()`** — restrict the instances so the degenerate family never
+applies, and let the scorer state exactly the rule the player has to find.
+
+## Final version (shipped in `challenges/lab/quilm.json`)
+
+Change made after iteration 2: the anagram clause is **out of the scorer** and the same
+protection now lives in `generate()`, which only emits a clue when no rearrangement of X's own
+digits is a valid answer. Verified on 3000 generated clues: the best-permutation oracle scores
+0.00 %, so `X` reversed / sorted / permuted are still worthless (0.00 % each) — and the
+scorer now agrees with the stated rule on 100 % of inputs (0 disagreements in 24,000 random
+answers), so nothing a player can construct from the rule is ever rejected.
+
+Cost of moving the clause: the survival rate falls with length (~50 % at k=3, ~6 % at k=6), so
+`k` and `N` are re-weighted to keep both distributions near-flat (k: 27/30/21/22 %,
+N: 31/26/29/14 %). Side effect, documented for honesty: surviving clues carry a repeated digit
+76 % of the time versus a 54 % baseline. It is not exploitable — the answer does not depend on
+it — but it is visible.
+
+Final measurements (3000 seeds): score **313** chars (cap 512), solve 1848, generate 2802;
+generate max 6.9 ms, solve max 0.25 ms, score 0.05 ms (0.0008 ms on junk, never raises, always
+0/1); `quickcheck --seeds 200` OK with no warnings; `solve()` scores 1 on all 3000 and is
+deterministic; demo answers change 1-6 digits (mode 2). Blind witnesses: empty / whitespace /
+clue / echo X / any permutation 0.00 %; constants 1.2 %; random same-length string 0.9 %;
+random single-digit edit 3.9 %; the highest coincidental family is "first digit +1 mod 10" at
+6.3 %. Partial-insight ceiling (best single-digit edit) 47 %; full insight 100 % at
+0.05 ms/answer.
+
+## Classification: TOO EASY for Opus-level centaurs; good for kid-level play
+
+Four out of four Opus players cracked it, none needed more than 4 demos, and hardening the
+structure made it *faster* to crack, not slower. That is the honest read: as a discriminator
+at the top of the field this class does not work. As a school-level challenge it is a good
+one — a real everyday object, a rule a child can state in one sentence, a visible partial-credit
+tier (single-digit swaps get you ~47 %), instant scoring, and no maths beyond counting to four.
+
+## v3 sketch (NOT built) — break the genre prior, keep the object
+
+Same display, but the object supplies the **alphabet, not the operation**:
+
+* Clue: two digits, e.g. `4 7`.
+* Answer: a chain of digits `d1..dm`, m >= 4, all distinct, starting at 4 and ending at 7,
+  where consecutive glyphs **share exactly two lit segments** (`popcount(M[a] & M[b]) == 2`).
+* Scorer: the mask table plus one loop — ~250 chars. Endpoints and distinctness close the
+  empty, single-digit, constant and clue-echo witnesses; the chain is a construction.
+
+Why it should hold up better: "share exactly two bars" is not a move anyone has named. A model
+that pattern-matches "seven-segment!" gets the object and is still facing an open question —
+subset? symmetric difference = k? intersection = k? union = 7? disjoint? — each costing a probe
+cycle, and the famous matchstick move satisfies none of them. Recognition becomes necessary
+but not sufficient, which is exactly what v1 and v2 lacked. Residual risks to check before
+building: the relation graph must be connected enough that most endpoint pairs are solvable
+(otherwise generate rejects too much); demos leak whole chains, so 2-3 demos may still be
+enough for a determined player; and `solve()` must randomise chain length and route so the
+demos do not all show the same path.
+
+Alternative direction if the genre prior is to be avoided entirely: pick an everyday object
+with **no famous puzzle attached** — tally marks, the ragged first/last row of a calendar
+month, ruler fraction marks, the vertical flip between a phone keypad and a calculator keypad —
+and apply the three-word test above before writing a line of code.

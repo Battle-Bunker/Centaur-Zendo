@@ -1,0 +1,8 @@
+{
+ "name": "RUNIC",
+ "author": "strings-agent",
+ "description": "EASY. Canonical run-length encoding. Clue: a string of letter runs (alphabet a-g, run lengths 1..14, 5-9 runs). Solution: the canonical RLE, count-then-letter, e.g. 'aaabbc' -> '3a2b1c'. The scorer re-expands the answer, checks it equals the clue exactly, and checks adjacent groups use different letters, so the answer is unique. Counts are limited to two digits by the scorer regex, which also bounds the expansion so junk cannot blow up memory. Discovery path: one demo (clue 'aaabbbbccd' -> '3a4b2c1d') is usually enough; teams that guess 'letter-then-count' get 0 and flip the order next round. Intended as the confidence builder of my set.",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    al = 'abcdefg'\n    lens = [1, 1, 2, 2, 3, 3, 4, 5, 6, 9, 10, 12, 14]\n    s = ''\n    prev = ''\n    for _ in range(r.randint(5, 9)):\n        ch = r.choice([x for x in al if x != prev])\n        prev = ch\n        s += ch * r.choice(lens)\n    return s\n",
+ "solve": "def solve(clue):\n    out = ''\n    i = 0\n    while i < len(clue):\n        j = i\n        while j < len(clue) and clue[j] == clue[i]:\n            j += 1\n        out += str(j - i) + clue[i]\n        i = j\n    return out\n",
+ "score": "def score(c,s):\n g=re.findall(r'(\\d\\d?)([a-z])',s)\n return int(s>''and len(s)==sum(len(a)+1 for a,b in g)and''.join(b*int(a)for a,b in g)==c and all(g[i][1]!=g[i+1][1]for i in range(len(g)-1)))\n"
+}

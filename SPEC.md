@@ -295,5 +295,5 @@ Standalone: `python -m webapp.app --challenge-dir challenges --port 8081`.
   (the "61 minutes for 5-minute cooldowns" example matches; 30 s cooldown ⇒ 7 min).
 * One demo per cooldown window, available at game start and after each completed round.
 * Final test uses a shared (name, seed) sequence for all teams for fairness.
-* Ties broken by fewer answers (precision), then name.
+* Teams that ran their final rank above no-shows; ties broken by fewer answers (precision), then name.
 * Sandbox is a game-grade sandbox, not a security boundary; organisers review submissions.

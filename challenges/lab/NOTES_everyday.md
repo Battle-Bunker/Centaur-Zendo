@@ -128,3 +128,75 @@ pattern is loud in a single demo.
 Arena for iteration 1 is set up and running (ws://127.0.0.1:35521/ws, pool = quilm only,
 6 rounds / 0.5 s / 5 s cooldown). **No Agent/Task tool is available in this session**, so
 per sim/DESIGN_LOOP.md I stopped at step 3; see sim/results/lab-quilm-1/HANDOFF.md.
+
+---
+
+## Iteration 1 — RESULT: both players cracked (too easy)
+
+| player | rounds (correct/answered) | final | demos | cracked |
+|---|---|---|---|---|
+| quilma | 2/516, 3/486, 15/405, 493/493, 493/493, 486/486 | 3030/3030 (100 %) | 4 | round 4 |
+| quilmb | 0/0, 0/494, 1/502, 14/418, 100/590, 468/468 | 2579/2579 (100 %) | 6 | round 6 |
+
+Both believed the exact rule. The two attacks that did it:
+* **Identification scan (quilma).** v1's accept condition was `property(answer) == clue number`,
+  an *absolute* readout. Submitting a FIXED answer against every clue is therefore an oracle
+  for that property: whichever clue accepts it announces `F(answer)`. Near-identical fixed
+  answers (`0011 8888` -> 12 vs `0111 8888` -> 16) then differenced out the per-position
+  weights, which matched seven-segment popcounts.
+* **Cross-clue equations (quilmb).** 50 distinct clues made demo answers reusable and let
+  single-digit edits of a known-good answer be read as simultaneous equations (weights 2,4,6).
+  They also used the `X = "1"*K` shortcut I had flagged and left in.
+
+Diagnosis: the leak was **structural, not cosmetic**. Any rule of the form "some absolute
+number computed from the answer equals the clue" is scan-solvable, whatever the object is.
+Closing the `"1"*K` witness alone would not have helped.
+
+## Iteration 2 (`quilm` v2, live) — same object, relational rule
+
+Kept: the seven-segment display, i.e. the everyday reading is still "these digits are glyphs
+made of little bars". Changed: **the clue is now a partial object the answer must be built
+against, not a target number.**
+
+Clue `X/N` (X = 3..6 digits, N = 1..4). Answer: a number Y of the same length reached by
+switching exactly N segments OFF and exactly N ON across the whole display — *move exactly N
+matchsticks and read the new number* — and Y must not be a rearrangement of X's digits.
+
+Why this answers each attack:
+* **Scan is dead.** Validity is relative to the clue, so a fixed answer is accepted only for
+  the rare clue it happens to fit and yields no readout. Measured on 3000 clues: all-8s
+  0.0 %, all-1s 0.0 %, constant string 0.0 %, all-0s 1.2 %, random same-length string 0.8 %.
+* **Memorisation and cross-clue equations are dead.** Clue space ~10^k x 4 (2899 distinct in
+  3000 draws) instead of 50; a demo answer is worth exactly one challenge.
+* **Every v1 shortcut is dead.** The on/off counts must be *equal*, so anything that only
+  adds segments (all-8s, X = "1"*K, "grow every digit") scores 0. A lone `1->7` now has to be
+  paid for by a removal elsewhere in the number, which is the balance clause in miniature.
+* **The one blind family the audit found is closed.** Permuting X preserves its segment total
+  for free, so `X` reversed / sorted / randomly permuted scored ~11 % with no insight and
+  handed out labelled equations; the non-rearrangement clause takes all of those to 0.0 %.
+
+Residual signal, left in deliberately as the fairness floor: a random single-digit edit of the
+clue is accepted 2.6 % of the time, so a player who probes that way collects ~12 labelled
+positives a round and can start fitting "which digit swaps cost 1, which cost 2". That path
+tops out at **40.5 %** (the ceiling for answers that change only one digit); getting past it
+needs the balance rule, i.e. two compensating edits, which reaches **98.4 %**. A player with
+the full insight scores 100 % at 0.053 ms per answer. That gradient should separate "learned
+the swap table" from "read the object" in the final score.
+
+Difficulty gradient by clue: N=1 (13.6 % of clues) often falls to a single same-count swap
+(0<->9, 2<->3, ...); N=3,4 needs the budget spread over two or three digits.
+
+Validation: score 337 chars (cap 512), solve 2006, generate 1870; `quickcheck --seeds 200` OK,
+no warnings; worst case over 3000 seeds gen 0.24 ms / solve 0.26 ms / score 0.04 ms (0.0004 ms
+on 4 KB junk); `solve()` scores 1 on all 3000 and generate is deterministic. Demo answers
+change 1..5 digits (mode 2), so no canonical shape leaks.
+
+Arena for iteration 2: run `lab-quilm-2`, `ws://127.0.0.1:36625/ws`, teams quilm2a / quilm2b,
+6 rounds / 0.5 s / 5 s cooldown / 3 s final. Briefs: `/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/BRIEF_quilm2a.md`, `/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/BRIEF_quilm2b.md`.
+v1 is kept as `challenges/lab/quilm.v1.json` for the record.
+
+If iteration 2 comes back "both cracked" again, the next lever is **composition**: keep the
+move rule and add a second everyday clause the demos cannot show negatively — e.g. Y must
+also read as a valid clock time, or the moved sticks must all come from one digit. If it comes
+back "neither cracked", soften by fixing N=1 for a third of clues and letting `solve()` prefer
+single-digit moves, which makes the 0<->9 / 2<->3 tell louder in a single demo.

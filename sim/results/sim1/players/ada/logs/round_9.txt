@@ -1,0 +1,732 @@
+Centaur Zendo round 9 (training)
+round_id : 27ea9c550ab442019189d57591724355
+written  : 2026-09-02 08:31:49Z
+presented=690  answered=690  correct=690  skipped=0
+client answer latency: mean 0.167 ms  median 0.116 ms  max 2.266 ms  (n=691)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  AHMES         18/25                                     2 5 50                                    1
+   1  carre         ..42/2..4/.423/..3.                       3142/2314/1423/4231                       1
+   2  volute        ewty\nzyeg\ngpzv\nbmcr                    ewtygvrcmbgzyezp                          1
+   3  warren        #######################\n#S..#...#.....…  RRDDLLDDRRDDLLDDRRDDRRUUUUUURRRRRRUURRD…  1
+   4  skerry        .#...##.##......\n......#.#....#..\n.#.…  19                                        1
+   5  regina        ...XX.\n.....X\n...X..\n.X.X..\n.X..X.\…  304152                                    1
+   6  regina        ..X.X.\n.X...X\n...X..\n..X.XX\n..X.X.\…  135024                                    1
+   7  ANAPAL        aadaaaaabab|ab                            abaaadaaaba                               1
+   8  skerry        #............\n##...........\n....##..#…  14                                        1
+   9  zebu          D<B C<D A|D D#2 E<B                       CDAEB                                     1
+  10  SPQ           20055865931                               10937                                     1
+  11  TWINE         bcddbdbacdddecab|decdacedcda|7            ddaceca                                   1
+  12  TARE          18 32 4 15 41 36 34 48|77                 00001100                                  1
+  13  ikos          9 0-3 5-6 0-4 2-6 6-8 0-1 5-7 0-7 2-3 3…  1 0 4 8 6 5 7 2 3                         1
+  14  krom          4,9,-5 4,-7,-9 7,6,-4 5,-6,-7 -2,3,6 5,…  001000000                                 1
+  15  ikos          10 2-6 2-5 0-7 1-7 4-6 2-8 3-8 3-4 3-5 …  0 7 1 9 4 3 8 2 6 5                       1
+  16  erewhon       ......\n......\n##....\n###...\n..#...\…  ......\n......\n.#....\n##....\n...#..\…  1
+  17  volute        vvsxyhp\nugkwdzz\nxxchpcx\nggkpkpp        vvsxyhpzxppkpkggxugkwdzcphcx              1
+  18  zebu          A#3 C<D B|C A|C A|D                       BCADE                                     1
+  19  PP            418                                       3814183                                   1
+  20  zebu          D<C C|D C#2 B<A C|E                       DCEBA                                     1
+  21  TOPPLE        8128=10                                   81+2*8-                                   1
+  22  TARE          23 57 31 18 45 23 13 54 16|165            111000010                                 1
+  23  volute        nfkxkgq\nndkqsqu\nsrqwgbu                 nfkxkgquubgwqrsndkqsq                     1
+  24  volute        pszeiki\ndynisqv\nbhyyqrf\nljiksye\npgs…  pszeikivfeudgwthkeplbdynisqryqvtsgjhyyq…  1
+  25  TOPPLE        4191=18                                   411+-9*                                   1
+  26  ALLWIN        ab 5                                      aaaaabaaabbaababaabbbababbabbbbb          1
+  27  erewhon       ......\n.##.##\n....##\n..####\n...#.#\…  ......\n.##.#.\n.##.##\n..#..#\n#.....\…  1
+  28  TARE          39 38 13 51 10 55 16 7 39|148             110001100                                 1
+  29  wolf          10110101100101>00100001011001 100110000…  00011011                                  1
+  30  IDX           193986 380343 414737                      53544                                     1
+  31  AHMES         15/19                                     2 4 26 988                                1
+  32  SPQ           141896693021                              57221                                     1
+  33  SPQ           264835111                                 137                                       1
+  34  warren        #####################\n#S..#...........…  RRDDLLDDRRDDLLDDDDDDRRRRUURRDDRRUUUUUUL…  1
+  35  volute        aze\nkad\nxcn\nskq\nakm\nszp              azednqmpzsasxkackk                        1
+  36  TWINE         dbbcadcaccabaaa|adbdacaaaaa|9             dbdacaaaa                                 1
+  37  SPQ           128525836169                              64579                                     1
+  38  ALLWIN        abc 4                                     aaaabaaacaabbaabcaacbaaccababacabbbabbc…  1
+  39  SPQ           45970903493                               46229                                     1
+  40  DUOMASK       b.(a|b)ababa*b? bb...b*a+b+b              bbaababb                                  1
+  41  wolf          11000110100001>10001001000010 101010111…  10100010                                  1
+  42  TOPPLE        1462=46                                   264*1-*                                   1
+  43  TOPPLE        1617=20                                   711+*6+                                   1
+  44  PP            809                                       1908091                                   1
+  45  zebu          B|E B<D E<B B<A D#4 C<B                   CEBDA                                     1
+  46  HANSOM        5,5 9,4 8,9 0,7 2,2 9,6 1,6|35            0 1 5 2 3 6 4                             1
+  47  CHAKRA        105                                       41 4                                      1
+  48  PP            2659                                      126595621                                 1
+  49  BASILISK      1fe:16>8                                  776                                       1
+  50  krom          1,-9,10 1,10,4 -1,-3,9 -7,10,4 1,4,-9 5…  1100100000                                1
+  51  hanjie        1,1/3,1/6/1/1,3/2/1,3/1,1,2\n1,1/4,2/2/…  .#....#\n###...#\n.######\n.#.....\n#..…  1
+  52  RUNIC         cccccccccddddddddddddeeeeeddddddddddccc   9c12d5e10d3c                              1
+  53  zebu          A|E D<C C|D C|E D#2                       BDCEA                                     1
+  54  trico         13 1-4 1-5 0-5 2-7 7-10 8-10 3-10 1-6 1…  0012211210002                             1
+  55  HANSOM        7,0 6,5 1,5 0,8 3,1 5,5|30                0 1 5 2 3 4                               1
+  56  TARE          20 21 20 30 54 31 16 50|36                10000010                                  1
+  57  MARIENBAD     1 3 14                                    1 3 2                                     1
+  58  BASILISK      6012:9>5                                  120020                                    1
+  59  TOPPLE        6145=43                                   56+4*1-                                   1
+  60  CHAKRA        91                                        1574 165                                  1
+  61  SUNZI         30%37 36%89 1%5 4%7 2%79                  1824981                                   1
+  62  hanjie        1,2/3,1/1/1,2/1,1/1,1,1/1,2/4\n1,1,1/3,…  .#..##\n###..#\n.#....\n#.##..\n.#..#.\…  1
+  63  SUNZI         3%79 46%83 1%2                            793                                       1
+  64  ikos          9 6-8 0-5 6-7 1-5 3-4 2-6 0-6 2-7 3-7 1…  0 5 1 4 3 7 2 6 8                         1
+  65  HANSOM        2,4 3,3 1,6 0,5 7,9 9,6|30                0 1 4 5 2 3                               1
+  66  zebu          D|E E<A C<B B#2 B<A B|E                   CBEDA                                     1
+  67  erewhon       .###..\n.##.##\n.#.#..\n......\n......\…  ..#..#\n.##.#.\n....#.\n#.....\n......\…  1
+  68  ikos          10 2-3 0-5 2-5 1-6 8-9 6-8 4-6 5-9 3-5 …  1 8 9 5 0 4 3 7 2 6                       1
+  69  DUOMASK       (a|b).a[ab]b*b.b+a bbaa?[ab]a+b?a         bbaababa                                  1
+  70  warren        #####################\n#S#.#.......#...…  DDDDRRRRDDRRUURRRRDDLLDDLLDDDDLLDDLLUUL…  1
+  71  RUNIC         dfffbddddaaaaaaaaaaaaaabbbeeeeeeeeeeeeee  1d3f1b4d14a3b14e                          1
+  72  skerry        .....#.#...#...\n........#..#...\n.##..…  17                                        1
+  73  BASILISK      4123:9>3                                  11010210                                  1
+  74  GRAYLING      1110 0010 4                               1110 1111 1011 1010 0010                  1
+  75  krom          6,-9,-7 7,-1,6 -7,-1,-9 -2,6,4 -5,-8,4 …  011100000                                 1
+  76  carre         1.../.1.4/3.2./...3                       1342/2134/3421/4213                       1
+  77  skerry        #.#......#..\n..#.........\n...#...#...…  15                                        1
+  78  HAIL          16                                        7                                         1
+  79  IDX           187561 315398 376847                      303576                                    1
+  80  AHMES         4/35                                      9 315                                     1
+  81  SPQ           679626041                                 659                                       1
+  82  IDX           405160 346365 630607                      586132                                    1
+  83  SUNZI         9%11 9%53 60%71 25%41                     896080                                    1
+  84  CRIBROT       ijfqyhfgnsfbfwi|dealt                     dealtcabinaward                           1
+  85  HANSOM        4,5 9,6 8,9 6,9 6,6 1,8 9,4|28            0 4 1 6 2 3 5                             1
+  86  AHMES         23/24                                     2 3 8                                     1
+  87  erewhon       ..###.\n.#.##.\n#....#\n#.....\n#.....\…  ......\n.#####\n.#.#..\n.##..#\n#.##.#\…  1
+  88  SUNZI         13%17 43%71 3%43 1%3                      95893                                     1
+  89  GRAYLING      10000 01011 10                            10000 10001 10011 10010 10110 10111 101…  1
+  90  BASILISK      1001101001111:2>3                         20210002                                  1
+  91  TOPPLE        1148=39                                   841+*1-                                   1
+  92  carre         3142/...1/..../2.1.                       3142/4231/1324/2413                       1
+  93  TOPPLE        3326=38                                   633+*2+                                   1
+  94  TWINE         bbabdbaabbadc|bacdbcbadccd|8              badbbadc                                  1
+  95  HANSOM        5,0 1,2 2,9 2,3 7,8 2,0|31                0 4 2 3 1 5                               1
+  96  PP            5419                                      154191451                                 1
+  97  GRAYLING      0100 0101 9                               0100 0110 0111 0011 0010 0000 0001 1001…  1
+  98  skerry        #.....##...\n#.#..#..#..\n#.##.##..#.\n…  17                                        1
+  99  CRIBROT       tljxkqlrdejbaxikbsbo|woman                womantoughmedalnever                      1
+ 100  regina        XX.....\n.XX.X..\n..XXXX.\n..XX..X\n...…  4205316                                   1
+ 101  BASILISK      111010:5>16                               f28                                       1
+ 102  MARIENBAD     5 15 7 1                                  5 3 7 1                                   1
+ 103  CRIBROT       riqoxcrkkvjxopepmbii|ultra                ultrafunnymarshspell                      1
+ 104  GRAYLING      00111 11000 9                             00111 00110 00100 00101 00001 00000 000…  1
+ 105  zebu          B|C C|E B<A E<C B<D D#5                   ECBAD                                     1
+ 106  volute        qyvd\nhfsr\nanaz\nlsre\nrrmg\nwoag        qyvdrzeggaowrlahfsarmrsn                  1
+ 107  CHAKRA        124                                       4620799 414960                            1
+ 108  RUNIC         ggggggggggeeeeeeeeefffgcffffd             10g9e3f1g1c4f1d                           1
+ 109  regina        .......X\n........\n.....X..\n........\…  05726314                                  1
+ 110  MARIENBAD     8 6 14 6                                  8 0 14 6                                  1
+ 111  SPQ           369546013                                 269                                       1
+ 112  HAIL          92                                        91                                        1
+ 113  IDX           137828 9611 159623                        51228                                     1
+ 114  wolf          011010010001>110110010101 0010110110001…  10101101                                  1
+ 115  MARIENBAD     6 8 15 12                                 6 5 15 12                                 1
+ 116  krom          7,-9,4 3,-1,7 -1,-6,7 -2,-5,3 -2,8,4 6,…  001101001                                 1
+ 117  AHMES         8/13                                      2 9 234                                   1
+ 118  wolf          011011100011>101100110101 0111110000>10…  01110110                                  1
+ 119  HANSOM        6,1 0,5 9,8 6,5 6,8 5,0|34                0 2 4 3 1 5                               1
+ 120  HANSOM        6,6 4,4 2,3 9,9 9,4 2,4 9,3|27            0 1 5 2 6 4 3                             1
+ 121  GRAYLING      0000 1010 8                               0000 0001 0011 0010 0110 0111 1111 1110…  1
+ 122  regina        XX.....\nX......\nX.....X\nX...X..\nX..…  6420531                                   1
+ 123  DUOMASK       baba*[ab]ba*b?[ab] b?aa*ba*a+b[ab]b?      bababa                                    1
+ 124  HANSOM        8,0 2,4 3,4 3,6 4,3 4,0 9,7|30            0 5 4 1 2 3 6                             1
+ 125  MARIENBAD     13 5 10 14                                1 5 10 14                                 1
+ 126  ALLWIN        abcd 3                                    aaabaacaadabbabcabdacbaccacdadbadcaddbb…  1
+ 127  HANSOM        1,7 6,6 9,8 8,7 4,3 4,1 9,5|33            0 1 3 2 6 4 5                             1
+ 128  volute        heks\nymns\nbauz\nmhjx\ntldg\nmvlt        heksszxgtlvmtmbymnujdlha                  1
+ 129  TWINE         aaaaadbbaabac|ddcbbddcbdaaadb|6           dbbaaa                                    1
+ 130  erewhon       ..##..\n.##...\n..#...\n..#..#\n..#...\…  ...##.\n.##...\n..#...\n..#.##\n...###\…  1
+ 131  CRIBROT       bknsgrszjdbgnhbdrsqzv|choice              clothstakechoicestraw                     1
+ 132  TARE          54 48 56 26 13 16 58|54                   1000000                                   1
+ 133  ikos          9 0-8 3-5 0-7 5-7 2-6 0-1 0-5 6-7 1-8 5…  3 5 8 1 0 2 4 7 6                         1
+ 134  PP            424                                       1242421                                   1
+ 135  PP            3815                                      381565183                                 1
+ 136  SUNZI         28%31 67%73 6%19                          39925                                     1
+ 137  HANSOM        9,1 9,5 4,7 6,9 3,3 9,4 0,6|36            0 4 6 2 3 1 5                             1
+ 138  RUNIC         faaaaaaaaaaddddddddddddddbbbbbbbbbbbbgg…  1f10a14d12b3g5a3d                         1
+ 139  warren        #######################\n#S#.........#.…  DDDDRRDDLLDDDDRRRRUUUURRRRDDLLDDRRDDRRU…  1
+ 140  TWINE         ccddcccddbbaa|acdabbcaabadcbc|6           cdbbaa                                    1
+ 141  RUNIC         ffffffffffeeeeeeeeeeaaaaeeeeeaee          10f10e4a5e1a2e                            1
+ 142  CRIBROT       ducajluxdmcqnvn|ultra                     ultracloudtheme                           1
+ 143  TOPPLE        3457=23                                   75*43*-                                   1
+ 144  trico         13 1-2 9-12 5-6 6-12 4-10 2-9 2-4 1-8 4…  2202112002201                             1
+ 145  DUOMASK       a+bbb*[ab](a|b)b?.. ab?.a?b*a+b+a?[ab]    abbaaba                                   1
+ 146  ALLWIN        abc 3                                     aaabaacabbabcacbaccbbbcbccc               1
+ 147  CRIBROT       pqxhbpjxoqcxyib|stake                     stakesmartfable                           1
+ 148  CRIBROT       hwnxufqtsjzwgfs|crisp                     crispaloneurban                           1
+ 149  ANAPAL        baaabbab|bbaa                             bbaaaabb                                  1
+ 150  hanjie        1,1,1/1,1,1/2,1/1/1,1,2/1,2/2/1\n3,1/1/…  #.#..#\n#.#.#.\n##...#\n....#.\n#.#.##\…  1
+ 151  AHMES         9/19                                      3 8 66 5016                               1
+ 152  krom          -10,-9,-4 10,-5,-8 -7,-4,-2 9,-2,6 8,5,…  0001011000                                1
+ 153  wolf          000010110010>111001010000 100011001000>…  11100001                                  1
+ 154  TARE          37 9 22 11 15 4 12|59                     1010000                                   1
+ 155  RUNIC         eeeeeeeeeagaaaaaabggfgggggggggggg         9e1a1g6a1b2g1f12g                         1
+ 156  volute        yph\nbjt\npgm\ntrt                        yphtmtrtpbjg                              1
+ 157  skerry        ..........#....\n##...#..###....\n.....…  14                                        1
+ 158  CRIBROT       odejapnexapwxhapwgaj|shine                shinetribetabletaken                      1
+ 159  AHMES         9/34                                      4 68                                      1
+ 160  TARE          48 40 34 35 37 21 6 27 51|224             110011011                                 1
+ 161  HANSOM        8,9 2,3 9,8 7,2 1,6|30                    0 2 3 1 4                                 1
+ 162  HAIL          26                                        33                                        1
+ 163  PP            899                                       1998991                                   1
+ 164  ikos          12 1-10 5-9 2-4 6-7 5-7 1-6 6-8 2-3 4-7…  1 10 8 9 11 5 7 4 2 3 0 6                 1
+ 165  SPQ           102464579369                              86843                                     1
+ 166  SUNZI         17%31 0%73 11%41                          64094                                     1
+ 167  MARIENBAD     6 15 4                                    6 2 4                                     1
+ 168  TARE          52 38 35 33 23 11 11 21|168               11100111                                  1
+ 169  PP            8583                                      3858583                                   1
+ 170  ALLWIN        ab 8                                      aaaaaaaabaaaaaabbaaaaababaaaaabbbaaaaba…  1
+ 171  volute        gbysflg\nvsvlsha\nrgpuotg\nyozhpom\nsaw…  gbysflgagmcipmwasyrvsvlshtophzogpuo       1
+ 172  BASILISK      40434:5>7                                 10431                                     1
+ 173  carre         4.1./..3./3.2./23..                       4213/1432/3124/2341                       1
+ 174  hanjie        2,1,1/5/2,1/1,2,1/2,1/3/1,2/1,1\n6,1/3,…  ##.#.#.\n#####..\n##.#...\n#.##..#\n##.…  1
+ 175  SPQ           27219431387                               67141                                     1
+ 176  krom          9,-5,-2 4,2,-6 8,-2,-7 4,-6,-5 1,-7,-6 …  010000000                                 1
+ 177  GRAYLING      1111 0010 5                               1111 1110 1100 1000 1010 0010             1
+ 178  RUNIC         feeeeeeeeeffeeeeeeeeeeeebbf               1f9e2f12e2b1f                             1
+ 179  TARE          55 55 13 39 48 39 46|100                  0011100                                   1
+ 180  DUOMASK       ba.b+(a|b) .ab*[ab]b*[ab]a                baaba                                     1
+ 181  BASILISK      5100:9>3                                  12010000                                  1
+ 182  krom          8,3,5 -7,-2,-3 8,4,6 7,8,-6 -7,-6,-1 -1…  11011000                                  1
+ 183  zebu          C<D D|E D<B E<A A<B D#2                   CDEAB                                     1
+ 184  TWINE         ecdedececccb|eacbbbdbddbccde|6            ecddcc                                    1
+ 185  SPQ           47789358341                               71479                                     1
+ 186  skerry        ...#..#..#...\n.....##......\n...#.....…  16                                        1
+ 187  BASILISK      f2f:16>2                                  111100101111                              1
+ 188  TARE          56 15 13 58 5 40 25|169                   1101010                                   1
+ 189  MARIENBAD     15 3 4 2 6                                3 3 4 2 6                                 1
+ 190  BASILISK      123234:5>7                                20023                                     1
+ 191  ikos          11 2-5 5-7 2-10 5-9 3-7 5-8 4-6 9-10 4-…  1 6 4 8 5 7 3 2 10 9 0                    1
+ 192  HAIL          179                                       1665                                      1
+ 193  HANSOM        1,5 3,6 0,2 6,1 2,1|22                    0 1 3 4 2                                 1
+ 194  SPQ           336774343                                 139                                       1
+ 195  skerry        ........#....\n..#..#...##..\n##.#.#...…  18                                        1
+ 196  skerry        #.............\n.............#\n.......…  17                                        1
+ 197  skerry        #...............\n.####.#....#....\n..#…  12                                        1
+ 198  trico         13 3-9 1-6 4-10 3-7 8-12 2-8 3-4 6-10 1…  1211021000212                             1
+ 199  BASILISK      1011101:3>7                               2320                                      1
+ 200  MARIENBAD     12 10 3 15                                6 10 3 15                                 1
+ 201  regina        .....X.\n....XX.\n...XX.X\n.......\nX..…  1403625                                   1
+ 202  HAIL          92                                        91                                        1
+ 203  AHMES         3/8                                       3 24                                      1
+ 204  PP            9874                                      347898743                                 1
+ 205  volute        igo\npnz\nbyz\ndoz\nepk\nlih              igozzzkhiledbpnyop                        1
+ 206  RUNIC         bbcdfffffffffccceedddddffggggg            2b1c1d9f3c2e5d2f5g                        1
+ 207  PP            0758                                      10758585701                               1
+ 208  regina        X...X.\n.X..X.\n..X.XX\nXX...X\n.X..X.\…  420531                                    1
+ 209  ANAPAL        dabdbbcbdcad|abb                          abbcddddcbba                              1
+ 210  wolf          01001011011>01101000000 010110110011>01…  10010101                                  1
+ 211  carre         ..1./12../43../21..                       3412/1234/4321/2143                       1
+ 212  trico         10 0-3 3-9 4-5 8-9 2-8 5-6 0-5 4-8 1-8 …  1110121002                                1
+ 213  TWINE         abdabbcddcbbdddb|cbaddadaacdaabb|7        baddddb                                   1
+ 214  wolf          001100011110>011110110011 0001011101101…  01011110                                  1
+ 215  hanjie        2,1,1/2,2/2,1,1/1,1,2/1,2/3,1/2,1\n2,3/…  ##..#.#\n##...##\n.##.#.#\n.#.#.##\n#..…  1
+ 216  AHMES         3/5                                       2 10                                      1
+ 217  zebu          A<D A<C D<C B|E E#1                       EBADC                                     1
+ 218  warren        #######################\n#S............…  RRRRRRRRRRRRRRDDLLDDLLLLLLLLUULLLLDDRRD…  1
+ 219  warren        #####################\n#S#.........#...…  DDRRUURRRRRRRRDDRRDDRRRRRRDDLLLLLLDDLLU…  1
+ 220  GRAYLING      0011 1010 6                               0011 0010 0000 0001 1001 1000 1010        1
+ 221  krom          8,3,9 7,1,-2 1,2,8 7,-8,2 -1,-5,3 3,5,-…  111010000                                 1
+ 222  TARE          15 19 58 25 6 58 58|131                   1010010                                   1
+ 223  erewhon       ......\n###...\n###...\n......\n......\…  ......\n.#....\n##.#..\n......\n......\…  1
+ 224  krom          3,-7,9 4,1,-2 -3,8,-7 -4,-5,6 -6,9,-5 -…  110100000                                 1
+ 225  trico         9 2-7 4-7 1-6 3-7 6-7 5-7 2-5 6-8 2-4 1…  220011021                                 1
+ 226  CRIBROT       ctdpylyrwpnlyowplwzyr|candle              risenanglecandlealong                     1
+ 227  HAIL          169                                       2110                                      1
+ 228  ALLWIN        ab 7                                      aaaaaaabaaaaabbaaaababaaaabbbaaabaabaaa…  1
+ 229  wolf          0000111011000>0000000000100 00011101101…  00010000                                  1
+ 230  zebu          A<E B<C C|D E<B B|D                       AEBDC                                     1
+ 231  CHAKRA        149                                       25801741449 2113761020                    1
+ 232  TARE          47 3 56 7 38 5 43 18|93                   11000010                                  1
+ 233  erewhon       ...###\n......\n......\n.##..#\n##....\…  ....#.\n...###\n...###\n.##..#\n.#..#.\…  1
+ 234  ANAPAL        aabbbbcc|cba                              cbabbabc                                  1
+ 235  TOPPLE        8246=52                                   48*6-2*                                   1
+ 236  trico         10 0-3 5-6 0-7 4-5 3-4 6-8 3-9 4-9 0-9 …  1120120222                                1
+ 237  CHAKRA        61                                        1766319049 226153980                      1
+ 238  SPQ           429579251                                 373                                       1
+ 239  TARE          26 11 44 8 29 51|88                       110001                                    1
+ 240  zebu          D#3 B<C D<B D<C A<B A<D D|E               AEDBC                                     1
+ 241  HAIL          93                                        182                                       1
+ 242  krom          7,1,-8 -7,-8,6 -2,5,-4 -5,8,1 6,4,3 4,-…  10011000                                  1
+ 243  HANSOM        6,8 7,3 3,7 2,7 7,4|22                    0 1 4 2 3                                 1
+ 244  regina        ......X.\n.....X..\n.......X\n..X....X\…  05726314                                  1
+ 245  AHMES         4/7                                       2 14                                      1
+ 246  ALLWIN        ab 4                                      aaaabaabbababbbb                          1
+ 247  carre         .1.3/23../...4/.4..                       4123/2341/1234/3412                       1
+ 248  TOPPLE        5375=57                                   57+5*3-                                   1
+ 249  CRIBROT       ajyrmxamnanumna|rapid                     rapidorderelder                           1
+ 250  regina        ........\n........\n..X...X.\n........\…  04752613                                  1
+ 251  CHAKRA        86                                        10405 1122                                1
+ 252  IDX           121816 59477 654343                       92665                                     1
+ 253  ikos          10 0-3 6-8 0-7 0-1 2-4 4-6 3-4 1-4 1-3 …  9 2 4 1 0 7 5 3 6 8                       1
+ 254  CRIBROT       tkxgtcyctfxktcn|river                     riverawardviral                           1
+ 255  hanjie        3,1,1/1,3,1/2,1,1/1/5/2,1\n3/1,1,1/2,1/…  ###.#.#.\n#.###.#.\n##..#..#\n...#....\…  1
+ 256  carre         3.2./..4./4.1./..3.                       3124/1243/4312/2431                       1
+ 257  DUOMASK       a.ab*a?.ba(a|b) aa..a?b(a|b).             aaaabaa                                   1
+ 258  TWINE         dcbdcacdbca|dadddcbdcda|7                 dcbdcda                                   1
+ 259  carre         ...4/4..1/.4../3.42                       1234/4321/2413/3142                       1
+ 260  AHMES         17/21                                     2 4 17 1428                               1
+ 261  PP            494                                       94949                                     1
+ 262  IDX           336758 384334 859121                      46177                                     1
+ 263  SPQ           106523452489                              99551                                     1
+ 264  trico         12 5-10 4-11 6-11 9-10 8-11 5-7 4-10 3-…  100222212201                              1
+ 265  ANAPAL        bebbcbddccebc|ccd                         ccdbbebebbdcc                             1
+ 266  erewhon       ..#...\n##.#..\n##.#.#\n##.#.#\n#.#..#\…  ...#..\n.#.#..\n##..##\n.#.#.#\n..#..#\…  1
+ 267  CHAKRA        67                                        48842 5967                                1
+ 268  CHAKRA        19                                        170 39                                    1
+ 269  CHAKRA        83                                        82 9                                      1
+ 270  krom          -7,9,10 8,7,10 -9,-7,-8 -8,-6,-10 -2,-4…  1001000100                                1
+ 271  CHAKRA        152                                       37 3                                      1
+ 272  GRAYLING      0110 1000 5                               0110 0111 0101 0100 0000 1000             1
+ 273  SPQ           44504720627                               18917                                     1
+ 274  CHAKRA        94                                        2143295 221064                            1
+ 275  PP            933                                       3391933                                   1
+ 276  volute        jizn\ntdjq\nbhhw\nnyvu\nivah\naajk        jiznqwuhkjaainbtdjhvavyh                  1
+ 277  SUNZI         19%37 17%53 3%11                          2720                                      1
+ 278  SPQ           201659877281                              94951                                     1
+ 279  IDX           240707 749712 906013                      490390                                    1
+ 280  IDX           350799 61972 413681                       17795                                     1
+ 281  DUOMASK       [ab][ab]a*.bb*b. ba+a?b?(a|b).            baabba                                    1
+ 282  GRAYLING      0111 1110 6                               0111 0110 0100 0101 1101 1100 1110        1
+ 283  regina        XX...X.X\n...X....\n.X......\n.X.....X\…  15063724                                  1
+ 284  wolf          1000100010110>1000100010010 10100110111…  01000100                                  1
+ 285  trico         11 1-10 5-7 0-7 1-7 0-5 3-8 3-6 0-1 2-5…  10121002002                               1
+ 286  GRAYLING      1100 0110 6                               1100 1101 1111 1110 1010 0010 0110        1
+ 287  ANAPAL        bbdddbdbdad|abdd                          bdddbabdddb                               1
+ 288  TWINE         acabcabacdcda|accbbdddaaa|7               accbdda                                   1
+ 289  carre         .1../.421/124./..1.                       2134/3421/1243/4312                       1
+ 290  erewhon       ###...\n#.###.\n#..#..\n.##...\n.###..\…  .#...#\n###...\n#..##.\n..#...\n..#...\…  1
+ 291  carre         ..34/..../43../.41.                       1234/2143/4321/3412                       1
+ 292  GRAYLING      0111 0100 10                              0111 0110 0010 0011 0001 0000 1000 1001…  1
+ 293  IDX           594639 229518 694487                      20578                                     1
+ 294  PP            5279                                      972535279                                 1
+ 295  TARE          41 26 55 29 19 56 48 46|94                00000011                                  1
+ 296  PP            8948                                      989484989                                 1
+ 297  HAIL          101                                       214                                       1
+ 298  MARIENBAD     10 6 2 13 14                              7 6 2 13 14                               1
+ 299  HAIL          76                                        395                                       1
+ 300  zebu          A|E D#1 B|C A|C B<E                       DBCAE                                     1
+ 301  ALLWIN        ab 6                                      aaaaaabaaaabbaaababaaabbbaabaababbaabba…  1
+ 302  ALLWIN        ab 5                                      aaaaabaaabbaababaabbbababbabbbbb          1
+ 303  MARIENBAD     5 15 3 5 9                                0 15 3 5 9                                1
+ 304  MARIENBAD     9 13 4 2                                  9 13 4 0                                  1
+ 305  trico         9 2-4 5-6 5-8 2-3 3-4 2-8 3-5 1-4 0-1 0…  122102021                                 1
+ 306  CHAKRA        61                                        1766319049 226153980                      1
+ 307  TARE          36 27 54 49 37 17 5 12 18|165             011101001                                 1
+ 308  IDX           20677 180810 224171                       2062                                      1
+ 309  skerry        .#.###.......\n.#....#.#....\n..#......…  15                                        1
+ 310  warren        #######################\n#S#...#...#...…  DDRRUURRDDRRDDRRDDLLDDLLUUUULLLLDDRRDDD…  1
+ 311  skerry        ..#.#.....#\n....#.#....\n##..#......\n…  16                                        1
+ 312  wolf          0110010101>0111010101 0110011101111>011…  11011100                                  1
+ 313  erewhon       ..#.##\n..##.#\n......\n.##.##\n#.....\…  ....#.\n.#####\n.....#\n.##.##\n..#.#.\…  1
+ 314  GRAYLING      00001 10001 5                             00001 00000 00010 00011 10011 10001       1
+ 315  volute        non\njes\nwep                             nonspewje                                 1
+ 316  skerry        ...........#.\n........#....\n##...##..…  18                                        1
+ 317  SUNZI         53%59 63%73 6%23 55%61                    906942                                    1
+ 318  SUNZI         2%31 52%59 16%97 0%3 10%29                1874541                                   1
+ 319  ikos          11 0-5 9-10 0-7 0-8 7-10 4-5 4-8 6-10 5…  1 2 3 6 5 0 7 10 9 4 8                    1
+ 320  warren        ###################\n#S#.......#.......…  DDRRUURRRRRRDDDDLLLLLLLLDDDDDDDDDDDDRRU…  1
+ 321  TARE          9 19 60 9 9 54|18                         100100                                    1
+ 322  TWINE         bbbbeadacaa|cebbbdaeebb|5                 bbbda                                     1
+ 323  TWINE         bbabbedeeaba|dadbeeadaadbdeda|7           adeeaba                                   1
+ 324  PP            455                                       115545511                                 1
+ 325  IDX           70603 40773 71011                         13717                                     1
+ 326  HAIL          143                                       327                                       1
+ 327  HANSOM        0,5 4,4 4,2 0,8 1,5 7,8 8,4|30            0 3 5 6 1 2 4                             1
+ 328  trico         13 1-12 8-9 6-10 8-10 5-8 1-11 9-11 3-6…  2000121101222                             1
+ 329  skerry        .#...........\n...#..##.....\n.#.#.....…  13                                        1
+ 330  RUNIC         aaaaaaaaaddggggggggggbbbbbbbbbbbbbbeeee…  9a2d10g14b9e1a12d4b                       1
+ 331  ikos          11 1-8 4-7 3-7 0-4 2-3 0-5 8-9 1-6 0-6 …  2 3 7 4 0 5 9 10 1 8 6                    1
+ 332  TOPPLE        7274=75                                   47+7*2-                                   1
+ 333  GRAYLING      1001 1011 7                               1001 1000 1010 1110 1111 0111 0011 1011   1
+ 334  SPQ           32680302029                               11927                                     1
+ 335  skerry        ...#....#......\n..##...#.......\n.....…  16                                        1
+ 336  CHAKRA        113                                       1204353 113296                            1
+ 337  volute        rbajomu\ntsnxqid\nonyuqrz\nyuopbku\nwkv…  rbajomudzuipknctrtwyotsnxqirkfrqvkunyuq…  1
+ 338  hanjie        1,4/2,1,1/3,3/5,1/1,1,3/3,2/2,1,2\n7/3,…  #.####.\n##..#.#\n###.###\n#####.#\n#.#…  1
+ 339  ikos          12 3-10 5-10 1-11 0-7 6-9 2-3 8-11 4-10…  0 7 4 6 9 1 11 8 10 5 2 3                 1
+ 340  ANAPAL        abaacccac|baac                            ccaabaacc                                 1
+ 341  AHMES         5/19                                      4 76                                      1
+ 342  SPQ           70147059641                               98419                                     1
+ 343  krom          -9,-6,-8 2,7,-8 -4,-5,8 -5,8,-1 9,2,-1 …  001000000                                 1
+ 344  volute        fqevttk\nuwubcjj\nfpjnyto\nllizynp\nwov…  fqevttkjopywduwtqhwlfuwubcjtnkahvolpjny…  1
+ 345  skerry        ..##...#....\n...#........\n...#..#....…  12                                        1
+ 346  TOPPLE        3287=78                                   73+8*2-                                   1
+ 347  PP            1953                                      3591953                                   1
+ 348  wolf          0000111010>1111000011 00000100111101>11…  00010111                                  1
+ 349  TWINE         bbabddbbdcdaba|dbaccccdbddaca|8           badbddaa                                  1
+ 350  carre         .21./..32/...1/31..                       4213/1432/2341/3124                       1
+ 351  ANAPAL        aaacabbabbca|baa                          baaabccbaaab                              1
+ 352  SUNZI         4%37 53%73 23%29                          54949                                     1
+ 353  ikos          11 0-3 0-8 3-10 1-2 6-10 7-8 0-10 5-7 9…  1 2 0 8 7 5 4 9 10 6 3                    1
+ 354  CRIBROT       yjsvwqgmfylsdwflxdwwl|talent              gradeyoungtalentfleet                     1
+ 355  ALLWIN        abc 5                                     aaaaabaaaacaaabbaaabcaaacbaaaccaababaab…  1
+ 356  SPQ           2641641491                                2741                                      1
+ 357  AHMES         15/28                                     2 28                                      1
+ 358  MARIENBAD     5 9 2 5                                   5 2 2 5                                   1
+ 359  HAIL          39                                        203                                       1
+ 360  ikos          12 1-5 1-7 3-9 6-7 3-11 0-10 8-11 4-7 3…  10 0 8 11 5 1 4 2 6 7 3 9                 1
+ 361  erewhon       .####.\n.#...#\n..##.#\n##.#.#\n#.....\…  ..###.\n##...#\n..#..#\n##.###\n#..#..\…  1
+ 362  ikos          11 5-6 3-10 3-4 4-10 4-6 0-5 5-10 1-7 2…  9 1 8 3 4 6 0 5 2 7 10                    1
+ 363  DUOMASK       b(a|b)a+[ab]b+ b+a?aa*a?.                 baaab                                     1
+ 364  DUOMASK       a+a*b[ab]b*[ab](a|b).a a?b+[ab][ab](a|b…  abaaaaa                                   1
+ 365  DUOMASK       b?..ab b?[ab]aa?a*[ab]                    aaab                                      1
+ 366  skerry        ..#.#...#...\n..#......#..\n...........…  12                                        1
+ 367  MARIENBAD     12 1 2 7                                  4 1 2 7                                   1
+ 368  krom          3,1,-8 2,7,-8 4,5,-6 -8,-4,-1 -2,1,3 -1…  11100000                                  1
+ 369  ANAPAL        acdaacdaa|ac                              acadadaca                                 1
+ 370  ALLWIN        ab 4                                      aaaabaabbababbbb                          1
+ 371  TARE          18 54 32 36 53 31 12|122                  0111000                                   1
+ 372  ANAPAL        baabbbbbbcc|bac                           bacbbbbbcab                               1
+ 373  trico         11 5-6 1-4 4-9 2-5 2-10 1-9 0-2 8-10 1-…  01222021201                               1
+ 374  TWINE         adeeedbbebecddb|eadaadaabea|5             addbe                                     1
+ 375  ANAPAL        cdabadacba|ac                             acabddbaca                                1
+ 376  ANAPAL        bcccbaca|ccb                              ccbaabcc                                  1
+ 377  TARE          6 21 31 29 3 26|6                         100000                                    1
+ 378  AHMES         11/13                                     2 3 78                                    1
+ 379  carre         .4../..../431./3.41                       1423/2134/4312/3241                       1
+ 380  MARIENBAD     11 7 4                                    3 7 4                                     1
+ 381  erewhon       #####.\n##...#\n...#.#\n###..#\n..#.##\…  .#..#.\n##.##.\n...##.\n##...#\n.#...#\…  1
+ 382  DUOMASK       a?ba[ab]b*aa+ba* ab+ab*[ab]aa(a|b)        abaaaab                                   1
+ 383  PP            320                                       9320239                                   1
+ 384  wolf          111100001100>000110010111 0110110101000…  01010110                                  1
+ 385  GRAYLING      1001 1011 7                               1001 1000 1010 1110 1111 0111 0011 1011   1
+ 386  PP            093                                       1093901                                   1
+ 387  regina        ....XX\n.XX...\nXX...X\n...X.X\n.X..X.\…  135024                                    1
+ 388  TARE          8 47 27 48 15 23 60 32|103                11010000                                  1
+ 389  zebu          D<A E#2 E<B C#1 B|D A|B                   CEDBA                                     1
+ 390  SUNZI         4%31 76%89 0%2 15%17                      12714                                     1
+ 391  hanjie        1,2,1/8/3,1/1,1,2/1,1,2/2,1,2/5/1,2\n2,…  #.##..#.\n########\n.###...#\n#.#.##..\…  1
+ 392  hanjie        4,2/1,1/1/1,1,1/1,1/1,3,1\n1,1/1,1/2,1/…  ####.##.\n..#...#.\n.....#..\n..#..#.#\…  1
+ 393  warren        ###################\n#S#...#.........#.…  DDRRDDLLDDDDDDDDRRRRUULLUURRRRRRUUUUUUR…  1
+ 394  ikos          11 2-7 0-1 6-10 0-6 4-6 5-6 3-9 3-5 9-1…  1 0 6 5 3 9 10 7 2 8 4                    1
+ 395  ALLWIN        abc 3                                     aaabaacabbabcacbaccbbbcbccc               1
+ 396  RUNIC         fbbfaffffffffffdddddddddddd               1f2b1f1a10f12d                            1
+ 397  SPQ           524038561                                 839                                       1
+ 398  hanjie        1,1/3,1/1,1/2,1/1,1,1/2,1/1,1/1,4\n1,3,…  .#...#\n###.#.\n..#..#\n##..#.\n#..#.#\…  1
+ 399  DUOMASK       a+b+a?.a ab+a?[ab]a?                      abaa                                      1
+ 400  GRAYLING      00000 11000 8                             00000 00001 00011 00010 00110 00100 011…  1
+ 401  CHAKRA        85                                        285769 30996                              1
+ 402  SPQ           158526997                                 677                                       1
+ 403  ikos          10 0-6 5-7 5-8 0-2 1-4 8-9 1-3 3-5 2-7 …  6 0 2 7 9 8 4 1 3 5                       1
+ 404  krom          8,3,-6 6,3,-4 -7,2,5 7,-3,2 5,-7,-3 6,1…  11001000                                  1
+ 405  trico         11 2-6 2-5 7-8 0-7 5-8 8-10 4-10 5-9 0-…  12020112022                               1
+ 406  warren        ###################\n#S#...............…  DDDDRRUUUURRRRRRRRRRRRRRDDLLLLDDDDRRUUR…  1
+ 407  warren        ###################\n#S#...#...........…  DDRRDDLLDDRRDDLLDDDDRRUURRUURRUUUURRRRD…  1
+ 408  carre         12.4/2..3/31../..2.                       1234/2413/3142/4321                       1
+ 409  ANAPAL        aeaeeeababb|beaa                          beaaebeaaeb                               1
+ 410  trico         10 4-6 3-6 0-4 4-9 0-5 5-6 1-9 1-5 5-9 …  2201112210                                1
+ 411  hanjie        1,5/1,1/2/1,1,1/1,4/1,2\n1,1//1,2/2,2/1…  #.#####\n...#..#\n....##.\n..#.#.#\n#.#…  1
+ 412  SUNZI         9%23 0%3 11%29 6%31 0%89                  1129677                                   1
+ 413  SUNZI         18%23 15%43 9%97 66%67 4%5                21637314                                  1
+ 414  zebu          C<D B#1 C|E A|C C<A                       BECAD                                     1
+ 415  SUNZI         26%41 6%67 2%19 2%13                      248978                                    1
+ 416  TARE          4 15 13 58 9 29 52 39 49|123              001100100                                 1
+ 417  ikos          9 5-8 1-4 3-7 0-4 4-6 3-5 2-5 0-6 7-8 2…  1 4 0 6 5 2 7 3 8                         1
+ 418  TWINE         cddabadababdbdac|ddcdcbadbbbdcc|10        ddbadbbbdc                                1
+ 419  ALLWIN        ab 3                                      aaababbb                                  1
+ 420  TARE          6 60 29 42 9 52 45 10 40|111              110000100                                 1
+ 421  ikos          12 7-9 1-11 0-4 9-10 3-8 1-9 0-7 5-10 5…  0 4 8 3 6 5 10 9 11 1 7 2                 1
+ 422  TWINE         dbdacccbeeddb|deedbbceeac|5               deedb                                     1
+ 423  DUOMASK       .a+aabaa bb*a?a*aa[ab](a|b)a*.            baaabaa                                   1
+ 424  zebu          A#2 D<B D|E D<E A<D C<E                   CADEB                                     1
+ 425  PP            518                                       7518157                                   1
+ 426  BASILISK      5813:9>3                                  12220110                                  1
+ 427  RUNIC         ffffffffffaaggggggggggeccccccccc          10f2a10g1e9c                              1
+ 428  erewhon       .#.###\n.##..#\n.####.\n###...\n#.....\…  .##.##\n#...##\n...#..\n.##...\n##....\…  1
+ 429  HANSOM        2,2 0,8 2,3 2,9 0,4 5,8 7,1|32            0 2 4 1 3 5 6                             1
+ 430  SPQ           2660188913                                937                                       1
+ 431  wolf          00101000100>00101000100 1001010010>1001…  11001100                                  1
+ 432  wolf          0010010000>1001001111 11001110110001>11…  11011001                                  1
+ 433  DUOMASK       b?b+(a|b)ab*bbb?(a|b) (a|b)b?aa..(a|b)a…  baabbbb                                   1
+ 434  RUNIC         dddggggggggggggddaaaaaaaaaaaaaabbbbb      3d12g2d14a5b                              1
+ 435  regina        ........\n........\n....X...\n........\…  05726314                                  1
+ 436  SUNZI         10%17 29%47 10%43 54%61                   12437                                     1
+ 437  SUNZI         1%61 4%5 56%73 1%31                       24584                                     1
+ 438  TOPPLE        7455=66                                   55+7*4-                                   1
+ 439  hanjie        2/1,1,1/2/1,1,1/3,1//3,1\n1,1/2,1,1/1,1…  ##.....\n.#.#..#\n....##.\n#..#..#\n.##…  1
+ 440  TARE          3 35 12 14 32 52 57|170                   0111011                                   1
+ 441  hanjie        1,1/3,1,1/1,1,1/1,1,1/2,2/1,3/2,2\n2,3/…  #....#.\n###.#.#\n.#.#.#.\n#..#..#\n##.…  1
+ 442  AHMES         31/34                                     2 3 13 663                                1
+ 443  volute        qaxbpy\ngmhbrt\nzskwhw\nqtaich\nbvpkcw\…  qaxbpytwhwdlwijibqzgmhbrhcckpvtskwia      1
+ 444  TWINE         acddaabbdeccd|ecceddcaabee|7              cddaabe                                   1
+ 445  SUNZI         3%47 4%7 3%67                             18897                                     1
+ 446  ikos          10 5-9 3-7 6-7 2-4 2-5 2-9 1-2 1-5 3-4 …  4 2 9 8 0 6 7 3 5 1                       1
+ 447  warren        #######################\n#S....#.......…  RRRRDDLLDDLLDDDDDDRRUUUURRDDDDRRRRRRRRR…  1
+ 448  skerry        ....###.......\n...#......#...\n...#...…  18                                        1
+ 449  SUNZI         2%5 1%13 41%47 10%23                      12637                                     1
+ 450  RUNIC         aaaaabbbbbbdbbbbbbbbbbbbeeeeee            5a6b1d12b6e                               1
+ 451  hanjie        1,1,2/2/1,1,2/4/1,2/1,1,1\n3,1/1,2/1,2/…  #.#.##.\n##.....\n#.#.##.\n.####..\n.#.…  1
+ 452  TWINE         baaaadbcbdccbdcb|dcbadcddbac|7            dcbdcdb                                   1
+ 453  wolf          000111011010>110111111100 110000110101>…  11101001                                  1
+ 454  DUOMASK       b(a|b).b*a?. bb?a+(a|b)b+                 baab                                      1
+ 455  SPQ           148154130791                              57329                                     1
+ 456  RUNIC         ebbgggcffbbbb                             1e2b3g1c2f4b                              1
+ 457  volute        lrvn\nikjm\nsjrj\njpvo                    lrvnmjovpjsikjrj                          1
+ 458  skerry        ..##....#..#\n#...........\n...........…  21                                        1
+ 459  MARIENBAD     3 14 3 7                                  3 7 3 7                                   1
+ 460  CRIBROT       apilmpmidgbzqitaeqnb|shade                shadeheavytrialswift                      1
+ 461  ANAPAL        debcbcdbecb|bec                           becbdcdbceb                               1
+ 462  IDX           82511 279329 519817                       415954                                    1
+ 463  DUOMASK       bb+[ab]a+[ab]b*a? [ab](a|b)aa.b*.         bbaaaa                                    1
+ 464  ALLWIN        abc 4                                     aaaabaaacaabbaabcaacbaaccababacabbbabbc…  1
+ 465  TARE          13 21 31 25 51 11|65                      111000                                    1
+ 466  krom          8,-1,4 6,-1,-4 -8,5,7 -3,-6,1 8,-4,7 7,…  01001110                                  1
+ 467  ANAPAL        ddaaacaacdda|ada                          adaacddcaada                              1
+ 468  SPQ           71804135369                               69197                                     1
+ 469  trico         13 4-12 1-6 1-7 1-8 3-12 0-10 1-9 4-10 …  2022222221110                             1
+ 470  hanjie        1,1,1/1,4/2,2/3/1,2/1,1\n1/1/3/1,2,1/1,…  #..#...#\n.#..####\n..##..##\n..###...\…  1
+ 471  TOPPLE        5543=43                                   3455+*+                                   1
+ 472  MARIENBAD     15 2 11                                   9 2 11                                    1
+ 473  ANAPAL        bbaabbabaccaa|cba                         cbaaabbbaaabc                             1
+ 474  trico         11 0-3 3-10 0-6 2-5 4-6 1-10 2-3 0-7 4-…  01010112210                               1
+ 475  ANAPAL        bcbdcabcbadc|ccb                          ccbabddbabcc                              1
+ 476  volute        flizvc\nasvlwd\nbgniiy\ntwgdku\nkztvkw    flizvcdyuwkvtzktbasvlwikdgwgni            1
+ 477  TARE          45 54 8 33 26 33 53 38|152                11000010                                  1
+ 478  trico         11 0-3 5-9 7-8 0-9 1-10 1-9 0-8 2-9 5-6…  12222102001                               1
+ 479  RUNIC         fffbedbbbbbbbbbbg                         3f1b1e1d10b1g                             1
+ 480  wolf          010110011110>100011100011 000000001111>…  01010011                                  1
+ 481  zebu          A|E C<B B#4 E<A B|C                       EACBD                                     1
+ 482  TWINE         bbeabacbeede|ddbdebededbdcc|6             bebede                                    1
+ 483  RUNIC         eeeeeeeeeeeeccccccaaddddddddddcggg        12e6c2a10d1c3g                            1
+ 484  DUOMASK       ab*aa?a+b .b*(a|b)a+b*(a|b)b*.            aaaab                                     1
+ 485  AHMES         11/16                                     2 6 48                                    1
+ 486  ALLWIN        abcd 4                                    aaaabaaacaaadaabbaabcaabdaacbaaccaacdaa…  1
+ 487  erewhon       ..##..\n#...#.\n#.....\n....#.\n....##\…  ......\n.####.\n####..\n.#..#.\n.#..#.\…  1
+ 488  BASILISK      86c:16>3                                  2221212                                   1
+ 489  SPQ           105912214931                              55057                                     1
+ 490  ANAPAL        cacaaaacaac|ca                            caaacacaaac                               1
+ 491  skerry        ........#..\n.........##\n.......#.#.\n…  13                                        1
+ 492  erewhon       ..##.#\n####.#\n#####.\n......\n.####.\…  .#.###\n#..#.#\n#...#.\n.#.#..\n......\…  1
+ 493  ikos          11 1-7 5-9 0-10 0-5 4-5 0-1 1-5 6-10 0-…  6 10 4 2 7 1 5 9 8 3 0                    1
+ 494  IDX           229404 67193 425899                       312237                                    1
+ 495  TOPPLE        3455=27                                   53+4*5-                                   1
+ 496  ikos          11 5-9 9-10 1-8 6-7 1-10 5-6 3-4 4-8 6-…  0 10 9 5 4 3 2 7 6 8 1                    1
+ 497  wolf          01001000100000>00100110011111 000000101…  01110001                                  1
+ 498  TWINE         cceeaeecbceead|dcdbbbbdcaadab|5           cbcad                                     1
+ 499  wolf          0000000001010>0000000011011 10001110100…  01010110                                  1
+ 500  BASILISK      14202:7>9                                 5273                                      1
+ 501  IDX           240169 247285 745981                      73828                                     1
+ 502  krom          2,-3,8 -1,-4,-8 2,4,-8 1,5,6 8,2,4 2,-1…  01010100                                  1
+ 503  AHMES         7/18                                      3 18                                      1
+ 504  carre         .3../..41/.13./24.3                       1324/3241/4132/2413                       1
+ 505  wolf          11001000000>11011011111 1110010000110>1…  01001111                                  1
+ 506  hanjie        5/1,1,1/2/3,1/4/2\n1,1/4,1/1,3/2,1/1,2/…  .#####\n.#.#.#\n.##...\n###.#.\n..####\…  1
+ 507  erewhon       ##....\n##..#.\n....#.\n......\n.#....\…  .#....\n##..#.\n..###.\n..##..\n.####.\…  1
+ 508  ANAPAL        bacdaddaaaabc|ca                          caaabdddbaaac                             1
+ 509  krom          4,5,9 4,-2,5 -8,7,-4 7,-3,9 -9,3,2 4,-8…  001010001                                 1
+ 510  TARE          37 39 52 32 3 17 55 23|152                01011011                                  1
+ 511  volute        dxojkmm\nwkutnuy\nuzhaicp\nukzfkjc\nnjo…  dxojkmmypcepqcmiotnuuwkutnucjbzqojkzhai…  1
+ 512  TARE          35 7 10 16 35 8 9 36|53                   10100100                                  1
+ 513  SPQ           31863927287                               54217                                     1
+ 514  trico         10 2-7 2-8 1-2 3-9 7-9 1-4 1-5 4-7 7-8 …  1102222120                                1
+ 515  warren        #####################\n#S#...#...#.....…  DDRRUURRDDRRUURRDDRRRRDDLLDDRRRRDDRRDDD…  1
+ 516  ikos          10 5-6 3-4 3-7 0-6 8-9 0-7 0-9 2-5 4-6 …  3 7 0 4 2 5 1 9 8 6                       1
+ 517  HANSOM        4,7 6,4 8,3 0,1 9,0|34                    0 1 2 4 3                                 1
+ 518  BASILISK      6671:9>7                                  20233                                     1
+ 519  SPQ           34963440221                               30367                                     1
+ 520  wolf          1100010011>1010111111 1011111011>011111…  10111110                                  1
+ 521  ANAPAL        ddcdadccccccc|cdcd                        cdcdccaccdcdc                             1
+ 522  erewhon       ...###\n#.....\n####.#\n##...#\n#..#.#\…  ..####\n#...#.\n##.#.#\n.#..##\n..##..\…  1
+ 523  TWINE         adbecdddabbda|caacebecbdebcb|7            abecdbb                                   1
+ 524  BASILISK      3668:9>7                                  10655                                     1
+ 525  erewhon       ......\n....#.\n....##\n##....\n......\…  ......\n...#.#\n....#.\n.#...#\n##....\…  1
+ 526  PP            0156                                      165101561                                 1
+ 527  AHMES         21/23                                     2 3 13 359 644046                         1
+ 528  SUNZI         0%2 34%73 55%67 15%71 3%19                4791024                                   1
+ 529  HANSOM        8,7 0,9 2,6 7,9 2,2 7,4 7,8|30            0 5 4 2 1 3 6                             1
+ 530  hanjie        4,2/1,1/2,1/3,3/1,1,2,1/4/4,1/1,4\n1,2,…  ####..##\n....#..#\n.##....#\n###.###.\…  1
+ 531  hanjie        1,3/1/1,1/1,1/3/1,1,1/1,1\n3,1/2/1,1/1,…  #.###.\n#.....\n#....#\n.#...#\n.###..\…  1
+ 532  PP            546                                       9645469                                   1
+ 533  ikos          12 3-5 1-2 2-11 3-11 2-3 8-9 0-3 9-10 0…  7 4 9 10 8 1 2 3 5 0 6 11                 1
+ 534  erewhon       ##.#..\n#..#..\n#.#.#.\n#.#.#.\n##.#.#\…  .###..\n##.#..\n#.#...\n#..##.\n#..##.\…  1
+ 535  DUOMASK       a[ab]b?b(a|b)b?ba ab(a|b)ba*a+(a|b)b+a*a  abbbabba                                  1
+ 536  TARE          15 37 34 28 55 10 4 58|144                11100001                                  1
+ 537  trico         11 0-7 2-9 1-7 1-10 5-8 2-4 1-3 0-9 4-6…  22200021201                               1
+ 538  volute        yjnfy\nknwij\ntjeoh\nkbzae                yjnfyjheazbktknwioej                      1
+ 539  CRIBROT       zwddgjwtwdwkksqtajlz|hello                hellorebelessaybirth                      1
+ 540  skerry        ........#...\n.#..##.##.#.\n.....#.#..#…  10                                        1
+ 541  PP            3368                                      3368633                                   1
+ 542  SUNZI         8%19 10%47 4%13 23%59 81%89               17927173                                  1
+ 543  PP            939                                       19391                                     1
+ 544  AHMES         10/21                                     3 7                                       1
+ 545  SUNZI         1%3 2%5 0%13 42%89                        11167                                     1
+ 546  zebu          B|C A<E C<D B<D D#4 A|C B|D               ACBDE                                     1
+ 547  krom          10,-4,9 5,-8,-7 -5,4,-6 7,10,-8 -10,-1,…  0100000010                                1
+ 548  MARIENBAD     10 6 6 15 2                               10 1 6 15 2                               1
+ 549  erewhon       ....#.\n....#.\n......\n##....\n##....\…  .....#\n...#.#\n......\n##....\n.#....\…  1
+ 550  CRIBROT       pknydxhwoppdnasbhkwp|torch                torchblastthrewfloat                      1
+ 551  erewhon       ...#..\n....#.\n#...#.\n#..#..\n...#.#\…  ....#.\n..##..\n####..\n#...#.\n.#....\…  1
+ 552  hanjie        1,2/2,1/3/1,1/1/3,1/1/1\n1,1,1/2,1/1,1/…  .#.##.\n##...#\n...###\n#.#...\n...#..\…  1
+ 553  hanjie        1/1/2,1,1/3/4,1/1,2/1,1,1\n1,3/1,1/3/4/…  ....#.\n....#.\n##.#.#\n...###\n####.#\…  1
+ 554  skerry        ...........#....\n................\n...…  22                                        1
+ 555  MARIENBAD     2 5 8 14 6                                2 2 8 14 6                                1
+ 556  skerry        ...#.....##..#..\n...##...##..#.#.\n.#.…  21                                        1
+ 557  warren        #####################\n#S#.....#.#...#.…  DDDDDDRRDDLLDDRRRRUURRUULLUULLUUUURRRRD…  1
+ 558  GRAYLING      1110 1101 6                               1110 1111 1011 1010 1000 1001 1101        1
+ 559  warren        #####################\n#S#...........#.…  DDRRDDDDLLDDDDRRUURRRRRRDDLLDDDDLLUULLL…  1
+ 560  erewhon       ..#...\n.#.##.\n..#.#.\n.....#\n....#.\…  ..#...\n.#.#..\n#.#.##\n..#...\n.####.\…  1
+ 561  ALLWIN        abc 5                                     aaaaabaaaacaaabbaaabcaaacbaaaccaababaab…  1
+ 562  hanjie        1,2/1,3/1,1/1,1,2/2,1,1/1,1\n4/1,1/1,1,…  .#..##\n#.###.\n#...#.\n#.#.##\n##.#.#\…  1
+ 563  ALLWIN        ab 8                                      aaaaaaaabaaaaaabbaaaaababaaaaabbbaaaaba…  1
+ 564  krom          -10,3,-7 -5,10,1 7,-1,-3 -4,-7,9 9,6,2 …  0000000010                                1
+ 565  regina        .......\n...X...\n.......\n....X..\n.X.…  0362514                                   1
+ 566  warren        ###################\n#S..#.......#.....…  RRDDRRDDDDRRUUUURRUURRDDRRUURRRRDDDDLLL…  1
+ 567  TARE          26 25 52 34 13 43 45|169                  0111101                                   1
+ 568  ikos          10 3-8 6-8 6-9 4-8 1-4 2-3 0-3 7-8 6-7 …  0 3 1 4 8 6 9 2 5 7                       1
+ 569  SPQ           118355679473                              81689                                     1
+ 570  BASILISK      436:7>2                                   11011111                                  1
+ 571  ANAPAL        cebbbceccbbb|bb                           bbbcceeccbbb                              1
+ 572  carre         .2../..../..23/243.                       3214/1342/4123/2431                       1
+ 573  volute        ukl\ncus\ndpu                             uklsupdcu                                 1
+ 574  ALLWIN        ab 3                                      aaababbb                                  1
+ 575  trico         10 4-9 5-6 0-9 1-9 1-8 0-2 4-8 2-3 3-9 …  2212201210                                1
+ 576  DUOMASK       [ab][ab]a?.b*(a|b).b*b (a|b)[ab]a+a+(a|…  aaaaaab                                   1
+ 577  MARIENBAD     14 8 12                                   4 8 12                                    1
+ 578  TWINE         aadbcaadecbcced|ccdbaabbcdaeab|7          dbaabcd                                   1
+ 579  krom          9,-4,7 -6,1,7 -3,-7,2 8,-6,-3 -9,-5,-1 …  111000100                                 1
+ 580  erewhon       ....#.\n..###.\n..##..\n.#....\n...#.#\…  ......\n...###\n..##..\n......\n#.####\…  1
+ 581  zebu          C<E B<C A<E B|D B#2 C|E B<E B<A           DBACE                                     1
+ 582  krom          -8,3,-10 -5,-1,-9 -1,-6,10 6,2,5 10,-1,…  0000101010                                1
+ 583  TARE          17 40 53 23 47 29|40                      010000                                    1
+ 584  ikos          9 0-4 6-7 2-5 3-6 4-5 2-8 2-4 0-5 2-6 1…  7 6 3 0 4 5 8 1 2                         1
+ 585  MARIENBAD     15 14 7                                   9 14 7                                    1
+ 586  hanjie        2,1,1/1,2/1,1/3/1,1/1,2,1/2,1\n2,2/1,1,…  ##.#.#\n#..##.\n..#.#.\n..###.\n.#..#.\…  1
+ 587  PP            413                                       3140413                                   1
+ 588  ANAPAL        adbaabdaabab|aa                           aaabbddbbaaa                              1
+ 589  warren        #######################\n#S....#.......…  RRRRDDDDLLLLDDDDDDRRRRDDRRUURRRRRRRRDDD…  1
+ 590  HAIL          108                                       124                                       1
+ 591  IDX           246980 2159 390527                        26905                                     1
+ 592  wolf          0010110011>1100001100 1011110110>000110…  10010011                                  1
+ 593  HANSOM        8,0 6,5 9,1 6,2 7,7 9,7 0,2|34            0 2 5 4 1 3 6                             1
+ 594  TARE          4 21 14 25 15 10 42 59 51|126             000100110                                 1
+ 595  SPQ           78037693277                               95101                                     1
+ 596  ALLWIN        abc 5                                     aaaaabaaaacaaabbaaabcaaacbaaaccaababaab…  1
+ 597  TWINE         ddcddcddbadaddd|dcacadbdbdddbc|9          dccdbdddd                                 1
+ 598  TOPPLE        4489=56                                   98*44*-                                   1
+ 599  CHAKRA        54                                        485 66                                    1
+ 600  volute        isuybe\niukxxh\ntycnzt\neyimod            isuybehtdomiyetiukxxzncy                  1
+ 601  TARE          53 25 56 23 34 3 52|90                    0010100                                   1
+ 602  erewhon       ......\n......\n..#.#.\n....#.\n##.##.\…  ......\n...#..\n.#...#\n...#..\n.#.#..\…  1
+ 603  TARE          34 16 60 53 46 22|159                     001110                                    1
+ 604  ALLWIN        abc 3                                     aaabaacabbabcacbaccbbbcbccc               1
+ 605  BASILISK      5603:9>5                                  113014                                    1
+ 606  IDX           69052 209906 334349                       77355                                     1
+ 607  HAIL          98                                        161                                       1
+ 608  TOPPLE        5719=31                                   17+5*9-                                   1
+ 609  wolf          10110010000>10001111111 1001111110001>0…  00010111                                  1
+ 610  AHMES         13/22                                     2 11                                      1
+ 611  HANSOM        8,0 3,4 2,3 5,5 8,2|22                    0 2 1 3 4                                 1
+ 612  TWINE         abecdcceecb|ceeededdaaceb|5               ceecb                                     1
+ 613  TOPPLE        8659=21                                   985-*6-                                   1
+ 614  ALLWIN        abc 4                                     aaaabaaacaabbaabcaacbaaccababacabbbabbc…  1
+ 615  ANAPAL        bddbdbcabdca|bdb                          bdbacddcabdb                              1
+ 616  erewhon       .##...\n.##...\n......\n.#....\n##.###\…  ..#...\n.##...\n......\n....#.\n###...\…  1
+ 617  SPQ           2282541143                                16453                                     1
+ 618  carre         .21./23../31.4/..3.                       4213/2341/3124/1432                       1
+ 619  TWINE         acadbbadcdab|ebeacbeddccee|5              acbdd                                     1
+ 620  ALLWIN        abcd 4                                    aaaabaaacaaadaabbaabcaabdaacbaaccaacdaa…  1
+ 621  GRAYLING      1000 0010 4                               1000 1001 1011 1010 0010                  1
+ 622  volute        fsqu\nrnua\ndahm\nvehg\niphn\nbujc        fsquamgncjubivdrnuhhhpea                  1
+ 623  skerry        ......##...##.##\n.........#.#....\n...…  14                                        1
+ 624  ALLWIN        ab 8                                      aaaaaaaabaaaaaabbaaaaababaaaaabbbaaaaba…  1
+ 625  regina        ........\n...XX...\n.......X\n.X.....X\…  05726314                                  1
+ 626  HANSOM        7,1 5,9 2,7 3,4 4,1 5,0|30                0 1 2 3 4 5                               1
+ 627  volute        ymptlui\nokroxue\ngbtgtho\nevriqht        ymptluieothqirvegokroxuhtgtb              1
+ 628  warren        #######################\n#S#.......#...…  DDDDRRDDLLDDDDRRUURRDDRRDDDDRRRRRRUURRD…  1
+ 629  PP            974                                       3479743                                   1
+ 630  BASILISK      2660:9>8                                  3716                                      1
+ 631  IDX           295893 391836 720607                      216141                                    1
+ 632  CHAKRA        92                                        1151 120                                  1
+ 633  carre         ..../2.1./.234/.1..                       4321/2413/1234/3142                       1
+ 634  krom          -3,8,4 5,-2,8 -6,-5,-7 8,-5,-4 6,-5,-1 …  10000001                                  1
+ 635  SPQ           81037456793                               63029                                     1
+ 636  IDX           120486 173658 180799                      23260                                     1
+ 637  IDX           44023 130775 458363                       133426                                    1
+ 638  SPQ           1676924213                                563                                       1
+ 639  RUNIC         aeggggggggggggdddddddddbbbeeeaaa          1a1e12g9d3b3e3a                           1
+ 640  hanjie        3/1,1/2,1/1/1,2/1/1,3/1,1,1\n2,1/1,2/1/…  ...###\n#...#.\n##.#..\n.....#\n#...##\…  1
+ 641  TWINE         ccadeedacdcabd|baadaedaadcaacc|8          adedadca                                  1
+ 642  carre         .4../4.../.24./.124                       2431/4312/1243/3124                       1
+ 643  CRIBROT       qyjmlajmaiilmulnyncp|salon                salonclockknownpaper                      1
+ 644  regina        .X.....\nX...X..\nXX...X.\n.XX...X\n...…  3164205                                   1
+ 645  erewhon       ..##..\n..##..\n..##..\n......\n......\…  ......\n.####.\n......\n......\n......\…  1
+ 646  HANSOM        9,9 8,1 2,6 7,4 1,5 0,5 0,0|38            0 2 4 5 6 1 3                             1
+ 647  HAIL          23                                        25                                        1
+ 648  wolf          0101111000100>1111110101110 11100011101…  10111110                                  1
+ 649  DUOMASK       (a|b)baa*bb? bb+ab?.                      bbab                                      1
+ 650  trico         9 4-6 1-2 5-7 1-4 0-7 2-6 6-7 1-5 4-5 2…  120101202                                 1
+ 651  PP            055                                       1055501                                   1
+ 652  skerry        ##.##.....###..\n.#.......#.#.##\n..#.#…  13                                        1
+ 653  BASILISK      3808:9>7                                  11201                                     1
+ 654  trico         12 3-8 9-11 7-8 5-8 0-11 1-3 4-9 7-10 5…  120100112102                              1
+ 655  CRIBROT       qryrcufyjczmppmu|borrow                   statewhaleborrow                          1
+ 656  ANAPAL        cbaccaaacdbd|adc                          adcabccbacda                              1
+ 657  RUNIC         ggggggbbbggggggggggggggeeeeeeeeeeaaaaac…  6g3b14g10e5a1c2g6a3d                      1
+ 658  HAIL          57                                        1138                                      1
+ 659  krom          -6,-9,-8 -2,6,4 -5,-9,-8 -7,-2,4 2,9,5 …  010001000                                 1
+ 660  PP            217                                       1712171                                   1
+ 661  regina        X.X...\n......\n.XX..X\n.XX.X.\nX...X.\…  251403                                    1
+ 662  hanjie        5/2/2/1,4/4/2,2/1,5/1,3\n1,1/1,1,1/3,2/…  #####..\n..##...\n..##...\n.#.####\n...…  1
+ 663  hanjie        3/3,1/1,1,1/1/2,2/1,1\n1,1/1,1,2/1/1/2,…  ###.....\n...###.#\n.#..#..#\n.......#\…  1
+ 664  SUNZI         34%47 15%89 31%71                         277428                                    1
+ 665  ALLWIN        abc 3                                     aaabaacabbabcacbaccbbbcbccc               1
+ 666  regina        ........\nX.......\n..XX....\n.X..X...\…  20647135                                  1
+ 667  IDX           14314 30096 41659                         35187                                     1
+ 668  MARIENBAD     1 4 4 6                                   1 3 4 6                                   1
+ 669  BASILISK      100110100000:2>8                          4640                                      1
+ 670  SPQ           187336111933                              80233                                     1
+ 671  volute        gboo\nmbcs\njmra\nyqzl\ntpbe\nvsyf        gboosalefysvtyjmbcrzbpqm                  1
+ 672  GRAYLING      1101 1011 4                               1101 1100 1110 1111 1011                  1
+ 673  MARIENBAD     14 9 12                                   5 9 12                                    1
+ 674  MARIENBAD     8 12 5 12 14                              8 12 5 12 13                              1
+ 675  zebu          A#1 D#5 C|D B|E B<E                       ABECD                                     1
+ 676  AHMES         3/40                                      14 280                                    1
+ 677  carre         .321/1.3./2..3/..1.                       4321/1234/2143/3412                       1
+ 678  erewhon       ....#.\n...#.#\n..#.#.\n..#.#.\n...##.\…  .....#\n...#.#\n..#.#.\n...#..\n..#.#.\…  1
+ 679  HANSOM        4,3 7,4 0,9 2,9 5,1 1,3 3,0|34            0 1 3 2 5 6 4                             1
+ 680  zebu          A|B C<D C<A C#2 B#3                       ECBAD                                     1
+ 681  ALLWIN        ab 4                                      aaaabaabbababbbb                          1
+ 682  PP            438                                       114383411                                 1
+ 683  PP            0959                                      3095903                                   1
+ 684  DUOMASK       (a|b)a*.(a|b)b+ab* b?.ab(a|b)             baaba                                     1
+ 685  carre         .4.2/.321/..../.1..                       1432/4321/3214/2143                       1
+ 686  ALLWIN        abc 3                                     aaabaacabbabcacbaccbbbcbccc               1
+ 687  erewhon       ......\n.#####\n#.#.##\n##....\n..#..#\…  .....#\n..#...\n.##.##\n##..##\n...#.#\…  1
+ 688  carre         ..3./3412/..4./....                       1234/3412/2143/4321                       1
+ 689  ALLWIN        abc 4                                     aaaabaaacaabbaabcaacbaaccababacabbbabbc…  1
+
+per-name tally this round
+name             presented correct  hit-rate
+AHMES                   21      21    100.0%
+ALLWIN                  27      27    100.0%
+ANAPAL                  24      24    100.0%
+BASILISK                20      20    100.0%
+CHAKRA                  16      16    100.0%
+CRIBROT                 17      17    100.0%
+DUOMASK                 21      21    100.0%
+GRAYLING                18      18    100.0%
+HAIL                    15      15    100.0%
+HANSOM                  22      22    100.0%
+IDX                     20      20    100.0%
+MARIENBAD               23      23    100.0%
+PP                      29      29    100.0%
+RUNIC                   18      18    100.0%
+SPQ                     32      32    100.0%
+SUNZI                   22      22    100.0%
+TARE                    32      32    100.0%
+TOPPLE                  18      18    100.0%
+TWINE                   25      25    100.0%
+carre                   21      21    100.0%
+erewhon                 28      28    100.0%
+hanjie                  25      25    100.0%
+ikos                    25      25    100.0%
+krom                    23      23    100.0%
+regina                  17      17    100.0%
+skerry                  25      25    100.0%
+trico                   21      21    100.0%
+volute                  24      24    100.0%
+warren                  18      18    100.0%
+wolf                    23      23    100.0%
+zebu                    20      20    100.0%

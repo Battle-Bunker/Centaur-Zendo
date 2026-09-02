@@ -139,8 +139,8 @@ def report(a):
             e = json.loads(line)
         except Exception:
             continue
-        if e.get("dir") == "round":
-            rounds.append(e)
+        if e.get("dir") == "round" and "presented" in e.get("msg", {}):
+            rounds.append(e)  # skip round_start markers and demos
     # per team per round
     by_team = collections.defaultdict(list)
     for e in rounds:

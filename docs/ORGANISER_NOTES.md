@@ -50,6 +50,8 @@ known key length), `CRATE` (bin packing), `HOARD` (knapsack), `BLANKET` (set cov
 
 ## Challenge design lab (fast cadence: 6 rounds × 0.5 s, 5 s thinking, 3 s final)
 
+On-target classes are promoted into `challenges/` (`quaich`, `OKRIN`, `murn`); the lab versions and notes stay in `challenges/lab/`.
+
 Five designer agents each built a challenge from a lateral direction and iterated against pairs of fresh
 Opus player agents in private arenas (`sim/DESIGN_LOOP.md`, results under `sim/results/lab-*`,
 challenges under `challenges/lab/`). Classification per player: cracked ≥ 90 % in the final, partial
@@ -59,8 +61,8 @@ challenges under `challenges/lab/`). Classification per player: cracked ≥ 90 %
 |---|---|---|---|---|
 | `quaich` | invented 3-cycle bracket notation | cracked (r5–6, 3 demos) + partial 23 % | — | on target |
 | `OKRIN` | sparse clue, forced completion, 3 clauses | cracked (r4, 3 demos) + partial 73 % | — | on target |
-| `murn` | invented support physics | cracked r6 + cracked r5 | (see results) | see `NOTES_physics.md` |
-| `orlan` | invented board game | partial 32 % + partial 29 % (law never found) | (see results) | see `NOTES_game.md` |
+| `murn` | invented support physics | cracked r6 + cracked r5 | cracked r5 + failed 3 % (material-typed staggering) | on target (v2) |
+| `orlan` | invented board game | partial 32 % + partial 29 % (law never found) | partial 23 % + partial 25 % (a different wrong law) | too hard so far; v3 in progress |
 | `quilm` | everyday object (seven-segment) | cracked r4 + r6 | cracked r3 + r5 (faster) | too easy for Opus; good for kids |
 
 What made the on-target ones work, and the principles now in `sim/DESIGN_LOOP.md`:

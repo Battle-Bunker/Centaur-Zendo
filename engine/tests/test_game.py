@@ -550,9 +550,9 @@ async def test_leaderboard_ordering_and_tiebreak():
     assert [r["team"] for r in lb][:2] == ["alice", "bob"]  # equal score, fewer answers wins
     assert lb[0]["final_score"] == lb[1]["final_score"]
     assert lb[0]["answered"] < lb[1]["answered"]
-    # both on 0: SPEC's tiebreak is "fewer answers", so the no-show (dan) edges out
-    # carol, who spent 4 wrong answers.
-    assert [r["team"] for r in lb][2:] == ["dan", "carol"]
+    # both on 0, but a team that actually ran its final (carol) always ranks above
+    # a no-show (dan), regardless of the fewer-answers tiebreak.
+    assert [r["team"] for r in lb][2:] == ["carol", "dan"]
     assert [r["rank"] for r in lb] == [1, 2, 3, 4]
 
 

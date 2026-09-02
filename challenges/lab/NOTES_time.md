@@ -133,3 +133,108 @@ and `solve()` guarantees each of those decoys appears in every demo.
 4. The last step is the weekend: pairs that reach into Sat/Sun, or step over the week break,
    do not count. A player who misses this over-counts and lands in the 40-70 % partial band
    rather than at 0 - a graceful partial tier, which is what "mixed outcome" needs.
+
+---------------------------------------------------------------------------
+## Iteration 1 - `challenges/lab/tovel.json` (v1, shipped)
+
+### Rule (private)
+Clue `L/S/x/k`: `L` days in the month (28-31), the 1st falls in column `S` (0 = Monday),
+`x` a capital letter, `k` in 2..6. The answer is that month's page - week rows of seven, the
+first row holding `7-S` dates, the dates `1..L` in reading order, **every** date carrying a
+capital letter written straight after it (`17B`). A weekday header line is allowed and ignored
+(any line with no digit is skipped); tabs, extra spaces and blank lines are tolerated.
+Score 1 iff the page is exactly right **and**
+
+```
+#{ d : d and d+2 both carry x, and d is a Monday, Tuesday or Wednesday } == k
+```
+
+"how many times x happens twice in the same school week with exactly one day in between"
+(Mon+Wed, Tue+Thu, Wed+Fri). Everything else is a decoy: x next door to x, x directly below x
+(a week apart), x two apart across the weekend, x two apart over the week break, another
+letter two apart.
+
+### Validation
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, no warnings.
+`score` 389 chars (cap 512), `solve` 4635 (cap 5000), `generate` 219; clue 8 chars, solution
+<= 175; gen 0.04 ms, score 0.04 ms, solve 46 ms worst / 3.2 ms average (cap 2000).
+solve() scores 1 on **3000/3000** fresh seeds and re-parses its own output with a byte-copy of
+the scorer before returning it.
+
+### Self-tests (scratchpad/time/{selftest,hyp}.py, 800 fresh clues unless noted)
+
+| attack | witness | score |
+|---|---|---|
+| blind | empty / spaces / newlines / `0` / `1` / `x` / `1`*100 / 4000-char junk | 0.00 % |
+| blind | the clue itself | 0.00 % |
+| format | date grid with no letters | 0.00 % |
+| format | every day = x | 0.00 % |
+| format | every day = one other letter | 0.00 % |
+| blind | random 6-letter page (x20 per clue, 16 000 answers) | 2.34 % |
+| minimal | one qualifying pair, rest inert | 0.00 % (k >= 2 closes it) |
+| replay | another clue's demo | 0.00 % |
+| constant | best single fixed answer over 200 clues | 1.50 % |
+| rule | k pairs of x **next door** | 0.41 % |
+| rule | k pairs of x **a week apart** | 1.03 % |
+| rule | k pairs of x **three apart** | 0.00 % |
+| rule | exactly k x's | 0.00 % |
+| rule | k x-**cells** in qualifying pairs, not k pairs | 0.00 % |
+| rule | k pairs two apart, **anywhere** | 7.91 % |
+| rule | k pairs two apart **inside a week row** (weekend kept) | 17.03 % |
+| rule | k pairs two apart, **avoiding the week break only** | 18.00 % |
+| rule | the true rule | 100.00 % |
+| shape | correct count, page laid out from column 0 (S ignored) | 13.00 % = exactly the S=0 clues |
+| shape | one row / one token per line / zero-padded dates | 0.00 % |
+| shape | an extra day / a dropped day / a widened last row | 0.00 % |
+| shape | lower case / `17 B` instead of `17B` / numeric header line | 0.00 % |
+| shape | header, no header, tabs, blank lines | 100.00 % (robust about form) |
+
+Scorer sanity: 20 000 random junk strings -> **0 raises, 0 non-binary returns**, worst
+0.102 ms; a 1200-char answer costs 0.011 ms. Independent re-implementation of the stated rule
+vs the shipped scorer on 32 000 well-formed answers: **0 disagreements**.
+
+### Fairness floor - hypothesis-elimination surrogate (`hyp.py`)
+768 hand-built "count a relation between marked days" expressions (distance 1-7 x 10 window
+predicates x pairs/cells x this-letter/any-letter x three gap conditions, plus 7 non-pair
+counts such as total x, rows containing x, columns containing x, runs, lonely x), collapsed by
+behaviour into **538 distinct functions**. Feeding real demos:
+
+| demos | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| survivors (6 trials) | 20-92 | 6-11 | 1-5 | 1-2 | 1-2 | 1 |
+
+3-6 demos isolate the rule - inside the 6-demo budget, and the same profile as LegoZendo.
+The three surviving expressions are *aliases* of one function ("both days are weekdays" ==
+"the pair starts Mon/Tue/Wed" == "same row and both weekdays"), i.e. genuinely one rule.
+
+### Witness leaks closed by the design (not by the scorer)
+* **The clue pins the picture.** L and S vary per clue, so a constant answer is wrong on
+  ~96 % of clues before the count is even looked at; there is no fixed template to hill-climb.
+* **k >= 2** kills the letterless page, the all-one-letter page and the single-pair witness.
+* **Every date must carry a letter**, so "sprinkle a few marks" pages are rejected and the
+  player has to place decoy letters deliberately.
+* **solve() never emits a demo whose rival counts equal k** (10 rival counts checked), and
+  every demo contains at least one x-pair reaching into the weekend, one stepping over the
+  week break, one x next door to x, one x a week apart and one same-letter non-x pair - so the
+  exclusions are shown positively rather than being invisible (NOTES_everyday lesson 2).
+* Cosmetics randomised per clue: header style (3), alphabet size (4-5) and letters, chain
+  structure of the counted pairs, decoy placement.
+
+### Arena (DESIGN_LOOP step 3) - players NOT run (no Agent tool here)
+```
+pool   $SCRATCH/pool-tovel-1/tovel.json
+setup  python sim/arena.py setup --run lab-tovel-1 --teams tovela,tovelb \
+         --challenge-dir $SCRATCH/pool-tovel-1 --arena-root $SCRATCH/lab-tovel-1
+port   45685   pid 4094   phase training   pool_size 1
+team tovela  $SCRATCH/lab-tovel-1/players/tovela
+team tovelb  $SCRATCH/lab-tovel-1/players/tovelb
+teardown     python sim/arena.py teardown --run lab-tovel-1 && python sim/arena.py report --run lab-tovel-1
+```
+Expected reading of the result: **cracked** = they found "two apart, same school week";
+**partial ~17-18 %** = they found "two apart in a week" but not the weekend exclusion;
+**partial ~8 %** = "two apart anywhere"; **< 2 %** = the page format only.
+If both crack: harden by moving the counted relation off the horizontal (count x's directly
+below x two rows apart, i.e. a fortnight) or by requiring two letters (`x` then `y` the next
+school day), both of which keep the object and the kid-statable sentence.
+If neither gets past ~2 %: the format gate is the suspect, and the fix is to put the row
+structure in the clue in words (e.g. `31/2` -> `31 days from Wed`), not to simplify the rule.

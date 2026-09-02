@@ -163,3 +163,152 @@ Letters not named in the tally are unconstrained decoys.
 | copying a demo's heights | the layout changes every instance |
 
 Measurements for all of these are in the *Anti-witness* table further down.
+
+---------------------------------------------------------------------------
+## Iteration 1 — `challenges/lab/fennick.json` (shipped), arena live, players NOT run
+
+### Clue / answer, concretely
+
+```
+clue  EU.J.JE.UR.RR..WRU.W.T..R.ET.EU..E.ET..ER.U..JJ..UW.WR.TW/U1E2R2W1
+
+answer (one demo output)
+.........R...................E...........................
+.........R.......U...T.......E......T.....U..............
+......E..R.......U...T.......E......T.....U..............
+E.....E..R..R....U...T.......E...E..T.....U..JJ...W......
+E.....E.UR..R..W.U...T..R....E...E..T..E..U..JJ...W......
+E.....E.UR.RR..W.U...T..R..T.EU..E..T..E..U..JJ...W..R.T.
+EU.J..E.UR.RR..WRU...T..R..T.EU..E.ET..E..U..JJ...W..R.T.
+EU.J.JE.UR.RR..WRU.W.T..R.ET.EU..E.ET..ER.U..JJ..UW.WR.TW
+=========================================================
+```
+
+Exactly one U book, two E books, two R books and one W book must be *leaning*, where a book
+leans iff exactly one neighbouring slot is a hole, the slot two along that way holds a book,
+and that book is strictly taller.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/fennick.json -v` → **OK, no warnings**;
+`--seeds 200` → **OK, no warnings** (gen 1.05 ms, score 0.22 ms, solve 8.87 ms worst case).
+Engine pool load through `sim/arena.py setup`: `1 accepted, 0 rejected`.
+
+### Engineering (3000 fresh seeds, `$SCRATCH/home/`)
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **483** chars | 512 |
+| `solve` / `generate` source | 1253 / 2695 | 5000 / 50000 |
+| clue length | 64–70 chars (shelf 55–62 slots) | 1024 |
+| solution length | 335–609 chars | 1024 |
+| generate | avg 0.19 ms, p99 0.63, **max 0.89 ms** | 100 ms |
+| solve | avg 1.10 ms, p99 5.8, **max 17.6 ms** | 2000 ms |
+| score | avg 0.078 ms, **max 0.57 ms**; 0.018 ms on junk | 50 ms |
+| determinism / distinctness | 3000/3000 identical on re-call, 3000/3000 distinct clues, 0 generator fallbacks | |
+| `score(clue, solve(clue))` | 1 on 3000/3000 | |
+| cross-check vs an independent re-implementation | **0 disagreements / 9250** (clue, answer) pairs incl. malformed | |
+| tally shape | per letter 0–5 (mode 2), 0 or 1 zeros per clue, total 5–12 | |
+
+### Anti-witness table (800 fresh clues unless noted; shipped scorer)
+
+| attack | hit rate |
+|---|---|
+| empty string / whitespace / `"x"` / `"1"*100` / the clue itself | **0.00 %** |
+| shuffled solution (quickcheck's junk) | 0.00 % (0/300) |
+| layout row + shelf, i.e. every book height 1 | **0.00 %** |
+| any flat picture (all books height 2 / height 4) | **0.00 %** |
+| right-size picture on a *shuffled* layout row | **0.00 %** |
+| blind random heights 1..9 / 1..3 | 1.12 % / 0.50 % |
+| sawtooth heights up / down the shelf | 1.00 % / 0.75 % |
+| correct answer with two rows swapped (breaks bottom-alignment) | 0.50 % |
+| 22 hand-built well-formedness attacks (floating book, two letters in a column, book standing in a declared hole, missing book, wrong/absent/extra shelf row, ragged row, trailing space, mirrored picture, 4000-char junk) | **0/22 accepted**, and the 3 that *should* be accepted (blank rows above, trailing newline, 55 blank rows) all accepted |
+| correct answer + one blank row on top (must be 1) | 100.00 % |
+| **near-miss R = `>=` instead of `>`** | **31.1 %** |
+| near-miss R = "nearest book beyond the hole, however wide" | 17.9 % |
+| near-miss R = "holes on both sides count too" | 13.1 % |
+| near-miss R = "shorter than a book two away, ignoring holes" | 6.3 % |
+| near-miss R = "shorter than the right-hand neighbour" | 0.9 % (and infeasible for 35 % of clues) |
+| near-miss R = "next to exactly one hole, heights irrelevant" | 0.0 % (**infeasible for 100 % of clues**) |
+
+"near-miss R = X" means: a player holding rule X runs a local search for heights that satisfy
+*their* rule's tally, and submits that. It is the honest measure of what 90 %-of-the-way
+insight is worth.
+
+### How fast do demos kill the near-misses?
+
+Fraction of demo pictures on which each near-miss rule still reproduces the clue's tally
+(low = one demo falsifies it):
+
+| rule | agrees with the tally on a demo |
+|---|---|
+| the true rule (sanity) | 100.00 % |
+| `>=` instead of `>` | 17.0 % |
+| nearest book beyond the hole | 10.5 % |
+| holes on both sides count | 8.2 % |
+| shorter than a book two away | 1.7 % |
+| shorter than the right-hand neighbour | 0.8 % |
+| next to exactly one hole (heights ignored) | 0.0 % |
+
+### Fairness floor — hypothesis-elimination surrogate (`hyp.py`)
+
+Catalogue of **75 laws** = {which books are counted: exactly one hole side / at least one hole
+side / holes irrelevant} × {what it is compared with: the book two along, the next book beyond
+the hole however wide, the book on the packed side, the tallest book on the shelf, the book
+three along} × {`>` `>=` `<` `<=` `==`}. Feeding demos in random order until only the true law
+survives:
+
+* **median 1 demo, max 5, 0 failures in 100 random orders.**
+* On a single demo the strongest survivor other than the truth is `>=` at 19 %.
+
+So the evidence channel is not the bottleneck — a team that *generates* the right catalogue
+cracks this in one to five demos, comfortably inside the six-demo budget. The whole difficulty
+is lateral: does anyone propose "a hole on exactly one side, the book two along, taller"?
+This is exactly the lever `orlan` lacked (there the hidden quantity was invisible); here the
+quantity is a relation between two *drawn* objects, so it is inside the players' hypothesis
+space, but it is a three-conjunct relation, so being inside the space is not sufficient.
+
+### Witness leaks closed by construction (not by scorer clauses)
+
+* `generate()` never emits a clue whose named tallies are all zero (≥ 3 non-zero, total ≥ 5),
+  so "draw it flat" — the one universal, rule-free answer — is worth 0.00 %.
+* The clue dictates a 55–62 slot footprint, so the LegoZendo failure ("submit the minimal
+  witness and never learn the rule") cannot happen: there is no small answer.
+* Every instance carries ≥ 4 isolated books and ≥ 4 books beside a two-slot hole, and those
+  decoy slots are dealt to the four *named* letters, so each near-miss rule changes a named
+  tally in most instances. This is what took the near-miss rates from 41/58/66 % (first build,
+  measured) down to 31/18/13 %.
+* Candidate slots are dealt round-robin over a cycle in which the four named letters appear
+  twice and the two decoy letters once, so every named letter always owns ≥ 2 candidates and
+  its tally is always reachable. No unreachable clue is ever emitted (0 solve failures/3000).
+* Declared artifacts, for honesty: (a) isolated books and two-hole-neighbours are biased
+  towards named letters — visible, but it tells a player nothing about the rule; (b) exactly
+  one named letter has tally 0 in 37 % of clues and none in the rest; (c) the tally constrains
+  only ~18 of ~40 books, so 86 % of single-book height edits of a correct answer still score 1
+  — the accepted set is large, which is not a witness (you still need the rule to build one)
+  but is worth knowing when reading the players' hit rates.
+
+### Arena (DESIGN_LOOP step 3) — players not run by me
+
+```
+pool     $SCRATCH/pool-fennick-1/fennick.json
+setup    python sim/arena.py setup --run lab-fennick-1 --teams fennicka,fennickb \
+                --challenge-dir $SCRATCH/pool-fennick-1 --arena-root $SCRATCH/lab-fennick-1
+server   127.0.0.1:41241   pool loaded: 1 accepted, 0 rejected   phase=training
+teams    $SCRATCH/lab-fennick-1/players/fennicka
+         $SCRATCH/lab-fennick-1/players/fennickb
+cadence  6 rounds x 0.5 s, 5 s cooldown, 1 demo per window, 3 s final (arena defaults)
+```
+($SCRATCH = `/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad`)
+
+I cannot spawn player agents, so I stop here. After the orchestrator runs both players:
+`python sim/arena.py teardown --run lab-fennick-1` then `report --run lab-fennick-1`.
+
+### What to read in the results, and the pre-registered response
+
+| observed | reading | change for iteration 2 |
+|---|---|---|
+| both ≥ 90 % | recognition was sufficient; the three-conjunct relation is inside their default catalogue | harden: drop the layout's *letters* from the clue (give holes only, `..#.#..`, and let the player choose letters too) so the tally's candidate set is no longer readable off the clue |
+| one ≥ 90 %, one 10–90 % | **on target — stop** | — |
+| both 10–90 % with `>=`-shaped notes | they found the geometry and missed strictness | nothing structural; that is the designed near-miss tier (31 %) |
+| both < 10 % | holes were never brought into a hypothesis | soften: make `solve()` emit, once per demo, a shelf whose *only* books are the leaning ones' pairs (a 6-slot cameo appended under the shelf line) — a positive instance of the law itself, per the `orlan` v4(d) recommendation |

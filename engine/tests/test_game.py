@@ -623,3 +623,34 @@ async def test_generate_failures_are_retried():
     assert item is not None and pool.fails == 0
     await rnd.submit(item.index, solver(item))
     await rnd.finish()
+
+
+# --------------------------------------------------------------------------- early final
+
+@pytest.mark.asyncio
+async def test_early_final_unlocks_after_all_training_rounds():
+    game, pool, clock = make_game(max_training_rounds=2, cooldown_seconds=1, training_seconds=10_000)
+    game.start_training()
+    t = game.join("early", "tok")
+    with pytest.raises(GameError) as e:
+        game.start_round(t, FINAL)
+    assert e.value.code == "phase"
+    for _ in range(2):
+        await drive(game, t, TRAINING, per_item=0.5, clock=clock)
+        clock.advance(2)
+    assert game.phase == TRAINING
+    rnd, summary, _ = await drive(game, t, FINAL, per_item=0.5, clock=clock)
+    assert t.final_done and t.final_score == summary["correct"]
+    assert game.refresh() == FINISHED  # every registered team finished early
+
+
+@pytest.mark.asyncio
+async def test_early_final_can_be_disabled():
+    game, pool, clock = make_game(max_training_rounds=1, cooldown_seconds=1, training_seconds=10_000,
+                                  allow_early_final=False)
+    game.start_training()
+    t = game.join("late", "tok")
+    await drive(game, t, TRAINING, per_item=0.5, clock=clock)
+    with pytest.raises(GameError) as e:
+        game.start_round(t, FINAL)
+    assert e.value.code == "phase"

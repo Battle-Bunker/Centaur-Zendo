@@ -180,6 +180,7 @@ challenge_dir = "challenges"
 event_log = "events.jsonl"     append-only JSONL log of every message/round for later analysis
 sandbox_workers = 4
 final_shared_sequence = True   all teams face the same (name, seed) sequence in the final
+allow_early_final = True       a team that has used all its training rounds may start its final before training ends
 + all caps from §2/§3, validation_seeds=20, validation_seed=12345, host="0.0.0.0", port=8080, admin_token=""
 ```
 
@@ -218,7 +219,8 @@ returns `demo_result{name, clue, solution, score}`; sets `demo_available=False`.
 `demo_available` is True at game start and after every completed training round.
 
 **Final** (`start_final`): allowed iff phase==final (i.e. now ≥ training_ends_at, or admin
-forced it), team has not run its final, and now < final_ends_at. Same loop with
+forced it) — or phase==training with `allow_early_final` and all training rounds used — the team
+has not run its final, and now < final_ends_at. Same loop with
 `final_seconds`. `final_score = correct`. When every registered team has run its final or
 the window closes, phase → `finished`. Leaderboard = teams sorted by final_score desc, then
 answered asc (fewer wasted answers wins ties), then name.

@@ -39,6 +39,7 @@ class GameConfig:
     event_log: str = "events.jsonl"
     sandbox_workers: int = 4
     final_shared_sequence: bool = True    # every team faces the same (name, seed) run
+    allow_early_final: bool = True        # a team that used all its training rounds may start its final early
     final_seed: int | None = 20250601     # seed of that shared sequence (None => random at final start)
 
     # ---- code size caps (SPEC §2) -------------------------------------------

@@ -41,7 +41,7 @@ So the loop of the whole game is:
 | max training rounds | **12** |
 | training window | about **61 minutes** (12 × cooldown + 60 s) |
 | demos | **1 per cooldown window** |
-| final test | **3 seconds**, once, in a **10 minute** window after training ends |
+| final test | **3 seconds**, once, in a **10 minute** window after training ends (or as soon as you have used all 12 training rounds) |
 | score | number of challenges you answer **correctly in the final** |
 | tiebreak | fewer total answers wins (precision), then team name |
 
@@ -202,9 +202,13 @@ def on_round_end(items, memory): ...    # optional. items = everything you saw.
 saved after it, so anything you put in it survives to the next round. Keep it
 JSON-friendly (dicts, lists, strings, numbers).
 
-If your `solve` raises an exception, the client sends `skip` and carries on — one
-bug cannot end your round. The crash is recorded in the round log so you can fix
-it. Non-string return values are converted to strings; over-long ones are cut.
+If your `solve` returns `None`, the client sends `skip` (instant, and it does not
+count as an answer for the tiebreak). If it raises an exception, the client also
+skips and carries on — one bug cannot end your round; the crash is recorded in the
+round log so you can fix it. Returning `""` is an *answer* (a wrong one), not a
+skip. Non-string return values are converted to strings; over-long ones are cut.
+`memory["_index"]` is set to the index of the current challenge within the round
+before each call, handy for cycling through candidate answer formats.
 
 ### The logs
 

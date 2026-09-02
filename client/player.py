@@ -67,6 +67,10 @@ def load_strategy(path: Path):
 # --------------------------------------------------------------------------- #
 # the client
 # --------------------------------------------------------------------------- #
+
+class _Skip(Exception):
+    """Raised internally when strategy.solve returns None (= skip this challenge)."""
+
 class Player:
     def __init__(self, args, strategy):
         self.args = args
@@ -193,7 +197,10 @@ class Player:
 
                 if mtype == "challenge":
                     try:
+                        memory["_index"] = msg["index"]
                         solution = solve(msg["name"], msg["clue"], memory)
+                        if solution is None:
+                            raise _Skip()
                         if not isinstance(solution, str):
                             solution = str(solution)
                         if len(solution) > cap:
@@ -202,7 +209,7 @@ class Player:
                                "index": msg["index"], "solution": solution}
                     except Exception as exc:                       # never die mid-round
                         skips += 1
-                        if len(self.notes) < 20:
+                        if len(self.notes) < 20 and not isinstance(exc, _Skip):
                             self.notes.append(
                                 f"solve({msg.get('name')!r}) raised: {exc!r} -> skip")
                         out = {"type": "skip", "round_id": msg["round_id"],

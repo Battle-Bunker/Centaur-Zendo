@@ -46,6 +46,9 @@ def on_round_start(memory):
     memory["rounds_played"] += 1
 
 
+# Return None to SKIP a challenge (instant, counts as neither answered nor wrong;
+# skipping helps the fewer-answers tiebreak). memory["_index"] holds the position of
+# the current challenge within the round, handy for cycling through candidate formats.
 def solve(name, clue, memory):
     """Return your answer for one challenge, as a string.  Be quick.
 

@@ -457,6 +457,9 @@ class Game:
                 self.phase = TRAINING
         if self.phase == TRAINING and self.training_ends_at is not None and now >= self.training_ends_at:
             self.phase = FINAL
+        if self.phase == TRAINING and self.teams and all(t.final_done for t in self.teams.values()) \
+                and not any(t.busy for t in self.teams.values()):
+            self.phase = FINISHED  # everyone finished early
         if self.phase == FINAL:
             window_closed = self.final_ends_at is not None and now >= self.final_ends_at
             everyone_done = bool(self.teams) and all(t.final_done for t in self.teams.values())
@@ -562,10 +565,16 @@ class Game:
             duration = float(conf(self.config, "round_seconds"))
             seed = self._rng.getrandbits(32)
         else:
-            if self.phase != FINAL:
+            early_ok = (
+                self.phase == TRAINING
+                and bool(conf(self.config, "allow_early_final"))
+                and team.rounds_used >= self.max_training_rounds
+            )
+            if self.phase != FINAL and not early_ok:
                 raise GameError(
                     "phase",
-                    f"the final is not open in phase {self.phase!r}",
+                    f"the final is not open in phase {self.phase!r}"
+                    + (" (use all your training rounds to unlock it early)" if self.phase == TRAINING else ""),
                     retry_at=self.training_ends_at if self.phase in (LOBBY, TRAINING) else None,
                 )
             if team.final_done:

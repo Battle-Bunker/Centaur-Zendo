@@ -72,11 +72,11 @@ Character caps (measured as `len(source_string)`, all configurable in `GameConfi
 
 | cap                          | default | applies to                       |
 |------------------------------|---------|----------------------------------|
-| `max_score_code_chars`       | 256     | `score` source                   |
+| `max_score_code_chars`       | 512     | `score` source                   |
 | `max_clue_chars`             | 1024    | every string returned by generate|
 | `max_generate_code_chars`    | 50000   | `generate` source                |
 | `max_solve_code_chars`       | 5000    | `solve` source                   |
-| `max_solution_chars`         | 4096    | solutions (from players & solve) |
+| `max_solution_chars`         | 1024    | solutions (from players & solve) |
 
 Time caps (wall-clock per call; configurable):
 
@@ -292,7 +292,7 @@ Standalone: `python -m webapp.app --challenge-dir challenges --port 8081`.
 ## 9. Judgement calls (declared for the organiser)
 * Solutions and clues are strings; structured data is JSON-encoded by convention.
 * No hidden "secret" channel from generate to score: a clue must carry everything the
-  scorer needs (verify-easy / find-hard). Keeps the 256-char scorer honest and Zendo-like.
+  scorer needs (verify-easy / find-hard). Keeps the short scorer honest and Zendo-like.
 * Training-time limit = 12×cooldown+60s and a hard cap of 12 rounds, both enforced
   (the "61 minutes for 5-minute cooldowns" example matches; 30 s cooldown ⇒ 7 min).
 * One demo per cooldown window, available at game start and after each completed round.

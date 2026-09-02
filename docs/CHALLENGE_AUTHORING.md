@@ -48,11 +48,11 @@ Field rules
 
 | cap | default | applies to |
 |---|---|---|
-| `max_score_code_chars` | **256** | `score` source |
+| `max_score_code_chars` | **512** | `score` source |
 | `max_generate_code_chars` | 50000 | `generate` source |
 | `max_solve_code_chars` | 5000 | `solve` source |
 | `max_clue_chars` | 1024 | every string `generate` returns |
-| `max_solution_chars` | 4096 | solutions, from players and from `solve` |
+| `max_solution_chars` | 1024 | solutions, from players and from `solve` |
 | `max_generate_ms` | 100 | one `generate` call |
 | `max_score_ms` | **50** | one `score` call — on the real solution *and* on junk |
 | `max_solve_ms` | 2000 | one `solve` call (validation and demos only) |
@@ -137,16 +137,16 @@ can eyeball what players will actually see.
 
 ---
 
-## 4. The 256-character scorer discipline
+## 4. The short-scorer discipline
 
-`score` is capped at **256 characters** on purpose. It forces the shape of a good
+`score` is capped at **512 characters** on purpose (it started at 256). It forces the shape of a good
 challenge: **hard to find, easy to check**.
 
 * Everything the scorer needs must be **in the clue**. There is no hidden channel from
   `generate` to `score` — no shared state, no re-deriving the seed. If your scorer needs
   to know something, put it in the clue.
 * Verify, do not re-solve. Checking "is this a palindromic prime containing 4-4-6?" fits
-  in 256 chars; searching for one does not.
+  in a few hundred chars; searching for one does not.
 * Be strict about what counts, but robust about form. `s.strip()` is usually worth its
   characters; forgiving whitespace is kind to players.
 * Junk in, `0` out. Raising is *tolerated* (it counts as 0 and earns a warning), but a
@@ -251,7 +251,7 @@ OK   PP         challenges/PP.json  gen=0.03ms score=4.15ms solve=79.52ms
 
 - [ ] `python tools/quickcheck.py mine.json -v` prints `OK` and the samples look like a
       fair puzzle (`--seeds 200` for a harder shake-out).
-- [ ] `score` is well under 256 chars and well under 50 ms on junk as well as real answers.
+- [ ] `score` is well under 512 chars and well under 50 ms on junk as well as real answers.
 - [ ] `generate` is seeded — no `random.random()`, no clock, no counters.
 - [ ] The clue carries everything the scorer needs.
 - [ ] A human could plausibly infer the rule from a handful of clue/answer/0-1 examples.

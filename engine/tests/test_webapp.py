@@ -82,7 +82,7 @@ async def test_config_endpoint_reports_caps(client, config):
     assert r.status == 200
     j = await r.json()
     assert j["validation_seeds"] == 4
-    assert j["caps"]["max_score_code_chars"] == config.max_score_code_chars == 256
+    assert j["caps"]["max_score_code_chars"] == config.max_score_code_chars
     assert j["caps"]["max_generate_code_chars"] == 50_000
     assert j["caps"]["max_solve_ms"] == 2000
     assert j["admin_required"] is True

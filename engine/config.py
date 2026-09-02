@@ -43,11 +43,11 @@ class GameConfig:
     final_seed: int | None = 20250601     # seed of that shared sequence (None => random at final start)
 
     # ---- code size caps (SPEC §2) -------------------------------------------
-    max_score_code_chars: int = 256
+    max_score_code_chars: int = 512
     max_clue_chars: int = 1024
     max_generate_code_chars: int = 50_000
     max_solve_code_chars: int = 5_000
-    max_solution_chars: int = 4096
+    max_solution_chars: int = 1024
 
     # ---- per-call wall-clock caps, milliseconds (SPEC §2) --------------------
     max_generate_ms: int = 100

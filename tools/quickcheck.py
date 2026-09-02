@@ -11,8 +11,8 @@ import sys, json, time, random, signal, re, os, argparse, builtins as _b
 
 # ---- caps (mirror GameConfig defaults) ---------------------------------------
 CAPS = dict(
-    max_score_code_chars=256, max_clue_chars=1024, max_generate_code_chars=50_000,
-    max_solve_code_chars=5_000, max_solution_chars=4096,
+    max_score_code_chars=512, max_clue_chars=1024, max_generate_code_chars=50_000,
+    max_solve_code_chars=5_000, max_solution_chars=1024,
     max_generate_ms=100, max_score_ms=50, max_solve_ms=2000,
     validation_seeds=20, validation_seed=12345,
 )
@@ -207,8 +207,13 @@ def main(argv=None):
     ap.add_argument("--seeds", type=int, default=CAPS["validation_seeds"])
     ap.add_argument("--verbose", "-v", action="store_true")
     ap.add_argument("--json", action="store_true", help="print reports as JSON")
+    ap.add_argument("--cap", action="append", default=[], metavar="KEY=VALUE",
+                    help="override a cap, e.g. --cap max_score_code_chars=1024")
     a = ap.parse_args(argv)
     caps = dict(CAPS, validation_seeds=a.seeds)
+    for kv in a.cap:
+        k, v = kv.split("=", 1)
+        caps[k] = type(CAPS[k])(v)
     bad = 0
     for path in a.files:
         with open(path) as f:

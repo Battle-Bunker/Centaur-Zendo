@@ -96,7 +96,7 @@ dropped — you are not punished for it, you just got fewer items.
 * At `welcome` the server sends you the **complete list of challenge names** in
   the pool. You know how many classes exist and what they are called.
 * A **clue is a string**, at most 1024 characters.
-* A **solution is a string**, at most 4096 characters. Anything longer is cut off
+* A **solution is a string**, at most 1024 characters (the same cap as a clue). Anything longer is cut off
   by the client before it is sent. If you want to send structured data, JSON-
   encode it — that is the house convention.
 * A **score is exactly 0 or 1**. There is no partial credit and no error message.

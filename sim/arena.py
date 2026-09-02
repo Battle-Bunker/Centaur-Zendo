@@ -56,6 +56,9 @@ def setup(a):
         "port": port,
         "admin_token": secrets.token_hex(8),
     }
+    for kv in a.set or []:
+        k, v = kv.split("=", 1)
+        cfg[k] = json.loads(v)
     (hidden / "game.json").write_text(json.dumps(cfg, indent=1))
     log = open(hidden / "server.log", "ab")
     proc = subprocess.Popen(
@@ -202,6 +205,7 @@ def main():
     s.add_argument("--training-seconds", type=float, default=6 * 3600)
     s.add_argument("--final-window", type=float, default=3600)
     s.add_argument("--port", type=int); s.add_argument("--arena-root"); s.add_argument("--challenge-dir")
+    s.add_argument("--set", action="append", metavar="KEY=JSON", help="override a GameConfig field")
     for c in ("status", "teardown", "report"):
         p = sub.add_parser(c); p.add_argument("--run", required=True)
     a = ap.parse_args()

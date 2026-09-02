@@ -25,10 +25,10 @@ class GameConfig:
     """Configuration for one game. Every field is JSON-serialisable."""
 
     # ---- round / phase timing (SPEC §5) -------------------------------------
-    round_seconds: float = 1.0            # training round length
+    round_seconds: float = 0.5            # training round length
     final_seconds: float = 3.0            # final test round length
     cooldown_seconds: float = 300.0       # min gap start->start between a team's rounds
-    max_training_rounds: int = 12         # hard cap per team
+    max_training_rounds: int = 6          # hard cap per team
     training_seconds: float | None = None  # None => max_training_rounds*cooldown+60
     final_window_seconds: float = 600.0   # how long the final stays open
     demo_per_window: int = 1              # demos allowed per cooldown window

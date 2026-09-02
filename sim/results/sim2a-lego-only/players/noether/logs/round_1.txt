@@ -1,0 +1,1308 @@
+Centaur Zendo round 1 (training)
+round_id : ad2ec64022d3476cbfabe10e984289e0
+written  : 2026-09-02 09:37:35Z
+presented=1296  answered=0  correct=0  skipped=1297
+client answer latency: mean 0.075 ms  median 0.069 ms  max 1.098 ms  (n=1297)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  LegoZendo     Y4                                        None                                      0
+   1  LegoZendo     X4                                        None                                      0
+   2  LegoZendo     Y2                                        None                                      0
+   3  LegoZendo     T8                                        None                                      0
+   4  LegoZendo     L11                                       None                                      0
+   5  LegoZendo     T4                                        None                                      0
+   6  LegoZendo     V9                                        None                                      0
+   7  LegoZendo     D4                                        None                                      0
+   8  LegoZendo     M11                                       None                                      0
+   9  LegoZendo     U5                                        None                                      0
+  10  LegoZendo     W10                                       None                                      0
+  11  LegoZendo     M8                                        None                                      0
+  12  LegoZendo     N12                                       None                                      0
+  13  LegoZendo     S10                                       None                                      0
+  14  LegoZendo     Y8                                        None                                      0
+  15  LegoZendo     B2                                        None                                      0
+  16  LegoZendo     U9                                        None                                      0
+  17  LegoZendo     U0                                        None                                      0
+  18  LegoZendo     D3                                        None                                      0
+  19  LegoZendo     P5                                        None                                      0
+  20  LegoZendo     V2                                        None                                      0
+  21  LegoZendo     M12                                       None                                      0
+  22  LegoZendo     N9                                        None                                      0
+  23  LegoZendo     F4                                        None                                      0
+  24  LegoZendo     C9                                        None                                      0
+  25  LegoZendo     D0                                        None                                      0
+  26  LegoZendo     G11                                       None                                      0
+  27  LegoZendo     B12                                       None                                      0
+  28  LegoZendo     B0                                        None                                      0
+  29  LegoZendo     I2                                        None                                      0
+  30  LegoZendo     P0                                        None                                      0
+  31  LegoZendo     H11                                       None                                      0
+  32  LegoZendo     R7                                        None                                      0
+  33  LegoZendo     B10                                       None                                      0
+  34  LegoZendo     A9                                        None                                      0
+  35  LegoZendo     L6                                        None                                      0
+  36  LegoZendo     E0                                        None                                      0
+  37  LegoZendo     D0                                        None                                      0
+  38  LegoZendo     W12                                       None                                      0
+  39  LegoZendo     X5                                        None                                      0
+  40  LegoZendo     L0                                        None                                      0
+  41  LegoZendo     R0                                        None                                      0
+  42  LegoZendo     L6                                        None                                      0
+  43  LegoZendo     Y12                                       None                                      0
+  44  LegoZendo     J3                                        None                                      0
+  45  LegoZendo     J12                                       None                                      0
+  46  LegoZendo     T3                                        None                                      0
+  47  LegoZendo     B0                                        None                                      0
+  48  LegoZendo     D9                                        None                                      0
+  49  LegoZendo     C4                                        None                                      0
+  50  LegoZendo     O4                                        None                                      0
+  51  LegoZendo     T2                                        None                                      0
+  52  LegoZendo     A2                                        None                                      0
+  53  LegoZendo     W0                                        None                                      0
+  54  LegoZendo     H2                                        None                                      0
+  55  LegoZendo     C8                                        None                                      0
+  56  LegoZendo     F2                                        None                                      0
+  57  LegoZendo     L12                                       None                                      0
+  58  LegoZendo     Q7                                        None                                      0
+  59  LegoZendo     S11                                       None                                      0
+  60  LegoZendo     Y6                                        None                                      0
+  61  LegoZendo     I9                                        None                                      0
+  62  LegoZendo     K0                                        None                                      0
+  63  LegoZendo     V3                                        None                                      0
+  64  LegoZendo     L9                                        None                                      0
+  65  LegoZendo     U11                                       None                                      0
+  66  LegoZendo     Z0                                        None                                      0
+  67  LegoZendo     H11                                       None                                      0
+  68  LegoZendo     V3                                        None                                      0
+  69  LegoZendo     N7                                        None                                      0
+  70  LegoZendo     L10                                       None                                      0
+  71  LegoZendo     K3                                        None                                      0
+  72  LegoZendo     K6                                        None                                      0
+  73  LegoZendo     Z6                                        None                                      0
+  74  LegoZendo     M8                                        None                                      0
+  75  LegoZendo     A2                                        None                                      0
+  76  LegoZendo     G7                                        None                                      0
+  77  LegoZendo     A11                                       None                                      0
+  78  LegoZendo     O10                                       None                                      0
+  79  LegoZendo     S8                                        None                                      0
+  80  LegoZendo     R11                                       None                                      0
+  81  LegoZendo     P7                                        None                                      0
+  82  LegoZendo     A7                                        None                                      0
+  83  LegoZendo     E0                                        None                                      0
+  84  LegoZendo     C9                                        None                                      0
+  85  LegoZendo     U7                                        None                                      0
+  86  LegoZendo     L0                                        None                                      0
+  87  LegoZendo     F9                                        None                                      0
+  88  LegoZendo     F2                                        None                                      0
+  89  LegoZendo     T10                                       None                                      0
+  90  LegoZendo     S5                                        None                                      0
+  91  LegoZendo     Q7                                        None                                      0
+  92  LegoZendo     E3                                        None                                      0
+  93  LegoZendo     R2                                        None                                      0
+  94  LegoZendo     B0                                        None                                      0
+  95  LegoZendo     O8                                        None                                      0
+  96  LegoZendo     X3                                        None                                      0
+  97  LegoZendo     G3                                        None                                      0
+  98  LegoZendo     D8                                        None                                      0
+  99  LegoZendo     L6                                        None                                      0
+ 100  LegoZendo     F4                                        None                                      0
+ 101  LegoZendo     P7                                        None                                      0
+ 102  LegoZendo     T5                                        None                                      0
+ 103  LegoZendo     G0                                        None                                      0
+ 104  LegoZendo     J7                                        None                                      0
+ 105  LegoZendo     U5                                        None                                      0
+ 106  LegoZendo     K9                                        None                                      0
+ 107  LegoZendo     D11                                       None                                      0
+ 108  LegoZendo     U5                                        None                                      0
+ 109  LegoZendo     N8                                        None                                      0
+ 110  LegoZendo     A2                                        None                                      0
+ 111  LegoZendo     B4                                        None                                      0
+ 112  LegoZendo     Y9                                        None                                      0
+ 113  LegoZendo     F12                                       None                                      0
+ 114  LegoZendo     T2                                        None                                      0
+ 115  LegoZendo     E6                                        None                                      0
+ 116  LegoZendo     J10                                       None                                      0
+ 117  LegoZendo     I0                                        None                                      0
+ 118  LegoZendo     Q12                                       None                                      0
+ 119  LegoZendo     T5                                        None                                      0
+ 120  LegoZendo     L12                                       None                                      0
+ 121  LegoZendo     L8                                        None                                      0
+ 122  LegoZendo     S11                                       None                                      0
+ 123  LegoZendo     H12                                       None                                      0
+ 124  LegoZendo     S8                                        None                                      0
+ 125  LegoZendo     A6                                        None                                      0
+ 126  LegoZendo     D0                                        None                                      0
+ 127  LegoZendo     H5                                        None                                      0
+ 128  LegoZendo     B0                                        None                                      0
+ 129  LegoZendo     N5                                        None                                      0
+ 130  LegoZendo     Y5                                        None                                      0
+ 131  LegoZendo     D4                                        None                                      0
+ 132  LegoZendo     K6                                        None                                      0
+ 133  LegoZendo     P12                                       None                                      0
+ 134  LegoZendo     W10                                       None                                      0
+ 135  LegoZendo     R6                                        None                                      0
+ 136  LegoZendo     D7                                        None                                      0
+ 137  LegoZendo     H6                                        None                                      0
+ 138  LegoZendo     E6                                        None                                      0
+ 139  LegoZendo     Z3                                        None                                      0
+ 140  LegoZendo     G8                                        None                                      0
+ 141  LegoZendo     D4                                        None                                      0
+ 142  LegoZendo     P11                                       None                                      0
+ 143  LegoZendo     Z0                                        None                                      0
+ 144  LegoZendo     F4                                        None                                      0
+ 145  LegoZendo     P0                                        None                                      0
+ 146  LegoZendo     V8                                        None                                      0
+ 147  LegoZendo     V5                                        None                                      0
+ 148  LegoZendo     P6                                        None                                      0
+ 149  LegoZendo     G3                                        None                                      0
+ 150  LegoZendo     R11                                       None                                      0
+ 151  LegoZendo     Z2                                        None                                      0
+ 152  LegoZendo     I3                                        None                                      0
+ 153  LegoZendo     T0                                        None                                      0
+ 154  LegoZendo     I0                                        None                                      0
+ 155  LegoZendo     C12                                       None                                      0
+ 156  LegoZendo     T5                                        None                                      0
+ 157  LegoZendo     O4                                        None                                      0
+ 158  LegoZendo     V9                                        None                                      0
+ 159  LegoZendo     E2                                        None                                      0
+ 160  LegoZendo     E4                                        None                                      0
+ 161  LegoZendo     W6                                        None                                      0
+ 162  LegoZendo     O10                                       None                                      0
+ 163  LegoZendo     R3                                        None                                      0
+ 164  LegoZendo     F9                                        None                                      0
+ 165  LegoZendo     N4                                        None                                      0
+ 166  LegoZendo     Z5                                        None                                      0
+ 167  LegoZendo     W9                                        None                                      0
+ 168  LegoZendo     J0                                        None                                      0
+ 169  LegoZendo     L11                                       None                                      0
+ 170  LegoZendo     X5                                        None                                      0
+ 171  LegoZendo     H0                                        None                                      0
+ 172  LegoZendo     O9                                        None                                      0
+ 173  LegoZendo     I7                                        None                                      0
+ 174  LegoZendo     M8                                        None                                      0
+ 175  LegoZendo     U6                                        None                                      0
+ 176  LegoZendo     K2                                        None                                      0
+ 177  LegoZendo     P10                                       None                                      0
+ 178  LegoZendo     L12                                       None                                      0
+ 179  LegoZendo     N0                                        None                                      0
+ 180  LegoZendo     G8                                        None                                      0
+ 181  LegoZendo     U6                                        None                                      0
+ 182  LegoZendo     L10                                       None                                      0
+ 183  LegoZendo     F0                                        None                                      0
+ 184  LegoZendo     B0                                        None                                      0
+ 185  LegoZendo     M6                                        None                                      0
+ 186  LegoZendo     Y6                                        None                                      0
+ 187  LegoZendo     C8                                        None                                      0
+ 188  LegoZendo     E4                                        None                                      0
+ 189  LegoZendo     U11                                       None                                      0
+ 190  LegoZendo     G9                                        None                                      0
+ 191  LegoZendo     A10                                       None                                      0
+ 192  LegoZendo     E7                                        None                                      0
+ 193  LegoZendo     K10                                       None                                      0
+ 194  LegoZendo     I7                                        None                                      0
+ 195  LegoZendo     E0                                        None                                      0
+ 196  LegoZendo     J8                                        None                                      0
+ 197  LegoZendo     B11                                       None                                      0
+ 198  LegoZendo     D2                                        None                                      0
+ 199  LegoZendo     N10                                       None                                      0
+ 200  LegoZendo     M7                                        None                                      0
+ 201  LegoZendo     X7                                        None                                      0
+ 202  LegoZendo     T6                                        None                                      0
+ 203  LegoZendo     V8                                        None                                      0
+ 204  LegoZendo     H2                                        None                                      0
+ 205  LegoZendo     I3                                        None                                      0
+ 206  LegoZendo     R12                                       None                                      0
+ 207  LegoZendo     K6                                        None                                      0
+ 208  LegoZendo     L7                                        None                                      0
+ 209  LegoZendo     T3                                        None                                      0
+ 210  LegoZendo     Q8                                        None                                      0
+ 211  LegoZendo     H5                                        None                                      0
+ 212  LegoZendo     Y3                                        None                                      0
+ 213  LegoZendo     Z9                                        None                                      0
+ 214  LegoZendo     O8                                        None                                      0
+ 215  LegoZendo     S0                                        None                                      0
+ 216  LegoZendo     Z7                                        None                                      0
+ 217  LegoZendo     X5                                        None                                      0
+ 218  LegoZendo     W10                                       None                                      0
+ 219  LegoZendo     D3                                        None                                      0
+ 220  LegoZendo     W5                                        None                                      0
+ 221  LegoZendo     G12                                       None                                      0
+ 222  LegoZendo     Y10                                       None                                      0
+ 223  LegoZendo     D5                                        None                                      0
+ 224  LegoZendo     T2                                        None                                      0
+ 225  LegoZendo     Z11                                       None                                      0
+ 226  LegoZendo     M3                                        None                                      0
+ 227  LegoZendo     F2                                        None                                      0
+ 228  LegoZendo     J4                                        None                                      0
+ 229  LegoZendo     A2                                        None                                      0
+ 230  LegoZendo     Q8                                        None                                      0
+ 231  LegoZendo     Q10                                       None                                      0
+ 232  LegoZendo     K2                                        None                                      0
+ 233  LegoZendo     V3                                        None                                      0
+ 234  LegoZendo     Z3                                        None                                      0
+ 235  LegoZendo     T4                                        None                                      0
+ 236  LegoZendo     O0                                        None                                      0
+ 237  LegoZendo     U11                                       None                                      0
+ 238  LegoZendo     L5                                        None                                      0
+ 239  LegoZendo     I4                                        None                                      0
+ 240  LegoZendo     M2                                        None                                      0
+ 241  LegoZendo     G12                                       None                                      0
+ 242  LegoZendo     R10                                       None                                      0
+ 243  LegoZendo     W11                                       None                                      0
+ 244  LegoZendo     F9                                        None                                      0
+ 245  LegoZendo     Q11                                       None                                      0
+ 246  LegoZendo     L3                                        None                                      0
+ 247  LegoZendo     P4                                        None                                      0
+ 248  LegoZendo     A3                                        None                                      0
+ 249  LegoZendo     Q12                                       None                                      0
+ 250  LegoZendo     L6                                        None                                      0
+ 251  LegoZendo     I0                                        None                                      0
+ 252  LegoZendo     F4                                        None                                      0
+ 253  LegoZendo     G11                                       None                                      0
+ 254  LegoZendo     A9                                        None                                      0
+ 255  LegoZendo     B5                                        None                                      0
+ 256  LegoZendo     K11                                       None                                      0
+ 257  LegoZendo     X7                                        None                                      0
+ 258  LegoZendo     S6                                        None                                      0
+ 259  LegoZendo     W2                                        None                                      0
+ 260  LegoZendo     K12                                       None                                      0
+ 261  LegoZendo     B11                                       None                                      0
+ 262  LegoZendo     U2                                        None                                      0
+ 263  LegoZendo     X4                                        None                                      0
+ 264  LegoZendo     D2                                        None                                      0
+ 265  LegoZendo     Z7                                        None                                      0
+ 266  LegoZendo     Q7                                        None                                      0
+ 267  LegoZendo     F7                                        None                                      0
+ 268  LegoZendo     O11                                       None                                      0
+ 269  LegoZendo     N4                                        None                                      0
+ 270  LegoZendo     U4                                        None                                      0
+ 271  LegoZendo     D4                                        None                                      0
+ 272  LegoZendo     Y4                                        None                                      0
+ 273  LegoZendo     M12                                       None                                      0
+ 274  LegoZendo     B6                                        None                                      0
+ 275  LegoZendo     M5                                        None                                      0
+ 276  LegoZendo     Y3                                        None                                      0
+ 277  LegoZendo     K3                                        None                                      0
+ 278  LegoZendo     L7                                        None                                      0
+ 279  LegoZendo     H8                                        None                                      0
+ 280  LegoZendo     I6                                        None                                      0
+ 281  LegoZendo     X4                                        None                                      0
+ 282  LegoZendo     A12                                       None                                      0
+ 283  LegoZendo     W9                                        None                                      0
+ 284  LegoZendo     I9                                        None                                      0
+ 285  LegoZendo     M12                                       None                                      0
+ 286  LegoZendo     D4                                        None                                      0
+ 287  LegoZendo     J4                                        None                                      0
+ 288  LegoZendo     B2                                        None                                      0
+ 289  LegoZendo     G11                                       None                                      0
+ 290  LegoZendo     W11                                       None                                      0
+ 291  LegoZendo     B3                                        None                                      0
+ 292  LegoZendo     N2                                        None                                      0
+ 293  LegoZendo     N8                                        None                                      0
+ 294  LegoZendo     T9                                        None                                      0
+ 295  LegoZendo     W3                                        None                                      0
+ 296  LegoZendo     S5                                        None                                      0
+ 297  LegoZendo     R2                                        None                                      0
+ 298  LegoZendo     K4                                        None                                      0
+ 299  LegoZendo     Q11                                       None                                      0
+ 300  LegoZendo     K11                                       None                                      0
+ 301  LegoZendo     C3                                        None                                      0
+ 302  LegoZendo     E3                                        None                                      0
+ 303  LegoZendo     A10                                       None                                      0
+ 304  LegoZendo     X11                                       None                                      0
+ 305  LegoZendo     G4                                        None                                      0
+ 306  LegoZendo     R9                                        None                                      0
+ 307  LegoZendo     S3                                        None                                      0
+ 308  LegoZendo     D12                                       None                                      0
+ 309  LegoZendo     T6                                        None                                      0
+ 310  LegoZendo     Z9                                        None                                      0
+ 311  LegoZendo     B0                                        None                                      0
+ 312  LegoZendo     T10                                       None                                      0
+ 313  LegoZendo     J8                                        None                                      0
+ 314  LegoZendo     J3                                        None                                      0
+ 315  LegoZendo     S3                                        None                                      0
+ 316  LegoZendo     E5                                        None                                      0
+ 317  LegoZendo     D3                                        None                                      0
+ 318  LegoZendo     B9                                        None                                      0
+ 319  LegoZendo     W2                                        None                                      0
+ 320  LegoZendo     R12                                       None                                      0
+ 321  LegoZendo     L11                                       None                                      0
+ 322  LegoZendo     Q12                                       None                                      0
+ 323  LegoZendo     P4                                        None                                      0
+ 324  LegoZendo     D12                                       None                                      0
+ 325  LegoZendo     G10                                       None                                      0
+ 326  LegoZendo     R0                                        None                                      0
+ 327  LegoZendo     C11                                       None                                      0
+ 328  LegoZendo     I5                                        None                                      0
+ 329  LegoZendo     Z12                                       None                                      0
+ 330  LegoZendo     R9                                        None                                      0
+ 331  LegoZendo     J5                                        None                                      0
+ 332  LegoZendo     D3                                        None                                      0
+ 333  LegoZendo     O5                                        None                                      0
+ 334  LegoZendo     D11                                       None                                      0
+ 335  LegoZendo     G2                                        None                                      0
+ 336  LegoZendo     M7                                        None                                      0
+ 337  LegoZendo     T9                                        None                                      0
+ 338  LegoZendo     R6                                        None                                      0
+ 339  LegoZendo     G4                                        None                                      0
+ 340  LegoZendo     O4                                        None                                      0
+ 341  LegoZendo     I7                                        None                                      0
+ 342  LegoZendo     J6                                        None                                      0
+ 343  LegoZendo     B7                                        None                                      0
+ 344  LegoZendo     J11                                       None                                      0
+ 345  LegoZendo     N12                                       None                                      0
+ 346  LegoZendo     O5                                        None                                      0
+ 347  LegoZendo     L8                                        None                                      0
+ 348  LegoZendo     K5                                        None                                      0
+ 349  LegoZendo     Q0                                        None                                      0
+ 350  LegoZendo     W2                                        None                                      0
+ 351  LegoZendo     L2                                        None                                      0
+ 352  LegoZendo     F11                                       None                                      0
+ 353  LegoZendo     V9                                        None                                      0
+ 354  LegoZendo     T7                                        None                                      0
+ 355  LegoZendo     I0                                        None                                      0
+ 356  LegoZendo     W10                                       None                                      0
+ 357  LegoZendo     U9                                        None                                      0
+ 358  LegoZendo     R0                                        None                                      0
+ 359  LegoZendo     S2                                        None                                      0
+ 360  LegoZendo     G3                                        None                                      0
+ 361  LegoZendo     O5                                        None                                      0
+ 362  LegoZendo     G6                                        None                                      0
+ 363  LegoZendo     P10                                       None                                      0
+ 364  LegoZendo     N4                                        None                                      0
+ 365  LegoZendo     U9                                        None                                      0
+ 366  LegoZendo     A9                                        None                                      0
+ 367  LegoZendo     W6                                        None                                      0
+ 368  LegoZendo     Z0                                        None                                      0
+ 369  LegoZendo     Y0                                        None                                      0
+ 370  LegoZendo     G6                                        None                                      0
+ 371  LegoZendo     U5                                        None                                      0
+ 372  LegoZendo     Y3                                        None                                      0
+ 373  LegoZendo     R7                                        None                                      0
+ 374  LegoZendo     L6                                        None                                      0
+ 375  LegoZendo     H9                                        None                                      0
+ 376  LegoZendo     O12                                       None                                      0
+ 377  LegoZendo     O9                                        None                                      0
+ 378  LegoZendo     M6                                        None                                      0
+ 379  LegoZendo     Q7                                        None                                      0
+ 380  LegoZendo     H3                                        None                                      0
+ 381  LegoZendo     E6                                        None                                      0
+ 382  LegoZendo     Y12                                       None                                      0
+ 383  LegoZendo     S6                                        None                                      0
+ 384  LegoZendo     H8                                        None                                      0
+ 385  LegoZendo     X6                                        None                                      0
+ 386  LegoZendo     V0                                        None                                      0
+ 387  LegoZendo     U8                                        None                                      0
+ 388  LegoZendo     I8                                        None                                      0
+ 389  LegoZendo     C11                                       None                                      0
+ 390  LegoZendo     A9                                        None                                      0
+ 391  LegoZendo     X5                                        None                                      0
+ 392  LegoZendo     O10                                       None                                      0
+ 393  LegoZendo     H7                                        None                                      0
+ 394  LegoZendo     X10                                       None                                      0
+ 395  LegoZendo     Q12                                       None                                      0
+ 396  LegoZendo     B4                                        None                                      0
+ 397  LegoZendo     U0                                        None                                      0
+ 398  LegoZendo     U3                                        None                                      0
+ 399  LegoZendo     C2                                        None                                      0
+ 400  LegoZendo     T11                                       None                                      0
+ 401  LegoZendo     C6                                        None                                      0
+ 402  LegoZendo     X9                                        None                                      0
+ 403  LegoZendo     U3                                        None                                      0
+ 404  LegoZendo     W8                                        None                                      0
+ 405  LegoZendo     Z11                                       None                                      0
+ 406  LegoZendo     H3                                        None                                      0
+ 407  LegoZendo     C8                                        None                                      0
+ 408  LegoZendo     B5                                        None                                      0
+ 409  LegoZendo     T12                                       None                                      0
+ 410  LegoZendo     J11                                       None                                      0
+ 411  LegoZendo     T10                                       None                                      0
+ 412  LegoZendo     U4                                        None                                      0
+ 413  LegoZendo     G12                                       None                                      0
+ 414  LegoZendo     G6                                        None                                      0
+ 415  LegoZendo     A3                                        None                                      0
+ 416  LegoZendo     L0                                        None                                      0
+ 417  LegoZendo     G10                                       None                                      0
+ 418  LegoZendo     H0                                        None                                      0
+ 419  LegoZendo     D7                                        None                                      0
+ 420  LegoZendo     Z8                                        None                                      0
+ 421  LegoZendo     X0                                        None                                      0
+ 422  LegoZendo     V7                                        None                                      0
+ 423  LegoZendo     V10                                       None                                      0
+ 424  LegoZendo     N3                                        None                                      0
+ 425  LegoZendo     Z11                                       None                                      0
+ 426  LegoZendo     M6                                        None                                      0
+ 427  LegoZendo     T12                                       None                                      0
+ 428  LegoZendo     W5                                        None                                      0
+ 429  LegoZendo     I3                                        None                                      0
+ 430  LegoZendo     B0                                        None                                      0
+ 431  LegoZendo     X5                                        None                                      0
+ 432  LegoZendo     X7                                        None                                      0
+ 433  LegoZendo     L6                                        None                                      0
+ 434  LegoZendo     N10                                       None                                      0
+ 435  LegoZendo     R3                                        None                                      0
+ 436  LegoZendo     U2                                        None                                      0
+ 437  LegoZendo     D10                                       None                                      0
+ 438  LegoZendo     G9                                        None                                      0
+ 439  LegoZendo     S2                                        None                                      0
+ 440  LegoZendo     U0                                        None                                      0
+ 441  LegoZendo     Z3                                        None                                      0
+ 442  LegoZendo     E4                                        None                                      0
+ 443  LegoZendo     Q5                                        None                                      0
+ 444  LegoZendo     O2                                        None                                      0
+ 445  LegoZendo     O9                                        None                                      0
+ 446  LegoZendo     O3                                        None                                      0
+ 447  LegoZendo     Q9                                        None                                      0
+ 448  LegoZendo     N2                                        None                                      0
+ 449  LegoZendo     X9                                        None                                      0
+ 450  LegoZendo     M5                                        None                                      0
+ 451  LegoZendo     O12                                       None                                      0
+ 452  LegoZendo     I7                                        None                                      0
+ 453  LegoZendo     K11                                       None                                      0
+ 454  LegoZendo     U3                                        None                                      0
+ 455  LegoZendo     N11                                       None                                      0
+ 456  LegoZendo     O0                                        None                                      0
+ 457  LegoZendo     C5                                        None                                      0
+ 458  LegoZendo     T11                                       None                                      0
+ 459  LegoZendo     N7                                        None                                      0
+ 460  LegoZendo     P0                                        None                                      0
+ 461  LegoZendo     V10                                       None                                      0
+ 462  LegoZendo     R8                                        None                                      0
+ 463  LegoZendo     P7                                        None                                      0
+ 464  LegoZendo     A6                                        None                                      0
+ 465  LegoZendo     N5                                        None                                      0
+ 466  LegoZendo     M4                                        None                                      0
+ 467  LegoZendo     Y0                                        None                                      0
+ 468  LegoZendo     K12                                       None                                      0
+ 469  LegoZendo     Y10                                       None                                      0
+ 470  LegoZendo     A6                                        None                                      0
+ 471  LegoZendo     D7                                        None                                      0
+ 472  LegoZendo     K7                                        None                                      0
+ 473  LegoZendo     L6                                        None                                      0
+ 474  LegoZendo     H12                                       None                                      0
+ 475  LegoZendo     X10                                       None                                      0
+ 476  LegoZendo     E4                                        None                                      0
+ 477  LegoZendo     N11                                       None                                      0
+ 478  LegoZendo     Q12                                       None                                      0
+ 479  LegoZendo     Y5                                        None                                      0
+ 480  LegoZendo     L0                                        None                                      0
+ 481  LegoZendo     Z2                                        None                                      0
+ 482  LegoZendo     I6                                        None                                      0
+ 483  LegoZendo     X8                                        None                                      0
+ 484  LegoZendo     A5                                        None                                      0
+ 485  LegoZendo     E12                                       None                                      0
+ 486  LegoZendo     G10                                       None                                      0
+ 487  LegoZendo     C6                                        None                                      0
+ 488  LegoZendo     D8                                        None                                      0
+ 489  LegoZendo     U0                                        None                                      0
+ 490  LegoZendo     P8                                        None                                      0
+ 491  LegoZendo     M5                                        None                                      0
+ 492  LegoZendo     R2                                        None                                      0
+ 493  LegoZendo     O3                                        None                                      0
+ 494  LegoZendo     E12                                       None                                      0
+ 495  LegoZendo     V6                                        None                                      0
+ 496  LegoZendo     B11                                       None                                      0
+ 497  LegoZendo     V6                                        None                                      0
+ 498  LegoZendo     X3                                        None                                      0
+ 499  LegoZendo     I9                                        None                                      0
+ 500  LegoZendo     H8                                        None                                      0
+ 501  LegoZendo     X2                                        None                                      0
+ 502  LegoZendo     E12                                       None                                      0
+ 503  LegoZendo     C5                                        None                                      0
+ 504  LegoZendo     B12                                       None                                      0
+ 505  LegoZendo     O0                                        None                                      0
+ 506  LegoZendo     Q11                                       None                                      0
+ 507  LegoZendo     V2                                        None                                      0
+ 508  LegoZendo     G6                                        None                                      0
+ 509  LegoZendo     D10                                       None                                      0
+ 510  LegoZendo     E10                                       None                                      0
+ 511  LegoZendo     B3                                        None                                      0
+ 512  LegoZendo     Z9                                        None                                      0
+ 513  LegoZendo     B11                                       None                                      0
+ 514  LegoZendo     I3                                        None                                      0
+ 515  LegoZendo     E3                                        None                                      0
+ 516  LegoZendo     G9                                        None                                      0
+ 517  LegoZendo     K11                                       None                                      0
+ 518  LegoZendo     I2                                        None                                      0
+ 519  LegoZendo     A9                                        None                                      0
+ 520  LegoZendo     E9                                        None                                      0
+ 521  LegoZendo     B6                                        None                                      0
+ 522  LegoZendo     W9                                        None                                      0
+ 523  LegoZendo     K8                                        None                                      0
+ 524  LegoZendo     H6                                        None                                      0
+ 525  LegoZendo     J5                                        None                                      0
+ 526  LegoZendo     N3                                        None                                      0
+ 527  LegoZendo     B3                                        None                                      0
+ 528  LegoZendo     W7                                        None                                      0
+ 529  LegoZendo     R7                                        None                                      0
+ 530  LegoZendo     D0                                        None                                      0
+ 531  LegoZendo     T3                                        None                                      0
+ 532  LegoZendo     Z8                                        None                                      0
+ 533  LegoZendo     M10                                       None                                      0
+ 534  LegoZendo     A11                                       None                                      0
+ 535  LegoZendo     X0                                        None                                      0
+ 536  LegoZendo     Q11                                       None                                      0
+ 537  LegoZendo     H7                                        None                                      0
+ 538  LegoZendo     W6                                        None                                      0
+ 539  LegoZendo     S2                                        None                                      0
+ 540  LegoZendo     S3                                        None                                      0
+ 541  LegoZendo     P3                                        None                                      0
+ 542  LegoZendo     U5                                        None                                      0
+ 543  LegoZendo     M12                                       None                                      0
+ 544  LegoZendo     L8                                        None                                      0
+ 545  LegoZendo     B10                                       None                                      0
+ 546  LegoZendo     T6                                        None                                      0
+ 547  LegoZendo     Q4                                        None                                      0
+ 548  LegoZendo     Z3                                        None                                      0
+ 549  LegoZendo     J7                                        None                                      0
+ 550  LegoZendo     G6                                        None                                      0
+ 551  LegoZendo     P5                                        None                                      0
+ 552  LegoZendo     Y2                                        None                                      0
+ 553  LegoZendo     K8                                        None                                      0
+ 554  LegoZendo     M3                                        None                                      0
+ 555  LegoZendo     O8                                        None                                      0
+ 556  LegoZendo     P12                                       None                                      0
+ 557  LegoZendo     P11                                       None                                      0
+ 558  LegoZendo     R10                                       None                                      0
+ 559  LegoZendo     J10                                       None                                      0
+ 560  LegoZendo     O8                                        None                                      0
+ 561  LegoZendo     T6                                        None                                      0
+ 562  LegoZendo     K6                                        None                                      0
+ 563  LegoZendo     K9                                        None                                      0
+ 564  LegoZendo     T3                                        None                                      0
+ 565  LegoZendo     A2                                        None                                      0
+ 566  LegoZendo     T5                                        None                                      0
+ 567  LegoZendo     F10                                       None                                      0
+ 568  LegoZendo     J6                                        None                                      0
+ 569  LegoZendo     Y7                                        None                                      0
+ 570  LegoZendo     Z8                                        None                                      0
+ 571  LegoZendo     E3                                        None                                      0
+ 572  LegoZendo     T7                                        None                                      0
+ 573  LegoZendo     K3                                        None                                      0
+ 574  LegoZendo     D2                                        None                                      0
+ 575  LegoZendo     Y5                                        None                                      0
+ 576  LegoZendo     T12                                       None                                      0
+ 577  LegoZendo     J10                                       None                                      0
+ 578  LegoZendo     Y9                                        None                                      0
+ 579  LegoZendo     J3                                        None                                      0
+ 580  LegoZendo     A10                                       None                                      0
+ 581  LegoZendo     L6                                        None                                      0
+ 582  LegoZendo     V0                                        None                                      0
+ 583  LegoZendo     F9                                        None                                      0
+ 584  LegoZendo     G11                                       None                                      0
+ 585  LegoZendo     N2                                        None                                      0
+ 586  LegoZendo     F8                                        None                                      0
+ 587  LegoZendo     B9                                        None                                      0
+ 588  LegoZendo     E9                                        None                                      0
+ 589  LegoZendo     U3                                        None                                      0
+ 590  LegoZendo     O0                                        None                                      0
+ 591  LegoZendo     W3                                        None                                      0
+ 592  LegoZendo     G10                                       None                                      0
+ 593  LegoZendo     V3                                        None                                      0
+ 594  LegoZendo     N6                                        None                                      0
+ 595  LegoZendo     H5                                        None                                      0
+ 596  LegoZendo     P6                                        None                                      0
+ 597  LegoZendo     F8                                        None                                      0
+ 598  LegoZendo     J9                                        None                                      0
+ 599  LegoZendo     Q6                                        None                                      0
+ 600  LegoZendo     M2                                        None                                      0
+ 601  LegoZendo     U6                                        None                                      0
+ 602  LegoZendo     U4                                        None                                      0
+ 603  LegoZendo     D11                                       None                                      0
+ 604  LegoZendo     O5                                        None                                      0
+ 605  LegoZendo     I12                                       None                                      0
+ 606  LegoZendo     H9                                        None                                      0
+ 607  LegoZendo     S11                                       None                                      0
+ 608  LegoZendo     F4                                        None                                      0
+ 609  LegoZendo     F0                                        None                                      0
+ 610  LegoZendo     H12                                       None                                      0
+ 611  LegoZendo     Z2                                        None                                      0
+ 612  LegoZendo     C12                                       None                                      0
+ 613  LegoZendo     V10                                       None                                      0
+ 614  LegoZendo     G7                                        None                                      0
+ 615  LegoZendo     T4                                        None                                      0
+ 616  LegoZendo     I2                                        None                                      0
+ 617  LegoZendo     C2                                        None                                      0
+ 618  LegoZendo     A11                                       None                                      0
+ 619  LegoZendo     Q6                                        None                                      0
+ 620  LegoZendo     Y12                                       None                                      0
+ 621  LegoZendo     W0                                        None                                      0
+ 622  LegoZendo     G8                                        None                                      0
+ 623  LegoZendo     F8                                        None                                      0
+ 624  LegoZendo     F5                                        None                                      0
+ 625  LegoZendo     T9                                        None                                      0
+ 626  LegoZendo     R8                                        None                                      0
+ 627  LegoZendo     M8                                        None                                      0
+ 628  LegoZendo     B9                                        None                                      0
+ 629  LegoZendo     S4                                        None                                      0
+ 630  LegoZendo     H9                                        None                                      0
+ 631  LegoZendo     J7                                        None                                      0
+ 632  LegoZendo     C10                                       None                                      0
+ 633  LegoZendo     C12                                       None                                      0
+ 634  LegoZendo     Q12                                       None                                      0
+ 635  LegoZendo     F5                                        None                                      0
+ 636  LegoZendo     Y4                                        None                                      0
+ 637  LegoZendo     I12                                       None                                      0
+ 638  LegoZendo     V9                                        None                                      0
+ 639  LegoZendo     L10                                       None                                      0
+ 640  LegoZendo     H0                                        None                                      0
+ 641  LegoZendo     R10                                       None                                      0
+ 642  LegoZendo     X0                                        None                                      0
+ 643  LegoZendo     D0                                        None                                      0
+ 644  LegoZendo     G10                                       None                                      0
+ 645  LegoZendo     P4                                        None                                      0
+ 646  LegoZendo     M2                                        None                                      0
+ 647  LegoZendo     O7                                        None                                      0
+ 648  LegoZendo     Q9                                        None                                      0
+ 649  LegoZendo     I7                                        None                                      0
+ 650  LegoZendo     M2                                        None                                      0
+ 651  LegoZendo     X8                                        None                                      0
+ 652  LegoZendo     R2                                        None                                      0
+ 653  LegoZendo     F10                                       None                                      0
+ 654  LegoZendo     V2                                        None                                      0
+ 655  LegoZendo     N7                                        None                                      0
+ 656  LegoZendo     R3                                        None                                      0
+ 657  LegoZendo     M10                                       None                                      0
+ 658  LegoZendo     D6                                        None                                      0
+ 659  LegoZendo     I12                                       None                                      0
+ 660  LegoZendo     R5                                        None                                      0
+ 661  LegoZendo     V10                                       None                                      0
+ 662  LegoZendo     C0                                        None                                      0
+ 663  LegoZendo     O0                                        None                                      0
+ 664  LegoZendo     U3                                        None                                      0
+ 665  LegoZendo     C3                                        None                                      0
+ 666  LegoZendo     Z10                                       None                                      0
+ 667  LegoZendo     O2                                        None                                      0
+ 668  LegoZendo     I3                                        None                                      0
+ 669  LegoZendo     G8                                        None                                      0
+ 670  LegoZendo     B4                                        None                                      0
+ 671  LegoZendo     Z11                                       None                                      0
+ 672  LegoZendo     L11                                       None                                      0
+ 673  LegoZendo     W10                                       None                                      0
+ 674  LegoZendo     P3                                        None                                      0
+ 675  LegoZendo     A0                                        None                                      0
+ 676  LegoZendo     K7                                        None                                      0
+ 677  LegoZendo     L11                                       None                                      0
+ 678  LegoZendo     Q5                                        None                                      0
+ 679  LegoZendo     L9                                        None                                      0
+ 680  LegoZendo     V10                                       None                                      0
+ 681  LegoZendo     W12                                       None                                      0
+ 682  LegoZendo     E11                                       None                                      0
+ 683  LegoZendo     K7                                        None                                      0
+ 684  LegoZendo     F8                                        None                                      0
+ 685  LegoZendo     I10                                       None                                      0
+ 686  LegoZendo     Z0                                        None                                      0
+ 687  LegoZendo     G7                                        None                                      0
+ 688  LegoZendo     V3                                        None                                      0
+ 689  LegoZendo     G7                                        None                                      0
+ 690  LegoZendo     L9                                        None                                      0
+ 691  LegoZendo     O0                                        None                                      0
+ 692  LegoZendo     N6                                        None                                      0
+ 693  LegoZendo     N0                                        None                                      0
+ 694  LegoZendo     M7                                        None                                      0
+ 695  LegoZendo     R3                                        None                                      0
+ 696  LegoZendo     W4                                        None                                      0
+ 697  LegoZendo     A12                                       None                                      0
+ 698  LegoZendo     F10                                       None                                      0
+ 699  LegoZendo     V2                                        None                                      0
+ 700  LegoZendo     K0                                        None                                      0
+ 701  LegoZendo     F2                                        None                                      0
+ 702  LegoZendo     H2                                        None                                      0
+ 703  LegoZendo     T6                                        None                                      0
+ 704  LegoZendo     G11                                       None                                      0
+ 705  LegoZendo     G5                                        None                                      0
+ 706  LegoZendo     W0                                        None                                      0
+ 707  LegoZendo     G8                                        None                                      0
+ 708  LegoZendo     G0                                        None                                      0
+ 709  LegoZendo     Z4                                        None                                      0
+ 710  LegoZendo     U5                                        None                                      0
+ 711  LegoZendo     T9                                        None                                      0
+ 712  LegoZendo     X2                                        None                                      0
+ 713  LegoZendo     L4                                        None                                      0
+ 714  LegoZendo     D9                                        None                                      0
+ 715  LegoZendo     A11                                       None                                      0
+ 716  LegoZendo     N6                                        None                                      0
+ 717  LegoZendo     Y10                                       None                                      0
+ 718  LegoZendo     Y3                                        None                                      0
+ 719  LegoZendo     L6                                        None                                      0
+ 720  LegoZendo     G10                                       None                                      0
+ 721  LegoZendo     S11                                       None                                      0
+ 722  LegoZendo     X9                                        None                                      0
+ 723  LegoZendo     Q8                                        None                                      0
+ 724  LegoZendo     H8                                        None                                      0
+ 725  LegoZendo     T11                                       None                                      0
+ 726  LegoZendo     U7                                        None                                      0
+ 727  LegoZendo     C2                                        None                                      0
+ 728  LegoZendo     R10                                       None                                      0
+ 729  LegoZendo     T8                                        None                                      0
+ 730  LegoZendo     T2                                        None                                      0
+ 731  LegoZendo     J4                                        None                                      0
+ 732  LegoZendo     A9                                        None                                      0
+ 733  LegoZendo     Q5                                        None                                      0
+ 734  LegoZendo     E11                                       None                                      0
+ 735  LegoZendo     X5                                        None                                      0
+ 736  LegoZendo     V8                                        None                                      0
+ 737  LegoZendo     I8                                        None                                      0
+ 738  LegoZendo     X2                                        None                                      0
+ 739  LegoZendo     D7                                        None                                      0
+ 740  LegoZendo     R7                                        None                                      0
+ 741  LegoZendo     Z11                                       None                                      0
+ 742  LegoZendo     L2                                        None                                      0
+ 743  LegoZendo     N9                                        None                                      0
+ 744  LegoZendo     S10                                       None                                      0
+ 745  LegoZendo     M6                                        None                                      0
+ 746  LegoZendo     V3                                        None                                      0
+ 747  LegoZendo     G10                                       None                                      0
+ 748  LegoZendo     Q11                                       None                                      0
+ 749  LegoZendo     W6                                        None                                      0
+ 750  LegoZendo     O9                                        None                                      0
+ 751  LegoZendo     K4                                        None                                      0
+ 752  LegoZendo     O8                                        None                                      0
+ 753  LegoZendo     C6                                        None                                      0
+ 754  LegoZendo     E9                                        None                                      0
+ 755  LegoZendo     T10                                       None                                      0
+ 756  LegoZendo     N6                                        None                                      0
+ 757  LegoZendo     O11                                       None                                      0
+ 758  LegoZendo     Z8                                        None                                      0
+ 759  LegoZendo     K11                                       None                                      0
+ 760  LegoZendo     H5                                        None                                      0
+ 761  LegoZendo     N3                                        None                                      0
+ 762  LegoZendo     O2                                        None                                      0
+ 763  LegoZendo     Q6                                        None                                      0
+ 764  LegoZendo     N9                                        None                                      0
+ 765  LegoZendo     Q6                                        None                                      0
+ 766  LegoZendo     Z5                                        None                                      0
+ 767  LegoZendo     A2                                        None                                      0
+ 768  LegoZendo     C7                                        None                                      0
+ 769  LegoZendo     V6                                        None                                      0
+ 770  LegoZendo     S0                                        None                                      0
+ 771  LegoZendo     A4                                        None                                      0
+ 772  LegoZendo     R12                                       None                                      0
+ 773  LegoZendo     G8                                        None                                      0
+ 774  LegoZendo     I8                                        None                                      0
+ 775  LegoZendo     E8                                        None                                      0
+ 776  LegoZendo     C8                                        None                                      0
+ 777  LegoZendo     P11                                       None                                      0
+ 778  LegoZendo     R0                                        None                                      0
+ 779  LegoZendo     T3                                        None                                      0
+ 780  LegoZendo     K2                                        None                                      0
+ 781  LegoZendo     R10                                       None                                      0
+ 782  LegoZendo     D8                                        None                                      0
+ 783  LegoZendo     A7                                        None                                      0
+ 784  LegoZendo     L8                                        None                                      0
+ 785  LegoZendo     T7                                        None                                      0
+ 786  LegoZendo     H9                                        None                                      0
+ 787  LegoZendo     H2                                        None                                      0
+ 788  LegoZendo     D3                                        None                                      0
+ 789  LegoZendo     B7                                        None                                      0
+ 790  LegoZendo     N8                                        None                                      0
+ 791  LegoZendo     I9                                        None                                      0
+ 792  LegoZendo     O2                                        None                                      0
+ 793  LegoZendo     O12                                       None                                      0
+ 794  LegoZendo     P3                                        None                                      0
+ 795  LegoZendo     J5                                        None                                      0
+ 796  LegoZendo     K6                                        None                                      0
+ 797  LegoZendo     H10                                       None                                      0
+ 798  LegoZendo     R12                                       None                                      0
+ 799  LegoZendo     X6                                        None                                      0
+ 800  LegoZendo     E0                                        None                                      0
+ 801  LegoZendo     Q10                                       None                                      0
+ 802  LegoZendo     L8                                        None                                      0
+ 803  LegoZendo     M11                                       None                                      0
+ 804  LegoZendo     C0                                        None                                      0
+ 805  LegoZendo     M12                                       None                                      0
+ 806  LegoZendo     I10                                       None                                      0
+ 807  LegoZendo     R11                                       None                                      0
+ 808  LegoZendo     U11                                       None                                      0
+ 809  LegoZendo     E4                                        None                                      0
+ 810  LegoZendo     M4                                        None                                      0
+ 811  LegoZendo     I11                                       None                                      0
+ 812  LegoZendo     U0                                        None                                      0
+ 813  LegoZendo     D5                                        None                                      0
+ 814  LegoZendo     E2                                        None                                      0
+ 815  LegoZendo     K10                                       None                                      0
+ 816  LegoZendo     I3                                        None                                      0
+ 817  LegoZendo     R2                                        None                                      0
+ 818  LegoZendo     P2                                        None                                      0
+ 819  LegoZendo     R8                                        None                                      0
+ 820  LegoZendo     I2                                        None                                      0
+ 821  LegoZendo     M11                                       None                                      0
+ 822  LegoZendo     U8                                        None                                      0
+ 823  LegoZendo     Y9                                        None                                      0
+ 824  LegoZendo     L9                                        None                                      0
+ 825  LegoZendo     T9                                        None                                      0
+ 826  LegoZendo     E7                                        None                                      0
+ 827  LegoZendo     F10                                       None                                      0
+ 828  LegoZendo     E7                                        None                                      0
+ 829  LegoZendo     O7                                        None                                      0
+ 830  LegoZendo     W3                                        None                                      0
+ 831  LegoZendo     N5                                        None                                      0
+ 832  LegoZendo     T11                                       None                                      0
+ 833  LegoZendo     Z12                                       None                                      0
+ 834  LegoZendo     S8                                        None                                      0
+ 835  LegoZendo     M7                                        None                                      0
+ 836  LegoZendo     F5                                        None                                      0
+ 837  LegoZendo     D3                                        None                                      0
+ 838  LegoZendo     A6                                        None                                      0
+ 839  LegoZendo     O9                                        None                                      0
+ 840  LegoZendo     M3                                        None                                      0
+ 841  LegoZendo     M4                                        None                                      0
+ 842  LegoZendo     N7                                        None                                      0
+ 843  LegoZendo     S0                                        None                                      0
+ 844  LegoZendo     V12                                       None                                      0
+ 845  LegoZendo     V12                                       None                                      0
+ 846  LegoZendo     Q11                                       None                                      0
+ 847  LegoZendo     U5                                        None                                      0
+ 848  LegoZendo     Z10                                       None                                      0
+ 849  LegoZendo     E4                                        None                                      0
+ 850  LegoZendo     K7                                        None                                      0
+ 851  LegoZendo     W4                                        None                                      0
+ 852  LegoZendo     V11                                       None                                      0
+ 853  LegoZendo     I12                                       None                                      0
+ 854  LegoZendo     D10                                       None                                      0
+ 855  LegoZendo     A7                                        None                                      0
+ 856  LegoZendo     T8                                        None                                      0
+ 857  LegoZendo     J3                                        None                                      0
+ 858  LegoZendo     G3                                        None                                      0
+ 859  LegoZendo     G0                                        None                                      0
+ 860  LegoZendo     C2                                        None                                      0
+ 861  LegoZendo     Z4                                        None                                      0
+ 862  LegoZendo     I5                                        None                                      0
+ 863  LegoZendo     U0                                        None                                      0
+ 864  LegoZendo     X11                                       None                                      0
+ 865  LegoZendo     K2                                        None                                      0
+ 866  LegoZendo     M0                                        None                                      0
+ 867  LegoZendo     R5                                        None                                      0
+ 868  LegoZendo     K5                                        None                                      0
+ 869  LegoZendo     P8                                        None                                      0
+ 870  LegoZendo     Y7                                        None                                      0
+ 871  LegoZendo     P8                                        None                                      0
+ 872  LegoZendo     A8                                        None                                      0
+ 873  LegoZendo     E5                                        None                                      0
+ 874  LegoZendo     C2                                        None                                      0
+ 875  LegoZendo     C3                                        None                                      0
+ 876  LegoZendo     H3                                        None                                      0
+ 877  LegoZendo     Z6                                        None                                      0
+ 878  LegoZendo     R6                                        None                                      0
+ 879  LegoZendo     C11                                       None                                      0
+ 880  LegoZendo     X0                                        None                                      0
+ 881  LegoZendo     W2                                        None                                      0
+ 882  LegoZendo     J6                                        None                                      0
+ 883  LegoZendo     B8                                        None                                      0
+ 884  LegoZendo     F8                                        None                                      0
+ 885  LegoZendo     S12                                       None                                      0
+ 886  LegoZendo     P0                                        None                                      0
+ 887  LegoZendo     Q7                                        None                                      0
+ 888  LegoZendo     Q4                                        None                                      0
+ 889  LegoZendo     Q8                                        None                                      0
+ 890  LegoZendo     D6                                        None                                      0
+ 891  LegoZendo     Y10                                       None                                      0
+ 892  LegoZendo     O0                                        None                                      0
+ 893  LegoZendo     R8                                        None                                      0
+ 894  LegoZendo     F4                                        None                                      0
+ 895  LegoZendo     B3                                        None                                      0
+ 896  LegoZendo     D12                                       None                                      0
+ 897  LegoZendo     E5                                        None                                      0
+ 898  LegoZendo     K10                                       None                                      0
+ 899  LegoZendo     Q7                                        None                                      0
+ 900  LegoZendo     R0                                        None                                      0
+ 901  LegoZendo     V5                                        None                                      0
+ 902  LegoZendo     Y3                                        None                                      0
+ 903  LegoZendo     S5                                        None                                      0
+ 904  LegoZendo     L9                                        None                                      0
+ 905  LegoZendo     R6                                        None                                      0
+ 906  LegoZendo     D2                                        None                                      0
+ 907  LegoZendo     R7                                        None                                      0
+ 908  LegoZendo     Y0                                        None                                      0
+ 909  LegoZendo     X3                                        None                                      0
+ 910  LegoZendo     K5                                        None                                      0
+ 911  LegoZendo     Z4                                        None                                      0
+ 912  LegoZendo     E12                                       None                                      0
+ 913  LegoZendo     A4                                        None                                      0
+ 914  LegoZendo     H4                                        None                                      0
+ 915  LegoZendo     J9                                        None                                      0
+ 916  LegoZendo     P2                                        None                                      0
+ 917  LegoZendo     G8                                        None                                      0
+ 918  LegoZendo     H6                                        None                                      0
+ 919  LegoZendo     V7                                        None                                      0
+ 920  LegoZendo     M4                                        None                                      0
+ 921  LegoZendo     E5                                        None                                      0
+ 922  LegoZendo     L3                                        None                                      0
+ 923  LegoZendo     X9                                        None                                      0
+ 924  LegoZendo     F3                                        None                                      0
+ 925  LegoZendo     Z11                                       None                                      0
+ 926  LegoZendo     Y7                                        None                                      0
+ 927  LegoZendo     R2                                        None                                      0
+ 928  LegoZendo     O7                                        None                                      0
+ 929  LegoZendo     M12                                       None                                      0
+ 930  LegoZendo     G10                                       None                                      0
+ 931  LegoZendo     R11                                       None                                      0
+ 932  LegoZendo     H9                                        None                                      0
+ 933  LegoZendo     C4                                        None                                      0
+ 934  LegoZendo     R10                                       None                                      0
+ 935  LegoZendo     C5                                        None                                      0
+ 936  LegoZendo     B8                                        None                                      0
+ 937  LegoZendo     T7                                        None                                      0
+ 938  LegoZendo     X4                                        None                                      0
+ 939  LegoZendo     R0                                        None                                      0
+ 940  LegoZendo     K12                                       None                                      0
+ 941  LegoZendo     T9                                        None                                      0
+ 942  LegoZendo     U10                                       None                                      0
+ 943  LegoZendo     T0                                        None                                      0
+ 944  LegoZendo     T6                                        None                                      0
+ 945  LegoZendo     U12                                       None                                      0
+ 946  LegoZendo     V2                                        None                                      0
+ 947  LegoZendo     E8                                        None                                      0
+ 948  LegoZendo     B4                                        None                                      0
+ 949  LegoZendo     X7                                        None                                      0
+ 950  LegoZendo     N11                                       None                                      0
+ 951  LegoZendo     L11                                       None                                      0
+ 952  LegoZendo     W7                                        None                                      0
+ 953  LegoZendo     K7                                        None                                      0
+ 954  LegoZendo     L0                                        None                                      0
+ 955  LegoZendo     I10                                       None                                      0
+ 956  LegoZendo     G11                                       None                                      0
+ 957  LegoZendo     J6                                        None                                      0
+ 958  LegoZendo     Z7                                        None                                      0
+ 959  LegoZendo     J10                                       None                                      0
+ 960  LegoZendo     G2                                        None                                      0
+ 961  LegoZendo     Z2                                        None                                      0
+ 962  LegoZendo     Z7                                        None                                      0
+ 963  LegoZendo     F0                                        None                                      0
+ 964  LegoZendo     W5                                        None                                      0
+ 965  LegoZendo     Z8                                        None                                      0
+ 966  LegoZendo     I7                                        None                                      0
+ 967  LegoZendo     D12                                       None                                      0
+ 968  LegoZendo     D7                                        None                                      0
+ 969  LegoZendo     E8                                        None                                      0
+ 970  LegoZendo     T7                                        None                                      0
+ 971  LegoZendo     D5                                        None                                      0
+ 972  LegoZendo     Y0                                        None                                      0
+ 973  LegoZendo     S8                                        None                                      0
+ 974  LegoZendo     W3                                        None                                      0
+ 975  LegoZendo     R0                                        None                                      0
+ 976  LegoZendo     C5                                        None                                      0
+ 977  LegoZendo     U3                                        None                                      0
+ 978  LegoZendo     E3                                        None                                      0
+ 979  LegoZendo     R0                                        None                                      0
+ 980  LegoZendo     K2                                        None                                      0
+ 981  LegoZendo     H12                                       None                                      0
+ 982  LegoZendo     P5                                        None                                      0
+ 983  LegoZendo     F4                                        None                                      0
+ 984  LegoZendo     C9                                        None                                      0
+ 985  LegoZendo     H4                                        None                                      0
+ 986  LegoZendo     G4                                        None                                      0
+ 987  LegoZendo     D10                                       None                                      0
+ 988  LegoZendo     Q12                                       None                                      0
+ 989  LegoZendo     F4                                        None                                      0
+ 990  LegoZendo     D10                                       None                                      0
+ 991  LegoZendo     K7                                        None                                      0
+ 992  LegoZendo     Y4                                        None                                      0
+ 993  LegoZendo     N2                                        None                                      0
+ 994  LegoZendo     X10                                       None                                      0
+ 995  LegoZendo     G7                                        None                                      0
+ 996  LegoZendo     S0                                        None                                      0
+ 997  LegoZendo     L6                                        None                                      0
+ 998  LegoZendo     E9                                        None                                      0
+ 999  LegoZendo     W4                                        None                                      0
+1000  LegoZendo     U11                                       None                                      0
+1001  LegoZendo     K12                                       None                                      0
+1002  LegoZendo     I3                                        None                                      0
+1003  LegoZendo     I8                                        None                                      0
+1004  LegoZendo     S8                                        None                                      0
+1005  LegoZendo     B7                                        None                                      0
+1006  LegoZendo     L6                                        None                                      0
+1007  LegoZendo     I11                                       None                                      0
+1008  LegoZendo     J2                                        None                                      0
+1009  LegoZendo     R5                                        None                                      0
+1010  LegoZendo     K9                                        None                                      0
+1011  LegoZendo     U9                                        None                                      0
+1012  LegoZendo     S10                                       None                                      0
+1013  LegoZendo     U0                                        None                                      0
+1014  LegoZendo     E12                                       None                                      0
+1015  LegoZendo     E0                                        None                                      0
+1016  LegoZendo     C12                                       None                                      0
+1017  LegoZendo     E9                                        None                                      0
+1018  LegoZendo     V9                                        None                                      0
+1019  LegoZendo     W7                                        None                                      0
+1020  LegoZendo     I5                                        None                                      0
+1021  LegoZendo     C0                                        None                                      0
+1022  LegoZendo     T4                                        None                                      0
+1023  LegoZendo     O4                                        None                                      0
+1024  LegoZendo     Z5                                        None                                      0
+1025  LegoZendo     F0                                        None                                      0
+1026  LegoZendo     V11                                       None                                      0
+1027  LegoZendo     J12                                       None                                      0
+1028  LegoZendo     V9                                        None                                      0
+1029  LegoZendo     E10                                       None                                      0
+1030  LegoZendo     X9                                        None                                      0
+1031  LegoZendo     M4                                        None                                      0
+1032  LegoZendo     O5                                        None                                      0
+1033  LegoZendo     U10                                       None                                      0
+1034  LegoZendo     D6                                        None                                      0
+1035  LegoZendo     C5                                        None                                      0
+1036  LegoZendo     K5                                        None                                      0
+1037  LegoZendo     U9                                        None                                      0
+1038  LegoZendo     X3                                        None                                      0
+1039  LegoZendo     I9                                        None                                      0
+1040  LegoZendo     H9                                        None                                      0
+1041  LegoZendo     D6                                        None                                      0
+1042  LegoZendo     N8                                        None                                      0
+1043  LegoZendo     D7                                        None                                      0
+1044  LegoZendo     L5                                        None                                      0
+1045  LegoZendo     D0                                        None                                      0
+1046  LegoZendo     E5                                        None                                      0
+1047  LegoZendo     B10                                       None                                      0
+1048  LegoZendo     U11                                       None                                      0
+1049  LegoZendo     Z9                                        None                                      0
+1050  LegoZendo     P4                                        None                                      0
+1051  LegoZendo     D11                                       None                                      0
+1052  LegoZendo     D9                                        None                                      0
+1053  LegoZendo     H5                                        None                                      0
+1054  LegoZendo     B11                                       None                                      0
+1055  LegoZendo     N2                                        None                                      0
+1056  LegoZendo     S3                                        None                                      0
+1057  LegoZendo     H5                                        None                                      0
+1058  LegoZendo     Z7                                        None                                      0
+1059  LegoZendo     M3                                        None                                      0
+1060  LegoZendo     Y9                                        None                                      0
+1061  LegoZendo     V0                                        None                                      0
+1062  LegoZendo     Z6                                        None                                      0
+1063  LegoZendo     O12                                       None                                      0
+1064  LegoZendo     A5                                        None                                      0
+1065  LegoZendo     F6                                        None                                      0
+1066  LegoZendo     W2                                        None                                      0
+1067  LegoZendo     G2                                        None                                      0
+1068  LegoZendo     T12                                       None                                      0
+1069  LegoZendo     G2                                        None                                      0
+1070  LegoZendo     A4                                        None                                      0
+1071  LegoZendo     L0                                        None                                      0
+1072  LegoZendo     A2                                        None                                      0
+1073  LegoZendo     R5                                        None                                      0
+1074  LegoZendo     I12                                       None                                      0
+1075  LegoZendo     A0                                        None                                      0
+1076  LegoZendo     K12                                       None                                      0
+1077  LegoZendo     P9                                        None                                      0
+1078  LegoZendo     C4                                        None                                      0
+1079  LegoZendo     C12                                       None                                      0
+1080  LegoZendo     T3                                        None                                      0
+1081  LegoZendo     Z5                                        None                                      0
+1082  LegoZendo     B8                                        None                                      0
+1083  LegoZendo     Z10                                       None                                      0
+1084  LegoZendo     Y0                                        None                                      0
+1085  LegoZendo     A9                                        None                                      0
+1086  LegoZendo     C10                                       None                                      0
+1087  LegoZendo     S0                                        None                                      0
+1088  LegoZendo     U9                                        None                                      0
+1089  LegoZendo     P4                                        None                                      0
+1090  LegoZendo     W7                                        None                                      0
+1091  LegoZendo     P0                                        None                                      0
+1092  LegoZendo     Q7                                        None                                      0
+1093  LegoZendo     Y12                                       None                                      0
+1094  LegoZendo     C7                                        None                                      0
+1095  LegoZendo     V8                                        None                                      0
+1096  LegoZendo     B8                                        None                                      0
+1097  LegoZendo     B3                                        None                                      0
+1098  LegoZendo     O2                                        None                                      0
+1099  LegoZendo     O2                                        None                                      0
+1100  LegoZendo     I10                                       None                                      0
+1101  LegoZendo     Q3                                        None                                      0
+1102  LegoZendo     S2                                        None                                      0
+1103  LegoZendo     S8                                        None                                      0
+1104  LegoZendo     M9                                        None                                      0
+1105  LegoZendo     U6                                        None                                      0
+1106  LegoZendo     N3                                        None                                      0
+1107  LegoZendo     E4                                        None                                      0
+1108  LegoZendo     K5                                        None                                      0
+1109  LegoZendo     I5                                        None                                      0
+1110  LegoZendo     H8                                        None                                      0
+1111  LegoZendo     W4                                        None                                      0
+1112  LegoZendo     L0                                        None                                      0
+1113  LegoZendo     J6                                        None                                      0
+1114  LegoZendo     I2                                        None                                      0
+1115  LegoZendo     Q12                                       None                                      0
+1116  LegoZendo     Z0                                        None                                      0
+1117  LegoZendo     Q5                                        None                                      0
+1118  LegoZendo     F7                                        None                                      0
+1119  LegoZendo     Y2                                        None                                      0
+1120  LegoZendo     D6                                        None                                      0
+1121  LegoZendo     G3                                        None                                      0
+1122  LegoZendo     T3                                        None                                      0
+1123  LegoZendo     P5                                        None                                      0
+1124  LegoZendo     E2                                        None                                      0
+1125  LegoZendo     N11                                       None                                      0
+1126  LegoZendo     F10                                       None                                      0
+1127  LegoZendo     N12                                       None                                      0
+1128  LegoZendo     E0                                        None                                      0
+1129  LegoZendo     M7                                        None                                      0
+1130  LegoZendo     D7                                        None                                      0
+1131  LegoZendo     J3                                        None                                      0
+1132  LegoZendo     J4                                        None                                      0
+1133  LegoZendo     G9                                        None                                      0
+1134  LegoZendo     A4                                        None                                      0
+1135  LegoZendo     U6                                        None                                      0
+1136  LegoZendo     V11                                       None                                      0
+1137  LegoZendo     O11                                       None                                      0
+1138  LegoZendo     Q9                                        None                                      0
+1139  LegoZendo     L9                                        None                                      0
+1140  LegoZendo     V8                                        None                                      0
+1141  LegoZendo     C10                                       None                                      0
+1142  LegoZendo     Z10                                       None                                      0
+1143  LegoZendo     J6                                        None                                      0
+1144  LegoZendo     V7                                        None                                      0
+1145  LegoZendo     Z12                                       None                                      0
+1146  LegoZendo     G7                                        None                                      0
+1147  LegoZendo     Y12                                       None                                      0
+1148  LegoZendo     H9                                        None                                      0
+1149  LegoZendo     H8                                        None                                      0
+1150  LegoZendo     Q3                                        None                                      0
+1151  LegoZendo     X4                                        None                                      0
+1152  LegoZendo     G5                                        None                                      0
+1153  LegoZendo     K7                                        None                                      0
+1154  LegoZendo     O0                                        None                                      0
+1155  LegoZendo     H6                                        None                                      0
+1156  LegoZendo     U7                                        None                                      0
+1157  LegoZendo     S8                                        None                                      0
+1158  LegoZendo     K4                                        None                                      0
+1159  LegoZendo     J9                                        None                                      0
+1160  LegoZendo     D3                                        None                                      0
+1161  LegoZendo     Y7                                        None                                      0
+1162  LegoZendo     Q7                                        None                                      0
+1163  LegoZendo     P0                                        None                                      0
+1164  LegoZendo     S11                                       None                                      0
+1165  LegoZendo     J11                                       None                                      0
+1166  LegoZendo     Q6                                        None                                      0
+1167  LegoZendo     J2                                        None                                      0
+1168  LegoZendo     C11                                       None                                      0
+1169  LegoZendo     H6                                        None                                      0
+1170  LegoZendo     G2                                        None                                      0
+1171  LegoZendo     O11                                       None                                      0
+1172  LegoZendo     G5                                        None                                      0
+1173  LegoZendo     F7                                        None                                      0
+1174  LegoZendo     W12                                       None                                      0
+1175  LegoZendo     V3                                        None                                      0
+1176  LegoZendo     E5                                        None                                      0
+1177  LegoZendo     H4                                        None                                      0
+1178  LegoZendo     L7                                        None                                      0
+1179  LegoZendo     E3                                        None                                      0
+1180  LegoZendo     N4                                        None                                      0
+1181  LegoZendo     R4                                        None                                      0
+1182  LegoZendo     A8                                        None                                      0
+1183  LegoZendo     E6                                        None                                      0
+1184  LegoZendo     E11                                       None                                      0
+1185  LegoZendo     A9                                        None                                      0
+1186  LegoZendo     T9                                        None                                      0
+1187  LegoZendo     B7                                        None                                      0
+1188  LegoZendo     O11                                       None                                      0
+1189  LegoZendo     T2                                        None                                      0
+1190  LegoZendo     D10                                       None                                      0
+1191  LegoZendo     X0                                        None                                      0
+1192  LegoZendo     O7                                        None                                      0
+1193  LegoZendo     D5                                        None                                      0
+1194  LegoZendo     I8                                        None                                      0
+1195  LegoZendo     S9                                        None                                      0
+1196  LegoZendo     C8                                        None                                      0
+1197  LegoZendo     D6                                        None                                      0
+1198  LegoZendo     E10                                       None                                      0
+1199  LegoZendo     D3                                        None                                      0
+1200  LegoZendo     R9                                        None                                      0
+1201  LegoZendo     F5                                        None                                      0
+1202  LegoZendo     G12                                       None                                      0
+1203  LegoZendo     T7                                        None                                      0
+1204  LegoZendo     Q4                                        None                                      0
+1205  LegoZendo     D5                                        None                                      0
+1206  LegoZendo     O3                                        None                                      0
+1207  LegoZendo     Q4                                        None                                      0
+1208  LegoZendo     C10                                       None                                      0
+1209  LegoZendo     Y6                                        None                                      0
+1210  LegoZendo     R4                                        None                                      0
+1211  LegoZendo     T6                                        None                                      0
+1212  LegoZendo     Z11                                       None                                      0
+1213  LegoZendo     Y6                                        None                                      0
+1214  LegoZendo     Y9                                        None                                      0
+1215  LegoZendo     U3                                        None                                      0
+1216  LegoZendo     N4                                        None                                      0
+1217  LegoZendo     U10                                       None                                      0
+1218  LegoZendo     R11                                       None                                      0
+1219  LegoZendo     N9                                        None                                      0
+1220  LegoZendo     H2                                        None                                      0
+1221  LegoZendo     Q4                                        None                                      0
+1222  LegoZendo     L10                                       None                                      0
+1223  LegoZendo     I2                                        None                                      0
+1224  LegoZendo     G4                                        None                                      0
+1225  LegoZendo     C8                                        None                                      0
+1226  LegoZendo     O5                                        None                                      0
+1227  LegoZendo     D0                                        None                                      0
+1228  LegoZendo     B2                                        None                                      0
+1229  LegoZendo     E4                                        None                                      0
+1230  LegoZendo     G5                                        None                                      0
+1231  LegoZendo     U0                                        None                                      0
+1232  LegoZendo     D3                                        None                                      0
+1233  LegoZendo     H4                                        None                                      0
+1234  LegoZendo     N8                                        None                                      0
+1235  LegoZendo     R11                                       None                                      0
+1236  LegoZendo     G12                                       None                                      0
+1237  LegoZendo     W9                                        None                                      0
+1238  LegoZendo     O2                                        None                                      0
+1239  LegoZendo     C2                                        None                                      0
+1240  LegoZendo     X9                                        None                                      0
+1241  LegoZendo     X3                                        None                                      0
+1242  LegoZendo     I8                                        None                                      0
+1243  LegoZendo     S11                                       None                                      0
+1244  LegoZendo     E6                                        None                                      0
+1245  LegoZendo     V0                                        None                                      0
+1246  LegoZendo     W12                                       None                                      0
+1247  LegoZendo     J11                                       None                                      0
+1248  LegoZendo     Y9                                        None                                      0
+1249  LegoZendo     Y2                                        None                                      0
+1250  LegoZendo     R5                                        None                                      0
+1251  LegoZendo     K5                                        None                                      0
+1252  LegoZendo     W10                                       None                                      0
+1253  LegoZendo     E7                                        None                                      0
+1254  LegoZendo     G6                                        None                                      0
+1255  LegoZendo     D2                                        None                                      0
+1256  LegoZendo     W2                                        None                                      0
+1257  LegoZendo     F11                                       None                                      0
+1258  LegoZendo     V8                                        None                                      0
+1259  LegoZendo     E6                                        None                                      0
+1260  LegoZendo     X8                                        None                                      0
+1261  LegoZendo     M2                                        None                                      0
+1262  LegoZendo     Q6                                        None                                      0
+1263  LegoZendo     G9                                        None                                      0
+1264  LegoZendo     I10                                       None                                      0
+1265  LegoZendo     M8                                        None                                      0
+1266  LegoZendo     Y2                                        None                                      0
+1267  LegoZendo     Q7                                        None                                      0
+1268  LegoZendo     C11                                       None                                      0
+1269  LegoZendo     Q11                                       None                                      0
+1270  LegoZendo     D3                                        None                                      0
+1271  LegoZendo     G11                                       None                                      0
+1272  LegoZendo     O12                                       None                                      0
+1273  LegoZendo     C6                                        None                                      0
+1274  LegoZendo     Z6                                        None                                      0
+1275  LegoZendo     O0                                        None                                      0
+1276  LegoZendo     C5                                        None                                      0
+1277  LegoZendo     Y4                                        None                                      0
+1278  LegoZendo     E0                                        None                                      0
+1279  LegoZendo     C0                                        None                                      0
+1280  LegoZendo     Q5                                        None                                      0
+1281  LegoZendo     A10                                       None                                      0
+1282  LegoZendo     V10                                       None                                      0
+1283  LegoZendo     J11                                       None                                      0
+1284  LegoZendo     N2                                        None                                      0
+1285  LegoZendo     F0                                        None                                      0
+1286  LegoZendo     J0                                        None                                      0
+1287  LegoZendo     F9                                        None                                      0
+1288  LegoZendo     Y6                                        None                                      0
+1289  LegoZendo     Z7                                        None                                      0
+1290  LegoZendo     B3                                        None                                      0
+1291  LegoZendo     O4                                        None                                      0
+1292  LegoZendo     H2                                        None                                      0
+1293  LegoZendo     W11                                       None                                      0
+1294  LegoZendo     X10                                       None                                      0
+1295  LegoZendo     M4                                        None                                      0
+
+per-name tally this round
+name             presented correct  hit-rate
+LegoZendo             1296       0      0.0%

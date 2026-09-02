@@ -21,14 +21,14 @@ Nobody will tell you what `PP` means. Like the game *Zendo*, you are guessing
 nature's rule from examples. You make guesses, you look at which ones scored 1,
 you form a hypothesis, you test it next round.
 
-Rounds are **one second long**. Inside that second the server will throw as many
+Rounds are **half a second long** by default (the live value is `round_seconds` in the `welcome` message). Inside that window the server will throw as many
 challenges at you as you can answer. At the very end of the session there is one
 **three-second final test**, and only that final counts for the score.
 
 So the loop of the whole game is:
 
 > guess badly → read your logs → work out the rule (with your AI) → write a fast
-> solver → guess well → repeat, 12 times → win the final.
+> solver → guess well → repeat, 6 times → win the final.
 
 ---
 
@@ -36,12 +36,14 @@ So the loop of the whole game is:
 
 | thing | value (check `status` — the organiser can change these) |
 |---|---|
-| training round length | **1 second** |
-| cooldown between your rounds | **5 minutes** (measured start → start) |
-| max training rounds | **12** |
-| training window | about **61 minutes** (12 × cooldown + 60 s) |
+| training round length | **0.5 seconds** |
+
+> These are the defaults. **The live values are in the `config` block of the `welcome` message and in `python client/player.py status`; trust those over this table.**
+| cooldown between your rounds | **5 minutes** by default (measured start → start) |
+| max training rounds | **6** |
+| training window | 6 × cooldown + 60 s (about **31 minutes** at the 5-minute default) |
 | demos | **1 per cooldown window** |
-| final test | **3 seconds**, once, in a **10 minute** window after training ends (or as soon as you have used all 12 training rounds) |
+| final test | **3 seconds**, once, in a **10 minute** window after training ends (or as soon as you have used all your training rounds) |
 | score | number of challenges you answer **correctly in the final** |
 | tiebreak | fewer total answers wins (precision), then team name |
 
@@ -49,10 +51,10 @@ Notes that matter:
 
 * The cooldown is measured **start to start**. Starting a round at 10:00:00 means
   your next round can start at 10:05:00, no matter how the round went.
-* You have **12 rounds, ever**. There is no way to get a 13th. Don't burn one on
+* You have **6 rounds, ever**. There is no way to get a 7th. Don't burn one on
   a change you haven't tested locally.
-* You do not have to use all 12. If you have nothing new to try, wait.
-* The training window closes on the clock too, so 12 rounds only fit if you keep
+* You do not have to use all 6. If you have nothing new to try, wait.
+* The training window closes on the clock too, so all 6 rounds only fit if you keep
   moving. Set your bot to `watch` and it will take every round the moment it is
   allowed.
 * The **tiebreak rewards precision**: two teams on 40 correct are separated by
@@ -71,7 +73,7 @@ you   -> answer           round_id, index 0, solution        (or skip)
 server -> result          index 0, score 0|1
 server -> challenge       index 1, name, clue        <- arrives IMMEDIATELY
 you   -> answer           index 1, ...
-   ... over and over until the 1 second deadline ...
+   ... over and over until the deadline ...
 server -> round_over      presented, answered, correct, items[...]
 ```
 
@@ -356,7 +358,7 @@ Rules of the wire:
 * Messages that arrive after the deadline are ignored.
 * Refusals come back as `error` with a `code`: `cooldown` (too soon —
   `retry_at` tells you when), `phase` (wrong part of the game), `round_cap`
-  (your 12 rounds are gone), `busy` (a round is already running).
+  (your training rounds are gone), `busy` (a round is already running).
 * All timestamps are server unix-time floats. Trust `server_time`, not your own
   clock.
 

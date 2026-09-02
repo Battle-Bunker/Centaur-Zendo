@@ -47,7 +47,7 @@ def setup(a):
         "max_training_rounds": a.rounds,
         "training_seconds": a.training_seconds,      # generous: LLM players think for minutes between rounds
         "final_window_seconds": a.final_window,
-        "round_seconds": 1.0,
+        "round_seconds": a.round_seconds,
         "final_seconds": 3.0,
         "open_registration": True,
         "challenge_dir": str(pool),
@@ -201,7 +201,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("setup"); s.add_argument("--run", required=True); s.add_argument("--teams", required=True)
-    s.add_argument("--cooldown", type=float, default=30); s.add_argument("--rounds", type=int, default=12)
+    s.add_argument("--cooldown", type=float, default=5); s.add_argument("--rounds", type=int, default=6)
+    s.add_argument("--round-seconds", type=float, default=0.5)
     s.add_argument("--training-seconds", type=float, default=6 * 3600)
     s.add_argument("--final-window", type=float, default=3600)
     s.add_argument("--port", type=int); s.add_argument("--arena-root"); s.add_argument("--challenge-dir")

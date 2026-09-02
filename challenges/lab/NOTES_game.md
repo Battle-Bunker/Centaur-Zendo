@@ -362,3 +362,79 @@ team orlan3a $SCRATCH/lab-orlan-3/players/orlan3a
 team orlan3b $SCRATCH/lab-orlan-3/players/orlan3b
 teardown     python sim/arena.py teardown --run lab-orlan-3 && python sim/arena.py report --run lab-orlan-3
 ```
+
+---------------------------------------------------------------------------
+## Iteration 3 RESULT - no crack. FINAL.
+
+| team | r1..r6 | final | what they believed |
+|---|---|---|---|
+| orlan3a | 0/0, 8/169, 8/194, 17/185, 27/212, 37/173 | 293/1209 = **24 %** | "straight orthogonal line; no `o` between source and destination but `#` and `x` may be crossed; destination within Manhattan 2 of an `x` (66/66)". ~21 candidates/grid, exactly one accepted. Shipped a ranker. |
+| orlan3b | 1/176, 9/183, 7/187, 24/200, 12/182, 9/181 | 121/1168 = **10 %** | "(o, empty) pairs sharing a row/col; path often blocked so not a slide". ~23 candidates, exhaustive search over ~55 features, ~3600 lexicographic rules and 28 after-state goal predicates found nothing. Shipped a conditional-logit ranker. |
+
+The v3 changes did what they were designed to do: the proxy laws that paid 23-32 % in v1
+and v2 are gone (orlan3b's score fell to 10 %, which is the honest price of having no law),
+throughput tripled to ~180-210 items per round, and every one of the 122 candidate laws I
+tested is falsified within 2-4 confirmed answers. It made no difference, because
+**neither team's hypothesis set ever contained "the leap length is the number of pieces
+touching the mover."** orlan3a tested "distance == count-of-X" (enemies on the *board*)
+and rejected it; nobody counted the mover's own neighbours. Across 3 versions and 6 player
+runs, in six independent searches over 35-55 hand-built features, that quantity was never
+generated as a candidate.
+
+### Two measurements worth keeping (both new, both honest)
+1. **orlan3a's "66/66" invariant is a sampling artifact.** On an unbiased sample of 1500
+   shipped clues the winner's landing square is within Manhattan 2 of an `x` **85.7 %** of
+   the time, not 100 %. Their positives are not a random sample of winners - they only ever
+   learn that a move is correct if their own ranker submitted it, and their ranker already
+   preferred near-enemy landings. orlan3b spotted the same effect independently ("a
+   hypothesis that fit 20/20 of their positives showed zero lift in a controlled round").
+   With one accepted move per clue and ~10-35 positives per round, **the feedback channel
+   cannot supply unbiased evidence about the rule** - it can only confirm what the player's
+   own generator already proposes.
+2. That invariant is a genuine structural leak of the *goal*, not a bug I could remove: to
+   freeze an enemy you must interact with it, so the winning landing square is nearly
+   always near an `x`. It prunes their 19-move candidate set to ~10.5 (uniform 11.5 %),
+   which is exactly the 24 % orlan3a reached with ranking on top.
+
+### Classification: **TOO HARD for 0/1 feedback in 6 rounds.**
+Everything measurable about the challenge is sound - property-based scorer (any legal move
+that freezes every `x` scores 1, no reference comparison), exactly one winning move on the
+whole board, 0 disagreements against an independent re-implementation over 33 148 pairs,
+junk-proof and 0.004 ms, best constant answer 1.5 %, no proxy movement law survives 4
+positives, and the true law is the top-scoring law by 2.5x *among laws that are on the
+table*. It fails one thing only, and it is the one that matters: DESIGN_LOOP's fairness
+floor, "a strong human+AI team must be able to get it from <= 6 demos plus probing with
+real insight". Six Opus runs say no.
+
+**The general lesson for the organisers.** A 0/1 channel only tests hypotheses the player
+already generates. Falsifying every wrong hypothesis is necessary but useless if the right
+one is never proposed: the players' generative prior for an ASCII board is *destination
+features* (lines, paths, distance to enemies, connectivity, capture) - "a property of the
+mover's own 4-neighbourhood that sets how far it goes" is simply not in it. A rule outside
+that prior is unreachable at this cadence no matter how clean the evidence is. Difficulty
+from *lateral* rules must therefore be paid for by putting the hidden quantity somewhere
+the player can see it, and taking the difficulty back in the goal.
+
+### v4 sketch (NOT built - described for the record)
+Ordered by how much they move the law into the players' hypothesis space:
+
+* **(a) Put the leap length in the answer format**: `r,c>r,c/n`, where `n` must equal the
+  mover's occupied-neighbour count; the scorer verifies `n`, the move and the goal (~35
+  extra scorer chars, still inside 512). Every demo then displays the hidden quantity as a
+  bare number next to a position - "why is this one a 3?" is a question a player will
+  actually ask, and 3-4 demos answer it. Cheapest change with the biggest effect.
+* **(b) Print the count on the board**: draw each `o` as its own neighbour count
+  (`0`-`4`) instead of the letter. The law becomes almost free to read and all remaining
+  difficulty is the goal ("leave the enemy with no legal move"), which is the half that
+  was never the problem. Safest option if the next run must produce a crack.
+* **(c) One mover only**: a single `o`, every other friendly piece inert. The answer is
+  then one of <= 4 destinations, the law is forced into view within a round, and the class
+  becomes a pure goal-inference puzzle.
+* **(d) Teach the law inside the clue** (most Zendo-like): append a second, tiny board to
+  every clue showing one legal move of the same game, e.g.
+  `..o.#|..#..` + `1 legal`. Positive instances of the *law* then arrive with every single
+  challenge instead of only through the 6 demos, while the *goal* stays hidden. This keeps
+  the invented rule and fixes only the channel that failed.
+
+Recommendation: **(a) + (d)** if the goal is to keep an invented, prior-breaking rule and
+still be crackable; **(b)** if the goal is simply a class Opus teams solve.

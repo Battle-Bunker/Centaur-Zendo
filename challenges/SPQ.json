@@ -1,0 +1,8 @@
+{
+  "name": "SPQ",
+  "author": "numbers-agent",
+  "description": "Semiprime split: the clue is n = p*q with p, q prime; any nontrivial divisor scores 1. 30% of the time p is a 2-3 digit prime (easy), otherwise p is in [1000,100000) and q in [100000,3000000), so n has up to 13 digits and the smallest factor is < 1e5.\nDIFFICULTY: medium. DISCOVERY PATH: clue is one big number; a demo shows a smaller number, and 'does it divide?' is the first hypothesis anyone tests (the name SPQ hints p*q). Strong gradient: a bot that trial-divides only up to 1000 already scores on the ~30% small-p instances; extending the loop to 1e5 (about 5 ms) gets everything. Note the scorer accepts ANY nontrivial divisor, so partial cleverness is rewarded.",
+  "generate": "def generate(seed):\n    r = random.Random(seed)\n    def isp(x):\n        if x < 2:\n            return False\n        if x % 2 == 0:\n            return x == 2\n        i = 3\n        while i * i <= x:\n            if x % i == 0:\n                return False\n            i += 2\n        return True\n    def rp(a, b):\n        while True:\n            v = r.randrange(a, b)\n            if isp(v):\n                return v\n    p = rp(50, 1000) if r.random() < 0.3 else rp(1000, 100000)\n    q = rp(100000, 3000000)\n    return str(p * q)\n",
+  "solve": "def solve(clue):\n    n = int(clue)\n    d = 2\n    while d * d <= n:\n        if n % d == 0:\n            return str(d)\n        d += 1\n    return ''\n",
+  "score": "def score(c,s):\n s=s.strip()\n if not s.isdecimal() or len(s)>15:return 0\n d=int(s);n=int(c)\n return int(1<d<n and n%d==0)\n"
+}

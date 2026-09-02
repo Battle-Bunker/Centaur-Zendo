@@ -294,7 +294,8 @@ async def test_late_answers_are_ignored(client):
     assert over["presented"] == 0                     # nothing was ever answered
     await ws.send_json({"type": "answer", "round_id": started["round_id"],
                         "index": ch["index"], "solution": "late"})
-    assert (await recv(ws, skip_stale=False))["code"] == "stale"
+    await ws.send_json({"type": "ping"})
+    assert (await recv(ws, skip_stale=False))["type"] == "pong"   # dropped silently
 
 
 @pytest.mark.asyncio

@@ -47,3 +47,40 @@ factorisation of several numbers inside the scorer.
 known key length), `CRATE` (bin packing), `HOARD` (knapsack), `BLANKET` (set cover),
 `polska` (RPN program induction; full spec in `challenges/NOTES_logic.md` §8), `dama`
 (n-queens completion). See the NOTES files for sketches.
+
+## Challenge design lab (fast cadence: 6 rounds × 0.5 s, 5 s thinking, 3 s final)
+
+Five designer agents each built a challenge from a lateral direction and iterated against pairs of fresh
+Opus player agents in private arenas (`sim/DESIGN_LOOP.md`, results under `sim/results/lab-*`,
+challenges under `challenges/lab/`). Classification per player: cracked ≥ 90 % in the final, partial
+10–90 %, failed < 10 %.
+
+| class | direction | v1 outcome | v2 outcome | verdict |
+|---|---|---|---|---|
+| `quaich` | invented 3-cycle bracket notation | cracked (r5–6, 3 demos) + partial 23 % | — | on target |
+| `OKRIN` | sparse clue, forced completion, 3 clauses | cracked (r4, 3 demos) + partial 73 % | — | on target |
+| `murn` | invented support physics | cracked r6 + cracked r5 | (see results) | see `NOTES_physics.md` |
+| `orlan` | invented board game | partial 32 % + partial 29 % (law never found) | (see results) | see `NOTES_game.md` |
+| `quilm` | everyday object (seven-segment) | cracked r4 + r6 | cracked r3 + r5 (faster) | too easy for Opus; good for kids |
+
+What made the on-target ones work, and the principles now in `sim/DESIGN_LOOP.md`:
+
+* **Two or three independent clauses**, each scoring 0 alone. Demos only show satisfying examples, so
+  the second clause costs a round of falsifying probes. The failed players converged on a statistical
+  proxy (a bigram model, a lookup table) that plateaued and *felt* like progress.
+* **Close the degenerate witness.** LegoZendo v1 was "cracked" by a 2×3N rectangle without anyone
+  finding the rule; the solution set must force the insight (forced completion, seeds, counts).
+* **Absolute-readout rules are scan-solvable.** If `property(answer) == clue`, a fixed answer sent
+  against every clue reads the property off (quilm v1). Prefer relational rules (answer built against
+  the clue).
+* **The three-word test.** If the puzzle can be named in three words ("move one matchstick"), the model
+  holds a prior over the whole rule and recognition replaces inference (quilm v2, all 31 textbook
+  classes). Recognising the object must be necessary but not sufficient.
+* **Rejection-only clauses are undiscoverable.** A constraint that only ever shows up as a 0 (quilm's
+  anagram exclusion, OKRIN's seed clause) belongs in `generate()`, not `score()`.
+* **Players' toolkit is stable across all runs**: a skip-only harvest round (~450–800 free clues),
+  then rounds used as factorial experiments cycling candidate answers by `memory["_index"]`, then
+  constraint propagation over the labelled answers. Design against that, not against guessing.
+* **The final is a throughput benchmark once solved.** Every player flagged that 100 % teams are
+  separated only by socket round-trips. Consider scoring the final on a fixed number of presented
+  challenges, or `correct − λ·wrong`, if insight rather than throughput should decide ties.

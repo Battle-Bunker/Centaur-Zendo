@@ -72,3 +72,35 @@ computation, (c) not admit a surface heuristic that scores 1 most of the time.
 ## Chosen: `quaich` (idea 1)
 
 Name is a neutral short word with no relation to strokes, nesting, anagrams or cycles.
+
+## Iteration 1 outcome (lab-quaich-1) — MIXED, on target, no v2
+
+| player | rounds (correct/answered) | final | verdict |
+|---|---|---|---|
+| quaicha | 1/590, 35/476, 248/469, 375/461, 448/457, 571/571 | 3539/3539 (100 %) | **cracked**, round 5-6, 3 demos |
+| quaichb | 1/572, 13/500, 73/513, 47/310, 64/322, 78/403 | 728/3149 (23 %) | **partial**, never found the rule |
+
+quaichb got the anagram property from demo 1 and then only correlates (start `/` / end `-`
+enriched, bigram `|/` enriched, `--`/`||`/`|-` depleted), trained a 9-weight bigram model
+and sampled best-of-16; it plateaued at ~23 % and reported that the plateau "feels like
+convergence" — the intended failure mode for a statistical proxy.
+
+quaicha never found the nesting or the eager reading, but did recover the **pair-count
+decomposition** (p, q, r above) and emitted a fixed three-block layout
+`/^r |^r -^p |^p /^q -^q` with case splits. Verified: 600/600.
+
+Decision: **leave the rule unchanged.** Measured, the family is not cheaply closable:
+
+| candidate extra clause | family still valid on | accepted set removed |
+|---|---|---|
+| no run of >= 3 identical strokes | 20 % of clues | 54 % |
+| no run of >= 4 identical strokes | 51 % of clues | 14 % |
+| some node has >= 2 children | 83 % of clues | 1 % (no separation) |
+
+None separates "understood the nesting" from "fitted a layout to the counts", because once
+the pair multiset is known *some* canonical layout always exists; and quaicha's solver
+already contains block-splitting logic, so a run cap would simply be re-fitted with ~450
+probes per round. Shrinking the accepted set would also push quaichb from partial to
+failed, i.e. off target, with no player run left to verify it. The proper close is lever 1
+(positional information in the clue — the hole-completion variant, idea 6), which is a
+different challenge, not a tweak.

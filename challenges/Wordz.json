@@ -1,0 +1,8 @@
+{
+ "name": "Wordz",
+ "author": "chris (spec) / orchestrator (implementation)",
+ "description": "Wordz. Clue: a string of 3-6 digits. Solution: a sequence of that many English words (whitespace-separated) where word i has, alternately, exactly digit-i VOWELS (i even: positions 0,2,4..) or exactly digit-i CONSONANTS (i odd). Vowels are a e i o u; y is a consonant. E.g. 3559 -> 'Potato Breaking Hippopotamus Transformation' (3 vowels, 5 consonants, 5 vowels, 9 consonants). Words are checked against words.WORDS (web2 + common list). generate() draws random common words and emits their alternating counts (digits 1-9 only). solve() picks a random common word per digit. Human-designed.",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    n = r.randint(3, 6)\n    out = \"\"\n    while len(out) < n:\n        w = r.choice(words.COMMON)\n        k = words.vowels(w) if len(out) % 2 == 0 else words.consonants(w)\n        if 1 <= k <= 9:\n            out += str(k)\n    return out\n",
+ "solve": "def solve(clue):\n    r = random.Random(clue)\n    out = []\n    for i, d in enumerate(clue):\n        d = int(d)\n        f = words.vowels if i % 2 == 0 else words.consonants\n        out.append(words.pick(r, lambda w: f(w) == d and len(w) >= 3))\n    return \" \".join(out)\n",
+ "score": "def score(c,s):\n t=s.split()\n return int(len(t)==len(c)>0 and all(words.is_word(w)and(words.vowels(w),words.consonants(w))[i%2]==int(c[i])for i,w in enumerate(t)))\n"
+}

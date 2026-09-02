@@ -137,6 +137,20 @@ can eyeball what players will actually see.
 
 ---
 
+## 3b. The `words` module (English dictionary)
+
+`words` is pre-imported in every challenge namespace (generate, solve and score):
+
+| name | meaning |
+|---|---|
+| `words.WORDS` | frozenset of ~235k lowercase English words (web2) for checking answers |
+| `words.COMMON` | ~20k common dictionary words, most frequent first, for generating clues |
+| `words.is_word(w)` | `w.lower() in WORDS` |
+| `words.vowels(w)` / `words.consonants(w)` | letter counts; vowels are a e i o u, y is a consonant |
+| `words.pick(rng, pred=None, n=1)` | random common word(s) satisfying `pred` |
+
+See `challenges/Wordz.json` for a worked example.
+
 ## 4. The short-scorer discipline
 
 `score` is capped at **512 characters** on purpose (it started at 256). It forces the shape of a good

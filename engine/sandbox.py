@@ -46,7 +46,7 @@ __all__ = [
 # ---------------------------------------------------------------- exec model
 # NOTE: these two lists must stay identical to tools/quickcheck.py.
 ALLOWED_MODULES = ("math re random itertools functools collections string hashlib json heapq "
-                   "bisect operator fractions statistics array struct base64 decimal").split()
+                   "bisect operator fractions statistics array struct base64 decimal words").split()
 ALLOWED_BUILTINS = ("abs all any ascii bin bool bytearray bytes callable chr complex dict divmod "
                     "enumerate filter float format frozenset getattr hasattr hash hex id int isinstance "
                     "issubclass iter len list map max min next object oct ord pow print range repr "
@@ -83,10 +83,25 @@ def type_name_of(value: Any) -> str:
     return value.type_name if isinstance(value, Unpicklable) else type(value).__name__
 
 
+def _load_module(name):
+    """Import an allow-listed module; `words` is the engine's English word-list module."""
+    if name == "words":
+        try:
+            import engine.words as words_mod
+        except ImportError:
+            import sys as _sys, os as _os
+            _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+            import engine.words as words_mod
+        return words_mod
+    return __import__(name)
+
+
 def _restricted_import(name, globals=None, locals=None, fromlist=(), level=0):
     root = name.split(".")[0]
     if root not in ALLOWED_MODULES:
         raise ImportError(f"import of {name!r} is not allowed in challenge code")
+    if root == "words":
+        return _load_module("words")
     return __import__(name, globals, locals, fromlist, level)
 
 
@@ -97,7 +112,7 @@ def make_namespace() -> dict[str, Any]:
     bi["__import__"] = _restricted_import
     ns = {"__builtins__": bi, "__name__": "challenge"}
     for m in ALLOWED_MODULES:
-        ns[m] = __import__(m)
+        ns[m] = _load_module(m)
     return ns
 
 

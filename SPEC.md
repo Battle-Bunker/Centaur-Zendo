@@ -107,7 +107,9 @@ below. `open`, `eval`, `exec`, `compile`, `input`, `globals`, `locals`, `vars`, 
 
 Pre-imported modules present in every namespace (no `import` needed, but allowed):
 `math re random itertools functools collections string hashlib json heapq bisect
-operator fractions statistics array struct base64 decimal`.
+operator fractions statistics array struct base64 decimal words`. `words` is the engine's English
+word-list module (`words.WORDS`, `words.COMMON`, `is_word`, `vowels`, `consonants`, `pick`; see
+`engine/words.py`), backed by the `english-words` and `wordfreq` packages with a bundled fallback.
 Import of anything else raises `ImportError`.
 
 Time limits inside the worker are enforced with `signal.setitimer(ITIMER_REAL)` raising

@@ -1,7 +1,7 @@
 # Challenge design loop (for designer agents)
 
 Goal: a challenge class that Opus-level centaur players **sometimes crack and sometimes
-don't** under the fast cadence: **6 training rounds of 0.5 s, 5 s cooldown, one demo per
+don't** (partial success across two players: one crack + one partial/fail, or two partials) under the fast cadence: **6 training rounds of 0.5 s, 5 s cooldown, one demo per
 window, then a 3 s final.** Difficulty must come from **lateral thinking, novel (invented)
 rules and reduced clue information**, not from more advanced mathematics or bigger search.
 
@@ -18,6 +18,32 @@ rules and reduced clue information**, not from more advanced mathematics or bigg
 * Once *any* rule consistent with the feedback is found, players submit the **minimal
   witness** (e.g. one 2×3N rectangle for LegoZendo) and never learn the intended rule. If
   your scorer admits a trivial family of answers, the insight is optional.
+
+## The 12-year-old test (read this twice)
+
+The best challenge is one a smart 12-year-old could understand from ONE demo and contribute
+insight to, but that an Opus-level agent alone struggles with for many rounds. Two halves:
+
+1. **The object must be evocable by a kid from one demo.** LegoZendo's demo is a picture of
+   bricks; any bright kid says "that's Lego!" instantly. Seven-segment digits, dominoes,
+   dice, clocks, calendars, hopscotch, jigsaws, skipping rhymes, braids, shoelaces, Tetris,
+   snakes-and-ladders, playing cards, coins, keyboards, music, sports scores, recipes: use
+   the world kids live in, not the world of contests. Draw it (ASCII art is fine).
+2. **The pinned pattern must NOT be nameable.** Once the object is recognised, "which pattern
+   does the clue pin?" must still take real experimentation: LegoZendo counts *1-pin
+   connections between same-letter bricks of the same orientation* — nobody has a name for
+   that. If the rule is the object's famous operation ("move one matchstick", "knight's
+   tour", "sum to seven") the model recognises the genre and the game is over (quilm).
+   Good rules are arbitrary-but-natural *measurements* of the object: count the joins of a
+   certain width, the bricks that hang over an edge, the dominoes whose pips face each other,
+   the clock hands that would collide.
+
+Anti-patterns (these are what an LLM produces by default, and what an LLM cracks by default):
+number theory, graph theory, SAT, ciphers, automata, formal grammars, "find x such that",
+anything with a Wikipedia page, anything from a programming contest. If your idea would be at
+home in an RLVR training set, throw it away. The same priors that generate a problem make it
+guessable by the same model; deliberately reach for the concrete, the childish, the physical,
+the social.
 
 ## Hardening levers (in order of leverage)
 1. **Force the insight through the solution set**: the clue should give a partial object
@@ -36,7 +62,8 @@ rules and reduced clue information**, not from more advanced mathematics or bigg
 Fairness floor: a strong human+AI team must be able to get it from ≤6 demos plus probing
 with real insight. Deterministic generator; property-based scorer; the scorer must reject
 junk and the empty string; caps: score ≤ 512 chars, clue ≤ 1024, solution ≤ 1024, generate
-≤ 50k, solve ≤ 5k; generate < 100 ms, score < 50 ms on junk, solve < 2 s.
+≤ 50k, solve ≤ 5k; the `words` module (English dictionary: `words.WORDS`, `words.COMMON`,
+`is_word`, `vowels`, `consonants`, `pick`) is pre-imported for word-based ideas; generate < 100 ms, score < 50 ms on junk, solve < 2 s.
 
 ## Procedure (max 3 iterations, 2 players per iteration)
 1. Write `challenges/lab/<NAME>.json` (SPEC §2 fields; `author` = your direction name;

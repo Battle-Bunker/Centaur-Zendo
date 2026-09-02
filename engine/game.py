@@ -659,7 +659,7 @@ class Game:
 
     # -- views -------------------------------------------------------------
     def leaderboard(self) -> list[dict]:
-        """final_score desc, answered asc (precision wins ties), then name."""
+        """final_done first, then final_score desc, answered asc (precision wins ties), then name."""
         self.refresh()
         rows = [
             {
@@ -671,7 +671,7 @@ class Game:
             }
             for t in self.teams.values()
         ]
-        rows.sort(key=lambda r: (-(r["final_score"] or 0), r["answered"], r["team"]))
+        rows.sort(key=lambda r: (not r["final_done"], -(r["final_score"] or 0), r["answered"], r["team"]))
         for i, row in enumerate(rows, 1):
             row["rank"] = i
         return rows

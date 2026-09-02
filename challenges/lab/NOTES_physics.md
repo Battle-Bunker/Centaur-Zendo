@@ -193,3 +193,44 @@ to climb, while nothing short of the exact law gets near 90 %. Cosmetic toleranc
 300/300). Worst single `score` call on junk: 0.071 ms.
 
 Arena `lab-murn-2` is set up and running; see `sim/results/lab-murn-2/HANDOFF.md`.
+
+---
+
+## Iteration 2 result — MIXED (on target). Final: v2 shipped unchanged.
+
+| it. | version | player | outcome | demos | round cracked | rule believed |
+|---|---|---|---|---|---|---|
+| 1 | v1 | murna | cracked (2669/2669 = 100 %) | 6 | 6 of 6 | exact (untyped 3-window counts + total-# quota) |
+| 1 | v1 | murnb | cracked (3416/3416 = 100 %) | 4 | 5 of 6 | exact (same abstraction) |
+| 2 | **v2** | murn2a | **cracked** (2836/2837 = 99.96 %) | 4 | 5 of 6 | exact, staggering clause included |
+| 2 | **v2** | murn2b | **failed** (85/2710 = 3.1 %) | 5 (one window wasted) | never | 4 of the 5 layers: grid shape, last row = clue row, `k`-in-window law (re-expressed as `'.o#'[k mod 3]`), `n` = stones above the ground — **missed the staggering clause** |
+
+Training curves tell the same story: murn2a 0/540, 0/481, **2/490** ("the perfect amount of
+signal"), 477/477, 438/438; murn2b 0/508, 0/427, 0/490, 0/427, 0/483 — five rounds of pure
+zero with four of the five layers correct.
+
+What the hardening did, confirmed: **murn2b never modelled material identity below.** They
+reached exactly the v1 abstraction (a function of the *count* of occupied cells in the
+3-window) and could go no further; their answers were accepted only by luck, and their own
+notes record acceptance decaying with size — 18 % at 3 added cells, 0 % above 15 — which is
+the predicted signature of an over-permissive superset hypothesis (my pre-registered estimate
+for "staggering not found" was 17–20 % for a *minimal* one-row build, and it decays from
+there as more cells are added). murn2a's decisive evidence was a **sparse** demo: dense
+demos hide the support law because almost every window is over-braced. That is worth
+remembering as the softening dial if this class ever needs one — bias `solve` towards sparser
+pictures and the law becomes visible a round earlier.
+
+**No change to `challenges/lab/murn.json`.** One crack in round 5 and one failure holding
+4 of 5 layers is the middle of the target band, and every cheap "fix" I considered would
+move it: making `n` more legible (murn2b called it "too well hidden", though they did find
+it) softens the quota clause that both v1 players got for free, and biasing demos sparser
+would have handed murn2b the support law. Re-validated as shipped:
+`OK murn gen=0.20ms score=0.06ms solve=1.94ms`, no warnings; score 465/512 chars.
+`murn.v1.json` is kept beside it for the record.
+
+**Final classification: on target.** Evidence: 2 of 4 Opus players cracked it across two
+versions of the class and the two v2 players split cracked/failed; no player at any iteration
+found a degenerate witness — every crack required the real rule; the class stays trivial
+once cracked (100.0 % with a one-pass greedy at ~0.02 ms, and murn2a duly scored 2836/2837);
+and nothing short of the exact law reaches 90 % (measured 0.1–19.7 % for every near-miss
+hypothesis, and 3.1 % for the real failed player).

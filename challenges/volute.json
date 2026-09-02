@@ -1,0 +1,8 @@
+{
+ "name": "volute",
+ "author": "grids-agent",
+ "description": "MEDIUM. Grid of lowercase letters (3-6 rows x 3-7 cols). The answer is the grid read off in a clockwise inward spiral starting at the top-left and heading right. The scorer recomputes the spiral with the peel-the-top-row-and-rotate one-liner and compares strings. Discovery path: the answer is obviously a permutation of the grid's letters (same multiset, same length), so the whole game is 'which traversal order?'. Live hypothesis space: row-major, column-major, boustrophedon by row or column, diagonals, spiral CW/CCW, inward/outward, different start corners. Row-major is the natural first guess and scores 0; the single demo reveals the order immediately, and after that it is a five-line implementation. Rated medium because without the demo a team can burn several rounds on the wrong traversal, and because spiral indexing is the kind of thing bots get subtly wrong on non-square grids.",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    R = r.randrange(3, 7); C = r.randrange(3, 8)\n    return '\\n'.join(''.join(r.choice(string.ascii_lowercase) for _ in range(C)) for _ in range(R))\n",
+ "solve": "def solve(clue):\n    g = clue.split()\n    o = ''\n    while g:\n        o += g[0]\n        g = [''.join(x) for x in zip(*g[1:])][::-1]\n    return o\n",
+ "score": "def score(c,s):\n g=c.split();o=''\n while g:\n  o+=g[0];g=[''.join(x)for x in zip(*g[1:])][::-1]\n return int(s==o and o!='')\n"
+}

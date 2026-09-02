@@ -82,3 +82,46 @@ Nine candidates. `verify` = what the 512-char scorer must do.
 * the correct shape rotated/mirrored, or with the seed not at line 1 col 0 — seed clause.
 * the correct shape with one extra copy of the last letter — counts.
 * a valid answer for a *different* clue — letters not in the clue become filler ⇒ counts wrong.
+
+## Implementation: OKRIN (v1)
+`challenges/lab/OKRIN.json` — validated: `python tools/quickcheck.py challenges/lab/OKRIN.json --seeds 200`
+⇒ `OK  gen=0.04ms score=0.1ms solve=6.34ms`, no warnings. score source 466/512 chars.
+
+Adversarial self-test (60 random clues × 12 attack families, scratchpad harness): every family scores 0 —
+empty, clue alone, clue padded, `"1"*1000`, 1000 random letters, seed row + isolated scatter, counts taken in
+clue order, the down=successor stripe grid, the shift rectangle, another clue's valid answer, an answer
+indented by one column, an answer pushed down one line. Single-cell mutations of a valid answer survive
+<35% of the time. Worst scorer time on adversarial input 0.04 ms.
+The only inputs that score 1 under a *wrong* hypothesis are clues whose letters are already in alphabetical
+order (≈5% of instances), where clue-order and alphabet-order counts coincide — kept deliberately as a
+partial-credit gradient.
+
+### Fairness/ceiling probe (`sim/results/lab-OKRIN-selftest`, 3 scripted teams, 1 round each)
+| scripted team | hypothesis | presented | correct | hit | ms/answer |
+|---|---|---|---|---|---|
+| full | complete rule | 270 | 270 | **100.0%** | 0.85 |
+| nearmiss | counts keyed to clue order, everything else right | 406 | 24 | 5.9% | 0.35 |
+| symmetric | down = successor (chirality dropped), everything else right | 74 | 0 | 0.0% | 8.0 |
+So a team that has the rule can answer at full round speed (ceiling 100%), a team that misses only the
+alphabet-order clause sees a small non-zero signal, and a team that misses the chirality sees nothing.
+
+### Arena handoff (iteration 1) — players not run by me
+No Agent/Task tool is available in this session (only `mcp__Claude_Code_Remote__create_session`, which puts a
+sibling in a *different container* with no route to the arena's localhost port and with the repo visible —
+unusable for a confidential player run), so per DESIGN_LOOP step 4 the loop stops after step 3.
+The arena is already set up and live:
+* run `lab-OKRIN-1`, pool = OKRIN only (server log: "1 accepted: OKRIN"), phase `training`
+* 6 rounds × 0.5 s, cooldown 5 s, 1 demo/window, 3 s final; training window open ~6 h from 10:40 UTC,
+  final window +1 h
+* team dirs (give each agent `sim/PLAYER_AGENT_BRIEF.md` with `{TEAM_DIR}` = its dir, `{ROUNDS}`=6,
+  `{COOLDOWN}`=5, `{ROUND_SECONDS}`=0.5, and nothing else):
+  `…/scratchpad/lab-OKRIN-1/players/OKRINa` and `…/scratchpad/lab-OKRIN-1/players/OKRINb`
+* afterwards: `python sim/arena.py teardown --run lab-OKRIN-1 && python sim/arena.py report --run lab-OKRIN-1`
+
+### Hardening levers held in reserve for iteration 2 (if both players crack it)
+1. Rotate the count profile by a clue-derived offset (e.g. start the counts at 2 + (ord(clue[0])%k)) so the
+   alphabet-rank aha is not the last step.
+2. Make the vertical relation +2 rather than −1 for odd k (kills "down is just the inverse of right").
+3. Move the seed off line 1: require the clue to appear as a *vertical* run in column 1, so the demo no
+   longer displays the clue as a readable word.
+4. Soften instead (if neither cracks it): drop the isolation clause, or make `solve` emit one component only.

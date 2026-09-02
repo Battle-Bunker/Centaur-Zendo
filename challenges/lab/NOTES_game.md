@@ -263,3 +263,102 @@ Expected: if the softening works, the naive line-hop model scores 0 in round 1 i
 at the movement law and guesses among legal moves lands at ~11 %, and one that also spots
 "the answer always flies over a gap" lands at ~22 % - so the three outcomes are cleanly
 separated in the final score.
+
+---------------------------------------------------------------------------
+## Iteration 2 RESULT - both PARTIAL again (23 %, 25 %), law still not found
+
+| team | r1..r6 | final | law they believed |
+|---|---|---|---|
+| orlan2a | 1/89, 5/85, 12/91, 12/87, 3/84, 17/90 | 127/551 = 23 % | "exactly two NON-WALL steps; `#` is transparent and not counted; the rest of the way must be empty" |
+| orlan2b | 0/0, 5/72, 10/85, 4/79, 9/92, 15/89 | 127/517 = 25 % | "the destination is the SECOND empty cell along the ray; occupied cells are transparent" |
+
+v2 killed "first empty cell" but the winners then always leapt **2 or 3**, so both teams
+just moved one rung down the ladder to the next proxy - and every one of their confirmed
+answers fitted it. orlan2a: "all 60 known-correct answers fit that set". A law that is
+never contradicted is never abandoned. Two further v2 mistakes, both measured afterwards:
+padding the origin with blocks made "walls are transparent" look true, and generate() at
+4.2 ms/clue meant only ~90 items per 0.5 s round, i.e. ~12 positives per round - too few
+to fit any selection rule even if the law had been right.
+
+---------------------------------------------------------------------------
+## Iteration 3 - `challenges/lab/orlan.json` (v3; v1/v2 kept as `orlan.v1.json`, `orlan.v2.json`)
+
+Rule unchanged (leap = number of adjacent pieces, rim not counted; goal = every `x`
+immobile). Everything that changed is about **making the law discoverable**.
+
+### The metric I was missing until now
+For a candidate law L, the question is not "how often does L predict the winner" but
+**"how often is the winning move even LEGAL under L"** - if that is 100 %, positives never
+falsify L and the players never leave it. That is precisely what happened twice. Measured
+over 1500 fresh v3 clues:
+
+| candidate movement law | contains the winner | uniform hit rate |
+|---|---|---|
+| **TRUE: leap = #occupied orthogonal neighbours** | **100 %** | **16.4 %** |
+| slide with a clear path | 57 % | 3.9 % |
+| first empty cell (iteration-1 teams) | 48 % | 4.2 % |
+| second empty cell (orlan2b) | 45 % | 6.0 % |
+| k non-wall steps, walls transparent (orlan2a) | <= 41 % | <= 6.5 % |
+| fixed distance k | <= 32 % | <= 5.1 % |
+| leap = #occupied of all 8 neighbours | 31 % | 5.9 % |
+| leap = #adjacent pieces, blocks NOT counted | 21 % | 4.4 % |
+| leap = #adjacent enemies | 8 % | 2.4 % |
+| leap = pieces in that line (LOA) | 36 % | 5.9 % |
+| leap = #EMPTY orth neighbours | 19 % | 3.4 % |
+| any empty cell in the row/column | 100 % | 4.0 % (26 moves - useless) |
+
+Two things are now true that were false in v2: every proxy is **contradicted by 2-3
+confirmed answers**, and the true law is the **highest-scoring law by 2.5x**, so the score
+gradient points at the truth instead of away from it (in v2 orlan2a's proxy scored 17.8 %
+while the true law would have scored ~11 %).
+
+### The three changes
+1. **Leap length now spans 1-4** (measured 32 / 32 / 25 / 11 %), instead of v1's 53 % at
+   length 1 or v2's "always 2 or 3". The generator picks the length per seed and *pads the
+   mover's origin with pieces until its neighbour count is exactly that length*, so
+   positions with a 1-neighbour mover leaping 1 and a 4-neighbour mover leaping 4 both
+   occur. No fixed-distance or k-th-empty proxy can survive two demos.
+   The flight path is also varied per seed (all empty / all occupied), which kills
+   "the path must be clear" and "walls are transparent" separately.
+2. **Legal `o` moves reduced to 4-8** (mean 6.3), so knowing the law alone is worth ~16 %
+   and the goal is a 1-in-6 choice rather than 1-in-9.
+3. **generate() is 3x faster**: mean **1.4 ms**, p99 5.9 ms, max 8.6 ms over 3000 seeds
+   (v2: 4.2 ms). Measured on the live engine with the default random strategy:
+   **234 items per 0.5 s round**, up from 90 - about 38 positives per round for a player
+   who has the law, which puts the selection rule in statistical reach.
+
+Also worth stating plainly (orlan2b asked for it): the scorer has **always** been
+property-based - it accepts ANY legal `o` move that leaves every `x` immobile and never
+compares against a reference answer. The generator merely arranges for exactly one such
+move to exist, which brute force over every 4-tuple confirms on every clue.
+
+### Validation and self-tests (shipped v3)
+`quickcheck -v` -> **OK, no warnings** (`gen=3.4ms score=0.10ms solve=0.07ms`);
+`--seeds 200` -> OK (`gen=6.15ms`). Sizes: generate 6327, solve 883, **score 503 / 512**
+(scorer source unchanged from v2 - the rule did not change).
+
+| test | v3 result |
+|---|---|
+| `solve` scores 1 | 1200/1200 seeds |
+| brute force every `a,b>d,e` on the board (400 clues) | **exactly 1** winner each |
+| best constant answer | 1.50 % |
+| most common winning move over 1200 clues | 1.2 % |
+| scorer vs independent re-implementation | 33 148 pairs, **0 disagreements** |
+| junk (21 strings incl. `""`, unicode, 1024 zeros, 400 numbers, negative indices) | no raise, no non-0/1, mean 0.004 ms |
+| determinism | 300/300 identical |
+| best of 20 cheap selection heuristics | 23.8 % ("longest legal move" = "mover with most neighbours") - and every one of them already needs the law, so none is a shortcut past it |
+| hypothesis elimination (976 = 122 laws x 8 goals, incl. every law iterations 1-2 believed) | all non-counting laws dead by **demo 4**; space collapses to the truth + its synonym "minimise enemy mobility" |
+
+### Expected outcome / how to read iteration 3
+* stuck on a proxy law -> **~4-6 %** (v2 paid them 23-25 % for the same mistake)
+* law found, goal not -> **~16 %**, or ~24 % if they also rank by "longest legal move"
+* law + goal -> **100 %**
+
+### Arena for iteration 3
+```
+run          lab-orlan-3   (6 rounds, 0.5 s each, 5 s cooldown, 3 s final, pool = orlan only)
+port         39663         training window open ~6 h from 2026-09-02 12:12Z
+team orlan3a $SCRATCH/lab-orlan-3/players/orlan3a
+team orlan3b $SCRATCH/lab-orlan-3/players/orlan3b
+teardown     python sim/arena.py teardown --run lab-orlan-3 && python sim/arena.py report --run lab-orlan-3
+```

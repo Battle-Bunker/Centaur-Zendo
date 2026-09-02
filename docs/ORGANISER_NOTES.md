@@ -62,7 +62,7 @@ challenges under `challenges/lab/`). Classification per player: cracked ≥ 90 %
 | `quaich` | invented 3-cycle bracket notation | cracked (r5–6, 3 demos) + partial 23 % | — | on target |
 | `OKRIN` | sparse clue, forced completion, 3 clauses | cracked (r4, 3 demos) + partial 73 % | — | on target |
 | `murn` | invented support physics | cracked r6 + cracked r5 | cracked r5 + failed 3 % (material-typed staggering) | on target (v2) |
-| `orlan` | invented board game | partial 32 % + partial 29 % (law never found) | partial 23 % + partial 25 % (a different wrong law) | too hard so far; v3 in progress |
+| `orlan` | invented board game | partial 32 % + 29 % (law never found) | v2: 23 % + 25 %; v3: 24 % + 10 % (law never found in 6 runs) | too hard for 0/1 feedback in 6 rounds; kept in the lab |
 | `quilm` | everyday object (seven-segment) | cracked r4 + r6 | cracked r3 + r5 (faster) | too easy for Opus; good for kids |
 
 What made the on-target ones work, and the principles now in `sim/DESIGN_LOOP.md`:
@@ -75,6 +75,7 @@ What made the on-target ones work, and the principles now in `sim/DESIGN_LOOP.md
 * **Absolute-readout rules are scan-solvable.** If `property(answer) == clue`, a fixed answer sent
   against every clue reads the property off (quilm v1). Prefer relational rules (answer built against
   the clue).
+* **Unique-answer classes starve the feedback channel.** `orlan` accepts exactly one move among ~6–20 legal ones, so a round yields ~10 positives, all biased by the player's own sampler; six runs never conceived the law (leap length = number of occupied neighbours). Prefer property-based scorers with many valid answers, or make the law visible in demos.
 * **The three-word test.** If the puzzle can be named in three words ("move one matchstick"), the model
   holds a prior over the whole rule and recognition replaces inference (quilm v2, all 31 textbook
   classes). Recognising the object must be necessary but not sufficient.

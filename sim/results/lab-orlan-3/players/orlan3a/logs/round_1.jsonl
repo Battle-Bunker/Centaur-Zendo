@@ -1,0 +1,700 @@
+{"ts": 1788351274.5410132, "dir": "out", "msg": {"type": "join", "team": "orlan3a", "token": "fbdf1c15a8b3"}}
+{"ts": 1788351274.5417452, "dir": "in", "msg": {"type": "welcome", "team": "orlan3a", "phase": "training", "challenges": ["orlan"], "config": {"round_seconds": 0.5, "final_seconds": 3.0, "cooldown_seconds": 5.0, "max_training_rounds": 6, "max_solution_chars": 1024, "max_clue_chars": 1024, "training_ends_at": 1788372741.0950658, "final_ends_at": 1788376341.0950658}, "rounds_used": 0, "next_round_available_at": 1788351274.541398, "demo_available": false, "server_time": 1788351274.5414019}}
+{"ts": 1788351274.5418336, "dir": "out", "msg": {"type": "start_round"}}
+{"ts": 1788351274.542754, "dir": "in", "msg": {"type": "round_started", "round_id": "90d12da97fac429b9d99fc3b30108a44", "kind": "training", "duration_ms": 500, "started_at": 1788351274.5423849, "deadline": 1788351275.0423849}}
+{"ts": 1788351274.5448902, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 0, "name": "orlan", "clue": "...oo\nx..o.\n....o\n##xo#\n#...."}}
+{"ts": 1788351274.544897, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 0}}
+{"ts": 1788351274.5453918, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 0, "score": 0}}
+{"ts": 1788351274.545685, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 1, "name": "orlan", "clue": ".#ox.#\n#x..o.\n..o##.\n.#....\n##x.o.\n#.#..o"}}
+{"ts": 1788351274.54569, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 1}}
+{"ts": 1788351274.546124, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 1, "score": 0}}
+{"ts": 1788351274.548252, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 2, "name": "orlan", "clue": "..#.x#\n.oo.#.\n#o##.x\n.....#\no..o.#"}}
+{"ts": 1788351274.5482574, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 2}}
+{"ts": 1788351274.5487442, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 2, "score": 0}}
+{"ts": 1788351274.5494137, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 3, "name": "orlan", "clue": "..o...\n.#....\n..#..x\n#...#o\n#.....\nxo#ox."}}
+{"ts": 1788351274.5494184, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 3}}
+{"ts": 1788351274.5497923, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 3, "score": 0}}
+{"ts": 1788351274.5526576, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 4, "name": "orlan", "clue": "..#oo#\n.#.xo#\n#..#.x\n....o#\n..o..#"}}
+{"ts": 1788351274.5526621, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 4}}
+{"ts": 1788351274.5530279, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 4, "score": 0}}
+{"ts": 1788351274.5538588, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 5, "name": "orlan", "clue": "....o.\n#x#o#.\n##.#..\nxo#.o.\n.#....\n.o..x."}}
+{"ts": 1788351274.5538623, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 5}}
+{"ts": 1788351274.554155, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 5, "score": 0}}
+{"ts": 1788351274.5551348, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 6, "name": "orlan", "clue": "##o...\no...#.\nx.o.#.\n...#o#\nx##.#.\n.....#"}}
+{"ts": 1788351274.5551453, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 6}}
+{"ts": 1788351274.5554695, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 6, "score": 0}}
+{"ts": 1788351274.5570877, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 7, "name": "orlan", "clue": ".o....\n..o..#\n..o...\n##.#ox\n.#.x#o\n.....#"}}
+{"ts": 1788351274.5570924, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 7}}
+{"ts": 1788351274.557496, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 7, "score": 0}}
+{"ts": 1788351274.558462, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 8, "name": "orlan", "clue": "..o#.\n.....\no....\n..ox.\n.x..o"}}
+{"ts": 1788351274.5584676, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 8}}
+{"ts": 1788351274.558808, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 8, "score": 0}}
+{"ts": 1788351274.5595868, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 9, "name": "orlan", "clue": "..#.#\n.o#..\nx.x.o\n.#x.#\n.#oo.\n.x#.o"}}
+{"ts": 1788351274.5595903, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 9}}
+{"ts": 1788351274.560161, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 9, "score": 0}}
+{"ts": 1788351274.5606544, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 10, "name": "orlan", "clue": "#.oo.\n.o.ox\n....#\n...##\nx...o\n....."}}
+{"ts": 1788351274.5606594, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 10}}
+{"ts": 1788351274.5628572, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 10, "score": 0}}
+{"ts": 1788351274.5641334, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 11, "name": "orlan", "clue": "xo....\n.#.##x\nx....#\n.#.o.#\n.o....\n#x.#.."}}
+{"ts": 1788351274.5641382, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 11}}
+{"ts": 1788351274.5644746, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 11, "score": 0}}
+{"ts": 1788351274.5653777, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 12, "name": "orlan", "clue": "...o#.\no...o.\n..#.xo\n#.#...\no...#.\n##x.#."}}
+{"ts": 1788351274.5653822, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 12}}
+{"ts": 1788351274.5658803, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 12, "score": 0}}
+{"ts": 1788351274.566181, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 13, "name": "orlan", "clue": "#.....\n#.....\nxo.#o.\nx..#.#\n##o..."}}
+{"ts": 1788351274.566187, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 13}}
+{"ts": 1788351274.566602, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 13, "score": 0}}
+{"ts": 1788351274.568185, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 14, "name": "orlan", "clue": "..x.oo\n.o.#o#\n....o.\n.#.x#x\n..o#.."}}
+{"ts": 1788351274.5681915, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 14}}
+{"ts": 1788351274.5686202, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 14, "score": 0}}
+{"ts": 1788351274.5694525, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 15, "name": "orlan", "clue": "......\n.#.x.#\n..ooo.\n...#..\no.#.x#\n..#.#."}}
+{"ts": 1788351274.569458, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 15}}
+{"ts": 1788351274.569955, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 15, "score": 0}}
+{"ts": 1788351274.57135, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 16, "name": "orlan", "clue": "#...#\n....#\n..xox\n....o\n..ooo\n..##x"}}
+{"ts": 1788351274.571355, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 16}}
+{"ts": 1788351274.5717127, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 16, "score": 0}}
+{"ts": 1788351274.5723264, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 17, "name": "orlan", "clue": "o.....\no##x#o\n...#o#\n.#o#..\n.x##.."}}
+{"ts": 1788351274.572331, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 17}}
+{"ts": 1788351274.5727665, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 17, "score": 0}}
+{"ts": 1788351274.5739765, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 18, "name": "orlan", "clue": "o...#.\n...oo#\nx##.x.\n#.#...\n#.....\n##x#.."}}
+{"ts": 1788351274.5739818, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 18}}
+{"ts": 1788351274.5743978, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 18, "score": 0}}
+{"ts": 1788351274.5795646, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 19, "name": "orlan", "clue": ".x.o..\n.o#o..\n#x.#..\n.o#...\n.#....\n..#..x"}}
+{"ts": 1788351274.579571, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 19}}
+{"ts": 1788351274.5803065, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 19, "score": 0}}
+{"ts": 1788351274.5809557, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 20, "name": "orlan", "clue": "......\n#.#o##\no.....\n.ox##x\n.....#\n..#..#"}}
+{"ts": 1788351274.5809612, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 20}}
+{"ts": 1788351274.581349, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 20, "score": 0}}
+{"ts": 1788351274.5818813, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 21, "name": "orlan", "clue": ".#o.x#\n.xo.o.\n....#.\n.#.o#.\n...#.#\n.#...o"}}
+{"ts": 1788351274.5818853, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 21}}
+{"ts": 1788351274.5822687, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 21, "score": 0}}
+{"ts": 1788351274.583127, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 22, "name": "orlan", "clue": "#x.#o\no##o.\n.#xx.\no#x.#\n....o"}}
+{"ts": 1788351274.5831308, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 22}}
+{"ts": 1788351274.5835705, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 22, "score": 0}}
+{"ts": 1788351274.5843003, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 23, "name": "orlan", "clue": "..o#.\nx#x##\n#..xo\n#.#..\n.o##o\no.x##"}}
+{"ts": 1788351274.5843039, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 23}}
+{"ts": 1788351274.5848818, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 23, "score": 0}}
+{"ts": 1788351274.5851982, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 24, "name": "orlan", "clue": "....#\n.##x.\n.o.ox\n...o#\n..###"}}
+{"ts": 1788351274.585203, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 24}}
+{"ts": 1788351274.585634, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 24, "score": 0}}
+{"ts": 1788351274.5866969, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 25, "name": "orlan", "clue": "..#.x.\n..o#..\no.....\n.#.xo#\n#....."}}
+{"ts": 1788351274.586702, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 25}}
+{"ts": 1788351274.587077, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 25, "score": 0}}
+{"ts": 1788351274.5918424, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 26, "name": "orlan", "clue": "#ox#.\n.x#o.\noo.o#\n##xx#\n.#..."}}
+{"ts": 1788351274.591848, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 26}}
+{"ts": 1788351274.5922785, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 26, "score": 0}}
+{"ts": 1788351274.5929775, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 27, "name": "orlan", "clue": ".o.##\n#o#..\n.o.x.\n.##.o\n.x.o.\n#.xo#"}}
+{"ts": 1788351274.5929832, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 27}}
+{"ts": 1788351274.5934308, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 27, "score": 0}}
+{"ts": 1788351274.5944474, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 28, "name": "orlan", "clue": ".#...\nox..x\n.xo#.\n..#.#\n.#.o#\n..#.x"}}
+{"ts": 1788351274.5944564, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 28}}
+{"ts": 1788351274.5951443, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 28, "score": 0}}
+{"ts": 1788351274.5954337, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 29, "name": "orlan", "clue": "#...#.\nx###x.\noo...o\n#...o.\nx.#...\n.o..x."}}
+{"ts": 1788351274.5954385, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 29}}
+{"ts": 1788351274.5958695, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 29, "score": 0}}
+{"ts": 1788351274.5965207, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 30, "name": "orlan", "clue": "..#...\n.##...\n#.x.#.\n..o...\nx.##o.\n.xo..."}}
+{"ts": 1788351274.596526, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 30}}
+{"ts": 1788351274.5969708, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 30, "score": 0}}
+{"ts": 1788351274.5977302, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 31, "name": "orlan", "clue": "...o..\n.#xx.#\n..#.#.\n...#..\n...o..\n#.#..o"}}
+{"ts": 1788351274.597735, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 31}}
+{"ts": 1788351274.598217, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 31, "score": 0}}
+{"ts": 1788351274.6014912, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 32, "name": "orlan", "clue": "#....\n#x.##\nx.##o\n.#.o#\nox###"}}
+{"ts": 1788351274.6014962, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 32}}
+{"ts": 1788351274.6019325, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 32, "score": 0}}
+{"ts": 1788351274.6030629, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 33, "name": "orlan", "clue": "...x..\n##o...\n#o#.#.\n.#...#\n#oo#xx\n...o.."}}
+{"ts": 1788351274.603067, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 33}}
+{"ts": 1788351274.6033769, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 33, "score": 0}}
+{"ts": 1788351274.604383, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 34, "name": "orlan", "clue": "xo#..x\n##o.x.\n...#oo\n....##\n......"}}
+{"ts": 1788351274.6043882, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 34}}
+{"ts": 1788351274.604895, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 34, "score": 0}}
+{"ts": 1788351274.6053267, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 35, "name": "orlan", "clue": ".....\n...o#\noo.#.\n.x###\n....#\n.#o#x"}}
+{"ts": 1788351274.6053305, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 35}}
+{"ts": 1788351274.6058173, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 35, "score": 0}}
+{"ts": 1788351274.6078916, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 36, "name": "orlan", "clue": "....x.\n..x..#\n.....#\n..o##x\n.x...o\n....o."}}
+{"ts": 1788351274.6078975, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 36}}
+{"ts": 1788351274.6083033, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 36, "score": 0}}
+{"ts": 1788351274.61005, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 37, "name": "orlan", "clue": "o...x.\nx.o.o.\n#....#\n#..o.o\n..##xx"}}
+{"ts": 1788351274.6100557, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 37}}
+{"ts": 1788351274.6106145, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 37, "score": 0}}
+{"ts": 1788351274.6153646, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 38, "name": "orlan", "clue": ".o....\n.o#...\n#o.#..\n##x.#.\nxoo...\n#.#..."}}
+{"ts": 1788351274.61537, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 38}}
+{"ts": 1788351274.6158216, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 38, "score": 0}}
+{"ts": 1788351274.6162183, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 39, "name": "orlan", "clue": "..#.#o\n.....x\n..o..#\n.#...o\n.o#o#.\n.x##.."}}
+{"ts": 1788351274.6162229, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 39}}
+{"ts": 1788351274.6165817, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 39, "score": 0}}
+{"ts": 1788351274.619562, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 40, "name": "orlan", "clue": "#....x\no..#..\nox....\n..#..o\n.....o"}}
+{"ts": 1788351274.6195676, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 40}}
+{"ts": 1788351274.6199899, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 40, "score": 0}}
+{"ts": 1788351274.624116, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 41, "name": "orlan", "clue": "ox#oo\n#..#.\n.#oo.\nx###.\n.....\nx...#"}}
+{"ts": 1788351274.624121, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 41}}
+{"ts": 1788351274.6244965, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 41, "score": 0}}
+{"ts": 1788351274.6251915, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 42, "name": "orlan", "clue": "#x##.\n...o.\nx##..\n#o.o.\noox.."}}
+{"ts": 1788351274.6251972, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 42}}
+{"ts": 1788351274.6257641, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 42, "score": 0}}
+{"ts": 1788351274.626902, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 43, "name": "orlan", "clue": "..#.o.\n..o.#.\n#.x.x.\no...x.\n#.##o.\n.#..#."}}
+{"ts": 1788351274.6269076, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 43}}
+{"ts": 1788351274.627244, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 43, "score": 0}}
+{"ts": 1788351274.628467, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 44, "name": "orlan", "clue": ".##.x#\n#x..#.\n#x..#.\no..o..\n.#.#oo\n......"}}
+{"ts": 1788351274.628471, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 44}}
+{"ts": 1788351274.6289644, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 44, "score": 0}}
+{"ts": 1788351274.6332786, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 45, "name": "orlan", "clue": "..##x.\n..x#.#\n.o#.xo\n.#..#o\n.##o##\n.o...."}}
+{"ts": 1788351274.6332834, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 45}}
+{"ts": 1788351274.6336997, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 45, "score": 0}}
+{"ts": 1788351274.6384082, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 46, "name": "orlan", "clue": "#oxo.\n..#..\n..o#x\n..o.o\n....#\n#.##x"}}
+{"ts": 1788351274.6384127, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 46}}
+{"ts": 1788351274.638959, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 46, "score": 0}}
+{"ts": 1788351274.6416044, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 47, "name": "orlan", "clue": "x##..\no#oxo\n##oo.\n##.#.\n#x..o\nx#..."}}
+{"ts": 1788351274.6416109, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 47}}
+{"ts": 1788351274.6422017, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 47, "score": 0}}
+{"ts": 1788351274.6474733, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 48, "name": "orlan", "clue": "...#ox\n....##\n.x.#o#\n..#...\n.o#.o.\n#.xo.."}}
+{"ts": 1788351274.6474955, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 48}}
+{"ts": 1788351274.6479337, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 48, "score": 0}}
+{"ts": 1788351274.6483707, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 49, "name": "orlan", "clue": "..x..\no#...\n#.oo.\nx.#..\n#x..#\n##..."}}
+{"ts": 1788351274.6483743, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 49}}
+{"ts": 1788351274.6488383, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 49, "score": 0}}
+{"ts": 1788351274.6492076, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 50, "name": "orlan", "clue": ".x....\n..##.#\n.oo.#.\n.x....\n#.#xx.\n...ooo"}}
+{"ts": 1788351274.6492124, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 50}}
+{"ts": 1788351274.6496, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 50, "score": 0}}
+{"ts": 1788351274.6530201, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 51, "name": "orlan", "clue": ".....x\no.....\n#.##..\n.x##.#\n.#...o\noo.##x"}}
+{"ts": 1788351274.6530242, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 51}}
+{"ts": 1788351274.6535995, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 51, "score": 0}}
+{"ts": 1788351274.6542854, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 52, "name": "orlan", "clue": "..#.x#\n..o.o.\n.#..o.\n.x.#o.\n.#...#\n.#.o.."}}
+{"ts": 1788351274.65429, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 52}}
+{"ts": 1788351274.6546588, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 52, "score": 0}}
+{"ts": 1788351274.6579561, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 53, "name": "orlan", "clue": "...x.\n..#o#\no..#o\n..x.o\n.#.xo\n..#.."}}
+{"ts": 1788351274.6579618, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 53}}
+{"ts": 1788351274.658421, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 53, "score": 0}}
+{"ts": 1788351274.6599479, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 54, "name": "orlan", "clue": "##xoxo\n.#.o..\n..#o#.\no#....\n#.....\nox#..."}}
+{"ts": 1788351274.6599524, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 54}}
+{"ts": 1788351274.660388, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 54, "score": 0}}
+{"ts": 1788351274.661156, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 55, "name": "orlan", "clue": "#ox.#.\n.x.o.o\n.##o..\n.#....\n....#o"}}
+{"ts": 1788351274.6611612, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 55}}
+{"ts": 1788351274.6617098, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 55, "score": 0}}
+{"ts": 1788351274.6620553, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 56, "name": "orlan", "clue": "...o.\n...oo\n#....\n.#.x.\n...ox"}}
+{"ts": 1788351274.662061, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 56}}
+{"ts": 1788351274.662418, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 56, "score": 0}}
+{"ts": 1788351274.6636498, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 57, "name": "orlan", "clue": "...##x\noo..o.\n.##..#\n.#....\n.xo#.."}}
+{"ts": 1788351274.6636536, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 57}}
+{"ts": 1788351274.6640074, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 57, "score": 0}}
+{"ts": 1788351274.6651564, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 58, "name": "orlan", "clue": ".ooo#\n.#.o#\n.###x\nox...\n..x.o"}}
+{"ts": 1788351274.66516, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 58}}
+{"ts": 1788351274.6656256, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 58, "score": 0}}
+{"ts": 1788351274.6688883, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 59, "name": "orlan", "clue": ".o#.#\noo##x\n.....\n.#o.x\n.xo#."}}
+{"ts": 1788351274.6688933, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 59}}
+{"ts": 1788351274.6692514, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 59, "score": 0}}
+{"ts": 1788351274.6704757, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 60, "name": "orlan", "clue": "o....#\nx##.xx\n.#o.##\n..o.##\no.#o#x"}}
+{"ts": 1788351274.67048, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 60}}
+{"ts": 1788351274.6708357, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 60, "score": 0}}
+{"ts": 1788351274.6739867, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 61, "name": "orlan", "clue": ".o.xo\n.x##.\n.o.#o\n#.#..\n....o"}}
+{"ts": 1788351274.673991, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 61}}
+{"ts": 1788351274.6743824, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 61, "score": 0}}
+{"ts": 1788351274.6751661, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 62, "name": "orlan", "clue": "#x#.o\n..o.o\nx##ox\no#..#\n#...#\n....."}}
+{"ts": 1788351274.67517, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 62}}
+{"ts": 1788351274.677509, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 62, "score": 0}}
+{"ts": 1788351274.6777017, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 63, "name": "orlan", "clue": "#ox###\n##.o.x\n#oo...\n.##..#\n......"}}
+{"ts": 1788351274.6777058, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 63}}
+{"ts": 1788351274.678183, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 63, "score": 0}}
+{"ts": 1788351274.6786284, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 64, "name": "orlan", "clue": ".o..x\n.....\n##oo.\n#x..o\nx#.#."}}
+{"ts": 1788351274.678633, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 64}}
+{"ts": 1788351274.6789458, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 64, "score": 0}}
+{"ts": 1788351274.6822135, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 65, "name": "orlan", "clue": ".....\n.x..o\n....#\no##xo\no...o"}}
+{"ts": 1788351274.6822188, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 65}}
+{"ts": 1788351274.6826205, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 65, "score": 0}}
+{"ts": 1788351274.6862192, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 66, "name": "orlan", "clue": "#....\n....#\noo#o#\no...x\n##x.#"}}
+{"ts": 1788351274.686226, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 66}}
+{"ts": 1788351274.68679, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 66, "score": 0}}
+{"ts": 1788351274.6919367, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 67, "name": "orlan", "clue": "#o#x.\no.##.\n##.x.\n.xo##\n..o#."}}
+{"ts": 1788351274.6919417, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 67}}
+{"ts": 1788351274.6923382, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 67, "score": 0}}
+{"ts": 1788351274.6929102, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 68, "name": "orlan", "clue": ".....o\no...#.\no.#...\n.o#...\nx.x.#.\nx#o..."}}
+{"ts": 1788351274.6929157, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 68}}
+{"ts": 1788351274.693312, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 68, "score": 0}}
+{"ts": 1788351274.6937943, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 69, "name": "orlan", "clue": ".#xox\n.oo##\n..#ox\n..#.#\n#...#"}}
+{"ts": 1788351274.693798, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 69}}
+{"ts": 1788351274.694051, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 69, "score": 0}}
+{"ts": 1788351274.6967313, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 70, "name": "orlan", "clue": "...#.o\n......\n..###x\n..o..#\n#.xox.\n..#.#."}}
+{"ts": 1788351274.6967354, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 70}}
+{"ts": 1788351274.6970294, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 70, "score": 0}}
+{"ts": 1788351274.7003021, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 71, "name": "orlan", "clue": "#ox.#.\no.x.##\n.o#...\n#o#ox.\n.#.#.."}}
+{"ts": 1788351274.7003067, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 71}}
+{"ts": 1788351274.7008014, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 71, "score": 0}}
+{"ts": 1788351274.702113, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 72, "name": "orlan", "clue": "ox#..#\n......\n###o..\n#..#.o\nx.#...\nx#o..."}}
+{"ts": 1788351274.7021177, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 72}}
+{"ts": 1788351274.7025976, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 72, "score": 0}}
+{"ts": 1788351274.7031934, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 73, "name": "orlan", "clue": "..x...\nx....#\no##..o\n..o#.#\n.....#\n.#ox#x"}}
+{"ts": 1788351274.7031975, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 73}}
+{"ts": 1788351274.7036047, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 73, "score": 0}}
+{"ts": 1788351274.7041397, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 74, "name": "orlan", "clue": "...#..\nx..o..\n.##x.#\n......\n.oxo#.\n..#..."}}
+{"ts": 1788351274.704143, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 74}}
+{"ts": 1788351274.7046366, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 74, "score": 0}}
+{"ts": 1788351274.705806, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 75, "name": "orlan", "clue": "##.x.#\nxoo...\n##....\n##..o.\nxo#..."}}
+{"ts": 1788351274.705812, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 75}}
+{"ts": 1788351274.7063293, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 75, "score": 0}}
+{"ts": 1788351274.7091417, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 76, "name": "orlan", "clue": "#.#.#\n.o.x.\nx#o#x\n#.x##\n#.oo#\n...o."}}
+{"ts": 1788351274.7091472, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 76}}
+{"ts": 1788351274.7096126, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 76, "score": 0}}
+{"ts": 1788351274.7101316, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 77, "name": "orlan", "clue": ".#..x.\n.o#o..\n.##o..\n...#.o\n...x#o"}}
+{"ts": 1788351274.710135, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 77}}
+{"ts": 1788351274.7111943, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 77, "score": 0}}
+{"ts": 1788351274.7112741, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 78, "name": "orlan", "clue": "#..x..\n.....#\n......\n.#oo#x\n..oo.."}}
+{"ts": 1788351274.7112794, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 78}}
+{"ts": 1788351274.7117605, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 78, "score": 0}}
+{"ts": 1788351274.712364, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 79, "name": "orlan", "clue": "x.....\n......\n.o....\n...o#.\n##.#oo\n.o..x#"}}
+{"ts": 1788351274.7123692, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 79}}
+{"ts": 1788351274.7127976, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 79, "score": 0}}
+{"ts": 1788351274.7136528, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 80, "name": "orlan", "clue": "x.#ox#\n..o...\n..o...\n..##..\n.o..#.\n.....o"}}
+{"ts": 1788351274.7136593, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 80}}
+{"ts": 1788351274.7140565, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 80, "score": 0}}
+{"ts": 1788351274.7151787, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 81, "name": "orlan", "clue": "o#..o\noox.#\n#...#\nxx#.#\n..#ox"}}
+{"ts": 1788351274.7151823, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 81}}
+{"ts": 1788351274.7156825, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 81, "score": 0}}
+{"ts": 1788351274.7160053, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 82, "name": "orlan", "clue": ".#..#.\n.#...o\n.x#.xo\no..##.\n.o..#.\n..#..."}}
+{"ts": 1788351274.7160115, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 82}}
+{"ts": 1788351274.7164292, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 82, "score": 0}}
+{"ts": 1788351274.7182572, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 83, "name": "orlan", "clue": "...#.o\n#...#o\n..#..o\n#.x##.\nxo.#..\nxo#x.#"}}
+{"ts": 1788351274.7182624, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 83}}
+{"ts": 1788351274.7188163, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 83, "score": 0}}
+{"ts": 1788351274.7198768, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 84, "name": "orlan", "clue": "..o..#\no..#o#\n.x..oo\n..#.#x\n..#o.x"}}
+{"ts": 1788351274.7198813, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 84}}
+{"ts": 1788351274.72022, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 84, "score": 0}}
+{"ts": 1788351274.7212355, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 85, "name": "orlan", "clue": ".xo#..\noxxo##\n.#....\n#o....\nx##.o."}}
+{"ts": 1788351274.721241, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 85}}
+{"ts": 1788351274.7216434, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 85, "score": 0}}
+{"ts": 1788351274.7219338, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 86, "name": "orlan", "clue": ".....\n#o.##\n..oo.\n.o.x.\n..x##\no###."}}
+{"ts": 1788351274.721939, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 86}}
+{"ts": 1788351274.7222574, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 86, "score": 0}}
+{"ts": 1788351274.7271903, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 87, "name": "orlan", "clue": ".o....\n..##..\no...ox\n##x.#.\n..o..x"}}
+{"ts": 1788351274.727196, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 87}}
+{"ts": 1788351274.7276676, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 87, "score": 0}}
+{"ts": 1788351274.7314727, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 88, "name": "orlan", "clue": ".#ox##\n.o..#.\n..##ox\n#...o.\no#xo#."}}
+{"ts": 1788351274.7314777, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 88}}
+{"ts": 1788351274.7318919, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 88, "score": 0}}
+{"ts": 1788351274.7339418, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 89, "name": "orlan", "clue": ".o#.xo\nooo...\n..#.x.\n....#.\n##..#."}}
+{"ts": 1788351274.733947, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 89}}
+{"ts": 1788351274.7343268, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 89, "score": 0}}
+{"ts": 1788351274.736559, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 90, "name": "orlan", "clue": "x.....\nox##..\n#o#...\n.o#.#.\n.ox.o#\n..##x."}}
+{"ts": 1788351274.7365644, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 90}}
+{"ts": 1788351274.7369514, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 90, "score": 0}}
+{"ts": 1788351274.7374673, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 91, "name": "orlan", "clue": "o#.o.\n.x.#.\n..o#.\n.o##.\n##.xo"}}
+{"ts": 1788351274.7374713, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 91}}
+{"ts": 1788351274.738203, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 91, "score": 0}}
+{"ts": 1788351274.7390385, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 92, "name": "orlan", "clue": "......\n#.....\n...#..\no.o...\nx#o#..\n#x.#.."}}
+{"ts": 1788351274.739042, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 92}}
+{"ts": 1788351274.7394447, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 92, "score": 0}}
+{"ts": 1788351274.739746, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 93, "name": "orlan", "clue": "o#o..\n....o\n#.xo#\nx##.x\n..#.#"}}
+{"ts": 1788351274.7397494, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 93}}
+{"ts": 1788351274.7401767, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 93, "score": 0}}
+{"ts": 1788351274.7404535, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 94, "name": "orlan", "clue": ".o.#.\n..o..\no##x.\n...#o\n##x#."}}
+{"ts": 1788351274.740456, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 94}}
+{"ts": 1788351274.7410014, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 94, "score": 0}}
+{"ts": 1788351274.743421, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 95, "name": "orlan", "clue": "...o.#\n....oo\n.#.#ox\n#.x###\n#xoo.#"}}
+{"ts": 1788351274.743427, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 95}}
+{"ts": 1788351274.7438302, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 95, "score": 0}}
+{"ts": 1788351274.7478254, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 96, "name": "orlan", "clue": ".xo#..\n......\n.#.x.x\n.#.#..\n.xo#o#\n......"}}
+{"ts": 1788351274.7478297, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 96}}
+{"ts": 1788351274.7482896, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 96, "score": 0}}
+{"ts": 1788351274.752481, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 97, "name": "orlan", "clue": "#.x##\nxo...\n#.#..\n#.o..\n.o..."}}
+{"ts": 1788351274.752486, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 97}}
+{"ts": 1788351274.7530031, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 97, "score": 0}}
+{"ts": 1788351274.754664, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 98, "name": "orlan", "clue": "ox.#..\n.#o...\n.##.#.\n.o#.x.\n....##\n....#."}}
+{"ts": 1788351274.754669, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 98}}
+{"ts": 1788351274.755016, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 98, "score": 0}}
+{"ts": 1788351274.7564046, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 99, "name": "orlan", "clue": ".#....\n......\n.x##..\n.o.#..\n..o#.x\no....."}}
+{"ts": 1788351274.7564094, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 99}}
+{"ts": 1788351274.7567976, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 99, "score": 0}}
+{"ts": 1788351274.757395, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 100, "name": "orlan", "clue": "...o#.\n#x#.x#\n..#.xo\n.#o..#\n....#.\n....#."}}
+{"ts": 1788351274.7573984, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 100}}
+{"ts": 1788351274.7579288, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 100, "score": 0}}
+{"ts": 1788351274.7610364, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 101, "name": "orlan", "clue": "##o#..\n#oxx##\n......\n.x.#..\n.o#o..\n#ox.#."}}
+{"ts": 1788351274.76104, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 101}}
+{"ts": 1788351274.7614212, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 101, "score": 0}}
+{"ts": 1788351274.7618928, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 102, "name": "orlan", "clue": "#x##..\n#.x.#.\n##o...\n.o#...\n....#.\n.x.#ox"}}
+{"ts": 1788351274.761896, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 102}}
+{"ts": 1788351274.7622736, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 102, "score": 0}}
+{"ts": 1788351274.7626545, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 103, "name": "orlan", "clue": "ox.#.#\n#o.#ox\n##x#o.\n...o.#\n..#..."}}
+{"ts": 1788351274.7626584, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 103}}
+{"ts": 1788351274.763147, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 103, "score": 0}}
+{"ts": 1788351274.768888, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 104, "name": "orlan", "clue": "o.o..\n#xo.#\nx.x#o\nxo#.#\n.#..."}}
+{"ts": 1788351274.7688932, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 104}}
+{"ts": 1788351274.7692907, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 104, "score": 0}}
+{"ts": 1788351274.7712922, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 105, "name": "orlan", "clue": ".x.#..\n.#....\n.oo...\n..x...\n......\n....#o"}}
+{"ts": 1788351274.7712975, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 105}}
+{"ts": 1788351274.7716935, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 105, "score": 0}}
+{"ts": 1788351274.772111, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 106, "name": "orlan", "clue": "x##o.\n#.x##\no..#.\no...x\no....\n...#."}}
+{"ts": 1788351274.7721145, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 106}}
+{"ts": 1788351274.7730517, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 106, "score": 0}}
+{"ts": 1788351274.7731297, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 107, "name": "orlan", "clue": "#x.#..\noo....\n##..o#\n..#.#.\n#.x.#.\n#ox.#."}}
+{"ts": 1788351274.7731352, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 107}}
+{"ts": 1788351274.773514, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 107, "score": 0}}
+{"ts": 1788351274.7745333, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 108, "name": "orlan", "clue": ".##.x#\n..o.#.\n..o.#.\no.x..#\n#.xo#."}}
+{"ts": 1788351274.774563, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 108}}
+{"ts": 1788351274.7748854, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 108, "score": 0}}
+{"ts": 1788351274.7767951, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 109, "name": "orlan", "clue": "#x..#.\n.#.#.o\n.#o...\n.xo#..\n......"}}
+{"ts": 1788351274.7768002, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 109}}
+{"ts": 1788351274.7771604, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 109, "score": 0}}
+{"ts": 1788351274.7774372, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 110, "name": "orlan", "clue": "x#....\n##o...\n#.....\nxx###o\n.#oo.."}}
+{"ts": 1788351274.7774405, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 110}}
+{"ts": 1788351274.7779968, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 110, "score": 0}}
+{"ts": 1788351274.7781408, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 111, "name": "orlan", "clue": ".o..x.\n..o...\n...ox#\n....o.\n....#.\no#...."}}
+{"ts": 1788351274.7781458, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 111}}
+{"ts": 1788351274.7786295, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 111, "score": 0}}
+{"ts": 1788351274.7820268, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 112, "name": "orlan", "clue": "ox#o.\n#.x.#\n.#..#\n#.#ox\n..oo."}}
+{"ts": 1788351274.7820318, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 112}}
+{"ts": 1788351274.7824166, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 112, "score": 0}}
+{"ts": 1788351274.7830796, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 113, "name": "orlan", "clue": ".oo#o.\nooox.#\n.#.o##\n.x.#.#\n..##xx"}}
+{"ts": 1788351274.7830849, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 113}}
+{"ts": 1788351274.7834961, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 113, "score": 0}}
+{"ts": 1788351274.7849698, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 114, "name": "orlan", "clue": ".oo...\no.o#..\n..#ox.\n.#.x##\n..x.#o\n...#.."}}
+{"ts": 1788351274.7849753, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 114}}
+{"ts": 1788351274.7853692, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 114, "score": 0}}
+{"ts": 1788351274.7884667, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 115, "name": "orlan", "clue": "##oo.\n..#o#\nx.#..\n#....\n#.#.x\nxo#.."}}
+{"ts": 1788351274.788474, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 115}}
+{"ts": 1788351274.788964, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 115, "score": 0}}
+{"ts": 1788351274.7891912, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 116, "name": "orlan", "clue": "..ooo.\n.o..x#\n.....#\n....x.\n......\n..#o.."}}
+{"ts": 1788351274.7892005, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 116}}
+{"ts": 1788351274.78969, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 116, "score": 0}}
+{"ts": 1788351274.7901683, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 117, "name": "orlan", "clue": "#....o\n.o..o#\n..#.x#\n.....o\n....#.\n..x..#"}}
+{"ts": 1788351274.7901742, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 117}}
+{"ts": 1788351274.790645, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 117, "score": 0}}
+{"ts": 1788351274.795426, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 118, "name": "orlan", "clue": ".....\n#....\n#ox..\nx.oo.\noooo#"}}
+{"ts": 1788351274.7954316, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 118}}
+{"ts": 1788351274.7958655, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 118, "score": 0}}
+{"ts": 1788351274.7974708, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 119, "name": "orlan", "clue": ".o.x#\no....\n.#xx#\n..o.#\n.oo#.\n..#.x"}}
+{"ts": 1788351274.797476, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 119}}
+{"ts": 1788351274.798001, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 119, "score": 0}}
+{"ts": 1788351274.7994862, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 120, "name": "orlan", "clue": "##o...\nx##..o\n.x.#..\no#x.#.\no#..ox\n..#..."}}
+{"ts": 1788351274.7994916, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 120}}
+{"ts": 1788351274.7998781, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 120, "score": 0}}
+{"ts": 1788351274.8006907, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 121, "name": "orlan", "clue": "###..#\n..o.#.\n.#.#xx\n.#.x.o\n...o##"}}
+{"ts": 1788351274.8006966, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 121}}
+{"ts": 1788351274.801154, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 121, "score": 0}}
+{"ts": 1788351274.8030865, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 122, "name": "orlan", "clue": "..#...\n.##xx#\n#.x.o.\n..#.o.\n..o.#.\n..oo#."}}
+{"ts": 1788351274.8030922, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 122}}
+{"ts": 1788351274.803518, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 122, "score": 0}}
+{"ts": 1788351274.8053782, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 123, "name": "orlan", "clue": ".#...o\n......\n#x.#.x\n.#.o.#\n.#..#o\n...#oo"}}
+{"ts": 1788351274.8053834, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 123}}
+{"ts": 1788351274.805786, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 123, "score": 0}}
+{"ts": 1788351274.8073037, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 124, "name": "orlan", "clue": "#.x.x\no.#.o\n..oo#\n.....\n...x.\n....#"}}
+{"ts": 1788351274.8073096, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 124}}
+{"ts": 1788351274.807757, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 124, "score": 0}}
+{"ts": 1788351274.8089385, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 125, "name": "orlan", "clue": "...o..\n..x.x.\n...#..\n#.o#..\n..o..o\nx##x##"}}
+{"ts": 1788351274.8089428, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 125}}
+{"ts": 1788351274.8095112, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 125, "score": 0}}
+{"ts": 1788351274.8123198, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 126, "name": "orlan", "clue": "#o#..\n#o#..\n#..x.\nx.#..\n.#xo."}}
+{"ts": 1788351274.8123252, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 126}}
+{"ts": 1788351274.8127627, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 126, "score": 0}}
+{"ts": 1788351274.8136244, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 127, "name": "orlan", "clue": "..#oo.\n..oo..\n..#.#.\n.x.#..\n#..#x#"}}
+{"ts": 1788351274.8136327, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 127}}
+{"ts": 1788351274.8141897, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 127, "score": 0}}
+{"ts": 1788351274.81865, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 128, "name": "orlan", "clue": ".....\n..x..\n..o..\n..#..\n..##x\no.o.o"}}
+{"ts": 1788351274.8186555, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 128}}
+{"ts": 1788351274.8191605, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 128, "score": 0}}
+{"ts": 1788351274.8201904, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 129, "name": "orlan", "clue": "#xo...\no.....\n##...x\nx.#o#.\n#xo#o."}}
+{"ts": 1788351274.8201964, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 129}}
+{"ts": 1788351274.8206615, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 129, "score": 0}}
+{"ts": 1788351274.821019, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 130, "name": "orlan", "clue": "x###oo\nx#ox..\n#.o...\n#..#..\n#o...x"}}
+{"ts": 1788351274.8210227, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 130}}
+{"ts": 1788351274.821422, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 130, "score": 0}}
+{"ts": 1788351274.823679, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 131, "name": "orlan", "clue": "#.#o#\n...o.\nxxx.#\nxo##.\n..oo#"}}
+{"ts": 1788351274.823685, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 131}}
+{"ts": 1788351274.824108, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 131, "score": 0}}
+{"ts": 1788351274.8259263, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 132, "name": "orlan", "clue": "#x.o..\n.x.#..\no..o..\n.o#x##\n......\n..##x#"}}
+{"ts": 1788351274.8259358, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 132}}
+{"ts": 1788351274.8264143, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 132, "score": 0}}
+{"ts": 1788351274.8282363, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 133, "name": "orlan", "clue": "o...#o\n..##o#\nx.#.#.\n#.#o..\nx###..\n##x.o."}}
+{"ts": 1788351274.8282409, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 133}}
+{"ts": 1788351274.8287327, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 133, "score": 0}}
+{"ts": 1788351274.8292892, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 134, "name": "orlan", "clue": ".#o..\n..#.#\n.o##x\n..#..\n..#.#\n#ox.#"}}
+{"ts": 1788351274.829295, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 134}}
+{"ts": 1788351274.8297777, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 134, "score": 0}}
+{"ts": 1788351274.8327904, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 135, "name": "orlan", "clue": "....x\n.....\no#oo#\n.#...\nox..."}}
+{"ts": 1788351274.8327954, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 135}}
+{"ts": 1788351274.8333302, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 135, "score": 0}}
+{"ts": 1788351274.8335936, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 136, "name": "orlan", "clue": ".#o..\n.#o#.\n...oo\n.#xx.\n##x.o"}}
+{"ts": 1788351274.8335993, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 136}}
+{"ts": 1788351274.8339329, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 136, "score": 0}}
+{"ts": 1788351274.8374875, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 137, "name": "orlan", "clue": ".x#x.o\n#o.#.x\no#...#\n#..o.#\n......\n....o."}}
+{"ts": 1788351274.837493, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 137}}
+{"ts": 1788351274.8380349, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 137, "score": 0}}
+{"ts": 1788351274.8402383, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 138, "name": "orlan", "clue": "......\n#..##o\n......\nxo#x##\no.oo#.\n##.#.."}}
+{"ts": 1788351274.8402433, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 138}}
+{"ts": 1788351274.8406343, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 138, "score": 0}}
+{"ts": 1788351274.8422623, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 139, "name": "orlan", "clue": "..x.#\n....#\no.#.x\n#o#.x\n.xo##\n..o.#"}}
+{"ts": 1788351274.8422685, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 139}}
+{"ts": 1788351274.8428895, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 139, "score": 0}}
+{"ts": 1788351274.8443444, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 140, "name": "orlan", "clue": ".....\n.#o#.\n.o#..\n.x..#\n...##\n.##ox"}}
+{"ts": 1788351274.8443491, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 140}}
+{"ts": 1788351274.844679, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 140, "score": 0}}
+{"ts": 1788351274.8482203, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 141, "name": "orlan", "clue": ".x.#..\n..##..\n.#o#.o\n##oxo#\n..#xo#"}}
+{"ts": 1788351274.8482256, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 141}}
+{"ts": 1788351274.8487508, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 141, "score": 0}}
+{"ts": 1788351274.8491218, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 142, "name": "orlan", "clue": "#....\n.o..#\nxx#.#\n.oo..\noox.#"}}
+{"ts": 1788351274.849126, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 142}}
+{"ts": 1788351274.8494668, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 142, "score": 0}}
+{"ts": 1788351274.8540337, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 143, "name": "orlan", "clue": ".#.#.\n.o...\n#x..#\n.#..o\nxx#o.\n.#ooo"}}
+{"ts": 1788351274.854039, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 143}}
+{"ts": 1788351274.8544796, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 143, "score": 0}}
+{"ts": 1788351274.8579602, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 144, "name": "orlan", "clue": "##x.#\n..#ox\n..###\n...o#\nxox#o\n.#o.."}}
+{"ts": 1788351274.8579655, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 144}}
+{"ts": 1788351274.8583896, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 144, "score": 0}}
+{"ts": 1788351274.8588176, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 145, "name": "orlan", "clue": "...o.x\n.x.##o\n.#..oo\n.#.#o.\n.##.x#\nox.#.."}}
+{"ts": 1788351274.8588228, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 145}}
+{"ts": 1788351274.8592575, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 145, "score": 0}}
+{"ts": 1788351274.8622556, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 146, "name": "orlan", "clue": "..#..\n#o.xx\n#.xo#\n.#.o#\n.o##o"}}
+{"ts": 1788351274.8622606, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 146}}
+{"ts": 1788351274.8628433, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 146, "score": 0}}
+{"ts": 1788351274.863129, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 147, "name": "orlan", "clue": "#..x..\n..#o..\nx.#o#.\n#...oo\no.##x.\n......"}}
+{"ts": 1788351274.8631344, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 147}}
+{"ts": 1788351274.8635995, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 147, "score": 0}}
+{"ts": 1788351274.86431, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 148, "name": "orlan", "clue": "o....o\n.....o\n.xo##.\no....#\n.#.x##\n...##x"}}
+{"ts": 1788351274.8643157, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 148}}
+{"ts": 1788351274.8647358, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 148, "score": 0}}
+{"ts": 1788351274.8653874, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 149, "name": "orlan", "clue": "..#...\n#.xox.\n#.....\n..##..\n.oo..."}}
+{"ts": 1788351274.8653927, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 149}}
+{"ts": 1788351274.865847, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 149, "score": 0}}
+{"ts": 1788351274.8681266, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 150, "name": "orlan", "clue": "...#..\n#ox##.\n##.x.#\n.oo...\n...#..\n......"}}
+{"ts": 1788351274.8681319, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 150}}
+{"ts": 1788351274.8684928, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 150, "score": 0}}
+{"ts": 1788351274.8690526, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 151, "name": "orlan", "clue": "..o..\n.x##o\nox.#.\n##...\nox.o."}}
+{"ts": 1788351274.8690574, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 151}}
+{"ts": 1788351274.86944, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 151, "score": 0}}
+{"ts": 1788351274.87662, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 152, "name": "orlan", "clue": "...##.\n...o..\n.#.x.#\n..#..#\n#.x###\n.#ooo."}}
+{"ts": 1788351274.8766258, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 152}}
+{"ts": 1788351274.8770785, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 152, "score": 0}}
+{"ts": 1788351274.8775327, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 153, "name": "orlan", "clue": "...#ox\n..#..#\n...#x#\n....o.\n.o#.#.\n.#..#."}}
+{"ts": 1788351274.8775833, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 153}}
+{"ts": 1788351274.8780124, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 153, "score": 0}}
+{"ts": 1788351274.87861, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 154, "name": "orlan", "clue": ".o.#x.\n..o.#.\n..#.x#\nx.....\n.oo.#."}}
+{"ts": 1788351274.878615, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 154}}
+{"ts": 1788351274.8789198, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 154, "score": 0}}
+{"ts": 1788351274.8807125, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 155, "name": "orlan", "clue": ".....x\n.#.#..\n.#.o#o\n.o.o..\n.x#.x.\n##ox#."}}
+{"ts": 1788351274.880717, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 155}}
+{"ts": 1788351274.881171, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 155, "score": 0}}
+{"ts": 1788351274.884505, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 156, "name": "orlan", "clue": "..##x\n..ooo\n#.#.#\n.....\nxox.#\n#...."}}
+{"ts": 1788351274.884511, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 156}}
+{"ts": 1788351274.8850286, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 156, "score": 0}}
+{"ts": 1788351274.8896427, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 157, "name": "orlan", "clue": "......\n.....#\n.....#\n..x.#.\n..o...\no.##xo"}}
+{"ts": 1788351274.889648, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 157}}
+{"ts": 1788351274.889996, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 157, "score": 0}}
+{"ts": 1788351274.8906898, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 158, "name": "orlan", "clue": "x#..#.\n#..##x\n#xoo.o\n.#.ox#\n.#.o#."}}
+{"ts": 1788351274.8906937, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 158}}
+{"ts": 1788351274.8910182, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 158, "score": 0}}
+{"ts": 1788351274.8982058, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 159, "name": "orlan", "clue": "....#\noxo#.\n##o..\n#o...\nxx.o#"}}
+{"ts": 1788351274.898212, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 159}}
+{"ts": 1788351274.89868, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 159, "score": 0}}
+{"ts": 1788351274.9001162, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 160, "name": "orlan", "clue": ".o..#\noo#..\n.o...\n#.x##\n.x...\no.#.."}}
+{"ts": 1788351274.9001217, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 160}}
+{"ts": 1788351274.9006867, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 160, "score": 0}}
+{"ts": 1788351274.9016392, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 161, "name": "orlan", "clue": ".x.o..\n.x.#..\n.#.#..\n.#oo..\n.x#x.#"}}
+{"ts": 1788351274.901645, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 161}}
+{"ts": 1788351274.9020798, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 161, "score": 0}}
+{"ts": 1788351274.9028692, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 162, "name": "orlan", "clue": "#...#.\nxo###x\nxo#o..\n##...#\n#.....\n....o."}}
+{"ts": 1788351274.9028738, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 162}}
+{"ts": 1788351274.9032676, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 162, "score": 0}}
+{"ts": 1788351274.908917, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 163, "name": "orlan", "clue": ".x...o\n....#o\n..#o..\n..##x.\n.o.#..\nx..o#."}}
+{"ts": 1788351274.908923, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 163}}
+{"ts": 1788351274.909377, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 163, "score": 0}}
+{"ts": 1788351274.9117305, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 164, "name": "orlan", "clue": "#.....\n#.....\nx.##..\no.....\n#.#x.o\n.o##.."}}
+{"ts": 1788351274.9117367, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 164}}
+{"ts": 1788351274.9122915, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 164, "score": 0}}
+{"ts": 1788351274.912818, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 165, "name": "orlan", "clue": "..x.o.\n....o#\n..x...\n...#.x\n....o#\n....#o"}}
+{"ts": 1788351274.9128232, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 165}}
+{"ts": 1788351274.9132335, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 165, "score": 0}}
+{"ts": 1788351274.9135115, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 166, "name": "orlan", "clue": "..o...\n.##x.o\n..x#o.\n.###..\n..o#.."}}
+{"ts": 1788351274.913515, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 166}}
+{"ts": 1788351274.9145153, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 166, "score": 0}}
+{"ts": 1788351274.914627, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 167, "name": "orlan", "clue": "....#.\n#x##x.\no.....\n.##.x.\n..#.o#\n##xoo."}}
+{"ts": 1788351274.9146307, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 167}}
+{"ts": 1788351274.915098, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 167, "score": 0}}
+{"ts": 1788351274.916721, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 168, "name": "orlan", "clue": "##xx#\noo...\n..#.o\n...#.\n#.x.x\n....."}}
+{"ts": 1788351274.916726, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 168}}
+{"ts": 1788351274.9170344, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 168, "score": 0}}
+{"ts": 1788351274.9179795, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 169, "name": "orlan", "clue": "#.xox#\no.#x.#\n.#o.#.\n.#.#oo\n.x.#..\n.#...."}}
+{"ts": 1788351274.917983, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 169}}
+{"ts": 1788351274.9183893, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 169, "score": 0}}
+{"ts": 1788351274.9196217, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 170, "name": "orlan", "clue": "....o\n...xo\n..#.#\n.o#.#\n.o#.x\n#ox#x"}}
+{"ts": 1788351274.9196255, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 170}}
+{"ts": 1788351274.9201963, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 170, "score": 0}}
+{"ts": 1788351274.9215648, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 171, "name": "orlan", "clue": "x..#o.\n...oo.\n.x.x##\n.....#\no#.o.x"}}
+{"ts": 1788351274.9215708, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 171}}
+{"ts": 1788351274.9226704, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 171, "score": 0}}
+{"ts": 1788351274.9251175, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 172, "name": "orlan", "clue": "##..o.\nx#o##.\nxoo.#.\nxo#ox.\n#....."}}
+{"ts": 1788351274.9251227, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 172}}
+{"ts": 1788351274.9255776, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 172, "score": 0}}
+{"ts": 1788351274.9271593, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 173, "name": "orlan", "clue": "#....\n....o\n##o..\no.o.x\nx.#o#\n#.#.#"}}
+{"ts": 1788351274.9271646, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 173}}
+{"ts": 1788351274.9276783, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 173, "score": 0}}
+{"ts": 1788351274.93494, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 174, "name": "orlan", "clue": "x.#...\n#.o#..\n##o...\n#o.x..\n.#o...\n...x.."}}
+{"ts": 1788351274.9349456, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 174}}
+{"ts": 1788351274.9353256, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 174, "score": 0}}
+{"ts": 1788351274.9377701, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 175, "name": "orlan", "clue": "....x\nox.x.\no....\no#.x.\n#o#..\n.#..o"}}
+{"ts": 1788351274.9377754, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 175}}
+{"ts": 1788351274.9381893, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 175, "score": 0}}
+{"ts": 1788351274.9391563, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 176, "name": "orlan", "clue": "...o..\n#...oo\n#..o#.\n#.....\nxo#x.#\n..##x#"}}
+{"ts": 1788351274.9391623, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 176}}
+{"ts": 1788351274.939515, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 176, "score": 0}}
+{"ts": 1788351274.941489, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 177, "name": "orlan", "clue": "o.o..\n#...#\n.##ox\n..#.x\n..o..\nx.##x"}}
+{"ts": 1788351274.9414942, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 177}}
+{"ts": 1788351274.941856, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 177, "score": 0}}
+{"ts": 1788351274.944681, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 178, "name": "orlan", "clue": "x.#..#\n....o.\n...##x\n......\n...o.x\n...o.."}}
+{"ts": 1788351274.9446852, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 178}}
+{"ts": 1788351274.9449732, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 178, "score": 0}}
+{"ts": 1788351274.9466586, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 179, "name": "orlan", "clue": "##x.#.\n..o...\n#.#o..\n##....\nxo#...\n#o...#"}}
+{"ts": 1788351274.946662, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 179}}
+{"ts": 1788351274.9472551, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 179, "score": 0}}
+{"ts": 1788351274.9473438, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 180, "name": "orlan", "clue": "...##x\n...o.#\n..#..#\n#ox.#.\n.#....\n.o#..."}}
+{"ts": 1788351274.9473493, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 180}}
+{"ts": 1788351274.9479046, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 180, "score": 0}}
+{"ts": 1788351274.9490616, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 181, "name": "orlan", "clue": "..x.#.\n.oo#.#\n..##x.\n...o#.\n#..x##\n...o.."}}
+{"ts": 1788351274.9490664, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 181}}
+{"ts": 1788351274.9495573, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 181, "score": 0}}
+{"ts": 1788351274.9502535, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 182, "name": "orlan", "clue": "#....o\n...#.o\nx##..#\n#....#\n#...#x\n..oo.."}}
+{"ts": 1788351274.950259, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 182}}
+{"ts": 1788351274.9507039, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 182, "score": 0}}
+{"ts": 1788351274.9511712, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 183, "name": "orlan", "clue": "o.....\nx.#.#.\n#..#.o\n#o....\n.#.x##\n......"}}
+{"ts": 1788351274.951175, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 183}}
+{"ts": 1788351274.9514399, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 183, "score": 0}}
+{"ts": 1788351274.95265, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 184, "name": "orlan", "clue": "ox.#..\n.#.x.#\n...oo#\n...##.\n...#..\no....o"}}
+{"ts": 1788351274.9526534, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 184}}
+{"ts": 1788351274.9529467, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 184, "score": 0}}
+{"ts": 1788351274.9535716, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 185, "name": "orlan", "clue": "x.#ox#\no#o#..\no#.x##\n.#.o#.\n...#.."}}
+{"ts": 1788351274.9535747, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 185}}
+{"ts": 1788351274.9547043, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 185, "score": 0}}
+{"ts": 1788351274.9551864, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 186, "name": "orlan", "clue": "....o\no.#.x\n.##.#\n...o#\n#xx##\noo..."}}
+{"ts": 1788351274.955192, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 186}}
+{"ts": 1788351274.9556265, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 186, "score": 0}}
+{"ts": 1788351274.9561703, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 187, "name": "orlan", "clue": "o...o.\n.o..oo\n..#..x\n..#...\n.....x\n...x.."}}
+{"ts": 1788351274.956175, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 187}}
+{"ts": 1788351274.9570665, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 187, "score": 0}}
+{"ts": 1788351274.957174, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 188, "name": "orlan", "clue": ".x.o..\n..x.#.\n....#.\n.o#.x.\n#..#o.\n...o.."}}
+{"ts": 1788351274.9571774, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 188}}
+{"ts": 1788351274.9586217, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 188, "score": 0}}
+{"ts": 1788351274.9609506, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 189, "name": "orlan", "clue": "..o.#.\n..#x.x\n..##x.\n..xo##\n#o#.#.\noo#..."}}
+{"ts": 1788351274.9609556, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 189}}
+{"ts": 1788351274.9613614, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 189, "score": 0}}
+{"ts": 1788351274.9647157, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 190, "name": "orlan", "clue": ".#..#.\n#ox...\n##....\no.....\nxo.#..\noo..x."}}
+{"ts": 1788351274.9647212, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 190}}
+{"ts": 1788351274.965787, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 190, "score": 0}}
+{"ts": 1788351274.9657967, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 191, "name": "orlan", "clue": ".....\n..##o\no...#\n#.x#o\n.o#xx"}}
+{"ts": 1788351274.965801, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 191}}
+{"ts": 1788351274.9662375, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 191, "score": 0}}
+{"ts": 1788351274.9680088, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 192, "name": "orlan", "clue": "#.x#.x\n..#..#\n..#oo#\nx..#o.\n....o."}}
+{"ts": 1788351274.968014, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 192}}
+{"ts": 1788351274.9684267, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 192, "score": 0}}
+{"ts": 1788351274.9698787, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 193, "name": "orlan", "clue": ".#oo#.\n..#oo.\nx##..#\no.x.#.\n#.#..."}}
+{"ts": 1788351274.9698844, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 193}}
+{"ts": 1788351274.9702237, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 193, "score": 0}}
+{"ts": 1788351274.9735966, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 194, "name": "orlan", "clue": ".#.o.#\n.#.#.x\n.x.oo.\n##.xo#\n.#.oo#\n...#.."}}
+{"ts": 1788351274.9736013, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 194}}
+{"ts": 1788351274.9741175, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 194, "score": 0}}
+{"ts": 1788351274.9777374, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 195, "name": "orlan", "clue": "..o#..\n.x.o..\n.x.#..\n.#....\n.##..o"}}
+{"ts": 1788351274.9777427, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 195}}
+{"ts": 1788351274.9780853, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 195, "score": 0}}
+{"ts": 1788351274.979001, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 196, "name": "orlan", "clue": "......\n.#...o\n....#.\n.#....\noo#.x.\n.x..##"}}
+{"ts": 1788351274.979006, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 196}}
+{"ts": 1788351274.9794104, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 196, "score": 0}}
+{"ts": 1788351274.9804614, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 197, "name": "orlan", "clue": "#...o\n...x.\n#..o#\no....\nx##.x"}}
+{"ts": 1788351274.9804654, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 197}}
+{"ts": 1788351274.9808228, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 197, "score": 0}}
+{"ts": 1788351274.9824736, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 198, "name": "orlan", "clue": "ooo..\n#..o.\nx.#..\n.....\n#ox##"}}
+{"ts": 1788351274.9824805, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 198}}
+{"ts": 1788351274.9843245, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 198, "score": 0}}
+{"ts": 1788351274.984527, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 199, "name": "orlan", "clue": "ox.o#.\n##....\nx.#.o.\n##.x..\no.o...\n.x...."}}
+{"ts": 1788351274.9845307, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 199}}
+{"ts": 1788351274.9858685, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 199, "score": 0}}
+{"ts": 1788351274.9858773, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 200, "name": "orlan", "clue": "##.##\nx##..\n.x.oo\n#x.#.\n.oox.\n.#..."}}
+{"ts": 1788351274.985881, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 200}}
+{"ts": 1788351274.9863605, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 200, "score": 0}}
+{"ts": 1788351274.9873402, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 201, "name": "orlan", "clue": "....#.\n.x.oo.\n#.#x..\no#.x.#\no...#.\n..##x."}}
+{"ts": 1788351274.987346, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 201}}
+{"ts": 1788351274.9878058, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 201, "score": 0}}
+{"ts": 1788351274.988961, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 202, "name": "orlan", "clue": "..#o#\n...#.\nx##..\n#o##.\n#....\nx#xxo"}}
+{"ts": 1788351274.9889657, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 202}}
+{"ts": 1788351274.9893594, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 202, "score": 0}}
+{"ts": 1788351274.9921494, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 203, "name": "orlan", "clue": ".o#..\n#o#.o\n.##..\n#.xo#\n..#..\n..xx#"}}
+{"ts": 1788351274.9921546, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 203}}
+{"ts": 1788351274.992709, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 203, "score": 0}}
+{"ts": 1788351274.9933183, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 204, "name": "orlan", "clue": "......\n#.....\n#....#\nx##.o#\n.o.#ox\n..#o#."}}
+{"ts": 1788351274.9933236, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 204}}
+{"ts": 1788351274.993752, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 204, "score": 0}}
+{"ts": 1788351274.9971535, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 205, "name": "orlan", "clue": ".ooo.\n##.xo\n#.##x\n...#.\n...##\n..x.."}}
+{"ts": 1788351274.9971595, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 205}}
+{"ts": 1788351274.997585, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 205, "score": 0}}
+{"ts": 1788351274.9993856, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 206, "name": "orlan", "clue": ".#....\nxo#..#\n#...x.\n...#o#\n.#o.#."}}
+{"ts": 1788351274.99939, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 206}}
+{"ts": 1788351274.999825, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 206, "score": 0}}
+{"ts": 1788351275.0036569, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 207, "name": "orlan", "clue": ".ooo#.\n.###..\n#o...x\n#xx.#.\n.....o"}}
+{"ts": 1788351275.0036619, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 207}}
+{"ts": 1788351275.0039895, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 207, "score": 0}}
+{"ts": 1788351275.0045888, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 208, "name": "orlan", "clue": "#...##\nx...#o\nx.#.o#\n##.oxo\n#.....\n.##..."}}
+{"ts": 1788351275.0045927, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 208}}
+{"ts": 1788351275.0048954, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 208, "score": 0}}
+{"ts": 1788351275.0060942, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 209, "name": "orlan", "clue": "o.#..\n..#o.\n#.x.#\n..xoo\nx###o"}}
+{"ts": 1788351275.0060976, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 209}}
+{"ts": 1788351275.0064204, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 209, "score": 0}}
+{"ts": 1788351275.0070295, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 210, "name": "orlan", "clue": "#.x##\nxx##o\n..#..\no....\n#o...\n#...."}}
+{"ts": 1788351275.0070333, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 210}}
+{"ts": 1788351275.0073643, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 210, "score": 0}}
+{"ts": 1788351275.0084748, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 211, "name": "orlan", "clue": "#.x##.\n..#.#x\n..#o.o\n.....#\nx.....\n.x.o.."}}
+{"ts": 1788351275.0084786, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 211}}
+{"ts": 1788351275.008992, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 211, "score": 0}}
+{"ts": 1788351275.0091517, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 212, "name": "orlan", "clue": "xo.ox\n#....\n#....\n....#\no...#"}}
+{"ts": 1788351275.0091567, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 212}}
+{"ts": 1788351275.0096333, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 212, "score": 0}}
+{"ts": 1788351275.0098884, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 213, "name": "orlan", "clue": "oo#..\n#.#o.\n#xo..\n#.xo#\n.#...\n.##.."}}
+{"ts": 1788351275.0098948, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 213}}
+{"ts": 1788351275.010259, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 213, "score": 0}}
+{"ts": 1788351275.0135336, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 214, "name": "orlan", "clue": "..#ox\no#oo.\n.....\n..x.#\n.o..."}}
+{"ts": 1788351275.0135639, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 214}}
+{"ts": 1788351275.0139098, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 214, "score": 0}}
+{"ts": 1788351275.0169601, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 215, "name": "orlan", "clue": ".#....\n#.x#o#\n....#o\n..###x\n.....o\n.....#"}}
+{"ts": 1788351275.0169659, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 215}}
+{"ts": 1788351275.017382, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 215, "score": 0}}
+{"ts": 1788351275.018612, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 216, "name": "orlan", "clue": "o.....\n..x.o.\n#.....\noo.x..\nx..o.#\n#...#."}}
+{"ts": 1788351275.0186176, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 216}}
+{"ts": 1788351275.0189521, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 216, "score": 0}}
+{"ts": 1788351275.0193367, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 217, "name": "orlan", "clue": "...#o.\n#o.x..\n##.oxo\nx.#...\nx###.."}}
+{"ts": 1788351275.0193417, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 217}}
+{"ts": 1788351275.0196395, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 217, "score": 0}}
+{"ts": 1788351275.0222242, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 218, "name": "orlan", "clue": "o...#.\n...#o.\n.#o##.\n#xo..#\n#ox..."}}
+{"ts": 1788351275.0222292, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 218}}
+{"ts": 1788351275.022736, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 218, "score": 0}}
+{"ts": 1788351275.0234933, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 219, "name": "orlan", "clue": "#x##..\n...o..\no..o.o\n...x..\n..o...\n.x.x.."}}
+{"ts": 1788351275.023498, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 219}}
+{"ts": 1788351275.0238502, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 219, "score": 0}}
+{"ts": 1788351275.024858, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 220, "name": "orlan", "clue": "...o#\n.#.x#\n.xoo#\n.#.x#\no#o.."}}
+{"ts": 1788351275.0248628, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 220}}
+{"ts": 1788351275.025199, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 220, "score": 0}}
+{"ts": 1788351275.0258281, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 221, "name": "orlan", "clue": "...#.x\no#.x.#\n###x.#\no.oooo\nx##.##"}}
+{"ts": 1788351275.0258331, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 221}}
+{"ts": 1788351275.0262172, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 221, "score": 0}}
+{"ts": 1788351275.026495, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 222, "name": "orlan", "clue": "....oo\n.x.#..\n#.#o..\n..#...\n#.x.o.\n......"}}
+{"ts": 1788351275.0264986, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 222}}
+{"ts": 1788351275.0269823, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 222, "score": 0}}
+{"ts": 1788351275.0282855, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 223, "name": "orlan", "clue": ".....x\n#.....\noo....\no..#.#\n#..#o#\nx##xox"}}
+{"ts": 1788351275.0282905, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 223}}
+{"ts": 1788351275.0288022, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 223, "score": 0}}
+{"ts": 1788351275.0292387, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 224, "name": "orlan", "clue": ".....o\n#x##..\n..#..#\n#ox..o\n...##x\n.##oo."}}
+{"ts": 1788351275.029244, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 224}}
+{"ts": 1788351275.0296488, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 224, "score": 0}}
+{"ts": 1788351275.032939, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 225, "name": "orlan", "clue": ".oox#\n#o...\n..##o\nx##..\n.o..."}}
+{"ts": 1788351275.0329447, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 225}}
+{"ts": 1788351275.033332, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 225, "score": 0}}
+{"ts": 1788351275.033614, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 226, "name": "orlan", "clue": ".x##.\n.#...\n.xo#o\n#....\no....\n..o.."}}
+{"ts": 1788351275.0336213, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 226}}
+{"ts": 1788351275.0340323, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 226, "score": 0}}
+{"ts": 1788351275.0357, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 227, "name": "orlan", "clue": "x.#.#\n#.#ox\n#..o.\n.x..#\n#oo..\n##.o."}}
+{"ts": 1788351275.035705, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 227}}
+{"ts": 1788351275.0360453, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 227, "score": 0}}
+{"ts": 1788351275.0370424, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 228, "name": "orlan", "clue": "..oo#.\n#x.#.o\nxo#...\n.o#...\n#.....\n....x."}}
+{"ts": 1788351275.0370464, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 228}}
+{"ts": 1788351275.0373373, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 228, "score": 0}}
+{"ts": 1788351275.038089, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 229, "name": "orlan", "clue": "......\n.###x#\n.#....\n.x#.#.\n....o.\n.##ooo"}}
+{"ts": 1788351275.0380943, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 229}}
+{"ts": 1788351275.0385907, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 229, "score": 0}}
+{"ts": 1788351275.0388384, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 230, "name": "orlan", "clue": ".#..#o\n..#ox.\n......\no.#.#.\no.....\n#.x##."}}
+{"ts": 1788351275.0388436, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 230}}
+{"ts": 1788351275.0391808, "dir": "in", "msg": {"type": "result", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 230, "score": 0}}
+{"ts": 1788351275.0426002, "dir": "in", "msg": {"type": "challenge", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 231, "name": "orlan", "clue": ".#.ox#\noox##.\n.o#.#.\n#.#.#o\n.....#"}}
+{"ts": 1788351275.0426066, "dir": "out", "msg": {"type": "skip", "round_id": "90d12da97fac429b9d99fc3b30108a44", "index": 231}}
+{"ts": 1788351275.0449615, "dir": "in", "msg": {"type": "round_over", "round_id": "90d12da97fac429b9d99fc3b30108a44", "kind": "training", "presented": 231, "answered": 0, "correct": 0, "items": [{"index": 0, "name": "orlan", "clue": "...oo\nx..o.\n....o\n##xo#\n#....", "solution": null, "score": 0}, {"index": 1, "name": "orlan", "clue": ".#ox.#\n#x..o.\n..o##.\n.#....\n##x.o.\n#.#..o", "solution": null, "score": 0}, {"index": 2, "name": "orlan", "clue": "..#.x#\n.oo.#.\n#o##.x\n.....#\no..o.#", "solution": null, "score": 0}, {"index": 3, "name": "orlan", "clue": "..o...\n.#....\n..#..x\n#...#o\n#.....\nxo#ox.", "solution": null, "score": 0}, {"index": 4, "name": "orlan", "clue": "..#oo#\n.#.xo#\n#..#.x\n....o#\n..o..#", "solution": null, "score": 0}, {"index": 5, "name": "orlan", "clue": "....o.\n#x#o#.\n##.#..\nxo#.o.\n.#....\n.o..x.", "solution": null, "score": 0}, {"index": 6, "name": "orlan", "clue": "##o...\no...#.\nx.o.#.\n...#o#\nx##.#.\n.....#", "solution": null, "score": 0}, {"index": 7, "name": "orlan", "clue": ".o....\n..o..#\n..o...\n##.#ox\n.#.x#o\n.....#", "solution": null, "score": 0}, {"index": 8, "name": "orlan", "clue": "..o#.\n.....\no....\n..ox.\n.x..o", "solution": null, "score": 0}, {"index": 9, "name": "orlan", "clue": "..#.#\n.o#..\nx.x.o\n.#x.#\n.#oo.\n.x#.o", "solution": null, "score": 0}, {"index": 10, "name": "orlan", "clue": "#.oo.\n.o.ox\n....#\n...##\nx...o\n.....", "solution": null, "score": 0}, {"index": 11, "name": "orlan", "clue": "xo....\n.#.##x\nx....#\n.#.o.#\n.o....\n#x.#..", "solution": null, "score": 0}, {"index": 12, "name": "orlan", "clue": "...o#.\no...o.\n..#.xo\n#.#...\no...#.\n##x.#.", "solution": null, "score": 0}, {"index": 13, "name": "orlan", "clue": "#.....\n#.....\nxo.#o.\nx..#.#\n##o...", "solution": null, "score": 0}, {"index": 14, "name": "orlan", "clue": "..x.oo\n.o.#o#\n....o.\n.#.x#x\n..o#..", "solution": null, "score": 0}, {"index": 15, "name": "orlan", "clue": "......\n.#.x.#\n..ooo.\n...#..\no.#.x#\n..#.#.", "solution": null, "score": 0}, {"index": 16, "name": "orlan", "clue": "#...#\n....#\n..xox\n....o\n..ooo\n..##x", "solution": null, "score": 0}, {"index": 17, "name": "orlan", "clue": "o.....\no##x#o\n...#o#\n.#o#..\n.x##..", "solution": null, "score": 0}, {"index": 18, "name": "orlan", "clue": "o...#.\n...oo#\nx##.x.\n#.#...\n#.....\n##x#..", "solution": null, "score": 0}, {"index": 19, "name": "orlan", "clue": ".x.o..\n.o#o..\n#x.#..\n.o#...\n.#....\n..#..x", "solution": null, "score": 0}, {"index": 20, "name": "orlan", "clue": "......\n#.#o##\no.....\n.ox##x\n.....#\n..#..#", "solution": null, "score": 0}, {"index": 21, "name": "orlan", "clue": ".#o.x#\n.xo.o.\n....#.\n.#.o#.\n...#.#\n.#...o", "solution": null, "score": 0}, {"index": 22, "name": "orlan", "clue": "#x.#o\no##o.\n.#xx.\no#x.#\n....o", "solution": null, "score": 0}, {"index": 23, "name": "orlan", "clue": "..o#.\nx#x##\n#..xo\n#.#..\n.o##o\no.x##", "solution": null, "score": 0}, {"index": 24, "name": "orlan", "clue": "....#\n.##x.\n.o.ox\n...o#\n..###", "solution": null, "score": 0}, {"index": 25, "name": "orlan", "clue": "..#.x.\n..o#..\no.....\n.#.xo#\n#.....", "solution": null, "score": 0}, {"index": 26, "name": "orlan", "clue": "#ox#.\n.x#o.\noo.o#\n##xx#\n.#...", "solution": null, "score": 0}, {"index": 27, "name": "orlan", "clue": ".o.##\n#o#..\n.o.x.\n.##.o\n.x.o.\n#.xo#", "solution": null, "score": 0}, {"index": 28, "name": "orlan", "clue": ".#...\nox..x\n.xo#.\n..#.#\n.#.o#\n..#.x", "solution": null, "score": 0}, {"index": 29, "name": "orlan", "clue": "#...#.\nx###x.\noo...o\n#...o.\nx.#...\n.o..x.", "solution": null, "score": 0}, {"index": 30, "name": "orlan", "clue": "..#...\n.##...\n#.x.#.\n..o...\nx.##o.\n.xo...", "solution": null, "score": 0}, {"index": 31, "name": "orlan", "clue": "...o..\n.#xx.#\n..#.#.\n...#..\n...o..\n#.#..o", "solution": null, "score": 0}, {"index": 32, "name": "orlan", "clue": "#....\n#x.##\nx.##o\n.#.o#\nox###", "solution": null, "score": 0}, {"index": 33, "name": "orlan", "clue": "...x..\n##o...\n#o#.#.\n.#...#\n#oo#xx\n...o..", "solution": null, "score": 0}, {"index": 34, "name": "orlan", "clue": "xo#..x\n##o.x.\n...#oo\n....##\n......", "solution": null, "score": 0}, {"index": 35, "name": "orlan", "clue": ".....\n...o#\noo.#.\n.x###\n....#\n.#o#x", "solution": null, "score": 0}, {"index": 36, "name": "orlan", "clue": "....x.\n..x..#\n.....#\n..o##x\n.x...o\n....o.", "solution": null, "score": 0}, {"index": 37, "name": "orlan", "clue": "o...x.\nx.o.o.\n#....#\n#..o.o\n..##xx", "solution": null, "score": 0}, {"index": 38, "name": "orlan", "clue": ".o....\n.o#...\n#o.#..\n##x.#.\nxoo...\n#.#...", "solution": null, "score": 0}, {"index": 39, "name": "orlan", "clue": "..#.#o\n.....x\n..o..#\n.#...o\n.o#o#.\n.x##..", "solution": null, "score": 0}, {"index": 40, "name": "orlan", "clue": "#....x\no..#..\nox....\n..#..o\n.....o", "solution": null, "score": 0}, {"index": 41, "name": "orlan", "clue": "ox#oo\n#..#.\n.#oo.\nx###.\n.....\nx...#", "solution": null, "score": 0}, {"index": 42, "name": "orlan", "clue": "#x##.\n...o.\nx##..\n#o.o.\noox..", "solution": null, "score": 0}, {"index": 43, "name": "orlan", "clue": "..#.o.\n..o.#.\n#.x.x.\no...x.\n#.##o.\n.#..#.", "solution": null, "score": 0}, {"index": 44, "name": "orlan", "clue": ".##.x#\n#x..#.\n#x..#.\no..o..\n.#.#oo\n......", "solution": null, "score": 0}, {"index": 45, "name": "orlan", "clue": "..##x.\n..x#.#\n.o#.xo\n.#..#o\n.##o##\n.o....", "solution": null, "score": 0}, {"index": 46, "name": "orlan", "clue": "#oxo.\n..#..\n..o#x\n..o.o\n....#\n#.##x", "solution": null, "score": 0}, {"index": 47, "name": "orlan", "clue": "x##..\no#oxo\n##oo.\n##.#.\n#x..o\nx#...", "solution": null, "score": 0}, {"index": 48, "name": "orlan", "clue": "...#ox\n....##\n.x.#o#\n..#...\n.o#.o.\n#.xo..", "solution": null, "score": 0}, {"index": 49, "name": "orlan", "clue": "..x..\no#...\n#.oo.\nx.#..\n#x..#\n##...", "solution": null, "score": 0}, {"index": 50, "name": "orlan", "clue": ".x....\n..##.#\n.oo.#.\n.x....\n#.#xx.\n...ooo", "solution": null, "score": 0}, {"index": 51, "name": "orlan", "clue": ".....x\no.....\n#.##..\n.x##.#\n.#...o\noo.##x", "solution": null, "score": 0}, {"index": 52, "name": "orlan", "clue": "..#.x#\n..o.o.\n.#..o.\n.x.#o.\n.#...#\n.#.o..", "solution": null, "score": 0}, {"index": 53, "name": "orlan", "clue": "...x.\n..#o#\no..#o\n..x.o\n.#.xo\n..#..", "solution": null, "score": 0}, {"index": 54, "name": "orlan", "clue": "##xoxo\n.#.o..\n..#o#.\no#....\n#.....\nox#...", "solution": null, "score": 0}, {"index": 55, "name": "orlan", "clue": "#ox.#.\n.x.o.o\n.##o..\n.#....\n....#o", "solution": null, "score": 0}, {"index": 56, "name": "orlan", "clue": "...o.\n...oo\n#....\n.#.x.\n...ox", "solution": null, "score": 0}, {"index": 57, "name": "orlan", "clue": "...##x\noo..o.\n.##..#\n.#....\n.xo#..", "solution": null, "score": 0}, {"index": 58, "name": "orlan", "clue": ".ooo#\n.#.o#\n.###x\nox...\n..x.o", "solution": null, "score": 0}, {"index": 59, "name": "orlan", "clue": ".o#.#\noo##x\n.....\n.#o.x\n.xo#.", "solution": null, "score": 0}, {"index": 60, "name": "orlan", "clue": "o....#\nx##.xx\n.#o.##\n..o.##\no.#o#x", "solution": null, "score": 0}, {"index": 61, "name": "orlan", "clue": ".o.xo\n.x##.\n.o.#o\n#.#..\n....o", "solution": null, "score": 0}, {"index": 62, "name": "orlan", "clue": "#x#.o\n..o.o\nx##ox\no#..#\n#...#\n.....", "solution": null, "score": 0}, {"index": 63, "name": "orlan", "clue": "#ox###\n##.o.x\n#oo...\n.##..#\n......", "solution": null, "score": 0}, {"index": 64, "name": "orlan", "clue": ".o..x\n.....\n##oo.\n#x..o\nx#.#.", "solution": null, "score": 0}, {"index": 65, "name": "orlan", "clue": ".....\n.x..o\n....#\no##xo\no...o", "solution": null, "score": 0}, {"index": 66, "name": "orlan", "clue": "#....\n....#\noo#o#\no...x\n##x.#", "solution": null, "score": 0}, {"index": 67, "name": "orlan", "clue": "#o#x.\no.##.\n##.x.\n.xo##\n..o#.", "solution": null, "score": 0}, {"index": 68, "name": "orlan", "clue": ".....o\no...#.\no.#...\n.o#...\nx.x.#.\nx#o...", "solution": null, "score": 0}, {"index": 69, "name": "orlan", "clue": ".#xox\n.oo##\n..#ox\n..#.#\n#...#", "solution": null, "score": 0}, {"index": 70, "name": "orlan", "clue": "...#.o\n......\n..###x\n..o..#\n#.xox.\n..#.#.", "solution": null, "score": 0}, {"index": 71, "name": "orlan", "clue": "#ox.#.\no.x.##\n.o#...\n#o#ox.\n.#.#..", "solution": null, "score": 0}, {"index": 72, "name": "orlan", "clue": "ox#..#\n......\n###o..\n#..#.o\nx.#...\nx#o...", "solution": null, "score": 0}, {"index": 73, "name": "orlan", "clue": "..x...\nx....#\no##..o\n..o#.#\n.....#\n.#ox#x", "solution": null, "score": 0}, {"index": 74, "name": "orlan", "clue": "...#..\nx..o..\n.##x.#\n......\n.oxo#.\n..#...", "solution": null, "score": 0}, {"index": 75, "name": "orlan", "clue": "##.x.#\nxoo...\n##....\n##..o.\nxo#...", "solution": null, "score": 0}, {"index": 76, "name": "orlan", "clue": "#.#.#\n.o.x.\nx#o#x\n#.x##\n#.oo#\n...o.", "solution": null, "score": 0}, {"index": 77, "name": "orlan", "clue": ".#..x.\n.o#o..\n.##o..\n...#.o\n...x#o", "solution": null, "score": 0}, {"index": 78, "name": "orlan", "clue": "#..x..\n.....#\n......\n.#oo#x\n..oo..", "solution": null, "score": 0}, {"index": 79, "name": "orlan", "clue": "x.....\n......\n.o....\n...o#.\n##.#oo\n.o..x#", "solution": null, "score": 0}, {"index": 80, "name": "orlan", "clue": "x.#ox#\n..o...\n..o...\n..##..\n.o..#.\n.....o", "solution": null, "score": 0}, {"index": 81, "name": "orlan", "clue": "o#..o\noox.#\n#...#\nxx#.#\n..#ox", "solution": null, "score": 0}, {"index": 82, "name": "orlan", "clue": ".#..#.\n.#...o\n.x#.xo\no..##.\n.o..#.\n..#...", "solution": null, "score": 0}, {"index": 83, "name": "orlan", "clue": "...#.o\n#...#o\n..#..o\n#.x##.\nxo.#..\nxo#x.#", "solution": null, "score": 0}, {"index": 84, "name": "orlan", "clue": "..o..#\no..#o#\n.x..oo\n..#.#x\n..#o.x", "solution": null, "score": 0}, {"index": 85, "name": "orlan", "clue": ".xo#..\noxxo##\n.#....\n#o....\nx##.o.", "solution": null, "score": 0}, {"index": 86, "name": "orlan", "clue": ".....\n#o.##\n..oo.\n.o.x.\n..x##\no###.", "solution": null, "score": 0}, {"index": 87, "name": "orlan", "clue": ".o....\n..##..\no...ox\n##x.#.\n..o..x", "solution": null, "score": 0}, {"index": 88, "name": "orlan", "clue": ".#ox##\n.o..#.\n..##ox\n#...o.\no#xo#.", "solution": null, "score": 0}, {"index": 89, "name": "orlan", "clue": ".o#.xo\nooo...\n..#.x.\n....#.\n##..#.", "solution": null, "score": 0}, {"index": 90, "name": "orlan", "clue": "x.....\nox##..\n#o#...\n.o#.#.\n.ox.o#\n..##x.", "solution": null, "score": 0}, {"index": 91, "name": "orlan", "clue": "o#.o.\n.x.#.\n..o#.\n.o##.\n##.xo", "solution": null, "score": 0}, {"index": 92, "name": "orlan", "clue": "......\n#.....\n...#..\no.o...\nx#o#..\n#x.#..", "solution": null, "score": 0}, {"index": 93, "name": "orlan", "clue": "o#o..\n....o\n#.xo#\nx##.x\n..#.#", "solution": null, "score": 0}, {"index": 94, "name": "orlan", "clue": ".o.#.\n..o..\no##x.\n...#o\n##x#.", "solution": null, "score": 0}, {"index": 95, "name": "orlan", "clue": "...o.#\n....oo\n.#.#ox\n#.x###\n#xoo.#", "solution": null, "score": 0}, {"index": 96, "name": "orlan", "clue": ".xo#..\n......\n.#.x.x\n.#.#..\n.xo#o#\n......", "solution": null, "score": 0}, {"index": 97, "name": "orlan", "clue": "#.x##\nxo...\n#.#..\n#.o..\n.o...", "solution": null, "score": 0}, {"index": 98, "name": "orlan", "clue": "ox.#..\n.#o...\n.##.#.\n.o#.x.\n....##\n....#.", "solution": null, "score": 0}, {"index": 99, "name": "orlan", "clue": ".#....\n......\n.x##..\n.o.#..\n..o#.x\no.....", "solution": null, "score": 0}, {"index": 100, "name": "orlan", "clue": "...o#.\n#x#.x#\n..#.xo\n.#o..#\n....#.\n....#.", "solution": null, "score": 0}, {"index": 101, "name": "orlan", "clue": "##o#..\n#oxx##\n......\n.x.#..\n.o#o..\n#ox.#.", "solution": null, "score": 0}, {"index": 102, "name": "orlan", "clue": "#x##..\n#.x.#.\n##o...\n.o#...\n....#.\n.x.#ox", "solution": null, "score": 0}, {"index": 103, "name": "orlan", "clue": "ox.#.#\n#o.#ox\n##x#o.\n...o.#\n..#...", "solution": null, "score": 0}, {"index": 104, "name": "orlan", "clue": "o.o..\n#xo.#\nx.x#o\nxo#.#\n.#...", "solution": null, "score": 0}, {"index": 105, "name": "orlan", "clue": ".x.#..\n.#....\n.oo...\n..x...\n......\n....#o", "solution": null, "score": 0}, {"index": 106, "name": "orlan", "clue": "x##o.\n#.x##\no..#.\no...x\no....\n...#.", "solution": null, "score": 0}, {"index": 107, "name": "orlan", "clue": "#x.#..\noo....\n##..o#\n..#.#.\n#.x.#.\n#ox.#.", "solution": null, "score": 0}, {"index": 108, "name": "orlan", "clue": ".##.x#\n..o.#.\n..o.#.\no.x..#\n#.xo#.", "solution": null, "score": 0}, {"index": 109, "name": "orlan", "clue": "#x..#.\n.#.#.o\n.#o...\n.xo#..\n......", "solution": null, "score": 0}, {"index": 110, "name": "orlan", "clue": "x#....\n##o...\n#.....\nxx###o\n.#oo..", "solution": null, "score": 0}, {"index": 111, "name": "orlan", "clue": ".o..x.\n..o...\n...ox#\n....o.\n....#.\no#....", "solution": null, "score": 0}, {"index": 112, "name": "orlan", "clue": "ox#o.\n#.x.#\n.#..#\n#.#ox\n..oo.", "solution": null, "score": 0}, {"index": 113, "name": "orlan", "clue": ".oo#o.\nooox.#\n.#.o##\n.x.#.#\n..##xx", "solution": null, "score": 0}, {"index": 114, "name": "orlan", "clue": ".oo...\no.o#..\n..#ox.\n.#.x##\n..x.#o\n...#..", "solution": null, "score": 0}, {"index": 115, "name": "orlan", "clue": "##oo.\n..#o#\nx.#..\n#....\n#.#.x\nxo#..", "solution": null, "score": 0}, {"index": 116, "name": "orlan", "clue": "..ooo.\n.o..x#\n.....#\n....x.\n......\n..#o..", "solution": null, "score": 0}, {"index": 117, "name": "orlan", "clue": "#....o\n.o..o#\n..#.x#\n.....o\n....#.\n..x..#", "solution": null, "score": 0}, {"index": 118, "name": "orlan", "clue": ".....\n#....\n#ox..\nx.oo.\noooo#", "solution": null, "score": 0}, {"index": 119, "name": "orlan", "clue": ".o.x#\no....\n.#xx#\n..o.#\n.oo#.\n..#.x", "solution": null, "score": 0}, {"index": 120, "name": "orlan", "clue": "##o...\nx##..o\n.x.#..\no#x.#.\no#..ox\n..#...", "solution": null, "score": 0}, {"index": 121, "name": "orlan", "clue": "###..#\n..o.#.\n.#.#xx\n.#.x.o\n...o##", "solution": null, "score": 0}, {"index": 122, "name": "orlan", "clue": "..#...\n.##xx#\n#.x.o.\n..#.o.\n..o.#.\n..oo#.", "solution": null, "score": 0}, {"index": 123, "name": "orlan", "clue": ".#...o\n......\n#x.#.x\n.#.o.#\n.#..#o\n...#oo", "solution": null, "score": 0}, {"index": 124, "name": "orlan", "clue": "#.x.x\no.#.o\n..oo#\n.....\n...x.\n....#", "solution": null, "score": 0}, {"index": 125, "name": "orlan", "clue": "...o..\n..x.x.\n...#..\n#.o#..\n..o..o\nx##x##", "solution": null, "score": 0}, {"index": 126, "name": "orlan", "clue": "#o#..\n#o#..\n#..x.\nx.#..\n.#xo.", "solution": null, "score": 0}, {"index": 127, "name": "orlan", "clue": "..#oo.\n..oo..\n..#.#.\n.x.#..\n#..#x#", "solution": null, "score": 0}, {"index": 128, "name": "orlan", "clue": ".....\n..x..\n..o..\n..#..\n..##x\no.o.o", "solution": null, "score": 0}, {"index": 129, "name": "orlan", "clue": "#xo...\no.....\n##...x\nx.#o#.\n#xo#o.", "solution": null, "score": 0}, {"index": 130, "name": "orlan", "clue": "x###oo\nx#ox..\n#.o...\n#..#..\n#o...x", "solution": null, "score": 0}, {"index": 131, "name": "orlan", "clue": "#.#o#\n...o.\nxxx.#\nxo##.\n..oo#", "solution": null, "score": 0}, {"index": 132, "name": "orlan", "clue": "#x.o..\n.x.#..\no..o..\n.o#x##\n......\n..##x#", "solution": null, "score": 0}, {"index": 133, "name": "orlan", "clue": "o...#o\n..##o#\nx.#.#.\n#.#o..\nx###..\n##x.o.", "solution": null, "score": 0}, {"index": 134, "name": "orlan", "clue": ".#o..\n..#.#\n.o##x\n..#..\n..#.#\n#ox.#", "solution": null, "score": 0}, {"index": 135, "name": "orlan", "clue": "....x\n.....\no#oo#\n.#...\nox...", "solution": null, "score": 0}, {"index": 136, "name": "orlan", "clue": ".#o..\n.#o#.\n...oo\n.#xx.\n##x.o", "solution": null, "score": 0}, {"index": 137, "name": "orlan", "clue": ".x#x.o\n#o.#.x\no#...#\n#..o.#\n......\n....o.", "solution": null, "score": 0}, {"index": 138, "name": "orlan", "clue": "......\n#..##o\n......\nxo#x##\no.oo#.\n##.#..", "solution": null, "score": 0}, {"index": 139, "name": "orlan", "clue": "..x.#\n....#\no.#.x\n#o#.x\n.xo##\n..o.#", "solution": null, "score": 0}, {"index": 140, "name": "orlan", "clue": ".....\n.#o#.\n.o#..\n.x..#\n...##\n.##ox", "solution": null, "score": 0}, {"index": 141, "name": "orlan", "clue": ".x.#..\n..##..\n.#o#.o\n##oxo#\n..#xo#", "solution": null, "score": 0}, {"index": 142, "name": "orlan", "clue": "#....\n.o..#\nxx#.#\n.oo..\noox.#", "solution": null, "score": 0}, {"index": 143, "name": "orlan", "clue": ".#.#.\n.o...\n#x..#\n.#..o\nxx#o.\n.#ooo", "solution": null, "score": 0}, {"index": 144, "name": "orlan", "clue": "##x.#\n..#ox\n..###\n...o#\nxox#o\n.#o..", "solution": null, "score": 0}, {"index": 145, "name": "orlan", "clue": "...o.x\n.x.##o\n.#..oo\n.#.#o.\n.##.x#\nox.#..", "solution": null, "score": 0}, {"index": 146, "name": "orlan", "clue": "..#..\n#o.xx\n#.xo#\n.#.o#\n.o##o", "solution": null, "score": 0}, {"index": 147, "name": "orlan", "clue": "#..x..\n..#o..\nx.#o#.\n#...oo\no.##x.\n......", "solution": null, "score": 0}, {"index": 148, "name": "orlan", "clue": "o....o\n.....o\n.xo##.\no....#\n.#.x##\n...##x", "solution": null, "score": 0}, {"index": 149, "name": "orlan", "clue": "..#...\n#.xox.\n#.....\n..##..\n.oo...", "solution": null, "score": 0}, {"index": 150, "name": "orlan", "clue": "...#..\n#ox##.\n##.x.#\n.oo...\n...#..\n......", "solution": null, "score": 0}, {"index": 151, "name": "orlan", "clue": "..o..\n.x##o\nox.#.\n##...\nox.o.", "solution": null, "score": 0}, {"index": 152, "name": "orlan", "clue": "...##.\n...o..\n.#.x.#\n..#..#\n#.x###\n.#ooo.", "solution": null, "score": 0}, {"index": 153, "name": "orlan", "clue": "...#ox\n..#..#\n...#x#\n....o.\n.o#.#.\n.#..#.", "solution": null, "score": 0}, {"index": 154, "name": "orlan", "clue": ".o.#x.\n..o.#.\n..#.x#\nx.....\n.oo.#.", "solution": null, "score": 0}, {"index": 155, "name": "orlan", "clue": ".....x\n.#.#..\n.#.o#o\n.o.o..\n.x#.x.\n##ox#.", "solution": null, "score": 0}, {"index": 156, "name": "orlan", "clue": "..##x\n..ooo\n#.#.#\n.....\nxox.#\n#....", "solution": null, "score": 0}, {"index": 157, "name": "orlan", "clue": "......\n.....#\n.....#\n..x.#.\n..o...\no.##xo", "solution": null, "score": 0}, {"index": 158, "name": "orlan", "clue": "x#..#.\n#..##x\n#xoo.o\n.#.ox#\n.#.o#.", "solution": null, "score": 0}, {"index": 159, "name": "orlan", "clue": "....#\noxo#.\n##o..\n#o...\nxx.o#", "solution": null, "score": 0}, {"index": 160, "name": "orlan", "clue": ".o..#\noo#..\n.o...\n#.x##\n.x...\no.#..", "solution": null, "score": 0}, {"index": 161, "name": "orlan", "clue": ".x.o..\n.x.#..\n.#.#..\n.#oo..\n.x#x.#", "solution": null, "score": 0}, {"index": 162, "name": "orlan", "clue": "#...#.\nxo###x\nxo#o..\n##...#\n#.....\n....o.", "solution": null, "score": 0}, {"index": 163, "name": "orlan", "clue": ".x...o\n....#o\n..#o..\n..##x.\n.o.#..\nx..o#.", "solution": null, "score": 0}, {"index": 164, "name": "orlan", "clue": "#.....\n#.....\nx.##..\no.....\n#.#x.o\n.o##..", "solution": null, "score": 0}, {"index": 165, "name": "orlan", "clue": "..x.o.\n....o#\n..x...\n...#.x\n....o#\n....#o", "solution": null, "score": 0}, {"index": 166, "name": "orlan", "clue": "..o...\n.##x.o\n..x#o.\n.###..\n..o#..", "solution": null, "score": 0}, {"index": 167, "name": "orlan", "clue": "....#.\n#x##x.\no.....\n.##.x.\n..#.o#\n##xoo.", "solution": null, "score": 0}, {"index": 168, "name": "orlan", "clue": "##xx#\noo...\n..#.o\n...#.\n#.x.x\n.....", "solution": null, "score": 0}, {"index": 169, "name": "orlan", "clue": "#.xox#\no.#x.#\n.#o.#.\n.#.#oo\n.x.#..\n.#....", "solution": null, "score": 0}, {"index": 170, "name": "orlan", "clue": "....o\n...xo\n..#.#\n.o#.#\n.o#.x\n#ox#x", "solution": null, "score": 0}, {"index": 171, "name": "orlan", "clue": "x..#o.\n...oo.\n.x.x##\n.....#\no#.o.x", "solution": null, "score": 0}, {"index": 172, "name": "orlan", "clue": "##..o.\nx#o##.\nxoo.#.\nxo#ox.\n#.....", "solution": null, "score": 0}, {"index": 173, "name": "orlan", "clue": "#....\n....o\n##o..\no.o.x\nx.#o#\n#.#.#", "solution": null, "score": 0}, {"index": 174, "name": "orlan", "clue": "x.#...\n#.o#..\n##o...\n#o.x..\n.#o...\n...x..", "solution": null, "score": 0}, {"index": 175, "name": "orlan", "clue": "....x\nox.x.\no....\no#.x.\n#o#..\n.#..o", "solution": null, "score": 0}, {"index": 176, "name": "orlan", "clue": "...o..\n#...oo\n#..o#.\n#.....\nxo#x.#\n..##x#", "solution": null, "score": 0}, {"index": 177, "name": "orlan", "clue": "o.o..\n#...#\n.##ox\n..#.x\n..o..\nx.##x", "solution": null, "score": 0}, {"index": 178, "name": "orlan", "clue": "x.#..#\n....o.\n...##x\n......\n...o.x\n...o..", "solution": null, "score": 0}, {"index": 179, "name": "orlan", "clue": "##x.#.\n..o...\n#.#o..\n##....\nxo#...\n#o...#", "solution": null, "score": 0}, {"index": 180, "name": "orlan", "clue": "...##x\n...o.#\n..#..#\n#ox.#.\n.#....\n.o#...", "solution": null, "score": 0}, {"index": 181, "name": "orlan", "clue": "..x.#.\n.oo#.#\n..##x.\n...o#.\n#..x##\n...o..", "solution": null, "score": 0}, {"index": 182, "name": "orlan", "clue": "#....o\n...#.o\nx##..#\n#....#\n#...#x\n..oo..", "solution": null, "score": 0}, {"index": 183, "name": "orlan", "clue": "o.....\nx.#.#.\n#..#.o\n#o....\n.#.x##\n......", "solution": null, "score": 0}, {"index": 184, "name": "orlan", "clue": "ox.#..\n.#.x.#\n...oo#\n...##.\n...#..\no....o", "solution": null, "score": 0}, {"index": 185, "name": "orlan", "clue": "x.#ox#\no#o#..\no#.x##\n.#.o#.\n...#..", "solution": null, "score": 0}, {"index": 186, "name": "orlan", "clue": "....o\no.#.x\n.##.#\n...o#\n#xx##\noo...", "solution": null, "score": 0}, {"index": 187, "name": "orlan", "clue": "o...o.\n.o..oo\n..#..x\n..#...\n.....x\n...x..", "solution": null, "score": 0}, {"index": 188, "name": "orlan", "clue": ".x.o..\n..x.#.\n....#.\n.o#.x.\n#..#o.\n...o..", "solution": null, "score": 0}, {"index": 189, "name": "orlan", "clue": "..o.#.\n..#x.x\n..##x.\n..xo##\n#o#.#.\noo#...", "solution": null, "score": 0}, {"index": 190, "name": "orlan", "clue": ".#..#.\n#ox...\n##....\no.....\nxo.#..\noo..x.", "solution": null, "score": 0}, {"index": 191, "name": "orlan", "clue": ".....\n..##o\no...#\n#.x#o\n.o#xx", "solution": null, "score": 0}, {"index": 192, "name": "orlan", "clue": "#.x#.x\n..#..#\n..#oo#\nx..#o.\n....o.", "solution": null, "score": 0}, {"index": 193, "name": "orlan", "clue": ".#oo#.\n..#oo.\nx##..#\no.x.#.\n#.#...", "solution": null, "score": 0}, {"index": 194, "name": "orlan", "clue": ".#.o.#\n.#.#.x\n.x.oo.\n##.xo#\n.#.oo#\n...#..", "solution": null, "score": 0}, {"index": 195, "name": "orlan", "clue": "..o#..\n.x.o..\n.x.#..\n.#....\n.##..o", "solution": null, "score": 0}, {"index": 196, "name": "orlan", "clue": "......\n.#...o\n....#.\n.#....\noo#.x.\n.x..##", "solution": null, "score": 0}, {"index": 197, "name": "orlan", "clue": "#...o\n...x.\n#..o#\no....\nx##.x", "solution": null, "score": 0}, {"index": 198, "name": "orlan", "clue": "ooo..\n#..o.\nx.#..\n.....\n#ox##", "solution": null, "score": 0}, {"index": 199, "name": "orlan", "clue": "ox.o#.\n##....\nx.#.o.\n##.x..\no.o...\n.x....", "solution": null, "score": 0}, {"index": 200, "name": "orlan", "clue": "##.##\nx##..\n.x.oo\n#x.#.\n.oox.\n.#...", "solution": null, "score": 0}, {"index": 201, "name": "orlan", "clue": "....#.\n.x.oo.\n#.#x..\no#.x.#\no...#.\n..##x.", "solution": null, "score": 0}, {"index": 202, "name": "orlan", "clue": "..#o#\n...#.\nx##..\n#o##.\n#....\nx#xxo", "solution": null, "score": 0}, {"index": 203, "name": "orlan", "clue": ".o#..\n#o#.o\n.##..\n#.xo#\n..#..\n..xx#", "solution": null, "score": 0}, {"index": 204, "name": "orlan", "clue": "......\n#.....\n#....#\nx##.o#\n.o.#ox\n..#o#.", "solution": null, "score": 0}, {"index": 205, "name": "orlan", "clue": ".ooo.\n##.xo\n#.##x\n...#.\n...##\n..x..", "solution": null, "score": 0}, {"index": 206, "name": "orlan", "clue": ".#....\nxo#..#\n#...x.\n...#o#\n.#o.#.", "solution": null, "score": 0}, {"index": 207, "name": "orlan", "clue": ".ooo#.\n.###..\n#o...x\n#xx.#.\n.....o", "solution": null, "score": 0}, {"index": 208, "name": "orlan", "clue": "#...##\nx...#o\nx.#.o#\n##.oxo\n#.....\n.##...", "solution": null, "score": 0}, {"index": 209, "name": "orlan", "clue": "o.#..\n..#o.\n#.x.#\n..xoo\nx###o", "solution": null, "score": 0}, {"index": 210, "name": "orlan", "clue": "#.x##\nxx##o\n..#..\no....\n#o...\n#....", "solution": null, "score": 0}, {"index": 211, "name": "orlan", "clue": "#.x##.\n..#.#x\n..#o.o\n.....#\nx.....\n.x.o..", "solution": null, "score": 0}, {"index": 212, "name": "orlan", "clue": "xo.ox\n#....\n#....\n....#\no...#", "solution": null, "score": 0}, {"index": 213, "name": "orlan", "clue": "oo#..\n#.#o.\n#xo..\n#.xo#\n.#...\n.##..", "solution": null, "score": 0}, {"index": 214, "name": "orlan", "clue": "..#ox\no#oo.\n.....\n..x.#\n.o...", "solution": null, "score": 0}, {"index": 215, "name": "orlan", "clue": ".#....\n#.x#o#\n....#o\n..###x\n.....o\n.....#", "solution": null, "score": 0}, {"index": 216, "name": "orlan", "clue": "o.....\n..x.o.\n#.....\noo.x..\nx..o.#\n#...#.", "solution": null, "score": 0}, {"index": 217, "name": "orlan", "clue": "...#o.\n#o.x..\n##.oxo\nx.#...\nx###..", "solution": null, "score": 0}, {"index": 218, "name": "orlan", "clue": "o...#.\n...#o.\n.#o##.\n#xo..#\n#ox...", "solution": null, "score": 0}, {"index": 219, "name": "orlan", "clue": "#x##..\n...o..\no..o.o\n...x..\n..o...\n.x.x..", "solution": null, "score": 0}, {"index": 220, "name": "orlan", "clue": "...o#\n.#.x#\n.xoo#\n.#.x#\no#o..", "solution": null, "score": 0}, {"index": 221, "name": "orlan", "clue": "...#.x\no#.x.#\n###x.#\no.oooo\nx##.##", "solution": null, "score": 0}, {"index": 222, "name": "orlan", "clue": "....oo\n.x.#..\n#.#o..\n..#...\n#.x.o.\n......", "solution": null, "score": 0}, {"index": 223, "name": "orlan", "clue": ".....x\n#.....\noo....\no..#.#\n#..#o#\nx##xox", "solution": null, "score": 0}, {"index": 224, "name": "orlan", "clue": ".....o\n#x##..\n..#..#\n#ox..o\n...##x\n.##oo.", "solution": null, "score": 0}, {"index": 225, "name": "orlan", "clue": ".oox#\n#o...\n..##o\nx##..\n.o...", "solution": null, "score": 0}, {"index": 226, "name": "orlan", "clue": ".x##.\n.#...\n.xo#o\n#....\no....\n..o..", "solution": null, "score": 0}, {"index": 227, "name": "orlan", "clue": "x.#.#\n#.#ox\n#..o.\n.x..#\n#oo..\n##.o.", "solution": null, "score": 0}, {"index": 228, "name": "orlan", "clue": "..oo#.\n#x.#.o\nxo#...\n.o#...\n#.....\n....x.", "solution": null, "score": 0}, {"index": 229, "name": "orlan", "clue": "......\n.###x#\n.#....\n.x#.#.\n....o.\n.##ooo", "solution": null, "score": 0}, {"index": 230, "name": "orlan", "clue": ".#..#o\n..#ox.\n......\no.#.#.\no.....\n#.x##.", "solution": null, "score": 0}], "rounds_used": 1, "next_round_available_at": 1788351279.5423849, "demo_available": true}}

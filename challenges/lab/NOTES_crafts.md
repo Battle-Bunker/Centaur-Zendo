@@ -170,3 +170,111 @@ so a scoring answer must interleave crossings that do **not** count.
 
 (Implementation, validation, self-tests and arena details are appended below as the
 iterations run.)
+
+---------------------------------------------------------------------------
+## velk v1 — implementation, validation and self-test (iteration 1)
+
+`challenges/lab/velk.json`.
+`python tools/quickcheck.py challenges/lab/velk.json --seeds 400`
+→ `OK velk  gen=0.08ms score=0.06ms solve=0.34ms`, **no warnings**.
+Sizes: **score 493/512**, solve 2233/5000, generate 167/50000; clue ≤ 8 chars;
+answers 7–43 rows, ≤ 489 chars.
+
+What a player sees (a real demo, clue `PYDGE|3`, tail):
+
+```
+P Y D G E
+| |  /  |
+P Y G D E
+ /  | | |
+Y P G D E
+| | |  /
+Y P G E D
+| |  \  |
+Y P E G D
+ \  | | |
+P Y E G D
+```
+
+Generator: 4/5/6 distinct capitals (uniform-ish 40/40/20) and `n` uniform in 2..6; every
+(strand set, n) pair in that range is satisfiable (checked exhaustively for K=4..5,
+n=2..8, 60 random letter sets each: 0 failures). `solve()` chooses the plait length at
+random and places the `n` counting crossings as a **uniformly random non-adjacent subset**
+of the positions (the standard gap bijection), so they are spread through the picture
+instead of clustering at the front, and every demo also shows the counted strand going
+**under** and **standing aside** — the two decoy families.
+
+### Adversarial self-test (1500 fresh clues, `$SCRATCH/velk/adv.py`)
+
+Hypotheses a player might hold, each solving *its own* version of the puzzle:
+
+| answer built from | scores 1 |
+|---|---|
+| **the exact rule, one-pass greedy — fairness floor** | **100.00 %** (0.03 ms/answer) |
+| right count + law 2 only (no same gap twice, but a strand may lead twice) | 21.80 % |
+| right count + law 1 only (no strand in front twice running) | 18.60 % |
+| "n = crossings where the LAST strand is in front" + both laws | 12.33 % |
+| both laws, count ignored | 9.67 % |
+| "n = crossings involving the 1st strand" + both laws | 8.87 % |
+| "n = crossings where the 1st strand goes UNDER" + both laws | 7.73 % |
+| "n = number of `\` marks" + both laws | 6.87 % |
+| right count, neither law | 3.33 % |
+| both laws + count, but `\` read as *right*-over (mark semantics inverted) | 2.80 % |
+| format only (legal-looking swaps, no laws, count ignored) | 0.47 % |
+| "n = number of crossings" (a plait of exactly n crossings) | **0.00 %** |
+| naive minimal witness: n crossings, the 1st strand in front every time | **0.00 %** |
+| best constant answer (60 candidates x 400 clues) | 0.25 % |
+| a demo answer replayed under the next clue | 0.00 % |
+| `""`, `" "`, `"0"`, `"x"`, `"1"*100`, `"0"*1024`, `"\n\n\n"`, `"?"*400`, the clue itself, the strand row alone, the strand row + one crossing row, that pair repeated 4x, 128 copies of a strand row, 128 copies of a crossing row, non-ASCII | 0.00 % |
+
+Nothing short of the exact rule reaches 22 %, and the 3–22 % band is a genuine gradient: a
+player who has found *the count* but neither law already sees 3 %, and each law found
+roughly doubles it, so there is something to climb — the failure mode that killed `orlan`
+(no signal at all until the whole law is right) does not apply here.
+
+The two 0.00 % rows are the ones the design is built around. **Law 1 makes the naive
+minimal witness impossible**: "make exactly `n` crossings and put the clue's strand in
+front every time" needs `n` consecutive crossings led by the same strand, which the law
+forbids for every `n >= 2`, so any scoring plait must interleave crossings that do not
+count and is at least `2n-1` crossings long.
+
+### Correctness and robustness
+* **Cross-check**: an independent re-implementation of the intended rule (written from the
+  prose, not from the 493-char scorer) agrees with the shipped scorer on **8400
+  (clue, answer) pairs** — reference answers plus 21 mutations each (mark flips, row
+  reversal, truncation, character substitutions, filler swaps, case changes, CRLF,
+  padding) — **0 disagreements**.
+* **Cosmetic tolerance**, 300/300 accepted for each of: trailing newline, trailing blank
+  lines, leading newline, CRLF, trailing spaces on every row, blank lines at both ends.
+  Leading indentation is *not* tolerated (deliberately strict; every demo shows the exact
+  layout).
+* **Junk**: never raises, never returns non-0/1, never scores 1. Worst single `score`
+  call over all junk and 1024-char inputs: **0.022 ms** (cap 50 ms).
+* `generate` is deterministic (checked by quickcheck over 400 seeds) and 0.08 ms.
+* End-to-end on the real engine (throwaway arena, torn down): pool loaded 1 accepted /
+  0 rejected, one 0.5 s round presents **634 velk challenges**, the default random
+  strategy scores **0/634**, and `player.py demo velk` returns a scoring plait.
+
+### Hardening dials held in reserve (if both players crack it early)
+1. **Narrow the count to a direction**: `n` = crossings where the clue's strand passes in
+   front **of a strand to its right** (mark `\` *and* it is the left one) — a LegoZendo-
+   style intersection of two conditions, with three decoy families instead of two.
+2. **Make law 1 per-strand**: every strand must alternate front/behind over the crossings
+   it takes part in (masonry-style, the analogue of murn's staggering) — this invalidates
+   whole families of placement policies rather than single moves.
+3. **Anchor the finish too**: require the bottom strand row to be a given permutation,
+   pushing the answer from "a legal walk of the right length" to "a legal walk that also
+   lands somewhere", at the cost of ~5 clue characters.
+
+### Softening dials (if neither player gets traction)
+1. Draw the counted strand's crossings with the strand's **letter** in the gap instead of
+   `\`/`/` — the quantity then reads straight off the page (the `orlan` post-mortem's
+   option (b)), leaving all the difficulty in the two laws.
+2. Drop law 2, or lengthen `solve()`'s plaits so the laws are easier to see as invariants.
+
+### Iteration-1 arena status
+Arena `lab-velk-1` is set up and the server is **running**; the Agent tool for spawning
+player agents is not available in this designer session, so per the `sim/DESIGN_LOOP.md`
+fallback the loop stops after step 3. Everything the orchestrator needs (team directories,
+filled-in briefs, teardown/report commands, and how to read the resulting hit-rates) is in
+`sim/results/lab-velk-1/HANDOFF.md`.

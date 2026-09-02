@@ -175,8 +175,11 @@ class Connection:
         key = (data.get("round_id"), data.get("index"))
         fut = self.pending.get(key)
         if fut is None or fut.done():
-            if data.get("round_id") == getattr(self, "last_round_id", None):
-                return  # SPEC §5: a late message for this team's latest round is ignored silently
+            rnd = self.round
+            round_over = rnd is None or getattr(rnd, "finished", False) or getattr(rnd, "aborted", False) \
+                or rnd.expired()
+            if round_over and data.get("round_id") == getattr(self, "last_round_id", None):
+                return  # SPEC §5: a message arriving after the deadline is ignored silently
             asyncio.ensure_future(
                 self.error("stale", "no challenge is waiting for that (round_id, index)")
             )

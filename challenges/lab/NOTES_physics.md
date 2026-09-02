@@ -119,3 +119,77 @@ teams are in `sim/results/lab-murn-1/BRIEF_murna.md` and `BRIEF_murnb.md`.
 An end-to-end smoke run (separate throwaway arena, torn down; logs in
 `sim/results/lab-murn-smoke/`) confirmed a 0.5 s round presents **445 murn challenges**, the
 default random strategy scores **0/445**, and `player.py demo murn` returns a scoring example.
+
+---
+
+## Iteration 1 result and the v2 hardening
+
+Both players cracked v1, but late: murnb in round 5 (4 demos), murna in round 6 (6 demos);
+finals 3416/3416 and 2669/2669. Neither found a degenerate witness — both needed the real
+rule, which is the important part. Both converged on the *same abstraction*: **count the
+occupied cells in the 3-cell window below, untyped**, plus "total `#` == n". murnb's notes
+record the exploit that made the quota free: *"an adjacent pair of filled cells is
+self-sustaining (2 `#` per level forever), so an unlimited number of `#` can always be
+stacked"* — so the second clause cost them nothing once the first was found.
+
+**v2 = one notch, two coupled changes** (v1 kept as `murn.v1.json`):
+
+1. **The support law becomes material-typed** — *nothing may rest directly on its own kind*
+   (staggered joints, masonry running bond). A stone still needs exactly two of the three
+   cells below occupied and wood exactly one, but a stone may not sit directly on a stone,
+   nor wood directly on wood. This is the change aimed at both winning methods: murna's
+   constraint propagation ran over **occupancy** windows (8 contexts x 2 glyphs = 16
+   classes); legality now depends on *which material* is directly underneath (27 contexts
+   x 2 glyphs = 54 classes), so their labelled data does not merely become sparse, their
+   abstraction becomes *contradictory* — the same occupancy context is legal or illegal
+   depending on a variable they were not modelling. murnb's factorial over five placement
+   policies is defeated the same way: every policy in that family is now wrong. It also
+   kills the self-sustaining `##` column outright (a stone may no longer stand on a stone),
+   so quotas must be built by bridging gaps and the pictures visibly zig-zag.
+2. **`n` counts only the stones ABOVE the ground row.** Cheap, but it costs a demo/probe
+   cycle: the natural "total stones" reading (which murna took until demo 4 to settle) now
+   fails, and it keeps the ground-row-alone witness closed for free.
+
+Rejected hardening dials, with reasons:
+* *third material with its own support count* (coordinator's suggestion B): it multiplies
+  the context table by less than the material-typed windows do (24 classes vs 54) **and it
+  adds slack** — 3-support positions become usable, which makes construction easier and
+  removes the "over-braced is illegal" counter-prior for one glyph. Strictly worse.
+* *exactly one topmost cell* (coordinator's suggestion A, strict reading "nothing directly
+  above"): provably unsatisfiable. If every occupied cell except one must have an occupied
+  cell directly above it, each non-empty column's occupied cells run contiguously to the top
+  of that column and each non-empty column therefore contributes exactly one topmost cell —
+  so "exactly one" forces exactly one non-empty column, contradicting a ground row with
+  occupied cells in several columns.
+* *exactly one summit* (the 3-cells-above reading): satisfiable, but it couples every row to
+  every other (each row must cover the row below and the whole picture must narrow to one
+  cell), which turns the post-insight task into backtracking search. The final is 3 s for
+  ~2700 items, so a cracked player must answer in ~1 ms; this would make "cracked" score
+  badly and would move the difficulty from insight to search, against the loop's rule.
+
+### v2 validation and self-test
+`quickcheck --seeds 200` → `OK murn gen=0.22ms score=0.08ms solve=2.15ms`, no warnings.
+Score 465/512 chars. Over 5000 seeds: no solve failures, no generator fallbacks, clue ≤ 19
+chars, worst solve 11.8 ms, answers ≤ 12 rows. Quotas now 3–25 stones above the ground
+(median ~7).
+
+Hypothesis hit rates over 1500 clues (`$SCRATCH/murn2/adv2.py`):
+
+| what the player believes | scores 1 |
+|---|---|
+| the exact v2 law, one-pass greedy — **fairness floor** | **100.00 %** |
+| v1's winning solver verbatim | 0.13 % |
+| v1 law + v2 quota (only the quota change found) | 2.00 % |
+| v2 law + v1 quota (only the support change found) | 1.60 % |
+| staggering found, but "at least two / at least one" | 19.67 % |
+| "no stone on stone" only (wood unrestricted) | 17.40 % |
+| "no wood on wood" only (stone unrestricted) | 5.73 % |
+| "it rests on the cell directly below" | 0.07 % |
+| ground row alone / solid pyramid / wood-only tower / recolourings / upside down / off-by-one / ground row repeated / empty / clue / 1024-char junk | 0.00 % |
+
+The 17–20 % band is deliberate: it gives a player who has most of the law a visible gradient
+to climb, while nothing short of the exact law gets near 90 %. Cosmetic tolerance unchanged
+(trailing/leading blank lines, CRLF, spaces as air, trailing spaces, ragged right edges: all
+300/300). Worst single `score` call on junk: 0.071 ms.
+
+Arena `lab-murn-2` is set up and running; see `sim/results/lab-murn-2/HANDOFF.md`.

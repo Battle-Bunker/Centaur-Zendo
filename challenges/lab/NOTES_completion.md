@@ -105,7 +105,7 @@ partial-credit gradient.
 So a team that has the rule can answer at full round speed (ceiling 100%), a team that misses only the
 alphabet-order clause sees a small non-zero signal, and a team that misses the chirality sees nothing.
 
-### Arena handoff (iteration 1) — players not run by me
+### Arena handoff (iteration 1) — set up here, players run by the coordinator
 No Agent/Task tool is available in this session (only `mcp__Claude_Code_Remote__create_session`, which puts a
 sibling in a *different container* with no route to the arena's localhost port and with the repo visible —
 unusable for a confidential player run), so per DESIGN_LOOP step 4 the loop stops after step 3.
@@ -125,3 +125,46 @@ The arena is already set up and live:
 3. Move the seed off line 1: require the clue to appear as a *vertical* run in column 1, so the demo no
    longer displays the clue as a readable word.
 4. Soften instead (if neither cracks it): drop the isolation clause, or make `solve` emit one component only.
+
+## Iteration 1 — RESULTS (`sim/results/lab-OKRIN-1`, 2 Opus centaur players)
+6 training rounds × 0.5 s, 5 s cooldown, 1 demo/window, 3 s final; pool = OKRIN alone (so both players
+could spend all six demos on this one class — a harder test than a 32-class pool).
+
+| team | r1 | r2 | r3 | r4 | r5 | r6 | final | outcome |
+|---|---|---|---|---|---|---|---|---|
+| OKRINa | 0/610 | 0/457 | 10/597 | 447/449 | 444/445 | 444/449 | **2685/2685 = 100%** | **cracked**, round 4, 3 demos |
+| OKRINb | 0/0 | 0/462 | 0/474 | 0/454 | 0/442 | 149/379 | **2767/3804 = 73%** | **partial** |
+
+**What OKRINa believed** (from its `strategy.py` docstring): exactly the intended rule — right neighbour =
+successor, below = predecessor, "the clue letter of alphabetical rank k (1-based) occurs exactly k+1 times",
+no isolated letter — plus two extra beliefs that cost it nothing: "the clue appears as a contiguous
+horizontal run" (implied by the seed clause) and "no fully enclosed blank cell" (superstition; the scorer
+never checks it). It shipped one precomputed grid template per rank-permutation. It reported the seed clause
+as the last one isolated, only in rounds 5–6 from residual near-misses: *"invisible until you're already
+at 99%."*
+
+**What OKRINb believed**: the alphabetical-rank counts and the Toeplitz law `g[r][c] = clue[(c-r) % n]` —
+i.e. both halves of the local law — but never the seed clause as a rule. Instead it learned, from 226
+labelled round-6 answers, a GOOD/BAD lookup table of *which grid width mod n is accepted* per
+rank-permutation (that width is exactly what decides whether row 0 starts at `clue[0]`). Final accuracy
+tracked table coverage: n=3 100%, n=4 79%, n=5 53%. It also flagged the decoy non-clue capitals in demos as
+a suspected bug — they are intended noise (lever 4), they did prevent a template leak, and they cost it
+analysis time; worth an organiser FAQ line rather than a change.
+
+**Design property to preserve (OKRINb's stated failure mode).** Three stacked clauses that each score 0
+alone means there is *no partial-progress signal* until everything is right at once: OKRINb had the count
+clause exactly right in round 5 and still scored 0/442. That is precisely what makes the class hard, and it
+is why the ~5% alphabetical-clue coincidence (the only built-in gradient) matters — keep both.
+
+**Decision: no iteration 2, rule frozen.** `generate`/`solve`/`score` are byte-identical to the version the
+players faced (sha1 prefixes 1f36467340a7 / 44e54286b54f / f4d1a0b7044a); only the private `description`
+gained the measured iteration-1 record. Re-validated after the edit:
+`quickcheck --seeds 200` ⇒ `OK gen=0.04ms score=0.07ms solve=6.45ms`.
+The reserve hardening levers above were deliberately NOT applied: one player cracking cleanly and one
+stalling at 73% is the target band, and every lever would move an untested rule.
+
+**Final classification: ON TARGET.** Evidence: cracked/partial split across two equally-briefed Opus
+players; 3 demos and 4 rounds to crack (LegoZendo, the "hard" benchmark, took 3–4 demos in a 32-class pool
+— OKRIN matched that while being the *only* class competing for demos); the ceiling is reachable at full
+round speed (OKRINa answered 449 items in 0.5 s at 100%); and the two independent clauses each produced a
+distinct, diagnosable failure mode rather than an opaque zero.

@@ -159,3 +159,107 @@ team orlana  $SCRATCH/lab-orlan-1/players/orlana
 team orlanb  $SCRATCH/lab-orlan-1/players/orlanb
 teardown     python sim/arena.py teardown --run lab-orlan-1 && python sim/arena.py report --run lab-orlan-1
 ```
+
+---------------------------------------------------------------------------
+## Iteration 1 RESULT (players run by the orchestrator) - both PARTIAL, neither cracked
+
+| team | r1..r6 correct/answered | final | rule they believed |
+|---|---|---|---|
+| orlana | 4/168, 23/255, 36/267, 77/242, 63/214, 77/238 | 422/1304 = **32 %** | "an `o` hops along a line to the FIRST EMPTY cell, passing over anything" |
+| orlanb | 1/201, 10/247, 11/246, 28/237, 45/207, 71/215 | 388/1357 = **29 %** | "put an `o` on any empty cell in its own row/column" |
+
+Both spent all 6 demos, both shipped learned rankers (37 and 45 after-state features), and
+**neither reached the step-length law**. orlana even tested "immobilise an `x`" as the goal
+and rejected it - because they evaluated enemy mobility under the wrong movement law. The
+goal was never reachable while the law was wrong, because the goal *reuses* the law.
+
+### Root cause (measured after the fact)
+**67.4 % of v1 winning moves land on the first empty cell along their ray.** Every winner
+at distance 1 does so by definition, and distance 1 was 53 % of v1 winners. So the naive
+"hop to the first empty cell" model was consistent with two thirds of every confirmed
+answer and survived ~2,700 probes and 6 demos intact. My iteration-1 hypothesis-fitter had
+the true law in its 216-law space and so never noticed that the *naive* law was almost as
+good a fit as the true one.
+
+---------------------------------------------------------------------------
+## Iteration 2 - `challenges/lab/orlan.json` (v2; v1 preserved as `orlan.v1.json`)
+
+### What changed (softened, per DESIGN_LOOP step 7)
+1. **The naive law is now impossible.** Every winning move flies over **at least one empty
+   square**: measured **0.0 %** of winners land on the first empty cell along their ray
+   (v1: 67.4 %). Winner length is **2 (61 %) or 3 (39 %)**, never 1, so "it steps to a
+   neighbour" is out as well. And **33.6 %** of winners also fly over an *occupied* square,
+   which kills the next fallback, "the path must be clear".
+2. **The rim clause is gone.** v1 counted off-board as an occupied neighbour; v2 counts
+   only real pieces (`o`, `x`, `#`). The step length is now readable straight off the
+   picture - count the pieces touching the mover - instead of needing a second insight.
+3. The goal is unchanged: **after your move no `x` may have a legal move.** (The good part.)
+
+Generation had to change to support this: the un-move now *pads the origin with blocks*
+until its neighbour count is exactly the intended leap length, instead of waiting for a
+random position to have one. A per-seed target length (2 or 3) and path mode (clear /
+flies over a piece) keeps the demo set varied; a greedy augmentation step adds pieces so
+that ~5 *other* legal moves also fly over empty ground, otherwise "the one that leaps over
+a gap" would itself have been a free 37 % answer.
+
+### Validation
+`python tools/quickcheck.py challenges/lab/orlan.json -v` -> **OK, no warnings**
+(`gen=11.2ms score=0.09ms solve=0.12ms`); `--seeds 200` -> OK (`gen=13.8ms`).
+Over 3000 seeds: generate mean **4.2 ms**, p99 12.4 ms, max 38.5 ms (cap 100, warn at 50);
+throughput on the live engine is therefore close to v1's (v1 delivered 261 clues per 0.5 s
+round). Sizes: generate 7424, solve 883, **score 503 / 512**.
+
+### Self-tests (fresh seeds, `$SCRATCH/game/adv2.py`, `xcheck2.py`, `shipheur2.py`, `hyp2.py`)
+| test | v2 result |
+|---|---|
+| `solve` scores 1 on every seed | 1200/1200 |
+| brute force *all* `a,b>d,e` over the whole board (400 clues) | **exactly 1** winner per clue |
+| best constant answer (400 clues) | 2.25 % |
+| independent re-implementation vs the 503-char scorer, 41 560 pairs | **0 disagreements** |
+| junk (`""`, `"0"`, `"x"`, `"1"*100`, `"0,0>0,0"`, `"999999,0>0,0"`, 1024 zeros, unicode, 400 numbers) | never raises, never non-0/1, never scores 1 |
+| worst score time | 0.033 ms |
+| determinism (200 seeds) | identical |
+| engine load | 1 accepted, 0 rejected |
+
+### Anti-witness measurements (1000 shipped v2 clues)
+Legal `o` moves: mean **9.18** (min 6), exactly one wins.
+* **iteration-1 player model ("hop to first empty cell"): 0.0 %** (was the basis of their 30 %)
+* know the law, guess uniformly: **11.1 %**
+* best of 16 cheap non-rule heuristics: **21.7 %** ("pick at random among the moves that fly
+  over empty ground" - the deliberate foothold, capped by the augmentation step)
+  next best: landing-next-to-an-enemy 17.0 %, landing-nearest-an-enemy 15.5 %,
+  landing-touches-most-x 15.3 %, mover-touches-most-x 14.8 %, longest 12.9 %,
+  flies-over-a-piece 7.1 %, shortest 4.4 %
+* winner mechanism mix: enemy's step changes and its new landings are blocked 51 %, the
+  move plugs the square the enemy would have leapt to 41 %, enemy stranded at step 0 31 %
+  (they overlap when more than one enemy is mobile).
+
+### Fairness floor - hypothesis-elimination surrogate, now including the players' own laws
+Space = 1784 hypotheses: 216 counting laws **plus the 7 naive laws iteration 1 actually
+believed** (hop-to-first-empty, slide, any-cell-in-line, move-exactly-k for k=1..4), times
+8 goals. Feeding demos:
+
+| demos | consistent hypotheses | of which naive laws | survivors that also make the demo the *unique* winner |
+|---|---|---|---|
+| 1 | 4-46 | 1-6 | 2-19 |
+| 2 | 2-46 | 0-6 | 2-13 |
+| 3 | **2** | **0** | 1-2 |
+
+Every naive law is dead by demo 3, and the space collapses to the true rule plus its
+synonym "minimise the enemy's mobility" (which answers identically here). v1's equivalent
+table never contained the naive laws at all - that blind spot is what iteration 1 exposed.
+
+### Arena for iteration 2 (players to be run by the orchestrator)
+```
+run          lab-orlan-2   (6 rounds, 0.5 s each, 5 s cooldown, 3 s final, pool = orlan only)
+port         47869         training window open ~6 h from 2026-09-02 11:30Z
+team orlan2a $SCRATCH/lab-orlan-2/players/orlan2a
+team orlan2b $SCRATCH/lab-orlan-2/players/orlan2b
+teardown     python sim/arena.py teardown --run lab-orlan-2 && python sim/arena.py report --run lab-orlan-2
+```
+Expected: if the softening works, the naive line-hop model scores 0 in round 1 instead of
+30 %, which should push the players off it within one round; a team that then fits
+"distance = pieces touching the mover" should crack the class outright. A team that stops
+at the movement law and guesses among legal moves lands at ~11 %, and one that also spots
+"the answer always flies over a gap" lands at ~22 % - so the three outcomes are cleanly
+separated in the final score.

@@ -1,0 +1,8 @@
+{
+ "name": "MARIENBAD",
+ "author": "optim-agent",
+ "description": "Nim. Clue is 3-5 heap sizes ('5 7 9 3'), always an N-position (xor != 0). A solution is the\nheap sizes AFTER one legal move: same number of heaps, no heap larger than before, exactly one\nheap strictly smaller, and the xor of the new sizes must be 0 (the winning reply).\nDIFFICULTY: medium. Named for 'Last Year at Marienbad', the film whose game is Nim.\nDISCOVERY PATH: the demo shows an answer that is a near-copy of the clue with one number\nreduced -- so the move format is free. The aha is *which* reduction: xor everything, then set\nheap i to h[i] xor total for the i where that shrinks it. Teams first try 'take the biggest\nheap' style heuristics and score ~0-20%, which is a clear signal that a rule is hiding.\nEchoing the clue scores 0 by construction (its xor is non-zero and nothing shrank).",
+ "generate": "def generate(seed):\n    r = random.Random(seed)\n    while True:\n        k = r.randint(3, 5)\n        h = [r.randint(1, 15) for _ in range(k)]\n        x = 0\n        for v in h:\n            x ^= v\n        if x:\n            return ' '.join(str(v) for v in h)\n",
+ "solve": "def solve(clue):\n    h = [int(x) for x in clue.split()]\n    x = 0\n    for v in h:\n        x ^= v\n    for i, v in enumerate(h):\n        if v ^ x < v:\n            h[i] = v ^ x\n            break\n    return ' '.join(str(v) for v in h)\n",
+ "score": "def score(c,s):\n h=[int(x)for x in c.split()];g=s.split()\n if len(g)!=len(h)or not all(y.isdigit()for y in g):return 0\n g=[int(y)for y in g];d=[b-a for a,b in zip(g,h)];x=0\n for v in g:x^=v\n return int(x==0 and min(d)>=0 and sum(e>0 for e in d)==1)\n"
+}

@@ -1,0 +1,91 @@
+Centaur Zendo round 4 (training)
+round_id : db5661b911254de2afc3aefd8dec32b7
+written  : 2026-09-02 11:48:39Z
+presented=79  answered=79  correct=4  skipped=0
+client answer latency: mean 0.133 ms  median 0.127 ms  max 0.372 ms  (n=79)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  orlan         oo#...\n.##...\n..##x.\n...oo.\n.#.x##\…  0,0>0,4                                   0
+   1  orlan         x##o.o\n#.#o..\nx.x.#.\nx...o#\n#o#...\…  4,1>4,4                                   0
+   2  orlan         ...##\no..xo\n#o.##\n.o#x.\n#o...         2,1>0,1                                   0
+   3  orlan         ....##\no...#o\no#..##\n.#oox.\n..#.x.    3,3>1,3                                   0
+   4  orlan         #x.xo\n##o#o\no#...\n.....\n..#o#         1,2>3,2                                   0
+   5  orlan         #x.##\noxo#o\nox...\n.....\n.#.x.\n.##o#  5,3>2,3                                   1
+   6  orlan         .##x.\nx.o#o\no#o#o\n.#...\n.x.o.\n.....  2,0>4,0                                   1
+   7  orlan         x.#.x\n.o..#\noo#o#\n..o..\n..#..\n.....  1,1>1,3                                   0
+   8  orlan         .....o\n.x..#.\n#..xo.\n#..oo.\n#.o#..\…  2,4>2,1                                   0
+   9  orlan         #o....\n.x.#..\n#..oo.\n#.#.#o\nx.oo..\…  2,3>5,3                                   0
+  10  orlan         #o###.\n..xoo#\nx.#.x#\nx##o..\n#...#.\…  1,4>1,0                                   0
+  11  orlan         #o#...\n##.ox#\n#o..oo\n...#.x\n.....#\…  0,1>4,1                                   0
+  12  orlan         ##.x.#\n...#o.\n.xo#..\n...o..\n##.x##\…  3,3>3,1                                   0
+  13  orlan         .#o..\n..x.#\n..oo#\nx.#o.\no##..\nx...o  2,3>2,0                                   0
+  14  orlan         ...o#.\no.oo..\n.o#.ox\n.###xx\n..o...\…  1,3>1,5                                   1
+  15  orlan         ...#.\no..o#\n.....\no...x\n#...o\nxo#o#  3,0>0,0                                   0
+  16  orlan         ##xxo\n...#o\n.#o##\n.#.x#\n...oo\n.#o#x  4,4>4,1                                   0
+  17  orlan         ..#.x#\n..#oo.\n.#.#xx\nxo.#.#\n.o...#\…  1,4>4,4                                   0
+  18  orlan         ....#\n.#..o\n..o#x\n.x#o.\n...o#         2,2>2,0                                   0
+  19  orlan         .....\n.o...\n.#...\n#o...\no#.ox\nx#oo.  1,1>1,3                                   0
+  20  orlan         ...oo#\n.x#o##\n.#.x.#\n##.#o.\no#..x.\…  1,3>5,3                                   0
+  21  orlan         x.#...\n.#o..#\n#o.#x#\n...#ox\n...oo.\…  4,4>4,1                                   0
+  22  orlan         ..#o#o\nx##o..\n.o#o.#\n#.#.#.\no.....\…  0,5>0,0                                   0
+  23  orlan         ..#.x#\n..o...\n#..##.\n.#.o#.\nxo##..\…  1,2>1,4                                   0
+  24  orlan         #o#..\n#oxo#\n..o.o\n#.#..\nx##oo         2,4>2,1                                   0
+  25  orlan         .#..x.\n#....#\nox##o#\n.o...x\n.#o..o\…  2,4>4,4                                   0
+  26  orlan         .x.#..\n.x.oo#\n##oo.#\no#..x.\nx.o...    1,3>1,0                                   0
+  27  orlan         ##....\n..x...\no#....\no..#..\n#x.#oo\…  5,4>2,4                                   0
+  28  orlan         x..x..\n.o#o..\n..#...\n.xo.oo\n##x###    3,4>3,0                                   0
+  29  orlan         ..#o..\n#.....\n#o....\nxo#.x.\n...#o#\…  4,4>1,4                                   0
+  30  orlan         .#o..o\n..o...\n..#ox#\nx..o.#\n.x.##x    1,2>1,4                                   0
+  31  orlan         #xx##.\n.o...o\n.o#ox.\nooo...\n#....x    1,5>1,3                                   0
+  32  orlan         #.....\nx..o#.\n#..o.#\n#.o#o#\nxo#x#x    3,4>0,4                                   0
+  33  orlan         ..#.#\n#.o..\n..x..\n#o...\n.oo..\n.#o.x  4,1>1,1                                   0
+  34  orlan         ..o#x.\n.x....\n....xo\n...o.#\no##o..\…  0,2>2,2                                   0
+  35  orlan         .....o\n##xx.#\noo....\n..#o#.\nx..#o#    0,5>3,5                                   0
+  36  orlan         #..x..\n##x.#.\nx##o..\n.o.o#o\n#..o.o\…  3,5>3,0                                   0
+  37  orlan         ....oo\n.#o.#.\no#..ox\n###o..\n.x##..\…  0,4>0,2                                   0
+  38  orlan         o.....\nx###..\n.o#.#.\n..#o#.\n...#o#\…  2,1>2,5                                   0
+  39  orlan         .#....\nxo##..\n...ox.\nxoo#..\n..o#..    4,2>0,2                                   0
+  40  orlan         .#o#.\n.#.o#\nxx.#o\n#..oo\n.o...\n#....  3,3>5,3                                   0
+  41  orlan         ..#.x\nx##..\n..oo.\no..o#\n...oo         4,3>0,3                                   0
+  42  orlan         ...oo.\n..x#ox\n..#o.#\n#.##.#\no#..#.\…  1,4>1,0                                   0
+  43  orlan         x.###x\n...##o\n...o..\nx.#o..\n..o.#.\…  1,5>3,5                                   0
+  44  orlan         .xoo#\nxx.#x\n##...\n#.oo#\n###.#\n.#o..  0,3>4,3                                   0
+  45  orlan         xo##.#\n##oo..\n#....x\n..#...\nx#....\…  1,3>3,3                                   0
+  46  orlan         .....#\n..##.x\n..##ox\n...#.#\nxo...o\…  2,4>4,4                                   0
+  47  orlan         .....x\n...#..\noo#.x.\n..o.o#\n..#.##\…  3,2>0,2                                   0
+  48  orlan         ......\nx##.x.\n#o..o.\n#...o#\no#o...\…  4,0>4,4                                   0
+  49  orlan         .....\n..#o#\noo..#\no#x.x\n#....\no##.#  2,0>0,0                                   0
+  50  orlan         .x#o.#\n...oo#\no#.o#x\n...#..\n#.x..#\…  1,4>4,4                                   0
+  51  orlan         #o....\n#o....\nx##x.o\nx.##o#\n#..#.#\…  1,1>1,3                                   0
+  52  orlan         oo#...\nx.x.o.\n#.#o#.\n#oo...\n#.x.#o    0,1>2,1                                   0
+  53  orlan         #o#...\n#.#...\nx.x.#.\no.ooo.\n..#o#.    4,3>4,0                                   1
+  54  orlan         ###x.#\no#....\n#o.##.\no...##\n...#oo\…  1,0>5,0                                   0
+  55  orlan         ...##x\n##x#ox\n....o#\n.##.o#\nxoo..#\…  3,4>5,4                                   0
+  56  orlan         .o..#x\n#o...#\n..o#o#\n.##o#.\n......\…  0,1>4,1                                   0
+  57  orlan         .#o...\n##x.#.\n#o.x..\noo#o..\nx##...\…  3,1>3,5                                   0
+  58  orlan         ..#.o\n.#..#\n...oo\n.xo#x\n#....         2,3>0,3                                   0
+  59  orlan         ......\n.x.#..\n.#....\noo.xo#\n.#o#..\…  3,0>5,0                                   0
+  60  orlan         .#o#.#\n.x.o#o\n.#.o#.\n.##.x.\n......\…  5,2>2,2                                   0
+  61  orlan         x..o#.\n.#....\n.o....\no#o##o\no#.x.#\…  3,5>1,5                                   0
+  62  orlan         .o..o.\n.x##x.\no##o.#\no#o...\no#...#\…  3,2>5,2                                   0
+  63  orlan         .#.x##\n...oo.\n.#.o..\n...o..\n.#.#o.\…  1,4>3,4                                   0
+  64  orlan         .o..##\n.x.#..\n.##.xx\n.#o..o\n#..o##\…  0,1>5,1                                   0
+  65  orlan         #x.#..\n......\n.xoo..\n...o..\n...##.\…  2,3>2,5                                   0
+  66  orlan         #x.#..\n.#.o.#\nxoox..\n#o....\n##.x##\…  2,1>2,5                                   0
+  67  orlan         #.x...\no#....\no#.#o.\n.#.xo#\n.o..#.\…  3,4>3,0                                   0
+  68  orlan         x..#..\n...o..\n...oo#\n......\no#ox..    4,2>4,5                                   0
+  69  orlan         #.#x#o\n..o..o\n..#o.#\n...o..\n##xx#o    1,2>1,0                                   0
+  70  orlan         .#o.#\n#o..o\no.#.x\n..o..\nx#o..\n#.x##  1,1>3,1                                   0
+  71  orlan         .#...#\n...o#.\n.x.#ox\n.#..oo\noo...#\…  3,4>5,4                                   0
+  72  orlan         ..oo#\n#x.#o\n.o#..\n##.x.\n..#..\n..ox.  2,1>2,4                                   0
+  73  orlan         ..#..\n.xo..\n...##\n#o..o\noox##\n#.xxo  5,4>0,4                                   0
+  74  orlan         ..ooo#\n..#...\n......\n..x...\n..o..x\…  0,3>0,0                                   0
+  75  orlan         ..x.#\n.o..o\noxo##\n#o...\n#ox..         2,0>0,0                                   0
+  76  orlan         #x##x\n...##\n#..oo\n.oo..\n.#.o.\n.....  2,3>5,3                                   0
+  77  orlan         x##..o\no.....\n##x.#.\n#o....\n..#o..\…  4,3>4,5                                   0
+  78  orlan         ....#x\n.#o..#\n..#o.#\n.####x\n.o#..o\…  1,2>1,4                                   0
+
+per-name tally this round
+name             presented correct  hit-rate
+orlan                   79       4      5.1%

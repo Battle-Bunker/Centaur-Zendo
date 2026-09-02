@@ -1,0 +1,458 @@
+{
+ "rounds_played": 7,
+ "examples": {
+  "orlan": [
+   {
+    "clue": "...#.o\nx.....\n.o#xoo\n.oo#.o\n.#.x.#\n...#..",
+    "answer": "0,5>1,5",
+    "score": 0
+   },
+   {
+    "clue": ".#o..\n..#.x\n...oo\noxoxo\n...##\n.x...",
+    "answer": "0,2>0,4",
+    "score": 0
+   },
+   {
+    "clue": "....##\n..#o#.\no.o#..\nx.o..x\n#o....\n##..x.",
+    "answer": "2,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": "#.oox.\nx.##..\noo....\n##....\n..x...\n.#....",
+    "answer": "2,1>2,5",
+    "score": 0
+   },
+   {
+    "clue": ".#....\n..#o#.\n.#.x..\n.o#..o\n.xx.oo\nx...##",
+    "answer": "4,4>2,4",
+    "score": 0
+   },
+   {
+    "clue": ".x.x.#\n......\nox.o.#\n.#o#oo\n...o#.\n......",
+    "answer": "2,0>0,0",
+    "score": 0
+   },
+   {
+    "clue": "ooo..\n.x##x\n...#.\no#..#\no#oxo",
+    "answer": "1,1>2,1",
+    "score": 0
+   },
+   {
+    "clue": ".#...#\n....o#\nox.#.x\n#..#ox\nx##o#o\n....o#",
+    "answer": "1,4>0,4",
+    "score": 0
+   },
+   {
+    "clue": "...o#\n##ox#\no...x\n#..##\n..#ox\n..oo.",
+    "answer": "0,3>0,0",
+    "score": 0
+   },
+   {
+    "clue": "oo...x\nxo##..\n..#o..\n#...ox\n..x.#.",
+    "answer": "0,1>0,4",
+    "score": 0
+   },
+   {
+    "clue": "......\n......\n..ooo#\n####..\no#..#x\n##xx#o",
+    "answer": "5,5>4,5",
+    "score": 0
+   },
+   {
+    "clue": ".####x\n..o#..\n.ooox#\n.#..xo\n....#.\n.#..#.",
+    "answer": "2,2>5,2",
+    "score": 0
+   },
+   {
+    "clue": "x##...\n#o....\n#.x.x.\n...xo.\n.#o...\noo#...",
+    "answer": "5,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": "#oo..\n#ox..\nx.oo#\n#....\nxx#.#",
+    "answer": "1,1>3,1",
+    "score": 0
+   },
+   {
+    "clue": "......\n..#o#.\n...#..\n##x.xo\noox.#o",
+    "answer": "3,2>2,2",
+    "score": 0
+   },
+   {
+    "clue": "..#o#x\n..o#..\n###xo#\no.....\n#..#..",
+    "answer": "2,4>1,4",
+    "score": 0
+   },
+   {
+    "clue": ".....o\n..oo..\n.o#...\nx##o#.\no#x.#.\n#o....",
+    "answer": "0,5>5,5",
+    "score": 0
+   },
+   {
+    "clue": "oxxx#\n..o.#\n..##o\n..o..\n#o#o.",
+    "answer": "0,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": ".o#o..\n.x.x..\no#..o#\noxo##o\n..#.x#",
+    "answer": "0,1>1,1",
+    "score": 0
+   },
+   {
+    "clue": "...oo\n...o#\n.o#..\no#...\n#.x##\no##x.",
+    "answer": "0,3>0,0",
+    "score": 0
+   },
+   {
+    "clue": ".##xo#\n..o#..\nox.o..\no#.x.#\n.x##..",
+    "answer": "3,0>4,0",
+    "score": 0
+   },
+   {
+    "clue": "#....\noo...\nox.xo\n.x.#o\n.###x",
+    "answer": "1,1>0,1",
+    "score": 0
+   },
+   {
+    "clue": "#..o.\n....o\no##.o\n..o..\nxx##.",
+    "answer": "4,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": "xo#.#.\n..xoo.\n#.o#..\no.#...\n#..x..\n......",
+    "answer": "1,3>0,3",
+    "score": 0
+   },
+   {
+    "clue": "o..o##\n##.o#o\no.....\n#x#...\n#.o...\nxo#...",
+    "answer": "0,0>0,2",
+    "score": 0
+   },
+   {
+    "clue": "#o#...\n##oxx.\n...o..\n...##.\n##.#..\n......",
+    "answer": "1,2>5,2",
+    "score": 0
+   },
+   {
+    "clue": "...#o#\n.x#.#o\n.xx#.#\n..oo..\n.#....\n......",
+    "answer": "3,2>2,2",
+    "score": 0
+   },
+   {
+    "clue": ".#o#..\nx.o#..\n...#o#\no..###\no.....\n.##x.#",
+    "answer": "4,0>4,5",
+    "score": 0
+   },
+   {
+    "clue": "....#.\n..o...\no##.xo\n#o...#\n.x.#ox\nx...#.",
+    "answer": "4,4>3,4",
+    "score": 0
+   },
+   {
+    "clue": "o#o#o#\n.x.x.#\n.....#\n.#o#..\n.....#\n...x..",
+    "answer": "0,4>5,4",
+    "score": 0
+   },
+   {
+    "clue": "...#.#\n.##ox.\n.o....\n.xo#.o\n..x..o\n.##x.#",
+    "answer": "1,4>0,4",
+    "score": 0
+   },
+   {
+    "clue": "......\n#o#x.#\n..oo..\n...##o\n#ox.#.",
+    "answer": "1,1>0,1",
+    "score": 0
+   },
+   {
+    "clue": ".#..#\n##..#\noo#ox\n..o.x\n.o#.#\n.#o..",
+    "answer": "2,0>5,0",
+    "score": 0
+   },
+   {
+    "clue": "ooo..x\n.o#...\n##o.x.\no#....\n.#....\n.x.#..",
+    "answer": "0,0>1,0",
+    "score": 0
+   },
+   {
+    "clue": "...##o\no..#o.\n#x.o#.\nxo#...\n......",
+    "answer": "2,3>2,1",
+    "score": 0
+   },
+   {
+    "clue": "..o#.o\n..#ox.\n..#...\nx#o...\n##x.o.\n##..o#",
+    "answer": "0,5>4,5",
+    "score": 0
+   },
+   {
+    "clue": "xo#.x\no.o..\n#.#o#\n..o.#\n##x.x",
+    "answer": "3,2>3,0",
+    "score": 0
+   },
+   {
+    "clue": "#.x.#.\no.o#..\n..#o#.\n.#..xo\n....x#\nx.o...",
+    "answer": "1,0>4,0",
+    "score": 0
+   },
+   {
+    "clue": ".#o..#\nx.o..o\n.x#o#x\n...#o#\n.o...#",
+    "answer": "1,0>0,0",
+    "score": 0
+   },
+   {
+    "clue": "..#o..\n#.x#x.\no...o.\n#o#.##\n..o...\nx.##x.",
+    "answer": "2,4>2,5",
+    "score": 0
+   },
+   {
+    "clue": ".#.o..\n...o..\n#x##.#\no...o#\nxo..o#",
+    "answer": "0,3>0,2",
+    "score": 0
+   },
+   {
+    "clue": "...x..\n.....#\n..o##o\noo#...\n#.x#x.",
+    "answer": "2,2>0,2",
+    "score": 0
+   },
+   {
+    "clue": "....#.\n..xooo\n#..##.\nx.#...\no#...o\n#..#..",
+    "answer": "1,3>1,2",
+    "score": 0
+   },
+   {
+    "clue": "xo#o.\n###x.\n#.#o.\n..o#.\n..o..\n#oo.#",
+    "answer": "5,1>2,1",
+    "score": 0
+   },
+   {
+    "clue": "#x.#.\n.#.x#\n...o.\n.#o#o\n.....",
+    "answer": "3,2>0,2",
+    "score": 0
+   },
+   {
+    "clue": "...oo.\nx.xo#.\n#.....\n##o...\n#o#..#",
+    "answer": "0,3>0,0",
+    "score": 0
+   },
+   {
+    "clue": "#o#...\n##o.#.\nx##.x.\n.x.oo#\n##..#.",
+    "answer": "2,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": "#xo#.o\n...#ox\n.#.o..\n...o..\nx.##..",
+    "answer": "0,5>0,4",
+    "score": 0
+   },
+   {
+    "clue": "....x.\nxo#...\nx#.o..\n#..o#.\n....o#\n#...x.",
+    "answer": "1,1>0,1",
+    "score": 0
+   },
+   {
+    "clue": ".#o.x\n..#..\n##o..\n#x.o#\nxo...",
+    "answer": "0,2>0,3",
+    "score": 0
+   },
+   {
+    "clue": "....o#\nx##.#o\nx#.#..\noo....\n.....#\nx.o#ox",
+    "answer": "3,0>2,0",
+    "score": 0
+   },
+   {
+    "clue": "......\no#xo.#\no#.o..\n.x##ox\n...#o#",
+    "answer": "3,4>0,4",
+    "score": 0
+   },
+   {
+    "clue": "...#oo\no#.xo#\n...o..\n.x.x.x\n....##\n.o..o#",
+    "answer": "5,1>4,1",
+    "score": 0
+   },
+   {
+    "clue": "......\n#o#o#x\n..o#..\n..o..#\n..#.x.\n......",
+    "answer": "3,2>3,4",
+    "score": 0
+   },
+   {
+    "clue": ".o##x\n..o##\n.#.o#\n.o..x\n.x###",
+    "answer": "3,4>3,2",
+    "score": 0
+   },
+   {
+    "clue": "....o\n..o#x\nxo#o.\n..#.o\n..x.o\n#.x##",
+    "answer": "1,2>0,2",
+    "score": 0
+   },
+   {
+    "clue": ".#o#..\nx.##..\no#.x.#\n.#.x.o\n.oooo#",
+    "answer": "2,0>4,0",
+    "score": 1
+   },
+   {
+    "clue": "....o#\no...x.\n....#.\nx.#oo.\n.#o.#.\n..#...",
+    "answer": "0,4>0,0",
+    "score": 0
+   },
+   {
+    "clue": "##xx.\n..#o.\n..##.\n.o#.#\n..ox.",
+    "answer": "1,3>0,3",
+    "score": 0
+   },
+   {
+    "clue": ".o....\n...ox.\n....#o\n.#o.#o\noo#ox#",
+    "answer": "0,1>0,5",
+    "score": 0
+   },
+   {
+    "clue": "#...#\nx.#oo\n..o..\nx#o..\n..o#.",
+    "answer": "4,2>4,0",
+    "score": 0
+   },
+   {
+    "clue": "o#o#.\nxo#x.\no..o.\n#....\no..#o\no#x##",
+    "answer": "4,0>4,2",
+    "score": 0
+   },
+   {
+    "clue": "##xox#\n.#.#.x\n.o#.o#\nx...o#\no.....\n##....",
+    "answer": "0,2>1,2",
+    "score": 0
+   },
+   {
+    "clue": "..##.\n..oo.\nx..#.\n....o\n.#ox.\nxo...",
+    "answer": "1,3>1,4",
+    "score": 0
+   },
+   {
+    "clue": "x#o#.\n#.o#.\n#..#o\n#x..#\n#o..#",
+    "answer": "1,2>4,2",
+    "score": 0
+   },
+   {
+    "clue": "x##oo.\no.#oo#\n..o...\n..#.x.\n......",
+    "answer": "0,4>0,5",
+    "score": 0
+   },
+   {
+    "clue": "...#..\n..oo..\n..o.o#\n..##o#\n..###x\n.x.x#x",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "#.###x\no##.xo\n.o..#x\n.x.##.\n...oo#\n...#..",
+    "answer": "1,0>5,0",
+    "score": 0
+   },
+   {
+    "clue": "x...o\no...#\nx....\n...#.\nooo..",
+    "answer": "4,0>3,0",
+    "score": 0
+   },
+   {
+    "clue": "#.x##\n#xox.\no..o.\no#.xo\n...#o",
+    "answer": "2,3>2,1",
+    "score": 0
+   },
+   {
+    "clue": "x####\n..o..\nxoxoo\noo...\n##o..",
+    "answer": "0,0>1,0",
+    "score": 0
+   },
+   {
+    "clue": "#o#...\n..#...\n..o...\no#x..x\n..o..o\n.##..#",
+    "answer": "0,1>2,1",
+    "score": 0
+   },
+   {
+    "clue": "..##x#\n..o..o\n..##.o\n..oo..\n.##xo#",
+    "answer": "1,2>1,0",
+    "score": 0
+   },
+   {
+    "clue": "..oo#\n..##o\n.o#xx\n##.x.\no#..#\n#..oo",
+    "answer": "0,2>0,0",
+    "score": 0
+   },
+   {
+    "clue": ".#oo.x\n..oo#.\n.x....\n......\n.x..xo\n.....#",
+    "answer": "0,3>0,5",
+    "score": 0
+   },
+   {
+    "clue": ".x.#o.\n.##o#.\n#oo...\no#...#\nx.....",
+    "answer": "1,3>4,3",
+    "score": 0
+   },
+   {
+    "clue": "....o#\n.#.oo#\nx..##.\no#..o.\n##ox.#\n.##x.#",
+    "answer": "4,2>0,2",
+    "score": 0
+   },
+   {
+    "clue": ".x.xo#\n..#o..\n#.o#..\n#.#...\n#o....\nxo..x.",
+    "answer": "0,4>4,4",
+    "score": 0
+   },
+   {
+    "clue": "##x.#.\n.oo...\n.##...\n..#.o#\n..o#..\n..#oxx",
+    "answer": "0,2>0,3",
+    "score": 0
+   },
+   {
+    "clue": "o.x##\nx##o.\no..o#\no....\no.x..",
+    "answer": "0,0>0,1",
+    "score": 0
+   },
+   {
+    "clue": "..#o#.\n#.o#..\nx.###.\n#oo.oo\n##ox.#\n...o..",
+    "answer": "1,2>1,1",
+    "score": 0
+   },
+   {
+    "clue": "..#.o\n..o..\nx.xo#\no...o\n#.oo#",
+    "answer": "0,4>1,4",
+    "score": 0
+   },
+   {
+    "clue": ".#.x#\noo#x.\n...o#\noo.#o\n..o#.\n#.#x.",
+    "answer": "2,3>1,3",
+    "score": 0
+   },
+   {
+    "clue": "x.#.x.\n#..x..\n#o#...\n#o#o..\n#..o..\n...o..",
+    "answer": "5,3>5,0",
+    "score": 0
+   },
+   {
+    "clue": "o.....\n...oo#\n.x.o#o\no...o.\n.#.x#.\n...o#.",
+    "answer": "5,3>5,0",
+    "score": 0
+   },
+   {
+    "clue": ".#....\n...#ox\n.x#..o\n.#...#\n.#o#..\n..#o#.",
+    "answer": "1,4>0,4",
+    "score": 0
+   },
+   {
+    "clue": "...#o#\nx##.#o\no..x..\n#.xo..\n......",
+    "answer": "1,0>0,0",
+    "score": 0
+   },
+   {
+    "clue": "#o#ox\no#..o\n..#.x\n..#..\n..#o#",
+    "answer": "1,4>1,2",
+    "score": 0
+   },
+   {
+    "clue": ".....\n#xox.\n..o..\nxx##o\n#..##",
+    "answer": "1,2>0,2",
+    "score": 0
+   },
+   {
+    "clue": "#.x.#\n#o#..\n#.#oo\n#....\nxo#.x",
+    "answer": "1,1>0,1",
+    "score": 0
+   }
+  ]
+ },
+ "_index": 550
+}

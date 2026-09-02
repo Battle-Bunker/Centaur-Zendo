@@ -227,6 +227,8 @@ class Player:
                     started = True
                     continue
                 elif mtype == "error":
+                    if msg.get("code") == "stale":
+                        continue             # a leftover reply to a late answer from an earlier round
                     if not started:          # the round never began: cooldown/phase/...
                         self.last_refusal = msg
                         self.report_refusal(msg)

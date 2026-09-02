@@ -390,3 +390,22 @@ async def test_final_and_status_and_leaderboard(client):
     assert (await r.json())["leaderboard"][0]["team"] == "alpha"
     await ws_a.close()
     await ws_b.close()
+
+
+@pytest.mark.asyncio
+async def test_late_answer_after_round_over_is_ignored_silently(client):
+    """A persistent client (`watch` mode) must not find a stray `stale` error in its
+    socket when it starts the next round: late answers for a finished round are dropped."""
+    await client.post("/admin/start")
+    ws, _ = await join(client)
+    msgs, over = await play_round(ws)
+    rid = over["round_id"]
+    # the client's "one answer too many" after the deadline
+    await ws.send_json({"type": "answer", "round_id": rid, "index": over["presented"], "solution": "x"})
+    await ws.send_json({"type": "skip", "round_id": rid, "index": 0})
+    await ws.send_json({"type": "ping"})
+    nxt = await recv(ws, skip_stale=False)
+    assert nxt["type"] == "pong", nxt   # nothing was queued before the pong
+    # a genuinely wrong round id is still reported
+    await ws.send_json({"type": "answer", "round_id": "nope", "index": 0, "solution": "x"})
+    assert (await recv(ws, skip_stale=False))["code"] == "stale"

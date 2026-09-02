@@ -175,6 +175,8 @@ class Connection:
         key = (data.get("round_id"), data.get("index"))
         fut = self.pending.get(key)
         if fut is None or fut.done():
+            if data.get("round_id") == getattr(self, "last_round_id", None):
+                return  # SPEC §5: a late message for this team's latest round is ignored silently
             asyncio.ensure_future(
                 self.error("stale", "no challenge is waiting for that (round_id, index)")
             )
@@ -195,6 +197,7 @@ async def run_round(conn: Connection, kind: str) -> None:
         await conn.send(exc.to_message())
         return
     conn.round = rnd
+    conn.last_round_id = rnd.round_id
     try:
         await rnd.open()
         await conn.send(rnd.started_message())

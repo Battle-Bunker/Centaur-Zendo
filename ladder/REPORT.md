@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 14:07 UTC
+# Ladder report — 2026-09-04 14:09 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -26,7 +26,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | IDX | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ikos | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | krom | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| LegoZendo | 1 | untested | - | - | 3.4 | 0 | 0 | - |
+| LegoZendo | 1 | testing | 100% | 0.00 | 3.4 | 2 | 2 | opus-default,opus-kidproxy |
 | LegoZendo2 | 1 | testing | 100% | 0.00 | 2.6 | 1 | 1 | opus-default |
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | OKRIN | 2 | testing | - | - | 2.6 | 0 | 0 | - |

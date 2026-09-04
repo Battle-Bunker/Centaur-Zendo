@@ -148,7 +148,7 @@
   },
   "LegoZendo": {
    "current_version": 1,
-   "note": "v3 rule (scattered, two orientations). sim2 played v1; cal run interrupted.",
+   "note": "v3 run1: crack r3 (kid-proxy, diagnostic grids per clue letter) + crack r6 (experimentalist, by recolouring/cropping/concatenating demo walls). LEAK: count is additive over separated regions and invariant under relabelling, so demos are reusable answers. Possible fixes (owner's call): forbid unconnected layouts again, or pin one brick position from the clue, or require the clue letter's brick count to equal a clue-derived number.",
    "qual": [
     {
      "advice": "Shrink the grid (keep demos in the ~12x32 regime, cap y lower) so a kid can see a whole layout and tell a 1-pin touch from 2- or 3-pin by eye within 20 minutes.",
@@ -165,8 +165,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demos": 3,
+       "final_correct": 2673,
+       "final_presented": 2673,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         23,
+         294
+        ],
+        [
+         41,
+         490
+        ],
+        [
+         437,
+         437
+        ],
+        [
+         415,
+         415
+        ],
+        [
+         458,
+         458
+        ],
+        [
+         450,
+         450
+        ]
+       ],
+       "team": "LegoZendo1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 1972,
+       "final_presented": 1972,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         11,
+         363
+        ],
+        [
+         9,
+         435
+        ],
+        [
+         0,
+         491
+        ],
+        [
+         32,
+         408
+        ],
+        [
+         103,
+         350
+        ],
+        [
+         233,
+         353
+        ]
+       ],
+       "team": "LegoZendo1a"
+      }
+     ],
+     "run": "lad-LegoZendo-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/LegoZendo.json",
@@ -2069,7 +2147,7 @@
    "kind": "players",
    "run": "lad-LegoZendo-v1-1",
    "started": 1788528434.3487506,
-   "status": "running",
+   "status": "done",
    "teams": {
     "LegoZendo1a": "opus-default",
     "LegoZendo1b": "opus-kidproxy"
@@ -2081,7 +2159,13 @@
    "class": "Wordz",
    "id": "players-Wordz-v1-c106",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-Wordz-v1-1",
+   "started": 1788530939.926827,
+   "status": "running",
+   "teams": {
+    "Wordz1a": "opus-default",
+    "Wordz1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -2483,6 +2567,14 @@
    "started": 1788530836.34373,
    "status": "running",
    "version": null
+  },
+  {
+   "agents": 2,
+   "class": "LegoZendo",
+   "id": "players-LegoZendo-v1-deed",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

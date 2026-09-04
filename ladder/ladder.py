@@ -104,7 +104,7 @@ def plan(s):
     for n, c in classes.items():
         q = qual_score(c)
         if q is not None and q < 3.5 and c["status"] not in ("retired", "too_easy_textbook") \
-                and c["current_version"] not in c.get("refined_versions", []):
+                and c["current_version"] not in c.get("refined_versions", []) and len(c["versions"]) < 2:
             add("refiner", n, c["current_version"], agents=1, reason="kid_score")
     # 3. judges for unjudged current versions (skip textbook)
     for n, c in classes.items():

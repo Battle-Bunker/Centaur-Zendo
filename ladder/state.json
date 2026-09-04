@@ -1007,6 +1007,20 @@
      },
      "score": 1.6,
      "version": 1
+    },
+    {
+     "advice": "Structure is 3-colour balanced parentheses regardless of skin; would need literal cup silhouettes and a non-notational pairing cue. Consider retiring in favour of new designs.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 4,
+      "object": 2,
+      "rule_statable": 3
+     },
+     "score": 2.6,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -1650,7 +1664,8 @@
    "class": "LegoZendo2",
    "id": "judge-LegoZendo2-v1-a060",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788523216.6743143,
+   "status": "running",
    "version": 1
   },
   {
@@ -1796,7 +1811,7 @@
    "id": "judge-quaich-v2-49cd",
    "kind": "judge",
    "started": 1788523117.2125332,
-   "status": "running",
+   "status": "done",
    "version": 2
   }
  ],

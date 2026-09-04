@@ -1418,7 +1418,22 @@
   },
   "morvin": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Two of three canonical demos are degenerate n=0 cases; bias demo sampling toward mixed-count frames, and the rule is close to a nameable trope (fell out of turn).",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 3,
+      "rule_statable": 3
+     },
+     "score": 3.6,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4363,7 +4378,7 @@
    "id": "judge-morvin-v1-man",
    "kind": "judge",
    "started": 1788554076.4819307,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

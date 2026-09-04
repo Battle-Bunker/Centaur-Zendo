@@ -45,6 +45,7 @@ def setup(a):
     cfg = {
         "cooldown_seconds": a.cooldown,
         "max_training_rounds": a.rounds,
+        "max_demos": a.demos,
         "training_seconds": a.training_seconds,      # generous: LLM players think for minutes between rounds
         "final_window_seconds": a.final_window,
         "round_seconds": a.round_seconds,
@@ -205,6 +206,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("setup"); s.add_argument("--run", required=True); s.add_argument("--teams", required=True)
     s.add_argument("--cooldown", type=float, default=5); s.add_argument("--rounds", type=int, default=4)
+    s.add_argument("--demos", type=int, default=3, help="demo requests per team per game")
     s.add_argument("--round-seconds", type=float, default=0.5)
     s.add_argument("--training-seconds", type=float, default=6 * 3600)
     s.add_argument("--final-window", type=float, default=3600)

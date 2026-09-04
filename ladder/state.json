@@ -533,7 +533,22 @@
   },
   "murn": {
    "current_version": 2,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Render demos as legible shapes (arches, staircases, bridges) instead of speckled noise, and choose demos whose ground row contains stones so the n-excludes-ground clause is visually obvious.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 4,
+      "object": 2,
+      "rule_statable": 3
+     },
+     "score": 2.6,
+     "version": 2
+    }
+   ],
    "refined_versions": [
     1
    ],
@@ -1645,7 +1660,7 @@
    "id": "judge-murn-v2-5a4a",
    "kind": "judge",
    "started": 1788522533.1045043,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -1711,8 +1726,27 @@
    "id": "refiner-quaich-v1-2f30",
    "kind": "refiner",
    "reason": "kid_score",
+   "started": 1788522607.1201348,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "LegoZendo",
+   "id": "refiner-LegoZendo-v1-02bf",
+   "kind": "refiner",
+   "reason": "kid_score",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "murn",
+   "id": "refiner-murn-v2-2939",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

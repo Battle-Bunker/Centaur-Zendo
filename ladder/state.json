@@ -550,6 +550,7 @@
   },
   "fennick": {
    "current_version": 1,
+   "note": "run1: both failed (~1%). Object not recognised: players read it as a bar chart / 'ink soaking through', never as books, so 'leaning' was never hypothesised. Refine for legibility of the lean.",
    "qual": [
     {
      "advice": "Make the picture show the lean (slant the leaning book toward its taller neighbour) so it reads as tipping books rather than a skyline.",
@@ -566,8 +567,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 22,
+       "final_presented": 3207,
+       "final_rate": 0.006859993763642033,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         571
+        ],
+        [
+         0,
+         432
+        ],
+        [
+         0,
+         762
+        ],
+        [
+         3,
+         438
+        ],
+        [
+         5,
+         423
+        ],
+        [
+         5,
+         557
+        ]
+       ],
+       "team": "fennick1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 20,
+       "final_presented": 2610,
+       "final_rate": 0.007662835249042145,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         360
+        ],
+        [
+         5,
+         416
+        ],
+        [
+         0,
+         454
+        ],
+        [
+         5,
+         400
+        ],
+        [
+         2,
+         447
+        ],
+        [
+         4,
+         431
+        ]
+       ],
+       "team": "fennick1a"
+      }
+     ],
+     "run": "lad-fennick-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/fennick.json",
@@ -2012,7 +2091,7 @@
    "kind": "players",
    "run": "lad-fennick-v1-1",
    "started": 1788527957.542191,
-   "status": "running",
+   "status": "done",
    "teams": {
     "fennick1a": "opus-default",
     "fennick1b": "opus-kidproxy"
@@ -2316,7 +2395,8 @@
    "id": "refiner-fennick-v1-e088",
    "kind": "refiner",
    "reason": "kid_score",
-   "status": "pending",
+   "started": 1788530820.9540522,
+   "status": "running",
    "version": 1
   },
   {
@@ -2373,6 +2453,23 @@
    "agents": 2,
    "class": "virel",
    "id": "players-virel-v1-1b21",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "fennick",
+   "id": "refiner-fennick-v1-man1",
+   "kind": "refiner",
+   "reason": "too_hard_object_illegible",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-fennick-v1-2cd3",
    "kind": "players",
    "status": "pending",
    "version": 1

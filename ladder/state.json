@@ -755,6 +755,20 @@
     }
    ]
   },
+  "garrow": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788532815.6070344,
+     "file": "challenges/lab/garrow.json",
+     "note": "v1: tray pizza, cut into 4-8 slices; per named topping, slices with 2+ pieces == digit; halved pieces count both sides",
+     "v": 1
+    }
+   ]
+  },
   "hanjie": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -2630,6 +2644,22 @@
    "kind": "designer",
    "status": "pending",
    "version": null
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v1-2025",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "judge-garrow-v1-64fe",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

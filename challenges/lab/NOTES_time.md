@@ -238,3 +238,128 @@ below x two rows apart, i.e. a fortnight) or by requiring two letters (`x` then 
 school day), both of which keep the object and the kid-statable sentence.
 If neither gets past ~2 %: the format gate is the suspect, and the fix is to put the row
 structure in the clue in words (e.g. `31/2` -> `31 days from Wed`), not to simplify the rule.
+
+---------------------------------------------------------------------------
+## Iteration 2 - 2026-09-04 - `challenges/lab/tovel.json` (v2; v1 kept as `tovel.v1.json`)
+
+Run `sim/results/lad-tovel-v1-1`: **in band by farming, not insight**. Mean final rate 66 %
+over 2 players (tovel1a 48 %, tovel1b 83 %); neither player found the rule; the kid judge
+scored v1 **4.4/5** (best in the ladder), so the calendar and its rendering are untouched.
+
+### What the players actually did (their notes)
+
+* tovel1b, verbatim: *"A letter pattern that scores 1 keeps scoring 1 when the identity of
+  every letter is renamed, so only the **shape** counts. The accepted shape depends on
+  (days, start, N) only - replaying a winning shape under a different clue LETTER scored
+  **173/173** (round 5)."* It shipped `patterns.json`: **108 of the 140 (days,start,k)
+  triples** mapped to one canonical winning page, replayed with the letters renamed. Its own
+  summary: *"Rule NOT cracked. ~400 candidate statistics ... none covered even half the 303
+  known winners."* -> 83 % with no theory.
+* tovel1a did the cheap half of the same thing: *"pseudo-random letters, ~45 % fill"* /
+  *"period-3 stripe"* tuned per k, i.e. it hill-climbed the **density** of the marked letter
+  until `count == k` came out often enough. 48 %, and its notes never mention weekdays.
+* Both leaks are one leak: **the accepted set depends only on (L, S, k) and is invariant
+  under renaming letters**, so (i) one accepted page per triple is worth 100 % for that
+  triple forever, and (ii) "count == k" alone is hit by a tuned random page about one time
+  in six (measured on v1: 16.8 % at density 0.50; the players got more by tuning per clue).
+
+### The fix (refiner brief idea (b), strongest form): the clue names the FIRST counted day
+
+Clue `L/S/x/k` -> **`L/S/x/k/n`**, e.g. `31/6/R/5/17`. Score 1 iff the page is exactly right,
+the counted days number k, **and the earliest counted day is n**:
+
+```
+C = { d : d and d+2 both carry x, and d is a Mon, Tue or Wed }     |C| == k  and  min C == n
+```
+
+Kid sentence, unchanged in kind: *"R doubles up in the same school week with one day in
+between, five times, and the first time is the 17th."*
+
+Why (b) and not (a) or (c):
+
+* (a) *"make the clue letter's identity matter"* - a count of x is **invariant under exactly
+  the rename tovel1b used** (it renames the other letters and keeps x as x), so a per-x count
+  transfers unchanged; a second clue letter `y` with its own relation does bite, but the
+  attacker can re-map `y` onto whichever of the 3-4 other letters fits, and it adds a whole
+  second clause to a class that no player has yet solved *once* - a too_hard risk.
+* (c) *"enlarge the clue space"* - comes free with (b): 140 (L,S,k) classes become **1229**
+  (L,S,k,n) classes, mean 8.8 first-days per triple, which cannot be farmed in six 0.5 s
+  rounds.
+* (b) also **softens** the class in exactly the place it was failing. The clue now points at
+  a day where the thing happens, so "day n carries x, and so does day n+2, in every demo" is
+  readable straight off the demos - the distance-2 relation stops being a guess - and because
+  every demo carries a two-apart x-pair *earlier than n* that does not count, the weekend /
+  week-break exclusion is shown positively instead of having to be inferred from a count.
+
+### Also done: the judge's advice
+
+`solve()` now requires in every demo a **weekend-reaching** pair (Thu/Fri start) and a
+**week-break-crossing** pair (Sat/Sun start) **within three days of a counted pair** - both
+present and adjacent in **100 %** of demos - and a non-counting pair **before day n** in
+**92 %** (it is dropped only when n sits at the very start of the month). The ten rival-count
+guarantees of v1 are unchanged.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 300` -> **OK**, no warnings.
+`score` **419** chars (cap 512), `solve` 4719 (cap 5000), `generate` 388; clue 11 chars,
+solution <= 175. gen 0.23 ms, score 0.26 ms, solve 151 ms worst under quickcheck.
+solve() scores 1 on **6000/6000** fresh seeds (22 ms average, 220 ms worst) and re-parses its
+own output with a byte-copy of the scorer before returning it. Scorer: **0 raises, 0
+non-binary** on 20 000 junk strings (worst 0.05 ms); **0 disagreements** with an independent
+re-implementation of the stated rule on 9 000 well-formed mutated answers.
+
+### Witness table - v1 vs v2 (600 fresh clues each; scratchpad `time2/attack.py`)
+
+| attack | v1 | v2 |
+|---|---|---|
+| **HARVEST: demo for clue A, letters renamed, submitted for clue B, same (days,start,k)** | **100.00 %** | **10.7-11.5 %** |
+| same, matching (days,start,k,**n**) as well | - | 100 % *(but 1229 classes; blind probing lands on one 1.5 % of the time)* |
+| tuned random lettering, density 0.20 / 0.35 / 0.50 / 0.65 / 0.80 | 2.71 / 11.17 / **16.79** / 14.38 / 4.29 % | 0.62 / 1.04 / **1.46** / 1.17 / 0.54 % |
+| ... of which get the count right but not the first day | - | 4.3 / 10.6 / 17.2 / 12.1 / 4.6 % |
+| best constant answer | 1.50 % | 1.00 % |
+| empty / spaces / newlines / `0` / `1` / `x` / `1`*100 / 4000-char junk / the clue itself | 0.00 % | 0.00 % |
+| no letters / every day = x / every day = one other letter | 0.00 % | 0.00 % |
+| one row / one token per line / zero-padded dates / extra day / dropped day / lower case / `17 B` | 0.00 % | 0.00 % |
+| page laid out from column 0 (S ignored) | 13 % *(= the S=0 clues)* | 11 % *(= the S=0 clues)* |
+| header / no header / tabs / blank lines | 100 % | 100 % |
+
+Wrong-relation constructors on a correct page (v2 column honours the clue's first day, which
+is what a player who has read the fifth field will do):
+
+| believed rule | v1 | v2, first day honoured | v2, first day ignored |
+|---|---|---|---|
+| x next door to x | 0.41 % | 0.00 % | 0.00 % |
+| x three apart | 0.00 % | 1.35 % | 0.00 % |
+| x a week apart (directly below) | 1.03 % | 5.22 % | 0.00 % |
+| x two apart, anywhere | 7.91 % | 15.00 % | 0.33 % |
+| x two apart, inside a week row (weekend kept) | 17.03 % | 27.67 % | 1.67 % |
+| **the true rule** | 100 % | **100 %** | 6.33 % |
+
+Two further tiers, measured because a good player will reach them:
+
+* **weekly-repeat template** (mark x on n, n+2, then the same two days each following week):
+  32 % overall - 77 % at k=2, 54 % at k=3, 25 % at k=4, 1 % at k=5, **0 % at k=6** (the month
+  runs out). It needs the anchor and the distance but not the weekend rule; the large-k clues
+  refuse it, which is where the weekday clause has to be understood.
+* **week-shifted replay** (slide a harvested page up or down by whole weeks so its anchor
+  lands on the new n): 61 % on the ~1/3 of clues where the shift is week-aligned. Deliberately
+  left open: performing it means the player has read the calendar's week periodicity and the
+  meaning of the fifth field, i.e. most of the rule. It is a near-crack tier, not a farm.
+
+### Predicted classification
+
+Farming ceiling ~12 % (was 83 %); blind ceiling ~1.5 % (was ~48 %); a player who reads the
+fifth field and the distance gets 32 %, one who also gets "same week" 28 %, one who gets the
+whole rule 100 %. Expect **testing / calibrated**, mean ~0.4-0.6 over two players, with the
+mean now coming from insight rather than from a lookup table. If both players crack: harden
+by moving the counted relation off the horizontal (x directly below x a fortnight apart) or
+by adding a second clue letter with its own relation. If both land under 10 %: the fifth
+field was not read as a date - soften by widening the clue to `31/6/R/5/first=17`.
+
+### Arena (players NOT run; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-2/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v2-1 --teams tovel2a,tovel2b \
+         --challenge-dir $SCRATCH/pool-tovel-2 --arena-root $SCRATCH/lad-tovel-v2-1
+```

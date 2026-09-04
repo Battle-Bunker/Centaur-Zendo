@@ -27,3 +27,16 @@ which cost trust in a correct reading. Consider making the spec complete (a prop
 does not give the height rule away and would remove a source of false doubt.
 
 Status: testing, 2 finals, 1 crack. Needs 2 more finals on other profiles before calibration.
+
+Correction after reading the theorist's report: there is no height rule to find. Heights are free
+(any physically consistent drawing with the right lean counts scores 1); the rule is the tipping
+physics — a book tips iff one side is an empty slot, the other side is a touching book, and the book
+across the gap is strictly taller. The theorist saw from demo 3 that heights "float", stopped
+searching for a formula, and built its own witness (every book 2 high, leaners cut to 1). The
+lowdemo player never had that third demo and spent the whole game on the red herring. So the
+split is exactly the intended one: "the tall ones are just tall — stop trying to work out why" is the
+kid insight, and it was reached by one Opus player in four rounds and by the other never.
+
+Theorist's fairness note: the four-letter tally is partial (the reference had leaners of unlisted
+letters). Fine as designed, but a future version could say so in the clue shape, e.g. always list
+the same four letters, so nobody wins by the lucky assumption "unlisted = zero".

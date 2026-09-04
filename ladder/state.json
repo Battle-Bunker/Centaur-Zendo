@@ -1461,7 +1461,22 @@
   },
   "velk": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Use a braid convention kids know (visibly broken under-strand) so who is on top reads without decoding \\ vs /.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 3,
+      "no_prereqs": 3,
+      "object": 3,
+      "rule_statable": 3
+     },
+     "score": 2.8,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1865,7 +1880,7 @@
    "id": "judge-velk-v1-1525",
    "kind": "judge",
    "started": 1788523627.7645402,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

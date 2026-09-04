@@ -1,0 +1,32 @@
+{
+ "run": "lad-sarn-v1-2",
+ "arena": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-sarn-v1-2",
+ "hidden": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-sarn-v1-2/.pool-8f12c1d9",
+ "port": 58925,
+ "pid": 12299,
+ "teams": [
+  "sarn2a",
+  "sarn2b"
+ ],
+ "tokens": {
+  "sarn2a": "9a7c3c666615",
+  "sarn2b": "907c291bff0a"
+ },
+ "admin_token": "07ffdd77b757027e",
+ "config": {
+  "cooldown_seconds": 5,
+  "max_training_rounds": 6,
+  "training_seconds": 21600,
+  "final_window_seconds": 3600,
+  "round_seconds": 0.5,
+  "final_seconds": 3.0,
+  "open_registration": true,
+  "challenge_dir": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-sarn-v1-2/.pool-8f12c1d9/challenges",
+  "event_log": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-sarn-v1-2/.pool-8f12c1d9/events.jsonl",
+  "host": "127.0.0.1",
+  "port": 58925,
+  "admin_token": "07ffdd77b757027e"
+ },
+ "pool_size": 1,
+ "started_at": 1788538667.8294384
+}

@@ -140,3 +140,29 @@ a player has the right family in mind; the difficulty is (a) getting the picture
 exactly right, (b) generating "count the leaves being nibbled" rather than "count the fish
 that are nibbling", and (c) clause 3, which is a positive-only clause and therefore invisible
 to any law-fitting over demos.
+
+## basten v1 ladder run `lad-basten-v1-1` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | note |
+|---|---|---|---|---|
+| basten1a | opus-default | 6% | 7 | 0/1880 for five rounds, then isolated-fish builder 3/478 |
+| basten1b | opus-kidproxy | 7% | 3 | found "both orientations required", "fish not touching", height free |
+
+Mean 7%: leaning too_hard (2 finals). Both players rebuilt the tank grammar completely (surface,
+gravel, digit → stalk height, fish spacing, both orientations present, height free) and both
+declared N "undiscoverable": 1a tested ~90 picture statistics and all two-term integer
+combinations; 1b ~350. Neither ever tested a statistic about **what a fish's nose touches**. The
+kid-proxy's imagined child said "it's a fish tank" and "the tanks are different heights" but not
+"that fish is eating the weed". 1a's post-mortem: "a kid would count something concrete and
+physical … instead of the abstract statistics I ground through" — but the physical reading it
+listed was fish-in-compartments, not nibbling.
+
+Diagnosis: the nose-to-leaf relationship is drawn (`><>|`) but nothing in the demos makes it the
+headline. With 13–23 fish per picture and only N nibbling spots, the nibblers are lost in the
+shoal. Judge advice was the same: widen the fish-minus-leaf gap so the mismatch is visible.
+Softening levers for v2 (in order): (a) far fewer fish per picture (say N+2..N+4) so most fish are
+nibblers and the demo reads "fish eating weeds"; (b) draw the nibbled cell differently — but only
+if that is what a tank would look like (e.g. a bite taken out: `><>:`), never a marker; (c) drop
+clause 3 (the both-sides double) which nobody got near; it can return once (a) lands.
+Both players praised the object and the demo mechanic; both called N unfair — the same complaint
+garrow got, and for the same reason: the counted relationship is drawn but not salient.

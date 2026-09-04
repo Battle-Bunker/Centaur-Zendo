@@ -697,8 +697,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 3,
+       "final_correct": 190,
+       "final_presented": 2576,
+       "final_rate": 0.07375776397515528,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         4,
+         464
+        ],
+        [
+         2,
+         467
+        ],
+        [
+         3,
+         491
+        ],
+        [
+         20,
+         462
+        ],
+        [
+         22,
+         478
+        ],
+        [
+         23,
+         458
+        ]
+       ],
+       "team": "basten1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 7,
+       "final_correct": 185,
+       "final_presented": 2946,
+       "final_rate": 0.06279701289884589,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         789
+        ],
+        [
+         0,
+         486
+        ],
+        [
+         0,
+         449
+        ],
+        [
+         0,
+         467
+        ],
+        [
+         0,
+         478
+        ],
+        [
+         3,
+         478
+        ]
+       ],
+       "team": "basten1a"
+      }
+     ],
+     "run": "lad-basten-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788535094.8941724,
@@ -2429,7 +2507,7 @@
    ]
   }
  },
- "direction_cursor": 9,
+ "direction_cursor": 10,
  "jobs": [
   {
    "agents": 0,
@@ -2924,7 +3002,13 @@
    "class": "sarn",
    "id": "players-sarn-v1-65fb",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-sarn-v1-2",
+   "started": 1788538667.788123,
+   "status": "running",
+   "teams": {
+    "sarn2a": "opus-lowdemo",
+    "sarn2b": "opus-theorist"
+   },
    "version": 1
   },
   {
@@ -3117,7 +3201,7 @@
    "kind": "players",
    "run": "lad-basten-v1-1",
    "started": 1788536514.92187,
-   "status": "running",
+   "status": "done",
    "teams": {
     "basten1a": "opus-default",
     "basten1b": "opus-kidproxy"
@@ -3157,6 +3241,23 @@
    "kind": "players",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "basten",
+   "id": "players-basten-v1-33fb",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "new-9",
+   "direction": "music, rhythm and dance",
+   "id": "designer-new-9-v0-5383",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

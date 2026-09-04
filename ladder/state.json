@@ -3712,10 +3712,11 @@
    "version": 2
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "garrow",
    "id": "players-garrow-v2-51cc",
    "kind": "players",
+   "note": "team b finished; one live agent remaining",
    "run": "lad-garrow-v2-1",
    "started": 1788543958.4470875,
    "status": "running",
@@ -3762,7 +3763,13 @@
    "class": "tovel",
    "id": "players-tovel-v3-man2",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-tovel-v3-2",
+   "started": 1788545741.6113465,
+   "status": "running",
+   "teams": {
+    "tovel2a": "opus-default",
+    "tovel2b": "opus-kidproxy"
+   },
    "version": 3
   }
  ],

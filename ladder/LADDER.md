@@ -90,3 +90,9 @@ answer is the clue's picture edited; reduce the rule to one clause a kid says in
 sure a player *with* a demo can crack it in ~2 rounds of ~60 probes about half the time, and a
 player *without* one can still send well-formed attempts and score a little. Old-format results
 (fennick 50 %, garrow 64 %, basten 33 %) are upper bounds now, not measurements.
+Run 2, `lad-crandel-v3-1` (crandel v3, Wordz, LegoZendo, fennick v2, kelmar, quaich v2, virel):
+40 and 71 out of ~5000, all on quaich by probing (a bar chart of colour counts, right only when
+green was tallest). Demos went on fennick / kelmar / crandel and taught only "answers are
+pictures"; nobody could read a shape off `B12`, `GBRBGB…`, `2452/5`. Confirms the pass: object in
+the clue, one clause, demo teaches the rule in one look. Players also asked for an example of
+the house style in the guide (added) and noted that a skip costs 0.4 ms vs 1.05 ms per answer.

@@ -1,10 +1,11 @@
-# Ladder report — 2026-09-04 23:24 UTC
+# Ladder report — 2026-09-04 23:28 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
 | class | v | status | mean final | balance | with demo | no demo | kid score | finals | cracks | profiles | old-cadence history |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | LegoZendo2 | 1 | testing | 8% | 0.17 | 8% (2) | - | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 100% (1) |
+| quaich | 2 | testing | 8% | 0.16 | - | 8% (2) | 2.6 | 2 | 0 | opus-lowdemo,opus-theorist | 62% (2) |
 | AHMES | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | ANAPAL | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
@@ -12,11 +13,11 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | basten | 2 | testing | 0% | 0.00 | - | 0% (2) | 3.8 | 2 | 0 | opus-default,opus-kidproxy | 20% (4) |
 | carre | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | CHAKRA | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| crandel | 3 | testing | - | - | - | - | 3.8 | 0 | 0 | - | - |
+| crandel | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 3.8 | 2 | 0 | opus-lowdemo,opus-theorist | - |
 | CRIBROT | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | DUOMASK | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | erewhon | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| fennick | 3 | testing | - | - | - | - | 4.2 | 0 | 0 | - | 25% (4) |
+| fennick | 3 | testing | - | - | - | - | 4.2 | 0 | 0 | - | 17% (6) |
 | garrow | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 40% (4) |
 | GRAYLING | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | HAIL | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
@@ -24,9 +25,9 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | HANSOM | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | IDX | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | ikos | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| kelmar | 1 | testing | 0% | 0.00 | - | 0% (2) | 4.0 | 2 | 0 | opus-default,opus-kidproxy | - |
+| kelmar | 1 | too_hard | 0% | 0.00 | 0% (1) | 0% (3) | 4.0 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | - |
 | krom | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| LegoZendo | 1 | testing | - | - | - | - | 3.4 | 0 | 0 | - | 100% (2) |
+| LegoZendo | 1 | testing | 0% | 0.00 | - | 0% (2) | 3.4 | 2 | 0 | opus-lowdemo,opus-theorist | 100% (2) |
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | morvin | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 76% (4) |
@@ -34,7 +35,6 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| quaich | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 62% (2) |
 | quilm | 3 | retired | - | - | - | - | 1.8 | 0 | 0 | - | 100% (4) |
 | regina | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | RUNIC | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
@@ -48,11 +48,11 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | trico | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | velk | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.4 | 2 | 0 | opus-default,opus-kidproxy | 100% (2) |
-| virel | 1 | testing | - | - | - | - | 3.8 | 0 | 0 | - | 57% (2) |
+| virel | 1 | testing | 0% | 0.00 | - | 0% (2) | 3.8 | 2 | 0 | opus-lowdemo,opus-theorist | 57% (2) |
 | volute | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | warren | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | wolf | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| Wordz | 1 | testing | - | - | - | - | 2.8 | 0 | 0 | - | 100% (2) |
+| Wordz | 1 | testing | 0% | 0.00 | - | 0% (2) | 2.8 | 2 | 0 | opus-lowdemo,opus-theorist | 100% (2) |
 | zebu | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 
 Textbook classes held at `too_easy_textbook` (100 % finals in sim1/sim2, not in the ladder): AHMES, ALLWIN, ANAPAL, BASILISK, carre, CHAKRA, CRIBROT, DUOMASK, erewhon, GRAYLING, HAIL, hanjie, HANSOM, IDX, ikos, krom, MARIENBAD, PP, regina, RUNIC, skerry, SPQ, SUNZI, TARE, TOPPLE, trico, TWINE, volute, warren, wolf, zebu

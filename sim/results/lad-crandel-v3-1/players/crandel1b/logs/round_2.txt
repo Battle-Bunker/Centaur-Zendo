@@ -1,0 +1,663 @@
+Centaur Zendo round 2 (training)
+round_id : 088e523885e74af683569835e6e61b74
+written  : 2026-09-04 23:10:32Z
+presented=645  answered=378  correct=0  skipped=267
+client answer latency: mean 0.089 ms  median 0.067 ms  max 6.049 ms  (n=646)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  quaich        GGBBRBBBGRRGBBGRRB                        G                                         0
+   1  quaich        RGBBRGGBRRBGGGRGRG                        G                                         0
+   2  crandel       243/332/5                                 None                                      0
+   3  LegoZendo     J3                                        M                                         0
+   4  kelmar        __Y__*_____*___Y__Y___*__*_______*_____…  None                                      0
+   5  fennick       AU.UL.V.A.UA..RP.P.PLV.R.L..UV.ARR.RU/P…  None                                      0
+   6  crandel       344/230/6                                 None                                      0
+   7  virel         6464/7                                    20                                        0
+   8  crandel       243/221/4                                 None                                      0
+   9  fennick       ANP.A.P.N.NNN.GA.B..NFB.G..GG.FP.AB/P:0…  None                                      0
+  10  Wordz         363                                       the people the                            0
+  11  Wordz         2216                                      to of a people                            0
+  12  crandel       620/422/2                                 None                                      0
+  13  Wordz         433                                       that,the,the                              0
+  14  virel         262653/2                                  2                                         0
+  15  Wordz         222                                       tototo                                    0
+  16  quaich        RRGGRBGGRBRR                              R6 G4 B2                                  0
+  17  fennick       BGU..F.MG.U..MF..GF.LB.UM.UB.L.G.LM/U:2…  None                                      0
+  18  Wordz         33225                                     the\nthe\nto\nto\nabout                   0
+  19  fennick       FFW..S.FW.SS..VL.L.SK.F.LV.SWL.FW.VLV/S…  None                                      0
+  20  fennick       UCU..FRC.RBB.F..DU.UF.U.DB.D.CUC.RBF/R:…  None                                      0
+  21  virel         536/1                                     356                                       0
+  22  quaich        GGRRBBRRRRGRBB                            BBBBGGGRRRRRRR                            0
+  23  quaich        RBGGRBRBGBGGBR                            R1B1G2R1B1R1B1G1B1G2B1R1                  0
+  24  LegoZendo     Q8                                        I                                         0
+  25  Wordz         1534                                      ["a", "about", "the", "that"]             0
+  26  crandel       443/521/2                                 None                                      0
+  27  crandel       244/631/3                                 None                                      0
+  28  kelmar        ___Y_____*__Y__Y___*_______Y__Y__Y__*__…  None                                      0
+  29  LegoZendo     I5                                        IIIII                                     0
+  30  LegoZendo     L3                                        14                                        0
+  31  kelmar        ___*___Y____*__Y__*__Y___*_______Y___Y_…  None                                      0
+  32  quaich        RGGGBRGBGGRRRG                            RGBRGBGRG                                 0
+  33  quaich        BBGRRRBRBGBG                              GBGBRBRRRGBB                              0
+  34  quaich        BGRRGRBRGGGBGBGGBG                        RRBGGRRGR                                 0
+  35  quaich        RBBRGRGBGBRRBBRB                          B                                         0
+  36  virel         23436/3                                   2343623436                                0
+  37  Wordz         4227                                      THAT TO TO BECAUSE                        0
+  38  LegoZendo     D1                                        5                                         0
+  39  virel         43244/6                                   ####\n###\n##\n####\n####                 0
+  40  Wordz         251335                                    to other r run not their                  0
+  41  kelmar        __*_____Y__Y__*___*__Y_______*___Y___Y_…  None                                      0
+  42  LegoZendo     V11                                       231                                       0
+  43  quaich        BRGGRBRRGGGRRGRB                          11                                        0
+  44  LegoZendo     U3                                        use                                       0
+  45  LegoZendo     D7                                        3                                         0
+  46  quaich        RBGRBBRRBGGRGBGGGG                        R                                         0
+  47  kelmar        __Y__*_____*__*____Y__Y__Y____Y______Y_…  None                                      0
+  48  fennick       PU.LH..LG.PGG.CCG.C.U.PGH.HP.UU.UL.PU/P…  None                                      0
+  49  quaich        RBRBGGRBBRGG                              4                                         0
+  50  fennick       NN.CL.N.NLN..RD.R.RD.DB.BR.C.D.B.NB/N:1…  None                                      0
+  51  LegoZendo     J3                                        ###                                       0
+  52  fennick       VF.GL.LLE.GVV..FUV.UG.E.L.FGU.U.EE.UUV/…  None                                      0
+  53  fennick       KS..B..BU.SW..U.WKP.UB.WP..S.KSK.BSU/K:…  None                                      0
+  54  Wordz         5434                                      about that the that.                      0
+  55  Wordz         3533                                      three five three three                    0
+  56  kelmar        ___*___*_____Y__*__*___Y__*__*___*__*__…  None                                      0
+  57  Wordz         2443                                      13                                        0
+  58  virel         565/1                                     1                                         0
+  59  LegoZendo     L7                                        LLLLLLL\nLLLLLLL                          0
+  60  LegoZendo     U5                                        ooooo\nUUUUU                              0
+  61  virel         5542/3                                    2455                                      0
+  62  virel         24666/6                                   0                                         0
+  63  virel         622366/4                                  3                                         0
+  64  crandel       632/440/2                                 None                                      0
+  65  fennick       EA.WT.TE..W.V.E.A..NV.NV..WW.ANE.VN/V:1…  None                                      0
+  66  kelmar        ______Y__*__Y__*___Y____Y__Y__*____*___…  None                                      0
+  67  crandel       321/521/3                                 None                                      0
+  68  quaich        RGBGGBRBRGRR                              RG BG GB RB RG RR                         0
+  69  kelmar        __Y__*__Y__*____*___*______*___Y____Y__…  None                                      0
+  70  Wordz         234                                       ##\n###\n####                             0
+  71  crandel       232/642/2                                 None                                      0
+  72  LegoZendo     A2                                        2                                         0
+  73  fennick       EJ.AL.A.P.AL.JA..J.V..VPP.EP.AJ..EE.VV/…  None                                      0
+  74  fennick       NS..RR.N.RC.RJ.CN..E..J.SRE.JS.R.NJ/C:0…  None                                      0
+  75  kelmar        ___*__Y___Y__*___*___Y_____Y__*__*_____…  None                                      0
+  76  quaich        RGBRRRRBRBGBGR                            #o.####.#.o.o#                            0
+  77  LegoZendo     V1                                        v                                         0
+  78  LegoZendo     T9                                        TUVWXYZAB                                 0
+  79  LegoZendo     C10                                       [CCCCCCCCCC]                              0
+  80  quaich        RBBBGRRGGBRG                              4 4 4                                     0
+  81  fennick       VUD.UVB..D.S.BV..B.V.NU.N.VVN.DV.SSU/N:…  None                                      0
+  82  kelmar        ______*__*__*_____*______*___Y________Y…  None                                      0
+  83  Wordz         4513                                      #### ##### # ###                          0
+  84  Wordz         45352                                     25354                                     0
+  85  crandel       244/222/421/3                             None                                      0
+  86  quaich        BBRBGBBRBGRGBBRRBR                        BB\nRB\nGB\nBR\nBG\nRG\nBB\nRR\nBR        0
+  87  kelmar        ____*___Y___Y____Y___*___Y_____*__Y___*…  None                                      0
+  88  Wordz         1434                                      a\nthat\nthe\nthat                        0
+  89  crandel       332/322/5                                 None                                      0
+  90  virel         6255/6                                    4                                         0
+  91  virel         565/5                                     6                                         0
+  92  Wordz         1623                                      a people to the                           0
+  93  virel         456/4                                     4 5 6                                     0
+  94  kelmar        ______*__*____*_____*__*__Y____Y____*__…  None                                      0
+  95  fennick       EFT.RT.FF..SE..F.T.RF.SL.R.L.LT..S.ELE/…  None                                      0
+  96  LegoZendo     I2                                        I\nI                                      0
+  97  kelmar        __Y____Y__*_____*__Y__*__Y___Y_____*__*…  None                                      0
+  98  quaich        BRBBBRRRGGRBRB                            B                                         0
+  99  crandel       221/443/230/2                             None                                      0
+ 100  kelmar        _______*__*_________*__Y___*______Y__Y_…  None                                      0
+ 101  fennick       GGE.M.GA.MW.A.MW..AME.AE.WGA.WGC.MCM/W:…  None                                      0
+ 102  kelmar        __Y___*__________Y__*__Y___*_____*____*…  None                                      0
+ 103  virel         63664/8                                   ########\n########\n########\n########\…  0
+ 104  LegoZendo     A11                                       L                                         0
+ 105  crandel       322/532/2                                 None                                      0
+ 106  crandel       330/422/3                                 None                                      0
+ 107  quaich        GGBGGRGBRRGGRB                            G                                         0
+ 108  quaich        GBGBGGBBGRRGBRGR                          R4 G7 B5                                  0
+ 109  quaich        GGGGRBGRRBBBBG                            BBBBBGGGGGGRRR                            0
+ 110  crandel       233/431/6                                 None                                      0
+ 111  fennick       MFN..FN.M.NV.RF.N.F.VJ.V..J.NJ.JM.MR/M:…  None                                      0
+ 112  kelmar        __*__*___Y________*__*_______*__Y___Y__…  None                                      0
+ 113  crandel       432/240/2                                 None                                      0
+ 114  quaich        BBRGBGBBGBGR                              B2R1G1B1G1B2G1B1G1R1                      0
+ 115  Wordz         236                                       to the people                             0
+ 116  virel         6365/3                                    17                                        0
+ 117  LegoZendo     S2                                        Q                                         0
+ 118  fennick       GM.JJ.H.N.A.HA..HHG..MG.MN..JN.AG.HGG/G…  None                                      0
+ 119  quaich        RGRBBRGGRRGBGBGR                          RGRBRGRGBGBGR                             0
+ 120  fennick       RRA.HAR.R.WC.W.AM.MH.H.RAW..RA.HRW.RC/R…  None                                      0
+ 121  LegoZendo     D10                                       DDDDDDDDDD                                0
+ 122  crandel       233/632/3                                 None                                      0
+ 123  LegoZendo     S2                                        20                                        0
+ 124  crandel       542/331/2                                 None                                      0
+ 125  kelmar        _____*___Y__*___*__Y__Y___Y______Y__*__…  None                                      0
+ 126  crandel       232/620/3                                 None                                      0
+ 127  kelmar        __*_______*___*____Y___Y__Y__*____Y____…  None                                      0
+ 128  kelmar        _____*__*__*__*__Y____Y___Y______Y_____…  None                                      0
+ 129  LegoZendo     Z4                                        30                                        0
+ 130  virel         652/1                                     13                                        0
+ 131  Wordz         17442                                     a,because,that,that,to                    0
+ 132  virel         255463/6                                  24                                        0
+ 133  Wordz         2215                                      totoaabout                                0
+ 134  kelmar        _______Y__*__*__Y______*___Y__Y__*___*_…  None                                      0
+ 135  Wordz         442                                       that\nthat\nto                            0
+ 136  quaich        GGBBRRRGBRBG                              GBRBGRRRBBGG                              0
+ 137  crandel       233/320/233/2                             None                                      0
+ 138  crandel       322/341/222/2                             None                                      0
+ 139  virel         34634/6                                   33446                                     0
+ 140  virel         662/4                                     662662                                    0
+ 141  LegoZendo     R6                                        102                                       0
+ 142  quaich        RGBRGRGBRBGRGRGB                          BGBRGBBR                                  0
+ 143  quaich        GRBBGGBGRRGBGGRRRR                        R                                         0
+ 144  Wordz         1443                                      ["a", "that", "that", "the"]              0
+ 145  LegoZendo     U8                                        universe                                  0
+ 146  Wordz         46343                                     THAT PEOPLE THE THAT THE                  0
+ 147  crandel       232/621/2                                 None                                      0
+ 148  LegoZendo     L8                                        11                                        0
+ 149  virel         6432/1                                    ######\n####\n###\n##                     0
+ 150  quaich        BGGGGGBBBRGR                              6                                         0
+ 151  Wordz         352                                       the every ya                              0
+ 152  quaich        RBGGGBBGRBBB                                                                        0
+ 153  fennick       VV.WC.S..WE.SC.EVA.CS.W.EVC..VVW.VA/C:1…  None                                      0
+ 154  quaich        RBRRBGGGRRRBBBRGBG                        7                                         0
+ 155  LegoZendo     B12                                       ############                              0
+ 156  Wordz         121                                       a to a.                                   0
+ 157  kelmar        __*____Y____Y______*__Y__Y___*___*___*_…  None                                      0
+ 158  Wordz         223223                                    two two three two two three               0
+ 159  kelmar        ______Y___Y__*__Y__*___*__*__Y__*__*___…  None                                      0
+ 160  fennick       JT..F.TJ.T.JP..J.CC.FT.PFR..CR.RC.TT/R:…  None                                      0
+ 161  LegoZendo     A8                                        AAAAAAAA\nAAAAAAAA                        0
+ 162  fennick       SSS.DDG..H..K..HG.HK.GDE.S.DS..KH.SHK/S…  None                                      0
+ 163  quaich        GGRGBBRBBGRGRBGB                          GG RG BB RB BG RG RB GB                   0
+ 164  virel         6463/2                                    2                                         0
+ 165  virel         266/2                                     662                                       0
+ 166  crandel       632/322/2                                 None                                      0
+ 167  Wordz         27335                                     20                                        0
+ 168  quaich        BBBGRBRRGRBR                              ...o#.##o#.#                              0
+ 169  kelmar        ___*___Y__*__Y____*__*_______*________Y…  None                                      0
+ 170  LegoZendo     B0                                        \n                                        0
+ 171  crandel       431/233/6                                 None                                      0
+ 172  fennick       AE.E..LT.GT.T.GL.TTV.V.VV.AG..VA.LLV/T:…  None                                      0
+ 173  Wordz         13341                                     #\n###\n###\n####\n#                      0
+ 174  crandel       233/230/4                                 None                                      0
+ 175  quaich        RBBRGGGGBBBG                              2 5 5                                     0
+ 176  LegoZendo     O5                                        5                                         0
+ 177  fennick       RM.RF.WWM..FRW.RL.LW.W.MS.WS..S.RM.RLM/…  None                                      0
+ 178  LegoZendo     Z12                                       zzzzzzzzzzzz                              0
+ 179  crandel       333/343/6                                 None                                      0
+ 180  Wordz         28251                                     ## ######## ## ##### #                    0
+ 181  virel         23464/6                                   1                                         0
+ 182  kelmar        __Y____Y_______Y__*__*__Y__Y________*__…  None                                      0
+ 183  Wordz         25145                                     54152                                     0
+ 184  fennick       JLN..HR.LNS.LSL.JL.SSJ.J.H.HH.NHS..JH/H…  None                                      0
+ 185  Wordz         233                                       to\nthe\nthe                              0
+ 186  kelmar        __Y___*___________*__*___*___Y________Y…  None                                      0
+ 187  Wordz         242                                       to that to                                0
+ 188  Wordz         3343                                      the and that for                          0
+ 189  kelmar        ___*__*___*__*_____Y__Y___*__Y__*______…  None                                      0
+ 190  virel         663/5                                     6                                         0
+ 191  Wordz         3433                                      the,that,the,the                          0
+ 192  fennick       SV.U.JSS..BJ.MS.BJU.J.VJ..V..VU.M.BV/U:…  None                                      0
+ 193  LegoZendo     R11                                       RSTUVWXYZAB                               0
+ 194  LegoZendo     M10                                       [MMMMMMMMMM]                              0
+ 195  crandel       242/430/5                                 None                                      0
+ 196  crandel       532/244/2                                 None                                      0
+ 197  quaich        GGGRBBBRRBGRBG                            GG\nGR\nBB\nBR\nRB\nGR\nBG                0
+ 198  fennick       NRW..SW.AM.MR.NA.RM.A.SS.R.AW.S.SRN.MW/…  None                                      0
+ 199  fennick       WW.NAW.A.C.D.DC.CW.W..VC.VD.AC..N.VD/V:…  None                                      0
+ 200  crandel       632/343/2                                 None                                      0
+ 201  virel         5526/5                                    4                                         0
+ 202  LegoZendo     J10                                       J\nJ\nJ\nJ\nJ\nJ\nJ\nJ\nJ\nJ              0
+ 203  kelmar        __*___Y______*__Y____*_____*__Y___*____…  None                                      0
+ 204  crandel       533/431/2                                 None                                      0
+ 205  Wordz         343                                       thethatthe                                0
+ 206  crandel       422/532/2                                 None                                      0
+ 207  Wordz         444513                                    that\nthat\nthat\nabout\na\nthe           0
+ 208  Wordz         15333                                     ["a", "about", "the", "the", "the"]       0
+ 209  crandel       333/631/3                                 None                                      0
+ 210  quaich        RRRBGGBGBRGBRG                            B                                         0
+ 211  crandel       332/340/6                                 None                                      0
+ 212  Wordz         4622                                      THAT PEOPLE TO TO                         0
+ 213  virel         623663/4                                  6                                         0
+ 214  quaich        BBRGRBRRBRBRRBGBGB                        B                                         0
+ 215  fennick       EJ.E..LMR..JL.MGJ.LJE.R.MEE.L..EG.RER/E…  None                                      0
+ 216  virel         2263/1                                    2 2 6 3                                   0
+ 217  kelmar        ____*__*________*__Y___Y___Y__*__Y__Y__…  None                                      0
+ 218  virel         23552/1                                   #\n#\n#\n#\n#                             0
+ 219  kelmar        ___Y_____*__*___Y______*__*__*__Y__Y__Y…  None                                      0
+ 220  crandel       432/221/5                                 None                                      0
+ 221  LegoZendo     Z5                                        E                                         0
+ 222  Wordz         162337                                    a around do one end decided               0
+ 223  LegoZendo     A5                                        V                                         0
+ 224  fennick       BP.PH.C.DGB..D..PGD.HG.GB.DP.H..HB.CB/P…  None                                      0
+ 225  fennick       AR.ERF.FR..UA.UEU.E.A.EUU.RB..R..FB.AE/…  None                                      0
+ 226  LegoZendo     D7                                        DDDDDDD                                   0
+ 227  fennick       ME.MRA..A.ERJ.WE..JRM.AJA.RJ.M.J.AM/M:1…  None                                      0
+ 228  fennick       VUU.VR.JJ..E.TRR.EJ.UEE.U..V..EV..URU/R…  None                                      0
+ 229  crandel       531/333/4                                 None                                      0
+ 230  Wordz         2646                                      to people that people.                    0
+ 231  LegoZendo     H4                                        11                                        0
+ 232  virel         343325/8                                  12                                        0
+ 233  fennick       UUM..C.M.DCM.U.DD.UC.RF.RUC..F.FM.MU/D:…  None                                      0
+ 234  fennick       HHC.TEJ..H.J.E.C.HGG.JH.JG.TT..HJ.ETH/J…  None                                      0
+ 235  fennick       HSK.N.NM.NV.MM.K.H.SMS.KNS.HS..MH..NM/M…  None                                      0
+ 236  LegoZendo     N3                                        17                                        0
+ 237  quaich        GBGRRRBRRGBRBR                            R7 G3 B4                                  0
+ 238  virel         464324/8                                  23                                        0
+ 239  Wordz         222                                       two two two                               0
+ 240  quaich        GBGRRGRRRBRGGGGB                          BBBGGGGGGGRRRRRR                          0
+ 241  fennick       LLJ.J..LL.PAG.LG.JA..P.AJN.AJ.L..N..NAJ…  None                                      0
+ 242  fennick       FSH.N.AF.HNN.FS.H.NW.F.W.A.WWS..NW..FS/…  None                                      0
+ 243  fennick       SHB.HBB..EE.EE.B.FP..S.SF..H.FS.PH.HSE/…  None                                      0
+ 244  crandel       231/232/222/4                             None                                      0
+ 245  crandel       542/320/2                                 None                                      0
+ 246  crandel       443/220/5                                 None                                      0
+ 247  fennick       LHL.B..LL.BB.HB.KH.KB.HW..N.NL.K.WB/H:2…  None                                      0
+ 248  virel         333246/5                                  32                                        0
+ 249  crandel       231/631/3                                 None                                      0
+ 250  virel         2235/4                                    2235                                      0
+ 251  crandel       533/331/3                                 None                                      0
+ 252  virel         54545/7                                   5454554545                                0
+ 253  Wordz         4614                                      15                                        0
+ 254  quaich        RRRBBBBBBRGG                              R3B6R1G2                                  0
+ 255  fennick       JNE..JP.UEU..LP.JE.U.UN..E.LEN.LUJ.PPL/…  None                                      0
+ 256  quaich        GBBGBBRBRBBGGGRR                          GBGBRBRBGR                                0
+ 257  crandel       233/643/4                                 None                                      0
+ 258  crandel       222/420/2                                 None                                      0
+ 259  Wordz         152613                                    #\n#####\n##\n######\n#\n###              0
+ 260  fennick       FLU.FP..CU.PPP.FLF..C.CJ.F..UL.CP.UUU/F…  None                                      0
+ 261  virel         4262/1                                    ####\n##\n######\n##                      0
+ 262  fennick       AP.A.M.EM.AP.LL..E.KM.KP..L.PA.P.PME/A:…  None                                      0
+ 263  Wordz         44141                                     #### #### # #### #                        0
+ 264  quaich        GBBGBBBGBGRGRGBR                          RBGRGRGBGBBBGBBG                          0
+ 265  crandel       343/640/3                                 None                                      0
+ 266  virel         5463/6                                    6                                         0
+ 267  crandel       233/331/6                                 None                                      0
+ 268  LegoZendo     G9                                        54                                        0
+ 269  kelmar        __*__*___*____*__Y__Y__*_____*____*____…  None                                      0
+ 270  virel         644254/7                                  452446                                    0
+ 271  virel         333436/2                                  0                                         0
+ 272  kelmar        __*_____Y____Y___*___*___Y___Y____Y__*_…  None                                      0
+ 273  kelmar        __Y___Y___Y__Y__*__*__Y____Y__Y___*__*_…  None                                      0
+ 274  Wordz         26252                                     25262                                     0
+ 275  fennick       RFP..D.DMR.FDN.PNP.MN..F.DF.MNR.M.MND/D…  None                                      0
+ 276  kelmar        __*____Y_____*_____Y___*__*__*__Y__Y___…  None                                      0
+ 277  Wordz         3624                                      the\npeople\nto\nthat                     0
+ 278  virel         342532/3                                  2                                         0
+ 279  virel         52625/4                                   5                                         0
+ 280  virel         5553/6                                    5                                         0
+ 281  quaich        GBRBRBRBGBGBGRGB                          RGGGRRBR                                  0
+ 282  crandel       531/332/3                                 None                                      0
+ 283  crandel       241/221/5                                 None                                      0
+ 284  quaich        GGGBBGGGBBGRGBRBBG                        G                                         0
+ 285  kelmar        __*___Y__Y_____Y___Y____*___*___*__Y___…  None                                      0
+ 286  fennick       VMV.PW.P.M..H.F.MF.V..W.WP.M.HH.MV..PWP…  None                                      0
+ 287  kelmar        __*___*__Y__*__*______*__Y__Y___Y______…  None                                      0
+ 288  LegoZendo     K1                                        k                                         0
+ 289  virel         42532/2                                   4 2 5 3 2                                 0
+ 290  LegoZendo     S10                                       18                                        0
+ 291  kelmar        ___Y___Y__Y__*__*__Y_______*__Y__*__*__…  None                                      0
+ 292  kelmar        _____*____Y___Y__*__*_____*______Y__*__…  None                                      0
+ 293  virel         624243/2                                  ##\n##\n##\n##\n##\n##                    0
+ 294  crandel       244/432/6                                 None                                      0
+ 295  LegoZendo     S6                                        ######                                    0
+ 296  virel         5422/1                                    12                                        0
+ 297  LegoZendo     M10                                       MMMMMMMMMM\nMMMMMMMMMM                    0
+ 298  quaich        RRRBBBBGGBGGBBGRGR                        10                                        0
+ 299  virel         44564/2                                   23                                        0
+ 300  crandel       444/530/2                                 None                                      0
+ 301  LegoZendo     X10                                       oooooooooo\nXXXXXXXXXX                    0
+ 302  crandel       432/230/5                                 None                                      0
+ 303  crandel       442/430/3                                 None                                      0
+ 304  fennick       PNT.T.A..P.PC.CA.NJ.JA.C.AA.TT..N..AA/C…  None                                      0
+ 305  crandel       332/333/232/3                             None                                      0
+ 306  virel         642253/2                                  2                                         0
+ 307  Wordz         252544                                    to about to about that that               0
+ 308  kelmar        __*___*___Y__Y__*___*_______*__*__*___Y…  None                                      0
+ 309  quaich        BRRGGBRBGGGRRGGB                          R                                         0
+ 310  Wordz         333                                       the and for                               0
+ 311  crandel       531/233/3                                 None                                      0
+ 312  crandel       432/642/2                                 None                                      0
+ 313  crandel       332/230/321/2                             None                                      0
+ 314  crandel       521/221/3                                 None                                      0
+ 315  virel         446325/10                                 234456                                    0
+ 316  quaich        BGBGGRRBGRGGRGRBGR                        6                                         0
+ 317  virel         65326/8                                   6532665326                                0
+ 318  LegoZendo     Q5                                        5                                         0
+ 319  LegoZendo     A10                                       aaaaaaaaaa                                0
+ 320  crandel       244/443/5                                 None                                      0
+ 321  virel         222244/1                                  ##\n##\n##\n##\n####\n####                0
+ 322  Wordz         1416                                      a,that,a,people                           0
+ 323  LegoZendo     Z2                                        ZA                                        0
+ 324  quaich        BBRRBBGRGGGGBGBBRR                        BB RR BB GR GG GG BG BB RR                0
+ 325  virel         643/2                                     2                                         0
+ 326  virel         5534/1                                    4355                                      0
+ 327  kelmar        _____Y__Y__*____*__*_______*__Y__*___*_…  None                                      0
+ 328  Wordz         14342                                     athatthethatto                            0
+ 329  kelmar        __Y_____*__Y__Y__*__Y___Y_____*___*__*_…  None                                      0
+ 330  kelmar        __*__Y__*__*____Y____Y__Y_______*___Y__…  None                                      0
+ 331  LegoZendo     Q4                                        [QQQQ]                                    0
+ 332  Wordz         325                                       the\nto\nabout                            0
+ 333  Wordz         334                                       ["the", "the", "that"]                    0
+ 334  quaich        BGBBBGRRBGGB                              .o...o##.oo.                              0
+ 335  virel         264/1                                     0                                         0
+ 336  Wordz         3424                                      THE THAT TO THAT                          0
+ 337  virel         534/4                                     5                                         0
+ 338  LegoZendo     G6                                        G\nG\nG\nG\nG\nG                          0
+ 339  kelmar        ___*___Y____*__*___*__*__*__Y__Y___Y__Y…  None                                      0
+ 340  crandel       321/222/333/3                             None                                      0
+ 341  LegoZendo     I2                                        K                                         0
+ 342  quaich        GRBRBBGGRBGBRRGG                          5 6 5                                     0
+ 343  fennick       CKL.D.KK.K.CR.ED.RC.DCC..KL..ECD..RLE/D…  None                                      0
+ 344  kelmar        __Y___Y__*________Y__Y____Y__*__Y____*_…  None                                      0
+ 345  crandel       631/331/3                                 None                                      0
+ 346  fennick       NN.F..J.FJ..T.AAA.A..UN.TA.JU.TFU.UA/T:…  None                                      0
+ 347  virel         264352/2                                  6                                         0
+ 348  crandel       520/532/2                                 None                                      0
+ 349  Wordz         3323                                      the end do one                            0
+ 350  virel         454/1                                     5                                         0
+ 351  virel         664/3                                     6 6 4                                     0
+ 352  fennick       CV..BW..CW.LL..UW.UCV.W.BCB.U.CU.VW/U:0…  None                                      0
+ 353  Wordz         35345                                     the about the that about.                 0
+ 354  fennick       UT.RTN.T.URT.NUN..WW.RP..P.U..UP.WRN/T:…  None                                      0
+ 355  quaich        GRBRBRRRGBGBRBRG                          GR\nBR\nBR\nRR\nGB\nGB\nRB\nRG            0
+ 356  fennick       APN.VA.JA.N..VN.J.PAP..P.JN..TPT.TV/T:1…  None                                      0
+ 357  fennick       PAR.N.A..VVA.WP.RV.AP..AR..V.NV.P.WVA/A…  None                                      0
+ 358  Wordz         233                                       two three three                           0
+ 359  virel         25626/4                                   ####\n####\n####\n####\n####              0
+ 360  virel         42543/3                                   15                                        0
+ 361  kelmar        __*___*__Y__*___Y__Y__Y__*_____*_____*_…  None                                      0
+ 362  LegoZendo     R4                                        N                                         0
+ 363  LegoZendo     A7                                        AAAAAAA                                   0
+ 364  LegoZendo     T7                                        26                                        0
+ 365  quaich        RRBBRRGBRRRGGGRG                          R                                         0
+ 366  LegoZendo     L5                                        17                                        0
+ 367  LegoZendo     B5                                        5                                         0
+ 368  crandel       444/520/3                                 None                                      0
+ 369  quaich        BGRRGRGBBBBG                              B                                         0
+ 370  Wordz         24244                                     16                                        0
+ 371  fennick       PKM.G..GM.SSH.GS..PH.PKS.M.K.S.GHH.KSH/…  None                                      0
+ 372  LegoZendo     S7                                        someone                                   0
+ 373  kelmar        __Y__*____Y__Y__*__*__Y___*____Y____Y__…  None                                      0
+ 374  quaich        GGBRGBBRGGBBBRGRBR                        R5 G6 B7                                  0
+ 375  quaich        RGBRRRRBBBGRRBBB                          BBBBBBBGGRRRRRRR                          0
+ 376  LegoZendo     M0                                        12                                        0
+ 377  quaich        GBGRRRBGBGBRRB                            G1B1G1R3B1G1B1G1B1R2B1                    0
+ 378  LegoZendo     Z10                                       ##########                                0
+ 379  fennick       NGA.L.DN..GAU.A.NUG.N..D.LU.G.NLA.LG/U:…  None                                      0
+ 380  crandel       243/341/3                                 None                                      0
+ 381  kelmar        __Y__*_____*______*___Y__Y___*___*__*__…  None                                      0
+ 382  kelmar        __*__*__*_______*__Y__Y____*__*__*____Y…  None                                      0
+ 383  LegoZendo     V2                                        VV\nVV                                    0
+ 384  quaich        RGBRGRGGGBBR                              RGBRGRGBR                                 0
+ 385  crandel       444/232/5                                 None                                      0
+ 386  virel         5635/3                                    19                                        0
+ 387  crandel       343/442/5                                 None                                      0
+ 388  quaich        BBBBGRGBRGGRRBGRBR                        RBRGBRRGGRBGRGBBBB                        0
+ 389  Wordz         233                                       ##\n###\n###                              0
+ 390  kelmar        ___*___*______Y__*__Y____Y__Y__*__Y__*_…  None                                      0
+ 391  crandel       232/332/6                                 None                                      0
+ 392  crandel       322/430/5                                 None                                      0
+ 393  kelmar        __Y____Y__*__*__*__________Y__*________…  None                                      0
+ 394  kelmar        __Y_____Y___Y__*___*__*_____Y__Y____*__…  None                                      0
+ 395  virel         26254/5                                   5                                         0
+ 396  quaich        RRRGBRBBBRGR                              RBGBGB                                    0
+ 397  Wordz         523                                       ##### ## ###                              0
+ 398  quaich        RRGBGRBRRGBG                              B                                         0
+ 399  LegoZendo     B4                                        oooo\nBBBB                                0
+ 400  crandel       220/231/231/4                             None                                      0
+ 401  fennick       AUD..LA.PU..U.P..PED.DE.LD.PL.E.PE.UP/D…  None                                      0
+ 402  crandel       333/231/5                                 None                                      0
+ 403  Wordz         3414                                      4143                                      0
+ 404  virel         34543/4                                   33445                                     0
+ 405  virel         3254/1                                    32543254                                  0
+ 406  crandel       442/331/233/2                             None                                      0
+ 407  Wordz         244                                       to\nthat\nthat                            0
+ 408  crandel       544/331/2                                 None                                      0
+ 409  virel         36336/1                                   ###\n######\n###\n###\n######             0
+ 410  kelmar        ______*__*___Y__Y___Y__*_____*__Y___Y__…  None                                      0
+ 411  crandel       644/221/4                                 None                                      0
+ 412  fennick       TMM.T..MT.M.MAG.A.G..NA.DT..GD.TTN.AGD/…  None                                      0
+ 413  fennick       MGD.D.R.RMM.EDM..G.E.GMG.UED.MG..EU.ER/…  None                                      0
+ 414  virel         56523/5                                   5                                         0
+ 415  fennick       JBT.DT.DLL.JK..L.BB.KB.LJ.K.JTB..DKL.BK…  None                                      0
+ 416  virel         2336/3                                    6332                                      0
+ 417  crandel       322/240/5                                 None                                      0
+ 418  Wordz         23151                                     to the a about a                          0
+ 419  kelmar        ___Y____*__Y__Y__*____Y_____*____*___*_…  None                                      0
+ 420  Wordz         245                                       to that about                             0
+ 421  fennick       JWE.EEJ.JF.FJ.E.TF.BBW.J.W.BT.EWJ..EB/B…  None                                      0
+ 422  quaich        RBRBGRBGGGRGRBGBGB                        16                                        0
+ 423  quaich        GRBRRBGBBRRBBG                            R                                         0
+ 424  crandel       243/630/4                                 None                                      0
+ 425  quaich        GRBBBGRBGGBGRRGBGG                        4                                         0
+ 426  LegoZendo     O8                                        8                                         0
+ 427  Wordz         2421                                      to,that,to,a                              0
+ 428  virel         5223/3                                    0                                         0
+ 429  LegoZendo     X8                                        xxxxxxxx                                  0
+ 430  kelmar        __Y___*___Y____*__Y__Y____Y__*______*__…  None                                      0
+ 431  virel         43332/3                                   3                                         0
+ 432  virel         666/3                                     3                                         0
+ 433  kelmar        ___Y____*__Y__*___*__Y____Y__Y_______*_…  None                                      0
+ 434  LegoZendo     V7                                        VWXYZAB                                   0
+ 435  crandel       333/321/2                                 None                                      0
+ 436  Wordz         1425                                      athattoabout                              0
+ 437  Wordz         34335                                     the\nthat\nthe\nthe\nabout                0
+ 438  kelmar        ___*___*__*__Y__*______Y___Y__*______Y_…  None                                      0
+ 439  quaich        RBRRGRBGBRRB                              RB RR GR BG BR RB                         0
+ 440  kelmar        ____Y___Y___*___Y___*___*___*______*___…  None                                      0
+ 441  quaich        BBRRBRBBRGGB                              ..##.#..#oo.                              0
+ 442  virel         535/4                                     5                                         0
+ 443  crandel       421/522/2                                 None                                      0
+ 444  crandel       432/221/233/3                             None                                      0
+ 445  virel         36323/3                                   3 6 3 2 3                                 0
+ 446  Wordz         422                                       ["that", "to", "to"]                      0
+ 447  LegoZendo     K4                                        [KKKK]                                    0
+ 448  fennick       MN.RJ.M.RMM.NNN..R..CCR..C.CN.UM.JRN/R:…  None                                      0
+ 449  LegoZendo     J4                                        J\nJ\nJ\nJ                                0
+ 450  kelmar        __Y_______Y___Y____Y___*___*__*__*__*__…  None                                      0
+ 451  crandel       422/420/2                                 None                                      0
+ 452  quaich        BRBGRGGBBGGRBBRRGB                        5 6 7                                     0
+ 453  kelmar        _____*__*____Y__*____Y_______Y__*__*___…  None                                      0
+ 454  quaich        RBGRRBGGBRBRBBBR                          RB\nGR\nRB\nGG\nBR\nBR\nBB\nBR            0
+ 455  crandel       332/421/4                                 None                                      0
+ 456  kelmar        __*__Y___*______Y____*__Y____*__*____*_…  None                                      0
+ 457  LegoZendo     V7                                        C                                         0
+ 458  virel         564/1                                     #\n#\n#                                   0
+ 459  fennick       CWW.V..RV.SSR.CB..S.SC.W.VW.VWB.B..SR/W…  None                                      0
+ 460  quaich        BGRRBBBRGBRGGGRR                          R                                         0
+ 461  Wordz         2314                                      TO THE A THAT                             0
+ 462  kelmar        ____Y___*_______*__*__Y__*____Y___Y____…  None                                      0
+ 463  LegoZendo     N9                                        E                                         0
+ 464  quaich        GGBBBRRBRBGG                              B                                         0
+ 465  LegoZendo     Y3                                        YYY                                       0
+ 466  fennick       JCU..JAA.ULM.AC.LC.JUJ.L..J.MC.C..CC/A:…  None                                      0
+ 467  LegoZendo     E2                                        6                                         0
+ 468  crandel       432/221/2                                 None                                      0
+ 469  crandel       244/521/2                                 None                                      0
+ 470  fennick       SS.J.TUJ.TU.SJ.RS.JT..RB.BU..B.BRU.US/B…  None                                      0
+ 471  LegoZendo     Q0                                        17                                        0
+ 472  quaich        GBBRBBRBRGBGRG                            R4 G4 B6                                  0
+ 473  kelmar        ___________Y__Y___*____Y__*_____*___*__…  None                                      0
+ 474  kelmar        __Y__*__Y__*_____*___*____*__Y___Y____*…  None                                      0
+ 475  crandel       431/231/5                                 None                                      0
+ 476  quaich        RRRBRGRBBGGG                              BBBGGGGRRRRR                              0
+ 477  kelmar        __Y__*__Y__*___Y__*__Y_____*___*_______…  None                                      0
+ 478  virel         36436/7                                   15                                        0
+ 479  virel         334365/8                                  24                                        0
+ 480  LegoZendo     C4                                        8                                         0
+ 481  fennick       SC..JB..AJ.S.CJS.DS.B.DDB.BAD..SA.CDB/C…  None                                      0
+ 482  crandel       243/633/4                                 None                                      0
+ 483  LegoZendo     C7                                        company                                   0
+ 484  crandel       343/632/3                                 None                                      0
+ 485  quaich        GRRGGRGGBBBRBRBR                          G1R2G2R1G2B3R1B1R1B1R1                    0
+ 486  kelmar        __*__Y__*___Y_____*____Y__*__*___Y__*__…  None                                      0
+ 487  fennick       RWL.RMJ.JRG.GW.RLR..M.G.R.MJ.WG.J..LWG/…  None                                      0
+ 488  Wordz         15245                                     a about to only years                     0
+ 489  LegoZendo     V6                                        21                                        0
+ 490  LegoZendo     H7                                        #######                                   0
+ 491  LegoZendo     L8                                        LLLLLLLL\nLLLLLLLL                        0
+ 492  Wordz         421                                       that to a.                                0
+ 493  Wordz         243                                       two four three                            0
+ 494  virel         53636/7                                                                             0
+ 495  LegoZendo     E3                                        ooo\nEEE                                  0
+ 496  LegoZendo     T3                                        3                                         0
+ 497  virel         52556/6                                   25556                                     0
+ 498  fennick       US..F.UU.UFR..UC.RRS.GCR.G.US.FFS.FCS/S…  None                                      0
+ 499  virel         265526/9                                  265526265526                              0
+ 500  LegoZendo     Z4                                        zzzz                                      0
+ 501  quaich        GGGRRBGBRGRBRRGB                          GRBGBRGRBRGB                              0
+ 502  quaich        GGGGRBBBGBBGBRRG                          GRRBGBBGBBBRGGGG                          0
+ 503  virel         444/3                                     ####\n####\n####                          0
+ 504  Wordz         14233                                     13                                        0
+ 505  LegoZendo     Z4                                        ZABC                                      0
+ 506  fennick       BK.B..VE.FK.F.BS.SV.VB..EF.FS.EVF.KBV/S…  None                                      0
+ 507  crandel       221/332/4                                 None                                      0
+ 508  quaich        BRGRRRGBGRRG                              GBRRBB                                    0
+ 509  kelmar        __Y__*____*__*__Y____*__*____Y___Y_____…  None                                      0
+ 510  kelmar        __Y__*__Y___Y___*__Y___________*___*__Y…  None                                      0
+ 511  Wordz         23376                                     ##\n###\n###\n#######\n######             0
+ 512  crandel       231/332/221/2                             None                                      0
+ 513  LegoZendo     K9                                        [KKKKKKKKK]                               0
+ 514  quaich        BBRBGGBRBRBBBGRR                          G                                         0
+ 515  crandel       331/631/3                                 None                                      0
+ 516  fennick       FJ.VDF.F.J.V.DV..ND..N..FN.P.JD.PNN.FF/…  None                                      0
+ 517  kelmar        __*____Y__*____*__Y__Y__*___*___*___Y__…  None                                      0
+ 518  fennick       GFN.BGF..DD.AN.B.FDG.GF.A.AB.NF.D.GN/G:…  None                                      0
+ 519  kelmar        ___Y___*__*__*_____*__*__Y_____Y___Y___…  None                                      0
+ 520  quaich        BGBRRGRRGRBG                              10                                        0
+ 521  fennick       PT.PG.PG.P.A..PTT.SG.SPA.G..GU.TUU.GUT/…  None                                      0
+ 522  crandel       233/332/4                                 None                                      0
+ 523  quaich        RBGRGGBGBGGRBRGR                          R                                         0
+ 524  fennick       PPS.FVP.F.M.T..VV.MVF.VP..S.TP.P.TMP/T:…  None                                      0
+ 525  Wordz         1323                                      # ### ## ###                              0
+ 526  Wordz         12434                                     43421                                     0
+ 527  Wordz         173546                                    a\nbecause\nthe\nabout\nthat\npeople      0
+ 528  crandel       643/320/2                                 None                                      0
+ 529  quaich        GGRBBBGBBBGGRR                            3                                         0
+ 530  crandel       233/540/4                                 None                                      0
+ 531  Wordz         282657                                    to business to people about because       0
+ 532  crandel       332/220/5                                 None                                      0
+ 533  kelmar        ____*___*___Y___Y___Y___Y__*____Y__*__Y…  None                                      0
+ 534  crandel       244/431/222/3                             None                                      0
+ 535  virel         336/3                                     3                                         0
+ 536  virel         225545/5                                  545522                                    0
+ 537  quaich        GBBRGBGBRRBBGBGGBR                        GB BR GB GB RR BB GB GG BR                0
+ 538  Wordz         32252                                     the to of about in                        0
+ 539  quaich        GBBRGBBGRGGBRBGR                          o..#o..o#oo.#.o#                          0
+ 540  virel         545/4                                     2                                         0
+ 541  fennick       NF.JN..FK.NN.R..RKR.K..SJ.FJ..J.SK.RSN/…  None                                      0
+ 542  quaich        BRGGGGGGRBGBBBGGRR                        4 9 5                                     0
+ 543  fennick       SP.H.HU.LL.L..PS.KL.HS.US.U.LK..LUK.UHL…  None                                      0
+ 544  virel         263364/4                                  3                                         0
+ 545  kelmar        ___Y___*__*_______*___*_____Y__*_____*_…  None                                      0
+ 546  quaich        RBGGGGBGRBBR                              RB\nGG\nGG\nBG\nRB\nBR                    0
+ 547  Wordz         24223                                     to,that,to,to,the                         0
+ 548  crandel       444/221/4                                 None                                      0
+ 549  Wordz         342                                       thethatto                                 0
+ 550  fennick       JMJ.MM..JR.RMF.RJ.MJR..J.MF..V.PP.VP/P:…  None                                      0
+ 551  virel         64363/6                                   5                                         0
+ 552  virel         4544/2                                    5                                         0
+ 553  kelmar        ___Y____*____*__*______Y__Y____*__*__*_…  None                                      0
+ 554  quaich        GGBBGBBBBRGGRRGB                          G                                         0
+ 555  LegoZendo     U1                                        U                                         0
+ 556  virel         23345/5                                   2 3 3 4 5                                 0
+ 557  LegoZendo     C9                                        L                                         0
+ 558  virel         52656/8                                   ########\n########\n########\n########\…  0
+ 559  quaich        BRGGRRGRGRBGRR                            R                                         0
+ 560  LegoZendo     Q9                                        H                                         0
+ 561  Wordz         242                                       to\nthat\nto                              0
+ 562  virel         2235/4                                    8                                         0
+ 563  virel         33545/2                                   20                                        0
+ 564  quaich        GGBRRRGGGBBB                              R3 G5 B4                                  0
+ 565  kelmar        ____Y___*___Y____Y___*______*__Y___*___…  None                                      0
+ 566  virel         22524/3                                                                             0
+ 567  virel         266/1                                     266                                       0
+ 568  kelmar        ___*__Y___Y_____*___*___Y____*__Y__*___…  None                                      0
+ 569  crandel       432/621/2                                 None                                      0
+ 570  fennick       SN.NNV.NT..NSV..N.P.TL.PV.T.LVS.LS.SSV/…  None                                      0
+ 571  fennick       TD.B.H.HB.DHJ.HT.TJ..D.PJ.P.TJT..BP..DP…  None                                      0
+ 572  Wordz         54242                                     ["about", "that", "to", "that", "to"]     0
+ 573  Wordz         224                                       TO TO THAT                                0
+ 574  quaich        GGGRBBRRGRGRRGGGRR                        BBGGGGGGGGRRRRRRRR                        0
+ 575  Wordz         252656                                    to other re enough house enough           0
+ 576  kelmar        __*__________Y__*___*__*___Y____Y__Y__*…  None                                      0
+ 577  virel         43653/6                                   4365343653                                0
+ 578  LegoZendo     T11                                       TTTTTTTTTTT                               0
+ 579  crandel       521/522/2                                 None                                      0
+ 580  LegoZendo     F8                                        13                                        0
+ 581  fennick       CKA.T.C.A.AD.FC.AT..AD.TCT.TKT.KF.CTT/A…  None                                      0
+ 582  crandel       231/431/322/2                             None                                      0
+ 583  fennick       UU.ME.MF.T..E.MEM..F.VV..FV.TT.UEF.UME/…  None                                      0
+ 584  kelmar        _____*__Y_____*___Y__Y__Y__*___Y_______…  None                                      0
+ 585  quaich        BRBRBRBRRBBGRGGBGG                        B1R1B1R1B1R1B1R2B2G1R1G2B1G2              0
+ 586  virel         22466/2                                   ##\n##\n####\n######\n######              0
+ 587  quaich        RBRBBRBRBRGG                              RBRBRBRBRG                                0
+ 588  virel         644/1                                     1                                         0
+ 589  LegoZendo     B1                                        3                                         0
+ 590  LegoZendo     G4                                        24                                        0
+ 591  Wordz         55232                                     about about to the to.                    0
+ 592  crandel       244/421/3                                 None                                      0
+ 593  crandel       242/233/4                                 None                                      0
+ 594  kelmar        ___*____*_____*__Y__Y______Y__*__Y_____…  None                                      0
+ 595  fennick       KL..AGK.GP.GA.LH.K.LP..A..GH..KHA.HLL/L…  None                                      0
+ 596  fennick       BP.K.BB.KE.BKB..V.EK.R..KR.VR.BV.EV/B:2…  None                                      0
+ 597  quaich        RGGRGBGGRBRG                              GRBRGGBGRGGR                              0
+ 598  LegoZendo     T10                                       themselves                                0
+ 599  Wordz         4346                                      four three four six                       0
+ 600  crandel       343/441/5                                 None                                      0
+ 601  LegoZendo     U6                                        20                                        0
+ 602  quaich        BGGBBRGRRRGBRBRG                          RRGBRRGB                                  0
+ 603  quaich        RRGGGGGBGBBBBB                            G                                         0
+ 604  quaich        RRBGRRRGRBBBBGRBRR                        11                                        0
+ 605  kelmar        ______*______Y___Y_____*____Y___*__*__Y…  None                                      0
+ 606  virel         445/2                                     544                                       0
+ 607  crandel       343/541/2                                 None                                      0
+ 608  Wordz         253                                       10                                        0
+ 609  virel         64332/3                                   0                                         0
+ 610  crandel       232/632/4                                 None                                      0
+ 611  quaich        RGBBGGRRRGGGRBGRRB                        R                                         0
+ 612  fennick       SH..WJ.J.HWR.HS.H.GG.SR.W..R.RH.JW.WH/R…  None                                      0
+ 613  LegoZendo     R10                                       ##########                                0
+ 614  fennick       RP.MA.SM.RB.SMB.S.R.A..PAR.P..RR.SP/M:1…  None                                      0
+ 615  LegoZendo     P12                                       PPPPPPPPPPPP\nPPPPPPPPPPPP                0
+ 616  fennick       WW.W.E..WAW.FE.A.EF.SN.NE.WFF..SA.NWN/N…  None                                      0
+ 617  quaich        RGGRRRRRGGBRBGBR                          8                                         0
+ 618  crandel       220/233/421/3                             None                                      0
+ 619  kelmar        __*__Y__*_____*____Y__Y__Y_________*___…  None                                      0
+ 620  crandel       233/231/5                                 None                                      0
+ 621  virel         243664/8                                  4                                         0
+ 622  Wordz         2544                                      ##\n#####\n####\n####                     0
+ 623  crandel       333/443/3                                 None                                      0
+ 624  Wordz         244537                                    ## #### #### ##### ### #######            0
+ 625  quaich        BRRRRRBBRBGGRBGR                          BR RR RR BB RB GG RB GR                   0
+ 626  quaich        GBRRGBRRRBBR                              o.##o.###..#                              0
+ 627  Wordz         264442                                    244462                                    0
+ 628  Wordz         1236                                      a\nto\nthe\npeople                        0
+ 629  virel         64553/8                                   5                                         0
+ 630  LegoZendo     H0                                        \n                                        0
+ 631  crandel       232/333/4                                 None                                      0
+ 632  kelmar        __*_____*___Y____*__*____*__Y____*___Y_…  None                                      0
+ 633  fennick       SE.NRS.R..PP.K.RS..S.ENP.KK.RR.E.NR/E:1…  None                                      0
+ 634  Wordz         232                                       to the to                                 0
+ 635  LegoZendo     P10                                       10                                        0
+ 636  LegoZendo     X11                                       xxxxxxxxxxx                               0
+ 637  LegoZendo     D11                                       DEFGHIJKLMN                               0
+ 638  fennick       NN..KDN.L.DL.TNT..DK.N.K.KN.TL.HHD.DLK/…  None                                      0
+ 639  quaich        RGBGBGBBGRGBGGRG                          3 8 5                                     0
+ 640  crandel       221/431/5                                 None                                      0
+ 641  LegoZendo     Q7                                        [QQQQQQQ]                                 0
+ 642  quaich        RGRBGRGRRBBRRRBGGB                        RG\nRB\nGR\nGR\nRB\nBR\nRR\nBG\nGB        0
+ 643  virel         356/1                                     6                                         0
+ 644  LegoZendo     G1                                        G                                         0
+
+per-name tally this round
+name             presented correct  hit-rate
+LegoZendo               96       0      0.0%
+Wordz                   91       0      0.0%
+crandel                104       0      0.0%
+fennick                 84       0      0.0%
+kelmar                  79       0      0.0%
+quaich                  96       0      0.0%
+virel                   95       0      0.0%

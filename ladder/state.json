@@ -1057,6 +1057,20 @@
      },
      "score": 3.2,
      "version": 1
+    },
+    {
+     "advice": "v2 fixed the rule but left the object problem: without a label the grid reads as an abstract cut rectangle, not pizza; try a narrower, sparser tray or glyphs that cue food-on-a-tray so a kid can say pizza from the shape alone.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 2,
+      "rule_statable": 3
+     },
+     "score": 3.2,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -3517,7 +3531,7 @@
    "id": "judge-garrow-v2-man",
    "kind": "judge",
    "started": 1788542918.898948,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

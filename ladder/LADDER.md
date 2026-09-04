@@ -22,7 +22,8 @@ The target is unstable (players adapt, new witnesses appear), so the loop never 
 | role | prompt | model | agents | what it does |
 |---|---|---|---|---|
 | player | `prompts/player.md` + a profile from `profiles` in state.json | per profile | 2 per run | plays 4×0.5 s rounds + 3 s final in a confidential arena with a 7-class pool and 3 demo requests |
-| designer | `prompts/designer.md` | opus | 1 | brainstorms a new class in a given direction, validates, self-tests, sets up its arena |
+| designer | `prompts/designer.md` | opus | 1 | brainstorms a new picture class in a given direction, validates, self-tests |
+| rule-family designer | `prompts/designer_rulefamily.md` + a world from `WORLDS` in ladder.py | opus | 1 | builds a hidden-rule-family class (docs/RULE_FAMILIES.md): clue = minimal identifying example set, answer = another instance |
 | refiner | `prompts/refiner.md` | opus | 1 | given a class's run history and player notes, ships the next version + arena |
 | judge | `prompts/judge.md` | sonnet | 1 | scores a class on the 12-year-old rubric from its JSON and 3 demos |
 

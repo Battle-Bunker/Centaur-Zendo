@@ -14,4 +14,8 @@ the collection is a diverse set of classes that Opus-level centaur players crack
 Game format (2026-09-04): 4 training rounds × 0.5 s, 7 classes per game, 3 demo requests per team per
 game (one class each); clues must reveal the answer's shape, the rule usually needs a demo.
 
+Two class paradigms: picture classes (object in the clue, answer = the picture edited) and
+rule-family classes (`docs/RULE_FAMILIES.md`: hidden rule from a finite universe, clue = a minimal
+set of positive examples, answer = another instance; obvious rule types deliberately excluded).
+
 Engine/docs: `SPEC.md`, `docs/`, `sim/DESIGN_LOOP.md`. Results: `sim/results/`. Lab: `challenges/lab/`.

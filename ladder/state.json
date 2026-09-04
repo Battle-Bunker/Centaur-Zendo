@@ -1584,7 +1584,22 @@
   },
   "norvel": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.2,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4082,7 +4097,7 @@
    "id": "judge-norvel-v1-man",
    "kind": "judge",
    "started": 1788550070.849549,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

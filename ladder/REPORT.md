@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 12:48 UTC
+# Ladder report — 2026-09-04 13:19 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -6,6 +6,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 |---|---|---|---|---|---|---|---|---|
 | murn | 2 | testing | 52% | 0.97 | 2.6 | 2 | 1 | opus-default |
 | tovel | 1 | testing | 66% | 0.69 | 4.4 | 2 | 0 | opus-default,opus-kidproxy |
+| sarn | 1 | testing | 24% | 0.47 | 4.0 | 2 | 0 | opus-default,opus-kidproxy |
 | orlan | 3 | testing | 17% | 0.35 | - | 2 | 0 | opus-default |
 | AHMES | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
@@ -33,7 +34,6 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | quilm | 3 | testing | - | - | - | 0 | 0 | - |
 | regina | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | RUNIC | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| sarn | 1 | untested | - | - | 4.0 | 0 | 0 | - |
 | skerry | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | SPQ | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | SUNZI | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |

@@ -1381,6 +1381,7 @@
   },
   "sarn": {
    "current_version": 1,
+   "note": "run1: partial 41% (wrong rule: length=digit+1 + secret word list, membership farming) and fail 6% (lookup table of harvested word->digit labels). Nobody proposed the keyboard. Judge advised showing a QWERTY picture in the public framing.",
    "qual": [
     {
      "advice": "Give the object a picture (a small QWERTY keyboard) in the public framing; keep the transition-vs-distance near-miss as the hardening lever.",
@@ -1397,8 +1398,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 3,
+       "final_correct": 1303,
+       "final_presented": 3177,
+       "final_rate": 0.41013534781240163,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         4,
+         455
+        ],
+        [
+         2,
+         485
+        ],
+        [
+         6,
+         477
+        ],
+        [
+         29,
+         665
+        ],
+        [
+         74,
+         561
+        ],
+        [
+         181,
+         605
+        ]
+       ],
+       "team": "sarn1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 7,
+       "final_correct": 275,
+       "final_presented": 4543,
+       "final_rate": 0.06053268765133172,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         1,
+         482
+        ],
+        [
+         1,
+         497
+        ],
+        [
+         2,
+         539
+        ],
+        [
+         3,
+         465
+        ],
+        [
+         4,
+         485
+        ],
+        [
+         30,
+         444
+        ]
+       ],
+       "team": "sarn1b"
+      }
+     ],
+     "run": "lad-sarn-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/sarn.json",
@@ -1846,7 +1925,13 @@
    "class": "fennick",
    "id": "players-fennick-v1-dd93",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-fennick-v1-1",
+   "started": 1788527957.542191,
+   "status": "running",
+   "teams": {
+    "fennick1a": "opus-default",
+    "fennick1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -1856,7 +1941,7 @@
    "kind": "players",
    "run": "lad-sarn-v1-1",
    "started": 1788524547.110239,
-   "status": "running",
+   "status": "done",
    "teams": {
     "sarn1a": "opus-default",
     "sarn1b": "opus-kidproxy"
@@ -2187,6 +2272,14 @@
    "agents": 2,
    "class": "tovel",
    "id": "players-tovel-v1-ebc6",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "sarn",
+   "id": "players-sarn-v1-65fb",
    "kind": "players",
    "status": "pending",
    "version": 1

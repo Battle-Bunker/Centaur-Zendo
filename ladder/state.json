@@ -2191,6 +2191,83 @@
      ],
      "run": "lad-tovel-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 2613,
+       "final_presented": 2954,
+       "final_rate": 0.8845633039945836,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         498
+        ],
+        [
+         5,
+         480
+        ],
+        [
+         65,
+         502
+        ],
+        [
+         54,
+         504
+        ],
+        [
+         30,
+         468
+        ],
+        [
+         173,
+         492
+        ]
+       ],
+       "team": "tovel1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 6,
+       "final_correct": 1185,
+       "final_presented": 3512,
+       "final_rate": 0.3374145785876993,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         1,
+         430
+        ],
+        [
+         0,
+         819
+        ],
+        [
+         3,
+         443
+        ],
+        [
+         55,
+         460
+        ],
+        [
+         74,
+         492
+        ],
+        [
+         131,
+         499
+        ]
+       ],
+       "team": "tovel1b"
+      }
+     ],
+     "run": "lad-tovel-v2-1",
+     "version": 2
     }
    ],
    "status": "testing",
@@ -3151,7 +3228,7 @@
    "id": "refiner-garrow-v1-dc58",
    "kind": "refiner",
    "reason": "kid_score",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -3169,7 +3246,7 @@
    "kind": "players",
    "run": "lad-tovel-v2-1",
    "started": 1788537615.068024,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel1a": "opus-lowdemo",
     "tovel1b": "opus-theorist"
@@ -3265,6 +3342,32 @@
    "id": "refiner-basten-v1-man",
    "kind": "refiner",
    "started": 1788540615.343546,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v2-630f",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "refiner-tovel-v2-man",
+   "kind": "refiner",
+   "started": 1788540837.7635949,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "refiner-garrow-v1-man",
+   "kind": "refiner",
+   "started": 1788540837.7635965,
    "status": "running",
    "version": 1
   }

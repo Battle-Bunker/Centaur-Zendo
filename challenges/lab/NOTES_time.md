@@ -363,3 +363,29 @@ pool   $SCRATCH/pool-tovel-2/tovel.json
 setup  python sim/arena.py setup --run lad-tovel-v2-1 --teams tovel2a,tovel2b \
          --challenge-dir $SCRATCH/pool-tovel-2 --arena-root $SCRATCH/lad-tovel-v2-1
 ```
+
+## tovel v2 ladder run `lad-tovel-v2-1` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | how |
+|---|---|---|---|---|
+| tovel1a | opus-lowdemo | 88% | 2 | solid run of the clue letter from day n, length looked up per k |
+| tovel1b | opus-theorist | 34% of presented (62% of answered; skipped 45%) | 6 | same run witness, only for (k, weekday) cells it had measured |
+
+Mean 61%. The (days,start,k) farming leak is closed as intended (1b: "my accepted grids look
+nothing like the reference ones"; nobody replayed demos), but v2 has a new degenerate witness the
+refiner's table did not contain: a **solid stripe** of the clue letter starting on day n. A stripe
+manufactures a two-apart pair on every Mon/Tue/Wed inside it, so a run of the right length
+(1a measured "working days to cover" = 4,7,8,9,12 for k=2..6) scores 1 with no idea of the rule.
+Neither player stated the rule; 1a called the length table "not a rule a person could ever guess"
+and 1b never decoded k at all.
+
+Kid readings both players reported missing: "that's someone's holiday block" (1a), "just count the
+clue letter's days" and "weekends are different" (1b), "the header changed between demos so the
+grader isn't comparing text" (1b). Note the header inconsistency is a hint they both valued.
+
+Fix for v3 (keeps the kid sentence): a pair counts only when the day in between is NOT the clue
+letter — "R, something else, R" — which is what "with a day in between" means to a kid anyway. A
+solid stripe then produces zero counted pairs. Keep the anchor n, the decoy pairs, and the picture.
+Have the refiner's witness table include: solid stripe from n of every length 3..16, stripe plus
+scattered extras, alternating R.R.R runs (which will still be a witness — accept that, it IS the
+rule), and the old farming replay.

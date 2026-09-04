@@ -18,6 +18,16 @@ Two identical teams with different demo choices should finish with different sco
 whose clue is an opaque code (nothing about the answer's type can be inferred) fails the
 first half; a class that is cracked without a demo by most Opus players fails the second.
 
+**The most reliable way to reveal the answer's shape: put the object in the clue.** The clue
+carries the uncut / unfilled / unmarked picture and the answer is *the same picture, edited*:
+garrow's clue is the whole pizza and the answer adds knife lines; fennick's clue is the shelf and
+the answer draws the books; norvel's clue is the kick row and the answer adds the snare row under
+it. A player who has never seen a demo can still send back the clue's picture with a plausible
+edit, which is a well-formed attempt (the foothold), and the demo then teaches the rule. A clue
+that is only digits (morvin v2: `1|8|7|9/3`) tells a demo-less player nothing about the drawing
+convention and scores 2/5 on `clue_shape`; prefer drawing the object into the clue over adding
+legends or labels.
+
 ## What the players actually do (measured in sim1/sim2, read before designing)
 * Round 1 is usually a **skip-only harvest** (~450 clues per 0.5 s round, zero cost).
 * They cycle several candidate answer *formats* per class within one round using

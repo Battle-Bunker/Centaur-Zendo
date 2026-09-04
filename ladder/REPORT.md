@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 22:53 UTC
+# Ladder report — 2026-09-04 22:55 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -28,7 +28,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | LegoZendo | 1 | testing | - | - | - | - | 3.4 | 0 | 0 | - | 100% (2) |
 | LegoZendo2 | 1 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 100% (1) |
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| morvin | 2 | testing | - | - | - | - | - | 0 | 0 | - | 100% (2) |
+| morvin | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 76% (4) |
 | norvel | 2 | testing | - | - | - | - | 4.0 | 0 | 0 | - | 39% (4) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |

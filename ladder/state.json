@@ -1544,6 +1544,21 @@
      },
      "score": 3.6,
      "version": 1
+    },
+    {
+     "advice": "The digit|digit/n clue reveals frame count but nothing about the pin-rack drawing convention; a demo-less team cannot produce a well-formed attempt.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 2,
+      "fun": 4,
+      "kid_contributes": 3,
+      "no_prereqs": 3,
+      "object": 4,
+      "rule_statable": 3
+     },
+     "score": 3.17,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -4831,7 +4846,7 @@
    "id": "judge-morvin-v2-man",
    "kind": "judge",
    "started": 1788562437.0402377,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

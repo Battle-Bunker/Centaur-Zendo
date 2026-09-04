@@ -271,3 +271,23 @@ format gate); force the two counted pieces of one letter into the **same row** i
 (`mm...mm` inside one slice) so the pair is readable along a line; force one digit to 1 always.
 If it comes out too easy: raise the rarity band in `generate()` (currently the rarest count-pair
 seen in 48 samples), or require the counted slice to hold nothing but that topping.
+
+## garrow v2 ladder run `lad-garrow-v2-1` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | cracked |
+|---|---|---|---|---|
+| garrow1a | opus-lowdemo | 28% | 2 | no — geometry heuristics (4 pieces, narrow matching piece) |
+| garrow1b | opus-theorist | 100% | 6 | round 5, by insight: "exactly n pens hold 2 or more L-animals, a cut animal counts for both" |
+
+Mean 64% (v1 was 15%). First earned crack on this class. The theorist read the picture as a field
+with fenced pens and animals (not pizza — the object is read consistently as "field + fences", which
+is fine: the story is the same). Its kid lines: "You cut the sheep in half!" (took two rounds to
+accept the game does not care) and "some pens have two of the same animal in them and some don't"
+— the rule verbatim. The lowdemo player with 2 demos read the two clue pairs as describing ONE
+piece, and its 28% is geometry (v2's softening made wrong theories pay less, as predicted).
+Both again praised the grammar and asked for the index-cycling A/B trick to be in the guide (it is,
+under `memory["_index"]`; make it more prominent).
+
+Status: testing, mean over v2 64% (2 finals), over all versions 40% (4). One more Opus pair on v2
+and it may calibrate. The 4–8 pens / no-empty-pen clauses were the theorist's only complaint
+("why four to eight?") — a v3 could drop the pen-count bound if it stays clean.

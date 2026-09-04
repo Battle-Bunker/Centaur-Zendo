@@ -1230,6 +1230,83 @@
      ],
      "run": "lad-garrow-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 6,
+       "demos": 6,
+       "final_correct": 1956,
+       "final_presented": 1956,
+       "final_rate": 1.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         329
+        ],
+        [
+         0,
+         402
+        ],
+        [
+         0,
+         409
+        ],
+        [
+         0,
+         431
+        ],
+        [
+         108,
+         307
+        ],
+        [
+         314,
+         314
+        ]
+       ],
+       "team": "garrow1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 551,
+       "final_presented": 1955,
+       "final_rate": 0.2818414322250639,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         423
+        ],
+        [
+         26,
+         344
+        ],
+        [
+         17,
+         295
+        ],
+        [
+         61,
+         329
+        ],
+        [
+         81,
+         331
+        ],
+        [
+         68,
+         339
+        ]
+       ],
+       "team": "garrow1a"
+      }
+     ],
+     "run": "lad-garrow-v2-1",
+     "version": 2
     }
    ],
    "status": "testing",
@@ -3719,7 +3796,7 @@
    "note": "team b finished; one live agent remaining",
    "run": "lad-garrow-v2-1",
    "started": 1788543958.4470875,
-   "status": "running",
+   "status": "done",
    "teams": {
     "garrow1a": "opus-lowdemo",
     "garrow1b": "opus-theorist"
@@ -3771,6 +3848,14 @@
     "tovel2b": "opus-kidproxy"
    },
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v2-a507",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

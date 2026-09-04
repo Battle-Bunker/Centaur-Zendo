@@ -1,0 +1,32 @@
+{
+ "run": "lad-morvin-v1-1",
+ "arena": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-morvin-v1-1",
+ "hidden": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-morvin-v1-1/.pool-7106843a",
+ "port": 54487,
+ "pid": 26979,
+ "teams": [
+  "morvin1a",
+  "morvin1b"
+ ],
+ "tokens": {
+  "morvin1a": "b93b796658e3",
+  "morvin1b": "6fa9d38b8687"
+ },
+ "admin_token": "66a6d6040d280a06",
+ "config": {
+  "cooldown_seconds": 5,
+  "max_training_rounds": 6,
+  "training_seconds": 21600,
+  "final_window_seconds": 3600,
+  "round_seconds": 0.5,
+  "final_seconds": 3.0,
+  "open_registration": true,
+  "challenge_dir": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-morvin-v1-1/.pool-7106843a/challenges",
+  "event_log": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-morvin-v1-1/.pool-7106843a/events.jsonl",
+  "host": "127.0.0.1",
+  "port": 54487,
+  "admin_token": "66a6d6040d280a06"
+ },
+ "pool_size": 1,
+ "started_at": 1788556127.6407468
+}

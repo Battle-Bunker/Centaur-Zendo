@@ -744,3 +744,11 @@ Status: testing (2 finals on v4, both partial, no crack). The class now has a cl
 both again stall at ~30%, the softening lever is a demo guarantee: every demo must contain a
 counted pair in the SAME week row as a non-counting pair that straddles the weekend, adjacent to
 each other, so the week boundary is the loudest contrast in the picture. Do not touch the rule.
+
+## New format note (2026-09-04, 4 rounds / 3 demos / 7 classes)
+First 7-class run: the kid-proxy player spent 2 of its 3 demos on tovel v4 (most frequent class,
+"the clue looked like a date") and still scored 0/51 on it; a demo-less player cannot even tell
+the answer is a calendar page from `31/6/R/5/17`. v5 brief: put the object in the clue — the clue
+IS the blank month page (header + day numbers, no letters) plus `R/5/17`; the answer is the same
+page with a letter on every day. Shape then reads off the clue with no demo; the rule still needs
+one. Scorer must ignore the clue's own layout (regenerate from days/start) or compare cells.

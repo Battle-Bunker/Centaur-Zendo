@@ -752,3 +752,161 @@ the answer is a calendar page from `31/6/R/5/17`. v5 brief: put the object in th
 IS the blank month page (header + day numbers, no letters) plus `R/5/17`; the answer is the same
 page with a letter on every day. Shape then reads off the clue with no demo; the rule still needs
 one. Scorer must ignore the clue's own layout (regenerate from days/start) or compare cells.
+
+## Iteration 5 - 2026-09-04 - `challenges/lab/tovel.json` (v5; v4 kept as `tovel.v4.json`)
+
+### Why: the class fails the new format's *first* half, not its second
+
+`lad-tovel-v4-1` (old format) ended 29 % / 29 % - the foothold worked, both Opus players reached
+"every other day from m" and stalled at the week boundary. Then the format changed to **7 classes,
+4 rounds, 3 demo requests per team**, and the first 7-class run said something different: the
+kid-proxy spent **2 of its 3 demos** on tovel v4 - the most-seen class, "the clue looked like a
+date" - and still finished **0/51**. A player without a demo cannot tell from `31/6/R/5/17` that
+the answer is a *calendar page*: not the type, not the size, not the convention. That is
+DESIGN_LOOP's demo-economy test failed at step one ("the clue alone must reveal the shape of an
+answer"), and it is expensive twice over: the team burns demos to learn the *format* rather than
+the rule, and a team that spends its demos elsewhere scores a flat 0 instead of a foothold.
+
+### The change: the clue IS the blank month page
+
+The rule is untouched. `score()` grades the letters exactly as v4 did. What changed is the
+picture: the clue now carries the object, and the answer is that picture edited (DESIGN_LOOP,
+"the most reliable way to reveal the answer's shape").
+
+```
+ Mo  Tu  We  Th  Fr  Sa  Su          <- the same header the answer may use
+                 1.  2.  3.
+ 4.  5.  6.  7.  8.  9. 10.          <- every day printed "%2d." - a dot where a letter goes
+11. 12. 13. 14. 15. 16. 17.
+18. 19. 20. 21. 22. 23. 24.
+25. 26. 27. 28.
+H/1/26                               <- the letter, how many, the first one
+```
+
+* the whole page is 145-182 chars (cap 1024); the cells are 3 wide and the answer's cells
+  (`"%2d%s"`, e.g. `26H`) land in exactly the same columns, so "send this back with a letter on
+  every day instead of the dot" is legible without any demo;
+* `days` and `start` are no longer in the code line: the scorer derives them from the page
+  (line 0 = header, lines 1..-2 = the week rows, last line = `x/k/n`), `L` = number of dated
+  cells, `S` = 7 - (cells in the first week row). It never trusts the *answer's* header - the
+  answer's row structure must still be `7-S`, then rows of 7, then 1..7, exactly as in v4 -
+  so the clue's layout is regenerated from days/start rather than copied out of the answer;
+* returning the clue's page unchanged scores **0** for free: a cell must end above `"9"` and
+  `"."` does not.
+
+`score` grew 431 -> **496 chars** (cap 512) for the page parsing; `solve` 4879 -> **4935**
+(cap 5000) for the same reason (three comments shortened to fit); `generate` 721 -> 1055.
+`k`, the `k=1` share, the placement of `n`, every decoy guarantee and all of `solve()`'s demo
+variety are **byte-for-byte the v4 logic**.
+
+### Witness table - v4 vs v5, 600 fresh clues, both re-measured today (`scratchpad/time5/attack.py`)
+
+Template rows fit the best run length per cell on the same clues, i.e. an optimistic ceiling.
+The two new rows are what a **demo-less** player can do with the clue in front of them.
+
+| attack | v4 | v5 |
+|---|---|---|
+| **NEW: clue page returned unchanged** (cells still end in `.`) | - | **0.00 %** |
+| **NEW: clue page with the clue letter on every day** (the stripe) | - | **0.00 %** |
+| **NEW: well-formed page from the clue alone, random letters A-Z** | - | **0.00 %** |
+| ... same, random over a 4-letter alphabet containing `x` | - | 0.67 % |
+| **minimal probe: x on n and n+2, nothing else x** | 22.00 % | **22.00 %** |
+| ... per k: k=1 132/132, k=2 0/96, k=3 0/96, k=4 0/137, k=5 0/139 | | |
+| ... same probe with random other letters on the free days | 22.00 % | 22.00 % |
+| **solid stripe from n**, every length 3..16, best per k | 0.00 % | **0.00 %** |
+| **alternating `x . x . x` from n**, per-`k` length table | 50.83 % | 50.83 % |
+| ... with a `(k, weekday of n)` table (the strongest tuning) | 57.67 % | **57.67 %** |
+| ... per k: k=1 100 %, k=2 91.7 %, k=3 61.5 %, k=4 37.2 %, **k=5 11.5 %** | | |
+| **tightest Mon/Tue/Wed packing per (k, weekday)** = the rule as an offset table | 100 % | **100 %** |
+| tuned random lettering, density 0.20/0.35/0.50/0.65/0.80 | 0.7/1.0/1.0/0.7/0.7 % | 0.7/0.5/0.3/0.3/0.7 % |
+| best constant answer | 1.00 % | 0.50 % |
+| demo replay, letters renamed, same `(L,S,k)` | 34.83 % | 34.83 % |
+| ... same `(L,S,k,n)` | 70.67 % | 70.67 % |
+| **the true rule** | 100.00 % | **100.00 %** |
+
+Wrong-relation constructors on a correct page honouring the clue's first day (600 clues) are
+identical in the two versions, as they must be - the rule did not move: x next door / three
+apart / a week apart **0.00 %**, x two apart anywhere **22.00 %**, x two apart Mon-Wed (the v2
+rule) **26.50 %**, `x . x` anywhere with the gap kept **30.17 %**, the true rule **100.00 %**;
+with the clue's first day ignored, all of them 0.00 %.
+
+*Correction to the v4 entry above:* re-running the same script on `tovel.v4.json` today gives
+**34.83 %** and **70.67 %** for the two demo-replay rows, not the 5.8 % / 70.7 % recorded in the
+v4 notes; the 5.8 % was a harness artefact. The honest figure for both versions is that a team
+which caches one solved page per `(month shape, k)` and renames its letters wins ~35 % of the
+clues that share that key - but the clue space is **867** distinct `(L,S,k,n)` classes (**334**
+effective), so with 3 demos for 7 classes that route is worth ~1 % of items overall.
+
+### One demo as it renders (seed 900004, k=1)
+
+```
+CLUE                                 ANSWER
+ Mo  Tu  We  Th  Fr  Sa  Su           Mo  Tu  We  Th  Fr  Sa  Su
+                 1.  2.  3.                           1Y  2A  3Y
+ 4.  5.  6.  7.  8.  9. 10.           4A  5S  6H  7S  8A  9A 10Y
+11. 12. 13. 14. 15. 16. 17.          11S 12H 13H 14H 15Y 16Y 17Y
+18. 19. 20. 21. 22. 23. 24.          18S 19Y 20A 21H 22S 23H 24S
+25. 26. 27. 28.                      25H 26H 27A 28H
+H/1/26
+```
+
+The month starts on a Friday (`S=4`). `H`-pairs two apart: **12-14** (Tue start, but the middle
+day is `H` too - blocked), **21-23** (Thu start - it reaches the weekend), **23-25** (Sat start -
+it steps over the week break) and **26-28** (Tue start, middle day `A`) - so exactly one counts
+and it is day 26, which is what `H/1/26` says. All three kinds of negative evidence are in this
+one picture, two of them before day `n`.
+
+### Fairness floor, demo guarantees, validation
+
+`scratchpad/time5/hyp.py`, 840 hand-built "count a relation between marked days" expressions
+(distance 1-7 x 10 weekday windows x 3 gap conditions x this-letter/any-letter x pairs/cells):
+survivors after 1 demo **2-11**, after 2 demos **1-2**, after 3 demos **1**, in all six trials.
+
+Demo guarantees over 3000 demos (`time5/solvecheck.py`), all within noise of v4: a blocked
+`x x x` run starting Mon/Tue/Wed in **100.0 %** of demos, one of them *before* day `n` in
+**94.6 %**, a Thursday-start pair (reaches the weekend) **96.9 %**, a Sat/Sun-start pair (steps
+over the week break) **98.7 %**, some non-counting pair before day `n` **98.4 %**, four or more
+distinct letters **100 %**.
+
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, no warnings.
+`score` **496** chars (cap 512), `solve` **4935** (cap 5000), `generate` 1055; clue 145-182
+chars (cap 1024), solution <= 175. gen 0.07 ms, score 0.05 ms, solve 159 ms worst under
+quickcheck. solve() scores 1 on **3000/3000** fresh seeds - 669/669, 457/457, 481/481, 746/746, 647/647
+at k=1..5, exactly the v4 counts (the parameter draws are untouched) - 94 ms average, 192 ms
+worst.
+The scorer never raises and never returns a non-binary value on 20 000 random junk strings
+(worst 0.092 ms), scores 0 on empty / spaces / newlines / `0` / `1` / `x` / `1`*100 / a
+4000-char junk string / **the clue itself**, and agrees with an independent re-implementation of
+the stated rule on 9000 mutated well-formed answers with **0 disagreements**. Shape attacks on a
+page with the correct count: header or no header **100 %**, tabs + blank lines **100 %**; one
+row, one token per line, zero-padded dates, lower case, `"17 B"` spacing, a dropped day **0 %**;
+a page laid out from column 0 scores **0.12** = the `S=0` clues.
+
+### What a demo-less player can infer, and what still costs a demo
+
+From the clue alone: the answer is *this* month page with one capital letter on every day, and
+the letter named on the last line is obviously the marker - so a demo-less team produces
+well-formed answers immediately (worth ~0-1 % by luck), and the first honest experiment,
+"put `x` on day `n` and on day `n+2`", pays **22 %** (all the `k=1` clues). What it cannot get
+from the clue: that a pair whose middle day also carries `x` does not count, and that a pair only
+counts if it starts on a Monday, Tuesday or Wednesday. That is what the demo teaches, and it is
+worth 22 % -> 58 % -> 100 %.
+
+### Predicted classification
+
+Tiers: blind but well-formed ~1 %, the natural first probe **22 %**, the tuned every-other-day
+run **51-58 %**, the rule **100 %**. Under 4 rounds x ~60 probes per class, a team with a demo
+should reach the pair hypothesis in round 2 and the week-boundary clause by round 4 about half
+the time; a team without one should sit at the 22 % foothold instead of 0. Expect
+**testing / calibrated**, mean **0.3-0.6**. Kid score should rise from v4's expected 4.2-4.5:
+the object is now visible before any demo at all. Risk in the other direction: if a player
+cracks it (100 %) while the other runs the tuned template (58 %) the mean is 0.79, just inside
+`too_easy`; the lever held back is still the same one - name the *last* counted day as well as
+the first (`x/k/n-m`), which forces both ends of the counted set.
+
+### Arena (players NOT run; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-5/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v5-1 --teams tovel5a,tovel5b \
+         --challenge-dir $SCRATCH/pool-tovel-5 --arena-root $SCRATCH/lad-tovel-v5-1
+```

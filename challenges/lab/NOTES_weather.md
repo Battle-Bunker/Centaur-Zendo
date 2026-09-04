@@ -240,3 +240,184 @@ pool   $SCRATCH/pool-kelmar-1/kelmar.json
 setup  python sim/arena.py setup --run lab-kelmar-1 --teams kelmar1a,kelmar1b \
          --challenge-dir $SCRATCH/pool-kelmar-1 --arena-root $SCRATCH/lab-kelmar-1
 ```
+
+---------------------------------------------------------------------------
+
+# Iteration 2 — 2026-09-04 (v2, first version built for the 4-round / 3-demo / 7-class format)
+
+## What the runs said
+
+`lad-kelmar-v1-1` and `lad-crandel-v3-1`: **kelmar scored 0 % for all four Opus players.** Three of
+them spent no demo on it — the clue `..*...Y..*../*2Y1` read as "a string plus a legend" and one
+player logged it as a possible bar chart. The one player who did buy a demo read the sky rows as
+"houses that grow by one" and never saw rain. So v1 failed both halves of the demo-economy test:
+the clue revealed nothing about the answer's shape, and one demo was not enough to reach a
+two-digit rule over ~60 probes a round.
+
+Diagnosis, in the words of LADDER.md's format-shift note: *put the object in the clue, one clause,
+the demo must teach the rule in one look.*
+
+## What changed in v2
+
+| | v1 | v2 |
+|---|---|---|
+| clue | `<ground>/*a Yb` — one line, a string and a legend | **the scene**: 2–3 empty sky rows of dots, the ground row, then the count line |
+| ground row | 42–52 columns, 10–14 plants | **26–32 columns, 6–9 plants** (edges visible by eye) |
+| counts | two (`a` flowers **and** `b` trees) | **one** (`N` plants) |
+| showers | ≥3 wide, gap ≥2 | **3–6 wide**, gap ≥2 (the cap is load-bearing, see below) |
+| scorer | last line must be the ground row verbatim | **any line containing `*`, `Y` or a digit is ignored** — echoing the ground row and/or the count line is free, so is leaving them out |
+| demo look | any rain glyph, dots *or spaces* for dry sky | dots always, so the demo **is** the clue with rain painted into it |
+
+Clue (seed 14) and the demo as it renders:
+
+```
+CLUE                            ANSWER (the demo)
+..........................      ''''..'''..'''''....'''''.
+..........................      ''''..'''..'''''....'''''.
+..........................      ''''..'''..'''''....'''''.
+_____Y___*__*__Y__Y___*___      _____Y___*__*__Y__Y___*___
+2
+        ^   ^  W  w  o   W      (key, never shown: ^ counts, w = on the last wet
+                                 column, W = deep in the rain, o = two columns clear)
+```
+
+Both counted plants (`Y` at col 5, `*` at col 9) hang off the same little shower, one on each side;
+six columns to the right the `Y` at col 15 stands on the shower's **last wet column** and does not
+count, and the `Y` at col 18 stands **two columns clear** and does not count either. That triple is
+guaranteed in every demo and lands within 9 columns in 95 % of them.
+
+## One count or two — measured, then chosen
+
+Blind floor over random legal pictures: **26.3 % with one count, 13.7 % with two.** Two counts is
+the harder class, but in a 26–32 column garden only 75 % of demos can show a flower *and* a tree at
+an edge **and** the three teaching contrasts, and "two flowers and one tree are standing right at
+the edge of a shower" is no longer one breath. With three demos for seven classes the demo has to
+teach in one look, so the second count was dropped and the higher floor was kept as the foothold.
+The two glyphs stay in the drawing as a decoy dimension ("count the flowers at the edge") that
+costs a round to kill.
+
+## The 3–6 column width cap is load-bearing
+
+Without a maximum width the class collapses to **solid rain with 2-wide holes over N plants** — a
+2-wide hole at a plant makes exactly that plant an edge plant, so the template satisfies the rule by
+construction. Measured: **34.3 % with a cap of 8, 22.0 % with 7, 0.0 % with the shipped cap of 6**,
+because 6-wide showers cannot cover a 26–32 column garden. This is the same lesson as lever 8: test
+the cheapest thing that *satisfies* the rule, not only the wrong rules.
+
+## Witness table (500 fresh clues, shipped `kelmar.json`)
+
+Every attacker except the two demo-less ones knows the grammar perfectly and rejection-samples legal
+pictures (500 tries per clue) until its own hypothesis holds.
+
+| attacker's law | rate |
+|---|---|
+| **the true rule (`solve`)** | **100.0 %** |
+| showers with a plant at their edge, counted per SHOWER (the same insight) | 79.2 % |
+| only the RIGHT edge counts | 49.8 % |
+| only the LEFT edge counts | 49.4 % |
+| plants within two dry columns of the rain | 35.8 % |
+| **best blind sampler over 14 density settings** (best insight-free construction) | **34.6 %** |
+| random legal showers (grammar only) | 28.4 % |
+| rain on exactly N plants (the natural first probe) | 25.8 % |
+| N showers | 23.0 % |
+| plants on the LAST WET column (the nose-vs-tail near miss) | 21.6 % |
+| N showers, each hung over a plant | 19.6 % |
+| demo-less: N showers drawn over N plants | 17.4 % |
+| demo replay (the previous clue's answer) | 15.4 % |
+| plants exactly two columns clear | 14.6 % |
+| N plants left dry, rain on all the others | 14.0 % |
+| beside the rain, wet or dry | 9.8 % |
+| one constant picture for every clue | 4.4 % |
+| demo-less: freehand rain (widths 2–9, gaps 1–6) | 2.4 % |
+| solid rain with 2-wide holes at N plants | 0.0 % |
+| rain everywhere / clue returned unchanged (dry) / clue's picture without the count line | 0.0 % |
+| empty / `x` / `1`*100 / 4000 chars of junk / a line of text / the ground row alone | 0.0 % |
+
+**No insight-free construction exceeds 35 %.** The two rows above 49 % are the intended relation in
+weaker form (one side of it only, or counted per shower instead of per plant); `solve()` makes the
+per-shower reading disagree with the true one in 83 % of demos, so it is falsifiable from a demo.
+
+**Foothold.** A demo-less team that draws freehand rain scores 2.4 % (its widths and gaps are
+usually illegal), but the format sweep every player runs in round 1 finds the plateau immediately:
+
+```
+regular stripes, width w repeated with gap G     G=1     G=2     G=3     G=4
+  w=2                                            0.0 %   0.0 %   0.0 %   0.0 %
+  w=3                                            0.0 %  35.2 %  30.0 %  20.4 %
+  w=4                                            0.0 %  31.8 %  30.8 %  25.6 %
+  w=5                                            0.0 %  34.0 %  27.4 %  19.2 %
+  w=6                                            0.0 %  28.2 %  28.6 %  20.2 %
+  w=7, w=8                                       0.0 %   0.0 %   0.0 %   0.0 %
+```
+
+So a team with no demo can still score 20–35 % on this class and learn that it is picture-graded and
+structural — which is exactly what the two failed runs did not get from any of their seven classes.
+
+## Demo guarantees (measured over 400 shipped demos)
+
+* a plant on a shower's last wet column: **100 %**; a plant exactly two columns clear: **100 %**;
+  both within 9 columns of a counted plant: **95 %**; a plant deep inside the rain: 89 %.
+* the per-shower sibling reading disagrees with the true one: **83 %** (it cannot for N = 1).
+* all eight loud rivals (wet / dry / last wet column / two clear / within two / beside / per-shower /
+  shower count) falsified at once: **72 %**; each one individually 83–100 %.
+* both glyphs present at an edge when N ≥ 2: 76 % (kills "count the flowers at the edge" in one look).
+* rain glyph (`|` / `'`), sky height (2–3) and shower count (2–5) vary between demos.
+
+## Fairness floor
+
+Of **20** hand-built "the digit counts THIS relation" laws, evaluated on shipped demos: **2.8 survive
+one demo** (max 5), 1.4 survive two, 1.1 survive three, and whenever exactly one law survives three
+demos it is the true rule (175/175 trials). One demo leaves a team with two or three live candidates
+and ~120 probes over two rounds to separate them — the calibration target for this format.
+
+## Validation
+
+`python tools/quickcheck.py challenges/lab/kelmar.json --seeds 200` → **OK, no warnings**
+(`gen=0.06 ms score=0.23 ms solve=51 ms`). Sizes: **score 496 / 512**, **solve 2329 / 5000**,
+generate 659; clue 82–133 chars, solution 80–131.
+
+* 2000 fresh seeds: `generate` deterministic, **mean 0.027 ms, max 0.14 ms** (< 1 ms met);
+  `solve()` scores 1 on **2000/2000**, mean 37.5 ms, p95 44 ms, max 67 ms.
+* Scorer vs an **independent re-implementation** (column walk, no regex) on **6300** (clue, answer)
+  pairs — shipped demos plus 20 structural mutations each: **0 disagreements**.
+* **2880 junk strings**: 0 raises, 0 non-binary returns, 0 false positives, worst 0.085 ms.
+* Lenient, all **100 %**: dots / spaces / underscores for dry sky; rain as `#`, `|`, `/` or `'`; a
+  cloud row on top; the ground row kept, dropped or even altered; the count line kept; blank lines;
+  trailing spaces; CRLF; 2 or 5 sky rows.
+* Strict, all **0 %**: one sky row only, sky rows not identical, empty sky, all rain, a text label
+  added. Shifting the whole sky one column scores 22.3 % — the coincidence rate, not a hole.
+
+## What a demo-less player can infer
+
+The clue is a garden under an empty sky with a number under it, so the answer's shape is not in
+doubt: *rows the width of the ground row, in the sky, with something drawn in them* — the picture
+edited, not a code. What they cannot infer is what the number counts, and (until they sweep) that
+the rain has to come in 3–6 wide showers with a 2-column gap.
+
+## Predicted classification
+
+**testing / on target, mean final 35–60 %.** Likeliest split: the player who spends a demo here
+enumerates picture statistics, is left with two or three laws, and cracks it in round 3–4 about half
+the time; the player who does not gets 20–35 % from the stripe plateau, and a player who reads the
+relation per shower instead of per plant parks at ~79 %. Kid score should hold at 4.5+: it is rain
+falling on a garden and the sentence is "two plants are standing right at the edge of a shower, just
+out of the rain".
+
+Risk, in order: (1) **too_easy** if the per-shower reading is enough for a crack — lever: require
+each counted plant to be at the edge of a shower *wider than the gap next to it*, or count showers
+with exactly one plant at an edge so the two readings stop agreeing; (2) the 26–35 % floor makes
+hypothesis discrimination noisy — lever: bring back the second count (blind floor 13.7 %) now that
+the clue carries the scene; (3) if it still comes back under 15 %, widen the garden to 34 columns so
+there is room for a fourth shower, and let `solve()` put the counted plants on both sides of the
+same shower every time.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/k2/{core,build,witness,selftest,holes,check}.py`.
+
+## Arena (players NOT run; the orchestrator opens it)
+
+```
+pool   $SCRATCH/pool-kelmar-2/kelmar.json   (cp challenges/lab/kelmar.json into it)
+setup  python sim/arena.py setup --run lad-kelmar-v2-1 --teams kelmar2a,kelmar2b \
+         --challenge-dir $SCRATCH/pool-kelmar-2 --arena-root $SCRATCH/lad-kelmar-v2-1
+```

@@ -21,6 +21,10 @@ STATE = REPO / "ladder" / "state.json"
 SCRATCH = Path(os.environ.get("ZENDO_SCRATCH", "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad"))
 CADENCE = "4x0.5s/5s/3s/7cls/3demos"   # the format under which balance is measured (older runs are kept as history)
 POOL_SIZE = 7
+WORLDS = ["a hand of 4-6 playing cards", "a roll of 3-5 dice", "a string of 6-10 coloured beads",
+          "4-7 letter English words (use the words module)", "clock times hh:mm", "a 5x5 picture of two symbols",
+          "a shopping receipt of 3-5 items with prices", "a week of football scores like 3-1",
+          "a set of 4 dominoes", "the coins in a purse"]
 DIRECTIONS = ["toys and building", "playground and table games", "time and place", "wordplay (use words module)",
               "crafts and physical intuition", "school and home life", "food and the kitchen", "animals and nature",
               "clothes, dressing and packing", "music, rhythm and dance", "sport and scoring", "weather and seasons",

@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 21:53 UTC
+# Ladder report — 2026-09-04 21:56 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -19,7 +19,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | BASILISK | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | carre | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | CHAKRA | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| crandel | 2 | testing | - | - | 3.4 | 0 | 0 | - |
+| crandel | 3 | testing | - | - | - | 0 | 0 | - |
 | CRIBROT | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | DUOMASK | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | erewhon | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |

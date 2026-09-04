@@ -444,8 +444,9 @@ daylight cannot tell the rule from its neighbours, so no insight beyond "shared 
 1. **`drips` ranges freely over `0..longs`** (lever: reduce clue determinism). v2's generator law
    `drips ∈ {longs−2, longs−1}` left the third digit almost fixed once `longs` was read, and 1b
    used it as a pruning law. The only clause left in `generate()` is a rejection: not *every*
-   line may have `drips == longs`, because such a picture cannot be drawn with the v2 reading
-   falsified (if every long garment counts, "overlaps something below" agrees on every line).
+   line may have `drips == longs` — the readings the rule *implies* ("it has bare floor under part
+   of it", "it does not sit entirely over one garment below") then coincide with it on every line
+   and can never be falsified in a demo, which is the one thing `solve()` refuses to ship.
    Distinct clue classes: **~6 500 → ~12 000**.
 2. **The counted relation is now "hangs over a GAP"**, not "overlaps something". A garment counts
    if it hangs all the way down to the line below **and** part of it is over the **daylight
@@ -509,7 +510,7 @@ with each other but not with the v2 table further up this file (that harness dre
 | **template: crandel1a's round-4 code** | **100.0 %** | **0.4 %** |
 | **template: crandel1b's round-4 code** | **100.0 %** | **0.0 %** |
 | previous clue's answer replayed | 0.2 % | 0.0 % |
-| one fixed answer for every clue (best of 15) | 0.8 % | 0.2 % |
+| one fixed answer for every clue (best of 15) | 0.4 % | 0.2 % |
 | `solve()` | 100.0 % | 100.0 % |
 | empty / junk / the clue itself | 0.0 % | 0.0 % |
 

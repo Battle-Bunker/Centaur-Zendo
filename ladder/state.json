@@ -2232,6 +2232,20 @@
      },
      "score": 4.2,
      "version": 2
+    },
+    {
+     "advice": "Bundling exact count and exact first date onto the skip-day/weekday clause is a lot of simultaneous bookkeeping for 20 minutes; the gap-day-is-different hook risks being buried under position matching.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 3
+     },
+     "score": 3.8,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -3562,7 +3576,7 @@
    "id": "judge-tovel-v3-man",
    "kind": "judge",
    "started": 1788543904.342918,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

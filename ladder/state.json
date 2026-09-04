@@ -1381,7 +1381,22 @@
   },
   "sarn": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Give the object a picture (a small QWERTY keyboard) in the public framing; keep the transition-vs-distance near-miss as the hardening lever.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.0,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1832,7 +1847,7 @@
    "id": "judge-sarn-v1-3039",
    "kind": "judge",
    "started": 1788523606.7844198,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

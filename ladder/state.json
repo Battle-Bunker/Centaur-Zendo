@@ -2787,6 +2787,83 @@
      ],
      "run": "lad-tovel-v3-2",
      "version": 3
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 6,
+       "final_correct": 1190,
+       "final_presented": 4124,
+       "final_rate": 0.2885548011639185,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         658
+        ],
+        [
+         0,
+         538
+        ],
+        [
+         3,
+         440
+        ],
+        [
+         0,
+         778
+        ],
+        [
+         54,
+         438
+        ],
+        [
+         69,
+         492
+        ]
+       ],
+       "team": "tovel1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 1505,
+       "final_presented": 5279,
+       "final_rate": 0.2850918734608827,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         840
+        ],
+        [
+         0,
+         634
+        ],
+        [
+         6,
+         476
+        ],
+        [
+         41,
+         473
+        ],
+        [
+         95,
+         453
+        ],
+        [
+         153,
+         500
+        ]
+       ],
+       "team": "tovel1a"
+      }
+     ],
+     "run": "lad-tovel-v4-1",
+     "version": 4
     }
    ],
    "status": "testing",
@@ -4040,7 +4117,7 @@
    "note": "team a finished; one live agent remaining",
    "run": "lad-tovel-v4-1",
    "started": 1788549190.306133,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel1a": "opus-lowdemo",
     "tovel1b": "opus-theorist"
@@ -4114,6 +4191,14 @@
     "norvel1b": "opus-kidproxy"
    },
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v4-4c96",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
   }
  ],
  "profiles": {

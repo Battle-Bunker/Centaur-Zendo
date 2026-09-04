@@ -725,3 +725,22 @@ pool   $SCRATCH/pool-tovel-4/tovel.json
 setup  python sim/arena.py setup --run lad-tovel-v4-1 --teams tovel4a,tovel4b \
          --challenge-dir $SCRATCH/pool-tovel-4 --arena-root $SCRATCH/lad-tovel-v4-1
 ```
+
+## tovel v4 ladder run `lad-tovel-v4-1` (2026-09-04, 6×0.5 s, 2 Opus players)
+
+| team | profile | final | demos | reading |
+|---|---|---|---|---|
+| tovel1a | opus-lowdemo | 29% (1505/1505 answered) | 2 | "L on day m then every other day, k+1 times"; k=1 100%, k=2 Monday 100%, skipped the rest |
+| tovel1b | opus-theorist | 29% (1190/4124) | 6 | same chain; saw from the 0% cells that the run "skips the weekend and resumes next week" but ran out of rounds |
+
+Mean 29% — the foothold works exactly as designed (k=1 pays 100%, first hits in round 3), both
+players reached "every other day from m" by insight, and both stalled at the same wall: the
+chain must restart after the weekend (the Mon/Tue/Wed-start clause). 1b's kid line is the rule:
+"swimming's on Mondays, Wednesdays and Fridays … and picks up again next week". 1a's: "a child
+reads the grid; I read the string".
+
+Status: testing (2 finals on v4, both partial, no crack). The class now has a clean gradient
+(0 → 1% → 22% foothold → 29% chain → 57% tuned run → 100%). Two more Opus finals decide; if
+both again stall at ~30%, the softening lever is a demo guarantee: every demo must contain a
+counted pair in the SAME week row as a non-counting pair that straddles the weekend, adjacent to
+each other, so the week boundary is the loudest contrast in the picture. Do not touch the rule.

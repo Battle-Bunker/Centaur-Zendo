@@ -1,0 +1,423 @@
+Centaur Zendo round 2 (training)
+round_id : ee812d67ba9d4fdcacf167e2ef0d018d
+written  : 2026-09-04 12:04:15Z
+presented=411  answered=411  correct=39  skipped=0
+client answer latency: mean 0.155 ms  median 0.146 ms  max 1.771 ms  (n=411)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  velk          GTAN|2                                    G T A N\n| |  \\nG T N A\n|  \  |\nG N …  0
+   1  velk          LKAOF|6                                   L K A O F\n| |  \  |\nL K O A F\n|  \  …  0
+   2  velk          BUQD|2                                    B U Q D\n \  | |\nU B Q D\n|  \  |\nU Q…  0
+   3  velk          YBOFX|5                                   Y B O F X\n| | |  \\nY B O X F\n| |  \ …  0
+   4  velk          XIDV|2                                    X I D V\n|  \  |\nX D I V\n \  | |\nD X…  0
+   5  velk          BWOPSG|5                                  B W O P S G\n| |  \  | |\nB W P O S G\n…  0
+   6  velk          QLSEJ|2                                   Q L S E J\n| | |  \\nQ L S J E\n| |  \ …  0
+   7  velk          YISTKX|2                                  Y I S T K X\n| | |  \  |\nY I S K T X\n…  0
+   8  velk          BAPVSD|6                                  B A P V S D\n| |  \  | |\nB A V P S D\n…  0
+   9  velk          HIKX|2                                    H I K X\n| |  \\nH I X K\n|  \  |\nH X …  0
+  10  velk          XSPA|5                                    X S P A\n|  \  |\nX P S A\n \  | |\nP X…  1
+  11  velk          GEXW|5                                    G E X W\n \  | |\nE G X W\n|  \  |\nE X…  0
+  12  velk          ZLJNV|4                                   Z L J N V\n| | |  \\nZ L J V N\n| |  \ …  0
+  13  velk          HQTA|6                                    H Q T A\n|  \  |\nH T Q A\n \  | |\nT H…  1
+  14  velk          PXFULY|2                                  P X F U L Y\n| |  \  | |\nP X U F L Y\n…  0
+  15  velk          ZRCGVU|2                                  Z R C G V U\n| | | |  \\nZ R C G U V\n|…  0
+  16  velk          DCASB|6                                   D C A S B\n| |  \  |\nD C S A B\n|  \  …  0
+  17  velk          HLGRBM|6                                  H L G R B M\n| |  \  | |\nH L R G B M\n…  0
+  18  velk          VLCGI|5                                   V L C G I\n| | |  \\nV L C I G\n| |  \ …  0
+  19  velk          TVQME|6                                   T V Q M E\n| |  \  |\nT V M Q E\n|  \  …  0
+  20  velk          NORF|2                                    N O R F\n \  | |\nO N R F\n|  \  |\nO R…  0
+  21  velk          ITJAZQ|4                                  I T J A Z Q\n| | | |  \\nI T J A Q Z\n|…  0
+  22  velk          MSWXD|6                                   M S W X D\n| |  \  |\nM S X W D\n|  \  …  0
+  23  velk          ANBSE|3                                   A N B S E\n|  \  | |\nA B N S E\n \  | …  0
+  24  velk          DKQJZ|3                                   D K Q J Z\n| | |  \\nD K Q Z J\n| |  \ …  0
+  25  velk          MXSGQ|6                                   M X S G Q\n| |  \  |\nM X G S Q\n|  \  …  0
+  26  velk          FIDO|4                                    F I D O\n \  | |\nI F D O\n|  \  |\nI D…  0
+  27  velk          SOFJG|4                                   S O F J G\n| | |  \\nS O F G J\n| |  \ …  0
+  28  velk          PYLD|5                                    P Y L D\n|  \  |\nP L Y D\n \  | |\nL P…  0
+  29  velk          MAFZWQ|2                                  M A F Z W Q\n| |  \  | |\nM A Z F W Q\n…  0
+  30  velk          HDZQAW|4                                  H D Z Q A W\n| | | |  \\nH D Z Q W A\n|…  0
+  31  velk          FOQKC|3                                   F O Q K C\n| |  \  |\nF O K Q C\n|  \  …  0
+  32  velk          ZXLQNK|2                                  Z X L Q N K\n| |  \  | |\nZ X Q L N K\n…  0
+  33  velk          JIKXZ|4                                   J I K X Z\n| | |  \\nJ I K Z X\n| |  \ …  0
+  34  velk          BJPFI|6                                   B J P F I\n| |  \  |\nB J F P I\n|  \  …  0
+  35  velk          PDAU|3                                    P D A U\n \  | |\nD P A U\n|  \  |\nD A…  0
+  36  velk          WDNCL|4                                   W D N C L\n| | |  \\nW D N L C\n| |  \ …  0
+  37  velk          UQEMG|5                                   U Q E M G\n| |  \  |\nU Q M E G\n|  \  …  0
+  38  velk          DOFP|4                                    D O F P\n \  | |\nO D F P\n|  \  |\nO F…  0
+  39  velk          IRCANQ|6                                  I R C A N Q\n| | | |  \\nI R C A Q N\n|…  0
+  40  velk          NXKGW|2                                   N X K G W\n| |  \  |\nN X G K W\n|  \  …  0
+  41  velk          MVWJ|4                                    M V W J\n \  | |\nV M W J\n|  \  |\nV W…  0
+  42  velk          NHMJIT|4                                  N H M J I T\n| | | |  \\nN H M J T I\n|…  0
+  43  velk          VGRNI|5                                   V G R N I\n| |  \  |\nV G N R I\n|  \  …  0
+  44  velk          WKQAP|3                                   W K Q A P\n|  \  | |\nW Q K A P\n \  | …  0
+  45  velk          DSUMO|6                                   D S U M O\n| | |  \\nD S U O M\n| |  \ …  0
+  46  velk          XVTQ|6                                    X V T Q\n|  \  |\nX T V Q\n \  | |\nT X…  0
+  47  velk          KTXL|4                                    K T X L\n \  | |\nT K X L\n|  \  |\nT X…  0
+  48  velk          KLSU|4                                    K L S U\n| |  \\nK L U S\n|  \  |\nK U …  0
+  49  velk          GFMJ|3                                    G F M J\n|  \  |\nG M F J\n \  | |\nM G…  1
+  50  velk          VRGOMB|2                                  V R G O M B\n| |  \  | |\nV R O G M B\n…  0
+  51  velk          MIKQ|6                                    M I K Q\n| |  \\nM I Q K\n|  \  |\nM Q …  0
+  52  velk          AWIHBK|2                                  A W I H B K\n| | |  \  |\nA W I B H K\n…  0
+  53  velk          ANTY|5                                    A N T Y\n \  | |\nN A T Y\n|  \  |\nN T…  0
+  54  velk          UNEKL|4                                   U N E K L\n| | |  \\nU N E L K\n| |  \ …  0
+  55  velk          ESFVR|6                                   E S F V R\n| |  \  |\nE S V F R\n|  \  …  0
+  56  velk          ANPTD|6                                   A N P T D\n|  \  | |\nA P N T D\n \  | …  1
+  57  velk          GIJL|3                                    G I J L\n| |  \\nG I L J\n|  \  |\nG L …  0
+  58  velk          GDJM|6                                    G D J M\n|  \  |\nG J D M\n \  | |\nJ G…  1
+  59  velk          UHTX|2                                    U H T X\n \  | |\nH U T X\n|  \  |\nH T…  0
+  60  velk          HAJZ|2                                    H A J Z\n| |  \\nH A Z J\n|  \  |\nH Z …  0
+  61  velk          XPJAE|3                                   X P J A E\n| |  \  |\nX P A J E\n|  \  …  0
+  62  velk          SEZXA|3                                   S E Z X A\n|  \  | |\nS Z E X A\n \  | …  1
+  63  velk          EYOM|6                                    E Y O M\n| |  \\nE Y M O\n|  \  |\nE M …  0
+  64  velk          AIEY|6                                    A I E Y\n|  \  |\nA E I Y\n \  | |\nE A…  0
+  65  velk          IHKVT|6                                   I H K V T\n|  \  | |\nI K H V T\n \  | …  0
+  66  velk          RWIEV|6                                   R W I E V\n| | |  \\nR W I V E\n| |  \ …  0
+  67  velk          WJEUZ|2                                   W J E U Z\n| |  \  |\nW J U E Z\n|  \  …  0
+  68  velk          KMQVN|5                                   K M Q V N\n|  \  | |\nK Q M V N\n \  | …  1
+  69  velk          WQFJGA|2                                  W Q F J G A\n| | | |  \\nW Q F J A G\n|…  0
+  70  velk          CJSUP|2                                   C J S U P\n| |  \  |\nC J U S P\n|  \  …  0
+  71  velk          KPJNDW|6                                  K P J N D W\n| |  \  | |\nK P N J D W\n…  1
+  72  velk          CLZA|3                                    C L Z A\n| |  \\nC L A Z\n|  \  |\nC A …  0
+  73  velk          YXZJUW|6                                  Y X Z J U W\n| | |  \  |\nY X Z U J W\n…  1
+  74  velk          LPAQ|3                                    L P A Q\n \  | |\nP L A Q\n|  \  |\nP A…  0
+  75  velk          TJFR|6                                    T J F R\n| |  \\nT J R F\n|  \  |\nT R …  0
+  76  velk          LRMU|2                                    L R M U\n|  \  |\nL M R U\n \  | |\nM L…  1
+  77  velk          ELFUN|2                                   E L F U N\n|  \  | |\nE F L U N\n \  | …  0
+  78  velk          YROWP|6                                   Y R O W P\n| | |  \\nY R O P W\n| |  \ …  0
+  79  velk          UTGSD|5                                   U T G S D\n| |  \  |\nU T S G D\n|  \  …  0
+  80  velk          NDTQ|4                                    N D T Q\n \  | |\nD N T Q\n|  \  |\nD T…  0
+  81  velk          IXGQ|3                                    I X G Q\n| |  \\nI X Q G\n|  \  |\nI Q …  0
+  82  velk          OLRNW|5                                   O L R N W\n| |  \  |\nO L N R W\n|  \  …  0
+  83  velk          YMJWIX|5                                  Y M J W I X\n| |  \  | |\nY M W J I X\n…  1
+  84  velk          PYJO|3                                    P Y J O\n| |  \\nP Y O J\n|  \  |\nP O …  0
+  85  velk          LWAB|5                                    L W A B\n|  \  |\nL A W B\n \  | |\nA L…  1
+  86  velk          MUSYT|6                                   M U S Y T\n|  \  | |\nM S U Y T\n \  | …  1
+  87  velk          RDZUJ|4                                   R D Z U J\n| | |  \\nR D Z J U\n| |  \ …  0
+  88  velk          DRAQ|6                                    D R A Q\n|  \  |\nD A R Q\n \  | |\nA D…  1
+  89  velk          IWVLM|6                                   I W V L M\n|  \  | |\nI V W L M\n \  | …  0
+  90  velk          TBCO|4                                    T B C O\n| |  \\nT B O C\n|  \  |\nT O …  0
+  91  velk          PYGXF|5                                   P Y G X F\n| |  \  |\nP Y X G F\n|  \  …  0
+  92  velk          YUQZ|4                                    Y U Q Z\n \  | |\nU Y Q Z\n|  \  |\nU Q…  0
+  93  velk          JVNQO|3                                   J V N Q O\n| | |  \\nJ V N O Q\n| |  \ …  0
+  94  velk          BTAIZU|5                                  B T A I Z U\n| | |  \  |\nB T A Z I U\n…  0
+  95  velk          PVNL|6                                    P V N L\n \  | |\nV P N L\n|  \  |\nV N…  0
+  96  velk          NBDY|2                                    N B D Y\n| |  \\nN B Y D\n|  \  |\nN Y …  0
+  97  velk          XMFUN|3                                   X M F U N\n| |  \  |\nX M U F N\n|  \  …  0
+  98  velk          BOAY|5                                    B O A Y\n \  | |\nO B A Y\n|  \  |\nO A…  0
+  99  velk          MZXAQ|5                                   M Z X A Q\n| | |  \\nM Z X Q A\n| |  \ …  0
+ 100  velk          AGRD|2                                    A G R D\n|  \  |\nA R G D\n \  | |\nR A…  0
+ 101  velk          RINHFZ|5                                  R I N H F Z\n| |  \  | |\nR I H N F Z\n…  0
+ 102  velk          OSDZA|3                                   O S D Z A\n| | |  \\nO S D A Z\n| |  \ …  0
+ 103  velk          XKWE|5                                    X K W E\n|  \  |\nX W K E\n \  | |\nW X…  0
+ 104  velk          JPLR|5                                    J P L R\n \  | |\nP J L R\n|  \  |\nP L…  0
+ 105  velk          ZDKPO|5                                   Z D K P O\n| | |  \\nZ D K O P\n| |  \ …  0
+ 106  velk          JGQFN|3                                   J G Q F N\n| |  \  |\nJ G F Q N\n|  \  …  0
+ 107  velk          JXEF|6                                    J X E F\n \  | |\nX J E F\n|  \  |\nX E…  0
+ 108  velk          DMOIU|4                                   D M O I U\n| | |  \\nD M O U I\n| |  \ …  0
+ 109  velk          YGZW|2                                    Y G Z W\n|  \  |\nY Z G W\n \  | |\nZ Y…  0
+ 110  velk          UNDP|6                                    U N D P\n \  | |\nN U D P\n|  \  |\nN D…  0
+ 111  velk          ZQRET|3                                   Z Q R E T\n| | |  \\nZ Q R T E\n| |  \ …  0
+ 112  velk          XIRJZM|4                                  X I R J Z M\n| | |  \  |\nX I R Z J M\n…  1
+ 113  velk          WOLB|2                                    W O L B\n \  | |\nO W L B\n|  \  |\nO L…  0
+ 114  velk          NIBM|3                                    N I B M\n| |  \\nN I M B\n|  \  |\nN M …  0
+ 115  velk          XSJR|2                                    X S J R\n|  \  |\nX J S R\n \  | |\nJ X…  0
+ 116  velk          KGFX|4                                    K G F X\n \  | |\nG K F X\n|  \  |\nG F…  0
+ 117  velk          GQZB|2                                    G Q Z B\n| |  \\nG Q B Z\n|  \  |\nG B …  0
+ 118  velk          AGWQS|5                                   A G W Q S\n| |  \  |\nA G Q W S\n|  \  …  0
+ 119  velk          VARX|3                                    V A R X\n \  | |\nA V R X\n|  \  |\nA R…  0
+ 120  velk          WSTIH|3                                   W S T I H\n| | |  \\nW S T H I\n| |  \ …  0
+ 121  velk          GOEWUH|6                                  G O E W U H\n| | |  \  |\nG O E U W H\n…  0
+ 122  velk          SEALC|6                                   S E A L C\n|  \  | |\nS A E L C\n \  | …  0
+ 123  velk          GOJAFP|4                                  G O J A F P\n| | | |  \\nG O J A P F\n|…  0
+ 124  velk          PJND|3                                    P J N D\n|  \  |\nP N J D\n \  | |\nN P…  1
+ 125  velk          OBQK|2                                    O B Q K\n \  | |\nB O Q K\n|  \  |\nB Q…  0
+ 126  velk          ILUE|5                                    I L U E\n| |  \\nI L E U\n|  \  |\nI E …  0
+ 127  velk          AJNR|5                                    A J N R\n|  \  |\nA N J R\n \  | |\nN A…  0
+ 128  velk          NSIV|3                                    N S I V\n \  | |\nS N I V\n|  \  |\nS I…  0
+ 129  velk          QALD|5                                    Q A L D\n| |  \\nQ A D L\n|  \  |\nQ D …  0
+ 130  velk          BUVHR|4                                   B U V H R\n| |  \  |\nB U H V R\n|  \  …  0
+ 131  velk          IXCWJ|2                                   I X C W J\n|  \  | |\nI C X W J\n \  | …  0
+ 132  velk          YPCGN|4                                   Y P C G N\n| | |  \\nY P C N G\n| |  \ …  0
+ 133  velk          LZISJA|5                                  L Z I S J A\n| | |  \  |\nL Z I J S A\n…  0
+ 134  velk          GCDTXP|2                                  G C D T X P\n| |  \  | |\nG C T D X P\n…  0
+ 135  velk          GVCA|6                                    G V C A\n| |  \\nG V A C\n|  \  |\nG A …  0
+ 136  velk          BKZE|2                                    B K Z E\n|  \  |\nB Z K E\n \  | |\nZ B…  1
+ 137  velk          FMEHK|3                                   F M E H K\n|  \  | |\nF E M H K\n \  | …  1
+ 138  velk          UBEOCK|5                                  U B E O C K\n| | | |  \\nU B E O K C\n|…  0
+ 139  velk          ZHVP|5                                    Z H V P\n|  \  |\nZ V H P\n \  | |\nV Z…  0
+ 140  velk          FXVTN|6                                   F X V T N\n|  \  | |\nF V X T N\n \  | …  0
+ 141  velk          RQFBS|2                                   R Q F B S\n| | |  \\nR Q F S B\n| |  \ …  0
+ 142  velk          VGXUOJ|6                                  V G X U O J\n| | |  \  |\nV G X O U J\n…  0
+ 143  velk          KINBM|6                                   K I N B M\n|  \  | |\nK N I B M\n \  | …  0
+ 144  velk          SZCLO|5                                   S Z C L O\n| | |  \\nS Z C O L\n| |  \ …  0
+ 145  velk          XLHWTE|4                                  X L H W T E\n| | |  \  |\nX L H T W E\n…  0
+ 146  velk          SFEM|3                                    S F E M\n \  | |\nF S E M\n|  \  |\nF E…  0
+ 147  velk          CWQELJ|2                                  C W Q E L J\n| | | |  \\nC W Q E J L\n|…  0
+ 148  velk          CQZV|4                                    C Q Z V\n|  \  |\nC Z Q V\n \  | |\nZ C…  0
+ 149  velk          HTSG|5                                    H T S G\n \  | |\nT H S G\n|  \  |\nT S…  0
+ 150  velk          OBIA|2                                    O B I A\n| |  \\nO B A I\n|  \  |\nO A …  0
+ 151  velk          VCIF|5                                    V C I F\n|  \  |\nV I C F\n \  | |\nI V…  0
+ 152  velk          PGHN|2                                    P G H N\n \  | |\nG P H N\n|  \  |\nG H…  0
+ 153  velk          UBQWS|4                                   U B Q W S\n| | |  \\nU B Q S W\n| |  \ …  0
+ 154  velk          PHQV|2                                    P H Q V\n|  \  |\nP Q H V\n \  | |\nQ P…  0
+ 155  velk          MKYFTW|3                                  M K Y F T W\n| |  \  | |\nM K F Y T W\n…  0
+ 156  velk          QIDPW|3                                   Q I D P W\n| | |  \\nQ I D W P\n| |  \ …  0
+ 157  velk          OVKBYU|3                                  O V K B Y U\n| | |  \  |\nO V K Y B U\n…  0
+ 158  velk          PLIFHY|4                                  P L I F H Y\n| |  \  | |\nP L F I H Y\n…  0
+ 159  velk          MDXWHQ|3                                  M D X W H Q\n| | | |  \\nM D X W Q H\n|…  0
+ 160  velk          MXJNH|2                                   M X J N H\n| |  \  |\nM X N J H\n|  \  …  0
+ 161  velk          NCBV|5                                    N C B V\n \  | |\nC N B V\n|  \  |\nC B…  0
+ 162  velk          GPMZQC|4                                  G P M Z Q C\n| | | |  \\nG P M Z C Q\n|…  0
+ 163  velk          ODVNB|5                                   O D V N B\n| |  \  |\nO D N V B\n|  \  …  0
+ 164  velk          VBME|4                                    V B M E\n \  | |\nB V M E\n|  \  |\nB M…  0
+ 165  velk          QWVA|5                                    Q W V A\n| |  \\nQ W A V\n|  \  |\nQ A …  0
+ 166  velk          TLAMF|5                                   T L A M F\n| |  \  |\nT L M A F\n|  \  …  0
+ 167  velk          DTJVPU|3                                  D T J V P U\n| |  \  | |\nD T V J P U\n…  1
+ 168  velk          HRTD|6                                    H R T D\n| |  \\nH R D T\n|  \  |\nH D …  0
+ 169  velk          IXAVF|6                                   I X A V F\n| |  \  |\nI X V A F\n|  \  …  0
+ 170  velk          NYUV|6                                    N Y U V\n \  | |\nY N U V\n|  \  |\nY U…  0
+ 171  velk          QFIDV|2                                   Q F I D V\n| | |  \\nQ F I V D\n| |  \ …  0
+ 172  velk          RWLGFZ|4                                  R W L G F Z\n| | |  \  |\nR W L F G Z\n…  1
+ 173  velk          WHGU|4                                    W H G U\n \  | |\nH W G U\n|  \  |\nH G…  0
+ 174  velk          DNIAC|4                                   D N I A C\n| | |  \\nD N I C A\n| |  \ …  0
+ 175  velk          MEIQB|6                                   M E I Q B\n| |  \  |\nM E Q I B\n|  \  …  0
+ 176  velk          ZNMLT|6                                   Z N M L T\n|  \  | |\nZ M N L T\n \  | …  1
+ 177  velk          FBGNL|5                                   F B G N L\n| | |  \\nF B G L N\n| |  \ …  0
+ 178  velk          EPHA|6                                    E P H A\n|  \  |\nE H P A\n \  | |\nH E…  1
+ 179  velk          BWYP|4                                    B W Y P\n \  | |\nW B Y P\n|  \  |\nW Y…  0
+ 180  velk          WMEAIC|2                                  W M E A I C\n| | | |  \\nW M E A C I\n|…  0
+ 181  velk          FHKIN|2                                   F H K I N\n| |  \  |\nF H I K N\n|  \  …  1
+ 182  velk          HAWKYR|3                                  H A W K Y R\n| |  \  | |\nH A K W Y R\n…  1
+ 183  velk          DQZV|5                                    D Q Z V\n| |  \\nD Q V Z\n|  \  |\nD V …  0
+ 184  velk          BPVDW|3                                   B P V D W\n| |  \  |\nB P D V W\n|  \  …  1
+ 185  velk          ELVAG|3                                   E L V A G\n|  \  | |\nE V L A G\n \  | …  0
+ 186  velk          WQZLX|5                                   W Q Z L X\n| | |  \\nW Q Z X L\n| |  \ …  0
+ 187  velk          XRAVQ|3                                   X R A V Q\n| |  \  |\nX R V A Q\n|  \  …  0
+ 188  velk          HQENA|2                                   H Q E N A\n|  \  | |\nH E Q N A\n \  | …  0
+ 189  velk          MLGQB|6                                   M L G Q B\n| | |  \\nM L G B Q\n| |  \ …  0
+ 190  velk          FYTLG|2                                   F Y T L G\n| |  \  |\nF Y L T G\n|  \  …  0
+ 191  velk          FVKOHL|3                                  F V K O H L\n| |  \  | |\nF V O K H L\n…  0
+ 192  velk          XCBNKF|6                                  X C B N K F\n| | | |  \\nX C B N F K\n|…  0
+ 193  velk          YSFCQ|3                                   Y S F C Q\n| |  \  |\nY S C F Q\n|  \  …  0
+ 194  velk          ZKTX|2                                    Z K T X\n \  | |\nK Z T X\n|  \  |\nK T…  0
+ 195  velk          EYNG|2                                    E Y N G\n| |  \\nE Y G N\n|  \  |\nE G …  0
+ 196  velk          XTZQI|3                                   X T Z Q I\n| |  \  |\nX T Q Z I\n|  \  …  0
+ 197  velk          EBHAW|5                                   E B H A W\n|  \  | |\nE H B A W\n \  | …  0
+ 198  velk          SYWDA|2                                   S Y W D A\n| | |  \\nS Y W A D\n| |  \ …  0
+ 199  velk          YDNH|5                                    Y D N H\n|  \  |\nY N D H\n \  | |\nN Y…  0
+ 200  velk          FGUPWH|4                                  F G U P W H\n| |  \  | |\nF G P U W H\n…  1
+ 201  velk          TPWN|6                                    T P W N\n| |  \\nT P N W\n|  \  |\nT N …  0
+ 202  velk          GTCNQ|2                                   G T C N Q\n| |  \  |\nG T N C Q\n|  \  …  0
+ 203  velk          IJVP|3                                    I J V P\n \  | |\nJ I V P\n|  \  |\nJ V…  0
+ 204  velk          BIHD|2                                    B I H D\n| |  \\nB I D H\n|  \  |\nB D …  0
+ 205  velk          WPUNO|5                                   W P U N O\n| |  \  |\nW P N U O\n|  \  …  1
+ 206  velk          CUHBEF|5                                  C U H B E F\n| |  \  | |\nC U B H E F\n…  0
+ 207  velk          QCLXSV|4                                  Q C L X S V\n| | | |  \\nQ C L X V S\n|…  0
+ 208  velk          PZBAF|2                                   P Z B A F\n| |  \  |\nP Z A B F\n|  \  …  0
+ 209  velk          RVSBL|3                                   R V S B L\n|  \  | |\nR S V B L\n \  | …  0
+ 210  velk          TDSIM|2                                   T D S I M\n| | |  \\nT D S M I\n| |  \ …  0
+ 211  velk          APNB|4                                    A P N B\n|  \  |\nA N P B\n \  | |\nN A…  0
+ 212  velk          DFMR|6                                    D F M R\n \  | |\nF D M R\n|  \  |\nF M…  0
+ 213  velk          NSBFI|4                                   N S B F I\n| | |  \\nN S B I F\n| |  \ …  0
+ 214  velk          DEUH|5                                    D E U H\n|  \  |\nD U E H\n \  | |\nU D…  0
+ 215  velk          TZACJ|5                                   T Z A C J\n|  \  | |\nT A Z C J\n \  | …  0
+ 216  velk          QNMEX|5                                   Q N M E X\n| | |  \\nQ N M X E\n| |  \ …  0
+ 217  velk          FKMB|3                                    F K M B\n|  \  |\nF M K B\n \  | |\nM F…  0
+ 218  velk          OBDGY|6                                   O B D G Y\n|  \  | |\nO D B G Y\n \  | …  0
+ 219  velk          QGYR|3                                    Q G Y R\n| |  \\nQ G R Y\n|  \  |\nQ R …  0
+ 220  velk          YQUP|6                                    Y Q U P\n|  \  |\nY U Q P\n \  | |\nU Y…  0
+ 221  velk          MYIE|5                                    M Y I E\n \  | |\nY M I E\n|  \  |\nY I…  0
+ 222  velk          AJKVZ|3                                   A J K V Z\n| | |  \\nA J K Z V\n| |  \ …  0
+ 223  velk          OIZPK|2                                   O I Z P K\n| |  \  |\nO I P Z K\n|  \  …  0
+ 224  velk          XHWVG|2                                   X H W V G\n|  \  | |\nX W H V G\n \  | …  0
+ 225  velk          IZSJ|5                                    I Z S J\n| |  \\nI Z J S\n|  \  |\nI J …  0
+ 226  velk          AHDQM|6                                   A H D Q M\n| |  \  |\nA H Q D M\n|  \  …  0
+ 227  velk          HMJGS|4                                   H M J G S\n|  \  | |\nH J M G S\n \  | …  0
+ 228  velk          HAPX|2                                    H A P X\n| |  \\nH A X P\n|  \  |\nH X …  0
+ 229  velk          TBVZM|2                                   T B V Z M\n| |  \  |\nT B Z V M\n|  \  …  0
+ 230  velk          CROXTZ|5                                  C R O X T Z\n| |  \  | |\nC R X O T Z\n…  0
+ 231  velk          BTMQL|5                                   B T M Q L\n| | |  \\nB T M L Q\n| |  \ …  0
+ 232  velk          LJMGR|2                                   L J M G R\n| |  \  |\nL J G M R\n|  \  …  0
+ 233  velk          UCYLX|3                                   U C Y L X\n|  \  | |\nU Y C L X\n \  | …  0
+ 234  velk          MRHX|5                                    M R H X\n| |  \\nM R X H\n|  \  |\nM X …  0
+ 235  velk          NJWTB|5                                   N J W T B\n| |  \  |\nN J T W B\n|  \  …  1
+ 236  velk          EZKSY|2                                   E Z K S Y\n|  \  | |\nE K Z S Y\n \  | …  0
+ 237  velk          ATFRO|2                                   A T F R O\n| | |  \\nA T F O R\n| |  \ …  0
+ 238  velk          XKQBHU|5                                  X K Q B H U\n| | |  \  |\nX K Q H B U\n…  0
+ 239  velk          BJRWFY|4                                  B J R W F Y\n| |  \  | |\nB J W R F Y\n…  0
+ 240  velk          AHZOR|2                                   A H Z O R\n| | |  \\nA H Z R O\n| |  \ …  0
+ 241  velk          MQNVLE|6                                  M Q N V L E\n| | |  \  |\nM Q N L V E\n…  0
+ 242  velk          GEDUR|4                                   G E D U R\n|  \  | |\nG D E U R\n \  | …  0
+ 243  velk          ZHRI|3                                    Z H R I\n| |  \\nZ H I R\n|  \  |\nZ I …  0
+ 244  velk          OAFC|5                                    O A F C\n|  \  |\nO F A C\n \  | |\nF O…  0
+ 245  velk          BLTS|3                                    B L T S\n \  | |\nL B T S\n|  \  |\nL T…  0
+ 246  velk          KTYJH|3                                   K T Y J H\n| | |  \\nK T Y H J\n| |  \ …  0
+ 247  velk          LGTNID|3                                  L G T N I D\n| | |  \  |\nL G T I N D\n…  0
+ 248  velk          TIUMD|2                                   T I U M D\n|  \  | |\nT U I M D\n \  | …  0
+ 249  velk          UYVAJ|4                                   U Y V A J\n| | |  \\nU Y V J A\n| |  \ …  0
+ 250  velk          VUFDWK|3                                  V U F D W K\n| | |  \  |\nV U F W D K\n…  0
+ 251  velk          YHDZ|6                                    Y H D Z\n \  | |\nH Y D Z\n|  \  |\nH D…  0
+ 252  velk          WRON|3                                    W R O N\n| |  \\nW R N O\n|  \  |\nW N …  0
+ 253  velk          CDRSOJ|4                                  C D R S O J\n| | |  \  |\nC D R O S J\n…  0
+ 254  velk          WIBHZK|4                                  W I B H Z K\n| |  \  | |\nW I H B Z K\n…  0
+ 255  velk          XYUT|6                                    X Y U T\n| |  \\nX Y T U\n|  \  |\nX T …  0
+ 256  velk          RXUDS|4                                   R X U D S\n| |  \  |\nR X D U S\n|  \  …  0
+ 257  velk          VONXA|4                                   V O N X A\n|  \  | |\nV N O X A\n \  | …  0
+ 258  velk          SUJX|6                                    S U J X\n| |  \\nS U X J\n|  \  |\nS X …  0
+ 259  velk          NIKUCL|4                                  N I K U C L\n| | |  \  |\nN I K C U L\n…  0
+ 260  velk          PCDRL|6                                   P C D R L\n|  \  | |\nP D C R L\n \  | …  0
+ 261  velk          LGNHI|3                                   L G N H I\n| | |  \\nL G N I H\n| |  \ …  0
+ 262  velk          KRAX|3                                    K R A X\n|  \  |\nK A R X\n \  | |\nA K…  0
+ 263  velk          SDTFI|4                                   S D T F I\n|  \  | |\nS T D F I\n \  | …  0
+ 264  velk          IWSY|6                                    I W S Y\n| |  \\nI W Y S\n|  \  |\nI Y …  0
+ 265  velk          GIDET|2                                   G I D E T\n| |  \  |\nG I E D T\n|  \  …  0
+ 266  velk          POCHDX|4                                  P O C H D X\n| |  \  | |\nP O H C D X\n…  0
+ 267  velk          KULXPR|2                                  K U L X P R\n| | | |  \\nK U L X R P\n|…  0
+ 268  velk          MDCRON|5                                  M D C R O N\n| | |  \  |\nM D C O R N\n…  0
+ 269  velk          QPZTGO|3                                  Q P Z T G O\n| |  \  | |\nQ P T Z G O\n…  0
+ 270  velk          YGTIA|4                                   Y G T I A\n| | |  \\nY G T A I\n| |  \ …  0
+ 271  velk          WUSZL|2                                   W U S Z L\n| |  \  |\nW U Z S L\n|  \  …  1
+ 272  velk          UCLGQ|2                                   U C L G Q\n|  \  | |\nU L C G Q\n \  | …  0
+ 273  velk          OENTY|6                                   O E N T Y\n| | |  \\nO E N Y T\n| |  \ …  0
+ 274  velk          OIBW|2                                    O I B W\n|  \  |\nO B I W\n \  | |\nB O…  0
+ 275  velk          RCFKO|4                                   R C F K O\n|  \  | |\nR F C K O\n \  | …  1
+ 276  velk          XENI|6                                    X E N I\n| |  \\nX E I N\n|  \  |\nX I …  0
+ 277  velk          KHUOL|4                                   K H U O L\n| |  \  |\nK H O U L\n|  \  …  1
+ 278  velk          MFNV|4                                    M F N V\n \  | |\nF M N V\n|  \  |\nF N…  0
+ 279  velk          TKJG|3                                    T K J G\n| |  \\nT K G J\n|  \  |\nT G …  0
+ 280  velk          IXMOR|2                                   I X M O R\n| |  \  |\nI X O M R\n|  \  …  0
+ 281  velk          HBKIWP|2                                  H B K I W P\n| |  \  | |\nH B I K W P\n…  0
+ 282  velk          SAUTIL|2                                  S A U T I L\n| | | |  \\nS A U T L I\n|…  0
+ 283  velk          WHNPG|4                                   W H N P G\n| |  \  |\nW H P N G\n|  \  …  0
+ 284  velk          VRFDE|2                                   V R F D E\n|  \  | |\nV F R D E\n \  | …  0
+ 285  velk          XKWEO|3                                   X K W E O\n| | |  \\nX K W O E\n| |  \ …  0
+ 286  velk          HUIKFM|6                                  H U I K F M\n| | |  \  |\nH U I F K M\n…  0
+ 287  velk          NXTLJV|4                                  N X T L J V\n| |  \  | |\nN X L T J V\n…  0
+ 288  velk          XYSF|2                                    X Y S F\n| |  \\nX Y F S\n|  \  |\nX F …  0
+ 289  velk          CPFM|4                                    C P F M\n|  \  |\nC F P M\n \  | |\nF C…  0
+ 290  velk          JBHVRW|5                                  J B H V R W\n| |  \  | |\nJ B V H R W\n…  0
+ 291  velk          FGUCA|5                                   F G U C A\n| | |  \\nF G U A C\n| |  \ …  0
+ 292  velk          AWNIKE|4                                  A W N I K E\n| | |  \  |\nA W N K I E\n…  1
+ 293  velk          UNAOT|3                                   U N A O T\n|  \  | |\nU A N O T\n \  | …  0
+ 294  velk          COBFWG|6                                  C O B F W G\n| | | |  \\nC O B F G W\n|…  0
+ 295  velk          NTWLFM|5                                  N T W L F M\n| | |  \  |\nN T W F L M\n…  1
+ 296  velk          BFNSK|4                                   B F N S K\n|  \  | |\nB N F S K\n \  | …  0
+ 297  velk          PBWMJK|6                                  P B W M J K\n| | | |  \\nP B W M K J\n|…  0
+ 298  velk          OPCZ|2                                    O P C Z\n|  \  |\nO C P Z\n \  | |\nC O…  0
+ 299  velk          VWOMR|2                                   V W O M R\n|  \  | |\nV O W M R\n \  | …  0
+ 300  velk          SANF|4                                    S A N F\n| |  \\nS A F N\n|  \  |\nS F …  0
+ 301  velk          ILXE|2                                    I L X E\n|  \  |\nI X L E\n \  | |\nX I…  1
+ 302  velk          XPTF|4                                    X P T F\n \  | |\nP X T F\n|  \  |\nP T…  0
+ 303  velk          JZWV|4                                    J Z W V\n| |  \\nJ Z V W\n|  \  |\nJ V …  0
+ 304  velk          XPYCQ|5                                   X P Y C Q\n| |  \  |\nX P C Y Q\n|  \  …  0
+ 305  velk          WOLCIJ|5                                  W O L C I J\n| |  \  | |\nW O C L I J\n…  0
+ 306  velk          RGATQ|2                                   R G A T Q\n| | |  \\nR G A Q T\n| |  \ …  0
+ 307  velk          NJRF|3                                    N J R F\n|  \  |\nN R J F\n \  | |\nR N…  0
+ 308  velk          FBLCN|2                                   F B L C N\n|  \  | |\nF L B C N\n \  | …  0
+ 309  velk          FOKCT|2                                   F O K C T\n| | |  \\nF O K T C\n| |  \ …  0
+ 310  velk          TFDX|6                                    T F D X\n|  \  |\nT D F X\n \  | |\nD T…  0
+ 311  velk          AFYMLD|5                                  A F Y M L D\n| |  \  | |\nA F M Y L D\n…  0
+ 312  velk          RHFAT|2                                   R H F A T\n| | |  \\nR H F T A\n| |  \ …  0
+ 313  velk          DWEI|6                                    D W E I\n|  \  |\nD E W I\n \  | |\nE D…  1
+ 314  velk          MGFBE|3                                   M G F B E\n|  \  | |\nM F G B E\n \  | …  0
+ 315  velk          KVEB|5                                    K V E B\n| |  \\nK V B E\n|  \  |\nK B …  0
+ 316  velk          WNQJME|3                                  W N Q J M E\n| | |  \  |\nW N Q M J E\n…  0
+ 317  velk          AUVKJ|5                                   A U V K J\n|  \  | |\nA V U K J\n \  | …  0
+ 318  velk          HEJPFR|2                                  H E J P F R\n| | | |  \\nH E J P R F\n|…  0
+ 319  velk          VPZJ|3                                    V P Z J\n|  \  |\nV Z P J\n \  | |\nZ V…  1
+ 320  velk          VLDTC|3                                   V L D T C\n|  \  | |\nV D L T C\n \  | …  0
+ 321  velk          YHTUV|4                                   Y H T U V\n| | |  \\nY H T V U\n| |  \ …  0
+ 322  velk          VOHI|5                                    V O H I\n|  \  |\nV H O I\n \  | |\nH V…  0
+ 323  velk          NBDES|5                                   N B D E S\n|  \  | |\nN D B E S\n \  | …  1
+ 324  velk          RSTNG|2                                   R S T N G\n| | |  \\nR S T G N\n| |  \ …  0
+ 325  velk          IGPB|6                                    I G P B\n|  \  |\nI P G B\n \  | |\nP I…  0
+ 326  velk          RSHLK|5                                   R S H L K\n|  \  | |\nR H S L K\n \  | …  0
+ 327  velk          EABLHK|3                                  E A B L H K\n| | | |  \\nE A B L K H\n|…  0
+ 328  velk          FMPL|5                                    F M P L\n|  \  |\nF P M L\n \  | |\nP F…  0
+ 329  velk          ZJMS|3                                    Z J M S\n \  | |\nJ Z M S\n|  \  |\nJ M…  0
+ 330  velk          WIQEK|3                                   W I Q E K\n| | |  \\nW I Q K E\n| |  \ …  0
+ 331  velk          ZICRUT|4                                  Z I C R U T\n| | |  \  |\nZ I C U R T\n…  0
+ 332  velk          UVWL|3                                    U V W L\n \  | |\nV U W L\n|  \  |\nV W…  0
+ 333  velk          QCGD|3                                    Q C G D\n| |  \\nQ C D G\n|  \  |\nQ D …  0
+ 334  velk          PRKGC|4                                   P R K G C\n| |  \  |\nP R G K C\n|  \  …  0
+ 335  velk          FRGT|6                                    F R G T\n \  | |\nR F G T\n|  \  |\nR G…  0
+ 336  velk          GUMO|5                                    G U M O\n| |  \\nG U O M\n|  \  |\nG O …  0
+ 337  velk          OLTDYU|3                                  O L T D Y U\n| | |  \  |\nO L T Y D U\n…  0
+ 338  velk          VDOP|3                                    V D O P\n \  | |\nD V O P\n|  \  |\nD O…  0
+ 339  velk          GVUZ|4                                    G V U Z\n| |  \\nG V Z U\n|  \  |\nG Z …  0
+ 340  velk          BWSRY|5                                   B W S R Y\n| |  \  |\nB W R S Y\n|  \  …  1
+ 341  velk          FHUMG|2                                   F H U M G\n|  \  | |\nF U H M G\n \  | …  0
+ 342  velk          DUNHQE|4                                  D U N H Q E\n| | | |  \\nD U N H E Q\n|…  0
+ 343  velk          JAOQPV|3                                  J A O Q P V\n| | |  \  |\nJ A O P Q V\n…  0
+ 344  velk          TVFRJ|4                                   T V F R J\n|  \  | |\nT F V R J\n \  | …  0
+ 345  velk          VXYHIS|3                                  V X Y H I S\n| | | |  \\nV X Y H S I\n|…  0
+ 346  velk          WKFS|4                                    W K F S\n|  \  |\nW F K S\n \  | |\nF W…  0
+ 347  velk          IPDKLE|2                                  I P D K L E\n| |  \  | |\nI P K D L E\n…  0
+ 348  velk          QEJMKI|4                                  Q E J M K I\n| | | |  \\nQ E J M I K\n|…  0
+ 349  velk          MGSNV|4                                   M G S N V\n| |  \  |\nM G N S V\n|  \  …  0
+ 350  velk          CGJMD|2                                   C G J M D\n|  \  | |\nC J G M D\n \  | …  0
+ 351  velk          UBTS|6                                    U B T S\n| |  \\nU B S T\n|  \  |\nU S …  0
+ 352  velk          IFUORB|3                                  I F U O R B\n| | |  \  |\nI F U R O B\n…  0
+ 353  velk          QRMT|2                                    Q R M T\n \  | |\nR Q M T\n|  \  |\nR M…  0
+ 354  velk          STJK|5                                    S T J K\n| |  \\nS T K J\n|  \  |\nS K …  0
+ 355  velk          UESLI|3                                   U E S L I\n| |  \  |\nU E L S I\n|  \  …  0
+ 356  velk          CTDYE|5                                   C T D Y E\n|  \  | |\nC D T Y E\n \  | …  0
+ 357  velk          OEVZN|4                                   O E V Z N\n| | |  \\nO E V N Z\n| |  \ …  0
+ 358  velk          QXKZ|3                                    Q X K Z\n|  \  |\nQ K X Z\n \  | |\nK Q…  0
+ 359  velk          PWQSJI|5                                  P W Q S J I\n| |  \  | |\nP W S Q J I\n…  0
+ 360  velk          UTQPVY|5                                  U T Q P V Y\n| | | |  \\nU T Q P Y V\n|…  0
+ 361  velk          SWRX|6                                    S W R X\n|  \  |\nS R W X\n \  | |\nR S…  0
+ 362  velk          FMCSDI|3                                  F M C S D I\n| |  \  | |\nF M S C D I\n…  1
+ 363  velk          BHXFVM|3                                  B H X F V M\n| | | |  \\nB H X F M V\n|…  0
+ 364  velk          VLQDSO|6                                  V L Q D S O\n| | |  \  |\nV L Q S D O\n…  0
+ 365  velk          SHTJFV|5                                  S H T J F V\n| |  \  | |\nS H J T F V\n…  0
+ 366  velk          HDGL|6                                    H D G L\n| |  \\nH D L G\n|  \  |\nH L …  0
+ 367  velk          IAQG|6                                    I A Q G\n|  \  |\nI Q A G\n \  | |\nQ I…  0
+ 368  velk          OGTY|5                                    O G T Y\n \  | |\nG O T Y\n|  \  |\nG T…  0
+ 369  velk          WTYKR|6                                   W T Y K R\n| | |  \\nW T Y R K\n| |  \ …  0
+ 370  velk          RQYNI|2                                   R Q Y N I\n| |  \  |\nR Q N Y I\n|  \  …  0
+ 371  velk          CYZGL|5                                   C Y Z G L\n|  \  | |\nC Z Y G L\n \  | …  0
+ 372  velk          KTLJZ|2                                   K T L J Z\n| | |  \\nK T L Z J\n| |  \ …  0
+ 373  velk          CJTB|2                                    C J T B\n|  \  |\nC T J B\n \  | |\nT C…  0
+ 374  velk          UORJKZ|3                                  U O R J K Z\n| |  \  | |\nU O J R K Z\n…  0
+ 375  velk          OXRPA|4                                   O X R P A\n| | |  \\nO X R A P\n| |  \ …  0
+ 376  velk          GDBX|4                                    G D B X\n|  \  |\nG B D X\n \  | |\nB G…  0
+ 377  velk          UDPS|4                                    U D P S\n \  | |\nD U P S\n|  \  |\nD P…  0
+ 378  velk          IKZEDV|3                                  I K Z E D V\n| | | |  \\nI K Z E V D\n|…  0
+ 379  velk          YNMCFU|5                                  Y N M C F U\n| | |  \  |\nY N M F C U\n…  0
+ 380  velk          YSFLM|2                                   Y S F L M\n|  \  | |\nY F S L M\n \  | …  0
+ 381  velk          KLCH|4                                    K L C H\n| |  \\nK L H C\n|  \  |\nK H …  0
+ 382  velk          GCHZO|5                                   G C H Z O\n| |  \  |\nG C Z H O\n|  \  …  0
+ 383  velk          AORP|6                                    A O R P\n \  | |\nO A R P\n|  \  |\nO R…  0
+ 384  velk          BSMWQ|2                                   B S M W Q\n| | |  \\nB S M Q W\n| |  \ …  0
+ 385  velk          TMFG|3                                    T M F G\n|  \  |\nT F M G\n \  | |\nF T…  0
+ 386  velk          YCIBMX|4                                  Y C I B M X\n| |  \  | |\nY C B I M X\n…  0
+ 387  velk          AJIGU|4                                   A J I G U\n| | |  \\nA J I U G\n| |  \ …  0
+ 388  velk          FHYJB|5                                   F H Y J B\n| |  \  |\nF H J Y B\n|  \  …  0
+ 389  velk          UGNFAX|2                                  U G N F A X\n| |  \  | |\nU G F N A X\n…  0
+ 390  velk          VOEQ|3                                    V O E Q\n| |  \\nV O Q E\n|  \  |\nV Q …  0
+ 391  velk          MHWQB|4                                   M H W Q B\n| |  \  |\nM H Q W B\n|  \  …  0
+ 392  velk          GCFAB|2                                   G C F A B\n|  \  | |\nG F C A B\n \  | …  0
+ 393  velk          XWDZQ|5                                   X W D Z Q\n| | |  \\nX W D Q Z\n| |  \ …  0
+ 394  velk          DZREU|2                                   D Z R E U\n| |  \  |\nD Z E R U\n|  \  …  0
+ 395  velk          PLYXB|2                                   P L Y X B\n|  \  | |\nP Y L X B\n \  | …  0
+ 396  velk          INZF|4                                    I N Z F\n| |  \\nI N F Z\n|  \  |\nI F …  0
+ 397  velk          KIABQ|3                                   K I A B Q\n| |  \  |\nK I B A Q\n|  \  …  0
+ 398  velk          PDNV|6                                    P D N V\n \  | |\nD P N V\n|  \  |\nD N…  0
+ 399  velk          IQTG|5                                    I Q T G\n| |  \\nI Q G T\n|  \  |\nI G …  0
+ 400  velk          AGVS|3                                    A G V S\n|  \  |\nA V G S\n \  | |\nV A…  0
+ 401  velk          VSGLR|5                                   V S G L R\n|  \  | |\nV G S L R\n \  | …  0
+ 402  velk          CDAPRX|2                                  C D A P R X\n| | | |  \\nC D A P X R\n|…  0
+ 403  velk          KMFI|3                                    K M F I\n|  \  |\nK F M I\n \  | |\nF K…  0
+ 404  velk          XNESO|5                                   X N E S O\n|  \  | |\nX E N S O\n \  | …  0
+ 405  velk          VRXH|4                                    V R X H\n| |  \\nV R H X\n|  \  |\nV H …  0
+ 406  velk          WMAG|3                                    W M A G\n|  \  |\nW A M G\n \  | |\nA W…  0
+ 407  velk          VQZLC|2                                   V Q Z L C\n|  \  | |\nV Z Q L C\n \  | …  0
+ 408  velk          HQSP|3                                    H Q S P\n| |  \\nH Q P S\n|  \  |\nH P …  0
+ 409  velk          KNEIZ|5                                   K N E I Z\n| |  \  |\nK N I E Z\n|  \  …  0
+ 410  velk          OJSLI|5                                   O J S L I\n|  \  | |\nO S J L I\n \  | …  0
+
+per-name tally this round
+name             presented correct  hit-rate
+velk                   411      39      9.5%

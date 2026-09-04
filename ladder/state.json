@@ -1477,8 +1477,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demos": 2,
+       "final_correct": 3008,
+       "final_presented": 3008,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         3,
+         511
+        ],
+        [
+         515,
+         515
+        ],
+        [
+         462,
+         462
+        ],
+        [
+         503,
+         503
+        ],
+        [
+         483,
+         483
+        ],
+        [
+         499,
+         499
+        ]
+       ],
+       "team": "velk1a"
+      },
+      {
+       "cracked_round": 5,
+       "demos": 5,
+       "final_correct": 2961,
+       "final_presented": 2961,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         16,
+         490
+        ],
+        [
+         39,
+         411
+        ],
+        [
+         158,
+         485
+        ],
+        [
+         276,
+         487
+        ],
+        [
+         475,
+         475
+        ],
+        [
+         487,
+         487
+        ]
+       ],
+       "team": "velk1b"
+      }
+     ],
+     "run": "lad-velk-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/velk.json",
@@ -1697,7 +1775,13 @@
    "class": "sarn",
    "id": "players-sarn-v1-ee3c",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-sarn-v1-1",
+   "started": 1788524547.110239,
+   "status": "running",
+   "teams": {
+    "sarn1a": "opus-default",
+    "sarn1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -1721,7 +1805,7 @@
    "kind": "players",
    "run": "lad-velk-v1-1",
    "started": 1788522439.4222763,
-   "status": "running",
+   "status": "done",
    "teams": {
     "velk1a": "opus-default",
     "velk1b": "opus-kidproxy"
@@ -2003,6 +2087,14 @@
    "id": "refiner-velk-v1-4a2d",
    "kind": "refiner",
    "reason": "kid_score",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "velk",
+   "id": "players-velk-v1-7608",
+   "kind": "players",
    "status": "pending",
    "version": 1
   }

@@ -527,7 +527,22 @@
   },
   "fennick": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Make the picture show the lean (slant the leaning book toward its taller neighbour) so it reads as tipping books rather than a skyline.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 5,
+      "object": 3,
+      "rule_statable": 3
+     },
+     "score": 3.4,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1721,7 +1736,7 @@
    "id": "judge-fennick-v1-5f72",
    "kind": "judge",
    "started": 1788523314.7330563,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1771,7 +1786,8 @@
    "class": "tovel",
    "id": "judge-tovel-v1-fb3f",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788523387.4100273,
+   "status": "running",
    "version": 1
   },
   {
@@ -1858,6 +1874,15 @@
    "agents": 1,
    "class": "Wordz",
    "id": "refiner-Wordz-v1-8cb1",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "fennick",
+   "id": "refiner-fennick-v1-e088",
    "kind": "refiner",
    "reason": "kid_score",
    "status": "pending",

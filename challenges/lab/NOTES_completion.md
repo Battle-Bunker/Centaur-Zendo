@@ -168,3 +168,142 @@ players; 3 demos and 4 rounds to crack (LegoZendo, the "hard" benchmark, took 3�
 — OKRIN matched that while being the *only* class competing for demos); the ceiling is reachable at full
 round speed (OKRINa answered 449 items in 0.5 s at 100%); and the two independent clauses each produced a
 distinct, diagnosable failure mode rather than an opaque zero.
+
+---
+
+## Iteration 2 — RE-SKIN to a friendship bracelet (2026-09-04, refiner)
+
+**Why.** Iteration 1 was *on target for AI players* (mean final rate 84 % over 2 finals: one crack in
+round 4, one partial at 73 %) but the 12-year-old judge scored the class **1.8/5**: an abstract letter
+grid with decoy letters, three stacked clauses, alphabetical-rank counts, and a shape that has a name
+("Toeplitz diagonal grid"). Judge's advice: *"Recast the abstract letter-grid as a concrete kid object
+(a friendship bracelet or knitting pattern, a marching-band formation, a seating chart) and give a kid
+a foothold clause before the alphabetical-rank twist."*
+
+This iteration is a **re-skin, not a re-balance**: every load-bearing mechanic that produced the
+crack/partial split is kept structurally identical, and only the skin and the sorting key move.
+
+### What did NOT change (the balance-carrying mechanics)
+* **Seed clause** — the answer must *complete* a start the scorer rebuilds from the clue alone
+  (row 0 begins with the clue). This was the clause both players found last ("invisible until you're
+  already at 99 %") and the one OKRINb never found at all; it is why no clue-independent witness exists.
+* **Local chiral neighbour law** — right = next colour, below = previous colour, no lonely bead, only
+  touching pairs checked (so a second strand may carry its own offset).
+* **Per-symbol count profile keyed to a *second* ordering of the same symbols** — still 2..k+1, still a
+  permutation the clue does not display, so a demo's grid only transfers to clues with the same rank
+  permutation (1/k!). Base 2 kept (base 1 makes ~19 % of profiles unweavable).
+* Totals 9/14/20, k ∈ {3,4,4,5,5}, clue 3–5 chars, deterministic `random.Random(clue)` cosmetics.
+* The three clauses still each score 0 alone — no partial-progress signal until all three are right,
+  which is the property OKRINb's 0/442 in round 5 identified as the source of the difficulty.
+
+### What changed
+| | v1 (letters) | v2 (bracelet) |
+|---|---|---|
+| symbols | any 3–5 distinct capitals A–Z | the six **bead colours** `R O Y G B P` (red orange yellow green blue purple) |
+| clue | random capitals, e.g. `BPAQE` | the **bracelet's colour order**, e.g. `BRYP` |
+| count key | **alphabetical** rank | **rainbow** rank (`ROYGBP`) |
+| decoy symbols | 55 % of demos sprinkled non-clue capitals | **dropped** (they read as clutter/bug; OKRINb filed them as a suspected bug) |
+| `solve()` shape | components scattered over a large sheet, bead density ≈ 0.38 | one tight bracelet — dents filled first, growth hugs the top-left; density ≈ 0.64 (measured over 300 clues) |
+| filler | `._-~:*` | thread-ish `. - _ ~` only |
+| picture size | up to ~11 rows of sparse letters | 2–6 short rows |
+
+Nothing else in `score` moved: the source is v1's with `sorted(c)` → `sorted(c,key=W.index)` and the
+palette string added (**489 chars**, cap 512).
+
+### Why the count clause was re-keyed rather than removed
+The judge suggested replacing the rank counts with "a count a kid would naturally propose (e.g. the
+number of beads of the clue's first colour)". Tried on paper and rejected: any count profile that
+depends only on *k* makes one demo a **complete template for every clue of that k** (relabel the bead
+classes), so a single round-1 demo would hand a player ~40 % of the final without any insight. The
+count must stay keyed to a permutation the clue does not show. **Rainbow rank is that same measurement
+in kid language** — "sort the colours like a rainbow" is a sentence a 12-year-old says unprompted,
+where "alphabetical rank among the clue's letters" is not.
+
+Bonus (measured over all 1200 possible clues, weighted by `generate`):
+| ordering a player might try | agrees with rainbow rank on |
+|---|---|
+| clue order (the first hypothesis) | 5.3 % of clues — the deliberate partial-credit gradient, unchanged from v1 |
+| **alphabetical (the LLM's default key)** | **0.00 % — never** |
+| reverse alphabetical | 7.7 % |
+| rainbow reversed | 0.00 % |
+The palette's letters `B G O P R Y` have rainbow ranks `4 3 1 5 0 2`, whose longest increasing run is 2,
+so no clue of three or more colours can ever agree with alphabetical order. The model's habitual key is
+a wall; the kid's key is the door. That is the centaur asymmetry this class is now built around, and it
+offsets the softening from dropping the decoys and shrinking the pictures.
+
+### The three demos a player would see (real `solve()` output)
+```
+clue GRYPO          clue BRYP        clue RPY
+GRYPOG              BRYPB            RPY
+OGRYPOG             PBRYP            YRP
+P~G~~P              YPB.             PY
+YP~~~~~             ..P.             .P.
+~YP~
+```
+
+### 12-year-old test, applied explicitly (first demo, clue `BRYP`)
+*What a kid sees:* a little bracelet of coloured beads on a thread — blue, red, yellow, purple across
+the top, the same four colours stepping **down and to the right** in diagonal stripes, and a ragged
+bottom edge where the weaving stops.
+*What a kid can say out loud from that one picture, in order (the foothold ladder the judge asked for):*
+1. "The top row is exactly the pattern you were given." ← **foothold, clause 1, free from one demo**
+2. "The stripes run diagonally, like a real friendship bracelet." ← clause 2, half of it
+3. "Going right it's the next colour in the list; going down it's the one before." ← clause 2, the chiral half
+4. "There are more purple beads than red ones — count them: 2, 3, 4, 5." ← clause 3, the *observation*
+5. "Sort the colours like a rainbow and the counts go in order!" ← clause 3, the **twist**, and the one
+   step an LLM's priors point away from.
+No step needs a word a 12-year-old does not have; no maths beyond counting to five and "next/previous".
+
+### Witness table (60 random clues each; v1 run through the same harness for comparison)
+| witness family | v1 | v2 |
+|---|---|---|
+| reference `solve()` output (must be 1) | 60/60 | 60/60 |
+| empty string | 0/60 | 0/60 |
+| clue alone / clue + thread padding | 0/60 | 0/60 |
+| `"1"*400`, 400 random bead letters | 0/60 | 0/60 |
+| clue row + lonely beads scattered (isolation) | 0/60 | 0/60 |
+| solid k×k stripe rectangle (equal counts) | 0/60 | 0/60 |
+| stripes flipped (below = next colour) | 0/60 | 0/60 |
+| full flipped stripe sheet | 0/60 | 0/60 |
+| right shape, counts in **clue order** | 4/60 | 6/60 *(the intended ~5 % gradient)* |
+| right shape, counts in **alphabetical order** | 60/60 *(= v1's rule)* | **0/60** |
+| right shape, counts in reverse-alphabetical order | 0/60 | 2/60 |
+| right shape, rainbow counts but stripes flipped | 0/60 | 0/60 |
+| another clue's bracelet, verbatim | 0/60 | 0/60 |
+| template transfer from another clue, same k | 1/60 | 2/60 |
+| transfer from a clue with the **same rank permutation** | 28/34 | 30/30 *(by design; 1/k! of clue pairs)* |
+| bracelet indented one column / pushed down a row | 0/60 | 0/60 |
+| bracelet mirrored left-right / flipped top-to-bottom | 0/60 | 0/60 |
+| one extra pair of beads appended | 0/60 | 0/60 |
+| single-character mutation of a valid bracelet | 612/1091 (56 %) | **268/1096 (24 %)** |
+Reading of the two rows that moved on purpose: alphabetical counts went from *being the rule* to being
+impossible, and single-character noise now survives less than half as often (v1's inert decoy letters
+made many mutations harmless). The same-rank-permutation transfer is the one intended leak: with 6
+demos a player who never finds the rule can cover ≤ 6 of the 150 (k, permutation) pairs, ≈ 4 % of the
+weighted clue space — the price of dropping the decoys, and small enough to pay for a legible picture.
+
+### Validation
+`python tools/quickcheck.py challenges/lab/OKRIN.json --seeds 200` ⇒
+`OK  OKRIN  gen=0.04 ms  score=0.07 ms  solve=243 ms` (caps 100 ms / 50 ms / 2000 ms), no warnings.
+`score` 489/512 chars, `solve` 4146/5000, `generate` 124/50000. 400/400 seeds: `solve()` non-empty and
+scores 1; worst single solve 340 ms, mean 12.5 ms; scoring junk 0.001 ms/call.
+v1 preserved verbatim at `challenges/lab/OKRIN.v1.json` (copy of the live `challenges/OKRIN.json`).
+
+### Predictions
+* **Kid score: 4/5** (from 1.8/5; range 3.5–4.5). Gains: a nameable everyday object, colours instead of
+  arbitrary letters, a clue that *means* something ("the bracelet's colour order"), a picture that fits in
+  four short lines, no decoys, and a foothold clause readable from one demo. Residual risks a judge may
+  still charge: it is a letter grid *of colour initials*, not a drawn bracelet; the ragged bottom edge
+  (forced by the unequal counts) makes the band look unfinished; and three stacked clauses are still
+  three clauses.
+* **AI balance: expect the class to stay in band (predicted mean final ≈ 60–85 %, one crack + one partial).**
+  Softer than v1: cleaner, smaller demos and no decoys make the seed row and the stripe law more visible.
+  Harder than v1: the count key is no longer the model's default sort, and a wrong-but-close alphabetical
+  hypothesis now returns *exactly zero* instead of confirming. Net: unchanged to slightly harder on the
+  count clause, slightly easier on the shape clause.
+* If the next run comes back **too easy**, the reserve levers are unchanged from iteration 1 (rotate the
+  count base by a clue-derived offset; make the vertical step +2 for odd k; move the seed to a vertical
+  run in column 1) plus one new one: draw from **eight** bead colours (adding `W` white and `K` black,
+  which have no rainbow position and would have to be pinned by experiment).
+
+**Status: written and validated, arena NOT opened** (the orchestrator opens it). No commit, no push.

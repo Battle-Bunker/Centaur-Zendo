@@ -6045,6 +6045,26 @@
    "kind": "refiner",
    "status": "pending",
    "version": 1
+  },
+  {
+   "id": "refiner-garrow-v2-econ",
+   "kind": "refiner",
+   "class": "garrow",
+   "version": 2,
+   "agents": 1,
+   "status": "running",
+   "started": 1788564551.2230492,
+   "reason": "demo_economy"
+  },
+  {
+   "id": "refiner-kelmar-v1-econ",
+   "kind": "refiner",
+   "class": "kelmar",
+   "version": 1,
+   "agents": 1,
+   "status": "running",
+   "started": 1788564551.223051,
+   "reason": "demo_economy"
   }
  ],
  "profiles": {

@@ -575,6 +575,7 @@
   },
   "Wordz": {
    "current_version": 1,
+   "note": "run1: both cracked (r3, r4). Alternation found via near-miss pairs / control rows; hidden dictionary discovered from false positives. Too easy for Opus.",
    "qual": [
     {
      "advice": "Anchor in a drawable object; alternating vowel/consonant counting is a well-known word-puzzle genre an LLM guesses by pattern.",
@@ -591,8 +592,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demos": 3,
+       "final_correct": 2761,
+       "final_presented": 2761,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         1,
+         396
+        ],
+        [
+         32,
+         620
+        ],
+        [
+         473,
+         473
+        ],
+        [
+         490,
+         490
+        ],
+        [
+         430,
+         430
+        ],
+        [
+         421,
+         421
+        ]
+       ],
+       "team": "Wordz1a"
+      },
+      {
+       "cracked_round": 4,
+       "demos": 6,
+       "final_correct": 3476,
+       "final_presented": 3476,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         2,
+         499
+        ],
+        [
+         17,
+         502
+        ],
+        [
+         195,
+         641
+        ],
+        [
+         477,
+         477
+        ],
+        [
+         587,
+         587
+        ],
+        [
+         604,
+         604
+        ]
+       ],
+       "team": "Wordz1b"
+      }
+     ],
+     "run": "lad-Wordz-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/Wordz.json",
@@ -2213,7 +2292,7 @@
    "kind": "players",
    "run": "lad-Wordz-v1-1",
    "started": 1788530939.926827,
-   "status": "running",
+   "status": "done",
    "teams": {
     "Wordz1a": "opus-default",
     "Wordz1b": "opus-kidproxy"
@@ -2694,6 +2773,33 @@
    "started": 1788532891.077101,
    "status": "running",
    "version": null
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "refiner-tovel-v1-man",
+   "kind": "refiner",
+   "reason": "transfer_leak",
+   "started": 1788532913.016411,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "Wordz",
+   "id": "players-Wordz-v1-c092",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "refiner-garrow-v1-dc58",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

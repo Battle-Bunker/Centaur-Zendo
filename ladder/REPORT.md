@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 14:09 UTC
+# Ladder report — 2026-09-04 14:41 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -9,7 +9,6 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | tovel | 1 | testing | 66% | 0.69 | 4.4 | 2 | 0 | opus-default,opus-kidproxy |
 | sarn | 1 | testing | 24% | 0.47 | 4.0 | 2 | 0 | opus-default,opus-kidproxy |
 | orlan | 3 | testing | 17% | 0.35 | - | 2 | 0 | opus-default |
-| fennick | 1 | testing | 1% | 0.01 | 3.4 | 2 | 0 | opus-default,opus-kidproxy |
 | AHMES | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ANAPAL | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
@@ -19,6 +18,8 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | CRIBROT | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | DUOMASK | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | erewhon | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
+| fennick | 2 | testing | - | - | 3.8 | 0 | 0 | - |
+| garrow | 1 | untested | - | - | 3.2 | 0 | 0 | - |
 | GRAYLING | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | HAIL | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | hanjie | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
@@ -46,7 +47,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | volute | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | warren | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | wolf | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| Wordz | 1 | untested | - | - | 2.8 | 0 | 0 | - |
+| Wordz | 1 | testing | 100% | 0.00 | 2.8 | 2 | 2 | opus-default,opus-kidproxy |
 | zebu | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 
 Textbook classes held at `too_easy_textbook` (100 % finals in sim1/sim2, not in the ladder): AHMES, ALLWIN, ANAPAL, BASILISK, carre, CHAKRA, CRIBROT, DUOMASK, erewhon, GRAYLING, HAIL, hanjie, HANSOM, IDX, ikos, krom, MARIENBAD, PP, regina, RUNIC, skerry, SPQ, SUNZI, TARE, TOPPLE, trico, TWINE, volute, warren, wolf, zebu

@@ -104,3 +104,112 @@ probes per round. Shrinking the accepted set would also push quaichb from partia
 failed, i.e. off target, with no player run left to verify it. The proper close is lever 1
 (positional information in the clue — the hole-completion variant, idea 6), which is a
 different challenge, not a tweak.
+
+## Iteration 2 (2026-09-04) — RE-SKIN for the kid rubric: strokes -> nesting cups
+
+Trigger: AI balance was fine (mean final 64 % over 2 finals: one crack, one 23 % partial)
+but the 12-year-old judge scored v1 **1.6/5** — "no recognisable object, abstract stroke
+grammar, nameable as *custom bracket matching*". Judge's advice: re-skin the cyclic pairing
+onto a concrete touchable object (paper-chain links, nesting cups/boxes) so that the pairing
+and the "one single nested chain, not several end to end" clause become **visible in the
+demo**.
+
+v1 is preserved as `challenges/lab/quaich.v1.json`; the new version is
+`challenges/lab/quaich.json`.
+
+### What changed (skin only)
+
+| | v1 | v2 |
+|---|---|---|
+| alphabet | strokes slash, dash, bar | cup colours `R G B` |
+| closing relation | slash→dash→bar→slash | R→G, G→B, B→R (**same 3-cycle**) |
+| wholeness clause | unchanged | unchanged |
+| clue | scrambled word, 12–18 chars | scrambled pile of cups, 12–18 chars (**still tiny**) |
+| answer space | anagram + stackable + whole | **identical** (letters only are read) |
+| `solve()` output | the bare word | an **ASCII drawing of nested boxes** |
+| `score()` | 238 chars | 275 chars (adds "ignore any character that is not R/G/B") |
+
+Nothing about the rule moved. Verified mechanically:
+* `generate(seed)` in v2 is *exactly* the relabelling (`/`→R, `-`→G, `|`→B) of v1's
+  `generate(seed)` — 0 mismatches over 500 seeds;
+* v2 `score` agrees with v1 `score` on the relabelled string for **10 000** random probes
+  (0 mismatches). The accepted set is isomorphic, so v1's balance evidence carries over.
+
+The scorer now reads only the R/G/B letters of the submission, in order, and ignores every
+other character. So the answer may be sent as a bare word *or* as the picture; `solve()`
+always sends the picture, because the demo is the only channel that reaches a kid.
+
+### The picture (this is the whole point)
+
+```
+clue:  BGRRGBRRRGRBRB          <- 14 loose cups in a heap
+
++R----------------+
+| +B----+         |
+| +----R+         |
+| +B----+         |
+| +----R+         |
+| +R------------+ |
+| | +R--------+ | |
+| | | +B----+ | | |
+| | | +----R+ | | |
+| | | +B----+ | | |
+| | | +----R+ | | |
+| | +--------G+ | |
+| +------------G+ |
++----------------G+
+```
+
+One box per pair: opening colour on the top edge, closing colour on the bottom edge,
+children stacked inside their parent (children grow the drawing downwards only, so width is
+4·depth + 7 and the whole picture stays ≤ 647 chars over 3000 seeds, well under the 1024
+solution cap). Reading the letters top-to-bottom reproduces the word exactly.
+
+### 12-year-old test, applied explicitly
+
+*What a kid sees in one demo*: a heap of red/green/blue cups, and a drawing of boxes inside
+boxes inside boxes. Count the letters in the drawing — same cups as the heap, so "it is the
+same cups, restacked". Every box has two different colours: R on top always ends G, G always
+ends B, B always ends R — **the invented pairing is now readable straight off the picture**,
+which is exactly what the judge asked for. And there is exactly **one** outer box: the
+"single tower, not two towers side by side" clause is a thing you can point at.
+
+*What is still not nameable*: which restackings actually count. The hidden layer is the eager
+reading — you go along the row and a cup snaps shut the instant the matching colour arrives,
+so a G may never be put straight inside an R (it would snap the R shut early); equivalently a
+box may only hold boxes of its own colour or of the previous colour in the cycle. That is an
+arbitrary-but-natural measurement of the object, not the object's famous operation, and it is
+invisible in the picture — v1's `quaicha` cracked the class *without ever finding it*.
+
+Kid score predicted: **4/5** (object recognisable from one demo, two of the three clauses
+pointable, one clause left to experiment on). Not 5 because the drawing is boxes-in-boxes
+rather than a coloured photograph, and the clue is still a letter string.
+
+### Witness table (500 fresh clues, v2 scorer)
+
+| witness family | v1 | v2 |
+|---|---|---|
+| empty string | 0 % | **0/500** |
+| the clue itself | 0 % | **0/500** |
+| constant answer (`RG`, `R^6G^6`) | 0 % | **0/500** |
+| sorted order, all 3 rotations | 0–1 % | **0/500** |
+| descending sort | 0 % | **0/500** |
+| reversed clue | 0 % | **0/500** |
+| palindrome (half + mirror) | 0 % | **0/500** |
+| greedy pair-concatenation `RG*a GB*b BR*c` | 0 % | **0/500** |
+| uniform random shuffle | 0.4–1 % | **5/500 (1.0 %)** |
+| all openers then all closers (`R^4G^4B^4`) | 0 | **0** (wholeness) |
+| naive nesting that ignores the eager read (`RGBG…`) | 0 | **0** |
+| two valid towers end to end | 0 | **0** (wholeness) |
+| quaicha's block layout (the v1 crack) | 600/600 | **500/500** (deliberately left open) |
+| reference `solve()` picture / letters only / picture + junk text | — | **500/500 each** |
+
+### Known risk
+
+The picture hands AI players clause (2) (the pairing) and clause (3) (single tower) in demo 1,
+which v1 hid behind a flat string; only the eager-reading layer stays hidden. Expect the mean
+final rate to rise above v1's 64 %. If the next run classifies `too_easy`, the compensating
+lever is idea 9 — the **depth-parity twist**: the closing relation runs the other way round
+the cycle at odd depth, so a box's bottom colour depends on how deep it sits. That stays fully
+kid-visible in the same drawing (a kid can see that the deeper boxes close the other way) and
+does not add jargon, while breaking every count-only layout family including quaicha's.

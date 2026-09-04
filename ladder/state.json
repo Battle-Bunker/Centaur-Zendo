@@ -992,7 +992,7 @@
    ]
   },
   "quaich": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Re-skin the cyclic pairing onto a concrete object (three colours of paper-chain links or nesting cups, each colour closed by one specific other colour) so the pairing and the one-chain clause are visible in the demo.",
@@ -1008,6 +1008,9 @@
      "score": 1.6,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1093,6 +1096,12 @@
     {
      "file": "challenges/quaich.json",
      "v": 1
+    },
+    {
+     "added": 1788523117.1020668,
+     "file": "challenges/lab/quaich.json",
+     "note": "v2 re-skin: nested R/G/B cups drawn as boxes; rule identical to v1",
+     "v": 2
     }
    ]
   },
@@ -1742,7 +1751,7 @@
    "kind": "refiner",
    "reason": "kid_score",
    "started": 1788522607.1201348,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1772,6 +1781,23 @@
    "started": 1788522628.0757318,
    "status": "running",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "quaich",
+   "id": "players-quaich-v2-3063",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "quaich",
+   "id": "judge-quaich-v2-49cd",
+   "kind": "judge",
+   "started": 1788523117.2125332,
+   "status": "running",
+   "version": 2
   }
  ],
  "profiles": {

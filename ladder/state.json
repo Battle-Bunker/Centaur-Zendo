@@ -1458,7 +1458,22 @@
   },
   "virel": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Add a visual cue for true brick edges so a kid can spot same-left-and-right-edge stacks by eye.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 3.8,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1843,7 +1858,7 @@
    "id": "judge-virel-v1-d540",
    "kind": "judge",
    "started": 1788523499.278102,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

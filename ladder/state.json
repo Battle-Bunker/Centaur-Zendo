@@ -818,6 +818,83 @@
      ],
      "run": "lad-fennick-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 0,
+       "final_presented": 3663,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         430
+        ],
+        [
+         0,
+         697
+        ],
+        [
+         0,
+         476
+        ],
+        [
+         0,
+         420
+        ],
+        [
+         0,
+         797
+        ],
+        [
+         0,
+         731
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": 4,
+       "demos": 3,
+       "final_correct": 2616,
+       "final_presented": 2616,
+       "final_rate": 1.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         675
+        ],
+        [
+         0,
+         617
+        ],
+        [
+         297,
+         402
+        ],
+        [
+         457,
+         457
+        ],
+        [
+         474,
+         474
+        ],
+        [
+         449,
+         449
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "run": "lad-fennick-v2-1",
+     "version": 2
     }
    ],
    "status": "testing",
@@ -2714,7 +2791,7 @@
    "kind": "players",
    "run": "lad-fennick-v2-1",
    "started": 1788532678.389479,
-   "status": "running",
+   "status": "done",
    "teams": {
     "fennick1a": "opus-lowdemo",
     "fennick1b": "opus-theorist"
@@ -2744,7 +2821,13 @@
    "class": "garrow",
    "id": "players-garrow-v1-2025",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-garrow-v1-1",
+   "started": 1788534457.9098332,
+   "status": "running",
+   "teams": {
+    "garrow1a": "opus-default",
+    "garrow1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -2800,6 +2883,14 @@
    "reason": "kid_score",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-fennick-v2-35a2",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

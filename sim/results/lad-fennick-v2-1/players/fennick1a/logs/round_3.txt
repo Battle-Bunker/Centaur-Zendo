@@ -1,0 +1,488 @@
+Centaur Zendo round 3 (training)
+round_id : 2a731caef0fe4c5d963aa317c25a89f9
+written  : 2026-09-04 15:01:12Z
+presented=476  answered=446  correct=0  skipped=30
+client answer latency: mean 0.139 ms  median 0.134 ms  max 1.206 ms  (n=477)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  fennick       CC.BFA.DF.C.PAA.DA.FD..F.CA..A.D.PB/D:1…  None                                      0
+   1  fennick       KRA.JA.M..ARA.RR.MR..J..MSS.JJ.ASK.SJ/A…  KRA.JA.M..ARA.RR.MR..J..MSS.JJ.ASK.SJ     0
+   2  fennick       KJ.KT.CJ..CK.C.JT.SS.KJ.S.K.KKP.J..KKC/…  KJ.KT.CJ..CK.C.JT.SS.KJ.S.K.KKP.J..KKC\…  0
+   3  fennick       RHJ.J.F..FR..R.LK.JH.KH.KF.RH.L..KL.JJJ…  RHJ.J.F..FR..R.LK.JH.KH.KF.RH.L..KL.JJJ…  0
+   4  fennick       MU.FCJ.WM.J..WFC.C..JMM.FU..FJC.UC..MW/…                                            0
+   5  fennick       AAN.DJ.CC.MJA.NJ..N..CAD.AMA..D..C..DC/…  ___ __ __ ___ __  _  ___ ___  _  _  __\…  0
+   6  fennick       KVK.UKF.B..VV.BU.KB.NU.V.F.N..K..UK.FK/…  ___ ___ _  __ __ __ __ _ _ _  _  __ __\…  0
+   7  fennick       TUR.RBS..D.B.S.BDR.TUT..BU.SU.DB.DSB/R:…  _   _          _   _             _  \nT…  0
+   8  fennick       KVP.A.VPK.K.C..KA.CAU.AV.UU..P.V.KU/V:2…    _     _           _              \n _…  0
+   9  fennick       MR.M.C..FUK.F.UU.FRM.RK.CR..MMK.MU..KU/…            _        _          _       \…  0
+  10  fennick       EHH.UF.HT.E..US.U..T.TU.UE.EEF..HSH.SUS…  _                          _    _   _  …  0
+  11  fennick       ARA.RV..LR..WV.LV.R.KL.KR.WRK..W..AW/L:…   _                                  \n …  0
+  12  fennick       WJ.J.W..WV.C..SJ.S.SV.CKK.V.K.SK.WV/K:1…                                __ __\n  …  0
+  13  fennick       PNW.FP.J..NPN.NJJ.RRP.JF..JW..R..P.FRR/…  _                                     \…  0
+  14  fennick       TLA.A..U.SA.UM..ST.MT.T.LAU..LA..TM.LAA…                                       __…  0
+  15  fennick       GV..AA..S.LG..ML.AL..SM.MS.G.SV.MLA.GV/…  _       _ __  __  _  __ __ _ _  __  _ \…  0
+  16  fennick       VE..LL.CM.VB.MB.MMV.EC..L.VL.B.C.ELM/E:…  None                                      0
+  17  fennick       JA.DJ.PP.J.PC.LC.A.P.C.DJ..DP..D.LCD/D:…  JA.DJ.PP.J.PC.LC.A.P.C.DJ..DP..D.LCD      0
+  18  fennick       VL..W.RW.V.RVV..EMW.LV.EV.E.WRR.MRV.LWM…  VL..W.RW.V.RVV..EMW.LV.EV.E.WRR.MRV.LWM…  0
+  19  fennick       WKK.C.CWU.VP..WP.WC..K.PW.UU..KC.VKV/C:…  WKK.C.CWU.VP..WP.WC..K.PW.UU..KC.VKV/C:…  0
+  20  fennick       JB.JK.P.TP.J.PV.PPK.K.VT..PK..V.JV.KB/K…                                            0
+  21  fennick       EE.WJ..J.FH.EW.TW.H.W.EEF.JFT..F.HEF/F:…  __ __  _ __ __ __ _ _ ___ ___  _ ___\nE…  0
+  22  fennick       EAW..DP.EPA.DW.PPE.P.A.EW.KK..APK.PA/W:…  ___  __ ___ __ ___ _ _ __ __  ___ __\nE…  0
+  23  fennick       GW.G..WA.WP.GPP.EG.WM.EG..W.P.WAP.MMM/W…              _                 _   _  \n…  0
+  24  fennick       FHJ.R.E.FR.HE.EF.RJ.EEJ.K.F..KF.KH..FFH…    _                   _               _…  0
+  25  fennick       LL.G.ML.BK..NGB.N.GNM.NLN.GG..M.KGB..LB…                _     _   _         _    …  0
+  26  fennick       NL.AGN.GVL.VNV.RR.VN..GG.V.GR.R..AR..LG…     _   _   _                         _ …  0
+  27  fennick       BG..E.T.BE..B.PEE.GH..PP.EH.BHP.HG.TET/…      _                                 \…  0
+  28  fennick       PP.L.TL.GTL.T.R.G..RMM.TT..P.PM.RM..GTT…                                        _…  0
+  29  fennick       GB.BLL.EGU..LG.UE.UU.UV.L..VG.G.V.GV/E:…  _                                   \nG…  0
+  30  fennick       FD.UG.GV..UFS.SV.VFS..FSF.FU.S.G.GDD/G:…                            _  _      \n …  0
+  31  fennick       FF.W.ED.DH.D.FDH.WFK..K.KK.HW..EW.EFE/D…  __ _  _ _  _ __  __         _   _  _ \n…  0
+  32  fennick       CP.PA.UC.BB.UB.B.BAC.E.EA.UBP.A..CP..AC…  None                                      0
+  33  fennick       WMV.W..M..VA.A.GAV.G..JM.AJ.V.WMW.MJ/W:…  WMV.W..M..VA.A.GAV.G..JM.AJ.V.WMW.MJ      0
+  34  fennick       EME.T.MU.UD.H.D.MHD..EH.TM..E.HD.UMD/M:…  EME.T.MU.UD.H.D.MHD..EH.TM..E.HD.UMD\n=…  0
+  35  fennick       RP.RM..KF.F..NP..R.M.MP.MRP.NMM.KPN.RKK…  RP.RM..KF.F..NP..R.M.MP.MRP.NMM.KPN.RKK…  0
+  36  fennick       MM..RDF.C.RRC.M..CC.F.DD..D.VM.FRD.RRC/…                                            0
+  37  fennick       KPK.MKS.UK..MS.S..NNN.UK.N.PP.PU.SSN/S:…  ___ ___ __  __ _  ___ __ _ __ __ ___\nK…  0
+  38  fennick       DL.NNR..F.LRP.DD..D..NF.RR.PP.L..R.DDR/…  __ ___  _ ___ __  _  __ __ __ _  _ ___\…  0
+  39  fennick       WER..EE.R.PW.LJ..E.RW..LJ.PLW.EJ.REW/R:…  _                         _      _  \nW…  0
+  40  fennick       EGK.G.VK.K..GAB..VE.GB.E.ABB.KAE.VBB/V:…    _           _            _   _   _\n …  0
+  41  fennick       LCC.SCC..SH.LG.S..GG.CH.H.CSG.PH.LSG/C:…    _   _                     _      _\n …  0
+  42  fennick       PMP..J.UNR.R..RNN.U.PU.M.JP.P.RM.JMP/U:…  _      _      _                  _  \nP…  0
+  43  fennick       SA.VU.UE..SVV.RV..S.U.RA.V.A..R.US.EAU/…     __                                 \…  0
+  44  fennick       KG.RKS.KC..K.GSR.KT.CC.R.TT..S..G.KCT/K…                                    _  \n…  0
+  45  fennick       LEE..E.N.LW.EN.WE.U..FU..WLL.F.FU.UNU/E…   __               _                  \n…  0
+  46  fennick       LGG.G..JW..LL.E..FF.EG.EJ.JF.WE.L.JGF/G…                                _   __ \n…  0
+  47  fennick       MH.RK..HD.HHD.R.D..M.KK.NR..NK.HR.MMR/D…     _          _          _      _   _\n…  0
+  48  fennick       MTM.FG.GU.TG.WM.M.WG.FT.T.FF..UM.FW/M:1…  None                                      0
+  49  fennick       JF.KS.JUG..U.JJ.KU.GF.S..J..UK..JUU.KUK…  JF.KS.JUG..U.JJ.KU.GF.S..J..UK..JUU.KUK   0
+  50  fennick       LLC..EL..U.CE.CS.G.CU..GG.GCS.EGU.LGS/C…  LLC..EL..U.CE.CS.G.CU..GG.GCS.EGU.LGS\n…  0
+  51  fennick       DP.D..U.UP.FB..PB.DUB.EE..F.EUF..P.UDE/…  DP.D..U.UP.FB..PB.DUB.EE..F.EUF..P.UDE/…  0
+  52  fennick       DP.LC.D.P..DV..JP.VV.C.DPL..J.CPJ.LV/C:…                                            0
+  53  fennick       MUU..VV.V..WMG.G.MU.M.WMT.MG..W.TG.UV/T…  ___  __ _  ___ _ __ _ ___ __  _ __ __\n…  0
+  54  fennick       JU.VCB..B..J.JC.JJ..C.VAU.AJ.BB.BU..CU/…  __ ___  _  _ __ __  _ ___ __ __ __  __\…  0
+  55  fennick       CNE.E..N.LS.EF.F.NE..L.ENL.SC..LF.CN/S:…  _                      _            \nC…  0
+  56  fennick       EV.PP.BVV.SB..SH.SE.HV..PS.E.S.H.EBP/H:…          _                          _\n …  0
+  57  fennick       LF.AC.LFU.F.LF.UC..LCU..U.C.LA.FBA.BL/U…          _            _           _   \n…  0
+  58  fennick       JBJ.LBR.BRD.BRJ.RKL..K..L..KK.RK.JR/K:1…  _   _   _   _   _                  \nJ_…  0
+  59  fennick       PU.PPE.PUE.S.R.FSR.E..FS.SU.PF.P..ERP/P…  _                                    \n…  0
+  60  fennick       EE.KK..EK.HE.GG.K..BME.HM..GB.B..HM.BEK…                                       _ …  0
+  61  fennick       HL..KHV.V.HK.VK.C.S.H.K.S.SH.L.SVC.LH/V…  _                                    \n…  0
+  62  fennick       SN.KC..NKM.CF.C.KNF.KS.SCM.MF..F..SN/M:…                      _   _      _  __\n …  0
+  63  fennick       GGM.F..V..G.FF..MDV.M.DG.DG.VD..GA.FG/F…  __        _            _  _     _   _\n…  0
+  64  fennick       JCS.GS.K..GE..SKJ.EC.KE.GK..J.E.S.JK/S:…  None                                      0
+  65  fennick       FB.EVE..F.AL.VF.A.EB.E.BF.B..LA.VE.BL/A…  FB.EVE..F.AL.VF.A.EB.E.BF.B..LA.VE.BL     0
+  66  fennick       UN.TTE..MT.NN.ET.MH.M..UHH.N.UH.UNN..TE…  UN.TTE..MT.NN.ET.MH.M..UHH.N.UH.UNN..TE…  0
+  67  fennick       HC.C..ACK.H.ABB.BC.HHH.SB..A.CA.BH.BBS/…  HC.C..ACK.H.ABB.BC.HHH.SB..A.CA.BH.BBS/…  0
+  68  fennick       BB.WC.CV.LWL.MVW..L.MM..W..VC..LM.VM/V:…                                            0
+  69  fennick       RK.HK.R.PF.P..FF.RR.UKU.PH.F.K.RR..HR/U…  __ __ _ __ _  __ __ ___ __ _ _ __  __\n…  0
+  70  fennick       DS.SA.BSA.DH..JH.JS..DBB.AA..D.A.DHA/S:…  __ __ ___ __  __ __  ___ __  _ _ ___\nD…  0
+  71  fennick       AG.G..CHP.ACJ.P.H.CHP..AJJ.AJG.GH.PCJ/J…        _   _       _    _   _      _  \n…  0
+  72  fennick       BL.PBB.PH.MA.AM.AH..A..BPM.P.BPM..LBL/A…       _                   _     _    _\n…  0
+  73  fennick       AA..GJ.S..SS.JEA.SG.J.AS.AKE.KJG.SJS/G:…                 _           _   _   _\n …  0
+  74  fennick       UT.UU..LM..WLL.GM.W.L.U.LW.T.UWG.TU/G:0…             _                 _     \n_ …  0
+  75  fennick       PKP.KK.HW.NH.WPW.K..PNH..P.H.PD.N.NW/K:…  _                                   \nP…  0
+  76  fennick       BS..NGS.V.VVN.NS.FF.B..GF.BFB.N.VB.GF/S…                                   _  _\n…  0
+  77  fennick       NJJ.N.BJJ.SV.CC..SN.BS.J..NVV.VN.SV/S:2…  _                                  \nN …  0
+  78  fennick       UDR.UW.RW.W.WU.TD.U.TDD..UR..D..NT.NDW/…                           _          __\…  0
+  79  fennick       NCN.T.TGT.G..RC..NC.R..C.JN.RJ.GCN.GR/J…   _            _   _    _        _    \n…  0
+  80  fennick       DD.DS.H.FD..SHE.SE.D.FS.HF.SH..FSE.VH/E…  None                                      0
+  81  fennick       FDT.AAV.AD.T.V..DTF.DFF.F.A..TE.VTA..VV…  FDT.AAV.AD.T.V..DTF.DFF.F.A..TE.VTA..VVV  0
+  82  fennick       MCG..E..G..M..UEM.C.UD.DDE.CM.GC.EE/D:1…  MCG..E..G..M..UEM.C.UD.DDE.CM.GC.EE\n==…  0
+  83  fennick       HKW..H.G.M.HK.MWN.WW.N.W..GM.K.GWG.HK/H…  HKW..H.G.M.HK.MWN.WW.N.W..GM.K.GWG.HK/H…  0
+  84  fennick       KCJ.FL.KA.A..KK.JK.KL.FA.CL.C..LJ.CKJ/L…                                            0
+  85  fennick       UFC..U.F.GU.DC.MF.M.MUF.C.UU.GC.MG..UFF…  ___  _ _ __ __ __ _ ___ _ __ __ __  ___…  0
+  86  fennick       GN.N..FB.VGG.B.G.FJV.GG..F.V.JV.JN.NFF/…  __ _  __ ___ _ _ ___ __  _ _ __ __ ___\…  0
+  87  fennick       HK.CHC.PK..DC.K..PT.HP.TT..H.DC..T.KC/C…     _                                 \n…  0
+  88  fennick       KL..GG.U..G.P..V.UK.VU.LVU.L.GP.KK.PL/P…                           _           \n…  0
+  89  fennick       UJJ.UF.VD.V.JDR..JU..F.RD.RF..VV.FJ/F:0…    _           _                    \n _…  0
+  90  fennick       GKW.JG..G..KG.W.NNN..PJ.KKP.NP.GN.WP/G:…  _               _       _           \nG…  0
+  91  fennick       GN.HG.BR.RG.HG..JN.B.N.HJN..G..RHG.JNN/…  __                                    \…  0
+  92  fennick       LN..SFW.LG.LLF..WN.WS.L.FLS.S.G.N.FF/F:…                           _          \n …  0
+  93  fennick       TKH.KD.KJ.EKK..T.HHJ..D.ET.JE.HK.HK/E:0…   _                                 \n K…  0
+  94  fennick       SUR.SR.UH.TH.K..HR.SR.H.U.S.KR..T.TS/R:…                               _     _\n …  0
+  95  fennick       TF.VMN.T.M.NU..VV.UT.MF..NTM..TF.UMT/U:…  _      _           _      _   _    _\nT…  0
+  96  fennick       MB.CE..MEF..NF.NC.MF.F..C.EB..CFN.MB/F:…  None                                      0
+  97  fennick       AH.GA.AA.L..SG.H.LB..A..HG.GH.LLS.BB/H:…  AH.GA.AA.L..SG.H.LB..A..HG.GH.LLS.BB      0
+  98  fennick       KM.HM.M.UF.S.KFK.HMK.US.HK.H..FS..KFU/U…  KM.HM.M.UF.S.KFK.HMK.US.HK.H..FS..KFU\n…  0
+  99  fennick       JC.DA.GJ..A..CC.JC.JD.G.GDG.AB.JAB.CA/C…  JC.DA.GJ..A..CC.JC.JD.G.GDG.AB.JAB.CA/C…  0
+ 100  fennick       JT.GL.LJ.ST.SL..SN.GN.ST..S.G.NTS.JN/G:…                                            0
+ 101  fennick       SV..V.DVV.SG.SG.KK.EDE.SD..D.EG..S..SKG…  __  _ ___ __ __ __ ___ __  _ __  _  ___…  0
+ 102  fennick       VS.K.GGK..VH.VS.D.VSK.VD.DS.DG.SH..GG/G…  __ _ ___  __ __ _ ___ __ __ __ __  __\n…  0
+ 103  fennick       MSM.RA.VD.DVR.VA.D..SR..DV..A..MAA.SVR/…  _         _                    _   _  \…  0
+ 104  fennick       CCL.MC.CTL.KK.L.D..CC.DK..TD..LMT.DD/C:…    _      _                      _   \n …  0
+ 105  fennick       TNS.U.AN.LU.N.L.T.AU.TU..TN.SL.S.TNA/A:…    _                                _\n …  0
+ 106  fennick       DB..B..RB.R.FL..DDN.LLR.BN..FFL.DNF.DB/…                  _   _       _   _     \…  0
+ 107  fennick       ALA.NPN.PP.CCC.TT.N.CN.AL.AT..A..NTL..C…  _   _      _                           …  0
+ 108  fennick       RJC.GR..WW.AC..JCW.G..AR.CJ.RRJ.W.WCJ/W…                               _    ___\n…  0
+ 109  fennick       MU.U.VW.M..AA.E.EV.VV.MW.A..VW..UE.MW/W…  _    __                              \n…  0
+ 110  fennick       NDG.DD.D.RR.JJ..RD.DRN.T.TR.G.GN.GRG/N:…                     _              _ \n …  0
+ 111  fennick       SUF.SF..L..K..UK.SJ.J..S.JLF.KL.US..JS/…  _   _            _     _         _   _\…  0
+ 112  fennick       WAV.ED.AR..DA.D.AW..A.RRV.RDR.ERW.EE/R:…  None                                      0
+ 113  fennick       VUL..VU.VU.L..BU.GV.VB.W.GL.U.WWL.LVL/V…  VUL..VU.VU.L..BU.GV.VB.W.GL.U.WWL.LVL     0
+ 114  fennick       AJD.SG..AD.SJ.S.D..JD.GJJ.J.JNN.JA.NJG/…  AJD.SG..AD.SJ.S.D..JD.GJJ.J.JNN.JA.NJG\…  0
+ 115  fennick       FF..WW.FWA.HHA..NFN.FH.LN.W..N.WH.LWF/W…  FF..WW.FWA.HHA..NFN.FH.LN.W..N.WH.LWF/W…  0
+ 116  fennick       NGP..N.GPH.GHE.G.NNG..H.HEH.HE.PF.PF/E:…                                            0
+ 117  fennick       AWL..C.LE.WC.AW.NN.CW.L.A..CCN.AA.CCW/C…  ___  _ __ __ __ __ __ _ _  ___ __ ___\n…  0
+ 118  fennick       RB.BT.BTW..FB..W.S.WBT.SWW.FR.R..SBR.SW…  __ __ ___  __  _ _ ___ ___ __ _  ___ __…  0
+ 119  fennick       TD.LPT.DBB.T.D.P.AL..PAD..BP.BAP.TB/D:2…     _   _             _       _     \n_ …  0
+ 120  fennick       FPH.HB..PP.F..B.FU.P.MBB.U.M.MP.BF..UH/…    _                    _              \…  0
+ 121  fennick       UWL.F.LF.WF..VN..UVN.VFF.V.LU.UVW.UFN/L…    _                _   _        _   _\n…  0
+ 122  fennick       HB..AN.N.AB.MH.BBH.HN..B.MM..HTT.THB/T:…                 _             _   _  \n_…  0
+ 123  fennick       MFM.D.FJD.G.FJ..U.F.GM.M.UUD.UJ.GD..FJ/…   _                                    \…  0
+ 124  fennick       MTT.BBK..PKT..BR.RK.BT.P.K.R.KM.MP.TK/R…                                      _\n…  0
+ 125  fennick       GWF.BFU.F..WB.W.GBU.WW.BG.WGM..UMG.MFU/…  __                                    \…  0
+ 126  fennick       TRT.WL..MTC.WR.LRT.MWL.R.M..TM.LW..RWR/…                                     ___\…  0
+ 127  fennick       EG.PE.GP.M.WD.D..WW.EG..P.G.MD..W..PGD/…   _    _              _    _         _ \…  0
+ 128  fennick       HR.K.RUU.HK.U.J.JHR..H.WW.W..JJJ.UJK/R:…  None                                      0
+ 129  fennick       TAA.KT.EBT.K.KJ.KA.ETB..KB.BT..T.BBK/T:…  TAA.KT.EBT.K.KJ.KA.ETB..KB.BT..T.BBK      0
+ 130  fennick       SS.UH.C.MU.CC..M.AS..MC.H.MM.A..HH.UHA/…  SS.UH.C.MU.CC..M.AS..MC.H.MM.A..HH.UHA\…  0
+ 131  fennick       GC.C.B.G.MR..BG..MBJ.M.GG.MR.RJ..CB.CJC…  GC.C.B.G.MR..BG..MBJ.M.GG.MR.RJ..CB.CJC…  0
+ 132  fennick       FK.L..LB..F.MAF.BK..B.BA.FL.M.MMM.LMA/F…                                            0
+ 133  fennick       WVR.AWS.WW.U.AV..RRV.UU.R.SA.SR.US..AA/…  ___ ___ __ _ __  ___ __ _ __ __ __  __\…  0
+ 134  fennick       TD..T.P..WR.PH.DW.H.PP..TT.WR.W.DH..RH/…  __  _ _  __ __ __ _ __  __ __ _ __  __\…  0
+ 135  fennick       WWN.UK.RFN..W.UWW.NF.K..FK..UF.RNW..RFK…  _      _      _                _    _  …  0
+ 136  fennick       TN.APN.NM.N..E.MNT.ENM..APE.TA.PM.AP/A:…       _           _   _    _         \n …  0
+ 137  fennick       RHH.C..G.UUU.TH..T.RC.HG.RU..CHH.THC/R:…    _        _                   _   _\n …  0
+ 138  fennick       DD.HC.DGC.F.BC.FB.H..CF.G..FH..D.GFG/D:…        _                          _  \n_…  0
+ 139  fennick       FV.FJ..LMJ.J..L..F.JE.MV.VF.LVM.V.LLE/F…   _     _                             \n…  0
+ 140  fennick       EE.DA.AV.GV.A..VPD..D..E.G.V.PE.GG..PEE…                                        _…  0
+ 141  fennick       DTR.T..W.D.ED..A..AE.AA.TTD.RT.WR..EDA/…  _                                     \…  0
+ 142  fennick       LJ.GJ..RGD..GJD.L.G.RR.JU.UUD.LL..UD/J:…                    _    _           _\n …  0
+ 143  fennick       VT.V.T.N..M.MT.FN.VV.TM..FNC.C.VVM.CVV/…  _  _              __           __   __\…  0
+ 144  fennick       CSG..JB..S.SB.JC.KJ.J.GGC..SK.C..KKC.SJ…  None                                      0
+ 145  fennick       FS..AJD.AJ.AF.JJJ..D.J.EF.SD.SF.ED..FEF…  FS..AJD.AJ.AF.JJJ..D.J.EF.SD.SF.ED..FEF   0
+ 146  fennick       FW.W.WFB.T.K.TB.KJ.F.KW..KT.B.J.FT.TK/T…  FW.W.WFB.T.K.TB.KJ.F.KW..KT.B.J.FT.TK\n…  0
+ 147  fennick       CS.C..N.JC..UC.U.UGG.GS.UN..S.G.JS.NC/G…  CS.C..N.JC..UC.U.UGG.GS.UN..S.G.JS.NC/G…  0
+ 148  fennick       KHG.JU.K..JW.U.GU.GH.KW..J.H.UH..KHH.WW…                                            0
+ 149  fennick       HB..N..B..RHN.S.RHL.HL.R.H.RS.BH.SB/L:0…  __  _  _  ___ _ ___ __ _ _ __ __ __\nHB…  0
+ 150  fennick       MC.CM.VCM.JVU.C.MS..V..U.M.SCM..VU.SS/U…  __ __ ___ ___ _ __  _  _ _ ___  __ __\n…  0
+ 151  fennick       MPM.M.EU.AA.EAU.U.PPR.MA..EUR.P.EPM..RP…  _           _     _       _     _      …  0
+ 152  fennick       FEB.T.F.SS.D.EBF.BT.DEF..BS.S.ET.TB/B:1…    _            _      _            \n _…  0
+ 153  fennick       TG.TUM.UGG.JJ.M.MMM..JD.UD.U..DU..GUM/D…       _   _        _                 _\n…  0
+ 154  fennick       EE.TE.B.F.T.H.E.KE..TF.BB.FB..KH.KK/E:1…  _  _            _   _  _  _   _  _ \nE_…  0
+ 155  fennick       VF.UUH.K.HHV..KNN.N.U.V.UF.H.KN.VU..FK/…     _                                  \…  0
+ 156  fennick       HH..WW.VG.W.UG.H..BWG.HH.VV..GUB.UHH/G:…                                     _\n …  0
+ 157  fennick       SPP..BAW.G.AWB.S.BS.W.GSA.P.PS.WBG.GS/A…  _                                    \n…  0
+ 158  fennick       SP.W.N.JW.S.FF.SPN.F..WJ.J.WS.P..JP.SWJ…                                      ___…  0
+ 159  fennick       FN..S.FF.UAB.A.NS.U..SFA.FA.N.NB.NB/B:1…   _             _            _ _  _ \n_N…  0
+ 160  fennick       GCH.HGC.DH..GD.RHR.H.KC..RD..D.GHG.CH/C…  None                                      0
+ 161  fennick       DD.NW..C.M..DM.WMW.NWW.NC.N..W.MS.SDD/S…  DD.NW..C.M..DM.WMW.NWW.NC.N..W.MS.SDD     0
+ 162  fennick       HC.F.C.EC..HDC.SS..ED..FEE.HCS.HD.FFS/H…  HC.F.C.EC..HDC.SS..ED..FEE.HCS.HD.FFS\n…  0
+ 163  fennick       TJL.V.VJJ..K.TD..TL.KJV.DJ.TTD.T.JLD/V:…  TJL.V.VJJ..K.TD..TL.KJV.DJ.TTD.T.JLD/V:…  0
+ 164  fennick       CKD..KN..CK.DW..LNN.ND.C..K.WDC.LKL.WL/…                                            0
+ 165  fennick       DT.B.RS.D.VVB.RD.TD.BSD.SBV.SB.VT..DBB/…  __ _ __ _ ___ __ __ ___ ___ __ __  ___\…  0
+ 166  fennick       AM.P.F..M.PAF.E.MW.EM..WA.PE..AMW.AMW/P…  __ _ _  _ ___ _ __ __  __ __  ___ ___\n…  0
+ 167  fennick       BVM.J.BV.GJ.WJ.B.VW.W..VB.V..BV.JG..WB/…  _                                     \…  0
+ 168  fennick       ST.HS.NS.CS..GT..G..CTH.NG.C.CH..NH.TNC…                        _               _…  0
+ 169  fennick       RRT.DT..V.VK.ER.ERD..R.KKK.DRD.E.TE/E:1…    _               _      _   _     \n _…  0
+ 170  fennick       VG.VB.VVF..V..E.EF.FG..EBF.BS.BEE.SGF/B…        _                _      _   _  \n…  0
+ 171  fennick       LS..AA.A.PAS.JJ.J.L.UP.SL..U.LL.AP..JJ/…  _   _        _                        \…  0
+ 172  fennick       VBF.P.M.JBP..FBP.JBJ..J.BF.VF.PM.VPB/J:…                                     _\n …  0
+ 173  fennick       UPP.AU.R.RN..AR..A.UP.CA.NR.CA.UU..PRU/…  _   _  _                              \…  0
+ 174  fennick       SL.RFL.SF.US.P.PF..SR.F..LS.FP.PLR.FL/F…                                     _ \n…  0
+ 175  fennick       GCH.HU.H.CHC.A.GCN.CC..UHN..G.AA.NCU/H:…   __ _  _ ___    _  __   _         _ \n …  0
+ 176  fennick       BET.T.J.TE.VT.ST..EJ.VE.S.B.E.V.ST.BVS/…  None                                      0
+ 177  fennick       KSK..BFA.FS.S..FS.WAB.KSB.FW.A.F.SF/B:1…  KSK..BFA.FS.S..FS.WAB.KSB.FW.A.F.SF       0
+ 178  fennick       CC..F.A.ARF..R.FDD.CD.J..DC.RDA.JA.FD/A…  CC..F.A.ARF..R.FDD.CD.J..DC.RDA.JA.FD\n…  0
+ 179  fennick       PC.AH.HJ..C.AHP.LAH.PAL..HC.PJ.P.CJ/C:1…  PC.AH.HJ..C.AHP.LAH.PAL..HC.PJ.P.CJ/C:1…  0
+ 180  fennick       CJ.CJ.PD.BG.D.JB.J..G.PGP..CG..P.CGB/B:…                                            0
+ 181  fennick       TG.WH..LA.TLL.T.HG.TAW.LG..AL.W..WTL..T…  __ __  __ ___ _ __ ___ __  __ _  ___  _…  0
+ 182  fennick       EWE.PA.GA.PT..E.A.W.P..GTW.WT.GE.AT/E:1…  ___ __ __ __  _ _ _ _  ___ __ __ __\nEW…  0
+ 183  fennick       GE.GC.GAG..SGG.SE..WAE.WA.C.SSC..W.CW/G…        _    _       _        _        \n…  0
+ 184  fennick       SHB.HE.H.ES.E..ES.UU..HB.UJJ.JH..SJ..BE…    _                        _           …  0
+ 185  fennick       EMG..V.C..E..CM.UU.CCV.GEE.CCE.VM..VU/V…    _                  _   _   _       \n…  0
+ 186  fennick       ESJ.SJ.WS..L.JK.K.J.LW.SE.S.EJW..KK.SL/…  _                           _         \…  0
+ 187  fennick       BB.FP.DEP.BEE.FE..P.F..D..DPF.EPP.WWP/F…      _                                \n…  0
+ 188  fennick       JTP.H..KP.HH.LP..LK.K..L.TP.TK.JL.TJH/K…                            _  _  _ _ _\n…  0
+ 189  fennick       GG.UTH.K.MUH.UTK.M.MT.KG.UT..UK..HUU.KH…     _                                   …  0
+ 190  fennick       RSR.SN.NV..NG.ESE.GV.V.E.SE.S..G.NGS/G:…                                     _\n …  0
+ 191  fennick       UUN.UP.P..C.CC.GP.RN.RG.PP..GN..R..CCG/…       _ _       __     _ __  _        _\…  0
+ 192  fennick       TS..V..GR.VG.VW.W.T..S.RG.ST.VW.R.SV/G:…  None                                      0
+ 193  fennick       FU.B.UT.N.D.TD.FN..U..UB.NF..BND.NT/N:0…  FU.B.UT.N.D.TD.FN..U..UB.NF..BND.NT       0
+ 194  fennick       LKG.HS.KK..K..HGB..GBL.G.B.KS.BGB.HLH/K…  LKG.HS.KK..K..HGB..GBL.G.B.KS.BGB.HLH\n…  0
+ 195  fennick       RC.PS.CP.GN.RP..G.SN..SP.GS.R.P..N..CR/…  RC.PS.CP.GN.RP..G.SN..SP.GS.R.P..N..CR/…  0
+ 196  fennick       DC.DK.H..R.C.HT.T.RK.DCT.D.RHC..K..HTH/…                                            0
+ 197  fennick       NP..TF.JJ.F.WN.N.NF.FJ.PN..P.W.NW.TT/W:…  __  __ __ _ __ _ __ __ __  _ _ __ __\nN…  0
+ 198  fennick       MRV.LL.TM.RLM.M.LR..GG.RV.TT.G.TGM.VRR/…  ___ __ __ ___ _ __  __ __ __ _ ___ ___\…  0
+ 199  fennick       AK.ADV.K.AA..ED.VDA.EV.DAR.VK.V..R.DRD/…     _            _      _           _  \…  0
+ 200  fennick       UV.MUS.UV.S.LS.UM.VS.SLJ.LJ.VJU..J..SL/…       _                 _      _       \…  0
+ 201  fennick       UCU.CF.CDU.C..DC.FJJ.P..JUD.UUJ.DP.DP/U…    _      _         _      _   _      \n…  0
+ 202  fennick       ASV.AL.PAF.SA.FLF..V..P..AFS.S.SV.VA/F:…  _      _      _          _          \nA…  0
+ 203  fennick       WJW.JA.KW..W..J.TA.WT..JB.TB..T.K.KK/T:…  _                                   \nW…  0
+ 204  fennick       DDP.T.FF.MM.TTM.TD..FDD.F..VT.VP.FP/T:2…                        _     _    _ \n  …  0
+ 205  fennick       RTV.MM.S..SVV.SR.RTK.T..KSS.ST.M.KS/R:1…         _                           \n  …  0
+ 206  fennick       VS.KSF.S.FVF.K.KTU.V.TS.F.U.STT.VU..KT/…                              _         \…  0
+ 207  fennick       UG.TDT..KU..D.DTK.S..ST.DDG..DK.STU.SDT…      _       _ _         __   _       _ …  0
+ 208  fennick       TLG.N.LLB.G.NNN.TL.BN.BNN..LTT..BP.TB/L…  None                                      0
+ 209  fennick       PJ.U.J.P..WP.TD.UUW.PPJ..DJ.UT..W.DTD/D…  PJ.U.J.P..WP.TD.UUW.PPJ..DJ.UT..W.DTD     0
+ 210  fennick       HL.MHU.N.VH.LU.M.HL..U.L.NNL.MU.V..UU/U…  HL.MHU.N.VH.LU.M.HL..U.L.NNL.MU.V..UU\n…  0
+ 211  fennick       DB.VL.DB.M.B..VD.LE.LED.ML.EM.L..LVD.BV…  DB.VL.DB.M.B..VD.LE.LED.ML.EM.L..LVD.BV…  0
+ 212  fennick       EGE.SDS.UE.E.GLD.GL.U..DUS..UE.SL.UL/S:…                                            0
+ 213  fennick       KWJ.K.WD.D.DGK..JT.GW..GDT.T.J.WGK.KGK/…  ___ _ __ _ ___  __ __  ___ _ _ ___ ___\…  0
+ 214  fennick       DVH..JH.JN..KJJ.NH.VKD.N.NK.J..H.VKN/V:…  ___  __ __  ___ __ ___ _ __ _  _ ___\nD…  0
+ 215  fennick       HL.UHK.KU.N.L.HJK..U..K..HJ.HN.H.LLH/U:…     _          _                  _  \n_…  0
+ 216  fennick       AW..EP..P.W..GW.V.VGG.AW.EGP.G.PAA.VA/W…                      _      _     _   \n…  0
+ 217  fennick       CCM.CWW..A.AUU.JU.C.W..JC..UW.AM.WUJ/A:…    _   _      _                     _\n …  0
+ 218  fennick       WT..E.EM.LWL..WLT.W.F.FM.T.WE.WET.ME/T:…           _    _               _     \n_…  0
+ 219  fennick       EC.FD.S.SE..G.GD.CS.C..F.ED..FF.D.EFE/C…  _  _                                 \n…  0
+ 220  fennick       EF.EE.KFE..KM..H.NM.M.KH.E..N.FE.NEK/E:…                                    _ \n …  0
+ 221  fennick       FUK.PF.T.TPU.TT..KS..PS.FK.TP.F..P..UK/…      _                                 \…  0
+ 222  fennick       SL.DGS.SS.KR.LK.GLL.L.R.RK..SR.KG..DDR/…                                       _\…  0
+ 223  fennick       FBT.FGK.GB.B.FG.MB..G.MF..MK..GTB.MB/F:…   _       _ _     _              _  _\n …  0
+ 224  fennick       HA.HD.E.EGH.MDH.EH..H.GD.MA.M..AAM.GGE/…  None                                      0
+ 225  fennick       NM.BM.J.BU.WU.WUU..BW..N.BM..W.JUN.WU/M…  NM.BM.J.BU.WU.WUU..BW..N.BM..W.JUN.WU     0
+ 226  fennick       SU.S.W.SE..MF.E.EW.UW..FU..SS.MEE.WE/W:…  SU.S.W.SE..MF.E.EW.UW..FU..SS.MEE.WE\n=…  0
+ 227  fennick       NVR..V..VH.DH.NN.DN..HD..H.VR.RP.HRH/H:…  NVR..V..VH.DH.NN.DN..HD..H.VR.RP.HRH/H:…  0
+ 228  fennick       EEE..P.TE.E..UNT.GU.NTN..T.UN.U.GP.TU/T…                                            0
+ 229  fennick       MMM.LS..FFF.LT.BM.MS.FS.BS.M.L..T..BTB/…  ___ __  ___ __ __ __ __ __ _ _  _  ___\…  0
+ 230  fennick       KVK..FD.CN..N.NV..F.FV.DC.D.V.KF.KKD/K:…  ___  __ __  _ __  _ __ __ _ _ __ ___\nK…  0
+ 231  fennick       PGH.BP.LA.G..GPG.A..BPH..H.GH.BGA.HA/A:…  _            _      _         _     \nP…  0
+ 232  fennick       FD.F..WGF.FFJ.DDF.WD.GG..U.W.UD..FG.WF/…          _   _   _                     \…  0
+ 233  fennick       DD..H..C.E.KDH..R.K.DK.CH.RH.EER.DDK/K:…               _                 _   _\n …  0
+ 234  fennick       CA.S..FSS.N.K.CC.FK.NF.SKA.C..KS..NF/S:…        _                _            \n_…  0
+ 235  fennick       FEP..C.ENE..GN.FF..NC.GC.EEP.NG.E.NFF/N…   _                                   \n…  0
+ 236  fennick       CNW.T.GUG.G..WC.NN.CT.GNU.WN..GU..TCN/N…                                      _\n…  0
+ 237  fennick       BA.DD.AM.D..MMB..AM.BN.WAW.W.M..NAD.AW/…   _                                    \…  0
+ 238  fennick       VME.N.FE..V.BN.VF..B.MV.EN.NE.MB.MMF/N:…                        _    __    __ \n …  0
+ 239  fennick       EJH.F..HMK.MJ.EF.H.HK.E..KM.EF.MM..JHM/…    _    __  _     _ _      _    __   __\…  0
+ 240  fennick       PPK.KGN.NGL.M.G..N..GP.K.GPL.P..LM.PMP/…  None                                      0
+ 241  fennick       HH.D.F.HDB.DW.W.FW..DS.H..S.BD.WH..SDF/…  HH.D.F.HDB.DW.W.FW..DS.H..S.BD.WH..SDF    0
+ 242  fennick       JDA.JK.JA.KW.J.JK.A.DJ..M.DM.DA.K..DW/K…  JDA.JK.JA.KW.J.JK.A.DJ..M.DM.DA.K..DW\n…  0
+ 243  fennick       RV..V.JV.P..RW.RPP.JDW.WV.D..JVD.DD/D:1…  RV..V.JV.P..RW.RPP.JDW.WV.D..JVD.DD/D:1…  0
+ 244  fennick       HHW.A.LJH.AL..B.BJL.H.BJ.J..L.W..WA.WJL…                                            0
+ 245  fennick       LB.MF.TBF..TT.PPL.T..M.PB.PFL..BFL.TM/T…  __ __ ___  __ ___ _  _ __ ___  ___ __\n…  0
+ 246  fennick       DJ.PB..D..JD..VCC..B.PC.JD.PC.BCB.VJ/B:…  __ __  _  __  ___  _ __ __ __ ___ __\nD…  0
+ 247  fennick       JK.KM.JPJ..HM..H.P.M.JHP.HPP.G..KKM.GM/…        _              _   _      _     \…  0
+ 248  fennick       NVN.R.K..RN.VR.H.HK.DR.VD.HD..HV..KRR/V…    _                                 _\n…  0
+ 249  fennick       MV.VAM..RV.V.PVR.LVR.AL.MPL.L.P.R.ML/V:…       _         _   _      _         \n …  0
+ 250  fennick       MJ.MB.M.KK..BJ.NJW.B.MBN.K.W.N..J.KMM/M…                 _     _            _  \n…  0
+ 251  fennick       RK.W.WB.R..BUW.G.U.BK..K.KB.RR.UUG.RK/W…  __                                   \n…  0
+ 252  fennick       LJ.GU..U..LN.WW..NJL.UNJ.GL.L.NW.GLJ/J:…                                    _ \n …  0
+ 253  fennick       RN.MD..KK.DMR.LMM..K.DD.RR.RM.L.NK.LND/…  _  __                                 \…  0
+ 254  fennick       NU.U..FF.RT.BU..BB.FTT..T.TRB.N.NR.UFR/…                            _        _ _\…  0
+ 255  fennick       WD.W..D.J..WW.DJP.G.GWB.PB.JJ.BPJ..PBD/…  __ _  _ _  __ ___    __ __ __ ___  ___\…  0
+ 256  fennick       TGT.SG..JG.S.K.TKT..SJ.G.GTK.JK..VV.KJ/…  None                                      0
+ 257  fennick       MN.L.UM.ML..JU..NN.JRL.RR.JJ.M..MN.MNL/…  MN.L.UM.ML..JU..NN.JRL.RR.JJ.M..MN.MNL    0
+ 258  fennick       AVD.LA.D.ML..AM..DH.VL.MAV.V.HVA.LHV/M:…  AVD.LA.D.ML..AM..DH.VL.MAV.V.HVA.LHV\n=…  0
+ 259  fennick       DCC.A.D.C..CDJ.PN..PJ..J.APD.CN.JAA.NC/…  DCC.A.D.C..CDJ.PN..PJ..J.APD.CN.JAA.NC/…  0
+ 260  fennick       CWB.B..K..KW.C.F.WJ.BC.KCW..BF.JC.KB/J:…                                            0
+ 261  fennick       EER.BJ.AEE.RRE.B..JR.R.E.BN..RRN.ARA/B:…  ___ __ ___ ___ _  __ _ _ __  ___ ___\nE…  0
+ 262  fennick       EP.P..TK.PK.NT.LK..K.T.E..LN.L.EL.TKK/P…  __ _  __ __ __ __  _ _ _  __ _ __ ___\n…  0
+ 263  fennick       FHR.HH.TAR..AN.HA.FH..A.ARN..TF.H.NN/H:…  _      _                _           \nF…  0
+ 264  fennick       CCC.CRT..UT.C.LL.U.UU.RL..MMM.MM.CUL/M:…    _   _                     _      _\n …  0
+ 265  fennick       WVB..FE.E..EB.B.VBE.EC.FW.CF.VB.V.WBF/E…    _               _                 _\n…  0
+ 266  fennick       TH.FTT.UF..U.FU.M.TJ.T..J.MH..TF.JJ/T:0…     _                               \n_ …  0
+ 267  fennick       AC.A.C.KHV.R.H.AVK.HK..CH.RA.K.V.RR/H:1…  _      __  _                       \nA_…  0
+ 268  fennick       LEA.NJ.LP.JEE.NA.J.EAL.A.P.L.N..AAE..JA…                                        _…  0
+ 269  fennick       SE.SU.S..SU.VK..US.V.KL.VE.K..EE.US/U:2…  _                                  \nS …  0
+ 270  fennick       KKK.U.AT.SS.UUU..AT.UST..SH..KH.S.KU/T:…                                  _  _\n …  0
+ 271  fennick       MA.KK.M..VM.SA..SV.KSD.AD.VDM.A..K.SKM/…  _     _   _                 _        _\…  0
+ 272  fennick       LSG.LJ.EE.GS..D.JD.LL..EL.L..JE.J.SJ/E:…  None                                      0
+ 273  fennick       TNT.WN.A..UT.T.URA..N..NN.RW.R.RA.RA/N:…  TNT.WN.A..UT.T.URA..N..NN.RW.R.RA.RA      0
+ 274  fennick       GB.HB.HS.SG.NSH.AS.S.AGA..BN.B..HHH.ASA…  GB.HB.HS.SG.NSH.AS.S.AGA..BN.B..HHH.ASA…  0
+ 275  fennick       DC.DG..DC..S..C.AC.AD.GAS.GD.K.KAA..KGS…  DC.DG..DC..S..C.AC.AD.GAS.GD.K.KAA..KGS…  0
+ 276  fennick       HFH.HG.UW.H..U..BF.F..FWW.BU.B..W.GHG/U…                                            0
+ 277  fennick       LL.N..MB.JN.BN.LMT.TT..JN..BNL..J.MN/N:…  __ _  __ __ __ ___ __  __  ___  _ __\nL…  0
+ 278  fennick       KV.L.JT.V.NN.K.TV..NK.J.KK..N..JL.VTN/N…  __ _ __ _ __ _ __  __ _ __  _  __ ___\n…  0
+ 279  fennick       ES.DDD.MJ.SDM..SE.VD.S.D.ME.EMJ..DV..ES…     _      _                 _        _ …  0
+ 280  fennick       EHE.V..EL.HLH..H.EH.CA.CV.E.ECC.EEL.HAL…    _         _                 _   _   _…  0
+ 281  fennick       AW.EB.AW.CWB..A.W.EC..E.B.CJ.EBW.AW/A:1…             _                   _   \n _…  0
+ 282  fennick       WV.NW.LW.M.LN.NVM..HH.VW..N.V.W.MNW.VNM…                _                 _   _  …  0
+ 283  fennick       AU.NMA..DN.AM..UM.DNB.BDM.A.UDN..B.AA/U…  _                                    \n…  0
+ 284  fennick       LLF.RR.UB.B.R.MR.UL..UU.MBL.FB..RM..FFM…                                  _      …  0
+ 285  fennick       EMB.E.U.AP.PM.BB..EPU.EA.M..P..PE.EB/A:…  _                                   \nE…  0
+ 286  fennick       WA.D..AD.V..DV.MN.WVA.W.M.VD.NM.A..NW/V…                            __    _   _\n…  0
+ 287  fennick       UA.AL.HL..HG..KUL.UUK.HA..K.G..UG.GLU/L…  _              _  __           _    _\n…  0
+ 288  fennick       HRG.MR..R.H.NN..GM.HL.RG.M.NRR.N.NN/R:2…  None                                      0
+ 289  fennick       HPG.BT.RP..RHT.PTB..GT..R.H.BB.GH.RR/T:…  HPG.BT.RP..RHT.PTB..GT..R.H.BB.GH.RR      0
+ 290  fennick       SFK.K..S.TF.UJ.JK.TF.TK.SU..TKU.FK.TJF/…  SFK.K..S.TF.UJ.JK.TF.TK.SU..TKU.FK.TJF\…  0
+ 291  fennick       DDS.DA..NS.VS.NTD.N.A.S..VA.DT.VN.VV/S:…  DDS.DA..NS.VS.NTD.N.A.S..VA.DT.VN.VV/S:…  0
+ 292  fennick       WME..M.BE.FP.W..FF.PP..P.BM.EW..MB.WBP/…                                            0
+ 293  fennick       LFP.A.AA.GGL.L..G.F..LP..GL.FAC.AFP.GFL…  ___ _ __ ___ _  _ _  __  __ ___ ___ ___…  0
+ 294  fennick       VAC.T..B.VHT.H.TB..TC..HHA.CH.BB.HA/T:2…  ___ _  _ ___ _ __  __  ___ __ __ __\nVA…  0
+ 295  fennick       UPM.U.PD.M.FF.WMW.DUU.W..PW.PU.PU..DPW/…  _             _   _                _  \…  0
+ 296  fennick       RWD.RD.TW.ED..WD.TE.S.D.TE.DR.SDR..TW/T…    _                             _    \n…  0
+ 297  fennick       EGM.EBB.GB.JM..T.B.G.M.MET.JE.GJ..EE/E:…    _   _                  _          \n …  0
+ 298  fennick       ET.U.TU..G.E..RT.UG.MG.EE.RM.M..T..ET/M…  _    _        _  _  _  _  _        _ \n…  0
+ 299  fennick       RL.H..DRW.LD.R.DW.RE.DDL.RH..ED.HLE.EHH…        _                                …  0
+ 300  fennick       EF..DEF.W.FFB.DD.K.WK.WK.BW.EFD.D..KWD/…                                       _\…  0
+ 301  fennick       NJ.PP.U.TU.G.PU.JT.P.GPT..UP..NNG.NG/U:…     __                               \n …  0
+ 302  fennick       TJT.T..TP.F.JGG.G.M..FM.MP.TJF.FG.TT/F:…                                    __\n …  0
+ 303  fennick       TEW.FE..W.FP.NP.TWP.E.TWE.WP.F.N..NE/P:…   __  _  _        _  _  __ _        _\n …  0
+ 304  fennick       GK.KD.GJ.DGG.NDW..J.NN.WDK.NJ.G.N..KK/D…  None                                      0
+ 305  fennick       NNF..V.VC..H.N..RHF.HC.HHF.RN.HVN.RFC/R…  NNF..V.VC..H.N..RHF.HC.HHF.RN.HVN.RFC     0
+ 306  fennick       BW.JE.WAV.BB.E.V..W.BWE.WW..BEA.AA.WA/B…  BW.JE.WAV.BB.E.V..W.BWE.WW..BEA.AA.WA\n…  0
+ 307  fennick       RE.U.F.M.E.MF.EE..RM.B.BRF.RR.UF..UEU/M…  RE.U.F.M.E.MF.EE..RM.B.BRF.RR.UF..UEU/M…  0
+ 308  fennick       RD.UV.T.RC..D.C.U..DV.RT.DUV.V..UTT.CRV…                                            0
+ 309  fennick       WC.VW.TE.W.TF.FEV..TF.CVV.VFW.C.V..FW/W…  __ __ __ _ __ ___  __ ___ ___ _ _  __\n…  0
+ 310  fennick       BU..DB.AV.D.KV.UUD.BKB..A..AV.U..VD.AD/…  __  __ __ _ __ ___ ___  _  __ _  __ __\…  0
+ 311  fennick       MR.M.ME.NMR..NNW..ER.NW.WW.B..BB.BWE/N:…          _    _                   _  \n_…  0
+ 312  fennick       FSF.MF.C.FD.SS..FDD.D..M.WS.CF.DD.CCF/C…    _               _                 _\n…  0
+ 313  fennick       LP.PH.MU.LUU.MPP..HHD.LM.L.D.HU.HD..ML/…             _   _    _                 \…  0
+ 314  fennick       CU.CRU.RVL.VU.R.WU..VV.WR.V.L.VC..WRR/U…     _   _                          _  \n…  0
+ 315  fennick       WKJ..BH.KJJ.J.EB.WKJ.HBH.B.BB.K.EE..KEB…       _                                 …  0
+ 316  fennick       JK..EV.E.MMD.MME.K.EKJ.M.KK.DK.J.DEV/M:…                               _      \n …  0
+ 317  fennick       JG.FP.PR.DR.DJ..J.JD.G.JR..PG..FG.GRF/G…  __                                   \n…  0
+ 318  fennick       NFL..NF.NPN.PH.LHS.F..S.NS.LF..HF.LSF/N…                                      _\n…  0
+ 319  fennick       AS.K.JK.AK..R.RS.KS.AJ.A.N.NJ.J..RA.KS/…  _  _  _ __       _  _  _          _ _ \…  0
+ 320  fennick       LN.NL.NDS.N..UL.NLD.T.DT.DDU.USD..NTN/N…  None                                      0
+ 321  fennick       PL.LE.DPE.P.PD.DPH.HR.E.LH.EH..EH.LPR/L…  PL.LE.DPE.P.PD.DPH.HR.E.LH.EH..EH.LPR     0
+ 322  fennick       NLL.U.H.UT.UD.LN.UNH.DDL.NT.UN.LD..UHD/…  NLL.U.H.UT.UD.LN.UNH.DDL.NT.UN.LD..UHD\…  0
+ 323  fennick       GV.U.GUM.M..GB.KMB.KKK..V.MM.GBM.UM/K:2…  GV.U.GUM.M..GB.KMB.KKK..V.MM.GBM.UM/K:2…  0
+ 324  fennick       PU.L..VA.LH..UL..PLL.HP.U.VA.LPH.PVA/A:…                                            0
+ 325  fennick       PT..EF.PTB.BB..VT.VF..P.VP.EFE.V..PVB/B…  __  __ ___ __  __ __  _ __ ___ _  ___\n…  0
+ 326  fennick       JW.J.AW.L.SS..S.JSE..LS.EL.LA..JE.JW/J:…  __ _ __ _ __  _ ___  __ __ __  __ __\nJ…  0
+ 327  fennick       SPK.SMP..SM..M.MHP.S.H.LH.KM.P.LS.KH/S:…  _   _          _                    \nS…  0
+ 328  fennick       KLB.FU.MB.KK.BM..B..FM.U.F..LUL.MLK.LUK…    _                           _   _   _…  0
+ 329  fennick       HGM.DH..R.EH.ME..MDH.DE.G.HR.M.DEM.GH/E…    _                _             _   \n…  0
+ 330  fennick       DWH.DD.AA..H.HW.TG.A..DW.D..T.AWH..WAT/…  _                             _    _  \…  0
+ 331  fennick       HDM.DH.M..GS.N..SHH..H..DDN.SH.MND.GDS/…  __                                    \…  0
+ 332  fennick       KSK.LM..B..M..RS.MBK.R.KKL.LSB.BMR.ML/L…                          _          _ \n…  0
+ 333  fennick       BG..PGH.W.B.VV.WH.BG.WB..H.P.PPB.VV/H:1…  _                                  \nB …  0
+ 334  fennick       HWT.PW..NH.TWT.FW.FN.PHF.P.F.T.NTT..FTP…                                      __ …  0
+ 335  fennick       LV.D..N.U.DNV.L.ND.UV..GL.GLD..NVG.LN/D…  _     _    _  _ _       _  _   _   __\n…  0
+ 336  fennick       LE..LEG.RP.P.G.LES..E.GLE.SR.ERP.RSG/R:…  None                                      0
+ 337  fennick       GNU.MU..U.GM.NN.N..GG.M.G.MUA.BM.BGG/M:…  GNU.MU..U.GM.NN.N..GG.M.G.MUA.BM.BGG      0
+ 338  fennick       TNT.CM..CAC.MA.MN.NCA.M.NT..A.TV.CAN/A:…  TNT.CM..CAC.MA.MN.NCA.M.NT..A.TV.CAN\n=…  0
+ 339  fennick       MDM.VV.ME.E..MUE..UU.WE.V.WED.MDD..VU/E…  MDM.VV.ME.E..MUE..UU.WE.V.WED.MDD..VU/E…  0
+ 340  fennick       JG.GJ.K.V.KV..H.KG.G..KK.WH.KV.VGH.JV/H…                                            0
+ 341  fennick       TG.GT.GGF.NGC.FGC..FLT.FT.C.LFT.N.CFT/T…  __ __ ___ ___ ___  ___ __ _ ___ _ ___\n…  0
+ 342  fennick       RV.CRR.C.U.CT.TM..RC..VU.R.UV.MCR.RMC/R…  __ ___ _ _ __ __  __  __ _ __ ___ ___\n…  0
+ 343  fennick       SEW..MW.EG.EGC.C..CC.SM.WS..S..GSE.MWE/…  _          _                   _   _  \…  0
+ 344  fennick       HP..K.NH.V.RVK.PNV.KK..HH.PN.NP.HK.VVH/…               _   _                   _\…  0
+ 345  fennick       JRJ..M.MKJ.F.J.NMJ.FR.K..FMN.KJ.JFF.MN/…    _      _       _         _      _   \…  0
+ 346  fennick       TTJ..CM.L..M.TW..J.JT.LC.WL.TMT..LTW.JL…  _                           _    _     …  0
+ 347  fennick       GDL.J.GMK..JK.MD.DGM.M.LK.JDD.LK.JM/M:0…   _     _                           \n D…  0
+ 348  fennick       SGL.G.WGL.SW.VLG.AGS.VG.A..WLV..GL..AGA…                                       _ …  0
+ 349  fennick       PJJ.W..WW.WNR.WR..R.NB.NR.PN.PJ.N.RJ/W:…             __                       \n …  0
+ 350  fennick       PGM.SP.P.PH.HV.VPM.H.GM..HS.VSG.PM.GM/G…                                  _    \n…  0
+ 351  fennick       TK.B.TW.BB.MWM.M.TBK.KTT.RT.MR.WWW..KWB…  _    _           _    __  _            …  0
+ 352  fennick       NN.K.SNR.PK.E.KSN..SK.R.EE.S.NP.RPE..PN…  None                                      0
+ 353  fennick       BCP.VV.C.DC.CB.D.KP..VBB..DC..KDB.KVP/B…  BCP.VV.C.DC.CB.D.KP..VBB..DC..KDB.KVP     0
+ 354  fennick       UME.KAE.HUH.M.MHA.E.EM..UA.HUA.UK.KH/A:…  UME.KAE.HUH.M.MHA.E.EM..UA.HUA.UK.KH\n=…  0
+ 355  fennick       VBC.CB.EV.M.MB..VMV.DB.DBD..CM..E.MD/V:…  VBC.CB.EV.M.MB..VMV.DB.DBD..CM..E.MD/V:…  0
+ 356  fennick       WAS.WAB.BVW.VV.M.V..WMA.VWA.B.S.MM..VA/…                                            0
+ 357  fennick       HV..E.PVE..KHH.DK.V.KE.EP.HE.HK.VVD.VKK…  __  _ ___  ___ __ _ __ __ __ __ ___ ___…  0
+ 358  fennick       EMK.EK.H..NW.NH.MK..N.HHW.E..HM.K.HWN/K…  ___ __ _  __ __ __  _ ___ _  __ _ ___\n…  0
+ 359  fennick       GS..F..EFS.FG.JF.SL.FG..JJ.EEL..S.GS/G:…         _                   _        \n_…  0
+ 360  fennick       DPP.RPR.DU..CC.UP.R..P.CN..RRD.C.NR/C:2…    _   _                      _     \n _…  0
+ 361  fennick       LS.KH.RH.R..SH..K..KS.HK.H.HHL.VKS.LVR/…                               _   _   _\…  0
+ 362  fennick       KSW.JR.SS..L.WS.K..JJW.S.WK.RLL.LJ.KL/J…  _                  _        _        \n…  0
+ 363  fennick       UR.R.E.PR.DR..DP.PS.EEE.P.D..UU.S.SR/R:…   _                                  \n …  0
+ 364  fennick       FDT.NFF..E.B.FNB.D..BE.EN.FDD.TFN..TE/E…                                 _     \n…  0
+ 365  fennick       JAS.GG..JVJ.JSN.A.S.AG.SS..AV.G.JV.GSJ/…  _ _                                   \…  0
+ 366  fennick       ARP.A..G.RP..R.VP.V.GAS.S.P..SG.RV.AVA/…                            _     _  ___\…  0
+ 367  fennick       SRA.UR..UN..SN.SR.URA..GG.R.NG.G.AUG/U:…   _   _          _  _      _         \n …  0
+ 368  fennick       AVR..KT.TVA.KKA..HT..VR.KR.V.VV.A.HRH/T…  None                                      0
+ 369  fennick       FK.AK.JJF..BJ.JG.GG.BF.K..J.F.AJ..KB/K:…  FK.AK.JJF..BJ.JG.GG.BF.K..J.F.AJ..KB      0
+ 370  fennick       HCL.CH..C.MJ.N..J.L.LM.H.HMN.M..NN.CLL/…  HCL.CH..C.MJ.N..J.L.LM.H.HMN.M..NN.CLL\…  0
+ 371  fennick       ND.HN..V.L..LL.NH.LV.VT.H..HHD..TD.VVL/…  ND.HN..V.L..LL.NH.LV.VT.H..HHD..TD.VVL/…  0
+ 372  fennick       AV..WF.A.LF.WLL.AB.BV.V..FB..ABA.LWA/F:…                                            0
+ 373  fennick       TB..FK.KF.VN..KN.B.BV.VNF.F.KF.TT.NFB/F…  __  __ __ __  __ _ __ ___ _ __ __ ___\n…  0
+ 374  fennick       EU.EE.ER..EH.N..HN.RR.LR.HH.E.NUL.RNN/H…  __ __ __  __ _  __ __ __ __ _ ___ ___\n…  0
+ 375  fennick       TC.LK..LT.TP..FKL.FT..CK.T.F.CP.K.FT/F:…                _                     \n_…  0
+ 376  fennick       GG.MS.VG.CV.S.CGW..MC.W.WG.M.C.G.WW/C:0…                  _                  \n _…  0
+ 377  fennick       KJA.J.HA.KHS.HJ.JL..A.H.K.L..HLL.LKS/H:…    _        _                   _   _\n …  0
+ 378  fennick       STA.P.WTE..AS.W..TE.E.A.TW.TAE.TP.AE/E:…  _     _                    _        \nS…  0
+ 379  fennick       BK.BH.A.AN.KAF.AAN..K.FAB.KBF..B..KAF/F…        _                              \n…  0
+ 380  fennick       FV.LF..T.PL..WLT..F.PWV.FL.TW.W.L.FT/V:…                                  _ _ \n …  0
+ 381  fennick       LKG.A.GAA..G.ALL.GL.K.ML.KR.KM.MG..LG/L…    _                                  \n…  0
+ 382  fennick       UVU.HT.VU.NN.HU.VUV.HN.HT.N.KK..H..TVU/…                                  _    _\…  0
+ 383  fennick       LHD.DVC..DS.D.L.LH..S.CV.V..LC.HV.SLH/D…  _             _ _           _      _ \n…  0
+ 384  fennick       EHE.E.EA..RH.VA.A.H.AR.V..EH.S.HR.SH/H:…  None                                      0
+ 385  fennick       AAK.PG.SA.GG.AK..PB.PP.AB.S..K..BK.BPS/…  AAK.PG.SA.GG.AK..PB.PP.AB.S..K..BK.BPS    0
+ 386  fennick       LT.T.N.TJ.LM.NJJ..NJ.RRM..TM.JR..R.LN/J…  LT.T.N.TJ.LM.NJJ..NJ.RRM..TM.JR..R.LN\n…  0
+ 387  fennick       HV..B.NGN.JN..HV.JH.H..G.GB.GV.GJG..BH/…  HV..B.NGN.JN..HV.JH.H..G.GB.GV.GJG..BH/…  0
+ 388  fennick       CC.N.C..M.CC.NM..VJ.MCM.MN.DVV.VD.JDV/J…                                            0
+ 389  fennick       DW.R..JJM.TW..J..DMD.WR..TR.TM.JD.TDM/D…  __ _  ___ __  _  ___ __  __ __ __ ___\n…  0
+ 390  fennick       AGT.G.EB.T.AE..TAT.H..AG.AB..A.EBB.HG/T…  ___ _ __ _ __  ___ _  __ __  _ ___ __\n…  0
+ 391  fennick       FL.VC.CVC.FC..E..VP.L.EVP.C.CFL.VF.EFF/…        _               _     _      _  \…  0
+ 392  fennick       HL.GF.FGC.FJ.F.H.J.HCL.GL.CF.CC..HJ.JG/…          _            _                \…  0
+ 393  fennick       TSH.D..VDV.V.CDD.TS..DV.TH..CC.SC.DCV/C…    _      _     _                    _\n…  0
+ 394  fennick       TDD.TC.C.UU..U.NCK..TUK.K..CKC.UN.KD/U:…  _              _    _      _        \nT…  0
+ 395  fennick       TFK.T.KF.TF..DPF.D.TU.DKU..PK..TDP.UK/K…  _ _                                  \n…  0
+ 396  fennick       DTW.DTL..RRS.SL.DT..ST.R..T.RL.RD..WS/S…                            _    _     \n…  0
+ 397  fennick       MN.NK.B.M.NNU.TM.K.KK.MB.MU..TTT.TK/T:1…  _                                  \nM …  0
+ 398  fennick       BK.BBK..D..L.DS..S.BN.K.BLN.LBD.SS.BLL/…                                     _  \…  0
+ 399  fennick       SBE.JE.SEA.SM.BMJ.J.ASB..M.B..S.A..SE/J…  _      _   _         _        _    _ \n…  0
+ 400  fennick       RFE.CEC.F.WF..WP.C.WP..RF.FPC..ER.PW/P:…  None                                      0
+ 401  fennick       JGJ..STM.BG.JT.BJ.GTS.G.B.JM.S.TMM..BJG…  JGJ..STM.BG.JT.BJ.GTS.G.B.JM.S.TMM..BJG   0
+ 402  fennick       VJ.UR.J.DK.VD..RU.D.DJ.K.KU.KR.DJ.DK/U:…  VJ.UR.J.DK.VD..RU.D.DJ.K.KU.KR.DJ.DK\n=…  0
+ 403  fennick       EV.A.H.AV..ACH.TEC.CHC.ECV.T..E.TE.AV/T…  EV.A.H.AV..ACH.TEC.CHC.ECV.T..E.TE.AV/T…  0
+ 404  fennick       AA.WF.F.AF.SN.A..WS..AP.W.PWS.PF.WFS/F:…                                            0
+ 405  fennick       CEC.V.B.G.NB.CNG.VV.NN.EEV.E.GC..N..VCE…  ___ _ _ _ __ ___ __ __ ___ _ __  _  ___…  0
+ 406  fennick       FDB.FG.PD.S.GS.DS.BF.SD.FPD.P.GSD..BDF/…  ___ __ __ _ __ __ __ __ ___ _ ___  ___\…  0
+ 407  fennick       FBS.VN.FR..FS..V.RN..BB.S.F..VR.NS.FFB/…  _                                  _  \…  0
+ 408  fennick       BJ.U.MU..VK.UU.J.UM.VBK.MU.BV.MK.VKJ/V:…                        _            _\n …  0
+ 409  fennick       DC.DR.LR.TC..C.L.LTL.NC.RR.NC.NL..TCD/C…                     _                _\n…  0
+ 410  fennick       BR..EH..R.WR.W.EE.BR.HE.B..PB.WP.RPH/W:…                                   _  \n_…  0
+ 411  fennick       FJF.K.F..FF.SJS..KJ.BBK.SP..S.PB.JK/J:1…  _                                  \nF_…  0
+ 412  fennick       CH.LL.K.A.CA.UAK..LAA.U.KU.ALC.UCA.LUH/…                                   _    \…  0
+ 413  fennick       NHV.KK.D.HW.VDD.HKN.WH.W.K.KD.VD..NVW/K…   __ __ _  _                          \n…  0
+ 414  fennick       EE.H.FF..VEJ.EJ.V.FWE.WF.VV.F.WWH.VH/E:…                      _       _     _ \n …  0
+ 415  fennick       JVW..W..U.WN.JHH.VH.HU.UV.H.NV..HJ..UHH…                __  _ _     _     _    __…  0
+ 416  fennick       NVG.T.WVV.V.EWG..NGW..VT.NV.GW.WVT.EVE/…  None                                      0
+ 417  fennick       DF.BF.E.DD.DE.C..D.NBN.BN.CE..N..F..CC/…  DF.BF.E.DD.DE.C..D.NBN.BN.CE..N..F..CC    0
+ 418  fennick       UGC.UW.WGE..W.EUG.VE.E.V.WE.G.C..UU.CE/…  UGC.UW.WGE..W.EUG.VE.E.V.WE.G.C..UU.CE\…  0
+ 419  fennick       GV.E..EE.K.VK.FKF.V..NGG.N..F.EG.NVG/V:…  GV.E..EE.K.VK.FKF.V..NGG.N..F.EG.NVG/V:…  0
+ 420  fennick       BBL..D..RL.U.RD.RL.R..UU.SBB.SL.BB..DL/…                                            0
+ 421  fennick       CR.J..RK.C..KL.L.JL..JCL.CKP.CR.JP..CC/…  __ _  __ _  __ _ __  ___ ___ __ __  __\…  0
+ 422  fennick       UUJ.MG.NU.GH.M.HJ..GHN..HN.JJ.J.NUG.NNJ…  ___ __ __ __ _ __  ___  __ __ _ ___ ___…  0
+ 423  fennick       FAP.WA.W..P.G.GF..WWR.WA.AGG.PG.RF.RGA/…  _                 _      _         _  \…  0
+ 424  fennick       AW.SA.D.SW.A.DW.W..C.SG.AG.G.CWD..GA/A:…                                 _    \n …  0
+ 425  fennick       FN..WP.DP.F.WPP..W.DWD.PW.A.NA.AA.FP/W:…                _      _              \n …  0
+ 426  fennick       AA..VB.MJ.PB.JM.VA.P.VB..M..PV.BJ.PJP/J…                                    _  \n…  0
+ 427  fennick       GN.KGK.A.AC.N.KG.CAC.BN.AGA..GN.BKB.KAG…  _      _                               …  0
+ 428  fennick       TT.HJC.SG.C.T.H.JJ..HT.J.JJH.S.G.CT/C:1…                            _        \n  …  0
+ 429  fennick       VCV.VF.DC..VK.UF..KC.U.CFD.F.FDV.KF/D:0…       _                             \n  …  0
+ 430  fennick       LRM.D..R.LV.AM.DLL.LL.DA..DR.MD.DMA.AML…                                  _      …  0
+ 431  fennick       NNN.CC.NC.DTR.NR.KK.T.R.TT..CD..C..NKK/…  ___ __ __     _             _   _  _  \…  0
+ 432  fennick       BBL.GGS.B..GG.LSU..L.SSB.AU.BL..U..BGL/…  None                                      0
+ 433  fennick       LA.WA.K.BK.BKB..KKK.LW..PWL..P.PP.APL/A…  LA.WA.K.BK.BKB..KKK.LW..PWL..P.PP.APL     0
+ 434  fennick       PHW..BH.WP.A.W.H.WP.BT.WA.AB.TW.AH..TWP…  PHW..BH.WP.A.W.H.WP.BT.WA.AB.TW.AH..TWP…  0
+ 435  fennick       HLH.NV..V.NV.L.JS.NL.VS.J..NL.N..LV.SV/…  HLH.NV..V.NV.L.JS.NL.VS.J..NL.N..LV.SV/…  0
+ 436  fennick       TWD.MW.B..MWW.SDS.D.WB.DST.BTB..M.DTD/W…                                            0
+ 437  fennick       ML.FL.LD..FEG.E.F.EF.GG.ME.DE.M.L..GML/…  __ __ __  ___ _ _ __ __ __ __ _ _  ___\…  0
+ 438  fennick       KJ.MK.JU.W..KU.J.JV.WM.WJ..K..M..V.KMM/…  __ __ __ _  __ _ __ __ __  _  _  _ ___\…  0
+ 439  fennick       AJL.A.VD.PL..AVV..L..JV.AL.V.J.ALD.JVL/…  _            _                 _   _  \…  0
+ 440  fennick       DMU.D.HH.U.MM.BHU.H..M.BHJ.B.J.DJ..MUB/…    _             _        _           _\…  0
+ 441  fennick       DCC.DHK.VV.K..KD..V.EDC..HH.HCD.C.CVH/C…    _   _               _       _     _\n…  0
+ 442  fennick       PSN.GG..LLP.G.P.SH.S.L.GHS..NN.LPL.SH/S…  _       _              _       _     \n…  0
+ 443  fennick       DMD.RUT.UU.NMD.MN.DD..R.MT.TR.T.MUR..TN…        _                                …  0
+ 444  fennick       UWU.WN.GU.U.MG.UT..NM.WWW..MW.G.TU.MMT/…                              _    _    \…  0
+ 445  fennick       HB..VV.J.HJ.AH..JA..CB.JC.AV.VB.C.CBH/J…  __     _            _                \n…  0
+ 446  fennick       TW.WW.VE.V..TH.RHH.EV.E..HV.R.W.TTW.HV/…                                       _\…  0
+ 447  fennick       TSU.A..K.SCU.TA.KA.KK..TC.CA..U.T..CA/C…      _         _  _         _        _\n…  0
+ 448  fennick       NF.VP..UP.BB.N.FV..BN.FU.VV.U.UU.FB/V:1…  None                                      0
+ 449  fennick       TF.FRK.R.FT..RK.KT.RT.C.ET.CE..FE.ETF/E…  TF.FRK.R.FT..RK.KT.RT.C.ET.CE..FE.ETF     0
+ 450  fennick       RMG.THR.BG..M.B.HTB.RM.T.H..TH..RMM.TTM…  RMG.THR.BG..M.B.HTB.RM.T.H..TH..RMM.TTM…  0
+ 451  fennick       KRT.EE.TA..A.E..J..REA.K.JEK.JKR.KR/J:1…  KRT.EE.TA..A.E..J..REA.K.JEK.JKR.KR/J:1…  0
+ 452  fennick       TC.TT.C..DT..J.DT.CTB.CJ.CB.AB..CA.AC/T…                                            0
+ 453  fennick       LR.JUJ..J.U.G..GLR.UL.JG.LV.R.V.L.VL/L:…  __ ___  _ _ _  ___ __ __ __ _ _ _ __\nL…  0
+ 454  fennick       KRP..LP.L..RD.RD..A.RLL.R.PL.KK.RPA.PRP…  ___  __ _  __ __  _ ___ _ __ __ ___ ___…  0
+ 455  fennick       FN..FHF.HW.G..GFW.FHN.GWW.GN.GL.L..WF/F…      _         _   _   _              \n…  0
+ 456  fennick       CV.VW.PP.U..HC.V.P.UUU..W.CH.PV.HW..VP/…                       _                \…  0
+ 457  fennick       PT.WDP.TP.D.P.RBB..W.DP..RPW.BR.B..WR/T…       _          _          _         \n…  0
+ 458  fennick       BB.EGG..E.RR.G..R.LL..TG.BTL.B..RT.EB/R…     _                     _           \n…  0
+ 459  fennick       CNV.NA.CT.CG..A..NN.N.T.ANV.NV.G.GTC/V:…   _                                  \n …  0
+ 460  fennick       KKP.KV..UPD.D.K.VV.P.PK.V.UU.S.DDS.PKU/…                                      _ \…  0
+ 461  fennick       SSS.PN.GW..GG.G.WA.WSP.AWN.N.W..SN..AW/…          _                             \…  0
+ 462  fennick       AB..PD.HC.HBA..A.HP.ABB.PB.H.P..HC.BB/P…                                  _  __\n…  0
+ 463  fennick       VN..GJ..MG.MV..M.GJ.MN.NN.BJ.G..BV.JG/G…      _    _       _           _      _\n…  0
+ 464  fennick       CC.RRB.N.B.RB..RB.NV..AV.CN..CAA.NC/N:1…  None                                      0
+ 465  fennick       RCC.DAA..F.FM.C.A.M..CD.D.MMR.RMC.AD/M:…  RCC.DAA..F.FM.C.A.M..CD.D.MMR.RMC.AD      0
+ 466  fennick       SKL.LK.S.L.P.PL.DC.D..SPS.SSD..CLD.KP/D…  SKL.LK.S.L.P.PL.DC.D..SPS.SSD..CLD.KP\n…  0
+ 467  fennick       WW.BVD..UC.VCB.U.WBV.WCU.WV.DC..V.UBB/W…  WW.BVD..UC.VCB.U.WBV.WCU.WV.DC..V.UBB/W…  0
+ 468  fennick       PK..UU.PRR.LP..P.K.KV.R.UPL.VR..U.KR/V:…                                            0
+ 469  fennick       DS.DU.SD.LG..S.GLV..DU..SV.UG.V..LV.UL/…  __ __ __ __  _ ___  __  __ __ _  __ __\…  0
+ 470  fennick       JU.U.HT.R.RHJ..RTT.G.T..J.UJ.HT.GJ.JR/J…  __ _ __ _ ___  ___ _ _  _ __ __ __ __\n…  0
+ 471  fennick       SKM.KP..SKB.SB.K.UUU.PMS.S.BK.P.UP.UM/S…  _       _        _   _               \n…  0
+ 472  fennick       HAU.ULU.LH.HL..WDA.ALD.LDW.AW.W.L.UWU/U…    _   _          _   _   _          _\n…  0
+ 473  fennick       BV.LWB..VGW.VBA.A.LV.BL.W..L.GB.ALA.BGB…       _    _   _                   _   _…  0
+ 474  fennick       JE.VJ.J.SV.GEG..V.JD.VJS.ESG.S..DV..JE/…             _         _   _            \…  0
+ 475  fennick       SPT.TM.S..M..SPS.A.AH.HM.AA.HA.PH..AM/M…                   _                   \n…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+fennick                476       0      0.0%

@@ -176,7 +176,22 @@
   },
   "LegoZendo2": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Cut the background filler so the mosaic reads as Lego instantly; the width-2 two-colour join count reads to an LLM as bipartite edge counting.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 3,
+      "object": 3,
+      "rule_statable": 3
+     },
+     "score": 2.6,
+     "version": 1
+    }
+   ],
    "runs": [
     {
      "cadence": "6x0.5s/5s/3s",
@@ -1665,7 +1680,7 @@
    "id": "judge-LegoZendo2-v1-a060",
    "kind": "judge",
    "started": 1788523216.6743143,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

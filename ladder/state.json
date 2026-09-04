@@ -3740,7 +3740,7 @@
    "class": "quilm",
    "id": "players-quilm-v3-2c20",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 3
   },
   {
@@ -4619,10 +4619,11 @@
    "version": 2
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "norvel",
    "id": "players-norvel-v2-c730",
    "kind": "players",
+   "note": "team a finished; one live agent remaining",
    "run": "lad-norvel-v2-1",
    "started": 1788559081.8489923,
    "status": "running",
@@ -4706,7 +4707,22 @@
    "class": "kelmar",
    "id": "players-kelmar-v1-b831",
    "kind": "players",
-   "status": "pending",
+   "pool": {
+    "LegoZendo2": 1,
+    "basten": 2,
+    "kelmar": 1,
+    "murn": 2,
+    "orlan": 3,
+    "tovel": 4,
+    "velk": 2
+   },
+   "run": "lad-kelmar-v1-1",
+   "started": 1788561096.509415,
+   "status": "running",
+   "teams": {
+    "kelmar1a": "opus-default",
+    "kelmar1b": "opus-kidproxy"
+   },
    "version": 1
   }
  ],

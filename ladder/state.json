@@ -277,7 +277,7 @@
    ]
   },
   "OKRIN": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Recast as a concrete kid object (bracelet pattern, marching-band formation, seating chart) and give a kid a foothold clause before the alphabetical-rank twist.",
@@ -293,6 +293,9 @@
      "score": 1.8,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -378,6 +381,12 @@
     {
      "file": "challenges/OKRIN.json",
      "v": 1
+    },
+    {
+     "added": 1788523478.0164359,
+     "file": "challenges/lab/OKRIN.json",
+     "note": "v2 re-skin: friendship bracelet, six bead colours, counts keyed to rainbow rank, decoys dropped",
+     "v": 2
     }
    ]
   },
@@ -1841,7 +1850,7 @@
    "kind": "refiner",
    "reason": "kid_score",
    "started": 1788522628.0757318,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1887,6 +1896,23 @@
    "reason": "kid_score",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "OKRIN",
+   "id": "players-OKRIN-v2-470f",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "OKRIN",
+   "id": "judge-OKRIN-v2-140e",
+   "kind": "judge",
+   "started": 1788523478.140062,
+   "status": "running",
+   "version": 2
   }
  ],
  "profiles": {

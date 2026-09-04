@@ -1720,7 +1720,8 @@
    "class": "fennick",
    "id": "judge-fennick-v1-5f72",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788523314.7330563,
+   "status": "running",
    "version": 1
   },
   {
@@ -1843,6 +1844,24 @@
    "started": 1788523117.2125332,
    "status": "done",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "LegoZendo2",
+   "id": "refiner-LegoZendo2-v1-3fcb",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "Wordz",
+   "id": "refiner-Wordz-v1-8cb1",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

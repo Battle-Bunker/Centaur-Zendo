@@ -1635,7 +1635,7 @@
    ]
   },
   "norvel": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
@@ -1651,6 +1651,9 @@
      "score": 4.2,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1738,6 +1741,12 @@
      "file": "challenges/lab/norvel.json",
      "note": "v1 designer (music): drum grid; snare fills exactly n of the kick's holes",
      "v": 1
+    },
+    {
+     "added": 1788555676.6978252,
+     "file": "challenges/lab/norvel.json",
+     "note": "v2 salience: two rows (hat dropped), snare row carries only its runs, bigger dispersed clues; sampler leak 28%->15%",
+     "v": 2
     }
    ]
   },
@@ -4362,7 +4371,7 @@
    "id": "refiner-norvel-v1-man",
    "kind": "refiner",
    "started": 1788553834.7583885,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -4370,7 +4379,7 @@
    "class": "norvel",
    "id": "players-norvel-v1-550d",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -4389,6 +4398,23 @@
    "kind": "players",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "judge-norvel-v2-man",
+   "kind": "judge",
+   "started": 1788555676.7269385,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v2-c730",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

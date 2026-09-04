@@ -232,3 +232,139 @@ snare run is either a hole-fill, a too-short, a too-long or a wrong-place — th
 designer already plants; (c) keep the sampler leak in mind: a groove-shaped random row 2 must
 not score ~30% — the witness table should include "random snare row with kick-rest bias".
 Status: testing (2 finals, 0 cracks). Refine before the next pair.
+
+## norvel v2 (2026-09-04) — refiner: soften by salience, rule untouched
+
+**Kept:** the rule, character for character — *exactly n of the maximal runs of "x" in the snare row
+have the same span as a hole of the kick row*. **Changed:** only what the picture looks like and how
+the clues are shaped. `norvel.v1.json` is the byte-identical previous version.
+
+### What the v1 players actually did (`lad-norvel-v1-1`)
+
+Both Opus players rebuilt the picture grammar perfectly and then hunted the wrong statistics.
+norvel1a's final `strategy.py` is a sampler: *at a kick-rest step both non-kick voices play with
+p = 0.78, at a kick-hit step one of them doubles with p = 0.20, never three at once*; norvel1b's is
+the same idea with two knobs (`acc`, `p2`). Neither NOTES.md contains a single sentence comparing a
+snare run with a kick gap. Their "confirmed rules" — *every step has at least one voice*, *never
+three voices at once*, *no completely silent step* — are not in the scorer at all; they are
+artefacts of v1's `solve()` sprinkling filler on the hat and on kick hits. norvel1b's imagined
+12-year-old said "there's never more than two x's stacked" and "one box is empty": both about
+**columns**, never about a row against the kick's gaps.
+
+Measured on v1's own generator (600 fresh clues, sweeping the sampler): **a groove-shaped snare row
+with kick-rest bias tops out at 28.1 %** (p = 0.85, no doubling), and 37.8 % if the density is tuned
+per clue. That is exactly the 27 % / 36 % the two players scored. The class was paying almost its
+full no-insight ceiling to a strategy that never looks at the rule.
+
+### The three changes (DESIGN_LOOP lever 9 — redraw the demo, don't touch the rule)
+
+1. **The hat row is gone; the picture is two rows.** The three voices read as one texture, and the
+   counted relation was the quietest thing in it. A fixed regular tick cannot fix this: for an
+   arbitrary kick row an every-2nd or every-4th-step hat lands *inside* counted holes, which is
+   precisely the competition brief (c) forbids. The witness table cannot choose between the two
+   options (the scorer reads rows 1–2 either way, so every ceiling is identical), so the tiebreak is
+   salience and legibility — and "kick against snare" is also the most kid-legible drum picture
+   there is (`boom … bap`). Cost: the free third row that used to kill "right rule, wrong row" is
+   gone; that witness is now unreachable anyway (a three-row answer scores 0).
+2. **The snare row carries nothing but its runs.** v1's `solve()` added 5–20 % random filler on
+   kick hits. v2 emits the n exact fills, **at most three planted near-misses, and silence.** Every
+   run in a demo is now one of the four cases the designer always intended: an exact fill; a run too
+   short inside a gap; a run that covers a gap and spills over a kick hit; a run as long as a gap in
+   the wrong place. Measured over 1200 demos: too-short **100 %**, spill **100 %**, a non-fill run
+   exactly as long as some gap **100 %** (1.7 per demo), a run sitting on kick hits away from every
+   gap 38 %, a gap left completely silent 55 %.
+3. **Bigger, more dispersed clues:** G = 7–10 holes (was 4–8), n = 2–8 (was 2–5), G − n = 2–6 (was
+   1–4), two hole widths per clue from a base of 2–4 (was 1–5, at most one 1-hole). This is the part
+   that actually moves the sampler ceiling: with 7–10 holes and n/G spread over 0.25–0.8 there is no
+   single rest-density that lands on *exactly n* for most clues. Weights were tuned so that no
+   constant guess is worth much: max P(n = k) = 21 %, max P(G − n = k) = 24 %.
+
+### Three demos as they now render
+
+```
+clue  xx..x..xx...x...x..x..xx...x/5
+bd xx..x..xx...x...x..x..xx...x
+sn ..xx.xxx...x.xxx.xx.xx..xxx.
+      runs: 2-3 EXACT · 5-7 too long (covers the gap 5-6 and spills onto the kick at 7)
+            11 too short · 13-15 EXACT · 17-18 EXACT · 20-21 EXACT · 24-26 EXACT   → 5 fills = n
+```
+```
+clue  x..x..x...x..x..x...x..xx...xx..x..x/8
+K |x..x|..x.|..x.|.x..|x...|x..x|x...|xx..|x..x|
+S |.xx.|.x.x|xx.x|x.xx|.xxx|.xxx|.xxx|..xx|.xx.|
+      the zipper: 8 of the 10 gaps filled exactly, one gap gets a single hit (too short),
+      one run (21-23) covers a gap and spills over a kick hit                     → 8 fills = n
+```
+```
+clue  x....x...x...x...x....x...x...x....x/2
+|x...|.x..|.x..|.x..|.x..|..x.|..x.|..x.|...x|
+|....|....|....|.xxx|x.xx|xx.x|xx.x|x...|....|
+      sparse end of the range: 13-16 too long, 18-21 EXACT, 23-25 EXACT, 27-28 too short
+                                                                                  → 2 fills = n
+```
+
+### Witness table — v1 → v2 (800 / 1200 fresh clues, same harness)
+
+| strategy | v1 | v2 |
+|---|---|---|
+| the true rule (`solve`) | 100.00 % | **100.00 %** |
+| empty / junk / clue echoed / 4000 chars / clue row copied | 0.00 % | 0.00 % |
+| clue row + an empty or a full row | 0.00 % | 0.00 % |
+| the v1 three-row format | (was the format) | 0.00 % |
+| a random snare row, density 0.2 → 0.8 | 0.04–0.62 % | 0.03–0.69 % |
+| **groove sampler, kick-rest bias (the v1 players' strategy)** | **28.08 %** | **13.9–17.3 %** |
+| groove sampler, density tuned per clue so E[fills] = n | 37.83 % | 29.03 % |
+| COMPLEMENT — fill every hole exactly | 0.00 % | 0.00 % |
+| complement minus one hole | 34.62 % | **0.00 %** (G − n ≥ 2 now) |
+| complement minus two / three holes | 27.62 % / — | 24.50 % / 16.92 % |
+| "always fill exactly k holes", k = 2…6 | 29–30 % | 12.0–22.4 % |
+| fill the n longest / n shortest holes | — | 100 % (= the rule; *which* holes never matters) |
+| graft an old answer's snare row under the new kick row | 1.88 % | 3.33 % |
+| demo replay on the next clue / one fixed answer | 0.00 / 0.12 % | 0.00 / 0.08 % |
+| n holes get a random run INSIDE (the loose reading) | 7.50 % | 3.08 % |
+| n holes: run flush to the hole's left edge | 8.58 % | 2.94 % |
+| n holes get ONE hit / n holes covered with a spill | 0.00 % | 0.00 % |
+| n unison hits / exactly n snare runs anywhere | 0.00 / 0.17 % | 0.00 / 0.00 % |
+| right rule but n±1 holes, or rows swapped | 0.00 % | 0.00 % |
+
+**Foothold (lever 7).** v1's foothold was the loose reading at 7.5 %; v2's is bigger and more
+natural: *"the snare plays through the kick's gaps"* at any density pays **14–17 %** from the first
+probe after the first demo, and "fill k of the gaps exactly" pays 12–24 %. Nobody will conclude the
+grader is exact-match. Crucially it is a **plateau, not a ladder** — no amount of density tuning
+gets past ~18 % without actually counting, whereas in v1 the same sweep walked smoothly to 30 %+
+and felt like progress.
+
+**Fairness.** 62 "count a relation in this picture" counters: mean survivors 2.7 → 1.3 → 1.0 after
+1–3 demos, and the last survivor is the true rule in 15/15 trials (v1: 12.2 → 4.4 → 1.9 → … → 1.0
+over 141 counters). Two demos now pin the rule for anyone who enumerates snare-run/kick-gap
+relations at all; every remaining bit of difficulty is in *looking there*, which is exactly what the
+redrawn picture is for.
+
+**Validation.** `python tools/quickcheck.py challenges/lab/norvel.json --seeds 200` → **OK, no
+warnings** (`gen=0.11 ms score=0.14 ms solve=48.6 ms`). Sizes: score **269/512**, solve 4448/5000,
+generate 1180; clue ≤ 50 chars, solution ≤ ~120. solve() scores 1 on 1500/1500 fresh clues (5.0 ms
+mean, 248 ms worst); generate deterministic over 4000 seeds, 0.030 ms mean / 0.14 ms worst; scorer
+0 raises / 0 non-binary / 0 false positives on 8800 junk strings (worst 0.19 ms) and 0 disagreements
+with an independent re-implementation on 12 000 mutated answers; leniency 100 % (bare rows, bar
+lines, labels, `|1234|` header, blank lines, tabs, CRLF, stray spaces), strictness 0 % (rows
+swapped, snare only, three rows, one wrong character in the kick row, snare shifted, snare emptied,
+all on one line; snare reversed 2.2 % = palindromic coincidence).
+
+### Predicted classification
+
+**calibrated / on target, mean final 45–65 %.** The insight-free ceiling has dropped from 28 % to
+~17 %, and the picture now states the relation instead of hiding it: one demo shows a snare row
+whose runs visibly interlock with the kick's gaps, with one run that stops short and one that plays
+over the kick. The likeliest split is one crack (rounds 2–4) and one player parked at 17–25 % on
+"play through the gaps" or "fill all but two". Predicted kid score **4.5–4.8/5** (v1 scored 4.2):
+two rows labelled kick and snare are a drum machine at a glance, the sentence "the snare fills five
+of the kick's gaps exactly" is one a 12-year-old says out loud, and the counting is 5-of-8, not a
+statistic.
+
+**Risk is now too_easy, not too_hard.** If both players crack it, harden with: count only holes ≥ 3
+steps wide; require the counted fills to be non-adjacent; or push G − n to 2–3 so the answer is
+nearly the complement and all the information sits in the near-misses. If it comes back under 15 %,
+guarantee two silent gaps per demo or add the number of holes as a second clue field.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/music2/v2/{generate,solve,score,attack,sampler,demostats,hyp,selftest,build}.py`.

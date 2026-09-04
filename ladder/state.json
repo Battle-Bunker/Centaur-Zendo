@@ -681,7 +681,22 @@
   },
   "basten": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "The double-nibble clause is positive-only and easy to miss; consider widening the fish-minus-leaf gap to 2+ in every demo so the nose/tail-vs-both-sides distinction reads as the headline discovery.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.4,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -2606,7 +2621,8 @@
    "class": "quilm",
    "id": "judge-quilm-v3-2ef2",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788535160.604481,
+   "status": "running",
    "version": 3
   },
   {
@@ -2970,7 +2986,7 @@
    "id": "judge-basten-v1-77ce",
    "kind": "judge",
    "started": 1788535102.4695544,
-   "status": "running",
+   "status": "done",
    "version": 1
   }
  ],

@@ -4154,7 +4154,7 @@
    ]
   }
  },
- "direction_cursor": 13,
+ "direction_cursor": 14,
  "jobs": [
   {
    "agents": 0,
@@ -5393,6 +5393,33 @@
    "started": 1788563072.6710901,
    "status": "running",
    "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "fennick",
+   "id": "refiner-fennick-v2-econ",
+   "kind": "refiner",
+   "reason": "demo_economy",
+   "started": 1788563215.6069984,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "kelmar",
+   "id": "players-kelmar-v1-df74",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "new-13",
+   "direction": "shops, money and swapping",
+   "id": "designer-new-13-v0-021c",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

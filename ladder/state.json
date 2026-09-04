@@ -6157,74 +6157,74 @@
    "version": 2
   },
   {
+   "agents": 1,
+   "class": "crandel",
    "id": "refiner-crandel-v3-econ",
    "kind": "refiner",
-   "class": "crandel",
-   "version": 3,
-   "agents": 1,
-   "status": "running",
+   "reason": "demo_economy",
    "started": 1788565547.5550451,
-   "reason": "demo_economy"
+   "status": "running",
+   "version": 3
   },
   {
+   "agents": 1,
+   "class": "rf-0",
    "id": "rfdesigner-0",
    "kind": "designer",
-   "class": "rf-0",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "a hand of 4-6 playing cards",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "a hand of 4-6 playing cards"
   },
   {
+   "agents": 1,
+   "class": "rf-1",
    "id": "rfdesigner-1",
    "kind": "designer",
-   "class": "rf-1",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "a roll of 3-5 dice",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "a roll of 3-5 dice"
   },
   {
+   "agents": 1,
+   "class": "rf-2",
    "id": "rfdesigner-2",
    "kind": "designer",
-   "class": "rf-2",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "a string of 6-10 coloured beads",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "a string of 6-10 coloured beads"
   },
   {
+   "agents": 1,
+   "class": "rf-3",
    "id": "rfdesigner-3",
    "kind": "designer",
-   "class": "rf-3",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "4-7 letter English words (use the words module)",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "4-7 letter English words (use the words module)"
   },
   {
+   "agents": 1,
+   "class": "rf-4",
    "id": "rfdesigner-4",
    "kind": "designer",
-   "class": "rf-4",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "clock times hh:mm",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "clock times hh:mm"
   },
   {
+   "agents": 1,
+   "class": "rf-5",
    "id": "rfdesigner-5",
    "kind": "designer",
-   "class": "rf-5",
-   "version": null,
-   "agents": 1,
+   "paradigm": "rule_family",
    "status": "pending",
-   "world": "a 5x5 picture of two symbols",
-   "paradigm": "rule_family"
+   "version": null,
+   "world": "a 5x5 picture of two symbols"
   }
  ],
  "profiles": {

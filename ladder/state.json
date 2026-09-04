@@ -695,6 +695,20 @@
      },
      "score": 4.4,
      "version": 1
+    },
+    {
+     "advice": "The nose-vs-tail insight is a great kid-native discovery, but the wide multi-row grid with strict exact-width lines and many decoy fish makes the format a slog; shrinking the grid or cleaning alignment would free more of the kid's 20 minutes for the insight.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 3.8,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -3386,7 +3400,7 @@
    "id": "judge-basten-v2-man",
    "kind": "judge",
    "started": 1788541628.858074,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

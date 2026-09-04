@@ -900,7 +900,7 @@
    ]
   },
   "crandel": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Make the drip relationship visually loud instead of requiring precise column alignment across a 30-wide grid, and cue that there are three separate counted fields.",
@@ -917,6 +917,9 @@
      "version": 1
     }
    ],
+   "refined_versions": [
+    1
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -925,6 +928,12 @@
      "file": "challenges/lab/crandel.json",
      "note": "v1 designer (clothes): washing lines; per line, how many garments reach the line below and how many of those drip on washing beneath",
      "v": 1
+    },
+    {
+     "added": 1788552709.416423,
+     "file": "challenges/lab/crandel.json",
+     "note": "v2 legibility: clue group per line, narrower racks, pegs, daylight, drips drawn as unbroken washing columns",
+     "v": 2
     }
    ]
   },
@@ -4157,7 +4166,7 @@
    "class": "crandel",
    "id": "players-crandel-v1-6bc5",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -4167,7 +4176,7 @@
    "kind": "refiner",
    "reason": "kid_score",
    "started": 1788549510.3387167,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -4200,6 +4209,23 @@
    "kind": "players",
    "status": "pending",
    "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "crandel",
+   "id": "judge-crandel-v2-man",
+   "kind": "judge",
+   "started": 1788552709.4449778,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "crandel",
+   "id": "players-crandel-v2-b52f",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

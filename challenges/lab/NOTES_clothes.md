@@ -211,3 +211,176 @@ drippers whose lower garment is *not* fully covered. **If it comes out too hard*
 the third field a single total instead of one digit per line, or guarantee in every demo
 that one counted garment is narrow and one uncounted long garment is the widest on its
 line, so the width correlation stops being a distraction.
+
+---------------------------------------------------------------------------
+
+# crandel v2 — kid-legibility pass (refiner, 2026-09-04)
+
+v1 was never played; the kid judge scored it **2.6/5** (object 3, rule_statable 3,
+kid_contributes 2, no_prereqs 3, fun 2) with two pieces of advice: *"make the drip
+relationship visually loud instead of requiring precise column alignment across a 30-wide
+grid"*, and *"cue that there are three separate counted fields before the kid must
+reverse-engineer that from unlabeled digit strings"*; the judge also read the letters as
+solid blocks/bricks rather than clothes. The rule is unchanged. What changed is the clue's
+**shape**, the rack's **scale**, and what the drawer is allowed to draw.
+
+## What changed and why
+
+1. **The clue is now one group per line** (DESIGN_LOOP lever 3: the clue's shape should
+   match the picture, since labels are not allowed). `524/43/11` became `321/531/2`:
+   group *i* is `<rows><longs><drips>`, and the last group is a single digit because the
+   bottom line has nothing below it. Three groups, three washing lines. The **first digit
+   of every group is directly countable off the picture** (rows of air under that line),
+   so it is the key that tells a solver — or a kid — that a group belongs to a line;
+   the other two digits then have an obvious owner. `gaps` was kept rather than dropped
+   (lever 4) precisely because it is the group's anchor, and because dropping it collapses
+   the clue space to a few hundred classes, which hands players a cheap cache attack.
+2. **The picture reads as washing at a glance** (lever 1). Racks are 20-28 wide instead of
+   26-32; 3-6 garments a line instead of 4-6 crammed; every garment is **2-6 columns wide**
+   (v1 allowed 1-wide sticks) with **at least one column of air beside it** (v1 allowed
+   garments touching, which is what read as brickwork), and the line carries a **peg `v`
+   over each end of each garment** instead of pegs scattered at random.
+3. **The drip is a picture, not a computation** (lever 2 + lever 9, salience). solve() now
+   builds each line on purpose, from the bottom up: a garment that counts overlaps the
+   washing below by **>= 2 columns**, and a long garment that does *not* count clears
+   everything below by **>= 2 columns** on both sides. So a drip is an unbroken column of
+   washing running through the line (hem, line, more washing), and a non-drip is a long
+   garment hanging over a visibly bare stretch. No marker, nothing the scorer requires —
+   the scorer still accepts a 1-column overlap; only the demos are drawn loudly.
+4. `longs` is **kept** — it is load-bearing: it is what makes the spare long garments
+   mandatory and non-dripping, which is what kills the aligned-columns template (87% -> 0%).
+
+Cosmetic knock-ons: filler is `.` 75% of the time (`,` `:` otherwise), bottom-line hems
+vary over the full depth, and garment widths are now drawn width-first so that "the wide
+ones are the ones that drip" is much weaker than in v1 (the counted garment is the widest
+of the long ones 53% of the time, was 69%).
+
+## Witness table, before and after
+
+Every attacker knows the picture grammar **and** how many garments hang right down on each
+line, and differs only in the law it uses for the last digit; each draws in its own naive
+style (v1 attackers at 26-32 wide, v2 attackers at 20-28, matching each version's rack).
+v1 = 200 fresh clues, v2 = 250 fresh clues.
+
+| law used for the last digit | v1 | v2 |
+|---|---|---|
+| **has washing underneath — THE RULE** | **100.0 %** | **100.0 %** |
+| fully covers a garment below | 27.6 % | 11.3 % |
+| is not at either end of the line | 18.6 % | 12.0 % |
+| is wide (>= 3 columns) | 13.5 % | 12.4 % |
+| is in the left half of the line | 12.5 % | 12.4 % |
+| is narrow | 11.1 % | 11.6 % |
+| hangs over two garments | 10.0 % | 2.0 % |
+| **random choice among the long ones (= the foothold)** | **10.0 %** | **10.8 %** |
+| template: identical garment columns on every line | 0.0 % | 0.0 % |
+| template: two garments a line | 0.0 % | 0.0 % |
+| template: right rows, random hems (first digit only) | — | 0.0 % |
+| previous clue's answer replayed | 0.0 % | 0.0 % |
+| one fixed answer for every clue (best of 15) | 0.5 % | 0.8 % |
+| `solve()` | 100.0 % | 100.0 % |
+| empty / junk / the clue itself | 0.0 % | 0.0 % |
+
+The foothold survives (10.8 %, inside the 5-30 % band of lever 7) and no template moved
+above 1 %. The rivals are flatter than in v1 — the one that used to pay 27.6 % ("fully
+covers") is now worth no more than a coin-flip guess, because a dripper overlapping by
+>= 2 columns is usually *not* a full cover.
+
+## Validation (shipped file)
+
+`python tools/quickcheck.py challenges/lab/crandel.json --seeds 200` -> **OK, no warnings**
+(`gen=0.10 ms score=0.13 ms solve=338 ms`). Sizes: **score 506/512**, solve 4984/5000,
+generate 684, clue <= 13 chars, solution <= 434/1024. `generate` mean **0.023 ms**
+(brief: < 1 ms), deterministic. `solve()` scores 1 on **2000/2000** fresh clues, mean
+28 ms, worst 487 ms. `score` on **20 000 junk strings**: 0 raises, 0 non-binary, 0 false
+positives, worst 0.13 ms. Cross-checked against an **independent grid-based
+re-implementation** on 15 200 mutated / shuffled / re-cased / truncated answers:
+**0 disagreements**. Hypothesis elimination over the 150-readout family: **6.5 survive one
+demo, 1.7 survive two, and the true rule is the only survivor from demo 5 in 30/30 trials**
+(v1: 6.2 / 1.5). ~6 500 distinct clue classes (v1 ~9 800): cache-and-replay is worth ~18 %
+of the final on top of the ~11 % blind rate, so the no-insight ceiling is **~26 %**
+(v1 ~22 %). Pictures are 11-15 rows x 20-28 columns, 44 distinct shapes.
+
+## Three demos as they now render
+
+clue `321/531/2`
+
+```
+===v====v======v=v======vv
+...DDDDDD......JJJ......PP
+...DDDDDD......JJJ........
+...DDDDDD......JJJ........
+=v==v=v=v==vv=======v=v=vv
+.PPPP.CCC..PP.......CCC.JJ
+.PPPP.CCC...........CCC.JJ
+.PPPP.CCC...........CCC...
+.PPPP.CCC...........CCC...
+.PPPP.CCC...........CCC...
+===========vv==vv=v===v=vv
+...........DD..PP.JJJJJ.CC
+...............PP.........
+```
+
+line 1: 3 garments, 2 hang right down to line 2; 1 of those (DDDDDD) is over washing
+line 2: 5 garments, 3 hang right down to line 3; 1 of those (CCC) is over washing
+line 3 is the bottom line, so its group is the single digit 2
+
+clue `231/521/3`
+
+```
+=vv==v==v=v====v==v==v==vv
+.TT..SSSS.TTTTTT..DDDD..TT
+.....SSSS.........DDDD..TT
+=v===v=vv====v=v==========
+.TTTTT.SS....DDD..........
+.TTTTT.......DDD..........
+.TTTTT.......DDD..........
+.TTTTT.......DDD..........
+.TTTTT.......DDD..........
+===========v==v===v==v=v=v
+...........SSSS...HHHH.SSS
+..................HHHH....
+..........................
+```
+
+line 1: 5 garments, 3 hang right down (SSSS, DDDD, TT); only SSSS is over washing
+        (TTTTT and SS are under it) - TTTTTT is wide but stops one row short
+line 2: 3 garments, 2 hang right down; only DDD is over washing (SSSS below it)
+
+clue `332/332/332/2`
+
+```
+==v===v==v=v=v==v==v===v=
+..HHHHH..VVV.DDDD..VVVVV.
+..HHHHH......DDDD..VVVVV.
+..HHHHH......DDDD..VVVVV.
+v==v=vv=v=v========vv=v=v
+DDDD.HH.VVV........HH.SSS
+DDDD.HH............HH....
+DDDD.HH............HH....
+vv=======vv=v==v==v=v==vv
+DD.......VV.DDDD..PPP..DD
+DD.......VV.......PPP....
+DD.......VV.......PPP....
+=====vv=v==v=v=v=v==v=vv=
+.....DD.SSSS.PPP.SSSS.PP.
+.....DD......PPP......PP.
+```
+
+four lines of 3 rows each; on every counted line 3 garments hang right down and
+2 of them are over washing, so every group reads 332
+
+## Predicted kid score and classification
+
+**Kid score 4.0-4.5/5** (was 2.6): object 4-5 (pegs, air between garments, 2-6 wide
+rectangles at 20-28 columns read as washing, not brickwork), rule_statable 4 ("how many of
+the long ones are dripping on the washing underneath"), kid_contributes 4 (the group-per-
+line clue with a countable first digit lets a child match a group to a line and check the
+first two numbers by counting, which is exactly the contribution the judge found missing),
+no_prereqs 4, fun 3-4. **Classification unchanged: on target (testing), mean final
+40-60 %** — the rule and its witness table are the same, the no-insight ceiling is ~26 %,
+and the foothold still pays ~11 %.
+
+**Levers if it comes out too easy**: count only drippers whose lower garment is not fully
+covered; or drop the second digit and require in the scorer that at least one long garment
+per line has nothing below it. **If too hard**: make the last digit one total for the whole
+rack instead of one per line.

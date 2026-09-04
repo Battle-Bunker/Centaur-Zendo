@@ -1650,6 +1650,20 @@
      },
      "score": 4.2,
      "version": 1
+    },
+    {
+     "advice": "Exclude the (1,2) label pair so demos never lose the kick/snare cue (applied).",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.0,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -4405,7 +4419,7 @@
    "id": "judge-norvel-v2-man",
    "kind": "judge",
    "started": 1788555676.7269385,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

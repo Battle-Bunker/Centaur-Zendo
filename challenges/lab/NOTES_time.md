@@ -389,3 +389,157 @@ solid stripe then produces zero counted pairs. Keep the anchor n, the decoy pair
 Have the refiner's witness table include: solid stripe from n of every length 3..16, stripe plus
 scattered extras, alternating R.R.R runs (which will still be a witness — accept that, it IS the
 rule), and the old farming replay.
+
+---------------------------------------------------------------------------
+## Iteration 3 - 2026-09-04 - `challenges/lab/tovel.json` (v3; v2 kept as `tovel.v2.json`)
+
+Run `lad-tovel-v2-1`: **still in band, still not by insight**. Mean final 61 % (tovel1a 88 %,
+tovel1b 34 % of presented / 62 % of answered), kid judge 4.2/5, neither player stated the rule.
+
+### What the players actually did
+
+* **tovel1a (opus-lowdemo, 88 %, 2 demos)** found the *solid stripe*: "letter C runs from day E
+  for as long as it takes to cover W(D) working days", `W = {2:4, 3:7, 4:8, 5:9, 6:12}`. Its own
+  note: *"STILL UNSOLVED: D=2 and D=5 when day E falls on a Wednesday"* and the length table is
+  *"not a rule a person could ever guess"*. Nothing in its notes mentions pairs, weekends or what
+  `k` counts - it treated `k` as a run-length index.
+* **tovel1b (opus-theorist, 34 %, 6 demos)** reached the same witness and then *restricted* it to
+  the `(k, weekday-of-n)` cells it had measured, skipping 45 % of items: *"the grader is LENIENT
+  ... it wants a horizontal run of L starting exactly on day q, and a count over the Mon-Fri part
+  of that run equal to p+2"*. It never decoded `k` and never mentioned two-apart pairs.
+* The v1 farming leak stayed shut - 1b: *"my accepted grids look nothing like the reference
+  ones"*, and nobody replayed a demo. The anchor `n` did its job; the **stripe** was the new hole.
+* Kid readings both players reported wanting: "that's someone's holiday block" (1a), "just count
+  the clue letter's days" / "weekends are different" (1b), and 1b used the varying header as
+  evidence that *"the grader isn't comparing text"*.
+
+**Why the stripe works against v2:** v2 counted `d` whenever `d` and `d+2` both carried `x` and
+`d` was Mon/Tue/Wed, *whatever sat on `d+1`*. A solid block of `x` therefore manufactures a
+counted pair on every Mon/Tue/Wed it covers, so the count is a function of the block's length
+alone. Measured on 600 fresh v2 clues: a stripe from day `n` with a per-`k` best-length table
+scores **87.50 %** - i.e. it reproduces 1a's 88 % exactly.
+
+### The fix: the day in between must NOT be the clue letter
+
+```
+C = { d : d and d+2 carry x, d+1 does NOT carry x, d is a Mon/Tue/Wed }    |C| = k,  min C = n
+```
+
+Kid sentence, unchanged in kind and arguably *more* natural: *"R, something else, R - twice in
+the same school week with a day in between - five times, and the first time is the 17th."* That
+is what "with a day in between" already means to a 12-year-old; v2 was the loose reading.
+A solid stripe now has `x` in the middle of every pair and counts **nothing**.
+
+Everything else is untouched as briefed: the anchor `n`, the Mon/Tue/Wed clause, the decoy
+guarantees, the calendar picture, the token format, the header handling.
+
+### Second change (generate only): the clue's first day `n` now sits late
+
+The witness that survives the fix is the **alternating run** `x . x . x . x` from day `n` with
+its length tuned per `(k, weekday of n)` - and that is fair game, because building it means the
+player has found the anchor, the distance 2 *and* the empty day in between; only the Mon/Tue/Wed
+clause is missing, and a length table absorbs it. It cannot be closed without breaking the rule,
+but it can be **starved**: an every-other-day run needs about `14k/3` days of room (it collects 3
+counted pairs per fortnight), while the rule itself needs only about `7k/2` (counted starts may
+be packed Mon+Wed inside one week). So `generate()` now picks `n` as the max of three uniform
+draws over the days that still leave room for `k` non-adjacent counted starts.
+
+| | uniform `n` | late `n` (shipped) |
+|---|---|---|
+| alternating run, `(k, weekday)` length table | 72.2 % | **57.3 %** |
+| distinct `(L,S,k,n)` clue classes | 927 | 765 |
+| demo replay, letters renamed, same `(L,S,k)` | 11.5 % | 24.7 % |
+| blocked `x x x` shown *before* day `n` in a demo | 73.6 % | 88.9 % |
+
+The replay figure rises because a late `n` is less spread out, but it is harmless: a player holds
+at most six demos, i.e. six of the ~140 `(L,S,k)` triples, and blind pages hit ~1 %.
+
+### Header: kept varying, deliberately
+
+Three header styles, chosen per demo; the scorer skips any line with no digit. tovel1b read the
+variation as *"the grader isn't comparing text"* - which is **true**, costs the rule nothing (the
+header carries no information about it), and is exactly the affordance we want: it steers players
+away from exact-replay theories (the v1 leak) and toward hypotheses about content. Making it
+uniform would only make replay look more promising than it is. Recorded as a deliberate hint.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, no warnings.
+`score` **431** chars (cap 512), `solve` 4945 (cap 5000), `generate` 675; clue 11 chars, solution
+<= 175. gen 0.06 ms, score 0.05 ms, solve 196 ms worst under quickcheck.
+solve() scores 1 on **3000/3000** fresh seeds (92 ms average, 226 ms worst) and re-parses its own
+output before returning it. Scorer: **0 raises, 0 non-binary** on 20 000 junk strings (worst
+0.05 ms); **0 disagreements** with an independent re-implementation on 9 000 mutated answers.
+
+Demo guarantees (3000 demos): a blocked `x x x` run starting Mon/Tue/Wed **99.5 %**, one of them
+*before* day `n` **89.6 %**, a Thursday-start pair (reaches the weekend) plus a Sat/Sun-start pair
+(steps over the week break) **95.5 %**, some non-counting pair before day `n` **93.8 %**, and all
+eleven rival counts differ from `k` in **100 %**.
+
+### Witness table - v2 vs v3 (600 fresh clues each; scratchpad `time3/attack.py`)
+
+| attack | v2 | v3 |
+|---|---|---|
+| **SOLID STRIPE from day n, length 3..16** (best length per k) | **87.50 %** | **0.00 %** |
+| ... best length per k: v2 `k=2->4, 3->9, 4->10, 5->11, 6->16` | 72.7-100 % per k | 0.00 % at *every* length |
+| stripe + 1 / 2 / 3 / 5 scattered extra x's (best of 3 lengths) | 85.3 / 83.8 / 79.8 / 66.2 % | 0.00 / 0.00 / 0.00 / 0.00 % |
+| **ALTERNATING `x . x . x` run from n**, per-k best-length table | 51.8 % | **45.3 %** |
+| ... with a `(k, weekday of n)` table (the strongest tuning) | 58.0 % | **57.3 %** |
+| ... that table per k (v3): k=2 97.7 %, k=3 74.1 %, k=4 64.0 %, k=5 40.0 %, **k=6 9.5 %** | | |
+| demo replay, letters renamed, same `(L,S,k)` (the v1 leak; v1 = 100 %) | 11.5 % | 24.7 % |
+| ... same `(L,S,k,n)` | 100 % *(1229 classes)* | 100 % *(765 classes)* |
+| tuned random lettering, density 0.20 / 0.35 / 0.50 / 0.65 / 0.80 (v1: 3.5-16.4 %) | 0.4 / 0.9 / 1.3 / 1.2 / 0.3 % | 0.1 / 0.7 / 0.5 / 1.0 / 0.4 % |
+| best constant answer (best of 20 over 200 clues) | 1.00 % | 1.00 % |
+| empty / spaces / newlines / `0` / `1` / `x` / `1`*100 / 4000-char junk / the clue itself | 0.00 % | 0.00 % |
+| no letters / every day = x / every day = one other letter | 0.00 % | 0.00 % |
+| one row / one token per line / zero-padded / extra day / dropped day / lower case / `17 B` | 0.00 % | 0.00 % |
+| page laid out from column 0 (S ignored) | 11 % *(= the S=0 clues)* | 11 % *(= the S=0 clues)* |
+| header / no header / tabs / blank lines | 100 % | 100 % |
+
+Wrong-relation constructors on a correct page (v3 scorer, 300 clues):
+
+| believed rule | first day honoured | first day ignored |
+|---|---|---|
+| x next door to x | 0.00 % | 0.00 % |
+| x three apart | 0.00 % | 0.00 % |
+| x a week apart (directly below) | 3.82 % | 0.00 % |
+| x two apart, anywhere | 12.33 % | 0.00 % |
+| x two apart, inside a week row | 17.67 % | 2.00 % |
+| **x two apart, Mon-Wed = THE v2 RULE (gap free)** | **33.33 %** | 4.00 % |
+| x . x anywhere (gap kept, no weekday clause) | 15.00 % | 0.67 % |
+| x . x inside a week row (gap kept) | 20.67 % | 1.00 % |
+| **the true rule** | **100.00 %** | 7.00 % |
+
+### Fairness floor - hypothesis-elimination surrogate (`time3/hyp.py`)
+
+840 hand-built "count a relation between marked days" expressions (distance 1-7 x 10 weekday
+windows x 3 gap conditions x this-letter/any-letter x pairs/cells), 752 distinct behaviours.
+Survivors after 1 / 2 / 3+ demos: **3-21 / 1 / 1** in all six trials (v1 needed 3-6 demos). The
+anchor plus the blocked `x x x` runs make each demo far more informative, so v3 is *fairer* as
+well as harder: the rule is reachable from two demos by a player who thinks about the picture.
+
+### Predicted classification
+
+Blind ceiling ~1 %; constant answers ~1 %; the stripe that carried v2's 88 % is dead (0.00 %);
+farming a `(L,S,k,n)` table is out of reach in six 0.5 s rounds. The live tiers are
+**33 %** (the v2 rule - two apart, Mon-Wed, gap free), **21 %** (gap kept, week row), **15 %**
+(gap kept, anywhere), **57 %** (the tuned every-other-day run - anchor + distance + gap, no
+weekday clause), **100 %** (the rule). Expect **testing / calibrated**, mean ~0.4-0.6 over two
+players.
+
+Honest risk: the top mechanical tier is 57 %, so *one crack plus one templater* lands at ~0.79,
+i.e. `too_easy` on the mean even though the crack was earned. If that happens the next lever is
+**not** another exclusion clause but the one that kills length-tuning outright: name the *last*
+counted day as well as the first (`L/S/x/k/n-m`), which forces both ends of the counted set and
+makes a one-parameter run infeasible without the weekday clause. If instead both players land
+under 10 %, soften by spelling the fifth field (`31/6/R/5/first=17`) rather than touching the
+rule. Kid score: expect **4.2-4.5/5** - the sentence got shorter and more natural ("R, something
+else, R"), the picture is unchanged, and every demo now shows a three-in-a-row that does not
+count, which is the kind of thing a 12-year-old spots before an optimiser does.
+
+### Arena (players NOT run; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-3/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v3-1 --teams tovel3a,tovel3b \
+         --challenge-dir $SCRATCH/pool-tovel-3 --arena-root $SCRATCH/lad-tovel-v3-1
+```

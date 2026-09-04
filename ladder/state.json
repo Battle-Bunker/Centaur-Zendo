@@ -2202,7 +2202,7 @@
    ]
   },
   "tovel": {
-   "current_version": 2,
+   "current_version": 3,
    "note": "run1: both partial (48%, 83%) without the rule. LEAK: accepted shapes are invariant under letter renaming and depend only on (days,start,N) -> 140 triples farmable via demos+probes. Refiner lever: tie the count to letter identity (a second clue letter, or a required count of the clue letter) so shapes don't transfer.",
    "qual": [
     {
@@ -2235,7 +2235,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -2404,6 +2405,12 @@
      "file": "challenges/lab/tovel.json",
      "note": "v2: clue adds first-counted-day n; closes rename/(days,start,k) farming (100%->11%); decoy pairs in every demo",
      "v": 2
+    },
+    {
+     "added": 1788543904.2580378,
+     "file": "challenges/lab/tovel.json",
+     "note": "v3: pair counts only if the day between is not the letter (kills stripe 88%->0%); n placed late; every demo has a blocked xxx run",
+     "v": 3
     }
    ]
   },
@@ -3473,7 +3480,7 @@
    "class": "tovel",
    "id": "players-tovel-v2-630f",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 2
   },
   {
@@ -3482,7 +3489,7 @@
    "id": "refiner-tovel-v2-man",
    "kind": "refiner",
    "started": 1788540837.7635949,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -3541,6 +3548,23 @@
    "kind": "players",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "judge-tovel-v3-man",
+   "kind": "judge",
+   "started": 1788543904.342918,
+   "status": "running",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v3-00c5",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

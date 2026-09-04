@@ -142,7 +142,10 @@ def cmd_status(a):
 
 def pick_profiles(s, c):
     used = collections.Counter(p.get("profile") for r in c.get("runs", []) for p in r["players"])
-    names = sorted(s["profiles"], key=lambda k: (used[k], k))
+    # Opus profiles first; Sonnet profiles only once every Opus profile has played the class twice
+    # (Sonnet players rarely discover that a scorer is a predicate, so their finals carry little signal).
+    names = sorted(s["profiles"], key=lambda k: (used[k] + (s["profiles"][k]["model"] != "opus"),
+                                                 s["profiles"][k]["model"] != "opus", k))
     return names[:2]
 
 

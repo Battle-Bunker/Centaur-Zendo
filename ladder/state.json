@@ -2483,6 +2483,83 @@
      ],
      "run": "lad-tovel-v2-1",
      "version": 2
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 0,
+       "final_presented": 4849,
+       "final_rate": 0.0,
+       "profile": "sonnet-default",
+       "rounds": [
+        [
+         0,
+         495
+        ],
+        [
+         0,
+         459
+        ],
+        [
+         0,
+         482
+        ],
+        [
+         0,
+         499
+        ],
+        [
+         0,
+         791
+        ],
+        [
+         0,
+         719
+        ]
+       ],
+       "team": "tovel1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 6,
+       "final_correct": 0,
+       "final_presented": 2935,
+       "final_rate": 0.0,
+       "profile": "sonnet-kidproxy",
+       "rounds": [
+        [
+         0,
+         503
+        ],
+        [
+         0,
+         479
+        ],
+        [
+         0,
+         465
+        ],
+        [
+         0,
+         491
+        ],
+        [
+         0,
+         494
+        ],
+        [
+         0,
+         474
+        ]
+       ],
+       "team": "tovel1b"
+      }
+     ],
+     "run": "lad-tovel-v3-1",
+     "version": 3
     }
    ],
    "status": "testing",
@@ -3665,7 +3742,7 @@
    "note": "team b finished; one live agent remaining",
    "run": "lad-tovel-v3-1",
    "started": 1788544085.9244797,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel1a": "sonnet-default",
     "tovel1b": "sonnet-kidproxy"
@@ -3679,6 +3756,14 @@
    "kind": "players",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v3-man2",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

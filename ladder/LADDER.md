@@ -48,8 +48,11 @@ for unjudged classes, then a new designer when < 2 untested candidates exist.
 
 ## Diversity of players (synthesised)
 Profiles vary the model (opus / sonnet), the priming (experimentalist, theorist, kid-proxy),
-and constraints (demo budget, language mandate). Each run picks the two profiles used least
-on that class. See `profiles` in state.json.
+and constraints (demo budget, language mandate). Each run picks the two Opus profiles used least
+on that class; Sonnet profiles are used only after every Opus profile has played the class twice
+(measured 2026-09-04 on tovel v3: both Sonnet players scored 0/0 without ever discovering that the
+scorer is a predicate, which every Opus player found by round 3 — Sonnet finals carry little
+signal on hard classes). See `profiles` in state.json.
 
 ## Budget rules
 `budget.max_agents` (default 4) concurrent subagents. Never launch beyond it; if the API

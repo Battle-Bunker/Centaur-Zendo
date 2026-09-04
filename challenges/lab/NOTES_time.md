@@ -543,3 +543,16 @@ pool   $SCRATCH/pool-tovel-3/tovel.json
 setup  python sim/arena.py setup --run lad-tovel-v3-1 --teams tovel3a,tovel3b \
          --challenge-dir $SCRATCH/pool-tovel-3 --arena-root $SCRATCH/lad-tovel-v3-1
 ```
+
+## tovel v3 ladder run `lad-tovel-v3-1` (2026-09-04, 6×0.5 s, 2 Sonnet players)
+
+| team | profile | final | demos |
+|---|---|---|---|
+| tovel1a | sonnet-default | 0% (skipped final) | 5 |
+| tovel1b | sonnet-kidproxy | 0% | 6 |
+
+Not evidence about v3. Neither Sonnet player discovered that the grader is a predicate (both
+assumed exact byte match and hunted a per-day letter formula for the decoys); both Opus players on
+v2 found the leniency by round 3. Both again called the varying header "noise", where the Opus
+theorist called it the most important hint in the game. Ladder now schedules Sonnet profiles only
+after every Opus profile has played a class twice. v3 needs an Opus pair — queued.

@@ -1,0 +1,494 @@
+Centaur Zendo round 3 (training)
+round_id : a9181d6c4e5648febc8cc5e5cc98f18e
+written  : 2026-09-04 18:02:25Z
+presented=482  answered=482  correct=0  skipped=0
+client answer latency: mean 0.093 ms  median 0.087 ms  max 1.249 ms  (n=482)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  tovel         29/1/Y/6/1                                29/1/Y/6/1                                0
+   1  tovel         28/1/C/4/14                               14: C                                     0
+   2  tovel         29/6/U/2/23                               {"day": 23, "letter": "U"}                0
+   3  tovel         31/5/V/3/12                               12V                                       0
+   4  tovel         28/0/R/5/9                                8R                                        0
+   5  tovel         31/1/G/2/21                               G                                         0
+   6  tovel         31/4/A/6/11                               31/4/A/6/11                               0
+   7  tovel         29/5/Q/2/11                               11: Q                                     0
+   8  tovel         30/6/P/2/16                               {"day": 16, "letter": "P"}                0
+   9  tovel         30/5/V/3/11                               11V                                       0
+  10  tovel         29/2/N/5/13                               12N                                       0
+  11  tovel         28/1/U/2/7                                U                                         0
+  12  tovel         29/2/W/6/8                                29/2/W/6/8                                0
+  13  tovel         31/1/G/4/16                               16: G                                     0
+  14  tovel         30/5/D/6/10                               {"day": 10, "letter": "D"}                0
+  15  tovel         29/6/A/5/10                               10A                                       0
+  16  tovel         30/3/L/5/14                               13L                                       0
+  17  tovel         29/0/W/6/8                                W                                         0
+  18  tovel         28/1/W/5/9                                28/1/W/5/9                                0
+  19  tovel         31/6/H/3/17                               17: H                                     0
+  20  tovel         30/6/O/5/11                               {"day": 11, "letter": "O"}                0
+  21  tovel         31/2/O/3/22                               22O                                       0
+  22  tovel         29/4/R/2/20                               19R                                       0
+  23  tovel         30/3/P/6/12                               P                                         0
+  24  tovel         30/0/Y/3/10                               30/0/Y/3/10                               0
+  25  tovel         29/5/N/3/12                               12: N                                     0
+  26  tovel         31/3/U/3/20                               {"day": 20, "letter": "U"}                0
+  27  tovel         30/0/A/2/22                               22A                                       0
+  28  tovel         30/2/Y/6/8                                7Y                                        0
+  29  tovel         30/3/O/4/13                               O                                         0
+  30  tovel         30/5/Z/4/17                               30/5/Z/4/17                               0
+  31  tovel         29/2/S/3/7                                7: S                                      0
+  32  tovel         28/5/F/2/24                               {"day": 24, "letter": "F"}                0
+  33  tovel         31/6/A/3/9                                 9A                                       0
+  34  tovel         29/0/U/5/10                               9U                                        0
+  35  tovel         31/3/Q/2/14                               Q                                         0
+  36  tovel         31/0/W/5/10                               31/0/W/5/10                               0
+  37  tovel         31/3/C/6/7                                7: C                                      0
+  38  tovel         31/5/Z/6/5                                {"day": 5, "letter": "Z"}                 0
+  39  tovel         29/2/G/2/22                               22G                                       0
+  40  tovel         29/1/B/2/16                               15B                                       0
+  41  tovel         30/0/D/4/15                               D                                         0
+  42  tovel         28/6/S/6/4                                28/6/S/6/4                                0
+  43  tovel         28/5/J/6/5                                5: J                                      0
+  44  tovel         30/1/T/2/21                               {"day": 21, "letter": "T"}                0
+  45  tovel         29/0/H/4/3                                 3H                                       0
+  46  tovel         31/0/I/6/10                               9I                                        0
+  47  tovel         31/1/G/5/14                               G                                         0
+  48  tovel         28/6/J/6/3                                28/6/J/6/3                                0
+  49  tovel         31/6/I/4/11                               11: I                                     0
+  50  tovel         30/6/L/4/11                               {"day": 11, "letter": "L"}                0
+  51  tovel         29/1/J/6/7                                 7J                                       0
+  52  tovel         31/0/P/6/8                                7P                                        0
+  53  tovel         28/3/N/5/7                                N                                         0
+  54  tovel         31/2/L/6/13                               31/2/L/6/13                               0
+  55  tovel         29/5/Y/5/10                               10: Y                                     0
+  56  tovel         30/3/A/4/19                               {"day": 19, "letter": "A"}                0
+  57  tovel         31/0/V/4/16                               16V                                       0
+  58  tovel         30/0/T/2/17                               16T                                       0
+  59  tovel         29/0/X/2/17                               X                                         0
+  60  tovel         30/4/J/5/12                               30/4/J/5/12                               0
+  61  tovel         31/6/E/4/11                               11: E                                     0
+  62  tovel         31/3/D/3/12                               {"day": 12, "letter": "D"}                0
+  63  tovel         28/4/X/4/11                               11X                                       0
+  64  tovel         28/3/W/5/12                               11W                                       0
+  65  tovel         29/1/Q/6/7                                Q                                         0
+  66  tovel         29/0/J/2/15                               29/0/J/2/15                               0
+  67  tovel         31/2/S/3/21                               21: S                                     0
+  68  tovel         30/5/C/6/5                                {"day": 5, "letter": "C"}                 0
+  69  tovel         30/3/Q/3/21                               21Q                                       0
+  70  tovel         30/1/H/2/23                               22H                                       0
+  71  tovel         31/4/A/2/25                               A                                         0
+  72  tovel         31/3/J/5/14                               31/3/J/5/14                               0
+  73  tovel         31/5/F/6/10                               10: F                                     0
+  74  tovel         31/1/S/5/9                                {"day": 9, "letter": "S"}                 0
+  75  tovel         31/2/A/3/14                               14A                                       0
+  76  tovel         31/2/W/4/6                                5W                                        0
+  77  tovel         28/5/W/5/12                               W                                         0
+  78  tovel         31/2/T/6/13                               31/2/T/6/13                               0
+  79  tovel         31/3/K/6/12                               12: K                                     0
+  80  tovel         30/1/X/5/8                                {"day": 8, "letter": "X"}                 0
+  81  tovel         31/4/T/3/19                               19T                                       0
+  82  tovel         28/1/Y/6/7                                6Y                                        0
+  83  tovel         31/6/O/3/11                               O                                         0
+  84  tovel         29/4/R/5/13                               29/4/R/5/13                               0
+  85  tovel         30/2/T/2/15                               15: T                                     0
+  86  tovel         31/4/H/4/12                               {"day": 12, "letter": "H"}                0
+  87  tovel         30/3/K/4/19                               19K                                       0
+  88  tovel         31/4/L/5/13                               12L                                       0
+  89  tovel         30/4/P/5/11                               P                                         0
+  90  tovel         31/2/Z/5/14                               31/2/Z/5/14                               0
+  91  tovel         28/1/Q/6/7                                7: Q                                      0
+  92  tovel         31/6/C/2/23                               {"day": 23, "letter": "C"}                0
+  93  tovel         29/2/A/5/7                                 7A                                       0
+  94  tovel         30/6/K/6/4                                3K                                        0
+  95  tovel         29/5/J/6/10                               J                                         0
+  96  tovel         29/0/G/4/10                               29/0/G/4/10                               0
+  97  tovel         30/6/P/2/10                               10: P                                     0
+  98  tovel         30/0/M/3/17                               {"day": 17, "letter": "M"}                0
+  99  tovel         30/2/A/3/8                                 8A                                       0
+ 100  tovel         28/3/P/4/13                               12P                                       0
+ 101  tovel         30/5/V/2/24                               V                                         0
+ 102  tovel         29/4/X/2/25                               29/4/X/2/25                               0
+ 103  tovel         30/1/E/3/16                               16: E                                     0
+ 104  tovel         30/2/Q/6/8                                {"day": 8, "letter": "Q"}                 0
+ 105  tovel         28/4/C/5/6                                 6C                                       0
+ 106  tovel         28/1/Q/4/14                               13Q                                       0
+ 107  tovel         29/5/Q/5/11                               Q                                         0
+ 108  tovel         29/3/V/5/12                               29/3/V/5/12                               0
+ 109  tovel         28/5/V/2/11                               11: V                                     0
+ 110  tovel         31/6/J/4/11                               {"day": 11, "letter": "J"}                0
+ 111  tovel         29/4/H/4/18                               18H                                       0
+ 112  tovel         31/1/W/6/9                                8W                                        0
+ 113  tovel         31/3/G/5/12                               G                                         0
+ 114  tovel         30/0/N/4/10                               30/0/N/4/10                               0
+ 115  tovel         31/5/M/6/5                                5: M                                      0
+ 116  tovel         28/5/U/4/17                               {"day": 17, "letter": "U"}                0
+ 117  tovel         30/6/H/4/9                                 9H                                       0
+ 118  tovel         29/4/D/4/18                               17D                                       0
+ 119  tovel         31/0/J/5/10                               J                                         0
+ 120  tovel         31/1/V/2/8                                31/1/V/2/8                                0
+ 121  tovel         31/1/M/2/22                               22: M                                     0
+ 122  tovel         29/3/B/3/19                               {"day": 19, "letter": "B"}                0
+ 123  tovel         31/3/D/2/20                               20D                                       0
+ 124  tovel         30/3/A/3/20                               19A                                       0
+ 125  tovel         28/5/N/2/17                               N                                         0
+ 126  tovel         31/5/K/6/10                               31/5/K/6/10                               0
+ 127  tovel         30/0/E/2/22                               22: E                                     0
+ 128  tovel         31/2/Z/2/27                               {"day": 27, "letter": "Z"}                0
+ 129  tovel         30/5/V/4/11                               11V                                       0
+ 130  tovel         31/5/I/2/18                               17I                                       0
+ 131  tovel         30/0/N/2/16                               N                                         0
+ 132  tovel         31/5/H/4/12                               31/5/H/4/12                               0
+ 133  tovel         31/6/Q/4/16                               16: Q                                     0
+ 134  tovel         29/0/R/2/8                                {"day": 8, "letter": "R"}                 0
+ 135  tovel         30/4/V/3/20                               20V                                       0
+ 136  tovel         31/4/R/3/18                               17R                                       0
+ 137  tovel         30/6/F/4/10                               F                                         0
+ 138  tovel         29/1/S/3/7                                29/1/S/3/7                                0
+ 139  tovel         31/2/I/3/20                               20: I                                     0
+ 140  tovel         30/6/L/4/9                                {"day": 9, "letter": "L"}                 0
+ 141  tovel         28/3/V/3/14                               14V                                       0
+ 142  tovel         28/3/Q/5/7                                6Q                                        0
+ 143  tovel         31/6/G/2/17                               G                                         0
+ 144  tovel         28/1/Z/3/14                               28/1/Z/3/14                               0
+ 145  tovel         28/0/P/3/16                               16: P                                     0
+ 146  tovel         28/3/L/6/7                                {"day": 7, "letter": "L"}                 0
+ 147  tovel         30/5/G/2/19                               19G                                       0
+ 148  tovel         31/0/T/2/24                               23T                                       0
+ 149  tovel         31/1/U/2/15                               U                                         0
+ 150  tovel         30/4/B/2/20                               30/4/B/2/20                               0
+ 151  tovel         28/3/P/4/14                               14: P                                     0
+ 152  tovel         31/5/A/4/10                               {"day": 10, "letter": "A"}                0
+ 153  tovel         30/3/M/5/6                                 6M                                       0
+ 154  tovel         29/5/C/5/12                               11C                                       0
+ 155  tovel         28/0/A/6/8                                A                                         0
+ 156  tovel         31/3/Z/2/20                               31/3/Z/2/20                               0
+ 157  tovel         30/2/O/5/6                                6: O                                      0
+ 158  tovel         31/2/L/3/15                               {"day": 15, "letter": "L"}                0
+ 159  tovel         30/6/X/2/23                               23X                                       0
+ 160  tovel         31/0/U/5/15                               14U                                       0
+ 161  tovel         29/0/B/4/10                               B                                         0
+ 162  tovel         31/5/F/3/18                               31/5/F/3/18                               0
+ 163  tovel         31/5/S/4/12                               12: S                                     0
+ 164  tovel         31/5/D/6/5                                {"day": 5, "letter": "D"}                 0
+ 165  tovel         31/4/L/2/4                                 4L                                       0
+ 166  tovel         30/0/G/4/10                               9G                                        0
+ 167  tovel         30/2/Y/6/6                                Y                                         0
+ 168  tovel         31/2/T/2/14                               31/2/T/2/14                               0
+ 169  tovel         31/2/Y/2/15                               15: Y                                     0
+ 170  tovel         28/5/K/4/3                                {"day": 3, "letter": "K"}                 0
+ 171  tovel         31/3/X/2/21                               21X                                       0
+ 172  tovel         30/2/K/2/14                               13K                                       0
+ 173  tovel         28/0/B/5/9                                B                                         0
+ 174  tovel         28/0/Y/5/9                                28/0/Y/5/9                                0
+ 175  tovel         30/3/Y/2/20                               20: Y                                     0
+ 176  tovel         30/6/Q/4/9                                {"day": 9, "letter": "Q"}                 0
+ 177  tovel         28/1/C/3/15                               15C                                       0
+ 178  tovel         28/3/W/3/14                               13W                                       0
+ 179  tovel         31/1/Y/2/23                               Y                                         0
+ 180  tovel         30/2/B/4/7                                30/2/B/4/7                                0
+ 181  tovel         30/0/L/5/9                                9: L                                      0
+ 182  tovel         28/6/R/2/18                               {"day": 18, "letter": "R"}                0
+ 183  tovel         30/2/J/3/20                               20J                                       0
+ 184  tovel         29/4/W/5/6                                5W                                        0
+ 185  tovel         29/0/S/4/15                               S                                         0
+ 186  tovel         29/2/Z/5/8                                29/2/Z/5/8                                0
+ 187  tovel         30/3/Q/5/7                                7: Q                                      0
+ 188  tovel         30/3/T/2/19                               {"day": 19, "letter": "T"}                0
+ 189  tovel         30/4/X/2/18                               18X                                       0
+ 190  tovel         31/6/D/4/10                               9D                                        0
+ 191  tovel         29/4/L/4/18                               L                                         0
+ 192  tovel         31/4/Q/4/6                                31/4/Q/4/6                                0
+ 193  tovel         31/0/V/3/16                               16: V                                     0
+ 194  tovel         28/3/L/2/14                               {"day": 14, "letter": "L"}                0
+ 195  tovel         28/3/B/4/12                               12B                                       0
+ 196  tovel         30/1/P/4/16                               15P                                       0
+ 197  tovel         30/1/C/2/21                               C                                         0
+ 198  tovel         30/4/B/2/25                               30/4/B/2/25                               0
+ 199  tovel         31/2/L/3/8                                8: L                                      0
+ 200  tovel         29/0/M/5/9                                {"day": 9, "letter": "M"}                 0
+ 201  tovel         29/6/E/4/16                               16E                                       0
+ 202  tovel         29/1/U/2/16                               15U                                       0
+ 203  tovel         31/2/L/5/15                               L                                         0
+ 204  tovel         28/0/B/6/8                                28/0/B/6/8                                0
+ 205  tovel         31/5/U/3/19                               19: U                                     0
+ 206  tovel         29/3/N/4/6                                {"day": 6, "letter": "N"}                 0
+ 207  tovel         30/6/G/3/18                               18G                                       0
+ 208  tovel         31/1/B/2/9                                8B                                        0
+ 209  tovel         29/6/G/2/17                               G                                         0
+ 210  tovel         30/2/D/3/14                               30/2/D/3/14                               0
+ 211  tovel         30/3/Z/6/12                               12: Z                                     0
+ 212  tovel         29/3/I/2/20                               {"day": 20, "letter": "I"}                0
+ 213  tovel         31/5/M/3/12                               12M                                       0
+ 214  tovel         30/3/T/6/12                               11T                                       0
+ 215  tovel         31/4/P/3/13                               P                                         0
+ 216  tovel         31/3/A/2/21                               31/3/A/2/21                               0
+ 217  tovel         30/3/B/4/19                               19: B                                     0
+ 218  tovel         30/4/N/6/11                               {"day": 11, "letter": "N"}                0
+ 219  tovel         30/1/W/5/8                                 8W                                       0
+ 220  tovel         29/4/K/4/12                               11K                                       0
+ 221  tovel         29/3/Y/5/7                                Y                                         0
+ 222  tovel         31/5/D/2/11                               31/5/D/2/11                               0
+ 223  tovel         31/1/D/4/16                               16: D                                     0
+ 224  tovel         29/6/S/5/11                               {"day": 11, "letter": "S"}                0
+ 225  tovel         31/0/L/6/9                                 9L                                       0
+ 226  tovel         30/0/O/3/10                               9O                                        0
+ 227  tovel         30/4/I/6/11                               I                                         0
+ 228  tovel         28/6/D/5/11                               28/6/D/5/11                               0
+ 229  tovel         29/5/N/5/12                               12: N                                     0
+ 230  tovel         29/6/S/5/11                               {"day": 11, "letter": "S"}                0
+ 231  tovel         28/2/X/5/7                                 7X                                       0
+ 232  tovel         29/2/G/5/13                               12G                                       0
+ 233  tovel         28/0/D/6/8                                D                                         0
+ 234  tovel         29/4/W/6/6                                29/4/W/6/6                                0
+ 235  tovel         31/1/U/2/23                               23: U                                     0
+ 236  tovel         31/6/I/2/11                               {"day": 11, "letter": "I"}                0
+ 237  tovel         28/4/S/3/13                               13S                                       0
+ 238  tovel         30/3/C/4/19                               18C                                       0
+ 239  tovel         30/5/S/2/24                               S                                         0
+ 240  tovel         31/1/Q/4/16                               31/1/Q/4/16                               0
+ 241  tovel         29/6/B/2/23                               23: B                                     0
+ 242  tovel         29/4/I/2/13                               {"day": 13, "letter": "I"}                0
+ 243  tovel         30/3/Z/2/20                               20Z                                       0
+ 244  tovel         30/6/K/3/18                               17K                                       0
+ 245  tovel         29/6/I/6/4                                I                                         0
+ 246  tovel         29/0/Z/6/8                                29/0/Z/6/8                                0
+ 247  tovel         28/0/N/6/8                                8: N                                      0
+ 248  tovel         30/0/Y/4/10                               {"day": 10, "letter": "Y"}                0
+ 249  tovel         31/4/R/6/11                               11R                                       0
+ 250  tovel         30/4/Q/6/11                               10Q                                       0
+ 251  tovel         30/6/V/6/9                                V                                         0
+ 252  tovel         31/4/W/5/13                               31/4/W/5/13                               0
+ 253  tovel         31/0/C/6/10                               10: C                                     0
+ 254  tovel         28/4/W/5/6                                {"day": 6, "letter": "W"}                 0
+ 255  tovel         29/1/I/3/14                               14I                                       0
+ 256  tovel         29/3/Y/2/21                               20Y                                       0
+ 257  tovel         31/2/Z/4/13                               Z                                         0
+ 258  tovel         29/6/Q/5/9                                29/6/Q/5/9                                0
+ 259  tovel         31/4/E/6/6                                6: E                                      0
+ 260  tovel         30/6/F/4/16                               {"day": 16, "letter": "F"}                0
+ 261  tovel         30/6/Y/2/23                               23Y                                       0
+ 262  tovel         31/6/N/5/10                               9N                                        0
+ 263  tovel         30/1/W/2/23                               W                                         0
+ 264  tovel         31/1/M/4/15                               31/1/M/4/15                               0
+ 265  tovel         28/0/K/4/15                               15: K                                     0
+ 266  tovel         31/6/X/6/9                                {"day": 9, "letter": "X"}                 0
+ 267  tovel         31/4/U/2/19                               19U                                       0
+ 268  tovel         28/3/D/6/7                                6D                                        0
+ 269  tovel         31/6/Q/6/4                                Q                                         0
+ 270  tovel         31/4/H/4/5                                31/4/H/4/5                                0
+ 271  tovel         29/4/W/6/6                                6: W                                      0
+ 272  tovel         28/1/W/6/7                                {"day": 7, "letter": "W"}                 0
+ 273  tovel         31/1/T/2/16                               16T                                       0
+ 274  tovel         31/1/P/2/22                               21P                                       0
+ 275  tovel         30/5/W/2/12                               W                                         0
+ 276  tovel         29/1/J/4/14                               29/1/J/4/14                               0
+ 277  tovel         30/2/L/3/15                               15: L                                     0
+ 278  tovel         29/5/O/6/10                               {"day": 10, "letter": "O"}                0
+ 279  tovel         30/1/K/2/21                               21K                                       0
+ 280  tovel         30/2/I/6/8                                7I                                        0
+ 281  tovel         29/2/H/3/20                               H                                         0
+ 282  tovel         30/1/H/5/14                               30/1/H/5/14                               0
+ 283  tovel         30/4/E/4/13                               13: E                                     0
+ 284  tovel         30/2/K/6/7                                {"day": 7, "letter": "K"}                 0
+ 285  tovel         28/5/D/5/10                               10D                                       0
+ 286  tovel         30/0/M/2/15                               14M                                       0
+ 287  tovel         28/5/S/2/17                               S                                         0
+ 288  tovel         31/4/U/6/6                                31/4/U/6/6                                0
+ 289  tovel         30/3/R/4/13                               13: R                                     0
+ 290  tovel         31/3/F/6/12                               {"day": 12, "letter": "F"}                0
+ 291  tovel         29/5/J/3/4                                 4J                                       0
+ 292  tovel         31/5/O/5/12                               11O                                       0
+ 293  tovel         28/1/D/3/15                               D                                         0
+ 294  tovel         29/5/S/5/12                               29/5/S/5/12                               0
+ 295  tovel         31/4/T/2/18                               18: T                                     0
+ 296  tovel         31/3/W/2/14                               {"day": 14, "letter": "W"}                0
+ 297  tovel         31/0/A/5/15                               15A                                       0
+ 298  tovel         30/4/X/5/11                               10X                                       0
+ 299  tovel         28/4/K/3/11                               K                                         0
+ 300  tovel         31/0/W/6/3                                31/0/W/6/3                                0
+ 301  tovel         30/3/F/6/6                                6: F                                      0
+ 302  tovel         28/4/W/6/5                                {"day": 5, "letter": "W"}                 0
+ 303  tovel         30/3/H/6/12                               12H                                       0
+ 304  tovel         30/1/J/6/9                                8J                                        0
+ 305  tovel         29/6/R/6/3                                R                                         0
+ 306  tovel         29/5/L/6/5                                29/5/L/6/5                                0
+ 307  tovel         29/5/W/5/12                               12: W                                     0
+ 308  tovel         28/2/R/5/8                                {"day": 8, "letter": "R"}                 0
+ 309  tovel         28/0/B/3/10                               10B                                       0
+ 310  tovel         29/3/A/2/20                               19A                                       0
+ 311  tovel         28/2/V/4/13                               V                                         0
+ 312  tovel         31/3/P/4/19                               31/3/P/4/19                               0
+ 313  tovel         30/6/V/2/18                               18: V                                     0
+ 314  tovel         30/0/V/4/15                               {"day": 15, "letter": "V"}                0
+ 315  tovel         29/4/X/4/6                                 6X                                       0
+ 316  tovel         31/5/E/3/17                               16E                                       0
+ 317  tovel         28/0/R/6/3                                R                                         0
+ 318  tovel         31/1/X/5/8                                31/1/X/5/8                                0
+ 319  tovel         31/3/S/6/6                                6: S                                      0
+ 320  tovel         31/3/Z/2/19                               {"day": 19, "letter": "Z"}                0
+ 321  tovel         29/0/P/5/10                               10P                                       0
+ 322  tovel         29/0/C/6/8                                7C                                        0
+ 323  tovel         30/1/V/6/8                                V                                         0
+ 324  tovel         30/0/C/3/17                               30/0/C/3/17                               0
+ 325  tovel         29/5/Y/3/19                               19: Y                                     0
+ 326  tovel         28/1/E/4/8                                {"day": 8, "letter": "E"}                 0
+ 327  tovel         30/4/T/2/25                               25T                                       0
+ 328  tovel         30/5/G/3/18                               17G                                       0
+ 329  tovel         31/1/A/4/16                               A                                         0
+ 330  tovel         31/5/A/2/18                               31/5/A/2/18                               0
+ 331  tovel         31/5/I/6/10                               10: I                                     0
+ 332  tovel         30/5/H/6/10                               {"day": 10, "letter": "H"}                0
+ 333  tovel         31/3/J/5/14                               14J                                       0
+ 334  tovel         28/1/I/6/2                                1I                                        0
+ 335  tovel         30/0/T/3/16                               T                                         0
+ 336  tovel         29/2/U/3/15                               29/2/U/3/15                               0
+ 337  tovel         31/5/P/4/12                               12: P                                     0
+ 338  tovel         28/0/W/5/8                                {"day": 8, "letter": "W"}                 0
+ 339  tovel         30/0/T/4/10                               10T                                       0
+ 340  tovel         28/1/M/5/9                                8M                                        0
+ 341  tovel         30/4/Q/4/13                               Q                                         0
+ 342  tovel         30/3/Z/2/21                               30/3/Z/2/21                               0
+ 343  tovel         30/1/R/5/9                                9: R                                      0
+ 344  tovel         31/2/D/4/14                               {"day": 14, "letter": "D"}                0
+ 345  tovel         31/4/B/4/18                               18B                                       0
+ 346  tovel         31/4/Q/2/18                               17Q                                       0
+ 347  tovel         29/6/G/2/23                               G                                         0
+ 348  tovel         28/6/L/5/9                                28/6/L/5/9                                0
+ 349  tovel         29/2/J/5/13                               13: J                                     0
+ 350  tovel         31/6/L/3/17                               {"day": 17, "letter": "L"}                0
+ 351  tovel         31/1/D/5/14                               14D                                       0
+ 352  tovel         29/6/W/3/9                                8W                                        0
+ 353  tovel         31/5/Y/3/18                               Y                                         0
+ 354  tovel         31/4/O/4/13                               31/4/O/4/13                               0
+ 355  tovel         31/2/R/5/15                               15: R                                     0
+ 356  tovel         29/5/R/4/12                               {"day": 12, "letter": "R"}                0
+ 357  tovel         29/0/T/6/8                                 8T                                       0
+ 358  tovel         30/5/Q/6/10                               9Q                                        0
+ 359  tovel         30/4/F/3/13                               F                                         0
+ 360  tovel         31/4/O/5/12                               31/4/O/5/12                               0
+ 361  tovel         31/2/R/2/22                               22: R                                     0
+ 362  tovel         31/4/Q/3/13                               {"day": 13, "letter": "Q"}                0
+ 363  tovel         31/1/H/5/7                                 7H                                       0
+ 364  tovel         30/4/R/3/20                               19R                                       0
+ 365  tovel         30/3/J/2/26                               J                                         0
+ 366  tovel         30/1/E/2/21                               30/1/E/2/21                               0
+ 367  tovel         30/2/M/4/15                               15: M                                     0
+ 368  tovel         30/3/O/6/12                               {"day": 12, "letter": "O"}                0
+ 369  tovel         31/3/T/6/12                               12T                                       0
+ 370  tovel         28/1/X/5/7                                6X                                        0
+ 371  tovel         28/4/O/5/11                               O                                         0
+ 372  tovel         31/2/J/6/8                                31/2/J/6/8                                0
+ 373  tovel         31/3/E/2/26                               26: E                                     0
+ 374  tovel         29/5/Y/2/12                               {"day": 12, "letter": "Y"}                0
+ 375  tovel         31/4/T/6/11                               11T                                       0
+ 376  tovel         28/3/V/6/7                                6V                                        0
+ 377  tovel         30/1/V/5/14                               V                                         0
+ 378  tovel         28/0/I/4/9                                28/0/I/4/9                                0
+ 379  tovel         31/6/O/5/11                               11: O                                     0
+ 380  tovel         30/4/O/5/12                               {"day": 12, "letter": "O"}                0
+ 381  tovel         30/3/Z/6/6                                 6Z                                       0
+ 382  tovel         28/5/Y/3/12                               11Y                                       0
+ 383  tovel         28/0/Y/5/10                               Y                                         0
+ 384  tovel         30/2/R/4/15                               30/2/R/4/15                               0
+ 385  tovel         31/2/R/3/15                               15: R                                     0
+ 386  tovel         30/2/K/5/13                               {"day": 13, "letter": "K"}                0
+ 387  tovel         30/2/W/6/7                                 7W                                       0
+ 388  tovel         28/0/I/4/8                                7I                                        0
+ 389  tovel         28/6/X/5/4                                X                                         0
+ 390  tovel         30/6/J/3/11                               30/6/J/3/11                               0
+ 391  tovel         31/3/A/2/21                               21: A                                     0
+ 392  tovel         30/1/F/6/8                                {"day": 8, "letter": "F"}                 0
+ 393  tovel         28/0/D/2/17                               17D                                       0
+ 394  tovel         30/1/J/2/8                                7J                                        0
+ 395  tovel         28/3/V/5/12                               V                                         0
+ 396  tovel         28/3/N/3/7                                28/3/N/3/7                                0
+ 397  tovel         28/3/A/3/14                               14: A                                     0
+ 398  tovel         31/2/L/4/1                                {"day": 1, "letter": "L"}                 0
+ 399  tovel         28/0/A/5/10                               10A                                       0
+ 400  tovel         28/3/O/3/19                               18O                                       0
+ 401  tovel         28/2/O/5/8                                O                                         0
+ 402  tovel         29/5/G/2/17                               29/5/G/2/17                               0
+ 403  tovel         30/3/X/2/26                               26: X                                     0
+ 404  tovel         29/5/N/4/17                               {"day": 17, "letter": "N"}                0
+ 405  tovel         30/2/T/6/1                                 1T                                       0
+ 406  tovel         30/4/T/5/13                               12T                                       0
+ 407  tovel         30/1/I/6/8                                I                                         0
+ 408  tovel         31/6/H/5/4                                31/6/H/5/4                                0
+ 409  tovel         29/5/A/2/19                               19: A                                     0
+ 410  tovel         29/3/C/6/7                                {"day": 7, "letter": "C"}                 0
+ 411  tovel         31/4/B/2/20                               20B                                       0
+ 412  tovel         31/1/P/2/23                               22P                                       0
+ 413  tovel         29/3/L/2/19                               L                                         0
+ 414  tovel         30/0/T/4/2                                30/0/T/4/2                                0
+ 415  tovel         29/0/Q/3/16                               16: Q                                     0
+ 416  tovel         31/2/L/4/20                               {"day": 20, "letter": "L"}                0
+ 417  tovel         30/5/F/5/12                               12F                                       0
+ 418  tovel         31/1/D/2/14                               13D                                       0
+ 419  tovel         31/3/M/4/6                                M                                         0
+ 420  tovel         30/1/X/5/9                                30/1/X/5/9                                0
+ 421  tovel         31/4/U/4/13                               13: U                                     0
+ 422  tovel         30/4/S/6/11                               {"day": 11, "letter": "S"}                0
+ 423  tovel         29/2/W/2/15                               15W                                       0
+ 424  tovel         30/1/N/6/8                                7N                                        0
+ 425  tovel         30/5/A/3/17                               A                                         0
+ 426  tovel         30/6/C/2/17                               30/6/C/2/17                               0
+ 427  tovel         31/5/B/6/10                               10: B                                     0
+ 428  tovel         31/4/E/4/13                               {"day": 13, "letter": "E"}                0
+ 429  tovel         28/1/U/6/7                                 7U                                       0
+ 430  tovel         31/5/R/6/10                               9R                                        0
+ 431  tovel         31/3/D/2/26                               D                                         0
+ 432  tovel         30/2/C/2/22                               30/2/C/2/22                               0
+ 433  tovel         28/5/M/3/19                               19: M                                     0
+ 434  tovel         30/1/Z/5/14                               {"day": 14, "letter": "Z"}                0
+ 435  tovel         28/2/A/3/13                               13A                                       0
+ 436  tovel         28/6/B/3/17                               16B                                       0
+ 437  tovel         30/4/M/6/11                               M                                         0
+ 438  tovel         29/6/W/3/18                               29/6/W/3/18                               0
+ 439  tovel         29/0/W/5/9                                9: W                                      0
+ 440  tovel         29/2/K/4/14                               {"day": 14, "letter": "K"}                0
+ 441  tovel         28/2/J/4/7                                 7J                                       0
+ 442  tovel         30/0/D/5/9                                8D                                        0
+ 443  tovel         31/0/R/4/16                               R                                         0
+ 444  tovel         31/5/A/3/17                               31/5/A/3/17                               0
+ 445  tovel         30/0/P/5/10                               10: P                                     0
+ 446  tovel         28/0/D/3/17                               {"day": 17, "letter": "D"}                0
+ 447  tovel         29/5/O/5/5                                 5O                                       0
+ 448  tovel         31/0/S/4/17                               16S                                       0
+ 449  tovel         31/0/O/4/9                                O                                         0
+ 450  tovel         28/2/W/4/8                                28/2/W/4/8                                0
+ 451  tovel         30/3/Y/4/19                               19: Y                                     0
+ 452  tovel         30/0/M/2/22                               {"day": 22, "letter": "M"}                0
+ 453  tovel         29/1/B/3/15                               15B                                       0
+ 454  tovel         29/2/B/5/8                                7B                                        0
+ 455  tovel         31/5/I/3/19                               I                                         0
+ 456  tovel         31/0/Z/4/17                               31/0/Z/4/17                               0
+ 457  tovel         30/0/Y/3/9                                9: Y                                      0
+ 458  tovel         31/4/Q/3/19                               {"day": 19, "letter": "Q"}                0
+ 459  tovel         31/4/K/3/13                               13K                                       0
+ 460  tovel         28/0/W/6/8                                7W                                        0
+ 461  tovel         29/6/G/2/18                               G                                         0
+ 462  tovel         31/3/W/3/21                               31/3/W/3/21                               0
+ 463  tovel         29/1/M/6/7                                7: M                                      0
+ 464  tovel         30/1/S/5/14                               {"day": 14, "letter": "S"}                0
+ 465  tovel         30/2/E/6/7                                 7E                                       0
+ 466  tovel         29/6/A/3/18                               17A                                       0
+ 467  tovel         29/4/Y/3/18                               Y                                         0
+ 468  tovel         31/0/S/5/9                                31/0/S/5/9                                0
+ 469  tovel         29/3/R/5/12                               12: R                                     0
+ 470  tovel         30/0/U/5/8                                {"day": 8, "letter": "U"}                 0
+ 471  tovel         29/3/L/3/12                               12L                                       0
+ 472  tovel         30/3/V/3/20                               19V                                       0
+ 473  tovel         31/1/X/2/23                               X                                         0
+ 474  tovel         28/1/Q/6/7                                28/1/Q/6/7                                0
+ 475  tovel         31/4/B/5/11                               11: B                                     0
+ 476  tovel         28/2/E/4/7                                {"day": 7, "letter": "E"}                 0
+ 477  tovel         31/6/W/3/11                               11W                                       0
+ 478  tovel         30/3/Q/3/20                               19Q                                       0
+ 479  tovel         30/1/N/5/2                                N                                         0
+ 480  tovel         29/3/U/4/7                                29/3/U/4/7                                0
+ 481  tovel         29/6/Y/3/18                               18: Y                                     0
+
+per-name tally this round
+name             presented correct  hit-rate
+tovel                  482       0      0.0%

@@ -474,7 +474,22 @@
   },
   "Wordz": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Anchor in a drawable object; alternating vowel/consonant counting is a well-known word-puzzle genre an LLM guesses by pattern.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 4,
+      "object": 2,
+      "rule_statable": 4
+     },
+     "score": 2.8,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

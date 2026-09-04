@@ -1623,8 +1623,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 4,
+       "final_correct": 780,
+       "final_presented": 2941,
+       "final_rate": 0.2652159129547773,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         546
+        ],
+        [
+         30,
+         441
+        ],
+        [
+         10,
+         564
+        ],
+        [
+         91,
+         547
+        ],
+        [
+         107,
+         475
+        ],
+        [
+         125,
+         474
+        ]
+       ],
+       "team": "norvel1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 3,
+       "final_correct": 1022,
+       "final_presented": 2861,
+       "final_rate": 0.35721775602936034,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         1,
+         464
+        ],
+        [
+         14,
+         463
+        ],
+        [
+         69,
+         656
+        ],
+        [
+         151,
+         620
+        ],
+        [
+         117,
+         462
+        ],
+        [
+         195,
+         581
+        ]
+       ],
+       "team": "norvel1b"
+      }
+     ],
+     "run": "lad-norvel-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788550070.76554,
@@ -4210,7 +4288,7 @@
    "note": "team b finished; one live agent remaining",
    "run": "lad-norvel-v1-1",
    "started": 1788551937.6869185,
-   "status": "running",
+   "status": "done",
    "teams": {
     "norvel1a": "opus-default",
     "norvel1b": "opus-kidproxy"
@@ -4247,6 +4325,23 @@
     "crandel1b": "opus-kidproxy"
    },
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "refiner-norvel-v1-man",
+   "kind": "refiner",
+   "started": 1788553834.7583885,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v1-550d",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

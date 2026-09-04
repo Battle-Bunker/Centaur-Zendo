@@ -208,3 +208,27 @@ free length-1 fills) or lever 2 (the third row must be silent for the whole of a
 
 Scratch harness used for all the numbers above (not committed):
 `$SCRATCH/music/{harness,attack,demostats,selftest,hyp}.py`.
+
+## norvel v1 ladder run `lad-norvel-v1-1` (2026-09-04, 6×0.5 s, 2 Opus players)
+
+| team | profile | final | demos | reading |
+|---|---|---|---|---|
+| norvel1a | opus-default | 27% | 4 | fitted a sampler ("at a kick rest both voices play p=.78; at a kick hit one doubles p=.2") |
+| norvel1b | opus-kidproxy | 36% | 3 | same: "never three stacked", "silence rare", tuned two knobs |
+
+Mean 31%, no insight. Neither player looked at the snare row against the kick's holes; both
+inferred "rules" (cover every beat, at most two voices per beat) that the scorer does not
+check at all — they are artefacts of solve()'s style — and their 27–36% is the rate at which a
+groove-shaped sampler happens to fill exactly n holes. Both called N "a trap" / "undiscoverable".
+The kid-proxy's imagined child said "never three X's stacked" and "one box is empty" — both
+about columns, not about the snare filling gaps. The near-miss runs in every demo were invisible
+because the hat row and the snare row together read as one texture.
+
+Diagnosis: the counted relationship (snare run == kick hole, exactly) is not the loudest thing in
+the picture; the three-voice groove is. Softening levers for v2, in order: (a) make the hat row
+sparse and regular (e.g. every 4th step) so it stops competing with the snare for attention —
+or drop it to two rows; (b) make the snare row otherwise EMPTY apart from its runs, so every
+snare run is either a hole-fill, a too-short, a too-long or a wrong-place — the four cases the
+designer already plants; (c) keep the sampler leak in mind: a groove-shaped random row 2 must
+not score ~30% — the witness table should include "random snare row with kick-rest bias".
+Status: testing (2 finals, 0 cracks). Refine before the next pair.

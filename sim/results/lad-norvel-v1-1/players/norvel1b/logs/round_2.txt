@@ -1,0 +1,475 @@
+Centaur Zendo round 2 (training)
+round_id : 303649b9abf44f4c8a0b051fa35abb2b
+written  : 2026-09-04 20:12:29Z
+presented=463  answered=463  correct=14  skipped=0
+client answer latency: mean 0.164 ms  median 0.157 ms  max 1.287 ms  (n=464)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  norvel        xxx.....xx..xx....xx.....xxx/2              bass |xxx.|....|xx..|xx..|..xx|....|.…  0
+   1  norvel        x...x..x..xx..x..x...xx..x.x/4              bass |x...|x..x|..xx|..x.|.x..|.xx.|.…  0
+   2  norvel        x....x..xx..xx....x..xx.x..x/5              bass |x...|.x..|xx..|xx..|..x.|.xx.|x…  0
+   3  norvel        xx...x....xx....xx...xx....x/2              bass |xx..|.x..|..xx|....|xx..|.xx.|.…  0
+   4  norvel        x...xxx...x....xxx...xxx...x/3              bass |x...|xxx.|..x.|...x|xx..|.xxx|.…  0
+   5  norvel        x..x...xxx..xx...x.....x/2                  bass |x..x|...x|xx..|xx..|.x..|...x|\…  0
+   6  norvel        x..x...x..x..x...x..x..x/4                  bass |x..x|...x|..x.|.x..|.x..|x..x|\…  0
+   7  norvel        xxx....xxx.....xxx.....x/2                K |xxx.|...x|xx..|...x|xx..|...x|\nS |.…  0
+   8  norvel        x....xxx....xx...xx....xx..x/2              bass |x...|.xxx|....|xx..|.xx.|...x|x…  1
+   9  norvel        x...x.xx..xx..xx..x...x..xxx/5              bass |x...|x.xx|..xx|..xx|..x.|..x.|.…  0
+  10  norvel        x...x..x..xx..x...x..x..x..x/4              bass |x...|x..x|..xx|..x.|..x.|.x..|x…  0
+  11  norvel        x..x..xxx....xxx..x...xx/2                  bass |x..x|..xx|x...|.xxx|..x.|..xx|\…  0
+  12  norvel        x..x..x..x..x...x..x/5                      bass |x..x|..x.|.x..|x...|x..x|\n  cl…  0
+  13  norvel        x..x...x..x..xx..x..x..x/4                  bass |x..x|...x|..x.|.xx.|.x..|x..x|\…  0
+  14  norvel        xx....xx..x..x....x...xx/2                  bass |xx..|..xx|..x.|.x..|..x.|..xx|\…  0
+  15  norvel        x....xx..xx..x...x..xx..x..x/5            K |x...|.xx.|.xx.|.x..|.x..|xx..|x..x|\…  0
+  16  norvel        xx....xx..xx...xxx...xx...xx/3              bass |xx..|..xx|..xx|...x|xx..|.xx.|.…  0
+  17  norvel        x..x....xx..x..x...x/3                      bass |x..x|....|xx..|x..x|...x|\n  cl…  0
+  18  norvel        x..x...x..x..x..xx..x..x/5                  bass |x..x|...x|..x.|.x..|xx..|x..x|\…  0
+  19  norvel        x..xx...x..x..x..x...xx...xx/4              bass |x..x|x...|x..x|..x.|.x..|.xx.|.…  0
+  20  norvel        x..xx....xx..xx..xx..xx...xx/3              bass |x..x|x...|.xx.|.xx.|.xx.|.xx.|.…  0
+  21  norvel        x..x..x...x..x..xx..x..x/4                  bass |x..x|..x.|..x.|.x..|xx..|x..x|\…  0
+  22  norvel        x.x..x...x..x..xx..x/2                      bass |x.x.|.x..|.x..|x..x|x..x|\n  cl…  0
+  23  norvel        x...x..xx.x..x..xx..xx..x..x/5            K |x...|x..x|x.x.|.x..|xx..|xx..|x..x|\…  0
+  24  norvel        x...x...xx..x..x...x..xx...x/5              bass |x...|x...|xx..|x..x|...x|..xx|.…  0
+  25  norvel        xxx....xxx..xx....xx...x/2                  bass |xxx.|...x|xx..|xx..|..xx|...x|\…  0
+  26  norvel        x...xx..xx....x...x...xx/3                  bass |x...|xx..|xx..|..x.|..x.|..xx|\…  0
+  27  norvel        xxx..xxx....xxx....xxx....xx/3              bass |xxx.|.xxx|....|xxx.|...x|xx..|.…  0
+  28  norvel        x..xx..x..x...x..x..x..x/4                  bass |x..x|x..x|..x.|..x.|.x..|x..x|\…  0
+  29  norvel        xxx..x...xx.xx....xx/2                      bass |xxx.|.x..|.xx.|xx..|..xx|\n  cl…  0
+  30  norvel        xx...x...x....xx...x..xx/3                  bass |xx..|.x..|.x..|..xx|...x|..xx|\…  0
+  31  norvel        x..x...x....x..xx..x..xx..xx/5            K |x..x|...x|....|x..x|x..x|..xx|..xx|\…  0
+  32  norvel        x..x..xx..x...xx...xx...x..x/4              bass |x..x|..xx|..x.|..xx|...x|x...|x…  0
+  33  norvel        x.x..x...x..x..x...x..xx...x/4              bass |x.x.|.x..|.x..|x..x|...x|..xx|.…  0
+  34  norvel        x...x...xx..xx...x..x..x/4                  bass |x...|x...|xx..|xx..|.x..|x..x|\…  0
+  35  norvel        xxx..x...x..x...x.....xx/3                  bass |xxx.|.x..|.x..|x...|x...|..xx|\…  0
+  36  norvel        xx....x...x...x....x..xx/2                  bass |xx..|..x.|..x.|..x.|...x|..xx|\…  0
+  37  norvel        xx..xx...x..x..x..xx..xx/4                  bass |xx..|xx..|.x..|x..x|..xx|..xx|\…  0
+  38  norvel        x....x.....x....xx..xx....xx/4              bass |x...|.x..|...x|....|xx..|xx..|.…  0
+  39  norvel        x...xxx....x...xx..x/3                    K |x...|xxx.|...x|...x|x..x|\nS |x..x|.…  0
+  40  norvel        xx...xx....xx....xx...xx/3                  bass |xx..|.xx.|...x|x...|.xx.|..xx|\…  0
+  41  norvel        x..x...x.x....x....x/3                      bass |x..x|...x|.x..|..x.|...x|\n  cl…  0
+  42  norvel        xx...xx..x...xx...xx..xx/4                  bass |xx..|.xx.|.x..|.xx.|..xx|..xx|\…  0
+  43  norvel        x..x..x.x..xx...x..x/5                      bass |x..x|..x.|x..x|x...|x..x|\n  cl…  0
+  44  norvel        xx...xxx...xxx..xx....xx..xx/3              bass |xx..|.xxx|...x|xx..|xx..|..xx|.…  0
+  45  norvel        xxx....xxx...xxx.....xxx/2                  bass |xxx.|...x|xx..|.xxx|....|.xxx|\…  0
+  46  norvel        x...x..x..x..x...xx..x..x..x/4              bass |x...|x..x|..x.|.x..|.xx.|.x..|x…  0
+  47  norvel        x...x..x.x..x..x/2                        K |x...|x..x|.x..|x..x|\nS |xxxx|xxxx|x…  0
+  48  norvel        x..xx..x..xx....x..x/2                      bass |x..x|x..x|..xx|....|x..x|\n  cl…  0
+  49  norvel        xxx...xx..x...xx..x..x....xx/2              bass |xxx.|..xx|..x.|..xx|..x.|.x..|.…  1
+  50  norvel        x...x..xxx..x..x..x..x..x..x/4              bass |x...|x..x|xx..|x..x|..x.|.x..|x…  0
+  51  norvel        x..x...x...xx..x..x..xxx/4                  bass |x..x|...x|...x|x..x|..x.|.xxx|\…  0
+  52  norvel        x.....x...x..x...x.....xx..x/2              bass |x...|..x.|..x.|.x..|.x..|...x|x…  0
+  53  norvel        xx..x..x..x...x.x..x/4                      bass |xx..|x..x|..x.|..x.|x..x|\n  cl…  0
+  54  norvel        xx...xx.....xxx....xxx....xx/2              bass |xx..|.xx.|....|xxx.|...x|xx..|.…  0
+  55  norvel        x..x..x...x..x.x...x/4                    K |x..x|..x.|..x.|.x.x|...x|\nS |.xxx|x…  0
+  56  norvel        xx..x...x...xx...xx...xx/2                  bass |xx..|x...|x...|xx..|.xx.|..xx|\…  0
+  57  norvel        xx....xx...x...xx....xxx...x/3              bass |xx..|..xx|...x|...x|x...|.xxx|.…  0
+  58  norvel        xxx...x...x...x..xx..xx...xx/2              bass |xxx.|..x.|..x.|..x.|.xx.|.xx.|.…  1
+  59  norvel        x...x..x..x...x...xx/4                      bass |x...|x..x|..x.|..x.|..xx|\n  cl…  0
+  60  norvel        x..x..x...x..x...xxx/2                      bass |x..x|..x.|..x.|.x..|.xxx|\n  cl…  0
+  61  norvel        xx....xx....x....x...xxx.xxx/2              bass |xx..|..xx|....|x...|.x..|.xxx|.…  0
+  62  norvel        x..x..xx...x..xx...x..xx...x/4              bass |x..x|..xx|...x|..xx|...x|..xx|.…  0
+  63  norvel        x.xx...xx..x..x...xx/4                    K |x.xx|...x|x..x|..x.|..xx|\nS |xx..|x…  0
+  64  norvel        x..x..x..x...x..x..x/4                      bass |x..x|..x.|.x..|.x..|x..x|\n  cl…  0
+  65  norvel        xxx..xx..x..xxx..x...xxx/4                  bass |xxx.|.xx.|.x..|xxx.|.x..|.xxx|\…  0
+  66  norvel        xxx....xxx....xx....xx...xxx/3              bass |xxx.|...x|xx..|..xx|....|xx..|.…  0
+  67  norvel        x..x..x...x..x..x..x/4                      bass |x..x|..x.|..x.|.x..|x..x|\n  cl…  0
+  68  norvel        x..x...x...x..xx...x/4                      bass |x..x|...x|...x|..xx|...x|\n  cl…  0
+  69  norvel        x...x..x..xx....x...xx.x/5                  bass |x...|x..x|..xx|....|x...|xx.x|\…  0
+  70  norvel        x..x..x...x..x...x.x/4                      bass |x..x|..x.|..x.|.x..|.x.x|\n  cl…  0
+  71  norvel        x..x..x...x..x...x.x/4                    K |x..x|..x.|..x.|.x..|.x.x|\nS |x.x.|x…  0
+  72  norvel        x..x..x..x...xx...x..x.x/5                  bass |x..x|..x.|.x..|.xx.|..x.|.x.x|\…  0
+  73  norvel        xxx..xx...xxx..x....xxx...xx/2              bass |xxx.|.xx.|..xx|x..x|....|xxx.|.…  0
+  74  norvel        xx..xx.....x...xx.....xx/2                  bass |xx..|xx..|...x|...x|x...|..xx|\…  0
+  75  norvel        xx...xx..x...x..x..x/2                      bass |xx..|.xx.|.x..|.x..|x..x|\n  cl…  0
+  76  norvel        x...x.xx...xx..x...x/2                      bass |x...|x.xx|...x|x..x|...x|\n  cl…  0
+  77  norvel        xxx.....xx....xx...xx....xxx/2              bass |xxx.|....|xx..|..xx|...x|x...|.…  0
+  78  norvel        x..x..x..x..x...x..x/4                      bass |x..x|..x.|.x..|x...|x..x|\n  cl…  0
+  79  norvel        xx..x..x...xx...xx....xx/3                K |xx..|x..x|...x|x...|xx..|..xx|\nS |.…  0
+  80  norvel        xx..xx....xxx...xx....xx/3                  bass |xx..|xx..|..xx|x...|xx..|..xx|\…  0
+  81  norvel        x...x..xx..x...x...x/4                      bass |x...|x..x|x..x|...x|...x|\n  cl…  0
+  82  norvel        x..x..x..x..x...xxx..x..x..x/5              bass |x..x|..x.|.x..|x...|xxx.|.x..|x…  0
+  83  norvel        xx....x..xx..xxx..xx/2                      bass |xx..|..x.|.xx.|.xxx|..xx|\n  cl…  0
+  84  norvel        xx....x...x.....xx...x....xx/2              bass |xx..|..x.|..x.|....|xx..|.x..|.…  0
+  85  norvel        x....x.xx..x..x..x..x..x/3                  bass |x...|.x.x|x..x|..x.|.x..|x..x|\…  0
+  86  norvel        xx...xx...x.....x....xx...xx/4              bass |xx..|.xx.|..x.|....|x...|.xx.|.…  0
+  87  norvel        x....xx....x..xxx...x..xx.xx/3            K |x...|.xx.|...x|..xx|x...|x..x|x.xx|\…  1
+  88  norvel        xx...xx...xx....x....xxx/3                  bass |xx..|.xx.|..xx|....|x...|.xxx|\…  0
+  89  norvel        xx..x..x..x..x...x..x..x/4                  bass |xx..|x..x|..x.|.x..|.x..|x..x|\…  0
+  90  norvel        x..x...xx..xxx.x...x...x/5                  bass |x..x|...x|x..x|xx.x|...x|...x|\…  0
+  91  norvel        x...x..xx.....xx....xxx..xxx/4              bass |x...|x..x|x...|..xx|....|xxx.|.…  0
+  92  norvel        xxx.....xx....xx..xxx....xxx/3              bass |xxx.|....|xx..|..xx|..xx|x...|.…  0
+  93  norvel        x...x..x..x..x..x...x..x/4                  bass |x...|x..x|..x.|.x..|x...|x..x|\…  0
+  94  norvel        xxx....xxx...xxx....xx....xx/3              bass |xxx.|...x|xx..|.xxx|....|xx..|.…  0
+  95  norvel        x.x....x...x...x/3                        K |x.x.|...x|...x|...x|\nS |.xxx|xxx.|x…  0
+  96  norvel        xx...x..x...xx..xx..x..x/4                  bass |xx..|.x..|x...|xx..|xx..|x..x|\…  0
+  97  norvel        xxx..x.....xx....xxx..xx/3                  bass |xxx.|.x..|...x|x...|.xxx|..xx|\…  0
+  98  norvel        xx.....xx....xxx.....xxx/2                  bass |xx..|...x|x...|.xxx|....|.xxx|\…  0
+  99  norvel        xxx.....xx....xxx..xx....xxx/3              bass |xxx.|....|xx..|..xx|x..x|x...|.…  0
+ 100  norvel        x.x..x..x...x..x/4                          bass |x.x.|.x..|x...|x..x|\n  clap |x…  0
+ 101  norvel        x..x..x...x..x..x..x/2                      bass |x..x|..x.|..x.|.x..|x..x|\n  cl…  0
+ 102  norvel        x...x..x.x..x..x..xx/4                      bass |x...|x..x|.x..|x..x|..xx|\n  cl…  0
+ 103  norvel        xx..x...x..x..xx..x..x..x..x/4            K |xx..|x...|x..x|..xx|..x.|.x..|x..x|\…  0
+ 104  norvel        x...x..x..x..x...xx...xx/4                  bass |x...|x..x|..x.|.x..|.xx.|..xx|\…  0
+ 105  norvel        x...x...x..xxx...x..x..x...x/5              bass |x...|x...|x..x|xx..|.x..|x..x|.…  0
+ 106  norvel        x..xxx...xx..x...x..xx..x..x/4              bass |x..x|xx..|.xx.|.x..|.x..|xx..|x…  0
+ 107  norvel        x..xx.....xx...xx...x..x/3                  bass |x..x|x...|..xx|...x|x...|x..x|\…  0
+ 108  norvel        xxx....xx..x....xx...xxx/3                  bass |xxx.|...x|x..x|....|xx..|.xxx|\…  0
+ 109  norvel        xx....xx...xxx...x....xx/3                  bass |xx..|..xx|...x|xx..|.x..|..xx|\…  0
+ 110  norvel        xxx.....xxx....xx....xxx/2                  bass |xxx.|....|xxx.|...x|x...|.xxx|\…  0
+ 111  norvel        x..xx....xxx...x..x..xx...xx/2            K |x..x|x...|.xxx|...x|..x.|.xx.|..xx|\…  0
+ 112  norvel        xxx..xx...xx..xx..xx..xx...x/5              bass |xxx.|.xx.|..xx|..xx|..xx|..xx|.…  0
+ 113  norvel        xx...x..xx..x..xx..x/4                      bass |xx..|.x..|xx..|x..x|x..x|\n  cl…  0
+ 114  norvel        x..x..x..x..x...x..x/5                      bass |x..x|..x.|.x..|x...|x..x|\n  cl…  0
+ 115  norvel        xx..x...x..xx..x...x...x/2                  bass |xx..|x...|x..x|x..x|...x|...x|\…  0
+ 116  norvel        x..x..x..x...x..x...x...x.xx/4              bass |x..x|..x.|.x..|.x..|x...|x...|x…  0
+ 117  norvel        xxx....x...xxx...xx...xx/3                  bass |xxx.|...x|...x|xx..|.xx.|..xx|\…  0
+ 118  norvel        xx....x..xxx..xxx.xx/2                      bass |xx..|..x.|.xxx|..xx|x.xx|\n  cl…  0
+ 119  norvel        x..x..x...xx..x..x..x..x...x/5            K |x..x|..x.|..xx|..x.|.x..|x..x|...x|\…  0
+ 120  norvel        x..x..x..x...x..x..x....x..x/5              bass |x..x|..x.|.x..|.x..|x..x|....|x…  0
+ 121  norvel        xx...xx...xx...x..x...x...xx/4              bass |xx..|.xx.|..xx|...x|..x.|..x.|.…  0
+ 122  norvel        xxx....xxx....xx...x.....xxx/3              bass |xxx.|...x|xx..|..xx|...x|....|.…  0
+ 123  norvel        xx..x..x...x...x...xx..x/2                  bass |xx..|x..x|...x|...x|...x|x..x|\…  0
+ 124  norvel        x..x..x..x...x..x..x...x/4                  bass |x..x|..x.|.x..|.x..|x..x|...x|\…  0
+ 125  norvel        x..x.x...x..x..xx..x/4                      bass |x..x|.x..|.x..|x..x|x..x|\n  cl…  0
+ 126  norvel        x..x...xx..x..xx/2                          bass |x..x|...x|x..x|..xx|\n  clap |.…  0
+ 127  norvel        x..x..x..x..x.xx...x/2                    K |x..x|..x.|.x..|x.xx|...x|\nS |xxx.|x…  1
+ 128  norvel        x...x..x..x..xx..x..x...x..x/4              bass |x...|x..x|..x.|.xx.|.x..|x...|x…  0
+ 129  norvel        xx..x....xx...xxx...xx...xxx/3              bass |xx..|x...|.xx.|..xx|x...|xx..|.…  0
+ 130  norvel        xxx....xxx..xx.....xxx....xx/3              bass |xxx.|...x|xx..|xx..|...x|xx..|.…  0
+ 131  norvel        xx..xx...x...x...xx...xx/4                  bass |xx..|xx..|.x..|.x..|.xx.|..xx|\…  0
+ 132  norvel        xx....x....xxx....xx..xx/3                  bass |xx..|..x.|...x|xx..|..xx|..xx|\…  0
+ 133  norvel        xxx...x...x..x..x....x....xx/3              bass |xxx.|..x.|..x.|.x..|x...|.x..|.…  0
+ 134  norvel        x..x...x...x..xx..xx...x/5                  bass |x..x|...x|...x|..xx|..xx|...x|\…  0
+ 135  norvel        x...xx..x...x..x...x...x..xx/5            K |x...|xx..|x...|x..x|...x|...x|..xx|\…  0
+ 136  norvel        xx...xx.x..x..x..x...x..x..x/4              bass |xx..|.xx.|x..x|..x.|.x..|.x..|x…  0
+ 137  norvel        x..x...x..x..x..xx...x..x..x/5              bass |x..x|...x|..x.|.x..|xx..|.x..|x…  0
+ 138  norvel        x.....xx..x...xx..x...xx..xx/4              bass |x...|..xx|..x.|..xx|..x.|..xx|.…  0
+ 139  norvel        x.....x...xx...x/2                          bass |x...|..x.|..xx|...x|\n  clap |x…  0
+ 140  norvel        x..x..x..x..x..x..x...xx...x/5              bass |x..x|..x.|.x..|x..x|..x.|..xx|.…  0
+ 141  norvel        x..x..x..x...x..x..x...x/5                  bass |x..x|..x.|.x..|.x..|x..x|...x|\…  0
+ 142  norvel        x.x...x..xx..xx...x...xx...x/4              bass |x.x.|..x.|.xx.|.xx.|..x.|..xx|.…  0
+ 143  norvel        xx....xxx....xxx.....xxx/2                K |xx..|..xx|x...|.xxx|....|.xxx|\nS |x…  0
+ 144  norvel        x..x..xx..x...x..x.x/4                      bass |x..x|..xx|..x.|..x.|.x.x|\n  cl…  0
+ 145  norvel        x..xx...x..xx...x..x/4                      bass |x..x|x...|x..x|x...|x..x|\n  cl…  0
+ 146  norvel        xx.x..x...x...x....x/3                      bass |xx.x|..x.|..x.|..x.|...x|\n  cl…  0
+ 147  norvel        x..x..x...x..x.x...x/4                      bass |x..x|..x.|..x.|.x.x|...x|\n  cl…  0
+ 148  norvel        xx..xx..x..x...x/2                          bass |xx..|xx..|x..x|...x|\n  clap |x…  0
+ 149  norvel        x..x..xx..x...xx...x/4                      bass |x..x|..xx|..x.|..xx|...x|\n  cl…  0
+ 150  norvel        x..xx...x..x.x..x..x/4                      bass |x..x|x...|x..x|.x..|x..x|\n  cl…  0
+ 151  norvel        xx..xx....x..x..x..x...x...x/5            K |xx..|xx..|..x.|.x..|x..x|...x|...x|\…  0
+ 152  norvel        xx...x...x.x..xx...x...x/4                  bass |xx..|.x..|.x.x|..xx|...x|...x|\…  0
+ 153  norvel        xxx...xx....xxx...xx.....xxx/2              bass |xxx.|..xx|....|xxx.|..xx|....|.…  0
+ 154  norvel        x..x.x...x..x..xx..x/2                      bass |x..x|.x..|.x..|x..x|x..x|\n  cl…  0
+ 155  norvel        xxx.....xx.....xx....xxx/2                  bass |xxx.|....|xx..|...x|x...|.xxx|\…  0
+ 156  norvel        x..x..x..x..x...x...x..x/4                  bass |x..x|..x.|.x..|x...|x...|x..x|\…  0
+ 157  norvel        x..xx....x..x...x..x...x/5                  bass |x..x|x...|.x..|x...|x..x|...x|\…  0
+ 158  norvel        xxx.....xx...x...xx...xx/3                  bass |xxx.|....|xx..|.x..|.xx.|..xx|\…  0
+ 159  norvel        xx..x..x..x.x...x..x/5                    K |xx..|x..x|..x.|x...|x..x|\nS |x.xx|x…  0
+ 160  norvel        xx....x..x..x...xx..xx...xxx/3              bass |xx..|..x.|.x..|x...|xx..|xx..|.…  0
+ 161  norvel        x..x..x...x..x...x...xx..x.x/5              bass |x..x|..x.|..x.|.x..|.x..|.xx.|.…  0
+ 162  norvel        xxx...xxx....xxx.....xxx/2                  bass |xxx.|..xx|x...|.xxx|....|.xxx|\…  0
+ 163  norvel        x....x...x..x..xx..x...x/3                  bass |x...|.x..|.x..|x..x|x..x|...x|\…  0
+ 164  norvel        x..x..x..x..x..x...x/2                      bass |x..x|..x.|.x..|x..x|...x|\n  cl…  0
+ 165  norvel        x.xx....xx..x...x...x..x/3                  bass |x.xx|....|xx..|x...|x...|x..x|\…  0
+ 166  norvel        x...x.x..x..x..xx..x/4                      bass |x...|x.x.|.x..|x..x|x..x|\n  cl…  0
+ 167  norvel        x..xx..x...x.x..x..x/4                    K |x..x|x..x|...x|.x..|x..x|\nS |x.xx|x…  0
+ 168  norvel        xx...xx....x....xx...x...xxx/3              bass |xx..|.xx.|...x|....|xx..|.x..|.…  0
+ 169  norvel        x...xx..xx...x...xx..xxx/4                  bass |x...|xx..|xx..|.x..|.xx.|.xxx|\…  0
+ 170  norvel        x...x....xx..x..x..xx..x/3                  bass |x...|x...|.xx.|.x..|x..x|x..x|\…  0
+ 171  norvel        x..x..xx..x...xx...x...x/4                  bass |x..x|..xx|..x.|..xx|...x|...x|\…  0
+ 172  norvel        x...x..x.x....x..xxx/2                      bass |x...|x..x|.x..|..x.|.xxx|\n  cl…  0
+ 173  norvel        xx....xxx..xx....xxx...x...x/3              bass |xx..|..xx|x..x|x...|.xxx|...x|.…  0
+ 174  norvel        xx....x...x...x..x..x..x...x/3              bass |xx..|..x.|..x.|..x.|.x..|x..x|.…  0
+ 175  norvel        x..x...x..x..xx..x...x..x..x/5            K |x..x|...x|..x.|.xx.|.x..|.x..|x..x|\…  0
+ 176  norvel        xxx..x...xx....xx..x/3                      bass |xxx.|.x..|.xx.|...x|x..x|\n  cl…  0
+ 177  norvel        xx...xxx.....xx...x..x....xx/3              bass |xx..|.xxx|....|.xx.|..x.|.x..|.…  0
+ 178  norvel        x...xx..x..x..x..x..x..x/5                  bass |x...|xx..|x..x|..x.|.x..|x..x|\…  0
+ 179  norvel        x..x.xx...x..x..x..x/4                      bass |x..x|.xx.|..x.|.x..|x..x|\n  cl…  0
+ 180  norvel        x...x..x..x..xx.x..x/4                      bass |x...|x..x|..x.|.xx.|x..x|\n  cl…  0
+ 181  norvel        x...x..xx..xx..xx..x..xx/2                  bass |x...|x..x|x..x|x..x|x..x|..xx|\…  0
+ 182  norvel        xx..x...x...x...x...x..x/4                  bass |xx..|x...|x...|x...|x...|x..x|\…  0
+ 183  norvel        x....x..xx....x....xx..x/3                K |x...|.x..|xx..|..x.|...x|x..x|\nS |x…  0
+ 184  norvel        x..xx...x..x..x..x..xx..x..x/5              bass |x..x|x...|x..x|..x.|.x..|xx..|x…  0
+ 185  norvel        xx.....xx...xx....xxx.....xx/3              bass |xx..|...x|x...|xx..|..xx|x...|.…  0
+ 186  norvel        x...xx....xx...xx.x....x/3                  bass |x...|xx..|..xx|...x|x.x.|...x|\…  0
+ 187  norvel        x..x..x..x..x..x..x...xx/4                  bass |x..x|..x.|.x..|x..x|..x.|..xx|\…  0
+ 188  norvel        x...xx..x....xx..x...x..x..x/3              bass |x...|xx..|x...|.xx.|.x..|.x..|x…  0
+ 189  norvel        x...x...x...x...x...xx..x..x/4              bass |x...|x...|x...|x...|x...|xx..|x…  0
+ 190  norvel        x..x....xx..x..x/2                          bass |x..x|....|xx..|x..x|\n  clap |.…  0
+ 191  norvel        xxx....xx....xx....xx.....xx/3            K |xxx.|...x|x...|.xx.|...x|x...|..xx|\…  0
+ 192  norvel        xx..xxx...x....xx....xxx/3                  bass |xx..|xxx.|..x.|...x|x...|.xxx|\…  0
+ 193  norvel        xx..x..x...x..x..x..x.....xx/3              bass |xx..|x..x|...x|..x.|.x..|x...|.…  0
+ 194  norvel        x..xx..x...x..xx..x...xx/5                  bass |x..x|x..x|...x|..xx|..x.|..xx|\…  0
+ 195  norvel        x....x.....xxx..xx....xx/3                  bass |x...|.x..|...x|xx..|xx..|..xx|\…  0
+ 196  norvel        x..x...x..x..x..x..x/4                      bass |x..x|...x|..x.|.x..|x..x|\n  cl…  0
+ 197  norvel        xx...x....x..x..x...xx..x..x/3              bass |xx..|.x..|..x.|.x..|x...|xx..|x…  0
+ 198  norvel        x..xx..x..x..x...x..x..x/4                  bass |x..x|x..x|..x.|.x..|.x..|x..x|\…  0
+ 199  norvel        xx...x...xx..xx...x...xx/4                K |xx..|.x..|.xx.|.xx.|..x.|..xx|\nS |.…  0
+ 200  norvel        xx..xx..x...x..x...x..x...xx/4              bass |xx..|xx..|x...|x..x|...x|..x.|.…  0
+ 201  norvel        xx.....xx..xx.....xx/2                      bass |xx..|...x|x..x|x...|..xx|\n  cl…  0
+ 202  norvel        x..x..x..xx..x..x..x...xx..x/5              bass |x..x|..x.|.xx.|.x..|x..x|...x|x…  0
+ 203  norvel        xxx...xxx.....xxx...xx....xx/3              bass |xxx.|..xx|x...|..xx|x...|xx..|.…  0
+ 204  norvel        x..x...x..x..xx..x..x...xx.x/4              bass |x..x|...x|..x.|.xx.|.x..|x...|x…  0
+ 205  norvel        x..xx..x...xx.xx...x..xx...x/5              bass |x..x|x..x|...x|x.xx|...x|..xx|.…  0
+ 206  norvel        x..x..x...xx...x...x/4                      bass |x..x|..x.|..xx|...x|...x|\n  cl…  0
+ 207  norvel        xx....x....x..x...xx...x/2                K |xx..|..x.|...x|..x.|..xx|...x|\nS |x…  1
+ 208  norvel        x..x..x...x...x..x..x..x/4                  bass |x..x|..x.|..x.|..x.|.x..|x..x|\…  0
+ 209  norvel        xx....xxx.....xx.....xxx/2                  bass |xx..|..xx|x...|..xx|....|.xxx|\…  0
+ 210  norvel        x...xx..x...x..x.xx...x...xx/5              bass |x...|xx..|x...|x..x|.xx.|..x.|.…  0
+ 211  norvel        x..xx...xx..x...x..x/2                      bass |x..x|x...|xx..|x...|x..x|\n  cl…  0
+ 212  norvel        x..x...x..x..x..x..x...x..xx/5              bass |x..x|...x|..x.|.x..|x..x|...x|.…  0
+ 213  norvel        x..x..x...x..x...x..xx..x..x/4              bass |x..x|..x.|..x.|.x..|.x..|xx..|x…  0
+ 214  norvel        xx...xx..x.....xxx...xxx...x/4              bass |xx..|.xx.|.x..|...x|xx..|.xxx|.…  0
+ 215  norvel        x..x....x..xx..x...x..x..xxx/5            K |x..x|....|x..x|x..x|...x|..x.|.xxx|\…  0
+ 216  norvel        x...x.x..x..x..xx..x..x...xx/4              bass |x...|x.x.|.x..|x..x|x..x|..x.|.…  0
+ 217  norvel        x...xx...xx..xx...xx/2                      bass |x...|xx..|.xx.|.xx.|..xx|\n  cl…  0
+ 218  norvel        x..x...xx..x..x....x..xx..xx/5              bass |x..x|...x|x..x|..x.|...x|..xx|.…  0
+ 219  norvel        x..x..x....x....x....xxx/3                  bass |x..x|..x.|...x|....|x...|.xxx|\…  0
+ 220  norvel        x....x...xx.....x..x..xx/3                  bass |x...|.x..|.xx.|....|x..x|..xx|\…  0
+ 221  norvel        x..x..x..x..x...x...x..x/4                  bass |x..x|..x.|.x..|x...|x...|x..x|\…  0
+ 222  norvel        xx..x...x...x..xx...x..x/5                  bass |xx..|x...|x...|x..x|x...|x..x|\…  0
+ 223  norvel        xx..x..x..xx...x..x....x/5                K |xx..|x..x|..xx|...x|..x.|...x|\nS |x…  0
+ 224  norvel        x...x.x..x..x..x/4                          bass |x...|x.x.|.x..|x..x|\n  clap |.…  0
+ 225  norvel        x..x...x...x.x..x..x/4                      bass |x..x|...x|...x|.x..|x..x|\n  cl…  0
+ 226  norvel        x....x...xxx..xx..xx/2                      bass |x...|.x..|.xxx|..xx|..xx|\n  cl…  0
+ 227  norvel        xxx..xx....xxx....xxx....xxx/3              bass |xxx.|.xx.|...x|xx..|..xx|x...|.…  0
+ 228  norvel        xx....xxx..xx..x.xxx/3                      bass |xx..|..xx|x..x|x..x|.xxx|\n  cl…  0
+ 229  norvel        xx....xx...xx...xxx....x/3                  bass |xx..|..xx|...x|x...|xxx.|...x|\…  0
+ 230  norvel        xxx...xx...x...xx..xx..x/4                  bass |xxx.|..xx|...x|...x|x..x|x..x|\…  0
+ 231  norvel        xxx.....xxx....xxx....xx/2                K |xxx.|....|xxx.|...x|xx..|..xx|\nS |x…  0
+ 232  norvel        x...xx..xx.xx..xx..x...x...x/4              bass |x...|xx..|xx.x|x..x|x..x|...x|.…  0
+ 233  norvel        xx...xx...xx..x..xx...xx/2                  bass |xx..|.xx.|..xx|..x.|.xx.|..xx|\…  0
+ 234  norvel        x..x.xx.....xxx...xx..xx/4                  bass |x..x|.xx.|....|xxx.|..xx|..xx|\…  0
+ 235  norvel        x..xx...x..x..x...xx...x/4                  bass |x..x|x...|x..x|..x.|..xx|...x|\…  0
+ 236  norvel        x..x..xx...xx...x...xx..x.xx/4              bass |x..x|..xx|...x|x...|x...|xx..|x…  0
+ 237  norvel        xx..xx....x.....x..x/3                      bass |xx..|xx..|..x.|....|x..x|\n  cl…  0
+ 238  norvel        xx...xx...x...x..x....x...xx/2              bass |xx..|.xx.|..x.|..x.|.x..|..x.|.…  0
+ 239  norvel        xxx...x..x....x...xxx...x..x/5            K |xxx.|..x.|.x..|..x.|..xx|x...|x..x|\…  0
+ 240  norvel        x...xx..x...xx...xx...xx..xx/4              bass |x...|xx..|x...|xx..|.xx.|..xx|.…  0
+ 241  norvel        xx...xxx..xxx..xx...xxx....x/3              bass |xx..|.xxx|..xx|x..x|x...|xxx.|.…  0
+ 242  norvel        xxx....xxx...xxx...xxx....xx/2              bass |xxx.|...x|xx..|.xxx|...x|xx..|.…  0
+ 243  norvel        xx....xxx.....xx..x..xx....x/3              bass |xx..|..xx|x...|..xx|..x.|.xx.|.…  0
+ 244  norvel        x..xx....xxx...xx...x.....xx/4              bass |x..x|x...|.xxx|...x|x...|x...|.…  0
+ 245  norvel        xx....xxx...xx....x...xx/3                  bass |xx..|..xx|x...|xx..|..x.|..xx|\…  0
+ 246  norvel        xxx...xx..xx...xx....xxx/3                  bass |xxx.|..xx|..xx|...x|x...|.xxx|\…  0
+ 247  norvel        xx...xxx..xx....x..x/3                    K |xx..|.xxx|..xx|....|x..x|\nS |..xx|x…  0
+ 248  norvel        xx..x...x..xx..x..xx/2                      bass |xx..|x...|x..x|x..x|..xx|\n  cl…  0
+ 249  norvel        x..x.x..x..x...x..x...xx..xx/5              bass |x..x|.x..|x..x|...x|..x.|..xx|.…  0
+ 250  norvel        x..xx..x...x...x..xx/4                      bass |x..x|x..x|...x|...x|..xx|\n  cl…  0
+ 251  norvel        xx.xx...x...xx...xxx/2                      bass |xx.x|x...|x...|xx..|.xxx|\n  cl…  0
+ 252  norvel        xxx....xxx....xxx..xx....xxx/3              bass |xxx.|...x|xx..|..xx|x..x|x...|.…  0
+ 253  norvel        xx....x..xx..xx....x..xx/3                  bass |xx..|..x.|.xx.|.xx.|...x|..xx|\…  0
+ 254  norvel        xx..x.x..x..xx...xx....xx..x/3              bass |xx..|x.x.|.x..|xx..|.xx.|...x|x…  0
+ 255  norvel        x..xx..x..x...xxx..x...x..xx/4            K |x..x|x..x|..x.|..xx|x..x|...x|..xx|\…  0
+ 256  norvel        x..xxx...xx..x...xxx.....xxx/3              bass |x..x|xx..|.xx.|.x..|.xxx|....|.…  0
+ 257  norvel        xx..xx..x...xx.....xx...x..x/3              bass |xx..|xx..|x...|xx..|...x|x...|x…  0
+ 258  norvel        xx...xx...xx...x..xx/2                      bass |xx..|.xx.|..xx|...x|..xx|\n  cl…  0
+ 259  norvel        x..x..xx...xx...x..xx..x/4                  bass |x..x|..xx|...x|x...|x..x|x..x|\…  0
+ 260  norvel        xxx....xxx....xxx...xx....xx/3              bass |xxx.|...x|xx..|..xx|x...|xx..|.…  0
+ 261  norvel        xx.x...xx..x...xx..x/4                      bass |xx.x|...x|x..x|...x|x..x|\n  cl…  0
+ 262  norvel        xx...x....xx...x..xx/2                      bass |xx..|.x..|..xx|...x|..xx|\n  cl…  0
+ 263  norvel        xx...xx...xx....xx....xx/3                K |xx..|.xx.|..xx|....|xx..|..xx|\nS |x…  0
+ 264  norvel        xx....x..x...x..x..x/3                      bass |xx..|..x.|.x..|.x..|x..x|\n  cl…  0
+ 265  norvel        xx....x....x.....x...xx...xx/2              bass |xx..|..x.|...x|....|.x..|.xx.|.…  0
+ 266  norvel        x...x...xx..xx..x..x..x...xx/4              bass |x...|x...|xx..|xx..|x..x|..x.|.…  0
+ 267  norvel        x..xx..x..x...xx...x...x/4                  bass |x..x|x..x|..x.|..xx|...x|...x|\…  0
+ 268  norvel        x...x..xx..xx..x/2                          bass |x...|x..x|x..x|x..x|\n  clap |.…  0
+ 269  norvel        x..xx..x...x...x/2                          bass |x..x|x..x|...x|...x|\n  clap |.…  0
+ 270  norvel        x...x..x..xx..x..x..x..x/4                  bass |x...|x..x|..xx|..x.|.x..|x..x|\…  0
+ 271  norvel        xx...xx...x..x..x...x..x/2                K |xx..|.xx.|..x.|.x..|x...|x..x|\nS |x…  0
+ 272  norvel        x..x..x.x..x...x/2                          bass |x..x|..x.|x..x|...x|\n  clap |x…  0
+ 273  norvel        x...x..x..x..x..x..x/4                      bass |x...|x..x|..x.|.x..|x..x|\n  cl…  0
+ 274  norvel        xx..x..xx..x...xx..x/4                      bass |xx..|x..x|x..x|...x|x..x|\n  cl…  0
+ 275  norvel        xx....xx...xx...xx....xx/3                  bass |xx..|..xx|...x|x...|xx..|..xx|\…  0
+ 276  norvel        x..x...xx..x...x...x..xx/2                  bass |x..x|...x|x..x|...x|...x|..xx|\…  0
+ 277  norvel        x..x..xx..x..x...x..x..x/5                  bass |x..x|..xx|..x.|.x..|.x..|x..x|\…  0
+ 278  norvel        x...xx....x....xx..x/3                      bass |x...|xx..|..x.|...x|x..x|\n  cl…  0
+ 279  norvel        x....x..x...x..x..xx..x..xxx/5            K |x...|.x..|x...|x..x|..xx|..x.|.xxx|\…  0
+ 280  norvel        x..x..x..x..xx..x...x..xx..x/4              bass |x..x|..x.|.x..|xx..|x...|x..x|x…  0
+ 281  norvel        x..x...x..xx..x...x....x/2                  bass |x..x|...x|..xx|..x.|..x.|...x|\…  1
+ 282  norvel        xx....xx.....xx.....xx....xx/2              bass |xx..|..xx|....|.xx.|....|xx..|.…  0
+ 283  norvel        x...x..xx..xx..x/2                          bass |x...|x..x|x..x|x..x|\n  clap |.…  0
+ 284  norvel        xx..x..x..x...xx..x..xx...xx/4              bass |xx..|x..x|..x.|..xx|..x.|.xx.|.…  0
+ 285  norvel        xx...x...xx...x..xx...xx/4                  bass |xx..|.x..|.xx.|..x.|.xx.|..xx|\…  0
+ 286  norvel        x....xx....x....x.x...x....x/3              bass |x...|.xx.|...x|....|x.x.|..x.|.…  0
+ 287  norvel        x...x...x...x...xx..xx..x..x/4            K |x...|x...|x...|x...|xx..|xx..|x..x|\…  0
+ 288  norvel        x..x..x..x...x..x..x/4                      bass |x..x|..x.|.x..|.x..|x..x|\n  cl…  0
+ 289  norvel        xxx....x.....xxx....xx...xxx/3              bass |xxx.|...x|....|.xxx|....|xx..|.…  0
+ 290  norvel        x..x..xx...x..x..x..x...x..x/4              bass |x..x|..xx|...x|..x.|.x..|x...|x…  0
+ 291  norvel        x...xx..xx..x...x..x/4                      bass |x...|xx..|xx..|x...|x..x|\n  cl…  0
+ 292  norvel        x..x...x..x.x..x..xx/2                      bass |x..x|...x|..x.|x..x|..xx|\n  cl…  0
+ 293  norvel        x...x...x..xx..xx....xxx/2                  bass |x...|x...|x..x|x..x|x...|.xxx|\…  0
+ 294  norvel        x...xx..x..x..x..x..x..x/4                  bass |x...|xx..|x..x|..x.|.x..|x..x|\…  0
+ 295  norvel        x...x.x..x..x...x..x/2                    K |x...|x.x.|.x..|x...|x..x|\nS |.xxx|.…  0
+ 296  norvel        x..x.x..x..x..x...x...xx/4                  bass |x..x|.x..|x..x|..x.|..x.|..xx|\…  0
+ 297  norvel        x...x...x..x..xx...x...x..xx/4              bass |x...|x...|x..x|..xx|...x|...x|.…  0
+ 298  norvel        xxx.....xx.....xx....xxx/2                  bass |xxx.|....|xx..|...x|x...|.xxx|\…  0
+ 299  norvel        xx..x...xx..x...x...x..x/4                  bass |xx..|x...|xx..|x...|x...|x..x|\…  0
+ 300  norvel        x...x..x..x...x....x/2                      bass |x...|x..x|..x.|..x.|...x|\n  cl…  0
+ 301  norvel        xx.....xxx....xxx.....xx/2                  bass |xx..|...x|xx..|..xx|x...|..xx|\…  0
+ 302  norvel        xx....xxx....x...xx...xx/3                  bass |xx..|..xx|x...|.x..|.xx.|..xx|\…  0
+ 303  norvel        x..x.x..xx..x..x..xx...x/4                K |x..x|.x..|xx..|x..x|..xx|...x|\nS |.…  0
+ 304  norvel        x..x..x..x..x...x..x/2                      bass |x..x|..x.|.x..|x...|x..x|\n  cl…  0
+ 305  norvel        x.....x...xx..xx/2                          bass |x...|..x.|..xx|..xx|\n  clap |.…  0
+ 306  norvel        x...xx...xx...x.x..x/4                      bass |x...|xx..|.xx.|..x.|x..x|\n  cl…  0
+ 307  norvel        xx....xx....x...xx....x...xx/3              bass |xx..|..xx|....|x...|xx..|..x.|.…  0
+ 308  norvel        xxx..xx..x....xx..xx...xx..x/2              bass |xxx.|.xx.|.x..|..xx|..xx|...x|x…  0
+ 309  norvel        x...x...x...x..xx.xx/4                      bass |x...|x...|x...|x..x|x.xx|\n  cl…  0
+ 310  norvel        x...xx...x...xx...xx...xx..x/5              bass |x...|xx..|.x..|.xx.|..xx|...x|x…  0
+ 311  norvel        x....xxx...x..xxx....xxx/2                K |x...|.xxx|...x|..xx|x...|.xxx|\nS |.…  1
+ 312  norvel        x....x..x..x...x/2                          bass |x...|.x..|x..x|...x|\n  clap |x…  0
+ 313  norvel        xxx...xx....xx...xx...xx/3                  bass |xxx.|..xx|....|xx..|.xx.|..xx|\…  0
+ 314  norvel        xx...xxx..xx...xx....xx...xx/2              bass |xx..|.xxx|..xx|...x|x...|.xx.|.…  0
+ 315  norvel        x...xx...x..xx....x...x...xx/3              bass |x...|xx..|.x..|xx..|..x.|..x.|.…  0
+ 316  norvel        xx...xx....xxx....xx/2                      bass |xx..|.xx.|...x|xx..|..xx|\n  cl…  0
+ 317  norvel        x.....x....x...x..xx/3                      bass |x...|..x.|...x|...x|..xx|\n  cl…  0
+ 318  norvel        x...x.x..x..x..x/4                          bass |x...|x.x.|.x..|x..x|\n  clap |x…  0
+ 319  norvel        x...x...x..x..x..x.xx..x/4                K |x...|x...|x..x|..x.|.x.x|x..x|\nS |x…  0
+ 320  norvel        x...x..x..xx...x.x..x..x/5                  bass |x...|x..x|..xx|...x|.x..|x..x|\…  0
+ 321  norvel        x..x...x...x..x..x..x..x/4                  bass |x..x|...x|...x|..x.|.x..|x..x|\…  0
+ 322  norvel        x..x..x..x....x...x...xx/3                  bass |x..x|..x.|.x..|..x.|..x.|..xx|\…  0
+ 323  norvel        x..xx..x...x...xx...x..x/4                  bass |x..x|x..x|...x|...x|x...|x..x|\…  0
+ 324  norvel        xx...xx...x...x...xx..xx...x/4              bass |xx..|.xx.|..x.|..x.|..xx|..xx|.…  0
+ 325  norvel        xx...xx.x...xx..x..x/4                      bass |xx..|.xx.|x...|xx..|x..x|\n  cl…  0
+ 326  norvel        xx....xx.....xxx....xxx...xx/3              bass |xx..|..xx|....|.xxx|....|xxx.|.…  0
+ 327  norvel        x....xx..x..xx....xx...x/3                K |x...|.xx.|.x..|xx..|..xx|...x|\nS |x…  0
+ 328  norvel        x...x..x..x...x..x..x...x..x/4              bass |x...|x..x|..x.|..x.|.x..|x...|x…  0
+ 329  norvel        xx.x...x..xx..xx/2                          bass |xx.x|...x|..xx|..xx|\n  clap |x…  1
+ 330  norvel        xx...x...x....xx/2                          bass |xx..|.x..|.x..|..xx|\n  clap |.…  0
+ 331  norvel        x..x...x..x..x...x..x..xx..x/5              bass |x..x|...x|..x.|.x..|.x..|x..x|x…  0
+ 332  norvel        xx..x..x..x...x....x/3                      bass |xx..|x..x|..x.|..x.|...x|\n  cl…  0
+ 333  norvel        x..xx...xx...xxx.....xxx/2                  bass |x..x|x...|xx..|.xxx|....|.xxx|\…  0
+ 334  norvel        xx...x..xx...xx...xx..xx/2                  bass |xx..|.x..|xx..|.xx.|..xx|..xx|\…  0
+ 335  norvel        xx.....xx....xx....x..xx/3                K |xx..|...x|x...|.xx.|...x|..xx|\nS |x…  0
+ 336  norvel        xx...xx..x..x....xx..xxx/3                  bass |xx..|.xx.|.x..|x...|.xx.|.xxx|\…  0
+ 337  norvel        xx....xxx....xxx.....xxx/2                  bass |xx..|..xx|x...|.xxx|....|.xxx|\…  0
+ 338  norvel        x.x..x..x..x...x..xx/2                      bass |x.x.|.x..|x..x|...x|..xx|\n  cl…  0
+ 339  norvel        xx...xx..x..x...x..x..xx/2                  bass |xx..|.xx.|.x..|x...|x..x|..xx|\…  0
+ 340  norvel        xx...xxx....x...xx....x..xxx/2              bass |xx..|.xxx|....|x...|xx..|..x.|.…  0
+ 341  norvel        xx.xx..x..xx...x...xx..x/2                  bass |xx.x|x..x|..xx|...x|...x|x..x|\…  0
+ 342  norvel        xx...xx.....x...xx....xx/2                  bass |xx..|.xx.|....|x...|xx..|..xx|\…  0
+ 343  norvel        x..x..x...x..x..x....x.x/3                K |x..x|..x.|..x.|.x..|x...|.x.x|\nS |.…  0
+ 344  norvel        x..x..x..x..x...x..x..x...xx/5              bass |x..x|..x.|.x..|x...|x..x|..x.|.…  0
+ 345  norvel        xx..xx...x...xx..xx....x/3                  bass |xx..|xx..|.x..|.xx.|.xx.|...x|\…  0
+ 346  norvel        xxx....x.....xxx...xx....xxx/2              bass |xxx.|...x|....|.xxx|...x|x...|.…  0
+ 347  norvel        xx..x..x...x..x...xx..xx..xx/4              bass |xx..|x..x|...x|..x.|..xx|..xx|.…  0
+ 348  norvel        x...x....x...xxx...x/3                      bass |x...|x...|.x..|.xxx|...x|\n  cl…  0
+ 349  norvel        xx...x..xxx.....xx....xx/3                  bass |xx..|.x..|xxx.|....|xx..|..xx|\…  0
+ 350  norvel        x...x...x...xx..x..x....x..x/5              bass |x...|x...|x...|xx..|x..x|....|x…  0
+ 351  norvel        x.x..x..x..xx...x..x/2                    K |x.x.|.x..|x..x|x...|x..x|\nS |xx.x|x…  1
+ 352  norvel        x..x..x.x...x..x/2                          bass |x..x|..x.|x...|x..x|\n  clap |.…  0
+ 353  norvel        x...xxx..xx..xx....x/2                      bass |x...|xxx.|.xx.|.xx.|...x|\n  cl…  0
+ 354  norvel        xxx..x...xx..x...x..x..x/4                  bass |xxx.|.x..|.xx.|.x..|.x..|x..x|\…  0
+ 355  norvel        x...xxx.xx..x...x....xx....x/2              bass |x...|xxx.|xx..|x...|x...|.xx.|.…  1
+ 356  norvel        x.x...x...x..x..x..x/4                      bass |x.x.|..x.|..x.|.x..|x..x|\n  cl…  0
+ 357  norvel        xx..x..x...x...x.x..x..xx..x/4              bass |xx..|x..x|...x|...x|.x..|x..x|x…  0
+ 358  norvel        xx..x..xx.xx..xx...x..xx/5                  bass |xx..|x..x|x.xx|..xx|...x|..xx|\…  0
+ 359  norvel        x..x..x...xx..x..x...xxx/4                K |x..x|..x.|..xx|..x.|.x..|.xxx|\nS |x…  0
+ 360  norvel        x...xx....xxx...xx...xxx/3                  bass |x...|xx..|..xx|x...|xx..|.xxx|\…  0
+ 361  norvel        x...xx....xxx...xx.x/3                      bass |x...|xx..|..xx|x...|xx.x|\n  cl…  0
+ 362  norvel        xx.....x...xx..xx..x/2                      bass |xx..|...x|...x|x..x|x..x|\n  cl…  0
+ 363  norvel        xxx...xxx...x...xxx...xx..xx/4              bass |xxx.|..xx|x...|x...|xxx.|..xx|.…  0
+ 364  norvel        x..x..x..x..xx..x.xx...x/4                  bass |x..x|..x.|.x..|xx..|x.xx|...x|\…  0
+ 365  norvel        x...xxx..x....xxx..x..xx/3                  bass |x...|xxx.|.x..|..xx|x..x|..xx|\…  0
+ 366  norvel        x...x..x..x..x..x..x...xx..x/5              bass |x...|x..x|..x.|.x..|x..x|...x|x…  0
+ 367  norvel        x...x....x.x...x/3                        K |x...|x...|.x.x|...x|\nS |xxxx|xxxx|x…  0
+ 368  norvel        x.....xxx.....xx..xxx.....xx/3              bass |x...|..xx|x...|..xx|..xx|x...|.…  0
+ 369  norvel        x...x..x...xx..x...x/2                      bass |x...|x..x|...x|x..x|...x|\n  cl…  0
+ 370  norvel        x...x..x...x...xxx..x..x/2                  bass |x...|x..x|...x|...x|xx..|x..x|\…  0
+ 371  norvel        xx..xxx....x....xx...xxx/3                  bass |xx..|xxx.|...x|....|xx..|.xxx|\…  0
+ 372  norvel        xx....xx...xx.xx...xxx....xx/2              bass |xx..|..xx|...x|x.xx|...x|xx..|.…  0
+ 373  norvel        xx..x..x....x....xx....x...x/2              bass |xx..|x..x|....|x...|.xx.|...x|.…  0
+ 374  norvel        x..xx..x..x.xx...x..x..x...x/4              bass |x..x|x..x|..x.|xx..|.x..|x..x|.…  0
+ 375  norvel        x..x..x..x...x...xx..x..x..x/5            K |x..x|..x.|.x..|.x..|.xx.|.x..|x..x|\…  0
+ 376  norvel        x..x...x..x...x..xx..x..x..x/4              bass |x..x|...x|..x.|..x.|.xx.|.x..|x…  1
+ 377  norvel        xx...x.x....x....x...xxx/2                  bass |xx..|.x.x|....|x...|.x..|.xxx|\…  0
+ 378  norvel        x.....xxx.....xxx....xx..xxx/3              bass |x...|..xx|x...|..xx|x...|.xx.|.…  0
+ 379  norvel        x..x...x..x..x...x..x..x/4                  bass |x..x|...x|..x.|.x..|.x..|x..x|\…  0
+ 380  norvel        xx..xx..x..x....x....x..x..x/5              bass |xx..|xx..|x..x|....|x...|.x..|x…  0
+ 381  norvel        xx..x..xxx..xx...x..x.xx...x/4              bass |xx..|x..x|xx..|xx..|.x..|x.xx|.…  0
+ 382  norvel        x...x.xx.....xx...xx/3                      bass |x...|x.xx|....|.xx.|..xx|\n  cl…  0
+ 383  norvel        x..x..x.x..x...x...x/5                    K |x..x|..x.|x..x|...x|...x|\nS |x.xx|.…  0
+ 384  norvel        x..xx...x...x..x...x/4                      bass |x..x|x...|x...|x..x|...x|\n  cl…  0
+ 385  norvel        x..x..x..x...x..x..x/4                      bass |x..x|..x.|.x..|.x..|x..x|\n  cl…  0
+ 386  norvel        xx..x....x...x....x..x..x..x/3              bass |xx..|x...|.x..|.x..|..x.|.x..|x…  0
+ 387  norvel        xx....xxx...xxx....xx....xxx/3              bass |xx..|..xx|x...|xxx.|...x|x...|.…  0
+ 388  norvel        xx....xxx....xx...xx/2                      bass |xx..|..xx|x...|.xx.|..xx|\n  cl…  0
+ 389  norvel        xxx...xxx...xxx..xx....x/3                  bass |xxx.|..xx|x...|xxx.|.xx.|...x|\…  0
+ 390  norvel        x...x...xx.xx..x..xx/4                      bass |x...|x...|xx.x|x..x|..xx|\n  cl…  0
+ 391  norvel        x..x..x.xx...x...xx....x/3                K |x..x|..x.|xx..|.x..|.xx.|...x|\nS |.…  0
+ 392  norvel        xx...xxx....xx.....xx....xxx/3              bass |xx..|.xxx|....|xx..|...x|x...|.…  0
+ 393  norvel        xx..x..x..x..x..x..x...x...x/5              bass |xx..|x..x|..x.|.x..|x..x|...x|.…  0
+ 394  norvel        x..x..x....xx..xx..xx..x/3                  bass |x..x|..x.|...x|x..x|x..x|x..x|\…  1
+ 395  norvel        x...x..xxx.xx....xxx/3                      bass |x...|x..x|xx.x|x...|.xxx|\n  cl…  0
+ 396  norvel        xx...xxx..x....x....x..xx.xx/3              bass |xx..|.xxx|..x.|...x|....|x..x|x…  0
+ 397  norvel        x..x...x..xx..x...x..x..x..x/4              bass |x..x|...x|..xx|..x.|..x.|.x..|x…  0
+ 398  norvel        xx..x..x..x..x.x...x...xx..x/4              bass |xx..|x..x|..x.|.x.x|...x|...x|x…  0
+ 399  norvel        xxx..xx....x...xx....xxx/2                K |xxx.|.xx.|...x|...x|x...|.xxx|\nS |.…  0
+ 400  norvel        xx....xx...x....xx...x...xxx/2              bass |xx..|..xx|...x|....|xx..|.x..|.…  0
+ 401  norvel        xx...x..x..x..x...xxx..x/5                  bass |xx..|.x..|x..x|..x.|..xx|x..x|\…  0
+ 402  norvel        xx...xx...xx..x....x...xx..x/3              bass |xx..|.xx.|..xx|..x.|...x|...x|x…  0
+ 403  norvel        xxx...x....xx.....xxx.....xx/3              bass |xxx.|..x.|...x|x...|..xx|x...|.…  0
+ 404  norvel        x..xx...x..x..x..xxx...x...x/5              bass |x..x|x...|x..x|..x.|.xxx|...x|.…  0
+ 405  norvel        x.x..x..x..xx...x..x...x/5                  bass |x.x.|.x..|x..x|x...|x..x|...x|\…  0
+ 406  norvel        xx...x....xx....xx...xx....x/2              bass |xx..|.x..|..xx|....|xx..|.xx.|.…  0
+ 407  norvel        x...xx..x...xx...xx..xxx/2                K |x...|xx..|x...|xx..|.xx.|.xxx|\nS |x…  0
+ 408  norvel        xxx..x..x...x..xx..x..xx..xx/4              bass |xxx.|.x..|x...|x..x|x..x|..xx|.…  0
+ 409  norvel        xx....x...xx.....xxx....x.xx/4              bass |xx..|..x.|..xx|....|.xxx|....|x…  0
+ 410  norvel        xx.....xxx...xxx....xx...xxx/3              bass |xx..|...x|xx..|.xxx|....|xx..|.…  0
+ 411  norvel        x...x.x....xx..x...x/2                      bass |x...|x.x.|...x|x..x|...x|\n  cl…  0
+ 412  norvel        x..x..xx..xx..xx....x..x/5                  bass |x..x|..xx|..xx|..xx|....|x..x|\…  0
+ 413  norvel        xx....xxx..xxx.....xxx.....x/3              bass |xx..|..xx|x..x|xx..|...x|xx..|.…  0
+ 414  norvel        x..x..x..x...x..x..xx..x/5                  bass |x..x|..x.|.x..|.x..|x..x|x..x|\…  0
+ 415  norvel        x....xx....xx...x....xx...xx/3            K |x...|.xx.|...x|x...|x...|.xx.|..xx|\…  0
+ 416  norvel        x..x...x..x...x...x.x..x/5                  bass |x..x|...x|..x.|..x.|..x.|x..x|\…  0
+ 417  norvel        x...x..x.x..x...x..x/4                      bass |x...|x..x|.x..|x...|x..x|\n  cl…  0
+ 418  norvel        x..x...x..x.x..x/4                          bass |x..x|...x|..x.|x..x|\n  clap |.…  0
+ 419  norvel        x...x..x..x..xx..x..x..x/4                  bass |x...|x..x|..x.|.xx.|.x..|x..x|\…  0
+ 420  norvel        x...x.xx.....xx...xx...x/3                  bass |x...|x.xx|....|.xx.|..xx|...x|\…  0
+ 421  norvel        xxx...xx.xx.....xx...xx...xx/4              bass |xxx.|..xx|.xx.|....|xx..|.xx.|.…  0
+ 422  norvel        x...x..x..x..x..x..x/4                      bass |x...|x..x|..x.|.x..|x..x|\n  cl…  0
+ 423  norvel        xx..x...x...x..x/2                        K |xx..|x...|x...|x..x|\nS |..xx|xxxx|x…  0
+ 424  norvel        xx..xx.....xxx....xx..xx/3                  bass |xx..|xx..|...x|xx..|..xx|..xx|\…  1
+ 425  norvel        x.x...x..x..x..x/4                          bass |x.x.|..x.|.x..|x..x|\n  clap |x…  0
+ 426  norvel        xx..x..xx..x...xx..x/4                      bass |xx..|x..x|x..x|...x|x..x|\n  cl…  0
+ 427  norvel        xxx...x....xxx....xx...x/3                  bass |xxx.|..x.|...x|xx..|..xx|...x|\…  0
+ 428  norvel        x..x..x..xx....x...x/3                      bass |x..x|..x.|.xx.|...x|...x|\n  cl…  0
+ 429  norvel        x..xx.x...xx...x..xx/2                      bass |x..x|x.x.|..xx|...x|..xx|\n  cl…  0
+ 430  norvel        x...xx.....x...x....x.....xx/2              bass |x...|xx..|...x|...x|....|x...|.…  0
+ 431  norvel        xxx..x..xxx...x...x..x.x..xx/4            K |xxx.|.x..|xxx.|..x.|..x.|.x.x|..xx|\…  0
+ 432  norvel        xxx...x....xx...xx..xx.x...x/5              bass |xxx.|..x.|...x|x...|xx..|xx.x|.…  0
+ 433  norvel        xx..xx..xxx...xx..x...xx...x/4              bass |xx..|xx..|xxx.|..xx|..x.|..xx|.…  0
+ 434  norvel        xxx..x..x..x..x..xxx..x...xx/4              bass |xxx.|.x..|x..x|..x.|.xxx|..x.|.…  0
+ 435  norvel        x..xx...x..xx...xx....x...xx/3              bass |x..x|x...|x..x|x...|xx..|..x.|.…  0
+ 436  norvel        x..x..x....x..x.x...x..x/3                  bass |x..x|..x.|...x|..x.|x...|x..x|\…  0
+ 437  norvel        x..x...x..x..x...x..xx..x..x/4              bass |x..x|...x|..x.|.x..|.x..|xx..|x…  0
+ 438  norvel        x...x..x..x....x/3                          bass |x...|x..x|..x.|...x|\n  clap |.…  0
+ 439  norvel        xxx....x.....x.....xxx....xx/2            K |xxx.|...x|....|.x..|...x|xx..|..xx|\…  0
+ 440  norvel        xx....x..x...xx....x..x...xx/2              bass |xx..|..x.|.x..|.xx.|...x|..x.|.…  0
+ 441  norvel        xx...xx.....xx...xxx/2                      bass |xx..|.xx.|....|xx..|.xxx|\n  cl…  0
+ 442  norvel        xx.....xx..xx...xx...xx...xx/4              bass |xx..|...x|x..x|x...|xx..|.xx.|.…  0
+ 443  norvel        x..xx..x..x.x..x...x...xx..x/4              bass |x..x|x..x|..x.|x..x|...x|...x|x…  0
+ 444  norvel        xx....xx...x...xxx...xx....x/3              bass |xx..|..xx|...x|...x|xx..|.xx.|.…  0
+ 445  norvel        x..x...xx..xx..xx..x/4                      bass |x..x|...x|x..x|x..x|x..x|\n  cl…  0
+ 446  norvel        xx...xx..x....xx/2                          bass |xx..|.xx.|.x..|..xx|\n  clap |x…  0
+ 447  norvel        x...x..x..x..x...xx...xx...x/4            K |x...|x..x|..x.|.x..|.xx.|..xx|...x|\…  0
+ 448  norvel        xx...xx.....xx....xx.....xxx/2              bass |xx..|.xx.|....|xx..|..xx|....|.…  0
+ 449  norvel        x..xx..x..x...x..x..x..x...x/4              bass |x..x|x..x|..x.|..x.|.x..|x..x|.…  0
+ 450  norvel        xxx....xx....xx...xx...xx..x/3              bass |xxx.|...x|x...|.xx.|..xx|...x|x…  0
+ 451  norvel        xx.....xx..x....xx...xx...xx/4              bass |xx..|...x|x..x|....|xx..|.xx.|.…  0
+ 452  norvel        x..x...x..xx.....xxx/3                      bass |x..x|...x|..xx|....|.xxx|\n  cl…  0
+ 453  norvel        x.....xx...xx..xxx....x..xxx/3              bass |x...|..xx|...x|x..x|xx..|..x.|.…  0
+ 454  norvel        x..x..x..x.x...x..x...xx...x/5              bass |x..x|..x.|.x.x|...x|..x.|..xx|.…  0
+ 455  norvel        x..xx...x....xx..xx...x....x/5            K |x..x|x...|x...|.xx.|.xx.|..x.|...x|\…  0
+ 456  norvel        x.....xx..x.x..x/3                          bass |x...|..xx|..x.|x..x|\n  clap |x…  0
+ 457  norvel        x..x..x..xx..x..x..x..x...xx/5              bass |x..x|..x.|.xx.|.x..|x..x|..x.|.…  0
+ 458  norvel        xx...xxx.....xxx...x...x/3                  bass |xx..|.xxx|....|.xxx|...x|...x|\…  0
+ 459  norvel        xx.xx...x...x....x..x...x..x/3              bass |xx.x|x...|x...|x...|.x..|x...|x…  0
+ 460  norvel        xx.....xx.....xx...xx....xxx/2              bass |xx..|...x|x...|..xx|...x|x...|.…  0
+ 461  norvel        xx...xx...xxx...xxx...xx..xx/4              bass |xx..|.xx.|..xx|x...|xxx.|..xx|.…  0
+ 462  norvel        x....xx..xxx..x..x.....x/4                  bass |x...|.xx.|.xxx|..x.|.x..|...x|\…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+norvel                 463      14      3.0%

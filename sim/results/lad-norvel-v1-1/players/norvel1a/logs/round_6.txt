@@ -1,0 +1,486 @@
+Centaur Zendo round 6 (training)
+round_id : 5cf46fe243c4459884603bc89234c05d
+written  : 2026-09-04 20:28:12Z
+presented=474  answered=474  correct=125  skipped=0
+client answer latency: mean 0.120 ms  median 0.114 ms  max 1.234 ms  (n=475)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  norvel        x....xx...xx...xxx....xx/3                drum |x...|.xx.|..xx|...x|xx..|..xx|\nc…  1
+   1  norvel        xx..x...xxx....x..x....x/2                drum |xx..|x...|xxx.|...x|..x.|...x|\nc…  1
+   2  norvel        x..x...x..x..xx..x..x..x/4                drum |x..x|...x|..x.|.xx.|.x..|x..x|\nc…  1
+   3  norvel        x..xxx..x..x..x.x..x...x...x/4            drum |x..x|xx..|x..x|..x.|x..x|...x|...…  0
+   4  norvel        xx..xx...x..x..x...xx.xx/4                drum |xx..|xx..|.x..|x..x|...x|x.xx|\nc…  0
+   5  norvel        xx...xx.....xxx.....xx....xx/2            drum |xx..|.xx.|....|xxx.|....|xx..|..x…  1
+   6  norvel        xxx....xxx...xxx.....xxx/2                drum |xxx.|...x|xx..|.xxx|....|.xxx|\nc…  0
+   7  norvel        x...x..x..x..xxx...x/4                    drum |x...|x..x|..x.|.xxx|...x|\nclap |…  1
+   8  norvel        x.....xxx....xx....xxx....xx/3            drum |x...|..xx|x...|.xx.|...x|xx..|..x…  1
+   9  norvel        x....x..x...xx...x.....x/3                drum |x...|.x..|x...|xx..|.x..|...x|\nc…  0
+  10  norvel        xx...xx..x...xxx...xx.xx..xx/5            drum |xx..|.xx.|.x..|.xxx|...x|x.xx|..x…  0
+  11  norvel        xx..xx...x..xx..x..x/2                    drum |xx..|xx..|.x..|xx..|x..x|\nclap |…  0
+  12  norvel        xx...xx....x...x/2                        drum |xx..|.xx.|...x|...x|\nclap |x.xx|…  1
+  13  norvel        xxx...xxx..xx...xx...xxx...x/2            drum |xxx.|..xx|x..x|x...|xx..|.xxx|...…  0
+  14  norvel        x...x..x...x..xx/2                        drum |x...|x..x|...x|..xx|\nclap |.xxx|…  0
+  15  norvel        x...x...x....xx..x..x..xx..x/3            drum |x...|x...|x...|.xx.|.x..|x..x|x..…  1
+  16  norvel        x..xx.....xxx...xx....xxx..x/4            drum |x..x|x...|..xx|x...|xx..|..xx|x..…  0
+  17  norvel        x....x....xxx....x...xxx/3                drum |x...|.x..|..xx|x...|.x..|.xxx|\nc…  1
+  18  norvel        x...xx....x...xx/2                        drum |x...|xx..|..x.|..xx|\nclap |.xxx|…  0
+  19  norvel        x..xx.....xx..xx....xxx...xx/3            drum |x..x|x...|..xx|..xx|....|xxx.|..x…  0
+  20  norvel        xx...xx..x..xxx...xx...x/4                drum |xx..|.xx.|.x..|xxx.|..xx|...x|\nc…  0
+  21  norvel        xx..x...xx..x...x....xxx..xx/2            drum |xx..|x...|xx..|x...|x...|.xxx|..x…  0
+  22  norvel        xx.....xx....xx....xx....xxx/2            drum |xx..|...x|x...|.xx.|...x|x...|.xx…  0
+  23  norvel        xxx....xxx....xxx.....xx/2                drum |xxx.|...x|xx..|..xx|x...|..xx|\nc…  1
+  24  norvel        x..x..x..x..x...x..xx..x/4                drum |x..x|..x.|.x..|x...|x..x|x..x|\nc…  0
+  25  norvel        x..xx...x...xx.....x..xx/4                drum |x..x|x...|x...|xx..|...x|..xx|\nc…  0
+  26  norvel        xxx...xxx...xxx....xx.xx...x/3            drum |xxx.|..xx|x...|xxx.|...x|x.xx|...…  0
+  27  norvel        x..xx..x...x..x..x..x..x...x/5            drum |x..x|x..x|...x|..x.|.x..|x..x|...…  0
+  28  norvel        x...x..x..x..xx.....x...x..x/4            drum |x...|x..x|..x.|.xx.|....|x...|x..…  0
+  29  norvel        xx....x...x..x..x....xxx/3                drum |xx..|..x.|..x.|.x..|x...|.xxx|\nc…  0
+  30  norvel        x..xx....x...x....x...xx..xx/3            drum |x..x|x...|.x..|.x..|..x.|..xx|..x…  0
+  31  norvel        x..x..x...x..xx..x..x..x...x/4            drum |x..x|..x.|..x.|.xx.|.x..|x..x|...…  0
+  32  norvel        x...x..x..x....x/2                        drum |x...|x..x|..x.|...x|\nclap |..xx|…  0
+  33  norvel        x..xx..x...x..x...xx...x/4                drum |x..x|x..x|...x|..x.|..xx|...x|\nc…  0
+  34  norvel        xx..x...xx..x..x...x..x...xx/4            drum |xx..|x...|xx..|x..x|...x|..x.|..x…  0
+  35  norvel        xx.....xxx....xxx....xxx/2                drum |xx..|...x|xx..|..xx|x...|.xxx|\nc…  0
+  36  norvel        xx...xx..x...x....xx...x...x/3            drum |xx..|.xx.|.x..|.x..|..xx|...x|...…  1
+  37  norvel        xx.....xxx..x..xx...xx....xx/4            drum |xx..|...x|xx..|x..x|x...|xx..|..x…  0
+  38  norvel        x....xx...xx...x/2                        drum |x...|.xx.|..xx|...x|\nclap |.xx.|…  1
+  39  norvel        xx...x..xx..x..x..xx/2                    drum |xx..|.x..|xx..|x..x|..xx|\nclap |…  0
+  40  norvel        xx..x..xx..x...x/2                        drum |xx..|x..x|x..x|...x|\nclap |..xx|…  1
+  41  norvel        xxx.....xxx...x....xxx...xxx/2            drum |xxx.|....|xxx.|..x.|...x|xx..|.xx…  0
+  42  norvel        x..x..x....xxx...xx....x/3                drum |x..x|..x.|...x|xx..|.xx.|...x|\nc…  1
+  43  norvel        xx..x...xx..x..x.x..x..x/4                drum |xx..|x...|xx..|x..x|.x..|x..x|\nc…  0
+  44  norvel        xx.....xxx.....xx....xxx/2                drum |xx..|...x|xx..|...x|x...|.xxx|\nc…  1
+  45  norvel        xx.....x..xx.xx...x..xx....x/3            drum |xx..|...x|..xx|.xx.|..x.|.xx.|...…  1
+  46  norvel        xx...xx..x....xx..xx...x...x/3            drum |xx..|.xx.|.x..|..xx|..xx|...x|...…  1
+  47  norvel        xx..x..x...xx...x..x/4                    drum |xx..|x..x|...x|x...|x..x|\nclap |…  0
+  48  norvel        x..x..x..x..xx...x..x..x/4                drum |x..x|..x.|.x..|xx..|.x..|x..x|\nc…  0
+  49  norvel        xx...x..x..x..x..xx..x.x/5                drum |xx..|.x..|x..x|..x.|.xx.|.x.x|\nc…  0
+  50  norvel        x..xx..xx...x.....x..xx...xx/3            drum |x..x|x..x|x...|x...|..x.|.xx.|..x…  0
+  51  norvel        x..x...x...x...xx..x/4                    drum |x..x|...x|...x|...x|x..x|\nclap |…  0
+  52  norvel        x..xx....x...x..xx.....x/4                drum |x..x|x...|.x..|.x..|xx..|...x|\nc…  0
+  53  norvel        xx..xx....x.....xxx....x/3                drum |xx..|xx..|..x.|....|xxx.|...x|\nc…  0
+  54  norvel        x..x..x..xx....x/3                        drum |x..x|..x.|.xx.|...x|\nclap |.xx.|…  0
+  55  norvel        x....x...xx.x..x...x/3                    drum |x...|.x..|.xx.|x..x|...x|\nclap |…  0
+  56  norvel        xx..x..xx..x.xx....xx..x/3                drum |xx..|x..x|x..x|.xx.|...x|x..x|\nc…  0
+  57  norvel        x..x..xx..xx..xx...x/4                    drum |x..x|..xx|..xx|..xx|...x|\nclap |…  0
+  58  norvel        x..x...x..x..x.x...x...xx..x/4            drum |x..x|...x|..x.|.x.x|...x|...x|x..…  0
+  59  norvel        x.....x..x...x..x..x/4                    drum |x...|..x.|.x..|.x..|x..x|\nclap |…  0
+  60  norvel        xx..x...x..x..x....x..x...xx/3            drum |xx..|x...|x..x|..x.|...x|..x.|..x…  0
+  61  norvel        xxx.....x.....xx....xxx..xxx/2            drum |xxx.|....|x...|..xx|....|xxx.|.xx…  0
+  62  norvel        xx....x..xx...x...x...xx/3                drum |xx..|..x.|.xx.|..x.|..x.|..xx|\nc…  0
+  63  norvel        x.x...x..x...x....x..x..x..x/5            drum |x.x.|..x.|.x..|.x..|..x.|.x..|x..…  0
+  64  norvel        x...xx..x..x..x..x..x..x/4                drum |x...|xx..|x..x|..x.|.x..|x..x|\nc…  0
+  65  norvel        x....xx..xx...x...xx/3                    drum |x...|.xx.|.xx.|..x.|..xx|\nclap |…  0
+  66  norvel        xx..x...x...x..x..x....x..xx/5            drum |xx..|x...|x...|x..x|..x.|...x|..x…  0
+  67  norvel        x...x....x...xx.....xx....xx/4            drum |x...|x...|.x..|.xx.|....|xx..|..x…  0
+  68  norvel        xx...xx...xx...x..x..xx...xx/4            drum |xx..|.xx.|..xx|...x|..x.|.xx.|..x…  0
+  69  norvel        x..x...xx..x..xx..xx/2                    drum |x..x|...x|x..x|..xx|..xx|\nclap |…  0
+  70  norvel        xx.xx..xx...xx..x...x..x...x/5            drum |xx.x|x..x|x...|xx..|x...|x..x|...…  0
+  71  norvel        x..x..xx..xx...x/2                        drum |x..x|..xx|..xx|...x|\nclap |.xxx|…  1
+  72  norvel        xx....xxx....xx...xx/2                    drum |xx..|..xx|x...|.xx.|..xx|\nclap |…  0
+  73  norvel        xx...xx..xx..xx..x..x..x..xx/5            drum |xx..|.xx.|.xx.|.xx.|.x..|x..x|..x…  1
+  74  norvel        x..x...x..x....x/3                        drum |x..x|...x|..x.|...x|\nclap |.x..|…  0
+  75  norvel        xx...xx...xx..xx/2                        drum |xx..|.xx.|..xx|..xx|\nclap |..xx|…  0
+  76  norvel        xx...x...x...xxx.xx....x..xx/3            drum |xx..|.x..|.x..|.xxx|.xx.|...x|..x…  0
+  77  norvel        x..x...x..xx....x..x...x/2                drum |x..x|...x|..xx|....|x..x|...x|\nc…  0
+  78  norvel        x..x..x...x..x..x..x/4                    drum |x..x|..x.|..x.|.x..|x..x|\nclap |…  0
+  79  norvel        x....x..x....xx..x...xxx/2                drum |x...|.x..|x...|.xx.|.x..|.xxx|\nc…  0
+  80  norvel        x....xx...xx...xx....xx...xx/2            drum |x...|.xx.|..xx|...x|x...|.xx.|..x…  0
+  81  norvel        xx...x..x...xx..x...x..x/2                drum |xx..|.x..|x...|xx..|x...|x..x|\nc…  0
+  82  norvel        xx..xx...x..x....x..x...x..x/3            drum |xx..|xx..|.x..|x...|.x..|x...|x..…  1
+  83  norvel        xx..xxx...xxx....xx...xx/3                drum |xx..|xxx.|..xx|x...|.xx.|..xx|\nc…  0
+  84  norvel        xx.....xx....xxx...xx....xxx/3            drum |xx..|...x|x...|.xxx|...x|x...|.xx…  1
+  85  norvel        x.....xx.xx...xx...x/3                    drum |x...|..xx|.xx.|..xx|...x|\nclap |…  0
+  86  norvel        xx...xx.....x..xx...x....xxx/4            drum |xx..|.xx.|....|x..x|x...|x...|.xx…  0
+  87  norvel        x...x...xx...xxx...xxx..x..x/4            drum |x...|x...|xx..|.xxx|...x|xx..|x..…  0
+  88  norvel        x..x..x..x..x..x...x/5                    drum |x..x|..x.|.x..|x..x|...x|\nclap |…  0
+  89  norvel        x.....xx...xx.....x....x/3                drum |x...|..xx|...x|x...|..x.|...x|\nc…  0
+  90  norvel        xx..xx....x....x...x/3                    drum |xx..|xx..|..x.|...x|...x|\nclap |…  1
+  91  norvel        xx...x...xx..x.x...x/4                    drum |xx..|.x..|.xx.|.x.x|...x|\nclap |…  0
+  92  norvel        x..x...xx....xx...xx/2                    drum |x..x|...x|x...|.xx.|..xx|\nclap |…  1
+  93  norvel        x...x..x...x..x..x..x..x..xx/4            drum |x...|x..x|...x|..x.|.x..|x..x|..x…  0
+  94  norvel        xx....xx.x....xx/2                        drum |xx..|..xx|.x..|..xx|\nclap |..xx|…  0
+  95  norvel        x..x..xxx..xxx....x....x..xx/3            drum |x..x|..xx|x..x|xx..|..x.|...x|..x…  0
+  96  norvel        xx...x....x..xx...xx/2                    drum |xx..|.x..|..x.|.xx.|..xx|\nclap |…  1
+  97  norvel        xx...xx..xx....x/2                        drum |xx..|.xx.|.xx.|...x|\nclap |..xx|…  0
+  98  norvel        xx..xx...x..x..x...x...x/4                drum |xx..|xx..|.x..|x..x|...x|...x|\nc…  0
+  99  norvel        xx..x..xx..x..xx..xx...x..xx/4            drum |xx..|x..x|x..x|..xx|..xx|...x|..x…  0
+ 100  norvel        x..xx..xx..x....x..xxx....xx/3            drum |x..x|x..x|x..x|....|x..x|xx..|..x…  1
+ 101  norvel        xx...xx....x..x...xx/2                    drum |xx..|.xx.|...x|..x.|..xx|\nclap |…  1
+ 102  norvel        x..x...xx.xx....xxx....x..xx/3            drum |x..x|...x|x.xx|....|xxx.|...x|..x…  0
+ 103  norvel        xx..x...xx..x..x...x...x/4                drum |xx..|x...|xx..|x..x|...x|...x|\nc…  0
+ 104  norvel        x..xx...x..x....x.xx/3                    drum |x..x|x...|x..x|....|x.xx|\nclap |…  0
+ 105  norvel        x....x..x...x...x..xx..x...x/3            drum |x...|.x..|x...|x...|x..x|x..x|...…  0
+ 106  norvel        xxx..x.....xx..xx...x....xxx/2            drum |xxx.|.x..|...x|x..x|x...|x...|.xx…  0
+ 107  norvel        xx....x...xx...xx..x/3                    drum |xx..|..x.|..xx|...x|x..x|\nclap |…  0
+ 108  norvel        xx.xx....x....x....x...x..xx/3            drum |xx.x|x...|.x..|..x.|...x|...x|..x…  0
+ 109  norvel        xx..xx....x.xx...x...xx...xx/3            drum |xx..|xx..|..x.|xx..|.x..|.xx.|..x…  0
+ 110  norvel        x..xx...xx..x..x/2                        drum |x..x|x...|xx..|x..x|\nclap |xx..|…  0
+ 111  norvel        xx...x....xx...xxx....xx..xx/2            drum |xx..|.x..|..xx|...x|xx..|..xx|..x…  0
+ 112  norvel        x..x..x...x.x....x...xx...xx/3            drum |x..x|..x.|..x.|x...|.x..|.xx.|..x…  0
+ 113  norvel        x..x...x..x....x/2                        drum |x..x|...x|..x.|...x|\nclap |.xx.|…  0
+ 114  norvel        x..x..x...x.x..xx..x...x/5                drum |x..x|..x.|..x.|x..x|x..x|...x|\nc…  0
+ 115  norvel        x..xx..x..x...xx...x..xx...x/4            drum |x..x|x..x|..x.|..xx|...x|..xx|...…  1
+ 116  norvel        x..x..xx..xx...x...x..xx...x/4            drum |x..x|..xx|..xx|...x|...x|..xx|...…  1
+ 117  norvel        x..x..x..x..xx..x..x...x...x/5            drum |x..x|..x.|.x..|xx..|x..x|...x|...…  1
+ 118  norvel        xx...x...x.xx...xx....x...xx/5            drum |xx..|.x..|.x.x|x...|xx..|..x.|..x…  0
+ 119  norvel        xx...x...xx...xx..x....x/2                drum |xx..|.x..|.xx.|..xx|..x.|...x|\nc…  0
+ 120  norvel        xx...xx....xxx...xxx/2                    drum |xx..|.xx.|...x|xx..|.xxx|\nclap |…  0
+ 121  norvel        xxx....x...xxx..xx.x/2                    drum |xxx.|...x|...x|xx..|xx.x|\nclap |…  0
+ 122  norvel        x..xx...x..xx...x.xx...x..xx/4            drum |x..x|x...|x..x|x...|x.xx|...x|..x…  0
+ 123  norvel        xxx...xx....xx....xx/2                    drum |xxx.|..xx|....|xx..|..xx|\nclap |…  0
+ 124  norvel        x.xx.....x....xx..xx/2                    drum |x.xx|....|.x..|..xx|..xx|\nclap |…  0
+ 125  norvel        x..x...x..x..x..x..x...x/4                drum |x..x|...x|..x.|.x..|x..x|...x|\nc…  0
+ 126  norvel        xx....x...x...xx....xx...xxx/3            drum |xx..|..x.|..x.|..xx|....|xx..|.xx…  1
+ 127  norvel        x...x..x...x....x...x..xx..x/3            drum |x...|x..x|...x|....|x...|x..x|x..…  0
+ 128  norvel        xx..xx...xxx...xxx....xx/3                drum |xx..|xx..|.xxx|...x|xx..|..xx|\nc…  0
+ 129  norvel        x..x..x...x...x.x..x...x/4                drum |x..x|..x.|..x.|..x.|x..x|...x|\nc…  0
+ 130  norvel        xx..x..x..xx..x..x...x..x..x/4            drum |xx..|x..x|..xx|..x.|.x..|.x..|x..…  0
+ 131  norvel        x...x.x..x..xxx..x...x..x..x/5            drum |x...|x.x.|.x..|xxx.|.x..|.x..|x..…  0
+ 132  norvel        xx..x.x..xx..x..xx..x...x..x/5            drum |xx..|x.x.|.xx.|.x..|xx..|x...|x..…  0
+ 133  norvel        xx..xx...x...xxx/2                        drum |xx..|xx..|.x..|.xxx|\nclap |..xx|…  1
+ 134  norvel        x....xx..xx..xxx..xx/3                    drum |x...|.xx.|.xx.|.xxx|..xx|\nclap |…  1
+ 135  norvel        x..x..x..x..x...x...x..x/5                drum |x..x|..x.|.x..|x...|x...|x..x|\nc…  1
+ 136  norvel        xx...xx...xx....x....xx...xx/2            drum |xx..|.xx.|..xx|....|x...|.xx.|..x…  0
+ 137  norvel        x..x..x..x..xx...x..x..x...x/5            drum |x..x|..x.|.x..|xx..|.x..|x..x|...…  0
+ 138  norvel        xx.x...x..xx...x/2                        drum |xx.x|...x|..xx|...x|\nclap |.xx.|…  0
+ 139  norvel        x..x.x..x..x...xx..x..x...xx/4            drum |x..x|.x..|x..x|...x|x..x|..x.|..x…  0
+ 140  norvel        x...xx....xx...xx..x..xx/3                drum |x...|xx..|..xx|...x|x..x|..xx|\nc…  1
+ 141  norvel        xx....xx....xx..x..x/2                    drum |xx..|..xx|....|xx..|x..x|\nclap |…  0
+ 142  norvel        xx...xx...xx....xxx....x/2                drum |xx..|.xx.|..xx|....|xxx.|...x|\nc…  0
+ 143  norvel        xxx....x...xxx.....xxx....xx/3            drum |xxx.|...x|...x|xx..|...x|xx..|..x…  1
+ 144  norvel        x....x....xx.xx..xx....x/3                drum |x...|.x..|..xx|.xx.|.xx.|...x|\nc…  1
+ 145  norvel        x..xx..xx...xx....xx/2                    drum |x..x|x..x|x...|xx..|..xx|\nclap |…  0
+ 146  norvel        xx..xx..x..x...x...x/4                    drum |xx..|xx..|x..x|...x|...x|\nclap |…  0
+ 147  norvel        xxx..x...x..x...x..x/2                    drum |xxx.|.x..|.x..|x...|x..x|\nclap |…  0
+ 148  norvel        x..x.x...x...x..x..x/4                    drum |x..x|.x..|.x..|.x..|x..x|\nclap |…  1
+ 149  norvel        x..x....x..x..xx/3                        drum |x..x|....|x..x|..xx|\nclap |.xx.|…  1
+ 150  norvel        x....xx..x..x..x..xx/2                    drum |x...|.xx.|.x..|x..x|..xx|\nclap |…  0
+ 151  norvel        x..x...x..xx..xx..x..x.x...x/4            drum |x..x|...x|..xx|..xx|..x.|.x.x|...…  0
+ 152  norvel        x..xx..x..x...x..x..x..x/4                drum |x..x|x..x|..x.|..x.|.x..|x..x|\nc…  0
+ 153  norvel        x..xx....x....x...xx..xx/2                drum |x..x|x...|.x..|..x.|..xx|..xx|\nc…  0
+ 154  norvel        xxx....xxx....xx...xx..xx..x/3            drum |xxx.|...x|xx..|..xx|...x|x..x|x..…  0
+ 155  norvel        xxx.....xx.....xxx...xxx/2                drum |xxx.|....|xx..|...x|xx..|.xxx|\nc…  0
+ 156  norvel        x..x...xxx..xx...x.....xx..x/4            drum |x..x|...x|xx..|xx..|.x..|...x|x..…  0
+ 157  norvel        x..x...xxx.x..xx...x/4                    drum |x..x|...x|xx.x|..xx|...x|\nclap |…  1
+ 158  norvel        x...x...x..xx..x..x..x..x..x/4            drum |x...|x...|x..x|x..x|..x.|.x..|x..…  0
+ 159  norvel        xxx...x..xxx...xx...xx....xx/2            drum |xxx.|..x.|.xxx|...x|x...|xx..|..x…  0
+ 160  norvel        x...x...x..xx..x.x..x..x/4                drum |x...|x...|x..x|x..x|.x..|x..x|\nc…  0
+ 161  norvel        x..x...x..x..x..x..x...x/4                drum |x..x|...x|..x.|.x..|x..x|...x|\nc…  0
+ 162  norvel        x...x..x...x....x.xx/2                    drum |x...|x..x|...x|....|x.xx|\nclap |…  0
+ 163  norvel        xx...x....x...xx...x/2                    drum |xx..|.x..|..x.|..xx|...x|\nclap |…  0
+ 164  norvel        xx..xxx....xx.....xxx....xxx/2            drum |xx..|xxx.|...x|x...|..xx|x...|.xx…  1
+ 165  norvel        x...xx....xxx.....x...xx/2                drum |x...|xx..|..xx|x...|..x.|..xx|\nc…  0
+ 166  norvel        xx..x..x...x..x..x..x..x/4                drum |xx..|x..x|...x|..x.|.x..|x..x|\nc…  0
+ 167  norvel        xx..xx....xxx..x....x.....xx/4            drum |xx..|xx..|..xx|x..x|....|x...|..x…  0
+ 168  norvel        xx...xx..xx....x..x...xx/3                drum |xx..|.xx.|.xx.|...x|..x.|..xx|\nc…  0
+ 169  norvel        xxx...x....xx.....x...xx..xx/4            drum |xxx.|..x.|...x|x...|..x.|..xx|..x…  0
+ 170  norvel        x...x..x...x...x/2                        drum |x...|x..x|...x|...x|\nclap |.xxx|…  0
+ 171  norvel        x.x..x..x...x...x..x/4                    drum |x.x.|.x..|x...|x...|x..x|\nclap |…  1
+ 172  norvel        xx..xx..x..x...x...xx..x/4                drum |xx..|xx..|x..x|...x|...x|x..x|\nc…  0
+ 173  norvel        xx..xx..x....x....x...x....x/3            drum |xx..|xx..|x...|.x..|..x.|..x.|...…  0
+ 174  norvel        xxx...xx...xx...xx...x.x/4                drum |xxx.|..xx|...x|x...|xx..|.x.x|\nc…  0
+ 175  norvel        x.....x...xxx..xx..x...x/4                drum |x...|..x.|..xx|x..x|x..x|...x|\nc…  1
+ 176  norvel        xx..x....xx..x..xxx...xx/3                drum |xx..|x...|.xx.|.x..|xxx.|..xx|\nc…  0
+ 177  norvel        x...x..x...x..x..x..x..x/4                drum |x...|x..x|...x|..x.|.x..|x..x|\nc…  0
+ 178  norvel        x....x..x..x..x..x..xx.x/5                drum |x...|.x..|x..x|..x.|.x..|xx.x|\nc…  0
+ 179  norvel        x.x...x..x..x..x/2                        drum |x.x.|..x.|.x..|x..x|\nclap |.x.x|…  0
+ 180  norvel        x...xx..x.....xxx..x/3                    drum |x...|xx..|x...|..xx|x..x|\nclap |…  1
+ 181  norvel        xx...xx...xx..x..xx...xx/4                drum |xx..|.xx.|..xx|..x.|.xx.|..xx|\nc…  1
+ 182  norvel        xxx....xxx.....xx....xxx/2                drum |xxx.|...x|xx..|...x|x...|.xxx|\nc…  0
+ 183  norvel        x...x..xx..xx....xxx/3                    drum |x...|x..x|x..x|x...|.xxx|\nclap |…  0
+ 184  norvel        x...x..xx..x...x...x..xx..xx/4            drum |x...|x..x|x..x|...x|...x|..xx|..x…  1
+ 185  norvel        xx..xx....xx..xx..xx...x/2                drum |xx..|xx..|..xx|..xx|..xx|...x|\nc…  0
+ 186  norvel        x..xx..x..x..xx...xx/4                    drum |x..x|x..x|..x.|.xx.|..xx|\nclap |…  0
+ 187  norvel        x..x..x..xx..x..x...xx..x..x/5            drum |x..x|..x.|.xx.|.x..|x...|xx..|x..…  0
+ 188  norvel        x....xx..xx..xx.....xxx...xx/3            drum |x...|.xx.|.xx.|.xx.|....|xxx.|..x…  0
+ 189  norvel        x..xx...xx..x...x..x/4                    drum |x..x|x...|xx..|x...|x..x|\nclap |…  1
+ 190  norvel        x..xxx...xxx....x.....xx/3                drum |x..x|xx..|.xxx|....|x...|..xx|\nc…  0
+ 191  norvel        x..x...x..x..x..x...x..x...x/5            drum |x..x|...x|..x.|.x..|x...|x..x|...…  0
+ 192  norvel        xx.x....xx..x....xxx...x/3                drum |xx.x|....|xx..|x...|.xxx|...x|\nc…  1
+ 193  norvel        xx....x...xx..xx...x..xx..xx/5            drum |xx..|..x.|..xx|..xx|...x|..xx|..x…  1
+ 194  norvel        x..xx.x..xx...xx...x..xx/5                drum |x..x|x.x.|.xx.|..xx|...x|..xx|\nc…  0
+ 195  norvel        x..xx..x..x....x/2                        drum |x..x|x..x|..x.|...x|\nclap |.xx.|…  0
+ 196  norvel        x..x..x..x..x..x...x...x/4                drum |x..x|..x.|.x..|x..x|...x|...x|\nc…  1
+ 197  norvel        xx..xx....x..x...xx...x...xx/3            drum |xx..|xx..|..x.|.x..|.xx.|..x.|..x…  0
+ 198  norvel        x..x...x...x...x.x..x..x...x/4            drum |x..x|...x|...x|...x|.x..|x..x|...…  1
+ 199  norvel        x..xx....x..xxx.x..x...x/2                drum |x..x|x...|.x..|xxx.|x..x|...x|\nc…  0
+ 200  norvel        x...xx...xx...x...x....x/3                drum |x...|xx..|.xx.|..x.|..x.|...x|\nc…  0
+ 201  norvel        x...x..x...x.....x..x..x/2                drum |x...|x..x|...x|....|.x..|x..x|\nc…  0
+ 202  norvel        x..x..x....x.x..x..x/2                    drum |x..x|..x.|...x|.x..|x..x|\nclap |…  1
+ 203  norvel        x..x..x..x...x..x..x/4                    drum |x..x|..x.|.x..|.x..|x..x|\nclap |…  1
+ 204  norvel        xx..x..xx...x...xx..x..x/4                drum |xx..|x..x|x...|x...|xx..|x..x|\nc…  0
+ 205  norvel        x..x....x..x..x..x..x..xx..x/5            drum |x..x|....|x..x|..x.|.x..|x..x|x..…  0
+ 206  norvel        x..xx....x...xx..xx...x...xx/3            drum |x..x|x...|.x..|.xx.|.xx.|..x.|..x…  0
+ 207  norvel        xxx...x....xxx...x....xx/3                drum |xxx.|..x.|...x|xx..|.x..|..xx|\nc…  0
+ 208  norvel        xx...xxx....xxx....xx....xxx/3            drum |xx..|.xxx|....|xxx.|...x|x...|.xx…  0
+ 209  norvel        xx...xxx.xx...x...xx..x...xx/2            drum |xx..|.xxx|.xx.|..x.|..xx|..x.|..x…  0
+ 210  norvel        xx...xxx.....x...x....x...xx/3            drum |xx..|.xxx|....|.x..|.x..|..x.|..x…  0
+ 211  norvel        xx....xx...xx.....xxx....xxx/2            drum |xx..|..xx|...x|x...|..xx|x...|.xx…  1
+ 212  norvel        x...xx...xx..x..xx..x..x/2                drum |x...|xx..|.xx.|.x..|xx..|x..x|\nc…  0
+ 213  norvel        xx.x..x...xxx....xx...xx/3                drum |xx.x|..x.|..xx|x...|.xx.|..xx|\nc…  1
+ 214  norvel        x...x..x..xx..x..x.x/4                    drum |x...|x..x|..xx|..x.|.x.x|\nclap |…  0
+ 215  norvel        xx...x...x....xx..xxx.xx/3                drum |xx..|.x..|.x..|..xx|..xx|x.xx|\nc…  0
+ 216  norvel        x....xx..x...x...xxx/2                    drum |x...|.xx.|.x..|.x..|.xxx|\nclap |…  0
+ 217  norvel        x..x...x...x.x..x..x..xx..xx/5            drum |x..x|...x|...x|.x..|x..x|..xx|..x…  0
+ 218  norvel        xx...xxx.....xxx....xxx....x/2            drum |xx..|.xxx|....|.xxx|....|xxx.|...…  1
+ 219  norvel        x..x...xx..xx...xxx...xx...x/5            drum |x..x|...x|x..x|x...|xxx.|..xx|...…  0
+ 220  norvel        xx.x..x...xx...x/2                        drum |xx.x|..x.|..xx|...x|\nclap |....|…  0
+ 221  norvel        xx...xx...x..x...x...xxx...x/4            drum |xx..|.xx.|..x.|.x..|.x..|.xxx|...…  0
+ 222  norvel        x..x..x...x....x..x...xx/2                drum |x..x|..x.|..x.|...x|..x.|..xx|\nc…  0
+ 223  norvel        xx..xxx...xx...x...x...x/2                drum |xx..|xxx.|..xx|...x|...x|...x|\nc…  1
+ 224  norvel        x..x...xx...x...x..x..x...xx/4            drum |x..x|...x|x...|x...|x..x|..x.|..x…  0
+ 225  norvel        x..x..xx..xx...x....x..x/2                drum |x..x|..xx|..xx|...x|....|x..x|\nc…  0
+ 226  norvel        xx..xxx....xx..x..xx....x.xx/2            drum |xx..|xxx.|...x|x..x|..xx|....|x.x…  0
+ 227  norvel        xx.x..x..x...xx...xx/4                    drum |xx.x|..x.|.x..|.xx.|..xx|\nclap |…  0
+ 228  norvel        xx..x..x...x..x..x..x..x..xx/5            drum |xx..|x..x|...x|..x.|.x..|x..x|..x…  0
+ 229  norvel        xxx....xx...x.xx...x...x/2                drum |xxx.|...x|x...|x.xx|...x|...x|\nc…  0
+ 230  norvel        xx..x..xx..x...x....x...x..x/3            drum |xx..|x..x|x..x|...x|....|x...|x..…  0
+ 231  norvel        xx...x....xx..xx/2                        drum |xx..|.x..|..xx|..xx|\nclap |..xx|…  0
+ 232  norvel        xx...x...xx..xx...xxx..x/4                drum |xx..|.x..|.xx.|.xx.|..xx|x..x|\nc…  1
+ 233  norvel        x...xx..xx..x...x....xx...xx/3            drum |x...|xx..|xx..|x...|x...|.xx.|..x…  1
+ 234  norvel        x..xx..x..x..x..x..x..x...xx/4            drum |x..x|x..x|..x.|.x..|x..x|..x.|..x…  0
+ 235  norvel        x...x..xx..xx...x..x..xx/2                drum |x...|x..x|x..x|x...|x..x|..xx|\nc…  0
+ 236  norvel        xx...xxx....xxx..x....xx/3                drum |xx..|.xxx|....|xxx.|.x..|..xx|\nc…  0
+ 237  norvel        xx...xxx..x...xx...x...x/2                drum |xx..|.xxx|..x.|..xx|...x|...x|\nc…  1
+ 238  norvel        xx..x..x.x..x..x..xx...xx..x/4            drum |xx..|x..x|.x..|x..x|..xx|...x|x..…  0
+ 239  norvel        x..xx..x..x...x..x..x...x..x/4            drum |x..x|x..x|..x.|..x.|.x..|x...|x..…  0
+ 240  norvel        xxx....x....xxx...xxx.....xx/3            drum |xxx.|...x|....|xxx.|..xx|x...|..x…  0
+ 241  norvel        x...x...xx....xx..x...xx...x/2            drum |x...|x...|xx..|..xx|..x.|..xx|...…  0
+ 242  norvel        xx..x...x...x...xx.xx..x/2                drum |xx..|x...|x...|x...|xx.x|x..x|\nc…  0
+ 243  norvel        xx.....xx...x...xx.....x/3                drum |xx..|...x|x...|x...|xx..|...x|\nc…  0
+ 244  norvel        x...x...xx..x..x..xx..x...xx/4            drum |x...|x...|xx..|x..x|..xx|..x.|..x…  0
+ 245  norvel        xx..x..x..x....x/3                        drum |xx..|x..x|..x.|...x|\nclap |..xx|…  0
+ 246  norvel        x.x....xxx...xx...xx..x...xx/5            drum |x.x.|...x|xx..|.xx.|..xx|..x.|..x…  1
+ 247  norvel        xx.xx..xx..x..x...x..x..x..x/5            drum |xx.x|x..x|x..x|..x.|..x.|.x..|x..…  0
+ 248  norvel        x..x...x..x..x.x/4                        drum |x..x|...x|..x.|.x.x|\nclap |.xx.|…  1
+ 249  norvel        xx..xx.....x...x...x..xx/4                drum |xx..|xx..|...x|...x|...x|..xx|\nc…  0
+ 250  norvel        xxx...x..xx..xx...x...xx/4                drum |xxx.|..x.|.xx.|.xx.|..x.|..xx|\nc…  1
+ 251  norvel        xx....xx..xx....x...xx....xx/2            drum |xx..|..xx|..xx|....|x...|xx..|..x…  0
+ 252  norvel        x...xx.xx...xx.....x...x...x/4            drum |x...|xx.x|x...|xx..|...x|...x|...…  0
+ 253  norvel        x.x...x..x....x...xx..xx..xx/3            drum |x.x.|..x.|.x..|..x.|..xx|..xx|..x…  0
+ 254  norvel        x.x..x....x..x..x..xx...x..x/5            drum |x.x.|.x..|..x.|.x..|x..x|x...|x..…  0
+ 255  norvel        x...x.x..x...x..x..x/4                    drum |x...|x.x.|.x..|.x..|x..x|\nclap |…  1
+ 256  norvel        xx....xx...xx...xx..xxx....x/2            drum |xx..|..xx|...x|x...|xx..|xxx.|...…  0
+ 257  norvel        x..x..x..xx...x...xx/4                    drum |x..x|..x.|.xx.|..x.|..xx|\nclap |…  0
+ 258  norvel        x.xxx.....x...xx...x/3                    drum |x.xx|x...|..x.|..xx|...x|\nclap |…  0
+ 259  norvel        x...x...x...x...x...xx.x...x/4            drum |x...|x...|x...|x...|x...|xx.x|...…  0
+ 260  norvel        x...xx...x...xx...x....x..xx/3            drum |x...|xx..|.x..|.xx.|..x.|...x|..x…  1
+ 261  norvel        x...x..x.x...xxx..xx..xx/4                drum |x...|x..x|.x..|.xxx|..xx|..xx|\nc…  1
+ 262  norvel        x..x..x...x..x..x..x/4                    drum |x..x|..x.|..x.|.x..|x..x|\nclap |…  0
+ 263  norvel        xx..xx..x...x...xx..xx..x..x/5            drum |xx..|xx..|x...|x...|xx..|xx..|x..…  0
+ 264  norvel        x...x....x...x...x.....x/3                drum |x...|x...|.x..|.x..|.x..|...x|\nc…  1
+ 265  norvel        x..xx..xx....x...x..x....xxx/3            drum |x..x|x..x|x...|.x..|.x..|x...|.xx…  0
+ 266  norvel        x....x.....xx....x...x....xx/2            drum |x...|.x..|...x|x...|.x..|.x..|..x…  1
+ 267  norvel        x.x..x..x...x..xx..x/4                    drum |x.x.|.x..|x...|x..x|x..x|\nclap |…  0
+ 268  norvel        xx...x...xx..x...xxx...x/4                drum |xx..|.x..|.xx.|.x..|.xxx|...x|\nc…  1
+ 269  norvel        x....xxx..xx...xx....xxx/3                drum |x...|.xxx|..xx|...x|x...|.xxx|\nc…  0
+ 270  norvel        xx...xx..x.x..x...xx..xx/4                drum |xx..|.xx.|.x.x|..x.|..xx|..xx|\nc…  0
+ 271  norvel        x..x...x..xx....x..x/3                    drum |x..x|...x|..xx|....|x..x|\nclap |…  1
+ 272  norvel        x...x..x...xx..x...x..xx/5                drum |x...|x..x|...x|x..x|...x|..xx|\nc…  1
+ 273  norvel        xx....xx..xxx..x....x....xxx/2            drum |xx..|..xx|..xx|x..x|....|x...|.xx…  0
+ 274  norvel        x...x...xxx...x..x....xx..xx/2            drum |x...|x...|xxx.|..x.|.x..|..xx|..x…  0
+ 275  norvel        xx..xx..x....x..x..x...xx..x/3            drum |xx..|xx..|x...|.x..|x..x|...x|x..…  0
+ 276  norvel        x..x...x..x.xx..x..x/4                    drum |x..x|...x|..x.|xx..|x..x|\nclap |…  0
+ 277  norvel        xx..xx...x...x...xx...xx...x/4            drum |xx..|xx..|.x..|.x..|.xx.|..xx|...…  0
+ 278  norvel        x...x..x..x.....x..x/2                    drum |x...|x..x|..x.|....|x..x|\nclap |…  0
+ 279  norvel        x...xx..xx..xx....xx/3                    drum |x...|xx..|xx..|xx..|..xx|\nclap |…  1
+ 280  norvel        xx..x....x..xx...x.....x/3                drum |xx..|x...|.x..|xx..|.x..|...x|\nc…  1
+ 281  norvel        x...x....x...xx....x/2                    drum |x...|x...|.x..|.xx.|...x|\nclap |…  0
+ 282  norvel        xx.....xx...xx....xxx....xxx/3            drum |xx..|...x|x...|xx..|..xx|x...|.xx…  0
+ 283  norvel        xx...x...x...x....x...xx...x/3            drum |xx..|.x..|.x..|.x..|..x.|..xx|...…  0
+ 284  norvel        xx..x..x..x...xx..xx..xx/5                drum |xx..|x..x|..x.|..xx|..xx|..xx|\nc…  0
+ 285  norvel        x.x...x..x..x..x...x/5                    drum |x.x.|..x.|.x..|x..x|...x|\nclap |…  1
+ 286  norvel        xx...xxx....x...xx...xxx/3                drum |xx..|.xxx|....|x...|xx..|.xxx|\nc…  0
+ 287  norvel        xxx....xxx....xxx...x....xxx/3            drum |xxx.|...x|xx..|..xx|x...|x...|.xx…  1
+ 288  norvel        x...x.x..xx..x..x....x..x..x/5            drum |x...|x.x.|.xx.|.x..|x...|.x..|x..…  1
+ 289  norvel        x..x..xx...x..x..xx..x..x..x/4            drum |x..x|..xx|...x|..x.|.xx.|.x..|x..…  0
+ 290  norvel        xx....xx.....x...xxx/2                    drum |xx..|..xx|....|.x..|.xxx|\nclap |…  0
+ 291  norvel        x..x..x..x...x.x..xx/5                    drum |x..x|..x.|.x..|.x.x|..xx|\nclap |…  0
+ 292  norvel        x...x..x..x..x.x...x/5                    drum |x...|x..x|..x.|.x.x|...x|\nclap |…  0
+ 293  norvel        xx...x..x..x...x/2                        drum |xx..|.x..|x..x|...x|\nclap |..xx|…  0
+ 294  norvel        x..x..x..x..xxx...x...xx/4                drum |x..x|..x.|.x..|xxx.|..x.|..xx|\nc…  0
+ 295  norvel        x.x...x..x..x..x/4                        drum |x.x.|..x.|.x..|x..x|\nclap |.x.x|…  0
+ 296  norvel        x.x...xxx....x...xxx/3                    drum |x.x.|..xx|x...|.x..|.xxx|\nclap |…  0
+ 297  norvel        xxx...xxx.....xxx....xxx...x/2            drum |xxx.|..xx|x...|..xx|x...|.xxx|...…  0
+ 298  norvel        x..x...x..xx..x..x..x...x..x/4            drum |x..x|...x|..xx|..x.|.x..|x...|x..…  0
+ 299  norvel        x..x..x..x...x..xx..x..x/4                drum |x..x|..x.|.x..|.x..|xx..|x..x|\nc…  0
+ 300  norvel        x..x..x..x...xx...x..x..x..x/5            drum |x..x|..x.|.x..|.xx.|..x.|.x..|x..…  0
+ 301  norvel        xx...xx...xx..xx..x...xx/4                drum |xx..|.xx.|..xx|..xx|..x.|..xx|\nc…  0
+ 302  norvel        x..xx...x..x..x..x..x..x/4                drum |x..x|x...|x..x|..x.|.x..|x..x|\nc…  0
+ 303  norvel        xx...xx..xx...x..x....xx/3                drum |xx..|.xx.|.xx.|..x.|.x..|..xx|\nc…  0
+ 304  norvel        xx..x..xx...x...x..xx..x..xx/4            drum |xx..|x..x|x...|x...|x..x|x..x|..x…  0
+ 305  norvel        xx...x.....xxx..x..x...x..xx/4            drum |xx..|.x..|...x|xx..|x..x|...x|..x…  0
+ 306  norvel        x.xx..x....xx.....xx/2                    drum |x.xx|..x.|...x|x...|..xx|\nclap |…  0
+ 307  norvel        x...xx..x...x...x..x..xx/5                drum |x...|xx..|x...|x...|x..x|..xx|\nc…  0
+ 308  norvel        x..x...x..x..x..x..x/2                    drum |x..x|...x|..x.|.x..|x..x|\nclap |…  0
+ 309  norvel        x.xxx...xx....xx..x..xxx/2                drum |x.xx|x...|xx..|..xx|..x.|.xxx|\nc…  0
+ 310  norvel        xx..x..x..x...xx..x...xx/5                drum |xx..|x..x|..x.|..xx|..x.|..xx|\nc…  0
+ 311  norvel        xxx.....xxx....xx....xxx/2                drum |xxx.|....|xxx.|...x|x...|.xxx|\nc…  0
+ 312  norvel        x..x..x...x..x..x..x/5                    drum |x..x|..x.|..x.|.x..|x..x|\nclap |…  0
+ 313  norvel        xx.xx..xx..x...x..xx..xxx..x/4            drum |xx.x|x..x|x..x|...x|..xx|..xx|x..…  0
+ 314  norvel        xxx...xxx...x..xxx.....x/2                drum |xxx.|..xx|x...|x..x|xx..|...x|\nc…  1
+ 315  norvel        xx...xx....xx....x...x...xxx/3            drum |xx..|.xx.|...x|x...|.x..|.x..|.xx…  0
+ 316  norvel        xx..x..x..x...xx..xx/4                    drum |xx..|x..x|..x.|..xx|..xx|\nclap |…  1
+ 317  norvel        x...xx..x...x...x..x/4                    drum |x...|xx..|x...|x...|x..x|\nclap |…  1
+ 318  norvel        x..x..x..x..x....x...x.x/3                drum |x..x|..x.|.x..|x...|.x..|.x.x|\nc…  0
+ 319  norvel        xx...x..xxx.x....xxx/3                    drum |xx..|.x..|xxx.|x...|.xxx|\nclap |…  0
+ 320  norvel        x..xx...xx...x...x..x..x...x/5            drum |x..x|x...|xx..|.x..|.x..|x..x|...…  0
+ 321  norvel        x....x....xx..x....x..xx/3                drum |x...|.x..|..xx|..x.|...x|..xx|\nc…  1
+ 322  norvel        x..x..x...xx....x...x..x/3                drum |x..x|..x.|..xx|....|x...|x..x|\nc…  0
+ 323  norvel        xx...x....x....x.xxx..xx/2                drum |xx..|.x..|..x.|...x|.xxx|..xx|\nc…  0
+ 324  norvel        x..x...xx...xx..x..x/4                    drum |x..x|...x|x...|xx..|x..x|\nclap |…  0
+ 325  norvel        x..x..x...x..x...x..x..x/4                drum |x..x|..x.|..x.|.x..|.x..|x..x|\nc…  1
+ 326  norvel        xx....x...xx...x.xxx...x/2                drum |xx..|..x.|..xx|...x|.xxx|...x|\nc…  0
+ 327  norvel        xx....x..xx...xx...x/3                    drum |xx..|..x.|.xx.|..xx|...x|\nclap |…  0
+ 328  norvel        x...x...xx..x.x..x..xx..x..x/4            drum |x...|x...|xx..|x.x.|.x..|xx..|x..…  1
+ 329  norvel        x..x..x...xx...x/2                        drum |x..x|..x.|..xx|...x|\nclap |.xx.|…  0
+ 330  norvel        x...xxx...xx..xx...xx..x/2                drum |x...|xxx.|..xx|..xx|...x|x..x|\nc…  0
+ 331  norvel        x..xx...x..x.x..x..x/4                    drum |x..x|x...|x..x|.x..|x..x|\nclap |…  0
+ 332  norvel        x..xxx...xx.....xx...xxx/3                drum |x..x|xx..|.xx.|....|xx..|.xxx|\nc…  0
+ 333  norvel        x..x.....xxx...x..xx/3                    drum |x..x|....|.xxx|...x|..xx|\nclap |…  0
+ 334  norvel        x..x..xx..x..xx...xx/2                    drum |x..x|..xx|..x.|.xx.|..xx|\nclap |…  1
+ 335  norvel        xx...x..xx..xx..x...x..x/4                drum |xx..|.x..|xx..|xx..|x...|x..x|\nc…  0
+ 336  norvel        xxx.....xxx.....xxx...xx/2                drum |xxx.|....|xxx.|....|xxx.|..xx|\nc…  0
+ 337  norvel        xxx.....xx..xx....xx/2                    drum |xxx.|....|xx..|xx..|..xx|\nclap |…  1
+ 338  norvel        x...x..x..x..x.x/4                        drum |x...|x..x|..x.|.x.x|\nclap |.xxx|…  0
+ 339  norvel        x..x...xx...x...x..xx...x..x/4            drum |x..x|...x|x...|x...|x..x|x...|x..…  0
+ 340  norvel        xxx....x..xx..xx/2                        drum |xxx.|...x|..xx|..xx|\nclap |...x|…  1
+ 341  norvel        xx....xxx...xx..xxx...xx/3                drum |xx..|..xx|x...|xx..|xxx.|..xx|\nc…  1
+ 342  norvel        x.xx...x....xx...xxx/3                    drum |x.xx|...x|....|xx..|.xxx|\nclap |…  1
+ 343  norvel        x...x..x..x..x..x..x/5                    drum |x...|x..x|..x.|.x..|x..x|\nclap |…  1
+ 344  norvel        x..x..x..x..x..x..x...xx/5                drum |x..x|..x.|.x..|x..x|..x.|..xx|\nc…  1
+ 345  norvel        xxx...x...xxx...xx....xx..xx/3            drum |xxx.|..x.|..xx|x...|xx..|..xx|..x…  0
+ 346  norvel        x..x..x....xx..xx...xx.x..xx/3            drum |x..x|..x.|...x|x..x|x...|xx.x|..x…  1
+ 347  norvel        x..xx...xx.x..x..xx...xx/5                drum |x..x|x...|xx.x|..x.|.xx.|..xx|\nc…  1
+ 348  norvel        xx...xx...xx..x..x..xx...xxx/4            drum |xx..|.xx.|..xx|..x.|.x..|xx..|.xx…  1
+ 349  norvel        x...x..x..x..x..x...x..x/4                drum |x...|x..x|..x.|.x..|x...|x..x|\nc…  0
+ 350  norvel        xxx....xx...xxx....xxx...xxx/2            drum |xxx.|...x|x...|xxx.|...x|xx..|.xx…  0
+ 351  norvel        xx...x..x...x..x...x..xx/4                drum |xx..|.x..|x...|x..x|...x|..xx|\nc…  1
+ 352  norvel        xx...xxx.....xxx..xx.....xxx/2            drum |xx..|.xxx|....|.xxx|..xx|....|.xx…  0
+ 353  norvel        x..xx..x..x..x..xx...x..x..x/5            drum |x..x|x..x|..x.|.x..|xx..|.x..|x..…  0
+ 354  norvel        x.....x..xx..x....x...x...xx/2            drum |x...|..x.|.xx.|.x..|..x.|..x.|..x…  0
+ 355  norvel        xx..x...xx..x.....x...xx...x/4            drum |xx..|x...|xx..|x...|..x.|..xx|...…  0
+ 356  norvel        x..x..x.....x..x...x..xx/3                drum |x..x|..x.|....|x..x|...x|..xx|\nc…  0
+ 357  norvel        xx....xxx...xx...xx...xx..xx/2            drum |xx..|..xx|x...|xx..|.xx.|..xx|..x…  0
+ 358  norvel        x..x...xx...x...x....xx....x/2            drum |x..x|...x|x...|x...|x...|.xx.|...…  1
+ 359  norvel        xx..xx...xx..x.....x/3                    drum |xx..|xx..|.xx.|.x..|...x|\nclap |…  1
+ 360  norvel        x..x..x...x.x..x/4                        drum |x..x|..x.|..x.|x..x|\nclap |.xx.|…  0
+ 361  norvel        xx.....xx..xxx...xxx/2                    drum |xx..|...x|x..x|xx..|.xxx|\nclap |…  0
+ 362  norvel        xx.....xx..xx..x..xx/3                    drum |xx..|...x|x..x|x..x|..xx|\nclap |…  0
+ 363  norvel        xxx...xxx....xxx....xx....xx/3            drum |xxx.|..xx|x...|.xxx|....|xx..|..x…  0
+ 364  norvel        x..xx....xx..x....xx..xx...x/2            drum |x..x|x...|.xx.|.x..|..xx|..xx|...…  0
+ 365  norvel        x..x..x...x..x..x...x..x..xx/4            drum |x..x|..x.|..x.|.x..|x...|x..x|..x…  0
+ 366  norvel        x..x..x...x..x..xx..x..xx..x/5            drum |x..x|..x.|..x.|.x..|xx..|x..x|x..…  0
+ 367  norvel        x..x....x..xxx..x....x..x..x/3            drum |x..x|....|x..x|xx..|x...|.x..|x..…  0
+ 368  norvel        x..x..x..x..x..x...x/2                    drum |x..x|..x.|.x..|x..x|...x|\nclap |…  0
+ 369  norvel        xxx...xxx.....xx...x....xx.x/4            drum |xxx.|..xx|x...|..xx|...x|....|xx.…  0
+ 370  norvel        x..x..x...x..xx..x..x..x/4                drum |x..x|..x.|..x.|.xx.|.x..|x..x|\nc…  1
+ 371  norvel        x.x..x..x...x...x....x..x..x/5            drum |x.x.|.x..|x...|x...|x...|.x..|x..…  0
+ 372  norvel        x...x..x....x..x...x/3                    drum |x...|x..x|....|x..x|...x|\nclap |…  1
+ 373  norvel        xx..xx...x..xx...xx..xxx/4                drum |xx..|xx..|.x..|xx..|.xx.|.xxx|\nc…  0
+ 374  norvel        xx....xx....x....xxx...x/3                drum |xx..|..xx|....|x...|.xxx|...x|\nc…  0
+ 375  norvel        xxx....xx....xx....xx..x/2                drum |xxx.|...x|x...|.xx.|...x|x..x|\nc…  0
+ 376  norvel        xxx..x...x..x..x...x...x/4                drum |xxx.|.x..|.x..|x..x|...x|...x|\nc…  0
+ 377  norvel        xxx..x..x..x....x..xxx..x..x/3            drum |xxx.|.x..|x..x|....|x..x|xx..|x..…  0
+ 378  norvel        x....x....x...x...xx/2                    drum |x...|.x..|..x.|..x.|..xx|\nclap |…  0
+ 379  norvel        x..x..x..x...xx...xx/4                    drum |x..x|..x.|.x..|.xx.|..xx|\nclap |…  0
+ 380  norvel        x..x..x...x..x..x..x/4                    drum |x..x|..x.|..x.|.x..|x..x|\nclap |…  0
+ 381  norvel        x..x..xx.xx....x/3                        drum |x..x|..xx|.xx.|...x|\nclap |xxx.|…  1
+ 382  norvel        xx...x..xx..x..x...x/4                    drum |xx..|.x..|xx..|x..x|...x|\nclap |…  0
+ 383  norvel        x...x..xx..x..xx..x....x/3                drum |x...|x..x|x..x|..xx|..x.|...x|\nc…  0
+ 384  norvel        x...x..x..x..xx...x..x..x..x/4            drum |x...|x..x|..x.|.xx.|..x.|.x..|x..…  0
+ 385  norvel        xx...xxx...xx....xxx/2                    drum |xx..|.xxx|...x|x...|.xxx|\nclap |…  0
+ 386  norvel        xx..x...x..x..x..xxx.xxx/5                drum |xx..|x...|x..x|..x.|.xxx|.xxx|\nc…  0
+ 387  norvel        xxx...xx..xx...xx...x..x/4                drum |xxx.|..xx|..xx|...x|x...|x..x|\nc…  1
+ 388  norvel        x...xx....xx...xx...xx....xx/2            drum |x...|xx..|..xx|...x|x...|xx..|..x…  0
+ 389  norvel        x..xxx...x...x..x...x..x/4                drum |x..x|xx..|.x..|.x..|x...|x..x|\nc…  1
+ 390  norvel        xx..x..x..xx..x...x...xx...x/4            drum |xx..|x..x|..xx|..x.|..x.|..xx|...…  0
+ 391  norvel        x...x....x..xx..x..x/3                    drum |x...|x...|.x..|xx..|x..x|\nclap |…  0
+ 392  norvel        x..x..x..x...xx..x..x..x...x/4            drum |x..x|..x.|.x..|.xx.|.x..|x..x|...…  0
+ 393  norvel        x..x...x...x...x...x/4                    drum |x..x|...x|...x|...x|...x|\nclap |…  0
+ 394  norvel        xxx...x....xxx..xxx...xx/3                drum |xxx.|..x.|...x|xx..|xxx.|..xx|\nc…  0
+ 395  norvel        x...x....x..x..x/3                        drum |x...|x...|.x..|x..x|\nclap |.xxx|…  0
+ 396  norvel        x...x...x.x...xx/2                        drum |x...|x...|x.x.|..xx|\nclap |..xx|…  1
+ 397  norvel        x...x.x..x..x..x...x...x/5                drum |x...|x.x.|.x..|x..x|...x|...x|\nc…  1
+ 398  norvel        x..x...x..x...xx..xx/4                    drum |x..x|...x|..x.|..xx|..xx|\nclap |…  0
+ 399  norvel        x..xx...xx...xx..xx...x...xx/4            drum |x..x|x...|xx..|.xx.|.xx.|..x.|..x…  0
+ 400  norvel        xx..x..x..x...xxx..x/4                    drum |xx..|x..x|..x.|..xx|x..x|\nclap |…  0
+ 401  norvel        xx....x.....xx..xx...xxx/3                drum |xx..|..x.|....|xx..|xx..|.xxx|\nc…  0
+ 402  norvel        xx..x...xx..x...xx...xxx..xx/4            drum |xx..|x...|xx..|x...|xx..|.xxx|..x…  0
+ 403  norvel        xx...xx...xxx...xx..x..x...x/2            drum |xx..|.xx.|..xx|x...|xx..|x..x|...…  0
+ 404  norvel        x...x..x..xx.xx..xx...xx/4                drum |x...|x..x|..xx|.xx.|.xx.|..xx|\nc…  0
+ 405  norvel        xxx...x..xxx..xx....x..x/3                drum |xxx.|..x.|.xxx|..xx|....|x..x|\nc…  1
+ 406  norvel        xx..x....x...x..x..x...x/5                drum |xx..|x...|.x..|.x..|x..x|...x|\nc…  0
+ 407  norvel        x...xx....xx..xx.....xxx...x/4            drum |x...|xx..|..xx|..xx|....|.xxx|...…  0
+ 408  norvel        xxx.....xx...xx....xxx...xxx/3            drum |xxx.|....|xx..|.xx.|...x|xx..|.xx…  1
+ 409  norvel        x..x..x...x..x..xx..x..xx..x/5            drum |x..x|..x.|..x.|.x..|xx..|x..x|x..…  1
+ 410  norvel        x...x..x..x..xx...xx..xx/4                drum |x...|x..x|..x.|.xx.|..xx|..xx|\nc…  0
+ 411  norvel        x..x..x.x..xx..x....x..x/5                drum |x..x|..x.|x..x|x..x|....|x..x|\nc…  0
+ 412  norvel        xx....x..x...x..x..x/3                    drum |xx..|..x.|.x..|.x..|x..x|\nclap |…  0
+ 413  norvel        x....xx...x..x...xx...xx/2                drum |x...|.xx.|..x.|.x..|.xx.|..xx|\nc…  0
+ 414  norvel        x..x..x..x..xx..x..x...x/4                drum |x..x|..x.|.x..|xx..|x..x|...x|\nc…  0
+ 415  norvel        x..x..x..x..x...x...x..x/4                drum |x..x|..x.|.x..|x...|x...|x..x|\nc…  0
+ 416  norvel        xx..x....xx....x..xx/2                    drum |xx..|x...|.xx.|...x|..xx|\nclap |…  0
+ 417  norvel        xxx..x..x..x.x.....x/4                    drum |xxx.|.x..|x..x|.x..|...x|\nclap |…  0
+ 418  norvel        xx...x..xx.x..x...xx/2                    drum |xx..|.x..|xx.x|..x.|..xx|\nclap |…  0
+ 419  norvel        x...xx....xx..x...xx/3                    drum |x...|xx..|..xx|..x.|..xx|\nclap |…  1
+ 420  norvel        x.....xx...x...xxx....xx/3                drum |x...|..xx|...x|...x|xx..|..xx|\nc…  0
+ 421  norvel        x...x..x.x..x..x/4                        drum |x...|x..x|.x..|x..x|\nclap |.x.x|…  1
+ 422  norvel        x...x...x....x...xx...xx/3                drum |x...|x...|x...|.x..|.xx.|..xx|\nc…  1
+ 423  norvel        xx....xxx....xx....xx.....xx/3            drum |xx..|..xx|x...|.xx.|...x|x...|..x…  0
+ 424  norvel        x..x..x..x.x...x/4                        drum |x..x|..x.|.x.x|...x|\nclap |.xx.|…  0
+ 425  norvel        x.x..x..x..x...x/4                        drum |x.x.|.x..|x..x|...x|\nclap |.x.x|…  1
+ 426  norvel        xx.....x.....xx....x/2                    drum |xx..|...x|....|.xx.|...x|\nclap |…  0
+ 427  norvel        xx..xx...x..x..x...x/4                    drum |xx..|xx..|.x..|x..x|...x|\nclap |…  1
+ 428  norvel        x..x...xx..x....x..x..x..xxx/3            drum |x..x|...x|x..x|....|x..x|..x.|.xx…  0
+ 429  norvel        xx.....xx...x...xx...xx...xx/4            drum |xx..|...x|x...|x...|xx..|.xx.|..x…  0
+ 430  norvel        x...x...x..x...x..xx/4                    drum |x...|x...|x..x|...x|..xx|\nclap |…  0
+ 431  norvel        xx.....xx....xx.....x..x/3                drum |xx..|...x|x...|.xx.|....|x..x|\nc…  1
+ 432  norvel        x..x...x..xx.x..x..x...x...x/4            drum |x..x|...x|..xx|.x..|x..x|...x|...…  0
+ 433  norvel        x...x..xx..xx...x..xx..x/4                drum |x...|x..x|x..x|x...|x..x|x..x|\nc…  0
+ 434  norvel        xx..x..x...x...x...x/4                    drum |xx..|x..x|...x|...x|...x|\nclap |…  0
+ 435  norvel        xxx....xxx.....xxx...xxx/2                drum |xxx.|...x|xx..|...x|xx..|.xxx|\nc…  1
+ 436  norvel        x.xx...x...x..x....x..xx/5                drum |x.xx|...x|...x|..x.|...x|..xx|\nc…  0
+ 437  norvel        xx..x...xx..x...xxx....x/3                drum |xx..|x...|xx..|x...|xxx.|...x|\nc…  1
+ 438  norvel        xx..xx...x.x....xx...xxx...x/3            drum |xx..|xx..|.x.x|....|xx..|.xxx|...…  0
+ 439  norvel        xxx...xxx..xxx....xx/2                    drum |xxx.|..xx|x..x|xx..|..xx|\nclap |…  0
+ 440  norvel        x..x..x...x...x....x/3                    drum |x..x|..x.|..x.|..x.|...x|\nclap |…  0
+ 441  norvel        x..x...x..x..x..x...x..x...x/4            drum |x..x|...x|..x.|.x..|x...|x..x|...…  1
+ 442  norvel        x..x..x..x...x..x...x...x..x/5            drum |x..x|..x.|.x..|.x..|x...|x...|x..…  0
+ 443  norvel        x...x..x..x..x..x.x...xx/4                drum |x...|x..x|..x.|.x..|x.x.|..xx|\nc…  0
+ 444  norvel        xx..x..x....xx..x...x..x/5                drum |xx..|x..x|....|xx..|x...|x..x|\nc…  0
+ 445  norvel        x....xx.....x.....xxx.....xx/3            drum |x...|.xx.|....|x...|..xx|x...|..x…  0
+ 446  norvel        x..x..x.xx..x...x..x/2                    drum |x..x|..x.|xx..|x...|x..x|\nclap |…  0
+ 447  norvel        xx...x....xxx.....xxx....xxx/3            drum |xx..|.x..|..xx|x...|..xx|x...|.xx…  1
+ 448  norvel        x....xx..xxx...x....xxx....x/3            drum |x...|.xx.|.xxx|...x|....|xxx.|...…  1
+ 449  norvel        xx....xxx.....x...xx/2                    drum |xx..|..xx|x...|..x.|..xx|\nclap |…  1
+ 450  norvel        x..x..xx...x...x....x..x/3                drum |x..x|..xx|...x|...x|....|x..x|\nc…  0
+ 451  norvel        x..x..x..x...x..x..x..x...xx/5            drum |x..x|..x.|.x..|.x..|x..x|..x.|..x…  0
+ 452  norvel        xxx..x.....x..xx/2                        drum |xxx.|.x..|...x|..xx|\nclap |...x|…  1
+ 453  norvel        xxx..xx.....xxx....xx.....xx/2            drum |xxx.|.xx.|....|xxx.|...x|x...|..x…  0
+ 454  norvel        x.xx..xx..xx...x..xx..xx...x/5            drum |x.xx|..xx|..xx|...x|..xx|..xx|...…  0
+ 455  norvel        xx...x.x....x....xxx/3                    drum |xx..|.x.x|....|x...|.xxx|\nclap |…  0
+ 456  norvel        x..xx....xx...xx/2                        drum |x..x|x...|.xx.|..xx|\nclap |.xx.|…  1
+ 457  norvel        x..x...x..xx..x.x..x/4                    drum |x..x|...x|..xx|..x.|x..x|\nclap |…  0
+ 458  norvel        x..x...x..x..x..x..xx..x/4                drum |x..x|...x|..x.|.x..|x..x|x..x|\nc…  0
+ 459  norvel        xxx.....xx....xx.....xxx/2                drum |xxx.|....|xx..|..xx|....|.xxx|\nc…  1
+ 460  norvel        xx....x..xxx..x....x..xx/2                drum |xx..|..x.|.xxx|..x.|...x|..xx|\nc…  0
+ 461  norvel        x..x..x..x..x...x..x/5                    drum |x..x|..x.|.x..|x...|x..x|\nclap |…  0
+ 462  norvel        xx....xxx....xxx...xxx....xx/2            drum |xx..|..xx|x...|.xxx|...x|xx..|..x…  1
+ 463  norvel        xxx...xxx..x.....xx..xx...xx/4            drum |xxx.|..xx|x..x|....|.xx.|.xx.|..x…  0
+ 464  norvel        x....x..x..x....x..xx...x..x/3            drum |x...|.x..|x..x|....|x..x|x...|x..…  0
+ 465  norvel        xx..x...x..x..xx..xx/4                    drum |xx..|x...|x..x|..xx|..xx|\nclap |…  1
+ 466  norvel        xx..xx...xx...xx..xx/2                    drum |xx..|xx..|.xx.|..xx|..xx|\nclap |…  1
+ 467  norvel        x..xx..xx...x.xx...xx..x...x/4            drum |x..x|x..x|x...|x.xx|...x|x..x|...…  0
+ 468  norvel        x..x..x...xx.x..x..x/4                    drum |x..x|..x.|..xx|.x..|x..x|\nclap |…  1
+ 469  norvel        x..x..x...xx...x/2                        drum |x..x|..x.|..xx|...x|\nclap |.xx.|…  1
+ 470  norvel        x..x..x..x..x.x...xx/4                    drum |x..x|..x.|.x..|x.x.|..xx|\nclap |…  1
+ 471  norvel        xx..xx....x.x..x...x...x/2                drum |xx..|xx..|..x.|x..x|...x|...x|\nc…  0
+ 472  norvel        x..xx..x..x..x....xx/3                    drum |x..x|x..x|..x.|.x..|..xx|\nclap |…  0
+ 473  norvel        xxx...xx....xx....xx.....xxx/2            drum |xxx.|..xx|....|xx..|..xx|....|.xx…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+norvel                 474     125     26.4%

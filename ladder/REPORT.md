@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 20:12 UTC
+# Ladder report — 2026-09-04 20:30 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -9,6 +9,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | virel | 1 | testing | 57% | 0.86 | 3.8 | 2 | 1 | opus-default,opus-kidproxy |
 | garrow | 2 | testing | 64% | 0.72 | 3.2 | 2 | 1 | opus-lowdemo,opus-theorist |
 | basten | 2 | testing | 33% | 0.67 | 3.8 | 2 | 0 | opus-lowdemo,opus-theorist |
+| norvel | 1 | testing | 31% | 0.62 | 4.2 | 2 | 0 | opus-default,opus-kidproxy |
 | tovel | 4 | testing | 29% | 0.57 | 3.6 | 2 | 0 | opus-lowdemo,opus-theorist |
 | sarn | 1 | testing | 21% | 0.42 | 4.0 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist |
 | orlan | 3 | testing | 17% | 0.35 | 2.6 | 2 | 0 | opus-default |
@@ -32,7 +33,6 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | LegoZendo | 1 | testing | 100% | 0.00 | 3.4 | 2 | 2 | opus-default,opus-kidproxy |
 | LegoZendo2 | 1 | testing | 100% | 0.00 | 2.6 | 1 | 1 | opus-default |
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| norvel | 1 | untested | - | - | 4.2 | 0 | 0 | - |
 | OKRIN | 2 | testing | - | - | 2.6 | 0 | 0 | - |
 | PP | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | quaich | 2 | testing | - | - | 2.6 | 0 | 0 | - |

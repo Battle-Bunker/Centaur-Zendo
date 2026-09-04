@@ -1969,7 +1969,7 @@
    ]
   },
   "kelmar": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Make the edge columns more visually salient (narrower ground rows) so a kid can spot right-at-the-edge by eye instead of counting characters across 50 columns.",
@@ -1985,6 +1985,9 @@
      "score": 4.0,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -2134,13 +2137,19 @@
      "version": 1
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "added": 1788559056.696556,
      "file": "challenges/lab/kelmar.json",
      "note": "v1 designer (weather): rain on a garden; count plants standing dry right at the edge of a shower",
      "v": 1
+    },
+    {
+     "added": 1788566371.242796,
+     "file": "challenges/lab/kelmar.json",
+     "note": "v2 demo economy: scene in the clue (sky + garden), one count, narrower garden, showers 3-6 wide",
+     "v": 2
     }
    ]
   },
@@ -6010,7 +6019,7 @@
    "class": "kelmar",
    "id": "players-kelmar-v1-df74",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -6109,7 +6118,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788564551.223051,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -6172,7 +6181,8 @@
    "id": "rfdesigner-0",
    "kind": "designer",
    "paradigm": "rule_family",
-   "status": "pending",
+   "started": 1788566371.273323,
+   "status": "running",
    "version": null,
    "world": "a hand of 4-6 playing cards"
   },
@@ -6225,6 +6235,22 @@
    "status": "pending",
    "version": null,
    "world": "a 5x5 picture of two symbols"
+  },
+  {
+   "agents": 2,
+   "class": "kelmar",
+   "id": "players-kelmar-v2-6b0b",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "kelmar",
+   "id": "judge-kelmar-v2-ed6b",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

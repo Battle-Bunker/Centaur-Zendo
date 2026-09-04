@@ -1472,6 +1472,20 @@
     }
    ]
   },
+  "kelmar": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788559056.696556,
+     "file": "challenges/lab/kelmar.json",
+     "note": "v1 designer (weather): rain on a garden; count plants standing dry right at the edge of a shower",
+     "v": 1
+    }
+   ]
+  },
   "krom": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -4441,7 +4455,7 @@
    "id": "designer-new-11-v0-71cd",
    "kind": "designer",
    "started": 1788556667.8617258,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -4642,6 +4656,23 @@
    "kind": "players",
    "status": "pending",
    "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "kelmar",
+   "id": "judge-kelmar-v1-man",
+   "kind": "judge",
+   "started": 1788559056.769714,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "kelmar",
+   "id": "players-kelmar-v1-b831",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

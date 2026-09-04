@@ -67,3 +67,23 @@ player modelling only *how many* cells are underneath.
 * Classes that were cracked by all players (quilm, the 31 textbook classes, LegoZendo v1 via its
   witness) shared one property: **the rule could be named** or the witness could be built
   without the rule.
+
+## virel — "bricks resting on their twin" (toys and building; candidate star)
+**Rule.** Clue: the bottom course of a wall as brick widths, e.g. `33655`, and a number `N`. Answer:
+an ASCII wall (`[--][---][]…`), every course the same width, at least five courses, the bottom
+course exactly the clue, with exactly N bricks sitting precisely on top of a brick of the same
+span (same left and right edge) in the course below.
+**What a kid sees.** A brick wall. The kid-proxy players reported their imagined child said
+"it's a wall and every line is the same length", read the bottom row as the clue digits by
+counting dashes, and asked "what's the little number after the slash for?" three times.
+**What players did.** Experimentalist: cracked exactly in round 3 with 3 demos (after detours
+through base conversion and Project Euler's crack-free walls). Kid-proxy: found four of five
+clauses (width, clue row, no fault line, ≥5 courses) and never what N counts; 14 % in the final.
+Kid judge: 3.8/5.
+**Why it works.** The object is instantly nameable but the measurement is not: "a brick resting on
+its twin" is below "the joints line up" in a model's candidate list and near the top of a kid's.
+The generator rejection-filters every wall so that all rival statistics differ from N and forces
+decoys (aligned joints, near-twins) into every demo, so the famous fact about walls (stagger the
+joints) is visibly false. Partial understanding pays 10–20 %, a real gradient without a cliff.
+**Lever if it drifts easy.** Count only twins that are not adjacent to another twin; pin the bottom
+course by width alone plus a second clause.

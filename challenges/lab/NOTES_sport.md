@@ -195,3 +195,195 @@ frame's deck) so single-block probing cannot build a table; (b) vary the deck (a
 6 pins for some frames) so per-digit tables do not transfer; (c) forbid the k=0 fill-from-front
 foothold from being 23% of clues — keep it at ~10% as the foothold. Judge note: the rule is close
 to nameable ("fell out of turn"); (a) also helps there.
+
+---
+
+## morvin v2 — iteration record, 2026-09-04 (refiner)
+
+**Input:** ladder run `lad-morvin-v1-1`, 2 Opus players, both **100 %** ⇒ `too_easy`. Kid judge 3.6/5
+(object 3 — "the pin deck needs a beat to recognise"; nameable: yes, "fell out of turn").
+
+### 1. What the players actually did
+
+| team | profile | final | how |
+|---|---|---|---|
+| morvin1a | opus-default | 100 % (3615/3615) | **tabulation, not insight.** Decoded the picture from one demo, guessed the additive shape ("k = sum over blocks of vertical `.`-above-`o` pairs"), then *probed one block at a time* — a canonical answer everywhere else, one block varied, so each result attributes cleanly — and built a server-confirmed `(digit, value) → arrangement` library, finishing with a DP that splits `k` across blocks. Its NOTES never state the rule; it even lists "confirmed impossible" values `(6,5)`, `(9,1)` and skips 0.26 % of clues it believed unsatisfiable. |
+| morvin1b | opus-kidproxy | 100 % (cracked round 3) | **insight, and it was one step.** "The dots are falling and some are stuck in mid-air" ⇒ floating dots = K. Exactly the intended rule, from demos alone, by round 3. |
+
+Two independent leaks, one cause: **v1's count is additive across frames.** 1a's whole attack exists
+only because a frame's contribution is a function of that frame alone; 1b's route was short because a
+single-frame local statistic is the first thing a picture-reader tries. 1a's "unsatisfiable clues"
+claim was a symptom of its own wrong model (1b solved everything) — but the fix below makes
+achievability *constructive*, so the question cannot arise again.
+
+### 2. What changed in v2, and why
+
+| lever | change | why |
+|---|---|---|
+| **(a) break additivity** | The counted event now **spans two frames**: `n` = the number of positions where the **same pin is out of turn in two frames next to each other**. A frame's contribution is not a function of that frame. | Kills 1a's route outright: the oracle-tuned per-`(digit,value)` library falls from **100 % → 10.8 %** (measured, §4). It also lengthens 1b's route — the kid reading ("floating dots") is now only *half* the rule, and the other half is invisible inside a single frame. |
+| **(b) per-digit tables must not transfer** | Chosen *instead of* varying the deck shape: with a cross-frame relation a per-digit table cannot express the count at all, so a 3-row deck would buy nothing and would cost the `score` budget (471/512 chars) and the clean rack picture. Frames went **3–5 → 6–10** instead, which widens `n`'s range and flattens every cheap template down onto the blind floor. | Deck variation was considered and rejected on evidence: the per-digit library ceiling is already *at* the floor. 6–10 frames also reads more like a bowling game. |
+| **(c) foothold at ~10 %** | `n = 0` on **10.8 %** of clues (was 23 %). `n = 0` is still exactly the plain physical strike order (front-first leaves no out-of-turn pin anywhere), so the natural first probe scores 100 % there and 10.8 % overall. `n = 1` is now rejected (one lonely pair is too quiet to read). The three fixed judge seeds (11, 2024, 77) render `n = 3, 4, 9` — no `n = 0` demo, mixed per-pair counts in all three. | Keeps the informative foothold; removes the judge's "2 of 3 demos are empty" problem. |
+| **(d) achievability, proved** | `generate()` **builds a picture** (single-pin random walk: climb to the achievable maximum, then walk from the strike order down to a random target) and returns **that picture's** `n`. Every clue therefore ships with a witness. Verified: on **20 000 seeds** the generator's own witness scores 1 under the real `score()` — 0 failures; `solve()` then scores 1 on **5000/5000** fresh clues. | Answers 1a's suspicion: no clue is unachievable, by construction rather than by hope. |
+| salience (lever 9) | Pins are **spaced and centred** and frames are separated by `\|`, so a rack looks like a rack and a line of frames looks like a bowling scoresheet. The counted relation reads **straight across**: two identical holes-with-a-wall-in-front in neighbouring frames. | The judge's object score was the weak spot (3/5). |
+| clue shape (2026-09-04 demo economy) | The clue is now written with the same frame dividers as the answer: `1\|8\|7\|9\|8\|5\|1\|2\|2\|3/3` instead of `1879851223/3`. | New design rule in DESIGN_LOOP: with 3 demo requests for 7 classes, the clue alone must show what *kind* of answer to send. The pipes give the column count and the row-of-boxes shape without leaking the rule. |
+
+**The rule (private).** A pin is **out of turn** if it fell although *every* pin immediately in front
+of it is still standing (in front = the one or two pins of the next row toward the head pin; the head
+pin has none and is never out of turn). `n` = Σ over adjacent frame pairs of
+`|outofturn(k) ∩ outofturn(k+1)|`. **Kid sentence:** *"count the pins that go down out of turn twice
+in a row — the same pin, in two frames side by side."* A 12-year-old checks it by pointing across.
+
+**Intended discovery path.** (1) one demo ⇒ "that's bowling", and the header digits are the dot
+counts; (2) the strike-order probe pays 100 % on the 10.8 % of clues with `n = 0` ⇒ `n` counts pins
+that fell *out of turn*; (3) the out-of-turn count alone matches 10.8 % overall and **0 % of the
+`n>0` clues** ⇒ something gates it; (4) the demos show the gate: out-of-turn pins come in *pairs,
+straight across, in neighbouring frames*.
+
+### 3. The three demos as they now render (judge seeds 11, 2024, 77)
+
+```
+clue 1|8|7|9|8|5|1|2|2|3/3
+   1   |   8   |   7   |   9   |   8   |   5   |   1   |   2   |   2   |   3
+o . o o|. . . .|. . o .|. . o .|. . . .|. o . o|o o . o|o o o o|o o o o|o o o o
+ o o o | o . o | . . . | . . . | . . . | o o o | o o o | o . o | o o . | o . .
+  o o  |  . .  |  o .  |  . .  |  o o  |  . .  |  o o  |  o .  |  . o  |  . o
+   o   |   .   |   o   |   .   |   .   |   .   |   o   |   o   |   o   |   o
+
+clue 9|7|6|5|2|4|9/4
+   9   |   7   |   6   |   5   |   2   |   4   |   9
+. . . .|o . . .|. . . o|. . . o|o o . o|o o . o|. . . .
+ . . . | o o . | . . o | o . o | o o o | . o o | . . .
+  . o  |  . .  |  . o  |  o o  |  o .  |  . .  |  . .
+   .   |   .   |   o   |   .   |   o   |   o   |   o
+
+clue 6|4|4|4|2|5|8|9/9
+   6   |   4   |   4   |   4   |   2   |   5   |   8   |   9
+. o . o|o o . .|. o . o|o . . .|o . . o|. . o o|. . . .|. . . .
+ o . . | o o o | . o o | o o o | o o o | o . . | . . . | . . .
+  . .  |  . .  |  o .  |  o o  |  o o  |  . o  |  o o  |  o .
+   o   |   o   |   o   |   .   |   o   |   o   |   .   |   .
+```
+
+The same three with the counted pins marked `X` (private — this is what "loud" means here: the
+counted pins sit in **vertical columns spanning neighbouring frames**):
+
+```
+   1   |   8   |   7   |   9   |   8   |   5   |   1   |   2   |   2   |   3      n=3
+o . o o|. . . .|. . o .|. . o .|. . . .|. o X o|o o X o|o o o o|o o o o|o o o o
+ o o o | o . o | . . . | . . . | . . . | o o o | o o o | o . o | o o X | o . X
+  o o  |  . .  |  o .  |  . .  |  o o  |  . .  |  o o  |  o .  |  X o  |  X o
+   o   |   .   |   o   |   .   |   .   |   .   |   o   |   o   |   o   |   o
+
+   9   |   7   |   6   |   5   |   2   |   4   |   9                              n=4
+. . . .|o . . .|. . . o|. . . o|o o X o|o o X o|. . . .
+ . . . | o o . | . . o | o . o | o o o | . o o | . . .
+  . o  |  . .  |  . o  |  o o  |  o X  |  X X  |  X X
+   .   |   .   |   o   |   .   |   o   |   o   |   o
+
+   6   |   4   |   4   |   4   |   2   |   5   |   8   |   9                      n=9
+. o . o|o o X .|. o X o|o X X .|o X X o|. . o o|. . . .|. . . .
+ o . . | o o o | . o o | o o o | o o o | o . X | X . X | X . .
+  X X  |  X X  |  o X  |  o o  |  o o  |  . o  |  o o  |  o .
+   o   |   o   |   o   |   .   |   o   |   o   |   .   |   .
+```
+
+**Demo guarantees** (97.6 % of demos are grade 0; 0.6 % fall to the weakest grade): a counted pin
+with **two** standing pins in front of it; a near miss where an out-of-turn pin's twin next door is
+**down but not out of turn**; a near miss where the twin is **standing**; a pin that is down with one
+standing and one fallen pin in front whose twin next door *is* out of turn (so "every" is doing
+work); a buried pin (everything in front already down) whose twin next door is out of turn; the head
+pin down in some frames and up in others; at least one frame pair with no counted pin and one with
+≥ 2 when `n ≥ 3`; and `n` different from six hard rivals and from at most two of fifteen soft ones.
+
+### 4. Witness table, before → after (800 fresh clues each, one shot per clue, attacker knows the format)
+
+| attack | morvin v1 | **morvin v2** |
+|---|---|---|
+| **per-(digit,value) library built by single-block probing (oracle-tuned)** — morvin1a's attack | **100.0 %** | **10.8 %** |
+| … same library, best of 12 splits (needs the score: unreachable upper bound) | 100.0 % | 10.8 % |
+| random legal racks (format only) — the blind floor | 9.8 % | 10.0 % |
+| **front-first: the physical strike order — the natural first probe (foothold)** | 24.8 % | **10.8 %** (100 % on `n=0`, 0 % on `n>0`) |
+| back-first: knock the back row first | 4.8 % | 12.0 % |
+| reading order: knock from the top of the drawing | 4.5 % | 10.8 % |
+| front-first plus a few strays | 5.4 % | 8.4 % |
+| connected blob grown from the head pin | 19.8 % | 10.8 % |
+| **v1's rule: every out-of-turn pin, no neighbour test** | 98.0 % *(it is the rule)* | **10.8 %** (0 % on `n>0`) |
+| out-of-turn pin whose twin in the next frame is merely DOWN | 20.5 % | 12.6 % |
+| out-of-turn pin whose twin in the next frame is STANDING | 19.2 % | 15.1 % |
+| EXISTS version: *some* pin in front standing, aligned | 14.5 % | **24.1 %** ← the new ceiling |
+| MIRROR version: every pin *behind* standing, aligned | 4.2 % | 3.6 % |
+| aligned pin counted in BOTH frames (either side) | 12.6 % | 10.8 % |
+| aligned two frames apart instead of next door | 9.0 % | 20.9 % |
+| the same pin merely DOWN in two frames running | 3.4 % | 0.4 % |
+| adjacent frame pairs that both hold an out-of-turn pin (coarse) | 17.6 % | 14.1 % |
+| out-of-turn gated on the PREVIOUS frame being down | 19.5 % | 11.9 % |
+| out-of-turn gated on EITHER neighbour being down | 33.9 % | 10.8 % |
+| isolated fallen pins | 14.8 % | 6.8 % |
+| complement: standing pins with all pins in front fallen | 5.9 % | 1.0 % |
+| fallen pins in the back row | 12.6 % | 0.4 % |
+| fully cleared rows | 2.1 % | 3.6 % |
+| head pins down | 1.9 % | 8.9 % |
+| EXISTS out-of-turn pins, no neighbour test | 40.0 % | 10.8 % |
+| MIRROR pins, no neighbour test | 3.2 % | 7.6 % |
+| previous answer patched to the new dot counts | 7.9 % | 7.8 % |
+| demo replay (previous clue's answer) · one fixed answer · junk (empty, spaces, `0`, `1`, `x`, `1`×100, `o`×4000, the clue) | 0 % | 0 % |
+| the true rule (reference solver; independently re-implemented from bowling pin numbers) | 100 % | **100 %** |
+
+v2 landscape: **blind floor 10.0 %, foothold 10.8 %, ceiling of every template 24.1 %** — and the
+tabulation attack that beat v1 now sits *at* the floor. The two survivors above 20 % (EXISTS-aligned
+24.1 %, aligned-at-distance-2 20.9 %) are both *inside the right family*: a player who reaches either
+is one demo from the rule, which is the gradient we want. Note the deliberate inversion versus v1 —
+in v1 the single-frame readings were the dangerous ones (40 %, 34 %) and now they are all pinned at
+the floor; the survivors are the cross-frame variants, i.e. the difficulty moved to where the rule is.
+
+**Hypothesis-family test.** 672 hand-built local statistics (subject fallen/standing × direction
+front/behind/side/any × quantifier all/none/some × 4 row restrictions × 7 cross-frame readings:
+none, twin-down, twin-standing, aligned, previous-down, either-down, aligned-two-apart) plus 10
+global tallies. Survivors: 11–100 after 1 demo, 3–24 after 2, **2–4 after 3 and exactly 2 by 4 demos
+in all six trials** — and those two are the same rule stated two ways (with and without the head pin,
+which can never be out of turn). The fairness floor holds: a team that computes statistics on its
+demos gets there inside the demo budget.
+
+### 5. Validation
+
+`python tools/quickcheck.py challenges/lab/morvin.json --seeds 200` → **OK**, no warnings
+(gen 1.93 ms worst, score 0.09 ms, solve 29 ms worst).
+Sizes: `score` **471** chars (cap 512), `solve` **4952** (cap 5000), `generate` 2414; clue ≤ 22
+chars, solution ≤ 390 chars (cap 1024). `generate` **0.46 ms mean / 1.4 ms p99** per call and
+deterministic. 5000 fresh clues: `solve` scores 1 on **5000/5000**, mean 2.5 ms, median 1.7 ms,
+p99 23 ms, max 37 ms. `score`: 0.0008 ms on the empty string, 0.024 ms on a real answer, 0.006 ms on
+a 4000-char junk string; returns 0 or 1 only and never raises. Scorer cross-checked against an
+**independent re-implementation** that parses the drawing and uses real bowling pin numbers 1–10
+with a hardcoded in-front list, on **24 000** (clue, answer) pairs — real answers, 14 kinds of
+mutation (spaces stripped, indentation stripped, tabs, case, deletions, insertions, truncation,
+reversed line order, dropped header, duplicated line) and other clues' answers — **0 disagreements**.
+Achievability: **20 000 seeds**, the generator's own witness picture scores 1 every time.
+
+### 6. Predicted classification and kid score
+
+**On target (`testing` → `calibrated`), predicted mean final 30–55 % over two Opus players.** The
+step from v1 is large and it is aimed exactly at what the two v1 players did: the tabulation route is
+closed by measurement (100 % → 10.8 %) and the insight route now needs *two* observations, not one —
+"the dots are floating" is only half of it, and the missing half is invisible inside a single frame.
+Expect one crack (a player that computes cross-frame statistics on 3–4 demos, per the family test)
+and one partial in the 10–25 % band (the foothold plus an EXISTS-aligned or distance-2 reading).
+The honest risk in the other direction is **too_hard**: a player who never looks *between* frames
+sees an out-of-turn count that matches 0 % of `n>0` clues and may conclude the grader is exact-match
+— the demo guarantees (aligned columns, both kinds of near miss) are the mitigation, and the `n=0`
+foothold still pays 10.8 % so the channel is never dead.
+
+**Predicted kid score 4.2–4.6/5.** object should now be 4–5 (spaced, centred racks with `|` frame
+dividers over a 6–10 frame line reads as a bowling scoresheet, not as a triangle of characters — the
+judge's specific complaint); rule_statable 5 (one sentence, checked by pointing); kid_contributes 5
+(the half the models get wrong is still *which way is the bowler* — the MIRROR reading scores 3.6 % —
+plus a new, very kid-shaped one: *look sideways, not only inside one frame*); no_prereqs 5; fun 4–5;
+clue_shape 3–4 (up from ~2: the clue is now a row of `|`-separated boxes, the same shape as the
+answer, though it still does not show that each box holds a 4/3/2/1 rack). **nameable: no** — v1's
+"fell out of turn" named the whole rule; here it names only one clause of two.
+
+**Levers if it comes out too easy:** require the two aligned pins to have **two** standing pins in
+front (only the three interior positions could then count); require the pair to be in different rows;
+drop the header row so the digit↔dot mapping must be found.
+**If too hard:** raise the `n=0` share from 11 % to ~20 %; guarantee in every demo a **run of three**
+consecutive frames sharing an out-of-turn pin (seeds 11 and 77 already show one); or drop back to
+4–6 frames so the picture is smaller and the aligned columns are easier to spot.

@@ -1529,7 +1529,7 @@
    ]
   },
   "morvin": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Two of three canonical demos are degenerate n=0 cases; bias demo sampling toward mixed-count frames, and the rule is close to a nameable trope (fell out of turn).",
@@ -1545,6 +1545,9 @@
      "score": 3.6,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1632,6 +1635,12 @@
      "file": "challenges/lab/morvin.json",
      "note": "v1 designer (sport): bowling pin decks; n pins that fell although every pin in front still stands",
      "v": 1
+    },
+    {
+     "added": 1788562437.0120122,
+     "file": "challenges/lab/morvin.json",
+     "note": "v2: n counts the same pin out of turn in two adjacent frames (non-additive); 6-10 frames; clue shape mirrors the answer",
+     "v": 2
     }
    ]
   },
@@ -4739,7 +4748,7 @@
    "id": "refiner-morvin-v1-man",
    "kind": "refiner",
    "started": 1788558793.0566468,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -4747,7 +4756,7 @@
    "class": "morvin",
    "id": "players-morvin-v1-44f9",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -4812,6 +4821,23 @@
    "agents": 2,
    "class": "norvel",
    "id": "players-norvel-v2-3a7e",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "morvin",
+   "id": "judge-morvin-v2-man",
+   "kind": "judge",
+   "started": 1788562437.0402377,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "morvin",
+   "id": "players-morvin-v2-2413",
    "kind": "players",
    "status": "pending",
    "version": 2

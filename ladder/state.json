@@ -679,6 +679,20 @@
     }
    ]
   },
+  "basten": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788535094.8941724,
+     "file": "challenges/lab/basten.json",
+     "note": "v1 designer (animals and nature): fish tank, count plant spots nibbled by fish noses",
+     "v": 1
+    }
+   ]
+  },
   "carre": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -2941,6 +2955,23 @@
    "kind": "designer",
    "status": "pending",
    "version": null
+  },
+  {
+   "agents": 2,
+   "class": "basten",
+   "id": "players-basten-v1-6fcb",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "basten",
+   "id": "judge-basten-v1-77ce",
+   "kind": "judge",
+   "started": 1788535102.4695544,
+   "status": "running",
+   "version": 1
   }
  ],
  "profiles": {

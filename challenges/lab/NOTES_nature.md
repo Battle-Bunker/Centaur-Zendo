@@ -116,4 +116,27 @@ rather than invisibly wrong, and both orientations always appear at least twice.
 
 ## Measured numbers
 
-See the report / `basten.json` description for the full per-attack witness table.
+Full per-attack witness table is in the report and in `basten.json`'s `description`.
+Headline: 400 fresh clues, attacker assumed to know the well-formedness format perfectly and
+to build a legal tank satisfying its hypothesis.
+
+| attacker's law | score |
+|---|---|
+| random legal tank | 0.5 % |
+| **the true rule** (N nibbled spots, one spot eaten from both sides) | **100 %** |
+| N nibbled spots, third clause unknown | 12.0 % |
+| N nibbled spots, deliberately no double | 0.0 % |
+| N nibbling FISH (the n-gram reading of the picture) | 0.0 % |
+| N nibbling fish plus a double | 0.0 % |
+| N nibbled plant *columns* | 5.0 % |
+| every other rival counted above | 0.0-1.2 % |
+
+**Law-family sweep.** Over a 94-law family — every "count the fish that have character X on
+one side and Y on the other" pattern (both orientations, and the two merged) plus 19
+structural statistics of the tank — the mean number of laws consistent with the demos is
+3.98 after one demo, 1.43 after two, 1.08 after three and exactly 1.00 after six, and the
+sole survivor is the true clause-2 law. So the demo channel *is* decisive for the count once
+a player has the right family in mind; the difficulty is (a) getting the picture format
+exactly right, (b) generating "count the leaves being nibbled" rather than "count the fish
+that are nibbling", and (c) clause 3, which is a positive-only clause and therefore invisible
+to any law-fitting over demos.

@@ -60,3 +60,154 @@ probes, because demos only ever show satisfying pictures.
 *Kid contribution.* The child's sentence — "that towel's so long it's touching the next
 line, and it's dripping on the shirt" — is the rule. The model's sentence — "the number of
 garments whose depth equals the inter-rail spacing" — is half of it.
+
+---------------------------------------------------------------------------
+
+# crandel v1 — the shipped class
+
+`challenges/lab/crandel.json` (neutral invented name, unique in `challenges/` and
+`challenges/lab/`). Everything below is measured, not asserted; the harnesses are in
+`$SCRATCH/clothes/` (`attack.py` witness table, `hyp.py` hypothesis elimination,
+`test.py` junk + independent scorer + template leak + caching).
+
+## The rule, in one paragraph (private)
+
+The clue is `gaps/longs/drips`, e.g. **`524/43/11`**. `gaps` gives one digit per LINE
+(3 or 4 lines, each 2–6 rows, total 6–11): how many rows of air hang under that line.
+`longs` and `drips` give one digit each per line **except the last**. The answer is an
+ASCII drying rack, every row the same width (the drawer picks 26–32): a row made only of
+`=` and `v` is a line (the `v`s are pegs, cosmetic and unchecked), every other row is air;
+a **garment** is a horizontal run of one capital letter that hangs from the line above —
+it must appear in the top row of its block and the identical run must repeat down to its
+hem, so garments are rectangles and each row's runs are a subset of the row above.
+Everything else — filler character, letters, widths, hems, pegs, how many garments — is
+free. Two numbers are pinned per line (except the last): **`longs[i]`** = how many
+garments on line *i* hang all the way down to the line below, and **`drips[i]`** = how
+many of *those* have at least one garment hanging directly underneath them from the next
+line (their columns overlap) — *"of the ones that reach, how many are dripping on the
+washing below."* `drips[i] < longs[i]` always, so every line always shows at least one
+long garment hanging over a bare stretch.
+
+## Intended discovery path
+
+1. **One demo → the object.** Lines with clothes pegged under them, one lot above another.
+2. **1–2 demos → the grammar.** Measured player behaviour is that they rebuild picture
+   grammars perfectly; nothing here resists that, and nothing should.
+3. **Field 2 is the foothold** (DESIGN_LOOP lever 7): "how many hang right down to the
+   line below" is the obvious statistic and is readable off one demo. Getting it alone
+   scores **12.6 %** — a real, improving signal, not a wall of zeros.
+4. **Field 3 is the lateral step.** It is a *subset* of the long garments, and the two
+   neighbouring readings are dead on arrival: "all the long ones" *is* field 2, so it is
+   visibly not field 3; "the ones with something underneath" is falsified on every line of
+   every demo (every line always carries a short garment that does have something below).
+   What is left is the conjunction, which is what a kid says out loud: *that one's so long
+   it's touching the next line, and it's dripping on the shirt underneath.*
+
+## The witness table (500 fresh clues)
+
+Every attacker knows the picture grammar **and** field 2 perfectly and builds a legal rack;
+they differ only in the law they use to choose which of their long garments should count.
+
+| law used for field 3 | built | scores |
+|---|---|---|
+| **has a garment underneath — THE RULE** | 500 | **100.0 %** |
+| fully covers a garment below (a refinement) | 491 | 25.5 % |
+| is not at either end of the line | 352 | 16.8 % |
+| hangs over two garments | 37 | 16.2 % |
+| is wide (≥ 3 columns) | 500 | 15.2 % |
+| is in the left half of the line | 500 | 13.6 % |
+| **random choice among the long ones (= field 2 only)** | 500 | **12.6 %** |
+| is narrow (≤ 2 columns) | 491 | 9.4 % |
+| **template: identical garment columns on every line** | 500 | **0.0 %** |
+| template: two garments a line | 500 | 0.0 % |
+| previous clue's answer replayed | 500 | 0.0 % |
+| one fixed answer for every clue (best of 15) | 500 | 0.6 % |
+| `solve()` | 500 | 100.0 % |
+| empty / `"0"` / `"x"` / `"1"*100` / `"T"*4000` / `"="*30` / the clue itself / a blank rack | — | 0.0 % |
+
+**The template row is the whole reason the clue has three fields.** An earlier version
+pinned only the drip count per line. Against that version the *aligned-columns* template —
+put the garments at the same columns on every line, so every long garment automatically has
+something under it — scored **87.4 %**, because under alignment every rival reading
+(long / dripping / pairs / wet / covering) collapses to the same number and the wrong,
+much simpler law "the digit counts the long ones" wins without insight. Naming `longs`
+in the clue makes the spare long garments **mandatory and non-dripping**, which kills that
+template outright (87.4 % → 0.0 %) and — unlike a hidden "there must be a spare long one"
+clause — never taxes a player who *has* the rule but draws a tight witness. (basten's
+lesson: a positive-only clause costs the player who is right and buys nothing.)
+
+## Hypothesis elimination (fairness floor)
+
+A family of 150 per-line readouts (any/long/short × below / nothing-below / two-below /
+covers / covered-by × wide/narrow × inner-only, plus pair counts and lower-line counts),
+evaluated on shipped demos: **6.2 survive one demo, 1.5 survive two, and the true rule is
+the only survivor from demo 3 onwards in 30/30 trials.** The demos are informative; the
+difficulty is generating the hypothesis, not eliminating it — which is exactly the split
+NOTES_game's conclusion says a class must respect.
+
+## Leak checks on `solve()` itself (600 demos)
+
+* the counted garment is the leftmost on its line 26 % of the time, the rightmost 13 %;
+  it sits at index 0–6 with a smooth spread — no positional template.
+* by width: 388 / 412 / 878 of the counted ones are 1 / 2 / ≥3 wide against 1603 / 965 /
+  1314 of all long garments, i.e. wide garments overlap more often (intrinsic geometry).
+  "The widest of the long ones" is the counted one 69 % of the time, but as a *law* it
+  pays only 15.2 % because the count still has to come out exactly right on every line.
+* filler is one of `. , :` at random, letters are a random 3–5 of `TSPJDCHV` with no
+  repeat next door, width 26–32, height 10–15, 41 distinct (height, width) shapes.
+* `solve()` re-parses its own picture with a byte-identical copy of the scorer before
+  returning it, and never emits the minimal witness.
+
+## Validation
+
+`python tools/quickcheck.py challenges/lab/crandel.json --seeds 200` → **OK, no warnings**
+(`gen=0.07 ms score=0.13 ms solve=71.97 ms`). Sizes: **score 506/512**, solve 4737/5000,
+generate 545, clue ≤ 12 chars, solution ≤ 494. `generate` mean **0.017 ms** (cap 100 ms,
+brief asked < 1 ms), deterministic. `solve()` scores 1 on **5000/5000** fresh seeds, mean
+12.9 ms, worst 84 ms. `score` on **20 000 junk strings**: 0 raises, 0 non-binary, 0 false
+positives, worst 0.24 ms. Scorer cross-checked against an **independent grid-based
+re-implementation** (no regex, written from the spec) on 15 200 mutated / shuffled /
+re-cased / truncated answers: **0 disagreements**. ~9 800 distinct clue classes, so
+brute-force-and-cache over 6×450 probes is worth ~12 % of the final *on top of* the 12.6 %
+blind rate — i.e. the no-insight ceiling is ≈ 22 %, and there is no smaller clue space to
+farm.
+
+## Typical demo (clue `524/43/11`: lines of 5, 2 and 4 rows; 4 and 3 long; 1 and 1 dripping)
+
+```
+v==v=========v=========vv=v
+J..S.........P.........TT.J
+J..S.........P.........TT.J
+...S.........P.........TT.J
+...S.........P.........TT.J
+...S.........P.........TT.J
+v=v=v=v==v=v=v=vv==vv======
+SSS.P.T..S.TTT.SS..JJ......
+...........TTT.SS..JJ......
+vv==v=v==v=v=v========v=v==
+JJ..T.J..TTT.P........JJJ..
+JJ..T.J..TTT.P........JJJ..
+JJ..T.J..TTT.P........JJJ..
+JJ..T.J..TTT.P........JJJ..
+```
+Four things on the top line hang right down to the second line (`S`, `P`, `TT`, `J`) and
+exactly one of them, the `P`, has something under it (`TTT`). On the second line three hang
+right down (`TTT`, `SS`, `JJ`) and only `TTT` is over something (`P`). 13 lines, 27 columns.
+
+## Predicted classification
+
+**On target (testing → calibrated), mean final 40–60 %.** Expect one crack around round
+3–5 (the demos are informative enough that a player who thinks about the picture rather
+than the token stream gets there) and one player stuck in the 12–25 % band with field 2 and
+a wrong subset law. Predicted kid score **4.2–4.6/5**: the object is a 5/5 (washing on
+lines), the rule is a sentence a 12-year-old says before a model does, the picture is
+10–15 lines, and the two clue digits per line are two instances of the same sentence rather
+than two separate rules.
+
+**Levers if it comes out too easy** (in order): drop field 2 back out of the clue and
+instead require, in the scorer, that at least one long garment per line has nothing below
+(kills the aligned template a different way, but taxes tight witnesses); or count only
+drippers whose lower garment is *not* fully covered. **If it comes out too hard**: make
+the third field a single total instead of one digit per line, or guarantee in every demo
+that one counted garment is narrow and one uncounted long garment is the widest on its
+line, so the width correlation stops being a distraction.

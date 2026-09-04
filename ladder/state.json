@@ -899,6 +899,20 @@
     }
    ]
   },
+  "crandel": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788549394.6286163,
+     "file": "challenges/lab/crandel.json",
+     "note": "v1 designer (clothes): washing lines; per line, how many garments reach the line below and how many of those drip on washing beneath",
+     "v": 1
+    }
+   ]
+  },
   "erewhon": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -3742,7 +3756,7 @@
    "id": "designer-new-8-v0-59b0",
    "kind": "designer",
    "started": 1788545215.579415,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -4005,6 +4019,23 @@
    "kind": "designer",
    "status": "pending",
    "version": null
+  },
+  {
+   "agents": 1,
+   "class": "crandel",
+   "id": "judge-crandel-v1-man",
+   "kind": "judge",
+   "started": 1788549394.7061908,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "crandel",
+   "id": "players-crandel-v1-6bc5",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

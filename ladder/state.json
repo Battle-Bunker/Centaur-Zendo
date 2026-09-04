@@ -643,6 +643,20 @@
      },
      "score": 3.4,
      "version": 1
+    },
+    {
+     "advice": "Each book is still a letter repeated per height unit; try a single spine glyph plus a height marker so it reads as a book before a bar.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 3,
+      "no_prereqs": 5,
+      "object": 3,
+      "rule_statable": 4
+     },
+     "score": 3.8,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -2599,7 +2613,7 @@
    "id": "judge-fennick-v2-66c7",
    "kind": "judge",
    "started": 1788532553.62122,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

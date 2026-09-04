@@ -292,6 +292,20 @@
      },
      "score": 1.8,
      "version": 1
+    },
+    {
+     "advice": "Fix one thread-filler glyph and suppress the second strand so fresh demos are one clean diagonal band.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 3,
+      "no_prereqs": 4,
+      "object": 2,
+      "rule_statable": 2
+     },
+     "score": 2.6,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -1927,7 +1941,7 @@
    "id": "judge-OKRIN-v2-140e",
    "kind": "judge",
    "started": 1788523478.140062,
-   "status": "running",
+   "status": "done",
    "version": 2
   }
  ],

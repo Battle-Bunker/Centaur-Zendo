@@ -2065,7 +2065,7 @@
    ]
   },
   "velk": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Use a braid convention kids know (visibly broken under-strand) so who is on top reads without decoding \\ vs /.",
@@ -2081,6 +2081,9 @@
      "score": 2.8,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -2166,6 +2169,12 @@
     {
      "file": "challenges/lab/velk.json",
      "v": 1
+    },
+    {
+     "added": 1788536401.828434,
+     "file": "challenges/lab/velk.json",
+     "note": "v2: per-strand take-turns law kills both witness templates (100%->0%); crossings drawn with broken under-strand",
+     "v": 2
     }
    ]
   },
@@ -2799,7 +2808,7 @@
    "kind": "refiner",
    "reason": "kid_score",
    "started": 1788534727.4086149,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -2807,7 +2816,7 @@
    "class": "velk",
    "id": "players-velk-v1-7608",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -3019,6 +3028,23 @@
    "started": 1788535102.4695544,
    "status": "done",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "velk",
+   "id": "players-velk-v2-7af4",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "velk",
+   "id": "judge-velk-v2-7827",
+   "kind": "judge",
+   "started": 1788536407.7463927,
+   "status": "running",
+   "version": 2
   }
  ],
  "profiles": {

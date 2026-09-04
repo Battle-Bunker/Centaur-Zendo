@@ -278,3 +278,173 @@ player agents is not available in this designer session, so per the `sim/DESIGN_
 fallback the loop stops after step 3. Everything the orchestrator needs (team directories,
 filled-in briefs, teardown/report commands, and how to read the resulting hit-rates) is in
 `sim/results/lab-velk-1/HANDOFF.md`.
+
+---------------------------------------------------------------------------
+## `velk` v2 — iteration 2 (2026-09-04, refiner)
+
+Input: run `lad-velk-v1-1`, kid-judge score 2.8/5. Both Opus players **cracked** v1
+(100 % final each; training 91.5 % and 76.1 %) — class classified **too_easy**, target
+≈ 50 %. Previous version kept byte-identical as `challenges/lab/velk.v1.json`.
+
+### What the players actually did
+
+**velk1a — cracked in round 2 on 2 demos.** Its `NOTES.md`:
+
+> "THE RULE: exactly 2k-1 crossings, strictly ALTERNATING — the strand that starts in
+> position 0 (the "hunt") is in crossings 1,3,5,... (k of them); crossings 2,4,6,...
+> involve any other pair. Free choices (all verified to score 1): which non-hunt pair
+> crosses, the mark on non-hunt crossings, and which way the hunt moves. Convention kept
+> from the demo: `\` = hunt moves right, `/` = hunt moves left."
+> "Evidence: round 1 cycled 12 answer shapes over 511 items, 3 correct — all three had
+> (2k-1 crossings AND alternating)."
+> "Not required (demo 2 proved the class is more permissive than this family) ... some
+> looser invariant also passes. Irrelevant — the family above is always accepted."
+
+That is exactly the **"alternate the clue strand with filler crossings"** witness the v1
+lab note listed as a risk, and it is worse than it looks: velk1a never had to read the
+mark as **over/under at all**. It read `\`/`/` as *"which way the hunt moved"*, a purely
+kinematic reading, and got the count for free because v1's law 1 was **global** ("the
+strand in front at one crossing may not be in front at the *next* crossing"), which a
+strict every-other-crossing pattern satisfies automatically. Filler crossings were
+completely free (any pair, any mark), so `n` was trivially controllable.
+
+**velk1b — cracked in round 5 on 5 demos**, with an even blinder template:
+
+> "Accepted construction: rotate the word RIGHT by k=2 with the minimal adjacent swaps,
+> then append q = N-2 repetitions of the four swaps [0,2,0,2] (which put everything back).
+> Every crossing drawn '\'. 100% in all 15 (L,N) cells."
+> "the true underlying invariant was never pinned down (no linear formula ... fits all five
+> demos plus my scored answers)."
+
+**Lesson for the whole ladder:** v1's adversarial table only tested *wrong rules*. It never
+tested **cheap subfamilies of correct answers** — a template that satisfies the true rule
+by construction without the player knowing the rule. Those are the real leak, and they
+score 100 %, not 20 %. Every self-test from now on must include a "what is the laziest
+thing that always passes?" row.
+
+### The v2 change (one lever, plus the judge's rendering note)
+
+1. **Law 1 becomes per-strand — "TAKE TURNS".** Every strand alternates over/under across
+   *its own* successive crossings: a strand that passed in front last time it crossed must
+   go behind the next time it crosses. This is what a real plait does, and a kid can say
+   it in one line ("each rope takes turns going over and under"). It kills velk1a's family
+   outright — the clue strand cannot be in front at every one of its own crossings once
+   `n >= 2` — and it kills velk1b's all-`\` template, whose travelling letter goes behind
+   at every crossing. It also makes **filler crossings expensive**: the two strands in a
+   filler must be taking turns as well, so padding is no longer free.
+2. **Law 2 kept as it was** (no two consecutive crossings at the same gap). A stronger
+   version was tried and rejected — see "SIT OUT" below.
+3. **The judge's note acted on.** v1 drew a crossing as a single `\` or `/` in the gap;
+   the judge scored 2.8/5 and asked for "a braid convention kids know (visibly broken
+   under-strand) so who is on top reads without decoding `\` vs `/`". A crossing is now
+   **two rows**: a LEAN row where both strands tip towards each other at their own
+   columns, and a CROSS row where only the front strand's line carries on through the
+   middle. The strand that goes behind is **visibly broken** — its line stops and picks up
+   again as a letter underneath, exactly as an under-strand is drawn in any plait diagram.
+
+```
+L M E G          <- the four strands
+\ / | |          <- L and M lean into each other
+ \  | |          <- L's line carries on: L is IN FRONT; M's line is broken
+M L E G
+| | \ /
+| |  \           <- E in front of G
+M L G E
+| \ / |
+|  /  |          <- G in front: L goes under this time (it must: L was in front)
+M G L E
+\ / | |
+ \  | |          <- M in front (M went under at the first crossing)
+G M L E
+| | \ /
+| |  \           <- L in front again: that is 2 = the clue's n
+G M E L
+```
+(clue `LMEG|2`; L is in front at exactly 2 crossings.)
+
+Everything else is unchanged: clue `LETTERS|n` (4/5/6 distinct capitals, `n` in **2..5**,
+one down from v1 so the pictures stay short now that a crossing costs two rows), row 0 is
+the clue's letters spaced out, the count is "crossings where the clue's first strand
+passes in front", decoys are crossings where it goes under and crossings it sits out.
+
+**Rejected harder law: "SIT OUT"** (the two strands that just crossed must both sit out the
+next crossing — equivalently consecutive crossings are ≥ 2 gaps apart). It kills the
+zig-zag family too, but with `K = 4` it leaves only the gaps 0 and 2, which must then
+alternate, and TAKE TURNS then forces the mark as well: the whole plait becomes a
+*deterministic wallpaper* after the first two crossings, i.e. a brand-new degenerate
+witness ("copy the demo's pattern and cut it to length"). Rejected for `K = 4..6`; it would
+only be safe on much wider plaits.
+
+### Validation (v2)
+
+`python tools/quickcheck.py challenges/lab/velk.json --seeds 200` → `OK velk gen=0.06ms
+score=0.07ms solve=1.08ms`, **no warnings**. Sizes: **score 504/512**, solve 3709/5000,
+generate 167/50000; clue ≤ 8 chars; answers 100–729 chars (cap 1024), 16–61 rows.
+Worst `score` call over junk, truncations, shuffles and 1024-char inputs: **0.115 ms**
+(cap 50), **0 exceptions, 0 false ones**. `solve` 0.16 ms mean / 1.45 ms worst, and it
+never returns "" (satisfiability sweep: K = 4..6 × n = 2..8 × 80 letter sets = 1680 clues,
+0 failures — so there is headroom above the generator's range).
+**Cross-check**: an independent re-implementation written from the prose agrees with the
+shipped 504-char scorer on **11500 (clue, answer) pairs** (reference answers + 22 mutations
+each: mark flips, dropped/duplicated blocks, truncations, row-0 swaps, character
+substitutions, row reversal, CRLF, padding) — **0 disagreements**.
+Cosmetic tolerance 300/300 for trailing newline, blank tail lines, leading newline, CRLF,
+trailing spaces on every row, blank lines at both ends; leading indentation still rejected
+0/300 (deliberate — every demo shows the exact layout).
+
+### Witness table, before → after (1500 fresh clues each)
+
+| family | v1 | v2 |
+|---|---|---|
+| **the exact rule (one-pass greedy) — fairness floor** | 100 % | **100 %** |
+| **velk1a's witness: alternate clue-strand-in-front with free filler** | **100 %** (this is how it cracked v1) | **0.0 %** |
+| **velk1b's witness: rotate-right-2 + [0,2,0,2] padding, all `\`** | **100 %** | **0.0 %** |
+| v1's `solve()` output re-scored under the new rule | 100 % | 0.0 % |
+| v1's exact rule (global "not in front twice running" + gap law + count) | 100 % | 5.2 % |
+| "n = clue strand in front of its RIGHT-hand neighbour" (narrower reading) | — | 65.3 % |
+| "the clue strand alternates and crosses every time" (zig-zag sweep) | — | 31.7 % |
+| both laws + "n = crossings the clue strand goes UNDER" | 7.7 % | 28.4 % |
+| both laws + count, mark semantics inverted | 2.8 % | 27.2 % |
+| both laws + "n = number of `\` marks" | 6.9 % | 17.3 % |
+| both laws + "n = crossings the LAST strand is in front" | 12.3 % | 14.1 % |
+| right count + take-turns, gap law missed | 18.6 % | 8.3 % |
+| both laws, count ignored | 9.7 % | 5.7 % |
+| right count + gap law, take-turns missed | 21.8 % | 2.8 % |
+| right count, neither law | 3.3 % | 1.0 % |
+| both laws + "n = crossings the clue strand is IN" | 8.9 % | 0.0 % |
+| a plait of exactly n crossings | 0.0 % | 0.0 % |
+| best constant answer (50 candidates × 400 clues) | 0.25 % | 0.25 % |
+| a demo answer replayed under another clue | 0.0 % | 0.0 % |
+| junk, truncations, shuffles, non-ASCII | 0 % | 0 % |
+| random lettering (row 0 not the clue's letters) | 0 % | 0 % |
+
+(The v1 column is v1's own table plus the two player families, which v1 never tested.)
+
+Reading of the new table: the two witnesses that cracked v1 are **dead**, and so is the
+whole of v1's understanding (5.2 %). The two highest survivors are honest near-misses, not
+shortcuts — "in front of its right-hand neighbour" (65 %) is a *narrower* reading of the
+same quantity by a player who already sees over/under, and the zig-zag sweep (32 %) needs
+TAKE TURNS, the mark semantics and the count, and still only fits clues with enough gaps
+(`K-1 >= 2n-1`). "Counts the unders" (28 %) and "inverted marks" (27 %) are near-misses *by
+construction*: taking turns makes a strand's fronts and unders differ by at most one. The
+1–30 % band is a genuine gradient — each law found roughly triples the hit-rate — so nobody
+is flying blind, which was the failure that killed `orlan`.
+
+### Prediction and dials
+
+Predicted classification: **on target** (expect one crack + one partial, mean ≈ 0.4–0.6).
+Predicted kid score: **4/5** — the object is still a plait, the picture now reads like a
+drawn braid (broken under-strand), and both laws are one-line rope statements ("each rope
+takes turns going over and under"; "you can't undo the crossing you just made").
+
+If v2 is still too easy, in order: (1) narrow the count to "in front of the strand on its
+**right**" (the 65 % near-miss becomes the rule, adding a third decoy family; costs 6
+scorer chars, budget allows); (2) anchor the finish (the bottom row must repeat the top —
+a plait that comes back to where it started); (3) require every strand to take part.
+If it turns out **too hard**, soften by dropping the gap law (worth ~8 points on its own)
+or by lengthening `solve()`'s plaits so the invariants are easier to see across a demo.
+
+### Iteration-2 status
+`challenges/lab/velk.json` is v2 and validated; `challenges/lab/velk.v1.json` is the
+byte-identical previous version. Nothing committed; no arena opened (the orchestrator
+opens it).

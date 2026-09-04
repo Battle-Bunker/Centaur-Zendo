@@ -948,7 +948,22 @@
   },
   "quaich": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Re-skin the cyclic pairing onto a concrete object (three colours of paper-chain links or nesting cups, each colour closed by one specific other colour) so the pairing and the one-chain clause are visible in the demo.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 1,
+      "object": 1,
+      "rule_statable": 2
+     },
+     "score": 1.6,
+     "version": 1
+    }
+   ],
    "runs": [
     {
      "cadence": "6x0.5s/5s/3s",
@@ -1613,7 +1628,8 @@
    "class": "murn",
    "id": "judge-murn-v2-5a4a",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788522533.1045043,
+   "status": "running",
    "version": 2
   },
   {
@@ -1630,7 +1646,7 @@
    "id": "judge-quaich-v1-aa16",
    "kind": "judge",
    "started": 1788522443.3243399,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1670,6 +1686,15 @@
    "class": "virel",
    "id": "judge-virel-v1-d540",
    "kind": "judge",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "quaich",
+   "id": "refiner-quaich-v1-2f30",
+   "kind": "refiner",
+   "reason": "kid_score",
    "status": "pending",
    "version": 1
   }

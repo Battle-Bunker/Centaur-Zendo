@@ -100,6 +100,12 @@ def plan(s):
     for n, c in classes.items():
         if c["status"] in ("too_easy", "too_hard") and c["current_version"] not in c.get("refined_versions", []):
             add("refiner", n, c["current_version"], agents=1)
+    # 2b. re-skin refiners for classes that are balanced-ish but score badly with the kid judges
+    for n, c in classes.items():
+        q = qual_score(c)
+        if q is not None and q < 3.5 and c["status"] not in ("retired", "too_easy_textbook") \
+                and c["current_version"] not in c.get("refined_versions", []):
+            add("refiner", n, c["current_version"], agents=1, reason="kid_score")
     # 3. judges for unjudged current versions (skip textbook)
     for n, c in classes.items():
         if c["status"] in ("retired", "too_easy_textbook"): continue

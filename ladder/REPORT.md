@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 19:11 UTC
+# Ladder report — 2026-09-04 19:12 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -41,7 +41,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | SUNZI | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TARE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TOPPLE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| tovel | 4 | testing | - | - | - | 0 | 0 | - |
+| tovel | 4 | testing | - | - | 3.6 | 0 | 0 | - |
 | trico | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | velk | 2 | testing | - | - | 2.4 | 0 | 0 | - |

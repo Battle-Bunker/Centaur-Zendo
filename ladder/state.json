@@ -2400,6 +2400,20 @@
      },
      "score": 3.8,
      "version": 3
+    },
+    {
+     "advice": "Four stacked clauses stay un-sayable in one sentence; merge or drop one (fold the blocked middle into the weekday window, or drop first-occurrence=n).",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 2
+     },
+     "score": 3.6,
+     "version": 4
     }
    ],
    "refined_versions": [
@@ -3043,7 +3057,7 @@
    ]
   }
  },
- "direction_cursor": 11,
+ "direction_cursor": 12,
  "jobs": [
   {
    "agents": 0,
@@ -3957,7 +3971,7 @@
    "id": "judge-tovel-v4-man",
    "kind": "judge",
    "started": 1788549116.4017282,
-   "status": "running",
+   "status": "done",
    "version": 4
   },
   {
@@ -3973,6 +3987,15 @@
    "class": "new-10",
    "direction": "sport and scoring",
    "id": "designer-new-10-v0-a9fd",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
+  },
+  {
+   "agents": 1,
+   "class": "new-11",
+   "direction": "weather and seasons",
+   "id": "designer-new-11-v0-71cd",
    "kind": "designer",
    "status": "pending",
    "version": null

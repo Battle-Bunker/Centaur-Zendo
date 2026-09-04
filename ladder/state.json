@@ -3511,10 +3511,11 @@
    "version": 2
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "basten",
    "id": "players-basten-v2-72b1",
    "kind": "players",
+   "note": "team a finished; one live agent remaining",
    "run": "lad-basten-v2-1",
    "started": 1788541836.2163177,
    "status": "running",
@@ -3546,7 +3547,13 @@
    "class": "garrow",
    "id": "players-garrow-v2-51cc",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-garrow-v2-1",
+   "started": 1788543958.4470875,
+   "status": "running",
+   "teams": {
+    "garrow1a": "opus-lowdemo",
+    "garrow1b": "opus-theorist"
+   },
    "version": 2
   },
   {

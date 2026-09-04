@@ -757,7 +757,22 @@
   },
   "garrow": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "The bordered grid of dots and letter pairs does not read as pizza on sight; add a crust/cheese visual cue.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 5,
+      "object": 2,
+      "rule_statable": 3
+     },
+     "score": 3.2,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -2667,7 +2682,7 @@
    "id": "judge-garrow-v1-man",
    "kind": "judge",
    "started": 1788532830.4204485,
-   "status": "running",
+   "status": "done",
    "version": 1
   }
  ],

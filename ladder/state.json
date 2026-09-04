@@ -791,6 +791,83 @@
      ],
      "run": "lad-basten-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 3,
+       "final_correct": 1194,
+       "final_presented": 2867,
+       "final_rate": 0.41646320195326125,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         702
+        ],
+        [
+         37,
+         744
+        ],
+        [
+         67,
+         566
+        ],
+        [
+         38,
+         661
+        ],
+        [
+         125,
+         537
+        ],
+        [
+         166,
+         470
+        ]
+       ],
+       "team": "basten1b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 795,
+       "final_presented": 3186,
+       "final_rate": 0.2495291902071563,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         637
+        ],
+        [
+         9,
+         587
+        ],
+        [
+         53,
+         600
+        ],
+        [
+         0,
+         635
+        ],
+        [
+         113,
+         637
+        ],
+        [
+         43,
+         464
+        ]
+       ],
+       "team": "basten1a"
+      }
+     ],
+     "run": "lad-basten-v2-1",
+     "version": 2
     }
    ],
    "status": "testing",
@@ -3532,7 +3609,7 @@
    "note": "team a finished; one live agent remaining",
    "run": "lad-basten-v2-1",
    "started": 1788541836.2163177,
-   "status": "running",
+   "status": "done",
    "teams": {
     "basten1a": "opus-lowdemo",
     "basten1b": "opus-theorist"
@@ -3584,8 +3661,22 @@
    "class": "tovel",
    "id": "players-tovel-v3-00c5",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-tovel-v3-1",
+   "started": 1788544085.9244797,
+   "status": "running",
+   "teams": {
+    "tovel1a": "sonnet-default",
+    "tovel1b": "sonnet-kidproxy"
+   },
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "basten",
+   "id": "players-basten-v2-fb12",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

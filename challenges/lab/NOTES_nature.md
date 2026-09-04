@@ -260,3 +260,22 @@ one with its tail against a weed, three swimming free):
 partial/high-partial rather than two failures. **Predicted kid score:** 4.5–4.8/5 (the object was
 already 5/5; the measurement is now visible in the picture instead of hidden in a shoal).
 Previous version kept byte-identical at `challenges/lab/basten.v1.json`.
+
+## basten v2 ladder run `lad-basten-v2-1` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | reading |
+|---|---|---|---|---|
+| basten1a | opus-lowdemo | 25% | 2 | "fish are hiding in the weeds" — placement matters, never the nose |
+| basten1b | opus-theorist | 42% | 3 | "how many fish are standing right next to a reed, at least N" — tuned an offset per N |
+
+Mean 33% (v1 was 7%). The softening worked as intended: both players now see the fish/weed
+relationship, and 1b's reading ("fish next to a reed") is one step from the rule ("fish with its
+NOSE on a reed"). Neither took that step; 1b treated the residual as checker noise ("my count is
+slightly coarser than the checker's"), which is precisely nose-vs-tail. 1b's own kid line:
+"the fish are all hiding next to the weeds" — said the kid would say it straight away.
+
+Status: testing, 4 finals over 2 versions; v2 alone is 25/42, on the low side of the band but a
+real gradient (0 → 5 → 12 → 23 → 35 → 42 over six rounds). Leave v2 as is; the next two finals
+decide. If both land 20–45% again, the lever is not the rule but the demo: make every demo carry a
+tail-on-reed fish right next to a nose-on-reed fish so the asymmetry is the first thing seen (v2
+already forces ≥1 tail-touching fish; raise it to 2–3 and put them beside a nibbler).

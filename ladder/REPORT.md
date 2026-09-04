@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 17:46 UTC
+# Ladder report — 2026-09-04 17:48 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -7,13 +7,13 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | fennick | 2 | testing | 50% | 1.00 | 3.8 | 2 | 1 | opus-lowdemo,opus-theorist |
 | murn | 2 | testing | 52% | 0.97 | 2.6 | 2 | 1 | opus-default |
 | virel | 1 | testing | 57% | 0.86 | 3.8 | 2 | 1 | opus-default,opus-kidproxy |
+| basten | 2 | testing | 33% | 0.67 | 3.8 | 2 | 0 | opus-lowdemo,opus-theorist |
 | sarn | 1 | testing | 21% | 0.42 | 4.0 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist |
 | orlan | 3 | testing | 17% | 0.35 | 2.6 | 2 | 0 | opus-default |
 | AHMES | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ANAPAL | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | BASILISK | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| basten | 2 | testing | - | - | 3.8 | 0 | 0 | - |
 | carre | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | CHAKRA | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | CRIBROT | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |

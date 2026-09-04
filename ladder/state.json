@@ -263,7 +263,22 @@
   },
   "OKRIN": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Recast as a concrete kid object (bracelet pattern, marching-band formation, seating chart) and give a kid a foothold clause before the alphabetical-rank twist.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 2,
+      "object": 2,
+      "rule_statable": 1
+     },
+     "score": 1.8,
+     "version": 1
+    }
+   ],
    "runs": [
     {
      "cadence": "6x0.5s/5s/3s",
@@ -1635,7 +1650,7 @@
    "id": "judge-OKRIN-v1-5f49",
    "kind": "judge",
    "started": 1788522548.861258,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1747,6 +1762,16 @@
    "reason": "kid_score",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "OKRIN",
+   "id": "refiner-OKRIN-v1-8b94",
+   "kind": "refiner",
+   "reason": "kid_score",
+   "started": 1788522628.0757318,
+   "status": "running",
+   "version": 1
   }
  ],
  "profiles": {

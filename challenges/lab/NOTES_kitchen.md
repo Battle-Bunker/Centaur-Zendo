@@ -143,3 +143,28 @@ gradient, and it is the same gradient as virel's "what is N counting?".
 
 * **v1 (`garrow`)** — built, validated and self-tested (see the report). No arena run in
   this session: the orchestrator opens it.
+
+## garrow v1 ladder run `lad-garrow-v1-1` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | best training round |
+|---|---|---|---|---|
+| garrow1a | opus-default | 25% | 5 | 14% |
+| garrow1b | opus-kidproxy | 6% | 4 | 12% |
+
+Mean 15%: leaning too_hard, not yet classified (2 finals). Neither player found the rule.
+Both read the numbers as something about the knife cutting pieces: 1a as "severed(L) = how many
+L-dominoes a cut passes through" (empirically severed = n gives 29%, n−1 gives 12%), 1b as
+"slices where L outnumbers the other topping". Both are shadows of the real count (slices holding
+two or more pieces of L, a halved piece belonging to both sides) — 1a even wrote "the cut lines
+slice *through* the little pairs, and it's the slicing that the clue is counting" without taking
+the next step to "…so that slice now holds two". 1b called the scorer buggy because its own
+(wrong) rule fitted all demos; the scorer is fine.
+
+Both players said the kid-reading they missed was "the pieces don't have to be the same size" and
+"why does *this* cut count?". Both also hard-coded 7 slices / widths 3–7 from two neat demos.
+Softening levers if the next two finals stay low: (a) draw reference cuts with wildly uneven widths
+so neatness is visibly irrelevant; (b) make the digit small (1–2) so a kid can point at the one
+slice "with two mushrooms"; (c) let demos carry a halved piece next to a whole one of the same letter
+in the same slice so "two of the same on one slice" is the headline picture.
+Throughput note: ~50 challenges per 0.5 s round for both teams versus 400-800 on other classes. score() is 0.05 ms and
+the server only calls generate() per item, so the bottleneck is generate() in the sandbox; worth profiling before the next run.

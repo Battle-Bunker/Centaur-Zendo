@@ -958,8 +958,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 77,
+       "final_presented": 305,
+       "final_rate": 0.25245901639344265,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         53
+        ],
+        [
+         6,
+         52
+        ],
+        [
+         7,
+         51
+        ],
+        [
+         2,
+         49
+        ],
+        [
+         7,
+         50
+        ],
+        [
+         6,
+         55
+        ]
+       ],
+       "team": "garrow1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 4,
+       "final_correct": 17,
+       "final_presented": 294,
+       "final_rate": 0.05782312925170068,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         53
+        ],
+        [
+         3,
+         54
+        ],
+        [
+         1,
+         52
+        ],
+        [
+         3,
+         52
+        ],
+        [
+         1,
+         40
+        ],
+        [
+         6,
+         50
+        ]
+       ],
+       "team": "garrow1b"
+      }
+     ],
+     "run": "lad-garrow-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788532815.6070344,
@@ -2572,7 +2650,7 @@
    "class": "OKRIN",
    "id": "players-OKRIN-v1-9f3f",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -2596,7 +2674,7 @@
    "class": "quaich",
    "id": "players-quaich-v1-dc9f",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -2838,7 +2916,7 @@
    "class": "tovel",
    "id": "players-tovel-v1-ebc6",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -2931,7 +3009,7 @@
    "kind": "players",
    "run": "lad-garrow-v1-1",
    "started": 1788534457.9098332,
-   "status": "running",
+   "status": "done",
    "teams": {
     "garrow1a": "opus-default",
     "garrow1b": "opus-kidproxy"
@@ -3005,7 +3083,13 @@
    "class": "tovel",
    "id": "players-tovel-v2-57dc",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-tovel-v2-1",
+   "started": 1788537615.068024,
+   "status": "running",
+   "teams": {
+    "tovel1a": "opus-lowdemo",
+    "tovel1b": "opus-theorist"
+   },
    "version": 2
   },
   {
@@ -3065,6 +3149,14 @@
    "started": 1788536407.7463927,
    "status": "done",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v1-c2c5",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

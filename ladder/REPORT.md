@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 15:41 UTC
+# Ladder report — 2026-09-04 16:00 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -9,6 +9,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | virel | 1 | testing | 57% | 0.86 | 3.8 | 2 | 1 | opus-default,opus-kidproxy |
 | sarn | 1 | testing | 24% | 0.47 | 4.0 | 2 | 0 | opus-default,opus-kidproxy |
 | orlan | 3 | testing | 17% | 0.35 | 2.6 | 2 | 0 | opus-default |
+| garrow | 1 | testing | 16% | 0.31 | 3.2 | 2 | 0 | opus-default,opus-kidproxy |
 | AHMES | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | ANAPAL | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
@@ -19,7 +20,6 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | CRIBROT | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | DUOMASK | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | erewhon | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
-| garrow | 1 | untested | - | - | 3.2 | 0 | 0 | - |
 | GRAYLING | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | HAIL | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | hanjie | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |

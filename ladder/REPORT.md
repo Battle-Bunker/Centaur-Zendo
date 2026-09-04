@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 15:08 UTC
+# Ladder report — 2026-09-04 15:10 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -7,7 +7,6 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | fennick | 2 | testing | 50% | 1.00 | 3.8 | 2 | 1 | opus-lowdemo,opus-theorist |
 | murn | 2 | testing | 52% | 0.97 | 2.6 | 2 | 1 | opus-default |
 | virel | 1 | testing | 57% | 0.86 | 3.8 | 2 | 1 | opus-default,opus-kidproxy |
-| tovel | 1 | testing | 66% | 0.69 | 4.4 | 2 | 0 | opus-default,opus-kidproxy |
 | sarn | 1 | testing | 24% | 0.47 | 4.0 | 2 | 0 | opus-default,opus-kidproxy |
 | orlan | 3 | testing | 17% | 0.35 | - | 2 | 0 | opus-default |
 | AHMES | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
@@ -41,6 +40,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | SUNZI | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TARE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TOPPLE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
+| tovel | 2 | testing | - | - | - | 0 | 0 | - |
 | trico | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | velk | 1 | testing | 100% | 0.00 | 2.8 | 2 | 2 | opus-default,opus-kidproxy |

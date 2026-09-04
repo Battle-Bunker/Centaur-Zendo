@@ -1864,7 +1864,7 @@
    ]
   },
   "tovel": {
-   "current_version": 1,
+   "current_version": 2,
    "note": "run1: both partial (48%, 83%) without the rule. LEAK: accepted shapes are invariant under letter renaming and depend only on (days,start,N) -> 140 triples farmable via demos+probes. Refiner lever: tie the count to letter identity (a second clue letter, or a required count of the clue letter) so shapes don't transfer.",
    "qual": [
     {
@@ -1881,6 +1881,9 @@
      "score": 4.4,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1966,6 +1969,12 @@
     {
      "file": "challenges/lab/tovel.json",
      "v": 1
+    },
+    {
+     "added": 1788534592.8550391,
+     "file": "challenges/lab/tovel.json",
+     "note": "v2: clue adds first-counted-day n; closes rename/(days,start,k) farming (100%->11%); decoy pairs in every demo",
+     "v": 2
     }
    ]
   },
@@ -2246,7 +2255,7 @@
    ]
   }
  },
- "direction_cursor": 8,
+ "direction_cursor": 9,
  "jobs": [
   {
    "agents": 0,
@@ -2755,7 +2764,7 @@
    "id": "refiner-fennick-v1-man1",
    "kind": "refiner",
    "reason": "too_hard_object_illegible",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -2813,7 +2822,7 @@
    "direction": "animals and nature",
    "id": "designer-new-7-v0-818a",
    "kind": "designer",
-   "status": "pending",
+   "status": "done",
    "version": null
   },
   {
@@ -2835,7 +2844,7 @@
    "class": "garrow",
    "id": "judge-garrow-v1-64fe",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -2854,7 +2863,7 @@
    "id": "designer-new-7-man",
    "kind": "designer",
    "started": 1788532891.077101,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -2864,7 +2873,7 @@
    "kind": "refiner",
    "reason": "transfer_leak",
    "started": 1788532913.016411,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -2891,6 +2900,32 @@
    "kind": "players",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v2-57dc",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "judge-tovel-v2-b76b",
+   "kind": "judge",
+   "started": 1788534606.269209,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "new-8",
+   "direction": "clothes, dressing and packing",
+   "id": "designer-new-8-v0-59b0",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

@@ -1392,7 +1392,22 @@
   },
   "tovel": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Place the weekend-reaching and week-break-crossing decoy pairs near a counted pair in every demo so the school-week exclusion is spottable by contrast.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.4,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1796,7 +1811,7 @@
    "id": "judge-tovel-v1-fb3f",
    "kind": "judge",
    "started": 1788523387.4100273,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1812,7 +1827,8 @@
    "class": "virel",
    "id": "judge-virel-v1-d540",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788523499.278102,
+   "status": "running",
    "version": 1
   },
   {

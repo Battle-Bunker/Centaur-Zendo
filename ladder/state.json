@@ -1199,7 +1199,22 @@
   },
   "orlan": {
    "current_version": 3,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Skin the abstract x/o/#/. grid as a concrete kid-world object (frogs on lily pads counted by touching neighbours); the real difficulty (one move that recursively freezes every enemy) is a search task rather than a one-sentence insight.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 3,
+      "object": 3,
+      "rule_statable": 2
+     },
+     "score": 2.6,
+     "version": 3
+    }
+   ],
    "refined_versions": [
     1,
     2
@@ -2620,7 +2635,7 @@
    "id": "judge-orlan-v3-4de5",
    "kind": "judge",
    "started": 1788535233.9712915,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

@@ -901,7 +901,22 @@
   },
   "crandel": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Make the drip relationship visually loud instead of requiring precise column alignment across a 30-wide grid, and cue that there are three separate counted fields.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 3,
+      "object": 3,
+      "rule_statable": 3
+     },
+     "score": 2.6,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4026,7 +4041,7 @@
    "id": "judge-crandel-v1-man",
    "kind": "judge",
    "started": 1788549394.7061908,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -4034,6 +4049,15 @@
    "class": "crandel",
    "id": "players-crandel-v1-6bc5",
    "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "crandel",
+   "id": "refiner-crandel-v1-8c7b",
+   "kind": "refiner",
+   "reason": "kid_score",
    "status": "pending",
    "version": 1
   }

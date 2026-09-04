@@ -899,7 +899,7 @@
    ]
   },
   "basten": {
-   "current_version": 2,
+   "current_version": 3,
    "qual": [
     {
      "advice": "The double-nibble clause is positive-only and easy to miss; consider widening the fish-minus-leaf gap to 2+ in every demo so the nose/tail-vs-both-sides distinction reads as the headline discovery.",
@@ -931,7 +931,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -1175,6 +1176,12 @@
      "file": "challenges/lab/basten.json",
      "note": "v2: N+2..N+5 fish so nibblers dominate; clause 3 (double) dropped; scorer counts nibbling fish",
      "v": 2
+    },
+    {
+     "added": 1788565069.3883457,
+     "file": "challenges/lab/basten.json",
+     "note": "v3 demo economy: clue is the empty tank; N 3-5; demos show nose vs tail on the same stalk",
+     "v": 3
     }
    ]
   },
@@ -5583,7 +5590,7 @@
    "class": "basten",
    "id": "players-basten-v2-fb12",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 2
   },
   {
@@ -6000,7 +6007,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788563973.3680131,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -6047,24 +6054,41 @@
    "version": 1
   },
   {
+   "agents": 1,
+   "class": "garrow",
    "id": "refiner-garrow-v2-econ",
    "kind": "refiner",
-   "class": "garrow",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
+   "reason": "demo_economy",
    "started": 1788564551.2230492,
-   "reason": "demo_economy"
+   "status": "running",
+   "version": 2
   },
   {
+   "agents": 1,
+   "class": "kelmar",
    "id": "refiner-kelmar-v1-econ",
    "kind": "refiner",
-   "class": "kelmar",
-   "version": 1,
-   "agents": 1,
-   "status": "running",
+   "reason": "demo_economy",
    "started": 1788564551.223051,
-   "reason": "demo_economy"
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "basten",
+   "id": "judge-basten-v3-man",
+   "kind": "judge",
+   "started": 1788565069.4189916,
+   "status": "running",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "basten",
+   "id": "players-basten-v3-befb",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

@@ -286,3 +286,124 @@ spent demos elsewhere; ~110 probed hypotheses gave nothing. Neither clue reveals
 is a picture (tank / rain over the garden). Demo-economy pass needed: draw the empty tank (surface,
 water rows, gravel with the stalks) / the dry sky over the garden row INTO the clue, so the answer
 is "the clue with fish / rain added"; one clause; demos that show the relation in one look.
+
+## basten v3 — demo-economy pass after `lad-kelmar-v1-1` (2026-09-04)
+
+**Diagnosis carried in.** v2 scored 25 % / 42 % under the old 6-round / 6-demo format and then
+**0 % / 0 % in the first 7-class run, with no demo spent on it**. Both players read the clue
+`..2....3../4` as "a string plus a number", could not tell that the answer was a *picture*, and
+spent their three demos on classes whose clues looked more legible. The rule was never the
+problem in that run; the clue was. LADDER.md's format-shift section prescribes the fix: put the
+object in the clue, one clause, demos that teach the rule in one look, a foothold for the
+demo-less player.
+
+**Changes.**
+
+1. **The clue IS the empty tank.** It now draws the object: `~` surface, 4–6 water rows of `.`,
+   the plant stalks `|` already standing in the gravel, the `#` gravel bed, and a last line
+   holding N. The answer is that picture with fish added. The old digit-string encoding of the
+   plants (`...2.....2.......3......3..../2`) is gone. A demo-less player can read the drawing
+   convention straight off the clue; the only thing they have to invent is the fish glyph, and
+   `><>` is the canonical ASCII fish.
+2. **The depth is fixed by the clue**, so the free parameter D ∈ {4,5,6} that v2 made players
+   discover is gone. The scorer now compares the answer's **non-fish cells to the clue** — same
+   surface, same stalks, same gravel, same width, same number of rows — so getting the tank right
+   is free and *all* the difficulty is in which fish to draw.
+3. **Louder demos.** `solve()` ships N+2 or N+3 fish (mean 63 % of them nibbling, never below
+   50 %) and every shipped demo is forced to contain: ≥1 fish whose **tail** is on a stalk and
+   whose nose is not, ≥1 fish touching nothing at all, both orientations among the nibblers, and
+   — **new, this was the v2 post-run lever** — at least one stalk *column* with a nose on it in
+   one place and a tail on it in another, so the nose/tail asymmetry sits side by side in the
+   same picture. No demo ever contains a fish sandwiched between two stalks, so "nibbler",
+   "tail-toucher" and "free fish" are three visibly disjoint kinds.
+4. **N is 3–5** (was 2–8). The count is now one glance, and the natural near-miss family
+   "N fish beside a stalk, either end" moves from 0 % up into the foothold band (2^-N).
+5. **The rejection filter now only covers statistics of the ANSWER.** v2 also refused to let N
+   equal clue-fixed quantities (plant count, plant cells, depth). Those are not rival laws —
+   a player cannot *choose* them — and excluding them only skewed N's distribution. The filter
+   still falsifies, in every shipped demo: total fish, right-facing, left-facing, tail-touching,
+   touching a stalk at either end, touching nothing, a stalk one column beyond the nose, stalk
+   columns touched by any fish, rows containing a fish, bottom-row fish, top-row fish, busiest row.
+
+Unchanged: the rule ("N fish are nibbling a leaf — nose touching the stalk"), the anchoring of
+the count to the clue's stalk columns (no answer transfers between clues), fish `><>` / `<><`
+never over a stalk, whitespace-free scoring.
+
+**One demo as it renders.** Clue (N = 5):
+
+```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+............................
+............................
+...............|....|.......
+...|.....|.....|....|.......
+...|.....|.....|....|.......
+############################
+5
+```
+
+Answer:
+
+```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+............................
+................><>.........
+...............|....|.......
+...|<><..|..<><|.><>|.......
+><>|.....|<><..|<><.|.......
+############################
+```
+
+Seven fish; five of them have their nose against a stalk (`|<><` at cols 3 and 9, `><>|` at
+col 20, `><>|` at col 3, `|<><` at col 15) = N. One fish (`<><|` ending at col 14) has its
+**tail** on the stalk at column 15 — the same stalk that the fish one row below is nibbling from
+the other side — and one fish is out in open water at the top. The near-miss is in the picture,
+one row apart, on the same weed.
+
+**Witness table** (500 fresh clues, 3 builds per clue; the attacker reads the format perfectly
+off the clue and builds a legal tank satisfying its own hypothesis):
+
+| attacker's law | v3 |
+|---|---|
+| clue returned unchanged | 0.0 % |
+| the clue's tank with no fish at all | 0.0 % |
+| N fish anywhere | 0.0 % |
+| **N fish touching a stalk, either end** | **7.0 %** ← the foothold |
+| N fish with the TAIL on a stalk | 0.0 % |
+| N fish one column away from a stalk | 0.0 % |
+| random legal tank with N+2 fish | 0.4 % |
+| previous demo replayed on this clue | 0.0 % |
+| one fixed real answer for every clue | 0.2 % |
+| junk (empty / `"1"*100` / half a tank / one row) | 0.0 % |
+| N fish snug on a stalk, one convention per clue (coin flip) | 49.1 % |
+| N stalk cells nibbled, one of them from both sides | 0.0 % |
+| N+1 fish with the nose on a stalk | 0.0 % |
+| N nose-on-stalk fish and nothing else (minimal witness) | 100.0 % |
+| **N fish with the NOSE on a stalk (the true rule)** | **100.0 %** |
+
+Every template that is not the rule sits at or below 7 %. The 49.1 % row is not an independent
+template: it is the true rule with a **coin flip on which end of the fish counts** — a player who
+snuggles N fish against the weeds all facing the same way is right half the time. That is the
+price of a rule a single demo teaches in one look, and it is the main overshoot risk of v3;
+if the class comes back too easy, the levers are in the JSON (restore v1's both-sides clause,
+count only nibbles on tall plants, or push the fish count back up to N+6).
+
+**What a demo-less player can infer about the answer's shape.** Everything except the fish: the
+clue *is* the answer's canvas, so "send back this picture, unchanged apart from some fish" is
+free, and "which fish, where, facing which way" is the whole game. Scattered fish score ~0, fish
+tucked against the weeds score ~7 % — enough gradient to keep probing rather than concluding the
+grader is exact-match (lever 7).
+
+**Validation.** `quickcheck --seeds 200` OK. 5000 clues: `solve()` scores 1 on every one, mean
+0.76 ms, worst 15.7 ms (cap 2000). `generate` deterministic, 0.036 ms mean over 200 000 seeds.
+`score` 377 chars (cap 512), 0.042 ms worst on junk, always 0/1. Clue ≤ 281 chars, solution
+≤ 279 chars. Scorer cross-checked against an independent re-implementation written from the
+prose on 18 000 (clue, answer) pairs — whitespace/case/reversal variants, flipped fish, fish over
+a stalk, deleted/duplicated/widened rows, erased stalks, the previous clue's answer, junk — with
+0 disagreements. 1500 audited demos: nibbler count = N, ≥1 tail-on-stalk fish, ≥1 free fish, both
+orientations among the nibblers, fish count in [N+2, N+3], and a shared nose/tail stalk column,
+in every single one.
+
+**Predicted classification:** on target with a demo (≈ 50 % crack in ~2 rounds), 5–10 % without
+one; overshoot is the risk, not undershoot. Previous version kept byte-identical at
+`challenges/lab/basten.v2.json`.

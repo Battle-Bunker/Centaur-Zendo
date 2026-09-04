@@ -910,3 +910,8 @@ pool   $SCRATCH/pool-tovel-5/tovel.json
 setup  python sim/arena.py setup --run lad-tovel-v5-1 --teams tovel5a,tovel5b \
          --challenge-dir $SCRATCH/pool-tovel-5 --arena-root $SCRATCH/lad-tovel-v5-1
 ```
+Judge on v5: clue_shape 5 (fixed), but kid_contributes 2 / fun 2 — "the x-gap-x sandwich is buried
+under 3–4 decoy letters scattered across the page". For the thin channel the next lever is lever 9:
+fill most non-counted days with a single filler (or bare dots) so the counted sandwiches and the
+planted decoy pairs are the only letters on the page. Pair this with the one-clause simplification
+if v5 measures too hard.

@@ -3288,6 +3288,21 @@
      },
      "score": 3.6,
      "version": 4
+    },
+    {
+     "advice": "The x-gap-x sandwich is buried under 3-4 decoy letters scattered across the page; sparsify the decoys (fewer filler letters, more bare dots) so the counted pattern is the loudest thing.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 3
+     },
+     "score": 3.5,
+     "version": 5
     }
    ],
    "refined_versions": [
@@ -5434,7 +5449,7 @@
    "id": "judge-tovel-v5-man",
    "kind": "judge",
    "started": 1788563900.1569705,
-   "status": "running",
+   "status": "done",
    "version": 5
   },
   {

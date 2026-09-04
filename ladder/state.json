@@ -4033,10 +4033,11 @@
    "version": 4
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "tovel",
    "id": "players-tovel-v4-c9f5",
    "kind": "players",
+   "note": "team a finished; one live agent remaining",
    "run": "lad-tovel-v4-1",
    "started": 1788549190.306133,
    "status": "running",
@@ -4105,7 +4106,13 @@
    "class": "norvel",
    "id": "players-norvel-v1-8c1d",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-norvel-v1-1",
+   "started": 1788551937.6869185,
+   "status": "running",
+   "teams": {
+    "norvel1a": "opus-default",
+    "norvel1b": "opus-kidproxy"
+   },
    "version": 1
   }
  ],

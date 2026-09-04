@@ -2637,9 +2637,86 @@
      ],
      "run": "lad-tovel-v3-1",
      "version": 3
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 7,
+       "final_correct": 104,
+       "final_presented": 5627,
+       "final_rate": 0.018482317398258397,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         795
+        ],
+        [
+         0,
+         751
+        ],
+        [
+         0,
+         678
+        ],
+        [
+         0,
+         796
+        ],
+        [
+         0,
+         682
+        ],
+        [
+         16,
+         751
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 7,
+       "final_correct": 3,
+       "final_presented": 5471,
+       "final_rate": 0.0005483458234326449,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         895
+        ],
+        [
+         0,
+         828
+        ],
+        [
+         0,
+         461
+        ],
+        [
+         0,
+         885
+        ],
+        [
+         0,
+         839
+        ],
+        [
+         0,
+         506
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "run": "lad-tovel-v3-2",
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -3843,7 +3920,7 @@
    "kind": "players",
    "run": "lad-tovel-v3-2",
    "started": 1788545741.6113465,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel2a": "opus-default",
     "tovel2b": "opus-kidproxy"
@@ -3857,6 +3934,15 @@
    "kind": "players",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "refiner-tovel-v3-man",
+   "kind": "refiner",
+   "started": 1788547842.3356295,
+   "status": "running",
+   "version": 3
   }
  ],
  "profiles": {

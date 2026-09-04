@@ -556,3 +556,26 @@ assumed exact byte match and hunted a per-day letter formula for the decoys); bo
 v2 found the leniency by round 3. Both again called the varying header "noise", where the Opus
 theorist called it the most important hint in the game. Ladder now schedules Sonnet profiles only
 after every Opus profile has played a class twice. v3 needs an Opus pair — queued.
+
+## tovel v3 ladder run 2 `lad-tovel-v3-2` (2026-09-04, 6×0.5 s, 2 Opus players)
+
+| team | profile | final | demos | how |
+|---|---|---|---|---|
+| tovel2a | opus-default | 1.8% (104/104 answered) | 7 | demo cache × 26 letter renames per (days,start,k,n) family |
+| tovel2b | opus-kidproxy | 0.05% | 7 | demo cache only |
+
+v3 is too_hard (4 finals: 0, 0, 1.8, 0.05). Cause is not the rule but the loss of the foothold:
+in v2 the first cheap probes (a stripe of the clue letter) scored sometimes, which told players
+the grader is a predicate and that the letter placement is what matters. In v3 every cheap probe
+scores 0 (stripe 0%, random lettering ~1%), so both Opus players concluded exact-match grading,
+declared the decoy letters "arbitrary data", and farmed demos. 2b's imagined kid actually saw
+the rule's shape — "K and O just take turns, K O K O K O", "the middle of the month is all L" —
+and 2b never tested it because it believed letters were graded exactly. Three of four Opus players
+on v3 called the varying header a trap; only the v2 theorist read it as the leniency hint.
+
+v4 brief: keep the v3 rule (pair = x, not-x, x; start Mon/Tue/Wed; count k; first at n) and
+restore a foothold: let k range 1..5 so that the minimal natural probe "x on day n and n+2, nothing
+else x" scores 1 on the k=1 clues (~20–25% of items) — that reveals the predicate, the pair shape
+and the anchor at once, and k≥2 still needs the weekday and blocked-middle clauses. Make the header
+uniform (the hint job now belongs to the foothold). Re-run the template table: alternating
+x.x.x from n must stay ≤ ~60%, stripes 0%, the k=1 foothold exactly the k=1 share.

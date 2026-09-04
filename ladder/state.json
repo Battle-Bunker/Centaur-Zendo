@@ -1042,7 +1042,7 @@
    ]
   },
   "garrow": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "The bordered grid of dots and letter pairs does not read as pizza on sight; add a crust/cheese visual cue.",
@@ -1058,6 +1058,9 @@
      "score": 3.2,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1145,6 +1148,12 @@
      "file": "challenges/lab/garrow.json",
      "note": "v1: tray pizza, cut into 4-8 slices; per named topping, slices with 2+ pieces == digit; halved pieces count both sides",
      "v": 1
+    },
+    {
+     "added": 1788542918.8292117,
+     "file": "challenges/lab/garrow.json",
+     "note": "v2: uneven reference cuts, digits 1-3, halved+whole in a counted slice, fast generate",
+     "v": 2
     }
    ]
   },
@@ -3468,7 +3477,7 @@
    "id": "refiner-garrow-v1-man",
    "kind": "refiner",
    "started": 1788540837.7635965,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -3501,6 +3510,23 @@
    "kind": "players",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "judge-garrow-v2-man",
+   "kind": "judge",
+   "started": 1788542918.898948,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v2-51cc",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

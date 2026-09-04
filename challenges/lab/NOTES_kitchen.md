@@ -168,3 +168,106 @@ slice "with two mushrooms"; (c) let demos carry a halved piece next to a whole o
 in the same slice so "two of the same on one slice" is the headline picture.
 Throughput note: ~50 challenges per 0.5 s round for both teams versus 400-800 on other classes. score() is 0.05 ms and
 the server only calls generate() per item, so the bottleneck is generate() in the sandbox; worth profiling before the next run.
+
+## garrow v2 — refinement after `lad-garrow-v1-1` (2026-09-04)
+
+v1 kept as `challenges/lab/garrow.v1.json` (byte-identical copy); v2 is `challenges/lab/garrow.json`.
+**The rule and the scorer are unchanged** (the scorer string is byte-identical to v1's). Everything
+that changed is in `generate()` and `solve()` — i.e. in what the picture and the demos say out loud.
+
+### What the two players actually did (from `sim/results/lad-garrow-v1-1/`)
+Both got the object and both got the *neighbourhood* of the measurement, and neither took the last step.
+
+* **garrow1a (opus-default, 25 % final, 5 demos)** settled on `severed(L)` = how many L-dominoes a
+  cut passes through, with `severed == n` scoring 29 % in training and `severed == n-1` 12 %. Their
+  own notes contain "the cut lines slice *through* the little pairs, and it's the slicing that the
+  clue is counting" — one sentence short of "…so that slice now holds two". They then hunted for a
+  "residual positional constraint" that does not exist, because in four of their five demos
+  `severed == n-1` held exactly. **That off-by-one near-miss was the trap that ate the run.**
+* **garrow1b (opus-kidproxy, 6 % final, 4 demos)** read the digits as "slices where L outnumbers the
+  other named topping", verified it against every demo, and concluded the scorer was buggy. It is
+  not: the belief is satisfiable but only worth ~7 %.
+* Both hard-coded **7 slices and widths 3–7** from two neat demos; 1a's final search was over
+  7-piece partitions with widths 3–7 only.
+* Both named the same missed kid-reading: "the pieces don't have to be the same size" and
+  "why does *this* cut count?".
+
+### What v2 changes (softening levers, in the order the brief asked for)
+* **(a) wildly uneven demo widths.** `solve()` now draws a cutting uniformly from all compositions
+  of the tray width into n parts ≥ 3 (v1 sprinkled the surplus one column at a time, which piles up
+  near-equal slices), and a grade-0 demo must have a slice ≥ 5 columns wider than its thinnest and a
+  slice ≤ 4 wide. Demo width spread is now 8.1 columns on average, 98 % of demos ≥ 5, and all of
+  4/5/6/7/8 slices occur (29/29/23/14/5 % of 600 demos). Hard-coding "7 slices, widths 3–7" is dead.
+* **(b) small digits.** Both digits are 1–3 (389/435/376 over 600 clues; v1 ran to 6 with mode 3).
+  "Two slices got two mushrooms" is pointable; "five slices got two mushrooms" is a miscount.
+* **(c) the headline picture in every demo.** A grade-0 demo must show, in at least one *counted*
+  slice, a halved piece sitting beside a whole piece of the same letter (`m|m` … `mm`). 94.5 % of
+  demos are grade-0; 3.5 % fall back to a weaker demo. The intended sentence is now drawn, not
+  inferred.
+* **(d) the second topping is KEPT — measured, not assumed.** On v1 clues, a player who has only the
+  format and cuts at random satisfies **one** count 25.3 % of the time and **both** counts 3.0 %. A
+  one-letter/one-digit clue would hand a player who never gets past "bars in the picture" a 25 %
+  floor — as much as v1's better player scored with a whole theory — and no witness table could stay
+  clean. The two digits cost the kid nothing (they are two instances of the same sentence, not a
+  second rule), so they stay, with both digits small.
+* **(e) equal slices are never an answer.** `generate()` rejects any (k,j) pair that some equal-width
+  cutting (3 roundings × 4–8 slices) achieves. The pizza's famous operation is falsified by
+  construction: 11.2 % → 0.00 %.
+* **(f) the severed shadow is killed inside a single demo.** v1 only forbade `severed == k`, which is
+  how `severed == k-1` came to hold in 4/5 of 1a's demos. v2 requires the two named toppings to have
+  *different* severed-minus-digit offsets, in the witness `generate()` keeps and in every grade-0
+  demo, so no "severed = digit + c" law survives even one demo.
+* **(g) a less busy tray:** 28–34 wide (was 30–38), 4–5 pieces a row (was 5–6), named letters with
+  4–7 pieces (was 5–9). The judge's v1 advice ("does not read as pizza on sight") is only partly
+  addressable without markers or text, which are out of bounds; a less crowded tray with visibly
+  hand-cut slices is what is left.
+
+### Witness table, 600 fresh clues per version, identical harness
+| strategy | v1 | v2 |
+|---|---|---|
+| true rule (`solve`) | 100.0 % | 100.0 % |
+| equal-width slices, best of 4–8 | 11.17 % | **0.00 %** |
+| severed = n | 22.83 % | 11.33 % |
+| severed = n−1 | 14.33 % | 6.50 % |
+| L outnumbers the other topping | 7.50 % | 9.83 % |
+| random well-formed cutting, 4–8 slices | 2.17 % | 3.50 % |
+| one constant answer for every clue | 0.17 % | 0.17 % |
+| demo replay (previous clue's answer) | 0.00 % | 0.00 % |
+
+A second blind sampler drawing widths the way `solve()` does (uniform compositions) scores 4.1 % on
+v2, so the floor is 3–4 %. Wrong-family theories are now worth 2–3× the floor instead of v1's 10×,
+and the nearly-right ones are worth more: **3–4 % (no idea) → 8–12 % (the knife family) → 15–22 %
+(right measurement, wrong halves convention) → 100 % (the rule)**. Rival table on v2 (250 clues,
+built/scores): halves counted left-only 44/22.4 %, halves counted nowhere 34/14.8 %, any-x 30/3.6 %,
+x severed 96/11.6 %, other severed 97/2.8 %, slices with no x 90/1.6 %, 2+ of any topping 26/0.0 %,
+outnumbers 92/7.6 %. Junk and shape attacks are unchanged from v1 (same scorer) and re-confirmed at
+0 % / 100 % on 300 clues.
+
+### Timings (the arena served only ~50 items per 0.5 s round on v1 — generate() was the whole of it)
+| | v1 | v2 |
+|---|---|---|
+| `generate` mean / median / max | 8.7 / 7.8 / 38.3 ms | **0.54 / 0.42 / 11.6 ms** (3000 seeds; 0.52/0.40/2.1 on the 600-clue run) |
+| `solve` mean / median / max | 85.7 / 36.5 / 336.6 ms | 13.2 / 1.6 / 322 ms |
+
+v1's `generate()` was doing solve-like work: 420 sampled cuttings per attempt, each scored piece by
+piece with a bisect per piece, plus a 19-rival pass on each survivor. v2 keeps prefix sums of piece
+columns, so one candidate cutting costs O(slices) instead of O(pieces); it samples 48, takes the
+rarest qualifying count-pair, and does the rival work once. 3000 seeds: no empty clue, and
+`score(clue, solve(clue)) == 1` on every one. `quickcheck --seeds 300`: OK, gen 2.09 ms max,
+score 0.10 ms, solve 200 ms max. Sizes: scorer 474, solve 4997 (cap 5000), clue ≤ 214, solution ≤ 251.
+
+### Prediction and what to do next
+Predicted classification for the next 2-player run: **testing / on-target**, mean final 35–55 % —
+one player crack (the headline picture is now in every demo and the severed decoy dies in demo 1)
+and one partial at 15–25 % (right measurement, wrong halves convention). Predicted kid score **3.8–4.2**
+(object still capped near 3 — a bordered grid of dots reads as a tray only once the hand-cut slices
+are in; rule_statable, kid_contributes and fun all improve with digits of 1–3 and a drawn `m|m` next
+to `mm`). Risk to watch: v2 pays wrong theories *less* than v1 did (severed 22.8 → 11.3 %), so if the
+insight still does not land the measured mean can come out **below** v1's 15 % while the class is
+genuinely easier to understand — read the players' NOTES, not just the number.
+
+Levers left if it is still too hard: drop the "every slice has a topping" clause (worth ~2 % of the
+format gate); force the two counted pieces of one letter into the **same row** in a demo
+(`mm...mm` inside one slice) so the pair is readable along a line; force one digit to 1 always.
+If it comes out too easy: raise the rarity band in `generate()` (currently the rarest count-pair
+seen in 48 samples), or require the counted slice to hold nothing but that topping.

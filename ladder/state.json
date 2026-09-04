@@ -2356,7 +2356,7 @@
    ]
   },
   "tovel": {
-   "current_version": 3,
+   "current_version": 4,
    "note": "run1: both partial (48%, 83%) without the rule. LEAK: accepted shapes are invariant under letter renaming and depend only on (days,start,N) -> 140 triples farmable via demos+probes. Refiner lever: tie the count to letter identity (a second clue letter, or a required count of the clue letter) so shapes don't transfer.",
    "qual": [
     {
@@ -2404,7 +2404,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -2716,7 +2717,7 @@
      "version": 3
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -2733,6 +2734,12 @@
      "file": "challenges/lab/tovel.json",
      "note": "v3: pair counts only if the day between is not the letter (kills stripe 88%->0%); n placed late; every demo has a blocked xxx run",
      "v": 3
+    },
+    {
+     "added": 1788549116.3215673,
+     "file": "challenges/lab/tovel.json",
+     "note": "v4: k 1..5 gives the minimal probe a 22% foothold; uniform header; n later for k>=2",
+     "v": 4
     }
    ]
   },
@@ -3036,7 +3043,7 @@
    ]
   }
  },
- "direction_cursor": 10,
+ "direction_cursor": 11,
  "jobs": [
   {
    "agents": 0,
@@ -3721,7 +3728,7 @@
    "id": "designer-new-8-v0-59b0",
    "kind": "designer",
    "started": 1788545215.579415,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -3787,7 +3794,7 @@
    "id": "designer-new-9-v0-5383",
    "kind": "designer",
    "started": 1788547101.4686387,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -3941,8 +3948,34 @@
    "id": "refiner-tovel-v3-man",
    "kind": "refiner",
    "started": 1788547842.3356295,
-   "status": "running",
+   "status": "done",
    "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "judge-tovel-v4-man",
+   "kind": "judge",
+   "started": 1788549116.4017282,
+   "status": "running",
+   "version": 4
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v4-c9f5",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "new-10",
+   "direction": "sport and scoring",
+   "id": "designer-new-10-v0-a9fd",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

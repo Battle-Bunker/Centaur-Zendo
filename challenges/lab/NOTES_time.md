@@ -579,3 +579,149 @@ else x" scores 1 on the k=1 clues (~20–25% of items) — that reveals the pred
 and the anchor at once, and k≥2 still needs the weekday and blocked-middle clauses. Make the header
 uniform (the hint job now belongs to the foothold). Re-run the template table: alternating
 x.x.x from n must stay ≤ ~60%, stripes 0%, the k=1 foothold exactly the k=1 share.
+
+---------------------------------------------------------------------------
+## Iteration 4 - 2026-09-04 - `challenges/lab/tovel.json` (v4; v3 kept as `tovel.v3.json`)
+
+Runs `lad-tovel-v3-1` (2 Sonnet) and `lad-tovel-v3-2` (2 Opus): **too_hard**, four finals
+0 %, 0 %, 1.8 %, 0.05 %, kid judge 3.8/5. v2 was 88 %/34 % by a stripe template; the target is
+~50 % *earned by insight*.
+
+### What the players actually did on v3
+
+* **tovel2a (opus-default, 1.8 %, 7 demos)** rebuilt the page grammar perfectly, established that
+  the header is not graded, and then wrote: *"No rule found linking the offsets to p, q ... Treated
+  as instance-specific data that only a demo can reveal."* Its final play was a cache of the 7
+  demos x 26 base-letter renames - 208 precomputed strings, a dict lookup in `solve`, skip
+  everything else. 104/104 answered correct, 1.8 % of presented.
+* **tovel2b (opus-kidproxy, 0.05 %, 7 demos)** ran the two decisive negative experiments:
+  round 3, 461 answers over 8 layout/header variants -> **0 correct**; round 6, 443 property-style
+  answers (exactly n distinct letters, clue letter m times, clue letter on day m) -> **0 correct**.
+  Conclusion in its notes: *"no lenient property check; the answer must equal the reference
+  output"*. Final: demo cache, 3 items answered, 3 correct out of 5471 presented.
+* 2b had **already seen the rule's shape** and discarded it: *"Day m always carries the clue letter
+  (7/7 demos), ~0.8 % by chance, so real"* and *"long alternating stretches (20K 21O 22K 23O 24K
+  25O 26K 27O) - far too regular for i.i.d. sampling, so there is structure"*. It never tested a
+  pair hypothesis because it believed the letters were compared byte for byte.
+* Three of the four Opus players who have seen v3 called the varying header a **trap**. Only the
+  v2 theorist ever read it as "the grader isn't comparing text".
+
+### Diagnosis: v3 removed the foothold, not just the leak
+
+v2's stripe was a *bad* witness (it scored 88 % with no idea of the rule) but it was also the
+**foothold**: the first cheap probe scored *sometimes*, which is what told v2's players that the
+grader is a predicate over the letters. v3 closed the stripe and every other cheap probe with it -
+solid stripe 0.00 %, random lettering ~1 %, the minimal pair probe 0.00 %, all wrong-relation
+constructors <= 33 % but only reachable after the anchor was found. With a 0 % floor, the rational
+read of ~900 zero-scoring probes *is* "exact match", and the rational play is demo farming. Both
+Opus players made exactly that call, independently, in the same round.
+
+This is now design principle #7 in `sim/DESIGN_LOOP.md`: **leave a foothold**.
+
+### The fix - three changes, all in `generate()`; the rule and the scorer are byte-identical
+
+1. **`k` now ranges 1..5, with `k = 1` on 22 % of clues.** On a k=1 clue the smallest natural probe
+   - *"x on day n and on day n+2, x nowhere else"* - scores 1. It is the minimal witness of the
+   rule and it hands back the four facts v3 hid: the grader is a predicate, the clue letter is what
+   is graded, `n` is where it starts, `k` counts these little pairs. `k >= 2` still needs the
+   Mon/Tue/Wed clause and the blocked-middle clause, so it is a first rung, not the answer.
+   The mix is `1 if r.random() < 0.22 else r.choice([2,2,3,3,4,4,4,5,5,5])` = 0.22/0.16/0.16/0.23/
+   0.23, skewed a little to the large `k` because the every-other-day template is near-perfect at
+   k=2 (there it *coincides* with the rule and cannot be closed) and nearly hopeless at k=5.
+2. **Uniform header** (` Mo  Tu  We  Th  Fr  Sa  Su` on every demo). v3 rotated three styles as a
+   deliberate free hint; the measurement is in - 1 of 6 Opus players read it as the leniency hint,
+   3 of 6 read it as a trap. The foothold does that job honestly now, so the cosmetic noise goes.
+3. **`n` sits later for `k >= 2`**: the max of *six* uniform draws over the days that still leave
+   room for `k` non-adjacent counted starts (v3: max of three, for every `k`). The every-other-day
+   run needs ~`14k/3` days of room, the rule only ~`7k/2`, so a late `n` starves the template
+   without touching the rule. For `k = 1` it is the max of *two* draws only: at k=1 the template
+   *is* the rule, so lateness buys nothing, and a mid-month `n` leaves room before `n` for the
+   decoys that make a k=1 demo readable.
+
+### Witness table - v3 vs v4 (600 fresh clues each; scratchpad `time4/attack.py`)
+
+Template rows fit the best run length per cell on the same clues, i.e. an optimistic ceiling.
+
+| attack | v3 | v4 |
+|---|---|---|
+| **minimal probe: x on n and n+2, nothing else x** | **0.00 %** | **22.00 %** |
+| ... per k in v4: k=1 132/132, k=2 0/96, k=3 0/96, k=4 0/137, k=5 0/139 | | |
+| ... same probe with random other letters on the free days | 0.00 % | 22.00 % |
+| **solid stripe from n**, every length 3..16, best per k | 0.00 % | **0.00 %** |
+| **alternating `x . x . x` from n**, per-`k` length table | 46.00 % | 50.83 % |
+| ... with a `(k, weekday of n)` table (the strongest tuning) | 56.17 % | **57.67 %** |
+| ... that table per k (v4): k=1 100 %, k=2 91.7 %, k=3 61.5 %, k=4 37.2 %, **k=5 11.5 %** | | |
+| **weekly pair** (n, n+7, n+14 ...): "the same day every week" | - | 31.67 % |
+| ... per k: k=1 100 %, k=2 50.0 %, k=3 8.3 %, k=4 1.5 %, k=5 0.0 % | | |
+| **tightest Mon/Tue/Wed packing per (k, weekday)** = the rule as an offset table | 100 % | **100 %** |
+| tuned random lettering, density 0.20/0.35/0.50/0.65/0.80 | 0.0/0.3/0.7/0.2/0.2 % | 0.7/1.0/1.0/0.7/0.7 % |
+| best constant answer (best of 20 over 200 clues) | 0.50 % | 1.00 % |
+| demo replay, letters renamed, same `(L,S,k)` | 2.2 % | 5.8 % |
+| ... same `(L,S,k,n)` (tovel2a's actual final play) | 64.2 % | 70.7 % |
+| **the true rule** | 100.00 % | **100.00 %** |
+
+Wrong-relation constructors on a correct page honouring the clue's first day (600 clues):
+
+| believed rule | v3 | v4 |
+|---|---|---|
+| x next door / three apart / a week apart | 0.00 % | 0.00 % |
+| x two apart, anywhere | 0.00 % | 22.00 % |
+| x two apart, Mon-Wed = THE v2 RULE | 7.50 % | 26.50 % |
+| x . x anywhere (gap kept, no weekday clause) | 9.33 % | 30.17 % |
+| **the true rule** | **100.00 %** | **100.00 %** |
+| all of the above with the clue's first day ignored | 0.00 % | 0.00 % |
+
+Every wrong relation now *floors* at the 22 % of k=1 clues where it coincides with the rule, and
+none of them reaches 31 %: the foothold pays out immediately and then stops paying.
+
+Two notes on the template rows. The **weekly pair** ("do the same thing every week") is the one
+template that satisfies the Mon/Tue/Wed clause *without knowing it* - and it is dominated by the
+alternating run at every `k`, because 7(k-1)+2 days of room is far more than the rule ever needs.
+The **tightest packing** row is the other end: because `generate()` only ever picks an `n` that
+still leaves room for `k` non-adjacent counted starts, the greedy Mon/Tue/Wed packing always fits,
+so a player who *has* the rule can play it as a 15-cell (k, weekday) offset table with no per-clue
+search - the crack, once earned, is worth a clean 100 %. The gap between 57.67 % and 100 % is
+exactly the Mon/Tue/Wed clause, and the experiment that closes it ("how close may the second pair
+sit to the first?", swept per weekday) costs about 30 probes - a fifth of one round.
+
+Clue space: 924 distinct `(L,S,k,n)` classes (v3: 915), 337 *effective* classes
+(`1/sum p^2`; v3: 460), so a player holding 6 demos covers ~2 % of items - which is exactly the
+1.8 % tovel2a scored by that route.
+
+### Fairness floor and demo guarantees (3000 demos, `time4/hyp.py`, `time4/solvecheck.py`)
+
+840 hand-built "count a relation between marked days" expressions: survivors after 1 demo 2-17,
+after 2 demos **1**, in all six trials - unchanged from v3. Demo guarantees: a blocked `x x x` run
+starting Mon/Tue/Wed in 100.0 % of demos, one of them *before* day `n` in 100.0N %, a Thursday-start
+pair (reaches the weekend) 97.6 %, a Sat/Sun-start pair (steps over the week break) 99.3 %, some
+non-counting pair before day `n` 98.3 %, and all eleven rival counts differ from `k` in 100 %.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, no warnings.
+`score` **431** chars (unchanged, cap 512), `solve` **4879** (cap 5000), `generate` 721; clue 11
+chars, solution <= 175. gen 0.09 ms, score 0.06 ms, solve 163 ms worst under quickcheck.
+solve() scores 1 on **3000/3000** fresh seeds across all five `k` (95.5 ms average, 197 ms
+worst). Scorer: 0 raises, 0 non-binary on 20 000 junk strings (worst 0.066 ms); **0 disagreements** with an
+independent re-implementation of the stated rule on 9 000 mutated answers; 0 on empty / spaces /
+newlines / `0` / `1` / `x` / `1`*100 / a 4000-char junk string / the clue itself.
+
+### Predicted classification
+
+The tiers are now blind ~1 %, demo cache with renames ~2 %, **the natural first probe 22 %**, the
+tuned every-other-day run **51-58 %**, the rule **100 %**. The 22 % floor alone puts any player who
+runs one honest experiment above `too_hard` (< 15 %). Expect **testing / calibrated**, mean
+**0.45-0.65** over two Opus players. Honest risk in the other direction: a crack (100 %) plus a
+templater (58 %) means 0.79, just inside `too_easy` (> 0.8); if that happens the next lever is the
+one held back from v3 - name the *last* counted day as well as the first (`L/S/x/k/n-m`), which
+forces both ends of the counted set and makes a one-parameter run infeasible. Kid score: expect
+**4.2-4.5/5** (v3 scored 3.8). The rule sentence is unchanged, the header no longer varies between
+demos, and the k=1 pages are the clearest picture the class has ever had: one `x . x` on a
+Monday-to-Wednesday, and everything else deliberately not counting.
+
+### Arena (players NOT run; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-4/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v4-1 --teams tovel4a,tovel4b \
+         --challenge-dir $SCRATCH/pool-tovel-4 --arena-root $SCRATCH/lad-tovel-v4-1
+```

@@ -166,3 +166,97 @@ if that is what a tank would look like (e.g. a bite taken out: `><>:`), never a 
 clause 3 (the both-sides double) which nobody got near; it can return once (a) lands.
 Both players praised the object and the demo mechanic; both called N unfair — the same complaint
 garrow got, and for the same reason: the counted relationship is drawn but not salient.
+
+## basten v2 — refinement after `lad-basten-v1-1` (2026-09-04)
+
+**Diagnosis carried in.** v1 mean final 7% (6% / 7%) over two Opus players ⇒ leaning `too_hard`;
+kid judge 4.4/5 with one note: *"the double-nibble clause is positive-only and easy to miss;
+widen the fish-minus-leaf gap so the nose/tail-vs-both-sides distinction reads as the headline
+discovery."* Both players rebuilt the entire tank grammar and then ground through ~90 (1a) and
+~350 (1b) picture statistics without ever testing a statistic about **what a fish's nose
+touches**. The relation was drawn but not salient: 13–23 fish per picture, only N of them
+nibbling, so the nibblers were lost in the shoal. v1's own witness table already showed the
+floor was wrong-shaped: a format-only player scored ~0.5%, so 6–7% was "format plus luck".
+
+**Changes (all softening; the object now tells the story).**
+
+1. **Far fewer fish.** `solve()` ships `N+2..N+5` fish (was 13–23). Mean fraction of the fish
+   that are nibbling is now 0.56 (0.32 at N=2, 0.72 at N=8). A demo now reads *"a few fish, and
+   most of them have their nose in a weed"* instead of *"a shoal"*. This is the whole fix.
+2. **Clause 3 (the both-sides double) dropped.** Reasoning, recorded because it was a real
+   choice: the clause is *positive-only*. Demos only ever show satisfying examples, so no
+   number of demos — however prominent the `><>|<><` in them — can tell a player that a double
+   is **required**; a prominent double only shows that it is **allowed**. In v1 it cost the
+   player who had the right idea 88% of their score ("N nibbled leaves" scored 12%) and bought
+   nothing on the discovery path, and no v1 player ever got close enough to be taxed by it. The
+   brief's condition ("keep it only if every demo shows it prominently *and* it doesn't stop a
+   player who has the nose/leaf idea from scoring") cannot be met by a positive-only clause, so
+   it goes. It is the **first hardening lever** if v2 overshoots.
+3. **Count fish, not leaves.** With clause 3 gone the leaf/fish distinction survives only as a
+   trap, so the scorer counts nibbling **fish** — the n-gram reading (`><>|` / `|<><`) that a
+   player will actually implement — and `solve()` never emits a double-nibbled leaf, so the two
+   readings agree on every demo. A leaf-counter who never draws a double scores 100%; only a
+   leaf-counter who *deliberately* doubles is bitten, and nothing in any demo suggests that.
+   Rolling this back (count distinct nibbled cells + require one double) is a two-line change.
+4. **"At least one fish per water row" dropped** from the format. With 4–13 fish a depth-6 tank
+   would otherwise be forced dense again, and 1b burned a round on this rule.
+5. **No new markers.** The picture is still `~` water, `#` gravel, `|` stalks, `><>` / `<><`
+   fish and `.` open water — nothing was added that a real tank would not have. The bite-mark
+   idea (`><>:`) from the v1 lever list was **not** used: it is a marker, not a tank.
+
+Unchanged: the clue (`<plants>/<N>`, N never the plant count nor the total height), the free
+depth 4–6, both orientations ≥2, the rejection filter that falsifies ~18 rival statistics in
+every shipped demo, and the anchoring of the count to the clue's plant columns (so no answer
+transfers between clues).
+
+**Witness table, 400 fresh clues, same attacker model both sides** (knows the format perfectly,
+builds a legal tank satisfying its own hypothesis; every builder also satisfies v1's
+one-fish-per-row rule so the columns are comparable):
+
+| attacker's law | v1 | v2 |
+|---|---|---|
+| random legal tank | 0.2% | 6.2% |
+| N fish | 0.0% | 0.2% |
+| N fish beside a plant (either end) — the nose/tail near miss | 0.0% | 6.8% |
+| N fish with the TAIL on a plant | 0.0% | 0.0% |
+| N fish in the bottom row | 5.9% | 16.0% |
+| **N nibbling FISH (nose on a leaf)** | 0.0% | **100.0%** |
+| N nibbled LEAVES, no double | 0.0% | 100.0% |
+| **N nibbled LEAVES, one double** (the v1 rule) | **100.0%** | 0.0% |
+| N nibbled plant COLUMNS | 0.0% | 100.0% |
+| that version's own `solve()` | 100.0% | 100.0% |
+| the other version's solution | 0.0% | 0.0% |
+| previous demo replayed on the next clue | 0.0% | 0.0% |
+| empty / clue echoed / `"1"*100` / no fish / plants only | 0.0% | 0.0% |
+| one fixed real answer for every clue | 0.0% | 0.2% |
+
+The headline swap is the two bold rows: the reading a player will actually write down goes from
+0% to 100%. The cost is a higher noise floor — a player with only the format now scores ~6%
+instead of ~0.5%, which is exactly what v1's two players scored, so **anything above ~10% in v2
+is real progress**. "N fish in the bottom row" picks up 16% by accident (the bottom row is where
+the plants are), but the rejection filter falsifies it in every shipped demo.
+
+**Validation.** `quickcheck --seeds 200` OK; 6000 clues, `solve()` scores 1 on every one, mean
+6.2 ms / worst 208 ms; `generate` deterministic, < 0.2 ms; `score` 449 chars, 0.02 ms real /
+0.033 ms worst on junk, always 0/1. Scorer cross-checked against an independent
+re-implementation on 11 600 (clue, answer) pairs — whitespace/case/reversal variants and
+structural mutations — with 0 disagreements.
+
+**Typical v2 demo** (clue `...2.....2.......3......3..../2`, N=2, six fish, two of them nibbling,
+one with its tail against a weed, three swimming free):
+
+```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+....................><>......
+.............................
+...<><.......................
+<><...........><>|...><>|....
+...|..<><|.......|......|....
+...|.....|.......|......|....
+#############################
+```
+
+**Predicted classification:** on target, with overshoot the real risk — expect one crack and one
+partial/high-partial rather than two failures. **Predicted kid score:** 4.5–4.8/5 (the object was
+already 5/5; the measurement is now visible in the picture instead of hidden in a shoal).
+Previous version kept byte-identical at `challenges/lab/basten.v1.json`.

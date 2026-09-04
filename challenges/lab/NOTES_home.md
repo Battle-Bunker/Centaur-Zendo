@@ -312,3 +312,156 @@ I cannot spawn player agents, so I stop here. After the orchestrator runs both p
 | one ≥ 90 %, one 10–90 % | **on target — stop** | — |
 | both 10–90 % with `>=`-shaped notes | they found the geometry and missed strictness | nothing structural; that is the designed near-miss tier (31 %) |
 | both < 10 % | holes were never brought into a hypothesis | soften: make `solve()` emit, once per demo, a shelf whose *only* books are the leaning ones' pairs (a 6-slot cameo appended under the shelf line) — a positive instance of the law itself, per the `orlan` v4(d) recommendation |
+
+---------------------------------------------------------------------------
+## Iteration 2 — 2026-09-04 — `fennick` v2 (refiner; v1 kept as `fennick.v1.json`)
+
+### What the players actually did with v1 (run `lad-fennick-v1-1`, 2 Opus finals)
+
+| player | final | what they believed |
+|---|---|---|
+| fennick1a | **20/2610 = 0.8 %** | *"the class wants an **ASCII bar chart**: rows top-to-bottom, each column c holding letter row[c] repeated height[c] times upward from the baseline… I could not identify the statistic (every height-subset count, every neighbour/order statistic and every per-letter aggregate I could construct was falsified), so the heights are sampled uniformly from 1..4 — the distribution whose measured hit-rate was highest (~1.6 %)."* |
+| fennick1b | **22/1406 = 0.7 %** (1801 skips) | *"H rows, each row's letters a subset of the next row's… **ink soaking through nested rows**… the layer assignment looks genuinely random per clue; only ~8 bits arrive in the params, far too few to encode ~35 letters' layers. **Not reconstructible.**"* Final strategy: *"Skip unless max(param digit) == 2; otherwise emit 6 nested rows (pseudo-random reveal order)."* |
+
+Mean final rate **1 %** over 2 finals → `too_hard`. The kid judge scored **3.4** and warned the
+drawing reads as a skyline, not a lean.
+
+Diagnosis. This is **not** a rule problem — it is an **object** problem, and it is the failure
+mode this class was supposed to be immune to. Neither player ever saw *a bookshelf*: 1a saw a
+bar chart, 1b saw ink soaking through nested rows. "Leaning" was therefore never in either
+hypothesis space, so the three-conjunct law was never even a candidate; both players instead
+reverse-engineered the *checker's* leniency (1b: "scores only ever happen when max(param
+digit) == 2 → 0/~300 for max 3 or 4; H = 6 is the best row count") and farmed the ~1 % that
+v1's blind-random-heights witness paid out. The v1 pre-registered response for "both < 10 %"
+was a law-cameo; the real problem is one level below that, so I fixed the picture instead.
+
+Why v1's picture failed the 12-year-old test, concretely (v1 demo, same seed):
+
+```
+C......W...C....WV....W.....C...U.......U...............
+CR.....W...C....WV....W...V.C...U.......UR......R..C....
+CR....RW...C....WV....W.VVV.C...U.......UR......RV.C.U..
+CRU.W.RW.RRC..G.WV..G.W.VVV.CVC.U.R.UG.VUR..UCR.RV.C.U..
+========================================================
+```
+56 slots wide, dot-filled everywhere, no book tops, and — fatally — **the leaning is
+invisible**: a leaning book looks exactly like a standing one. The only thing the picture
+shows is heights, so "heights" is all anyone hypothesises about.
+
+### v2 — the same rule, a legible object
+
+The law is untouched (three conjuncts: exactly one neighbouring gap, a book two along that
+way, strictly taller). Four changes, all to the drawing and the clue's surface:
+
+1. **Books look like books.** Air is now a SPACE, not `.`, and every book gets a `_` cap one
+   row above its spine. The shelf row `=` stays; the bottom text row is still exactly the
+   clue's LAYOUT (dots mark the empty slots), so "the answer is this shelf drawn with heights
+   I choose" is still readable straight off the first demo.
+2. **Leaning books are drawn leaning.** A book that leans keeps its foot in its own slot on
+   the bottom row and its remaining letters *plus its cap* are drawn one column across, inside
+   the gap it is falling into; the cap becomes `/` (leaning right) or `\` (leaning left). You
+   can see the book propped against the taller book beyond the gap.
+3. **Half the width.** 34–42 slots instead of 55–62 (clue 51–56 chars), pictures 5–7 rows.
+   A whole shelf now fits in one glance.
+4. **The tally reads as a sentence, not a code**: `U:1 E:2 R:2 W:1` instead of `U1E2R2W1` —
+   "one U fell over, two Es fell over".
+
+Same seed, v2:
+
+```
+clue: RCV.R.WU.RRU..V.CC..WUW.GUR.VRU.U.UV/V:1 R:1 W:1 U:2
+      __   _        _   _ _     _
+ __ _ WU\  U    __  W_  G R\ _ /U\ _
+_CV R WUR _U  _ CC  WU /G_RV R UUU V
+RCV.R.WU.RRU..V.CC..WUW.GUR.VRU.U.UV
+====================================
+```
+`/U\` at the right is two books fallen inwards against the tall `U` between two gaps; `R\` and
+`WU\` are books propped on their taller neighbours. Every instance shows at least four.
+
+### The move this buys, and the price
+
+The tilts are **not free decoration**: the scorer reads one height per book out of the columns,
+recomputes from the rule which books lean, re-renders the whole picture, and demands the
+submission back character for character. So **the picture is the hypothesis** — draw the tilts
+by the wrong rule and you score 0. Two consequences, in opposite directions:
+
+* *Harder*: the rule-free witness is gone. "Random heights, everything drawn upright" pays
+  **0.00 %** where v1's equivalent paid 1.1 %. A player with no theory of leaning now scores
+  exactly zero instead of farming ~1 %, which is also what made v1's runs uninformative.
+* *Softer (the point)*: every demo now displays the true lean set explicitly, so the law is
+  learnable from the demos rather than only from four tally digits. Against the 75-law
+  catalogue, demos in random order: **median 1 demo, max 4, 0 failures/100** using the drawn
+  tilts (v1's tally-only channel: median 2, max 6).
+
+### Witness table, v1 → v2
+
+| attack | v1 | v2 |
+|---|---|---|
+| empty / whitespace / `"1"*100` / the clue itself | 0.00 % | 0.00 % |
+| layout row + shelf only (every book height 1) | 0.00 % | 0.00 % |
+| any flat picture (all heights equal) | 0.00 % | 0.00 % |
+| right-size picture on a shuffled layout | 0.00 % | 0.00 % |
+| **random heights, nothing drawn leaning** (the rule-free attack) | **1.1 %** | **0.00 %** |
+| blind random heights 1..9 / 1..3, *tilts drawn correctly* | 1.1 % / 0.5 % | 3.0 % / 3.7 % |
+| sawtooth up / down, *tilts drawn correctly* | 1.0 % / 0.8 % | 2.3 % / 4.7 % |
+| hand-built well-formedness attacks | 0/22 | **0/28** |
+| near-miss `>=` instead of `>` | 31 % | 23.5 % |
+| near-miss "gaps on both sides count too" | 13 % | 29.0 % |
+| near-miss "nearest book beyond any gap" | 18 % | 17.0 % |
+| near-miss "two away, gaps irrelevant" | 6 % | 8.0 % |
+| near-miss "shorter than the right neighbour" | 0.9 % | 0.0 % |
+| near-miss "one gap, heights irrelevant" | 0 % | 0.0 % |
+
+The two v2 rows that went *up* (blind heights, sawtooth) are measured **with the true
+renderer**, i.e. they are only reachable by a player who already has the law and simply did not
+bother to search the heights; the narrower shelf and smaller tallies (total 4–8, mean 4.8) make
+that lazy player luckier. The v2 near-miss figures are also stricter than v1's: a player holding
+rule X now draws the tilts by X too, so X has to reproduce the *whole* lean set, not just four
+digits.
+
+New well-formedness attacks all rejected: tilt marks straightened (`/`,`\` → `_`), tilt marks
+swapped left/right, caps removed, dots instead of spaces, bottom row dotted, rows reversed,
+mirrored picture. Deliberate leniencies, all verified: trailing/leading newlines, blank rows
+above the picture, right-stripped or padded rows, junk appended to the right of every row (each
+row is normalised to width W).
+
+### Engineering
+
+`python tools/quickcheck.py challenges/lab/fennick.json --seeds 60` → **OK, no warnings**
+(gen 0.98 ms, score 0.08 ms, solve 19.1 ms worst case). Over 3000 fresh seeds: generate avg
+0.20 / max 1.15 ms, solve avg 4.1 / max 51 ms, score avg 0.044 / max 0.10 ms (0.02–0.13 ms on
+junk); 3000/3000 distinct and deterministic, **0 generator fallbacks**, 800/800 solve outputs
+score 1; **0 disagreements / 4800** (clue, answer) pairs against an independent *structural*
+re-implementation (it validates column by column instead of re-rendering). Scorer **500/512**
+chars, clue 51–56, solution 179–286.
+
+Load-bearing invariant, written down because the scorer depends on it to fit in 512 chars:
+`generate()` always anchors the shelf with ≥ 2 books at each end, so `i ± 2` is in range for
+every book that has a gap on exactly one side, and the scorer omits the bounds test.
+
+### The 12-year-old test, applied
+
+*Half 1 — would a bright 12-year-old name the object from one demo?* v1: no (measured: two
+Opus players said "bar chart" and "nested rows"; judge 3.4, "reads as a skyline"). v2: books
+now have tops, stand on a shelf half as wide, and several of them are visibly tipped over into
+the gaps with `/` and `\`. "Some of the books have fallen over against the tall ones" is the
+first sentence a kid says. The clue's `U:1 E:2 R:2 W:1` then reads as *which* books fell.
+*Half 2 — is the pinned pattern still unnameable?* Unchanged: "a gap on exactly one side, the
+book two along that way, strictly taller" has no name, and the famous bookshelf operations
+(sort by height, alphabetise, how many fit) are all excluded because the order is given.
+A kid can also contribute the key construction fact for free: *make two books the same height
+and they both stay up.*
+
+### Predicted classification and the pre-registered response
+
+Predicted **testing → calibrated**, mean final rate **0.4–0.7**, with a real risk of `too_easy`
+(the demos now hand over the lean set). The class is deliberately **bimodal**: exact rule
+≈ 100 %, near-miss 8–29 %, no rule 0 %; a 50 % mean means half the players get the law.
+
+| observed | reading | change for iteration 3 |
+|---|---|---|
+| both ≥ 90 % | the drawn tilts gave the law away | harden by *hiding* the tilt marks again but keeping the book look: drop the `/` `\` caps to `_` and keep the one-column shift (the lean stays visible in the shape, not in a symbol); if that is not enough, stop shifting and go back to v1's rendering with v2's caps, width and tally format |
+| one ≥ 90 %, one 10–90 % | **on target — stop** | — |
+| both 10–90 % with `>=`- or "both sides"-shaped notes | designed near-miss tier | nothing structural |
+| both < 10 % again | recognition still failing, which would be surprising | draw `|` walls at the two ends and a 6-slot law cameo under the shelf |

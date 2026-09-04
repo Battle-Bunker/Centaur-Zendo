@@ -627,7 +627,7 @@
    ]
   },
   "fennick": {
-   "current_version": 1,
+   "current_version": 2,
    "note": "run1: both failed (~1%). Object not recognised: players read it as a bar chart / 'ink soaking through', never as books, so 'leaning' was never hypothesised. Refine for legibility of the lean.",
    "qual": [
     {
@@ -644,6 +644,9 @@
      "score": 3.4,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -729,6 +732,12 @@
     {
      "file": "challenges/lab/fennick.json",
      "v": 1
+    },
+    {
+     "added": 1788532553.5084999,
+     "file": "challenges/lab/fennick.json",
+     "note": "v2: books drawn with caps, leaning books shifted with / and \\ tops, narrower shelf, tally as U:1 E:2",
+     "v": 2
     }
    ]
   },
@@ -2038,7 +2047,7 @@
    ]
   }
  },
- "direction_cursor": 7,
+ "direction_cursor": 8,
  "jobs": [
   {
    "agents": 0,
@@ -2480,7 +2489,7 @@
    "kind": "refiner",
    "reason": "kid_score",
    "started": 1788530820.9540522,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -2565,7 +2574,7 @@
    "id": "designer-new-6-man",
    "kind": "designer",
    "started": 1788530836.34373,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -2575,6 +2584,32 @@
    "kind": "players",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-fennick-v2-e131",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "fennick",
+   "id": "judge-fennick-v2-66c7",
+   "kind": "judge",
+   "started": 1788532553.62122,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "new-7",
+   "direction": "animals and nature",
+   "id": "designer-new-7-v0-818a",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

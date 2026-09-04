@@ -77,3 +77,16 @@ generate(); unique-answer classes starve the channel; two or three independent c
 leave a foothold (a natural first probe that scores sometimes, else players assume exact-match
 grading and farm demos); test cheap templates that satisfy the rule, not only wrong rules;
 soften by salience (redraw the demo) before touching the rule.
+
+## Format shift, 2026-09-04 evening — what the first 7-class run showed
+Run `lad-kelmar-v1-1` (kelmar, LegoZendo2, basten, tovel, velk, murn, orlan; 4 rounds, 3 demos,
+two Opus players): finals 45 and 46 out of ~3600, all of it LegoZendo2's n=0 cases after a demo;
+every other class 0 % with or without a demo. Two causes. (1) **The channel is 7× thinner**: a
+class now gets ~60 probes per round instead of ~450, and only 4 rounds, so a class tuned for
+6×450 probes plus 6 demos is unreachable. (2) **Clues do not reveal the answer's shape**: both
+players said 5 of 7 clues told them nothing about the format until a demo (`TU12`, `31/5/Y/5/12`).
+Consequences for every live class (the "demo-economy pass"): put the object in the clue so the
+answer is the clue's picture edited; reduce the rule to one clause a kid says in a breath; make
+sure a player *with* a demo can crack it in ~2 rounds of ~60 probes about half the time, and a
+player *without* one can still send well-formed attempts and score a little. Old-format results
+(fennick 50 %, garrow 64 %, basten 33 %) are upper bounds now, not measurements.

@@ -1,0 +1,411 @@
+Centaur Zendo round 2 (training)
+round_id : 0c67457d311d47a297845ed04544c0d5
+written  : 2026-09-04 22:42:48Z
+presented=393  answered=365  correct=3  skipped=28
+client answer latency: mean 0.178 ms  median 0.125 ms  max 1.068 ms  (n=393)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  kelmar        ___*__Y___*__*__Y_____Y_____*___Y___*__…  *__Y                                      0
+   1  basten        ....3......3.....3....2.........../3      11                                        0
+   2  basten        .......2.....3......2....3......../2      4                                         0
+   3  velk          KBTGF|4                                   OFXKJ                                     0
+   4  tovel         31/4/O/3/20                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+   5  LegoZendo2    LJ2                                       LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL…  0
+   6  basten        .....2...3......2.....3....../7           0                                         0
+   7  basten        .....2....2......1.....3....3..../2       22133                                     0
+   8  murn          #.oo#...o.#o#o|5                          #.oo#...o.#o#o                            0
+   9  basten        ...3......3...2...3......2..../3          ...3......3...2...3......2....            0
+  10  basten        ...2....3.....3.....2.......1....../7     7                                         0
+  11  orlan         .#o..#\n#.....\nxx##ox\n...o##\n.#o#.#\…  .#o..#\n#.....\nxx##ox\n...o##\n.#o#.#\…  0
+  12  kelmar        __Y__Y_____Y___*____Y___Y___*____*__*__…  14                                        0
+  13  velk          URID|2                                    SPGB                                      0
+  14  kelmar        ________Y___*_____*___Y__Y__*____*_____…  18                                        0
+  15  murn          #o.o.##..#.o.|7                           .o.#..##.o.o#                             0
+  16  velk          HNIBE|3                                   BEHIN                                     0
+  17  basten        ....3......3.......2......2...2...../7    4,11,19,26,30                             0
+  18  kelmar        __*__Y____Y___Y___Y__*___*___Y__*__*___…  2-5                                       0
+  19  orlan         ......\n...o#o\n#.#.o#\n..##x.\nx##..o\…  #x.#..\n.#....\no###..\n#.#.o.\n..xo#.\…  0
+  20  murn          o.oo..oooo..|7                            7                                         0
+  21  velk          IYEQLW|5                                  YWQLIE                                    0
+  22  velk          HBIMYD|5                                  DYMIBH                                    0
+  23  kelmar        ___Y___Y_______*___*__Y___Y___*_____*__…  19 26                                     0
+  24  LegoZendo2    VK11                                      None                                      0
+  25  murn          ...o#o.o#.|9                              3                                         0
+  26  murn          ##.#...##.o|4                             5                                         0
+  27  velk          YCJLA|5                                   YCJLA                                     0
+  28  murn          ..#.o.o..#.|11                            ..#....oo#.                               0
+  29  murn          ##o#oo.oo.##...|5                         ##o#oooo..##...                           0
+  30  LegoZendo2    IC7                                       IICCIICCIICCIICCIICCIICCIICCIICCIICCIIC…  0
+  31  basten        ....3.....2...2.....2.....2......../4     35                                        0
+  32  LegoZendo2    KF0                                       None                                      0
+  33  velk          XWSTCA|2                                  CAXWST                                    0
+  34  basten        ....3....3...2....2........./3            3                                         0
+  35  orlan         x..#.\n..#o#\n.oo#.\n#.##.\nox.x.\nx##..  ..##x\n.x.xo\n.##.#\n.#oo.\n#o#..\n.#..x  0
+  36  velk          WYCVN|3                                   V                                         0
+  37  velk          WXCBUT|5                                  U                                         0
+  38  basten        ...2........3......2....3...../7          .....3....2......3........2...            0
+  39  LegoZendo2    JZ8                                       JJ::ZZ::JJ::ZZ::JJ::ZZ::JJ::ZZ::JJ::ZZ:…  0
+  40  kelmar        ___Y___*____*__Y__Y__Y__*___Y__Y__*____…  ____________*__Y__Y____________________…  0
+  41  murn          o.o#....#|3                               .oo#....#                                 0
+  42  velk          VSNWTO|3                                  3                                         0
+  43  orlan         x.....\n.#....\n.....x\no.#...\no.o.oo\…  ..x.o.\n....o#\n.....#\n...#ox\n.#....\…  0
+  44  kelmar        __Y___*__Y___*__*___Y__Y__Y_____*____*_…  7                                         0
+  45  orlan         #o##x#\n.o.#..\n...#ox\n...x.#\n...#ox\…  #x##o#\n..#.o.\nxo#...\n#.x...\nxo#...\…  0
+  46  basten        ...3....3.....1......2...1........./6     30                                        0
+  47  orlan         .ox.##\n.#...#\n....oo\n......\n...#ox\…  .....#\n...#ox\n......\n....oo\n.#...#\…  0
+  48  orlan         .....o\n#.#.#.\n#...#.\nxox.x.\n..o.#.\…  .##x..\n...o.o\n.#.xo#\n......\n.##x##\…  0
+  49  tovel         31/0/Y/1/23                                Mo  Tu  We  Th  Fr  Sa  Su\n 1   2   3…  0
+  50  basten        ...3.....3.....2....3....3..../4          56                                        0
+  51  velk          DBIYVE|5                                  ADGIJN                                    0
+  52  murn          .o...#o#.|6                               o#ooo###o                                 0
+  53  LegoZendo2    MA6                                       None                                      0
+  54  orlan         .oxo.\n.xo#o\n.o...\n..#..\n.....         .xox.\n.ox#x\n.x...\n..#..\n.....         0
+  55  orlan         ..#.x#\n.#.#.o\n#x..#o\n.x##..\n..oo#.\…  ....x.\n.....o\n.x...o\n.x....\n..oo..\…  0
+  56  basten        ....2...2......3...2.....2...../3         ...............................           0
+  57  orlan         #o#..\no.o#.\n#x.#.\n.ox##\n.#..o         .o.##\no#o.#\n.x#.#\n#ox..\n#.##o         0
+  58  murn          o.o#ooo.o.#..|8                           13                                        0
+  59  basten        .....2....3.....2...2...2......../3       2                                         0
+  60  velk          VYIEHN|2                                  VZKHLS                                    0
+  61  LegoZendo2    UG5                                       AABBCCDDEEFFGGAABBCCDDEEFFGGAABBCCDDEEF…  0
+  62  orlan         ....#.\n......\n.....#\n..#.o#\n.o#..x\…  2                                         0
+  63  orlan         ..o#.\n.x##.\noo...\nox#..\n#....         4                                         0
+  64  murn          #...oo..#.##o|4                           4,5,12                                    0
+  65  tovel         31/1/L/4/14                                Mo  Tu  We  Th  Fr  Sa  Su\n     1   2…  0
+  66  tovel         30/2/R/4/15                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  67  kelmar        ___Y__Y____*___*___*___*____*___*____Y_…  44,47                                     0
+  68  orlan         ...o..\n.#..o.\n..x.oo\n....##\n..#.x.\…  4                                         0
+  69  tovel         29/2/L/4/14                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  70  murn          ooo.oo#oo..o.o#o|13                       66                                        0
+  71  velk          XNRLO|3                                   83                                        0
+  72  LegoZendo2    XB11                                      None                                      0
+  73  orlan         #x.#.o\n##o#.o\n.#...o\n.#.x.x\n.#.#..    01,33,35                                  0
+  74  orlan         ...#.o\n#.....\n.#ox.#\n.o.#..\n.o#.o.\…  ...#.o\n#.....\n.#oo.#\n.o.#..\n.o#.o.\…  0
+  75  tovel         29/3/H/2/20                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  76  basten        ...2.....3....3....3........../5          0                                         0
+  77  velk          CGIONP|3                                  CGI                                       0
+  78  tovel         29/4/L/1/27                                                1L  2L  3L\n 4L  5L  6…  0
+  79  kelmar        __*________*__Y__Y___*__*_____Y__Y__Y__…  *__Y__Y___*                               0
+  80  kelmar        _____*__Y________*___Y___Y__Y__*___*__*…  65                                        0
+  81  tovel         30/4/Z/5/13                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  82  tovel         31/6/O/3/18                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  83  orlan         .oo##.\no#o#.x\n......\n.#.x#o\n......\…  ...##.\n.#.#.#\n......\n.#.##.\n......\…  0
+  84  LegoZendo2    RK12                                      RR::RR::RR::RR::RR::RR::RR::RR::RR::RR:…  0
+  85  kelmar        __Y__*__*___*__*___*__Y___Y__Y___*__*__…  *Y                                        0
+  86  tovel         30/0/W/3/17                               Mo Tu We Th Fr Sa Su\n 1  2  3  4  5  6…  0
+  87  basten        .....2...1....3...3.....3...../3          133                                       0
+  88  orlan         ##....\no#..x.\nxo#..o\n.x.#..\no..o#.    ##....\no#..x.\nxo#..o\n.x.#..\no..o#.    0
+  89  kelmar        __*_____*__*_____Y___*__Y___Y_____*__*_…  **YY___________________________________…  0
+  90  kelmar        __Y__*________*__*_____Y__Y_______Y___Y…  46                                        0
+  91  velk          CMXWN|5                                   5                                         0
+  92  tovel         31/2/W/5/14                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  93  murn          ##o.##oo..o#.|3                           ##..##.....#.                             0
+  94  murn          .#.o.o##.o.##o.|11                        34                                        0
+  95  basten        ...2....2....2.......2...3..../6          11                                        0
+  96  LegoZendo2    EC9                                       None                                      0
+  97  murn          oo.##...ooo|6                             ooooo                                     0
+  98  basten        ......2...3......2.....1......2..../4     5                                         0
+  99  basten        ....3......3.....3.....1......3...../7    0                                         0
+ 100  kelmar        __Y___*______*_____*__Y__*___*____Y__Y_…  19/23                                     0
+ 101  murn          .o.o.#oo...o.#|4                          -1                                        0
+ 102  murn          .#o..#o..|4                               .#o..#o..                                 0
+ 103  basten        .....1.....1......3...3......2..../3      11332                                     0
+ 104  orlan         .x##..\n.o.#.o\n.#...o\n.x#x#.\n.##...    .....\n#x#ox\n##..#\n.x.##\n.#...\n..oo.  0
+ 105  orlan         ..o..\n.##x.\no..#.\n.#.x#\n.#o..\n..#ox  xo#..\n..o#.\n#x.#.\n.#..o\n.x##.\n..o..  0
+ 106  LegoZendo2    VM4                                       :::::::::::::::::::::::::::::::::::::::…  0
+ 107  LegoZendo2    SK10                                      None                                      0
+ 108  basten        ......2.......3....2.......3......./6     ......2.......3....2.......3.......       0
+ 109  basten        ...3......3....3....3........3..../7      7                                         0
+ 110  kelmar        ___*____Y__*__Y__*_________Y___Y__*___Y…  Y__*__Y                                   0
+ 111  murn          #..o.#o#.#o..|6                           ..o#.#o#.o..#                             0
+ 112  tovel         30/3/O/5/14                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 113  basten        .......3......3....1......3....../6       7,14,19,26                                0
+ 114  tovel         28/4/Y/4/13                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 115  orlan         ......\n.##oxo\n#.xx##\no#..x.\n....o#    .o#.#\n.x#xo\n.ox..\n.#x..\n.#.#.\n..#o.  0
+ 116  orlan         o...o#\n.##x.#\no.x###\n#..#.o\n.x....    #o...o\n#.x##.\n###x.o\no.#..#\n....x.    0
+ 117  basten        ...2.....3......3......2...../7           29                                        0
+ 118  murn          #.#....o...###|8                          8                                         0
+ 119  murn          ..#ooo...#|9                              3                                         0
+ 120  orlan         x##..\n..oo.\no..o.\n.#.x.\nx..o.         x..o.\n.#.x.\no..o.\n..oo.\nx##..         0
+ 121  orlan         o#o#..\no#o..o\nx.##..\n#x.o..\n#.....\…  oox##.\n##.x.x\noo#...\n#.#o..\n......\…  0
+ 122  tovel         29/1/G/1/16                                Mo  Tu  We  Th  Fr  Sa  Su\n     1   2…  0
+ 123  velk          WJSY|5                                    ABCDE                                     0
+ 124  murn          oo#..#o##o.o#|8                           5                                         0
+ 125  orlan         .o..#\n.ooo#\n.o##x\nx.x#.\n..#.o\n.##x#  .x..#\n.xxx#\n.x##o\no.o#.\n..#.x\n.##o#  0
+ 126  kelmar        ___Y___Y___*__*___Y____*___*____*___Y__…  6                                         0
+ 127  kelmar        __*______*__Y__*___*__Y___*__Y__*___*__…  *__Y                                      0
+ 128  LegoZendo2    WT0                                       WWTTWWTTWWTTWWTTWWTTWWTTWWTTWWTTWWTTWWT…  1
+ 129  murn          o#..#.oo..o|5                             o#..#...ooo                               0
+ 130  orlan         ..#..x\n#.xo#.\n....##\n....#o\nx...oo\…  .....x\n..xo..\n......\n.....o\nx...oo\…  0
+ 131  velk          UDEKF|3                                   XGHNI                                     0
+ 132  velk          MLBZ|2                                    KJZX                                      0
+ 133  kelmar        ___Y__Y_____Y___*__Y___*___*___________…  4                                         0
+ 134  basten        ......3.......2....3......3..../5         3                                         0
+ 135  tovel         30/5/J/4/17                                               1  2\n 3  4  5  6  7  8…  0
+ 136  kelmar        __*___*__*___*__Y____Y____*____*_____Y_…  9                                         0
+ 137  basten        ...3....3......2......3......3....../3    ......3......3......2......3....3...      0
+ 138  kelmar        ___*__*___*______*____*_______Y__Y__Y__…  17-30                                     0
+ 139  murn          o.#.o#.oo|11                              o.#o.#oo.                                 0
+ 140  kelmar        __Y__*__Y_________*__Y__*__*________*__…  21 39                                     0
+ 141  orlan         .....x\n.x....\noo#...\no#..#.\no#.o..\…  #####x\n#x####\noo.###\no.##.#\no.#o##\…  0
+ 142  velk          HZJY|5                                    HJYZ                                      0
+ 143  murn          #o..#.o.o.o#oo#.|8                        #..o#...ooo#oo#.                          0
+ 144  kelmar        ___*____Y___*___*___Y__Y____*______Y__*…  ___________________________________Y__*…  0
+ 145  murn          .o.....#.o..##|7                          o#ooooo#o#oo##                            0
+ 146  murn          .#..#...o#o..##.|10                       16                                        0
+ 147  kelmar        ______*____*__Y______Y__Y__Y__*__*___*_…  25                                        0
+ 148  kelmar        ____*___Y______*____*__*___*__Y__Y__Y__…  28,31                                     0
+ 149  tovel         31/4/R/1/25                               Mo Tu We Th Fr Sa Su\n                 …  0
+ 150  orlan         ..o...\n#.x#x.\no.ox#.\n###x##\n.o..#.    4                                         0
+ 151  murn          o.o#oo..oo|13                             0,2,4,5,8,9                               0
+ 152  murn          o#oo.oo#.o..#.o|7                         39                                        0
+ 153  basten        ...3....3......2...3......../8            24                                        0
+ 154  LegoZendo2    OD5                                       None                                      0
+ 155  orlan         ##..#.\n...oo#\nx##.#.\n......\n#o....\…  4                                         0
+ 156  kelmar        __*__*____*__Y__Y___*_________Y__*__Y__…  *__Y__Y                                   0
+ 157  murn          ##..oooo#.oo..|8                          ##......#.....                            0
+ 158  LegoZendo2    ZJ2                                       ZZZZJJZZZZJJZZZZJJZZZZJJZZZZJJZZZZJJZZZ…  0
+ 159  LegoZendo2    TF12                                      None                                      0
+ 160  murn          #..o.##...#o#oo|7                         45                                        0
+ 161  tovel         31/4/E/4/18                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 162  murn          .#..#...oo|13                             oo                                        0
+ 163  LegoZendo2    YH11                                      YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY…  0
+ 164  basten        ...2.......2....3......2....1..../6       60                                        0
+ 165  kelmar        __Y__*___*___Y___Y__*__Y__*____Y_____*_…  55                                        0
+ 166  orlan         ...##x\n#...##\no#..x#\nx#o...\n..oox.    8                                         0
+ 167  basten        ...2.....2......1.....3...2..../6         ...............................           0
+ 168  basten        ...2.....2.........2....2...2......./3    1                                         0
+ 169  murn          #.oo#..o..#.o|3                           -1                                        0
+ 170  velk          OIBFAP|5                                  POIFBA                                    0
+ 171  basten        ....3.....2....2......2...2......../2     4                                         0
+ 172  kelmar        ___*__*__*___Y___Y____*____Y____*_____*…  *Y                                        0
+ 173  kelmar        _____*__Y______Y___Y________*__*____*__…  **Y____________________________________…  0
+ 174  tovel         31/0/H/4/17                                Mo  Tu  We  Th  Fr  Sa  Su\n 1   2   3…  0
+ 175  basten        .....3......1.....3....2.....2...../4     1                                         0
+ 176  kelmar        ____*____Y____*________*___Y___*___Y__Y…  32                                        0
+ 177  kelmar        __*___*________*__*__*__Y__*____Y____*_…  18/25                                     0
+ 178  tovel         31/0/E/4/17                                Mo  Tu  We  Th  Fr  Sa  Su\n 1   2   3…  0
+ 179  kelmar        __Y____*___*__*__Y_______*__Y_____Y__*_…  Y_____Y__*                                0
+ 180  orlan         .ox..\n#.x.#\n###xo\n..#o.\n..#o#\n.o.x.  02,12,23,53                               0
+ 181  murn          #o.o.#...oo.|10                           #o.o.#...oo.                              0
+ 182  tovel         30/6/T/5/11                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 183  velk          IZDNE|4                                   ENDZI                                     0
+ 184  velk          GYAJSI|5                                  IGYAJS                                    0
+ 185  kelmar        ___*_____Y__*__*___*__*___*__Y___Y___Y_…  8                                         0
+ 186  velk          YZTD|3                                    ZTDY                                      0
+ 187  tovel         31/6/Y/5/11                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 188  orlan         .#.x##\n#..#.o\noxo.xo\n..#.#.\n.#..#.\…  .#.o##\n#..#.o\nooo.oo\n..#.#.\n.#..#.\…  0
+ 189  tovel         30/5/P/5/12                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 190  LegoZendo2    TA12                                      None                                      0
+ 191  LegoZendo2    GB5                                       GGBBGGBBGGBBGGBBGGBBGGBBGGBBGGBBGGBBGGB…  0
+ 192  LegoZendo2    RI9                                       None                                      0
+ 193  tovel         30/6/N/1/17                                                        1N\n 2N  3N  4…  0
+ 194  orlan         .....o\n###x#x\n......\n...#o.\nx.o..#\…  ......\n######\n......\n...#..\n#....#\…  0
+ 195  LegoZendo2    HY2                                       HH::YY::HH::YY::HH::YY::HH::YY::HH::YY:…  0
+ 196  tovel         31/4/Z/3/13                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 197  kelmar        ____Y___*___*__*___*_____Y___Y___Y_____…  Y__*                                      0
+ 198  tovel         28/5/B/2/24                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 199  murn          o#..#o..#.o|4                             o.#..o#..#o                               0
+ 200  basten        ...2.....3......3.....2....../6           10                                        0
+ 201  tovel         30/1/X/1/22                               Mo Tu We Th Fr Sa Su\n    1  2  3  4  5…  0
+ 202  velk          OTUE|5                                                                              0
+ 203  velk          TVXS|3                                    X                                         0
+ 204  murn          o#.#o.#.#.#|15                            15                                        0
+ 205  murn          .#...oo..ooo.o#|7                         6                                         0
+ 206  murn          o..#.#.##o.o#.#o|16                       6                                         0
+ 207  basten        ...1.......3...3.....3......3..../6       5                                         0
+ 208  kelmar        ___*____*__Y__Y__*__*__Y___*____*__*___…  7                                         0
+ 209  orlan         .o.o..\n..#.#.\n.ox#..\n.x#.##\no#...o\…  .o.o..\n..#.#.\n.ox#..\n.x#.##\no#...o\…  0
+ 210  LegoZendo2    LJ2                                       None                                      0
+ 211  basten        ...2......3.....3....2......3......./4    6                                         0
+ 212  basten        ...2....3.....2....3.....2........../2    23232                                     0
+ 213  tovel         28/4/D/2/20                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 214  velk          QBKLT|4                                   4                                         0
+ 215  orlan         x..o#.\n....o.\n###.x.\no...#.\n.xx#o.\…  ..o#.x\n.x.#..\n.x.#..\n.#...o\n#o#xo#\…  0
+ 216  kelmar        ____*__Y__Y___*_______*__Y____*_____*__…  4                                         0
+ 217  orlan         .##x.#\n#..xo#\n.o.##o\n...#.x\n...#..\…  ..xo##\n..#...\nx.#...\no##.o.\n#ox..#\…  0
+ 218  kelmar        ____*__*___Y___*__Y__Y______Y_____*____…  4-11                                      0
+ 219  orlan         ...o..\n.##...\n......\n.oxo#.\n..#...\…  ......\n...#.#\no..o..\n.#.x#x\n.#.o.#\…  0
+ 220  basten        .....2...3.......2.......2....1..../2     .....2...3.......2.......2....1....       0
+ 221  velk          ZYTJH|3                                   BCKMW                                     0
+ 222  basten        ......1.....3....3.......3......../3      3                                         0
+ 223  LegoZendo2    OH0                                       AABBCCDDEEFFGGAABBCCDDEEFFGGAABBCCDDEEF…  1
+ 224  murn          ...#.ooo...|4                             ...#....ooo                               0
+ 225  tovel         28/2/S/3/13                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 226  basten        ...1.....2.......2......3...3..../7       3,9,17,24,28                              0
+ 227  basten        ...1.....3...3.....2.......1......../7    36                                        0
+ 228  basten        ...3....3......3....1......../7           3                                         0
+ 229  velk          TGREQ|2                                   THTHU                                     0
+ 230  LegoZendo2    HU7                                       None                                      0
+ 231  murn          .##...#o.#.|8                             .##...#o.#.                               0
+ 232  kelmar        _______Y____*__*__Y___*____*__Y__*____Y…  12 22                                     0
+ 233  tovel         30/1/W/4/16                                Mo  Tu  We  Th  Fr  Sa  Su\n     1   2…  0
+ 234  kelmar        ____*__*___Y__*__Y___*__Y__Y__*______*_…  ____*__*___Y___________________________…  0
+ 235  LegoZendo2    BH1                                       BB::BB::BB::BB::BB::BB::BB::BB::BB::BB:…  0
+ 236  basten        ....3.....3......1....3....../7           ......3....1......3.....3....             0
+ 237  kelmar        __*__*____Y__*_____*__*__Y____Y___Y__*_…  20                                        0
+ 238  basten        ...2....3.......2.....3.....1...../4      29                                        0
+ 239  orlan         .....\nx.o..\n.o#o#\n.x..o\n..##x         .....\n..o.x\n#o#o.\no..x.\nx##..         0
+ 240  tovel         29/4/D/5/13                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 241  kelmar        __Y___*__Y_____*__*___*__Y___*___Y_____…  7,10                                      0
+ 242  basten        ....3.......3.....2...2......1...../4     44                                        0
+ 243  LegoZendo2    WD12                                      None                                      0
+ 244  LegoZendo2    BS2                                       :::::::::::::::::::::::::::::::::::::::…  0
+ 245  tovel         31/2/F/5/14                                      1  2  3  4  5\n 6  7  8  9 10 11…  0
+ 246  basten        ...2.....2........3.......3....../5       .................................         0
+ 247  kelmar        ___Y___*_____*__Y__*_____*_______*__*__…  *__Y__*                                   0
+ 248  kelmar        __*__Y____Y___*____*__Y__*_________*___…  64                                        0
+ 249  orlan         ##xx#\n.#..#\nox##.\n.o..#\nox...\n.#.oo  .#.oo\nox...\n.o..#\nox##.\n.#..#\n##xx#  0
+ 250  kelmar        ____*_______*___*__*____Y__Y__Y__Y___*_…  *Y                                        0
+ 251  tovel         30/4/F/5/13                               Mo Tu We Th Fr Sa Su\n                 …  0
+ 252  basten        ....3....3....2......3....../5            1                                         0
+ 253  tovel         30/3/H/1/27                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 254  tovel         31/6/Y/5/11                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 255  orlan         .....\n....#\n..##o\n.o#..\n#.x..\n#.xo#  ....##\n...o..\n..##xx\n..#..o\n.#o..#    0
+ 256  LegoZendo2    EW10                                      None                                      0
+ 257  LegoZendo2    ZB6                                       ZZBBZZBBZZBBZZBBZZBBZZBBZZBBZZBBZZBBZZB…  0
+ 258  velk          MYBUJ|5                                   71                                        0
+ 259  basten        ....2.....2.....3...2....1...../3         0                                         0
+ 260  LegoZendo2    NM2                                       None                                      0
+ 261  kelmar        __Y__Y___Y___*__Y_____*__*______*___Y__…  *YY____________________________________…  0
+ 262  LegoZendo2    GA11                                      GGGGGGGGGGGGGGGGGGGGGGAAGGGGGGGGGGGGGGG…  0
+ 263  LegoZendo2    DP2                                       None                                      0
+ 264  LegoZendo2    HU3                                       HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH…  0
+ 265  tovel         29/4/H/5/12                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 266  murn          ##.##.o..#o..##|11                        ##.##...o#..o##                           0
+ 267  orlan         ...o..\n......\nx..x..\n......\nx##o..\…  ...x..\n......\no..o..\n......\no##x..\…  0
+ 268  murn          .oo.##oo..o.|7                            o##o####oo#o                              0
+ 269  LegoZendo2    MV12                                      None                                      0
+ 270  basten        ....1...1......2......3......3...../2     113                                       0
+ 271  tovel         29/0/Q/5/10                                Mo  Tu  We  Th  Fr  Sa  Su\n 1   2   3…  0
+ 272  kelmar        ___*__*___Y______*__*____*__Y____*_____…  29                                        0
+ 273  murn          ooo..##oo.ooo|13                          13                                        0
+ 274  murn          #.##.#.#..##oo..|14                       12,13                                     0
+ 275  basten        ...3...3....1......2.......3......./4     12                                        0
+ 276  velk          RHDN|2                                    RH                                        0
+ 277  tovel         31/3/J/4/19                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 278  kelmar        ____*__*__*_________Y___*___Y__Y__*__Y_…  31/35                                     0
+ 279  tovel         28/2/L/4/13                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 280  basten        ......2.....3.....2...3......../3         4                                         0
+ 281  tovel         31/6/Y/2/23                                                        1Y\n 2Y  3Y  4…  0
+ 282  basten        ....2.....3.....1.....3.....3......./6    0                                         0
+ 283  LegoZendo2    OD12                                      OODDOODDOODDOODDOODDOODDOODDOODDOODDOOD…  0
+ 284  kelmar        ___Y__Y_____*__*__*___*________Y__*__Y_…  *__*_____Y__Y                             0
+ 285  kelmar        ____*___*__*___*_____Y__Y___Y___Y______…  6                                         0
+ 286  kelmar        __Y__*__*____Y____Y__*____*__*____Y___*…  Y__*                                      0
+ 287  velk          BTUX|5                                    4                                         0
+ 288  murn          ##o..oo.o#.|6                             21                                        0
+ 289  murn          ..#o.o#.o..#o...|8                        ..#...#....#....                          0
+ 290  basten        ....2....3..........3....3......../6      2333                                      0
+ 291  murn          #o..#oo###o#.o#|6                         40                                        0
+ 292  basten        .....2....3.........3....3......./3       .....2....3.........3....3.......         0
+ 293  basten        ...1.....3....3...2.....2......../2       2                                         0
+ 294  velk          CVFQJ|2                                   AB                                        0
+ 295  LegoZendo2    VF10                                      None                                      0
+ 296  murn          ...oo#.o..o#.o.|13                        ooooo                                     0
+ 297  murn          oo.##.#.#|13                              11                                        0
+ 298  orlan         .#...\nx#.#.\no....\n##ox#\n...o.         .....\nx....\no....\n..ox.\n...o.         0
+ 299  LegoZendo2    NJ3                                       NN::JJ::NN::JJ::NN::JJ::NN::JJ::NN::JJ:…  0
+ 300  basten        ...3......3...2....2....3........../6     3,10,14,19,24                             0
+ 301  murn          #.##.#o#..#o.|12                          #.##.#o#..#o.                             0
+ 302  orlan         .ooo.x\n#ox.#.\n.o#...\n....o#\n##x.#.\…  #ooo#x\n.ox#.#\n#o.###\n####o.\n..x#.#\…  0
+ 303  murn          .##.....o#|3                              #o.....##.                                0
+ 304  tovel         30/5/U/1/5                                 Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 305  orlan         o.#...\n.x#x.#\n#o.#.#\no#....\n#o....\…  3                                         0
+ 306  velk          ABMIVW|5                                  FGRNAB                                    0
+ 307  velk          BCVKN|5                                   WXQFI                                     0
+ 308  velk          XQTMY|4                                   MQTXY                                     0
+ 309  kelmar        __*______Y__*__*___*____Y__*__*___Y__Y_…  11                                        0
+ 310  tovel         31/2/T/4/15                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 311  kelmar        __*__*__Y____Y___Y____Y__*______*___Y__…  5                                         0
+ 312  orlan         ..#o#\n#..#.\nx.##.\nxo##o\n##ox.         4                                         0
+ 313  orlan         ...x.o\n.#o...\no.....\n...o#.\n.x###.\…  7                                         0
+ 314  orlan         .#oo.x\n......\no...o#\n....x.\n..o...    05,34                                     0
+ 315  LegoZendo2    OM7                                       None                                      0
+ 316  orlan         ..#...\n.#o.x.\n#ooo#o\n.x###.\n......\…  ..#...\n.#o.o.\n#ooo#o\n.o###.\n......\…  0
+ 317  LegoZendo2    OD10                                      AABBCCDDEEFFGGAABBCCDDEEFFGGAABBCCDDEEF…  0
+ 318  kelmar        ______Y_____*____Y___Y_____*__*__Y____*…  30-33                                     0
+ 319  LegoZendo2    YA6                                       None                                      0
+ 320  LegoZendo2    QB4                                       QQ::QQ::QQ::QQ::QQ::QQ::QQ::QQ::QQ::QQ:…  0
+ 321  tovel         30/6/B/1/25                               Mo Tu We Th Fr Sa Su\n                 …  0
+ 322  velk          UKFWDR|5                                  WURKFD                                    0
+ 323  murn          #.#o..#...o.o.|14                         14                                        0
+ 324  orlan         ...o.\n.o.#.\n#.#xx\n..o##\no...#         .....\n...#.\n#.###\n...##\n....#         0
+ 325  murn          #.o#o#o#.o..#|7                           4                                         0
+ 326  basten        ....2.......2......3...2....3...../4      34                                        0
+ 327  murn          .o.oo.#o..o#..o.|8                        2                                         0
+ 328  murn          .#o#o...oooo##|6                          .#o#...ooooo##                            0
+ 329  murn          .o##o.o.o.oo|12                           o.##ooooo...                              0
+ 330  orlan         ..o.o.\n..xo#.\n..o#.o\n..#...\n.x....\…  ..o.o.\n..xo#.\n..o#.o\n..#...\n.x....\…  0
+ 331  kelmar        __*__Y___Y___Y__Y__*__*___Y____*_____*_…  13 22                                     0
+ 332  kelmar        ___*__Y____Y_____Y____Y___*__*__Y___*__…  ______________________Y___*__*__Y______…  0
+ 333  orlan         ......\n..oxo#\n...#..\n...#.#\n...o..\…  ......\n#.....\n....o.\nxo##x.\n#...o.\…  0
+ 334  basten        ...2......2...2......2.....2......../4    2                                         0
+ 335  LegoZendo2    KI3                                       None                                      0
+ 336  velk          ILVJRQ|2                                  QRJVLI                                    0
+ 337  basten        ....3.....2......3......3........../2     ..........3......3......2.....3....       0
+ 338  orlan         .x###\n...oo\n#x.#o\n...#o\no#ox.         .xo#o\no#...\no#.x#\noo...\n###x.         0
+ 339  murn          oo..#o..oo..|10                           ..oo#....ooo                              0
+ 340  LegoZendo2    AD1                                       :::::::::::::::::::::::::::::::::::::::…  0
+ 341  kelmar        __*__*__Y__*_____*__Y___Y____*_____Y__*…  3                                         0
+ 342  tovel         31/1/Z/1/29                                Mo  Tu  We  Th  Fr  Sa  Su\n     1   2…  0
+ 343  LegoZendo2    GV8                                       None                                      0
+ 344  murn          #..o.o#.##o#.#o|8                         #oo#o##o####o##                           0
+ 345  tovel         28/3/M/3/19                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 346  tovel         28/2/S/2/20                                Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 347  LegoZendo2    RK11                                      RRKKRRKKRRKKRRKKRRKKRRKKRRKKRRKKRRKKRRK…  0
+ 348  basten        ...2.........3.......2...1...3...../6     30                                        0
+ 349  tovel         30/5/R/4/12                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 350  orlan         #.x##\n.ox.#\no.##x\no##..\n....#         ##x.#\n#.#..\nxx##.\n.o.#.\n#.oo.         0
+ 351  murn          #..o..ooo.#...|7                          14                                        0
+ 352  tovel         30/1/M/4/16                                   1  2  3  4  5  6\n 7  8  9 10 11 12…  0
+ 353  kelmar        __Y____*____*__Y__*__*___Y_____*__Y____…  16,26                                     0
+ 354  velk          RIFDH|2                                   FDHRI                                     0
+ 355  tovel         31/6/B/2/18                               Mo Tu We Th Fr Sa Su\n                 …  0
+ 356  orlan         ...o..\n#...x.\n.ooo.#\nxo#...\n#.....\…  ..o...\n.x...#\n#.ooo.\n...#ox\n.....#\…  0
+ 357  LegoZendo2    WA9                                       None                                      0
+ 358  LegoZendo2    SC7                                       SSSSSSSSSSSSSSCCSSSSSSSSSSSSSSCCSSSSSSS…  0
+ 359  LegoZendo2    ZY7                                       None                                      0
+ 360  orlan         ##.oo\nx.#..\n#.x.o\noxx.#\noo#..         oo#..\noxx.#\n#.x.o\nx.#..\n##.oo         0
+ 361  basten        ....1...1....2...3.....3.....2..../8      96                                        0
+ 362  velk          MJYC|5                                    CMJY                                      0
+ 363  tovel         31/1/K/4/16                                Mo  Tu  We  Th  Fr  Sa  Su\n     1K  2…  0
+ 364  orlan         o#...\n#ox..\n##...\no....\nx##.o\n...x.  o##ox.\n#o#.#.\n.x..#.\n.....x\n....o.    0
+ 365  orlan         ..##o.\n#o...o\no.#x##\nx.#...\n#..#..    ..##x.\n#x...x\nx.#o##\no.#...\n#..#..    0
+ 366  LegoZendo2    SW0                                       SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS…  1
+ 367  murn          ...#o#ooo#o##..o|4                        4,6,7,8,10,15                             0
+ 368  kelmar        __Y__*___Y__*____Y___Y__Y__*__*__*_____…  Y__Y__*__*                                0
+ 369  murn          ....o###.##....|5                         4                                         0
+ 370  LegoZendo2    RA5                                       None                                      0
+ 371  LegoZendo2    XU10                                      XXUUXXUUXXUUXXUUXXUUXXUUXXUUXXUUXXUUXXU…  0
+ 372  kelmar        ___*___Y______Y_____*__Y__*____Y___*__Y…  56                                        0
+ 373  kelmar        ___*__Y___*__*__Y___*__Y__Y____Y____Y__…  **Y                                       0
+ 374  LegoZendo2    VP3                                       None                                      0
+ 375  orlan         x...#.\n.x.##o\no.#.x.\n.##x##\n....#.\…  x.....\n.x...o\no...x.\n...x..\n......\…  0
+ 376  LegoZendo2    MG6                                       MM::GG::MM::GG::MM::GG::MM::GG::MM::GG:…  0
+ 377  tovel         31/3/Z/5/14                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 378  basten        ....3....3...2.....2.......2..../7        ................................          0
+ 379  murn          #..#o#o.#..#oo|12                         #..#.#..#..#..                            0
+ 380  velk          YUPB|2                                    P                                         0
+ 381  tovel         31/6/G/1/4                                 Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 382  velk          MEYFA|3                                   Y                                         0
+ 383  orlan         ooo.o\no.##o\n..xo.\n.##x.\n....x\n...#.  ooo#o\no#..o\n##xo#\n#..x#\n####x\n###.#  0
+ 384  LegoZendo2    CL0                                       None                                      0
+ 385  tovel         28/5/G/4/17                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 386  LegoZendo2    JB9                                       AABBCCDDEEFFGGAABBCCDDEEFFGGAABBCCDDEEF…  0
+ 387  tovel         30/6/F/4/16                                Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 388  kelmar        _____*_____Y__*__*_______*__Y__*_______…  *YY____________________________________…  0
+ 389  LegoZendo2    YJ11                                      None                                      0
+ 390  velk          BQRN|3                                    3                                         0
+ 391  murn          .##o....oo.|5                             23                                        0
+ 392  basten        ....2....2...2.....3.....3......./7       5                                         0
+
+per-name tally this round
+name             presented correct  hit-rate
+LegoZendo2              56       3      5.4%
+basten                  62       0      0.0%
+kelmar                  60       0      0.0%
+murn                    62       0      0.0%
+orlan                   58       0      0.0%
+tovel                   53       0      0.0%
+velk                    42       0      0.0%

@@ -137,3 +137,16 @@ Name, one-paragraph rule (private), the discovery path you intended, per-iterati
 (iteration → version → players → outcome, demos used, rounds to crack, rule they
 believed), the witness leaks you closed, and your final classification (too easy / on
 target / too hard) with evidence.
+
+## Calibrating for the thin channel (added 2026-09-04 after the first 7-class run)
+With 7 classes in the pool a class sees ~60 probes per 0.5 s round, 4 rounds, and a demo only if
+the player chooses it. Measured: a collection tuned for the old single-class format scored 0 % on
+6 of 7 classes with or without demos. Design for this budget:
+* **One clause.** A kid says the rule in one breath; the demo plus ~120 probes must suffice.
+  Two-clause rules (weekday window + blocked middle + anchor) are for the old format.
+* **The clue carries the object**; the answer is the clue's picture edited. A demo-less player
+  can then send the picture with a plausible edit and score sometimes (the foothold).
+* **Demos must teach the rule in one look**: every demo shows the counted relation loudly and
+  a near-miss beside it; with three demos for seven classes nobody gets a second example.
+* Target per class, two Opus players in a 7-pool: the player who spends a demo on it cracks it
+  about half the time; the player who does not scores 5–30 % from the foothold.

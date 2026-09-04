@@ -279,3 +279,10 @@ real gradient (0 → 5 → 12 → 23 → 35 → 42 over six rounds). Leave v2 as
 decide. If both land 20–45% again, the lever is not the rule but the demo: make every demo carry a
 tail-on-reed fish right next to a nose-on-reed fish so the asymmetry is the first thing seen (v2
 already forces ≥1 tail-touching fish; raise it to 2–3 and put them beside a nibbler).
+
+## New-format run `lad-kelmar-v1-1` (2026-09-04): basten v2 0 %/0 %, kelmar v1 0 %/0 %, no demos spent on either
+Both players judged basten's and kelmar's clues "probe-able shapes" (a string plus a number) and
+spent demos elsewhere; ~110 probed hypotheses gave nothing. Neither clue reveals that the answer
+is a picture (tank / rain over the garden). Demo-economy pass needed: draw the empty tank (surface,
+water rows, gravel with the stalks) / the dry sky over the garden row INTO the clue, so the answer
+is "the clue with fish / rain added"; one clause; demos that show the relation in one look.

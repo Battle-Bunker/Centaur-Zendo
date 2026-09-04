@@ -1582,6 +1582,20 @@
     }
    ]
   },
+  "norvel": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788550070.76554,
+     "file": "challenges/lab/norvel.json",
+     "note": "v1 designer (music): drum grid; snare fills exactly n of the kick's holes",
+     "v": 1
+    }
+   ]
+  },
   "orlan": {
    "current_version": 3,
    "qual": [
@@ -3837,7 +3851,7 @@
    "id": "designer-new-9-v0-5383",
    "kind": "designer",
    "started": 1788547101.4686387,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -4058,9 +4072,26 @@
    "id": "refiner-crandel-v1-8c7b",
    "kind": "refiner",
    "reason": "kid_score",
+   "started": 1788549510.3387167,
    "status": "running",
-   "version": 1,
-   "started": 1788549510.3387167
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "judge-norvel-v1-man",
+   "kind": "judge",
+   "started": 1788550070.849549,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v1-8c1d",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

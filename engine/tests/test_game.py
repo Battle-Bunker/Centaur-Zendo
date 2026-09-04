@@ -26,7 +26,7 @@ DEFAULTS = dict(
     max_training_rounds=12,
     training_seconds=None,
     final_window_seconds=600.0,
-    demo_per_window=1,
+    max_demos=3,
     open_registration=True,
     event_log="",
     final_shared_sequence=True,
@@ -427,32 +427,41 @@ async def test_training_time_limit():
 
 # ----------------------------------------------------------------------- demo
 @pytest.mark.asyncio
-async def test_demo_window():
+async def test_demo_budget_is_per_game():
+    """SPEC §5: a team has max_demos demo requests for the whole game, usable at any time
+    during training when no round is running; rounds neither consume nor grant them."""
     clock = Clock()
-    game, pool, _c = make_game(clock=clock, cooldown_seconds=10, training_seconds=10_000)
+    game, pool, _c = make_game(clock=clock, cooldown_seconds=10, training_seconds=10_000, max_demos=3)
     game.start_training()
     team = game.join("a", "t")
-    assert game.demo_available(team) is True
+    assert game.demo_available(team) is True and game.demos_remaining(team) == 3
 
     res = await game.demo(team, "ADD")
     assert res["type"] == "demo_result" and res["name"] == "ADD" and res["score"] == 1
     assert res["solution"] and res["clue"]
-    assert game.demo_available(team) is False
+    assert game.demos_remaining(team) == 2
 
+    await drive(game, team, clock=clock)       # a round does not change the budget
+    assert game.demos_remaining(team) == 2 and game.demo_available(team) is True
+
+    await game.demo(team, "ECHO")
+    await game.demo(team, "ADD")
+    assert game.demos_remaining(team) == 0 and game.demo_available(team) is False
     with pytest.raises(GameError) as e:
         await game.demo(team, "ADD")
     assert e.value.code == "no_demo"
 
-    await drive(game, team, clock=clock)       # a completed round grants a new demo
-    assert game.demo_available(team) is True
+    clock.advance(10)
+    await drive(game, team, clock=clock)       # still none after another round
+    assert game.demo_available(team) is False
 
     with pytest.raises(GameError) as e:
-        await game.demo(team, "NOPE")
+        await game.demo(game.join("b", "t2"), "NOPE")
     assert e.value.code == "unknown_challenge"
 
 
 @pytest.mark.asyncio
-async def test_starting_a_round_consumes_the_demo_window():
+async def test_demo_refused_while_a_round_is_running():
     clock = Clock()
     game, _pool, _c = make_game(clock=clock, training_seconds=10_000)
     game.start_training()
@@ -462,9 +471,24 @@ async def test_starting_a_round_consumes_the_demo_window():
     assert game.demo_available(team) is False
     with pytest.raises(GameError) as e:
         await game.demo(team, "ADD")
-    assert e.value.code in ("busy", "no_demo")
+    assert e.value.code == "busy"
     await rnd.finish()
-    assert game.demo_available(team) is True
+    assert game.demo_available(team) is True and game.demos_remaining(team) == 3
+
+
+def test_pool_size_draws_a_fixed_subset():
+    """SPEC §5: a game plays pool_size classes drawn once with pool_seed."""
+    class BigPool(FakePool):
+        pass
+    big = BigPool()
+    big.names = [f"C{i}" for i in range(20)]
+    g1 = Game(make_config(pool_size=7, pool_seed=5), big, clock=Clock())
+    g2 = Game(make_config(pool_size=7, pool_seed=5), big, clock=Clock())
+    g3 = Game(make_config(pool_size=7, pool_seed=6), big, clock=Clock())
+    assert len(g1.pool.names) == 7 and g1.pool.names == g2.pool.names
+    assert set(g1.pool.names) <= set(big.names) and g3.pool.names != g1.pool.names
+    g_all = Game(make_config(pool_size=None), big, clock=Clock())
+    assert len(g_all.pool.names) == 20
 
 
 @pytest.mark.asyncio

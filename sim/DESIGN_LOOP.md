@@ -1,15 +1,28 @@
 # Challenge design loop (for designer agents)
 
 Goal: a challenge class that Opus-level centaur players **sometimes crack and sometimes
-don't** (partial success across two players: one crack + one partial/fail, or two partials) under the fast cadence: **6 training rounds of 0.5 s, 5 s cooldown, one demo per
-window, then a 3 s final.** Difficulty must come from **lateral thinking, novel (invented)
-rules and reduced clue information**, not from more advanced mathematics or bigger search.
+don't** (partial success across two players: one crack + one partial/fail, or two partials) under the fast cadence: **4 training rounds of 0.5 s, 5 s cooldown, 3 demo requests per
+game for a pool of 7 classes, then a 3 s final.** Difficulty must come from **lateral
+thinking, novel (invented) rules and reduced clue information**, not from more advanced
+mathematics or bigger search.
+
+**The demo economy (2026-09-04).** A team sees seven classes and may ask for a solved example
+of only three of them. A balanced class therefore sits *right on the edge of needing a demo*:
+- the **clue alone must reveal the shape of an answer** — what kind of data to send (a grid the
+  size of the clue's row, a list of words, one number, a picture of the object named by the
+  clue) — so that a team without a demo can produce well-formed answers and score *sometimes*
+  (the foothold, lever 7);
+- the **rule** (which well-formed answers score) should usually need the example, so that
+  teams that spend a demo here do markedly better than teams that spend it elsewhere.
+Two identical teams with different demo choices should finish with different scores. A class
+whose clue is an opaque code (nothing about the answer's type can be inferred) fails the
+first half; a class that is cracked without a demo by most Opus players fails the second.
 
 ## What the players actually do (measured in sim1/sim2, read before designing)
 * Round 1 is usually a **skip-only harvest** (~450 clues per 0.5 s round, zero cost).
 * They cycle several candidate answer *formats* per class within one round using
   `memory["_index"]`, reading back which scored. **One round ≈ 450 graded binary probes.**
-  Over 6 rounds that is ~2,700 probes plus up to 6 demos.
+  Over 4 rounds that is ~1,800 probes plus 3 demos for 7 classes.
 * Any **named textbook object** (CRT, Pell, Nim, nonogram, de Bruijn...) is recognised from
   the name and clue shape in round 1 with no demo. Pun names are read instantly.
 * Demos are decisive when the rule is novel: `LegoZendo` (a human-invented rule) needed
@@ -88,12 +101,12 @@ junk and the empty string; caps: score ≤ 512 chars, clue ≤ 1024, solution �
    cases, disconnected/wrong-count variants) — anything trivial that scores 1 is a leak.
 2. Private pool: `mkdir -p $SCRATCH/pool-<NAME>-<k> && cp challenges/lab/<NAME>.json $SCRATCH/pool-<NAME>-<k>/`
    where `$SCRATCH=/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad`.
-3. Arena (defaults are already 6 rounds / 5 s / 0.5 s; do NOT pass --port, a free one is chosen):
+3. Arena (defaults are already 4 rounds / 5 s / 0.5 s / 3 demos; the ladder builds 7-class pools — do NOT pass --port, a free one is chosen):
    `python sim/arena.py setup --run lab-<NAME>-<k> --teams <NAME>a,<NAME>b --challenge-dir $SCRATCH/pool-<NAME>-<k> --arena-root $SCRATCH/lab-<NAME>-<k>`
    It prints each team's directory.
 4. Spawn **two player agents in parallel** with the Agent tool (`subagent_type:
    general-purpose`, `model: opus`, `run_in_background: true`), each given the text of
-   `sim/PLAYER_AGENT_BRIEF.md` with `{TEAM_DIR}` = that team's directory, `{ROUNDS}`=6,
+   `sim/PLAYER_AGENT_BRIEF.md` with `{TEAM_DIR}` = that team's directory, `{ROUNDS}`=4,
    `{COOLDOWN}`=5, `{ROUND_SECONDS}`=0.5. Give them NOTHING else. Wait for both to finish.
 5. `python sim/arena.py teardown --run lab-<NAME>-<k>` then `python sim/arena.py report --run lab-<NAME>-<k>`.
    Read `sim/results/lab-<NAME>-<k>/REPORT.md`, each player's `NOTES.md` and their reports.

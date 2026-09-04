@@ -65,7 +65,7 @@ def write_config(path: Path, event_log: Path) -> dict:
         "max_training_rounds": ROUNDS,
         "training_seconds": TRAINING_SECONDS,
         "final_window_seconds": FINAL_WINDOW,
-        "demo_per_window": 1,
+        "max_demos": 3,
         "open_registration": True,
         "challenge_dir": "challenges",
         "event_log": str(event_log),

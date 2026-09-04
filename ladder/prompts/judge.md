@@ -10,6 +10,7 @@ Imagine a smart 12-year-old with 20 minutes of AI-assisted learning time, who se
 3. kid_contributes: could the kid's naive reading of the demo produce a hypothesis an AI would not try first?
 4. no_prereqs: nothing beyond primary-school knowledge needed (no algebra, no jargon)?
 5. fun: is it delightful to discover, with an "oh, of course" moment?
+6. clue_shape: from a clue ALONE (no demo — in a real game the kid sees 7 classes and can ask for only 3 solved examples), could the kid tell what KIND of answer to send back (a grid, a word list, a number, a picture of the thing named in the clue) and produce a well-formed attempt?
 Also give: nameable (yes/no — can the rule be named in three words, like "move one matchstick"; yes is BAD), and one sentence of advice to the designer.
 Do not modify any file. Reply with exactly one JSON object on the last line:
-{"score": <mean of the five>, "rubric": {"object": n, "rule_statable": n, "kid_contributes": n, "no_prereqs": n, "fun": n}, "nameable": "yes|no", "advice": "..."}
+{"score": <mean of the six>, "rubric": {"object": n, "rule_statable": n, "kid_contributes": n, "no_prereqs": n, "fun": n, "clue_shape": n}, "nameable": "yes|no", "advice": "..."}

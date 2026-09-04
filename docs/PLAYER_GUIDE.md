@@ -40,9 +40,10 @@ So the loop of the whole game is:
 
 > These are the defaults. **The live values are in the `config` block of the `welcome` message and in `python client/player.py status`; trust those over this table.**
 | cooldown between your rounds | **5 minutes** by default (measured start → start) |
-| max training rounds | **6** |
-| training window | 6 × cooldown + 60 s (about **31 minutes** at the 5-minute default) |
-| demos | **1 per cooldown window** |
+| max training rounds | **4** |
+| training window | 4 × cooldown + 60 s (about **21 minutes** at the 5-minute default) |
+| classes in the pool | **7** per game (drawn from a larger collection; the `welcome` message lists them) |
+| demos | **3 per game**, total. Each one names a single class and shows one solved example of it. |
 | final test | **3 seconds**, once, in a **10 minute** window after training ends (or as soon as you have used all your training rounds) |
 | score | number of challenges you answer **correctly in the final** |
 | tiebreak | fewer total answers wins (precision), then team name |
@@ -51,10 +52,12 @@ Notes that matter:
 
 * The cooldown is measured **start to start**. Starting a round at 10:00:00 means
   your next round can start at 10:05:00, no matter how the round went.
-* You have **6 rounds, ever**. There is no way to get a 7th. Don't burn one on
+* You have **4 rounds, ever**. There is no way to get a 5th. Don't burn one on
   a change you haven't tested locally.
-* You do not have to use all 6. If you have nothing new to try, wait.
-* The training window closes on the clock too, so all 6 rounds only fit if you keep
+* You do not have to use all 4. If you have nothing new to try, wait.
+* You have **3 demos, ever**, and 7 classes. You cannot see a worked example of
+  every class. Choosing *which* classes to ask about is most of the strategy.
+* The training window closes on the clock too, so all 4 rounds only fit if you keep
   moving. Set your bot to `watch` and it will take every round the moment it is
   allowed.
 * The **tiebreak rewards precision**: two teams on 40 correct are separated by
@@ -111,7 +114,11 @@ dropped — you are not punished for it, you just got fewer items.
   the server, so nothing in the pool is impossible or requires a lucky guess.
 * You can spend a **demo** to see the reference solver's answer for one class:
   you get back a real clue, a real correct solution, and its score. One worked
-  example, on request.
+  example, on request — and you only get three of them for seven classes.
+* Every clue is written so that the **shape** of an answer can be worked out from
+  the clue alone — what kind of thing to send back (a grid, a word list, a number,
+  a picture of the thing in the clue). You may not know the *rule* without a demo,
+  but you should never be unable to guess the *format*.
 * Your own history: every clue, answer and score you have ever seen is in your
   logs. That is your dataset.
 
@@ -128,7 +135,7 @@ You infer all of this. That is the game.
 
 ---
 
-## 6. The demo — your one cheat, use it well
+## 6. The demos — three cheats, choose them well
 
 `python player.py demo NAME` asks the server to run its own reference solver on a
 fresh clue of class `NAME` and show you:
@@ -140,23 +147,29 @@ demo PP
   score   : 1
 ```
 
-Rules: **one demo per cooldown window**. You have one at the start of the game
-and you get a new one every time you finish a round. Unused demos do not stack —
-starting a round consumes the window.
+Rules: **three demos per game, total**, on any classes you like (the same class
+twice is allowed), at any time during training when you are not in a round. There
+are seven classes in the pool, so at least four of them you must crack from clues
+and 0/1 feedback alone. `status` shows `demos remaining`.
 
-How to spend it:
+How to spend them:
 
-* **Spend the first one early.** A single clue/solution pair often collapses a
-  whole class from "no idea" to "obvious".
-* Spend it on the class you are **most confused about**, not the one you are
-  closest to solving. You can grind out the near-miss yourself.
-* Prefer a class that appears **often** in your logs — it will appear often in
-  the final too.
+* **Do not spend one before your first round.** A skip-only round shows you all
+  seven clue formats for free; only then do you know which classes look
+  impenetrable and which you can already guess the shape of.
+* Spend a demo on the class you are **most confused about** *and* that appears
+  often — the final draws from the same seven. A class whose clue already tells
+  you the answer's shape may not need one at all: probe it instead.
+* Classes are built so that the **shape** of the answer can be read off the
+  clue (what kind of data to send). What a demo buys you is the *rule*: which
+  of the many well-formed answers score. Some classes are worth almost nothing
+  without that example and are worth everything with it — those are the ones to
+  spend on.
 * A demo answers "what does a correct answer *look like*", which is usually the
   hard half. Show the demo output to your AI assistant along with 20 of your own
   failed attempts at the same class.
-* Don't forget to take a demo every round. It is free. Not using it is the only
-  way to waste it.
+* Two teams with the same skill will finish with different scores depending on
+  which three classes they asked about. That is intended. Think about it.
 
 ---
 
@@ -184,7 +197,7 @@ python client/player.py status        # phase, rounds used, when you can go agai
 python client/player.py round         # play ONE training round now
 python client/player.py wait-round    # sleep until the cooldown is over, then play
 python client/player.py watch         # keep playing rounds until they run out
-python client/player.py demo PP       # spend your demo on class PP
+python client/player.py demo PP       # spend one of your three demos on class PP
 python client/player.py final         # run the 3-second final (once!)
 ```
 

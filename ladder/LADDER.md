@@ -21,7 +21,7 @@ The target is unstable (players adapt, new witnesses appear), so the loop never 
 ## Roles (all are subagents launched by the orchestrating session)
 | role | prompt | model | agents | what it does |
 |---|---|---|---|---|
-| player | `prompts/player.md` + a profile from `profiles` in state.json | per profile | 2 per run | plays 6×0.5 s rounds + 3 s final in a confidential arena |
+| player | `prompts/player.md` + a profile from `profiles` in state.json | per profile | 2 per run | plays 4×0.5 s rounds + 3 s final in a confidential arena with a 7-class pool and 3 demo requests |
 | designer | `prompts/designer.md` | opus | 1 | brainstorms a new class in a given direction, validates, self-tests, sets up its arena |
 | refiner | `prompts/refiner.md` | opus | 1 | given a class's run history and player notes, ships the next version + arena |
 | judge | `prompts/judge.md` | sonnet | 1 | scores a class on the 12-year-old rubric from its JSON and 3 demos |
@@ -37,9 +37,21 @@ The target is unstable (players adapt, new witnesses appear), so the loop never 
 4. `ladder.py report`, commit, push. Post a ladder summary to the user every ~5 ingests, and a
    STARS.md write-up whenever a class becomes `calibrated`.
 
+## The game format (2026-09-04) and what a run measures
+Each player run is a 7-class pool: the target class plus the six live classes with the fewest
+finals on their current version (`pick_pool`). Players get 4 rounds and **3 demo requests for
+the whole game**, so they must choose which classes to see a solved example of. Ingest records,
+for every class in the pool and every player: final hit-rate on that class, whether the player
+spent a demo on it, and the round it was cracked. So one run yields finals for seven classes,
+and the report shows the mean rate *with* and *without* a demo. A balanced class should sit
+on the edge of needing a demo: players without one should still produce well-formed answers
+(the clue reveals the answer's shape) and score a little; players with one should often crack
+it. Runs from the earlier 6-round / one-demo-per-window format stay in state.json as history
+(cadence label differs) and do not count toward classification.
+
 ## Classification
 Per player: cracked ≥ 0.9 final hit-rate, partial 0.1–0.9, failed < 0.1.
-Per class (from ≥ 2 player finals): mean final rate `m`:
+Per class (from ≥ 2 player finals at the current cadence): mean final rate `m`:
 `too_easy` m > 0.8 · `calibrated` 0.3 ≤ m ≤ 0.7 with ≥ 4 finals and ≥ 2 distinct profiles ·
 `testing` otherwise · `too_hard` m < 0.15 with ≥ 4 finals · `retired` (manual).
 Priority: untested versions first, then classes with the fewest finals, then refinement of

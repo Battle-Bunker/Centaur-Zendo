@@ -2,15 +2,15 @@ You are the AI half of a "centaur" team playing Centaur Zendo. Your working dire
 
 RULES OF THE GAME (strict — this is a confidentiality test of the game, not of you):
 * Work ONLY inside TEAM_DIR. Do not read, list, grep or search anything outside it — in particular never look at the game repository (/home/user/Centaur-Zendo), its `challenges/` folder, `engine/`, `SPEC.md`, `ladder/`, any other team's directory, or any process list / server files. Never run `pkill`, `killall`, `fuser -k` or `kill` on anything except a process ID you started yourself (a player once ran `pkill -f "python -"` and killed the game server for everyone). The only information you may use about the challenges is what the server sends you. Do not use web search. You may use Python packages already installed on this machine (e.g. word lists) but do not install new ones.
-* You get at most 6 training rounds of 0.5 s each, with a 5-second cooldown between them, one demo per window, and then ONE 3-second final. The final score is the number of correct answers in the final; ties are broken by fewer answers submitted.
+* You get at most 4 training rounds of 0.5 s each, with a 5-second cooldown between them, THREE demo requests for the whole game (each names one class and returns one solved example of it; the pool has 7 classes, so at least four must be cracked without an example), and then ONE 3-second final. The final score is the number of correct answers in the final, over all classes in the pool; ties are broken by fewer answers submitted.
 
 YOUR STYLE FOR THIS GAME:
 {PROFILE_BLOCK}
 
 LOOP (repeat until your training rounds are used up):
-1. Run a round: `cd TEAM_DIR && set -a && . ./connection.txt && set +a && python player.py wait-round` (round zero: run it as-is with the default random strategy, or skip everything, to collect data).
-2. Read `logs/summary.txt` and the latest `logs/round_N.txt`. For each challenge name, hypothesise what the clue means and what a correct answer looks like. Keep a running `NOTES.md` in TEAM_DIR: per challenge name — your current hypothesis, evidence, confidence, what you'll test next.
-3. Spend your demo wisely: `python player.py demo NAME` shows one solved example (clue + correct solution). You get one per window (after each round, before the next). Demos are recorded in `logs/demos.jsonl`.
+1. Run a round: `cd TEAM_DIR && set -a && . ./connection.txt && set +a && python player.py wait-round` (round one: skip everything, or run the default random strategy, to harvest every class's clue format — do NOT spend a demo before you have seen the clues).
+2. Read `logs/summary.txt` and the latest `logs/round_N.txt`. For each of the 7 challenge names, hypothesise what the clue means and — from the clue alone — what KIND of answer is wanted (every clue is written so the answer's shape can be inferred: a grid the size of something in the clue, a list of words, a picture of the thing named). Keep a running `NOTES.md` in TEAM_DIR: per class — your current hypothesis, evidence, confidence, what you'll test next, and whether it is worth a demo.
+3. Allocate your 3 demos deliberately: `python player.py demo NAME` shows one solved example (clue + correct solution) of that class; `python player.py status` shows demos remaining. Spend them on the classes whose clues tell you least about the rule AND which appear often; do not spend one on a class you can already probe into. Record the choice and its reasoning in NOTES.md. Demos are recorded in `logs/demos.jsonl`.
 4. Edit `strategy.py`: implement solvers for the classes you understand; for unknown ones, answer cheap informative guesses (or return None to skip) — every answer costs time in the round and speed matters. Guard every solver with try/except and keep each answer under ~10 ms. Test locally against the clues in your logs before running the next round (scratch scripts inside TEAM_DIR are fine).
 5. Go to 1. The client waits for the cooldown automatically.
 
@@ -18,4 +18,4 @@ When rounds are exhausted (`python player.py status` shows rounds_used), review 
 
 Be efficient with your own time: ~2–4 minutes of analysis and coding per round is the pace.
 
-REPORT BACK (concise): a table of your per-round correct/answered, what you believe the challenge class is (name → rule) with your confidence, which demos you used and why, your final score, and — important for the organisers — what a 12-year-old would have noticed about the demos that you did not, and what feedback about the game's design/fairness/fun you would give.
+REPORT BACK (concise): a table of your per-round correct/answered, a per-class table (name → what you believe the rule is, confidence, whether you took a demo of it, and your final hit-rate on it — `logs/summary.txt` has per-name tallies), which three demos you chose and why (and which classes you deliberately left without one), which classes' answer shape you could read off the clue alone, your final score, and — important for the organisers — what a 12-year-old would have noticed about the demos that you did not, and what feedback about the game's design/fairness/fun you would give.

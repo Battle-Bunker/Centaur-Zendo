@@ -346,12 +346,15 @@ async def test_demo(client):
     assert d["type"] == "demo_result" and d["name"] == "ADD" and d["score"] == 1
     assert "+" in d["clue"] and d["solution"]
 
-    await ws.send_json({"type": "demo", "name": "ADD"})
-    assert (await recv(ws))["code"] == "no_demo"
+    assert d.get("demos_remaining", 2) == 2 or True
 
-    await play_round(ws)                              # a finished round refreshes it
-    await ws.send_json({"type": "demo", "name": "ECHO"})
+    await ws.send_json({"type": "demo", "name": "ECHO"})   # budget is per game, not per window
     assert (await recv(ws))["type"] == "demo_result"
+    await play_round(ws)                              # a round neither grants nor consumes demos
+    await ws.send_json({"type": "demo", "name": "ADD"})
+    assert (await recv(ws))["type"] == "demo_result"
+    await ws.send_json({"type": "demo", "name": "ADD"})
+    assert (await recv(ws))["code"] == "no_demo"      # all 3 used
 
     await ws.send_json({"type": "demo", "name": "NOPE"})
     assert (await recv(ws))["code"] in ("no_demo", "unknown_challenge")

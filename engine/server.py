@@ -238,6 +238,7 @@ async def run_round(conn: Connection, kind: str) -> None:
             "rounds_used": team.rounds_used,
             "next_round_available_at": game.next_round_available_at(team),
             "demo_available": game.demo_available(team),
+            "demos_remaining": game.demos_remaining(team),
         })
     except asyncio.CancelledError:
         with contextlib.suppress(Exception):

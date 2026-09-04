@@ -19,7 +19,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 STATE = REPO / "ladder" / "state.json"
 SCRATCH = Path(os.environ.get("ZENDO_SCRATCH", "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad"))
-CADENCE = "6x0.5s/5s/3s"
+CADENCE = "4x0.5s/5s/3s/7cls/3demos"   # the format under which balance is measured (older runs are kept as history)
+POOL_SIZE = 7
 DIRECTIONS = ["toys and building", "playground and table games", "time and place", "wordplay (use words module)",
               "crafts and physical intuition", "school and home life", "food and the kitchen", "animals and nature",
               "clothes, dressing and packing", "music, rhythm and dance", "sport and scoring", "weather and seasons",
@@ -39,13 +40,23 @@ def cur_file(c):
 
 
 # ------------------------------------------------------------------ metrics
-def finals(c, version=None):
+def finals(c, version=None, cadence=CADENCE):
+    """Player finals on this class (current cadence only unless cadence=None)."""
     out = []
     for r in c.get("runs", []):
         if version is not None and r["version"] != version: continue
+        if cadence is not None and r.get("cadence") != cadence: continue
         for p in r["players"]:
             if p.get("final_presented"): out.append(p)
     return out
+
+
+def demo_split(c, version=None):
+    """(mean rate with a demo, n, mean rate without, n) over current-cadence finals."""
+    F = finals(c, version)
+    w = [p["final_rate"] for p in F if p.get("demo")]
+    wo = [p["final_rate"] for p in F if p.get("demo") is False]
+    return ((sum(w) / len(w)) if w else None, len(w), (sum(wo) / len(wo)) if wo else None, len(wo))
 
 
 def classify(c):
@@ -149,6 +160,23 @@ def pick_profiles(s, c):
     return names[:2]
 
 
+def pick_pool(s, target):
+    """The target class plus POOL_SIZE-1 companions: live lab classes with the fewest finals on their
+    current version (random tie-break), topped up from the textbook set if the lab is short."""
+    import random as _r
+    rng = _r.Random()
+    classes = s["classes"]
+    live = [n for n, c in classes.items() if n != target and c["status"] not in ("retired", "too_easy_textbook")
+            and (REPO / cur_file(c)).exists()]
+    live.sort(key=lambda n: (len(finals(classes[n], classes[n]["current_version"])), rng.random()))
+    members = [target] + live[:POOL_SIZE - 1]
+    if len(members) < POOL_SIZE:
+        tb = [n for n, c in classes.items() if c["status"] == "too_easy_textbook" and (REPO / cur_file(c)).exists()]
+        rng.shuffle(tb)
+        members += tb[:POOL_SIZE - len(members)]
+    return members
+
+
 def cmd_launch(a):
     s = load(); jid = a[0]
     j = next(x for x in s["jobs"] if x["id"] == jid)
@@ -162,7 +190,11 @@ def cmd_launch(a):
         profs = pick_profiles(s, c)
         teams = [f"{j['class']}{k}a", f"{j['class']}{k}b"]
         pool = SCRATCH / f"pool-{run}"; pool.mkdir(parents=True, exist_ok=True)
-        shutil.copy(REPO / cur_file(c), pool / (j["class"] + ".json"))
+        members = pick_pool(s, j["class"])
+        j["pool"] = {n: s["classes"][n]["current_version"] for n in members}
+        for n in members:
+            shutil.copy(REPO / cur_file(s["classes"][n]), pool / (n + ".json"))
+        print("pool:", ", ".join(f"{n} v{v}" for n, v in j["pool"].items()))
         out = subprocess.run([sys.executable, str(REPO / "sim/arena.py"), "setup", "--run", run, "--teams", ",".join(teams),
                               "--challenge-dir", str(pool), "--arena-root", str(SCRATCH / run)], capture_output=True, text=True)
         if out.returncode: sys.exit(out.stderr)
@@ -184,50 +216,80 @@ def cmd_done(a):
     s = load(); j = next(x for x in s["jobs"] if x["id"] == a[0]); j["status"] = "done"; save(s); print("done", a[0])
 
 
+def run_cadence(meta):
+    cfg = meta.get("config", {})
+    demos = cfg.get("max_demos")
+    return (f"{cfg.get('max_training_rounds')}x{cfg.get('round_seconds')}s/{cfg.get('cooldown_seconds'):g}s/"
+            f"{cfg.get('final_seconds'):g}s/{meta.get('pool_size')}cls/{demos if demos is not None else 'win'}demos")
+
+
 def parse_run(run):
+    """Per team: overall rounds/final, demos by class, and per-class training/final tallies."""
     rd = REPO / "sim/results" / run
     meta = json.loads((rd / "meta.json").read_text())
     ev = rd / "events.jsonl"
     if not ev.exists(): ev = Path(meta["hidden"]) / "events.jsonl"
-    per = collections.defaultdict(lambda: {"rounds": [], "demos": 0, "final_correct": 0, "final_presented": 0})
+    def blank():
+        return {"rounds": [], "demos": 0, "demo_names": [], "final_correct": 0, "final_presented": 0,
+                "by_class": collections.defaultdict(lambda: {"rounds": [], "final_correct": 0, "final_items": 0})}
+    per = collections.defaultdict(blank)
     names = set()
     for line in ev.read_text().splitlines():
         try: e = json.loads(line)
         except Exception: continue
         if e.get("dir") != "round": continue
         m = e["msg"]; t = e["team"]
-        if m.get("event") == "demo": per[t]["demos"] += 1; continue
+        if m.get("event") == "demo":
+            per[t]["demos"] += 1; per[t]["demo_names"].append(m.get("name")); continue
         if "presented" not in m: continue
-        for it in m.get("items", []): names.add(it["name"])
+        tally = collections.defaultdict(lambda: [0, 0])
+        for it in m.get("items", []):
+            names.add(it["name"]); tally[it["name"]][1] += 1; tally[it["name"]][0] += int(it.get("score") or 0)
         if m["kind"] == "final":
             per[t]["final_correct"] = m["correct"]; per[t]["final_presented"] = m["presented"]
+            for n, (cc, pp) in tally.items():
+                per[t]["by_class"][n]["final_correct"] = cc; per[t]["by_class"][n]["final_items"] = pp
         else:
             per[t]["rounds"].append([m["correct"], m["presented"]])
+            for n in names:
+                cc, pp = tally.get(n, [0, 0]); per[t]["by_class"][n]["rounds"].append([cc, pp])
     return meta, names, per
 
 
 def cmd_ingest(a):
     s = load(); run = a[0]
     meta, names, per = parse_run(run)
+    cadence = run_cadence(meta)
     job = next((j for j in s["jobs"] if j.get("run") == run), None)
-    cls = job["class"] if job else (names.pop() if len(names) == 1 else a[1])
-    c = s["classes"].setdefault(cls, {"status": "testing", "versions": [{"v": 1, "file": f"challenges/lab/{cls}.json"}],
-                                      "current_version": 1, "runs": [], "qual": []})
-    version = job["version"] if job else c["current_version"]
-    players = []
-    for t, d in per.items():
-        fr = d["final_correct"] / d["final_presented"] if d["final_presented"] else None
-        crack = next((i + 1 for i, (cc, pp) in enumerate(d["rounds"]) if pp and cc / pp >= 0.9), None)
-        players.append({"team": t, "profile": (job or {}).get("teams", {}).get(t, "opus-default"),
-                        "final_rate": fr, "final_correct": d["final_correct"], "final_presented": d["final_presented"],
-                        "cracked_round": crack, "demos": d["demos"], "rounds": d["rounds"]})
-    c["runs"] = [r for r in c["runs"] if r["run"] != run] + [{"run": run, "version": version, "cadence": CADENCE, "players": players}]
+    target = job["class"] if job else (next(iter(names)) if len(names) == 1 else a[1])
+    pool = (job or {}).get("pool") or {n: s["classes"].get(n, {}).get("current_version", 1) for n in names}
+    if target not in pool: pool[target] = (job or {}).get("version") or s["classes"][target]["current_version"]
+    for cls, version in pool.items():
+        c = s["classes"].setdefault(cls, {"status": "testing", "versions": [{"v": 1, "file": f"challenges/lab/{cls}.json"}],
+                                          "current_version": 1, "runs": [], "qual": []})
+        players = []
+        for t, d in per.items():
+            bc = d["by_class"].get(cls, {"rounds": [], "final_correct": 0, "final_items": 0})
+            single = len(pool) == 1
+            fc, fp = (d["final_correct"], d["final_presented"]) if single else (bc["final_correct"], bc["final_items"])
+            rounds = d["rounds"] if single else bc["rounds"]
+            fr = fc / fp if fp else None
+            crack = next((i + 1 for i, (cc, pp) in enumerate(rounds) if pp and cc / pp >= 0.9), None)
+            players.append({"team": t, "profile": (job or {}).get("teams", {}).get(t, "opus-default"),
+                            "final_rate": fr, "final_correct": fc, "final_presented": fp,
+                            "cracked_round": crack, "demos": d["demo_names"].count(cls) if not single else d["demos"],
+                            "demo": d["demo_names"].count(cls) > 0 if d["demo_names"] or not single else None,
+                            "rounds": rounds})
+        c["runs"] = [r for r in c["runs"] if r["run"] != run] + [{"run": run, "version": version, "cadence": cadence,
+                                                                  "pool": sorted(pool), "target": cls == target, "players": players}]
+        c["status"] = classify(c)
+        for p in players:
+            print(f"{cls} v{version} {p['team']} ({p['profile']}): final={None if p['final_rate'] is None else round(p['final_rate'], 3)} "
+                  f"cracked_round={p['cracked_round']} demo={p['demo']} rounds={p['rounds']}")
+        print(f"  {cls}: status {c['status']}")
     if job: job["status"] = "done"
-    c["status"] = classify(c)
     save(s)
-    for p in players:
-        print(f"{cls} v{version} {p['team']} ({p['profile']}): final={p['final_rate']} cracked_round={p['cracked_round']} demos={p['demos']} rounds={p['rounds']}")
-    print("status:", c["status"])
+    print("cadence:", cadence)
 
 
 def cmd_record_qual(a):
@@ -268,17 +330,25 @@ def report_table(s):
         cracks = sum(1 for p in F if p["final_rate"] >= 0.9)
         profs = ",".join(sorted({p.get("profile", "?") for p in F})) or "-"
         bal = (1 - abs(m - 0.5) / 0.5) if m is not None else None
-        rows.append((n, v, c["status"], m, bal, q, len(F), cracks, profs))
+        dw, nw, dwo, nwo = demo_split(c, v)
+        H = [p for p in finals(c, None, cadence=None) if p not in F]      # older-cadence history, any version
+        hist = (sum(p["final_rate"] for p in H) / len(H)) if H else None
+        rows.append((n, v, c["status"], m, bal, q, len(F), cracks, profs, dw, nw, dwo, nwo, hist, len(H)))
     rows.sort(key=lambda r: (-(r[4] or -1), r[0].lower()))
-    out = ["| class | v | status | mean final | balance | kid score | finals | cracks | profiles |", "|---|---|---|---|---|---|---|---|---|"]
-    for n, v, st, m, bal, q, nf, cr, profs in rows:
-        out.append(f"| {n} | {v} | {st} | {'-' if m is None else f'{m:.0%}'} | {'-' if bal is None else f'{bal:.2f}'} | {'-' if q is None else f'{q:.1f}'} | {nf} | {cr} | {profs} |")
+    out = ["| class | v | status | mean final | balance | with demo | no demo | kid score | finals | cracks | profiles | old-cadence history |",
+           "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    pct = lambda x, k: "-" if x is None else f"{x:.0%} ({k})"
+    for n, v, st, m, bal, q, nf, cr, profs, dw, nw, dwo, nwo, hist, nh in rows:
+        out.append(f"| {n} | {v} | {st} | {'-' if m is None else f'{m:.0%}'} | {'-' if bal is None else f'{bal:.2f}'} | "
+                   f"{pct(dw, nw)} | {pct(dwo, nwo)} | {'-' if q is None else f'{q:.1f}'} | {nf} | {cr} | {profs} | {pct(hist, nh)} |")
     return "\n".join(out)
 
 
 def cmd_report(a):
     s = load(); plan(s); save(s)
-    hdr = f"# Ladder report — {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n\nCadence {CADENCE}; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).\n\n"
+    hdr = (f"# Ladder report — {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n\nCadence {CADENCE} (only runs at this cadence count; "
+           f"earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). "
+           f"'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).\n\n")
     body = report_table(s)
     tb = [n for n, c in s["classes"].items() if c["status"] == "too_easy_textbook"]
     foot = f"\n\nTextbook classes held at `too_easy_textbook` (100 % finals in sim1/sim2, not in the ladder): {', '.join(sorted(tb, key=str.lower))}\n"

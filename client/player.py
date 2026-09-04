@@ -7,7 +7,7 @@ Usage
 Commands
     round        run one training round
     final        run the 3-second final test
-    demo NAME    spend the demo ability on challenge NAME
+    demo NAME    spend one of your demo requests on challenge NAME (a solved example)
     status       print the server status
     wait-round   sleep until next_round_available_at, then run one round
     watch        loop wait-round until the rounds are exhausted
@@ -88,6 +88,7 @@ class Player:
         self.max_training_rounds = None
         self.next_round_available_at = None
         self.demo_available = False
+        self.demos_remaining = None
         self.challenges: list[str] = []
         self.clock_offset = 0.0                # server_time - local time
         self.last_refusal = None               # last error that blocked a round
@@ -135,7 +136,7 @@ class Player:
     def absorb(self, msg: dict) -> None:
         """Track the mutable bits of team state that several messages carry."""
         for key in ("phase", "rounds_used", "next_round_available_at",
-                    "demo_available"):
+                    "demo_available", "demos_remaining"):
             if key in msg:
                 setattr(self, key, msg[key])
         if msg.get("type") == "welcome":
@@ -442,7 +443,9 @@ class Player:
                       + (f" / {self.max_training_rounds}"
                          if self.max_training_rounds else ""))
                 print(f"next round at      : {iso(msg.get('next_round_available_at'))}")
-                print(f"demo_available     : {msg.get('demo_available')}")
+                print(f"demo_available     : {msg.get('demo_available')}"
+                      + (f"  (demos remaining: {msg.get('demos_remaining')})"
+                         if msg.get('demos_remaining') is not None else ""))
                 print(f"final_score        : {msg.get('final_score')}")
                 print(f"challenge names    : {', '.join(self.challenges) or '-'}")
                 lb = msg.get("leaderboard") or []

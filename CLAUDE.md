@@ -11,4 +11,7 @@ the collection is a diverse set of classes that Opus-level centaur players crack
 4. After every completed job: `python ladder/ladder.py ingest <run>` / `record-qual`, then
    `python ladder/ladder.py report`, then commit and push.
 
+Game format (2026-09-04): 4 training rounds × 0.5 s, 7 classes per game, 3 demo requests per team per
+game (one class each); clues must reveal the answer's shape, the rule usually needs a demo.
+
 Engine/docs: `SPEC.md`, `docs/`, `sim/DESIGN_LOOP.md`. Results: `sim/results/`. Lab: `challenges/lab/`.

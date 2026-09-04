@@ -28,10 +28,12 @@ class GameConfig:
     round_seconds: float = 0.5            # training round length
     final_seconds: float = 3.0            # final test round length
     cooldown_seconds: float = 300.0       # min gap start->start between a team's rounds
-    max_training_rounds: int = 6          # hard cap per team
+    max_training_rounds: int = 4          # hard cap per team
     training_seconds: float | None = None  # None => max_training_rounds*cooldown+60
     final_window_seconds: float = 600.0   # how long the final stays open
-    demo_per_window: int = 1              # demos allowed per cooldown window
+    max_demos: int = 3                    # demo requests per team per game (each: one class, one solved example)
+    pool_size: int | None = 7             # classes drawn into a game's pool (None = every loaded class)
+    pool_seed: int | None = None          # seed of that draw (None => random at game creation)
 
     # ---- game behaviour -----------------------------------------------------
     open_registration: bool = True        # unknown teams auto-created on join
@@ -163,6 +165,7 @@ class GameConfig:
             "final_seconds": self.final_seconds,
             "cooldown_seconds": self.cooldown_seconds,
             "max_training_rounds": self.max_training_rounds,
+            "max_demos": self.max_demos,
             "max_solution_chars": self.max_solution_chars,
             "max_clue_chars": self.max_clue_chars,
             "training_ends_at": training_ends_at,

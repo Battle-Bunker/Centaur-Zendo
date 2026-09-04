@@ -173,10 +173,12 @@ GameConfig (engine/config.py, JSON-loadable, all fields have these defaults):
 round_seconds = 1.0            training round length
 final_seconds = 3.0            final test round length
 cooldown_seconds = 300         min gap between a team's consecutive training rounds (measured start→start)
-max_training_rounds = 12       hard cap per team
-training_seconds = None        None ⇒ max_training_rounds * cooldown_seconds + 60  (300s ⇒ 3660s = 61 min)
+max_training_rounds = 4        hard cap per team
+training_seconds = None        None ⇒ max_training_rounds * cooldown_seconds + 60  (300s ⇒ 1260s = 21 min)
 final_window_seconds = 600     after training ends, teams have this long to run their final
-demo_per_window = 1            demos allowed per cooldown window
+max_demos = 3                  demo requests per team per GAME (each names one class and returns one solved example)
+pool_size = 7                  classes drawn into a game's pool from everything loaded (None = all)
+pool_seed = None               seed of that draw (None ⇒ random at game creation; the draw is fixed for the game)
 open_registration = True       unknown team names in `join` are auto-created with the supplied token
 challenge_dir = "challenges"
 event_log = "events.jsonl"     append-only JSONL log of every message/round for later analysis
@@ -186,13 +188,16 @@ allow_early_final = True       a team that has used all its training rounds may 
 + all caps from §2/§3, validation_seeds=20, validation_seed=12345, host="0.0.0.0", port=8080, admin_token=""
 ```
 
-Teams: `{name, token, rounds_used, last_round_started_at, demo_available: bool, final_score,
-history: [RoundSummary]}`.
+Teams: `{name, token, rounds_used, last_round_started_at, demos_used, demo_available: bool,
+final_score, history: [RoundSummary]}`.
+
+Pool: at game creation the server draws `pool_size` classes (default 7) from the loaded set
+with `pool_seed`; only those appear in `welcome.challenges`, in rounds, in demos and in the
+final. A production organiser loads the whole collection and lets each game draw its seven.
 
 **Training round** (`start_round`): allowed iff phase==training, now < training_ends_at,
 `rounds_used < max_training_rounds`, and `now - last_round_started_at >= cooldown_seconds`
-(no cooldown before the first round). Starting a round consumes the demo window (sets
-`demo_available=False`); ending a round grants one (`demo_available=True`).
+(no cooldown before the first round). Rounds neither grant nor consume demos.
 Refusals return `error{code: "cooldown"|"phase"|"round_cap"|"busy", retry_at}`.
 
 Round loop (server side, per team, one at a time):
@@ -215,10 +220,13 @@ Answers for a stale/unknown (round_id, index) are ignored with an `error{code:"s
 A message arriving after the deadline is ignored. Timestamps are server unix-time floats.
 The `challenge` for index i+1 is sent immediately after `result` for index i.
 
-**Demo** (`demo{name}`): allowed iff phase in (training) and `demo_available` and `name` in
-pool. Server picks a random seed, `clue=generate`, `solution=solve`, `score=score(...)`, and
-returns `demo_result{name, clue, solution, score}`; sets `demo_available=False`.
-`demo_available` is True at game start and after every completed training round.
+**Demo** (`demo{name}`): allowed iff phase == training, no round is running, `demos_used <
+max_demos` and `name` in pool. Server picks a random seed, `clue=generate`, `solution=solve`,
+`score=score(...)`, returns `demo_result{name, clue, solution, score}` and increments
+`demos_used`. A team therefore has `max_demos` (default 3) demo requests for the whole game,
+each on a single class of its choosing, usable at any time between rounds; with 7 classes in
+the pool, choosing which classes to ask about is the scarce strategic resource of the game.
+`demo_available` = (not busy and demos remain); `demos_remaining` is reported alongside it.
 
 **Final** (`start_final`): allowed iff phase==final (i.e. now ≥ training_ends_at, or admin
 forced it) — or phase==training with `allow_early_final` and all training rounds used — the team
@@ -253,13 +261,13 @@ Client → Server
 Server → Client
 | type            | fields |
 |-----------------|--------|
-| `welcome`       | `team`, `phase`, `challenges: [names]`, `config: {round_seconds, final_seconds, cooldown_seconds, max_training_rounds, max_solution_chars, max_clue_chars, training_ends_at, final_ends_at}`, `rounds_used`, `next_round_available_at`, `demo_available`, `server_time` |
+| `welcome`       | `team`, `phase`, `challenges: [names]`, `config: {round_seconds, final_seconds, cooldown_seconds, max_training_rounds, max_demos, max_solution_chars, max_clue_chars, training_ends_at, final_ends_at}`, `rounds_used`, `next_round_available_at`, `demo_available`, `demos_remaining`, `server_time` |
 | `round_started` | `round_id`, `kind: "training"|"final"`, `duration_ms`, `started_at`, `deadline` |
 | `challenge`     | `round_id`, `index`, `name`, `clue` |
 | `result`        | `round_id`, `index`, `score` |
-| `round_over`    | `round_id`, `kind`, `presented`, `answered`, `correct`, `items: [{index,name,clue,solution,score}]`, `rounds_used`, `next_round_available_at`, `demo_available` |
+| `round_over`    | `round_id`, `kind`, `presented`, `answered`, `correct`, `items: [{index,name,clue,solution,score}]`, `rounds_used`, `next_round_available_at`, `demo_available`, `demos_remaining` |
 | `demo_result`   | `name`, `clue`, `solution`, `score` |
-| `status`        | `phase`, `server_time`, `training_ends_at`, `final_ends_at`, `rounds_used`, `next_round_available_at`, `demo_available`, `final_score`, `leaderboard` |
+| `status`        | `phase`, `server_time`, `training_ends_at`, `final_ends_at`, `rounds_used`, `next_round_available_at`, `demo_available`, `demos_remaining`, `final_score`, `leaderboard` |
 | `error`         | `code`, `message`, optional `retry_at` |
 | `pong`          | `server_time` |
 
@@ -295,9 +303,12 @@ Standalone: `python -m webapp.app --challenge-dir challenges --port 8081`.
 * Solutions and clues are strings; structured data is JSON-encoded by convention.
 * No hidden "secret" channel from generate to score: a clue must carry everything the
   scorer needs (verify-easy / find-hard). Keeps the short scorer honest and Zendo-like.
-* Training-time limit = 12×cooldown+60s and a hard cap of 12 rounds, both enforced
-  (the "61 minutes for 5-minute cooldowns" example matches; 30 s cooldown ⇒ 7 min).
-* One demo per cooldown window, available at game start and after each completed round.
+* Training-time limit = 4×cooldown+60s and a hard cap of 4 rounds, both enforced
+  (21 minutes at the 5-minute cooldown; 30 s cooldown ⇒ 3 min).
+* Three demo requests per team per game (any time between rounds, one class each); seven
+  classes per game drawn at game creation. Balanced classes sit on the edge of needing a
+  demo: the clue must reveal the *shape* of an answer (what kind of data to send) so that a
+  team can score without a demo, while the rule itself usually needs the example.
 * Final test uses a shared (name, seed) sequence for all teams for fairness.
 * Teams that ran their final rank above no-shows; ties broken by fewer answers (precision), then name.
 * Sandbox is a game-grade sandbox, not a security boundary; organisers review submissions.

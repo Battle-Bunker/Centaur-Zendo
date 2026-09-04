@@ -6,7 +6,7 @@ challenge pool confidential from the (LLM or human) players: the pool is copied 
 hidden directory, the server runs from there, and each team gets its own sandbox directory
 containing only the reference client and the player guide.
 
-  python sim/arena.py setup  --run NAME --teams alpha,beta,gamma [--cooldown 30] [--rounds 12]
+  python sim/arena.py setup  --run NAME --teams alpha,beta,gamma [--cooldown 30] [--rounds 4]
   python sim/arena.py status --run NAME
   python sim/arena.py report --run NAME          # writes sim/results/NAME/REPORT.md
   python sim/arena.py teardown --run NAME        # stops the server, collects logs
@@ -204,7 +204,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("setup"); s.add_argument("--run", required=True); s.add_argument("--teams", required=True)
-    s.add_argument("--cooldown", type=float, default=5); s.add_argument("--rounds", type=int, default=6)
+    s.add_argument("--cooldown", type=float, default=5); s.add_argument("--rounds", type=int, default=4)
     s.add_argument("--round-seconds", type=float, default=0.5)
     s.add_argument("--training-seconds", type=float, default=6 * 3600)
     s.add_argument("--final-window", type=float, default=3600)

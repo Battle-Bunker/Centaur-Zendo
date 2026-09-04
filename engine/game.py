@@ -23,6 +23,7 @@ import json
 import logging
 import os
 import random
+import secrets
 import time
 import uuid
 from dataclasses import dataclass, field
@@ -44,10 +45,12 @@ _DEFAULTS = {
     "round_seconds": 1.0,
     "final_seconds": 3.0,
     "cooldown_seconds": 300.0,
-    "max_training_rounds": 12,
+    "max_training_rounds": 4,
     "training_seconds": None,
     "final_window_seconds": 600.0,
-    "demo_per_window": 1,
+    "max_demos": 3,
+    "pool_size": None,
+    "pool_seed": None,
     "open_registration": True,
     "challenge_dir": "challenges",
     "event_log": "events.jsonl",
@@ -374,6 +377,32 @@ class Round:
         return rec
 
 
+class ActivePool:
+    """A view of the loaded challenge pool restricted to the classes drawn for THIS game.
+
+    SPEC §5: a game uses `pool_size` classes (default 7) drawn once at game creation with
+    `pool_seed`; every other attribute (generate/solve/score/lease...) is delegated to the
+    underlying pool, which may hold many more classes than are in play.
+    """
+
+    def __init__(self, pool: Any, pool_size: Optional[int], pool_seed: Optional[int]):
+        self._pool = pool
+        names = sorted(getattr(pool, "names", []) or [])
+        if pool_size is not None and 0 < int(pool_size) < len(names):
+            rng = random.Random(int(pool_seed) if pool_seed is not None else secrets.randbits(32))
+            names = sorted(rng.sample(names, int(pool_size)))
+        self.names: list[str] = names
+
+    def __getattr__(self, item):
+        return getattr(self._pool, item)
+
+    def __len__(self) -> int:
+        return len(self.names)
+
+    def __iter__(self):
+        return iter(self.names)
+
+
 class Game:
     """Teams, phases, rounds, cooldowns, demos, the final and the leaderboard."""
 
@@ -385,7 +414,7 @@ class Game:
         event_log: Optional[str] = None,
     ):
         self.config = config
-        self.pool = pool
+        self.pool = ActivePool(pool, conf(config, "pool_size", None), conf(config, "pool_seed", None))
         self.clock = clock
         self.teams: dict[str, Team] = {}
         self.phase = LOBBY
@@ -426,8 +455,11 @@ class Game:
         return float(conf(self.config, "final_window_seconds"))
 
     @property
-    def demo_per_window(self) -> int:
-        return int(conf(self.config, "demo_per_window"))
+    def max_demos(self) -> int:
+        return int(conf(self.config, "max_demos"))
+
+    def demos_remaining(self, team: Team) -> int:
+        return max(0, self.max_demos - team.demos_used)
 
     # -- event log ---------------------------------------------------------
     def log_event(self, team: Optional[str], direction: str, msg: Any) -> None:
@@ -523,7 +555,7 @@ class Game:
         return self.teams.get(name)
 
     def demo_available(self, team: Team) -> bool:
-        return (not team.busy) and team.demos_used < self.demo_per_window
+        return (not team.busy) and team.demos_used < self.max_demos
 
     def next_round_available_at(self, team: Team) -> Optional[float]:
         self.refresh()
@@ -595,7 +627,6 @@ class Game:
         team.last_round_started_at = now
         if kind == TRAINING:
             team.rounds_used += 1
-        team.demos_used = self.demo_per_window  # starting a round consumes the demo window
         self.round_counter += 1
         self.log_event(team.name, "round", {"event": "round_start", "round_id": rnd.round_id,
                                             "kind": kind, "seed": seed})
@@ -615,9 +646,6 @@ class Game:
             team.final_done = True
             team.final_score = correct
             team.final_answered = answered
-            team.demos_used = self.demo_per_window
-        else:
-            team.demos_used = 0  # a completed training round grants a fresh demo window
         self.log_event(team.name, "round", rnd.record())
         self.refresh()
 
@@ -634,8 +662,7 @@ class Game:
         if team.busy:
             raise GameError("busy", "a round is running")
         if not self.demo_available(team):
-            raise GameError("no_demo", "no demo left in this window; finish a round to earn one",
-                            retry_at=self.next_round_available_at(team))
+            raise GameError("no_demo", f"all {self.max_demos} demo requests of this game are used")
         if name not in set(self.pool.names):
             raise GameError("unknown_challenge", f"no challenge named {name!r}")
         seed = self._rng.getrandbits(32)
@@ -691,6 +718,7 @@ class Game:
             "rounds_used": team.rounds_used,
             "next_round_available_at": self.next_round_available_at(team),
             "demo_available": self.demo_available(team),
+            "demos_remaining": self.demos_remaining(team),
             "final_score": team.final_score,
             "final_done": team.final_done,
         }
@@ -704,6 +732,7 @@ class Game:
             "final_seconds": float(conf(self.config, "final_seconds")),
             "cooldown_seconds": self.cooldown_seconds,
             "max_training_rounds": self.max_training_rounds,
+            "max_demos": self.max_demos,
             "max_solution_chars": int(conf(self.config, "max_solution_chars")),
             "max_clue_chars": int(conf(self.config, "max_clue_chars")),
             "training_ends_at": self.training_ends_at,
@@ -721,6 +750,7 @@ class Game:
             "rounds_used": team.rounds_used,
             "next_round_available_at": self.next_round_available_at(team),
             "demo_available": self.demo_available(team),
+            "demos_remaining": self.demos_remaining(team),
             "server_time": self.clock(),
         }
 
@@ -735,6 +765,7 @@ class Game:
             "rounds_used": team.rounds_used if team else 0,
             "next_round_available_at": self.next_round_available_at(team) if team else None,
             "demo_available": self.demo_available(team) if team else False,
+            "demos_remaining": self.demos_remaining(team) if team else None,
             "final_score": team.final_score if team else None,
             "leaderboard": self.leaderboard(),
         }

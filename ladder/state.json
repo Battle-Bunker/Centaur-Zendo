@@ -4722,9 +4722,9 @@
    "priming": "You are paired with a curious 12-year-old who has never coded. After each demo, narrate the picture to them in plain words, write down the three things a kid would notice first, and let those naive readings drive your first hypotheses. Test the kid's ideas before your own."
   },
   "opus-lowdemo": {
-   "constraints": "CONSTRAINT: you may request at most 2 demos in the whole game; every other window's demo must go unused.",
+   "constraints": "CONSTRAINT: you may request at most 1 demo in the whole game (the game allows 3); the other classes must be cracked from clues and 0/1 feedback alone.",
    "model": "opus",
-   "priming": "Play as a careful experimentalist."
+   "priming": "Play as a careful experimentalist. Your first round is a skip-only harvest of every class's clue format; decide from the clues alone which classes' answer shapes you can already guess."
   },
   "opus-theorist": {
    "constraints": "",

@@ -3742,7 +3742,7 @@
    "id": "designer-new-8-v0-59b0",
    "kind": "designer",
    "started": 1788545215.579415,
-   "status": "done",
+   "status": "running",
    "version": null
   },
   {
@@ -3808,7 +3808,7 @@
    "id": "designer-new-9-v0-5383",
    "kind": "designer",
    "started": 1788547101.4686387,
-   "status": "done",
+   "status": "running",
    "version": null
   },
   {
@@ -3979,7 +3979,13 @@
    "class": "tovel",
    "id": "players-tovel-v4-c9f5",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-tovel-v4-1",
+   "started": 1788549190.306133,
+   "status": "running",
+   "teams": {
+    "tovel1a": "opus-lowdemo",
+    "tovel1b": "opus-theorist"
+   },
    "version": 4
   },
   {

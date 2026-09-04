@@ -248,7 +248,9 @@ def cmd_add_version(a):
     c["current_version"] = v
     if v > 1: c.setdefault("refined_versions", []).append(v - 1)
     for j in s["jobs"]:
-        if j["kind"] in ("refiner", "designer") and j["class"] in (cls, j["class"]) and j["status"] == "running" and (j["class"] == cls or j["kind"] == "designer"):
+        # refiners for this class are finished by their new version; designers are closed explicitly
+        # with `done <job>` (several may run concurrently, and add-version cannot tell whose class this is)
+        if j["kind"] == "refiner" and j["class"] == cls and j["status"] == "running":
             j["status"] = "done"
     c["status"] = classify(c)
     save(s); print(cls, "version", v, path)

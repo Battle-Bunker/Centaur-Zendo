@@ -1724,6 +1724,7 @@
   },
   "virel": {
    "current_version": 1,
+   "note": "run1: crack r3 (3 demos, exact rule) + partial 14% (four of five clauses, never found what k counts). Mixed. Kid-proxy asked the right question three times and the AI ignored it.",
    "qual": [
     {
      "advice": "Add a visual cue for true brick edges so a kid can spot same-left-and-right-edge stacks by eye.",
@@ -1740,8 +1741,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demos": 3,
+       "final_correct": 2707,
+       "final_presented": 2707,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         1036
+        ],
+        [
+         29,
+         464
+        ],
+        [
+         462,
+         462
+        ],
+        [
+         467,
+         467
+        ],
+        [
+         469,
+         469
+        ],
+        [
+         450,
+         450
+        ]
+       ],
+       "team": "virel1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 5,
+       "final_correct": 354,
+       "final_presented": 2566,
+       "final_rate": 0.13795791114575215,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         769
+        ],
+        [
+         21,
+         477
+        ],
+        [
+         55,
+         466
+        ],
+        [
+         61,
+         456
+        ],
+        [
+         66,
+         455
+        ],
+        [
+         30,
+         430
+        ]
+       ],
+       "team": "virel1b"
+      }
+     ],
+     "run": "lad-virel-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/virel.json",
@@ -1909,7 +1988,13 @@
    "class": "LegoZendo",
    "id": "players-LegoZendo-v1-cdd0",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-LegoZendo-v1-1",
+   "started": 1788528434.3487506,
+   "status": "running",
+   "teams": {
+    "LegoZendo1a": "opus-default",
+    "LegoZendo1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -1983,7 +2068,7 @@
    "kind": "players",
    "run": "lad-virel-v1-1",
    "started": 1788526109.007984,
-   "status": "running",
+   "status": "done",
    "teams": {
     "virel1a": "opus-default",
     "virel1b": "opus-kidproxy"
@@ -2280,6 +2365,14 @@
    "agents": 2,
    "class": "sarn",
    "id": "players-sarn-v1-65fb",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "virel",
+   "id": "players-virel-v1-1b21",
    "kind": "players",
    "status": "pending",
    "version": 1

@@ -1194,7 +1194,7 @@
    ]
   },
   "fennick": {
-   "current_version": 2,
+   "current_version": 3,
    "note": "run1: both failed (~1%). Object not recognised: players read it as a bar chart / 'ink soaking through', never as books, so 'leaning' was never hypothesised. Refine for legibility of the lean.",
    "qual": [
     {
@@ -1227,7 +1227,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -1396,6 +1397,12 @@
      "file": "challenges/lab/fennick.json",
      "note": "v2: books drawn with caps, leaning books shifted with / and \\ tops, narrower shelf, tally as U:1 E:2",
      "v": 2
+    },
+    {
+     "added": 1788564219.0358229,
+     "file": "challenges/lab/fennick.json",
+     "note": "v3 demo economy: clue is the upright shelf + 'n fall'; answer tips the right books; heights given, tally gone",
+     "v": 3
     }
    ]
   },
@@ -4702,7 +4709,7 @@
    "class": "fennick",
    "id": "players-fennick-v1-2cd3",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -4828,7 +4835,7 @@
    "class": "fennick",
    "id": "players-fennick-v2-35a2",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 2
   },
   {
@@ -5423,7 +5430,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788563215.6069984,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -5461,14 +5468,31 @@
    "version": 5
   },
   {
+   "agents": 1,
+   "class": "basten",
    "id": "refiner-basten-v2-econ",
    "kind": "refiner",
-   "class": "basten",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
+   "reason": "demo_economy",
    "started": 1788563973.3680131,
-   "reason": "demo_economy"
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "fennick",
+   "id": "judge-fennick-v3-man",
+   "kind": "judge",
+   "started": 1788564219.0648527,
+   "status": "running",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-fennick-v3-e65c",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

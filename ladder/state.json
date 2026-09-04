@@ -1488,7 +1488,22 @@
   },
   "kelmar": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Make the edge columns more visually salient (narrower ground rows) so a kid can spot right-at-the-edge by eye instead of counting characters across 50 columns.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.0,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4683,7 +4698,7 @@
    "id": "judge-kelmar-v1-man",
    "kind": "judge",
    "started": 1788559056.769714,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

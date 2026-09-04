@@ -1421,6 +1421,7 @@
   },
   "tovel": {
    "current_version": 1,
+   "note": "run1: both partial (48%, 83%) without the rule. LEAK: accepted shapes are invariant under letter renaming and depend only on (days,start,N) -> 140 triples farmable via demos+probes. Refiner lever: tie the count to letter identity (a second clue letter, or a required count of the clue letter) so shapes don't transfer.",
    "qual": [
     {
      "advice": "Place the weekend-reaching and week-break-crossing decoy pairs near a counted pair in every demo so the school-week exclusion is spottable by contrast.",
@@ -1437,8 +1438,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 6,
+       "final_correct": 1881,
+       "final_presented": 3938,
+       "final_rate": 0.4776536312849162,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         480
+        ],
+        [
+         0,
+         499
+        ],
+        [
+         0,
+         816
+        ],
+        [
+         36,
+         526
+        ],
+        [
+         20,
+         526
+        ],
+        [
+         60,
+         476
+        ]
+       ],
+       "team": "tovel1a"
+      },
+      {
+       "cracked_round": null,
+       "demos": 6,
+       "final_correct": 3589,
+       "final_presented": 4302,
+       "final_rate": 0.8342631334263133,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         809
+        ],
+        [
+         0,
+         500
+        ],
+        [
+         46,
+         495
+        ],
+        [
+         38,
+         478
+        ],
+        [
+         214,
+         487
+        ],
+        [
+         39,
+         716
+        ]
+       ],
+       "team": "tovel1b"
+      }
+     ],
+     "run": "lad-tovel-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -1791,7 +1870,7 @@
    "kind": "players",
    "run": "lad-tovel-v1-1",
    "started": 1788523725.334579,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel1a": "opus-default",
     "tovel1b": "opus-kidproxy"
@@ -1817,7 +1896,13 @@
    "class": "virel",
    "id": "players-virel-v1-49ac",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-virel-v1-1",
+   "started": 1788526109.007984,
+   "status": "running",
+   "teams": {
+    "virel1a": "opus-default",
+    "virel1b": "opus-kidproxy"
+   },
    "version": 1
   },
   {
@@ -2094,6 +2179,14 @@
    "agents": 2,
    "class": "velk",
    "id": "players-velk-v1-7608",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-tovel-v1-ebc6",
    "kind": "players",
    "status": "pending",
    "version": 1

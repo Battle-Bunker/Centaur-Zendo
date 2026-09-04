@@ -1,0 +1,507 @@
+Centaur Zendo round 3 (training)
+round_id : 4fe6a62171fa40159ff5e26a5cfa49e7
+written  : 2026-09-04 12:22:47Z
+presented=495  answered=495  correct=46  skipped=0
+client answer latency: mean 0.130 ms  median 0.124 ms  max 1.110 ms  (n=496)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  tovel         29/1/P/5                                    M   T   W   T   F   S   S\n     1P  2…  0
+   1  tovel         31/2/D/3                                    M   T   W   T   F   S   S\n         1…  0
+   2  tovel         30/3/U/4                                    M   T   W   T   F   S   S\n          …  1
+   3  tovel         28/5/R/2                                    M   T   W   T   F   S   S\n          …  0
+   4  tovel         30/1/X/3                                    M   T   W   T   F   S   S\n     1X  2…  0
+   5  tovel         31/4/R/3                                    M   T   W   T   F   S   S\n          …  0
+   6  tovel         30/6/N/3                                    M   T   W   T   F   S   S\n          …  1
+   7  tovel         30/2/U/5                                    M   T   W   T   F   S   S\n         1…  0
+   8  tovel         31/6/G/6                                    M   T   W   T   F   S   S\n          …  0
+   9  tovel         29/3/H/6                                    M   T   W   T   F   S   S\n          …  0
+  10  tovel         31/2/H/3                                    M   T   W   T   F   S   S\n         1…  1
+  11  tovel         29/6/D/6                                    M   T   W   T   F   S   S\n          …  0
+  12  tovel         28/3/Q/4                                    M   T   W   T   F   S   S\n          …  0
+  13  tovel         30/3/S/2                                    M   T   W   T   F   S   S\n          …  0
+  14  tovel         30/1/Q/3                                    M   T   W   T   F   S   S\n     1A  2…  1
+  15  tovel         29/3/Z/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  16  tovel         30/3/Y/2                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  17  tovel         30/4/Y/4                                                   1Y  2B  3C\n 4Y  5C  6…  0
+  18  tovel         29/0/X/5                                    M   T   W   T   F   S   S\n 1X  2X  3…  0
+  19  tovel         31/3/W/3                                    M   T   W   T   F   S   S\n          …  0
+  20  tovel         31/0/Y/5                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+  21  tovel         30/5/D/6                                    M   T   W   T   F   S   S\n          …  0
+  22  tovel         31/2/O/2                                    M   T   W   T   F   S   S\n         1…  0
+  23  tovel         28/1/O/2                                    M   T   W   T   F   S   S\n     1O  2…  0
+  24  tovel         30/6/F/2                                    M   T   W   T   F   S   S\n          …  0
+  25  tovel         31/5/A/6                                    M   T   W   T   F   S   S\n          …  0
+  26  tovel         28/2/Y/2                                    M   T   W   T   F   S   S\n         1…  0
+  27  tovel         28/3/N/5                                    M   T   W   T   F   S   S\n          …  0
+  28  tovel         29/2/V/3                                    M   T   W   T   F   S   S\n         1…  0
+  29  tovel         29/4/C/6                                    M   T   W   T   F   S   S\n          …  0
+  30  tovel         30/5/M/2                                    M   T   W   T   F   S   S\n          …  0
+  31  tovel         30/3/F/3                                    M   T   W   T   F   S   S\n          …  0
+  32  tovel         31/0/T/2                                    M   T   W   T   F   S   S\n 1T  2T  3…  0
+  33  tovel         29/3/S/2                                    M   T   W   T   F   S   S\n          …  0
+  34  tovel         30/0/Q/5                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+  35  tovel         30/2/Y/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  36  tovel         30/4/M/4                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  37  tovel         28/1/W/5                                       1W  2C  3W  4A  5B  6W\n 7D  8W  9…  0
+  38  tovel         29/2/L/2                                    M   T   W   T   F   S   S\n         1…  0
+  39  tovel         30/0/W/5                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+  40  tovel         31/2/U/2                                    M   T   W   T   F   S   S\n         1…  0
+  41  tovel         31/0/X/2                                    M   T   W   T   F   S   S\n 1X  2X  3…  0
+  42  tovel         30/0/D/2                                    M   T   W   T   F   S   S\n 1D  2B  3…  0
+  43  tovel         30/6/S/6                                    M   T   W   T   F   S   S\n          …  0
+  44  tovel         31/1/W/3                                    M   T   W   T   F   S   S\n     1W  2…  0
+  45  tovel         30/0/E/2                                    M   T   W   T   F   S   S\n 1E  2B  3…  0
+  46  tovel         28/2/P/4                                    M   T   W   T   F   S   S\n         1…  0
+  47  tovel         29/0/P/6                                    M   T   W   T   F   S   S\n 1P  2R  3…  0
+  48  tovel         28/2/N/2                                    M   T   W   T   F   S   S\n         1…  0
+  49  tovel         31/4/V/2                                    M   T   W   T   F   S   S\n          …  0
+  50  tovel         30/5/B/6                                    M   T   W   T   F   S   S\n          …  0
+  51  tovel         29/5/U/5                                    M   T   W   T   F   S   S\n          …  0
+  52  tovel         31/4/H/3                                    M   T   W   T   F   S   S\n          …  0
+  53  tovel         28/2/G/4                                    M   T   W   T   F   S   S\n         1…  0
+  54  tovel         30/0/E/3                                    M   T   W   T   F   S   S\n 1A  2B  3…  1
+  55  tovel         31/3/H/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  56  tovel         28/6/J/2                                  MON TUE WED THU FRI SAT SUN\n          …  1
+  57  tovel         28/2/S/2                                           1S  2C  3S  4A  5B\n 6S  7D  8…  0
+  58  tovel         30/1/X/3                                    M   T   W   T   F   S   S\n     1X  2…  0
+  59  tovel         28/6/X/2                                    M   T   W   T   F   S   S\n          …  0
+  60  tovel         31/6/E/4                                    M   T   W   T   F   S   S\n          …  0
+  61  tovel         29/4/Y/4                                    M   T   W   T   F   S   S\n          …  0
+  62  tovel         30/4/F/3                                    M   T   W   T   F   S   S\n          …  0
+  63  tovel         29/1/R/2                                    M   T   W   T   F   S   S\n     1R  2…  0
+  64  tovel         31/6/B/6                                    M   T   W   T   F   S   S\n          …  0
+  65  tovel         29/4/W/6                                    M   T   W   T   F   S   S\n          …  0
+  66  tovel         29/0/K/3                                    M   T   W   T   F   S   S\n 1K  2G  3…  0
+  67  tovel         30/4/M/4                                    M   T   W   T   F   S   S\n          …  0
+  68  tovel         28/2/R/6                                    M   T   W   T   F   S   S\n         1…  0
+  69  tovel         31/1/K/5                                    M   T   W   T   F   S   S\n     1K  2…  0
+  70  tovel         30/3/D/3                                    M   T   W   T   F   S   S\n          …  0
+  71  tovel         30/1/R/4                                    M   T   W   T   F   S   S\n     1R  2…  0
+  72  tovel         29/4/C/6                                    M   T   W   T   F   S   S\n          …  0
+  73  tovel         30/4/D/5                                    M   T   W   T   F   S   S\n          …  0
+  74  tovel         28/0/Y/2                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+  75  tovel         30/1/Z/6                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…  0
+  76  tovel         31/2/B/4                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+  77  tovel         31/1/J/3                                       1J  2J  3C  4D  5J  6C\n 7D  8J  9…  0
+  78  tovel         31/5/C/5                                    M   T   W   T   F   S   S\n          …  0
+  79  tovel         30/5/F/6                                    M   T   W   T   F   S   S\n          …  0
+  80  tovel         31/5/X/3                                    M   T   W   T   F   S   S\n          …  0
+  81  tovel         29/5/V/4                                    M   T   W   T   F   S   S\n          …  0
+  82  tovel         31/3/G/4                                    M   T   W   T   F   S   S\n          …  0
+  83  tovel         31/1/N/6                                    M   T   W   T   F   S   S\n     1N  2…  0
+  84  tovel         31/4/A/3                                    M   T   W   T   F   S   S\n          …  0
+  85  tovel         30/6/L/6                                    M   T   W   T   F   S   S\n          …  0
+  86  tovel         31/3/O/2                                    M   T   W   T   F   S   S\n          …  0
+  87  tovel         31/0/R/2                                    M   T   W   T   F   S   S\n 1R  2R  3…  0
+  88  tovel         30/4/S/2                                    M   T   W   T   F   S   S\n          …  0
+  89  tovel         31/1/O/2                                    M   T   W   T   F   S   S\n     1O  2…  0
+  90  tovel         31/3/M/2                                    M   T   W   T   F   S   S\n          …  0
+  91  tovel         29/0/U/5                                    M   T   W   T   F   S   S\n 1U  2U  3…  0
+  92  tovel         30/3/H/2                                    M   T   W   T   F   S   S\n          …  0
+  93  tovel         29/0/O/6                                    M   T   W   T   F   S   S\n 1O  2G  3…  0
+  94  tovel         29/2/B/2                                    M   T   W   T   F   S   S\n         1…  0
+  95  tovel         29/2/E/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  96  tovel         30/3/Z/2                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  97  tovel         30/5/P/5                                                       1P  2B\n 3C  4P  5…  0
+  98  tovel         29/6/N/2                                    M   T   W   T   F   S   S\n          …  0
+  99  tovel         31/6/J/4                                    M   T   W   T   F   S   S\n          …  0
+ 100  tovel         31/5/T/5                                    M   T   W   T   F   S   S\n          …  0
+ 101  tovel         28/1/N/4                                    M   T   W   T   F   S   S\n     1N  2…  0
+ 102  tovel         30/5/S/5                                    M   T   W   T   F   S   S\n          …  0
+ 103  tovel         30/4/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 104  tovel         30/1/C/3                                    M   T   W   T   F   S   S\n     1C  2…  0
+ 105  tovel         28/3/P/4                                    M   T   W   T   F   S   S\n          …  0
+ 106  tovel         31/2/C/5                                    M   T   W   T   F   S   S\n         1…  0
+ 107  tovel         30/6/Q/3                                    M   T   W   T   F   S   S\n          …  1
+ 108  tovel         31/1/Q/6                                    M   T   W   T   F   S   S\n     1Q  2…  0
+ 109  tovel         31/2/X/2                                    M   T   W   T   F   S   S\n         1…  0
+ 110  tovel         30/5/Q/5                                    M   T   W   T   F   S   S\n          …  0
+ 111  tovel         30/1/A/5                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 112  tovel         30/6/C/2                                    M   T   W   T   F   S   S\n          …  0
+ 113  tovel         30/1/C/4                                    M   T   W   T   F   S   S\n     1C  2…  0
+ 114  tovel         31/2/A/5                                    M   T   W   T   F   S   S\n         1…  0
+ 115  tovel         31/3/I/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 116  tovel         30/6/B/5                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 117  tovel         31/3/O/3                                               1O  2O  3C  4D\n 5O  6C  7…  0
+ 118  tovel         31/3/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 119  tovel         28/0/X/4                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+ 120  tovel         29/2/R/3                                    M   T   W   T   F   S   S\n         1…  1
+ 121  tovel         31/2/Z/4                                    M   T   W   T   F   S   S\n         1…  0
+ 122  tovel         28/0/D/5                                    M   T   W   T   F   S   S\n 1D  2A  3…  0
+ 123  tovel         31/4/C/5                                    M   T   W   T   F   S   S\n          …  0
+ 124  tovel         30/2/S/4                                    M   T   W   T   F   S   S\n         1…  1
+ 125  tovel         30/2/F/5                                    M   T   W   T   F   S   S\n         1…  0
+ 126  tovel         29/4/G/2                                    M   T   W   T   F   S   S\n          …  0
+ 127  tovel         30/0/K/4                                    M   T   W   T   F   S   S\n 1K  2M  3…  0
+ 128  tovel         30/0/G/3                                    M   T   W   T   F   S   S\n 1G  2C  3…  0
+ 129  tovel         30/2/E/5                                    M   T   W   T   F   S   S\n         1…  0
+ 130  tovel         30/6/F/2                                    M   T   W   T   F   S   S\n          …  0
+ 131  tovel         28/6/W/6                                    M   T   W   T   F   S   S\n          …  0
+ 132  tovel         31/3/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 133  tovel         31/4/U/5                                    M   T   W   T   F   S   S\n          …  0
+ 134  tovel         29/2/O/6                                    M   T   W   T   F   S   S\n         1…  0
+ 135  tovel         30/1/Y/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1Y  2…  0
+ 136  tovel         31/2/Z/3                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 137  tovel         30/0/O/4                                   1O  2B  3C  4O  5C  6O  7C\n 8O  9C 10…  0
+ 138  tovel         30/4/H/3                                    M   T   W   T   F   S   S\n          …  1
+ 139  tovel         31/1/N/5                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 140  tovel         30/5/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 141  tovel         31/0/V/3                                    M   T   W   T   F   S   S\n 1V  2V  3…  0
+ 142  tovel         30/3/A/4                                    M   T   W   T   F   S   S\n          …  1
+ 143  tovel         31/6/U/3                                    M   T   W   T   F   S   S\n          …  0
+ 144  tovel         28/0/H/3                                    M   T   W   T   F   S   S\n 1H  2B  3…  0
+ 145  tovel         30/2/E/2                                    M   T   W   T   F   S   S\n         1…  0
+ 146  tovel         31/6/K/5                                    M   T   W   T   F   S   S\n          …  0
+ 147  tovel         31/3/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 148  tovel         30/0/Z/4                                    M   T   W   T   F   S   S\n 1Z  2B  3…  0
+ 149  tovel         30/1/Q/5                                    M   T   W   T   F   S   S\n     1Q  2…  0
+ 150  tovel         29/2/C/3                                    M   T   W   T   F   S   S\n         1…  0
+ 151  tovel         29/1/G/6                                    M   T   W   T   F   S   S\n     1G  2…  0
+ 152  tovel         31/4/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 153  tovel         31/6/C/4                                    M   T   W   T   F   S   S\n          …  0
+ 154  tovel         28/5/K/6                                    M   T   W   T   F   S   S\n          …  0
+ 155  tovel         31/3/U/6                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 156  tovel         31/2/S/2                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 157  tovel         31/6/G/2                                                           1G\n 2G  3C  4…  0
+ 158  tovel         31/1/T/3                                    M   T   W   T   F   S   S\n     1T  2…  0
+ 159  tovel         31/3/W/6                                    M   T   W   T   F   S   S\n          …  0
+ 160  tovel         31/1/B/5                                    M   T   W   T   F   S   S\n     1B  2…  0
+ 161  tovel         30/2/G/3                                    M   T   W   T   F   S   S\n         1…  0
+ 162  tovel         31/0/X/6                                    M   T   W   T   F   S   S\n 1X  2X  3…  0
+ 163  tovel         28/5/T/2                                    M   T   W   T   F   S   S\n          …  0
+ 164  tovel         30/4/B/4                                    M   T   W   T   F   S   S\n          …  0
+ 165  tovel         31/6/O/2                                    M   T   W   T   F   S   S\n          …  0
+ 166  tovel         30/3/I/3                                    M   T   W   T   F   S   S\n          …  0
+ 167  tovel         28/3/Z/2                                    M   T   W   T   F   S   S\n          …  1
+ 168  tovel         30/6/K/2                                    M   T   W   T   F   S   S\n          …  0
+ 169  tovel         29/1/T/3                                    M   T   W   T   F   S   S\n     1T  2…  0
+ 170  tovel         31/2/O/3                                    M   T   W   T   F   S   S\n         1…  1
+ 171  tovel         31/2/D/2                                    M   T   W   T   F   S   S\n         1…  0
+ 172  tovel         28/5/F/4                                    M   T   W   T   F   S   S\n          …  0
+ 173  tovel         31/1/J/3                                    M   T   W   T   F   S   S\n     1J  2…  0
+ 174  tovel         28/6/B/2                                    M   T   W   T   F   S   S\n          …  0
+ 175  tovel         30/4/A/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 176  tovel         31/5/N/5                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 177  tovel         30/0/R/5                                   1R  2B  3C  4R  5C  6R  7C\n 8R  9C 10…  0
+ 178  tovel         31/4/H/2                                    M   T   W   T   F   S   S\n          …  0
+ 179  tovel         28/0/H/3                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+ 180  tovel         30/2/E/4                                    M   T   W   T   F   S   S\n         1…  1
+ 181  tovel         30/1/G/6                                    M   T   W   T   F   S   S\n     1G  2…  0
+ 182  tovel         31/6/C/5                                    M   T   W   T   F   S   S\n          …  0
+ 183  tovel         30/2/E/2                                    M   T   W   T   F   S   S\n         1…  0
+ 184  tovel         28/3/N/3                                    M   T   W   T   F   S   S\n          …  0
+ 185  tovel         29/2/N/2                                    M   T   W   T   F   S   S\n         1…  0
+ 186  tovel         31/3/I/5                                    M   T   W   T   F   S   S\n          …  0
+ 187  tovel         30/3/K/5                                    M   T   W   T   F   S   S\n          …  0
+ 188  tovel         31/5/G/2                                    M   T   W   T   F   S   S\n          …  0
+ 189  tovel         28/6/W/6                                    M   T   W   T   F   S   S\n          …  0
+ 190  tovel         31/2/N/2                                    M   T   W   T   F   S   S\n         1…  0
+ 191  tovel         31/4/G/3                                    M   T   W   T   F   S   S\n          …  0
+ 192  tovel         29/0/N/4                                    M   T   W   T   F   S   S\n 1N  2B  3…  0
+ 193  tovel         28/3/B/6                                    M   T   W   T   F   S   S\n          …  0
+ 194  tovel         30/6/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 195  tovel         31/5/L/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 196  tovel         28/3/Q/2                                  MON TUE WED THU FRI SAT SUN\n          …  1
+ 197  tovel         30/6/N/2                                                           1N\n 2B  3C  4…  0
+ 198  tovel         30/1/J/5                                    M   T   W   T   F   S   S\n     1J  2…  1
+ 199  tovel         28/3/S/5                                    M   T   W   T   F   S   S\n          …  0
+ 200  tovel         31/3/K/3                                    M   T   W   T   F   S   S\n          …  0
+ 201  tovel         31/4/M/4                                    M   T   W   T   F   S   S\n          …  0
+ 202  tovel         28/5/Z/5                                    M   T   W   T   F   S   S\n          …  0
+ 203  tovel         28/4/P/4                                    M   T   W   T   F   S   S\n          …  0
+ 204  tovel         28/1/J/2                                    M   T   W   T   F   S   S\n     1J  2…  0
+ 205  tovel         30/0/B/6                                    M   T   W   T   F   S   S\n 1B  2C  3…  0
+ 206  tovel         31/3/M/6                                    M   T   W   T   F   S   S\n          …  0
+ 207  tovel         31/2/Y/2                                    M   T   W   T   F   S   S\n         1…  0
+ 208  tovel         29/2/W/3                                    M   T   W   T   F   S   S\n         1…  0
+ 209  tovel         31/2/C/6                                    M   T   W   T   F   S   S\n         1…  0
+ 210  tovel         31/5/H/2                                    M   T   W   T   F   S   S\n          …  0
+ 211  tovel         30/5/B/6                                    M   T   W   T   F   S   S\n          …  0
+ 212  tovel         30/5/J/5                                    M   T   W   T   F   S   S\n          …  0
+ 213  tovel         29/2/T/4                                    M   T   W   T   F   S   S\n         1…  0
+ 214  tovel         30/0/L/3                                    M   T   W   T   F   S   S\n 1A  2B  3…  1
+ 215  tovel         28/0/P/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1P  2C  3…  0
+ 216  tovel         31/5/C/2                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 217  tovel         30/6/T/3                                                           1T\n 2B  3C  4…  1
+ 218  tovel         31/0/Z/2                                    M   T   W   T   F   S   S\n 1Z  2Z  3…  0
+ 219  tovel         29/6/J/3                                    M   T   W   T   F   S   S\n          …  0
+ 220  tovel         30/1/J/2                                    M   T   W   T   F   S   S\n     1J  2…  0
+ 221  tovel         29/3/V/3                                    M   T   W   T   F   S   S\n          …  1
+ 222  tovel         31/1/U/3                                    M   T   W   T   F   S   S\n     1U  2…  0
+ 223  tovel         29/6/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 224  tovel         31/1/L/2                                    M   T   W   T   F   S   S\n     1L  2…  0
+ 225  tovel         31/2/U/5                                    M   T   W   T   F   S   S\n         1…  0
+ 226  tovel         31/3/A/4                                    M   T   W   T   F   S   S\n          …  0
+ 227  tovel         31/3/A/2                                    M   T   W   T   F   S   S\n          …  0
+ 228  tovel         28/5/O/4                                    M   T   W   T   F   S   S\n          …  0
+ 229  tovel         30/5/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 230  tovel         30/0/H/4                                    M   T   W   T   F   S   S\n 1H  2H  3…  1
+ 231  tovel         30/4/M/2                                    M   T   W   T   F   S   S\n          …  0
+ 232  tovel         31/6/B/3                                    M   T   W   T   F   S   S\n          …  0
+ 233  tovel         28/3/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 234  tovel         28/3/T/2                                    M   T   W   T   F   S   S\n          …  0
+ 235  tovel         30/2/P/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+ 236  tovel         31/1/P/6                                  MON TUE WED THU FRI SAT SUN\n     1P  2…  0
+ 237  tovel         29/2/P/5                                           1P  2B  3B  4B  5B\n 6P  7P  8…  0
+ 238  tovel         28/6/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 239  tovel         31/0/O/3                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+ 240  tovel         28/5/V/3                                    M   T   W   T   F   S   S\n          …  0
+ 241  tovel         30/0/C/6                                    M   T   W   T   F   S   S\n 1C  2B  3…  0
+ 242  tovel         28/4/L/4                                    M   T   W   T   F   S   S\n          …  0
+ 243  tovel         30/1/I/5                                    M   T   W   T   F   S   S\n     1I  2…  0
+ 244  tovel         29/5/W/5                                    M   T   W   T   F   S   S\n          …  0
+ 245  tovel         30/5/I/3                                    M   T   W   T   F   S   S\n          …  1
+ 246  tovel         30/6/Q/2                                    M   T   W   T   F   S   S\n          …  0
+ 247  tovel         30/0/W/6                                    M   T   W   T   F   S   S\n 1W  2Y  3…  0
+ 248  tovel         30/6/Y/4                                    M   T   W   T   F   S   S\n          …  0
+ 249  tovel         28/0/B/5                                    M   T   W   T   F   S   S\n 1B  2B  3…  0
+ 250  tovel         29/5/U/4                                    M   T   W   T   F   S   S\n          …  0
+ 251  tovel         31/2/A/5                                    M   T   W   T   F   S   S\n         1…  0
+ 252  tovel         29/6/B/3                                    M   T   W   T   F   S   S\n          …  0
+ 253  tovel         30/1/Z/6                                    M   T   W   T   F   S   S\n     1Z  2…  0
+ 254  tovel         29/2/M/2                                    M   T   W   T   F   S   S\n         1…  0
+ 255  tovel         30/2/V/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 256  tovel         28/1/E/2                                  MON TUE WED THU FRI SAT SUN\n     1E  2…  0
+ 257  tovel         30/1/K/4                                       1K  2B  3C  4K  5C  6K\n 7C  8K  9…  0
+ 258  tovel         31/3/B/3                                    M   T   W   T   F   S   S\n          …  1
+ 259  tovel         28/1/L/4                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 260  tovel         31/3/K/6                                    M   T   W   T   F   S   S\n          …  0
+ 261  tovel         31/3/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 262  tovel         30/5/C/5                                    M   T   W   T   F   S   S\n          …  0
+ 263  tovel         31/6/O/5                                    M   T   W   T   F   S   S\n          …  0
+ 264  tovel         30/2/N/6                                    M   T   W   T   F   S   S\n         1…  0
+ 265  tovel         31/4/Z/2                                    M   T   W   T   F   S   S\n          …  0
+ 266  tovel         31/4/J/2                                    M   T   W   T   F   S   S\n          …  0
+ 267  tovel         28/6/A/4                                    M   T   W   T   F   S   S\n          …  0
+ 268  tovel         30/3/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 269  tovel         30/6/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 270  tovel         31/1/E/2                                    M   T   W   T   F   S   S\n     1E  2…  0
+ 271  tovel         31/2/V/5                                    M   T   W   T   F   S   S\n         1…  0
+ 272  tovel         30/6/S/5                                    M   T   W   T   F   S   S\n          …  0
+ 273  tovel         31/2/M/6                                    M   T   W   T   F   S   S\n         1…  0
+ 274  tovel         31/4/L/5                                    M   T   W   T   F   S   S\n          …  0
+ 275  tovel         31/2/Z/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 276  tovel         30/1/Z/6                                  MON TUE WED THU FRI SAT SUN\n     1Z  2…  0
+ 277  tovel         28/0/F/5                                   1F  2C  3F  4A  5B  6F  7D\n 8F  9B 10…  0
+ 278  tovel         28/2/W/6                                    M   T   W   T   F   S   S\n         1…  0
+ 279  tovel         29/1/U/5                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 280  tovel         30/3/Q/3                                    M   T   W   T   F   S   S\n          …  0
+ 281  tovel         28/0/M/3                                    M   T   W   T   F   S   S\n 1M  2A  3…  0
+ 282  tovel         29/1/Y/5                                    M   T   W   T   F   S   S\n     1Y  2…  0
+ 283  tovel         30/5/D/4                                    M   T   W   T   F   S   S\n          …  0
+ 284  tovel         31/3/O/6                                    M   T   W   T   F   S   S\n          …  0
+ 285  tovel         31/5/Q/2                                    M   T   W   T   F   S   S\n          …  0
+ 286  tovel         31/5/B/6                                    M   T   W   T   F   S   S\n          …  0
+ 287  tovel         30/2/J/4                                    M   T   W   T   F   S   S\n         1…  1
+ 288  tovel         30/6/F/3                                    M   T   W   T   F   S   S\n          …  0
+ 289  tovel         31/2/X/6                                    M   T   W   T   F   S   S\n         1…  0
+ 290  tovel         28/6/O/2                                    M   T   W   T   F   S   S\n          …  0
+ 291  tovel         30/5/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 292  tovel         30/4/Z/3                                    M   T   W   T   F   S   S\n          …  0
+ 293  tovel         29/3/Z/3                                    M   T   W   T   F   S   S\n          …  1
+ 294  tovel         29/2/D/2                                    M   T   W   T   F   S   S\n         1…  0
+ 295  tovel         31/3/R/6                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 296  tovel         30/0/U/3                                  MON TUE WED THU FRI SAT SUN\n 1U  2B  3…  0
+ 297  tovel         30/5/N/6                                                       1N  2B\n 3C  4N  5…  0
+ 298  tovel         29/2/K/5                                    M   T   W   T   F   S   S\n         1…  0
+ 299  tovel         29/4/A/4                                    M   T   W   T   F   S   S\n          …  0
+ 300  tovel         30/3/L/2                                    M   T   W   T   F   S   S\n          …  0
+ 301  tovel         29/0/O/2                                    M   T   W   T   F   S   S\n 1O  2B  3…  0
+ 302  tovel         30/4/S/4                                    M   T   W   T   F   S   S\n          …  0
+ 303  tovel         31/1/M/3                                    M   T   W   T   F   S   S\n     1M  2…  0
+ 304  tovel         31/1/L/5                                    M   T   W   T   F   S   S\n     1L  2…  0
+ 305  tovel         28/3/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 306  tovel         30/4/T/5                                    M   T   W   T   F   S   S\n          …  0
+ 307  tovel         31/6/E/3                                    M   T   W   T   F   S   S\n          …  0
+ 308  tovel         30/4/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 309  tovel         31/4/K/3                                    M   T   W   T   F   S   S\n          …  0
+ 310  tovel         31/2/S/2                                    M   T   W   T   F   S   S\n         1…  0
+ 311  tovel         31/4/Y/6                                    M   T   W   T   F   S   S\n          …  0
+ 312  tovel         29/2/X/5                                    M   T   W   T   F   S   S\n         1…  0
+ 313  tovel         30/0/I/6                                    M   T   W   T   F   S   S\n 1I  2B  3…  0
+ 314  tovel         28/6/U/5                                    M   T   W   T   F   S   S\n          …  0
+ 315  tovel         30/6/W/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 316  tovel         30/4/L/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 317  tovel         31/6/J/4                                                           1J\n 2J  3C  4…  0
+ 318  tovel         31/4/U/6                                    M   T   W   T   F   S   S\n          …  0
+ 319  tovel         31/0/G/5                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+ 320  tovel         30/4/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 321  tovel         31/3/Y/3                                    M   T   W   T   F   S   S\n          …  0
+ 322  tovel         30/2/N/2                                    M   T   W   T   F   S   S\n         1…  0
+ 323  tovel         30/6/L/3                                    M   T   W   T   F   S   S\n          …  1
+ 324  tovel         31/0/M/4                                    M   T   W   T   F   S   S\n 1M  2M  3…  0
+ 325  tovel         29/5/A/2                                    M   T   W   T   F   S   S\n          …  0
+ 326  tovel         29/0/Z/5                                    M   T   W   T   F   S   S\n 1Z  2G  3…  0
+ 327  tovel         29/5/E/6                                    M   T   W   T   F   S   S\n          …  0
+ 328  tovel         29/6/Q/4                                    M   T   W   T   F   S   S\n          …  0
+ 329  tovel         31/4/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 330  tovel         29/0/U/6                                    M   T   W   T   F   S   S\n 1U  2U  3…  0
+ 331  tovel         31/4/Y/3                                    M   T   W   T   F   S   S\n          …  0
+ 332  tovel         31/5/E/3                                    M   T   W   T   F   S   S\n          …  0
+ 333  tovel         28/6/G/5                                    M   T   W   T   F   S   S\n          …  0
+ 334  tovel         29/4/T/3                                    M   T   W   T   F   S   S\n          …  1
+ 335  tovel         30/2/J/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+ 336  tovel         30/4/I/4                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 337  tovel         31/5/C/6                                                       1C  2C\n 3D  4E  5…  0
+ 338  tovel         30/6/O/4                                    M   T   W   T   F   S   S\n          …  0
+ 339  tovel         28/5/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 340  tovel         29/3/W/3                                    M   T   W   T   F   S   S\n          …  1
+ 341  tovel         28/1/Q/4                                    M   T   W   T   F   S   S\n     1Q  2…  0
+ 342  tovel         28/0/K/6                                    M   T   W   T   F   S   S\n 1K  2A  3…  0
+ 343  tovel         28/2/O/4                                    M   T   W   T   F   S   S\n         1…  0
+ 344  tovel         31/6/J/2                                    M   T   W   T   F   S   S\n          …  0
+ 345  tovel         31/6/B/6                                    M   T   W   T   F   S   S\n          …  0
+ 346  tovel         31/5/W/3                                    M   T   W   T   F   S   S\n          …  0
+ 347  tovel         30/0/S/6                                    M   T   W   T   F   S   S\n 1S  2U  3…  0
+ 348  tovel         28/3/E/6                                    M   T   W   T   F   S   S\n          …  0
+ 349  tovel         31/1/V/5                                    M   T   W   T   F   S   S\n     1V  2…  0
+ 350  tovel         31/2/A/3                                    M   T   W   T   F   S   S\n         1…  1
+ 351  tovel         30/4/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 352  tovel         30/0/R/6                                    M   T   W   T   F   S   S\n 1R  2B  3…  0
+ 353  tovel         29/5/F/3                                    M   T   W   T   F   S   S\n          …  0
+ 354  tovel         31/1/F/2                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 355  tovel         31/0/I/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1I  2I  3…  0
+ 356  tovel         31/3/A/3                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 357  tovel         30/5/Q/2                                                       1Q  2B\n 3C  4Q  5…  0
+ 358  tovel         31/2/U/5                                    M   T   W   T   F   S   S\n         1…  0
+ 359  tovel         29/2/Y/2                                    M   T   W   T   F   S   S\n         1…  0
+ 360  tovel         31/6/M/2                                    M   T   W   T   F   S   S\n          …  0
+ 361  tovel         28/5/Z/2                                    M   T   W   T   F   S   S\n          …  0
+ 362  tovel         31/6/C/4                                    M   T   W   T   F   S   S\n          …  0
+ 363  tovel         30/3/K/6                                    M   T   W   T   F   S   S\n          …  0
+ 364  tovel         30/4/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 365  tovel         31/2/E/6                                    M   T   W   T   F   S   S\n         1…  0
+ 366  tovel         29/1/N/2                                    M   T   W   T   F   S   S\n     1N  2…  0
+ 367  tovel         31/5/O/3                                    M   T   W   T   F   S   S\n          …  0
+ 368  tovel         28/3/T/3                                    M   T   W   T   F   S   S\n          …  0
+ 369  tovel         30/6/H/2                                    M   T   W   T   F   S   S\n          …  0
+ 370  tovel         29/1/V/4                                    M   T   W   T   F   S   S\n     1V  2…  1
+ 371  tovel         29/5/G/6                                    M   T   W   T   F   S   S\n          …  0
+ 372  tovel         31/6/X/5                                    M   T   W   T   F   S   S\n          …  0
+ 373  tovel         31/6/Y/2                                    M   T   W   T   F   S   S\n          …  0
+ 374  tovel         28/2/Y/3                                    M   T   W   T   F   S   S\n         1…  1
+ 375  tovel         29/0/V/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1V  2B  3…  0
+ 376  tovel         31/5/B/4                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 377  tovel         30/5/Z/3                                                       1Z  2B\n 3C  4Z  5…  1
+ 378  tovel         31/0/D/4                                    M   T   W   T   F   S   S\n 1D  2D  3…  0
+ 379  tovel         30/0/Q/4                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+ 380  tovel         28/3/C/2                                    M   T   W   T   F   S   S\n          …  1
+ 381  tovel         30/3/M/3                                    M   T   W   T   F   S   S\n          …  0
+ 382  tovel         31/4/V/6                                    M   T   W   T   F   S   S\n          …  0
+ 383  tovel         31/2/O/4                                    M   T   W   T   F   S   S\n         1…  0
+ 384  tovel         29/0/D/6                                    M   T   W   T   F   S   S\n 1D  2E  3…  0
+ 385  tovel         28/3/A/2                                    M   T   W   T   F   S   S\n          …  1
+ 386  tovel         30/0/D/2                                    M   T   W   T   F   S   S\n 1D  2B  3…  0
+ 387  tovel         30/2/F/5                                    M   T   W   T   F   S   S\n         1…  0
+ 388  tovel         28/5/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 389  tovel         31/1/Y/2                                    M   T   W   T   F   S   S\n     1Y  2…  0
+ 390  tovel         28/2/P/6                                    M   T   W   T   F   S   S\n         1…  0
+ 391  tovel         29/6/I/6                                    M   T   W   T   F   S   S\n          …  0
+ 392  tovel         30/3/V/2                                    M   T   W   T   F   S   S\n          …  0
+ 393  tovel         31/3/Z/3                                    M   T   W   T   F   S   S\n          …  0
+ 394  tovel         30/6/R/4                                    M   T   W   T   F   S   S\n          …  0
+ 395  tovel         30/0/F/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1F  2B  3…  0
+ 396  tovel         31/3/B/3                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 397  tovel         31/5/P/4                                                       1P  2P\n 3C  4D  5…  0
+ 398  tovel         31/2/F/4                                    M   T   W   T   F   S   S\n         1…  1
+ 399  tovel         30/1/B/5                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 400  tovel         30/4/V/4                                    M   T   W   T   F   S   S\n          …  0
+ 401  tovel         30/3/P/3                                    M   T   W   T   F   S   S\n          …  0
+ 402  tovel         31/5/K/3                                    M   T   W   T   F   S   S\n          …  0
+ 403  tovel         31/4/C/4                                    M   T   W   T   F   S   S\n          …  0
+ 404  tovel         29/3/G/5                                    M   T   W   T   F   S   S\n          …  0
+ 405  tovel         30/0/T/2                                    M   T   W   T   F   S   S\n 1T  2B  3…  0
+ 406  tovel         29/2/H/3                                    M   T   W   T   F   S   S\n         1…  1
+ 407  tovel         28/6/W/4                                    M   T   W   T   F   S   S\n          …  0
+ 408  tovel         31/1/A/6                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 409  tovel         30/0/R/6                                    M   T   W   T   F   S   S\n 1R  2R  3…  0
+ 410  tovel         31/0/K/2                                    M   T   W   T   F   S   S\n 1K  2K  3…  0
+ 411  tovel         30/2/C/2                                    M   T   W   T   F   S   S\n         1…  0
+ 412  tovel         29/0/V/5                                    M   T   W   T   F   S   S\n 1V  2B  3…  0
+ 413  tovel         30/4/O/6                                    M   T   W   T   F   S   S\n          …  0
+ 414  tovel         31/3/M/2                                    M   T   W   T   F   S   S\n          …  0
+ 415  tovel         31/2/D/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 416  tovel         30/3/T/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 417  tovel         28/4/R/2                                                   1R  2C  3R\n 4A  5B  6…  1
+ 418  tovel         31/0/O/5                                    M   T   W   T   F   S   S\n 1O  2O  3…  0
+ 419  tovel         30/4/A/4                                    M   T   W   T   F   S   S\n          …  0
+ 420  tovel         30/0/O/6                                    M   T   W   T   F   S   S\n 1O  2A  3…  0
+ 421  tovel         29/2/P/3                                    M   T   W   T   F   S   S\n         1…  1
+ 422  tovel         31/1/M/4                                    M   T   W   T   F   S   S\n     1M  2…  0
+ 423  tovel         28/5/U/5                                    M   T   W   T   F   S   S\n          …  0
+ 424  tovel         29/5/R/4                                    M   T   W   T   F   S   S\n          …  0
+ 425  tovel         30/4/H/6                                    M   T   W   T   F   S   S\n          …  0
+ 426  tovel         29/6/Y/4                                    M   T   W   T   F   S   S\n          …  0
+ 427  tovel         29/3/J/4                                    M   T   W   T   F   S   S\n          …  0
+ 428  tovel         29/4/B/5                                    M   T   W   T   F   S   S\n          …  0
+ 429  tovel         31/3/G/6                                    M   T   W   T   F   S   S\n          …  0
+ 430  tovel         31/2/P/6                                    M   T   W   T   F   S   S\n         1…  0
+ 431  tovel         29/4/Q/6                                    M   T   W   T   F   S   S\n          …  0
+ 432  tovel         28/3/R/2                                    M   T   W   T   F   S   S\n          …  1
+ 433  tovel         28/3/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 434  tovel         31/6/O/4                                    M   T   W   T   F   S   S\n          …  0
+ 435  tovel         30/2/P/3                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 436  tovel         30/5/T/5                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 437  tovel         28/1/G/5                                       1G  2C  3G  4A  5B  6G\n 7D  8G  9…  0
+ 438  tovel         29/2/M/4                                    M   T   W   T   F   S   S\n         1…  1
+ 439  tovel         29/6/B/2                                    M   T   W   T   F   S   S\n          …  0
+ 440  tovel         28/2/P/3                                    M   T   W   T   F   S   S\n         1…  1
+ 441  tovel         30/0/T/4                                    M   T   W   T   F   S   S\n 1T  2B  3…  0
+ 442  tovel         31/1/A/2                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 443  tovel         29/2/V/5                                    M   T   W   T   F   S   S\n         1…  0
+ 444  tovel         31/5/G/3                                    M   T   W   T   F   S   S\n          …  0
+ 445  tovel         30/6/W/2                                    M   T   W   T   F   S   S\n          …  0
+ 446  tovel         28/4/J/2                                    M   T   W   T   F   S   S\n          …  1
+ 447  tovel         31/2/X/4                                    M   T   W   T   F   S   S\n         1…  0
+ 448  tovel         31/5/U/3                                    M   T   W   T   F   S   S\n          …  0
+ 449  tovel         31/3/A/4                                    M   T   W   T   F   S   S\n          …  0
+ 450  tovel         28/0/O/2                                    M   T   W   T   F   S   S\n 1O  2O  3…  0
+ 451  tovel         31/0/H/2                                    M   T   W   T   F   S   S\n 1H  2H  3…  0
+ 452  tovel         31/1/B/6                                    M   T   W   T   F   S   S\n     1B  2…  0
+ 453  tovel         30/3/N/4                                    M   T   W   T   F   S   S\n          …  1
+ 454  tovel         28/5/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 455  tovel         28/1/P/4                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1P  2…  0
+ 456  tovel         31/3/P/5                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 457  tovel         28/4/K/5                                                   1K  2C  3K\n 4A  5B  6…  0
+ 458  tovel         28/0/Z/3                                    M   T   W   T   F   S   S\n 1Z  2Z  3…  0
+ 459  tovel         29/2/K/6                                    M   T   W   T   F   S   S\n         1…  0
+ 460  tovel         31/5/N/3                                    M   T   W   T   F   S   S\n          …  0
+ 461  tovel         31/6/G/6                                    M   T   W   T   F   S   S\n          …  0
+ 462  tovel         30/5/M/5                                    M   T   W   T   F   S   S\n          …  0
+ 463  tovel         28/4/P/6                                    M   T   W   T   F   S   S\n          …  0
+ 464  tovel         29/5/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 465  tovel         28/5/N/2                                    M   T   W   T   F   S   S\n          …  0
+ 466  tovel         30/6/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 467  tovel         30/6/I/4                                    M   T   W   T   F   S   S\n          …  0
+ 468  tovel         31/0/S/2                                    M   T   W   T   F   S   S\n 1S  2D  3…  0
+ 469  tovel         30/6/U/3                                    M   T   W   T   F   S   S\n          …  0
+ 470  tovel         31/6/X/6                                    M   T   W   T   F   S   S\n          …  0
+ 471  tovel         30/0/C/6                                    M   T   W   T   F   S   S\n 1C  2C  3…  0
+ 472  tovel         28/0/V/4                                    M   T   W   T   F   S   S\n 1V  2A  3…  0
+ 473  tovel         30/4/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 474  tovel         30/1/K/6                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 475  tovel         28/1/W/5                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2…  0
+ 476  tovel         31/3/T/3                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 477  tovel         28/3/J/5                                               1J  2C  3J  4A\n 5B  6J  7…  0
+ 478  tovel         30/4/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 479  tovel         31/1/I/4                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 480  tovel         31/5/L/2                                    M   T   W   T   F   S   S\n          …  0
+ 481  tovel         30/5/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 482  tovel         31/0/D/3                                    M   T   W   T   F   S   S\n 1D  2D  3…  0
+ 483  tovel         28/1/H/3                                    M   T   W   T   F   S   S\n     1H  2…  1
+ 484  tovel         31/2/G/6                                    M   T   W   T   F   S   S\n         1…  0
+ 485  tovel         29/3/H/2                                    M   T   W   T   F   S   S\n          …  0
+ 486  tovel         30/0/A/6                                    M   T   W   T   F   S   S\n 1A  2C  3…  0
+ 487  tovel         28/5/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 488  tovel         30/2/M/3                                    M   T   W   T   F   S   S\n         1…  0
+ 489  tovel         31/4/R/3                                    M   T   W   T   F   S   S\n          …  0
+ 490  tovel         30/6/D/3                                    M   T   W   T   F   S   S\n          …  0
+ 491  tovel         31/3/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 492  tovel         31/0/H/2                                    M   T   W   T   F   S   S\n 1H  2H  3…  0
+ 493  tovel         29/3/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 494  tovel         31/0/T/6                                    M   T   W   T   F   S   S\n 1A  2B  3…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+tovel                  495      46      9.3%

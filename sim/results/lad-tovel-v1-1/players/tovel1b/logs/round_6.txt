@@ -1,0 +1,728 @@
+Centaur Zendo round 6 (training)
+round_id : 701fa8b90d1a4567b23100c5e20623c1
+written  : 2026-09-04 12:45:15Z
+presented=716  answered=308  correct=39  skipped=408
+client answer latency: mean 0.110 ms  median 0.094 ms  max 1.104 ms  (n=716)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  tovel         30/0/Z/3                                  None                                      0
+   1  tovel         31/1/G/6                                    M   T   W   T   F   S   S\n     1G  2…  0
+   2  tovel         28/3/B/5                                    M   T   W   T   F   S   S\n          …  1
+   3  tovel         30/2/Y/4                                  None                                      0
+   4  tovel         29/3/G/3                                  None                                      0
+   5  tovel         29/1/O/2                                  None                                      0
+   6  tovel         31/6/W/4                                    M   T   W   T   F   S   S\n          …  0
+   7  tovel         29/2/P/2                                    M   T   W   T   F   S   S\n         1…  0
+   8  tovel         30/0/N/3                                  None                                      0
+   9  tovel         30/4/V/6                                  None                                      0
+  10  tovel         31/5/J/4                                  None                                      0
+  11  tovel         31/6/Q/4                                    M   T   W   T   F   S   S\n          …  0
+  12  tovel         31/0/X/4                                  None                                      0
+  13  tovel         31/4/L/5                                  None                                      0
+  14  tovel         28/5/K/5                                  None                                      0
+  15  tovel         28/3/I/2                                  None                                      0
+  16  tovel         28/6/D/5                                    M   T   W   T   F   S   S\n          …  0
+  17  tovel         29/0/Y/3                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+  18  tovel         31/1/P/2                                  None                                      0
+  19  tovel         28/4/E/3                                    M   T   W   T   F   S   S\n          …  1
+  20  tovel         31/2/Z/4                                  None                                      0
+  21  tovel         30/3/I/3                                  None                                      0
+  22  tovel         29/5/Q/6                                    M   T   W   T   F   S   S\n          …  0
+  23  tovel         30/1/O/3                                  None                                      0
+  24  tovel         28/3/D/6                                    M   T   W   T   F   S   S\n          …  0
+  25  tovel         31/5/J/2                                  None                                      0
+  26  tovel         30/4/U/4                                  None                                      0
+  27  tovel         30/0/R/5                                  None                                      0
+  28  tovel         28/5/E/4                                    M   T   W   T   F   S   S\n          …  0
+  29  tovel         30/4/F/2                                  None                                      0
+  30  tovel         31/3/P/6                                    M   T   W   T   F   S   S\n          …  1
+  31  tovel         30/5/V/2                                    M   T   W   T   F   S   S\n          …  0
+  32  tovel         29/6/D/6                                    M   T   W   T   F   S   S\n          …  0
+  33  tovel         29/4/O/4                                    M   T   W   T   F   S   S\n          …  0
+  34  tovel         28/4/X/4                                    M   T   W   T   F   S   S\n          …  1
+  35  tovel         28/6/J/2                                  None                                      0
+  36  tovel         30/6/V/6                                    M   T   W   T   F   S   S\n          …  0
+  37  tovel         30/6/D/2                                  None                                      0
+  38  tovel         30/3/E/5                                  None                                      0
+  39  tovel         28/6/Z/5                                    M   T   W   T   F   S   S\n          …  0
+  40  tovel         31/1/A/6                                    M   T   W   T   F   S   S\n     1D  2…  0
+  41  tovel         30/4/E/4                                  None                                      0
+  42  tovel         30/6/O/4                                    M   T   W   T   F   S   S\n          …  0
+  43  tovel         29/0/M/3                                    M   T   W   T   F   S   S\n 1M  2M  3…  0
+  44  tovel         31/3/J/2                                    M   T   W   T   F   S   S\n          …  0
+  45  tovel         28/0/S/4                                    M   T   W   T   F   S   S\n 1C  2S  3…  0
+  46  tovel         31/3/T/3                                  None                                      0
+  47  tovel         30/4/T/6                                  None                                      0
+  48  tovel         30/3/T/3                                  None                                      0
+  49  tovel         31/3/Z/4                                  None                                      0
+  50  tovel         29/1/C/2                                  None                                      0
+  51  tovel         30/5/F/3                                  None                                      0
+  52  tovel         28/5/F/6                                    M   T   W   T   F   S   S\n          …  0
+  53  tovel         30/4/N/4                                  None                                      0
+  54  tovel         31/4/H/5                                  None                                      0
+  55  tovel         31/5/C/6                                    M   T   W   T   F   S   S\n          …  0
+  56  tovel         30/1/J/4                                  None                                      0
+  57  tovel         28/4/L/4                                    M   T   W   T   F   S   S\n          …  0
+  58  tovel         28/5/F/2                                    M   T   W   T   F   S   S\n          …  0
+  59  tovel         28/1/R/2                                  None                                      0
+  60  tovel         30/0/U/4                                  None                                      0
+  61  tovel         30/2/G/2                                  None                                      0
+  62  tovel         31/0/C/3                                  None                                      0
+  63  tovel         30/6/S/5                                    M   T   W   T   F   S   S\n          …  0
+  64  tovel         28/6/B/2                                  None                                      0
+  65  tovel         30/6/F/3                                  None                                      0
+  66  tovel         30/6/L/5                                    M   T   W   T   F   S   S\n          …  0
+  67  tovel         29/1/B/6                                    M   T   W   T   F   S   S\n     1B  2…  0
+  68  tovel         30/1/L/6                                  None                                      0
+  69  tovel         31/4/L/4                                    M   T   W   T   F   S   S\n          …  0
+  70  tovel         28/5/S/4                                    M   T   W   T   F   S   S\n          …  0
+  71  tovel         30/1/G/5                                  None                                      0
+  72  tovel         30/3/X/3                                  None                                      0
+  73  tovel         30/0/V/6                                    M   T   W   T   F   S   S\n 1V  2C  3…  0
+  74  tovel         30/2/P/4                                  None                                      0
+  75  tovel         29/6/X/4                                    M   T   W   T   F   S   S\n          …  0
+  76  tovel         28/3/D/5                                    M   T   W   T   F   S   S\n          …  0
+  77  tovel         31/2/F/5                                  None                                      0
+  78  tovel         31/5/T/4                                  None                                      0
+  79  tovel         30/1/T/2                                  None                                      0
+  80  tovel         31/3/L/4                                  None                                      0
+  81  tovel         29/0/W/2                                  None                                      0
+  82  tovel         29/2/X/3                                  None                                      0
+  83  tovel         29/1/M/3                                  None                                      0
+  84  tovel         30/6/U/2                                  None                                      0
+  85  tovel         29/1/Y/3                                  None                                      0
+  86  tovel         31/6/O/5                                    M   T   W   T   F   S   S\n          …  0
+  87  tovel         28/3/I/3                                  None                                      0
+  88  tovel         29/2/H/6                                    M   T   W   T   F   S   S\n         1…  1
+  89  tovel         30/6/V/4                                    M   T   W   T   F   S   S\n          …  0
+  90  tovel         30/6/O/6                                    M   T   W   T   F   S   S\n          …  0
+  91  tovel         29/5/I/2                                    M   T   W   T   F   S   S\n          …  0
+  92  tovel         30/2/K/4                                  None                                      0
+  93  tovel         29/3/I/4                                  None                                      0
+  94  tovel         28/2/T/5                                    M   T   W   T   F   S   S\n         1…  0
+  95  tovel         30/3/O/2                                  None                                      0
+  96  tovel         30/0/E/4                                  None                                      0
+  97  tovel         28/6/D/5                                    M   T   W   T   F   S   S\n          …  0
+  98  tovel         30/2/C/3                                    M   T   W   T   F   S   S\n         1…  0
+  99  tovel         29/3/R/6                                    M   T   W   T   F   S   S\n          …  0
+ 100  tovel         31/0/B/2                                    M   T   W   T   F   S   S\n 1B  2B  3…  0
+ 101  tovel         29/3/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 102  tovel         31/0/J/2                                    M   T   W   T   F   S   S\n 1A  2J  3…  0
+ 103  tovel         30/1/Y/5                                  None                                      0
+ 104  tovel         30/0/J/3                                  None                                      0
+ 105  tovel         31/6/C/6                                  None                                      0
+ 106  tovel         28/6/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 107  tovel         30/3/D/5                                  None                                      0
+ 108  tovel         29/3/K/4                                  None                                      0
+ 109  tovel         31/2/E/2                                  None                                      0
+ 110  tovel         31/0/A/5                                    M   T   W   T   F   S   S\n 1E  2C  3…  0
+ 111  tovel         31/1/U/6                                    M   T   W   T   F   S   S\n     1U  2…  0
+ 112  tovel         30/1/G/5                                  None                                      0
+ 113  tovel         29/2/Q/5                                    M   T   W   T   F   S   S\n         1…  0
+ 114  tovel         29/5/W/2                                    M   T   W   T   F   S   S\n          …  0
+ 115  tovel         31/1/S/3                                  None                                      0
+ 116  tovel         30/5/U/6                                  None                                      0
+ 117  tovel         29/5/V/4                                  None                                      0
+ 118  tovel         30/4/K/3                                  None                                      0
+ 119  tovel         29/3/H/5                                    M   T   W   T   F   S   S\n          …  0
+ 120  tovel         28/2/T/6                                    M   T   W   T   F   S   S\n         1…  0
+ 121  tovel         28/4/U/2                                  None                                      0
+ 122  tovel         29/6/T/6                                    M   T   W   T   F   S   S\n          …  0
+ 123  tovel         31/3/N/5                                    M   T   W   T   F   S   S\n          …  0
+ 124  tovel         30/3/C/2                                  None                                      0
+ 125  tovel         30/1/V/6                                  None                                      0
+ 126  tovel         30/5/B/2                                    M   T   W   T   F   S   S\n          …  0
+ 127  tovel         30/5/R/6                                  None                                      0
+ 128  tovel         30/1/B/3                                  None                                      0
+ 129  tovel         31/2/C/6                                    M   T   W   T   F   S   S\n         1…  0
+ 130  tovel         28/6/G/5                                    M   T   W   T   F   S   S\n          …  0
+ 131  tovel         31/3/Q/3                                  None                                      0
+ 132  tovel         29/4/T/5                                    M   T   W   T   F   S   S\n          …  0
+ 133  tovel         31/0/W/3                                  None                                      0
+ 134  tovel         29/4/U/3                                  None                                      0
+ 135  tovel         31/3/R/4                                  None                                      0
+ 136  tovel         31/2/H/4                                  None                                      0
+ 137  tovel         31/5/A/4                                  None                                      0
+ 138  tovel         28/5/B/4                                    M   T   W   T   F   S   S\n          …  0
+ 139  tovel         28/3/G/4                                  None                                      0
+ 140  tovel         31/1/A/3                                  None                                      0
+ 141  tovel         28/1/L/6                                    M   T   W   T   F   S   S\n     1A  2…  1
+ 142  tovel         29/1/C/6                                    M   T   W   T   F   S   S\n     1C  2…  1
+ 143  tovel         31/3/N/2                                    M   T   W   T   F   S   S\n          …  0
+ 144  tovel         31/1/N/4                                  None                                      0
+ 145  tovel         31/3/W/2                                    M   T   W   T   F   S   S\n          …  0
+ 146  tovel         30/4/W/4                                  None                                      0
+ 147  tovel         28/6/V/2                                  None                                      0
+ 148  tovel         30/6/S/5                                    M   T   W   T   F   S   S\n          …  0
+ 149  tovel         30/0/B/2                                    M   T   W   T   F   S   S\n 1D  2B  3…  0
+ 150  tovel         30/2/M/3                                    M   T   W   T   F   S   S\n         1…  0
+ 151  tovel         30/6/T/2                                  None                                      0
+ 152  tovel         31/3/T/4                                  None                                      0
+ 153  tovel         30/6/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 154  tovel         31/2/I/4                                  None                                      0
+ 155  tovel         29/5/F/4                                  None                                      0
+ 156  tovel         30/2/P/5                                  None                                      0
+ 157  tovel         30/0/W/4                                  None                                      0
+ 158  tovel         31/6/L/2                                  None                                      0
+ 159  tovel         31/6/O/6                                  None                                      0
+ 160  tovel         30/1/Z/4                                  None                                      0
+ 161  tovel         29/2/P/5                                    M   T   W   T   F   S   S\n         1…  0
+ 162  tovel         29/2/Q/4                                  None                                      0
+ 163  tovel         29/2/U/6                                    M   T   W   T   F   S   S\n         1…  0
+ 164  tovel         30/4/O/2                                  None                                      0
+ 165  tovel         28/1/U/3                                  None                                      0
+ 166  tovel         31/3/P/6                                    M   T   W   T   F   S   S\n          …  0
+ 167  tovel         29/0/G/2                                  None                                      0
+ 168  tovel         31/2/T/2                                  None                                      0
+ 169  tovel         31/3/T/4                                  None                                      0
+ 170  tovel         30/3/H/6                                    M   T   W   T   F   S   S\n          …  1
+ 171  tovel         31/0/H/2                                    M   T   W   T   F   S   S\n 1F  2F  3…  0
+ 172  tovel         30/6/V/5                                    M   T   W   T   F   S   S\n          …  0
+ 173  tovel         30/2/O/3                                    M   T   W   T   F   S   S\n         1…  0
+ 174  tovel         30/6/P/6                                    M   T   W   T   F   S   S\n          …  1
+ 175  tovel         30/2/S/4                                  None                                      0
+ 176  tovel         31/5/K/6                                    M   T   W   T   F   S   S\n          …  1
+ 177  tovel         28/6/M/2                                  None                                      0
+ 178  tovel         30/6/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 179  tovel         30/2/K/4                                  None                                      0
+ 180  tovel         30/0/N/2                                    M   T   W   T   F   S   S\n 1N  2A  3…  0
+ 181  tovel         31/2/N/2                                  None                                      0
+ 182  tovel         29/1/F/2                                  None                                      0
+ 183  tovel         28/0/T/6                                  None                                      0
+ 184  tovel         31/1/W/3                                  None                                      0
+ 185  tovel         31/6/U/4                                    M   T   W   T   F   S   S\n          …  0
+ 186  tovel         31/1/Y/6                                    M   T   W   T   F   S   S\n     1A  2…  0
+ 187  tovel         28/1/K/5                                    M   T   W   T   F   S   S\n     1K  2…  1
+ 188  tovel         30/1/X/4                                  None                                      0
+ 189  tovel         28/6/Y/2                                  None                                      0
+ 190  tovel         31/0/A/3                                  None                                      0
+ 191  tovel         28/0/U/4                                    M   T   W   T   F   S   S\n 1F  2B  3…  0
+ 192  tovel         31/5/L/2                                  None                                      0
+ 193  tovel         29/6/U/3                                  None                                      0
+ 194  tovel         31/4/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 195  tovel         30/1/I/4                                  None                                      0
+ 196  tovel         30/2/A/5                                  None                                      0
+ 197  tovel         29/4/C/5                                    M   T   W   T   F   S   S\n          …  0
+ 198  tovel         30/6/V/3                                  None                                      0
+ 199  tovel         28/0/A/4                                    M   T   W   T   F   S   S\n 1C  2D  3…  0
+ 200  tovel         30/4/Y/3                                  None                                      0
+ 201  tovel         29/0/V/2                                  None                                      0
+ 202  tovel         31/2/J/5                                  None                                      0
+ 203  tovel         30/5/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 204  tovel         30/2/O/5                                  None                                      0
+ 205  tovel         30/3/I/2                                  None                                      0
+ 206  tovel         31/6/U/6                                  None                                      0
+ 207  tovel         29/3/Y/4                                  None                                      0
+ 208  tovel         30/6/U/5                                    M   T   W   T   F   S   S\n          …  1
+ 209  tovel         30/6/X/2                                  None                                      0
+ 210  tovel         31/0/E/4                                  None                                      0
+ 211  tovel         31/0/Y/5                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+ 212  tovel         31/3/M/2                                    M   T   W   T   F   S   S\n          …  0
+ 213  tovel         31/2/F/6                                    M   T   W   T   F   S   S\n         1…  0
+ 214  tovel         28/4/X/2                                  None                                      0
+ 215  tovel         28/6/E/2                                  None                                      0
+ 216  tovel         30/1/C/6                                  None                                      0
+ 217  tovel         29/0/Z/5                                    M   T   W   T   F   S   S\n 1C  2D  3…  1
+ 218  tovel         30/4/N/6                                  None                                      0
+ 219  tovel         30/0/E/4                                  None                                      0
+ 220  tovel         31/1/I/2                                  None                                      0
+ 221  tovel         31/3/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 222  tovel         31/5/L/3                                  None                                      0
+ 223  tovel         28/3/M/4                                  None                                      0
+ 224  tovel         28/0/T/5                                  None                                      0
+ 225  tovel         31/4/X/4                                    M   T   W   T   F   S   S\n          …  0
+ 226  tovel         30/4/P/5                                  None                                      0
+ 227  tovel         30/4/K/2                                  None                                      0
+ 228  tovel         29/0/N/2                                  None                                      0
+ 229  tovel         29/1/V/4                                  None                                      0
+ 230  tovel         31/2/T/3                                  None                                      0
+ 231  tovel         29/1/Z/6                                    M   T   W   T   F   S   S\n     1Z  2…  0
+ 232  tovel         31/4/Q/5                                  None                                      0
+ 233  tovel         30/6/N/3                                  None                                      0
+ 234  tovel         31/4/O/3                                  None                                      0
+ 235  tovel         28/2/N/2                                  None                                      0
+ 236  tovel         29/0/Q/3                                    M   T   W   T   F   S   S\n 1A  2Q  3…  0
+ 237  tovel         29/1/B/3                                  None                                      0
+ 238  tovel         28/0/J/2                                    M   T   W   T   F   S   S\n 1A  2J  3…  0
+ 239  tovel         31/0/I/4                                  None                                      0
+ 240  tovel         29/6/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 241  tovel         31/3/B/4                                  None                                      0
+ 242  tovel         28/5/T/4                                    M   T   W   T   F   S   S\n          …  0
+ 243  tovel         30/6/Z/5                                    M   T   W   T   F   S   S\n          …  0
+ 244  tovel         29/4/M/5                                    M   T   W   T   F   S   S\n          …  0
+ 245  tovel         29/3/S/5                                    M   T   W   T   F   S   S\n          …  1
+ 246  tovel         30/4/N/6                                  None                                      0
+ 247  tovel         31/2/E/2                                  None                                      0
+ 248  tovel         29/5/Z/5                                  None                                      0
+ 249  tovel         29/3/B/5                                    M   T   W   T   F   S   S\n          …  0
+ 250  tovel         31/4/G/4                                    M   T   W   T   F   S   S\n          …  1
+ 251  tovel         28/3/B/5                                    M   T   W   T   F   S   S\n          …  0
+ 252  tovel         28/3/J/4                                  None                                      0
+ 253  tovel         31/0/J/2                                    M   T   W   T   F   S   S\n 1A  2J  3…  1
+ 254  tovel         29/5/W/6                                    M   T   W   T   F   S   S\n          …  1
+ 255  tovel         30/1/K/2                                  None                                      0
+ 256  tovel         31/4/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 257  tovel         29/4/M/3                                  None                                      0
+ 258  tovel         29/6/V/6                                    M   T   W   T   F   S   S\n          …  0
+ 259  tovel         28/2/E/2                                  None                                      0
+ 260  tovel         30/0/W/3                                  None                                      0
+ 261  tovel         30/6/C/3                                  None                                      0
+ 262  tovel         30/6/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 263  tovel         31/5/V/2                                  None                                      0
+ 264  tovel         31/0/S/6                                  None                                      0
+ 265  tovel         28/1/K/3                                  None                                      0
+ 266  tovel         31/0/H/6                                  None                                      0
+ 267  tovel         31/4/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 268  tovel         31/2/H/5                                  None                                      0
+ 269  tovel         30/1/Q/5                                  None                                      0
+ 270  tovel         31/1/N/4                                  None                                      0
+ 271  tovel         31/6/M/6                                  None                                      0
+ 272  tovel         29/3/T/4                                  None                                      0
+ 273  tovel         30/4/N/2                                  None                                      0
+ 274  tovel         31/3/O/2                                    M   T   W   T   F   S   S\n          …  0
+ 275  tovel         29/0/Y/4                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+ 276  tovel         31/4/W/2                                    M   T   W   T   F   S   S\n          …  0
+ 277  tovel         30/6/H/4                                    M   T   W   T   F   S   S\n          …  1
+ 278  tovel         28/3/H/2                                  None                                      0
+ 279  tovel         30/5/M/2                                    M   T   W   T   F   S   S\n          …  0
+ 280  tovel         31/0/I/6                                  None                                      0
+ 281  tovel         31/4/U/4                                    M   T   W   T   F   S   S\n          …  0
+ 282  tovel         30/0/V/5                                  None                                      0
+ 283  tovel         31/3/B/5                                    M   T   W   T   F   S   S\n          …  0
+ 284  tovel         30/5/R/5                                    M   T   W   T   F   S   S\n          …  0
+ 285  tovel         31/0/W/6                                  None                                      0
+ 286  tovel         29/6/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 287  tovel         28/6/M/4                                  None                                      0
+ 288  tovel         31/6/R/4                                    M   T   W   T   F   S   S\n          …  0
+ 289  tovel         30/4/P/5                                  None                                      0
+ 290  tovel         30/5/O/2                                    M   T   W   T   F   S   S\n          …  0
+ 291  tovel         30/0/G/2                                    M   T   W   T   F   S   S\n 1G  2B  3…  0
+ 292  tovel         30/2/W/6                                    M   T   W   T   F   S   S\n         1…  1
+ 293  tovel         31/2/Z/3                                  None                                      0
+ 294  tovel         28/3/A/4                                  None                                      0
+ 295  tovel         30/3/L/6                                    M   T   W   T   F   S   S\n          …  0
+ 296  tovel         31/5/O/2                                  None                                      0
+ 297  tovel         31/6/T/5                                    M   T   W   T   F   S   S\n          …  0
+ 298  tovel         30/3/A/6                                    M   T   W   T   F   S   S\n          …  1
+ 299  tovel         30/1/Y/4                                  None                                      0
+ 300  tovel         30/1/M/5                                  None                                      0
+ 301  tovel         28/6/T/6                                    M   T   W   T   F   S   S\n          …  0
+ 302  tovel         30/6/V/2                                  None                                      0
+ 303  tovel         28/1/E/5                                    M   T   W   T   F   S   S\n     1C  2…  0
+ 304  tovel         30/0/Q/3                                  None                                      0
+ 305  tovel         30/4/W/5                                  None                                      0
+ 306  tovel         30/0/I/6                                    M   T   W   T   F   S   S\n 1I  2C  3…  1
+ 307  tovel         31/6/W/5                                    M   T   W   T   F   S   S\n          …  0
+ 308  tovel         30/4/N/4                                  None                                      0
+ 309  tovel         31/0/K/3                                  None                                      0
+ 310  tovel         31/0/U/5                                    M   T   W   T   F   S   S\n 1U  2U  3…  0
+ 311  tovel         31/5/P/2                                  None                                      0
+ 312  tovel         28/5/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 313  tovel         31/4/W/4                                    M   T   W   T   F   S   S\n          …  0
+ 314  tovel         30/5/E/5                                    M   T   W   T   F   S   S\n          …  0
+ 315  tovel         30/6/F/3                                  None                                      0
+ 316  tovel         30/2/Z/6                                    M   T   W   T   F   S   S\n         1…  0
+ 317  tovel         31/6/F/4                                    M   T   W   T   F   S   S\n          …  0
+ 318  tovel         31/1/T/4                                  None                                      0
+ 319  tovel         31/5/V/5                                    M   T   W   T   F   S   S\n          …  1
+ 320  tovel         31/5/X/6                                    M   T   W   T   F   S   S\n          …  0
+ 321  tovel         31/2/Y/5                                  None                                      0
+ 322  tovel         30/0/J/5                                  None                                      0
+ 323  tovel         30/4/T/2                                  None                                      0
+ 324  tovel         30/1/L/2                                  None                                      0
+ 325  tovel         28/3/P/6                                    M   T   W   T   F   S   S\n          …  0
+ 326  tovel         28/5/I/5                                  None                                      0
+ 327  tovel         28/5/Q/3                                  None                                      0
+ 328  tovel         29/1/H/2                                  None                                      0
+ 329  tovel         29/3/J/2                                    M   T   W   T   F   S   S\n          …  0
+ 330  tovel         29/0/N/5                                    M   T   W   T   F   S   S\n 1A  2N  3…  0
+ 331  tovel         28/3/S/2                                  None                                      0
+ 332  tovel         30/6/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 333  tovel         29/3/O/3                                  None                                      0
+ 334  tovel         28/3/O/4                                  None                                      0
+ 335  tovel         30/5/O/5                                    M   T   W   T   F   S   S\n          …  0
+ 336  tovel         30/6/R/6                                    M   T   W   T   F   S   S\n          …  0
+ 337  tovel         30/6/R/4                                    M   T   W   T   F   S   S\n          …  0
+ 338  tovel         31/5/E/4                                  None                                      0
+ 339  tovel         31/3/C/4                                  None                                      0
+ 340  tovel         30/4/A/3                                  None                                      0
+ 341  tovel         29/3/U/6                                    M   T   W   T   F   S   S\n          …  0
+ 342  tovel         29/5/T/6                                    M   T   W   T   F   S   S\n          …  0
+ 343  tovel         30/3/T/2                                  None                                      0
+ 344  tovel         30/4/W/6                                  None                                      0
+ 345  tovel         30/3/U/2                                  None                                      0
+ 346  tovel         30/3/H/2                                  None                                      0
+ 347  tovel         30/6/U/6                                    M   T   W   T   F   S   S\n          …  0
+ 348  tovel         28/3/A/2                                  None                                      0
+ 349  tovel         30/3/T/5                                  None                                      0
+ 350  tovel         30/0/B/4                                  None                                      0
+ 351  tovel         29/5/B/2                                    M   T   W   T   F   S   S\n          …  0
+ 352  tovel         28/6/Y/4                                  None                                      0
+ 353  tovel         30/0/F/4                                  None                                      0
+ 354  tovel         28/2/Q/4                                  None                                      0
+ 355  tovel         28/1/G/6                                    M   T   W   T   F   S   S\n     1E  2…  0
+ 356  tovel         30/2/T/2                                  None                                      0
+ 357  tovel         31/6/I/4                                    M   T   W   T   F   S   S\n          …  0
+ 358  tovel         29/1/G/6                                    M   T   W   T   F   S   S\n     1G  2…  0
+ 359  tovel         30/3/P/2                                  None                                      0
+ 360  tovel         31/3/I/5                                    M   T   W   T   F   S   S\n          …  0
+ 361  tovel         29/4/E/2                                  None                                      0
+ 362  tovel         31/5/H/3                                  None                                      0
+ 363  tovel         30/5/I/5                                    M   T   W   T   F   S   S\n          …  0
+ 364  tovel         28/0/L/4                                    M   T   W   T   F   S   S\n 1L  2L  3…  0
+ 365  tovel         31/6/X/3                                  None                                      0
+ 366  tovel         30/2/J/5                                  None                                      0
+ 367  tovel         31/4/N/3                                  None                                      0
+ 368  tovel         28/6/U/3                                  None                                      0
+ 369  tovel         31/3/I/4                                  None                                      0
+ 370  tovel         30/4/K/2                                  None                                      0
+ 371  tovel         28/2/F/4                                  None                                      0
+ 372  tovel         29/4/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 373  tovel         29/4/U/2                                  None                                      0
+ 374  tovel         28/5/F/5                                  None                                      0
+ 375  tovel         28/0/P/5                                  None                                      0
+ 376  tovel         30/4/J/2                                  None                                      0
+ 377  tovel         29/4/W/5                                    M   T   W   T   F   S   S\n          …  0
+ 378  tovel         30/5/X/2                                    M   T   W   T   F   S   S\n          …  0
+ 379  tovel         29/4/Q/3                                  None                                      0
+ 380  tovel         28/0/C/2                                    M   T   W   T   F   S   S\n 1C  2C  3…  0
+ 381  tovel         30/2/S/3                                    M   T   W   T   F   S   S\n         1…  0
+ 382  tovel         28/6/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 383  tovel         31/4/H/5                                  None                                      0
+ 384  tovel         30/5/Z/2                                    M   T   W   T   F   S   S\n          …  1
+ 385  tovel         29/1/B/4                                  None                                      0
+ 386  tovel         29/2/Z/6                                    M   T   W   T   F   S   S\n         1…  0
+ 387  tovel         30/4/K/6                                  None                                      0
+ 388  tovel         28/1/I/5                                    M   T   W   T   F   S   S\n     1I  2…  0
+ 389  tovel         30/6/Z/3                                  None                                      0
+ 390  tovel         31/6/Y/3                                  None                                      0
+ 391  tovel         29/6/S/3                                  None                                      0
+ 392  tovel         30/1/K/2                                  None                                      0
+ 393  tovel         29/2/Q/2                                    M   T   W   T   F   S   S\n         1…  0
+ 394  tovel         31/3/L/3                                  None                                      0
+ 395  tovel         28/2/N/3                                  None                                      0
+ 396  tovel         31/0/B/4                                  None                                      0
+ 397  tovel         31/5/J/5                                    M   T   W   T   F   S   S\n          …  0
+ 398  tovel         31/5/V/4                                  None                                      0
+ 399  tovel         29/5/M/3                                  None                                      0
+ 400  tovel         28/0/X/2                                    M   T   W   T   F   S   S\n 1X  2C  3…  0
+ 401  tovel         31/5/W/4                                  None                                      0
+ 402  tovel         29/6/V/4                                    M   T   W   T   F   S   S\n          …  0
+ 403  tovel         28/5/D/4                                    M   T   W   T   F   S   S\n          …  0
+ 404  tovel         30/4/A/3                                  None                                      0
+ 405  tovel         31/6/O/3                                  None                                      0
+ 406  tovel         30/5/I/6                                  None                                      0
+ 407  tovel         30/5/F/3                                  None                                      0
+ 408  tovel         30/4/G/5                                  None                                      0
+ 409  tovel         30/4/M/6                                  None                                      0
+ 410  tovel         30/1/O/3                                  None                                      0
+ 411  tovel         29/4/Z/3                                  None                                      0
+ 412  tovel         30/3/C/5                                  None                                      0
+ 413  tovel         30/3/I/3                                  None                                      0
+ 414  tovel         31/2/F/6                                    M   T   W   T   F   S   S\n         1…  0
+ 415  tovel         31/3/H/5                                    M   T   W   T   F   S   S\n          …  1
+ 416  tovel         30/0/W/4                                  None                                      0
+ 417  tovel         31/4/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 418  tovel         30/5/T/6                                  None                                      0
+ 419  tovel         28/3/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 420  tovel         31/6/T/4                                    M   T   W   T   F   S   S\n          …  0
+ 421  tovel         28/5/Q/3                                  None                                      0
+ 422  tovel         29/4/G/4                                    M   T   W   T   F   S   S\n          …  0
+ 423  tovel         31/2/W/2                                  None                                      0
+ 424  tovel         31/0/M/5                                    M   T   W   T   F   S   S\n 1M  2M  3…  0
+ 425  tovel         31/2/J/3                                  None                                      0
+ 426  tovel         31/3/Q/3                                  None                                      0
+ 427  tovel         29/0/S/3                                    M   T   W   T   F   S   S\n 1S  2S  3…  0
+ 428  tovel         28/2/T/4                                  None                                      0
+ 429  tovel         31/5/N/3                                  None                                      0
+ 430  tovel         31/0/J/4                                  None                                      0
+ 431  tovel         30/2/F/5                                  None                                      0
+ 432  tovel         30/0/G/4                                  None                                      0
+ 433  tovel         29/0/K/4                                    M   T   W   T   F   S   S\n 1D  2K  3…  0
+ 434  tovel         28/1/B/2                                  None                                      0
+ 435  tovel         31/5/U/2                                  None                                      0
+ 436  tovel         28/0/Y/2                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+ 437  tovel         30/0/M/5                                  None                                      0
+ 438  tovel         30/3/G/4                                  None                                      0
+ 439  tovel         29/5/A/3                                  None                                      0
+ 440  tovel         28/5/J/4                                    M   T   W   T   F   S   S\n          …  0
+ 441  tovel         30/0/N/2                                    M   T   W   T   F   S   S\n 1C  2N  3…  0
+ 442  tovel         30/3/Y/4                                  None                                      0
+ 443  tovel         30/0/N/3                                  None                                      0
+ 444  tovel         30/2/F/6                                    M   T   W   T   F   S   S\n         1…  0
+ 445  tovel         28/2/X/6                                    M   T   W   T   F   S   S\n         1…  0
+ 446  tovel         29/4/U/5                                    M   T   W   T   F   S   S\n          …  0
+ 447  tovel         31/4/T/4                                    M   T   W   T   F   S   S\n          …  0
+ 448  tovel         28/6/M/6                                    M   T   W   T   F   S   S\n          …  0
+ 449  tovel         28/1/U/6                                    M   T   W   T   F   S   S\n     1U  2…  0
+ 450  tovel         29/4/S/2                                  None                                      0
+ 451  tovel         29/6/O/6                                    M   T   W   T   F   S   S\n          …  0
+ 452  tovel         31/5/X/6                                    M   T   W   T   F   S   S\n          …  0
+ 453  tovel         30/0/Q/3                                  None                                      0
+ 454  tovel         30/4/A/3                                  None                                      0
+ 455  tovel         31/2/M/3                                  None                                      0
+ 456  tovel         31/1/U/6                                    M   T   W   T   F   S   S\n     1U  2…  0
+ 457  tovel         28/4/I/2                                  None                                      0
+ 458  tovel         29/5/P/6                                    M   T   W   T   F   S   S\n          …  1
+ 459  tovel         30/1/N/4                                  None                                      0
+ 460  tovel         28/5/T/4                                    M   T   W   T   F   S   S\n          …  0
+ 461  tovel         29/3/F/5                                    M   T   W   T   F   S   S\n          …  0
+ 462  tovel         28/3/P/3                                  None                                      0
+ 463  tovel         28/5/L/2                                    M   T   W   T   F   S   S\n          …  0
+ 464  tovel         28/6/D/5                                    M   T   W   T   F   S   S\n          …  0
+ 465  tovel         28/4/X/6                                    M   T   W   T   F   S   S\n          …  1
+ 466  tovel         30/4/O/6                                  None                                      0
+ 467  tovel         31/1/B/4                                  None                                      0
+ 468  tovel         30/1/H/6                                  None                                      0
+ 469  tovel         29/5/Y/3                                  None                                      0
+ 470  tovel         31/3/X/4                                  None                                      0
+ 471  tovel         31/1/H/5                                  None                                      0
+ 472  tovel         31/4/Y/2                                    M   T   W   T   F   S   S\n          …  0
+ 473  tovel         30/3/W/6                                    M   T   W   T   F   S   S\n          …  0
+ 474  tovel         30/5/Z/5                                    M   T   W   T   F   S   S\n          …  0
+ 475  tovel         28/5/X/5                                  None                                      0
+ 476  tovel         29/6/F/3                                  None                                      0
+ 477  tovel         29/4/D/2                                  None                                      0
+ 478  tovel         30/6/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 479  tovel         28/5/V/2                                    M   T   W   T   F   S   S\n          …  0
+ 480  tovel         31/2/I/4                                  None                                      0
+ 481  tovel         30/0/V/6                                    M   T   W   T   F   S   S\n 1V  2V  3…  0
+ 482  tovel         31/5/A/2                                  None                                      0
+ 483  tovel         29/6/J/6                                    M   T   W   T   F   S   S\n          …  0
+ 484  tovel         30/3/X/4                                  None                                      0
+ 485  tovel         28/4/G/4                                    M   T   W   T   F   S   S\n          …  0
+ 486  tovel         31/2/C/4                                  None                                      0
+ 487  tovel         31/5/C/3                                  None                                      0
+ 488  tovel         31/3/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 489  tovel         30/2/R/5                                  None                                      0
+ 490  tovel         30/6/N/4                                    M   T   W   T   F   S   S\n          …  0
+ 491  tovel         30/0/F/6                                    M   T   W   T   F   S   S\n 1F  2F  3…  0
+ 492  tovel         28/6/F/3                                  None                                      0
+ 493  tovel         30/3/K/2                                  None                                      0
+ 494  tovel         30/0/W/6                                    M   T   W   T   F   S   S\n 1W  2W  3…  1
+ 495  tovel         28/1/Y/6                                    M   T   W   T   F   S   S\n     1Y  2…  0
+ 496  tovel         30/2/I/6                                    M   T   W   T   F   S   S\n         1…  1
+ 497  tovel         31/6/D/4                                    M   T   W   T   F   S   S\n          …  0
+ 498  tovel         28/2/N/2                                  None                                      0
+ 499  tovel         30/6/P/4                                    M   T   W   T   F   S   S\n          …  0
+ 500  tovel         30/6/N/4                                    M   T   W   T   F   S   S\n          …  0
+ 501  tovel         31/5/A/6                                    M   T   W   T   F   S   S\n          …  0
+ 502  tovel         30/6/K/4                                    M   T   W   T   F   S   S\n          …  0
+ 503  tovel         28/4/Q/2                                  None                                      0
+ 504  tovel         31/2/H/6                                    M   T   W   T   F   S   S\n         1…  0
+ 505  tovel         29/3/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 506  tovel         30/3/A/6                                    M   T   W   T   F   S   S\n          …  0
+ 507  tovel         31/3/W/5                                    M   T   W   T   F   S   S\n          …  0
+ 508  tovel         30/5/N/5                                    M   T   W   T   F   S   S\n          …  0
+ 509  tovel         31/4/S/4                                    M   T   W   T   F   S   S\n          …  0
+ 510  tovel         30/4/P/5                                  None                                      0
+ 511  tovel         31/0/B/4                                  None                                      0
+ 512  tovel         30/5/Q/6                                  None                                      0
+ 513  tovel         31/3/Q/5                                    M   T   W   T   F   S   S\n          …  0
+ 514  tovel         31/4/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 515  tovel         29/5/S/4                                  None                                      0
+ 516  tovel         28/1/W/4                                  None                                      0
+ 517  tovel         30/0/Q/5                                  None                                      0
+ 518  tovel         28/3/J/2                                  None                                      0
+ 519  tovel         30/6/S/5                                    M   T   W   T   F   S   S\n          …  0
+ 520  tovel         30/5/L/2                                    M   T   W   T   F   S   S\n          …  0
+ 521  tovel         31/6/L/6                                  None                                      0
+ 522  tovel         28/4/Q/3                                    M   T   W   T   F   S   S\n          …  0
+ 523  tovel         28/6/U/5                                    M   T   W   T   F   S   S\n          …  0
+ 524  tovel         30/4/Z/5                                  None                                      0
+ 525  tovel         28/6/G/6                                    M   T   W   T   F   S   S\n          …  0
+ 526  tovel         31/6/T/4                                    M   T   W   T   F   S   S\n          …  0
+ 527  tovel         30/3/U/4                                  None                                      0
+ 528  tovel         30/5/C/4                                  None                                      0
+ 529  tovel         29/6/D/6                                    M   T   W   T   F   S   S\n          …  1
+ 530  tovel         29/2/L/5                                    M   T   W   T   F   S   S\n         1…  0
+ 531  tovel         31/2/Y/4                                  None                                      0
+ 532  tovel         30/6/V/6                                    M   T   W   T   F   S   S\n          …  1
+ 533  tovel         28/0/Y/5                                  None                                      0
+ 534  tovel         30/6/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 535  tovel         31/1/N/5                                  None                                      0
+ 536  tovel         30/3/I/6                                    M   T   W   T   F   S   S\n          …  0
+ 537  tovel         31/1/S/2                                  None                                      0
+ 538  tovel         30/2/D/4                                  None                                      0
+ 539  tovel         31/1/H/5                                  None                                      0
+ 540  tovel         31/6/F/5                                    M   T   W   T   F   S   S\n          …  1
+ 541  tovel         28/0/H/5                                  None                                      0
+ 542  tovel         31/0/W/5                                    M   T   W   T   F   S   S\n 1B  2A  3…  0
+ 543  tovel         28/6/P/4                                  None                                      0
+ 544  tovel         28/1/R/5                                    M   T   W   T   F   S   S\n     1E  2…  0
+ 545  tovel         29/2/I/4                                  None                                      0
+ 546  tovel         31/4/C/6                                    M   T   W   T   F   S   S\n          …  0
+ 547  tovel         30/0/E/3                                  None                                      0
+ 548  tovel         29/4/B/6                                    M   T   W   T   F   S   S\n          …  0
+ 549  tovel         31/4/P/5                                  None                                      0
+ 550  tovel         30/3/W/4                                  None                                      0
+ 551  tovel         28/5/Y/3                                  None                                      0
+ 552  tovel         30/1/D/6                                  None                                      0
+ 553  tovel         28/6/N/5                                    M   T   W   T   F   S   S\n          …  0
+ 554  tovel         31/1/X/5                                  None                                      0
+ 555  tovel         29/4/B/2                                  None                                      0
+ 556  tovel         29/6/K/6                                    M   T   W   T   F   S   S\n          …  0
+ 557  tovel         30/4/X/6                                  None                                      0
+ 558  tovel         30/5/A/2                                    M   T   W   T   F   S   S\n          …  0
+ 559  tovel         29/1/H/4                                  None                                      0
+ 560  tovel         31/4/B/4                                    M   T   W   T   F   S   S\n          …  0
+ 561  tovel         29/2/G/2                                    M   T   W   T   F   S   S\n         1…  1
+ 562  tovel         31/0/V/6                                  None                                      0
+ 563  tovel         30/3/P/2                                  None                                      0
+ 564  tovel         30/5/Q/5                                    M   T   W   T   F   S   S\n          …  0
+ 565  tovel         28/2/A/5                                    M   T   W   T   F   S   S\n         1…  0
+ 566  tovel         28/3/A/3                                  None                                      0
+ 567  tovel         28/5/R/6                                    M   T   W   T   F   S   S\n          …  0
+ 568  tovel         28/6/C/2                                  None                                      0
+ 569  tovel         28/5/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 570  tovel         30/4/V/6                                  None                                      0
+ 571  tovel         31/0/O/6                                  None                                      0
+ 572  tovel         28/5/B/3                                  None                                      0
+ 573  tovel         29/3/F/2                                    M   T   W   T   F   S   S\n          …  0
+ 574  tovel         29/2/G/2                                    M   T   W   T   F   S   S\n         1…  0
+ 575  tovel         28/4/S/6                                    M   T   W   T   F   S   S\n          …  0
+ 576  tovel         31/3/U/4                                  None                                      0
+ 577  tovel         30/1/E/5                                  None                                      0
+ 578  tovel         31/4/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 579  tovel         30/6/W/6                                    M   T   W   T   F   S   S\n          …  0
+ 580  tovel         31/5/A/5                                    M   T   W   T   F   S   S\n          …  0
+ 581  tovel         29/6/V/2                                    M   T   W   T   F   S   S\n          …  0
+ 582  tovel         31/6/O/3                                  None                                      0
+ 583  tovel         28/0/U/5                                  None                                      0
+ 584  tovel         31/4/M/5                                  None                                      0
+ 585  tovel         28/5/M/4                                    M   T   W   T   F   S   S\n          …  0
+ 586  tovel         30/0/S/6                                    M   T   W   T   F   S   S\n 1S  2S  3…  0
+ 587  tovel         30/1/T/5                                  None                                      0
+ 588  tovel         31/4/T/5                                  None                                      0
+ 589  tovel         29/6/Z/6                                    M   T   W   T   F   S   S\n          …  0
+ 590  tovel         31/5/Q/6                                    M   T   W   T   F   S   S\n          …  0
+ 591  tovel         30/5/I/5                                    M   T   W   T   F   S   S\n          …  1
+ 592  tovel         28/2/Z/2                                  None                                      0
+ 593  tovel         29/4/Z/4                                    M   T   W   T   F   S   S\n          …  0
+ 594  tovel         31/1/A/2                                  None                                      0
+ 595  tovel         31/4/R/4                                    M   T   W   T   F   S   S\n          …  0
+ 596  tovel         30/3/E/4                                  None                                      0
+ 597  tovel         30/5/K/3                                  None                                      0
+ 598  tovel         30/6/X/3                                  None                                      0
+ 599  tovel         29/2/H/5                                    M   T   W   T   F   S   S\n         1…  0
+ 600  tovel         29/2/T/4                                  None                                      0
+ 601  tovel         28/6/D/6                                    M   T   W   T   F   S   S\n          …  0
+ 602  tovel         28/6/K/5                                    M   T   W   T   F   S   S\n          …  0
+ 603  tovel         31/0/O/2                                    M   T   W   T   F   S   S\n 1O  2O  3…  0
+ 604  tovel         30/5/J/3                                  None                                      0
+ 605  tovel         31/0/V/5                                    M   T   W   T   F   S   S\n 1V  2D  3…  0
+ 606  tovel         31/0/K/4                                  None                                      0
+ 607  tovel         30/6/R/6                                    M   T   W   T   F   S   S\n          …  0
+ 608  tovel         31/2/C/3                                  None                                      0
+ 609  tovel         31/1/O/3                                  None                                      0
+ 610  tovel         28/4/G/5                                    M   T   W   T   F   S   S\n          …  0
+ 611  tovel         30/3/P/5                                  None                                      0
+ 612  tovel         29/3/S/2                                    M   T   W   T   F   S   S\n          …  0
+ 613  tovel         30/5/E/4                                  None                                      0
+ 614  tovel         31/4/U/5                                  None                                      0
+ 615  tovel         30/1/O/3                                  None                                      0
+ 616  tovel         31/5/J/4                                  None                                      0
+ 617  tovel         31/2/Q/6                                    M   T   W   T   F   S   S\n         1…  1
+ 618  tovel         31/0/T/2                                    M   T   W   T   F   S   S\n 1A  2T  3…  0
+ 619  tovel         31/0/Y/6                                  None                                      0
+ 620  tovel         31/6/H/6                                  None                                      0
+ 621  tovel         31/4/J/5                                  None                                      0
+ 622  tovel         31/6/K/5                                    M   T   W   T   F   S   S\n          …  0
+ 623  tovel         30/5/E/2                                    M   T   W   T   F   S   S\n          …  0
+ 624  tovel         31/6/J/5                                    M   T   W   T   F   S   S\n          …  1
+ 625  tovel         29/2/M/6                                    M   T   W   T   F   S   S\n         1…  0
+ 626  tovel         30/3/X/5                                  None                                      0
+ 627  tovel         29/0/Y/5                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+ 628  tovel         30/4/J/6                                  None                                      0
+ 629  tovel         31/4/Y/5                                  None                                      0
+ 630  tovel         28/3/Z/5                                    M   T   W   T   F   S   S\n          …  0
+ 631  tovel         30/1/M/5                                  None                                      0
+ 632  tovel         31/2/I/2                                  None                                      0
+ 633  tovel         31/3/D/2                                    M   T   W   T   F   S   S\n          …  0
+ 634  tovel         30/3/B/5                                  None                                      0
+ 635  tovel         30/5/I/4                                  None                                      0
+ 636  tovel         31/1/J/4                                  None                                      0
+ 637  tovel         30/0/L/6                                    M   T   W   T   F   S   S\n 1L  2L  3…  0
+ 638  tovel         31/3/Q/2                                    M   T   W   T   F   S   S\n          …  0
+ 639  tovel         31/2/E/2                                  None                                      0
+ 640  tovel         31/5/C/5                                    M   T   W   T   F   S   S\n          …  0
+ 641  tovel         29/3/A/4                                  None                                      0
+ 642  tovel         28/2/H/4                                  None                                      0
+ 643  tovel         31/2/N/3                                  None                                      0
+ 644  tovel         31/2/V/3                                  None                                      0
+ 645  tovel         31/4/V/4                                    M   T   W   T   F   S   S\n          …  0
+ 646  tovel         30/0/Z/4                                  None                                      0
+ 647  tovel         30/2/T/2                                  None                                      0
+ 648  tovel         29/0/W/5                                    M   T   W   T   F   S   S\n 1W  2C  3…  0
+ 649  tovel         30/6/H/4                                    M   T   W   T   F   S   S\n          …  0
+ 650  tovel         30/4/Z/3                                  None                                      0
+ 651  tovel         29/3/Q/5                                    M   T   W   T   F   S   S\n          …  0
+ 652  tovel         30/1/U/3                                  None                                      0
+ 653  tovel         31/5/Q/4                                  None                                      0
+ 654  tovel         30/0/V/4                                  None                                      0
+ 655  tovel         28/3/F/6                                    M   T   W   T   F   S   S\n          …  0
+ 656  tovel         31/0/C/4                                  None                                      0
+ 657  tovel         28/4/L/3                                    M   T   W   T   F   S   S\n          …  0
+ 658  tovel         30/1/C/4                                  None                                      0
+ 659  tovel         31/5/U/4                                  None                                      0
+ 660  tovel         31/6/B/2                                  None                                      0
+ 661  tovel         28/5/P/5                                  None                                      0
+ 662  tovel         31/6/P/6                                  None                                      0
+ 663  tovel         31/6/T/3                                  None                                      0
+ 664  tovel         31/4/Q/3                                  None                                      0
+ 665  tovel         30/2/E/6                                    M   T   W   T   F   S   S\n         1…  0
+ 666  tovel         30/4/E/3                                  None                                      0
+ 667  tovel         31/2/P/3                                  None                                      0
+ 668  tovel         30/3/U/4                                  None                                      0
+ 669  tovel         31/5/N/3                                  None                                      0
+ 670  tovel         31/1/T/2                                  None                                      0
+ 671  tovel         31/6/L/2                                  None                                      0
+ 672  tovel         31/4/O/4                                    M   T   W   T   F   S   S\n          …  0
+ 673  tovel         31/1/A/5                                  None                                      0
+ 674  tovel         30/1/N/5                                  None                                      0
+ 675  tovel         30/3/H/2                                  None                                      0
+ 676  tovel         30/5/O/3                                  None                                      0
+ 677  tovel         30/4/W/5                                  None                                      0
+ 678  tovel         30/3/X/5                                  None                                      0
+ 679  tovel         30/2/E/4                                  None                                      0
+ 680  tovel         31/4/N/5                                  None                                      0
+ 681  tovel         29/4/I/3                                  None                                      0
+ 682  tovel         30/4/K/3                                  None                                      0
+ 683  tovel         30/2/F/2                                  None                                      0
+ 684  tovel         30/4/E/5                                  None                                      0
+ 685  tovel         30/2/D/6                                    M   T   W   T   F   S   S\n         1…  0
+ 686  tovel         31/5/M/3                                  None                                      0
+ 687  tovel         29/2/H/5                                    M   T   W   T   F   S   S\n         1…  1
+ 688  tovel         28/3/R/3                                  None                                      0
+ 689  tovel         31/6/W/6                                  None                                      0
+ 690  tovel         31/4/N/2                                    M   T   W   T   F   S   S\n          …  0
+ 691  tovel         29/6/Q/4                                    M   T   W   T   F   S   S\n          …  0
+ 692  tovel         31/1/C/4                                  None                                      0
+ 693  tovel         28/4/A/4                                    M   T   W   T   F   S   S\n          …  1
+ 694  tovel         31/2/R/5                                  None                                      0
+ 695  tovel         28/3/Q/5                                    M   T   W   T   F   S   S\n          …  1
+ 696  tovel         28/6/P/5                                    M   T   W   T   F   S   S\n          …  0
+ 697  tovel         30/3/R/2                                  None                                      0
+ 698  tovel         30/3/U/5                                  None                                      0
+ 699  tovel         31/4/I/3                                  None                                      0
+ 700  tovel         30/1/I/3                                  None                                      0
+ 701  tovel         30/5/R/2                                    M   T   W   T   F   S   S\n          …  0
+ 702  tovel         30/5/W/6                                  None                                      0
+ 703  tovel         31/4/Y/6                                    M   T   W   T   F   S   S\n          …  0
+ 704  tovel         28/5/B/2                                    M   T   W   T   F   S   S\n          …  0
+ 705  tovel         28/1/C/2                                  None                                      0
+ 706  tovel         31/0/N/6                                  None                                      0
+ 707  tovel         30/4/F/4                                  None                                      0
+ 708  tovel         30/0/R/6                                    M   T   W   T   F   S   S\n 1C  2F  3…  0
+ 709  tovel         28/5/U/2                                    M   T   W   T   F   S   S\n          …  0
+ 710  tovel         31/6/P/5                                    M   T   W   T   F   S   S\n          …  1
+ 711  tovel         31/6/Q/5                                    M   T   W   T   F   S   S\n          …  0
+ 712  tovel         30/1/J/2                                  None                                      0
+ 713  tovel         29/0/M/5                                    M   T   W   T   F   S   S\n 1M  2E  3…  0
+ 714  tovel         31/0/E/2                                    M   T   W   T   F   S   S\n 1E  2F  3…  0
+ 715  tovel         28/3/D/2                                  None                                      0
+
+per-name tally this round
+name             presented correct  hit-rate
+tovel                  716      39      5.4%

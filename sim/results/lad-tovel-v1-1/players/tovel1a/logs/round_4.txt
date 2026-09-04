@@ -1,0 +1,538 @@
+Centaur Zendo round 4 (training)
+round_id : 2187c3648345455f8947826c1e9b8069
+written  : 2026-09-04 12:29:38Z
+presented=526  answered=473  correct=36  skipped=53
+client answer latency: mean 0.138 ms  median 0.132 ms  max 0.964 ms  (n=527)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  tovel         29/4/W/2                                  None                                      0
+   1  tovel         30/5/E/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+   2  tovel         28/2/X/5                                   MO  TU  WE  TH  FR  SA  SU\n         1…  0
+   3  tovel         30/4/U/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+   4  tovel         28/2/U/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+   5  tovel         31/1/D/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1J  2…  0
+   6  tovel         30/5/J/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+   7  tovel         29/2/B/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+   8  tovel         31/0/N/4                                   MO  TU  WE  TH  FR  SA  SU\n 1N  2N  3…  0
+   9  tovel         28/4/O/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+  10  tovel         31/3/W/5                                  None                                      0
+  11  tovel         30/4/J/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  12  tovel         30/3/E/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  13  tovel         28/4/N/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  14  tovel         31/1/R/6                                  MON TUE WED THU FRI SAT SUN\n     1R  2…  1
+  15  tovel         31/5/N/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  16  tovel         30/1/V/4                                  Mon Tue Wed Thu Fri Sat Sun\n     1G  2…  0
+  17  tovel         30/3/N/3                                    M   T   W   T   F   S   S\n          …  0
+  18  tovel         30/1/E/6                                  MON TUE WED THU FRI SAT SUN\n     1E  2…  0
+  19  tovel         31/6/G/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+  20  tovel         28/3/E/5                                  None                                      0
+  21  tovel         28/3/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  22  tovel         31/1/W/5                                  mon tue wed thu fri sat sun\n     1W  2…  0
+  23  tovel         28/5/G/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  24  tovel         30/2/P/4                                  mon tue wed thu fri sat sun\n         1…  1
+  25  tovel         28/2/S/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+  26  tovel         28/1/Q/5                                  mon tue wed thu fri sat sun\n     1U  2…  0
+  27  tovel         31/2/F/5                                  mon tue wed thu fri sat sun\n         1…  0
+  28  tovel         28/6/E/3                                    M   T   W   T   F   S   S\n          …  0
+  29  tovel         28/4/M/3                                    M   T   W   T   F   S   S\n          …  0
+  30  tovel         29/0/D/5                                  None                                      0
+  31  tovel         30/3/Q/3                                    M   T   W   T   F   S   S\n          …  1
+  32  tovel         30/2/H/5                                   mo  tu  we  th  fr  sa  su\n         1…  0
+  33  tovel         28/0/Z/5                                   mo  tu  we  th  fr  sa  su\n 1Z  2Z  3…  0
+  34  tovel         31/4/W/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  35  tovel         31/3/W/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  36  tovel         31/0/F/5                                   mo  tu  we  th  fr  sa  su\n 1Q  2Q  3…  0
+  37  tovel         30/4/B/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+  38  tovel         28/0/K/4                                   mo  tu  we  th  fr  sa  su\n 1K  2K  3…  0
+  39  tovel         29/2/V/5                                   mo  tu  we  th  fr  sa  su\n         1…  0
+  40  tovel         29/2/H/6                                  None                                      0
+  41  tovel         29/5/D/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+  42  tovel         31/0/V/6                                  MON TUE WED THU FRI SAT SUN\n 1C  2V  3…  0
+  43  tovel         28/4/Q/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+  44  tovel         28/3/U/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+  45  tovel         28/0/D/5                                   MO  TU  WE  TH  FR  SA  SU\n 1D  2N  3…  0
+  46  tovel         31/5/H/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+  47  tovel         29/1/H/5                                   MO  TU  WE  TH  FR  SA  SU\n     1C  2…  0
+  48  tovel         29/4/G/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  49  tovel         29/2/F/4                                   MO  TU  WE  TH  FR  SA  SU\n         1…  0
+  50  tovel         30/3/S/6                                  None                                      0
+  51  tovel         31/2/H/3                                    M   T   W   T   F   S   S\n         1…  0
+  52  tovel         29/0/E/3                                    M   T   W   T   F   S   S\n 1W  2E  3…  0
+  53  tovel         31/0/F/6                                  MON TUE WED THU FRI SAT SUN\n 1F  2K  3…  0
+  54  tovel         31/2/Q/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+  55  tovel         31/4/V/3                                    M   T   W   T   F   S   S\n          …  0
+  56  tovel         31/3/R/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  57  tovel         30/1/K/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1R  2…  0
+  58  tovel         30/2/Z/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+  59  tovel         29/3/Y/3                                    M   T   W   T   F   S   S\n          …  0
+  60  tovel         29/1/B/6                                  None                                      0
+  61  tovel         29/4/H/4                                  mon tue wed thu fri sat sun\n          …  0
+  62  tovel         31/6/A/3                                    M   T   W   T   F   S   S\n          …  0
+  63  tovel         31/4/B/3                                    M   T   W   T   F   S   S\n          …  1
+  64  tovel         28/5/J/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  65  tovel         28/4/F/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  66  tovel         30/3/K/4                                  mon tue wed thu fri sat sun\n          …  0
+  67  tovel         28/1/C/3                                    M   T   W   T   F   S   S\n     1K  2…  0
+  68  tovel         30/2/F/5                                  mon tue wed thu fri sat sun\n         1…  0
+  69  tovel         29/5/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  70  tovel         30/3/U/4                                  None                                      0
+  71  tovel         30/3/J/3                                    M   T   W   T   F   S   S\n          …  0
+  72  tovel         30/1/P/5                                   mo  tu  we  th  fr  sa  su\n     1P  2…  0
+  73  tovel         29/2/E/3                                    M   T   W   T   F   S   S\n         1…  1
+  74  tovel         30/2/X/4                                   mo  tu  we  th  fr  sa  su\n         1…  0
+  75  tovel         31/4/X/3                                    M   T   W   T   F   S   S\n          …  0
+  76  tovel         30/5/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  77  tovel         31/3/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  78  tovel         30/6/O/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  79  tovel         29/4/R/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+  80  tovel         28/4/E/6                                  None                                      0
+  81  tovel         30/1/D/6                                  MON TUE WED THU FRI SAT SUN\n     1Q  2…  0
+  82  tovel         29/5/X/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  83  tovel         30/1/O/3                                    M   T   W   T   F   S   S\n     1O  2…  0
+  84  tovel         31/0/A/5                                   MO  TU  WE  TH  FR  SA  SU\n 1A  2R  3…  0
+  85  tovel         28/1/D/5                                   MO  TU  WE  TH  FR  SA  SU\n     1Y  2…  0
+  86  tovel         28/4/A/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  87  tovel         29/5/L/3                                    M   T   W   T   F   S   S\n          …  0
+  88  tovel         30/0/D/6                                  MON TUE WED THU FRI SAT SUN\n 1D  2D  3…  0
+  89  tovel         28/1/J/6                                  MON TUE WED THU FRI SAT SUN\n     1J  2…  0
+  90  tovel         28/4/Z/5                                  None                                      0
+  91  tovel         30/1/H/5                                  Mon Tue Wed Thu Fri Sat Sun\n     1H  2…  0
+  92  tovel         29/1/T/4                                  Mon Tue Wed Thu Fri Sat Sun\n     1Y  2…  0
+  93  tovel         29/3/R/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  94  tovel         30/1/F/6                                  MON TUE WED THU FRI SAT SUN\n     1F  2…  0
+  95  tovel         31/5/G/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+  96  tovel         29/3/B/3                                    M   T   W   T   F   S   S\n          …  0
+  97  tovel         31/6/P/3                                    M   T   W   T   F   S   S\n          …  0
+  98  tovel         31/5/X/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+  99  tovel         30/1/O/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1L  2…  1
+ 100  tovel         29/0/Z/3                                  None                                      0
+ 101  tovel         31/6/D/5                                  mon tue wed thu fri sat sun\n          …  0
+ 102  tovel         31/5/J/3                                    M   T   W   T   F   S   S\n          …  0
+ 103  tovel         30/4/E/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 104  tovel         31/4/A/5                                  mon tue wed thu fri sat sun\n          …  0
+ 105  tovel         31/2/W/3                                    M   T   W   T   F   S   S\n         1…  1
+ 106  tovel         28/3/M/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 107  tovel         28/0/K/4                                  mon tue wed thu fri sat sun\n 1D  2Y  3…  0
+ 108  tovel         30/4/B/3                                    M   T   W   T   F   S   S\n          …  0
+ 109  tovel         30/6/W/3                                    M   T   W   T   F   S   S\n          …  0
+ 110  tovel         30/4/U/2                                  None                                      0
+ 111  tovel         30/6/K/3                                    M   T   W   T   F   S   S\n          …  0
+ 112  tovel         31/6/Q/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 113  tovel         29/3/F/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 114  tovel         31/0/Y/6                                  MON TUE WED THU FRI SAT SUN\n 1Y  2G  3…  0
+ 115  tovel         30/4/B/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 116  tovel         30/5/P/3                                    M   T   W   T   F   S   S\n          …  0
+ 117  tovel         29/1/M/3                                    M   T   W   T   F   S   S\n     1P  2…  0
+ 118  tovel         31/3/X/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 119  tovel         29/4/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 120  tovel         31/0/J/6                                  None                                      0
+ 121  tovel         30/2/S/3                                    M   T   W   T   F   S   S\n         1…  0
+ 122  tovel         28/5/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 123  tovel         28/3/L/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 124  tovel         31/6/V/3                                    M   T   W   T   F   S   S\n          …  1
+ 125  tovel         30/0/S/5                                   MO  TU  WE  TH  FR  SA  SU\n 1C  2D  3…  0
+ 126  tovel         30/0/M/4                                   MO  TU  WE  TH  FR  SA  SU\n 1M  2M  3…  1
+ 127  tovel         31/5/H/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 128  tovel         31/6/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 129  tovel         31/5/H/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 130  tovel         28/4/K/5                                  None                                      0
+ 131  tovel         30/4/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 132  tovel         29/3/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 133  tovel         31/5/Q/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 134  tovel         31/2/E/5                                  Mon Tue Wed Thu Fri Sat Sun\n         1…  0
+ 135  tovel         28/6/E/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 136  tovel         29/4/N/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 137  tovel         31/4/L/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 138  tovel         29/2/B/3                                    M   T   W   T   F   S   S\n         1…  0
+ 139  tovel         30/2/Q/3                                    M   T   W   T   F   S   S\n         1…  0
+ 140  tovel         31/1/T/5                                  None                                      0
+ 141  tovel         30/2/J/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 142  tovel         29/2/F/4                                  mon tue wed thu fri sat sun\n         1…  0
+ 143  tovel         31/4/L/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 144  tovel         31/3/D/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 145  tovel         30/5/D/5                                  mon tue wed thu fri sat sun\n          …  0
+ 146  tovel         30/6/J/4                                  mon tue wed thu fri sat sun\n          …  0
+ 147  tovel         29/4/K/4                                  mon tue wed thu fri sat sun\n          …  0
+ 148  tovel         30/3/W/5                                  mon tue wed thu fri sat sun\n          …  0
+ 149  tovel         31/2/A/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 150  tovel         30/0/C/2                                  None                                      0
+ 151  tovel         29/3/H/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 152  tovel         30/4/Z/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 153  tovel         30/1/M/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1M  2…  0
+ 154  tovel         31/5/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 155  tovel         31/4/G/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 156  tovel         30/1/Z/6                                  MON TUE WED THU FRI SAT SUN\n     1Y  2…  0
+ 157  tovel         31/6/M/3                                    M   T   W   T   F   S   S\n          …  0
+ 158  tovel         30/3/J/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 159  tovel         31/0/Q/4                                   mo  tu  we  th  fr  sa  su\n 1Q  2B  3…  0
+ 160  tovel         30/4/E/5                                  None                                      0
+ 161  tovel         30/2/E/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 162  tovel         29/3/P/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 163  tovel         31/5/J/3                                    M   T   W   T   F   S   S\n          …  0
+ 164  tovel         30/2/R/3                                    M   T   W   T   F   S   S\n         1…  1
+ 165  tovel         30/6/F/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 166  tovel         30/1/W/6                                  MON TUE WED THU FRI SAT SUN\n     1W  2…  0
+ 167  tovel         29/1/J/4                                   MO  TU  WE  TH  FR  SA  SU\n     1J  2…  0
+ 168  tovel         30/0/R/6                                  MON TUE WED THU FRI SAT SUN\n 1R  2R  3…  0
+ 169  tovel         30/5/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 170  tovel         30/0/F/5                                  None                                      0
+ 171  tovel         29/2/N/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 172  tovel         28/2/E/3                                    M   T   W   T   F   S   S\n         1…  0
+ 173  tovel         28/1/B/5                                  Mon Tue Wed Thu Fri Sat Sun\n     1E  2…  0
+ 174  tovel         31/5/D/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 175  tovel         30/5/L/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 176  tovel         29/0/B/5                                  Mon Tue Wed Thu Fri Sat Sun\n 1M  2M  3…  0
+ 177  tovel         28/1/H/6                                  MON TUE WED THU FRI SAT SUN\n     1N  2…  0
+ 178  tovel         30/4/O/3                                    M   T   W   T   F   S   S\n          …  0
+ 179  tovel         31/6/Z/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 180  tovel         30/4/H/5                                  None                                      0
+ 181  tovel         31/5/T/4                                  mon tue wed thu fri sat sun\n          …  0
+ 182  tovel         30/5/D/5                                  mon tue wed thu fri sat sun\n          …  0
+ 183  tovel         30/3/G/5                                  mon tue wed thu fri sat sun\n          …  0
+ 184  tovel         30/2/B/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 185  tovel         30/0/O/4                                  mon tue wed thu fri sat sun\n 1H  2H  3…  0
+ 186  tovel         31/1/E/4                                  mon tue wed thu fri sat sun\n     1F  2…  0
+ 187  tovel         30/6/K/4                                  mon tue wed thu fri sat sun\n          …  0
+ 188  tovel         28/0/K/5                                  mon tue wed thu fri sat sun\n 1K  2K  3…  0
+ 189  tovel         31/3/W/4                                  mon tue wed thu fri sat sun\n          …  0
+ 190  tovel         29/4/X/6                                  None                                      0
+ 191  tovel         30/0/U/3                                    M   T   W   T   F   S   S\n 1U  2L  3…  0
+ 192  tovel         31/0/Z/4                                   mo  tu  we  th  fr  sa  su\n 1V  2Z  3…  0
+ 193  tovel         28/0/J/6                                  MON TUE WED THU FRI SAT SUN\n 1J  2W  3…  0
+ 194  tovel         30/3/P/3                                    M   T   W   T   F   S   S\n          …  0
+ 195  tovel         30/5/Q/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 196  tovel         30/2/I/3                                    M   T   W   T   F   S   S\n         1…  0
+ 197  tovel         31/2/F/4                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 198  tovel         28/4/C/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 199  tovel         29/6/Q/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 200  tovel         31/4/P/4                                  None                                      0
+ 201  tovel         30/1/Q/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1F  2…  0
+ 202  tovel         31/3/Q/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 203  tovel         28/6/Z/3                                    M   T   W   T   F   S   S\n          …  0
+ 204  tovel         28/3/W/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 205  tovel         30/4/H/3                                    M   T   W   T   F   S   S\n          …  0
+ 206  tovel         30/0/X/3                                    M   T   W   T   F   S   S\n 1I  2V  3…  1
+ 207  tovel         31/1/U/3                                    M   T   W   T   F   S   S\n     1G  2…  0
+ 208  tovel         30/2/E/4                                   MO  TU  WE  TH  FR  SA  SU\n         1…  0
+ 209  tovel         29/4/H/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 210  tovel         28/1/G/4                                  None                                      0
+ 211  tovel         30/2/K/3                                    M   T   W   T   F   S   S\n         1…  0
+ 212  tovel         31/5/G/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 213  tovel         31/3/R/3                                    M   T   W   T   F   S   S\n          …  0
+ 214  tovel         31/6/O/3                                    M   T   W   T   F   S   S\n          …  0
+ 215  tovel         31/1/W/5                                  Mon Tue Wed Thu Fri Sat Sun\n     1S  2…  0
+ 216  tovel         31/0/Q/3                                    M   T   W   T   F   S   S\n 1Y  2Y  3…  0
+ 217  tovel         29/3/X/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 218  tovel         31/5/E/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 219  tovel         29/6/F/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 220  tovel         29/6/P/5                                  None                                      0
+ 221  tovel         31/5/K/4                                  mon tue wed thu fri sat sun\n          …  0
+ 222  tovel         30/2/M/5                                  mon tue wed thu fri sat sun\n         1…  0
+ 223  tovel         30/2/S/3                                    M   T   W   T   F   S   S\n         1…  0
+ 224  tovel         31/0/U/4                                  mon tue wed thu fri sat sun\n 1P  2S  3…  0
+ 225  tovel         29/2/S/3                                    M   T   W   T   F   S   S\n         1…  0
+ 226  tovel         31/3/M/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 227  tovel         29/1/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1I  2…  0
+ 228  tovel         28/5/I/3                                    M   T   W   T   F   S   S\n          …  0
+ 229  tovel         29/2/J/4                                  mon tue wed thu fri sat sun\n         1…  0
+ 230  tovel         30/6/D/6                                  None                                      0
+ 231  tovel         31/3/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 232  tovel         31/3/M/3                                    M   T   W   T   F   S   S\n          …  1
+ 233  tovel         31/5/Y/4                                   mo  tu  we  th  fr  sa  su\n          …  1
+ 234  tovel         28/6/F/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 235  tovel         29/5/P/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 236  tovel         30/2/U/5                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 237  tovel         28/4/W/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 238  tovel         30/5/Q/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 239  tovel         31/0/L/4                                   mo  tu  we  th  fr  sa  su\n 1L  2L  3…  0
+ 240  tovel         28/6/T/5                                  None                                      0
+ 241  tovel         30/0/G/5                                   MO  TU  WE  TH  FR  SA  SU\n 1H  2H  3…  0
+ 242  tovel         30/3/X/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 243  tovel         30/1/E/4                                   MO  TU  WE  TH  FR  SA  SU\n     1E  2…  0
+ 244  tovel         31/1/Z/6                                  MON TUE WED THU FRI SAT SUN\n     1Z  2…  0
+ 245  tovel         30/6/F/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 246  tovel         30/2/A/5                                   MO  TU  WE  TH  FR  SA  SU\n         1…  0
+ 247  tovel         31/5/A/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 248  tovel         30/6/C/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 249  tovel         29/0/O/6                                  MON TUE WED THU FRI SAT SUN\n 1P  2O  3…  0
+ 250  tovel         31/2/K/3                                  None                                      0
+ 251  tovel         30/6/S/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 252  tovel         29/5/Y/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 253  tovel         30/0/L/6                                  MON TUE WED THU FRI SAT SUN\n 1L  2L  3…  0
+ 254  tovel         30/6/S/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 255  tovel         30/1/B/5                                  Mon Tue Wed Thu Fri Sat Sun\n     1B  2…  0
+ 256  tovel         29/5/T/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 257  tovel         31/2/E/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 258  tovel         28/1/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1V  2…  0
+ 259  tovel         30/4/O/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 260  tovel         31/3/S/3                                  None                                      0
+ 261  tovel         31/3/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 262  tovel         28/3/M/4                                  mon tue wed thu fri sat sun\n          …  0
+ 263  tovel         28/2/E/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 264  tovel         31/2/G/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 265  tovel         30/5/Y/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 266  tovel         28/0/O/4                                  mon tue wed thu fri sat sun\n 1O  2O  3…  0
+ 267  tovel         28/0/D/3                                    M   T   W   T   F   S   S\n 1D  2D  3…  0
+ 268  tovel         30/3/X/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 269  tovel         29/0/Z/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1R  2Z  3…  1
+ 270  tovel         28/5/P/3                                  None                                      0
+ 271  tovel         30/1/R/4                                   mo  tu  we  th  fr  sa  su\n     1R  2…  0
+ 272  tovel         30/0/J/4                                   mo  tu  we  th  fr  sa  su\n 1J  2X  3…  0
+ 273  tovel         31/4/P/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 274  tovel         30/2/K/5                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 275  tovel         28/5/H/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 276  tovel         31/3/O/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 277  tovel         31/5/P/3                                    M   T   W   T   F   S   S\n          …  0
+ 278  tovel         31/5/N/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 279  tovel         28/5/J/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 280  tovel         28/3/S/2                                  None                                      0
+ 281  tovel         31/0/I/5                                   MO  TU  WE  TH  FR  SA  SU\n 1I  2I  3…  0
+ 282  tovel         31/6/D/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 283  tovel         30/0/W/4                                   MO  TU  WE  TH  FR  SA  SU\n 1W  2Z  3…  0
+ 284  tovel         28/2/R/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 285  tovel         30/1/F/3                                    M   T   W   T   F   S   S\n     1X  2…  0
+ 286  tovel         31/3/C/3                                    M   T   W   T   F   S   S\n          …  0
+ 287  tovel         30/0/O/6                                  MON TUE WED THU FRI SAT SUN\n 1A  2K  3…  0
+ 288  tovel         28/1/S/4                                   MO  TU  WE  TH  FR  SA  SU\n     1S  2…  0
+ 289  tovel         31/1/J/5                                   MO  TU  WE  TH  FR  SA  SU\n     1T  2…  0
+ 290  tovel         30/1/Y/4                                  None                                      0
+ 291  tovel         28/6/Z/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 292  tovel         30/6/T/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 293  tovel         30/5/C/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 294  tovel         31/5/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 295  tovel         31/1/R/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1R  2…  0
+ 296  tovel         30/3/A/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 297  tovel         30/6/F/3                                    M   T   W   T   F   S   S\n          …  0
+ 298  tovel         30/0/E/4                                  Mon Tue Wed Thu Fri Sat Sun\n 1E  2E  3…  0
+ 299  tovel         31/3/M/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 300  tovel         31/2/T/5                                  None                                      0
+ 301  tovel         29/5/N/5                                  mon tue wed thu fri sat sun\n          …  0
+ 302  tovel         28/0/F/5                                  mon tue wed thu fri sat sun\n 1A  2H  3…  0
+ 303  tovel         30/1/K/6                                  MON TUE WED THU FRI SAT SUN\n     1Z  2…  0
+ 304  tovel         30/6/S/3                                    M   T   W   T   F   S   S\n          …  0
+ 305  tovel         30/1/L/3                                    M   T   W   T   F   S   S\n     1L  2…  0
+ 306  tovel         28/0/K/5                                  mon tue wed thu fri sat sun\n 1K  2C  3…  0
+ 307  tovel         31/6/X/4                                  mon tue wed thu fri sat sun\n          …  0
+ 308  tovel         31/4/W/3                                    M   T   W   T   F   S   S\n          …  0
+ 309  tovel         30/6/G/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 310  tovel         31/3/L/5                                  None                                      0
+ 311  tovel         29/2/V/5                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 312  tovel         28/6/A/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 313  tovel         29/5/Z/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 314  tovel         29/5/N/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 315  tovel         31/3/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 316  tovel         30/3/C/3                                    M   T   W   T   F   S   S\n          …  1
+ 317  tovel         31/0/F/5                                   mo  tu  we  th  fr  sa  su\n 1Q  2Q  3…  0
+ 318  tovel         29/3/G/3                                    M   T   W   T   F   S   S\n          …  0
+ 319  tovel         29/5/P/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 320  tovel         28/4/P/6                                  None                                      0
+ 321  tovel         28/0/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2Z  3…  0
+ 322  tovel         28/0/V/6                                  MON TUE WED THU FRI SAT SUN\n 1V  2V  3…  0
+ 323  tovel         29/4/H/3                                    M   T   W   T   F   S   S\n          …  0
+ 324  tovel         29/0/U/6                                  MON TUE WED THU FRI SAT SUN\n 1C  2V  3…  0
+ 325  tovel         28/6/Y/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 326  tovel         30/0/R/4                                   MO  TU  WE  TH  FR  SA  SU\n 1J  2S  3…  0
+ 327  tovel         30/6/N/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 328  tovel         31/4/J/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 329  tovel         29/0/U/3                                    M   T   W   T   F   S   S\n 1X  2X  3…  0
+ 330  tovel         31/0/M/5                                  None                                      0
+ 331  tovel         28/0/E/4                                  Mon Tue Wed Thu Fri Sat Sun\n 1E  2V  3…  0
+ 332  tovel         31/2/W/5                                  Mon Tue Wed Thu Fri Sat Sun\n         1…  0
+ 333  tovel         30/2/V/4                                  Mon Tue Wed Thu Fri Sat Sun\n         1…  0
+ 334  tovel         31/1/E/3                                    M   T   W   T   F   S   S\n     1V  2…  0
+ 335  tovel         28/0/U/6                                  MON TUE WED THU FRI SAT SUN\n 1U  2N  3…  0
+ 336  tovel         31/3/I/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 337  tovel         30/3/D/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 338  tovel         30/1/V/6                                  MON TUE WED THU FRI SAT SUN\n     1V  2…  0
+ 339  tovel         29/3/B/3                                    M   T   W   T   F   S   S\n          …  0
+ 340  tovel         28/5/U/3                                  None                                      0
+ 341  tovel         29/2/P/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 342  tovel         30/5/L/3                                    M   T   W   T   F   S   S\n          …  0
+ 343  tovel         28/1/G/4                                  mon tue wed thu fri sat sun\n     1F  2…  0
+ 344  tovel         29/1/O/4                                  mon tue wed thu fri sat sun\n     1G  2…  1
+ 345  tovel         30/0/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2C  3…  1
+ 346  tovel         29/5/M/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 347  tovel         31/6/W/4                                  mon tue wed thu fri sat sun\n          …  0
+ 348  tovel         31/2/V/5                                  mon tue wed thu fri sat sun\n         1…  0
+ 349  tovel         29/3/N/4                                  mon tue wed thu fri sat sun\n          …  0
+ 350  tovel         31/5/E/3                                  None                                      0
+ 351  tovel         31/6/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 352  tovel         30/2/C/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 353  tovel         30/6/F/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 354  tovel         28/2/B/3                                    M   T   W   T   F   S   S\n         1…  0
+ 355  tovel         28/0/U/6                                  MON TUE WED THU FRI SAT SUN\n 1U  2N  3…  0
+ 356  tovel         31/4/O/3                                    M   T   W   T   F   S   S\n          …  0
+ 357  tovel         30/1/N/3                                    M   T   W   T   F   S   S\n     1G  2…  0
+ 358  tovel         30/3/V/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 359  tovel         28/3/N/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 360  tovel         31/1/Y/4                                  None                                      0
+ 361  tovel         31/0/Z/5                                   MO  TU  WE  TH  FR  SA  SU\n 1N  2N  3…  0
+ 362  tovel         31/2/I/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 363  tovel         30/6/S/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 364  tovel         30/1/O/4                                   MO  TU  WE  TH  FR  SA  SU\n     1P  2…  0
+ 365  tovel         30/1/F/4                                   MO  TU  WE  TH  FR  SA  SU\n     1F  2…  0
+ 366  tovel         30/1/D/3                                    M   T   W   T   F   S   S\n     1Y  2…  0
+ 367  tovel         30/5/Y/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 368  tovel         31/2/J/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 369  tovel         29/5/E/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 370  tovel         30/0/S/2                                  None                                      0
+ 371  tovel         31/4/D/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 372  tovel         28/3/U/3                                    M   T   W   T   F   S   S\n          …  0
+ 373  tovel         31/6/D/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 374  tovel         31/0/V/3                                    M   T   W   T   F   S   S\n 1V  2V  3…  1
+ 375  tovel         30/0/S/3                                    M   T   W   T   F   S   S\n 1D  2S  3…  0
+ 376  tovel         30/0/Z/6                                  MON TUE WED THU FRI SAT SUN\n 1G  2G  3…  0
+ 377  tovel         31/3/H/3                                    M   T   W   T   F   S   S\n          …  0
+ 378  tovel         29/5/P/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 379  tovel         30/5/M/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  1
+ 380  tovel         30/4/B/6                                  None                                      0
+ 381  tovel         31/4/O/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 382  tovel         31/4/R/5                                  mon tue wed thu fri sat sun\n          …  0
+ 383  tovel         31/5/F/4                                  mon tue wed thu fri sat sun\n          …  0
+ 384  tovel         30/6/L/3                                    M   T   W   T   F   S   S\n          …  1
+ 385  tovel         29/2/V/3                                    M   T   W   T   F   S   S\n         1…  0
+ 386  tovel         30/6/Y/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 387  tovel         30/6/Q/4                                  mon tue wed thu fri sat sun\n          …  0
+ 388  tovel         28/2/U/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 389  tovel         31/2/D/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 390  tovel         30/1/E/3                                  None                                      0
+ 391  tovel         28/4/T/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 392  tovel         29/4/T/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 393  tovel         30/4/A/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 394  tovel         29/6/F/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 395  tovel         30/1/C/3                                    M   T   W   T   F   S   S\n     1C  2…  0
+ 396  tovel         30/3/P/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 397  tovel         29/2/H/4                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 398  tovel         30/5/R/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 399  tovel         29/4/T/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 400  tovel         31/4/O/2                                  None                                      0
+ 401  tovel         31/3/P/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 402  tovel         31/0/V/4                                   MO  TU  WE  TH  FR  SA  SU\n 1R  2R  3…  0
+ 403  tovel         28/4/S/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 404  tovel         30/3/G/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 405  tovel         28/2/N/5                                   MO  TU  WE  TH  FR  SA  SU\n         1…  0
+ 406  tovel         30/5/T/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 407  tovel         31/6/Y/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 408  tovel         29/3/E/3                                    M   T   W   T   F   S   S\n          …  0
+ 409  tovel         28/1/B/6                                  MON TUE WED THU FRI SAT SUN\n     1B  2…  0
+ 410  tovel         28/3/H/6                                  None                                      0
+ 411  tovel         31/4/Q/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  1
+ 412  tovel         30/1/I/4                                  Mon Tue Wed Thu Fri Sat Sun\n     1I  2…  0
+ 413  tovel         30/2/X/3                                    M   T   W   T   F   S   S\n         1…  0
+ 414  tovel         31/4/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 415  tovel         30/1/I/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1I  2…  1
+ 416  tovel         31/5/A/3                                    M   T   W   T   F   S   S\n          …  0
+ 417  tovel         28/6/W/5                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 418  tovel         30/0/J/4                                  Mon Tue Wed Thu Fri Sat Sun\n 1J  2J  3…  0
+ 419  tovel         30/1/Z/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…  0
+ 420  tovel         31/1/D/3                                  None                                      0
+ 421  tovel         31/0/G/4                                  mon tue wed thu fri sat sun\n 1G  2H  3…  0
+ 422  tovel         31/5/A/4                                  mon tue wed thu fri sat sun\n          …  0
+ 423  tovel         28/3/B/5                                  mon tue wed thu fri sat sun\n          …  0
+ 424  tovel         30/3/U/5                                  mon tue wed thu fri sat sun\n          …  0
+ 425  tovel         29/4/C/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 426  tovel         30/0/N/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1N  2G  3…  0
+ 427  tovel         31/0/P/3                                    M   T   W   T   F   S   S\n 1Y  2P  3…  0
+ 428  tovel         31/3/H/3                                    M   T   W   T   F   S   S\n          …  0
+ 429  tovel         31/4/N/5                                  mon tue wed thu fri sat sun\n          …  0
+ 430  tovel         31/0/B/3                                  None                                      0
+ 431  tovel         31/0/S/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2R  3…  0
+ 432  tovel         30/6/L/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 433  tovel         29/2/R/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 434  tovel         30/1/K/5                                   mo  tu  we  th  fr  sa  su\n     1K  2…  0
+ 435  tovel         31/0/J/5                                   mo  tu  we  th  fr  sa  su\n 1J  2J  3…  0
+ 436  tovel         29/2/D/4                                   mo  tu  we  th  fr  sa  su\n         1…  0
+ 437  tovel         30/4/V/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 438  tovel         28/0/G/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1G  2G  3…  0
+ 439  tovel         31/6/B/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 440  tovel         31/2/W/5                                  None                                      0
+ 441  tovel         31/5/X/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 442  tovel         28/2/B/3                                    M   T   W   T   F   S   S\n         1…  0
+ 443  tovel         30/4/O/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 444  tovel         31/5/R/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 445  tovel         30/5/X/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 446  tovel         30/5/H/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 447  tovel         28/0/F/4                                   MO  TU  WE  TH  FR  SA  SU\n 1Y  2Y  3…  0
+ 448  tovel         30/0/U/6                                  MON TUE WED THU FRI SAT SUN\n 1U  2U  3…  0
+ 449  tovel         29/1/C/6                                  MON TUE WED THU FRI SAT SUN\n     1P  2…  0
+ 450  tovel         31/0/T/5                                  None                                      0
+ 451  tovel         28/5/K/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 452  tovel         30/0/X/3                                    M   T   W   T   F   S   S\n 1V  2V  3…  0
+ 453  tovel         29/6/E/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 454  tovel         31/1/Y/4                                  Mon Tue Wed Thu Fri Sat Sun\n     1C  2…  0
+ 455  tovel         31/4/Y/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 456  tovel         29/1/W/5                                  Mon Tue Wed Thu Fri Sat Sun\n     1W  2…  0
+ 457  tovel         29/5/I/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 458  tovel         31/2/M/3                                    M   T   W   T   F   S   S\n         1…  0
+ 459  tovel         29/3/S/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 460  tovel         30/6/R/4                                  None                                      0
+ 461  tovel         29/4/K/3                                    M   T   W   T   F   S   S\n          …  0
+ 462  tovel         30/4/J/4                                  mon tue wed thu fri sat sun\n          …  0
+ 463  tovel         31/4/R/4                                  mon tue wed thu fri sat sun\n          …  0
+ 464  tovel         28/5/B/3                                    M   T   W   T   F   S   S\n          …  0
+ 465  tovel         29/6/Y/3                                    M   T   W   T   F   S   S\n          …  0
+ 466  tovel         31/6/Q/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 467  tovel         31/1/B/6                                  MON TUE WED THU FRI SAT SUN\n     1X  2…  0
+ 468  tovel         30/1/C/6                                  MON TUE WED THU FRI SAT SUN\n     1C  2…  0
+ 469  tovel         31/4/Y/3                                    M   T   W   T   F   S   S\n          …  1
+ 470  tovel         29/6/A/4                                  None                                      0
+ 471  tovel         29/1/D/6                                  MON TUE WED THU FRI SAT SUN\n     1A  2…  0
+ 472  tovel         28/2/M/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+ 473  tovel         30/4/W/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 474  tovel         30/6/E/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 475  tovel         30/1/T/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1H  2…  0
+ 476  tovel         31/1/Y/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1Y  2…  0
+ 477  tovel         31/1/K/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1U  2…  0
+ 478  tovel         31/3/K/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 479  tovel         29/5/G/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 480  tovel         30/4/V/4                                  None                                      0
+ 481  tovel         28/0/J/4                                   MO  TU  WE  TH  FR  SA  SU\n 1S  2S  3…  0
+ 482  tovel         30/1/F/6                                  MON TUE WED THU FRI SAT SUN\n     1J  2…  0
+ 483  tovel         30/3/W/3                                    M   T   W   T   F   S   S\n          …  0
+ 484  tovel         31/4/G/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 485  tovel         30/4/Z/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 486  tovel         29/5/H/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 487  tovel         28/3/F/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 488  tovel         29/1/M/4                                   MO  TU  WE  TH  FR  SA  SU\n     1M  2…  0
+ 489  tovel         31/1/B/5                                   MO  TU  WE  TH  FR  SA  SU\n     1L  2…  0
+ 490  tovel         29/1/R/5                                  None                                      0
+ 491  tovel         29/3/H/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 492  tovel         31/5/F/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 493  tovel         30/0/P/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1D  2P  3…  0
+ 494  tovel         29/0/G/3                                    M   T   W   T   F   S   S\n 1P  2G  3…  0
+ 495  tovel         31/2/D/3                                    M   T   W   T   F   S   S\n         1…  0
+ 496  tovel         29/4/Q/4                                  Mon Tue Wed Thu Fri Sat Sun\n          …  0
+ 497  tovel         29/0/X/4                                  Mon Tue Wed Thu Fri Sat Sun\n 1W  2X  3…  0
+ 498  tovel         31/3/J/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 499  tovel         31/0/V/5                                  Mon Tue Wed Thu Fri Sat Sun\n 1I  2I  3…  0
+ 500  tovel         31/5/L/6                                  None                                      0
+ 501  tovel         29/1/W/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2…  0
+ 502  tovel         28/4/S/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 503  tovel         29/2/V/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+ 504  tovel         31/3/N/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 505  tovel         30/1/T/6                                  MON TUE WED THU FRI SAT SUN\n     1T  2…  0
+ 506  tovel         29/1/Q/5                                  mon tue wed thu fri sat sun\n     1Q  2…  0
+ 507  tovel         30/2/R/6                                  MON TUE WED THU FRI SAT SUN\n         1…  0
+ 508  tovel         31/4/W/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 509  tovel         30/5/Y/5                                  mon tue wed thu fri sat sun\n          …  0
+ 510  tovel         30/0/J/5                                  None                                      0
+ 511  tovel         30/4/E/5                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 512  tovel         30/6/M/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 513  tovel         31/1/Y/4                                   mo  tu  we  th  fr  sa  su\n     1Y  2…  0
+ 514  tovel         29/0/F/4                                   mo  tu  we  th  fr  sa  su\n 1F  2M  3…  0
+ 515  tovel         29/0/U/4                                   mo  tu  we  th  fr  sa  su\n 1Y  2U  3…  0
+ 516  tovel         31/0/P/3                                    M   T   W   T   F   S   S\n 1I  2I  3…  0
+ 517  tovel         28/0/K/2                                   Mo  Tu  We  Th  Fr  Sa  Su\n 1K  2K  3…  0
+ 518  tovel         31/3/J/4                                   mo  tu  we  th  fr  sa  su\n          …  0
+ 519  tovel         30/1/V/5                                   mo  tu  we  th  fr  sa  su\n     1J  2…  0
+ 520  tovel         31/5/O/5                                  None                                      0
+ 521  tovel         30/6/F/6                                  MON TUE WED THU FRI SAT SUN\n          …  0
+ 522  tovel         30/4/Z/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 523  tovel         31/0/P/6                                  MON TUE WED THU FRI SAT SUN\n 1U  2D  3…  0
+ 524  tovel         31/4/I/4                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+ 525  tovel         31/3/P/5                                   MO  TU  WE  TH  FR  SA  SU\n          …  0
+
+per-name tally this round
+name             presented correct  hit-rate
+tovel                  526      36      6.8%

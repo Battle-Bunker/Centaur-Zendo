@@ -124,6 +124,27 @@ dropped — you are not punished for it, you just got fewer items.
 * Your own history: every clue, answer and score you have ever seen is in your
   logs. That is your dataset.
 
+### 4b. What answers tend to look like (one made-up example)
+
+Many classes are **pictures**, and the clue usually *contains* the object. A
+typical shape is "here is the thing; send it back with something added". An
+invented class, not in any pool, just to show the house style:
+
+```
+clue:                              answer:
+.....                              ..o..
+.....                              .....
+.....                              o...o
+#####                              #####
+3 pebbles                          3 pebbles
+```
+
+The clue is an empty box drawn in ASCII plus a line of text; the answer is the
+same drawing with three `o` pebbles placed by some rule you have to discover
+(which cells score is the puzzle — the *format* is not). Other classes want a
+list of words, a single number, or a grid the same size as the clue's. When a
+clue is nothing but a code like `B12`, the class is telling you it needs a demo.
+
 ## 5. What you do NOT know
 
 * **What any challenge means.** Not one of them. The name is a label, not a hint,

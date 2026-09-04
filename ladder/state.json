@@ -1583,7 +1583,22 @@
   },
   "quilm": {
    "current_version": 3,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "This is the move-k-matchsticks seven-segment genre named as the flagship anti-pattern; retire quilm or replace the pinned pattern with a non-famous derived measurement and show seven-segment ASCII art so the object is visible.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "fun": 2,
+      "kid_contributes": 1,
+      "no_prereqs": 2,
+      "object": 1,
+      "rule_statable": 3
+     },
+     "score": 1.8,
+     "version": 3
+    }
+   ],
    "refined_versions": [
     1,
     2
@@ -1744,7 +1759,7 @@
      "version": 2
     }
    ],
-   "status": "testing",
+   "status": "retired",
    "versions": [
     {
      "file": "challenges/lab/quilm.v1.json",
@@ -2622,7 +2637,7 @@
    "id": "judge-quilm-v3-2ef2",
    "kind": "judge",
    "started": 1788535160.604481,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

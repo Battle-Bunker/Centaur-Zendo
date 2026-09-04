@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 15:19 UTC
+# Ladder report — 2026-09-04 15:20 UTC
 
 Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid score is the mean judge rubric (1–5).
 
@@ -33,7 +33,7 @@ Cadence 6x0.5s/5s/3s; balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). Kid
 | OKRIN | 2 | testing | - | - | 2.6 | 0 | 0 | - |
 | PP | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | quaich | 2 | testing | - | - | 2.6 | 0 | 0 | - |
-| quilm | 3 | testing | - | - | - | 0 | 0 | - |
+| quilm | 3 | retired | - | - | 1.8 | 0 | 0 | - |
 | regina | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | RUNIC | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |
 | skerry | 1 | too_easy_textbook | - | - | - | 0 | 0 | - |

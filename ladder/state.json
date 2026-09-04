@@ -1496,8 +1496,86 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 4,
+       "demos": 2,
+       "final_correct": 3615,
+       "final_presented": 3621,
+       "final_rate": 0.9983429991714996,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         13,
+         495
+        ],
+        [
+         205,
+         582
+        ],
+        [
+         198,
+         616
+        ],
+        [
+         497,
+         497
+        ],
+        [
+         404,
+         576
+        ],
+        [
+         189,
+         690
+        ]
+       ],
+       "team": "morvin1a"
+      },
+      {
+       "cracked_round": 3,
+       "demos": 6,
+       "final_correct": 4354,
+       "final_presented": 4354,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         787
+        ],
+        [
+         70,
+         487
+        ],
+        [
+         469,
+         469
+        ],
+        [
+         485,
+         485
+        ],
+        [
+         508,
+         508
+        ],
+        [
+         508,
+         508
+        ]
+       ],
+       "team": "morvin1b"
+      }
+     ],
+     "run": "lad-morvin-v1-1",
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788554076.4099674,
@@ -3407,7 +3485,7 @@
    ]
   }
  },
- "direction_cursor": 12,
+ "direction_cursor": 13,
  "jobs": [
   {
    "agents": 0,
@@ -4474,7 +4552,7 @@
    "kind": "players",
    "run": "lad-morvin-v1-1",
    "started": 1788556127.6010737,
-   "status": "running",
+   "status": "done",
    "teams": {
     "morvin1a": "opus-default",
     "morvin1b": "opus-kidproxy"
@@ -4514,6 +4592,32 @@
    "kind": "players",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "morvin",
+   "id": "refiner-morvin-v1-man",
+   "kind": "refiner",
+   "started": 1788558793.0566468,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "morvin",
+   "id": "players-morvin-v1-44f9",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "new-12",
+   "direction": "transport, maps and journeys",
+   "id": "designer-new-12-v0-7db1",
+   "kind": "designer",
+   "status": "pending",
+   "version": null
   }
  ],
  "profiles": {

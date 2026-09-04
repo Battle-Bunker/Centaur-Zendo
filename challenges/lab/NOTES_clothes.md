@@ -410,3 +410,224 @@ below": e.g. count long garments whose hem is directly above a *gap* between two
 (same colour bleeds) — pick by witness table and kid-legibility; (c) make `longs` not directly
 visible (e.g. count garments that reach the rail below *and* something else). Do not drop the
 group-per-line clue shape or the drawn drips.
+
+---------------------------------------------------------------------------
+
+# crandel v3 — hardening pass (refiner, 2026-09-04)
+
+v2 was **too easy**: in `lad-crandel-v2-1` both Opus players reached 100 % in round 3 (see the
+run table above). The kid judge's complaint had been fixed and must stay fixed, so the picture,
+the clue shape and every legibility decision of v2 are **unchanged**; only the counted relation
+and the `drips` law moved.
+
+## What the players actually did (read from their code, not their prose)
+
+Both `crandel1a` and `crandel1b` finished with the *same* construction, invented independently:
+a **slot grid**. Items 1–2 columns wide on a fixed pitch (2 or 3), every item on a slot, every
+one of a line's `a` items drawn **full height**; line *i*'s slot interval is shifted by
+`a_i − b_i` so exactly `b_i` slots are shared with the line below. 1b: `IW=1, SLOT=2`; 1a:
+`pitch 2` / `pitch 3` alternating by `memory["_index"]`. Both wrote down the same three
+assumptions: *"letters, item widths, gap widths and the picture width are all free"*, *"the last
+block has nothing below it, so only its height is specified; its contents are free"*, and
+`b ∈ {a−2, a−1}` (1b verified that law over 2192 groups and used it to prune hypotheses).
+Round 2 was a wrong model that still scored 4/455 and 9/406 — and **those accidental hits were
+the crack**: 1b's notes say the pattern of which layouts scored *"only made sense as a relation
+between neighbouring blocks"*. Two demos each; round 3 onwards 100 %.
+
+The fatal property of v2 is not that "overlaps something below" is guessable — it is that inside
+a slot grid of full-height items **every refinement of it collapses to the same number**. A
+witness that never draws a short garment underneath, never draws an overhang and never leaves
+daylight cannot tell the rule from its neighbours, so no insight beyond "shared slot" is needed.
+
+## What changed in v3
+
+1. **`drips` ranges freely over `0..longs`** (lever: reduce clue determinism). v2's generator law
+   `drips ∈ {longs−2, longs−1}` left the third digit almost fixed once `longs` was read, and 1b
+   used it as a pruning law. The only clause left in `generate()` is a rejection: not *every*
+   line may have `drips == longs`, because such a picture cannot be drawn with the v2 reading
+   falsified (if every long garment counts, "overlaps something below" agrees on every line).
+   Distinct clue classes: **~6 500 → ~12 000**.
+2. **The counted relation is now "hangs over a GAP"**, not "overlaps something". A garment counts
+   if it hangs all the way down to the line below **and** part of it is over the **daylight
+   between two garments of that line** — *it is dripping through onto the floor between two
+   things instead of onto the washing.* Kid sentence, one line: *"that towel's so long it
+   reaches the next line, and it's dripping straight down the gap between the shirt and the
+   socks."* Three-word test: there is no name for it; it is not "overlap", not "cover", not
+   "aligned".
+   * It is **not dodgeable by the crack**: on a slot grid nothing ever overhangs a gap, so the
+     shipped round-4 code of both players scores **0.4 % / 0.0 %** on v3 (it scored 100 % on v2).
+   * The two candidates the run notes also proposed were measured and rejected. *"drips onto a
+     garment that is itself long"* (the cascade): pretty, but the players' own witness still
+     scores **90.5 %**, because in a grid of full-height items "onto a long one" **is** "onto
+     anything" — it hardens nothing anybody actually builds. *"drips onto a garment of the same
+     letter"*: kills the crack (0 %) but flattens every rival to ≈0 (random-among-the-longs
+     **0.5 %**), i.e. a wall of zeros, which DESIGN_LOOP lever 7 says turns players into demo
+     farmers. The gap rule keeps a foothold at **8.8 %**.
+3. **`longs` kept as it is** (the brief's optional lever (c) was considered and dropped). It is
+   the foothold — the one statistic a player can read straight off a demo — and it still forces
+   spare non-counted long garments into every picture. Making it conditional would have removed
+   the only cheap probe that pays.
+4. **Salience (lever 9), the reason the kid score should hold.** `solve()` draws each line on
+   purpose from the bottom up: a **counted** garment either sits squarely *inside* the daylight
+   between two garments below, or straddles the whole gap with an overhang on each side; a long
+   garment that does **not** count is tucked **entirely over one garment below** (the water lands
+   on the washing), and one per picture is hung **past the end of the line below** — over floor,
+   but not between two things — so *"it has bare floor under it"*, the strongest rival at 39.5 %,
+   is visibly false in every demo. 21 rival per-line readouts (including same-letter, onto-a-long-
+   one, fully-covers, nothing-below, sits-entirely-over-one, over-two, pairs, wide/narrow/inner)
+   must all differ from the drip vector before a picture is shipped.
+
+## Witness table, v2 → v3 (500 fresh clues each, one identical harness)
+
+Every attacker knows the picture grammar **and** the first two digits of every group, and differs
+only in the law it uses for the third; each draws in its own naive style (random blocks, 20–28
+wide), never in `solve()`'s style; long sets are chosen bottom-up so laws that look at the line
+below can be imposed exactly. Both columns come from the same script, so they are comparable
+with each other but not with the v2 table further up this file (that harness drew 1-wide sticks).
+
+| law used for the third digit | v2 | v3 |
+|---|---|---|
+| **over a gap between two garments below — THE v3 RULE** | 4.2 % | **100.0 %** |
+| **overlaps something below — THE v2 RULE** | **100.0 %** | 9.8 % |
+| all the long ones | never buildable | never buildable |
+| has bare floor under part of it | 4.5 % | **39.5 %** |
+| is not at either end | 4.4 % | 16.8 % |
+| drips onto a garment of the same letter | 1.2 % | 13.1 % |
+| is wide (>= 3 columns) | 6.4 % | 12.4 % |
+| hangs over two garments | 0.0 % | 11.7 % |
+| fully covers something below | 0.6 % | 10.9 % |
+| is in the left half of the line | 4.0 % | 9.9 % |
+| has nothing at all under it | 5.7 % | 9.5 % |
+| **random among the long ones (the foothold)** | **6.0 %** | **8.8 %** |
+| drips onto a garment that is itself long | 6.4 % | 8.1 % |
+| is narrow (<= 2 columns) | 6.0 % | 6.3 % |
+| sits entirely over one garment below | 1.7 % | 4.4 % |
+| template: identical garment columns on every line | 0.0 % | 0.0 % |
+| template: the same, every garment full length | 0.0 % | 0.0 % |
+| template: two garments a line | 0.0 % | 0.0 % |
+| template: right rows, random hems | 0.2 % | 0.2 % |
+| **template: crandel1a's round-4 code** | **100.0 %** | **0.4 %** |
+| **template: crandel1b's round-4 code** | **100.0 %** | **0.0 %** |
+| previous clue's answer replayed | 0.2 % | 0.0 % |
+| one fixed answer for every clue (best of 15) | 0.8 % | 0.2 % |
+| `solve()` | 100.0 % | 100.0 % |
+| empty / junk / the clue itself | 0.0 % | 0.0 % |
+
+The foothold is inside lever 7's 5–30 % band and went **up** (6.0 → 8.8 %); the ceiling of every
+template is ≤ 0.4 %; the strongest wrong *rule* pays 39.5 %, which is the improving signal a
+player is meant to climb — and the last step of that climb ("not just floor: floor **between two
+things**") is the lateral one, drawn into every demo.
+
+## Validation (shipped file)
+
+`python tools/quickcheck.py challenges/lab/crandel.json --seeds 200` → **OK, no warnings**
+(`gen=0.09 ms score=0.10 ms solve=395 ms`). Sizes: **score 509/512**, solve 4990/5000,
+generate 663, clue ≤ 13 chars, solution ≤ 434/1024. `generate` mean **0.022 ms** (brief: < 1 ms),
+deterministic. `solve()` scores 1 on **2000/2000** fresh clues, mean 29 ms, p95 124 ms, worst
+775 ms. `score` on **20 000 junk strings**: 0 raises, 0 non-binary, 0 false positives, worst
+0.13 ms. Cross-checked against an **independent grid-based re-implementation** (no regex, written
+from the spec) on 15 200 mutated / shuffled / re-cased / truncated answers: **0 disagreements**.
+Hypothesis elimination over a **320-readout** family (v2's 150 plus the "what is it landing on"
+dimension — onto-long, onto-short, onto-wide, onto-same-letter, bare-floor, over-gap — and
+letters): **6.9 survive one demo, 1.2 survive two, and the true rule is the only survivor from
+demo 3 in 30/30 trials**. Pictures are 11–15 rows × 22–28 columns, 35 distinct shapes; the
+counted garment is leftmost 14 % / rightmost 15 % of the time and is the widest of the long ones
+49 % (v2: 53 %) — wide garments do overhang gaps more often (2-wide 50 %, 6-wide 96 %), which is
+intrinsic geometry and is why "wide" is a decoy worth 12.4 % rather than a law. ~12 000 distinct
+clue classes, so cache-and-replay over 6×450 probes is worth ~5–9 % of the final on top of the
+~9 % blind rate: the **no-insight ceiling is ~15–18 %** (v2 ~26 %).
+
+## Three demos as they now render
+
+clue `331/231/3`
+
+```
+======vv==vv===vv=vv==vv
+......CC..SS...TT.SS..TT
+......CC.......TT.....TT
+......CC.......TT.....TT
+==vv==vv==v==v===v=v=v=v
+..CC..SS..CCCC...TTT.CCC
+......SS.........TTT.CCC
+==v=v======v=v===v==v===
+..CCC......SSS...TTTT...
+..CCC......SSS...TTTT...
+..CCC......SSS...TTTT...
+```
+
+line 1: 5 garments, 3 hang right down (`CC`, `TT`, `TT`); only the middle `TT` is over a gap —
+it hangs in the daylight between `CCCC` and `TTT`. The left `CC` sits exactly on top of `SS`
+and the right `TT` is tucked inside `CCC`, so both land on washing.
+line 2: 5 garments, 3 hang right down (`SS`, `TTT`, `CCC`); only `SS` is over a gap (the wide
+bare stretch between `CCC` and `SSS`). `TTT` is tucked over `TTTT`; `CCC` hangs past the END of
+the bottom line — floor, but not between two things, so it does **not** count.
+
+clue `342/321/2`
+
+```
+=vv==vv===v===v=vv=vv=vv
+.SS..CC...SSSSS.JJ.CC.JJ
+.....CC...SSSSS.JJ.CC.JJ
+.....CC...SSSSS....CC.JJ
+=vv======vv==v==v=v=v===
+.DD......CC..JJJJ.SSS...
+.DD......CC..JJJJ.SSS...
+.DD..........JJJJ.......
+===v==v===vv======v=v===
+...CCCC...SS......DDD...
+...CCCC...SS......DDD...
+```
+
+line 1: 6 garments, 4 hang right down (`CC`, `SSSSS`, `CC`, `JJ`); two are over gaps — `CC`
+straddles the daylight between `DD` and `CC` below, `SSSSS` straddles the daylight between `CC`
+and `JJJJ`. The other `CC` sits over `SSS`; `JJ` hangs past the end.
+line 2: 4 garments, 2 hang right down (`DD`, `JJJJ`); only `JJJJ` is over a gap (between `CCCC`
+and `SS`); `DD` is at the far left with nothing under it at all — floor, no gap, no count.
+
+clue `232/331/230/4` (four lines; `drips` can now be 0, which v2 could not express)
+
+```
+=vv==v=v===v===v===vv=====
+,DD,,CCC,,,TTTTT,,,CC,,,,,
+,,,,,CCC,,,TTTTT,,,CC,,,,,
+=vv======v=v==v=v==vv==vv=
+,PP,,,,,,DDD,,CCC,,PP,,DD,
+,PP,,,,,,DDD,,CCC,,,,,,DD,
+,PP,,,,,,DDD,,,,,,,,,,,DD,
+v===v=v=v===vv=v=v==v=v===
+SSSSS,PPP,,,CC,TTT,,SSS,,,
+SSSSS,,,,,,,CC,,,,,,SSS,,,
+=====vv==vv=vv==vv=v====v=
+,,,,,DD,,TT,DD,,CC,PPPPPP,
+,,,,,DD,,,,,DD,,,,,PPPPPP,
+,,,,,DD,,,,,DD,,,,,PPPPPP,
+,,,,,DD,,,,,DD,,,,,PPPPPP,
+```
+
+line 1: 4 garments, 3 hang right down (`CCC`, `TTTTT`, `CC`); `CCC` and `TTTTT` are over gaps,
+`CC` is tucked over `PP` — group `232`.
+line 2: 5 garments, 3 hang right down (`PP`, `DDD`, `DD`); only `DDD` is over a gap — group `331`.
+line 3: 5 garments, 3 hang right down (`SSSSS`, `CC`, `SSS`); every one of them lands squarely on
+washing, so nothing drips through: group `230`.
+
+## Predicted classification and kid score
+
+**On target (testing), mean final 35–60 %.** Reasoning: the exact witness both Opus players built
+now pays ≤ 0.4 %; the no-insight ceiling is ~15–18 %; the rule is one genuinely lateral step past
+the reading everybody starts from, and that step is *drawn* in every demo rather than hidden, so
+a player who thinks about the picture gets it in round 4–5 while a player who keeps refining
+"overlap" statistics plateaus in the 10–40 % band. Expect one crack and one partial rather than
+two cracks; if both crack again, the next lever is to stop naming `longs` and instead name
+"how many hang right down **and** land on washing", which makes the foothold itself a conjunction.
+
+**Kid score 4.0–4.5/5** (v2 scored 3.4 with the same picture): the object is unchanged and the
+new sentence is *more* childlike than v2's — "it's dripping down the gap onto the floor" beats
+"its columns overlap the washing below" — the counted thing is now a hole you can see rather
+than an alignment you have to compute, and the first two digits of every group are still
+countable straight off the picture, which is what the judge rewarded for kid_contributes.
+
+**Levers if it comes out too easy**: make `longs` count only the long garments that land on
+washing (so the foothold is itself the conjunction); or require the gap to be at least two
+columns wide, which removes the "any sliver counts" edge and makes the count depend on a size
+judgement. **If too hard**: make the last digit one total for the whole rack instead of one per
+line, or guarantee that in every demo one counted garment sits wholly inside a wide gap.

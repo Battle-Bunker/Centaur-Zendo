@@ -171,3 +171,27 @@ standing, so only the three interior pins can ever count and the EXISTS reading 
 drop the header row so the digit↔dot mapping has to be found; add a second clause (the last frame
 must contain no counted pin). **If too hard**: raise the `n=0` share from 23 % to ~35 %, and
 guarantee a counted pin and a near miss *side by side in the same frame* in every demo.
+
+## morvin v1 ladder run `lad-morvin-v1-1` (2026-09-04, 6×0.5 s, 2 Opus players)
+
+| team | profile | final | cracked | how |
+|---|---|---|---|---|
+| morvin1a | opus-default | 100% (3615/3615, 6 skips) | round 4 | library of server-confirmed (digit,value)→block arrangements + DP; never stated the rule |
+| morvin1b | opus-kidproxy | 100% | round 3 | insight: "the dots are falling and some are stuck in mid-air" — floating dots = K |
+
+Too easy for Opus (2 finals, both 100%). Two leaks: (1) the insight route is short — the kid
+reading ("gravity puzzle in a numeral costume") is exactly the rule and the kid-proxy had it by
+round 3; (2) the **tabulation route**: blocks are independent and K is additive across blocks, so
+a player can probe one block at a time (hundreds of single-block probes) and build a
+(digit, value) → arrangement library without ever understanding it. 1a did exactly that and
+finished at 100% with a lookup table. 1a also flagged clues it believed unsatisfiable
+(`316/9`, `366/12`, `769/11`) — its model was wrong (b solved everything), but check that
+generate() never emits an unachievable K anyway.
+
+Hardening levers for v2 (keep the pin-deck picture and the kid reading): (a) break additivity —
+make K a property that spans blocks (e.g. count only floating pins in frames where the frame to
+the left also has a floating pin; or count floating pins whose supporting pin is in the *next*
+frame's deck) so single-block probing cannot build a table; (b) vary the deck (a 3-row deck of
+6 pins for some frames) so per-digit tables do not transfer; (c) forbid the k=0 fill-from-front
+foothold from being 23% of clues — keep it at ~10% as the foothold. Judge note: the rule is close
+to nameable ("fell out of turn"); (a) also helps there.

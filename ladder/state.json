@@ -149,7 +149,22 @@
   "LegoZendo": {
    "current_version": 1,
    "note": "v3 rule (scattered, two orientations). sim2 played v1; cal run interrupted.",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Shrink the grid (keep demos in the ~12x32 regime, cap y lower) so a kid can see a whole layout and tell a 1-pin touch from 2- or 3-pin by eye within 20 minutes.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 3
+     },
+     "score": 3.4,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -1588,7 +1603,7 @@
    "id": "judge-LegoZendo-v1-2ae7",
    "kind": "judge",
    "started": 1788522443.239871,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -1604,7 +1619,8 @@
    "class": "OKRIN",
    "id": "judge-OKRIN-v1-5f49",
    "kind": "judge",
-   "status": "pending",
+   "started": 1788522548.861258,
+   "status": "running",
    "version": 1
   },
   {

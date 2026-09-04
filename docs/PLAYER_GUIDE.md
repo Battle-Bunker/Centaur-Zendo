@@ -115,10 +115,12 @@ dropped — you are not punished for it, you just got fewer items.
 * You can spend a **demo** to see the reference solver's answer for one class:
   you get back a real clue, a real correct solution, and its score. One worked
   example, on request — and you only get three of them for seven classes.
-* Every clue is written so that the **shape** of an answer can be worked out from
-  the clue alone — what kind of thing to send back (a grid, a word list, a number,
-  a picture of the thing in the clue). You may not know the *rule* without a demo,
-  but you should never be unable to guess the *format*.
+* Clues are meant to reveal the **shape** of an answer — what kind of thing to send
+  back (a grid, a word list, a number, the picture in the clue with something added).
+  Often the clue *contains* the object and the answer is that object edited. You may
+  not know the *rule* without a demo, but you should usually be able to guess the
+  *format*; a class where you cannot even guess the format is the one to spend a
+  demo on.
 * Your own history: every clue, answer and score you have ever seen is in your
   logs. That is your dataset.
 
@@ -160,9 +162,10 @@ How to spend them:
 * Spend a demo on the class you are **most confused about** *and* that appears
   often — the final draws from the same seven. A class whose clue already tells
   you the answer's shape may not need one at all: probe it instead.
-* Classes are built so that the **shape** of the answer can be read off the
-  clue (what kind of data to send). What a demo buys you is the *rule*: which
-  of the many well-formed answers score. Some classes are worth almost nothing
+* Classes are built so that the **shape** of the answer can usually be read off
+  the clue (what kind of data to send). What a demo buys you is the *rule*: which
+  of the many well-formed answers score — or, for a class whose clue is opaque,
+  the format itself. Some classes are worth almost nothing
   without that example and are worth everything with it — those are the ones to
   spend on.
 * A demo answers "what does a correct answer *look like*", which is usually the

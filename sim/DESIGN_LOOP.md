@@ -58,6 +58,21 @@ the social.
    never emit the minimal witness. Demos are the main leak.
 5. **Neutral names**: no puns, no abbreviations of the concept. Use a random short word.
 6. Never: encode the rule in the name; use a named puzzle; rely on obscure knowledge.
+7. **Leave a foothold** (learned on tovel v3, 2026-09-04): after closing witnesses, check
+   that some cheap, natural first probe still scores *sometimes* (5–30 %) — e.g. the minimal
+   construction on the easiest parameter value. If every cheap probe scores 0, Opus players
+   conclude the grader is exact-match, call the decoys "arbitrary data" and farm demos; the
+   kid-proxy on tovel v3 saw the rule's shape ("K and O take turns") and never tested it.
+   Hardening and footholds trade off: the witness table must show both the ceiling of every
+   template (≤ ~60 %) and the floor of the natural first probe (> 0).
+8. **Test templates, not only wrong rules**: the leaks that reached 88–100 % (velk v1, tovel
+   v2) were cheap constructions that *satisfy the true rule* without insight (alternate the
+   clue strand with free filler; a solid stripe from day n). Every witness table must include
+   "the simplest thing that satisfies the rule" and "copy the demo's shape, adjust one knob".
+9. **Salience beats rule changes for softening**: basten 7 % → 33 % and garrow 15 % → 64 %
+   came from redrawing the demo (fewer fish so nibblers dominate; uneven slices so neatness is
+   visibly irrelevant) with the rule untouched. Players rebuild the picture grammar perfectly
+   and then hunt statistics; the counted relationship must be the loudest thing in the picture.
 
 Fairness floor: a strong human+AI team must be able to get it from ≤6 demos plus probing
 with real insight. Deterministic generator; property-based scorer; the scorer must reject

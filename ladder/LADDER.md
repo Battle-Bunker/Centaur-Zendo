@@ -61,4 +61,7 @@ refuses (quota), mark the job `pending` again and stop launching until the next 
 ## Design principles (the accumulated lessons; keep them in DESIGN_LOOP.md too)
 12-year-old test; close degenerate witnesses; relational not absolute readouts; the three-word
 test (if the rule is nameable the model recognises it); rejection-only clauses go in
-generate(); unique-answer classes starve the channel; two or three independent clauses.
+generate(); unique-answer classes starve the channel; two or three independent clauses;
+leave a foothold (a natural first probe that scores sometimes, else players assume exact-match
+grading and farm demos); test cheap templates that satisfy the rule, not only wrong rules;
+soften by salience (redraw the demo) before touching the rule.

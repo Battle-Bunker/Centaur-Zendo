@@ -1416,6 +1416,20 @@
     }
    ]
   },
+  "morvin": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788554076.4099674,
+     "file": "challenges/lab/morvin.json",
+     "note": "v1 designer (sport): bowling pin decks; n pins that fell although every pin in front still stands",
+     "v": 1
+    }
+   ]
+  },
   "murn": {
    "current_version": 2,
    "qual": [
@@ -4232,7 +4246,7 @@
    "id": "designer-new-10-v0-a9fd",
    "kind": "designer",
    "started": 1788552332.0747857,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -4339,6 +4353,23 @@
    "agents": 2,
    "class": "norvel",
    "id": "players-norvel-v1-550d",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "morvin",
+   "id": "judge-morvin-v1-man",
+   "kind": "judge",
+   "started": 1788554076.4819307,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "morvin",
+   "id": "players-morvin-v1-1d63",
    "kind": "players",
    "status": "pending",
    "version": 1

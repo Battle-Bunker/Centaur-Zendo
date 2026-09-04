@@ -928,6 +928,21 @@
      },
      "score": 3.8,
      "version": 2
+    },
+    {
+     "advice": "The 49% coin-flip witness (nose vs tail guessed) is the overshoot risk; if finals cluster near 50% without the asymmetry being discovered, show two nose/tail pairs on the same stalk in every demo.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 5
+     },
+     "score": 4.5,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -6079,7 +6094,7 @@
    "id": "judge-basten-v3-man",
    "kind": "judge",
    "started": 1788565069.4189916,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

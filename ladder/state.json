@@ -934,8 +934,70 @@
    "refined_versions": [
     1
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demos": 3,
+       "final_correct": 0,
+       "final_presented": 0,
+       "final_rate": null,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         995
+        ],
+        [
+         4,
+         455
+        ],
+        [
+         447,
+         447
+        ],
+        [
+         534,
+         534
+        ]
+       ],
+       "team": "crandel1a"
+      },
+      {
+       "cracked_round": 3,
+       "demos": 2,
+       "final_correct": 0,
+       "final_presented": 0,
+       "final_rate": null,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         1025
+        ],
+        [
+         9,
+         406
+        ],
+        [
+         459,
+         459
+        ],
+        [
+         615,
+         615
+        ]
+       ],
+       "team": "crandel1b"
+      }
+     ],
+     "run": "lad-crandel-v2-1",
+     "version": 2
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788549394.6286163,
@@ -4372,7 +4434,7 @@
    "kind": "players",
    "run": "lad-crandel-v2-1",
    "started": 1788553641.8202806,
-   "status": "running",
+   "status": "done",
    "teams": {
     "crandel1a": "opus-default",
     "crandel1b": "opus-kidproxy"
@@ -4432,6 +4494,23 @@
    "agents": 2,
    "class": "norvel",
    "id": "players-norvel-v2-c730",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "crandel",
+   "id": "refiner-crandel-v2-man",
+   "kind": "refiner",
+   "started": 1788556647.0982637,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "crandel",
+   "id": "players-crandel-v2-cca0",
    "kind": "players",
    "status": "pending",
    "version": 2

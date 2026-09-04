@@ -384,3 +384,29 @@ and the foothold still pays ~11 %.
 covered; or drop the second digit and require in the scorer that at least one long garment
 per line has nothing below it. **If too hard**: make the last digit one total for the whole
 rack instead of one per line.
+
+## crandel v2 ladder run `lad-crandel-v2-1` (2026-09-04, 6×0.5 s, 2 Opus players) — server died before the final
+
+| team | profile | rounds 1–4 | cracked | demos |
+|---|---|---|---|---|
+| crandel1a | opus-default | 0, 4/455, 447/447, 534/534 | round 3 | 3 |
+| crandel1b | opus-kidproxy | 0, 9/406, 459/459, 615/615 | round 3 | 2 |
+
+No finals (the server was killed at 20:50 by crandel1b's own `pkill -f "python -"`; arena
+launcher and player brief now hardened). Evidence is nonetheless clear: **both Opus players
+cracked v2 in round 3**, faster than any class today. Both read the object at once ("shelves, the
+stuff is hanging down", "wardrobe rail with clothes"); both imagined kids said the rule in the
+first minute ("some of them nearly touch the one below"). The legibility work succeeded — and made
+the class too easy for Opus.
+
+Why it fell so fast: (1) the clue is a fingerprint with one group per shelf, so the mapping
+group→shelf is free; (2) `h` and `longs` are directly countable, leaving `drips` as a one-bit
+question; (3) the generator law `drips ∈ {longs−2, longs−1}` means drips is nearly determined;
+(4) the missing last group says "it is about the shelf below". Levers for v3 (keep the picture
+and the clue shape — they are what the kid judge rewarded): (a) let drips range 0..longs freely
+so it carries information; (b) make the counted relation less nameable than "overlaps something
+below": e.g. count long garments whose hem is directly above a *gap* between two garments below
+(dripping onto the floor between them) — or garments that drip onto a garment of the SAME letter
+(same colour bleeds) — pick by witness table and kid-legibility; (c) make `longs` not directly
+visible (e.g. count garments that reach the rail below *and* something else). Do not drop the
+group-per-line clue shape or the drawn drips.

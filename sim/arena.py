@@ -61,8 +61,11 @@ def setup(a):
         cfg[k] = json.loads(v)
     (hidden / "game.json").write_text(json.dumps(cfg, indent=1))
     log = open(hidden / "server.log", "ab")
+    # The server is launched through a renamed argv[0] ("zendo-arena-server") so that a player's
+    # careless `pkill -f "python -"` (it happened: lad-crandel-v2-1, 2026-09-04) does not match it.
     proc = subprocess.Popen(
-        [sys.executable, "-m", "engine.server", "--config", str(hidden / "game.json"), "--start-now"],
+        ["zendo-arena-server", "-m", "engine.server", "--config", str(hidden / "game.json"), "--start-now"],
+        executable=sys.executable,
         cwd=str(REPO), stdout=log, stderr=subprocess.STDOUT, start_new_session=True,
         env={**os.environ, "PYTHONPATH": str(REPO)},
     )

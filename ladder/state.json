@@ -1880,6 +1880,20 @@
      },
      "score": 4.4,
      "version": 1
+    },
+    {
+     "advice": "The k-count of two-apart same-letter pairs is easy to spot from the demos, but nothing visually flags that the earliest counted pair must land on day n; consider making the first counted day visually distinct.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 3
+     },
+     "score": 4.2,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -2723,7 +2737,8 @@
    "id": "refiner-velk-v1-4a2d",
    "kind": "refiner",
    "reason": "kid_score",
-   "status": "pending",
+   "started": 1788534727.4086149,
+   "status": "running",
    "version": 1
   },
   {
@@ -2915,7 +2930,7 @@
    "id": "judge-tovel-v2-b76b",
    "kind": "judge",
    "started": 1788534606.269209,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

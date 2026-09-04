@@ -4500,7 +4500,7 @@
    ]
   },
   "virel": {
-   "current_version": 1,
+   "current_version": 2,
    "note": "run1: crack r3 (3 demos, exact rule) + partial 14% (four of five clauses, never found what k counts). Mixed. Kid-proxy asked the right question three times and the AI ignored it.",
    "qual": [
     {
@@ -4517,6 +4517,9 @@
      "score": 3.8,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -4675,6 +4678,12 @@
     {
      "file": "challenges/lab/virel.json",
      "v": 1
+    },
+    {
+     "added": 1788565470.2548926,
+     "file": "challenges/lab/virel.json",
+     "note": "v2 demo economy: bottom course drawn in the clue; 5-6 course demos with every rival falsified; foothold ~12%",
+     "v": 2
     }
    ]
   },
@@ -5240,7 +5249,7 @@
    "class": "virel",
    "id": "players-virel-v1-1b21",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -6049,7 +6058,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788564303.9711108,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -6106,14 +6115,31 @@
    "version": 3
   },
   {
+   "agents": 1,
+   "class": "norvel",
    "id": "refiner-norvel-v2-econ",
    "kind": "refiner",
-   "class": "norvel",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
+   "reason": "demo_economy",
    "started": 1788565137.9996712,
-   "reason": "demo_economy"
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "virel",
+   "id": "judge-virel-v2-man",
+   "kind": "judge",
+   "started": 1788565470.2871294,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "virel",
+   "id": "players-virel-v2-8bc8",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

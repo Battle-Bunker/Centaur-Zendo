@@ -198,3 +198,101 @@ the orchestrator with `sim/PLAYER_AGENT_BRIEF.md`, `{ROUNDS}`=6, `{COOLDOWN}`=5,
   making twins denser and rarer-in-rivals (bias N upward, force ≥1 twin in the bottom
   junction so the first demo shows the relation next to the clue row).
 * one crack + one partial ⇒ on target, stop.
+
+---------------------------------------------------------------------------
+
+## virel v2 — demo-economy pass (2026-09-04, refiner)
+
+Old format result (6 rounds, demos on demand): experimentalist 100 % with 3 demos in round 3,
+kid-proxy 14 % and never found what N counts (`ladder/STARS.md`). Under the new format —
+7 classes per pool, 4 rounds of ~60 probes per class, **3 demo requests per team for the whole
+game** — v1 fails the first half of the demo economy: the clue `4553/5` is four digits and a
+number, so a player without a demo cannot tell that the answer is a picture, let alone a wall.
+v2 keeps the rule byte-for-byte and rewrites the clue and the demos. v1 is kept as
+`challenges/lab/virel.v1.json`.
+
+### What changed
+
+| | v1 | v2 |
+|---|---|---|
+| clue | `4553/5` | the bottom course **drawn as bricks**, then N on line 2: `[--][--][--][-][-]` ⏎ `4` |
+| bottom course | 3–6 bricks, W 12–26 | 4–5 bricks, W 14–20 (a course a kid counts at a glance; also puts stacked-copy walls ≥16 twins out of reach) |
+| N | 1..min(10, W//2−2), uniform | drawn from (2,3,3,4,4,6,6,7) — the mode of the twin count of a *random* wall, so the natural probe scores; 5 is skipped so `solve` can always pick H ∈ {5,6} with H ≠ N and H−1 ≠ N |
+| demo height | 5–9 courses | **5–6 courses only** (countable by eye) |
+| demo content | rivals ≠ N, ≥2 stray aligned joints, ≥2 near-twins | the above **plus, in the same picture**: ≥1 brick centred on a wider brick, ≥1 same-width brick offset by exactly one column, ≥1 triple stack (same brick three courses high) and a twin ≥4 wide when N ≥ 3, and ≥1 twin in the bottom junction (a brick sitting on a brick of the clue) |
+| brick widths | uniform 2–6 | weighted (2,3,3,4,4,5,5,6) in both the clue course and the filler, so the wall reads as bricks rather than confetti |
+| rule | exactly N twin stacks, ≥5 courses, same width, bottom line = clue | **unchanged**; the scorer just reads the clue's first line instead of digits |
+
+Rule, one clause a kid says in a breath: **“N bricks sit exactly on top of a brick the same
+size.”** Everything else in the scorer is “what makes it a wall on this course”: ≥5 courses,
+every course a gapless tiling of the same width, last line = the clue's line.
+
+### One demo as it renders (seed 27)
+
+```
+clue                        answer
+[--][--][--][-][-]          [-][][--][-][][][]
+4                           [---][--][--][---]
+                            [-][][--][-][-][-]
+                            [---][--][--][-][]
+                            [-][][][][----][-]
+                            [--][--][--][-][-]   <- the clue's course
+```
+
+`[--]` at columns 5–9 sits on itself down four courses (3 twins) and `[-]` at columns 15–18
+sits on the clue's last brick (1 twin) = 4 = N. In the *same* picture: the joints at
+5 and 9 line up across junction 3 with **no** twin there (so “count the joints that line up”
+gives 9, not 4); `[]` at 5–7 sits centred on the wider `[--]` at 4–8 (centred ≠ twin); `[-]` at
+12–15 sits over `[-]` at 13–16, same width, one column off (near-twin ≠ twin); 20 pairs share
+exactly one edge. Courses 6, junctions 5, bricks 33, aligned joints 9, distinct widths 5 —
+none of them is 4.
+
+### Witness table (500 fresh clues, `scratchpad/witness.py`)
+
+| template | score |
+|---|---|
+| stacked identical courses ×5 / ×6 / ×7 / ×10 / best k | **0.0 %** each |
+| **random gapless wall on the clue course, 5 courses** | **9.0 %** |
+| **random gapless wall, 6 courses** | **12.8 %** |
+| **random gapless wall, 5–8 courses** | **14.4 %** |
+| random wall with N+1 courses (“N = junctions”) | 6.8 % |
+| running bond (every joint offset) | 0.0 % |
+| aligned joints = N (v1's best rival) | 16.6 % |
+| clue row doubled, running bond above (partial insight) | 16.2 % |
+| bricks sharing exactly one edge = N | 3.0 % |
+| same-width pairs = N / same-width-above = N | 0.0 % / 0.4 % |
+| N twins in the bottom junction, rest random | 6.8 % |
+| demo replay: one fixed wall for every clue | 0.2 % |
+| demo replay with the bottom row swapped for the clue's | 3.2 % |
+| junk (empty, `x`, the clue, `1`×100, the clue's course) | 0.0 % |
+| the true rule (`solve`) | **100.0 %** |
+
+Foothold 9–14 % (the brief's floor is ~5 %) and no template above 17 %, so the gradient is
+back where v1 had it (11 % floor, 23 % ceiling) while the clue now says what to send. The
+stacking attack is dead by arithmetic: 4–5 bricks × ≥4 junctions ≥ 16 twins, and N ≤ 7.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/virel.json --seeds 200` → `OK virel gen=0.04ms
+score=0.09ms solve=96.4ms`, no warnings. Sources: generate 309, solve 4467/5000, score
+**325**/512. 1000 fresh clues: 0 solve failures, solve mean 11.2 ms / max 132 ms, longest
+solution 125 chars, heights 5 (43 %) / 6 (57 %), N spread 2:13 % 3:24 % 4:28 % 6:24 % 7:12 %.
+generate mean **0.013 ms**, deterministic over 200 seeds, clue ≤ 22 chars. score: 0.000 ms on
+empty, 0.001 ms on 1 KB junk, 0.17 ms on a 60-course wall, 0.016 ms on real answers.
+Cross-check against an independent un-golfed implementation of the rule: **10200/10200** pairs
+agree (correct answers, 9 mutation families — dropped/added/reversed courses, ragged course,
+wrong bottom course, width-7 brick, whitespace noise, shuffled garbage — plus random walls of
+2–8 courses).
+
+### What a demo-less player can read off the clue
+
+“Here is a course of bricks and the number 4 — build a wall on it.” They send a wall whose
+bottom line is the clue's line; that is well-formed, and ~1 in 8 of those random walls happens
+to carry exactly N twins, so the foothold pays without revealing what N counts.
+
+### If it drifts
+
+* cracked by both with a demo ⇒ harden by counting only twins whose brick is *not* in the
+  bottom junction, or widen N's range upward (7–10) so twins must be packed.
+* neither cracks with a demo ⇒ soften by salience first (raise the minimum twin width to 4 and
+  force two triple stacks), not by touching the rule.

@@ -247,3 +247,26 @@ teardown     python sim/arena.py teardown --run lab-sarn-1 && python sim/arena.p
   fair and only that detail was missing.
 * Watch for: anyone scoring 1-3 % is holding the near-miss hypothesis; anyone scoring
   0.2-0.6 % has fitted a letter-weight model and believes it.
+
+## sarn v1 ladder run 2 `lad-sarn-v1-2` (2026-09-04, 6×0.5 s, 2 players)
+
+| team | profile | final | demos | how |
+|---|---|---|---|---|
+| sarn2a | opus-lowdemo | 38% | 2 | empirical (letter,digit)→word lookup table; negative mining; "penalty transfers when only the first letter changes" |
+| sarn2b | opus-theorist | 0.3% | 7 | solved a 26-unknown linear system, proved digit is no letter-weighted count, never left arithmetic |
+
+Four finals now: 41, 6, 0.3, 38 (mean 21%). **Nobody has proposed the keyboard in four Opus
+attempts**; the two mid scores are tables, not insight. 2a got closest: "f(w) is always len−1 or
+len−2" and "it tracks how the word *sounds*" — wrong direction, but it noticed the property that
+first-letter substitution keeps the digit, which is the row-travel invariance leaking through.
+Both players again said the kid would "read the words out loud" — the sound reading is the natural
+wrong turn; the keyboard reading needs someone who *types*.
+
+Status: testing (mean 21%, 4 finals). Not too_hard by the ladder rule, but the insight rate is 0/4,
+which is the real failure. Softening lever if it is refined: make the keyboard visible in the
+demo itself — e.g. one demo word per clue that lives entirely on one keyboard row (travel 0 is
+outside the digit range, so instead give digit 1 words like "were"+one hop) — or let the clue's
+letter be a *row* hint. Farming lever to close: first-letter substitution invariance (drop the
+first letter from the travel? no — the alliteration is the kid layer; instead count travel
+including the hop from L, which makes the same-first-letter class share digits anyway). Leave as
+is until the calibrated set needs it.

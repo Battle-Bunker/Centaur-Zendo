@@ -2078,6 +2078,83 @@
      ],
      "run": "lad-sarn-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s",
+     "players": [
+      {
+       "cracked_round": null,
+       "demos": 7,
+       "final_correct": 11,
+       "final_presented": 3622,
+       "final_rate": 0.003036996134732192,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         448
+        ],
+        [
+         4,
+         505
+        ],
+        [
+         0,
+         471
+        ],
+        [
+         1,
+         493
+        ],
+        [
+         3,
+         819
+        ],
+        [
+         1,
+         422
+        ]
+       ],
+       "team": "sarn2b"
+      },
+      {
+       "cracked_round": null,
+       "demos": 2,
+       "final_correct": 1441,
+       "final_presented": 3841,
+       "final_rate": 0.3751627180421765,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         1,
+         497
+        ],
+        [
+         5,
+         506
+        ],
+        [
+         7,
+         476
+        ],
+        [
+         40,
+         518
+        ],
+        [
+         52,
+         464
+        ],
+        [
+         152,
+         618
+        ]
+       ],
+       "team": "sarn2a"
+      }
+     ],
+     "run": "lad-sarn-v1-2",
+     "version": 1
     }
    ],
    "status": "testing",
@@ -3104,7 +3181,7 @@
    "kind": "players",
    "run": "lad-sarn-v1-2",
    "started": 1788538667.788123,
-   "status": "running",
+   "status": "done",
    "teams": {
     "sarn2a": "opus-lowdemo",
     "sarn2b": "opus-theorist"
@@ -3408,8 +3485,22 @@
    "class": "basten",
    "id": "players-basten-v2-72b1",
    "kind": "players",
-   "status": "pending",
+   "run": "lad-basten-v2-1",
+   "started": 1788541836.2163177,
+   "status": "running",
+   "teams": {
+    "basten1a": "opus-lowdemo",
+    "basten1b": "opus-theorist"
+   },
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "sarn",
+   "id": "players-sarn-v1-04c4",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

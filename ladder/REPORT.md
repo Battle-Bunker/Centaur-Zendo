@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-04 22:31 UTC
+# Ladder report — 2026-09-04 22:39 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -30,7 +30,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | morvin | 1 | testing | - | - | - | - | 3.6 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 76% (4) |
-| norvel | 2 | testing | - | - | - | - | 4.0 | 0 | 0 | - | 31% (2) |
+| norvel | 2 | testing | - | - | - | - | 4.0 | 0 | 0 | - | 39% (4) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 24% (6) |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

@@ -368,3 +368,25 @@ guarantee two silent gaps per demo or add the number of holes as a second clue f
 
 Scratch harness for every number above (not committed):
 `$SCRATCH/music2/v2/{generate,solve,score,attack,sampler,demostats,hyp,selftest,build}.py`.
+
+## norvel v2 ladder run `lad-norvel-v2-1` (2026-09-04, old cadence 6×0.5 s / demo per window, 2 Opus players)
+
+| team | profile | final | demos | reading |
+|---|---|---|---|---|
+| norvel1a | opus-lowdemo | 44% | 2 | "complement of the thump in n whole measures" for dense clues (72%), sparse-fill sampler otherwise |
+| norvel1b | opus-theorist | 49% | 4 | per-(n, silent-box count) lookup table; "0 or 1 silent boxes is always wrong" |
+
+Mean 46% — but still zero insight: neither player wrote one sentence about the snare filling a
+kick hole *exactly*. The two-row redraw removed the hat texture but the sampler leak survived:
+tuning "how many boxes are silent" per n (1b) or complementing whole measures (1a) reaches
+45–50% because the exact-fill count is highly correlated with silence counts when the clue's
+holes are mostly measure-aligned. Both again reported the kid reading they missed ("a drummer
+has to breathe", "the second row looks sloppy on purpose"). 1b: "every reference answer had
+exactly 2 boxes where both drums hit" — an artefact of the planted near-misses, which read as
+a rule.
+
+Under the new format (4 rounds, 3 demos across 7 classes) this class will be re-measured; the
+number that matters is the split between players who spend a demo on it and those who don't.
+If the sampler leak persists, the lever is to make holes NOT measure-aligned (bar lines are a
+red herring — a hole that straddles a bar line cannot be "complemented per measure") and to
+make n small relative to the hole count so silence-count tuning has no gradient.

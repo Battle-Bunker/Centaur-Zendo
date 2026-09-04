@@ -1936,6 +1936,89 @@
      ],
      "run": "lad-norvel-v1-1",
      "version": 1
+    },
+    {
+     "cadence": "6x0.5s/5s/3s/1cls/windemos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 4,
+       "final_correct": 1328,
+       "final_presented": 2728,
+       "final_rate": 0.4868035190615836,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         9,
+         500
+        ],
+        [
+         19,
+         506
+        ],
+        [
+         53,
+         500
+        ],
+        [
+         55,
+         505
+        ],
+        [
+         114,
+         598
+        ],
+        [
+         208,
+         649
+        ]
+       ],
+       "team": "norvel1b"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 2,
+       "final_correct": 1414,
+       "final_presented": 3238,
+       "final_rate": 0.43668931439159975,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         30,
+         512
+        ],
+        [
+         65,
+         480
+        ],
+        [
+         47,
+         507
+        ],
+        [
+         94,
+         476
+        ],
+        [
+         194,
+         510
+        ],
+        [
+         157,
+         483
+        ]
+       ],
+       "team": "norvel1a"
+      }
+     ],
+     "pool": [
+      "norvel"
+     ],
+     "run": "lad-norvel-v2-1",
+     "target": true,
+     "version": 2
     }
    ],
    "status": "testing",
@@ -4626,7 +4709,7 @@
    "note": "team a finished; one live agent remaining",
    "run": "lad-norvel-v2-1",
    "started": 1788559081.8489923,
-   "status": "running",
+   "status": "done",
    "teams": {
     "norvel1a": "opus-lowdemo",
     "norvel1b": "opus-theorist"
@@ -4724,6 +4807,14 @@
     "kelmar1b": "opus-kidproxy"
    },
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v2-3a7e",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

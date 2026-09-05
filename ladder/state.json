@@ -12674,6 +12674,39 @@
    "kind": "players",
    "status": "pending",
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-picture-pool-6",
+   "kind": "players",
+   "members": [
+    "tovel",
+    "norvel",
+    "basten",
+    "durnel",
+    "garrow",
+    "molvic",
+    "kelmar"
+   ],
+   "pool": {
+    "basten": 4,
+    "durnel": 2,
+    "garrow": 5,
+    "kelmar": 3,
+    "molvic": 3,
+    "norvel": 4,
+    "tovel": 7
+   },
+   "reason": "first finals for tovel v7, molvic v3, garrow v5; demo-holder evidence for durnel v2 and basten v4",
+   "run": "lad-tovel-v7-1",
+   "started": 1788600227.129555,
+   "status": "running",
+   "teams": {
+    "tovel1a": "opus-default",
+    "tovel1b": "opus-kidproxy"
+   },
+   "version": 7
   }
  ],
  "profiles": {

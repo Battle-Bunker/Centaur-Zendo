@@ -1,0 +1,33 @@
+{
+ "run": "lad-tovel-v7-1",
+ "arena": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tovel-v7-1",
+ "hidden": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tovel-v7-1/.pool-805d9f15",
+ "port": 59523,
+ "pid": 10923,
+ "teams": [
+  "tovel1a",
+  "tovel1b"
+ ],
+ "tokens": {
+  "tovel1a": "11b2793117e6",
+  "tovel1b": "3e9ad72dd96d"
+ },
+ "admin_token": "677a8e5b5fed3764",
+ "config": {
+  "cooldown_seconds": 5,
+  "max_training_rounds": 4,
+  "max_demos": 3,
+  "training_seconds": 21600,
+  "final_window_seconds": 3600,
+  "round_seconds": 0.5,
+  "final_seconds": 3.0,
+  "open_registration": true,
+  "challenge_dir": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tovel-v7-1/.pool-805d9f15/challenges",
+  "event_log": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tovel-v7-1/.pool-805d9f15/events.jsonl",
+  "host": "127.0.0.1",
+  "port": 59523,
+  "admin_token": "677a8e5b5fed3764"
+ },
+ "pool_size": 7,
+ "started_at": 1788600227.1700096
+}

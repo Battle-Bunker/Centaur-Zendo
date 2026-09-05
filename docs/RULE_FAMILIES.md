@@ -144,27 +144,32 @@ question the attacker already knows how to ask.
 or two positions** of the instance instead of properties of one element — and aim the decoys at the
 attacker's *rarity* order rather than his count.
 
-### Levers, measured on tavrik v3 (identical conditions, 400 clues, 60 free labels)
+### Levers, measured on tavrik v3 (1500 test clues, mean of 3 disjoint label draws, SE 1.3)
 
-| build | k | floor | simulated attack |
-|---|---|---|---|
-| **v3 as shipped** | 5 | 20 % | **40.8 %** |
-| minus lever 3: v2's own universe | 4 | 25 % | **98.0 %** |
-| minus lever 5: decoys not aimed | 5 | 20 % | 54.2 % |
-| minus lever 1: k = 4 | 4 | 25 % | 47.8 % |
-| minus lever 2: three-example clues | 5 | 20 % | 44.2 % |
-| lever 1 pushed: k = 6 | 6 | 16.7 % | 40.0 % |
+| build | k | floor | attack, 60 free labels | delta vs shipped |
+|---|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **42.6 %** | — |
+| minus lever 3: v2's own universe | 4 | 25 % | **98.0 %** | **+55** |
+| minus lever 5: decoys not aimed | 5 | 20 % | 50.7 % | **+8.1** |
+| minus lever 1: k = 4 | 4 | 25 % | 48.4 % | **+5.8** |
+| lever 1 pushed: k = 6 | 6 | 16.7 % | 41.8 % | −0.8 (noise) |
+| minus lever 2: three-example clues | 5 | 20 % | 41.5 % | −1.1 (noise) |
+
+*Measure levers at n ≥ 1500 and report the standard error.* A first pass of this table at n = 400
+on one label draw gave +7 / +13 / +3 for levers 1 / 5 / 2; at SE 2.5 those were not resolvable, and
+the lever-2 figure reversed sign when repeated. Do not publish a lever delta smaller than 2 SE.
 
 **Worked.**
-* **Lever 3 — a universe of RELATIONS (≈ 41 points, the whole game).** 15 of tavrik v3's 18
-  templates relate two letters or two places: *the first and last letters are exactly n apart in
-  the alphabet · a letter comes back after exactly one other letter · the 2nd letter and the
-  2nd-from-last letter are the same · the first letter is the earliest in the alphabet of all its
-  letters · the back half has more vowels than the front half · the first vowel is an e · the
-  vowels go up the alphabet*. Best Jaccard against the 627-predicate bank: **0.08–0.75** (v2:
-  0.97–1.00). They are still one-breath kid sentences — a kid is *good* at looking at two letters
-  at once, and a predicate bank is bad at it.
-* **Lever 5 — aim the RARITY order, not the count (≈ 13 points).** Revision 2 aimed the true
+* **Lever 3 — a universe of RELATIONS. This is the whole game and everything else is a rounding
+  error next to it.** The same attacker scores 98.0 % against v2's universe and 42.6 % against
+  v3's. 15 of tavrik v3's 18 templates relate two letters or two places: *the first and last
+  letters are exactly n apart in the alphabet · a letter comes back after exactly one other letter
+  · the 2nd letter and the 2nd-from-last letter are the same · the first letter is the earliest in
+  the alphabet of all its letters · the back half has more vowels than the front half · the first
+  vowel is an e · the vowels go up the alphabet*. Best Jaccard against the 627-predicate bank:
+  **0.08–0.75** (v2: 0.97–1.00). They are still one-breath kid sentences — a kid is *good* at
+  looking at two letters at once, and a predicate bank is bad at it.
+* **Lever 5 — aim the RARITY order, not the count (+8.1, 6 σ).** Revision 2 aimed the true
   candidate's rank on the *number* of surviving outside predicates. No player used that statistic.
   Both used **the rarest predicate that selects exactly one candidate**. So: carry the attacker's
   bank inside `generate`, intersect it over the examples, compute for every candidate the surprise
@@ -173,31 +178,33 @@ attacker's *rarity* order rather than his count.
   secondary aims). This works only once lever 3 is in place: when the truth's rule is not
   expressible in the bank, the truth's cheapest explanation is an accident of exactly the same kind
   as a decoy's, and a decoy carrying one at least as rare can always be found.
-* **Lever 1 — five candidates (≈ 7 points).** Floor 20 %, one more decoy that must carry a rare
+* **Lever 1 — five candidates (+5.8, 4 σ).** Floor 20 %, one more decoy that must carry a rare
   example-consistent explanation, and a predicate is less likely to select uniquely. **k = 6 buys
   nothing** (−0.8, inside noise) and costs a clue line and a kid's patience. Five is the number.
-* **Lever 2 — always the minimal example set, a PAIR wherever one exists (≈ 3 points).** tavrik v3
-  is 99.8 % two-word clues. Every extra example is free information for the attacker's
-  intersection and buys the designer nothing once U is an antichain.
 * **Keep §5b.** Matched trap profiles now hold in the strong form: over 500 clues **all 3001 fitted
   traps are satisfied by all five candidates or by none**, so a player whose universe is U *plus*
   the excluded rules is worth exactly a player who knows U.
 
 **Did not work / not used.**
+* **Lever 2 (always the minimal example set, a PAIR wherever one exists) — NO measurable hardening
+  effect**: −1.1 ± 1.3 at n = 1500, i.e. three-example clues are, if anything, very slightly
+  *harder* for the attacker. tavrik v3 is 99.8 % two-word clues anyway, and that is worth keeping
+  for clue brevity and for the kid who reads the whole clue in one breath — but **do not count it
+  as a defence**. The intuition that "every extra example is free information for the attacker's
+  intersection" does not survive measurement: the extra example also constrains the lineup.
 * **Lever 4 (skew the draw toward the rare part of U) — dropped.** Once the rarity *order* is
   aimed, the truth's own base rate carries no signal, so skewing the draw only distorts the mix a
-  kid feels. Measured: the truth's rank in the rarity order is uniform by construction; nothing
-  left to buy.
+  kid feels.
 * **Rules with density > .5** (e.g. "a letter and the very next letter of the alphabet are both in
   the word", .603) look attractive as anti-rarity rules but are unusable in a lineup: with five
   candidates, four decoys all *lacking* a common property is itself a signature.
 * **Length-conditioned templates** ("the middle letter is a vowel", odd words only) leak through
   the lineup, because all candidates share a length.
 * **Competitor-only templates** (§Revision 2, "exactly n vowels") turned out to be unnecessary once
-  the loose vowel-count cousins are pure traps: dropping them shortened the clue to two words.
+  the loose vowel-count cousins are pure traps.
 * **More labels stop paying.** The point of the design is the *shape* of the curve: tavrik v3 goes
-  39.6 % (0 labels) → 42.2 (30) → 42.4 (60) → 44.2 (240), i.e. flat, where v2 went 91.2 → 97.6 →
-  98.0 → 99.4. Free labels are only worth something if the vocabulary can express U.
+  40.3 % (0 labels) → 42.6 (60), i.e. flat, where v2 went 91.2 → 98.0. Free labels are only worth
+  something if the vocabulary can express U.
 
 **The ceiling stays where it belongs.** The in-U intersection is **100.0 %** on v3. An attacker
 handed the bank *plus* all of U scores 79.8 / 88.0 / 95.6 / 99.2 % at 0 / 30 / 60 / 120 labels and
@@ -240,7 +247,8 @@ run this, in order:
    unique-explanation weights → rarity-weighted pick) at **0 / 30 / 60 / 120 / 240 labels**; the
    same engine with a bank that also contains all of U (the honest ceiling); the **in-U
    intersection, which must be 100 %**; the number of labels to learn U to 90 % coverage; and the
-   lever ablation (k, aiming on/off, example count).
+   lever ablation (k, aiming on/off, example count) at **n >= 1500 clues with a standard error**
+   -- lever deltas under 2 SE are noise and must not be published as defences.
    **Target: 35–55 % at 30–60 labels**, and a curve that is flat in the number of labels. The
    simulator is a *lower* bound on a real Opus centaur — on tavrik v2 it scored 91–98 % where they
    scored 85–96 % — so aim at the middle of the band, not the bottom.

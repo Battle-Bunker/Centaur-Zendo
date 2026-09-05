@@ -893,3 +893,192 @@ nothing in them was re-derived beyond the rows above.
 The 25 scorer characters buy `q=a[-1]if"slice"in a[-1]else a[0]` — the caption read from the last
 line, with the first still accepted so that transcripts and clues from v5 keep grading during the
 changeover. That fallback can be deleted once no v5 clue is in play.
+
+---
+
+## garrow v7 — the knife moves into the clue; the answer is a mark, not a cutting (2026-09-05)
+
+v6 kept as `challenges/lab/garrow.v6.json` (byte-identical copy); v7 is `challenges/lab/garrow.json`.
+**This is the first version that changes the rule.** Six versions changed only what the picture said
+out loud, and six versions failed the same way. v7 keeps the tray bake and the knife and throws the
+rest away: the tray arrives **already cut**, and the answer **marks** the slices that hold two or
+more of the named topping.
+
+### The evidence: fourteen finals, three demo-holders in a row, one sentence repeated
+
+New-format finals on v3–v6: **36, 36, 0, 0, 35, 26, 0, 15, 13, 14, 24 %** — never above 36 %, and
+the last three demo-holders (`lad-durnel-v2-1`, `lad-tovel-v7-1`, `lad-garrow-v5-2`) scored 26, 14
+and 24 %. Every one of them bought the cut glyph `|` from the demo; none of them found the
+placement.
+
+* **durnel1b** (theorist, one demo, 26 %): "insert `|` cuts so slices hold ~N **cells** of letter L.
+  Right-to-left greedy accumulate-to-N. Multiple answers are accepted; **the reference answer adds
+  extra cuts I could not derive**." And: "my best rule still misses the reference solver's habit of
+  leaving one blank column at the start of a slice."
+* **garrow2a** (opus-default, one demo, 14 %): "`X N slices`: answer is the loaf with `|` cut marks
+  inserted (**demo showed 5 cuts for N=3, cutting through tokens**). **Cut placement never found.**
+  … 14 % (N=0 only)." Its strategy file lists garrow under `IDENTITY_ONLY` — it answered only the
+  nought clues all game.
+* **garrow2b** (kidproxy, no demo, nought clues only): "Almost certainly 'cut the box into N
+  slices'; the cut glyph is unknown, so unguessable without a demo." It spent its demos elsewhere
+  *because* garrow's clue looked probeable.
+* The kid judge (4.0) said the caption's word "slices" does the shape-work but the picture is still
+  an abstract grid, and asked the two questions the class could never answer: "how many pieces?"
+  and "do the cuts go through the cheese?"
+
+### The diagnosis: it was never one clause, and the caption was never a checksum
+
+The rule was five clauses — (a) count slices with ≥ 2 of the named topping, (b) a halved piece
+counts for BOTH sides, (c) at least 4 slices, (d) each at least 3 wide, (e) any cutting that
+satisfies (a)–(d) scores. (c) and (d) are rejection-only, so a demo never shows a violation, and (b)
+is exactly the convention a diff cannot reveal. Two measurements make the size of that tax concrete:
+
+* **The unstated well-formedness clauses cost 95–99.6 %.** Measured on v7-shaped trays: a player who
+  has the counting rule exactly right but does not know "the knife never goes through a piece / no
+  slice under 3 wide" produces a legal cutting **4.6 %** of the time with 4 cuts, **1.4 %** with 5,
+  **0.4 %** with 6. Piece-interiors are 34 % of the tray's columns. That *is* the 14–26 % band.
+* **The caption was a target, not a checksum.** When the answer is a construction, the count
+  falsifies nothing: whatever a player thinks the digit means, some cutting achieves it. That is why
+  v5's near-synonyms measured 77–93 % in the witness table (they could *build* to the digit) while
+  the class itself measured 14 % in the arena. The picture-pool lesson (LADDER.md, run 4) —
+  "a caption that counts the edits lets a hypothesis be falsified offline against ~70 harvested
+  clues" — never actually applied to garrow, because garrow's answer was free.
+
+### The designs that were considered, with numbers
+
+| design | what it is | verdict |
+|---|---|---|
+| **(1) the knife goes between, never through** | keep the cutting as the answer; cuts fall only in cheese columns; the caption counts slices with two of the topping | **rejected**: deletes clause (b) only. The two rejection-only clauses remain, and they are the ones priced at 0.4–4.6 % above. The caption is still a target, so v5's "exactly two" row (80.6 %) survives: any wrong reading can still build to the digit. |
+| **(3) one cut** | the answer adds exactly ONE knife line so the left piece holds n of the topping | **rejected on measurement**: on these trays **every** count from 0 to the number of pieces is reachable by some single cut (7.05 of 7 possible values on average), so the digit again falsifies nothing offline; and each reachable count has **5.3 legal cut positions** on average, so the class needs either an underivable tie-break (v1–v6's disease) or a property scorer, which makes the rule a prefix sum — nameable, and the first thing a model tries. |
+| **(4) the fennick move on severed pieces** | tray arrives cut; caption counts the pieces the knife went through; the answer redraws them split | **rejected**: the count is a three-line statistic of the clue and sits inside every player's default sweep (players in this ladder run 19–30 statistics per class as a matter of course), so there is no measurement to discover; and *which* pieces change is not a question — all of them do. Pure rendering: 100 % with a demo, 13 % without, no gradient, nothing for a kid to contribute. |
+| **(2) portions — CHOSEN** | the tray is cut in the clue; the answer marks the slices holding two or more of the named topping | one clause; the answer is **unique**, so the demo's diff is the whole rule; the digit becomes a real checksum on the clue; and the mark — a sprinkle of `*` over the slice's cheese — is loud in a demo and not guessable from the clue. |
+
+### What v7 is
+
+**Clue**: crust row, three rows of tray (cheese `:`, `##` crust two columns thick at each end,
+2-cell topping pieces from `mpotacsb`), crust row, then the caption `m 3 sprinkle`. The tray is
+already cut: `|` straight down through all five rows, **5–7 slices, each ≥ 4 wide, visibly uneven,
+and the knife never goes through a piece — it comes down through the cheese**. That answers the kid
+judge's two questions inside the picture. **Answer**: the same picture with every cheese `:` inside
+a sprinkled slice turned into `*`. **Rule, one clause**: *a slice gets the sprinkle if it holds two
+or more pieces of the topping the caption names.* The digit counts the sprinkled slices; on 12.6 %
+of clues it is 0 and the answer is the tray handed back unchanged — and that nought is no longer a
+special case in the scorer, it is simply what the rule says when no slice holds two.
+
+### One demo as it renders (seed 101)
+
+```
+clue:                                               answer:
+########|######|########|##########|#####|#######   ########|######|########|##########|#####|#######
+##oo::oo|mm::mm|::aa::mm|::::::::::|:::mm|:::::##   ##oo::oo|mm**mm|**aa**mm|::::::::::|***mm|:::::##
+##:oo:::|aa::aa|:::::oo:|::oo::::oo|::mm:|:mm::##   ##:oo:::|aa**aa|*****oo*|::oo::::oo|**mm*|:mm::##
+##::::::|:::oo:|:oo:::mm|mm::oo::oo|mm:::|:::::##   ##::::::|***oo*|*oo***mm|mm::oo::oo|mm***|:::::##
+########|######|########|##########|#####|#######   ########|######|########|##########|#####|#######
+m 3 sprinkle
+```
+Slice 2 holds `mm` twice **on the same row**, slice 3 holds two `mm` **on different rows**, slice 5
+holds **three**, one on each row — all sprinkled. Slice 4 (the widest) holds **one** `m` and is
+left plain; slice 6 holds one `m` **and nothing else at all**; slice 1 holds **two `oo`** and is
+left plain, because it has to be the mushrooms. Every near-miss the rule needs is in the one
+picture, which is why one demo is enough.
+
+A nought clue and its answer (seed 303) — the class's partial credit in one line:
+
+```
+#####|#####|#####|######|########|####|####          the answer is that picture, unchanged
+##:ss|:::bb|:::::|aa::aa|:::aa:::|::bb|::##
+##aa:|::aa:|::bb:|aa::aa|::::::::|::::|bb##
+##ss:|:::ss|aa:::|bb::aa|::::::::|::ss|::##
+#####|#####|#####|######|########|####|####
+b 0 sprinkle
+```
+
+### What every clue shows (500 fresh clues, 434 of them with a sprinkle)
+
+Generate designs the picture and then draws it, so **every clue is a teaching demo**:
+
+| the picture shows | v7 |
+|---|---|
+| a sprinkled slice holding exactly two | **100 %** |
+| a sprinkled slice holding three ("exactly two" is visibly not the rule) | **100 %** |
+| a sprinkled slice with its pieces all on ONE row | **100 %** |
+| a sprinkled slice with its pieces on SEPARATE rows | **100 %** |
+| a plain slice holding ONE piece of it | **100 %** |
+| …holding one piece of it and nothing else at all | **100 %** |
+| a plain slice holding TWO of ANOTHER topping | **100 %** |
+| a slice holding none of it | **100 %** |
+| the widest slice left plain | **100 %** |
+
+### Witness table (500 fresh clues, seeds 100000–100499)
+
+Every strategy names the set of slices it would sprinkle and then draws the sprinkle **correctly**,
+so each number is "how often this *reading of the picture* picks exactly the right slices".
+
+| strategy | v7 |
+|---|---|
+| **the rule: a slice with two or more pieces of it** | **100.00 %** |
+| …the same rule said in cells: four cells or more | 100.00 % (a restatement) |
+| …the same set: the n slices holding most of it | 100.00 % (a restatement) |
+| the n fullest slices (any topping) | **26.80 %** ← the strongest genuinely different reading |
+| the n narrowest slices | 23.00 % |
+| n slices at random | 14.20 % |
+| **nothing sprinkled (the clue handed back)** | **13.20 %** ← exactly the nought clues |
+| slices holding EXACTLY two of it | 13.20 % |
+| slices holding three or more of it | 13.20 % |
+| slices with two of it on the SAME row | 13.20 % |
+| slices with it on two different rows | 13.20 % |
+| the n widest slices / the first n slices | 13.20 % |
+| slices with three topping pieces of any mix | 0.80 % |
+| slices with two of ANY one topping | 0.60 % |
+| slices holding none of it | 0.40 % |
+| slices holding any of it at all; two pieces of any mix; it outnumbers the others; every slice; the widest slice only | 0.00 % |
+
+**The rendering is what the demo buys.** The right slices drawn some other way: whole slice starred
+including toppings 13.2 %, starred with `.` instead of `*` 13.2 %, toppings upper-cased 13.2 %,
+toppings rubbed out 13.2 %, one star in the middle 13.2 %, slice wiped to blanks 13.2 %, only the
+first row starred 13.2 % — i.e. every natural mis-drawing collects the nought clues and nothing
+else. The rule itself *is* findable without a demo (the digit is a real checksum now), so this is
+the fennick/molvic split in its cleanest form: the clue says **what** changes, the demo says
+**how**.
+
+Shape and junk attacks (500 clues): reference 100 %; caption kept 100 %; crust rows dropped 100 %;
+trailing spaces 100 %; blank lines inserted 100 %; leading/trailing blank lines 100 %. The clue
+unchanged 13.2 % (the noughts). Knife lines removed, rows reversed, a dough row dropped, a topping
+moved one cell, cheese turned to spaces, demo replay, one constant answer, empty, whitespace, 4000
+characters of junk — **all 0.00 %**. One sprinkled slice left plain 0.00 %; one extra slice
+sprinkled 3.23 %, which is the case where that slice has no cheese cell at all so the sprinkle is
+invisible (a slice that *is* sprinkled always has cheese: at most two of its three rows carry
+pieces).
+
+### Speed and size
+
+| | v6 | v7 |
+|---|---|---|
+| `generate` mean / median / p99 / max | 2.08 / 1.54 / 8.4 / 17.2 ms | **0.32 / 0.24 / 1.03 / 4.95 ms** (20000 seeds, 0 empty) |
+| `solve` mean / max | 90 / 398 ms | **0.012 / 0.085 ms** |
+| `score` mean / max | 0.056 / 4.1 ms | **0.013 / 0.096 ms** |
+| scorer / solve / generate chars | 448 / 4960 / 8967 | **306 / 605 / 7395** |
+| clue / solution chars | 205 / 229 | 277 / 264 |
+
+`solve()` costs nothing now because there is nothing to search for: every clue is built to be a
+good demo, so the reference answer is one pass over the picture. `python tools/quickcheck.py
+challenges/lab/garrow.json --seeds 200`: **OK**, gen 1.05 ms max, score 0.06 ms, solve 0.05 ms, one
+warning — "score accepts the clue itself as a solution", which on a nought clue is the point.
+`score(clue, solve(clue)) == 1` on 3000 further seeds. Caption digit: 0 on 12.6 %, 2 on 63.6 %,
+3 on 23.8 % (the digit is never 1: two sprinkled slices are what the picture needs to refute both
+row readings at once).
+
+### Prediction and levers
+
+Two Opus players in a 7-class pool: the one who spends a demo should crack it **in round 2**, 90–100 %
+(one look gives the drawing and the rule is confirmable offline on 70 harvested clues); the one who
+does not should sit at the **13 %** foothold unless he guesses the star convention. Predicted mean
+final **50–60 %**, kid score **4.2–4.5**.
+
+The risk has changed direction: for the first time the danger is **too_easy**, and the specific
+danger is a player who never buys a demo, finds the rule offline from the checksum, and then guesses
+the drawing in a dozen probes. Levers, in order: (i) sprinkle only the cheese **between** the two
+pieces rather than the whole slice — much harder to guess, still one clause, still one look in a
+demo; (ii) name a topping that is not the commonest one on the tray; (iii) require the sprinkled
+slice to hold nothing but that topping. Too hard: draw one slice already sprinkled in the clue as a
+worked instance (the standard lever for every picture class in this pool).

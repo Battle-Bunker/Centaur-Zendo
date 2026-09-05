@@ -194,7 +194,7 @@ def cmd_launch(a):
         profs = pick_profiles(s, c)
         teams = [f"{j['class']}{k}a", f"{j['class']}{k}b"]
         pool = SCRATCH / f"pool-{run}"; pool.mkdir(parents=True, exist_ok=True)
-        members = pick_pool(s, j["class"])
+        members = j.get("members") or pick_pool(s, j["class"])
         j["pool"] = {n: s["classes"][n]["current_version"] for n in members}
         for n in members:
             shutil.copy(REPO / cur_file(s["classes"][n]), pool / (n + ".json"))

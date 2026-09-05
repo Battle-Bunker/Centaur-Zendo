@@ -2567,7 +2567,7 @@
    ]
   },
   "norvel": {
-   "current_version": 2,
+   "current_version": 3,
    "qual": [
     {
      "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
@@ -2599,7 +2599,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -2776,6 +2777,12 @@
      "file": "challenges/lab/norvel.json",
      "note": "v2 salience: two rows (hat dropped), snare row carries only its runs, bigger dispersed clues; sampler leak 28%->15%",
      "v": 2
+    },
+    {
+     "added": 1788567028.9575505,
+     "file": "challenges/lab/norvel.json",
+     "note": "v3 demo economy: grid in the clue with empty snare row; gaps straddle bar lines; n anti-correlated with gap width",
+     "v": 3
     }
    ]
   },
@@ -5981,7 +5988,7 @@
    "class": "norvel",
    "id": "players-norvel-v2-3a7e",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 2
   },
   {
@@ -6152,7 +6159,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788565137.9996712,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -6272,6 +6279,40 @@
    "agents": 1,
    "class": "garrow",
    "id": "judge-garrow-v3-a762",
+   "kind": "judge",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-econ-pool-1",
+   "kind": "players",
+   "members": [
+    "fennick",
+    "tovel",
+    "basten",
+    "virel",
+    "kelmar",
+    "garrow",
+    "norvel"
+   ],
+   "note": "validation pool of demo-economy versions",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v3-3b7c",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "judge-norvel-v3-24f5",
    "kind": "judge",
    "status": "pending",
    "version": 3

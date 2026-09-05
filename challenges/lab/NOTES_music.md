@@ -390,3 +390,159 @@ number that matters is the split between players who spend a demo on it and thos
 If the sampler leak persists, the lever is to make holes NOT measure-aligned (bar lines are a
 red herring — a hole that straddles a bar line cannot be "complemented per measure") and to
 make n small relative to the hole count so silence-count tuning has no gradient.
+
+## norvel v3 (2026-09-05) — refiner: demo-economy pass (clue = the grid; both sampler leaks shut)
+
+Brief: the new format (7 classes per pool, 4 rounds of ~60 probes per class, **3 demo requests
+per team**) means a player may never see a demo of this class at all, and v2's two players had
+reached 44 % / 49 % without ever comparing a snare run with a kick gap. `norvel.v2.json` is the
+byte-identical previous version. **The rule is untouched for the third time**: *exactly n of the
+maximal runs of `x` in the snare row have the same span as a gap of the kick row.*
+
+### 1. The clue is now the drum grid (put the object in the clue)
+
+v2's clue was the bare string `x..x.x../5`. v3's clue is three lines:
+
+```
+kick  |xx..|.x..|.xx.|.x..|.x..|.xx.|.x..|.xx.|.xx.|.xxx|
+snare |....|....|....|....|....|....|....|....|....|....|
+n = 2
+```
+
+The kick row is drawn in bars of four with a label; the snare row is **there and empty**, same
+bars, all rests; then the number. "Fill in the snare row" is legible without a demo, and the
+answer is literally this picture with row 2 coloured in. The scorer is unchanged in spirit —
+delete everything that is not `x` or `.`, drop the lines that become empty, require exactly two
+rows of the clue's length with the first equal to the kick row — so labels, bar lines, a
+`|1234|` header, an echoed `n = 2` line, blank lines, tabs and CRLF are still all free (leniency
+100 % on nine renderings, strictness 0 % on ten mutations). `solve()` now renders demos in the
+**clue's own format**, so one look says "the answer is the clue, with the snare filled in".
+
+### 2. The two sampler leaks
+
+v2's players did not tune a rule, they tuned a *shape*: "complement the thump in n whole
+measures" (44 %) and a per-(n, silent-box-count) lookup table (49 %). Both work for the same
+reason: any process that sprays snare hits into the kick's rests fills some number of gaps
+exactly, and if that number can be tuned to sit near n it lands on n about 20 % of the time
+(P(count = n) for a Poisson-ish count is 0.20–0.27 — the arithmetic floor of this *whole family*
+of rules). Two changes, and they work together:
+
+* **No gap fits inside a measure.** Every gap now straddles at least one bar line — the wide
+  family straddles two — so complementing a measure never produces a run that ends where a gap
+  ends unless *every* measure the gap touches is complemented. The literal v2 strategy
+  ("complement n whole measures") now scores **0.00 %**, and a contiguous block scores 7 %.
+* **n is small and anti-correlated with gap width.** Three clue families, ~1/3 of clues each:
+  9–10 gaps of 2–3 steps with **n = 2**; 9–10 gaps of 4–5 with **n = 3**; 7–8 gaps of 6–7 with
+  **n = 4**. The blind density that would fill "about n" gaps by luck is then *different in every
+  family* (p ≈ 0.45 / 0.65 / 0.85), so a single global density — per step or per measure —
+  can only ever be right for one family. This is the change that matters: with n spread 2–4 over
+  a *fixed* gap width, the same sampler scores 22 %; with the widths coupled to n it scores 11 %.
+
+Measured on 2000 fresh clues, sweeping the knob the player would sweep:
+
+| blind strategy | v2 (measured on v2's generator) | **v3** |
+|---|---|---|
+| kick-rest-biased random snare, density 0.5 / 0.6 / 0.7 / 0.8 | 13.9–17.3 % | **9.4 / 9.0 / 9.4 / 11.0 %** |
+| …best over the whole density sweep 0.30–0.95 | 17.3 % (p = 0.90) | **12.7 % (p = 0.90)** |
+| complement of n whole measures (the v2 player's actual rule) | 44 % in play | **0.00 %** |
+| complement of a random contiguous block of measures | — | **7.0 %** |
+| complement each measure w.p. 0.3 / 0.5 / 0.7 | — | 5.5 / **15.3** / 14.5 % |
+| …best over the whole per-measure sweep | — | **15.3 % (s = 0.50)** |
+| density tuned per clue so E[exact fills] = n (needs the insight) | 29.0 % | 26.8 % |
+
+15.3 % is the residual: a per-measure coin is just a coarse sampler, and no design of this rule
+can push a *tuned* random filler below ~P(count = n). It is a **plateau, not a ladder** — the
+whole s ∈ [0.45, 0.70] band pays 13–15 % and nothing pays more — which is exactly the foothold
+lever 7 asks for: a demo-less player who sprays snare hits into the gaps scores 9–15 % and never
+concludes the grader is exact-match.
+
+### 3. The demo says the rule and nothing else
+
+`solve()` now emits **the n exact fills, ONE run that stops short inside a gap, ONE run that
+covers a gap and spills over a kick hit, and silence.** Nothing else — no filler, no
+right-length-wrong-place decoy (v2 had up to three near-misses plus a decoy, which is why "every
+reference answer had exactly 2 boxes where both drums hit" read as a rule to the v2 player).
+Measured over 1500 demos: **0 violations**, always exactly n + 2 runs, on average 3.7 gaps left
+completely silent. Three demos as they render (clue, then answer):
+
+```
+kick  |xx..|.x..|.xx.|.x..|.x..|.xx.|.x..|.xx.|.xx.|.xxx|      n = 2
+snare |....|....|...x|x...|.xxx|x..x|x...|....|...x|....|
+        11-12 EXACT · 17-20 spills over the kick hit at 21 · 23-24 EXACT · 35 stops short
+```
+```
+kick  |x...|..x.|...x|....|.x..|...x|....|.x..|..x.|...x|....|.x..|..x.|...x|   n = 3
+snare |....|...x|xxx.|....|..xx|xx..|xxxx|x.xx|xxx.|....|....|....|...x|xxx.|
+        7-10 EXACT · 18-21 one step short · 24-28 EXACT · 30-34 spills · 51-54 EXACT
+```
+```
+kick  |xx..|....|.x..|....|.x..|....|..x.|....|..x.|....|..x.|....|..x.|....|..xx|  n = 4
+snare |....|....|..xx|xxxx|x.xx|xxxx|x..x|xxxx|xx.x|xxxx|xx.x|xxxx|xx.x|xxxx|xxx.|
+        10-16 EXACT · 18-24 one short · 27-33, 35-41, 43-49 EXACT · 51-58 spills
+```
+
+Fairness (47 "count a relation between the snare and the kick" counters): survivors
+**6.2 → 4.1 → 3.1** after 1–3 demos; the true rule always survives, and its companions are its
+own cousins ("the number of snare runs minus two" — an artefact of always planting exactly two
+near-misses — and "gaps of width ≥ 3 filled exactly"), which a handful of probes separate.
+
+### Witness table (500 fresh clues; the two sampler rows on 2000)
+
+| strategy | v3 |
+|---|---|
+| the true rule (`solve`) · fill the n widest gaps · n fills + an extra spilling run | **100.00 %** |
+| **clue returned unchanged (snare row silent)** | **0.00 %** |
+| empty · junk · unicode · 4000 chars · kick row alone · kick row twice · full snare row | 0.00 % |
+| **snare = complement of the kick (fill every gap)** | **0.00 %** |
+| **complement n whole measures** / a contiguous block | **0.00 %** / 7.00 % |
+| **complement each measure w.p. 0.5** (sweep peak) | **15.30 %** |
+| **kick-rest-biased random snare, density 0.5–0.8** | **9.0–11.0 %** (sweep peak 12.7 %) |
+| sampler tuned per clue so E[exact fills] = n | 26.80 % |
+| **fill n gaps but each run one step short** | **0.00 %** |
+| **fill n gaps but each run spills one step** | **0.00 %** |
+| **a run strictly inside n gaps (the loose reading)** | **0.00 %** |
+| one snare hit in each of n gaps · n runs anywhere · n unison hits | 0.00 % |
+| right rule but n−1 / n+1 gaps · rows swapped | 0.00 % |
+| always fill exactly 2 / 3 / 4 gaps exactly, ignoring n | 32.2 / 34.0 / 33.8 % |
+| fill all but 3 / 4 / 6 / 8 gaps exactly | 7.6 / 26.2 / 14.4 / 17.0 % |
+| fill every gap of the wider / narrower width exactly | 0.00 % |
+| **demo replay** / one fixed answer / graft an old snare row onto a new kick | **0.00 %** / 0.20 % / 2.80 % |
+
+Gradient: 0 % (well-formed, no idea) → 9–15 % (something in the gaps, any density — the
+foothold, and a plateau) → 27–34 % (the *exact* match found, the meaning of n missed) → 100 %.
+No template exceeds 34 % except the ones that already contain the rule.
+
+**What a demo-less player can read off the clue:** that the answer is this two-row drum grid with
+the snare row filled in, that it must be the same length as the kick row, and that some count of
+2–4 is involved — enough for well-formed attempts worth 9–15 % by spraying snare hits into the
+gaps, and not enough for the word *exactly*, which is what the demo's two near-misses teach.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/norvel.json --seeds 200` → **OK, no warnings**
+(`gen=0.27 ms score=0.10 ms solve=0.17 ms`). Sizes: score **322/512**, solve 1489/5000, generate
+1655/50000; clue ≤ 191 chars, solution ≤ 191. `generate` deterministic, **0.069 ms** mean over
+3000 seeds (n = 2/3/4 at 29/33/39 %); `solve()` scores 1 on **3000/3000** fresh clues, 0.063 ms
+mean. Scorer: 0 raises, 0 non-binary, 0 false positives on 12 000 junk strings (worst 0.03 ms);
+**0 disagreements** with an independent re-implementation on 12 000 mutated answers. Leniency
+100 % (bare rows, bars, other labels, beat header, blank lines, CRLF, tabs, stray spaces, an
+echoed `n =` line, prose wrapped around the picture); strictness 0 % (rows swapped, one row,
+three rows, snare shifted / emptied / lengthened, all on one line, one wrong character in the
+kick row). Snare reversed scores 7 % — palindrome coincidences in the wide family, not a
+strategy.
+
+### Predicted classification
+
+**testing → calibrated, mean final 40–60 %; the risk is now `too_easy`, not `too_hard`.** The
+clue prints `n = 3` right under a picture of gaps, so "fill n of the gaps" is a guessable blind
+hypothesis; what still needs the demo is *exactly* — the four plausible implementations ("a run
+inside the gap", "one hit per gap", "cover the gap", "fill it edge to edge") all score 0 except
+the last. Expect the player who spends a demo to crack it in round 2–3 and the player who does
+not to sit at 9–15 %. Hardening levers if both crack it: count only gaps ≥ 4 steps wide; require
+the n fills to be non-adjacent; stop printing n and make it the number of gaps of the wider kind.
+Softening levers if it comes back under 15 % with a demo: guarantee two silent gaps in every
+demo, put a second worked example in the demo, or shrink the wide family so every clue fits in
+11 bars.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/music3/{gen,v3,sweep,sweep2,sweep3,sweep4,try,try2,try3,attack3,selftest,hyp,build_json}.py`.

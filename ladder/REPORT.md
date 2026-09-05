@@ -1,16 +1,17 @@
-# Ladder report — 2026-09-05 06:01 UTC
+# Ladder report — 2026-09-05 06:05 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
 | class | v | status | mean final | balance | with demo | no demo | kid score | finals | cracks | profiles | old-cadence history |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| borsel | 2 | testing | 62% | 0.76 | - | 62% (2) | - | 2 | 0 | opus-lowdemo,opus-theorist | 42% (2) |
-| dornic | 2 | testing | 62% | 0.75 | - | 62% (2) | - | 2 | 0 | opus-lowdemo,opus-theorist | 50% (2) |
-| fennick | 3 | calibrated | 67% | 0.67 | 85% (6) | 11% (2) | 4.2 | 8 | 5 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 17% (6) |
-| wisbek | 2 | testing | 79% | 0.41 | - | 79% (2) | 4.2 | 2 | 0 | opus-lowdemo,opus-theorist | 75% (2) |
-| tresk | 2 | testing | 80% | 0.40 | - | 80% (2) | - | 2 | 0 | opus-lowdemo,opus-theorist | 68% (2) |
+| borsel | 2 | calibrated | 61% | 0.77 | 61% (2) | 62% (2) | - | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 42% (2) |
+| dornic | 2 | calibrated | 63% | 0.73 | 64% (2) | 62% (2) | - | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 50% (2) |
+| fennick | 3 | testing | 73% | 0.54 | 89% (8) | 11% (2) | 4.2 | 10 | 7 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 17% (6) |
+| tresk | 2 | too_easy | 82% | 0.36 | - | 82% (4) | - | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 68% (2) |
+| wisbek | 2 | too_easy | 83% | 0.34 | - | 83% (4) | 4.2 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 75% (2) |
+| ospren | 2 | testing | 83% | 0.33 | - | 83% (2) | 4.3 | 2 | 0 | opus-default,opus-kidproxy | - |
 | basten | 3 | too_hard | 15% | 0.30 | 30% (4) | 0% (4) | 4.5 | 8 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 13% (6) |
-| tavrik | 2 | testing | 90% | 0.19 | - | 90% (2) | 4.7 | 2 | 1 | opus-lowdemo,opus-theorist | 68% (2) |
+| tavrik | 2 | too_easy | 90% | 0.20 | - | 90% (4) | 4.7 | 4 | 1 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 68% (2) |
 | garrow | 3 | too_hard | 9% | 0.18 | 24% (3) | 0% (5) | 4.0 | 8 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 40% (4) |
 | LegoZendo2 | 1 | testing | 8% | 0.17 | 8% (2) | - | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 100% (1) |
 | quaich | 2 | testing | 8% | 0.16 | - | 8% (2) | 2.6 | 2 | 0 | opus-lowdemo,opus-theorist | 62% (2) |
@@ -40,7 +41,6 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | murn | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 76% (4) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
-| ospren | 2 | untested | - | - | - | - | 4.3 | 0 | 0 | - | - |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | quilm | 3 | retired | - | - | - | - | 1.8 | 0 | 0 | - | 100% (4) |
 | regina | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

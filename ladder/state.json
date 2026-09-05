@@ -1661,9 +1661,82 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 125,
+       "final_presented": 213,
+       "final_rate": 0.5868544600938967,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         56
+        ],
+        [
+         14,
+         33
+        ],
+        [
+         14,
+         21
+        ],
+        [
+         15,
+         28
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 111,
+       "final_presented": 176,
+       "final_rate": 0.6306818181818182,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         32
+        ],
+        [
+         2,
+         20
+        ],
+        [
+         17,
+         25
+        ],
+        [
+         11,
+         18
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788568201.2196176,
@@ -2076,9 +2149,82 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 150,
+       "final_presented": 228,
+       "final_rate": 0.6578947368421053,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         31
+        ],
+        [
+         32,
+         45
+        ],
+        [
+         17,
+         29
+        ],
+        [
+         20,
+         36
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 116,
+       "final_presented": 185,
+       "final_rate": 0.6270270270270271,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         27
+        ],
+        [
+         9,
+         36
+        ],
+        [
+         19,
+         35
+        ],
+        [
+         18,
+         26
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788567950.2991617,
@@ -2708,9 +2854,82 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 198,
+       "final_presented": 198,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         49
+        ],
+        [
+         28,
+         28
+        ],
+        [
+         28,
+         28
+        ],
+        [
+         37,
+         37
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 160,
+       "final_presented": 160,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         35
+        ],
+        [
+         0,
+         32
+        ],
+        [
+         27,
+         27
+        ],
+        [
+         22,
+         22
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "calibrated",
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/fennick.json",
@@ -4996,8 +5215,82 @@
    "refined_versions": [
     1
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 167,
+       "final_presented": 191,
+       "final_rate": 0.8743455497382199,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         45
+        ],
+        [
+         36,
+         37
+        ],
+        [
+         28,
+         30
+        ],
+        [
+         16,
+         17
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 116,
+       "final_presented": 146,
+       "final_rate": 0.7945205479452054,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         52
+        ],
+        [
+         6,
+         29
+        ],
+        [
+         30,
+         35
+        ],
+        [
+         21,
+         29
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": true,
+     "version": 2
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788577623.6591926,
@@ -5786,9 +6079,82 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 173,
+       "final_presented": 194,
+       "final_rate": 0.8917525773195877,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         44
+        ],
+        [
+         29,
+         33
+        ],
+        [
+         22,
+         25
+        ],
+        [
+         34,
+         41
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 144,
+       "final_presented": 161,
+       "final_rate": 0.8944099378881988,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         50
+        ],
+        [
+         7,
+         27
+        ],
+        [
+         22,
+         26
+        ],
+        [
+         27,
+         31
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "too_easy",
    "versions": [
     {
      "added": 1788575982.3877316,
@@ -6788,9 +7154,82 @@
      "run": "lad-tresk-v2-1",
      "target": true,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 180,
+       "final_presented": 218,
+       "final_rate": 0.8256880733944955,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         38
+        ],
+        [
+         23,
+         29
+        ],
+        [
+         28,
+         31
+        ],
+        [
+         26,
+         30
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 162,
+       "final_presented": 189,
+       "final_rate": 0.8571428571428571,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         47
+        ],
+        [
+         4,
+         29
+        ],
+        [
+         28,
+         32
+        ],
+        [
+         31,
+         37
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "too_easy",
    "versions": [
     {
      "added": 1788575846.3233926,
@@ -7659,9 +8098,82 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 4,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 162,
+       "final_presented": 191,
+       "final_rate": 0.8481675392670157,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         43
+        ],
+        [
+         28,
+         33
+        ],
+        [
+         30,
+         35
+        ],
+        [
+         28,
+         29
+        ]
+       ],
+       "team": "ospren1a"
+      },
+      {
+       "cracked_round": 4,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 136,
+       "final_presented": 155,
+       "final_rate": 0.8774193548387097,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         43
+        ],
+        [
+         9,
+         29
+        ],
+        [
+         29,
+         33
+        ],
+        [
+         27,
+         29
+        ]
+       ],
+       "team": "ospren1b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "fennick",
+      "ospren",
+      "tavrik",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "too_easy",
    "versions": [
     {
      "added": 1788576965.7567341,
@@ -9825,7 +10337,7 @@
    },
    "run": "lad-ospren-v2-1",
    "started": 1788586309.8887498,
-   "status": "running",
+   "status": "done",
    "teams": {
     "ospren1a": "opus-default",
     "ospren1b": "opus-kidproxy"
@@ -9884,6 +10396,30 @@
    "reason": "9% with demo over 5 games, 0% without; too_hard",
    "started": 1788588119.2513285,
    "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tavrik",
+   "id": "refiner-tavrik-v2-9da3",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tresk",
+   "id": "refiner-tresk-v2-9adc",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "wisbek",
+   "id": "refiner-wisbek-v2-22e2",
+   "kind": "refiner",
+   "status": "pending",
    "version": 2
   }
  ],

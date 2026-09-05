@@ -2310,7 +2310,7 @@
    ]
   },
   "dornic": {
-   "current_version": 2,
+   "current_version": 3,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -2345,7 +2345,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -2641,7 +2642,7 @@
      "version": 2
     }
    ],
-   "status": "calibrated",
+   "status": "testing",
    "versions": [
     {
      "added": 1788567950.2991617,
@@ -2654,6 +2655,12 @@
      "file": "challenges/lab/dornic.json",
      "note": "v2 lineup: 4 candidates, fresh-cards clause dropped; count attack 77%->31%, rarity-weighted 47%",
      "v": 2
+    },
+    {
+     "added": 1788602414.5440485,
+     "file": "challenges/lab/dornic.json",
+     "note": "Revision 3: 9 templates/33 rules, 24 relational (colour blocks, end cards, named places); ace high; no sums; k=5; simulated attacker 32-44%",
+     "v": 3
     }
    ]
   },
@@ -13206,7 +13213,7 @@
    "kind": "refiner",
    "reason": "calibrated on rate (60%) but kid 3.33: sum/prime/multiple templates; apply Revision 3 with visual card relations",
    "started": 1788599879.2974794,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

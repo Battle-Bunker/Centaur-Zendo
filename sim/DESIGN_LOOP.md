@@ -153,3 +153,18 @@ the player chooses it. Measured: a collection tuned for the old single-class for
   a near-miss beside it; with three demos for seven classes nobody gets a second example.
 * Target per class, two Opus players in a 7-pool: the player who spends a demo on it cracks it
   about half the time; the player who does not scores 5–30 % from the foothold.
+
+## The checksum caption (2026-09-05, picture pool run 4)
+
+Measured across 10 Opus finals: a caption that **counts the edits in the answer** ("3 fall",
+"2 turn", "2 lean") is the single design feature that decides whether a class is crackable. With
+it, a player tests a hypothesis offline against ~70 harvested clues (does my rule make exactly n
+edits?) and needs no training round; without it (a free parameter such as a fish count or `X/n/d`)
+every hypothesis costs a slice of a round and the class is demo-or-nothing — and players never
+spend a demo on a class whose answer *shape* is already obvious from the clue. Rules:
+1. Every picture class carries a checksum caption that names the verb and counts the edits.
+2. The without-demo rate is then set by how guessable the **edit itself** is from the clue. durnel
+   (turn a lorry round = reverse its arrow) was guessed and cracked 100 % blind; fennick (a stack
+   shears one column and its lid becomes a slash) was not, 11 % blind, ~95 % with a demo. Aim for
+   the fennick shape: the picture shows *what* changes, the demo shows *how* it changes.
+3. Keep ~12 % of clues at n = 0 so the echoed clue scores: it verifies the format for free.

@@ -139,3 +139,19 @@ borsel unfair). Both players said the fennick "n fall" checksum is the best desi
 pool and asked for more self-checks. Index answers do score on all six (a player claimed not).
 Next: Revision 3 hardening on the too-easy lineup classes (see docs/RULE_FAMILIES.md) — the
 attack to beat is now "learn U from free labels, then rarest surviving in-U predicate".
+Picture pool run 4, `lad-kelmar-v3-1` (kelmar v3, durnel v1, tovel v6, virel v3, basten v3, norvel v3,
+fennick v3): 1949 (default) and 1515 (kidproxy). With a demo: fennick 100/100, virel 100/100,
+kelmar 100/13 (the kidproxy's kid said "clouds with rain" and the AI ignored it — parked on the
+`0 lean` foothold; the default player read rain as "full-height trees" and cracked it 67/67 offline).
+Without a demo: durnel 100/100 (cracked offline against `n turn` — the famous lorry-vs-bridge theme
+plus a guessable edit), tovel 5/15, norvel 12/11, basten 0/0 (15 hypotheses, 0/790). Both players
+allocated demos to the classes whose EDIT TYPE they could not name from the clue (virel, fennick,
+kelmar) and left the "canvas" classes (basten/tovel/norvel) undemoed — and those got nothing.
+The lesson of this run, in both players' words: a caption that is a checksum on the answer
+("n fall/turn/lean") lets a hypothesis be falsified offline against ~70 clues; a caption that is a
+free parameter (basten's fish count, tovel's `X/n/d`, norvel's n) cannot be tested at all, so the
+class is demo-or-nothing, and nobody spends a demo on a class whose answer shape is obvious. So:
+every picture class needs a checksum caption; the without-demo rate is then set by how guessable the
+edit is from the clue (durnel: guessable → 100 %; fennick: not → 11 %). Scorers of virel/tovel do
+accept the parameter line either way (a player claimed not; verified 30/30 both ways).
+Next: harden durnel (edit not guessable from the clue), add checksum captions to basten/norvel/tovel.

@@ -1468,6 +1468,79 @@
      "run": "lad-tovel-v5-3",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 497,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         89
+        ],
+        [
+         0,
+         65
+        ],
+        [
+         0,
+         74
+        ],
+        [
+         0,
+         65
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 481,
+       "final_rate": 0.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         91
+        ],
+        [
+         0,
+         74
+        ],
+        [
+         0,
+         90
+        ],
+        [
+         0,
+         70
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "too_hard",
@@ -2259,8 +2332,82 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 512,
+       "final_presented": 512,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         2,
+         81
+        ],
+        [
+         88,
+         88
+        ],
+        [
+         56,
+         56
+        ],
+        [
+         70,
+         70
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": 3,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 491,
+       "final_presented": 491,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         81
+        ],
+        [
+         10,
+         88
+        ],
+        [
+         58,
+         58
+        ],
+        [
+         61,
+         61
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
+     "target": false,
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788587978.7506173,
@@ -2925,6 +3072,79 @@
       "wisbek"
      ],
      "run": "lad-ospren-v2-1",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 448,
+       "final_presented": 448,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         2,
+         70
+        ],
+        [
+         67,
+         67
+        ],
+        [
+         66,
+         66
+        ],
+        [
+         77,
+         77
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 433,
+       "final_presented": 433,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         99
+        ],
+        [
+         76,
+         76
+        ],
+        [
+         60,
+         60
+        ],
+        [
+         71,
+         71
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 3
     }
@@ -4008,6 +4228,79 @@
      "run": "lad-tovel-v5-3",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 477,
+       "final_presented": 477,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         2,
+         66
+        ],
+        [
+         80,
+         80
+        ],
+        [
+         72,
+         72
+        ],
+        [
+         61,
+         61
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 60,
+       "final_presented": 454,
+       "final_rate": 0.13215859030837004,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         108
+        ],
+        [
+         14,
+         92
+        ],
+        [
+         8,
+         64
+        ],
+        [
+         5,
+         71
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
+     "target": true,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -4896,6 +5189,79 @@
       "virel"
      ],
      "run": "lad-tovel-v5-3",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 54,
+       "final_presented": 459,
+       "final_rate": 0.11764705882352941,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         61
+        ],
+        [
+         1,
+         83
+        ],
+        [
+         6,
+         67
+        ],
+        [
+         9,
+         78
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 48,
+       "final_presented": 439,
+       "final_rate": 0.10933940774487472,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         86
+        ],
+        [
+         0,
+         67
+        ],
+        [
+         1,
+         73
+        ],
+        [
+         6,
+         75
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 3
     }
@@ -7041,6 +7407,79 @@
      "run": "lad-tovel-v5-3",
      "target": true,
      "version": 5
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 20,
+       "final_presented": 437,
+       "final_rate": 0.04576659038901602,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         80
+        ],
+        [
+         0,
+         70
+        ],
+        [
+         0,
+         73
+        ],
+        [
+         1,
+         74
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 65,
+       "final_presented": 426,
+       "final_rate": 0.15258215962441316,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         90
+        ],
+        [
+         1,
+         68
+        ],
+        [
+         3,
+         52
+        ],
+        [
+         13,
+         65
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
+     "target": false,
+     "version": 6
     }
    ],
    "status": "testing",
@@ -7977,6 +8416,79 @@
      "run": "lad-tovel-v5-3",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 438,
+       "final_presented": 438,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         66
+        ],
+        [
+         13,
+         75
+        ],
+        [
+         71,
+         71
+        ],
+        [
+         66,
+         66
+        ]
+       ],
+       "team": "kelmar1a"
+      },
+      {
+       "cracked_round": 4,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 418,
+       "final_presented": 418,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         98
+        ],
+        [
+         0,
+         63
+        ],
+        [
+         10,
+         53
+        ],
+        [
+         70,
+         70
+        ]
+       ],
+       "team": "kelmar1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-kelmar-v3-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -10554,7 +11066,7 @@
    "reason": "first finals for kelmar v3, durnel v1, tovel v6, virel v3",
    "run": "lad-kelmar-v3-1",
    "started": 1788589714.7611494,
-   "status": "running",
+   "status": "done",
    "teams": {
     "kelmar1a": "opus-default",
     "kelmar1b": "opus-kidproxy"
@@ -10598,6 +11110,30 @@
    "started": 1788592233.9583952,
    "status": "running",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "molvic",
+   "id": "players-molvic-v1-e3bb",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tavrik",
+   "id": "players-tavrik-v3-134c",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "kelmar",
+   "id": "players-kelmar-v3-e63b",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

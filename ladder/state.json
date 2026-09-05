@@ -4863,6 +4863,21 @@
     }
    ]
   },
+  "wisbek": {
+   "current_version": 1,
+   "paradigm": "rule_family",
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788576965.7567341,
+     "file": "challenges/lab/wisbek.json",
+     "note": "v1 rule family (clock times): 10 templates, 66 rules, fresh-hour clause; scorer 895",
+     "v": 1
+    }
+   ]
+  },
   "wolf": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -6354,7 +6369,7 @@
    "kind": "designer",
    "paradigm": "rule_family",
    "started": 1788575846.3542798,
-   "status": "running",
+   "status": "done",
    "version": null,
    "world": "clock times hh:mm"
   },
@@ -6568,6 +6583,22 @@
    "agents": 1,
    "class": "tavrik",
    "id": "judge-tavrik-v1-17eb",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "wisbek",
+   "id": "players-wisbek-v1-d3e1",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "wisbek",
+   "id": "judge-wisbek-v1-f621",
    "kind": "judge",
    "status": "pending",
    "version": 1

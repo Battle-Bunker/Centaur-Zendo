@@ -4908,7 +4908,23 @@
   "tavrik": {
    "current_version": 2,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Hardening pushed difficulty toward the hard side; a demo-less kid may sit at the 25-34% floor with no partial-credit signal.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 5,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 5
+     },
+     "score": 4.67,
+     "version": 2
+    }
+   ],
    "refined_versions": [
     1
    ],

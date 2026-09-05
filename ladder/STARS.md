@@ -249,3 +249,35 @@ which is the point.
 
 **Levers.** Too easy: let reach depend on the fish (a big fish reaches two rows). Too hard: draw
 one fish already at its weed with the top nibbled as a worked instance.
+
+## norvel v4 — the drum grid (calibrated on rate 2026-09-05; kid 3.7, below the bar)
+
+**Rule.** The clue is a finished three-row drum grid, hat / snare / kick in bars of four steps,
+and a caption `3 slip`. A snare hit with no hat above it and no kick under it — a hit left
+playing on its own — skids late: it leaves `-` where it stood and on across the hat's gap, and
+lands `x` on the first step where the hat ticks again. The answer is the grid with exactly those
+hits moved. **Record (6 Opus finals): 100 %, 100 %, 100 % with a demo; 15, 14, 14 % without.**
+Three versions before it (an empty snare row to fill, n a free parameter) never passed 12 %.
+
+**Why it is not yet a star.** The judge scores it 3.67: the grid is more visual bookkeeping than a
+picture, and the clue does not say which row changes. Both are salience fixes (fewer bars, caption
+"n snare slip") and the player evidence is unambiguous that the rule itself is one breath — one
+player needed a second demo only because the first happened to fit "slip the first n pairs", a
+non-discriminating example, which the engine now avoids for the n = 0 case but not in general.
+A demo-drawing rule (prefer an example that refutes the commonest wrong reading) is the next
+engine-side lever for every picture class.
+
+## molvic v3 — the corner shop (calibrated on rate 2026-09-05; kid 3.3, below the bar)
+
+**Rule.** Four labelled shelves of goods; a few strays stand on the wrong shelf. Two strays in
+the same slot, one above the other, each on the other's shelf, both go home to the first empty
+slot on their own shelf — unless that shelf is full, in which case that one stays. Caption
+`n home`. **Record (4 Opus finals): 100 % with a demo; 20, 16, 15 % without.** v1 was cracked
+blind at 100 % by both players (a letter swap is guessable and the checksum pinned it offline);
+v2 made the rendering need the demo (goods move to a gap elsewhere) and planted the full-shelf
+refusal so the blind reading scores 0; v3 re-skinned it as a shop with written labels.
+
+**Why it is not yet a star.** Two conjuncts plus an asymmetric split (one of a pair moves, the
+other is refused) is more than one breath, and the judge's advice is to cut the room-at-home
+clause and buy the difficulty back with a single visual quirk. The evidence says the class plays
+exactly to the fennick shape, so the fix is legibility, not difficulty.

@@ -1,0 +1,318 @@
+Centaur Zendo round 1 (training)
+round_id : aed8e16d21964faeaef69bd7bb9aad62
+written  : 2026-09-05 10:02:11Z
+presented=300  answered=300  correct=23  skipped=0
+client answer latency: mean 0.712 ms  median 0.286 ms  max 4.406 ms  (n=301)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+   1  fennick       _        _  _       _     _      _\nS_ …  _        _  _       _     _      _\nS_ …  0
+   2  fennick       __     _ __              _\nAH     S SA…  __     _ __              _\nAH     S SA…  1
+   3  virel         [][----][][-][][][-]\n[][---][--][-][--…  [][----][][-][][][-]\n[][---][--][-][--…  0
+   4  virel         [-][][--][][][--][]\n[-][][--][][---][-…  [-][][--][][][--][]\n[-][][--][][---][-…  0
+   5  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+   6  norvel        hat   |..xx|.x.x|x.x.|xxxx|xxxx|..xx|x.…  hat   |..xx|.x.x|x.x.|xxxx|xxxx|..xx|x.…  0
+   7  virel         [--][--][][][--][][]\n[-][][---][--][--…  [--][--][][][--][][]\n[-][][---][--][--…  0
+   8  durnel                   #### WWW ####       ####    …             #### WWW ####       ####    …  1
+   9  garrow        c 3 slices\n###########################…  c 3 slices\n###########################…  0
+  10  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+  11  garrow        c 2 slices\n###########################…  c 2 slices\n###########################…  0
+  12  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+  13  durnel             ####                              …       ####                              …  0
+  14  garrow        b 3 slices\n###########################…  b 3 slices\n###########################…  0
+  15  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+  16  virel         [][----][-][][][--]\n[][-][---][][---][…  [][----][-][][][--]\n[][-][---][][---][…  0
+  17  virel         [][--][][][--][][-]\n[][-][----][-][---…  [][--][][][--][][-]\n[][-][----][-][---…  0
+  18  durnel         ####                                  …   ####                                  …  0
+  19  virel         [-][][][--][][----]\n[-][-][-][][---][-…  [-][][][--][][----]\n[-][-][-][][---][-…  0
+  20  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  21  virel         [-][----][][][-][]\n[-][][--][-][-][-]\…  [-][----][][][-][]\n[-][][--][-][-][-]\…  0
+  22  fennick                  _   _     _\n       _   J   …             _   _     _\n       _   J   …  0
+  23  garrow        c 2 slices\n###########################…  c 2 slices\n###########################…  0
+  24  durnel          WWW                   AAA            …    WWW                   AAA            …  0
+  25  durnel                                       ###     …                                 ###     …  0
+  26  fennick        __ _ _              _  _\n CC R R     …   __ _ _              _  _\n CC R R     …  0
+  27  garrow        a 2 slices\n###########################…  a 2 slices\n###########################…  0
+  28  durnel                      CCC                     K…                CCC                     K…  0
+  29  norvel        hat   |xxx.|xx..|x.xx|xxx.|..xx|xxx.|.x…  hat   |xxx.|xx..|x.xx|xxx.|..xx|xxx.|.x…  0
+  30  garrow        c 3 slices\n###########################…  c 3 slices\n###########################…  0
+  31  virel         [-][-][---][][---]\n[-][-][-][-][--][]\…  [-][-][---][][---]\n[-][-][-][-][--][]\…  0
+  32  norvel        hat   |.xxx|xx.x|xx.x|x..x|xx.x|xxx.|xx…  hat   |.xxx|xx.x|xx.x|x..x|xx.x|xxx.|xx…  0
+  33  durnel                              ###      ####\n  …                        ###      ####\n  …  0
+  34  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+  35  durnel                  ####              SSS        …            ####              SSS        …  0
+  36  virel         [--][----][-][][]\n[--][--][][-][][]\n[…  [--][----][-][][]\n[--][--][][-][][]\n[…  0
+  37  virel         [][-][][--][][][---]\n[----][---][--][-…  [][-][][--][][][---]\n[----][---][--][-…  0
+  38  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+  39  durnel         ###                       ###         …   ###                       ###         …  0
+  40  garrow        o 3 slices\n###########################…  o 3 slices\n###########################…  0
+  41  garrow        o 2 slices\n###########################…  o 2 slices\n###########################…  0
+  42  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+  43  norvel        hat   |.x.x|xxxx|xxx.|x..x|xx..|xx.x|xx…  hat   |.x.x|xxxx|xxx.|x..x|xx..|xx.x|xx…  0
+  44  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  45  virel         [----][][][-][----]\n[----][--][-][----…  [----][][][-][----]\n[----][--][-][----…  0
+  46  norvel        hat   |x.xx|.xxx|x..x|..xx|.xx.|xx.x|\n…  hat   |x.xx|.xxx|x..x|..xx|.xx.|xx.x|\n…  0
+  47  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  48  virel         [][][-][----][][][-]\n[--][----][-][--]…  [][][-][----][][][-]\n[--][----][-][--]…  0
+  49  norvel        hat   |.x.x|xxx.|.xx.|x..x|x.xx|x.xx|.x…  hat   |.x.x|xxx.|.xx.|x..x|x.xx|x.xx|.x…  0
+  50  durnel                                        ###    …                                  ###    …  0
+  51  durnel         VVV                        ###        …   VVV                        ###        …  0
+  52  durnel             TTT           ####         ####   …       TTT           ####         ####   …  0
+  53  durnel                                            ###…                                      ###…  0
+  54  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  55  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+  56  norvel        hat   |..xx|xxx.|xxx.|xxx.|xx..|xxxx|.x…  hat   |..xx|xxx.|xxx.|xxx.|xx..|xxxx|.x…  0
+  57  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  1
+  58  fennick       _          _  _   _            _\nS _ _…  _          _  _   _            _\nS _ _…  0
+  59  fennick                _            _   _   _  _\n   …           _            _   _   _  _\n   …  0
+  60  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  61  norvel        hat   |xx.x|.xxx|..xx|.xxx|xxx.|xxxx|\n…  hat   |xx.x|.xxx|..xx|.xxx|xxx.|xxxx|\n…  1
+  62  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+  63  garrow        m 2 slices\n###########################…  m 2 slices\n###########################…  0
+  64  fennick             _  _        _ _ _  _\n__ _  J  J …        _  _        _ _ _  _\n__ _  J  J …  0
+  65  durnel         MMM                    CCC            …   MMM                    CCC            …  0
+  66  durnel         ####    RRR                      WWW #…   ####    RRR                      WWW #…  0
+  67  garrow        o 2 slices\n###########################…  o 2 slices\n###########################…  0
+  68  fennick          _       _\n   H       U      _ ___\n…     _       _\n   H       U      _ ___\n…  0
+  69  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  70  fennick                              _   _     _\n   …                         _   _     _\n   …  0
+  71  durnel                            EEE                …                      EEE                …  0
+  72  fennick           _     _  _ _            _\n    U _ …      _     _  _ _            _\n    U _ …  0
+  73  fennick                _  _ _                     _\n…           _  _ _                     _\n…  0
+  74  norvel        hat   |xx.x|xxx.|x..x|x.x.|x.x.|xx.x|x.…  hat   |xx.x|xxx.|x..x|x.x.|x.x.|xx.x|x.…  0
+  75  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+  76  garrow        p 0 slices\n###########################…  p 0 slices\n###########################…  1
+  77  virel         [-][----][-][][]\n[-][][-][----][]\n[-]…  [-][----][-][][]\n[-][][-][----][]\n[-]…  0
+  78  fennick           __ _                __      _\n_   …      __ _                __      _\n_   …  0
+  79  durnel                                       SSS     …                                 SSS     …  0
+  80  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  81  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  1
+  82  durnel                                               …                                         …  0
+  83  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+  84  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+  85  virel         [--][--][][--][][]\n[--][--][-][-][--]\…  [--][--][][--][][]\n[--][--][-][-][--]\…  0
+  86  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+  87  garrow        m 3 slices\n###########################…  m 3 slices\n###########################…  0
+  88  norvel        hat   |xxxx|xxxx|xxxx|xx..|.xxx|xx..|xx…  hat   |xxxx|xxxx|xxxx|xx..|.xxx|xx..|xx…  1
+  89  virel         [][][-][][][----][-]\n[][--][-][-][---]…  [][][-][][][----][-]\n[][--][-][-][---]…  0
+  90  garrow        a 2 slices\n###########################…  a 2 slices\n###########################…  0
+  91  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  92  durnel                    KKK       ###             U…              KKK       ###             U…  0
+  93  fennick                       _\n        _       F   …                  _\n        _       F   …  0
+  94  fennick              _         _           _     _\n_…         _         _           _     _\n_…  0
+  95  norvel        hat   |.xx.|xxxx|xxx.|.xx.|.x.x|x..x|x.…  hat   |.xx.|xxxx|xxx.|.xx.|.x.x|x..x|x.…  0
+  96  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+  97  garrow        o 2 slices\n###########################…  o 2 slices\n###########################…  0
+  98  fennick           _ __           __     _        __\n…      _ __           __     _        __\n…  0
+  99  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 100  garrow        o 2 slices\n###########################…  o 2 slices\n###########################…  0
+ 101  durnel             WWW         ####\n     WWW        …       WWW         ####\n     WWW        …  1
+ 102  durnel                          ###  NNN      ####   …                    ###  NNN      ####   …  0
+ 103  virel         [--][][--][][][][--]\n[--][----][----][…  [--][][--][][][][--]\n[--][----][----][…  0
+ 104  garrow        t 2 slices\n###########################…  t 2 slices\n###########################…  0
+ 105  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 106  norvel        hat   |.xxx|.xxx|xxxx|.xx.|xxxx|xxxx|.x…  hat   |.xxx|.xxx|xxxx|.xx.|xxxx|xxxx|.x…  0
+ 107  durnel                            PPP                …                      PPP                …  1
+ 108  fennick           _  _    _\n    J  B    B     _    _…      _  _    _\n    J  B    B     _    _…  0
+ 109  norvel        hat   |.xxx|xxxx|xxxx|.xx.|..xx|xxxx|..…  hat   |.xxx|xxxx|xxxx|.xx.|..xx|xxxx|..…  0
+ 110  garrow        m 2 slices\n###########################…  m 2 slices\n###########################…  0
+ 111  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2F  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2F  3…  0
+ 112  norvel        hat   |..xx|x..x|.xx.|.xx.|.xxx|..xx|xx…  hat   |..xx|x..x|.xx.|.xx.|.xxx|..xx|xx…  0
+ 113  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  1
+ 114  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 115  norvel        hat   |xx.x|..xx|x.xx|xx..|xxxx|x..x|.x…  hat   |xx.x|..xx|x.xx|xx..|xxxx|x..x|.x…  0
+ 116  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 117  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  1
+ 118  virel         [---][----][][-][][]\n[----][-][][--][-…  [---][----][][-][][]\n[----][-][][--][-…  0
+ 119  virel         [][--][][][--][]\n[][-][][-][--][]\n[-]…  [][--][][][--][]\n[][-][][-][--][]\n[-]…  0
+ 120  fennick          __ _   _\n   CJ V  _P         _     …     __ _   _\n   CJ V  _P         _     …  0
+ 121  virel         [--][][][][--][][][]\n[--][---][---][--…  [--][][][][--][][][]\n[--][---][---][--…  0
+ 122  durnel                                               …                                         …  0
+ 123  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 124  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 125  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 126  durnel         ### AAA              WWW     ####     …   ### AAA              WWW     ####     …  0
+ 127  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 128  fennick        _  __                     _  _\n U_ JE…   _  __                     _  _\n U_ JE…  0
+ 129  virel         [----][-][][][-][][]\n[-][-][--][--][--…  [----][-][][][-][][]\n[-][-][--][--][--…  0
+ 130  fennick       _   _   _   _         _       _   _ _\n…  _   _   _   _         _       _   _ _\n…  0
+ 131  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 132  virel         [][----][][][-][-]\n[-][-][][-][--][-]\…  [][----][][][-][-]\n[-][-][][-][--][-]\…  0
+ 133  garrow        o 3 slices\n###########################…  o 3 slices\n###########################…  0
+ 134  fennick                         _                 _\n…                    _                 _\n…  1
+ 135  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2C  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2C  3…  0
+ 136  virel         [--][][][--][-][--]\n[--][---][----][--…  [--][][][--][-][--]\n[--][---][----][--…  0
+ 137  norvel        hat   |xxx.|.x.x|xx..|.xxx|.xxx|xx.x|xx…  hat   |xxx.|.x.x|xx..|.xxx|.xxx|xx.x|xx…  0
+ 138  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+ 139  norvel        hat   |x.xx|..xx|..xx|xxxx|x.xx|x.x.|.x…  hat   |x.xx|..xx|..xx|xxxx|x.xx|x.x.|.x…  0
+ 140  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 141  durnel               ### NNN                         …         ### NNN                         …  0
+ 142  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 143  garrow        s 2 slices\n###########################…  s 2 slices\n###########################…  0
+ 144  norvel        hat   |.xxx|..xx|x..x|xxxx|xxx.|xxx.|xx…  hat   |.xxx|..xx|x..x|xxxx|xxx.|xxx.|xx…  0
+ 145  virel         [----][-][][][-][][]\n[----][--][----][…  [----][-][][][-][][]\n[----][--][----][…  0
+ 146  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 147  fennick        _\n R     _ _ _  _   _  __\n_R __  W_W…   _\n R     _ _ _  _   _  __\n_R __  W_W…  0
+ 148  garrow        t 3 slices\n###########################…  t 3 slices\n###########################…  0
+ 149  garrow        o 3 slices\n###########################…  o 3 slices\n###########################…  0
+ 150  garrow        m 2 slices\n###########################…  m 2 slices\n###########################…  0
+ 151  durnel              JJJ               AAA            …        JJJ               AAA            …  0
+ 152  garrow        t 3 slices\n###########################…  t 3 slices\n###########################…  0
+ 153  norvel        hat   |x.x.|.xx.|xx.x|..xx|xxxx|xxx.|.x…  hat   |x.x.|.xx.|xx.x|..xx|xxxx|xxx.|.x…  0
+ 154  durnel                                              K…                                        K…  0
+ 155  norvel        hat   |x.x.|xxx.|x.x.|..xx|x..x|.xxx|xx…  hat   |x.x.|xxx.|x.x.|..xx|x..x|.xxx|xx…  0
+ 156  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 157  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 158  durnel                                            ###…                                      ###…  0
+ 159  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 160  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 161  virel         [][][-][----][--]\n[][---][-][-][--]\n[…  [][][-][----][--]\n[][---][-][-][--]\n[…  0
+ 162  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 163  durnel             FFF       ### ###      ####       …       FFF       ### ###      ####       …  0
+ 164  norvel        hat   |.xx.|x.xx|x..x|xx.x|x..x|xxx.|.x…  hat   |.xx.|x.xx|x..x|xx.x|x..x|xxx.|.x…  0
+ 165  norvel        hat   |..xx|.xxx|xx..|x..x|xx.x|xxx.|x.…  hat   |..xx|.xxx|xx..|x..x|xx.x|xxx.|x.…  0
+ 166  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 167  fennick              __ _                    _\n_    …         __ _                    _\n_    …  1
+ 168  fennick          _ _  __                _   _      _\…     _ _  __                _   _      _\…  0
+ 169  durnel         ###                 GGG          ###  …   ###                 GGG          ###  …  0
+ 170  norvel        hat   |xxxx|.xx.|.xxx|xx..|xxxx|xxx.|.x…  hat   |xxxx|.xx.|.xxx|xx..|xxxx|xxx.|.x…  0
+ 171  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 172  fennick          _      _    _       _        __\n _ …     _      _    _       _        __\n _ …  0
+ 173  fennick       _                      _           _\nF…  _                      _           _\nF…  0
+ 174  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 175  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 176  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  0
+ 177  norvel        hat   |.xxx|.xxx|.x.x|..xx|.xxx|x.xx|\n…  hat   |.xxx|.xxx|.x.x|..xx|.xxx|x.xx|\n…  0
+ 178  virel         [--][-][][---][-][]\n[-][][--][---][---…  [--][-][][---][-][]\n[-][][--][---][---…  0
+ 179  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 180  durnel               VVV                             …         VVV                             …  0
+ 181  durnel         ###                       ###         …   ###                       ###         …  0
+ 182  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 183  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 184  norvel        hat   |xx.x|xx.x|.xxx|xxxx|xxxx|x.x.|xx…  hat   |xx.x|xx.x|.xxx|xxxx|xxxx|x.x.|xx…  0
+ 185  norvel        hat   |xxxx|.x.x|.xxx|x.xx|xxxx|xxxx|.x…  hat   |xxxx|.x.x|.xxx|x.xx|xxxx|xxxx|.x…  1
+ 186  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 187  virel         [-][-][----][][][-]\n[--][-][---][--][-…  [-][-][----][][][-]\n[--][-][---][--][-…  0
+ 188  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+ 189  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 190  virel         [---][][][][--][-][]\n[][---][][-][----…  [---][][][][--][-][]\n[][---][][-][----…  0
+ 191  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 192  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 193  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 194  norvel        hat   |.x.x|x..x|xxxx|x..x|..xx|.xxx|\n…  hat   |.x.x|x..x|xxxx|x..x|..xx|.xxx|\n…  0
+ 195  virel         [----][-][][][][-][]\n[--][][-][][--][-…  [----][-][][][][-][]\n[--][][-][][--][-…  0
+ 196  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1Q  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1Q  2.  3…  0
+ 197  norvel        hat   |xx..|..xx|x.x.|..xx|x.xx|x..x|xx…  hat   |xx..|..xx|x.x.|..xx|x.xx|x..x|xx…  0
+ 198  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2…  0
+ 199  norvel        hat   |.xxx|xx.x|..xx|xxx.|xx.x|x.x.|x.…  hat   |.xxx|xx.x|..xx|xxx.|xx.x|x.x.|x.…  0
+ 200  durnel                  ###                 ###      …            ###                 ###      …  0
+ 201  fennick                                     _       _…                                _       _…  0
+ 202  fennick        _   _       _     _ _   _  _   _  _\n …   _   _       _     _ _   _  _   _  _\n …  0
+ 203  norvel        hat   |xxx.|.xx.|..xx|.xxx|.xxx|.xx.|xx…  hat   |xxx.|.xx.|..xx|.xxx|.xxx|.xx.|xx…  0
+ 204  virel         [][][--][][][][-][]\n[][][----][-][--][…  [][][--][][][][-][]\n[][][----][-][--][…  0
+ 205  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1P  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1P  2.  3…  0
+ 206  garrow        m 3 slices\n###########################…  m 3 slices\n###########################…  0
+ 207  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1G  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1G  2…  0
+ 208  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 209  durnel                         ####         KKK\n    …                   ####         KKK\n    …  0
+ 210  garrow        c 0 slices\n###########################…  c 0 slices\n###########################…  1
+ 211  fennick       _   _          _      _ __         _\nG…  _   _          _      _ __         _\nG…  0
+ 212  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 213  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 214  garrow        p 2 slices\n###########################…  p 2 slices\n###########################…  0
+ 215  fennick          _        _   _ _   _      _    _\n _…     _        _   _ _   _      _    _\n _…  0
+ 216  garrow        b 3 slices\n###########################…  b 3 slices\n###########################…  0
+ 217  virel         [][][][--][][--][][]\n[--][][----][---]…  [][][][--][][--][][]\n[--][][----][---]…  0
+ 218  virel         [][-][---][][--][--]\n[-][--][-][][-][-…  [][-][---][][--][--]\n[-][--][-][][-][-…  0
+ 219  fennick         _        _\n  B        J\n _B        …    _        _\n  B        J\n _B        …  1
+ 220  durnel                                               …                                         …  0
+ 221  norvel        hat   |.xx.|xx..|x.xx|xxxx|.xx.|x..x|\n…  hat   |.xx.|xx..|x.xx|xxxx|.xx.|x..x|\n…  0
+ 222  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 223  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 224  fennick                _            _ __  _    _ _\n …           _            _ __  _    _ _\n …  0
+ 225  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 226  virel         [][-][][][--][][-]\n[][][][--][---][-]\…  [][-][][][--][][-]\n[][][][--][---][-]\…  0
+ 227  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 228  garrow        s 2 slices\n###########################…  s 2 slices\n###########################…  0
+ 229  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 230  garrow        c 2 slices\n###########################…  c 2 slices\n###########################…  0
+ 231  fennick          _    __       _ _            _  _\n …     _    __       _ _            _  _\n …  0
+ 232  durnel                 ####                          …           ####                          …  0
+ 233  norvel        hat   |xx.x|xxxx|.xx.|.xx.|.x.x|xx..|.x…  hat   |xx.x|xxxx|.xx.|.xx.|.x.x|xx..|.x…  0
+ 234  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2U  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2U  3…  0
+ 235  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  0
+ 236  norvel        hat   |xx..|xxx.|xx..|.xx.|xxx.|x.xx|x.…  hat   |xx..|xxx.|xx..|.xx.|xxx.|x.xx|x.…  0
+ 237  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 238  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+ 239  garrow        m 3 slices\n###########################…  m 3 slices\n###########################…  0
+ 240  fennick       _            _           _     _    _\n…  _            _           _     _    _\n…  0
+ 241  fennick                   _  _  _    _         _ _\n …              _  _  _    _         _ _\n …  0
+ 242  durnel                                               …                                         …  1
+ 243  durnel                         WWW\n         LLL     …                   WWW\n         LLL     …  0
+ 244  durnel                     ###                       …               ###                       …  0
+ 245  norvel        hat   |x.xx|.xxx|xx.x|x.xx|xxx.|xx.x|xx…  hat   |x.xx|.xxx|xx.x|x.xx|xxx.|xx.x|xx…  0
+ 246  garrow        s 3 slices\n###########################…  s 3 slices\n###########################…  0
+ 247  garrow        p 3 slices\n###########################…  p 3 slices\n###########################…  0
+ 248  virel         [--][----][][-][][]\n[--][--][-][-][---…  [--][----][][-][][]\n[--][--][-][-][---…  0
+ 249  norvel        hat   |.x.x|x.x.|..xx|x.xx|xxx.|x..x|\n…  hat   |.x.x|x.x.|..xx|x.xx|xxx.|x..x|\n…  0
+ 250  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1A  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1A  2…  0
+ 251  virel         [][--][][][][-][--]\n[][--][][-][----][…  [][--][][][][-][--]\n[][--][][-][----][…  0
+ 252  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 253  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 254  virel         [-][][][-][--][----]\n[----][--][--][-]…  [-][][][-][--][----]\n[----][--][--][-]…  0
+ 255  durnel           #### AAA            ####          ##…     #### AAA            ####          ##…  0
+ 256  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 257  durnel                                    GGG   VVV\n…                              GGG   VVV\n…  0
+ 258  durnel                            ###               C…                      ###               C…  0
+ 259  garrow        p 2 slices\n###########################…  p 2 slices\n###########################…  0
+ 260  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+ 261  fennick        _    _    _             _        _\n P…   _    _    _             _        _\n P…  0
+ 262  norvel        hat   |xxxx|xx.x|x.xx|x.x.|.xx.|.xx.|.x…  hat   |xxxx|xx.x|x.xx|x.x.|.xx.|.xx.|.x…  0
+ 263  norvel        hat   |xxxx|xxxx|xxxx|..xx|x.xx|.xxx|.x…  hat   |xxxx|xxxx|xxxx|..xx|x.xx|.xxx|.x…  0
+ 264  fennick               _      _     _        _\n    _ …          _      _     _        _\n    _ …  0
+ 265  durnel              FFF\n      FFF                   …        FFF\n      FFF                   …  0
+ 266  durnel                                               …                                         …  0
+ 267  fennick              _        __       _     _\n     …         _        __       _     _\n     …  1
+ 268  virel         [-][-][---][][--][-]\n[----][---][----]…  [-][-][---][][--][-]\n[----][---][----]…  0
+ 269  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 270  durnel         #### GGG  LLL                   ###   …   #### GGG  LLL                   ###   …  0
+ 271  garrow        o 3 slices\n###########################…  o 3 slices\n###########################…  0
+ 272  garrow        c 2 slices\n###########################…  c 2 slices\n###########################…  0
+ 273  virel         [][][--][-][-][-][]\n[-][-][--][--][-][…  [][][--][-][-][-][]\n[-][-][--][--][-][…  0
+ 274  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 275  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 276  durnel                                     VVV\n     …                               VVV\n     …  0
+ 277  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 278  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1Y  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1Y  2.  3…  0
+ 279  durnel                                ####           …                          ####           …  1
+ 280  fennick                      _    _    _\n__ __      …                 _    _    _\n__ __      …  0
+ 281  norvel        hat   |x..x|x..x|xx.x|xxxx|.xx.|x..x|\n…  hat   |x..x|x..x|xx.x|xxxx|.xx.|x..x|\n…  0
+ 282  fennick         _                               _ _\n…    _                               _ _\n…  0
+ 283  durnel         ####                                  …   ####                                  …  0
+ 284  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 285  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 286  norvel        hat   |xx.x|.xxx|.xxx|x..x|xx.x|xx..|xx…  hat   |xx.x|.xxx|.xxx|x..x|xx.x|xx..|xx…  0
+ 287  garrow        t 3 slices\n###########################…  t 3 slices\n###########################…  0
+ 288  fennick         _        _         _    _\n _P     _ …    _        _         _    _\n _P     _ …  0
+ 289  fennick             _    _ _  _          _\n      A _…        _    _ _  _          _\n      A _…  0
+ 290  fennick         _   _ _      _      _   __\n  G  _J V…    _   _ _      _      _   __\n  G  _J V…  0
+ 291  garrow        b 3 slices\n###########################…  b 3 slices\n###########################…  0
+ 292  fennick                        _                 _\n …                   _                 _\n …  0
+ 293  garrow        a 3 slices\n###########################…  a 3 slices\n###########################…  0
+ 294  garrow        b 2 slices\n###########################…  b 2 slices\n###########################…  0
+ 295  fennick               _          _ _ _\n_ _ __  P  _ …          _          _ _ _\n_ _ __  P  _ …  0
+ 296  virel         [-][-][][][----]\n[][--][][][--][]\n[--…  [-][-][][][----]\n[][--][][][--][]\n[--…  0
+ 297  fennick        _        _  _    _  _     _\n A   _   …   _        _  _    _  _     _\n A   _   …  0
+ 298  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 299  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+durnel                  48       5     10.4%
+fennick                 45       5     11.1%
+garrow                  52       2      3.8%
+molvic                  39       3      7.7%
+norvel                  39       3      7.7%
+tovel                   39       5     12.8%
+virel                   38       0      0.0%

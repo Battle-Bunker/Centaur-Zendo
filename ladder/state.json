@@ -2935,6 +2935,79 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 78,
+       "final_presented": 325,
+       "final_rate": 0.24,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         5,
+         48
+        ],
+        [
+         14,
+         50
+        ],
+        [
+         9,
+         42
+        ],
+        [
+         8,
+         55
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 38,
+       "final_presented": 323,
+       "final_rate": 0.11764705882352941,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         45
+        ],
+        [
+         2,
+         50
+        ],
+        [
+         8,
+         52
+        ],
+        [
+         1,
+         40
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 2
     }
    ],
    "status": "testing",
@@ -3756,6 +3829,79 @@
      "run": "lad-durnel-v2-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 40,
+       "final_presented": 333,
+       "final_rate": 0.12012012012012012,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         5,
+         45
+        ],
+        [
+         7,
+         41
+        ],
+        [
+         7,
+         43
+        ],
+        [
+         9,
+         50
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": 4,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 329,
+       "final_presented": 329,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         59
+        ],
+        [
+         13,
+         47
+        ],
+        [
+         19,
+         57
+        ],
+        [
+         40,
+         40
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -4438,9 +4584,82 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 5
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 40,
+       "final_presented": 285,
+       "final_rate": 0.14035087719298245,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         2,
+         52
+        ],
+        [
+         11,
+         53
+        ],
+        [
+         6,
+         41
+        ],
+        [
+         7,
+         49
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 39,
+       "final_presented": 280,
+       "final_rate": 0.1392857142857143,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         55
+        ],
+        [
+         2,
+         49
+        ],
+        [
+         3,
+         43
+        ],
+        [
+         4,
+         48
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": true,
+     "version": 5
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "added": 1788532815.6070344,
@@ -4502,6 +4721,7 @@
   },
   "kaldrin": {
    "current_version": 1,
+   "paradigm": "rule_family",
    "qual": [],
    "runs": [],
    "status": "untested",
@@ -4512,8 +4732,7 @@
      "note": "designer rule-family (Revision 3): goods train, loads x heaped/flat; 13 templates/30 rules, k=5; simulated attacker 31-51%",
      "v": 1
     }
-   ],
-   "paradigm": "rule_family"
+   ]
   },
   "kelmar": {
    "current_version": 3,
@@ -5491,9 +5710,82 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 44,
+       "final_presented": 294,
+       "final_rate": 0.14965986394557823,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         3,
+         39
+        ],
+        [
+         3,
+         43
+        ],
+        [
+         5,
+         32
+        ],
+        [
+         8,
+         44
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 291,
+       "final_presented": 291,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         59
+        ],
+        [
+         63,
+         63
+        ],
+        [
+         45,
+         45
+        ],
+        [
+         32,
+         32
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788592137.9489799,
@@ -6573,9 +6865,82 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 4
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 42,
+       "final_presented": 304,
+       "final_rate": 0.13815789473684212,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         3,
+         39
+        ],
+        [
+         4,
+         49
+        ],
+        [
+         2,
+         46
+        ],
+        [
+         4,
+         33
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 41,
+       "final_presented": 299,
+       "final_rate": 0.13712374581939799,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         56
+        ],
+        [
+         5,
+         39
+        ],
+        [
+         10,
+         54
+        ],
+        [
+         6,
+         46
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 4
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788550070.76554,
@@ -9052,9 +9417,82 @@
      "run": "lad-tovel-v7-1",
      "target": true,
      "version": 7
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 48,
+       "final_presented": 311,
+       "final_rate": 0.15434083601286175,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         5,
+         39
+        ],
+        [
+         5,
+         38
+        ],
+        [
+         5,
+         41
+        ],
+        [
+         6,
+         47
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 47,
+       "final_presented": 307,
+       "final_rate": 0.15309446254071662,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         52
+        ],
+        [
+         7,
+         56
+        ],
+        [
+         3,
+         43
+        ],
+        [
+         8,
+         43
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 7
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -10233,6 +10671,79 @@
       "virel"
      ],
      "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 290,
+       "final_presented": 290,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         38
+        ],
+        [
+         8,
+         38
+        ],
+        [
+         44,
+         44
+        ],
+        [
+         29,
+         29
+        ]
+       ],
+       "team": "garrow2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 64,
+       "final_presented": 286,
+       "final_rate": 0.22377622377622378,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         54
+        ],
+        [
+         0,
+         35
+        ],
+        [
+         6,
+         51
+        ],
+        [
+         10,
+         47
+        ]
+       ],
+       "team": "garrow2b"
+      }
+     ],
+     "pool": [
+      "durnel",
+      "fennick",
+      "garrow",
+      "molvic",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-garrow-v5-2",
      "target": false,
      "version": 3
     }
@@ -13379,7 +13890,7 @@
    "reason": "demo-holder evidence for tovel v7, molvic v3, garrow v5; more finals for durnel v2",
    "run": "lad-garrow-v5-2",
    "started": 1788602477.8702629,
-   "status": "running",
+   "status": "done",
    "teams": {
     "garrow2a": "opus-default",
     "garrow2b": "opus-kidproxy"
@@ -13405,6 +13916,79 @@
    "started": 1788604345.2039027,
    "status": "running",
    "version": 5
+  },
+  {
+   "agents": 2,
+   "class": "kaldrin",
+   "id": "players-kaldrin-v1-5e44",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "dornic",
+   "id": "players-dornic-v3-0741",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "wisbek",
+   "id": "players-wisbek-v4-107e",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "refiner-tovel-v7-9a54",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 7
+  },
+  {
+   "agents": 1,
+   "class": "kaldrin",
+   "id": "judge-kaldrin-v1-327f",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "dornic",
+   "id": "players-lineup-pool-4",
+   "kind": "players",
+   "members": [
+    "dornic",
+    "wisbek",
+    "mestrel",
+    "kaldrin",
+    "tavrik",
+    "tresk",
+    "ospren"
+   ],
+   "pool": {
+    "dornic": 3,
+    "kaldrin": 1,
+    "mestrel": 1,
+    "ospren": 3,
+    "tavrik": 3,
+    "tresk": 3,
+    "wisbek": 4
+   },
+   "reason": "first finals for dornic v3, wisbek v4, mestrel v1, kaldrin v1; second finals for tavrik/tresk/ospren v3",
+   "run": "lad-dornic-v3-1",
+   "started": 1788604880.7059407,
+   "status": "running",
+   "teams": {
+    "dornic1a": "opus-default",
+    "dornic1b": "opus-kidproxy"
+   },
+   "version": 3
   }
  ],
  "profiles": {

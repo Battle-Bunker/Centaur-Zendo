@@ -198,3 +198,16 @@ last (move it); skipping unsolved classes let the default player present 2010 it
 "throughput beats precision by a wide margin; the tiebreak is too weak" (a scoring-design
 question for the organiser, not a class fix); a wide hypothesis sweep eliminates ~30 rules per
 class per round, so the 0/1 oracle is a strong offline tool once the shape is known.
+Picture pool run 7, `lad-garrow-v5-2` (garrow v5, tovel v7, molvic v3, durnel v2, norvel v4, fennick v3,
+virel v3): 849 (kidproxy, demos → molvic/fennick/virel) and 582 (default, demos → virel/durnel/garrow).
+With a demo: molvic 100 (v3 has the fennick shape: 12–20 % blind), fennick 100, virel 100 / 22,
+durnel 24 (mechanism found, tie-break wrong), garrow 14 (demo bought the cut glyph, not the
+placement — third demo-holder in a row to fail: too_hard). Without: all at the foothold.
+norvel v4 and molvic v3 reach `calibrated` on rate (57 % / 37 %) but sit below the kid bar
+(3.7 / 3.3) — not promoted; virel now 57 % over 6. tovel v7 has still had no real demo-holder.
+Player asks: property-scored answers (virel: any valid course scores) leak exactly the
+information a learner needs — "the difference between a puzzle and a lottery"; consider more
+classes whose answer is a property; "three demos for seven classes when four are all-or-nothing
+means the score is decided at the demo choice". Next: garrow softening (the halves rule is too
+fiddly to land from one demo), a pool with tovel demo-holders, lineup pool 4 for dornic v3 /
+wisbek v4 / mestrel / kaldrin.

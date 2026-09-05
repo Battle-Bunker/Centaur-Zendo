@@ -1,0 +1,2265 @@
+{
+ "rounds_played": 1,
+ "examples": {
+  "molvic": [
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham mop ham ham ham log ham ham ham ham|\n     +---------------------------------------+\nMOP  |mop ham ___ mop cod ___ mop mop ___ mop|\n     +---------------------------------------+\nLOG  |___ log ___ ___ log cod log log log log|\n     +---------------------------------------+\nCOD  |cod cod cod cod cod log cod cod mop cod|\n     +---------------------------------------+\n2 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham mop ham ham ham log ham ham ham ham|\n     +---------------------------------------+\nMOP  |mop ham ___ mop cod ___ mop mop ___ mop|\n     +---------------------------------------+\nLOG  |___ log ___ ___ log cod log log log log|\n     +---------------------------------------+\nCOD  |cod cod cod cod cod log cod cod mop cod|\n     +---------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nMOP  |mop mop mop mop mop rye log ___ mop ___ mop|\n     +-------------------------------------------+\nYAM  |yam yam yam yam yam yam log yam yam yam yam|\n     +-------------------------------------------+\nLOG  |___ log ___ ___ log log yam log log rye log|\n     +-------------------------------------------+\nRYE  |log rye rye rye rye mop rye rye rye rye rye|\n     +-------------------------------------------+\n2 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nMOP  |mop mop mop mop mop rye log ___ mop ___ mop|\n     +-------------------------------------------+\nYAM  |yam yam yam yam yam yam log yam yam yam yam|\n     +-------------------------------------------+\nLOG  |___ log ___ ___ log log yam log log rye log|\n     +-------------------------------------------+\nRYE  |log rye rye rye rye mop rye rye rye rye rye|\n     +-------------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nTEA  |tea tea tea ale tea tea bun tea tea tea|\n     +---------------------------------------+\nALE  |ale log ale tea ale ale bun ale ale ale|\n     +---------------------------------------+\nBUN  |bun bun ___ bun bun ___ ale bun bun ___|\n     +---------------------------------------+\nLOG  |___ ___ log log log ale log log log log|\n     +---------------------------------------+\n1 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nTEA  |tea tea tea ale tea tea bun tea tea tea|\n     +---------------------------------------+\nALE  |ale log ale tea ale ale bun ale ale ale|\n     +---------------------------------------+\nBUN  |bun bun ___ bun bun ___ ale bun bun ___|\n     +---------------------------------------+\nLOG  |___ ___ log log log ale log log log log|\n     +---------------------------------------+\n1 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nRYE  |rye rye ___ ___ ___ rye gum rye ale|\n     +-----------------------------------+\nGUM  |gum ___ ___ ale gum gum fig gum gum|\n     +-----------------------------------+\nFIG  |fig fig fig fig fig fig gum fig ale|\n     +-----------------------------------+\nALE  |ale ___ ale ___ fig ___ ale ale rye|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nRYE  |rye rye ___ ___ ___ rye gum rye ale|\n     +-----------------------------------+\nGUM  |gum ___ ___ ale gum gum fig gum gum|\n     +-----------------------------------+\nFIG  |fig fig fig fig fig fig gum fig ale|\n     +-----------------------------------+\nALE  |ale ___ ale ___ fig ___ ale ale rye|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nRYE  |rye rye yam ___ rye rye ___ keg rye rye rye|\n     +-------------------------------------------+\nKEG  |keg keg keg rye keg keg keg keg keg keg ham|\n     +-------------------------------------------+\nYAM  |yam yam rye yam yam yam yam yam yam ham yam|\n     +-------------------------------------------+\nHAM  |ham ham rye ___ ham ___ ham ham ham ham keg|\n     +-------------------------------------------+\n2 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nRYE  |rye rye yam ___ rye rye ___ keg rye rye rye|\n     +-------------------------------------------+\nKEG  |keg keg keg rye keg keg keg keg keg keg ham|\n     +-------------------------------------------+\nYAM  |yam yam rye yam yam yam yam yam yam ham yam|\n     +-------------------------------------------+\nHAM  |ham ham rye ___ ham ___ ham ham ham ham keg|\n     +-------------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ham ham ham ham ham ham ham wax yam|\n     +---------------------------------------+\nYAM  |yam yam yam yam yam yam yam yam yam ham|\n     +---------------------------------------+\nSOY  |yam soy soy ___ soy soy soy soy ___ ___|\n     +---------------------------------------+\nWAX  |___ wax ham wax wax wax wax wax ___ soy|\n     +---------------------------------------+\n0 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ham ham ham ham ham ham ham wax yam|\n     +---------------------------------------+\nYAM  |yam yam yam yam yam yam yam yam yam ham|\n     +---------------------------------------+\nSOY  |yam soy soy ___ soy soy soy soy ___ ___|\n     +---------------------------------------+\nWAX  |___ wax ham wax wax wax wax wax ___ soy|\n     +---------------------------------------+\n0 home",
+    "score": 1
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nJAM  |ale jam pie jam ___ ___ jam jam jam jam|\n     +---------------------------------------+\nPIE  |pie pie pie pie pie jam pie veg pie pie|\n     +---------------------------------------+\nALE  |jam ale ale ale ale ale ale veg ale pie|\n     +---------------------------------------+\nVEG  |___ ___ veg veg veg veg veg pie veg veg|\n     +---------------------------------------+\n2 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nJAM  |ale jam pie jam ___ ___ jam jam jam jam|\n     +---------------------------------------+\nPIE  |pie pie pie pie pie jam pie veg pie pie|\n     +---------------------------------------+\nALE  |jam ale ale ale ale ale ale veg ale pie|\n     +---------------------------------------+\nVEG  |___ ___ veg veg veg veg veg pie veg veg|\n     +---------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy ___ soy soy soy ___ soy keg soy|\n     +---------------------------------------+\nKEG  |keg keg keg keg keg keg keg keg soy dip|\n     +---------------------------------------+\nDIP  |mop dip dip ___ dip dip soy keg ___ ___|\n     +---------------------------------------+\nMOP  |dip ___ mop mop mop mop mop mop soy ___|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy ___ soy soy soy ___ soy keg soy|\n     +---------------------------------------+\nKEG  |keg keg keg keg keg keg keg keg soy dip|\n     +---------------------------------------+\nDIP  |mop dip dip ___ dip dip soy keg ___ ___|\n     +---------------------------------------+\nMOP  |dip ___ mop mop mop mop mop mop soy ___|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nALE  |ale wax ale ale tea ale ale ale rye|\n     +-----------------------------------+\nTEA  |___ tea ___ ___ tea tea tea wax rye|\n     +-----------------------------------+\nRYE  |___ rye rye rye ___ rye rye ___ ale|\n     +-----------------------------------+\nWAX  |ale ___ wax wax ___ ___ wax tea wax|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nALE  |ale wax ale ale tea ale ale ale rye|\n     +-----------------------------------+\nTEA  |___ tea ___ ___ tea tea tea wax rye|\n     +-----------------------------------+\nRYE  |___ rye rye rye ___ rye rye ___ ale|\n     +-----------------------------------+\nWAX  |ale ___ wax wax ___ ___ wax tea wax|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nURN  |urn urn urn urn urn urn bun urn urn urn gum|\n     +-------------------------------------------+\nCOD  |___ cod cod cod cod cod ___ cod gum bun ___|\n     +-------------------------------------------+\nBUN  |bun bun bun bun bun bun urn bun bun cod bun|\n     +-------------------------------------------+\nGUM  |___ gum ___ gum gum urn cod ___ gum gum gum|\n     +-------------------------------------------+\n1 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nURN  |urn urn urn urn urn urn bun urn urn urn gum|\n     +-------------------------------------------+\nCOD  |___ cod cod cod cod cod ___ cod gum bun ___|\n     +-------------------------------------------+\nBUN  |bun bun bun bun bun bun urn bun bun cod bun|\n     +-------------------------------------------+\nGUM  |___ gum ___ gum gum urn cod ___ gum gum gum|\n     +-------------------------------------------+\n1 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nMOP  |___ soy mop mop mop ___ egg ___ pie|\n     +-----------------------------------+\nPIE  |mop soy pie pie pie pie pie pie pie|\n     +-----------------------------------+\nSOY  |soy pie ___ soy soy ___ soy soy soy|\n     +-----------------------------------+\nEGG  |egg egg egg ___ ___ egg mop ___ egg|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nMOP  |___ soy mop mop mop ___ egg ___ pie|\n     +-----------------------------------+\nPIE  |mop soy pie pie pie pie pie pie pie|\n     +-----------------------------------+\nSOY  |soy pie ___ soy soy ___ soy soy soy|\n     +-----------------------------------+\nEGG  |egg egg egg ___ ___ egg mop ___ egg|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nMOP  |mop ___ dip mop mop mop wax ale mop mop ___|\n     +-------------------------------------------+\nDIP  |mop dip dip dip dip dip dip ale dip dip dip|\n     +-------------------------------------------+\nALE  |___ ale ale ___ ale ale ___ dip ale ale ale|\n     +-------------------------------------------+\nWAX  |wax wax wax ale wax wax mop ___ wax ___ ___|\n     +-------------------------------------------+\n3 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nMOP  |mop ___ dip mop mop mop wax ale mop mop ___|\n     +-------------------------------------------+\nDIP  |mop dip dip dip dip dip dip ale dip dip dip|\n     +-------------------------------------------+\nALE  |___ ale ale ___ ale ale ___ dip ale ale ale|\n     +-------------------------------------------+\nWAX  |wax wax wax ale wax wax mop ___ wax ___ ___|\n     +-------------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nALE  |ale ale keg ___ ___ ale ale fig ale|\n     +-----------------------------------+\nMOP  |mop fig mop keg mop mop mop mop mop|\n     +-----------------------------------+\nFIG  |___ ___ ___ keg fig mop fig ale fig|\n     +-----------------------------------+\nKEG  |keg keg keg mop keg ___ keg keg ___|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nALE  |ale ale keg ___ ___ ale ale fig ale|\n     +-----------------------------------+\nMOP  |mop fig mop keg mop mop mop mop mop|\n     +-----------------------------------+\nFIG  |___ ___ ___ keg fig mop fig ale fig|\n     +-----------------------------------+\nKEG  |keg keg keg mop keg ___ keg keg ___|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nKEG  |keg ___ keg keg keg keg keg mop ___ ale|\n     +---------------------------------------+\nALE  |ale ___ ale mop ale soy ___ ___ ale keg|\n     +---------------------------------------+\nMOP  |mop mop mop mop mop soy ale mop mop mop|\n     +---------------------------------------+\nSOY  |soy ___ soy soy soy mop soy ___ soy soy|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nKEG  |keg ___ keg keg keg keg keg mop ___ ale|\n     +---------------------------------------+\nALE  |ale ___ ale mop ale soy ___ ___ ale keg|\n     +---------------------------------------+\nMOP  |mop mop mop mop mop soy ale mop mop mop|\n     +---------------------------------------+\nSOY  |soy ___ soy soy soy mop soy ___ soy soy|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nTEA  |tea tea ___ ___ tea wax tea ___ tea|\n     +-----------------------------------+\nHAM  |ham ham ham ham ham tea ham wax ham|\n     +-----------------------------------+\nRYE  |___ rye rye tea rye rye ___ wax rye|\n     +-----------------------------------+\nWAX  |wax wax wax wax rye tea wax ham wax|\n     +-----------------------------------+\n1 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nTEA  |tea tea ___ ___ tea wax tea ___ tea|\n     +-----------------------------------+\nHAM  |ham ham ham ham ham tea ham wax ham|\n     +-----------------------------------+\nRYE  |___ rye rye tea rye rye ___ wax rye|\n     +-----------------------------------+\nWAX  |wax wax wax wax rye tea wax ham wax|\n     +-----------------------------------+\n1 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nEGG  |mop egg log egg veg egg egg egg egg|\n     +-----------------------------------+\nVEG  |veg veg veg veg mop veg veg ___ ___|\n     +-----------------------------------+\nLOG  |___ log egg ___ log ___ log log log|\n     +-----------------------------------+\nMOP  |___ ___ mop egg veg ___ mop mop mop|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nEGG  |mop egg log egg veg egg egg egg egg|\n     +-----------------------------------+\nVEG  |veg veg veg veg mop veg veg ___ ___|\n     +-----------------------------------+\nLOG  |___ log egg ___ log ___ log log log|\n     +-----------------------------------+\nMOP  |___ ___ mop egg veg ___ mop mop mop|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nFIG  |fig wax fig fig fig fig fig fig fig fig|\n     +---------------------------------------+\nLOG  |___ pie log ___ log log ___ log log log|\n     +---------------------------------------+\nPIE  |wax ___ pie pie ___ pie pie pie ___ pie|\n     +---------------------------------------+\nWAX  |wax fig pie wax wax wax wax wax wax wax|\n     +---------------------------------------+\n0 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nFIG  |fig wax fig fig fig fig fig fig fig fig|\n     +---------------------------------------+\nLOG  |___ pie log ___ log log ___ log log log|\n     +---------------------------------------+\nPIE  |wax ___ pie pie ___ pie pie pie ___ pie|\n     +---------------------------------------+\nWAX  |wax fig pie wax wax wax wax wax wax wax|\n     +---------------------------------------+\n0 home",
+    "score": 1
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nPIE  |pie bun pie pie urn pie pie pie pie pie pie|\n     +-------------------------------------------+\nURN  |___ ___ urn urn log urn ___ urn urn urn urn|\n     +-------------------------------------------+\nLOG  |log log log log urn log log pie log bun log|\n     +-------------------------------------------+\nBUN  |bun pie log bun ___ bun bun bun bun ___ bun|\n     +-------------------------------------------+\n2 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nPIE  |pie bun pie pie urn pie pie pie pie pie pie|\n     +-------------------------------------------+\nURN  |___ ___ urn urn log urn ___ urn urn urn urn|\n     +-------------------------------------------+\nLOG  |log log log log urn log log pie log bun log|\n     +-------------------------------------------+\nBUN  |bun pie log bun ___ bun bun bun bun ___ bun|\n     +-------------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nWAX  |wax wax wax wax wax wax wax ale soy wax wax|\n     +-------------------------------------------+\nSOY  |soy soy soy ale soy soy ___ soy ___ soy soy|\n     +-------------------------------------------+\nALE  |ale ale ale ale ale ale soy wax urn ale ale|\n     +-------------------------------------------+\nURN  |urn ___ urn urn urn urn urn ___ ale ___ urn|\n     +-------------------------------------------+\n1 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nWAX  |wax wax wax wax wax wax wax ale soy wax wax|\n     +-------------------------------------------+\nSOY  |soy soy soy ale soy soy ___ soy ___ soy soy|\n     +-------------------------------------------+\nALE  |ale ale ale ale ale ale soy wax urn ale ale|\n     +-------------------------------------------+\nURN  |urn ___ urn urn urn urn urn ___ ale ___ urn|\n     +-------------------------------------------+\n1 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nSOY  |soy ___ ___ soy ___ soy soy fig egg soy soy|\n     +-------------------------------------------+\nGUM  |gum gum gum gum gum gum gum fig gum egg gum|\n     +-------------------------------------------+\nFIG  |___ fig fig fig fig fig ___ gum fig fig fig|\n     +-------------------------------------------+\nEGG  |egg egg egg egg ___ egg egg gum soy ___ egg|\n     +-------------------------------------------+\n3 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nSOY  |soy ___ ___ soy ___ soy soy fig egg soy soy|\n     +-------------------------------------------+\nGUM  |gum gum gum gum gum gum gum fig gum egg gum|\n     +-------------------------------------------+\nFIG  |___ fig fig fig fig fig ___ gum fig fig fig|\n     +-------------------------------------------+\nEGG  |egg egg egg egg ___ egg egg gum soy ___ egg|\n     +-------------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nCOD  |keg cod mop cod cod ___ ___ yam cod cod|\n     +---------------------------------------+\nKEG  |keg keg keg cod mop keg keg yam keg keg|\n     +---------------------------------------+\nYAM  |___ yam yam yam ___ yam yam cod yam yam|\n     +---------------------------------------+\nMOP  |mop mop ___ mop keg mop mop mop mop ___|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nCOD  |keg cod mop cod cod ___ ___ yam cod cod|\n     +---------------------------------------+\nKEG  |keg keg keg cod mop keg keg yam keg keg|\n     +---------------------------------------+\nYAM  |___ yam yam yam ___ yam yam cod yam yam|\n     +---------------------------------------+\nMOP  |mop mop ___ mop keg mop mop mop mop ___|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nMOP  |mop mop mop fig ___ mop ___ mop tea ___|\n     +---------------------------------------+\nFIG  |fig mop tea fig fig fig fig fig cod fig|\n     +---------------------------------------+\nTEA  |tea tea fig tea tea tea tea tea mop tea|\n     +---------------------------------------+\nCOD  |cod cod cod ___ cod cod cod cod ___ cod|\n     +---------------------------------------+\n1 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nMOP  |mop mop mop fig ___ mop ___ mop tea ___|\n     +---------------------------------------+\nFIG  |fig mop tea fig fig fig fig fig cod fig|\n     +---------------------------------------+\nTEA  |tea tea fig tea tea tea tea tea mop tea|\n     +---------------------------------------+\nCOD  |cod cod cod ___ cod cod cod cod ___ cod|\n     +---------------------------------------+\n1 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nCOD  |cod cod cod rye cod dip cod keg cod cod cod|\n     +-------------------------------------------+\nDIP  |dip dip dip rye ___ ___ keg ___ dip dip dip|\n     +-------------------------------------------+\nRYE  |___ rye rye cod rye rye ___ rye rye rye rye|\n     +-------------------------------------------+\nKEG  |___ cod keg keg keg keg dip ___ keg keg keg|\n     +-------------------------------------------+\n3 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nCOD  |cod cod cod rye cod dip cod keg cod cod cod|\n     +-------------------------------------------+\nDIP  |dip dip dip rye ___ ___ keg ___ dip dip dip|\n     +-------------------------------------------+\nRYE  |___ rye rye cod rye rye ___ rye rye rye rye|\n     +-------------------------------------------+\nKEG  |___ cod keg keg keg keg dip ___ keg keg keg|\n     +-------------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nBUN  |bun bun bun bun bun bun bun mop bun gum bun|\n     +-------------------------------------------+\nMOP  |gum mop mop ___ mop mop ___ bun mop ___ mop|\n     +-------------------------------------------+\nGUM  |ale gum ___ gum gum bun mop gum ___ ___ gum|\n     +-------------------------------------------+\nALE  |gum ale ale ale ale ale ale ale ale ale ale|\n     +-------------------------------------------+\n2 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nBUN  |bun bun bun bun bun bun bun mop bun gum bun|\n     +-------------------------------------------+\nMOP  |gum mop mop ___ mop mop ___ bun mop ___ mop|\n     +-------------------------------------------+\nGUM  |ale gum ___ gum gum bun mop gum ___ ___ gum|\n     +-------------------------------------------+\nALE  |gum ale ale ale ale ale ale ale ale ale ale|\n     +-------------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ___ ham ___ ham ___ fig ham ham ham|\n     +---------------------------------------+\nFIG  |___ yam fig gum fig ___ ham ___ fig fig|\n     +---------------------------------------+\nGUM  |gum yam ham gum gum gum gum fig gum gum|\n     +---------------------------------------+\nYAM  |yam gum yam ___ yam yam ___ yam yam yam|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ___ ham ___ ham ___ fig ham ham ham|\n     +---------------------------------------+\nFIG  |___ yam fig gum fig ___ ham ___ fig fig|\n     +---------------------------------------+\nGUM  |gum yam ham gum gum gum gum fig gum gum|\n     +---------------------------------------+\nYAM  |yam gum yam ___ yam yam ___ yam yam yam|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +============= THE CORNER SHOP =============+\nFIG  |___ fig ___ fig veg fig fig fig fig fig ___|\n     +-------------------------------------------+\nJAM  |jam fig jam jam ___ jam jam jam jam jam ___|\n     +-------------------------------------------+\nVEG  |veg wax veg veg veg veg veg veg veg fig jam|\n     +-------------------------------------------+\nWAX  |wax veg wax wax wax wax wax wax wax wax wax|\n     +-------------------------------------------+\n0 home",
+    "answer": "     +============= THE CORNER SHOP =============+\nFIG  |___ fig ___ fig veg fig fig fig fig fig ___|\n     +-------------------------------------------+\nJAM  |jam fig jam jam ___ jam jam jam jam jam ___|\n     +-------------------------------------------+\nVEG  |veg wax veg veg veg veg veg veg veg fig jam|\n     +-------------------------------------------+\nWAX  |wax veg wax wax wax wax wax wax wax wax wax|\n     +-------------------------------------------+\n0 home",
+    "score": 1
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy soy soy soy soy soy mop soy dip|\n     +---------------------------------------+\nDIP  |dip bun dip dip ___ dip soy dip dip ___|\n     +---------------------------------------+\nMOP  |___ ___ mop mop mop mop mop soy mop mop|\n     +---------------------------------------+\nBUN  |bun dip bun ___ bun bun bun mop ___ bun|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy soy soy soy soy soy mop soy dip|\n     +---------------------------------------+\nDIP  |dip bun dip dip ___ dip soy dip dip ___|\n     +---------------------------------------+\nMOP  |___ ___ mop mop mop mop mop soy mop mop|\n     +---------------------------------------+\nBUN  |bun dip bun ___ bun bun bun mop ___ bun|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy wax ___ soy ___ ___ soy egg soy|\n     +---------------------------------------+\nEGG  |egg egg egg egg egg egg egg fig soy egg|\n     +---------------------------------------+\nWAX  |wax fig wax wax wax soy wax wax wax wax|\n     +---------------------------------------+\nFIG  |fig wax fig fig ___ fig fig ___ soy ___|\n     +---------------------------------------+\n2 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nSOY  |soy soy wax ___ soy ___ ___ soy egg soy|\n     +---------------------------------------+\nEGG  |egg egg egg egg egg egg egg fig soy egg|\n     +---------------------------------------+\nWAX  |wax fig wax wax wax soy wax wax wax wax|\n     +---------------------------------------+\nFIG  |fig wax fig fig ___ fig fig ___ soy ___|\n     +---------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nMOP  |mop veg mop mop ___ mop mop mop log ___|\n     +---------------------------------------+\nVEG  |veg veg veg veg mop veg veg rye veg veg|\n     +---------------------------------------+\nLOG  |log log log log log log log log mop log|\n     +---------------------------------------+\nRYE  |rye ___ rye ___ ___ rye rye veg mop rye|\n     +---------------------------------------+\n2 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nMOP  |mop veg mop mop ___ mop mop mop log ___|\n     +---------------------------------------+\nVEG  |veg veg veg veg mop veg veg rye veg veg|\n     +---------------------------------------+\nLOG  |log log log log log log log log mop log|\n     +---------------------------------------+\nRYE  |rye ___ rye ___ ___ rye rye veg mop rye|\n     +---------------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nBUN  |bun bun bun ___ soy ___ bun ___ bun bun|\n     +---------------------------------------+\nURN  |urn urn ___ urn urn urn urn ___ pie ___|\n     +---------------------------------------+\nPIE  |pie pie pie ___ bun pie ___ pie urn soy|\n     +---------------------------------------+\nSOY  |soy soy soy soy bun soy pie soy soy soy|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nBUN  |bun bun bun ___ soy ___ bun ___ bun bun|\n     +---------------------------------------+\nURN  |urn urn ___ urn urn urn urn ___ pie ___|\n     +---------------------------------------+\nPIE  |pie pie pie ___ bun pie ___ pie urn soy|\n     +---------------------------------------+\nSOY  |soy soy soy soy bun soy pie soy soy soy|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nHAM  |ale ham ham ___ ___ ham ham pie ham|\n     +-----------------------------------+\nPIE  |pie pie pie ham pie ale nut pie pie|\n     +-----------------------------------+\nALE  |ham ale ale ale ale ale nut ale ale|\n     +-----------------------------------+\nNUT  |nut ___ ___ ___ nut nut pie nut nut|\n     +-----------------------------------+\n2 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nHAM  |ale ham ham ___ ___ ham ham pie ham|\n     +-----------------------------------+\nPIE  |pie pie pie ham pie ale nut pie pie|\n     +-----------------------------------+\nALE  |ham ale ale ale ale ale nut ale ale|\n     +-----------------------------------+\nNUT  |nut ___ ___ ___ nut nut pie nut nut|\n     +-----------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nDIP  |___ pie dip dip ale ___ dip ___ dip|\n     +-----------------------------------+\nPIE  |___ bun pie pie ___ pie pie pie pie|\n     +-----------------------------------+\nALE  |ale bun ___ ___ dip ale ___ ale ale|\n     +-----------------------------------+\nBUN  |bun pie bun ale bun bun bun bun bun|\n     +-----------------------------------+\n3 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nDIP  |___ pie dip dip ale ___ dip ___ dip|\n     +-----------------------------------+\nPIE  |___ bun pie pie ___ pie pie pie pie|\n     +-----------------------------------+\nALE  |ale bun ___ ___ dip ale ___ ale ale|\n     +-----------------------------------+\nBUN  |bun pie bun ale bun bun bun bun bun|\n     +-----------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +========= THE CORNER SHOP =========+\nEGG  |egg egg jam egg egg egg egg ale egg|\n     +-----------------------------------+\nALE  |ale egg ale ale ___ ale ale ___ keg|\n     +-----------------------------------+\nKEG  |keg keg keg keg jam keg keg keg ale|\n     +-----------------------------------+\nJAM  |jam ___ egg jam jam jam ___ jam ale|\n     +-----------------------------------+\n2 home",
+    "answer": "     +========= THE CORNER SHOP =========+\nEGG  |egg egg jam egg egg egg egg ale egg|\n     +-----------------------------------+\nALE  |ale egg ale ale ___ ale ale ___ keg|\n     +-----------------------------------+\nKEG  |keg keg keg keg jam keg keg keg ale|\n     +-----------------------------------+\nJAM  |jam ___ egg jam jam jam ___ jam ale|\n     +-----------------------------------+\n2 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nWAX  |jam pie wax wax wax wax wax wax wax rye|\n     +---------------------------------------+\nRYE  |rye rye rye rye rye rye rye ___ ___ wax|\n     +---------------------------------------+\nJAM  |pie jam jam ___ jam ___ jam jam jam ___|\n     +---------------------------------------+\nPIE  |jam ___ ___ pie ___ wax pie pie pie pie|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nWAX  |jam pie wax wax wax wax wax wax wax rye|\n     +---------------------------------------+\nRYE  |rye rye rye rye rye rye rye ___ ___ wax|\n     +---------------------------------------+\nJAM  |pie jam jam ___ jam ___ jam jam jam ___|\n     +---------------------------------------+\nPIE  |jam ___ ___ pie ___ wax pie pie pie pie|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nRYE  |rye yam rye rye rye rye jam rye wax rye|\n     +---------------------------------------+\nJAM  |jam jam ___ ___ ___ yam wax jam jam jam|\n     +---------------------------------------+\nWAX  |rye ___ wax wax wax wax jam wax ___ wax|\n     +---------------------------------------+\nYAM  |___ rye ___ ___ yam yam yam yam yam yam|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nRYE  |rye yam rye rye rye rye jam rye wax rye|\n     +---------------------------------------+\nJAM  |jam jam ___ ___ ___ yam wax jam jam jam|\n     +---------------------------------------+\nWAX  |rye ___ wax wax wax wax jam wax ___ wax|\n     +---------------------------------------+\nYAM  |___ rye ___ ___ yam yam yam yam yam yam|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ___ ham ___ ___ veg ham ham ham ham|\n     +---------------------------------------+\nVEG  |veg veg veg veg log ham veg veg soy veg|\n     +---------------------------------------+\nLOG  |log log log log ___ log ___ veg soy log|\n     +---------------------------------------+\nSOY  |soy soy soy ___ soy soy ___ soy log soy|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nHAM  |ham ___ ham ___ ___ veg ham ham ham ham|\n     +---------------------------------------+\nVEG  |veg veg veg veg log ham veg veg soy veg|\n     +---------------------------------------+\nLOG  |log log log log ___ log ___ veg soy log|\n     +---------------------------------------+\nSOY  |soy soy soy ___ soy soy ___ soy log soy|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nALE  |ale ale ale ale ale ale egg ale ale veg|\n     +---------------------------------------+\nFIG  |fig veg fig fig ___ fig egg ___ fig ___|\n     +---------------------------------------+\nEGG  |___ egg egg ___ egg egg ale ___ egg egg|\n     +---------------------------------------+\nVEG  |veg fig ale veg ___ veg veg egg ___ ___|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nALE  |ale ale ale ale ale ale egg ale ale veg|\n     +---------------------------------------+\nFIG  |fig veg fig fig ___ fig egg ___ fig ___|\n     +---------------------------------------+\nEGG  |___ egg egg ___ egg egg ale ___ egg egg|\n     +---------------------------------------+\nVEG  |veg fig ale veg ___ veg veg egg ___ ___|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nTEA  |tea cod tea tea tea rye tea tea tea tea|\n     +---------------------------------------+\nRYE  |rye cod tea ___ rye ___ rye ___ yam rye|\n     +---------------------------------------+\nCOD  |cod tea ___ cod ___ ___ cod cod cod cod|\n     +---------------------------------------+\nYAM  |yam yam yam yam yam ___ yam yam rye ___|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nTEA  |tea cod tea tea tea rye tea tea tea tea|\n     +---------------------------------------+\nRYE  |rye cod tea ___ rye ___ rye ___ yam rye|\n     +---------------------------------------+\nCOD  |cod tea ___ cod ___ ___ cod cod cod cod|\n     +---------------------------------------+\nYAM  |yam yam yam yam yam ___ yam yam rye ___|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   },
+   {
+    "clue": "     +=========== THE CORNER SHOP ===========+\nALE  |urn soy ale ale ale ale ale ale ale ale|\n     +---------------------------------------+\nNUT  |___ soy nut nut nut nut ___ urn ___ nut|\n     +---------------------------------------+\nSOY  |soy ale ___ ___ soy soy soy soy soy soy|\n     +---------------------------------------+\nURN  |___ soy urn ___ ___ urn ale nut urn urn|\n     +---------------------------------------+\n3 home",
+    "answer": "     +=========== THE CORNER SHOP ===========+\nALE  |urn soy ale ale ale ale ale ale ale ale|\n     +---------------------------------------+\nNUT  |___ soy nut nut nut nut ___ urn ___ nut|\n     +---------------------------------------+\nSOY  |soy ale ___ ___ soy soy soy soy soy soy|\n     +---------------------------------------+\nURN  |___ soy urn ___ ___ urn ale nut urn urn|\n     +---------------------------------------+\n3 home",
+    "score": 0
+   }
+  ],
+  "fennick": [
+   {
+    "clue": "_        _  _       _     _      _\nS_    __ S  L_ _    J     R_     R\nSR_   LG S_ LR J    J  _  RL_ _ _R ___\nSRG  _LG SJ LR J__  J_ F  RLG S RR GSJ\nSRG..RLG.SJ.LR.JLS..JJ.F..RLG.S.RR.GSJ\n======================================\n4 fall",
+    "answer": "_        _  _       _     _      _\nS_    __ S  L_ _    J     R_     R\nSR_   LG S_ LR J    J  _  RL_ _ _R ___\nSRG  _LG SJ LR J__  J_ F  RLG S RR GSJ\nSRG..RLG.SJ.LR.JLS..JJ.F..RLG.S.RR.GSJ\n======================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "__     _ __              _\nAH     S SA             _K\nAH_    S SA        _    HK\nAHS    S SA  _     A    HK    _ _\nAHS _ _S SA  A     A    HK    W S   _\nAHS H KS SA  A_ _  A_ _ HK _ _W S_ _U\nAHS.H.KS.SA..AS.W..AS.H.HK.S.KW.SS.AU\n=====================================\n0 fall",
+    "answer": "__     _ __              _\nAH     S SA             _K\nAH_    S SA        _    HK\nAHS    S SA  _     A    HK    _ _\nAHS _ _S SA  A     A    HK    W S   _\nAHS H KS SA  A_ _  A_ _ HK _ _W S_ _U\nAHS.H.KS.SA..AS.W..AS.H.HK.S.KW.SS.AU\n=====================================\n0 fall",
+    "score": 1
+   },
+   {
+    "clue": "           _   _     _\n       _   J   U     U   _      __\n    _  M   J   U     U_  J      EE _\n    G  M   J  _U  _  UM  J_     EE G\n_   G  M_ _J  EU _U  UM  JM     EE G\nJ_  G  MJ GJ _EU JU _UM  JM  _  EE G_\nJU..G..MJ.GJ.EEU.JU.EUM..JM..E..EE.GG\n=====================================\n4 fall",
+    "answer": "           _   _     _\n       _   J   U     U   _      __\n    _  M   J   U     U_  J      EE _\n    G  M   J  _U  _  UM  J_     EE G\n_   G  M_ _J  EU _U  UM  JM     EE G\nJ_  G  MJ GJ _EU JU _UM  JM  _  EE G_\nJU..G..MJ.GJ.EEU.JU.EUM..JM..E..EE.GG\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": " __ _ _              _  _\n CC R R            _ A  J     _\n_CC R R _      _   L A  J  _ _L __ __\nFCC R_R L_  _  R  _L A  J _L RL AR CA\nFCC.RFR.LR..J..R..CL.A..J.CL.RL.AR.CA\n=====================================\n4 fall",
+    "answer": " __ _ _              _  _\n CC R R            _ A  J     _\n_CC R R _      _   L A  J  _ _L __ __\nFCC R_R L_  _  R  _L A  J _L RL AR CA\nFCC.RFR.LR..J..R..CL.A..J.CL.RL.AR.CA\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "_          _  _   _            _\nS _ _     _F  S   B   _   _    R\nS S F _ _ BF  S _ B   F   L    R\nS S F F E BF_ S R B_  F  _L    R __\nS_S F_F E BFS S R BR _F  LL __ R BS_\nSLS.FSF.E.BFS.S.R.BR.RF..LL.FS.R.BSE\n====================================\n5 fall",
+    "answer": "_          _  _   _            _\nS _ _     _F  S   B   _   _    R\nS S F _ _ BF  S _ B   F   L    R\nS S F F E BF_ S R B_  F  _L    R __\nS_S F_F E BFS S R BR _F  LL __ R BS_\nSLS.FSF.E.BFS.S.R.BR.RF..LL.FS.R.BSE\n====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "         _            _   _   _  _\n     _   D       _ _  T   P _ V  F _\n  _ _T   D  _    P T _T   P V V  F F\n  V TT  _D  F_  _P T TT   P_V V _F F_\n__V TT  HD  FV _VP T TT _ PPV V TF FV\nPTV.TT..HD..FV.HVP.T.TT.V.PPV.V.TF.FV\n=====================================\n5 fall",
+    "answer": "         _            _   _   _  _\n     _   D       _ _  T   P _ V  F _\n  _ _T   D  _    P T _T   P V V  F F\n  V TT  _D  F_  _P T TT   P_V V _F F_\n__V TT  HD  FV _VP T TT _ PPV V TF FV\nPTV.TT..HD..FV.HVP.T.TT.V.PPV.V.TF.FV\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "      _  _        _ _ _  _\n__ _  J  J       _R R J _V           _\nMJ K  J  J   __  JR R J VV _     _  _J\nMJ K _J  J   RR _JR R J VV P_    R_ VJ\nMJ K MJ _J _ RR PJR R_J VV PP_  _RK VJ\nMJ.K.MJ.KJ.P.RR.PJR.RVJ.VV.PPR..MRK.VJ\n======================================\n6 fall",
+    "answer": "      _  _        _ _ _  _\n__ _  J  J       _R R J _V           _\nMJ K  J  J   __  JR R J VV _     _  _J\nMJ K _J  J   RR _JR R J VV P_    R_ VJ\nMJ K MJ _J _ RR PJR R_J VV PP_  _RK VJ\nMJ.K.MJ.KJ.P.RR.PJR.RVJ.VV.PPR..MRK.VJ\n======================================\n6 fall",
+    "score": 0
+   },
+   {
+    "clue": "   _       _\n   H       U      _ ___\n   H _     U      E WWE       _    __\n _ H U _   U_  _  E WWE       P _  EW\n_H H U H   UW  W _E WWE   _   P W_ EW\nPH H U H_ _UW  W WE WWE  _L _ P WW EW\nPH.H.U.HL.EUW..W.WE.WWE..UL.W.P.WW.EW\n=====================================\n5 fall",
+    "answer": "   _       _\n   H       U      _ ___\n   H _     U      E WWE       _    __\n _ H U _   U_  _  E WWE       P _  EW\n_H H U H   UW  W _E WWE   _   P W_ EW\nPH H U H_ _UW  W WE WWE  _L _ P WW EW\nPH.H.U.HL.EUW..W.WE.WWE..UL.W.P.WW.EW\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "                       _   _     _\n               _ _  __ F   K  _  R\n__ _     __    E K  RK F   K  G  R\nPF G  _  EP    E K_ RK F __K  G_ R\nPF G_ F  EP _  E KR RK F RFK  GG R_\nPF.GG.F..EP.F..E.KR.RK.F.RFK..GG.RE\n===================================\n5 fall",
+    "answer": "                       _   _     _\n               _ _  __ F   K  _  R\n__ _     __    E K  RK F   K  G  R\nPF G  _  EP    E K_ RK F __K  G_ R\nPF G_ F  EP _  E KR RK F RFK  GG R_\nPF.GG.F..EP.F..E.KR.RK.F.RFK..GG.RE\n===================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "    _     _  _ _            _\n    U _   U  V V  _         E   _  _ _\n__ _U E __U _V V_ S_ _      E   U  K S\nKE KU E SHU VV VS SS H_  __ E  _U  K_S\nKE.KU.E.SHU.VV.VS.SS.HU..EH.E..UU..KVS\n======================================\n4 fall",
+    "answer": "    _     _  _ _            _\n    U _   U  V V  _         E   _  _ _\n__ _U E __U _V V_ S_ _      E   U  K S\nKE KU E SHU VV VS SS H_  __ E  _U  K_S\nKE.KU.E.SHU.VV.VS.SS.HU..EH.E..UU..KVS\n======================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "         _  _ _                     _\n  _ __   M _A H _     _  _   _  _  _M\n _K HH   M HA H S_   _H  H   N_ N _AM\n_KK HH  _M HA H SN _ HH _H_  NS N AAM\nNKK.HH..MM.HA.H.SN.A.HH.KHH..NS.N.AAM\n=====================================\n5 fall",
+    "answer": "         _  _ _                     _\n  _ __   M _A H _     _  _   _  _  _M\n _K HH   M HA H S_   _H  H   N_ N _AM\n_KK HH  _M HA H SN _ HH _H_  NS N AAM\nNKK.HH..MM.HA.H.SN.A.HH.KHH..NS.N.AAM\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "    __ _                __      _\n_   GP G          _     FF      L\nL _ GP G  _ _     F     FF_ _   L_\nL_F GP G_ P L __  F  _  FFE J_  LL __\nLJF.GP.GL.P.L.JJ..F..J..FFE.JL..LL.JJ\n=====================================\n4 fall",
+    "answer": "    __ _                __      _\n_   GP G          _     FF      L\nL _ GP G  _ _     F     FF_ _   L_\nL_F GP G_ P L __  F  _  FFE J_  LL __\nLJF.GP.GL.P.L.JJ..F..J..FFE.JL..LL.JJ\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "                _\n        _       F       _          _\n _      N       F       E          E\n_E_     N _ __  F    _  E_ _       E\nNEP _   N F PF_ F_   P  EW E  _    E\nNEP P _ N F PFE FN  _P  EW E_ E __ E_\nNEP.P.F.N.F.PFE.FN..WP..EW.EM.E.MN.EF\n=====================================\n4 fall",
+    "answer": "                _\n        _       F       _          _\n _      N       F       E          E\n_E_     N _ __  F    _  E_ _       E\nNEP _   N F PF_ F_   P  EW E  _    E\nNEP P _ N F PFE FN  _P  EW E_ E __ E_\nNEP.P.F.N.F.PFE.FN..WP..EW.EM.E.MN.EF\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "       _         _           _     _\n_      U         T  _      _ U     U\nN    _ U  _ _    T _U _  _ M U  _  U\nN   _H U _H H  _ T TU A _A M U  U  U\nN_  TH U MH H_ N T TU A HA M U  U _U\nNM..TH.U.MH.HH.N.T.TU.A.HA.M.U..U.MU\n====================================\n7 fall",
+    "answer": "       _         _           _     _\n_      U         T  _      _ U     U\nN    _ U  _ _    T _U _  _ M U  _  U\nN   _H U _H H  _ T TU A _A M U  U  U\nN_  TH U MH H_ N T TU A HA M U  U _U\nNM..TH.U.MH.HH.N.T.TU.A.HA.M.U..U.MU\n====================================\n7 fall",
+    "score": 0
+   },
+   {
+    "clue": "    _ __           __     _        __\n    E RR           RL _   L        RV\n _  E RR       _  _RL G_  L        RV\n V  E RR       G  BRL GE  L     _ _RV\n_V_ E RR  __   G  BRL GE  L  _ _E RRV\nVVL E RR_ LV_  G  BRL GE _L  E BE RRV\nVVL.E.RRB.LVV..G..BRL.GE.RL..E.BE.RRV\n=====================================\n4 fall",
+    "answer": "    _ __           __     _        __\n    E RR           RL _   L        RV\n _  E RR       _  _RL G_  L        RV\n V  E RR       G  BRL GE  L     _ _RV\n_V_ E RR  __   G  BRL GE  L  _ _E RRV\nVVL E RR_ LV_  G  BRL GE _L  E BE RRV\nVVL.E.RRB.LVV..G..BRL.GE.RL..E.BE.RRV\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "    _  _    _\n    J  B    B     _    __  _\n   _J  B    B     E    BE _U     _\n_  BJ  B    B   _ E_ _ BE CU     U_\nU_ BJ  B _  B  _E EJ C BE CU  __ UJ_\nUJ.BJ..B.E..B..CE.EJ.C.BE.CU..EJ.UJB\n====================================\n4 fall",
+    "answer": "    _  _    _\n    J  B    B     _    __  _\n   _J  B    B     E    BE _U     _\n_  BJ  B    B   _ E_ _ BE CU     U_\nU_ BJ  B _  B  _E EJ C BE CU  __ UJ_\nUJ.BJ..B.E..B..CE.EJ.C.BE.CU..EJ.UJB\n====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "   __ _   _\n   CJ V  _P         _          __\n _ CJ V_ SP  _    _ U         _US\n_C CJ VJ SP  S    V U   _  _  SUS _ _\nJC CJ VJ SP_ S  __V U  _P_ J_ SUS V_V\nJC.CJ.VJ.SPU.S..SUV.U..JPC.JC.SUS.VSV\n=====================================\n7 fall",
+    "answer": "   __ _   _\n   CJ V  _P         _          __\n _ CJ V_ SP  _    _ U         _US\n_C CJ VJ SP  S    V U   _  _  SUS _ _\nJC CJ VJ SP_ S  __V U  _P_ J_ SUS V_V\nJC.CJ.VJ.SPU.S..SUV.U..JPC.JC.SUS.VSV\n=====================================\n7 fall",
+    "score": 0
+   },
+   {
+    "clue": " _  __                     _  _\n U_ JE     _         __    L_ U      _\n UH JE     E     _   JE_   LL U _ _  U\n_UH JE_ _ _E     J_  JEL _ LL U H J  U__\nVUH JEU V LE_  _ JV_ JEL V LL U H_J  UEE\nVUH.JEU.V.LEJ..H.JVE.JEL.V.LL.U.HLJ..UEE\n========================================\n4 fall",
+    "answer": " _  __                     _  _\n U_ JE     _         __    L_ U      _\n UH JE     E     _   JE_   LL U _ _  U\n_UH JE_ _ _E     J_  JEL _ LL U H J  U__\nVUH JEU V LE_  _ JV_ JEL V LL U H_J  UEE\nVUH.JEU.V.LEJ..H.JVE.JEL.V.LL.U.HLJ..UEE\n========================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "_   _   _   _         _       _   _ _\nG_  G_  K _ G  _  _   F_ _    F   F B\nGW  GG  K F G _K  B   FB K  _ F   F B\nGW  GG _K F G BK  B _ FB K_ G F__ F B\nGW  GG WK F G BK _B W FB KF G FKF F_B\nGW..GG.WK.F.G.BK.BB.W.FB.KF.G.FKF.FKB\n=====================================\n5 fall",
+    "answer": "_   _   _   _         _       _   _ _\nG_  G_  K _ G  _  _   F_ _    F   F B\nGW  GG  K F G _K  B   FB K  _ F   F B\nGW  GG _K F G BK  B _ FB K_ G F__ F B\nGW  GG WK F G BK _B W FB KF G FKF F_B\nGW..GG.WK.F.G.BK.BB.W.FB.KF.G.FKF.FKB\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "                  _                 _\n             _    H   _   _    _    D\n  _ _       _G    H   G _ M    L    D\n__H L       DG    H   G G M_ _ L  _ D\nDHH L   _   DG    H   G G MG H_L  N D\nDHH L _ D_ _DG _ _H_ _G G MG HGL  N_D\nDHH.L.L.DM.MDG.M.NHH.MG.G.MG.HGL..NGD\n=====================================\n0 fall",
+    "answer": "                  _                 _\n             _    H   _   _    _    D\n  _ _       _G    H   G _ M    L    D\n__H L       DG    H   G G M_ _ L  _ D\nDHH L   _   DG    H   G G MG H_L  N D\nDHH L _ D_ _DG _ _H_ _G G MG HGL  N_D\nDHH.L.L.DM.MDG.M.NHH.MG.G.MG.HGL..NGD\n=====================================\n0 fall",
+    "score": 1
+   },
+   {
+    "clue": " _\n R     _ _ _  _   _  __\n_R __  W_W W_ W   K  WW _       __  _\nWR KK  WEW WC W_ _K _WW C_  _ _ WW _R\nWR.KK..WEW.WC.WC.KK.KWW.CC..W.R.WW.WR\n=====================================\n5 fall",
+    "answer": " _\n R     _ _ _  _   _  __\n_R __  W_W W_ W   K  WW _       __  _\nWR KK  WEW WC W_ _K _WW C_  _ _ WW _R\nWR.KK..WEW.WC.WC.KK.KWW.CC..W.R.WW.WR\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "       __ _                    _\n_      VN M_ _ _               U  _\nU__ _  VN MU U V               U  L_\nULM M  VN MU U V__ __ __ __ _ _U  LV_\nULM.M..VN.MU.U.VMS.MM.LL.LN.L.VU..LVS\n=====================================\n0 fall",
+    "answer": "       __ _                    _\n_      VN M_ _ _               U  _\nU__ _  VN MU U V               U  L_\nULM M  VN MU U V__ __ __ __ _ _U  LV_\nULM.M..VN.MU.U.VMS.MM.LL.LN.L.VU..LVS\n=====================================\n0 fall",
+    "score": 1
+   },
+   {
+    "clue": "   _ _  __                _   _      _\n   E E  KJ        _ _     J_  W      K\n _ E E _KJ _      K K     JE _W _   _K\n_K E E UKJ W_ __  K K     JE KW D_  UK\nEK E E UKJ WK JJ  K K  __ JE KW DD_ UK\nEK.E.E.UKJ.WK.JJ..K.K..JD.JE.KW.DDE.UK\n======================================\n7 fall",
+    "answer": "   _ _  __                _   _      _\n   E E  KJ        _ _     J_  W      K\n _ E E _KJ _      K K     JE _W _   _K\n_K E E UKJ W_ __  K K     JE KW D_  UK\nEK E E UKJ WK JJ  K K  __ JE KW DD_ UK\nEK.E.E.UKJ.WK.JJ..K.K..JD.JE.KW.DDE.UK\n======================================\n7 fall",
+    "score": 0
+   },
+   {
+    "clue": "   _      _    _       _        __\n _ N  _   N __ L_      A   _ _  NM\n_V N_ V_  N LL LL _ _ _A  _N V _NM\nCV NC VN  N LL LL M L CA  AN V ANM __\nCV.NC.VN..N.LL.LL.M.L.CA..AN.V.ANM.VL\n=====================================\n6 fall",
+    "answer": "   _      _    _       _        __\n _ N  _   N __ L_      A   _ _  NM\n_V N_ V_  N LL LL _ _ _A  _N V _NM\nCV NC VN  N LL LL M L CA  AN V ANM __\nCV.NC.VN..N.LL.LL.M.L.CA..AN.V.ANM.VL\n=====================================\n6 fall",
+    "score": 0
+   },
+   {
+    "clue": "_                      _           _\nF  _      __ _   _     F           L\nF_ H _    VA L   H     F    _      L\nFH H A  _ VA L_ _H  _  F_  _V _ __ L_\nFH H A  A VA LR FH _A  FR _VV F AA LF\nFH.H.A..A.VA.LR.FH.FA..FR.HVV.F.AA.LF\n=====================================\n4 fall",
+    "answer": "_                      _           _\nF  _      __ _   _     F           L\nF_ H _    VA L   H     F    _      L\nFH H A  _ VA L_ _H  _  F_  _V _ __ L_\nFH H A  A VA LR FH _A  FR _VV F AA LF\nFH.H.A..A.VA.LR.FH.FA..FR.HVV.F.AA.LF\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "                              _       _\n__  _     __    _        __   K       H\nPK _P _ _ HH    D  _  _  DK   K  __ _ H\nPK DP H W HH _  D _D  P_ DK  _K _PH W_H\nPK.DP.H.W.HH.G..D.WD..PK.DK..HK.GPH.WKH\n=======================================\n4 fall",
+    "answer": "                              _       _\n__  _     __    _        __   K       H\nPK _P _ _ HH    D  _  _  DK   K  __ _ H\nPK DP H W HH _  D _D  P_ DK  _K _PH W_H\nPK.DP.H.W.HH.G..D.WD..PK.DK..HK.GPH.WKH\n=======================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": " _   _       _     _ _   _  _   _  _\n T _ C       D __ _R V _ R  D   L  V\n T R C _  _  D CR RR V V R  D   L  V\n_T R C R _V  D CR RR V V R  D  _L_ V_\nCT R C R RV_ D CR RR V V_R  D  RLC VL\nCT.R.C.R.RVR.D.CR.RR.V.VVR..D..RLC.VL\n=====================================\n5 fall",
+    "answer": " _   _       _     _ _   _  _   _  _\n T _ C       D __ _R V _ R  D   L  V\n T R C _  _  D CR RR V V R  D   L  V\n_T R C R _V  D CR RR V V R  D  _L_ V_\nCT R C R RV_ D CR RR V V_R  D  RLC VL\nCT.R.C.R.RVR.D.CR.RR.V.VVR..D..RLC.VL\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "_   _          _      _ __         _\nG _ S   _  _  _L   _ _L LS         S\nG_V S__ H  S  SL   S VL LS _ _  __ S\nGVV SVH H _S_ SL  _S VL LS E H_ SG S__\nGVV.SVH.H.LSG.SL..HS.VL.LS.E.HE.SG.SGG\n======================================\n6 fall",
+    "answer": "_   _          _      _ __         _\nG _ S   _  _  _L   _ _L LS         S\nG_V S__ H  S  SL   S VL LS _ _  __ S\nGVV SVH H _S_ SL  _S VL LS E H_ SG S__\nGVV.SVH.H.LSG.SL..HS.VL.LS.E.HE.SG.SGG\n======================================\n6 fall",
+    "score": 0
+   },
+   {
+    "clue": "   _        _   _ _   _      _    _\n _ A   _   _U  _N C _ A      F    A\n F A   U   FU  AN C N A   _ _F  _ A_\n F A   U   FU  AN C N A  _A NF  N AW\n_F A__ U  _FU  AN C_N A_ AA NF  N AW\nCF.AFF.U..UFU..AN.CCN.AA.AA.NF..N.AW\n====================================\n4 fall",
+    "answer": "   _        _   _ _   _      _    _\n _ A   _   _U  _N C _ A      F    A\n F A   U   FU  AN C N A   _ _F  _ A_\n F A   U   FU  AN C N A  _A NF  N AW\n_F A__ U  _FU  AN C_N A_ AA NF  N AW\nCF.AFF.U..UFU..AN.CCN.AA.AA.NF..N.AW\n====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "  _        _\n  B        J\n _B        J\n BB    _   J        _ _             _ _\n_BB    U   J        B C   _ _       J B\nBBB _  U_ _J_ __ _  B C_ _B J _ __  J_B\nBBB.B..UU.BJB.PU.C..B.CP.EB.J.J.UE..JUB\n=======================================\n0 fall",
+    "answer": "  _        _\n  B        J\n _B        J\n BB    _   J        _ _             _ _\n_BB    U   J        B C   _ _       J B\nBBB _  U_ _J_ __ _  B C_ _B J _ __  J_B\nBBB.B..UU.BJB.PU.C..B.CP.EB.J.J.UE..JUB\n=======================================\n0 fall",
+    "score": 1
+   },
+   {
+    "clue": "         _            _ __  _    _ _\n  _      J_      _  _ T GD  W   _G G\n  G      JJ   __ T  G T GD_ W   GG G\n  G    _ JJ   TG T  G T GDT W   GG G_\n _G  _ T JJ  _TG T  G T GDT W   GG GD\n_GG _T T JJ  GTG T  G_T GDT W  _GG GD\nWGG.JT.T.JJ..GTG.T..GTT.GDT.W..PGG.GD\n=====================================\n4 fall",
+    "answer": "         _            _ __  _    _ _\n  _      J_      _  _ T GD  W   _G G\n  G      JJ   __ T  G T GD_ W   GG G\n  G    _ JJ   TG T  G T GDT W   GG G_\n _G  _ T JJ  _TG T  G T GDT W   GG GD\n_GG _T T JJ  GTG T  G_T GDT W  _GG GD\nWGG.JT.T.JJ..GTG.T..GTT.GDT.W..PGG.GD\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "   _    __       _ _            _  _\n _ H _ _GD _     G U       _ _  H  H\n G H H DGD K_   _G U      _N G  H  H\n G H_H DGD KD   GG U      HN G _H  H\n_G HGH DGD KD  _GG U  __  HN G GH _H_\nGG.HGH.DGD.KD..GGG.U..NH..HN.G.GH.GHG\n=====================================\n4 fall",
+    "answer": "   _    __       _ _            _  _\n _ H _ _GD _     G U       _ _  H  H\n G H H DGD K_   _G U      _N G  H  H\n G H_H DGD KD   GG U      HN G _H  H\n_G HGH DGD KD  _GG U  __  HN G GH _H_\nGG.HGH.DGD.KD..GGG.U..NH..HN.G.GH.GHG\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "_            _           _     _    _\nT       _    A_ _      _ D     M   _G\nT     _ M_   AM M_  _  A D_  _ M   MG\nT__   M MA   AM MJ  D  A DA  G M_ _MG\nTDA  _M MA _ AM MJ _D_ A DA _G MG GMG\nTDA..GM.MA.A.AM.MJ.ADA.A.DA.TG.MG.GMG\n=====================================\n5 fall",
+    "answer": "_            _           _     _    _\nT       _    A_ _      _ D     M   _G\nT     _ M_   AM M_  _  A D_  _ M   MG\nT__   M MA   AM MJ  D  A DA  G M_ _MG\nTDA  _M MA _ AM MJ _D_ A DA _G MG GMG\nTDA..GM.MA.A.AM.MJ.ADA.A.DA.TG.MG.GMG\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "            _  _  _    _         _ _\n    _ _   _ A  R  W    C_        C R\n    R_C _ R A  R_ W_  _CS        C R\n  _ RRC S R A  RW WA  RCS  _ _ _ C_R\n__A RRC S_R A  RW WA  RCS _A A T CAR\nCWA.RRC.SAR.A..RW.WA..RCS.CA.A.T.CAR\n====================================\n5 fall",
+    "answer": "            _  _  _    _         _ _\n    _ _   _ A  R  W    C_        C R\n    R_C _ R A  R_ W_  _CS        C R\n  _ RRC S R A  RW WA  RCS  _ _ _ C_R\n__A RRC S_R A  RW WA  RCS _A A T CAR\nCWA.RRC.SAR.A..RW.WA..RCS.CA.A.T.CAR\n====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": " _    _    _             _        _\n P _  L    R _           R     _  K_\n P P  L_   R R    _  _  _R  _  F  KH\n P P  LR_  R R _ _H  H  HR  F_ F _KH\n_P P_ LRP  R R_R KH _H  HR  FL F PKH\nFP.PP.LRP..R.RKR.KH.KH..HR..FL.F.PKH\n====================================\n6 fall",
+    "answer": " _    _    _             _        _\n P _  L    R _           R     _  K_\n P P  L_   R R    _  _  _R  _  F  KH\n P P  LR_  R R _ _H  H  HR  F_ F _KH\n_P P_ LRP  R R_R KH _H  HR  FL F PKH\nFP.PP.LRP..R.RKR.KH.KH..HR..FL.F.PKH\n====================================\n6 fall",
+    "score": 0
+   },
+   {
+    "clue": "        _      _     _        _\n    _   A     _B     H _   _  A\n    H_ _A    _BB     H A   U  A  _   _\n__ _HW UA _  ABB     H A   U  A  H   U\nBA HHW UA B_ ABB  __ H A_  U _A  H_ _U_\nBA.HHW.UA.BW.ABB..HW.H.AD..U.AA..HU.DUA\n=======================================\n5 fall",
+    "answer": "        _      _     _        _\n    _   A     _B     H _   _  A\n    H_ _A    _BB     H A   U  A  _   _\n__ _HW UA _  ABB     H A   U  A  H   U\nBA HHW UA B_ ABB  __ H A_  U _A  H_ _U_\nBA.HHW.UA.BW.ABB..HW.H.AD..U.AA..HU.DUA\n=======================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "       _        __       _     _\n       P    _   JD       D   _ J   __\n       P    B   JD   _   D _ U J   DU\n       P   _B   JD   P_ _D B U J_ _DU\n_      P_  DB   JD  _PW JD B U JW JDU\nD_ __ _PU  DB_ _JD  WPW JD B U JW JDU\nDP.BB.UPU..DBU.UJD..WPW.JD.B.U.JW.JDU\n=====================================\n0 fall",
+    "answer": "       _        __       _     _\n       P    _   JD       D   _ J   __\n       P    B   JD   _   D _ U J   DU\n       P   _B   JD   P_ _D B U J_ _DU\n_      P_  DB   JD  _PW JD B U JW JDU\nD_ __ _PU  DB_ _JD  WPW JD B U JW JDU\nDP.BB.UPU..DBU.UJD..WPW.JD.B.U.JW.JDU\n=====================================\n0 fall",
+    "score": 1
+   },
+   {
+    "clue": "               _    _    _\n__ __          E   _E _  D   _     __\nJT ED    _ _   E_  HE D  D  _D   _ TE_\nJT ED _ _L H_  ED_ HE D_ D  ED  _T TEL\nJT.ED.D.TL.HJ..EDJ.HE.DJ.D..ED..TT.TEL\n======================================\n4 fall",
+    "answer": "               _    _    _\n__ __          E   _E _  D   _     __\nJT ED    _ _   E_  HE D  D  _D   _ TE_\nJT ED _ _L H_  ED_ HE D_ D  ED  _T TEL\nJT.ED.D.TL.HJ..EDJ.HE.DJ.D..ED..TT.TEL\n======================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "  _                               _ _\n  W _                          _  P H\n _W W           _        _     V  P H\n JW W       _  _S_      _S_ _  V  P_H\n JW W   _ _ W_ WSV _    JSP V  V_ PPH\n_JW W_  J H WJ WSV J__  JSP V  VW PPH\nSJW.WV..J.H.WJ.WSV.JWW..JSP.V..VW.PPH\n=====================================\n4 fall",
+    "answer": "  _                               _ _\n  W _                          _  P H\n _W W           _        _     V  P H\n JW W       _  _S_      _S_ _  V  P_H\n JW W   _ _ W_ WSV _    JSP V  V_ PPH\n_JW W_  J H WJ WSV J__  JSP V  VW PPH\nSJW.WV..J.H.WJ.WSV.JWW..JSP.V..VW.PPH\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "  _        _         _    _\n _P     _  B     _  _V    B        ___\n_FP __ _F_ B   _ P  DV _  B  __ _  JDJ\nBFP DD BFJ B  _F P  DV B _B  PP P  JDJ\nBFP DD BFJ B  JF P _DV B VB_ PP P  JDJ\nBFP.DD.BFJ.B..JF.P.BDV.B.VBD.PP.P..JDJ\n======================================\n6 fall",
+    "answer": "  _        _         _    _\n _P     _  B     _  _V    B        ___\n_FP __ _F_ B   _ P  DV _  B  __ _  JDJ\nBFP DD BFJ B  _F P  DV B _B  PP P  JDJ\nBFP DD BFJ B  JF P _DV B VB_ PP P  JDJ\nBFP.DD.BFJ.B..JF.P.BDV.B.VBD.PP.P..JDJ\n======================================\n6 fall",
+    "score": 0
+   },
+   {
+    "clue": "      _    _ _  _          _\n      A _  M B_ B          L   _  _\n      A M  M BU B _  _     L   L  D\n  _   A M _M BU B_U  U   _ L   L_ D\n__U   A M LM BU BAU  U  _M L _ LA D__\nUUU _ A M LM BU BAU  U_ UM L D LA DAU\nUUU.D.A.M.LM.BU.BAU..UL.UM.L.D.LA.DAU\n=====================================\n5 fall",
+    "answer": "      _    _ _  _          _\n      A _  M B_ B          L   _  _\n      A M  M BU B _  _     L   L  D\n  _   A M _M BU B_U  U   _ L   L_ D\n__U   A M LM BU BAU  U  _M L _ LA D__\nUUU _ A M LM BU BAU  U_ UM L D LA DAU\nUUU.D.A.M.LM.BU.BAU..UL.UM.L.D.LA.DAU\n=====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": "  _   _ _      _      _   __\n  G  _J V_   _ G_     G   RG    __\n  G  TJ VT   V GR _ _ G   RG    TC __\n  G _TJ VT_  V GR J J G_  RG_   TC TG\n__G TTJ VTT _V GR J J GT  RGV _ TC TG\nVJG.TTJ.VTT.CV.GR.J.J.GT..RGV.T.TC.TG\n=====================================\n4 fall",
+    "answer": "  _   _ _      _      _   __\n  G  _J V_   _ G_     G   RG    __\n  G  TJ VT   V GR _ _ G   RG    TC __\n  G _TJ VT_  V GR J J G_  RG_   TC TG\n__G TTJ VTT _V GR J J GT  RGV _ TC TG\nVJG.TTJ.VTT.CV.GR.J.J.GT..RGV.T.TC.TG\n=====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "                 _                 _\n _              _N    _           _W\n_W              EN    W    _  _   NW\nWW_ _   ___     EN _  W_   W  H   NW\nWWL H__ NHH  _  EN E_ WW  _W_ H _ NW\nWWL.HFW.NHH..F..EN.EH.WW..NWW.H.N.NW\n====================================\n4 fall",
+    "answer": "                 _                 _\n _              _N    _           _W\n_W              EN    W    _  _   NW\nWW_ _   ___     EN _  W_   W  H   NW\nWWL H__ NHH  _  EN E_ WW  _W_ H _ NW\nWWL.HFW.NHH..F..EN.EH.WW..NWW.H.N.NW\n====================================\n4 fall",
+    "score": 0
+   },
+   {
+    "clue": "        _          _ _ _\n_ _ __  P  _  _    D R L       _\nE_L DE  P  E  P _ _D R L      _E\nEPL DE _P _E  P R DD R L      DE _ _\nEPL DE EP DE_ P R DD R L_  __ DE R_R\nEPL.DE.EP.DEP.P.R.DD.R.LF..DR.DE.RER\n====================================\n5 fall",
+    "answer": "        _          _ _ _\n_ _ __  P  _  _    D R L       _\nE_L DE  P  E  P _ _D R L      _E\nEPL DE _P _E  P R DD R L      DE _ _\nEPL DE EP DE_ P R DD R L_  __ DE R_R\nEPL.DE.EP.DEP.P.R.DD.R.LF..DR.DE.RER\n====================================\n5 fall",
+    "score": 0
+   },
+   {
+    "clue": " _        _  _    _  _     _\n A   _   _T  A    H _H  _  T    _ _\n_A _ R_  BT  A_   H CH  A_ T__  C A\nTA R RC  BT  AA_  H CH_ AC THA _C A__\nTA.R.RC..BT..AAC..H.CHA.AC.THA.AC.AAT\n=====================================\n4 fall",
+    "answer": " _        _  _    _  _     _\n A   _   _T  A    H _H  _  T    _ _\n_A _ R_  BT  A_   H CH  A_ T__  C A\nTA R RC  BT  AA_  H CH_ AC THA _C A__\nTA.R.RC..BT..AAC..H.CHA.AC.THA.AC.AAT\n=====================================\n4 fall",
+    "score": 0
+   }
+  ],
+  "virel": [
+   {
+    "clue": "[][----][][-][][][-]\n[][---][--][-][--][]\n[----][---][][-][--]\n[][---][--][----][-]\n3",
+    "answer": "[][----][][-][][][-]\n[][---][--][-][--][]\n[----][---][][-][--]\n[][---][--][----][-]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[-][][--][][][--][]\n[-][][--][][---][-]\n[----][---][---][-]\n1",
+    "answer": "[-][][--][][][--][]\n[-][][--][][---][-]\n[----][---][---][-]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[--][--][][][--][][]\n[-][][---][--][--][]\n[--][][--][-][][---]\n2",
+    "answer": "[--][--][][][--][][]\n[-][][---][--][--][]\n[--][][--][-][][---]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[][----][-][][][--]\n[][-][---][][---][]\n[----][-][--][----]\n2",
+    "answer": "[][----][-][][][--]\n[][-][---][][---][]\n[----][-][--][----]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[][--][][][--][][-]\n[][-][----][-][---]\n[----][--][--][-][]\n2",
+    "answer": "[][--][][][--][][-]\n[][-][----][-][---]\n[----][--][--][-][]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[-][][][--][][----]\n[-][-][-][][---][-]\n[--][----][--][---]\n2",
+    "answer": "[-][][][--][][----]\n[-][-][-][][---][-]\n[--][----][--][---]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[-][----][][][-][]\n[-][][--][-][-][-]\n[-][][-][--][-][-]\n2",
+    "answer": "[-][----][][][-][]\n[-][][--][-][-][-]\n[-][][-][--][-][-]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[-][-][---][][---]\n[-][-][-][-][--][]\n[----][--][----][]\n0",
+    "answer": "[-][-][---][][---]\n[-][-][-][-][--][]\n[----][--][----][]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[--][----][-][][]\n[--][--][][-][][]\n[---][-][----][-]\n1",
+    "answer": "[--][----][-][][]\n[--][--][][-][][]\n[---][-][----][-]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[][-][][--][][][---]\n[----][---][--][---]\n[---][][--][----][-]\n2",
+    "answer": "[][-][][--][][][---]\n[----][---][--][---]\n[---][][--][----][-]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[----][][][-][----]\n[----][--][-][----]\n[--][-][][][-][---]\n1",
+    "answer": "[----][][][-][----]\n[----][--][-][----]\n[--][-][][][-][---]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[][][-][----][][][-]\n[--][----][-][--][-]\n[----][----][--][--]\n[--][--][-][--][---]\n3",
+    "answer": "[][][-][----][][][-]\n[--][----][-][--][-]\n[----][----][--][--]\n[--][--][-][--][---]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[-][----][-][][]\n[-][][-][----][]\n[-][-][-][][-][]\n1",
+    "answer": "[-][----][-][][]\n[-][][-][----][]\n[-][-][-][][-][]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[--][--][][--][][]\n[--][--][-][-][--]\n[-][][---][---][-]\n1",
+    "answer": "[--][--][][--][][]\n[--][--][-][-][--]\n[-][][---][---][-]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[][][-][][][----][-]\n[][--][-][-][---][-]\n[---][][--][-][----]\n3",
+    "answer": "[][][-][][][----][-]\n[][--][-][-][---][-]\n[---][][--][-][----]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[--][][--][][][][--]\n[--][----][----][--]\n[---][--][---][-][-]\n1",
+    "answer": "[--][][--][][][][--]\n[--][----][----][--]\n[---][--][---][-][-]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[---][----][][-][][]\n[----][-][][--][-][]\n[----][----][--][--]\n2",
+    "answer": "[---][----][][-][][]\n[----][-][][--][-][]\n[----][----][--][--]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[][--][][][--][]\n[][-][][-][--][]\n[-][---][-][-][]\n0",
+    "answer": "[][--][][][--][]\n[][-][][-][--][]\n[-][---][-][-][]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[--][][][][--][][][]\n[--][---][---][----]\n[--][----][----][--]\n2",
+    "answer": "[--][][][][--][][][]\n[--][---][---][----]\n[--][----][----][--]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[----][-][][][-][][]\n[-][-][--][--][--][]\n[----][-][---][----]\n[-][---][----][][][]\n3",
+    "answer": "[----][-][][][-][][]\n[-][-][--][--][--][]\n[----][-][---][----]\n[-][---][----][][][]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[][----][][][-][-]\n[-][-][][-][--][-]\n[----][--][---][-]\n2",
+    "answer": "[][----][][][-][-]\n[-][-][][-][--][-]\n[----][--][---][-]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[--][][][--][-][--]\n[--][---][----][--]\n[---][][-][][--][-]\n[--][--][----][---]\n1",
+    "answer": "[--][][][--][-][--]\n[--][---][----][--]\n[---][][-][][--][-]\n[--][--][----][---]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[----][-][][][-][][]\n[----][--][----][--]\n[-][-][-][---][][--]\n3",
+    "answer": "[----][-][][][-][][]\n[----][--][----][--]\n[-][-][-][---][][--]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[][][-][----][--]\n[][---][-][-][--]\n[--][][][-][-][-]\n1",
+    "answer": "[][][-][----][--]\n[][---][-][-][--]\n[--][][][-][-][-]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[--][-][][---][-][]\n[-][][--][---][---]\n[-][--][---][-][--]\n0",
+    "answer": "[--][-][][---][-][]\n[-][][--][---][---]\n[-][--][---][-][--]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[-][-][----][][][-]\n[--][-][---][--][-]\n[----][---][---][-]\n0",
+    "answer": "[-][-][----][][][-]\n[--][-][---][--][-]\n[----][---][---][-]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[---][][][][--][-][]\n[][---][][-][----][]\n[---][----][-][][--]\n1",
+    "answer": "[---][][][][--][-][]\n[][---][][-][----][]\n[---][----][-][][--]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[----][-][][][][-][]\n[--][][-][][--][---]\n[----][----][-][---]\n3",
+    "answer": "[----][-][][][][-][]\n[--][][-][][--][---]\n[----][----][-][---]\n3",
+    "score": 0
+   },
+   {
+    "clue": "[][][--][][][][-][]\n[][][----][-][--][]\n[][-][-][-][-][---]\n0",
+    "answer": "[][][--][][][][-][]\n[][][----][-][--][]\n[][-][-][-][-][---]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[][][][--][][--][][]\n[--][][----][---][-]\n[-][---][--][][-][-]\n[----][----][--][--]\n2",
+    "answer": "[][][][--][][--][][]\n[--][][----][---][-]\n[-][---][--][][-][-]\n[----][----][--][--]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[][-][---][][--][--]\n[-][--][-][][-][---]\n[][-][--][--][][---]\n0",
+    "answer": "[][-][---][][--][--]\n[-][--][-][][-][---]\n[][-][--][--][][---]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[][-][][][--][][-]\n[][][][--][---][-]\n[---][--][-][----]\n1",
+    "answer": "[][-][][][--][][-]\n[][][][--][---][-]\n[---][--][-][----]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[--][----][][-][][]\n[--][--][-][-][---]\n[][--][----][--][-]\n2",
+    "answer": "[--][----][][-][][]\n[--][--][-][-][---]\n[][--][----][--][-]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[][--][][][][-][--]\n[][--][][-][----][]\n[---][--][----][--]\n[--][--][][][--][-]\n2",
+    "answer": "[][--][][][][-][--]\n[][--][][-][----][]\n[---][--][----][--]\n[--][--][][][--][-]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[-][][][-][--][----]\n[----][--][--][-][-]\n[-][][---][][--][--]\n[---][-][][---][---]\n2",
+    "answer": "[-][][][-][--][----]\n[----][--][--][-][-]\n[-][][---][][--][--]\n[---][-][][---][---]\n2",
+    "score": 0
+   },
+   {
+    "clue": "[-][-][---][][--][-]\n[----][---][----][-]\n[----][-][-][--][--]\n[----][----][--][--]\n0",
+    "answer": "[-][-][---][][--][-]\n[----][---][----][-]\n[----][-][-][--][--]\n[----][----][--][--]\n0",
+    "score": 0
+   },
+   {
+    "clue": "[][][--][-][-][-][]\n[-][-][--][--][-][]\n[----][---][-][---]\n1",
+    "answer": "[][][--][-][-][-][]\n[-][-][--][--][-][]\n[----][---][-][---]\n1",
+    "score": 0
+   },
+   {
+    "clue": "[-][-][][][----]\n[][--][][][--][]\n[--][-][][-][--]\n[-][-][-][][-][]\n1",
+    "answer": "[-][-][][][----]\n[][--][][][--][]\n[--][-][][-][--]\n[-][-][-][][-][]\n1",
+    "score": 0
+   }
+  ],
+  "norvel": [
+   {
+    "clue": "hat   |..xx|.x.x|x.x.|xxxx|xxxx|..xx|x.x.|xxxx|\nsnare |x...|....|x..x|...x|...x|.x.x|.x.x|.x..|\nkick  |.x.x|...x|...x|x...|x...|x.x.|xxx.|....|\n3 slip",
+    "answer": "hat   |..xx|.x.x|x.x.|xxxx|xxxx|..xx|x.x.|xxxx|\nsnare |x...|....|x..x|...x|...x|.x.x|.x.x|.x..|\nkick  |.x.x|...x|...x|x...|x...|x.x.|xxx.|....|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxx.|xx..|x.xx|xxx.|..xx|xxx.|.x.x|x.xx|\nsnare |x...|..x.|.x.x|.x..|.x..|.x.x|..x.|.x..|\nkick  |.x.x|x..x|..x.|.x..|....|..x.|xxx.|.xx.|\n4 slip",
+    "answer": "hat   |xxx.|xx..|x.xx|xxx.|..xx|xxx.|.x.x|x.xx|\nsnare |x...|..x.|.x.x|.x..|.x..|.x.x|..x.|.x..|\nkick  |.x.x|x..x|..x.|.x..|....|..x.|xxx.|.xx.|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|xx.x|xx.x|x..x|xx.x|xxx.|xxx.|x..x|\nsnare |.x..|x.x.|.x..|.x..|..x.|....|.x.x|.x..|\nkick  |.x.x|..x.|.xx.|..xx|x.x.|.xx.|x.x.|....|\n3 slip",
+    "answer": "hat   |.xxx|xx.x|xx.x|x..x|xx.x|xxx.|xxx.|x..x|\nsnare |.x..|x.x.|.x..|.x..|..x.|....|.x.x|.x..|\nkick  |.x.x|..x.|.xx.|..xx|x.x.|.xx.|x.x.|....|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.x.x|xxxx|xxx.|x..x|xx..|xx.x|xx..|x..x|\nsnare |x.x.|x...|.x.x|.x..|.x..|x...|..x.|.x..|\nkick  |x...|xx..|..x.|x...|..x.|.x.x|....|.x..|\n4 slip",
+    "answer": "hat   |.x.x|xxxx|xxx.|x..x|xx..|xx.x|xx..|x..x|\nsnare |x.x.|x...|.x.x|.x..|.x..|x...|..x.|.x..|\nkick  |x...|xx..|..x.|x...|..x.|.x.x|....|.x..|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x.xx|.xxx|x..x|..xx|.xx.|xx.x|\nsnare |.x.x|.x.x|.x..|x...|..x.|x.x.|\nkick  |x..x|..xx|xx.x|..x.|.x.x|.xx.|\n2 slip",
+    "answer": "hat   |x.xx|.xxx|x..x|..xx|.xx.|xx.x|\nsnare |.x.x|.x.x|.x..|x...|..x.|x.x.|\nkick  |x..x|..xx|xx.x|..x.|.x.x|.xx.|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.x.x|xxx.|.xx.|x..x|x.xx|x.xx|.x.x|\nsnare |x.x.|x..x|..x.|.x..|..x.|.x..|.x..|\nkick  |x.xx|....|.xx.|..x.|.xx.|x.xx|....|\n3 slip",
+    "answer": "hat   |.x.x|xxx.|.xx.|x..x|x.xx|x.xx|.x.x|\nsnare |x.x.|x..x|..x.|.x..|..x.|.x..|.x..|\nkick  |x.xx|....|.xx.|..x.|.xx.|x.xx|....|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |..xx|xxx.|xxx.|xxx.|xx..|xxxx|.x.x|\nsnare |x..x|..x.|...x|.x.x|.x.x|.x..|.x..|\nkick  |.x..|..x.|x..x|...x|....|x...|xx..|\n2 slip",
+    "answer": "hat   |..xx|xxx.|xxx.|xxx.|xx..|xxxx|.x.x|\nsnare |x..x|..x.|...x|.x.x|.x.x|.x..|.x..|\nkick  |.x..|..x.|x..x|...x|....|x...|xx..|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx.x|.xxx|..xx|.xxx|xxx.|xxxx|\nsnare |..x.|....|..x.|x.x.|x.x.|..x.|\nkick  |.xx.|..x.|..x.|xx..|...x|.x..|\n0 slip",
+    "answer": "hat   |xx.x|.xxx|..xx|.xxx|xxx.|xxxx|\nsnare |..x.|....|..x.|x.x.|x.x.|..x.|\nkick  |.xx.|..x.|..x.|xx..|...x|.x..|\n0 slip",
+    "score": 1
+   },
+   {
+    "clue": "hat   |xx.x|xxx.|x..x|x.x.|x.x.|xx.x|x..x|\nsnare |..x.|x..x|.x..|.x.x|..x.|...x|.x..|\nkick  |...x|x.x.|....|xx.x|...x|....|x...|\n4 slip",
+    "answer": "hat   |xx.x|xxx.|x..x|x.x.|x.x.|xx.x|x..x|\nsnare |..x.|x..x|.x..|.x.x|..x.|...x|.x..|\nkick  |...x|x.x.|....|xx.x|...x|....|x...|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxxx|xxxx|xxxx|xx..|.xxx|xx..|xxx.|xxxx|\nsnare |x...|x.x.|x..x|...x|...x|....|x..x|....|\nkick  |....|.x..|x.x.|.x.x|..x.|...x|.x.x|....|\n0 slip",
+    "answer": "hat   |xxxx|xxxx|xxxx|xx..|.xxx|xx..|xxx.|xxxx|\nsnare |x...|x.x.|x..x|...x|...x|....|x..x|....|\nkick  |....|.x..|x.x.|.x.x|..x.|...x|.x.x|....|\n0 slip",
+    "score": 1
+   },
+   {
+    "clue": "hat   |.xx.|xxxx|xxx.|.xx.|.x.x|x..x|x.xx|\nsnare |x..x|....|.x..|x.x.|.x.x|.x..|.x..|\nkick  |..xx|x...|xxx.|xxx.|..x.|x.xx|....|\n3 slip",
+    "answer": "hat   |.xx.|xxxx|xxx.|.xx.|.x.x|x..x|x.xx|\nsnare |x..x|....|.x..|x.x.|.x.x|.x..|.x..|\nkick  |..xx|x...|xxx.|xxx.|..x.|x.xx|....|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|.xxx|xxxx|.xx.|xxxx|xxxx|.x.x|.xxx|\nsnare |x..x|..x.|.x..|x.x.|....|x...|....|x.x.|\nkick  |xxx.|....|x...|.x.x|.x..|....|....|xx..|\n1 slip",
+    "answer": "hat   |.xxx|.xxx|xxxx|.xx.|xxxx|xxxx|.x.x|.xxx|\nsnare |x..x|..x.|.x..|x.x.|....|x...|....|x.x.|\nkick  |xxx.|....|x...|.x.x|.x..|....|....|xx..|\n1 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|xxxx|xxxx|.xx.|..xx|xxxx|..xx|\nsnare |x...|.x.x|....|....|x.x.|x...|.x..|\nkick  |xx..|....|xx..|.x..|xx..|xx..|....|\n1 slip",
+    "answer": "hat   |.xxx|xxxx|xxxx|.xx.|..xx|xxxx|..xx|\nsnare |x...|.x.x|....|....|x.x.|x...|.x..|\nkick  |xx..|....|xx..|.x..|xx..|xx..|....|\n1 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |..xx|x..x|.xx.|.xx.|.xxx|..xx|xx.x|\nsnare |x..x|.x..|...x|.x..|x...|.x..|x.x.|\nkick  |..x.|x...|.xxx|x...|x..x|...x|.x..|\n4 slip",
+    "answer": "hat   |..xx|x..x|.xx.|.xx.|.xxx|..xx|xx.x|\nsnare |x..x|.x..|...x|.x..|x...|.x..|x.x.|\nkick  |..x.|x...|.xxx|x...|x..x|...x|.x..|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx.x|..xx|x.xx|xx..|xxxx|x..x|.xx.|xxxx|\nsnare |.x.x|.x..|.x.x|..x.|....|.x..|x...|x...|\nkick  |x...|.x.x|..x.|x...|.x..|x.x.|x..x|.x..|\n3 slip",
+    "answer": "hat   |xx.x|..xx|x.xx|xx..|xxxx|x..x|.xx.|xxxx|\nsnare |.x.x|.x..|.x.x|..x.|....|.x..|x...|x...|\nkick  |x...|.x.x|..x.|x...|.x..|x.x.|x..x|.x..|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxx.|.x.x|xx..|.xxx|.xxx|xx.x|xx.x|\nsnare |x..x|.x..|x..x|..x.|....|x.x.|x.x.|\nkick  |.x.x|..xx|.x..|x..x|..x.|.x.x|x.x.|\n2 slip",
+    "answer": "hat   |xxx.|.x.x|xx..|.xxx|.xxx|xx.x|xx.x|\nsnare |x..x|.x..|x..x|..x.|....|x.x.|x.x.|\nkick  |.x.x|..xx|.x..|x..x|..x.|.x.x|x.x.|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x.xx|..xx|..xx|xxxx|x.xx|x.x.|.xxx|\nsnare |x..x|.x..|.x.x|....|x.x.|.x.x|..x.|\nkick  |xxx.|.x..|....|.x..|....|xxx.|xx..|\n2 slip",
+    "answer": "hat   |x.xx|..xx|..xx|xxxx|x.xx|x.x.|.xxx|\nsnare |x..x|.x..|.x.x|....|x.x.|.x.x|..x.|\nkick  |xxx.|.x..|....|.x..|....|xxx.|xx..|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|..xx|x..x|xxxx|xxx.|xxx.|xx.x|\nsnare |x.x.|x...|.x..|x..x|..x.|x...|x.x.|\nkick  |...x|x..x|x..x|xxxx|x...|...x|.xx.|\n2 slip",
+    "answer": "hat   |.xxx|..xx|x..x|xxxx|xxx.|xxx.|xx.x|\nsnare |x.x.|x...|.x..|x..x|..x.|x...|x.x.|\nkick  |...x|x..x|x..x|xxxx|x...|...x|.xx.|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x.x.|.xx.|xx.x|..xx|xxxx|xxx.|.xxx|xxxx|\nsnare |....|x.x.|..x.|x..x|.x..|x..x|....|....|\nkick  |x..x|xx..|....|.xx.|xx..|.x.x|..x.|....|\n2 slip",
+    "answer": "hat   |x.x.|.xx.|xx.x|..xx|xxxx|xxx.|.xxx|xxxx|\nsnare |....|x.x.|..x.|x..x|.x..|x..x|....|....|\nkick  |x..x|xx..|....|.xx.|xx..|.x.x|..x.|....|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x.x.|xxx.|x.x.|..xx|x..x|.xxx|xx.x|\nsnare |.x.x|.x..|..x.|x...|.x..|x..x|..x.|\nkick  |.x..|...x|..x.|x..x|x...|.x..|....|\n4 slip",
+    "answer": "hat   |x.x.|xxx.|x.x.|..xx|x..x|.xxx|xx.x|\nsnare |.x.x|.x..|..x.|x...|.x..|x..x|..x.|\nkick  |.x..|...x|..x.|x..x|x...|.x..|....|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xx.|x.xx|x..x|xx.x|x..x|xxx.|.xxx|\nsnare |....|.x.x|.x..|x.x.|x.x.|...x|..x.|\nkick  |.x..|...x|.xxx|.x.x|x.xx|x...|xx..|\n3 slip",
+    "answer": "hat   |.xx.|x.xx|x..x|xx.x|x..x|xxx.|.xxx|\nsnare |....|.x.x|.x..|x.x.|x.x.|...x|..x.|\nkick  |.x..|...x|.xxx|.x.x|x.xx|x...|xx..|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |..xx|.xxx|xx..|x..x|xx.x|xxx.|x.xx|x.xx|\nsnare |x...|x.x.|..x.|.x.x|..x.|.x..|.x..|....|\nkick  |....|.x..|.x..|.xxx|..xx|....|x..x|....|\n4 slip",
+    "answer": "hat   |..xx|.xxx|xx..|x..x|xx.x|xxx.|x.xx|x.xx|\nsnare |x...|x.x.|..x.|.x.x|..x.|.x..|.x..|....|\nkick  |....|.x..|.x..|.xxx|..xx|....|x..x|....|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxxx|.xx.|.xxx|xx..|xxxx|xxx.|.xx.|xxxx|\nsnare |..x.|x...|..x.|..x.|x.x.|x..x|...x|....|\nkick  |...x|xxx.|.xxx|..xx|....|x...|xx..|....|\n2 slip",
+    "answer": "hat   |xxxx|.xx.|.xxx|xx..|xxxx|xxx.|.xx.|xxxx|\nsnare |..x.|x...|..x.|..x.|x.x.|x..x|...x|....|\nkick  |...x|xxx.|.xxx|..xx|....|x...|xx..|....|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|.xxx|.x.x|..xx|.xxx|x.xx|\nsnare |.x..|x.x.|x.x.|x..x|.x..|x.x.|\nkick  |x.xx|x...|xx.x|.x.x|.xxx|....|\n2 slip",
+    "answer": "hat   |.xxx|.xxx|.x.x|..xx|.xxx|x.xx|\nsnare |.x..|x.x.|x.x.|x..x|.x..|x.x.|\nkick  |x.xx|x...|xx.x|.x.x|.xxx|....|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx.x|xx.x|.xxx|xxxx|xxxx|x.x.|xx.x|\nsnare |.x..|.x..|x.x.|.x..|.x.x|.x.x|.x..|\nkick  |x..x|.xx.|...x|xxx.|x.x.|.x.x|x...|\n1 slip",
+    "answer": "hat   |xx.x|xx.x|.xxx|xxxx|xxxx|x.x.|xx.x|\nsnare |.x..|.x..|x.x.|.x..|.x.x|.x.x|.x..|\nkick  |x..x|.xx.|...x|xxx.|x.x.|.x.x|x...|\n1 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxxx|.x.x|.xxx|x.xx|xxxx|xxxx|.xxx|\nsnare |..x.|..x.|x...|..x.|x.x.|x..x|.x..|\nkick  |.xx.|.xx.|xxxx|.xx.|...x|....|....|\n0 slip",
+    "answer": "hat   |xxxx|.x.x|.xxx|x.xx|xxxx|xxxx|.xxx|\nsnare |..x.|..x.|x...|..x.|x.x.|x..x|.x..|\nkick  |.xx.|.xx.|xxxx|.xx.|...x|....|....|\n0 slip",
+    "score": 1
+   },
+   {
+    "clue": "hat   |.x.x|x..x|xxxx|x..x|..xx|.xxx|\nsnare |x.x.|x..x|....|x.x.|x..x|.x..|\nkick  |x.x.|..x.|.xxx|....|.xxx|..x.|\n2 slip",
+    "answer": "hat   |.x.x|x..x|xxxx|x..x|..xx|.xxx|\nsnare |x.x.|x..x|....|x.x.|x..x|.x..|\nkick  |x.x.|..x.|.xxx|....|.xxx|..x.|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx..|..xx|x.x.|..xx|x.xx|x..x|xxxx|\nsnare |.x..|x..x|.x.x|.x..|.x.x|.x..|..x.|\nkick  |..x.|.x..|.x.x|...x|x.xx|..xx|x...|\n4 slip",
+    "answer": "hat   |xx..|..xx|x.x.|..xx|x.xx|x..x|xxxx|\nsnare |.x..|x..x|.x.x|.x..|.x.x|.x..|..x.|\nkick  |..x.|.x..|.x.x|...x|x.xx|..xx|x...|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xxx|xx.x|..xx|xxx.|xx.x|x.x.|x..x|x..x|\nsnare |x..x|....|x...|...x|.x..|.x..|.x..|x.x.|\nkick  |x...|.x..|..x.|xx..|.x..|.xx.|x...|.x..|\n4 slip",
+    "answer": "hat   |.xxx|xx.x|..xx|xxx.|xx.x|x.x.|x..x|x..x|\nsnare |x..x|....|x...|...x|.x..|.x..|.x..|x.x.|\nkick  |x...|.x..|..x.|xx..|.x..|.xx.|x...|.x..|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxx.|.xx.|..xx|.xxx|.xxx|.xx.|xxxx|x..x|\nsnare |.x.x|...x|....|x.x.|..x.|...x|...x|.x..|\nkick  |....|xx.x|....|x...|....|x...|x...|x...|\n3 slip",
+    "answer": "hat   |xxx.|.xx.|..xx|.xxx|.xxx|.xx.|xxxx|x..x|\nsnare |.x.x|...x|....|x.x.|..x.|...x|...x|.x..|\nkick  |....|xx.x|....|x...|....|x...|x...|x...|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.xx.|xx..|x.xx|xxxx|.xx.|x..x|\nsnare |x..x|..x.|x...|x.x.|.x.x|.x..|\nkick  |.x.x|.xxx|x.xx|.xxx|..x.|..x.|\n3 slip",
+    "answer": "hat   |.xx.|xx..|x.xx|xxxx|.xx.|x..x|\nsnare |x..x|..x.|x...|x.x.|.x.x|.x..|\nkick  |.x.x|.xxx|x.xx|.xxx|..x.|..x.|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx.x|xxxx|.xx.|.xx.|.x.x|xx..|.xxx|\nsnare |x.x.|x...|x.x.|x...|..x.|.x.x|....|\nkick  |.x.x|x..x|..x.|xx..|x.xx|....|xx..|\n3 slip",
+    "answer": "hat   |xx.x|xxxx|.xx.|.xx.|.x.x|xx..|.xxx|\nsnare |x.x.|x...|x.x.|x...|..x.|.x.x|....|\nkick  |.x.x|x..x|..x.|xx..|x.xx|....|xx..|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx..|xxx.|xx..|.xx.|xxx.|x.xx|x..x|\nsnare |...x|.x.x|..x.|.x..|.x.x|.x..|.x..|\nkick  |.x..|....|x.x.|xxx.|x.xx|....|x...|\n4 slip",
+    "answer": "hat   |xx..|xxx.|xx..|.xx.|xxx.|x.xx|x..x|\nsnare |...x|.x.x|..x.|.x..|.x.x|.x..|.x..|\nkick  |.x..|....|x.x.|xxx.|x.xx|....|x...|\n4 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x.xx|.xxx|xx.x|x.xx|xxx.|xx.x|xxxx|\nsnare |....|.x.x|..x.|.x.x|.x.x|.x..|....|\nkick  |....|....|x.x.|..xx|xx.x|..x.|.xx.|\n1 slip",
+    "answer": "hat   |x.xx|.xxx|xx.x|x.xx|xxx.|xx.x|xxxx|\nsnare |....|.x.x|..x.|.x.x|.x.x|.x..|....|\nkick  |....|....|x.x.|..xx|xx.x|..x.|.xx.|\n1 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |.x.x|x.x.|..xx|x.xx|xxx.|x..x|\nsnare |x.x.|x...|.x.x|.x..|x.x.|.x..|\nkick  |x..x|x.x.|...x|xxxx|.x.x|..x.|\n3 slip",
+    "answer": "hat   |.x.x|x.x.|..xx|x.xx|xxx.|x..x|\nsnare |x.x.|x...|.x.x|.x..|x.x.|.x..|\nkick  |x..x|x.x.|...x|xxxx|.x.x|..x.|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxxx|xx.x|x.xx|x.x.|.xx.|.xx.|.xxx|\nsnare |.x..|x.x.|x..x|..x.|x..x|.x.x|....|\nkick  |..xx|...x|x..x|x..x|xxxx|..x.|..x.|\n2 slip",
+    "answer": "hat   |xxxx|xx.x|x.xx|x.x.|.xx.|.xx.|.xxx|\nsnare |.x..|x.x.|x..x|..x.|x..x|.x.x|....|\nkick  |..xx|...x|x..x|x..x|xxxx|..x.|..x.|\n2 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xxxx|xxxx|xxxx|..xx|x.xx|.xxx|.x.x|xxxx|\nsnare |.x.x|....|x.x.|....|x.x.|x...|x.x.|..x.|\nkick  |xxx.|.x..|..x.|....|.x..|x...|x..x|....|\n1 slip",
+    "answer": "hat   |xxxx|xxxx|xxxx|..xx|x.xx|.xxx|.x.x|xxxx|\nsnare |.x.x|....|x.x.|....|x.x.|x...|x.x.|..x.|\nkick  |xxx.|.x..|..x.|....|.x..|x...|x..x|....|\n1 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |x..x|x..x|xx.x|xxxx|.xx.|x..x|\nsnare |.x..|x.x.|x.x.|x.x.|...x|.x..|\nkick  |..xx|....|xx..|xx..|.xxx|.xx.|\n3 slip",
+    "answer": "hat   |x..x|x..x|xx.x|xxxx|.xx.|x..x|\nsnare |.x..|x.x.|x.x.|x.x.|...x|.x..|\nkick  |..xx|....|xx..|xx..|.xxx|.xx.|\n3 slip",
+    "score": 0
+   },
+   {
+    "clue": "hat   |xx.x|.xxx|.xxx|x..x|xx.x|xx..|xx.x|\nsnare |..x.|....|x.x.|.x..|x...|x.x.|.x..|\nkick  |..x.|x...|.x.x|..x.|....|..x.|xx..|\n2 slip",
+    "answer": "hat   |xx.x|.xxx|.xxx|x..x|xx.x|xx..|xx.x|\nsnare |..x.|....|x.x.|.x..|x...|x.x.|.x..|\nkick  |..x.|x...|.x.x|..x.|....|..x.|xx..|\n2 slip",
+    "score": 0
+   }
+  ],
+  "durnel": [
+   {
+    "clue": "           #### WWW ####       ####           CCC\n                WWW                           CCC  ###\n  MMM           WWW                      AAA  CCC      SSS\n  MMM JJJ       WWW                      AAA  CCC      SSS\n..MM>.JJ>.......<WW........\\_/.......\\_/.AA>..CC>......SS>.\\_/..\\_/.\n====================================================================\n0 turn",
+    "answer": "           #### WWW ####       ####           CCC\n                WWW                           CCC  ###\n  MMM           WWW                      AAA  CCC      SSS\n  MMM JJJ       WWW                      AAA  CCC      SSS\n..MM>.JJ>.......<WW........\\_/.......\\_/.AA>..CC>......SS>.\\_/..\\_/.\n====================================================================\n0 turn",
+    "score": 1
+   },
+   {
+    "clue": "     ####                                                         VVV\n FFF      SSS                                          ####       VVV\n FFF      SSS              JJJ      ###                           VVV\n FFF      SSS ### AAA  EEE JJJ               NNN                  VVV\n FFF      SSS     AAA  EEE JJJ               NNN                  VVV\n.<FF......SS>.....<AA..EE>.JJ>..\\_/......\\_/.<NN...\\_/......\\_/...<VV.\n======================================================================\n3 turn",
+    "answer": "     ####                                                         VVV\n FFF      SSS                                          ####       VVV\n FFF      SSS              JJJ      ###                           VVV\n FFF      SSS ### AAA  EEE JJJ               NNN                  VVV\n FFF      SSS     AAA  EEE JJJ               NNN                  VVV\n.<FF......SS>.....<AA..EE>.JJ>..\\_/......\\_/.<NN...\\_/......\\_/...<VV.\n======================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": " ####                                    EEE HHH\n                                         EEE HHH\n           ####   NNN  ####              EEE HHH         KKK\n      MMM         NNN                    EEE HHH     ### KKK\n      MMM         NNN           GGG      EEE HHH         KKK\n......MM>.........<NN.......\\_/.<GG.\\_/..<EE.HH>.\\_/.....KK>.\\_/.\n=================================================================\n3 turn",
+    "answer": " ####                                    EEE HHH\n                                         EEE HHH\n           ####   NNN  ####              EEE HHH         KKK\n      MMM         NNN                    EEE HHH     ### KKK\n      MMM         NNN           GGG      EEE HHH         KKK\n......MM>.........<NN.......\\_/.<GG.\\_/..<EE.HH>.\\_/.....KK>.\\_/.\n=================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "  WWW                   AAA                   NNN             ###\n  WWW     GGG           AAA              #### NNN         ###\n  WWW ### GGG           AAA                   NNN HHH\n  WWW     GGG           AAA PPP CCC           NNN HHH\n..<WW.....GG>.\\_/..\\_/..<AA.PP>.CC>.\\_/.......<NN.<HH.\\_/.........\n==================================================================\n3 turn",
+    "answer": "  WWW                   AAA                   NNN             ###\n  WWW     GGG           AAA              #### NNN         ###\n  WWW ### GGG           AAA                   NNN HHH\n  WWW     GGG           AAA PPP CCC           NNN HHH\n..<WW.....GG>.\\_/..\\_/..<AA.PP>.CC>.\\_/.......<NN.<HH.\\_/.........\n==================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                               ###             NNN\n                                       EEE     NNN ###\n FFF     ####                      AAA EEE     NNN         ####\n FFF HHH                           AAA EEE     NNN\n.FF>.HH>......\\_/.<SS..\\_/.\\_/.....AA>.<EE.\\_/.NN>.....<BB........\n==================================================================\n2 turn",
+    "answer": "                               ###             NNN\n                                       EEE     NNN ###\n FFF     ####                      AAA EEE     NNN         ####\n FFF HHH                           AAA EEE     NNN\n.FF>.HH>......\\_/.<SS..\\_/.\\_/.....AA>.<EE.\\_/.NN>.....<BB........\n==================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "              CCC                     KKK\n              CCC     ###             KKK             FFF\n  EEE         CCC         ####    ### KKK ###         FFF\n  EEE BBB     CCC LLL                 KKK             FFF      TTT\n..EE>.<BB.\\_/.CC>.<LL.................KK>.....\\_/.\\_/.<FF.\\_/..<TT..\n====================================================================\n2 turn",
+    "answer": "              CCC                     KKK\n              CCC     ###             KKK             FFF\n  EEE         CCC         ####    ### KKK ###         FFF\n  EEE BBB     CCC LLL                 KKK             FFF      TTT\n..EE>.<BB.\\_/.CC>.<LL.................KK>.....\\_/.\\_/.<FF.\\_/..<TT..\n====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                      ###      ####\n                  ###               AAA             MMM KKK\n  VVV                               AAA     ###     MMM KKK\n  VVV LLL                           AAA         SSS MMM KKK\n..VV>.LL>.\\_/.\\_/.........\\_/.......<AA.\\_/.....<SS.MM>.<KK..\n=============================================================\n2 turn",
+    "answer": "                      ###      ####\n                  ###               AAA             MMM KKK\n  VVV                               AAA     ###     MMM KKK\n  VVV LLL                           AAA         SSS MMM KKK\n..VV>.LL>.\\_/.\\_/.........\\_/.......<AA.\\_/.....<SS.MM>.<KK..\n=============================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "          ####              SSS           FFF          ####\n TTT                        SSS  ####     FFF  AAA\n TTT                        SSS       ### FFF  AAA\n TTT  KKK              PPP  SSS           FFF  AAA            JJJ\n.TT>..KK>......\\_/.\\_/.PP>..<SS...........<FF..<AA.\\_/........JJ>.\\_/.\n======================================================================\n2 turn",
+    "answer": "          ####              SSS           FFF          ####\n TTT                        SSS  ####     FFF  AAA\n TTT                        SSS       ### FFF  AAA\n TTT  KKK              PPP  SSS           FFF  AAA            JJJ\n.TT>..KK>......\\_/.\\_/.PP>..<SS...........<FF..<AA.\\_/........JJ>.\\_/.\n======================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " ###                       ###           AAA\n     ####     SSS               JJJ      AAA  EEE     ####\n              SSS               JJJ  CCC AAA  EEE\n              SSS               JJJ  CCC AAA  EEE          WWW\n..........KK>.SS>..\\_/.\\_/......<JJ..<CC.<AA..EE>.\\_/......WW>.\\_/.\n===================================================================\n3 turn",
+    "answer": " ###                       ###           AAA\n     ####     SSS               JJJ      AAA  EEE     ####\n              SSS               JJJ  CCC AAA  EEE\n              SSS               JJJ  CCC AAA  EEE          WWW\n..........KK>.SS>..\\_/.\\_/......<JJ..<CC.<AA..EE>.\\_/......WW>.\\_/.\n===================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                ###                  UUU\n                            SSS              WWW     UUU\n           CCC              SSS     ###      WWW ### UUU\n PPP       CCC     NNN      SSS              WWW     UUU ####\n PPP   AAA CCC     NNN      SSS              WWW     UUU\n.PP>...AA>.<CC.\\_/.<NN.\\_/..SS>..........\\_/.<WW.....UU>......\\_/.\n==================================================================\n2 turn",
+    "answer": "                                ###                  UUU\n                            SSS              WWW     UUU\n           CCC              SSS     ###      WWW ### UUU\n PPP       CCC     NNN      SSS              WWW     UUU ####\n PPP   AAA CCC     NNN      SSS              WWW     UUU\n.PP>...AA>.<CC.\\_/.<NN.\\_/..SS>..........\\_/.<WW.....UU>......\\_/.\n==================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " VVV                        ###          MMM\n VVV                  ####               MMM          LLL\n VVV ####                                MMM          LLL\n VVV      SSS     DDD               ###  MMM  TTT     LLL\n VVV      SSS     DDD                    MMM  TTT     LLL     GGG\n.VV>......SS>.\\_/.DD>...........\\_/......<MM..<TT.\\_/.<LL.\\_/.<GG.\n==================================================================\n3 turn",
+    "answer": " VVV                        ###          MMM\n VVV                  ####               MMM          LLL\n VVV ####                                MMM          LLL\n VVV      SSS     DDD               ###  MMM  TTT     LLL\n VVV      SSS     DDD                    MMM  TTT     LLL     GGG\n.VV>......SS>.\\_/.DD>...........\\_/......<MM..<TT.\\_/.<LL.\\_/.<GG.\n==================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "     TTT           ####         ####          VVV\n     TTT      ####      ###              EEE  VVV          NNN\n     TTT                                 EEE  VVV          NNN\n     TTT                                 EEE  VVV KKK      NNN\n.\\_/.TT>..\\_/...............\\_/......DD>.<EE..<VV.KK>.\\_/..<NN.\n===============================================================\n3 turn",
+    "answer": "     TTT           ####         ####          VVV\n     TTT      ####      ###              EEE  VVV          NNN\n     TTT                                 EEE  VVV          NNN\n     TTT                                 EEE  VVV KKK      NNN\n.\\_/.TT>..\\_/...............\\_/......DD>.<EE..<VV.KK>.\\_/..<NN.\n===============================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                    ###     SSS\n      ###     ####              BBB     TTT SSS\n          JJJ                   BBB     TTT SSS         CCC\n          JJJ             ####  BBB     TTT SSS         CCC\n FFF      JJJ                   BBB     TTT SSS         CCC     AAA\n.FF>......JJ>.......\\_/.........BB>.....<TT.<SS.\\_/.\\_/.<CC.\\_/.<AA.\n====================================================================\n2 turn",
+    "answer": "                                    ###     SSS\n      ###     ####              BBB     TTT SSS\n          JJJ                   BBB     TTT SSS         CCC\n          JJJ             ####  BBB     TTT SSS         CCC\n FFF      JJJ                   BBB     TTT SSS         CCC     AAA\n.FF>......JJ>.......\\_/.........BB>.....<TT.<SS.\\_/.\\_/.<CC.\\_/.<AA.\n====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " MMM                    CCC              TTT         ####\n MMM               RRR  CCC              TTT ###               SSS\n MMM               RRR  CCC ###  AAA ### TTT                   SSS\n MMM       PPP     RRR  CCC      AAA     TTT                   SSS\n.MM>.\\_/...PP>.\\_/.RR>..<CC......AA>.....TT>.....\\_/.......\\_/.<SS..\n====================================================================\n2 turn",
+    "answer": " MMM                    CCC              TTT         ####\n MMM               RRR  CCC              TTT ###               SSS\n MMM               RRR  CCC ###  AAA ### TTT                   SSS\n MMM       PPP     RRR  CCC      AAA     TTT                   SSS\n.MM>.\\_/...PP>.\\_/.RR>..<CC......AA>.....TT>.....\\_/.......\\_/.<SS..\n====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " ####    RRR                      WWW ###\n         RRR                      WWW                            BBB\n         RRR FFF     ###     #### WWW      DDD                   BBB\n         RRR FFF         CCC      WWW      DDD               VVV BBB\n         RRR FFF         CCC      WWW      DDD               VVV BBB\n.........<RR.FF>.\\_/.....CC>......WW>......<DD.\\_/..\\_/..\\_/.<VV.<BB.\n=====================================================================\n2 turn",
+    "answer": " ####    RRR                      WWW ###\n         RRR                      WWW                            BBB\n         RRR FFF     ###     #### WWW      DDD                   BBB\n         RRR FFF         CCC      WWW      DDD               VVV BBB\n         RRR FFF         CCC      WWW      DDD               VVV BBB\n.........<RR.FF>.\\_/.....CC>......WW>......<DD.\\_/..\\_/..\\_/.<VV.<BB.\n=====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                    EEE                                   NNN  ###\n                    EEE              ###                  NNN\n      ####     #### EEE                               LLL NNN\n                    EEE          UUU                  LLL NNN\n                    EEE          UUU                  LLL NNN\n..\\_/......GG>......EE>..\\_/.\\_/.<UU......<VV..\\_/....<LL.NN>......\n===================================================================\n2 turn",
+    "answer": "                    EEE                                   NNN  ###\n                    EEE              ###                  NNN\n      ####     #### EEE                               LLL NNN\n                    EEE          UUU                  LLL NNN\n                    EEE          UUU                  LLL NNN\n..\\_/......GG>......EE>..\\_/.\\_/.<UU......<VV..\\_/....<LL.NN>......\n===================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                               SSS                 PPP\n                           DDD SSS ### ###     RRR PPP\n  MMM      KKK             DDD SSS             RRR PPP  #### ###\n  MMM      KKK BBB         DDD SSS             RRR PPP\n..<MM.\\_/..KK>.BB>.\\_/.\\_/.<DD.SS>.........\\_/.<RR.PP>...........\n=================================================================\n2 turn",
+    "answer": "                               SSS                 PPP\n                           DDD SSS ### ###     RRR PPP\n  MMM      KKK             DDD SSS             RRR PPP  #### ###\n  MMM      KKK BBB         DDD SSS             RRR PPP\n..<MM.\\_/..KK>.BB>.\\_/.\\_/.<DD.SS>.........\\_/.<RR.PP>...........\n=================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                        RRR          ####  WWW\n               ###                      RRR VVV            WWW\n                        ####            RRR VVV            WWW JJJ\n GGG               ###                  RRR VVV            WWW JJJ\n GGG                                    RRR VVV            WWW JJJ\n.GG>..\\_/.PP>.................\\_/..\\_/..<RR.VV>..\\_/.......<WW.<JJ.\n===================================================================\n3 turn",
+    "answer": "                                        RRR          ####  WWW\n               ###                      RRR VVV            WWW\n                        ####            RRR VVV            WWW JJJ\n GGG               ###                  RRR VVV            WWW JJJ\n GGG                                    RRR VVV            WWW JJJ\n.GG>..\\_/.PP>.................\\_/..\\_/..<RR.VV>..\\_/.......<WW.<JJ.\n===================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "            KKK       ###             UUU      ####\n      ####  KKK                       UUU\n            KKK   VVV             ### UUU                DDD\n            KKK   VVV                 UUU                DDD  BBB\n            KKK   VVV         SSS     UUU                DDD  BBB JJJ\n.\\_/........<KK...<VV.....\\_/.SS>.....UU>.\\_/........\\_/.<DD..<BB.JJ>..\n=======================================================================\n2 turn",
+    "answer": "            KKK       ###             UUU      ####\n      ####  KKK                       UUU\n            KKK   VVV             ### UUU                DDD\n            KKK   VVV                 UUU                DDD  BBB\n            KKK   VVV         SSS     UUU                DDD  BBB JJJ\n.\\_/........<KK...<VV.....\\_/.SS>.....UU>.\\_/........\\_/.<DD..<BB.JJ>..\n=======================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "     WWW         ####\n     WWW              MMM ####                               ###\n     WWW     GGG      MMM      TTT           ####\n     WWW DDD GGG      MMM      TTT  CCC\n.\\_/.WW>.DD>.<GG......<MM......<TT..CC>.\\_/.........\\_/.\\_/.......\n==================================================================\n0 turn",
+    "answer": "     WWW         ####\n     WWW              MMM ####                               ###\n     WWW     GGG      MMM      TTT           ####\n     WWW DDD GGG      MMM      TTT  CCC\n.\\_/.WW>.DD>.<GG......<MM......<TT..CC>.\\_/.........\\_/.\\_/.......\n==================================================================\n0 turn",
+    "score": 1
+   },
+   {
+    "clue": "                  ###  NNN      ####         RRR PPP\n UUU         VVV       NNN                   RRR PPP  TTT ### ####\n UUU         VVV       NNN                   RRR PPP  TTT\n UUU         VVV       NNN                   RRR PPP  TTT\n.UU>.\\_/.\\_/.VV>.......<NN..\\_/......\\_/.BB>.RR>.<PP..<TT..........\n===================================================================\n3 turn",
+    "answer": "                  ###  NNN      ####         RRR PPP\n UUU         VVV       NNN                   RRR PPP  TTT ### ####\n UUU         VVV       NNN                   RRR PPP  TTT\n UUU         VVV       NNN                   RRR PPP  TTT\n.UU>.\\_/.\\_/.VV>.......<NN..\\_/......\\_/.BB>.RR>.<PP..<TT..........\n===================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                    PPP                      CCC\n                    PPP                      CCC  ####          ####\n          ####      PPP                 #### CCC\n               HHH  PPP         GGG          CCC\n      JJJ      HHH  PPP         GGG          CCC\n..UU>.<JJ......<HH..<PP.<EE.\\_/.GG>.\\_/......CC>.......\\_/.\\_/.......\n=====================================================================\n0 turn",
+    "answer": "                    PPP                      CCC\n                    PPP                      CCC  ####          ####\n          ####      PPP                 #### CCC\n               HHH  PPP         GGG          CCC\n      JJJ      HHH  PPP         GGG          CCC\n..UU>.<JJ......<HH..<PP.<EE.\\_/.GG>.\\_/......CC>.......\\_/.\\_/.......\n=====================================================================\n0 turn",
+    "score": 1
+   },
+   {
+    "clue": "                                                  #### VVV\n         ####               LLL         MMM            VVV\n     UUU                ### LLL         MMM ####       VVV FFF\n     UUU            HHH     LLL         MMM            VVV FFF\n.\\_/.UU>......\\_/...<HH.....LL>.\\_/.\\_/.<MM............VV>.<FF.\n===============================================================\n3 turn",
+    "answer": "                                                  #### VVV\n         ####               LLL         MMM            VVV\n     UUU                ### LLL         MMM ####       VVV FFF\n     UUU            HHH     LLL         MMM            VVV FFF\n.\\_/.UU>......\\_/...<HH.....LL>.\\_/.\\_/.<MM............VV>.<FF.\n===============================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": " ### AAA              WWW     ####           NNN          TTT\n     AAA              WWW PPP           #### NNN          TTT  ###\n     AAA     DDD      WWW PPP                NNN          TTT\n     AAA     DDD      WWW PPP                NNN          TTT\n.....<AA.BB>.<DD.\\_/..WW>.PP>.......\\_/......NN>.\\_/..\\_/.<TT......\n===================================================================\n3 turn",
+    "answer": " ### AAA              WWW     ####           NNN          TTT\n     AAA              WWW PPP           #### NNN          TTT  ###\n     AAA     DDD      WWW PPP                NNN          TTT\n     AAA     DDD      WWW PPP                NNN          TTT\n.....<AA.BB>.<DD.\\_/..WW>.PP>.......\\_/......NN>.\\_/..\\_/.<TT......\n===================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "       ### NNN                                     ###\n           NNN                            SSS\n           NNN                            SSS                ###\n ####      NNN          TTT     GGG  UUU  SSS\n           NNN          TTT     GGG  UUU  SSS KKK\n...........<NN..\\_/.\\_/.TT>.\\_/.GG>..<UU..SS>.<KK........\\_/......\n==================================================================\n2 turn",
+    "answer": "       ### NNN                                     ###\n           NNN                            SSS\n           NNN                            SSS                ###\n ####      NNN          TTT     GGG  UUU  SSS\n           NNN          TTT     GGG  UUU  SSS KKK\n...........<NN..\\_/.\\_/.TT>.\\_/.GG>..<UU..SS>.<KK........\\_/......\n==================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "      JJJ               AAA                             HHH      ####\n      JJJ ###      ###  AAA           GGG               HHH\n  PPP JJJ               AAA           GGG ###      NNN  HHH\n  PPP JJJ               AAA           GGG          NNN  HHH\n..PP>.JJ>.....\\_/.......<AA..\\_/.\\_/..<GG......\\_/.NN>..HH>..<LL......\n======================================================================\n2 turn",
+    "answer": "      JJJ               AAA                             HHH      ####\n      JJJ ###      ###  AAA           GGG               HHH\n  PPP JJJ               AAA           GGG ###      NNN  HHH\n  PPP JJJ               AAA           GGG          NNN  HHH\n..PP>.JJ>.....\\_/.......<AA..\\_/.\\_/..<GG......\\_/.NN>..HH>..<LL......\n======================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                      KKK\n  MMM                        CCC      KKK     ###     ####  VVV\n  MMM  TTT      ###          CCC #### KKK                   VVV RRR\n  MMM  TTT EEE               CCC      KKK                   VVV RRR\n..MM>..TT>.EE>......\\_/.\\_/..<CC......KK>.\\_/.....\\_/.......<VV.<RR.\n====================================================================\n3 turn",
+    "answer": "                                      KKK\n  MMM                        CCC      KKK     ###     ####  VVV\n  MMM  TTT      ###          CCC #### KKK                   VVV RRR\n  MMM  TTT EEE               CCC      KKK                   VVV RRR\n..MM>..TT>.EE>......\\_/.\\_/..<CC......KK>.\\_/.....\\_/.......<VV.<RR.\n====================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                    ####\n           SSS                           ###  VVV          AAA\n           SSS  ####   PPP      LLL           VVV          AAA ###\n           SSS         PPP      LLL           VVV          AAA\n      HHH  SSS         PPP      LLL           VVV          AAA\n..\\_/.HH>..<SS.........<PP.\\_/..LL>...........<VV..\\_/.\\_/.<AA.....\n===================================================================\n2 turn",
+    "answer": "                                    ####\n           SSS                           ###  VVV          AAA\n           SSS  ####   PPP      LLL           VVV          AAA ###\n           SSS         PPP      LLL           VVV          AAA\n      HHH  SSS         PPP      LLL           VVV          AAA\n..\\_/.HH>..<SS.........<PP.\\_/..LL>...........<VV..\\_/.\\_/.<AA.....\n===================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "     FFF       ### ###      ####              MMM       DDD\n     FFF CCC                                  MMM ###   DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n.\\_/.FF>.CC>............\\_/......<BB..\\_/.\\_/.<MM.......DD>.HH>..\n=================================================================\n2 turn",
+    "answer": "     FFF       ### ###      ####              MMM       DDD\n     FFF CCC                                  MMM ###   DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n     FFF CCC                     BBB          MMM       DDD HHH\n.\\_/.FF>.CC>............\\_/......<BB..\\_/.\\_/.<MM.......DD>.HH>..\n=================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " ###                 GGG          ###                     SSS\n            FFF VVV  GGG  AAA                      ####   SSS     ####\n            FFF VVV  GGG  AAA                             SSS\n            FFF VVV  GGG  AAA                  BBB        SSS\n......\\_/...FF>.<VV..<GG..<AA.\\_/......<WW.\\_/.BB>........<SS.\\_/......\n=======================================================================\n2 turn",
+    "answer": " ###                 GGG          ###                     SSS\n            FFF VVV  GGG  AAA                      ####   SSS     ####\n            FFF VVV  GGG  AAA                             SSS\n            FFF VVV  GGG  AAA                  BBB        SSS\n......\\_/...FF>.<VV..<GG..<AA.\\_/......<WW.\\_/.BB>........<SS.\\_/......\n=======================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "       VVV                                        ####\n       VVV                                             JJJ\n       VVV AAA                            BBB ###      JJJ\n       VVV AAA                   ####     BBB          JJJ SSS ####\n       VVV AAA  EEE                       BBB          JJJ SSS\n.\\_/...VV>.<AA..<EE...\\_/...\\_/.......\\_/.BB>..........<JJ.<SS......\n====================================================================\n2 turn",
+    "answer": "       VVV                                        ####\n       VVV                                             JJJ\n       VVV AAA                            BBB ###      JJJ\n       VVV AAA                   ####     BBB          JJJ SSS ####\n       VVV AAA  EEE                       BBB          JJJ SSS\n.\\_/...VV>.<AA..<EE...\\_/...\\_/.......\\_/.BB>..........<JJ.<SS......\n====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": " ###                       ###                       JJJ\n              MMM                       TTT          JJJ\n         #### MMM  CCC                  TTT          JJJ ####\n              MMM  CCC EEE              TTT          JJJ\n              MMM  CCC EEE              TTT WWW      JJJ\n.....\\_/......MM>..<CC.<EE......\\_/.\\_/.<TT.WW>.\\_/..JJ>......<UU.\n==================================================================\n2 turn",
+    "answer": " ###                       ###                       JJJ\n              MMM                       TTT          JJJ\n         #### MMM  CCC                  TTT          JJJ ####\n              MMM  CCC EEE              TTT          JJJ\n              MMM  CCC EEE              TTT WWW      JJJ\n.....\\_/......MM>..<CC.<EE......\\_/.\\_/.<TT.WW>.\\_/..JJ>......<UU.\n==================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "          ###                 ###          FFF\n                                   EEE     FFF           AAA\n              ####                 EEE BBB FFF           AAA  ###\n                        GGG        EEE BBB FFF           AAA\n..SS>.\\_/..........\\_/..GG>........<EE.BB>.<FF.\\_/..\\_/..<AA......\n==================================================================\n3 turn",
+    "answer": "          ###                 ###          FFF\n                                   EEE     FFF           AAA\n              ####                 EEE BBB FFF           AAA  ###\n                        GGG        EEE BBB FFF           AAA\n..SS>.\\_/..........\\_/..GG>........<EE.BB>.<FF.\\_/..\\_/..<AA......\n==================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "                 ####         KKK\n       ####                   KKK                                FFF\n ####                         KKK                       WWW #### FFF\n                              KKK           PPP         WWW      FFF\n                              KKK SSS       PPP         WWW      FFF\n.............<DD......\\_/.\\_/.KK>.<SS...JJ>.<PP.\\_/.\\_/.<WW......<FF.\n=====================================================================\n2 turn",
+    "answer": "                 ####         KKK\n       ####                   KKK                                FFF\n ####                         KKK                       WWW #### FFF\n                              KKK           PPP         WWW      FFF\n                              KKK SSS       PPP         WWW      FFF\n.............<DD......\\_/.\\_/.KK>.<SS...JJ>.<PP.\\_/.\\_/.<WW......<FF.\n=====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                                ####           WWW\n                 HHH              BBB ####                     WWW\n   ####          HHH TTT          BBB                KKK ####  WWW\n                 HHH TTT      UUU BBB                KKK       WWW\n                 HHH TTT      UUU BBB                KKK       WWW\n........\\_/.\\_/..<HH.TT>..\\_/.UU>.BB>......\\_/.......<KK.......<WW.\n===================================================================\n3 turn",
+    "answer": "                                                ####           WWW\n                 HHH              BBB ####                     WWW\n   ####          HHH TTT          BBB                KKK ####  WWW\n                 HHH TTT      UUU BBB                KKK       WWW\n                 HHH TTT      UUU BBB                KKK       WWW\n........\\_/.\\_/..<HH.TT>..\\_/.UU>.BB>......\\_/.......<KK.......<WW.\n===================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "         ####                                         VVV\n                             RRR ###                  VVV\n     PPP      ####  BBB      RRR           ###        VVV\n JJJ PPP            BBB      RRR                      VVV TTT\n.JJ>.PP>............BB>.\\_/..RR>.....\\_/.......\\_/....<VV.<TT.\\_/.\n==================================================================\n2 turn",
+    "answer": "         ####                                         VVV\n                             RRR ###                  VVV\n     PPP      ####  BBB      RRR           ###        VVV\n JJJ PPP            BBB      RRR                      VVV TTT\n.JJ>.PP>............BB>.\\_/..RR>.....\\_/.......\\_/....<VV.<TT.\\_/.\n==================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                       ####\n ###           SSS                           ### ####\n               SSS         CCC MMM\n     PPP  DDD  SSS         CCC MMM\n.....PP>..DD>..<SS.\\_/.<JJ.<CC.<MM.\\_/................\\_/..\\_/.\n===============================================================\n0 turn",
+    "answer": "                                       ####\n ###           SSS                           ### ####\n               SSS         CCC MMM\n     PPP  DDD  SSS         CCC MMM\n.....PP>..DD>..<SS.\\_/.<JJ.<CC.<MM.\\_/................\\_/..\\_/.\n===============================================================\n0 turn",
+    "score": 1
+   },
+   {
+    "clue": "                 WWW\n         LLL     WWW               ###\n         LLL ### WWW FFF  #### UUU             HHH\n         LLL     WWW FFF       UUU             HHH   PPP  ####\n         LLL     WWW FFF       UUU             HHH   PPP\n.\\_/.\\_/.LL>.....<WW.<FF.......UU>.....\\_/.\\_/.<HH...<PP.......\n===============================================================\n2 turn",
+    "answer": "                 WWW\n         LLL     WWW               ###\n         LLL ### WWW FFF  #### UUU             HHH\n         LLL     WWW FFF       UUU             HHH   PPP  ####\n         LLL     WWW FFF       UUU             HHH   PPP\n.\\_/.\\_/.LL>.....<WW.<FF.......UU>.....\\_/.\\_/.<HH...<PP.......\n===============================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "             ###                             ###\n                  UUU          MMM ####\n EEE ### HHH      UUU          MMM               SSS\n EEE     HHH      UUU     BBB  MMM               SSS\n.EE>.....HH>......UU>.\\_/.<BB..MM>.......\\_/.....<SS.\\_/.\\_/...\n===============================================================\n2 turn",
+    "answer": "             ###                             ###\n                  UUU          MMM ####\n EEE ### HHH      UUU          MMM               SSS\n EEE     HHH      UUU     BBB  MMM               SSS\n.EE>.....HH>......UU>.\\_/.<BB..MM>.......\\_/.....<SS.\\_/.\\_/...\n===============================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "   #### AAA            ####          ####      EEE\n        AAA                                    EEE PPP\n        AAA       FFF                          EEE PPP     ####\n        AAA       FFF                          EEE PPP          UUU\n        AAA       FFF                          EEE PPP          UUU\n........<AA.\\_/...FF>.......\\_/..WW>......\\_/..<EE.<PP.\\_/......UU>.\n====================================================================\n2 turn",
+    "answer": "   #### AAA            ####          ####      EEE\n        AAA                                    EEE PPP\n        AAA       FFF                          EEE PPP     ####\n        AAA       FFF                          EEE PPP          UUU\n        AAA       FFF                          EEE PPP          UUU\n........<AA.\\_/...FF>.......\\_/..WW>......\\_/..<EE.<PP.\\_/......UU>.\n====================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                            GGG   VVV\n                   ###      GGG   VVV\n      CCC NNN               GGG   VVV #### ####           ###\n      CCC NNN               GGG   VVV                 HHH\n..\\_/.<CC.NN>..\\_/.....\\_/..GG>...<VV............\\_/..<HH.....AA>..\n===================================================================\n2 turn",
+    "answer": "                            GGG   VVV\n                   ###      GGG   VVV\n      CCC NNN               GGG   VVV #### ####           ###\n      CCC NNN               GGG   VVV                 HHH\n..\\_/.<CC.NN>..\\_/.....\\_/..GG>...<VV............\\_/..<HH.....AA>..\n===================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                    ###               CCC                 PPP\n      LLL                             CCC                 PPP  ####\n ###  LLL BBB                         CCC WWW         ### PPP\n      LLL BBB                         CCC WWW UUU         PPP\n......<LL.BB>..\\_/......\\_/...\\_/.<HH.CC>.<WW.UU>.\\_/.....<PP.......\n====================================================================\n3 turn",
+    "answer": "                    ###               CCC                 PPP\n      LLL                             CCC                 PPP  ####\n ###  LLL BBB                         CCC WWW         ### PPP\n      LLL BBB                         CCC WWW UUU         PPP\n......<LL.BB>..\\_/......\\_/...\\_/.<HH.CC>.<WW.UU>.\\_/.....<PP.......\n====================================================================\n3 turn",
+    "score": 0
+   },
+   {
+    "clue": "      FFF\n      FFF                                ###  NNN LLL\n      FFF                  ### ###            NNN LLL   JJJ\n GGG  FFF         ####             DDD        NNN LLL   JJJ\n GGG  FFF                          DDD        NNN LLL   JJJ\n.GG>..<FF.\\_/.\\_/......\\_/.........<DD........NN>.<LL...<JJ.\\_/.\n================================================================\n2 turn",
+    "answer": "      FFF\n      FFF                                ###  NNN LLL\n      FFF                  ### ###            NNN LLL   JJJ\n GGG  FFF         ####             DDD        NNN LLL   JJJ\n GGG  FFF                          DDD        NNN LLL   JJJ\n.GG>..<FF.\\_/.\\_/......\\_/.........<DD........NN>.<LL...<JJ.\\_/.\n================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                                                    MMM\n JJJ SSS               UUU ###                      MMM     ###\n JJJ SSS     ####      UUU     NNN     KKK   ####   MMM         WWW\n JJJ SSS               UUU     NNN     KKK          MMM         WWW\n.<JJ.SS>.\\_/......\\_/..UU>.....<NN.\\_/.<KK..........<MM.\\_/.....<WW.\n====================================================================\n4 turn",
+    "answer": "                                                    MMM\n JJJ SSS               UUU ###                      MMM     ###\n JJJ SSS     ####      UUU     NNN     KKK   ####   MMM         WWW\n JJJ SSS               UUU     NNN     KKK          MMM         WWW\n.<JJ.SS>.\\_/......\\_/..UU>.....<NN.\\_/.<KK..........<MM.\\_/.....<WW.\n====================================================================\n4 turn",
+    "score": 0
+   },
+   {
+    "clue": " #### GGG  LLL                   ###                          ###\n      GGG  LLL              ####                     KKK\n      GGG  LLL     DDD  MMM                  NNN     KKK\n      GGG  LLL     DDD  MMM                  NNN     KKK\n......GG>..<LL.\\_/.DD>..MM>...........\\_/....<NN.\\_/.<KK.\\_/.......\n===================================================================\n2 turn",
+    "answer": " #### GGG  LLL                   ###                          ###\n      GGG  LLL              ####                     KKK\n      GGG  LLL     DDD  MMM                  NNN     KKK\n      GGG  LLL     DDD  MMM                  NNN     KKK\n......GG>..<LL.\\_/.DD>..MM>...........\\_/....<NN.\\_/.<KK.\\_/.......\n===================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                             VVV\n                             VVV  ###\n                   #### ###  VVV\n     WWW                     VVV               ####     CCC\n PPP WWW                     VVV                        CCC AAA\n.<PP.WW>..\\_/..\\_/...........<VV......\\_/..DD>......\\_/.<CC.<AA..\n=================================================================\n2 turn",
+    "answer": "                             VVV\n                             VVV  ###\n                   #### ###  VVV\n     WWW                     VVV               ####     CCC\n PPP WWW                     VVV                        CCC AAA\n.<PP.WW>..\\_/..\\_/...........<VV......\\_/..DD>......\\_/.<CC.<AA..\n=================================================================\n2 turn",
+    "score": 0
+   },
+   {
+    "clue": "                        ####               JJJ         ###\n      WWW ####                             JJJ\n      WWW       AAA LLL                PPP JJJ ### NNN\n      WWW       AAA LLL                PPP JJJ     NNN\n.\\_/..WW>.......<AA.<LL.......\\_/..\\_/.<PP.JJ>.....NN>.....<DD.\\_/.\n===================================================================\n0 turn",
+    "answer": "                        ####               JJJ         ###\n      WWW ####                             JJJ\n      WWW       AAA LLL                PPP JJJ ### NNN\n      WWW       AAA LLL                PPP JJJ     NNN\n.\\_/..WW>.......<AA.<LL.......\\_/..\\_/.<PP.JJ>.....NN>.....<DD.\\_/.\n===================================================================\n0 turn",
+    "score": 1
+   },
+   {
+    "clue": " ####                                                     ### LLL\n          EEE           HHH                    ####           LLL\n          EEE           HHH       ####                        LLL RRR\n          EEE           HHH                UUU                LLL RRR\n......\\_/.<EE..BB>..DD>.HH>..\\_/.......\\_/.<UU.......\\_/......<LL.<RR.\n======================================================================\n2 turn",
+    "answer": " ####                                                     ### LLL\n          EEE           HHH                    ####           LLL\n          EEE           HHH       ####                        LLL RRR\n          EEE           HHH                UUU                LLL RRR\n......\\_/.<EE..BB>..DD>.HH>..\\_/.......\\_/.<UU.......\\_/......<LL.<RR.\n======================================================================\n2 turn",
+    "score": 0
+   }
+  ],
+  "garrow": [
+   {
+    "clue": "c 3 slices\n####################################\n##:cc:::::::pp:::::mm::cc::cc:::::##\n##:::::mm::::cc::::pp:::cc::cc::::##\n##::::::::::mm::::pp:::pp::pp:::pp##\n####################################",
+    "answer": "c 3 slices\n####################################\n##:cc:::::::pp:::::mm::cc::cc:::::##\n##:::::mm::::cc::::pp:::cc::cc::::##\n##::::::::::mm::::pp:::pp::pp:::pp##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "c 2 slices\n#####################################\n##cc:::::::oo::tt:::::::oo::::cc:::##\n##oo::::::cc:::::::oo::::::::cc::tt##\n##:::::::::oo:::tt::cc:::::::oo::oo##\n#####################################",
+    "answer": "c 2 slices\n#####################################\n##cc:::::::oo::tt:::::::oo::::cc:::##\n##oo::::::cc:::::::oo::::::::cc::tt##\n##:::::::::oo:::tt::cc:::::::oo::oo##\n#####################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n###################################\n##ss::::ss:::::ss::::ss::::pp::::##\n##:bb::ss::::bb::::::::pp::::::pp##\n##:pp:::::ss:::bb::::pp::::ss::::##\n###################################",
+    "answer": "s 3 slices\n###################################\n##ss::::ss:::::ss::::ss::::pp::::##\n##:bb::ss::::bb::::::::pp::::::pp##\n##:pp:::::ss:::bb::::pp::::ss::::##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "b 3 slices\n#################################\n##ss::::bb:::bb::::::bb::::::bb##\n##::ss:::bb::::cc::::::::cc::cc##\n##::ss:::::ss::bb:::::ss:::ss::##\n#################################",
+    "answer": "b 3 slices\n#################################\n##ss::::bb:::bb::::::bb::::::bb##\n##::ss:::bb::::cc::::::::cc::cc##\n##::ss:::::ss::bb:::::ss:::ss::##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "c 2 slices\n###################################\n##ss::::::::::ss:::::ss::::bb::cc##\n##::::::::cc:::::cc::ss::cc:::bb:##\n##cc:::cc:::bb::::::bb::::::::ss:##\n###################################",
+    "answer": "c 2 slices\n###################################\n##ss::::::::::ss:::::ss::::bb::cc##\n##::::::::cc:::::cc::ss::cc:::bb:##\n##cc:::cc:::bb::::::bb::::::::ss:##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "a 2 slices\n#####################################\n##tt:::::oo::::aa:::::aa:::::::::aa##\n##oo:::tt:::::::::::oo::tt:::::tt::##\n##:aa::oo:::::::aa::tt::::::::oo:::##\n#####################################",
+    "answer": "a 2 slices\n#####################################\n##tt:::::oo::::aa:::::aa:::::::::aa##\n##oo:::tt:::::::::::oo::tt:::::tt::##\n##:aa::oo:::::::aa::tt::::::::oo:::##\n#####################################",
+    "score": 0
+   },
+   {
+    "clue": "c 3 slices\n#####################################\n##cc:::::::ss::aa::::aa::::::ss::::##\n##:::::cc::aa:::cc::::cc::::::aa:::##\n##:::ss:::::::aa:::cc::ss:::::::ss:##\n#####################################",
+    "answer": "c 3 slices\n#####################################\n##cc:::::::ss::aa::::aa::::::ss::::##\n##:::::cc::aa:::cc::::cc::::::aa:::##\n##:::ss:::::::aa:::cc::ss:::::::ss:##\n#####################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n###################################\n##ss::::::::::::tt::mm::mm:::ss::##\n##:::mm:::::ss::::::::ss::tt::mm:##\n##:::::::ss::ss::ss:::::tt::::tt:##\n###################################",
+    "answer": "s 3 slices\n###################################\n##ss::::::::::::tt::mm::mm:::ss::##\n##:::mm:::::ss::::::::ss::tt::mm:##\n##:::::::ss::ss::ss:::::tt::::tt:##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "o 3 slices\n################################\n##::bb:::::bb:::oo::::oo:::mm:##\n##mm:::::bb::oo::mm:::::mm::::##\n##:mm::bb::::::::::bb::oo::oo:##\n################################",
+    "answer": "o 3 slices\n################################\n##::bb:::::bb:::oo::::oo:::mm:##\n##mm:::::bb::oo::mm:::::mm::::##\n##:mm::bb::::::::::bb::oo::oo:##\n################################",
+    "score": 0
+   },
+   {
+    "clue": "o 2 slices\n######################################\n##::pp::::::::oo:::::bb::::bb::::oo:##\n##::oo:::pp::::pp::::oo:::bb::::::::##\n##:::::pp:::::pp::::oo::::bb:::::bb:##\n######################################",
+    "answer": "o 2 slices\n######################################\n##::pp::::::::oo:::::bb::::bb::::oo:##\n##::oo:::pp::::pp::::oo:::bb::::::::##\n##:::::pp:::::pp::::oo::::bb:::::bb:##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n###################################\n##ss:::aa::::ss:::bb::::::::ss:::##\n##::bb::aa::ss:::::bb::::::ss::::##\n##aa::bb::aa::::bb:::::::::aa::::##\n###################################",
+    "answer": "s 3 slices\n###################################\n##ss:::aa::::ss:::bb::::::::ss:::##\n##::bb::aa::ss:::::bb::::::ss::::##\n##aa::bb::aa::::bb:::::::::aa::::##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n####################################\n##:mm:::::::::ss:::aa::::::ss:::ss##\n##aa:::ss:::aa:::::::::::mm::::aa:##\n##::mm:::aa::::::ss::::::aa:::::ss##\n####################################",
+    "answer": "a 3 slices\n####################################\n##:mm:::::::::ss:::aa::::::ss:::ss##\n##aa:::ss:::aa:::::::::::mm::::aa:##\n##::mm:::aa::::::ss::::::aa:::::ss##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "m 2 slices\n####################################\n##:mm:::ss::::cc::::mm::::::cc::::##\n##::cc:::::::ss:::ss::::::::cc::ss##\n##:::::ss::mm::::::::mm:::ss::mm::##\n####################################",
+    "answer": "m 2 slices\n####################################\n##:mm:::ss::::cc::::mm::::::cc::::##\n##::cc:::::::ss:::ss::::::::cc::ss##\n##:::::ss::mm::::::::mm:::ss::mm::##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "o 2 slices\n###################################\n##:oo:::pp::::tt:::::::::tt::tt::##\n##pp::pp:::::::::::tt::::pp::oo::##\n##:pp::::oo::::oo::tt::oo::::::::##\n###################################",
+    "answer": "o 2 slices\n###################################\n##:oo:::pp::::tt:::::::::tt::tt::##\n##pp::pp:::::::::::tt::::pp::oo::##\n##:pp::::oo::::oo::tt::oo::::::::##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "p 0 slices\n################################\n##ss:::::cc::::::cc:::cc::::ss##\n##pp:::pp:::::::pp::pp:::cc:::##\n##:::::ss::cc::ss::::pp:::pp::##\n################################",
+    "answer": "p 0 slices\n################################\n##ss:::::cc::::::cc:::cc::::ss##\n##pp:::pp:::::::pp::pp:::cc:::##\n##:::::ss::cc::ss::::pp:::pp::##\n################################",
+    "score": 1
+   },
+   {
+    "clue": "s 3 slices\n###################################\n##::::::::bb::tt:::ss::::tt:::tt:##\n##ss:::::ss:::::ss::::::bb:::::tt##\n##::bb:::::::ss:::bb:::bb::::::tt##\n###################################",
+    "answer": "s 3 slices\n###################################\n##::::::::bb::tt:::ss::::tt:::tt:##\n##ss:::::ss:::::ss::::::bb:::::tt##\n##::bb:::::::ss:::bb:::bb::::::tt##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "m 3 slices\n######################################\n##mm:::::::::::ss::::::ss::mm:::::oo##\n##::::ss:::::::mm::ss::::ss::oo:::::##\n##::oo::mm:::ss::::::::::::mm::mm:::##\n######################################",
+    "answer": "m 3 slices\n######################################\n##mm:::::::::::ss::::::ss::mm:::::oo##\n##::::ss:::::::mm::ss::::ss::oo:::::##\n##::oo::mm:::ss::::::::::::mm::mm:::##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "a 2 slices\n###################################\n##tt:::::aa::::::ss::ss::::::aa::##\n##:aa::ss:::::::::aa::aa:::::tt::##\n##:ss:::ss::::tt:::::::ss::tt::::##\n###################################",
+    "answer": "a 2 slices\n###################################\n##tt:::::aa::::::ss::ss::::::aa::##\n##:aa::ss:::::::::aa::aa:::::tt::##\n##:ss:::ss::::tt:::::::ss::tt::::##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "o 2 slices\n#################################\n##oo:::aa:::cc::::::oo:::::oo::##\n##:::cc:::oo::::::oo:::cc::aa::##\n##aa:::cc::::::::::cc:::aa::aa:##\n#################################",
+    "answer": "o 2 slices\n#################################\n##oo:::aa:::cc::::::oo:::::oo::##\n##:::cc:::oo::::::oo:::cc::aa::##\n##aa:::cc::::::::::cc:::aa::aa:##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "o 2 slices\n####################################\n##:::mm:::::mm::ss::::oo:::::ss:::##\n##::oo::::::mm:::ss::::::ss::::ss:##\n##::::::::oo::::mm:::oo:::::oo::mm##\n####################################",
+    "answer": "o 2 slices\n####################################\n##:::mm:::::mm::ss::::oo:::::ss:::##\n##::oo::::::mm:::ss::::::ss::::ss:##\n##::::::::oo::::mm:::oo:::::oo::mm##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "t 2 slices\n##################################\n##pp::::::pp::tt::pp::::pp::::::##\n##aa::::aa:::::tt:::aa::pp::::::##\n##pp::::tt::::::aa::::::tt::::tt##\n##################################",
+    "answer": "t 2 slices\n##################################\n##pp::::::pp::tt::pp::::pp::::::##\n##aa::::aa:::::tt:::aa::pp::::::##\n##pp::::tt::::::aa::::::tt::::tt##\n##################################",
+    "score": 0
+   },
+   {
+    "clue": "m 2 slices\n################################\n##:aa::oo::aa:::mm:::::::::mm:##\n##::::::aa::oo::::oo::mm::aa::##\n##mm::::mm::oo:::aa:::::::oo::##\n################################",
+    "answer": "m 2 slices\n################################\n##:aa::oo::aa:::mm:::::::::mm:##\n##::::::aa::oo::::oo::mm::aa::##\n##mm::::mm::oo:::aa:::::::oo::##\n################################",
+    "score": 0
+   },
+   {
+    "clue": "o 3 slices\n####################################\n##::::oo::::::oo:::oo::oo::::oo:::##\n##:::cc:::::bb::cc::cc::cc::::::::##\n##oo:::::::::bb::bb::cc::::::bb:::##\n####################################",
+    "answer": "o 3 slices\n####################################\n##::::oo::::::oo:::oo::oo::::oo:::##\n##:::cc:::::bb::cc::cc::cc::::::::##\n##oo:::::::::bb::bb::cc::::::bb:::##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n####################################\n##::bb:::bb::::ss:::cc::cc::::::::##\n##ss:::bb::cc:::::::::::bb:::::ss:##\n##:::::ss::::::bb:::ss:::ss:::::cc##\n####################################",
+    "answer": "s 3 slices\n####################################\n##::bb:::bb::::ss:::cc::cc::::::::##\n##ss:::bb::cc:::::::::::bb:::::ss:##\n##:::::ss::::::bb:::ss:::ss:::::cc##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "s 2 slices\n####################################\n##bb::::ss::bb::::::oo:::::::ss:::##\n##::::bb::oo:::bb::::::::oo:::oo::##\n##ss:::::::::::ss:::::bb::oo::ss::##\n####################################",
+    "answer": "s 2 slices\n####################################\n##bb::::ss::bb::::::oo:::::::ss:::##\n##::::bb::oo:::bb::::::::oo:::oo::##\n##ss:::::::::::ss:::::bb::oo::ss::##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "t 3 slices\n##################################\n##:::tt::ss::::pp:::pp::::::::tt##\n##:tt:::tt:::::::::ss:::ss:::pp:##\n##tt:::ss:::::::::pp:::tt::::pp:##\n##################################",
+    "answer": "t 3 slices\n##################################\n##:::tt::ss::::pp:::pp::::::::tt##\n##:tt:::tt:::::::::ss:::ss:::pp:##\n##tt:::ss:::::::::pp:::tt::::pp:##\n##################################",
+    "score": 0
+   },
+   {
+    "clue": "o 3 slices\n######################################\n##aa::::mm:::mm::::::::::::mm::oo:::##\n##:oo::::oo::::::::::oo::mm:::::mm::##\n##::::::::::oo::oo:::mm:::aa::aa::::##\n######################################",
+    "answer": "o 3 slices\n######################################\n##aa::::mm:::mm::::::::::::mm::oo:::##\n##:oo::::oo::::::::::oo::mm:::::mm::##\n##::::::::::oo::oo:::mm:::aa::aa::::##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "m 2 slices\n####################################\n##:::oo::oo::::::::ss:::oo:::oo:::##\n##::::::ss::mm:::::oo::ss::::::mm:##\n##::::mm::::oo::mm::::::mm:::::oo:##\n####################################",
+    "answer": "m 2 slices\n####################################\n##:::oo::oo::::::::ss:::oo:::oo:::##\n##::::::ss::mm:::::oo::ss::::::mm:##\n##::::mm::::oo::mm::::::mm:::::oo:##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "t 3 slices\n######################################\n##::tt:::bb:::::cc:::::::cc:::tt::::##\n##:::cc:::bb::bb::::::::::::::tt::tt##\n##::bb::bb::::::cc::tt:::::::::::tt:##\n######################################",
+    "answer": "t 3 slices\n######################################\n##::tt:::bb:::::cc:::::::cc:::tt::::##\n##:::cc:::bb::bb::::::::::::::tt::tt##\n##::bb::bb::::::cc::tt:::::::::::tt:##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n####################################\n##:ss::::::::pp:::oo:::pp::::::oo:##\n##::::ss::::ss:::::ss::::pp:::pp::##\n##:ss::pp::::::::oo:::pp:::ss:::::##\n####################################",
+    "answer": "s 3 slices\n####################################\n##:ss::::::::pp:::oo:::pp::::::oo:##\n##::::ss::::ss:::::ss::::pp:::pp::##\n##:ss::pp::::::::oo:::pp:::ss:::::##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "m 3 slices\n###################################\n##:::::aa::pp:::mm::aa:::::aa::::##\n##:pp::aa:::pp:::::::aa::::mm::::##\n##:::::mm:::mm::::aa:::mm::aa::::##\n###################################",
+    "answer": "m 3 slices\n###################################\n##:::::aa::pp:::mm::aa:::::aa::::##\n##:pp::aa:::pp:::::::aa::::mm::::##\n##:::::mm:::mm::::aa:::mm::aa::::##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n#################################\n##:aa::oo::::aa:::bb:::::oo::::##\n##:::aa:::::oo::bb:::aa::::::aa##\n##bb:::bb:::::::::bb::aa::oo:::##\n#################################",
+    "answer": "a 3 slices\n#################################\n##:aa::oo::::aa:::bb:::::oo::::##\n##:::aa:::::oo::bb:::aa::::::aa##\n##bb:::bb:::::::::bb::aa::oo:::##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "c 0 slices\n######################################\n##:::aa:::::::::::aa::::cc::bb::::cc##\n##:::bb::bb:::::::::bb:::aa::cc:::::##\n##:::::cc::bb::::::cc:::::cc::::::aa##\n######################################",
+    "answer": "c 0 slices\n######################################\n##:::aa:::::::::::aa::::cc::bb::::cc##\n##:::bb::bb:::::::::bb:::aa::cc:::::##\n##:::::cc::bb::::::cc:::::cc::::::aa##\n######################################",
+    "score": 1
+   },
+   {
+    "clue": "p 2 slices\n######################################\n##:::::::pp::::aa:::cc:::::aa::::aa:##\n##pp::::::pp:::cc:::::::cc::pp::::::##\n##::cc::cc::::::::::pp::cc:::::aa:::##\n######################################",
+    "answer": "p 2 slices\n######################################\n##:::::::pp::::aa:::cc:::::aa::::aa:##\n##pp::::::pp:::cc:::::::cc::pp::::::##\n##::cc::cc::::::::::pp::cc:::::aa:::##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "b 3 slices\n#################################\n##ss::tt:::::::::tt::bb::::tt::##\n##:::::ss:::::bb::bb::ss::::tt:##\n##bb::tt:::::bb:::bb:::::::ss::##\n#################################",
+    "answer": "b 3 slices\n#################################\n##ss::tt:::::::::tt::bb::::tt::##\n##:::::ss:::::bb::bb::ss::::tt:##\n##bb::tt:::::bb:::bb:::::::ss::##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "s 2 slices\n################################\n##ss::::cc::ss:::::::bb:::ss::##\n##bb::::ss::cc::cc::::bb::::::##\n##::cc:::::bb::::cc::ss:::::cc##\n################################",
+    "answer": "s 2 slices\n################################\n##ss::::cc::ss:::::::bb:::ss::##\n##bb::::ss::cc::cc::::bb::::::##\n##::cc:::::bb::::cc::ss:::::cc##\n################################",
+    "score": 0
+   },
+   {
+    "clue": "c 2 slices\n###################################\n##::::::::::cc::pp::ss::ss::::pp:##\n##cc::::::cc:::pp::::::ss::::ss::##\n##pp:::ss::::pp:::cc::::::::::cc:##\n###################################",
+    "answer": "c 2 slices\n###################################\n##::::::::::cc::pp::ss::ss::::pp:##\n##cc::::::cc:::pp::::::ss::::ss::##\n##pp:::ss::::pp:::cc::::::::::cc:##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n#################################\n##cc::bb:::::::bb::::bb:::cc:::##\n##::::::cc:::bb::ss::ss::::cc::##\n##ss:::ss::::::bb::ss:::ss:::::##\n#################################",
+    "answer": "s 3 slices\n#################################\n##cc::bb:::::::bb::::bb:::cc:::##\n##::::::cc:::bb::ss::ss::::cc::##\n##ss:::ss::::::bb::ss:::ss:::::##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "m 3 slices\n################################\n##ss::::ss::::::aa::::mm:::mm:##\n##aa::mm::::::ss:::::::mm:::aa##\n##:::ss::::ss::::mm::mm:::::ss##\n################################",
+    "answer": "m 3 slices\n################################\n##ss::::ss::::::aa::::mm:::mm:##\n##aa::mm::::::ss:::::::mm:::aa##\n##:::ss::::ss::::mm::mm:::::ss##\n################################",
+    "score": 0
+   },
+   {
+    "clue": "s 3 slices\n######################################\n##:::::ss:::::::tt::mm:::mm::::ss:::##\n##:::::::::tt:::ss::::::ss::tt:::mm:##\n##:mm:::mm::ss::::::ss::::::::::mm::##\n######################################",
+    "answer": "s 3 slices\n######################################\n##:::::ss:::::::tt::mm:::mm::::ss:::##\n##:::::::::tt:::ss::::::ss::tt:::mm:##\n##:mm:::mm::ss::::::ss::::::::::mm::##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "p 3 slices\n###################################\n##::::pp::::ss::pp::::::pp:::::ss##\n##:aa:::::::aa::::::aa::::aa:::pp##\n##:::ss::pp::pp::::::::::aa:::aa:##\n###################################",
+    "answer": "p 3 slices\n###################################\n##::::pp::::ss::pp::::::pp:::::ss##\n##:aa:::::::aa::::::aa::::aa:::pp##\n##:::ss::pp::pp::::::::::aa:::aa:##\n###################################",
+    "score": 0
+   },
+   {
+    "clue": "p 2 slices\n#################################\n##pp::::::pp::bb::::bb:::::pp::##\n##::::::mm:::mm:::bb::bb:::::pp##\n##bb:::::::::::mm::pp:::mm::mm:##\n#################################",
+    "answer": "p 2 slices\n#################################\n##pp::::::pp::bb::::bb:::::pp::##\n##::::::mm:::mm:::bb::bb:::::pp##\n##bb:::::::::::mm::pp:::mm::mm:##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "o 3 slices\n######################################\n##:::cc:::oo::::oo:::cc::::oo:::::::##\n##oo::aa::aa::::::::::cc::::::oo::::##\n##cc:::::oo:::aa:::::cc:::::cc::::::##\n######################################",
+    "answer": "o 3 slices\n######################################\n##:::cc:::oo::::oo:::cc::::oo:::::::##\n##oo::aa::aa::::::::::cc::::::oo::::##\n##cc:::::oo:::aa:::::cc:::::cc::::::##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "c 2 slices\n#################################\n##aa:::::cc:::mm:::::::::aa::cc##\n##mm:::aa::mm::mm:::::::aa:::::##\n##::::cc:::mm::cc::::::cc::::aa##\n#################################",
+    "answer": "c 2 slices\n#################################\n##aa:::::cc:::mm:::::::::aa::cc##\n##mm:::aa::mm::mm:::::::aa:::::##\n##::::cc:::mm::cc::::::cc::::aa##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n##################################\n##aa::::aa::tt::::aa:::tt:::::::##\n##::aa::oo::::oo:::::oo::::::aa:##\n##:oo::::aa::oo::::oo::::tt:::::##\n##################################",
+    "answer": "a 3 slices\n##################################\n##aa::::aa::tt::::aa:::tt:::::::##\n##::aa::oo::::oo:::::oo::::::aa:##\n##:oo::::aa::oo::::oo::::tt:::::##\n##################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n######################################\n##:tt:::::aa:::::::aa:::::::::oo::aa##\n##:oo:::::::::::::aa::aa::aa::::oo::##\n##::tt:::::::::oo::::tt::tt::::::oo:##\n######################################",
+    "answer": "a 3 slices\n######################################\n##:tt:::::aa:::::::aa:::::::::oo::aa##\n##:oo:::::::::::::aa::aa::aa::::oo::##\n##::tt:::::::::oo::::tt::tt::::::oo:##\n######################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n#####################################\n##:::::::pp::aa::::pp:::::pp:::::cc##\n##::cc::::::::aa::::aa::cc:::::::pp##\n##:::::::pp::::cc::::::aa:::pp::aa:##\n#####################################",
+    "answer": "a 3 slices\n#####################################\n##:::::::pp::aa::::pp:::::pp:::::cc##\n##::cc::::::::aa::::aa::cc:::::::pp##\n##:::::::pp::::cc::::::aa:::pp::aa:##\n#####################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n####################################\n##:bb:::aa::aa::aa:::::::::mm:::::##\n##:::mm:::aa::::::::mm:::bb:::bb::##\n##bb:::::::mm:::mm::::::aa::::::aa##\n####################################",
+    "answer": "a 3 slices\n####################################\n##:bb:::aa::aa::aa:::::::::mm:::::##\n##:::mm:::aa::::::::mm:::bb:::bb::##\n##bb:::::::mm:::mm::::::aa::::::aa##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "t 3 slices\n####################################\n##:tt::::ss::::tt::::ss::tt:::::::##\n##cc:::::cc::::cc::::ss:::::::tt::##\n##:::cc::::::::cc::tt:::ss:::::ss:##\n####################################",
+    "answer": "t 3 slices\n####################################\n##:tt::::ss::::tt::::ss::tt:::::::##\n##cc:::::cc::::cc::::ss:::::::tt::##\n##:::cc::::::::cc::tt:::ss:::::ss:##\n####################################",
+    "score": 0
+   },
+   {
+    "clue": "b 3 slices\n################################\n##bb::::::cc:::tt:::::::cc::cc##\n##::::bb::bb::bb:::cc::tt:::::##\n##tt:::bb:::tt:::::cc:::::::bb##\n################################",
+    "answer": "b 3 slices\n################################\n##bb::::::cc:::tt:::::::cc::cc##\n##::::bb::bb::bb:::cc::tt:::::##\n##tt:::bb:::tt:::::cc:::::::bb##\n################################",
+    "score": 0
+   },
+   {
+    "clue": "a 3 slices\n#################################\n##pp:::ss:::::::::::ss::aa:::aa##\n##:aa::ss:::::pp::::::ss::pp:::##\n##pp:::::ss::pp:::::aa:::::::aa##\n#################################",
+    "answer": "a 3 slices\n#################################\n##pp:::ss:::::::::::ss::aa:::aa##\n##:aa::ss:::::pp::::::ss::pp:::##\n##pp:::::ss::pp:::::aa:::::::aa##\n#################################",
+    "score": 0
+   },
+   {
+    "clue": "b 2 slices\n##################################\n##::cc::::::ss::cc::::ss::::ss::##\n##::bb:::::bb::ss::::::bb::::bb:##\n##ss:::::cc:::::cc::bb::::::ss::##\n##################################",
+    "answer": "b 2 slices\n##################################\n##::cc::::::ss::cc::::ss::::ss::##\n##::bb:::::bb::ss::::::bb::::bb:##\n##ss:::::cc:::::cc::bb::::::ss::##\n##################################",
+    "score": 0
+   }
+  ],
+  "tovel": [
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4W  5G  6C  7U  8.  9. 10.\n11U 12C 13. 14. 15C 16. 17W\n18. 19C 20. 21W 22W 23. 24.\n25V 26W 27. 28. 29G\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4W  5G  6C  7U  8.  9. 10.\n11U 12C 13. 14. 15C 16. 17W\n18. 19C 20. 21W 22W 23. 24.\n25V 26W 27. 28. 29G\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                         1O\n 2.  3W  4O  5.  6R  7.  8.\n 9R 10O 11. 12. 13. 14. 15.\n16R 17M 18F 19W 20. 21. 22.\n23M 24F 25. 26. 27R 28. 29.\n30. 31.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                         1O\n 2.  3W  4O  5.  6R  7.  8.\n 9R 10O 11. 12. 13. 14. 15.\n16R 17M 18F 19W 20. 21. 22.\n23M 24F 25. 26. 27R 28. 29.\n30. 31.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n             1.  2N  3N  4.\n 5.  6O  7Z  8.  9R 10. 11.\n12N 13R 14I 15. 16. 17N 18.\n19. 20I 21R 22N 23O 24Z 25.\n26. 27. 28. 29N 30O 31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n             1.  2N  3N  4.\n 5.  6O  7Z  8.  9R 10. 11.\n12N 13R 14I 15. 16. 17N 18.\n19. 20I 21R 22N 23O 24Z 25.\n26. 27. 28. 29N 30O 31.\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3X  4.  5.  6V  7Q\n 8.  9N 10V 11. 12. 13Q 14V\n15. 16M 17. 18. 19V 20. 21.\n22V 23M 24. 25. 26. 27. 28.\n0 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3X  4.  5.  6V  7Q\n 8.  9N 10V 11. 12. 13Q 14V\n15. 16M 17. 18. 19V 20. 21.\n22V 23M 24. 25. 26. 27. 28.\n0 bump",
+    "score": 1
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1M  2C  3.\n 4.  5Z  6C  7.  8S  9Z 10B\n11. 12. 13C 14B 15S 16Z 17.\n18. 19S 20. 21Z 22. 23Z 24.\n25S 26. 27. 28. 29. 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1M  2C  3.\n 4.  5Z  6C  7.  8S  9Z 10B\n11. 12. 13C 14B 15S 16Z 17.\n18. 19S 20. 21Z 22. 23Z 24.\n25S 26. 27. 28. 29. 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3O\n 4.  5L  6O  7.  8.  9T 10O\n11. 12H 13. 14O 15L 16T 17.\n18V 19. 20O 21L 22H 23V 24T\n25. 26. 27. 28. 29H 30H 31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3O\n 4.  5L  6O  7.  8.  9T 10O\n11. 12H 13. 14O 15L 16T 17.\n18V 19. 20O 21L 22H 23V 24T\n25. 26. 27. 28. 29H 30H 31.\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2P  3.  4.  5F  6.\n 7P  8.  9. 10P 11S 12D 13.\n14D 15F 16V 17P 18. 19. 20P\n21. 22P 23S 24. 25F 26F 27.\n28. 29. 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2P  3.  4.  5F  6.\n 7P  8.  9. 10P 11S 12D 13.\n14D 15F 16V 17P 18. 19. 20P\n21. 22P 23S 24. 25F 26F 27.\n28. 29. 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4L  5A  6G  7.  8.  9L 10.\n11G 12. 13Z 14G 15. 16Z 17A\n18. 19. 20W 21. 22. 23. 24.\n25. 26. 27. 28. 29. 30. 31.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4L  5A  6G  7.  8.  9L 10.\n11G 12. 13Z 14G 15. 16Z 17A\n18. 19. 20W 21. 22. 23. 24.\n25. 26. 27. 28. 29. 30. 31.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3B  4X  5.  6B  7N\n 8.  9N 10. 11X 12X 13. 14.\n15B 16D 17. 18D 19. 20. 21.\n22. 23. 24. 25. 26. 27. 28.\n29. 30.\n0 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3B  4X  5.  6B  7N\n 8.  9N 10. 11X 12X 13. 14.\n15B 16D 17. 18D 19. 20. 21.\n22. 23. 24. 25. 26. 27. 28.\n29. 30.\n0 bump",
+    "score": 1
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n         1.  2.  3Q  4D  5.\n 6.  7Q  8D  9. 10. 11D 12.\n13. 14J 15. 16J 17Y 18. 19.\n20D 21. 22D 23Q 24J 25A 26.\n27. 28. 29. 30. 31.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n         1.  2.  3Q  4D  5.\n 6.  7Q  8D  9. 10. 11D 12.\n13. 14J 15. 16J 17Y 18. 19.\n20D 21. 22D 23Q 24J 25A 26.\n27. 28. 29. 30. 31.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2Q  3X  4C  5.  6Q\n 7.  8.  9X 10X 11. 12Q 13.\n14X 15X 16. 17. 18C 19C 20.\n21. 22. 23Z 24Z 25. 26. 27.\n28. 29. 30. 31.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2Q  3X  4C  5.  6Q\n 7.  8.  9X 10X 11. 12Q 13.\n14X 15X 16. 17. 18C 19C 20.\n21. 22. 23Z 24Z 25. 26. 27.\n28. 29. 30. 31.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1Z  2N  3A\n 4.  5A  6E  7.  8.  9. 10.\n11N 12A 13H 14E 15Z 16. 17.\n18. 19Z 20H 21. 22. 23H 24.\n25N 26. 27N 28H 29. 30. 31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1Z  2N  3A\n 4.  5A  6E  7.  8.  9. 10.\n11N 12A 13H 14E 15Z 16. 17.\n18. 19Z 20H 21. 22. 23H 24.\n25N 26. 27N 28H 29. 30. 31.\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2F  3X  4.  5Q  6.  7Z\n 8.  9. 10X 11Z 12Q 13. 14X\n15. 16B 17. 18Q 19Q 20. 21.\n22Q 23B 24. 25. 26. 27. 28.\n29. 30.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2F  3X  4.  5Q  6.  7Z\n 8.  9. 10X 11Z 12Q 13. 14X\n15. 16B 17. 18Q 19Q 20. 21.\n22Q 23B 24. 25. 26. 27. 28.\n29. 30.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3O  4.  5O  6G  7.\n 8.  9R 10. 11K 12G 13. 14K\n15. 16R 17. 18. 19G 20G 21.\n22. 23. 24. 25. 26. 27. 28.\n0 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3O  4.  5O  6G  7.\n 8.  9R 10. 11K 12G 13. 14K\n15. 16R 17. 18. 19G 20G 21.\n22. 23. 24. 25. 26. 27. 28.\n0 bump",
+    "score": 1
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n             1E  2K  3.  4.\n 5D  6P  7.  8D  9. 10D 11.\n12. 13I 14D 15P 16E 17. 18.\n19K 20. 21. 22D 23I 24. 25.\n26. 27. 28. 29.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n             1E  2K  3.  4.\n 5D  6P  7.  8D  9. 10D 11.\n12. 13I 14D 15P 16E 17. 18.\n19K 20. 21. 22D 23I 24. 25.\n26. 27. 28. 29.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2.\n 3J  4Q  5.  6.  7Q  8.  9.\n10S 11S 12. 13. 14Q 15. 16.\n17P 18P 19. 20. 21Q 22. 23.\n24H 25P 26. 27. 28. 29. 30.\n0 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2.\n 3J  4Q  5.  6.  7Q  8.  9.\n10S 11S 12. 13. 14Q 15. 16.\n17P 18P 19. 20. 21Q 22. 23.\n24H 25P 26. 27. 28. 29. 30.\n0 bump",
+    "score": 1
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2I  3W  4.  5I  6R\n 7.  8.  9I 10. 11I 12W 13.\n14T 15. 16I 17T 18. 19. 20.\n21W 22. 23. 24. 25. 26. 27.\n28. 29. 30. 31.\n0 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2I  3W  4.  5I  6R\n 7.  8.  9I 10. 11I 12W 13.\n14T 15. 16I 17T 18. 19. 20.\n21W 22. 23. 24. 25. 26. 27.\n28. 29. 30. 31.\n0 bump",
+    "score": 1
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2X\n 3.  4L  5A  6.  7.  8A  9.\n10. 11L 12. 13. 14. 15. 16.\n17X 18M 19L 20. 21M 22M 23.\n24. 25M 26. 27. 28. 29. 30.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2X\n 3.  4L  5A  6.  7.  8A  9.\n10. 11L 12. 13. 14. 15. 16.\n17X 18M 19L 20. 21M 22M 23.\n24. 25M 26. 27. 28. 29. 30.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2C  3J  4B  5Q  6.  7.\n 8J  9. 10B 11. 12B 13U 14.\n15. 16Q 17C 18. 19. 20. 21.\n22J 23Q 24B 25. 26. 27. 28.\n29. 30. 31.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2C  3J  4B  5Q  6.  7.\n 8J  9. 10B 11. 12B 13U 14.\n15. 16Q 17C 18. 19. 20. 21.\n22J 23Q 24B 25. 26. 27. 28.\n29. 30. 31.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4S  5W  6M  7L  8.  9. 10.\n11M 12L 13S 14. 15F 16. 17.\n18W 19S 20. 21. 22F 23. 24W\n25. 26M 27. 28S 29S 30. 31.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2.  3.\n 4S  5W  6M  7L  8.  9. 10.\n11M 12L 13S 14. 15F 16. 17.\n18W 19S 20. 21. 22F 23. 24W\n25. 26M 27. 28S 29S 30. 31.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2T  3T\n 4.  5.  6T  7.  8G  9U 10.\n11T 12O 13U 14. 15. 16. 17.\n18G 19O 20P 21T 22U 23. 24.\n25. 26T 27P 28. 29P 30. 31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2T  3T\n 4.  5.  6T  7.  8G  9U 10.\n11T 12O 13U 14. 15. 16. 17.\n18G 19O 20P 21T 22U 23. 24.\n25. 26T 27P 28. 29P 30. 31.\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n             1W  2N  3.  4.\n 5N  6U  7J  8W  9. 10. 11.\n12W 13J 14. 15U 16N 17. 18J\n19. 20W 21. 22. 23W 24. 25.\n26. 27. 28.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n             1W  2N  3.  4.\n 5N  6U  7J  8W  9. 10. 11.\n12W 13J 14. 15U 16N 17. 18J\n19. 20W 21. 22. 23W 24. 25.\n26. 27. 28.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n             1.  2.  3Z  4.\n 5.  6O  7C  8Z  9A 10. 11.\n12. 13C 14. 15R 16Z 17. 18.\n19O 20Z 21. 22Z 23R 24O 25.\n26. 27. 28. 29. 30. 31.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n             1.  2.  3Z  4.\n 5.  6O  7C  8Z  9A 10. 11.\n12. 13C 14. 15R 16Z 17. 18.\n19O 20Z 21. 22Z 23R 24O 25.\n26. 27. 28. 29. 30. 31.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2.\n 3S  4Y  5D  6L  7A  8.  9.\n10. 11. 12L 13D 14. 15Y 16.\n17S 18Y 19. 20. 21Y 22S 23.\n24D 25S 26. 27L 28. 29.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1.  2.\n 3S  4Y  5D  6L  7A  8.  9.\n10. 11. 12L 13D 14. 15Y 16.\n17S 18Y 19. 20. 21Y 22S 23.\n24D 25S 26. 27L 28. 29.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3N  4.  5N  6D\n 7.  8.  9N 10E 11R 12. 13N\n14. 15. 16. 17G 18E 19. 20.\n21G 22. 23E 24. 25. 26. 27.\n28. 29.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3N  4.  5N  6D\n 7.  8.  9N 10E 11R 12. 13N\n14. 15. 16. 17G 18E 19. 20.\n21G 22. 23E 24. 25. 26. 27.\n28. 29.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3M  4.  5.  6.\n 7N  8M  9. 10D 11X 12. 13.\n14D 15N 16. 17X 18. 19M 20.\n21D 22X 23. 24W 25X 26N 27.\n28. 29. 30.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3M  4.  5.  6.\n 7N  8M  9. 10D 11X 12. 13.\n14D 15N 16. 17X 18. 19M 20.\n21D 22X 23. 24W 25X 26N 27.\n28. 29. 30.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1Q  2.  3V  4W  5.  6.  7.\n 8Q  9Q 10. 11. 12. 13E 14.\n15V 16E 17Q 18. 19. 20V 21.\n22E 23V 24. 25. 26W 27E 28.\n29. 30.\n1 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1Q  2.  3V  4W  5.  6.  7.\n 8Q  9Q 10. 11. 12. 13E 14.\n15V 16E 17Q 18. 19. 20V 21.\n22E 23V 24. 25. 26W 27E 28.\n29. 30.\n1 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2W  3.  4.  5.  6.\n 7J  8U  9Z 10W 11C 12. 13.\n14. 15. 16Z 17C 18. 19Z 20.\n21. 22Z 23W 24U 25. 26. 27.\n28Z 29W 30. 31J\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1W  2W  3.  4.  5.  6.\n 7J  8U  9Z 10W 11C 12. 13.\n14. 15. 16Z 17C 18. 19Z 20.\n21. 22Z 23W 24U 25. 26. 27.\n28Z 29W 30. 31J\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1P  2.  3N  4.  5.  6.  7.\n 8P  9N 10E 11U 12. 13. 14.\n15E 16P 17Z 18. 19Z 20U 21.\n22. 23U 24N 25. 26. 27. 28.\n29. 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1P  2.  3N  4.  5.  6.  7.\n 8P  9N 10E 11U 12. 13. 14.\n15E 16P 17Z 18. 19Z 20U 21.\n22. 23U 24N 25. 26. 27. 28.\n29. 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1G  2.  3.  4.  5.  6.\n 7F  8G  9B 10P 11. 12. 13.\n14B 15. 16G 17Y 18. 19. 20.\n21P 22G 23Y 24. 25P 26. 27.\n28G 29P 30. 31G\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1G  2.  3.  4.  5.  6.\n 7F  8G  9B 10P 11. 12. 13.\n14B 15. 16G 17Y 18. 19. 20.\n21P 22G 23Y 24. 25P 26. 27.\n28G 29P 30. 31G\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2S  3.  4Z  5.  6.\n 7V  8R  9. 10Z 11V 12. 13.\n14Z 15C 16R 17. 18. 19. 20.\n21S 22R 23Z 24V 25. 26. 27S\n28. 29R 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2S  3.  4Z  5.  6.\n 7V  8R  9. 10Z 11V 12. 13.\n14Z 15C 16R 17. 18. 19. 20.\n21S 22R 23Z 24V 25. 26. 27S\n28. 29R 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2M  3F  4.  5.  6M\n 7.  8.  9X 10F 11. 12F 13.\n14. 15D 16H 17M 18X 19F 20.\n21. 22. 23F 24D 25. 26M 27H\n28. 29. 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2M  3F  4.  5.  6M\n 7.  8.  9X 10F 11. 12F 13.\n14. 15D 16H 17M 18X 19F 20.\n21. 22. 23F 24D 25. 26M 27H\n28. 29. 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2A  3Z\n 4.  5I  6.  7U  8.  9. 10.\n11U 12Z 13A 14I 15. 16. 17A\n18. 19. 20Z 21U 22. 23. 24.\n25I 26I 27. 28. 29. 30.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                 1.  2A  3Z\n 4.  5I  6.  7U  8.  9. 10.\n11U 12Z 13A 14I 15. 16. 17A\n18. 19. 20Z 21U 22. 23. 24.\n25I 26I 27. 28. 29. 30.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2U  3L  4I  5.  6.  7.\n 8L  9. 10T 11. 12. 13T 14L\n15. 16. 17I 18. 19T 20W 21.\n22W 23W 24. 25T 26L 27. 28L\n29. 30. 31.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2U  3L  4I  5.  6.  7.\n 8L  9. 10T 11. 12. 13T 14L\n15. 16. 17I 18. 19T 20W 21.\n22W 23W 24. 25T 26L 27. 28L\n29. 30. 31.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1A  2H  3G  4.  5L  6.\n 7S  8.  9. 10. 11A 12S 13.\n14A 15H 16L 17S 18. 19. 20.\n21G 22G 23. 24. 25. 26. 27.\n28.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1A  2H  3G  4.  5L  6.\n 7S  8.  9. 10. 11A 12S 13.\n14A 15H 16L 17S 18. 19. 20.\n21G 22G 23. 24. 25. 26. 27.\n28.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3X  4.  5T  6V\n 7.  8J  9X 10T 11. 12V 13V\n14. 15. 16T 17. 18V 19. 20.\n21V 22. 23E 24V 25X 26T 27.\n28. 29. 30.\n3 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2.  3X  4.  5T  6V\n 7.  8J  9X 10T 11. 12V 13V\n14. 15. 16T 17. 18V 19. 20.\n21V 22. 23E 24V 25X 26T 27.\n28. 29. 30.\n3 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n 1Y  2.  3T  4.  5Q  6X  7.\n 8X  9Y 10. 11Q 12Y 13. 14.\n15Q 16Y 17T 18X 19. 20. 21.\n22E 23Q 24. 25X 26. 27. 28.\n2 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n 1Y  2.  3T  4.  5Q  6X  7.\n 8X  9Y 10. 11Q 12Y 13. 14.\n15Q 16Y 17T 18X 19. 20. 21.\n22E 23Q 24. 25X 26. 27. 28.\n2 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2R  3Y  4W  5.  6.\n 7X  8Y  9. 10. 11. 12P 13Y\n14. 15W 16X 17P 18Y 19R 20.\n21. 22. 23X 24. 25P 26. 27.\n28W 29X 30. 31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2R  3Y  4W  5.  6.\n 7X  8Y  9. 10. 11. 12P 13Y\n14. 15W 16X 17P 18Y 19R 20.\n21. 22. 23X 24. 25P 26. 27.\n28W 29X 30. 31.\n4 bump",
+    "score": 0
+   },
+   {
+    "clue": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1E  2.\n 3.  4K  5H  6E  7W  8U  9.\n10. 11. 12H 13W 14. 15. 16.\n17W 18H 19U 20. 21W 22E 23.\n24K 25E 26. 27W 28. 29. 30.\n31.\n4 bump",
+    "answer": " Mo  Tu  We  Th  Fr  Sa  Su\n                     1E  2.\n 3.  4K  5H  6E  7W  8U  9.\n10. 11. 12H 13W 14. 15. 16.\n17W 18H 19U 20. 21W 22E 23.\n24K 25E 26. 27W 28. 29. 30.\n31.\n4 bump",
+    "score": 0
+   }
+  ]
+ },
+ "_index": 2142,
+ "_cnt": {
+  "tovel": 41,
+  "garrow": 49,
+  "molvic": 38,
+  "fennick": 41,
+  "norvel": 29
+ },
+ "_vmap": {},
+ "tally": {
+  "fennick": {
+   "-1": [
+    7,
+    7
+   ],
+   "0": [
+    5,
+    0
+   ],
+   "1": [
+    5,
+    0
+   ],
+   "2": [
+    4,
+    0
+   ],
+   "3": [
+    4,
+    0
+   ],
+   "4": [
+    4,
+    0
+   ],
+   "5": [
+    4,
+    0
+   ],
+   "6": [
+    4,
+    0
+   ],
+   "7": [
+    4,
+    0
+   ]
+  },
+  "molvic": {
+   "0": [
+    7,
+    0
+   ],
+   "1": [
+    7,
+    0
+   ],
+   "-1": [
+    3,
+    3
+   ],
+   "2": [
+    7,
+    0
+   ],
+   "3": [
+    7,
+    0
+   ],
+   "4": [
+    6,
+    0
+   ],
+   "5": [
+    6,
+    0
+   ]
+  },
+  "tovel": {
+   "0": [
+    6,
+    0
+   ],
+   "1": [
+    6,
+    0
+   ],
+   "2": [
+    6,
+    0
+   ],
+   "3": [
+    5,
+    0
+   ],
+   "4": [
+    5,
+    0
+   ],
+   "5": [
+    5,
+    0
+   ],
+   "-1": [
+    5,
+    5
+   ]
+  },
+  "norvel": {
+   "0": [
+    6,
+    0
+   ],
+   "1": [
+    6,
+    0
+   ],
+   "-1": [
+    4,
+    4
+   ],
+   "2": [
+    6,
+    0
+   ],
+   "3": [
+    6,
+    0
+   ],
+   "4": [
+    6,
+    0
+   ],
+   "5": [
+    5,
+    0
+   ],
+   "6": [
+    5,
+    0
+   ],
+   "7": [
+    5,
+    0
+   ]
+  },
+  "garrow": {
+   "0": [
+    9,
+    2
+   ],
+   "1": [
+    9,
+    4
+   ],
+   "2": [
+    9,
+    1
+   ],
+   "3": [
+    9,
+    2
+   ],
+   "4": [
+    9,
+    2
+   ],
+   "5": [
+    8,
+    0
+   ]
+  },
+  "durnel": {
+   "-1": [
+    7,
+    7
+   ],
+   "0": [
+    22,
+    2
+   ],
+   "5": [
+    21,
+    5
+   ]
+  },
+  "virel": {
+   "0": [
+    5,
+    2
+   ],
+   "1": [
+    5,
+    1
+   ],
+   "2": [
+    5,
+    1
+   ],
+   "3": [
+    5,
+    1
+   ],
+   "4": [
+    5,
+    0
+   ],
+   "5": [
+    5,
+    0
+   ],
+   "6": [
+    4,
+    1
+   ],
+   "7": [
+    4,
+    2
+   ]
+  }
+ },
+ "tally3": {
+  "durnel": {
+   "0": [
+    3,
+    0
+   ],
+   "1": [
+    3,
+    0
+   ],
+   "2": [
+    3,
+    0
+   ],
+   "3": [
+    3,
+    0
+   ],
+   "4": [
+    3,
+    0
+   ],
+   "-1": [
+    6,
+    6
+   ],
+   "5": [
+    3,
+    0
+   ],
+   "6": [
+    3,
+    0
+   ],
+   "7": [
+    3,
+    2
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    1
+   ],
+   "10": [
+    3,
+    0
+   ],
+   "11": [
+    3,
+    0
+   ]
+  },
+  "virel": {
+   "solver": [
+    44,
+    44
+   ]
+  },
+  "fennick": {
+   "0": [
+    3,
+    0
+   ],
+   "1": [
+    3,
+    0
+   ],
+   "2": [
+    3,
+    0
+   ],
+   "3": [
+    3,
+    0
+   ],
+   "-1": [
+    7,
+    7
+   ],
+   "4": [
+    3,
+    0
+   ],
+   "5": [
+    3,
+    0
+   ],
+   "6": [
+    3,
+    0
+   ],
+   "7": [
+    3,
+    0
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    0
+   ],
+   "10": [
+    3,
+    0
+   ],
+   "11": [
+    3,
+    0
+   ]
+  },
+  "tovel": {
+   "0": [
+    3,
+    0
+   ],
+   "1": [
+    3,
+    0
+   ],
+   "2": [
+    3,
+    0
+   ],
+   "3": [
+    3,
+    0
+   ],
+   "4": [
+    3,
+    0
+   ],
+   "5": [
+    3,
+    0
+   ],
+   "6": [
+    3,
+    0
+   ],
+   "-1": [
+    5,
+    5
+   ],
+   "7": [
+    3,
+    0
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    0
+   ],
+   "10": [
+    3,
+    0
+   ],
+   "11": [
+    3,
+    0
+   ]
+  },
+  "garrow": {
+   "0": [
+    4,
+    0
+   ],
+   "1": [
+    4,
+    1
+   ],
+   "2": [
+    4,
+    1
+   ],
+   "3": [
+    4,
+    0
+   ],
+   "4": [
+    4,
+    0
+   ],
+   "5": [
+    3,
+    1
+   ],
+   "6": [
+    3,
+    1
+   ],
+   "7": [
+    3,
+    0
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    0
+   ],
+   "10": [
+    3,
+    1
+   ],
+   "11": [
+    3,
+    1
+   ]
+  },
+  "molvic": {
+   "0": [
+    3,
+    0
+   ],
+   "1": [
+    3,
+    0
+   ],
+   "2": [
+    3,
+    0
+   ],
+   "3": [
+    3,
+    0
+   ],
+   "-1": [
+    4,
+    4
+   ],
+   "4": [
+    2,
+    0
+   ],
+   "5": [
+    2,
+    0
+   ],
+   "6": [
+    2,
+    0
+   ],
+   "7": [
+    2,
+    0
+   ],
+   "8": [
+    2,
+    0
+   ],
+   "9": [
+    2,
+    1
+   ],
+   "10": [
+    2,
+    0
+   ],
+   "11": [
+    2,
+    0
+   ]
+  },
+  "norvel": {
+   "0": [
+    4,
+    0
+   ],
+   "1": [
+    4,
+    0
+   ],
+   "2": [
+    4,
+    0
+   ],
+   "3": [
+    4,
+    0
+   ],
+   "4": [
+    4,
+    0
+   ],
+   "5": [
+    4,
+    0
+   ],
+   "6": [
+    4,
+    0
+   ],
+   "7": [
+    4,
+    0
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    0
+   ],
+   "10": [
+    3,
+    0
+   ],
+   "-1": [
+    2,
+    2
+   ],
+   "11": [
+    3,
+    0
+   ]
+  }
+ },
+ "tally4": {
+  "durnel": {
+   "solver": [
+    55,
+    8
+   ]
+  },
+  "virel": {
+   "solver": [
+    29,
+    29
+   ]
+  },
+  "tovel": {
+   "0": [
+    6,
+    0
+   ],
+   "1": [
+    5,
+    0
+   ],
+   "-1": [
+    6,
+    6
+   ],
+   "2": [
+    5,
+    0
+   ],
+   "3": [
+    5,
+    0
+   ],
+   "4": [
+    5,
+    0
+   ],
+   "5": [
+    5,
+    0
+   ],
+   "6": [
+    5,
+    0
+   ],
+   "7": [
+    5,
+    0
+   ]
+  },
+  "garrow": {
+   "0": [
+    9,
+    3
+   ],
+   "1": [
+    8,
+    2
+   ],
+   "2": [
+    8,
+    0
+   ],
+   "3": [
+    8,
+    1
+   ],
+   "4": [
+    8,
+    1
+   ],
+   "5": [
+    8,
+    0
+   ]
+  },
+  "molvic": {
+   "0": [
+    7,
+    0
+   ],
+   "-1": [
+    6,
+    6
+   ],
+   "1": [
+    7,
+    0
+   ],
+   "2": [
+    6,
+    1
+   ],
+   "3": [
+    6,
+    1
+   ],
+   "4": [
+    6,
+    0
+   ],
+   "5": [
+    6,
+    0
+   ]
+  },
+  "fennick": {
+   "0": [
+    4,
+    0
+   ],
+   "1": [
+    4,
+    0
+   ],
+   "2": [
+    4,
+    0
+   ],
+   "3": [
+    4,
+    0
+   ],
+   "4": [
+    4,
+    0
+   ],
+   "-1": [
+    9,
+    9
+   ],
+   "5": [
+    4,
+    0
+   ],
+   "6": [
+    4,
+    0
+   ],
+   "7": [
+    4,
+    0
+   ],
+   "8": [
+    3,
+    0
+   ],
+   "9": [
+    3,
+    0
+   ],
+   "10": [
+    3,
+    0
+   ]
+  },
+  "norvel": {
+   "0": [
+    4,
+    0
+   ],
+   "1": [
+    4,
+    0
+   ],
+   "2": [
+    4,
+    0
+   ],
+   "3": [
+    4,
+    0
+   ],
+   "-1": [
+    4,
+    4
+   ],
+   "4": [
+    4,
+    0
+   ],
+   "5": [
+    3,
+    0
+   ],
+   "6": [
+    3,
+    0
+   ],
+   "7": [
+    3,
+    0
+   ]
+  }
+ },
+ "_n": 1
+}

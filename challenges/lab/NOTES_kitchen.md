@@ -428,3 +428,185 @@ Levers left if it is too hard: force one of the two pieces on the counted slice 
 generate 1.08 → 1.73 ms); allow k = 1 more often by dropping the severed requirement there. If too
 easy: narrow the rarity band to 2–8 of 48 (blind floor ~5 %), or require the counted slice to hold
 nothing but that topping.
+
+---
+
+## garrow v4 — the re-skin: it was read as a fish tank, not as food (2026-09-05)
+
+v3 kept as `challenges/lab/garrow.v3.json` (byte-identical copy); v4 is `challenges/lab/garrow.json`.
+**The rule is unchanged again** — four versions, and not one of them has touched what scores 1. What
+changed this time is the one thing eight Opus finals agreed on.
+
+### The evidence: every single player called it water
+
+New-format finals on v3 — `lad-fennick-v3-1`, `lad-tovel-v5-2`, `lad-tovel-v5-3`, `lad-tresk-v2-1`:
+**36 % and 36 % with a demo, 0 % with two demos, 0 % without.** The players' own notes:
+
+* tresk1b (from the clue alone): "garrow: **a walled tank of `~` water containing 3-character fish**
+  (ooo, ccc, aaa, ppp, bbb, mmm, ttt)" … "the answer is the same tank with every c fish swum 2
+  places sideways".
+* tovel3a: "garrow (`s3` + **pond of 3-char fish** `sss`) — **Pond** bordered by #, water ~, species
+  tokens … Probe: swim that species N cells right/left".
+* tovel2b: "garrow: **fish tank**, 3 species, exactly 3 fish per row … 73 rules tried (swim n / 3n /
+  1, wrap or clamp, remove, keep, add, sink, promote). All 0."
+* fennick1a: "**pond of exactly 12 three-character fish** … 24 (edit × format) combinations tried".
+* tovel3b: "garrow `o3` + tank of 3-char creatures: tried slide/wrap/gravity/remove/add/mark/count/
+  coords." All zero.
+* fennick1b, **with** a demo: "clue `m2` + **fish tank**; answer = the tank with three `|` columns
+  inserted … the walls chop the m-fish in half". Rule believed: "for each ROW that contains the
+  header letter, cut just before the N-th character of its rightmost blob" → 35 %.
+* tovel2a, **with** a demo: cut positions live in "columns that contain the header letter" space →
+  36.6 %. tresk1b, the theorist, spent **two** of its three demos here ("fennick, garrow, garrow"),
+  read "cut count = fish count − 1", never cracked it and skipped it all game → 0 %. tresk1a spent
+  none, tried 9 answer-shape hypotheses, 0/65, and skipped it in the final too.
+
+`~` is the water glyph in every ASCII picture anyone has ever seen — basten, an actual water picture,
+was in three of these four pools — and a 3-character token in water is a fish. Once the tray is a
+tank, "slices" is unthinkable, and the two players who did see cuts in a demo spent the rest of the
+game asking *where in the fish* the knife goes. **Nobody ever considered food.** The rule was never
+the problem: v2 was cracked in the old format at 64 %.
+
+### What v4 changes (all of it is what the picture says out loud)
+
+* **The header is a caption, not a code.** `m2` → **`m 2 slices`**. It leaks nothing the old header
+  did not (letter + digit) but it names the object and the verb: the answer is the tray cut into
+  *slices*. A kid reads "two slices get the mushrooms" — close to the rule and not the rule. What
+  the caption cannot say, and the demo must, is *two or more*, and that a topping the knife goes
+  through belongs to **both** sides.
+* **The tray is food.** Cheese `~` → **`:`**; toppings are compact **2-cell** pieces (`mm`, `oo`,
+  `pp`) instead of 3-character tokens that read as fish; **three** rows of dough instead of four, on
+  a 32–38 wide tray, so it is a shallow oblong tray rather than a tank; solid baked `#` crust above,
+  below and two columns thick at each end; and it is denser — **15 pieces, five to a row** (v3: 12,
+  three to a row), the named topping 5–7 of them.
+* **The demo shows the whole sentence.** `generate()` still only keeps a tray that can be cut so that
+  a counted slice holds exactly two pieces of the named topping with one of them halved and the
+  neighbour holds just the other half — and now also **an uncounted slice holding one WHOLE piece**,
+  so "one is not enough" is on the picture too. `solve()` prefers, in order: the counted slice
+  holding a *whole piece plus the half* rather than two halves; a slice of three (so "exactly two" is
+  visibly not the rule); and no rival reading of the picture coming to the digit.
+* **4–8 slices.** Both the witness search in `generate()` and the demo search in `solve()` aim at
+  4–8 slices, where a hand-cut tray lives. The scorer is unchanged (≥ 4 slices, each ≥ 3 wide), so
+  9–12 slices are still legal answers; they are just not what a demo shows.
+
+### One demo as it renders (seed 5271)
+
+```
+clue:                                answer:
+c 2 slices                           ###########|#####|####|#######|#####
+################################     ##:aa::::bb|::::a|a:::|:cc::::|:bb##
+##:aa::::bb::::aa::::cc:::::bb##     ##::cc::::c|c::::|aa::|aa:::::|aa:##
+##::cc::::cc::::aa::aa:::::aa:##     ##:bb::::bb|:::::|cc::|cc:::aa|:::##
+##:bb::::bb:::::cc::cc:::aa:::##     ###########|#####|####|#######|#####
+################################
+```
+Slice widths 11/5/4/7/5; pieces of `c` per slice 2/1/1/2/0, of which whole 1/0/1/2/0 → two slices
+hold two → `c 2 slices`. The headline is the first cut: `##::cc::::c|c::::` — the knife halves a
+sweetcorn, **slice 1 holds a whole `cc` and that half (two → counted)**, slice 2 holds nothing but
+the other half (one → not counted), and slice 3 holds one **whole** `cc` on its own and is *also*
+not counted. Slice 4 has two whole ones and counts; slice 5 has none. Everything the rule says is
+on the picture, and the slices are wildly uneven so neatness is visibly irrelevant.
+
+Measured over 600 demos: **100 %** show the halved pair and its neighbour, **77 %** show it as a
+whole piece beside the half, **95.5 %** show the uncounted lone whole piece, **75 %** show both, and
+17.5 % additionally show a slice of three. Rival readings that also come to the digit in a demo:
+severed 0.2 %, slices-touched 0.0 %, whole-pairs 0.0 %, two-of-any-one-topping 2.0 %,
+two-pieces-of-anything 0.5 %, number of cuts 0.0 %, number of slices 0.0 %.
+
+### Witness table (500 fresh clues, seeds 100000–100499)
+
+Same harness as v3: a strategy "builds" an answer by searching up to 400 well-formed cuttings for one
+satisfying its own law, then is scored by the real scorer; "built" is how often one was found at all.
+
+| strategy | v3 | v4 |
+|---|---|---|
+| true rule (`solve`) | 100.00 % | **100.00 %** |
+| **clue returned uncut** (caption kept or dropped) | 0.00 % | **0.00 %** |
+| **equal-width slices, any n, any rounding** | 0.00 % | **0.00 %** |
+| **random cut positions, n random** | 8.60 % | **10.80 %** ← the blind floor |
+| random cut positions, n = 8 / 6 / 5 | – / 13.20 / 15.40 % | 7.20 / 15.20 / 20.80 % |
+| "number of slices = n" | 6.20 % | 0.00 % (built 0 %) |
+| "number of cuts = n" | 8.60 % | 5.40 % (built 65 %) |
+| "slices with three or more = n" | 10.00 % | 6.40 % (built 9 %) |
+| "slices with none of it = n" | 6.60 % | 8.20 % (built 100 %) |
+| "slices with two of any one topping = n" | 13.20 % | 11.40 % (built 99 %) |
+| "the fullest slice holds n" | 10.00 % | 13.80 % (built 100 %) |
+| **"severed = n"** (v1's trap) | 9.80 % | **14.00 %** (built 100 %) |
+| "slices with two pieces of anything = n" | 25.80 % | 17.40 % (built 91 %) |
+| "slices the topping touches at all = n" | 27.20 % | 20.60 % (built 91 %) |
+| **"slices with two WHOLE pieces = n"** (halves ignored) | 33.60 % | **50.40 %** (built 53 %) |
+| "2+, a half counting only for its left slice" | 44.20 % | **61.60 %** (built 67 %) |
+| "slices with **exactly** two = n" | 86.20 % | **91.40 %** (built 97 %) |
+| **demo replay** (previous clue's answer) | 0.00 % | **0.00 %** |
+| one constant answer for every clue | 0.20 % | 0.20 % |
+| junk: empty / whitespace / 4000 chars / the clue | 0.00 % | **0.00 %** |
+
+Ladder: **0 % (no picture) → 7–21 % (well formed, no idea) → 11–21 % (right family, wrong readout)
+→ 50–62 % (right measurement, wrong halves convention) → 91–100 % (the whole insight).** Nothing
+that lacks the counted relation pays more than 21 %.
+
+**The three rows above 50 % are honest and deliberate.** They are not rival laws: all three are this
+class's own measurement read with a different halves convention, i.e. a player who already has the
+object, the format, the demo and "count the slices with two mushrooms". They pay more than in v3 for
+one structural reason — a **2-cell** piece is severed only when the knife lands on the single column
+inside it, where a 3-cell piece had two, so the knife halves an `m` about half as often and the
+conventions agree more often. That is the price of the compact 2-wide topping that stops the picture
+reading as fish, and it is a **softening**: v3's demo-holders scored 36 %, and a class whose natural
+near-miss pays 50 % should land near the 50 % target rather than under it.
+
+### Shape and junk attacks on an otherwise correct answer (250 clues)
+
+Reference 100 %; **caption line kept, crust rows removed, trailing spaces, blank lines inserted,
+leading/trailing blank lines — all 100 %** (the scorer reads only lines containing `:`, so the house
+rule about the parameter line holds in both directions). All cuts removed, one cut missing in one
+row, cuts shifted by one in one row, an extra cut at the far left, a dough row deleted, a dough row
+duplicated, upper-cased, cheese turned to spaces, a topping moved one cell, reversed left-right,
+dough rows reordered, the clue itself — **all 0.00 %**. One extra cut through the middle of the
+widest slice: 43.6 % — not a witness (it needs a correct answer for that very clue) but a statement
+that the answer set is not a knife's edge.
+
+### Speed and size
+
+| | v3 | v4 |
+|---|---|---|
+| `generate` mean / median / p99 / max | 1.08 / 0.79 / 4.3 / 9.4 ms | **1.54 / 1.12 / 5.9 / 13.1 ms** (20000 seeds, no empty clue) |
+| `solve` mean / median / max | 8.0 / 8.6 / 80 ms | 41 / 10 / 256 ms (cap 2000; paid only for a demo) |
+| scorer / solve / clue / solution chars | 379 / 3820 / 224 / 269 | **379 / 4478 / 205 / 229** |
+
+`quickcheck --seeds 200`: OK, gen 9.6 ms max, score 0.14 ms, solve 175.7 ms max.
+`score(clue, solve(clue)) == 1` on 20000 seeds. The 2-cell topping is what cost the time: the knife
+halves one only when it lands on a single column, so a uniformly random cutting almost never carries
+the demo picture. `generate()` therefore draws 30 of its candidate cuttings per topping with the
+knife **aimed straight through** a piece of the named letter, lays the 15 toppings out from a bag
+with fixed letter proportions so a candidate topping always exists, and checks the cheap
+hand-cut-geometry gate before computing anything per-slice. Requiring "severed ≠ k" in the gate as
+well (v3 did) costs 1.5 → 2.3 ms and is now `solve()`'s preference instead — which is why the
+"severed = n" row moved 9.8 → 14.0 % while severed appears as a demo rival only 0.2 % of the time.
+
+### What a demo-less player can infer about the answer's shape
+
+Everything except the rule, and now one thing more than in v3: the caption says the word **slices**,
+so a player who has never seen a demo knows the answer is the clue's picture cut into pieces, not a
+fish moved or a creature removed — which is precisely the step that ate eight finals. Bars down the
+tray at a few columns is a well-formed answer and scores **10.8 %** by accident, the foothold that
+stops a team concluding the grader is exact-match. What the caption cannot give them is *which* cuts:
+that the digit counts slices holding **two or more** of the clue's letter, and above all that a piece
+the knife goes through belongs to **both** sides.
+
+### Prediction and levers
+
+Two Opus players in a 7-class pool: the one who spends a demo should crack it in round 2–3 rather
+more than half the time (the demo now carries the whole sentence and the near-misses pay 50–62 %
+instead of 34–44 %, so probing converges); the one who does not should sit at 8–15 % from the
+foothold and — this is the new thing — should at least be *cutting the tray* rather than swimming
+fish. Predicted mean final 45–65 %, i.e. the first version of this class at real risk of `too_easy`
+rather than `too_hard`.
+
+Levers if it drifts, in order of measured effect. **Too easy:** (i) six toppings a row instead of
+five (18 pieces, the named one 7–9) on a 30–36 tray — measured on 300 clues, that alone takes the
+three halves-convention rows from 50/62/91 % to **32/37/15 %** and "severed = n" to 11 %, with every
+template under 40 %, at the price of generate 1.5 → 3.2 ms and 0.4 % empty clues; (ii) 3-cell
+toppings again (rows back to v3's 34/44/86 %, but the fish come back with them); (iii) require the
+counted slice to hold nothing but that topping; (iv) narrow the rarity band to 2–8 of 40 (blind floor
+~5 %); (v) two toppings and two digits as in v2 (blind play ~3 %). **Too hard:** put "severed ≠ k"
+back into `generate()`'s gate (1.5 → 2.3 ms); force one of the two pieces on the counted slice to be
+whole in `generate()` too (2.0 ms, demo whole+half 77 % → 100 %); widen the rarity band.

@@ -8476,7 +8476,7 @@
    "version": 2
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "tovel",
    "id": "players-canvas-pool-1",
    "kind": "players",
@@ -8489,7 +8489,7 @@
     "virel",
     "fennick"
    ],
-   "note": "canvas classes only, so demos must land on them | picker chose sonnet profiles (Opus profiles exhausted on tovel); agents were launched on Opus with the same primings, relabelled",
+   "note": "canvas classes only, so demos must land on them | picker chose sonnet profiles (Opus profiles exhausted on tovel); agents were launched on Opus with the same primings, relabelled | team a finished; one live agent remaining",
    "pool": {
     "basten": 3,
     "fennick": 3,
@@ -8574,6 +8574,39 @@
    "id": "judge-borsel-v2-4c61",
    "kind": "judge",
    "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "tresk",
+   "id": "players-lineup-pool-1",
+   "kind": "players",
+   "members": [
+    "tresk",
+    "wisbek",
+    "tavrik",
+    "dornic",
+    "borsel",
+    "fennick",
+    "garrow"
+   ],
+   "note": "first lineup pool: five converted rule-family classes + fennick + garrow",
+   "pool": {
+    "borsel": 2,
+    "dornic": 2,
+    "fennick": 3,
+    "garrow": 3,
+    "tavrik": 2,
+    "tresk": 2,
+    "wisbek": 2
+   },
+   "run": "lad-tresk-v2-1",
+   "started": 1788583826.6332,
+   "status": "running",
+   "teams": {
+    "tresk1a": "opus-lowdemo",
+    "tresk1b": "opus-theorist"
+   },
    "version": 2
   }
  ],

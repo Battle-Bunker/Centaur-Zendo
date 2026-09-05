@@ -7790,6 +7790,26 @@
    "kind": "refiner",
    "status": "pending",
    "version": 2
+  },
+  {
+   "id": "refiner-tresk-v1-lineup",
+   "kind": "refiner",
+   "class": "tresk",
+   "version": 1,
+   "agents": 1,
+   "status": "running",
+   "started": 1788579542.7689595,
+   "reason": "lineup"
+  },
+  {
+   "id": "refiner-wisbek-v1-lineup",
+   "kind": "refiner",
+   "class": "wisbek",
+   "version": 1,
+   "agents": 1,
+   "status": "running",
+   "started": 1788579542.768961,
+   "reason": "lineup"
   }
  ],
  "profiles": {

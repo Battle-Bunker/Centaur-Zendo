@@ -61,3 +61,41 @@ cards (hands of 4–6), dice (rolls of 3–5 dice), beads on a string (6–10 co
 words (4–7 letter English words: letter/vowel/position rules), clock times (`hh:mm`), tiny
 pictures (5×5 of two symbols), shopping receipts (item, price), football scores (`3-1`),
 dominoes (sets of 4), coins in a purse, playing-card layouts, weather-week strips.
+
+## Revision 2 (2026-09-05): the lineup answer
+
+**What the first run showed.** Two Opus players took no demos on the five rule-family classes and
+scored 23–97 % on them (tresk 97 %, wisbek 95 %, dornic 77 %, tavrik 66 %, borsel 58 % for the
+better player) with one method: build a pool of 200–350 candidate predicates, keep those true of
+every example, and emit an instance satisfying **all** of them at once. The true rule is somewhere
+in the pool, so the answer satisfies it by construction. Nobody named a rule; the excluded traps
+cost nothing because satisfying an extra rule is harmless. The "fresh instance" clauses (no clue
+card reused, unused length…) were the only thing that held them for a round, and players called
+those invisible and unfair — rightly, since they are not part of the rule.
+
+**The fix: make the answer a choice, not a construction.** The clue is the minimal identifying
+example set **plus a lineup of k = 4 candidate instances**, and the answer is *which one* of the
+candidates fits the hidden rule (write the candidate back verbatim, or its number). Exactly one
+candidate satisfies R. Each decoy is built to satisfy R's **rivals**: the excluded obvious rules
+that are consistent with the examples, and, where possible, as many out-of-U predicates as the
+true candidate does, so that "the candidate satisfying the most of my predicates" is a decoy at
+least as often as not. Choosing correctly requires knowing which rule the class means — the
+intersection trick has nothing to intersect. The floor is 1/k = 25 % (the foothold), a player who
+has mapped U scores 100 %, and a player with a bigger universe is fooled exactly when a decoy
+satisfies one of their surviving rules — which is the behaviour the organiser asked for.
+
+Rules for the lineup:
+1. Exactly one candidate satisfies R. Verify in generate().
+2. Every decoy fails R but satisfies at least one **excluded** rule that is consistent with the
+   examples (the trap), and at least one decoy should satisfy *more* of a reasonable outside
+   predicate pool than the true candidate does (report the rate at which "most predicates wins"
+   picks a decoy: target ≥ 40 %).
+3. Decoys must not be trivially distinguishable (same length/size as the true candidate where the
+   world has a size; no repeats of examples; drawn from the same instance distribution).
+4. The clue format: examples, a blank line, then the candidates one per line. The scorer accepts
+   the chosen candidate verbatim (whitespace-insensitive) or its 1-based index.
+5. Drop the "fresh instance" clauses — they are no longer needed and were never legible.
+6. Witness table for revision 2: pick candidate 1 / a random candidate; pick the candidate that
+   satisfies the most predicates from a broad outside pool; pick the candidate satisfying every
+   rule in U that the examples allow (the in-U intersection — must be 100 %); pick by each excluded
+   rule; a player who knows U minus its two rarest templates; the true rule.

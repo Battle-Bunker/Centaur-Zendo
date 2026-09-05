@@ -1678,6 +1678,21 @@
      },
      "score": 4.5,
      "version": 1
+    },
+    {
+     "advice": "Draw the rolls as ASCII dice pips instead of bare digits; the object reads as a row of numbers rather than dice.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.17,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -12610,6 +12625,16 @@
    "kind": "refiner",
    "reason": "kid score 2.67: letter table, not a shop; re-skin so it reads as shelves of goods",
    "started": 1788599164.5111156,
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "dornic",
+   "id": "refiner-dornic-v2-rev3",
+   "kind": "refiner",
+   "reason": "calibrated on rate (60%) but kid 3.33: sum/prime/multiple templates; apply Revision 3 with visual card relations",
+   "started": 1788599879.2974794,
    "status": "running",
    "version": 2
   }

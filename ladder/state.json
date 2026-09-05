@@ -1214,7 +1214,7 @@
    ]
   },
   "crandel": {
-   "current_version": 3,
+   "current_version": 4,
    "qual": [
     {
      "advice": "Make the drip relationship visually loud instead of requiring precise column alignment across a 30-wide grid, and cue that there are three separate counted fields.",
@@ -1261,7 +1261,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -1418,6 +1419,12 @@
      "file": "challenges/lab/crandel.json",
      "note": "v3: drips freed 0..longs; counted relation = long garment hanging over a gap between two garments below",
      "v": 3
+    },
+    {
+     "added": 1788567637.1511602,
+     "file": "challenges/lab/crandel.json",
+     "note": "v4 demo economy: empty rack with pegs in the clue, one number per rail; answer hangs the washing",
+     "v": 4
     }
    ]
   },
@@ -6149,7 +6156,7 @@
    "class": "crandel",
    "id": "players-crandel-v3-7484",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 3
   },
   {
@@ -6231,7 +6238,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788565547.5550451,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {
@@ -6343,7 +6350,22 @@
     "norvel"
    ],
    "note": "validation pool of demo-economy versions",
-   "status": "pending",
+   "pool": {
+    "basten": 3,
+    "fennick": 3,
+    "garrow": 3,
+    "kelmar": 2,
+    "norvel": 3,
+    "tovel": 5,
+    "virel": 2
+   },
+   "run": "lad-fennick-v3-1",
+   "started": 1788567637.2277143,
+   "status": "running",
+   "teams": {
+    "fennick1a": "opus-default",
+    "fennick1b": "opus-kidproxy"
+   },
    "version": 3
   },
   {
@@ -6370,6 +6392,22 @@
    "started": 1788567039.9001083,
    "status": "done",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "crandel",
+   "id": "players-crandel-v4-3a96",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "crandel",
+   "id": "judge-crandel-v4-20ef",
+   "kind": "judge",
+   "status": "pending",
+   "version": 4
   }
  ],
  "profiles": {

@@ -632,3 +632,171 @@ washing (so the foothold is itself the conjunction); or require the gap to be at
 columns wide, which removes the "any sliver counts" edge and makes the count depend on a size
 judgement. **If too hard**: make the last digit one total for the whole rack instead of one per
 line, or guarantee that in every demo one counted garment sits wholly inside a wide gap.
+
+---------------------------------------------------------------------------
+
+# crandel v4 — 2026-09-05, the demo-economy rebuild (the clue *is* the rack)
+
+## Why v3 died in the new format
+
+`lad-crandel-v3-1` (4 rounds of ~60 probes for this class, 3 demos for a 7-class pool, two
+Opus players): **0 % and 0 %**. The players' notes name both causes and they are the two the
+format shift predicted:
+
+* the clue `331/231/3` reads as "structured numbers, meaning unknown". Nothing in it says the
+  answer is a picture, let alone a rack of washing, so a demo-less player cannot even send a
+  well-formed attempt — the foothold is zero, not small;
+* the one player who spent a demo here saw "three shelves with rectangles" and had ~120 probes
+  left to rebuild a **three-digit-per-line** grammar (rows / longs / drips) *and* find the
+  counted relation. v3 was tuned for 6×450 probes and 6 demos; at 60 probes a round it is
+  unreachable.
+
+v3's difficulty was in the right place for the old channel and in the wrong place for this one.
+The rule itself (drip through the daylight between two garments below) survived the rebuild —
+it is still a sentence a kid says in a breath and still has no name. Everything around it moved.
+
+## What v4 changes
+
+**1. The clue is the empty drying rack.** No digits-with-slashes: the clue is the picture the
+answer edits.
+
+```
+==vv=vv==v===v===vv=  1     <- a rail, with the pegs already nailed on, and its number
+....................        <- air
+....................
+==v=v==vv=====vv====  0     <- the bottom rail: nothing below it, so it always says 0
+....................
+....................
+....................
+```
+
+Two pegs per garment mark where that garment's left and right edge go, so "hang the washing
+from these pegs" is readable off the clue with no demo at all. 2–3 rails (3 in 86 % of clues),
+3–4 garments per rail, 18–24 columns, 2–4 air rows under each rail, clue 119–383 chars.
+
+**2. One number per rail.** `rows` and `longs` are gone: the rails and pegs carry the widths
+and the air rows carry the gaps, so the only thing the clue still has to *say* is the drip
+count. Kept as one number because the aligned-columns template (hang the leftmost N of every
+rail all the way down) pays only **5.1 %** — nowhere near the 40 % that would have forced
+`longs` back in as a second number.
+
+**3. The whole answer is a length decision.** Positions and widths are pinned by the pegs, so
+the player chooses only *how far down each garment hangs* (1 row … all the way to the rail
+below). The scorer rebuilds the empty rack from the picture — pegs at the two ends of every
+garment in the top air row of each block, one dot row per air row, the drip count per rail —
+and compares strings, so width, row counts, peg positions and numbers are all forced.
+
+**4. Every demo teaches the rule in one look.** `solve()` draws, on the top rail, a counted
+garment dripping through a gap **beside** a long garment that lands squarely on a garment
+(not counted) and a short garment (not counted) — 400/400 demos; 55 % also show a short
+garment that *is* over a gap (so length matters) and 32 % a long garment poking past the END
+of the line below (bare floor, but not a gap: not counted). It then picks, out of 60 candidate
+drawings, the one that kills the most rival readings, weighting the bare-floor family highest.
+
+## Two demos as they render
+
+clue                                  answer
+
+```
+==vv=vv==v===v===vv=  1               ==vv=vv==v===v===vv=  1
+....................                  ..TT.HH..SSSSS...TT.
+....................                  ..TT.HH..........TT.
+==v=v==vv=====vv====  0               ==v=v==vv=====vv====  0
+....................                  ..HHH..TT.....HH....
+....................                  ..HHH..TT...........
+....................                  ..HHH..TT...........
+```
+
+Four garments on the top rail, and the number is 1. `HH` hangs all the way down into the
+daylight between `HHH` and `TT` — that one drips on the floor, and it is the one that counts.
+`TT` on the left is just as long but lands squarely on `HHH`; `TT` on the right is just as long
+but hangs past the end of the line below (floor, but not *between two things*); `SSSSS` is over
+a big gap but stops short, so it drips on nothing. One picture, one counted case, three
+near-misses.
+
+```
+==v===v=v==v=vv==vv=  1               ==v===v=v==v=vv==vv=  1
+....................                  ..DDDDD.PPPP.DD..PP.
+....................                  ..DDDDD.PPPP.DD..PP.
+....................                  ..DDDDD......DD..PP.
+....................                  ..DDDDD......DD..PP.
+==v==v=vv=v===v=====  2               ==v==v=vv=v===v=====  2
+....................                  ..DDDD.PP.TTTTT.....
+....................                  ..DDDD.PP.TTTTT.....
+....................                  .......PP.TTTTT.....
+===v=v====vv====vv==  0               ===v=v====vv====vv==  0
+....................                  ...HHH....TT....DD..
+....................                  ...HHH....TT....DD..
+....................                  ...HHH....TT........
+....................                  ...HHH....TT........
+```
+
+Rail 1 says 1: `DDDDD` reaches the rail below and hangs over the gap between `DDDD` and `PP`.
+`PPPP` is over a gap too but stops short; `DD` is long and sits on `TTTTT`; `PP` is long and
+hangs past the right-hand end. Rail 2 says 2: `PP` and `TTTTT` both reach the bottom rail over
+daylight, while `DDDD` stops short over the floor at the left.
+
+## Witness table (700 fresh clues)
+
+Every attacker knows the grammar and hangs its garments from the right pegs; they differ only
+in which garments they decide to hang all the way down. This is the right table for v4: with
+the geometry pinned, a wrong *law* is no longer a wrong picture, it is a wrong subset.
+
+| template | hit rate |
+|---|---|
+| true rule (long **and** over the gap between two garments below) | **100 %** |
+| "bare floor under part of it" (long, floor somewhere under it) | 32.6 % |
+| "not sitting squarely on one garment" | 32.3 % |
+| **every garment full length** (no rule at all) | 21.1 % |
+| **"N of them reach the line below"** (random N, the natural first reading) | 21.0 % |
+| "overlaps something below" (the v2 rule) | 16.7 % |
+| **random hems** | 13.1 % |
+| "fully covers something below" | 7.3 % |
+| **aligned columns** (leftmost N of each rail hang full) | 5.1 % |
+| "lands on two or more garments" | 3.6 % |
+| one fixed answer for every clue | 0.1 % |
+| clue returned unchanged · every garment one row · demo replay · junk | 0.0 % |
+
+Foothold rows (what a demo-less player who reads the rack off the clue gets): **21 %** from
+"N of them reach the line below", **21 %** from hanging everything down, **13 %** from random
+hems — inside the 5–30 % band the brief asks for, and no template above ~33 %, so nothing is
+close to the 50 % ceiling. Clues never repeat (20 000 distinct in 20 000 seeds), so there is
+nothing to cache; the no-insight ceiling really is ~21 %.
+
+Hypothesis elimination, **one** demo (500 demos, % of demos that kill the reading): "hangs all
+the way down" 100 %, "every garment" 100 %, "lands on two or more" 99.8 %, "straddles the whole
+gap" 99.8 %, "over a gap and touching nothing" 98.8 %, "nothing at all under it" 95.4 %, "lands
+on something below" 94.2 %, "completely covers something" 93.2 %, "lands on exactly one"
+93.2 %, "3 or more wide" 85.2 %, "bare floor under part of it" 83.4 %, "not sitting squarely"
+83.4 %, "the ones that stop short" 80.2 %, "over a gap however long it is" 79.6 %, "over a gap
+2+ wide" 77.6 %. One demo leaves about two live rivals out of sixteen, and both are one
+probing round from death — which is the shape a 2-round crack needs.
+
+## Validation
+
+`python tools/quickcheck.py challenges/lab/crandel.json --seeds 200` → **OK, no warnings**
+(`gen=0.88 ms score=0.11 ms solve=3.02 ms` worst of 200). Sizes: **score 503/512**, solve
+4918/5000, generate 3541, clue ≤ 383/1024, solution ≤ 383/1024. `generate` mean **0.34 ms**,
+p95 0.58 ms, max 1.9 ms over 5000 seeds, deterministic. `solve()` scores 1 on **2000/2000**
+fresh clues (mean 1.5 ms, max 3.7 ms) and verifies every picture against a mirror of the scorer
+before shipping it. `score` on **32 000** strings (demos, mutated demos, shuffled/reversed/
+truncated demos, random rubbish, the clue itself, empty): 0 raises, 0 non-binary, 0 false
+positives, worst 0.13 ms, and **0 disagreements** with an independent column-scanning
+re-implementation written from the spec.
+
+## Predicted classification
+
+**Testing, expected mean final 30–55 %.** A player who spends a demo here should crack it in
+about two rounds half the time: the picture is unmistakable, the rule is one clause, and the
+demo kills fourteen of sixteen neighbouring readings on its own. A player who does not should
+still send well-formed racks and score ~20 % from "N of them reach the line below", which is
+exactly the edge-of-needing-a-demo position the format asks for. The risk on the easy side is
+that "bare floor under part of it" pays 33 % and is a *cheap* thought, so a player who never
+finds the gap clause can still look partial; the risk on the hard side is that hanging washing
+from pegs is a convention that has to be guessed before any of that pays.
+
+**Levers if it comes out too easy**: put an S (squarely-lander) on every rail rather than only
+the top one, which lowers the bare-floor family further; or demand that the gap be at least two
+columns wide, making the count a size judgement. **If too hard**: raise the share of two-rail
+racks (one number instead of two) and let `solve()` always hang the end-poker long, which turns
+the strongest survivor into a dead rival in every demo.

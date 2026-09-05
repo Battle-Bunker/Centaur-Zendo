@@ -7090,7 +7090,7 @@
    },
    "run": "lad-fennick-v3-1",
    "started": 1788574661.219013,
-   "status": "running",
+   "status": "done",
    "teams": {
     "fennick1a": "opus-default",
     "fennick1b": "opus-kidproxy"
@@ -7193,6 +7193,39 @@
    "kind": "judge",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-econ-pool-3",
+   "kind": "players",
+   "members": [
+    "tovel",
+    "fennick",
+    "basten",
+    "virel",
+    "kelmar",
+    "garrow",
+    "norvel"
+   ],
+   "note": "validation pool, second pair (lowdemo/theorist)",
+   "pool": {
+    "basten": 3,
+    "fennick": 3,
+    "garrow": 3,
+    "kelmar": 2,
+    "norvel": 3,
+    "tovel": 5,
+    "virel": 2
+   },
+   "run": "lad-tovel-v5-2",
+   "started": 1788577830.426947,
+   "status": "running",
+   "teams": {
+    "tovel2a": "opus-lowdemo",
+    "tovel2b": "opus-theorist"
+   },
+   "version": 5
   }
  ],
  "profiles": {

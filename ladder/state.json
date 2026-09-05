@@ -4654,7 +4654,23 @@
   "ospren": {
    "current_version": 2,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Skin the grid as a concrete kid object (quilt square, flag, mosaic tile) so the property reads as a thing and the Bongard/IQ-test silhouette blurs.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.33,
+     "version": 2
+    }
+   ],
    "refined_versions": [
     1
    ],
@@ -9164,23 +9180,23 @@
    "version": 2
   },
   {
+   "agents": 1,
+   "class": "tovel",
    "id": "refiner-tovel-v5-oneclause",
    "kind": "refiner",
-   "class": "tovel",
-   "version": 5,
-   "agents": 1,
-   "status": "running",
+   "reason": "too_hard",
    "started": 1788585467.0109494,
-   "reason": "too_hard"
+   "status": "running",
+   "version": 5
   },
   {
+   "agents": 1,
+   "class": "ospren",
    "id": "judge-ospren-v2-man",
    "kind": "judge",
-   "class": "ospren",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
-   "started": 1788585467.0109506
+   "started": 1788585467.0109506,
+   "status": "done",
+   "version": 2
   }
  ],
  "profiles": {

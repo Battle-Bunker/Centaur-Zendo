@@ -99,6 +99,11 @@ Rules for the lineup:
    decoys fire exactly the same set of example-consistent excluded rules), otherwise "pick the
    candidate that satisfies the fewest excluded rules" is a free crack. With matched profiles every
    trap heuristic scores exactly chance and the only way up is reconstructing U.
+5c. Measured on dornic v2: the *rarity-weighted* intersection (score each surviving outside
+   predicate by −log of its base rate and pick the candidate with the highest total) is the
+   smarter sibling of the count attack and is harder to blunt — 47 % on dornic after tuning,
+   because the hidden rule is by construction the rarest thing the examples share. Test it in
+   every lineup class; templates with two-step readouts (sums of a colour, primes) resist it best.
 6. Witness table for revision 2: pick candidate 1 / a random candidate; pick the candidate that
    satisfies the most predicates from a broad outside pool; pick the candidate satisfying every
    rule in U that the examples allow (the in-U intersection — must be 100 %); pick by each excluded

@@ -1753,7 +1753,7 @@
    ]
   },
   "dornic": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -1771,6 +1771,9 @@
      "score": 3.67,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1854,6 +1857,12 @@
      "file": "challenges/lab/dornic.json",
      "note": "v1 rule family (cards): 17 templates, |U|=91, fresh-cards clause; scorer 1016 chars",
      "v": 1
+    },
+    {
+     "added": 1788582807.276687,
+     "file": "challenges/lab/dornic.json",
+     "note": "v2 lineup: 4 candidates, fresh-cards clause dropped; count attack 77%->31%, rarity-weighted 47%",
+     "v": 2
     }
    ]
   },
@@ -8131,7 +8140,7 @@
    "class": "dornic",
    "id": "judge-dornic-v1-3bfe",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -8356,7 +8365,7 @@
    "kind": "refiner",
    "reason": "lineup",
    "started": 1788580989.4269178,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -8480,6 +8489,32 @@
    "agents": 1,
    "class": "tavrik",
    "id": "judge-tavrik-v2-b9cc",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "ospren",
+   "id": "refiner-ospren-v1-lineup",
+   "kind": "refiner",
+   "reason": "lineup",
+   "started": 1788582807.3089488,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "dornic",
+   "id": "players-dornic-v2-f755",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "dornic",
+   "id": "judge-dornic-v2-3637",
    "kind": "judge",
    "status": "pending",
    "version": 2

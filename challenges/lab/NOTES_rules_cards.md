@@ -239,3 +239,237 @@ comes back too hard, raise the ceiling and add a fourth example more often.
 that obeys the rule; and a kid can contribute hypotheses ("count the hearts — nope, try the
 picture cards"). The nameable-pattern risk is real (these *are* nameable rules), but the difficulty
 lives in the size of U and the excluded set, not in any single rule being obscure.
+
+---
+
+# 2026-09-05 — revision 2: the LINEUP answer (`dornic` v2)
+
+v1 is kept byte-identical as `challenges/lab/dornic.v1.json`; the shipped file is
+`challenges/lab/dornic.json`. Paradigm change per `docs/RULE_FAMILIES.md` §"Revision 2".
+
+## 9. What changed
+
+| | v1 | v2 |
+|---|---|---|
+| clue | 2–5 example hands | 2–4 example hands, a blank line, **4 candidate hands** |
+| answer | *construct* another hand obeying the rule | **choose** the candidate that obeys it (verbatim or index 1–4) |
+| well-formedness | 4–6 distinct cards, **no card from the clue** | none — the answer is a choice; the fresh-cards clause is **gone** |
+| floor | ~11 % (a random fresh hand) | 25 % (one of four) |
+| U | 17 templates, 91 rules | **unchanged** |
+| template weights | prime / colour-sum family 19 % of clues | **42 %** (the one defence that worked; see §11) |
+| `score` | 1016 chars | **905** |
+
+**Why.** The round-1 winner (team `dornic1b`, leaderboard rank 1) took no demo and scored **77 %**
+on v1 without ever naming a rule: keep every predicate of a 359-strong pool that is true of all
+the examples, then emit a hand satisfying all of them at once — the hidden rule is in the pool,
+so the answer obeys it by construction. Their own notes are blunt that the *fresh-cards clause*,
+not the rule, was the difficulty (`dornic — the answer must use cards not in the clue: 0/10 → 27/33`).
+A choice among four kills the construction: the intersection has nothing to intersect.
+
+**Dropping the fresh-cards clause (the brief asked for a decision).** Dropped entirely — candidates
+may reuse clue cards or not. The v1 clause existed to close "copy an example, change one card",
+which a lineup closes for free (no candidate is an example, checked 500/500). The "copy the
+minutes"-style leak the brief warns about is the risk that the *true* candidate is distinguishable
+by its relationship to the clue's cards; it is not present, because the truth and the decoys are
+drawn from the same 6000-hand pool with the same filters. Measured over 500 clues: the true
+candidate shares **no** clue card on 19.4 % of clues, decoys on 18.6 %; the witness "pick the
+candidate sharing the most clue cards" scores **26.8 %** and "sharing none" **25.0 %** — both at the
+floor. Constraining the overlap would have been a *new* invisible convention, exactly what
+revision 2 removes.
+
+## 10. How the lineup is built (revision-2 rules 1–5)
+
+1. **Exactly one candidate obeys the rule** — verified in `generate` on every clue (500/500).
+2. Every decoy **fails** the rule and is an instance of at least one **excluded** rule consistent
+   with the examples, or else lies inside the clue's total range (the trap that always fits)
+   — 500/500.
+3. **No shape tell.** All four candidates have the **same number of cards**, are four distinct
+   hands, and none is one of the examples (500/500 each). The true candidate's position is
+   uniform (127 / 127 / 125 / 121 over 500).
+4. **The count defence.** `generate` carries the winner's own pool (`dornic_preds()`, 359
+   predicates, verbatim) plus a base rate per predicate measured on its own hand pool. It scores
+   every candidate by a **rarity-weighted** count of the pool predicates that survive the examples
+   (raw count breaks ties) and aims the **rank** of the true candidate by that score: over up to
+   five different minimal example sets and two hand sizes it prefers a lineup where at least one
+   decoy out-scores the truth, and takes rank 0 only when the clue cannot support better.
+   Decoys are drawn both at random and **targeted** at the tight surviving predicates through a
+   per-predicate hand index, so a decoy can carry a rare property that every example shares.
+5. Minimality and uniqueness inside U are unchanged from v1 and still verified 500/500. Example
+   sets are still ranked by how many **excluded** templates they leave alive.
+
+## 11. The finding: a lineup beats the *count*, only blunts the *rarity-weighted count*
+
+The direct port of the round-1 attack — "pick the candidate satisfying the most surviving
+predicates" — is beaten: **31.2 %** (floor 25 %), with at least one decoy strictly out-counting the
+truth on **66.2 %** of clues (revision 2 asks ≥ 40 %). "Fewest" scores 23.4 %, so the count is not
+reversible either.
+
+But the *smarter* version of the same attack is not beaten. Weight each surviving predicate by
+−log(its base rate) — the natural Bayesian reading of "the hidden rule is one of my survivors",
+and correct here because the hidden rule is by construction a tight predicate — and the attack
+scores **47.2 %**. It started at **74 %** on the first build of v2.
+
+**Why it cannot be pushed to the floor.** On the clues where the hidden rule is itself expressible
+in the attacker's pool, it is the rarest thing all the examples share, and *no* hand that fails it
+can look as specially chosen. Exhaustive search over the whole 6000-hand pool, over 40 different
+minimal example sets per rule and all three hand sizes, says how beatable each template is:
+
+| template | some decoy can out-score the truth on rarity |
+|---|---|
+| total is prime, red/black total is prime, red/black total is a multiple of *y* | **100 %** (the pool has no colour-sum and no primality predicate) |
+| exactly *n* hearts/…/spades, *n* red, *n* even | 25–50 % |
+| *n* pictures, *n* different suits, highest = *n*, lowest = *n*, highest−lowest = *n*, total = *n*, total a multiple of *y* | 0–15 % |
+
+Three things were tried:
+
+* **Targeted decoys** (a per-predicate index so a decoy can carry a rare surviving property):
+  kept, worth ~1 point on its own.
+* **An "anchor"** — force every example to share a *second* tight property drawn from the
+  attacker's pool but absent from U, so the clue carries two coincidences and a decoy can carry
+  the wrong one. **Measured and discarded**: anchored example sets almost never pin a unique rule
+  of U any more (**10 usable sets out of 310 attempts**), because the pool's tight predicates are
+  U's own readouts (`maxr=k`, `cntS=k`, `span=k`…), so anchoring one keeps another U rule alive.
+* **Re-weighting the templates toward the two-step readouts** (filter by colour, add up, test for
+  prime or for a multiple): prime/colour-sum rules go from 19 % to 42 % of clues, and the
+  rarity attack falls **61 % → 47.2 %**. Kept. This is the one lever that worked, and it is a
+  genuine difficulty dial rather than an over-fit to one player's pool: a rule over a *derived*
+  quantity is harder for any predicate pool to enumerate than a rule over a directly visible
+  count. The cost is legibility — half the clues are now "the black cards add up to a multiple of
+  five" rather than "there are exactly two spades". Halving the shift costs about 8 points.
+
+**This is expected to apply to `wisbek` and `tresk` too** — both were tuned against the *unweighted*
+count only, and neither measured the rarity-weighted witness. Worth re-measuring there before the
+next arena; if it reproduces, the general lesson for revision 2 is that a lineup is only as strong
+as the gap between U and the attacker's *prior*, not the gap between U and their *hypothesis space*.
+
+## 12. Three demos
+
+```
+CLUE                          LINEUP                   ANSWER          hidden rule (private)
+
+4S 7H 8C 9D JH QC             AC 8C 9S QH
+5D 7C QH KC                   2H 3H JD QH          ->  2H 3H JD QH     there are exactly
+4D 10S JD KD                  6D JS QC KS              (index 2)       2 picture cards
+                              AD 6S 9C JD
+------------------------------------------------------------------------------------------
+5H 6S 7C KH                   5H 10C JH JD QD
+AH AD AS 3D 9H                7D 9D 10S JD KD      ->  2H 9H 9C 10H    the highest minus
+4S 9S 10H JC QD               2H 9H 9C 10H 10C         10C (index 3)   the lowest is 8
+                              2H 6H JD QS KD
+------------------------------------------------------------------------------------------
+AS 6S 9H 10D 10C              AD 7S 9H 10S
+AC 3H 9C JC                   AD 6S 9C JD          ->  7H 7S 8C JS     the red cards add up
+4H 6H 8H KD                   7H 7S 8C JS              (index 3)       to a prime number
+                              2D 6S 8H 10C
+```
+(seeds 4, 11, 26; answers straight from `solve`. Note the second lineup: every candidate has five
+cards, three of them keep the clue's "the highest card is red", and `5H 10C JH JD QD` carries the
+pair trap — only the span of 8 separates the true one. Note the third: the value convention bites,
+`7H` alone is a prime red total of 7, while `AD 7S 9H 10S` has red total 1+9 = 10.)
+
+## 13. Witness table — 500 fresh clues (seeds 1 000 000 – 1 000 499)
+
+The answer is a choice among four, so the floor is **25 %** and there is no well-formedness column.
+
+| witness | score |
+|---|---|
+| **the true rule (`solve`)** | **100.0 %** |
+| **the in-U intersection** (the candidate satisfying every rule of U the examples allow) | **100.0 %** |
+| a player who knows U minus its 2 rarest templates (`total = n`, `n different suits`) | 97.2 % |
+| universe = U + the excluded templates, pick one surviving hypothesis uniformly | 67.4 % |
+| **MOST surviving pool predicates, weighted by rarity (−log base rate)** | **47.2 %** |
+| … the same, scored by the generator's own weighting (diagnostic) | 47.0 % |
+| **MOST surviving pool predicates (the round-1 attack, 359 preds)** | **31.2 %** |
+| the candidate satisfying the FEWEST example-consistent excluded traps | 30.8 % |
+| EXCLUDED: all one colour (fits 0.0 % of clues) | 30.4 % |
+| the candidate with the biggest total | 28.6 % |
+| EXCLUDED: no picture cards (fits 8.8 %) | 27.8 % |
+| the candidate sharing the MOST cards with the clue | 26.8 % |
+| **pick a random candidate (the floor)** | **26.4 %** |
+| EXCLUDED: more red cards than black (fits 11.4 %) | 25.8 % |
+| **pick candidate 1** | **25.4 %** |
+| EXCLUDED: nothing below a 5 (fits 4.2 %) | 25.2 % |
+| the candidate sharing NO card with the clue | 25.0 % |
+| EXCLUDED: all one suit (fits 0.0 %) | 25.0 % |
+| the most common U-rule ignoring the examples (`1 heart`) | 24.2 % |
+| the candidate whose total is nearest an example total | 23.4 % |
+| the candidate satisfying the FEWEST surviving pool predicates | 23.4 % |
+| the candidate satisfying the MOST example-consistent excluded traps | 23.2 % |
+| EXCLUDED: the highest card is red (fits 39.6 %) | 22.6 % |
+| EXCLUDED: no two cards next to each other in value (fits 5.0 %) | 22.6 % |
+| EXCLUDED: no two cards share a number (fits 31.0 %) | 22.2 % |
+
+True-candidate rank by pool-predicate count over the 500 clues: **169 / 119 / 103 / 109**
+(rank 0 = the truth is the sole top scorer; it is the residue of clues where the rule is
+unbeatable on rarity, and it is where the counting attack is still worth something).
+
+Other measured numbers:
+
+* uniqueness 500/500, minimality 500/500, exactly one candidate obeys the rule 500/500;
+* same hand size 500/500; no candidate equal to an example 500/500; four distinct candidates
+  500/500; examples pairwise card-disjoint 500/500;
+* every decoy an instance of a consistent excluded rule or inside the clue's total range 500/500;
+* example counts (2000 seeds): 2 → 13.5 %, 3 → 81.9 %, 4 → 4.6 % (v1: 14 / 82 / 4);
+* mean hit-rate of the hidden rule on a random hand **0.199** (v1: 0.179);
+* hidden-rule template mix over 500: suit count 57, black-total multiple 47, red-total multiple 44,
+  total prime 43, black-total prime 43, span 43, lowest 41, red-total prime 35, highest 32,
+  total multiple 28, red count 25, even count 25, pictures 16, different suits 13, total = n 8.
+
+## 14. Validation
+
+`python tools/quickcheck.py challenges/lab/dornic.json --seeds 300` →
+`OK dornic  gen=2.07ms score=0.16ms solve=0.19ms`, **no warnings** (the 1024 scorer cap is now
+the quickcheck default, so no `--cap` override is needed).
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **905 chars** (v1: 1016) | 1024 (the rule-family raise) |
+| `generate` source | 17 611 | 50 000 |
+| `solve` source | 1 256 | 5 000 |
+| `generate` | **0.65 ms mean**, 3.2 ms max over 2000 seeds | 100 ms |
+| `score` | 0.18 ms | 50 ms |
+| `solve` | 0.09 ms mean, 0.17 ms max | 2 000 ms |
+| clue | ≤ 138 chars | 1024 |
+| answer | ≤ 19 chars | 1024 |
+
+The 6000-hand pool with its 91-bit U mask, 8-bit trap mask and 359-bit attacker-pool mask costs
+**≈ 2.5 s once per worker** at module level and is not charged to `max_generate_ms`; that is 10×
+v1's 220 ms and is the price of scoring every hand against the attacker's 359 predicates. A call
+is then a handful of integer ANDs, `bit_count`s and two `bisect`s.
+
+`score` was checked on 500 clues × every candidate (exactly one scores 1 each time, 500/500) and
+rejects `''`, `x`, `0`, `5`, `9`, `1 2`, `1`×100, the clue, the example block alone, a unicode
+digit, a malformed hand, a well-formed hand not in the lineup, and a candidate with a card added
+or removed. It forgives surrounding and internal whitespace and accepts a 1-based index.
+`solve` re-derives the survivor exactly as the scorer does and returns the true candidate verbatim.
+
+## 15. Predicted classification
+
+**Calibrated, and materially harder than v1** (which was measured at 77 % — too easy).
+Two Opus players, 7-class pool, 4 rounds:
+
+* **Without a demo**: the shape is self-evident (hands, a gap, four hands, pick one), so every
+  probe is well formed from round 1 and the floor is a free **25 %**. The round-1 method degrades
+  to counting surviving predicates: **31 %**. A team that thinks to weight its predicates by
+  rarity — and this team already computed base rates in round 1 — reaches **47 %**. Expect
+  **30–50 %**.
+* **With a demo**: a demo now teaches nothing about a *convention* (there is none left) — only the
+  format. The way up is to reconstruct U, and the moment a player filters U correctly they score
+  **100 %**, because the in-U intersection is exact. 91 rules over 17 templates from 2–4 example
+  hands is a lot, and the prime / colour-sum half of the class is the part nobody enumerates by
+  default. Expect **40–65 %**.
+
+Mean across the two ≈ **0.35–0.55** → `calibrated`, with the risk on the **easy** side and named:
+the rarity-weighted attack at 47 % is a free half-mark for a thoughtful team. Levers if it comes
+back too easy: (i) push the two-step templates further (60 % of clues would put the rarity attack
+near 40 %, at a real cost in kid-legibility); (ii) add colour-sum *parity* and "the picture cards
+add up to…" templates to U — more of the class outside any natural pool. Too hard: (iii) go to
+k = 3 candidates (floor 33 %); (iv) let one decoy instantiate a rule of U that all but one example
+allows, so a partly-mapped player is rewarded rather than punished.
+
+**12-year-old test**: the object is still a hand of cards; every rule is still one breath ("there
+are exactly two picture cards", "the red cards add up to a prime number"); and "which of these four
+fits?" is an easier question to ask a child than "make me another one" — the four candidates are
+themselves a hint about what kind of thing the rule can be. The cost of the re-weighting is that
+more clues now need mental arithmetic over a colour-filtered subset; that is the class's hardest
+edge and it is where a kid needs the grown-up.

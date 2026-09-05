@@ -1276,7 +1276,23 @@
   "borsel": {
    "current_version": 1,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Render rolls as dice-pip glyphs so the object reads as dice at once; keep leaning toward Yahtzee-style categories.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 4,
+      "rule_statable": 5
+     },
+     "score": 4.5,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

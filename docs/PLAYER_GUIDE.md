@@ -141,7 +141,10 @@ clue:                              answer:
 
 The clue is an empty box drawn in ASCII plus a line of text; the answer is the
 same drawing with three `o` pebbles placed by some rule you have to discover
-(which cells score is the puzzle — the *format* is not). Other classes want a
+(which cells score is the puzzle — the *format* is not). **House rule:** for a
+picture class the answer is the clue's picture with the edit applied; the
+trailing text line of the clue may be kept or left out — the scorer ignores it
+either way. Other classes want a
 list of words, a single number, or a grid the same size as the clue's. When a
 clue is nothing but a code like `B12`, the class is telling you it needs a demo.
 

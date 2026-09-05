@@ -23,7 +23,10 @@ carries the uncut / unfilled / unmarked picture and the answer is *the same pict
 garrow's clue is the whole pizza and the answer adds knife lines; fennick's clue is the shelf and
 the answer draws the books; norvel's clue is the kick row and the answer adds the snare row under
 it. A player who has never seen a demo can still send back the clue's picture with a plausible
-edit, which is a well-formed attempt (the foothold), and the demo then teaches the rule. A clue
+edit, which is a well-formed attempt (the foothold), and the demo then teaches the rule.
+House rule (published in the player guide, 2026-09-05): the scorer must accept the answer with
+the clue's trailing parameter line kept OR dropped — a validation player lost rounds to that
+inconsistency across classes. Test both in the witness table. A clue
 that is only digits (morvin v2: `1|8|7|9/3`) tells a demo-less player nothing about the drawing
 convention and scores 2/5 on `clue_shape`; prefer drawing the object into the clue over adding
 legends or labels.

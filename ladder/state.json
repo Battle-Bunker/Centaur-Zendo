@@ -4500,6 +4500,21 @@
     }
    ]
   },
+  "kaldrin": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788604795.5648835,
+     "file": "challenges/lab/kaldrin.json",
+     "note": "designer rule-family (Revision 3): goods train, loads x heaped/flat; 13 templates/30 rules, k=5; simulated attacker 31-51%",
+     "v": 1
+    }
+   ],
+   "paradigm": "rule_family"
+  },
   "kelmar": {
    "current_version": 3,
    "qual": [
@@ -13301,7 +13316,7 @@
    "id": "designer-rulefamily-train",
    "kind": "designer",
    "started": 1788600939.8514416,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {
@@ -13374,12 +13389,12 @@
   {
    "agents": 1,
    "class": "new-14",
+   "direction": "toys and building (second pass, checksum-caption house style)",
    "id": "designer-new-14-man",
    "kind": "designer",
-   "version": null,
-   "status": "running",
    "started": 1788603499.6958728,
-   "direction": "toys and building (second pass, checksum-caption house style)"
+   "status": "running",
+   "version": null
   },
   {
    "agents": 1,

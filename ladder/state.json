@@ -4722,7 +4722,23 @@
   "kaldrin": {
    "current_version": 1,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Swap one of the two counted cheap slope templates for a visual cheap rule (e.g. the wagon behind the engine is heaped).",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.5,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

@@ -4926,7 +4926,7 @@
    ]
   },
   "molvic": {
-   "current_version": 2,
+   "current_version": 3,
    "qual": [
     {
      "advice": "Demo picture is dense (7-14 strays across 5 shelves) so the in-line+mutual signal is buried; fewer decoys or stronger visual emphasis on the swapping column.",
@@ -4960,7 +4960,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -5050,6 +5051,12 @@
      "file": "challenges/lab/molvic.json",
      "note": "refiner: in-line mutual strays go home to the first gap on their own shelf, a full shelf refuses; caption 'n home'; 4 shelves, 5-8 strays; blind v1 rule 0%",
      "v": 2
+    },
+    {
+     "added": 1788600072.8051145,
+     "file": "challenges/lab/molvic.json",
+     "note": "re-skin: labelled shelves, 3-letter goods, ___ gaps, shop sign; rule byte-identical to v2",
+     "v": 3
     }
    ]
   },
@@ -12625,7 +12632,7 @@
    "kind": "refiner",
    "reason": "kid score 2.67: letter table, not a shop; re-skin so it reads as shelves of goods",
    "started": 1788599164.5111156,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

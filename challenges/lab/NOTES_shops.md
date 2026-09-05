@@ -256,3 +256,214 @@ home") only makes sense once you believe the good *moves* — and then buy the l
 with live probes. If a pair of demo-holders comes back at 0–10 %, soften with the JSON's "too
 hard" levers: draw one good already put away in the clue as a worked instance, or give every
 mover's shelf exactly one gap so that "the first gap" is just "the gap".
+
+---------------------------------------------------------------------------
+
+## Re-skin record — `molvic` v3 (2026-09-05, refiner)
+
+v2 kept as `challenges/lab/molvic.v2.json` (byte-identical copy); v3 is `challenges/lab/molvic.json`.
+**The rule, the counts, the plants, the foothold and the witness profile are untouched.** Only the
+drawing changed. This is garrow v4's move (NOTES_kitchen.md §v4: the tray that read as a fish tank)
+applied to the shop: DESIGN_LOOP lever 9, *salience beats rule changes*.
+
+### Why: the judge did not see a shop
+
+molvic v2 scored **kid 2.67** (object 2, fun 2, kid_contributes 2, rule_statable 3, clue_shape 4):
+
+> "Rule engineering excellent but the rendering is an abstract letter table … a grid of capital
+> letters between `|` and `+---+` is a data table, not a drawing of a shop shelf; a kid would say
+> *'rows of letters where one letter repeats a lot'*, not *'oh, a shop!'*; comparing two dense
+> letter grids character by character is a chore."
+
+v1 had already been marked down for the same family of thing (kid 3.67, "dense, 7–14 strays, the
+swap signal is buried"). v2 fixed the density (4 shelves, 5–8 strays) and the judge still called it
+a table, so the remaining problem was not *how much* is drawn but *what the glyphs are*. Three
+things in v2 were doing damage at once: (a) a shelf's identity had to be **tallied** — you found
+the majority letter of a row before you could say what the shelf was for; (b) a stray was a single
+capital among other single capitals, so finding one meant reading columns; (c) an empty slot was a
+**blank**, i.e. nothing, so "the first empty slot on its own shelf" — half the rule — pointed at
+something invisible.
+
+### What v3 draws
+
+```
+     +=========== THE CORNER SHOP ===========+
+COD  |cod cod cod cod cod cod rye wax cod cod|
+     +---------------------------------------+
+RYE  |rye rye rye cod log rye ___ rye ___ rye|
+     +---------------------------------------+
+LOG  |log log log log rye log log wax log log|
+     +---------------------------------------+
+WAX  |___ wax wax wax wax ___ wax cod wax ___|
+     +---------------------------------------+
+2 home
+```
+
+1. **The home shelf is written, not inferred.** `COD  |`, `RYE  |`, `LOG  |`, `WAX  |` at the left
+   edge. "It goes home" is now a place you can point at. (The majority still wins by ≥ 2 on every
+   row — verified on 1200 clues — so the written and the tallied reading never disagree; the scorer
+   simply reads the label, which is *cheaper*: 496 chars against v2's 494 with a majority in it, and
+   immune to a hash-order tie.)
+2. **Goods are lowercase 3-letter words that match the label.** `cod cod cod … rye wax cod` instead
+   of `C C C … R W C`. A stray is now a different **word** in a row of identical words; the eye
+   lands on `rye wax` in the COD row without counting columns. Lowercase goods under a capital
+   label also make the label unmistakably a label and not another good.
+   The 21 kinds are three-letter shop goods, one per letter of the old alphabet, so the first
+   letter still identifies the kind and nothing downstream changed: `ale bun cod dip egg fig gum ham
+   jam keg log mop nut pie rye soy tea urn veg wax yam`.
+3. **The gap is a thing you can point at**: `___`, not a blank. "The **first** empty slot on its own
+   shelf" is the half of the rule that must be bought with a demo, and it now has a visible object
+   with a position in the clue. Measured: **100 %** of movers land on a gap that is drawn `___` in
+   the clue, so both ends of every edit are visible before the answer is drawn (new plant P9).
+4. **Full is loud.** A full shelf is a solid run of one word — `log log log log rye log log wax log
+   log` has no `___` anywhere — so "there's nowhere to put it" is a property of the picture, not a
+   scan. Above, `wax` sits on the COD shelf and `cod` sits on the WAX shelf in slot 7: the `wax`
+   goes home (WAX has gaps, first one is slot 0), the `cod` cannot, because the COD shelf is solid.
+5. **Flavour that carries nothing.** The fixed sign `THE CORNER SHOP` is set into the top edge of
+   the unit. It is identical in every clue apart from its width (which the shelf edges already
+   show), so it can carry no information; it is there so that the first two seconds of looking end
+   in "that's a shop". No price tags: they would widen the row without adding a reading.
+
+Not changed: 4 shelves, 9–11 slots, 5–8 strays, ≤ 3 strays per shelf, one or two full shelves, 2–3
+gaps on the others, the `<n> home` checksum caption, the ~12 % `0 home` foothold, plants P1–P8, and
+the "no two movers want the same shelf" guard. `generate()` makes the same decisions in the same
+order from the same RNG stream as v2 — only the last five lines, which render the picture, differ.
+
+### Proof that nothing moved: v3 is a relabelling of v2
+
+For 2000 consecutive seeds, v2's and v3's clues were reduced to the same abstract object (per row
+and slot: *the shelf's own kind* / *a gap* / *the index of the shelf this good belongs to*) plus n.
+**0 structural mismatches**, identical n on every seed, identical n distribution.
+
+### Witness table, v2 → v3 (1500 fresh clues each, seeds 4 000 000–4 001 499, shipped scorers)
+
+Same 34 templates as the v2 record, run against both builds in the same process.
+
+| template (rendered with the true drawing convention unless marked BLIND) | v2 | v3 |
+|---|---|---|
+| BLIND: in-line mutual pairs swapped in place (v1's rule + v1's edit) | 0.0 % | **0.0 %** |
+| BLIND: the same, only the pairs with room, swapped in place | 12.3 % | 12.3 % |
+| BLIND: in-line mutual goods rubbed out | 0.0 % | 0.0 % |
+| BLIND: tidy up — every stray put right where it stands | 0.0 % | 0.0 % |
+| clue returned unchanged (the foothold) | 12.3 % | **12.3 %** |
+| clue unchanged, caption dropped | 12.3 % | 12.3 % |
+| only the good on the LOWER shelf of each pair goes home | 20.7 % | **20.7 %** ← top rival |
+| only the good on the UPPER shelf of each pair goes home | 19.9 % | 19.9 % |
+| n strays at random go home | 16.1 % | 16.5 % * |
+| every in-line mutual good goes home (fullness ignored) | 0.0 % | 0.0 % |
+| the whole pair goes home if either of the two has room | 12.3 % | 12.3 % |
+| TWIN rule (the good on a shelf that has room), moved / swapped | 12.3 / 12.3 % | 12.3 / 12.3 % |
+| true movers → the LAST gap / nearest gap / nearest gap on the left | 12.3 % each | 12.3 % each |
+| true movers → the first gap on the shelf they stood on | 12.3 % | 12.3 % |
+| true movers, old slot filled by the partner (swap AND move) | 12.3 % | 12.3 % |
+| true movers, old slot filled by the shelf's own goods | 12.3 % | 12.3 % |
+| true movers copied home, old slot left as it was | 12.3 % | 12.3 % |
+| true movers rubbed out, never arriving | 12.3 % | 12.3 % |
+| true movers, and the refused goods vanish too | 0.0 % | 0.0 % |
+| a good needs a gap IN LINE at home | 12.3 % | 12.3 % |
+| any stray with a gap on its own shelf goes home | 0.0 % | 0.0 % |
+| any stray in line with another stray goes home | 0.0 % | 0.0 % |
+| any mutual stray (alignment ignored) goes home | 0.0 % | 0.0 % |
+| any stray on a FULL shelf with room at home goes home | 0.0 % | 0.0 % |
+| the first n strays in reading order / on the fullest shelf | 12.3 / 6.4 % | 12.3 / 6.4 % |
+| one fixed real answer for every clue / demo replay | 0.0 / 0.0 % | 0.0 / 0.0 % |
+| **TRUE RULE (solve), caption kept / dropped / rows padded** | **100 %** | **100 %** |
+
+\* the only row that moves: that template seeds `random.Random(clue)` on the clue *text*, which is a
+different string in the new skin. Every other row is identical to the tenth of a percent. Top rival
+still **20.7 %**, foothold still **12.3 %**, true rule still **100 %**.
+
+**Well-formedness: 14 attacks × 1500 clues, all 0.0 %** — gaps drawn as dots, lowercased, shelf
+edges removed, slot spacing squeezed out, rows reversed, caption count changed, the answer sent
+twice, a junk line appended, half the picture, the caption alone, the empty string, 4000 chars of
+junk, one fixed answer, another clue's answer. Six more aimed at the new skin, also **0.0 %**: the
+shop-sign line removed, the shelf labels stripped, gaps drawn as three blanks, goods abbreviated
+back to single capitals (the v2 skin), labels lower-cased with a correct picture, a blank line
+inserted between shelves. Declared leniencies unchanged and still 100 %: trailing newlines,
+trailing whitespace on any row, caption present or absent.
+Uniqueness: **747 270** single-character mutations of true answers and **64 400** single-slot
+mutations (every slot swapped for every other kind and for a gap) — **0** still scored 1.
+
+### Plant audit and demo legibility (4000 fresh seeds)
+
+P1 refused in-line mutual good 100 %; P2 mutual pair not in line 100 %; P3 third stray in a
+going-home column 100 %; P4 stray on a full shelf with room at home 100 %; P5 stray with a gap in
+line at home 100 %; P6 the first gap is neither the nearest gap nor the nearest gap on the left
+100 %; P7 movers ≠ the first n strays 100 %; P8 climbers and descenders when n ≥ 2 100 % (2846/2846);
+**P9 (new) every mover's landing gap is drawn `___` in the clue 100 %**.
+
+**The moving pair is visually distinct in 100 % of demos**: in every clue with n > 0 (3499 of 4000),
+every mover's source slot holds a word that differs from its shelf's label, and every mover's
+landing slot is an explicit `___` in the clue — so both ends of each of the 2n changed slots are
+visible objects before the answer is drawn, and no column-counting is needed to see the edit.
+Movers land **82.3 %** of the time to the *left* of the column they stood in, mean shift 4.4 slots,
+so the landing place still has to be learned from a demo — the point of the class is intact.
+
+### One rendered demo (seed 245; clue on the left, `solve()`'s answer on the right)
+
+```
+     +=========== THE CORNER SHOP ===========+       +=========== THE CORNER SHOP ===========+
+COD  |cod cod cod cod cod cod rye wax cod cod|  COD  |cod cod cod cod cod cod rye ___ cod cod|
+     +---------------------------------------+       +---------------------------------------+
+RYE  |rye rye rye cod log rye ___ rye ___ rye|  RYE  |rye rye rye cod log rye rye rye ___ rye|
+     +---------------------------------------+       +---------------------------------------+
+LOG  |log log log log rye log log wax log log|  LOG  |log log log log ___ log log wax log log|
+     +---------------------------------------+       +---------------------------------------+
+WAX  |___ wax wax wax wax ___ wax cod wax ___|  WAX  |wax wax wax wax wax ___ wax cod wax ___|
+     +---------------------------------------+       +---------------------------------------+
+2 home                                          2 home
+```
+
+Four shelves: cod, rye, logs, wax. **The COD and LOG shelves are solid** — not one `___` on either.
+Slot 7: a `wax` on the COD shelf and a `cod` on the WAX shelf, in line, each on the other's shelf.
+The `wax` goes home into the **first** `___` on the WAX shelf (slot 0, seven slots to its left, and
+neither the nearest gap — slot 5 — nor the nearest on its left); the `cod` cannot go anywhere,
+because the COD shelf has no gap at all, so it stays (P1). Slot 4: a `rye` on the LOG shelf and a
+`log` on the RYE shelf; the `rye` goes home into the first `___` on the RYE shelf (slot 6), the
+`log` is refused by the solid LOG shelf (P1 again). The near-misses are all on the picture: `wax`
+also stands on the LOG shelf in slot 7 — the same column as a going-home pair, with room at home —
+and stays (P3); `rye` stands on the packed COD shelf in slot 6, with room at home, and stays (P4) —
+and there is a `___` in line right under it on its own RYE shelf, which does not help it (P5);
+`cod`@3 on RYE and `rye`@6 on COD are on each other's shelves but not in line, so neither moves
+(P2). Four slots change, `2 home`.
+
+### Validation and engineering
+
+`python tools/quickcheck.py challenges/lab/molvic.json --seeds 200` → **OK**, four times
+(`gen=1.38 ms score=0.09 ms solve=0.04 ms` worst call on the quietest run; on a box under load
+average 3.5 the same run reports up to 4–9 ms for *any* of the three, including `score`, whose real
+cost is 0.015 ms — scheduler noise, not the class; caps are 100/50/2000 ms). The single warning
+"score accepts the clue itself" is the intended `0 home` foothold, exactly as fennick/durnel/v2.
+
+4000 fresh seeds: generate mean **0.45 ms**, median 0.27, p99 4.7, max 8.8 — v2 measured back to
+back on the same (busy) box: 0.44 / 0.26 / 4.6 / 9.0, so the re-skin costs nothing; **0 fallback
+uses**; 2000/2000 clues distinct and byte-identical under four PYTHONHASHSEEDs; solve 0.019 ms;
+score 0.015 ms on real answers and on 4000-char junk; `score(clue, solve(clue)) == 1` on all 4000.
+Sizes: **scorer 496/512**, solve 1266/5000, generate 8.5 k/50000, clue and solution **393–465**/1024
+(v2: 166–198 — the picture is 2.3× wider in characters and much *less* dense in information).
+n is 0 (12.5 %), 1 (16 %), 2 (22 %), 3 (49 %). Offline checksum test (1200 clues): true rule 100 %,
+"in-line mutual pairs" 31.9 %, "pairs with room for both" 11.2 %, v1's rule and every
+alignment- or mutuality-free reading 0.0 % — unchanged. An independent re-implementation (tokens by
+regex, the shelf's kind taken by **majority** rather than from its label, picture rendered from
+scratch) agreed with `solve`/`score` on 1200/1200 clues, and the label agreed with the majority on
+every row of all of them.
+
+### The kid reading we expect
+
+*"That's a shop. Four shelves — jam, eggs, cod, wax — and someone's put a few things back on the
+wrong shelf. Two of them have gone home into the empty spaces on their own shelf. But that shelf's
+completely full, so that one had to stay."* Object, problem and verb in one breath, with no letter
+grid to tally: the object is named from the labels, the strays are found because they are different
+*words*, the empty slots are drawn, and the full shelf is a solid wall. What is still not free —
+and is what the demo has to buy — is **which** empty slot (the first one on the shelf, 82 % of the
+time to the left of where the good was standing) and **why one of the pair didn't move**.
+
+### Prediction and levers
+
+Unchanged from v2, because the rule is unchanged: **~12 % without a demo, ~95–100 % with one**
+(mean ≈ 50 % over two Opus players in a 7-class pool where one spends a demo here). The bet of the
+re-skin is only on the judge and on the demo-holder's first look: the counted relation (two goods in
+line, each on the other's shelf) and the refusal (a solid shelf) are now the two loudest things in
+the picture. If a re-judge still marks the object down, the remaining levers are cosmetic and cheap
+— a price on each shelf edge, or the goods drawn as `[jam]` boxes — and the JSON's `LEVERS`
+paragraph lists the difficulty knobs, which have not been touched.

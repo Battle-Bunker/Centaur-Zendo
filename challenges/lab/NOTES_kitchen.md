@@ -610,3 +610,185 @@ counted slice to hold nothing but that topping; (iv) narrow the rarity band to 2
 ~5 %); (v) two toppings and two digits as in v2 (blind play ~3 %). **Too hard:** put "severed ≠ k"
 back into `generate()`'s gate (1.5 → 2.3 ms); force one of the two pieces on the counted slice to be
 whole in `generate()` too (2.0 ms, demo whole+half 77 % → 100 %); widen the rarity band.
+
+## garrow v5 — the nought foothold, and a demo that says which side a half belongs to (2026-09-05)
+
+v4 kept as `challenges/lab/garrow.v4.json` (byte-identical copy); v5 is `challenges/lab/garrow.json`.
+**The rule and the object are unchanged again** — five versions, and the only thing that has ever
+changed is what the picture says out loud. v5 adds one case to it (a nought) and rebuilds the demo.
+
+### The evidence: `lad-durnel-v2-1` (picture pool run 5) — 26 % with a demo, 0 % without
+
+* **durnel1a (low-demo, no demo here, 0 %)**: "garrow: Box of 2-char tokens (`mm`,`pp`,…) on a `:`
+  background; header `<letter> <N> slices`. **No N=0 instances, so nothing scores.** Tried clean
+  vertical cuts, token column alignment, per-row counts, target groups — no fit. UNSOLVED." And in
+  its summary: "garrow has no `0 slices` instances, so unlike its five picture siblings it offers no
+  partial credit at all — **an all-or-nothing class**. A sprinkling of zero-event instances in every
+  class would make partial progress visible everywhere."
+* **durnel1b (theorist, one demo here, 26 %)**: "All 7 classes are picture classes with a trailing
+  (garrow: leading) text line `N verb`. N is the number of edits. Confirmed by probe: for
+  basten/durnel/fennick, **answering the unchanged picture scores exactly when N==0 and never
+  otherwise**." — and on garrow itself: "insert `|` cuts so slices hold ~N **cells** of letter L.
+  Right-to-left greedy accumulate-to-N. Multiple answers are accepted; **the reference answer adds
+  extra cuts I could not derive**."
+
+So: the one picture class in the pool where the pool's own free self-check paid nothing, and a
+demo-holder who got the object, the format and the *family* of the measurement and still missed the
+halves convention. The demo it saw (`o 3 slices`, six slices) did contain a halved `oo` with a
+counted slice on each side — but v4 only *preferred* that shape; what it *guaranteed* was the
+one-sided picture (a counted slice on one side of the knife, the other half alone in an uncounted
+slice next door), which is exactly as consistent with "a half belongs to the slice on its left".
+
+### What v5 changes
+
+**(1) The foothold: `m 0 slices`, and the answer is the clue echoed.** ~12 % of clues now carry the
+digit 0 (12.6 % over 20000 seeds), and for those the answer is the tray **uncut**. A nought is not a
+degenerate cutting — an uncut tray is one slice and holds five to seven of the letter, so "no slice
+holds two" could never be true of it. The caption is read as *cut it into no slices*: the scorer
+waives the "at least four slices" clause when, and only when, the digit is 0, and then demands that
+no row carry a cut at all. `generate()` draws the nought flag first and builds the tray exactly as
+before, so a nought tray is drawn from the same distribution as every other and costs nothing.
+Measured on 500 fresh clues, **the echoed clue scores 13.2 %, which is exactly the nought clues and
+nothing else** (caption line kept or dropped, both accepted); every other clue still scores 0 for an
+uncut answer, because one slice is not four. A player who has understood only the *format* — the
+`N verb` probe every player in this pool runs in round 1 — banks exactly those clues.
+
+**(2) The demo now teaches the halves convention.** Every demo must show **a piece of the named
+topping that the knife goes through with a COUNTED slice on both sides of it, each of those slices
+holding two only because of its half** (a whole piece beside it). A player reading that picture with
+a one-sided convention counts one counted slice too few and can see, in the single example he paid a
+demo for, that his reading does not come to the digit. Because a 2-cell piece is halved only when
+the knife lands on the one column inside it, that picture has to be *built*: `pairb()` puts the cut
+through a piece of the letter and then scans the ~15 columns either side for slice edges that give
+each side exactly one further piece of that letter, **whole**, before filling the rest of the tray
+with random cuts (4–8 slices). `generate()` keeps a tray only if one of 30 such cuttings carries the
+picture *and* leaves an uncounted slice holding one lone whole piece; `solve()` draws from the same
+builder and prefers, in order: no structural rival (cuts, slices, severed, whole pairs, touched)
+coming to the digit, the uncounted lone whole piece, no one-sided halves reading and no "two of any
+one topping" coming to it, **both** sides needing their half, and a slice of three.
+
+**(3) The digit is never 1.** Two counted slices are what the picture needs, so the caption is 0, 2
+or 3 — measured 12.6 / 25.8 / 61.7 % over 20000 seeds (3 dominates because `generate()` still
+publishes the *rarest* count that survives its gates). A slightly weaker checksum than v4's, and the
+price of the picture.
+
+### One demo as it renders (seed 4020)
+
+```
+clue:                                answer:
+m 2 slices                           ###|####|############|###|########|###
+#################################    ##p|p::m|m:::::cc::::|:::|pp::pp::|:##
+##pp::mm:::::cc:::::::pp::pp:::##    ##:|::mm|::cc::cc::::|pp:|::::mm::|:##
+##:::mm::cc::cc::::pp:::::mm:::##    ##:|:pp:|:::::::mm:::|:mm|::cc:::p|p##
+##::pp::::::::mm::::mm::cc:::pp##    ###|####|############|###|########|###
+#################################
+```
+The headline is the second cut: `##p|p::m|m:::::cc::::|` — **the knife goes through a mushroom, and
+the slice on each side of it holds one whole mushroom plus that half, so both count two**. Take the
+half away from either side and that side drops to one. Slice 4 (`:::` / `pp:` / `:mm`) holds one
+whole mushroom on its own and is **not** counted, so "one is not enough" is on the picture too; slice
+5 holds one as well. Two slices hold two → `m 2 slices`. Slice widths 3/4/12/3/8/3: wildly uneven, so
+neatness is visibly irrelevant.
+
+A nought clue and its answer (seed 4011) — the whole class's partial credit in one line:
+
+```
+b 0 slices                           #################################
+#################################    ##::bb:::::oo:::::bb::oo:::oo::##
+##::bb:::::oo:::::bb::oo:::oo::##    ##bb:::::bb::::::tt::::tt::bb::##
+##bb:::::bb::::::tt::::tt::bb::##    ##:::::bb::::tt:::::tt:::tt::tt##
+##:::::bb::::tt:::::tt:::tt::tt##    #################################
+#################################
+```
+
+### What a demo shows (300 clues, 272 of them with a cut answer)
+
+| the demo shows | v4 | v5 |
+|---|---|---|
+| a halved piece with a counted slice on **both** sides (each half counted for its side) | not required | **100.0 %** |
+| …and **both** of those slices need their half (a whole piece beside it) | – | **84.2 %** |
+| an uncounted slice holding one lone **whole** piece ("one is not enough") | 95.5 % | 96.7 % |
+| a counted slice of three ("exactly two" is visibly not the rule) | 17.5 % | 6.6 % |
+| rival: a half counting only for its **left** slice comes to the digit | not measured | **0.0 %** |
+| rival: only for its **right** slice | – | **0.0 %** |
+| rival: halves ignored (pairs of whole pieces) | 0.0 % | **0.0 %** |
+| rival: severed / touched / cuts / slices | 0.2 / 0.0 / 0.0 / 0.0 % | 0.0 / 0.0 / 0.0 / 0.0 % |
+| rival: two of any one topping / two pieces of anything | 2.0 / 0.5 % | 1.8 / 0.4 % |
+| rival: "slices holding three or more **cells** of the letter" | not measured | **86.4 %** |
+
+The last row is the one a demo cannot exclude, and it does not need to: a slice holding two pieces
+holds three cells unless both are halves, so that reading is a near-synonym of the rule (77 % against
+the scorer) rather than a rival — and a player who reaches it has understood that the halves count.
+It is also where durnel1b was heading ("~N cells of the header letter") before it went one-sided.
+
+### Witness table (500 fresh clues, seeds 100000–100499, same harness for both versions)
+
+The second v5 column is the same strategy played by someone who has **also** found the foothold:
+echo the clue when the caption says 0, apply the law otherwise.
+
+| strategy | v4 | v5 | v5 + echo the noughts | built |
+|---|---|---|---|---|
+| true rule (`solve`) | 100.00 % | **100.00 %** | 100.00 % | |
+| **clue returned uncut** (caption kept or dropped) | 0.00 % | **13.20 %** | 13.20 % | ← exactly the nought clues |
+| equal-width slices, any n, any rounding | 0.00 % | **0.00 %** | 13.20 % | |
+| **random cut positions, n random** | 9.00 % | 8.60 % | **21.80 %** | ← the blind floor |
+| random cut positions, n = 8 / 6 / 5 | 7.4 / 13.8 / 19.6 % | 6.6 / 13.0 / 13.6 % | 19.8 / 26.2 / 26.8 % | |
+| "number of slices = n" | 0.00 % | 0.00 % | 13.20 % | 0 % |
+| "slices with three or more = n" | 7.00 % | 4.40 % | 17.60 % | 18 % |
+| "slices with none of it = n" | 10.20 % | 7.00 % | 20.20 % | 100 % |
+| "number of cuts = n" | 8.00 % | 7.40 % | 20.60 % | 64 % |
+| "slices with two of any one topping = n" | 12.20 % | 8.40 % | 21.60 % | 87 % |
+| "the fullest slice holds n" | 11.40 % | 11.20 % | 24.40 % | 87 % |
+| "severed = n" (v1's trap) | 14.60 % | 13.80 % | 27.00 % | 100 % |
+| "slices the topping touches at all = n" | 22.40 % | 13.80 % | 27.00 % | 80 % |
+| "slices with two pieces of anything = n" | 16.60 % | 14.60 % | 27.80 % | 81 % |
+| **"slices with two WHOLE pieces = n"** (halves ignored) | 52.40 % | **46.40 %** | 59.60 % | 60 % |
+| **"2+, a half counting only for its left slice"** | 59.80 % | **56.20 %** | **69.40 %** | 70 % |
+| "slices with three or more CELLS of it = n" | 86.00 % | 77.20 % | 90.40 % | 89 % |
+| "slices with **exactly** two = n" | 93.40 % | 80.60 % | 93.80 % | 97 % |
+| demo replay (previous clue's answer) | 0.00 % | **0.00 %** | | |
+| one constant answer for every clue | 0.20 % | 0.20 % | | |
+| junk: empty / whitespace / 4000 chars / the clue | 0.00 % | 0.00 % (the clue: 13.2 %, i.e. the noughts) | | |
+
+Ladder: **0 % (no picture) → 13 % (the format alone, from the noughts) → 18–28 % (well formed, no
+idea) → 46–56 % (right measurement, wrong halves convention) → 77–100 % (the whole insight or a
+synonym of it).** The strongest wrong-halves convention is still *"a half counts only for the slice
+on its left"* — 56.2 % on its own, 69.4 % with the foothold — and it is now precisely what the demo
+exists to refute, which it does in **100 %** of demos. Note the honest cost of the foothold: every
+wrong law is worth ~13 points more to a player who has found it.
+
+### Shape and junk attacks on an otherwise correct answer (250 clues, 26 of them noughts)
+
+Reference 100 %; caption line kept, crust rows removed, trailing spaces, blank lines inserted,
+leading/trailing blank lines — all 100 %. **All cuts removed 10.4 % and the clue itself 10.4 % —
+exactly the nought clues, where that is the answer.** A dough row deleted, duplicated or reordered,
+upper-cased, cheese turned to spaces, reversed left-right, one cut missing in one row, cuts shifted
+by one in one row — all 0.00 %. One extra cut through the middle of the widest slice: 43.2 %.
+
+### Speed and size
+
+| | v4 | v5 |
+|---|---|---|
+| `generate` mean / median / p99 / max | 1.54 / 1.12 / 5.9 / 13.1 ms | **2.04 / 1.56 / 7.7 / 18.3 ms** (20000 seeds, no empty clue) |
+| `solve` mean / median / max | 41 / 10 / 256 ms | 90 / 51 / 398 ms (cap 2000; paid only for a demo) |
+| `score` mean / max | 0.014 / 4.1 ms | 0.056 / 4.1 ms (cap 50) |
+| scorer / solve / generate / clue / solution chars | 379 / 4478 / 7736 / 205 / 229 | **423 / 4839 / 8832 / 205 / 229** |
+
+`python tools/quickcheck.py challenges/lab/garrow.json --seeds 200`: **OK**, gen 8.4 ms max, score
+0.17 ms, solve 338 ms max, one warning — "score accepts the clue itself as a solution", which on a
+nought clue is the point of the exercise. `score(clue, solve(clue)) == 1` on 2000 further seeds.
+The scorer's whole nought clause is two lines: read the digit, and if it is 0 return "no row carries
+a cut". `solve()` had to be squeezed to fit the 5000-char cap (one prefix-sum pass replaced by a
+15-piece scan, `pcs()` by a regex, `hand()` inlined).
+
+### Prediction and levers
+
+Two Opus players in a 7-class pool. The one who spends a demo should now crack it appreciably more
+than half the time: the demo refutes the one-sided halves reading it used to be compatible with, and
+"right measurement, wrong convention" pays 69 % rather than 60 %, so probing converges from above.
+The one who does not spend a demo should sit at **13–27 %** — 13 % of it banked by the format probe
+alone, which is the thing durnel1a asked for by name. Predicted mean final 55–75 %: the risk is now
+**too_easy**, not too_hard, and the first lever to reach for is six toppings a row (measured on v4:
+the halves-convention rows 50/62/91 % → 32/37/15 %), then dropping the nought rate to 6 %.
+Levers the other way if the arena says too_hard: raise the nought rate; make "both sides need their
+half" a gate in `generate()` as well as a preference in `solve()` (demo 84 % → 100 %, ~2.0 → ~2.6 ms).

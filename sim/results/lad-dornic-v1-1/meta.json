@@ -1,0 +1,33 @@
+{
+ "run": "lad-dornic-v1-1",
+ "arena": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-dornic-v1-1",
+ "hidden": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-dornic-v1-1/.pool-4e698f84",
+ "port": 58595,
+ "pid": 3502,
+ "teams": [
+  "dornic1a",
+  "dornic1b"
+ ],
+ "tokens": {
+  "dornic1a": "0606bddd7f4b",
+  "dornic1b": "dc83f37a46ce"
+ },
+ "admin_token": "224e73bc3db3e34c",
+ "config": {
+  "cooldown_seconds": 5,
+  "max_training_rounds": 4,
+  "max_demos": 3,
+  "training_seconds": 21600,
+  "final_window_seconds": 3600,
+  "round_seconds": 0.5,
+  "final_seconds": 3.0,
+  "open_registration": true,
+  "challenge_dir": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-dornic-v1-1/.pool-4e698f84/challenges",
+  "event_log": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-dornic-v1-1/.pool-4e698f84/events.jsonl",
+  "host": "127.0.0.1",
+  "port": 58595,
+  "admin_token": "224e73bc3db3e34c"
+ },
+ "pool_size": 7,
+ "started_at": 1788576989.6462712
+}

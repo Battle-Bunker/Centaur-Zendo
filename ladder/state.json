@@ -6523,7 +6523,7 @@
    "version": 1
   },
   {
-   "agents": 2,
+   "agents": 1,
    "class": "fennick",
    "id": "players-econ-pool-2",
    "kind": "players",
@@ -6536,7 +6536,7 @@
     "garrow",
     "norvel"
    ],
-   "note": "validation pool of demo-economy versions (rerun)",
+   "note": "validation pool of demo-economy versions (rerun) | team a finished; one live agent remaining",
    "pool": {
     "basten": 3,
     "fennick": 3,
@@ -6601,6 +6601,39 @@
    "id": "judge-wisbek-v1-f621",
    "kind": "judge",
    "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "dornic",
+   "id": "players-rf-pool-1",
+   "kind": "players",
+   "members": [
+    "dornic",
+    "borsel",
+    "tresk",
+    "tavrik",
+    "wisbek",
+    "basten",
+    "kelmar"
+   ],
+   "note": "first rule-family pool: five rule-family classes + two picture classes",
+   "pool": {
+    "basten": 3,
+    "borsel": 1,
+    "dornic": 1,
+    "kelmar": 2,
+    "tavrik": 1,
+    "tresk": 1,
+    "wisbek": 1
+   },
+   "run": "lad-dornic-v1-1",
+   "started": 1788576989.606024,
+   "status": "running",
+   "teams": {
+    "dornic1a": "opus-default",
+    "dornic1b": "opus-kidproxy"
+   },
    "version": 1
   }
  ],

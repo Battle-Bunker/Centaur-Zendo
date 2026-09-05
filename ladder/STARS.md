@@ -204,3 +204,48 @@ player chooses to spend a demo on the opaque clue. A pool should carry at most o
 
 **Levers.** Too easy: count only twins that are not adjacent to another twin. Too hard: draw the
 new course's first brick already in place.
+
+## basten v4 — the fish tank (calibrated 2026-09-05)
+
+**Rule.** The clue is a finished fish tank: a `~` water surface, a `#` gravel floor, weeds drawn as
+columns of `|` of different heights, and fish `><>` / `<><` facing left or right, plus a caption
+`2 nibble`. Each fish looks straight along its row at the first weed in front of it; if that
+weed's top is in the fish's row or one row above, the fish swims over until its nose touches the
+weed and nibbles the top segment off. Fish whose weed is out of reach (its top too high or too
+low) stay where they are. The answer is the same tank with exactly those fish moved and those
+weeds one shorter.
+
+**Record (4 Opus finals): 13 %, 13 %, 13 %, 100 % — mean 35 %; with a demo 100 % (1 player),
+without 13 % (3).** Basten had been at 0 % across sixteen finals of three earlier versions: v1–v3
+showed an empty tank and asked the player to draw N fish, so the number was a free parameter and
+nobody could test anything offline; nobody bought the demo because the tank was already drawn,
+and nobody cracked it blind. v4 put the fish in the clue, made the answer the smallest edit, and
+made the caption count the edits. The one player who then bought the demo verified the rule on
+44/44 harvested clues before answering and scored 100 %; his sentence was the kid's: "the fish
+swam over and bit the top off the weed it could reach".
+
+**What a kid sees.** A fish tank, which every player and every judge has named instantly (kid
+score 4.5, the highest object score in the collection). The question "why did *those* fish
+move?" has a physical answer that a kid asks about before an AI does — "can it reach?" — and the
+rule's only clause is vertical reach, which a diff of two pictures does not reveal but a glance
+at the scene does. Every clue plants the near-misses: a fish staring at a weed whose top is far
+above it (stays), a fish whose weed is exactly one row up (nibbles), a fish level with a taller
+weed (stays).
+
+**Why it works.** Same recipe as fennick and kelmar, with one extra lesson: the refiner's first
+draft used *blocking* (a fish queued behind another cannot get through) as the near-miss, and
+that leaked — blocked fish were systematically further from their weed, so "the n fish closest
+to their weed" scored 89 % for any demo-holder. Replacing it with vertical reach, which is
+orthogonal to horizontal distance, dropped every wrong rule below 32 %. The generator also
+decorrelates the obvious rankings on purpose (an out-of-reach fish is nearer its weed than a
+nibbler in 80 % of clues, and further in 79 %).
+
+**Reflection.** Basten is the clearest demonstration in the ladder that a class's difficulty is
+almost entirely a property of which half of the picture the player has to produce, and that
+the with-demo / without-demo split is the shape the format wants: 100 % for the one player who
+spent a demo, the format foothold for everyone else. Whether a class like this is "worth a
+demo" is now the whole strategic question, and the players say they cannot tell from the clue —
+which is the point.
+
+**Levers.** Too easy: let reach depend on the fish (a big fish reaches two rows). Too hard: draw
+one fish already at its weed with the top nibbled as a worked instance.

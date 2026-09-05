@@ -1,0 +1,342 @@
+Centaur Zendo round 2 (training)
+round_id : c9e1216f06b44cedbab098a89d2f9a54
+written  : 2026-09-05 09:39:20Z
+presented=324  answered=127  correct=79  skipped=197
+client answer latency: mean 0.107 ms  median 0.095 ms  max 0.468 ms  (n=325)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+   1  kelmar        ..(~~).....(~~~)....(~)....(~).....(~~~…  ..(~~).....(~~~)....(~)....(~).....(~~~…  0
+   2  kelmar        ..(~~~).....(~~).....(~~)...(~~)....(~~…  ..(~~~).....(~~).....(~~)...(~~)....(~~…  0
+   3  durnel                   EEE                         …             EEE                         …  1
+   4  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+   5  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+   6  molvic             +============= THE CORNER SHOP ===…  None                                      0
+   7  norvel        hat   |..xx|..xx|.xxx|.xxx|.xx.|xx.x|xx…  hat   |..xx|..xx|.xxx|.xxx|.xx.|xx.x|xx…  0
+   8  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+   9  kelmar        ..(~).....(~)...(~)....(~~~)...(~~~)...…  ..(~).....(~)...(~)....(~~~)...(~~~)...…  1
+  10  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+  11  garrow        s 0 slices\n###########################…  s 0 slices\n###########################…  1
+  12  kelmar        ..(~)....(~).....(~~)....(~~)...(~)...(…  ..(~)....(~).....(~~)....(~~)...(~)...(…  0
+  13  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+  14  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+  15  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+  16  durnel                                               …  None                                      0
+  17  kelmar        ..(~~~).....(~)...(~~~)...(~~~)....(~~)…  ..(~~~).....(~)...(~~~)...(~~~)....(~~)…  0
+  18  garrow        o 3 slices\n###########################…  None                                      0
+  19  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  20  norvel        hat   |..xx|xx..|x..x|xx.x|xx.x|.xx.|.x…  hat   |..xx|xx..|x..x|xx.x|xx.x|.xx.|.x…  0
+  21  norvel        hat   |x.x.|.xxx|..xx|x.x.|.x.x|xx.x|xx…  hat   |x.x.|.xxx|..xx|x.x.|.x.x|xx.x|xx…  0
+  22  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1I  2J  3…  None                                      0
+  23  molvic             +========= THE CORNER SHOP =======…  None                                      0
+  24  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  1
+  25  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+  26  kelmar        ..(~)....(~)....(~~)....(~).....(~~~)..…  ..(~)....(~)....(~~)....(~).....(~~~)..…  1
+  27  norvel        hat   |.xx.|xxxx|xxx.|xxxx|.xxx|xx.x|\n…  hat   |.xx.|xxxx|xxx.|xxxx|.xxx|xx.x|\n…  1
+  28  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+  29  durnel              ####     ### AAA\n  CCC          …  None                                      0
+  30  kelmar        .(~~~)...(~)....(~)...(~~)...(~)....\n.…  .(~~~)...(~)....(~)...(~~)...(~)....\n.…  0
+  31  durnel             ####                HHH           …  None                                      0
+  32  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  33  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+  34  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+  35  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  36  durnel                                               …  None                                      0
+  37  kelmar        .(~)...(~)....(~~~)...(~)...(~)....\n.'…  .(~)...(~)....(~~~)...(~)...(~)....\n.'…  1
+  38  norvel        hat   |xx.x|x.x.|.xx.|.xx.|.x.x|x.x.|x.…  hat   |xx.x|x.x.|.xx.|.xx.|.x.x|x.x.|x.…  1
+  39  norvel        hat   |x..x|.xxx|x.xx|.xxx|.xx.|.xxx|x.…  hat   |x..x|.xxx|x.xx|.xxx|.xx.|.xxx|x.…  0
+  40  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+  41  molvic             +========= THE CORNER SHOP =======…  None                                      0
+  42  molvic             +============= THE CORNER SHOP ===…  None                                      0
+  43  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+  44  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1Z  2J  3…  None                                      0
+  45  durnel                             BBB               …  None                                      0
+  46  garrow        p 3 slices\n###########################…  None                                      0
+  47  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+  48  kelmar        ..(~)...(~~~).....(~)....(~~~)...(~).\n…  ..(~)...(~~~).....(~)....(~~~)...(~).\n…  1
+  49  durnel             TTT      UUU ###\n     TTT      UU…  None                                      0
+  50  norvel        hat   |.xxx|xx.x|.x.x|xxxx|x..x|.x.x|x.…  hat   |.xxx|xx.x|.x.x|xxxx|x..x|.x.x|x.…  1
+  51  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  52  garrow        p 3 slices\n###########################…  None                                      0
+  53  norvel        hat   |xx..|xxx.|xx.x|x..x|x.xx|xx.x|xx…  hat   |xx..|xxx.|xx.x|x..x|x.xx|xx.x|xx…  1
+  54  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+  55  kelmar        ..(~~~)...(~~)...(~~~)....(~~)...(~~)..…  ..(~~~)...(~~)...(~~~)....(~~)...(~~)..…  1
+  56  durnel                  ####                      NNN…  None                                      0
+  57  kelmar        ..(~~)...(~)...(~)....(~)...(~~)....(~~…  ..(~~)...(~)...(~)....(~)...(~~)....(~~…  1
+  58  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+  59  garrow        t 3 slices\n###########################…  None                                      0
+  60  norvel        hat   |..xx|..xx|..xx|xxx.|x.x.|.xx.|xx…  hat   |..xx|..xx|..xx|xxx.|x.x.|.xx.|xx…  1
+  61  durnel                                               …  None                                      0
+  62  kelmar        ..(~~~)....(~)....(~~)...(~).....(~~)..…  ..(~~~)....(~)....(~~)...(~).....(~~)..…  0
+  63  kelmar        .(~)....(~)....(~)...(~~)....(~~)......…  .(~)....(~)....(~)...(~~)....(~~)......…  1
+  64  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+  65  kelmar        ..(~~~)...(~)....(~~).....(~~~)...(~)..…  ..(~~~)...(~)....(~~).....(~~~)...(~)..…  0
+  66  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  1
+  67  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+  68  kelmar        ..(~)...(~~)....(~)....(~~).....(~)..\n…  ..(~)...(~~)....(~)....(~~).....(~)..\n…  0
+  69  norvel        hat   |xxxx|xx..|xx.x|xx.x|xx.x|xxxx|\n…  hat   |xxxx|xx..|xx.x|xx.x|xx.x|xxxx|\n…  1
+  70  kelmar        .(~~)....(~)...(~~~).....(~~)...(~~)..\…  .(~~)....(~)...(~~~).....(~~)...(~~)..\…  0
+  71  kelmar        .(~~~)...(~)....(~~~)...(~)...(~)....\n…  .(~~~)...(~)....(~~~)...(~)...(~)....\n…  1
+  72  garrow        o 3 slices\n###########################…  None                                      0
+  73  garrow        a 3 slices\n###########################…  None                                      0
+  74  kelmar        ..(~~).....(~~)....(~~~)...(~~~)....(~~…  ..(~~).....(~~)....(~~~)...(~~~)....(~~…  0
+  75  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+  76  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  77  kelmar        ..(~~)...(~).....(~~)...(~~)....(~)....…  ..(~~)...(~).....(~~)...(~~)....(~)....…  0
+  78  molvic             +============= THE CORNER SHOP ===…  None                                      0
+  79  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+  80  durnel                                   AAA         …  None                                      0
+  81  durnel                                  GGG          …  None                                      0
+  82  kelmar        .(~)...(~~~)....(~~)....(~)....(~).....…  .(~)...(~~~)....(~~)....(~)....(~).....…  0
+  83  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+  84  kelmar        ..(~~)...(~~~).....(~~~)...(~~)...(~~).…  ..(~~)...(~~~).....(~~~)...(~~)...(~~).…  1
+  85  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...><…  None                                      0
+  86  norvel        hat   |xxxx|xx..|x..x|..xx|.x.x|xxx.|xx…  hat   |xxxx|xx..|x..x|..xx|.x.x|xxx.|xx…  0
+  87  molvic             +============= THE CORNER SHOP ===…  None                                      0
+  88  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  89  garrow        a 2 slices\n###########################…  None                                      0
+  90  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+  91  norvel        hat   |xx.x|x.x.|.x.x|..xx|xx..|xxxx|xx…  hat   |xx.x|x.x.|.x.x|..xx|xx..|xxxx|xx…  0
+  92  durnel                         GGG     ###\n         …  None                                      0
+  93  garrow        t 3 slices\n###########################…  None                                      0
+  94  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+  95  norvel        hat   |xxxx|.xxx|x.xx|xxxx|xxxx|.xx.|.x…  hat   |xxxx|.xxx|x.xx|xxxx|xxxx|.xx.|.x…  1
+  96  durnel         ####                                PP…   ####                                PP…  1
+  97  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+  98  kelmar        ..(~).....(~).....(~)....(~~~)....(~~).…  ..(~).....(~).....(~)....(~~~)....(~~).…  1
+  99  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 100  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 101  durnel         AAA ####                              …   AAA ####                              …  1
+ 102  kelmar        .(~)....(~~)...(~~~)....(~~)...(~~~)...…  .(~)....(~~)...(~~~)....(~~)...(~~~)...…  0
+ 103  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 104  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 105  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 106  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 107  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 108  kelmar        .(~)...(~)...(~~~).....(~~)...(~~).....…  .(~)...(~)...(~~~).....(~~)...(~~).....…  1
+ 109  durnel                                               …  None                                      0
+ 110  garrow        p 3 slices\n###########################…  None                                      0
+ 111  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 112  kelmar        ..(~~).....(~~)...(~)....(~)...(~~)...(…  ..(~~).....(~~)...(~)....(~)...(~~)...(…  1
+ 113  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 114  garrow        o 0 slices\n###########################…  o 0 slices\n###########################…  1
+ 115  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 116  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1S  2…  None                                      0
+ 117  kelmar        .(~~~).....(~~)...(~)...(~)...(~)...\n.…  .(~~~).....(~~)...(~)...(~)...(~)...\n.…  1
+ 118  durnel                          VVV #### EEE\n     ##…  None                                      0
+ 119  durnel                                            ###…  None                                      0
+ 120  durnel                  ####      SSS                …  None                                      0
+ 121  norvel        hat   |.x.x|x.x.|xxxx|..xx|.xx.|.xxx|\n…  hat   |.x.x|x.x.|xxxx|..xx|.xx.|.xxx|\n…  0
+ 122  garrow        p 2 slices\n###########################…  None                                      0
+ 123  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 124  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  1
+ 125  garrow        c 3 slices\n###########################…  None                                      0
+ 126  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 127  norvel        hat   |..xx|.xxx|xx..|x.xx|.xxx|.xx.|xx…  hat   |..xx|.xxx|xx..|x.xx|.xxx|.xx.|xx…  1
+ 128  norvel        hat   |.xxx|..xx|.x.x|x..x|..xx|x..x|xx…  hat   |.xxx|..xx|.x.x|x..x|..xx|x..x|xx…  1
+ 129  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 130  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 131  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  1
+ 132  garrow        p 2 slices\n###########################…  None                                      0
+ 133  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 134  norvel        hat   |.xxx|xx..|.x.x|.xxx|.xx.|..xx|.x…  hat   |.xxx|xx..|.x.x|.xxx|.xx.|..xx|.x…  1
+ 135  durnel          #### WWW           GGG              H…  None                                      0
+ 136  norvel        hat   |xxxx|.xxx|xx..|xxx.|.xxx|xx.x|\n…  hat   |xxxx|.xxx|xx..|xxx.|.xxx|xx.x|\n…  1
+ 137  durnel                                       ###\n  #…                                 ###\n  #…  1
+ 138  garrow        c 3 slices\n###########################…  None                                      0
+ 139  durnel                                 ###           …  None                                      0
+ 140  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 141  garrow        t 3 slices\n###########################…  None                                      0
+ 142  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 143  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 144  norvel        hat   |x.xx|xx.x|xxxx|xx..|xxxx|.x.x|\n…  hat   |x.xx|xx.x|xxxx|xx..|xxxx|.x.x|\n…  1
+ 145  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 146  durnel              ### ###                          …  None                                      0
+ 147  kelmar        .(~)...(~~)....(~)...(~~).....(~~~)....…  .(~)...(~~)....(~)...(~~).....(~~~)....…  0
+ 148  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 149  garrow        m 3 slices\n###########################…  None                                      0
+ 150  kelmar        ..(~).....(~)...(~~~)....(~)...(~~~)..\…  ..(~).....(~)...(~~~)....(~)...(~~~)..\…  0
+ 151  durnel               UUU         JJJ\n       UUU     …  None                                      0
+ 152  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 153  durnel                                        ###    …  None                                      0
+ 154  garrow        a 3 slices\n###########################…  None                                      0
+ 155  norvel        hat   |xx.x|.x.x|x..x|.xx.|.xx.|.xxx|\n…  hat   |xx.x|.x.x|x..x|.xx.|.xx.|.xxx|\n…  0
+ 156  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 157  norvel        hat   |xx..|..xx|x.xx|xx..|xxxx|xx.x|x.…  hat   |xx..|..xx|x.xx|xx..|xxxx|xx.x|x.…  0
+ 158  norvel        hat   |xx.x|x..x|x.x.|xx.x|xx..|.xxx|\n…  hat   |xx.x|x..x|x.x.|xx.x|xx..|.xxx|\n…  0
+ 159  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+ 160  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 161  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 162  norvel        hat   |xxx.|xxx.|x..x|xx.x|..xx|.xx.|x.…  hat   |xxx.|xxx.|x..x|xx.x|..xx|.xx.|x.…  0
+ 163  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 164  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 165  norvel        hat   |xx..|xx..|x.xx|xx.x|x.xx|.xxx|\n…  hat   |xx..|xx..|x.xx|xx.x|x.xx|.xxx|\n…  1
+ 166  kelmar        ..(~~).....(~~).....(~)...(~).....(~)..…  ..(~~).....(~~).....(~)...(~).....(~)..…  0
+ 167  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 168  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 169  norvel        hat   |xx..|x.x.|xx.x|.xx.|.x.x|xxxx|\n…  hat   |xx..|x.x.|xx.x|.xx.|.x.x|xxxx|\n…  0
+ 170  garrow        a 3 slices\n###########################…  None                                      0
+ 171  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 172  norvel        hat   |x.xx|..xx|.xx.|xxx.|.xxx|xxxx|.x…  hat   |x.xx|..xx|.xx.|xxx.|.xxx|xxxx|.x…  0
+ 173  garrow        a 3 slices\n###########################…  None                                      0
+ 174  kelmar        ..(~~)....(~)...(~~)...(~~~)...(~~~)...…  ..(~~)....(~)...(~~)...(~~~)...(~~~)...…  0
+ 175  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1D  2S  3…  None                                      0
+ 176  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 177  garrow        m 3 slices\n###########################…  None                                      0
+ 178  durnel                                 ####          …  None                                      0
+ 179  garrow        m 2 slices\n###########################…  None                                      0
+ 180  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 181  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 182  kelmar        .(~~~)....(~)...(~~~)...(~).....(~~~)..…  .(~~~)....(~)...(~~~)...(~).....(~~~)..…  1
+ 183  kelmar        .(~)...(~~~)...(~~).....(~)...(~~~)....…  .(~)...(~~~)...(~~).....(~)...(~~~)....…  0
+ 184  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 185  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 186  garrow        p 2 slices\n###########################…  None                                      0
+ 187  garrow        c 2 slices\n###########################…  None                                      0
+ 188  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 189  norvel        hat   |x..x|..xx|xx..|xxx.|xxx.|.xxx|\n…  hat   |x..x|..xx|xx..|xxx.|xxx.|.xxx|\n…  0
+ 190  durnel                 VVV                          #…  None                                      0
+ 191  kelmar        .(~~~)...(~~)....(~)...(~~)...(~)...\n.…  .(~~~)...(~~)....(~)...(~~)...(~)...\n.…  1
+ 192  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 193  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+ 194  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+ 195  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 196  kelmar        .(~~~).....(~)...(~~)...(~)....(~~)....…  .(~~~).....(~)...(~~)...(~)....(~~)....…  1
+ 197  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 198  garrow        c 3 slices\n###########################…  None                                      0
+ 199  kelmar        ..(~)...(~~~)...(~)....(~~~)...(~)...\n…  ..(~)...(~~~)...(~)....(~~~)...(~)...\n…  0
+ 200  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 201  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 202  garrow        b 3 slices\n###########################…  None                                      0
+ 203  durnel               RRR      ####     JJJ           …  None                                      0
+ 204  norvel        hat   |xx.x|.xx.|..xx|.xxx|x.xx|x.xx|xx…  hat   |xx.x|.xx.|..xx|.xxx|x.xx|x.xx|xx…  0
+ 205  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 206  durnel          ####                   FFF\n         …  None                                      0
+ 207  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 208  garrow        s 2 slices\n###########################…  None                                      0
+ 209  garrow        s 2 slices\n###########################…  None                                      0
+ 210  durnel             ###                               …       ###                               …  1
+ 211  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 212  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 213  durnel                              CCC          GGG\…  None                                      0
+ 214  norvel        hat   |xxxx|xxx.|xxxx|x..x|x.xx|x.x.|xx…  hat   |xxxx|xxx.|xxxx|x..x|x.xx|x.x.|xx…  1
+ 215  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 216  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 217  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 218  garrow        b 3 slices\n###########################…  None                                      0
+ 219  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 220  norvel        hat   |xxxx|.x.x|x..x|.xx.|.xx.|.xxx|.x…  hat   |xxxx|.x.x|x..x|.xx.|.xx.|.xxx|.x…  0
+ 221  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 222  garrow        t 0 slices\n###########################…  t 0 slices\n###########################…  1
+ 223  kelmar        ..(~)....(~)....(~)....(~~~)...(~~~)...…  ..(~)....(~)....(~)....(~~~)...(~~~)...…  0
+ 224  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 225  norvel        hat   |xxx.|..xx|xxxx|xx.x|..xx|xxx.|x.…  hat   |xxx.|..xx|xxxx|xx.x|..xx|xxx.|x.…  1
+ 226  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 227  kelmar        .(~)....(~)...(~~~)....(~~).....(~~)..\…  .(~)....(~)...(~~~)....(~~).....(~~)..\…  1
+ 228  garrow        t 3 slices\n###########################…  None                                      0
+ 229  garrow        a 2 slices\n###########################…  None                                      0
+ 230  kelmar        ..(~)...(~~)...(~~)....(~)....(~~).....…  ..(~)...(~~)...(~~)....(~)....(~~).....…  0
+ 231  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 232  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 233  durnel                   PPP                         …  None                                      0
+ 234  norvel        hat   |xxxx|x.xx|xxxx|.xxx|xxxx|x.xx|.x…  hat   |xxxx|x.xx|xxxx|.xxx|xxxx|x.xx|.x…  1
+ 235  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 236  kelmar        ..(~).....(~~).....(~~)...(~~)...(~)...…  ..(~).....(~~).....(~~)...(~~)...(~)...…  1
+ 237  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 238  garrow        t 3 slices\n###########################…  None                                      0
+ 239  kelmar        ..(~)....(~)....(~~~).....(~)...(~)....…  ..(~)....(~)....(~~~).....(~)...(~)....…  1
+ 240  norvel        hat   |xxx.|.xx.|xx.x|..xx|x.x.|xx.x|\n…  hat   |xxx.|.xx.|xx.x|..xx|x.x.|xx.x|\n…  0
+ 241  norvel        hat   |xxxx|xxxx|xxxx|..xx|xx.x|..xx|x.…  hat   |xxxx|xxxx|xxxx|..xx|xx.x|..xx|x.…  1
+ 242  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 243  garrow        t 3 slices\n###########################…  None                                      0
+ 244  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 245  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 246  norvel        hat   |.xx.|xxxx|xxx.|xx..|.xx.|..xx|\n…  hat   |.xx.|xxxx|xxx.|xx..|.xx.|..xx|\n…  0
+ 247  norvel        hat   |..xx|.xxx|.x.x|xx..|xxxx|xx.x|\n…  hat   |..xx|.xxx|.x.x|xx..|xxxx|xx.x|\n…  1
+ 248  norvel        hat   |xx.x|xx..|xxx.|xxxx|xx..|x..x|xx…  hat   |xx.x|xx..|xxx.|xxxx|xx..|x..x|xx…  1
+ 249  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2W  3…  None                                      0
+ 250  durnel                           ###\n VVV       KKK …  None                                      0
+ 251  garrow        s 3 slices\n###########################…  None                                      0
+ 252  garrow        m 2 slices\n###########################…  None                                      0
+ 253  norvel        hat   |.xxx|xx..|xxxx|xxxx|.xxx|xx.x|xx…  hat   |.xxx|xx..|xxxx|xxxx|.xxx|xx.x|xx…  1
+ 254  kelmar        ..(~~).....(~)....(~~).....(~~~)...(~~~…  ..(~~).....(~)....(~~).....(~~~)...(~~~…  0
+ 255  durnel                                               …  None                                      0
+ 256  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 257  norvel        hat   |.xxx|xx..|xx..|.xxx|.xx.|xx..|xx…  hat   |.xxx|xx..|xx..|.xxx|.xx.|xx..|xx…  1
+ 258  durnel         CCC           ####                    …  None                                      0
+ 259  kelmar        ..(~)....(~).....(~~~).....(~~).....(~~…  ..(~)....(~).....(~~~).....(~~).....(~~…  1
+ 260  norvel        hat   |x.x.|.x.x|xxxx|x..x|xxx.|xxx.|.x…  hat   |x.x.|.x.x|xxxx|x..x|xxx.|xxx.|.x…  1
+ 261  norvel        hat   |xx..|x.x.|xx..|xxxx|.xxx|xx.x|\n…  hat   |xx..|x.x.|xx..|xxxx|.xxx|xx.x|\n…  0
+ 262  garrow        t 3 slices\n###########################…  None                                      0
+ 263  garrow        o 2 slices\n###########################…  None                                      0
+ 264  garrow        p 2 slices\n###########################…  None                                      0
+ 265  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 266  norvel        hat   |xxxx|x.xx|xxxx|xxxx|..xx|x.xx|..…  hat   |xxxx|x.xx|xxxx|xxxx|..xx|x.xx|..…  1
+ 267  norvel        hat   |.xxx|x.xx|..xx|.x.x|x..x|xxx.|xx…  hat   |.xxx|x.xx|..xx|.x.x|x..x|xxx.|xx…  1
+ 268  kelmar        .(~~)...(~~~)....(~~~)...(~~~)....(~)..…  .(~~)...(~~~)....(~~~)...(~~~)....(~)..…  0
+ 269  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....<…  None                                      0
+ 270  durnel                          RRR ###              …  None                                      0
+ 271  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 272  kelmar        ..(~~~)...(~)...(~)....(~)....(~)......…  ..(~~~)...(~)...(~)....(~)....(~)......…  0
+ 273  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 274  kelmar        .(~~~)....(~~)...(~~)....(~~~).....(~~)…  .(~~~)....(~~)...(~~)....(~~~).....(~~)…  1
+ 275  norvel        hat   |.xxx|xx.x|xx..|.x.x|xxxx|xxxx|xx…  hat   |.xxx|xx.x|xx..|.x.x|xxxx|xxxx|xx…  1
+ 276  garrow        a 3 slices\n###########################…  None                                      0
+ 277  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 278  durnel                      AAA                      …  None                                      0
+ 279  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 280  norvel        hat   |.xx.|x..x|.xxx|..xx|x.x.|x.xx|xx…  hat   |.xx.|x..x|.xxx|..xx|x.x.|x.xx|xx…  1
+ 281  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 282  garrow        s 3 slices\n###########################…  None                                      0
+ 283  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 284  kelmar        ..(~~~).....(~).....(~).....(~~~)...(~)…  ..(~~~).....(~).....(~).....(~~~)...(~)…  0
+ 285  durnel          VVV                              JJJ …  None                                      0
+ 286  norvel        hat   |xxx.|x..x|x.xx|x.x.|xx.x|xxxx|..…  hat   |xxx.|x..x|x.xx|x.x.|xx.x|xxxx|..…  1
+ 287  durnel                                               …  None                                      0
+ 288  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 289  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 290  kelmar        .(~~).....(~~~)....(~~)....(~~~).....(~…  .(~~).....(~~~)....(~~)....(~~~).....(~…  1
+ 291  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 292  kelmar        ..(~~).....(~)...(~)...(~)....(~~)....\…  ..(~~).....(~)...(~)...(~)....(~~)....\…  1
+ 293  kelmar        .(~~)...(~~)...(~~).....(~~)...(~~~).\n…  .(~~)...(~~)...(~~).....(~~)...(~~~).\n…  0
+ 294  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 295  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 296  garrow        p 2 slices\n###########################…  None                                      0
+ 297  kelmar        ..(~~)...(~)....(~)...(~)...(~~~)......…  ..(~~)...(~)....(~)...(~)...(~~~)......…  1
+ 298  norvel        hat   |x.x.|xxx.|..xx|.xx.|xx..|xxxx|\n…  hat   |x.x.|xxx.|..xx|.xx.|xx..|xxxx|\n…  0
+ 299  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 300  durnel         HHH                                   …   HHH                                   …  1
+ 301  garrow        p 3 slices\n###########################…  None                                      0
+ 302  garrow        b 3 slices\n###########################…  None                                      0
+ 303  molvic             +============= THE CORNER SHOP ===…  None                                      0
+ 304  garrow        s 0 slices\n###########################…  s 0 slices\n###########################…  1
+ 305  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n<><…  None                                      0
+ 306  kelmar        .(~)...(~)...(~~~).....(~).....(~~~)...…  .(~)...(~)...(~~~).....(~).....(~~~)...…  1
+ 307  kelmar        ..(~)....(~).....(~)....(~~)...(~).....…  ..(~)....(~).....(~)....(~~)...(~).....…  1
+ 308  norvel        hat   |x.xx|.xx.|xx.x|xxxx|xxx.|xxxx|\n…  hat   |x.xx|.xx.|xx.x|xxxx|xxx.|xxxx|\n…  1
+ 309  garrow        c 2 slices\n###########################…  None                                      0
+ 310  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 311  garrow        m 3 slices\n###########################…  None                                      0
+ 312  norvel        hat   |x.x.|x.xx|.xxx|xxxx|.x.x|xxx.|.x…  hat   |x.x.|x.xx|.xxx|xxxx|.x.x|xxx.|.x…  1
+ 313  molvic             +========= THE CORNER SHOP =======…  None                                      0
+ 314  norvel        hat   |x.xx|xx..|x.xx|xx.x|.x.x|xxxx|xx…  hat   |x.xx|xx..|x.xx|xx.x|.x.x|xxxx|xx…  0
+ 315  kelmar        .(~).....(~~~)....(~)....(~~)...(~~~)..…  .(~).....(~~~)....(~)....(~~)...(~~~)..…  0
+ 316  garrow        o 2 slices\n###########################…  None                                      0
+ 317  norvel        hat   |.xxx|xx.x|xxxx|xxxx|xx.x|x.x.|.x…  hat   |.xxx|xx.x|xxxx|xxxx|xx.x|x.x.|.x…  1
+ 318  garrow        o 0 slices\n###########################…  o 0 slices\n###########################…  1
+ 319  molvic             +=========== THE CORNER SHOP =====…  None                                      0
+ 320  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 321  durnel                  PPP                  LLL     …  None                                      0
+ 322  durnel         ####                      FFF EEE     …  None                                      0
+ 323  garrow        b 3 slices\n###########################…  None                                      0
+
+per-name tally this round
+name             presented correct  hit-rate
+basten                  46       4      8.7%
+durnel                  41       6     14.6%
+garrow                  50       5     10.0%
+kelmar                  53      26     49.1%
+molvic                  46       5     10.9%
+norvel                  51      30     58.8%
+tovel                   37       3      8.1%

@@ -184,3 +184,17 @@ borsel reach `calibrated` on 6 finals each (means 60 % / 58 %) — judges still 
 Engine change (2026-09-05, after picture pool 6 player b lost a demo to a `0 bump` tovel clue):
 `Game.demo` re-draws the seed while the reference answer equals the clue, so a demo never shows
 an identity example. Guide §6 and SPEC updated; test `test_demo_never_shows_an_identity_example`.
+Picture pool run 6, `lad-tovel-v7-1` (tovel v7, norvel v4, basten v4, durnel v2, garrow v5, molvic v3,
+kelmar v3): 1017 (default, demos → kelmar/basten/durnel) and 642 (kidproxy, demos → norvel/kelmar/
+tovel). With a demo: basten 100 (first ever crack: "the fish swam over and bit the top off the
+weed it could reach"), kelmar 100 / 41, durnel 82 (v2 with-demo evidence: the lay-by story
+lands), norvel 100, tovel 11 (the demo was a `0 bump` clue — wasted; engine now redraws).
+Without: molvic 20/14, garrow 15/13, norvel 15, tovel 10, durnel 10 — all the foothold.
+The demo cliff is now the whole game: demoed classes 82–100 %, undemoed 10–20 %, on both
+players, and both said they cannot tell from the clue which classes need the demo (that IS the
+strategy the format asks for). basten v4 reaches `calibrated` (mean 35 % over 4; STARS entry).
+Player notes to act on: garrow's caption is on the FIRST line while every other class puts it
+last (move it); skipping unsolved classes let the default player present 2010 items vs 1294 —
+"throughput beats precision by a wide margin; the tiebreak is too weak" (a scoring-design
+question for the organiser, not a class fix); a wide hypothesis sweep eliminates ~30 rules per
+class per round, so the 0/1 oracle is a strong offline tool once the shape is known.

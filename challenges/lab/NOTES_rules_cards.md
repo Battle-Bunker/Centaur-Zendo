@@ -473,3 +473,385 @@ fits?" is an easier question to ask a child than "make me another one" — the f
 themselves a hint about what kind of thing the rule can be. The cost of the re-weighting is that
 more clues now need mental arithmetic over a colour-filtered subset; that is the class's hardest
 edge and it is where a kid needs the grown-up.
+
+---
+
+# 2026-09-05 — revision 3: a universe of RELATIONS (`dornic` v3)
+
+v2 is kept byte-identical as `challenges/lab/dornic.v2.json`; the shipped file is
+`challenges/lab/dornic.json`. Paradigm step per `docs/RULE_FAMILIES.md` §"Revision 3" — the nine
+steps of the recipe, in order.
+
+## 16. What the three lineup arenas and the judge showed
+
+v2 met four Opus centaurs in three pools and finished **on target for the wrong reason**:
+
+| run | players | dornic v2 | demo? |
+|---|---|---|---|
+| `lad-tresk-v2-1` | opus-lowdemo / opus-theorist | 66 % / 59 % | no |
+| `lad-ospren-v2-1` | opus-default / opus-kidproxy | 66 % / 63 % | yes (1 each) |
+| `lad-tavrik-v3-1` | opus-lowdemo / opus-theorist | 59 % / 45 % | no |
+
+Mean 0.60 → `calibrated`. But both pool notes say the same thing: dornic and borsel are
+"calibrated by luck — the families are **wide and cheap**, several natural rules survive two
+positives", and a player called that unfair. And the judge scored v2 **3.33 / 5** (kid_contributes
+2, no_prereqs 2, rule_statable 3, nameable = **yes**), with the instruction this iteration
+implements:
+
+> *"sum/prime/multiple-of-y templates are number theory and exactly the AI predicate bank's home
+> turf; replace with relations between two cards or positions a kid checks by eye: 'the two reds are
+> the same rank', 'the highest and lowest card share a suit', 'there are more hearts than any other
+> suit'."*
+
+**The attack to beat** (both players' own words, pool 2 and pool 3): round 1 skip everything and
+harvest ~300 clues for base rates; round 2 answer a **random candidate** on every item and keep the
+1/k that come back correct — ~30 free gold labels, "30× what a demo gives"; per clue keep the
+predicates true of every example and of **exactly one candidate**, weight by rarity, answer the
+candidate the rarest survivor points at; then learn U from the labels by asking which predicate was
+the *unique explanation* of each known-correct answer. The pool-3 players said in as many words
+that "my engine wins on arithmetic families and loses on perceptual ones" — dornic v2 was the
+arithmetic family.
+
+## 17. Recipe step 1 — the attacker's bank, rebuilt for cards
+
+Union of the card banks the players actually brought:
+
+* `dornic1b`'s `dornic_preds()` — 359 predicates, carried verbatim inside v2's own `generate`;
+* `tavrik1a/strategy.py::f_hand()` — `cntS:k`, `nsuits`, `red:k`, `redpar`, `hasr:r`/`nor:r`,
+  `rsum`, `rsum%k`, `rmax`, `rmin`, `rrng`, `nrd`, `haspair`, `hastrip`, `consec2`, `maxrun`,
+  `nev`, `nface`, `hasace`, `first:v`, `lastr:v`, `firsts:S`, `lasts:S`, **`sfl`**, `adjsuit`,
+  `nlow`, `nhigh`;
+* `tavrik1b/strategy.py::f_dornic()` — `sC/sD/sH/sS`, `maxsuit`, `ndistrank`, `maxrankcnt`,
+  `npairs`, `span`, `minr`, `maxr`, `sum%2`, `nface`, `nred`, `nconsec`, `c3`, `ace`, `king`,
+  `alldist`, `gapmax`, **`suitcons`**;
+* `ospren1a/strategy.py::f_dornic()` — the same plus `sum%3`, `sum%5`, `gaps`, `longestrun`,
+  **`high_suit`**, **`low_suit`**, `maxsuitcnt`, `spread_even`;
+* `tresk1b/strategy.py::build_dornic()` — ~200 boolean predicates (`allsamesuit`, `allred`,
+  `noface`, `alleven`, `sumeven`, `twopair`, `samecolourpair`, `pairdiffcolour`, `consec`,
+  `run3`, `moreredthanblack`, `summod m`, `spadecount_eq_heart`, `cntsuit_Xk`, `max v`, `min v`…);
+
+**plus the obvious extensions a second round adds**: every number feature under **both ace
+conventions** (A = 1 and A = 14, because v3 prints the ace high and a player would try both), the
+rank and suit at each end and in the middle (`firsts`, `lasts`, `mids`, `firstr`, `lastr`, `midr`),
+`nadjsuit`, `suitset`, `colstr` (the hand's colour word, e.g. `BBRRR`), `nsuitpair`, `most X`,
+`eq XY`, `gt XY`, `nfaceA`, `dig` (the total's last digit).
+
+**127 feature keys, 4 225 realised (key, value) pairs, 511 of them with a base rate ≥ 1 %** over
+the generator's 24 000-hand pool. Those 511 are what `generate` carries as a bit mask and what the
+simulated attacker uses (the players floor their own frequency estimates, so rarer pairs are not
+usable to them either).
+
+## 18. Recipe step 2 — the retirement test: v2's universe **is** the bank
+
+Jaccard of each v2 rule against the bank, over 30 000 random five-card hands:
+
+| v2 template | the bank predicate that says the same thing | J |
+|---|---|---|
+| exactly *n* hearts / diamonds / clubs / spades | `cntH == n` … | **1.00** |
+| exactly *n* red cards | `red == n` | **1.00** |
+| exactly *n* even cards | `nevl == n` | **1.00** |
+| exactly *n* picture cards | `nface == n` | **1.00** |
+| exactly *n* different suits | `nsuits == n` | **1.00** |
+| the highest card is *n* / the lowest is *n* / highest − lowest = *n* | `maxl` / `minl` / `rngl` | **1.00** |
+| exactly one pair | `npairs == 1` | **1.00** |
+| the cards add up to *n* / to a prime / to a multiple of *y* | `suml == n` / `sumpl` / `suml%y == 0` | **1.00** |
+| the red / black cards add up to a prime or to a multiple of *y* | — (only in the extended bank) | .17–.35, **1.00** extended |
+
+**44 of v2's 52 rules are bank predicates outright.** The eight colour-sum families are the only
+ones the *shipped* bank cannot say — and they go too, because the judge's objection is not Jaccard
+but arithmetic: **every sum / prime / multiple-of-*y* / rank-sum-mod-*k* template is retired to the
+trap list regardless of J**. That is also what made v2 illegible: the ace's value was never stated
+and half the clues needed mental arithmetic over a colour-filtered subset.
+
+## 19. Recipe step 3–5 — the universe U: 9 templates, 33 rules
+
+The world is now **a hand of exactly five cards**, printed **lowest card first**, ranks
+`2 3 4 5 6 7 8 9 10 J Q K A` with the **ace HIGH**. The picture states the convention instead of a
+sentence: every line reads upwards, so an ace sits at the right-hand end after the king (demo 4
+below is a clue where `K A` are the two right-hand cards and the rule is "next-door numbers"). **No
+rule ever adds card values up**, so `A = 1` arithmetic is impossible to need.
+
+"density" = share of random five-card hands obeying the rule (40 000 hands). **"bank J"** = best
+Jaccard against any of the 511 realised bank predicates — the number that decides whether the
+attacker can *express* the rule at all.
+
+| t | kid sentence (read it aloud) | params | density | bank J | in U? |
+|---|---|---|---|---|---|
+| 0 | "**every red card is higher than every black card**" · the other way round | R, B | .091 / .093 | **.23–.26** | **IN** |
+| 1 | "**all the hearts are higher than every other card**" · lower · ×4 suits | 8 | .087–.093 | **.30–.42** | **IN** |
+| 3 | "**the two cards at the left-hand end are the same number**" · the right-hand end | 2 | .147 | **.30** | **IN** |
+| 4 | "**the card at the left-hand end is the only one of its suit**" · the right-hand end | 2 | .317 / .322 | **.42** | **IN** |
+| 5 | "**the 1st and the 2nd card are the same suit**" · 4th and 5th · 1st and 3rd · 3rd and 5th | 4 | .212–.252 | **.25–.34** | **IN** |
+| 8 | "**the two cards at the left-hand end are next-door numbers**" · the right-hand end | 2 | .298 / .301 | **.38** | **IN** |
+| 2 | "there are more hearts than any other suit" (the judge's example) | 4 | .158–.160 | 1.00 | **IN** (cheap) |
+| 5 | "the two end cards are the same suit" (the judge's other example) | 1 | .245 | 1.00 | **IN** (cheap) |
+| 6 | "there are exactly two hearts / diamonds / clubs / spades" | 4 | .273–.278 | 1.00 | **IN** (cheap, ×2) |
+| 7 | "the hand has an ace / a king / a queen / a jack" | 4 | .339–.344 | 1.00 | **IN** (cheap, ×2) |
+| — | every count / extremum / span / pair / sum / prime / multiple rule of v1–v2 | 52 | .03–.59 | **1.00** | EXCLUDED (§18) |
+
+|U| = **33 rules over 9 templates, 24 of them relational** (bank J .23–.42) and 9 cheap on purpose
+(J 1.00, **32.0 % of clues**, template 6 and 7 at double draw weight). Mean density of the hidden
+rule **0.231**. Antichain verified by brute force over **300 000 random hands** and over the
+generator's own 24 000-hand pool: **0 nesting violations**, minimum support 8.8 % (26 481 hands).
+Template mix over 500 clues: 5 → 89, 4 → 71, 8 → 66, 7 → 56, 6 → 49, 0 → 47, 1 → 44, 3 → 40,
+2 → 38; all 33 rules used.
+
+### Templates measured and thrown out this round
+
+| template | density | bank J | why not |
+|---|---|---|---|
+| "the highest card is a heart" | .25 | **1.00** | it *is* `high_suit`; kept as a trap (it was a v1 trap too) |
+| "two cards are next-door in rank" (anywhere) | .55 | **1.00** | `consh`; and > .5, so four decoys all lacking it is itself a signature |
+| "no two cards next to each other in the row share a suit" | .60 | **1.00** | `adjsuit`; trap |
+| "the two matching cards are the same colour" | .07 | **1.00** | `samecolpair`; trap |
+| "there are as many hearts as spades" | .30 | **1.00** | `eqHS` — tresk1b's bank literally has `spadecount_eq_heart`; trap |
+| "the hand has a pair" | .49 | **1.00** | `pair`, and too dense; trap (it was v2's competitor-only rule) |
+| "two cards of one suit are next-door in rank" | .30 | ~.80 | `suitcons ≥ 1`; trap |
+| "the first and the last card are the same **colour**" | .48 | .55 | density > .5 territory: four decoys all lacking it is a signature |
+| "**the two red cards are the same rank**" (the judge's first example) | **.02** | .30 | too rare to support a lineup — needs exactly two reds *and* a pair inside them; the same idea survives as template 3 ("the two cards at an end are the same number"), which a kid checks the same way |
+| "the picture cards are all the same suit" | .04 | .35 | too rare, and vacuous when there are none |
+| "the middle card is a picture card" | .10 | .40 | a property of one card at one place, not a relation |
+| "the cards go up in rank left to right" | **1.00** | — | true of every printed line, exactly as in v1/v2: order is always consistent and never the rule |
+
+**The kid constraint did the final cutting, not the Jaccard.** tavrik v3's judge fell 4.7 → 3.83 on
+counted relations ("*n* apart in the alphabet"); tresk v3 rose 4.0 → 4.5 on relations a kid **spots
+by eye**. Everything in dornic v3's U is a *look*, not a sum: a colour block, a suit block, two
+matching numbers at one end, a lone suit at one end, two places sharing a suit, two neighbouring
+numbers at one end. The only counting left is "more hearts than any other suit" — four little piles
+in a fanned hand, which is the judge's own example — and "exactly two hearts".
+
+## 20. Recipe steps 6–7 — the lineup
+
+* **k = 5** candidates, all five-card hands, five distinct hands, none equal to an example.
+* **The clue is a minimal PAIR** (lever 2): the two examples leave exactly one rule of U alive,
+  neither alone does, and they are **card-disjoint** (one deck, two hands dealt). 2 examples on
+  500/500 clues.
+* **Matched trap profiles in the strong form** (§5b): every candidate fires exactly the same
+  example-consistent excluded rules as the true one. Over 500 clues **all 5 244 fitted traps are
+  satisfied by all five candidates or by none** — so no trap, no count of traps and no combination
+  of traps separates the lineup. 29 excluded families are fitted, mean 10.5 per clue.
+* **Four aimed orders** (lever 5): `generate` carries the 511-predicate bank, intersects it over
+  the two examples and aims the true candidate's rank uniformly at random in (a) the **rarity**
+  order — the surprise of the rarest surviving predicate that selects exactly one candidate, the
+  statistic the players actually used — then (b) the count order, (c) the look-alike order (cards
+  shared with the other candidates) and (d) the **clue-overlap** order (cards shared with the
+  examples). (d) was added after the first build measured "the candidate sharing the most clue
+  cards" at 28.6 %: the cheap "the hand has a king" template leaks through card overlap because the
+  decoys must *not* hold the king. With (d) it is 24.6 %, four points over the floor.
+
+## 21. Recipe step 8 — the simulated attack, v2 vs v3
+
+The full engine: skip-harvest 300 clues for base rates → answer a random candidate on a disjoint
+stream, keeping the ~1/k that come back correct as gold labels → per-predicate unique-explanation
+weights (`n/m`) → rarity-weighted pick. 500 fresh test clues (seeds 1e6 …), the same 511-predicate
+bank both sides (for v2, extended with the colour-sum features its own U needs).
+
+| labels | **v2 as shipped** (k = 4, floor 25 %) | **v3** (k = 5, floor 20 %) | v3, bank + all of U |
+|---|---|---|---|
+| 0 | 80.8 % | **32.2 %** | 67.6 % |
+| 30 | 89.2 % | **35.4 %** | 81.6 % |
+| 60 | 93.5 % | **39.6 %** | 87.4 % |
+| 120 | 96.0 % | **42.2 %** | 93.8 % |
+| 240 | 96.8 % | **44.0 %** | 95.4 % |
+| 360 | — | **44.8 %** | 96.0 % |
+
+The shape is the point: v2 is a lookup from the first free labels; v3 pays ~7 points for the first
+120 labels (that is the cheap third of the clues) and then goes **flat**. **U-coverage** (the share
+of fresh clues whose true rule the learner has confidently identified: a predicate with m ≥ 4
+firings and n/m ≥ 0.7) saturates at **35 %** with the generic bank — it can never pass the cheap
+templates — while the attacker who is *handed* U learns it to **90 % coverage in about 240 labels**
+(14 % at 30, 38 % at 60, 69 % at 120, 91 % at 240). The **in-U intersection is 100.0 %**. The gap
+**40 % → 90 %** is the class, and it is paid for by inventing the vocabulary: looking at two hands
+and thinking "the two cards at the right-hand end", not "the sum of the ranks".
+
+One honesty note that matters for reading these numbers: on **v2** this simulator scores 89–93 %
+where the real Opus centaurs scored **45–66 %**, because the reconstructed bank contains the
+colour-sum features their own pools did not. It is therefore a *strong* model of the attacker here,
+not a weak one, and v3's 35–40 % at 30–60 labels should be read as the pessimistic end.
+
+### Levers, measured (identical conditions, 400 test clues, 60 labels)
+
+| build | k | floor | simulated attack |
+|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **40.0 %** |
+| minus lever 3 — **v2 as shipped** (same engine, same bank) | 4 | 25 % | **93.5 %** |
+| minus lever 5 (decoys not aimed at all) | 5 | 20 % | 43.2 % |
+| minus lever 1 (k = 4) | 4 | 25 % | 40.8 % |
+| lever 1 pushed (k = 6) | 6 | 16.7 % | 35.5 % |
+| minus lever 2 (three-example clues) | 5 | 20 % | 36.2 % |
+| the four cheap templates at half draw weight | 5 | 20 % | 31.5 % |
+
+**The relational universe (lever 3) is worth ≈ 53 points** — the whole game, for the third class in
+a row (tavrik 57, tresk 49, ospren 38). Aiming is worth ≈ 3, the fifth candidate ≈ 1 over k = 4 at
+60 labels (and 4 points at 0 labels: 32.0 vs 36.0). Two honest departures from the recipe's
+expectations, both **declined on the 12-year-old test rather than on the attack number**: k = 6
+would buy 4.5 points but adds a sixth line to a clue that already has seven, and three-example clues
+would buy 3.8 points but ask a kid to hold a third hand in their head — and lever 2 says the
+minimal pair is the shape. They are the first two levers to reach for if the class comes back too
+easy. The cheap templates are the *slope*: halving their weight costs the attacker 8.5 points and
+would leave the class reading as arbitrary.
+
+## 22. Four demos
+
+```
+seed 1000002    hidden rule: EVERY RED CARD IS HIGHER THAN EVERY BLACK CARD
+
+  examples      3C 4D 6D QH AH                  (black 3; red 4 6 Q A)
+                6S 9C JC JS KD                  (black 6 9 J J; red K)
+  candidates 1) 2C 4D 8S 9C 10H
+             2) 2S 3C 5H 9S 10D
+             3) 2S 3H 7D 10C AH
+             4) 2C 2S 9H 10D QH   <-- ANSWER    (black 2 2; red 9 10 Q)
+             5) 2S 3D 5C 5S 8H
+
+seed 1000005    hidden rule: THE TWO CARDS AT THE LEFT-HAND END ARE THE SAME NUMBER
+
+  examples      2H 2S 8C JH JS
+                3H 3S 5S 6D 7S
+  candidates 1) 2D 4S 5C 8H AD
+             2) 4H 5H 7H JS AH
+             3) 5H 5C 5S 6D AH   <-- ANSWER
+             4) 2D 6C 8S 9H AD
+             5) 3D 8D 10C QS AH
+  (note the first example also has a matching pair at the RIGHT-hand end; the second example
+   is what kills that rival, which is what "a minimal identifying pair" means)
+
+seed 1000007    hidden rule: THERE ARE MORE CLUBS THAN ANY OTHER SUIT   (a CHEAP template)
+
+  examples      4C 4S 6S 7C 10C
+                2D 3C 7S 9H KC
+  candidates 1) 2C 6C 8H 10C QS   <-- ANSWER
+             2) 4C 8D 8S 10S KC
+             3) 3S 5S 7D 10C KC
+             4) 2H 5C 7C 9H QS
+             5) 3S 8D 8C 8S JC
+
+seed 1000003    hidden rule: THE TWO CARDS AT THE RIGHT-HAND END ARE NEXT-DOOR NUMBERS
+
+  examples      7C 8S QC KC AD                  (K then A -- the ace is high, and the printed
+                2H 4D 4S 5D 6S                   order says so without a word of explanation)
+  candidates 1) 3C 4C 7H 8C QS
+             2) 5H 5C 6C 6S 10C
+             3) 6C 7S 9H 10H JC   <-- ANSWER    (10 then J)
+             4) 4H 6H 7C 8C QS
+             5) 5C 7H KS AH AS
+```
+
+Demo 1 is the class in one picture: five hands of five cards, all five firing exactly the same
+excluded rules, and the answer is the only one that splits into a black block then a red block.
+Demo 3 is the learnable slope — a kid counts four little piles and so does a predicate bank.
+
+## 23. Witness table — 500 fresh clues (seeds 1 000 000 – 1 000 499)
+
+The answer is a choice among five, so the floor is **20 %**.
+
+| witness | score |
+|---|---|
+| **the true rule (`solve`), verbatim and by index** | **100.0 % / 100.0 %** |
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| a player who knows U minus its two least-used templates | 87.2 % |
+| **the full revision-3 attack, 511-predicate bank, 30 labels** | **35.4 %** |
+| … at 0 / 60 / 120 / 240 / 360 labels | 32.2 / 39.6 / 42.2 / 44.0 / 44.8 % |
+| the candidate satisfying the MOST example-consistent bank predicates | 28.0 % |
+| universe = U + the excluded rules, one surviving hypothesis picked uniformly | 27.8 % |
+| the odd one out (fewest cards in common with the other four) | 26.0 % |
+| the candidate sharing the most cards with the clue | 24.6 % |
+| the candidate with the most hearts | 23.2 % |
+| the candidate holding the highest card | 21.6 % |
+| the candidate satisfying the MOST fitted excluded rules | 21.2 % |
+| pick candidate 1 | 21.0 % |
+| **pick a random candidate (the floor)** | **20.8 %** |
+| the candidate satisfying the FEWEST fitted excluded rules | 20.8 % |
+| the candidate whose two end cards share a suit | 20.4 % |
+| the candidate with a pair | 19.6 % |
+| pick candidate 5 | 17.4 % |
+| the candidate sharing the fewest cards with the clue | 15.8 % |
+| the medoid (most cards in common with the other four) | 15.6 % |
+| the candidate satisfying the FEWEST bank predicates | 12.2 % |
+| **each of the 27 fitted excluded-rule families** | **6.7 – 32.1 %** (tie-breaking; see below) |
+
+The excluded rules are *structurally* dead rather than merely weak: all **5 244** fitted traps over
+the 500 clues are satisfied by all five candidates or by none, so believing one only changes which
+candidate a coin lands on. Fit rates: no card above the clue's highest 100 % · none below its
+lowest 100 % · at least *n* of a suit 232 % (several suits per clue) · the highest card is red /
+black 54 % · the lowest card is red / black 50 % · the total is a multiple of *y* 50 % · aces low, a
+multiple of *y* 40 % · two cards next-door in rank 60 % · two neighbours share a suit 43 % · as many
+X as Y 41 % · exactly *n* different suits 41 % · more red than black 37 % · the hand has a pair 29 %
+· no two cards share a number 22 % · exactly *n* red cards 21 % · exactly *n* even cards 21 % ·
+exactly *n* picture cards 19 % · highest − lowest = *n* 12 % · the pair is two colours 13 % · the
+total is prime 6 % · the cards add up to *n* 4 %. The one row above 30 % (32.1 %, "two cards of one
+suit are next-door in rank") is a 53-fit tie-break.
+
+There is **no row 10+ points over the floor** — dornic v3 has no equivalent of tresk's "biggest
+clump" foothold; the foothold here is the format itself (five hands, pick one) plus the ~32 % of
+clues whose rule is cheap.
+
+Other measured numbers (500 clues): uniqueness 500/500 · minimality 500/500 · exactly one candidate
+obeys the rule 500/500 · five distinct candidates 500/500 · no candidate equal to an example 500/500
+· examples card-disjoint 500/500 · matched trap profiles 5 244/5 244 · examples per clue 2 → 500 ·
+true-candidate position 105/108/103/97/87 · over 2 000 seeds, **2 000 distinct clues and 0 fallback
+clues**.
+
+## 24. Validation
+
+`python tools/quickcheck.py challenges/lab/dornic.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK dornic  gen=9.9-13.3ms score=0.9ms solve=0.9ms` over repeated runs (quickcheck reports the
+*max* over the 300 seeds; the mean is 2.83 ms), **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **997 chars** (v1 1016, v2 905) | 1024 (the rule-family raise, RULE_FAMILIES §4) |
+| `generate` source | 21 587 | 50 000 |
+| `solve` source | 1 980 | 5 000 |
+| `generate` | **2.83 ms mean** over 2 000 seeds, 6.5 ms max | 100 ms |
+| `score` | 0.30 ms (0.9 ms max incl. junk) | 50 ms |
+| `solve` | 0.27 ms | 2 000 ms |
+| clue | ≤ 113 chars | 1 024 |
+| answer | ≤ 16 chars | 1 024 |
+
+The 33 rules are rebuilt in the scorer from a **131-character table**
+(`"0R- 0B- 1H0 … 80- 81-"`, each entry a template digit plus a two-character parameter), which is
+what bought the room for six relational templates inside 1 024 chars; the nine templates are one
+list comprehension evaluated eagerly, so every parameter is padded to two characters and the one
+index-taking rule reads its positions with `"01234".find(x)` (which returns −1, i.e. a legal index,
+for the templates that do not use it).
+
+`score` was checked candidate-by-candidate against `solve` on **500 clues × 5 candidates ×
+(verbatim / 1-based index / lower case with doubled spaces) — 7 500 checks, 0 disagreements** — and
+returns 0 without raising for `""`, `"x"`, `"0"`, `"6"`, `"9"`, `"-1"`, `"1.0"`, `"1 2"`,
+`"1"×100`, the unicode digits `"١"` and `"²"`, the clue itself, the example block alone, a malformed
+hand (`2Z 3Z …`), a well-formed five-card hand that is not in the lineup, a candidate with a card
+removed and a candidate with a card added. Module-level tables cost **≈ 5 s once per worker** (the
+24 000-hand pool, its 33-bit U mask, its excluded-rule features and its 511-bit bank mask); not
+charged to `max_generate_ms`. `solve` re-derives the survivor exactly as the scorer does and returns
+the true candidate verbatim.
+
+## 25. Predicted classification
+
+**Calibrated**, and for the right reason this time.
+
+* **Without a demo** the clue reads as multiple choice from round 1 (two hands, a gap, five hands
+  of the same size), so every probe is well formed and the floor is a free 20 %. The engine that
+  scored 45–66 % on v2 now pays **32 % at zero labels, 35–40 % once the free labels arrive, and
+  stops improving** (44.8 % at 360). Expect **25–45 %**.
+* **With a demo** the demo teaches the format and one worked rule. The way up is to notice that
+  this class talks about *ends of the fan, blocks of colour and pairs of places* and to write those
+  predicates down; a player who does scores 87–96 %, one who maps 7 of the 9 templates scores 87 %.
+  Expect **40–65 %**.
+
+Mean across two Opus teams ≈ **0.35–0.55** → `calibrated`. If it comes back **too easy** the levers
+are k = 6 (−4.5 points) and three-example clues (−3.8); if **too hard**, put the cheap templates
+back up (double weight on all four takes the attacker to ~45 %) or drop to k = 4 (+1 to +4).
+
+**12-year-old test (target: 4.3+, up from 3.33).** The object is unchanged and instantly evocable —
+a hand of cards, fanned, printed in order. What changed is what the rules talk about. Read them
+aloud: *every red card is higher than every black card · all the hearts are higher than every other
+card · the two cards at the left-hand end are the same number · the card at the right-hand end is
+the only one of its suit · the 4th and 5th cards are the same suit · the two cards at the right-hand
+end are next-door numbers · there are more clubs than any other suit · the hand has a queen.* Each
+is one breath and each can be checked on five cards in about two seconds, by looking rather than by
+counting. The three things the judge objected to are gone: **no sums, no primes, no multiples**
+(all retired to the trap list); **no unstated ace convention** (the printed order says A is high and
+nothing ever adds A up); and the "nameable = yes" problem is answered the way tavrik/tresk/ospren
+answered it — the rules are still one-breath sentences, but they are sentences about *relations
+between two cards*, which is exactly what a predicate bank cannot say and a kid says first.

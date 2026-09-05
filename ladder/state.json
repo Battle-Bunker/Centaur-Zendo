@@ -4047,7 +4047,23 @@
   },
   "molvic": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Demo picture is dense (7-14 strays across 5 shelves) so the in-line+mutual signal is buried; fewer decoys or stronger visual emphasis on the swapping column.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 3,
+      "kid_contributes": 3,
+      "no_prereqs": 4,
+      "object": 3,
+      "rule_statable": 4
+     },
+     "score": 3.67,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

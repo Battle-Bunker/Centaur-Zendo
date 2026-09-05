@@ -4045,6 +4045,20 @@
     }
    ]
   },
+  "molvic": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788592137.9489799,
+     "file": "challenges/lab/molvic.json",
+     "note": "designer new-13: shop shelves; two strays swap iff same slot, one above the other, each on the other's shelf; caption 'n swap'; foothold 12%",
+     "v": 1
+    }
+   ]
+  },
   "morvin": {
    "current_version": 2,
    "qual": [
@@ -10538,7 +10552,7 @@
    "id": "designer-new-13-man",
    "kind": "designer",
    "started": 1788590434.2905679,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {

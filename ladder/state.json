@@ -899,7 +899,7 @@
    ]
   },
   "basten": {
-   "current_version": 3,
+   "current_version": 4,
    "qual": [
     {
      "advice": "The double-nibble clause is positive-only and easy to miss; consider widening the fish-minus-leaf gap to 2+ in every demo so the nose/tail-vs-both-sides distinction reads as the headline discovery.",
@@ -947,7 +947,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -1543,7 +1544,7 @@
      "version": 3
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "added": 1788535094.8941724,
@@ -1562,6 +1563,12 @@
      "file": "challenges/lab/basten.json",
      "note": "v3 demo economy: clue is the empty tank; N 3-5; demos show nose vs tail on the same stalk",
      "v": 3
+    },
+    {
+     "added": 1788595481.972248,
+     "file": "challenges/lab/basten.json",
+     "note": "refiner: fish in the clue; each fish swims to the weed it faces and nibbles the top if within reach (same row or one above); caption 'n nibble'; foothold 13%",
+     "v": 4
     }
    ]
   },
@@ -11205,7 +11212,7 @@
    "kind": "refiner",
    "reason": "0% without demo x6, 30% with; free-parameter caption; needs checksum caption",
    "started": 1788592735.972883,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

@@ -50,7 +50,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | tavrik | 1 | untested | - | - | - | - | - | 0 | 0 | - | - |
 | TOPPLE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | tovel | 5 | testing | 0% | 0.00 | - | 0% (2) | 3.5 | 2 | 0 | opus-default,opus-kidproxy | 26% (12) |
-| tresk | 1 | untested | - | - | - | - | - | 0 | 0 | - | - |
+| tresk | 1 | untested | - | - | - | - | 4.0 | 0 | 0 | - | - |
 | trico | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | velk | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.4 | 2 | 0 | opus-default,opus-kidproxy | 100% (2) |

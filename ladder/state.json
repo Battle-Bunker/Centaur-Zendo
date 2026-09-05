@@ -4893,7 +4893,23 @@
   "tresk": {
    "current_version": 1,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Render the clue as bead icons in a row instead of bare R/G/B text so the object reads as beads on a string at once.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 4,
+      "kid_contributes": 3,
+      "no_prereqs": 5,
+      "object": 3,
+      "rule_statable": 5
+     },
+     "score": 4.0,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

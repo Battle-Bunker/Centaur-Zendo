@@ -113,3 +113,144 @@ happen to come out sorted — it never emits a canonical or minimal witness).
 `score()` (653 chars, needs `max_score_code_chars = 1024`, the raise `RULE_FAMILIES.md` §4 allows
 for this paradigm) parses the example lines, rebuilds U from k alone, filters, insists on a single
 survivor, and checks the answer is a fresh well-formed roll obeying it. No hidden channel.
+
+---
+
+## 2026-09-05 — revision 2: the LINEUP answer (`borsel` v2; v1 kept as `borsel.v1.json`)
+
+`docs/RULE_FAMILIES.md` "Revision 2". v1 was cracked without a rule ever being named: dornic1b kept
+every predicate of a 226-strong dice pool that was true of all the examples and emitted a roll
+satisfying all of them at once (58 %), and the only thing that ever held them was the invisible
+"not a re-ordering of an example" clause (0/10 → 25/40 the moment they guessed it). So the answer
+stops being a construction and becomes a **choice**.
+
+### What changed
+
+| | v1 | v2 |
+|---|---|---|
+| clue | 2–3 example rolls | the same examples, a blank line, then **4 candidate rolls** of the same k |
+| answer | any fresh roll obeying the rule | the **one candidate** that obeys it, verbatim (any dice order) or its index 1–4 |
+| freshness clause | "not a re-ordering of an example" | **gone** (rev. 2 §5) |
+| floor | ~10 % (a random roll) | 25 % |
+| example search | minimal identifying triple, else pair | **unchanged**, plus up to 4 example sets per rule |
+| U | 11 templates, 26–27 rules | **unchanged** (still the same antichain) |
+| score | 653 chars | 763 chars (still under the 1024 the paradigm may use) |
+
+### The demotion (the tavrik lesson)
+
+The trap set now contains the two **total brackets** — "the total is at least the smallest total in
+the clue" and "at most the biggest one". When the hidden rule is template 0, *the dice add up to
+exactly n*, every example has total n, so those two loose cousins bracket the rule **exactly**:
+their conjunction IS the rule, and a decoy firing the same traps as the truth would have to satisfy
+the rule. Template 0 is therefore **demoted to competitor-only** — it stays in U, the examples must
+still kill it, but it is never the hidden rule. Ten of the eleven templates remain eligible, coming
+up 37–67 times per 500 clues (template 5 is unusable at k = 3: only 5 rolls of three dice show
+exactly two v's).
+
+Every other template survives the check because the remaining brackets are **one-sided on their own
+readout**: "every die is at least a" bounds the minimum from below only, "no die is bigger than b"
+the maximum from above only, so *the smallest die is 4* and *the biggest die is 3* are not
+reconstructible from the traps. Templates 1 and 2 (the two sum thresholds) survive but are fussy:
+the truth has to sit outside the examples' total range, which is why they need the four-example-sets
+retry to stay as common as the rest.
+
+### Matched trap profiles (rev. 2 §5b)
+
+All four candidates fire **exactly the same** set of example-consistent excluded rules — asserted
+over 500 clues; every trap is satisfied by all four or by none. Thirteen excluded rules are tested:
+
+| excluded rule | fires | pick-by-it score |
+|---|---|---|
+| every die is at least a | 100 % | 26.6 % |
+| no die is bigger than b | 100 % | 24.8 % |
+| the total is at least s | 100 % | 26.2 % |
+| the total is at most s | 100 % | 24.6 % |
+| two dice show the same number | 89 % | 27.3 % |
+| the total is even / odd | 42 % | 21.5 % |
+| exactly c of the dice are odd | 16 % | 28.0 % |
+| two of them add up to seven | 16 % | 17.3 % |
+| there is a six | 12 % | 22.4 % |
+| all odd | 3 % | 33.3 % |
+| all even | 2 % | 0.0 % |
+| three of them are in a row | 1 % | 14.3 % |
+| all the dice are different | 0.4 % | 0.0 % |
+
+(The small-sample rows are 3–15 clues each.) The order-dependent v1 trap "the dice are in increasing
+order" is dropped: every roll, example or candidate, is printed in a random order, so it is noise for
+all four alike.
+
+### Beating the count attack (rev. 2 §2 and §5c)
+
+The generator carries dornic1b's own pool, rebuilt from their `zpools.py` — the 173 **order-free**
+predicates of it (totals, divisors, per-pip has/none/max/min/count, distinct counts, ranges,
+parities, runs, products); their order-sensitive predicates are noise here because the dice are
+shuffled on every line. Each predicate is weighted by −log2 of its base rate under a uniform roll,
+bucketed 1–7, so a candidate's rarity-weighted score is seven big-int ANDs.
+
+The surprise: with matched trap profiles, in **~42 %** of clues *no* decoy can reach the true
+candidate's score at all (the hidden rule's own predicates are in the surviving set and only the
+truth satisfies them). Aiming the truth's rank uniformly at 0–3, as tresk does, therefore leaves
+"pick the biggest score" at 38 %. Aiming at **1–3** instead — take the best reachable when 1 is
+already out of reach — flattens both ends: 29 % for the argmax and 24 % for the argmin. Within that
+split the truth is also placed at a randomly aimed rank on the plain count and on "closest total to
+the examples' totals". A decoy beats the truth on the attacker's count in **62 %** of clues.
+
+### Witness table, 500 fresh clues (attacker pool = the real 226 borsel predicates)
+
+| witness | score |
+|---|---|
+| pick candidate 1 | 24.8 % |
+| pick a random candidate | 26.4 % |
+| the candidate satisfying the **most** attacker predicates | **29.2 %** (target ≤ 60 %) |
+| the candidate satisfying the **fewest** | 23.6 % |
+| rarity-weighted intersection (§5c) | 39.0 % |
+| closest total to the examples' totals | 39.2 % (v1's best cheap heuristic scored 35 %) |
+| the in-U intersection | **100 %** |
+| pick by each excluded rule | 17–28 %, mean 25 % |
+| knows U minus its two rarest templates | 88.0 % |
+| the true rule | **100 %** |
+
+The two cheap heuristics still above chance — the rarity-weighted intersection and "closest total" —
+are the same pair dornic v2 reports (47 % there). They are the price of a world whose readouts are
+all arithmetic on the same five numbers; a two-step readout would blunt them further, but there is no
+two-step readout of a dice roll that stays a one-breath kid sentence.
+
+### Measurements
+
+3000 clues: mean generate **0.31 ms** (p50 0.26, p95 0.65, max 1.4), no fallback ever used; 57 % two
+examples / 43 % three (unchanged from v1); k = 3/4/5 in 16/40/44 % of clues; clue ≤ 70 chars; answer
+≤ 9 chars; the correct candidate is uniform over positions 1–4 (751/745/732/772). `solve` returns the
+obeying candidate line verbatim — with a lineup there is nothing to vary and nothing to leak.
+`score` is 763 chars, accepts the candidate in any dice order or its 1-based index, insists on a
+single surviving rule of U, and returns 1 iff the chosen candidate obeys it.
+`python tools/quickcheck.py challenges/lab/borsel.json --seeds 300` → OK.
+
+### Three demos (the clue exactly as the player sees it, then the answer)
+
+```
+3 2 3 2                 1 4 2 5 2               6 5 4 6 5
+2 2 3 2                 5 4 4 1 4               5 4 5 5 4
+1 2 3 3                                         5 4 4 4 5
+                        4 3 3 6 2
+1 1 1 1                 5 2 1 6 2               5 6 6 5 5
+1 1 2 1                 1 2 3 6 2               6 6 6 6 6
+1 3 3 1                 4 6 1 1 4               5 5 6 6 6
+2 2 2 2                                         4 6 6 6 6
+```
+| answer | candidate | the hidden rule |
+|---|---|---|
+| `1 3 3 1` | 3 | the biggest die is a 3 |
+| `1 2 3 6 2` | 3 | the two biggest add up to 9 |
+| `4 6 6 6 6` | 4 | the smallest die is a 4 |
+
+(Each column above is one whole clue: the examples, a blank line, the four candidates. In the first
+one all four candidates fire exactly the same traps — every die at least 1, no die bigger than 3,
+total at most 10, two dice the same — and none of them fires "the total is at least 9".)
+
+### Predicted classification
+
+**Hard but crackable — the intended band.** The floor is 25 % and every cheap statistic sits between
+24 % and 39 %; a player who reconstructs U scores 100 % and one who is two templates short scores
+88 %. An Opus centaur team with 3 demo requests and a few hundred clues of 0/1 feedback should land
+around **45–60 %**: the rarity-weighted intersection alone gives ~39 %, and each template they name
+adds roughly its 4–13 % share of the clues. That is the "cracked about half the time" target.

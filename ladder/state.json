@@ -1420,7 +1420,7 @@
    ]
   },
   "borsel": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -1438,6 +1438,9 @@
      "score": 4.5,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -1521,6 +1524,12 @@
      "file": "challenges/lab/borsel.json",
      "note": "v1 rule family (dice): 11 templates, antichain universe, tight statements only; scorer 653",
      "v": 1
+    },
+    {
+     "added": 1788583559.863859,
+     "file": "challenges/lab/borsel.json",
+     "note": "v2 lineup: 4 candidates, matched trap profiles, exact-total template demoted; count attack 58%->29%, rarity-weighted 39%",
+     "v": 2
     }
    ]
   },
@@ -8156,7 +8165,7 @@
    "class": "borsel",
    "id": "judge-borsel-v1-6d17",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -8474,7 +8483,7 @@
    "kind": "refiner",
    "reason": "lineup",
    "started": 1788582510.1020203,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -8515,6 +8524,22 @@
    "agents": 1,
    "class": "dornic",
    "id": "judge-dornic-v2-3637",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "borsel",
+   "id": "players-borsel-v2-d3bb",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "borsel",
+   "id": "judge-borsel-v2-4c61",
    "kind": "judge",
    "status": "pending",
    "version": 2

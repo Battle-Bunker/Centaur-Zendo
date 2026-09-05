@@ -2342,6 +2342,21 @@
      },
      "score": 3.33,
      "version": 2
+    },
+    {
+     "advice": "Relation vocabulary is kid-native; the lineup format itself reads as multiple choice; consider a lighter visual presentation of the hands.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.33,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -13299,6 +13314,39 @@
    "id": "judge-garrow-v5-e9bb",
    "kind": "judge",
    "status": "pending",
+   "version": 5
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-picture-pool-7",
+   "kind": "players",
+   "members": [
+    "garrow",
+    "tovel",
+    "molvic",
+    "durnel",
+    "norvel",
+    "fennick",
+    "virel"
+   ],
+   "pool": {
+    "durnel": 2,
+    "fennick": 3,
+    "garrow": 5,
+    "molvic": 3,
+    "norvel": 4,
+    "tovel": 7,
+    "virel": 3
+   },
+   "reason": "demo-holder evidence for tovel v7, molvic v3, garrow v5; more finals for durnel v2",
+   "run": "lad-garrow-v5-2",
+   "started": 1788602477.8702629,
+   "status": "running",
+   "teams": {
+    "garrow2a": "opus-default",
+    "garrow2b": "opus-kidproxy"
+   },
    "version": 5
   }
  ],

@@ -48,7 +48,7 @@ Field rules
 
 | cap | default | applies to |
 |---|---|---|
-| `max_score_code_chars` | **512** | `score` source |
+| `max_score_code_chars` | **1024** | `score` source (aim for ≤ 512; rule-family scorers may need the full 1024) |
 | `max_generate_code_chars` | 50000 | `generate` source |
 | `max_solve_code_chars` | 5000 | `solve` source |
 | `max_clue_chars` | 1024 | every string `generate` returns |

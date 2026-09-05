@@ -1428,6 +1428,21 @@
     }
    ]
   },
+  "dornic": {
+   "current_version": 1,
+   "paradigm": "rule_family",
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788567950.2991617,
+     "file": "challenges/lab/dornic.json",
+     "note": "v1 rule family (cards): 17 templates, |U|=91, fresh-cards clause; scorer 1016 chars",
+     "v": 1
+    }
+   ]
+  },
   "erewhon": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -6248,7 +6263,7 @@
    "kind": "designer",
    "paradigm": "rule_family",
    "started": 1788566371.273323,
-   "status": "running",
+   "status": "done",
    "version": null,
    "world": "a hand of 4-6 playing cards"
   },
@@ -6269,7 +6284,8 @@
    "id": "rfdesigner-2",
    "kind": "designer",
    "paradigm": "rule_family",
-   "status": "pending",
+   "started": 1788567950.330286,
+   "status": "running",
    "version": null,
    "world": "a string of 6-10 coloured beads"
   },
@@ -6408,6 +6424,22 @@
    "kind": "judge",
    "status": "pending",
    "version": 4
+  },
+  {
+   "agents": 2,
+   "class": "dornic",
+   "id": "players-dornic-v1-6e58",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "dornic",
+   "id": "judge-dornic-v1-3bfe",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

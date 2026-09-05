@@ -45,7 +45,7 @@ class GameConfig:
     final_seed: int | None = 20250601     # seed of that shared sequence (None => random at final start)
 
     # ---- code size caps (SPEC §2) -------------------------------------------
-    max_score_code_chars: int = 512
+    max_score_code_chars: int = 1024       # raised from 512 on 2026-09-05 for rule-family scorers that must enumerate their universe
     max_clue_chars: int = 1024
     max_generate_code_chars: int = 50_000
     max_solve_code_chars: int = 5_000

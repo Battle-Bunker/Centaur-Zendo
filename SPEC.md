@@ -72,7 +72,7 @@ Character caps (measured as `len(source_string)`, all configurable in `GameConfi
 
 | cap                          | default | applies to                       |
 |------------------------------|---------|----------------------------------|
-| `max_score_code_chars`       | 512     | `score` source                   |
+| `max_score_code_chars`       | 1024    | `score` source (512 until 2026-09-05; picture classes still aim for ≤ 512) |
 | `max_clue_chars`             | 1024    | every string returned by generate|
 | `max_generate_code_chars`    | 50000   | `generate` source                |
 | `max_solve_code_chars`       | 5000    | `solve` source                   |

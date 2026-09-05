@@ -88,3 +88,10 @@ What made the on-target ones work, and the principles now in `sim/DESIGN_LOOP.md
 * **The final is a throughput benchmark once solved.** Every player flagged that 100 % teams are
   separated only by socket round-trips. Consider scoring the final on a fixed number of presented
   challenges, or `correct − λ·wrong`, if insight rather than throughput should decide ties.
+
+## Scorer cap raised to 1024 (2026-09-05)
+Rule-family classes (docs/RULE_FAMILIES.md) must enumerate their rule universe inside `score()` to
+re-derive the hidden rule from the clue's examples; the first one (`dornic`, cards, 17 templates,
+91 rules) needed 1016 chars after golfing. `max_score_code_chars` is now 1024 for the whole pool;
+picture classes still aim for ≤ 512. Declared judgement call per the organiser's earlier
+instruction to raise limits when maximally succinct code cannot fit the logic.

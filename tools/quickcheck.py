@@ -11,7 +11,7 @@ import sys, json, time, random, signal, re, os, argparse, builtins as _b
 
 # ---- caps (mirror GameConfig defaults) ---------------------------------------
 CAPS = dict(
-    max_score_code_chars=512, max_clue_chars=1024, max_generate_code_chars=50_000,
+    max_score_code_chars=1024, max_clue_chars=1024, max_generate_code_chars=50_000,
     max_solve_code_chars=5_000, max_solution_chars=1024,
     max_generate_ms=100, max_score_ms=50, max_solve_ms=2000,
     validation_seeds=20, validation_seed=12345,

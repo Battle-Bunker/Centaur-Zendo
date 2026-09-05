@@ -915,3 +915,150 @@ under 3–4 decoy letters scattered across the page". For the thin channel the n
 fill most non-counted days with a single filler (or bare dots) so the counted sandwiches and the
 planted decoy pairs are the only letters on the page. Pair this with the one-clause simplification
 if v5 measures too hard.
+
+## Iteration 6 - 2026-09-05 - `challenges/lab/tovel.json` (v6; v5 kept as `tovel.v5.json`)
+
+### Why: the rule had three clauses and the thin channel only pays for one
+
+New-format evidence on v5: **0 % across 8 Opus finals**, two of them with a demo spent on tovel.
+The players who took the demo came back with "every k-th working day" and "a holiday block" -
+they rebuilt the calendar grammar perfectly and then guessed *named* measurements; nobody
+reached "pair + Mon/Tue/Wed start + blocked middle" in ~60 probes x 4 rounds. The kid judge
+scored `rule_statable` **2/5** and asked for fewer clauses. Under the *old* format v4's
+every-other-day chain was found by insight (29 % / 29 %) and the weekday and blocked-middle
+clauses were never reached in either run - so those two clauses have never once been paid for.
+DESIGN_LOOP "Calibrating for the thin channel": **one clause a kid says in a breath**.
+
+### The change: one clause, sparse demos, the calendar page stays in the clue
+
+> **"R is written on two days with exactly one day between them, k times,
+> and the first of those is the n-th."**
+
+* **Dropped entirely: the Mon/Tue/Wed-start clause.** Pairs may straddle a weekend and a week
+  row. `S` (the month's start weekday) is now used *only* to check the answer's layout - it has
+  left the rule.
+* **Dropped by construction: the blocked-middle clause.** It is no longer a clause a player has
+  to discover, because in every demo the middle day simply carries a *different* mark. The
+  scorer still defines a pair as `x, not-x, x` - which is how a kid reads "one day between
+  them", and which is what keeps a solid stripe `R R R R` at **0 %**.
+* **Kept:** the anchor `n` (the first counted pair) and the count `k`, so `x/k/n` is unchanged;
+  the `k=1` share (~21 %) that gives the foothold; the calendar page as the clue.
+* **SPARSE demos (lever 9, the judge's note on v5).** `solve()` fills every day that is not part
+  of the picture with **one** filler - the clue's dot 70 % of the time, otherwise a single
+  letter - so an answer page carries exactly **two distinct marks** (v5: four letters scattered
+  over every day). Marks cover 26-54 % of days, median 37 %.
+* **Decoys kept, all three in every demo** (3000 demos, 100.0 % each): a blocked run `x x x`,
+  a pair three days apart, a lone `x`; **99.7 %** also carry a non-counting mark *before* day
+  `n`, so `n` is never simply "the first x on the page".
+* **`n` is less late-biased**: `max` of **3** draws instead of 6 (2 for `k=1`), so "ignore `n`,
+  run to the end of the month" pays 11.7 % instead of 20.7 % and `n` stays informative.
+
+### The dot decision (the brief left it open)
+
+The scorer now accepts **any single character** after the date, so `17.` (dot left in place) and
+`17E` (filler letter) are equally legal non-`x` marks; the old `t[-1] > "9"` test is gone. A day
+cell must still carry exactly one mark, so the answer is still "this page, edited". Reasons:
+returning the clue page unchanged is still **0 %** (it has no pairs at all - it does not need the
+dot to be illegal); the solid stripe is still **0 %** (its middles are `x`); and the demo can now
+be the clue page with a handful of `R`s written on it, which is the loudest picture available and
+the cheapest edit a kid can imagine. Accepting both conventions also means a player who copies a
+dot-filled demo and a player who invents a filler letter both score.
+
+### Sizes and speed
+
+`score` 496 -> **485** chars (cap 512; the weekday term and the `>"9"` term both gone),
+`solve` 4935 -> **2411** (cap 5000; the rejection-sampling loop is replaced by a constructive
+packer + verification), `generate` 1055 -> **818**. Clue 145-182 chars, solution <= 175.
+`generate` **0.07 ms**, `score` 0.06 ms, `solve` **0.3 ms average / 3.6 ms worst** (v5: 94 / 192).
+`solve()` scores 1 on **3000/3000** fresh seeds (640/489/484/682/705 at `k`=1..5).
+
+### One demo as it renders (seed 900002, k=3)
+
+```
+CLUE                            ANSWER
+ Mo  Tu  We  Th  Fr  Sa  Su      Mo  Tu  We  Th  Fr  Sa  Su
+                 1.  2.  3.                      1.  2.  3Q
+ 4.  5.  6.  7.  8.  9. 10.      4.  5.  6Q  7Q  8Q  9. 10.
+11. 12. 13. 14. 15. 16. 17.     11. 12. 13. 14Q 15. 16. 17Q
+18. 19. 20. 21. 22. 23. 24.     18. 19. 20. 21. 22. 23Q 24.
+25. 26. 27. 28. 29. 30.         25Q 26. 27Q 28. 29Q 30.
+Q/3/23
+```
+
+`Q`-sandwiches (`Q`, not-`Q`, `Q`): **23-25**, **25-27**, **27-29** - three of them, the first is
+the 23rd, which is what `Q/3/23` says. Everything else on the page is a planted near-miss:
+**6-7-8** is a solid `Q` run, so 6-8 has a `Q` in the middle and does not count; **14** and **17**
+are three days apart; **3** is a lone `Q`. All four negative examples sit *before* day 23.
+
+### Witness table - v6, 600 fresh clues (`scratchpad/time6/attack.py`)
+
+| attack | v5 | v6 |
+|---|---|---|
+| clue page returned unchanged, parameter line **kept** | 0.00 % | **0.00 %** |
+| clue page returned unchanged, parameter line **dropped** | 0.00 % | **0.00 %** |
+| `x` on **every** day (the stripe) | 0.00 % | **0.00 %** |
+| **solid stripe from `n`**, best length per `k`, lengths 2..19 | 0.00 % | **0.00 %** |
+| **`x` on `n` and `n+2` only** (the minimal probe) | 22.00 % | **20.67 %** |
+| ... per `k`: 124/124 at `k`=1, 0/476 for `k`>=2 | | |
+| ... same probe with random junk letters on the free days | 22.00 % | 20.67 % |
+| **alternating `x . x . x` from `n`, exactly `k` pairs (2k+1 marks)** | 57.67 % | **100.00 %** |
+| ... per `k`: 124/124, 85/85, 105/105, 140/140, 146/146 | | |
+| ... the same run with a **fixed** mark count, no `k` tuning (3/5/7/9/11) | | 16.5 / 32.2 / 21.7 / 21.7 / 21.7 % |
+| ... the same run **ending on the last day**, `n` ignored | - | 11.67 % |
+| ... the same run **starting on day 2**, `n` ignored | - | 0.17 % |
+| `x` next door, `k` times from `n` | 0.00 % | **0.00 %** |
+| `x` three apart, `k` times from `n` | 0.00 % | **0.00 %** |
+| `x` a week apart, `k` times from `n` | 0.00 % | **0.00 %** |
+| random `x` over dots, density 0.10/0.20/0.35/0.50/0.65/0.80 | 0.7/0.5/0.3/0.3/0.7 % | 0.2/0.2/0.2/0.5/0.0/0.3 % |
+| a random A-Z letter on every day | 0.00 % | **0.00 %** |
+| best constant page (`x` on day `n` alone) | 0.50 % | **0.00 %** |
+| demo replay, letters renamed, same `(L,S,k)` | 34.83 % | **5.00 %** |
+| ... same `(L,S,k,n)` | 70.67 % | **13.17 %** (79 of 600 clues were key repeats; all 79 won) |
+| **the true rule** | 100.00 % | **100.00 %** |
+
+**Reported honestly, as the brief asks: the alternating-run template is no longer a template -
+it is the rule.** `x` on `n`, `n+2`, ... , `n+2k` scores 100 % at every `k`, on every clue,
+because `generate()` only ever picks an `n` with room for the run. The class keeps nothing in
+reserve behind that construction; what is left to discover is exactly the one sentence.
+The replay rows fell (35 %/71 % -> 5 %/13 %) because dropping the weekday clause opened the `n`
+range: **2993** distinct `(L,S,k,n)` keys, **~1575** effective (v5: 867 / 334), so caching one
+solved page per key is worth ~0.1 % of items to a 3-demo team.
+
+Shape attacks on a page with the correct marks: no header, tabs, blank lines, trailing spaces,
+parameter line kept before **or** after the page - **100 %**; one long row, one token per line,
+lower-case marks - **0 %**; a page laid out from column 0 scores exactly the `S=0` clues (11 %).
+The scorer never raises and never returns a non-binary value on **20 000** random junk strings
+(worst 0.067 ms), scores 0 on empty / spaces / newlines / `0` / `1` / `x` / `"1"*100` / a
+4000-char junk string / **the clue itself**, and agrees with an independent re-implementation of
+the stated rule on **9000** mutated well-formed answers with **0 disagreements**.
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, no warnings.
+
+### What a demo-less player can infer
+
+From the clue alone: the answer is *this* month page sent back with one mark on every day, the
+capital letter on the last line is the marker, and the two numbers must say how many and where -
+so a demo-less team is well formed immediately, and the one honest first experiment, "write `x`
+on day `n` and on day `n+2` and leave the rest of the page alone", pays **20.67 %** (every `k=1`
+clue). What it cannot get without the demo: that the marks come in *pairs a day apart*, that
+`k` counts the pairs rather than the marks, and that three `x`s in a row cancel the pair inside
+them - i.e. the step from 20.67 % to 100 % is exactly "keep going every other day from `n` until
+you have `k` sandwiches".
+
+### Predicted classification
+
+Tiers: blind but well formed ~0 %, the natural first probe **20.7 %**, `n`-free run to the month
+end 11.7 %, the rule **100 %**. Expect a demo-taking player to crack it (the demo shows the
+sandwich chain and three labelled near-misses in one look) and a demo-less player to sit at the
+foothold, i.e. a mean around **0.5-0.6** - `testing`, plausibly `calibrated`, with a real risk of
+`too_easy` if both players spend a demo here. Kid rubric should recover: one clause, two marks on
+the page, `rule_statable` and `kid_contributes` are the scores that were failing.
+If it lands `too_easy`, the levers in order: (i) name the **last** counted day as well
+(`x/k/n-m`), forcing both ends of the set; (ii) require the `k` sandwiches to share no day
+(kills the single alternating run); (iii) restore one weekday clause - but only one.
+
+### Arena (NOT run this iteration; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-6/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v6-1 --teams tovel6a,tovel6b \
+         --challenge-dir $SCRATCH/pool-tovel-6 --arena-root $SCRATCH/lad-tovel-v6-1
+```

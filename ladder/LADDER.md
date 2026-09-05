@@ -117,3 +117,12 @@ players, and the two players succeeded on different classes according to what th
 tovel/basten/kelmar got no demo from either player (their clues read as probeable) and 0 %:
 the "clue shows the canvas" classes are now the ones nobody spends a demo on — and nobody
 cracks them blind. Next: more finals on this pool with other profiles; then decide per class.
+Lineup pool run 1, `lad-tresk-v2-1` (tresk/wisbek/tavrik/dornic/borsel v2 + fennick v3 + garrow v3):
+1176 (lowdemo) and 1047 (theorist). fennick 100 %/100 % with a demo (now 5 of 6 demo-holders
+cracked it). Lineup classes without demos: tavrik 85/96, tresk 81/79, wisbek 82/77, dornic 66/59,
+borsel 59/65 — learned by EM over 0/1 feedback (which predicate uniquely isolates a scoring
+candidate), and both players reported the excluded traps by name as "rules the class never uses"
+("contains a pair" for cards, "contains RG" for beads). That is the intended mechanic working;
+the rates are above target for words/beads/clock and near it for cards/dice. Levers if the next
+pair confirms: 5–6 candidates, always two examples, a larger U. garrow: 0 % even with two demos
+(the theorist read "cut count = fish count − 1"); the tray reads as a fish tank — needs a re-skin.

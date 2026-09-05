@@ -281,3 +281,43 @@ refusal so the blind reading scores 0; v3 re-skinned it as a shop with written l
 other is refused) is more than one breath, and the judge's advice is to cut the room-at-home
 clause and buy the difficulty back with a single visual quirk. The evidence says the class plays
 exactly to the fennick shape, so the fix is legibility, not difficulty.
+
+## ospren v3 and tresk v3 — the Revision 3 lineups (calibrated 2026-09-05)
+
+**Format.** Two example instances that fit a hidden rule, a blank line, five candidates of which
+exactly one fits; answer = that candidate verbatim or by number. ospren's instances are 5×5
+pictures of `#` and `.`; tresk's are strings of red, green and blue beads.
+
+**Record.** ospren v3: 57, 50, 47 (two demos), 24 % — mean 45 %; kid 4.5. tresk v3: 37, 44, 45,
+29 % — mean 39 %; kid 4.5. Their v2s scored 80–87 % and 79–86 % for the same kinds of player, who
+had learned each class's whole universe from ~30 free labels (answer a random candidate; a fifth
+score; the ones that score are labelled examples) and then picked the rarest surviving predicate.
+
+**What changed (Revision 3).** Every rule of v2 was already a cheap predicate in the players' own
+feature banks (Jaccard 0.97–1.00). v3 rebuilt each universe out of RELATIONS a kid checks by eye
+and a bank does not contain: for the pictures, "every column of marks reaches the floor", "the top
+row and the middle row are the same", "row n matches column n", "the marks are in one piece in
+every row"; for the beads, "the second bead matches the second-from-last", "the biggest clump is
+the colour it starts with", "every red has a blue right after it", "the first pair is the last
+pair". Two or three cheap, dense templates stay at double weight as the learnable slope. Five
+candidates, aimed so that a decoy carries an explanation at least as rare as the truth's; the
+example pair chosen so that no bank predicate implies the rule.
+
+**What a kid sees.** Two little pictures (or two necklaces) and five more, and the question "which
+one is like these two?" — which is the format of every puzzle book. The judges' 4.5 came from the
+relations being things you point at with a finger: "these two rows are the same", "that one's got
+the red beads all together". The counted cousins (tavrik's "letters n apart in the alphabet")
+scored a full point lower, and the recipe now says so.
+
+**Why it works.** The players' engines still run — both said they win on arithmetic families and
+lose on perceptual ones — and that is the split the format wants: 40–55 % for an Opus centaur that
+enumerates predicates, near 100 % for one that names the relation. The honest ceiling (a player who
+has learned U) is still 100 %, so the class rewards inventing the vocabulary, not luck.
+
+**Reflection.** The first lineup revision was beaten by a *learning* attack, not a reasoning one: a
+round of random answers is thirty labelled examples, and a lookup universe is learned in thirty
+labels. Hardening against that meant moving the universe out of the space of cheap features
+entirely, and the measurement that mattered was not "how rare is the rule" but "can the attacker's
+vocabulary express it at all". The same lesson, in the other direction, produced the one player
+who read the last example line as a negative: a relation that is not in your bank looks like a
+contradiction.

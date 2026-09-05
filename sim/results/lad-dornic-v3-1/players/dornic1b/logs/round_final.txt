@@ -1,0 +1,812 @@
+Centaur Zendo round final (final)
+round_id : 3607dcf04a01441bb6f1ac7917262084
+written  : 2026-09-05 11:55:06Z
+presented=794  answered=794  correct=194  skipped=0
+client answer latency: mean 0.367 ms  median 0.340 ms  max 1.482 ms  (n=794)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  wisbek        4:46\n12:42\n\n3:54\n2:47\n8:50\n5:58\n…  5:58                                      1
+   1  ospren        .....\n#.#..\n#..#.\n.....\n#.#..\n\n.#…  .##.#\n#..##\n#....\n#..##\n.##.#         0
+   2  mestrel       [0|3][4|0][0|1][1|0]\n[6|5][6|1][0|3][0…  [1|0][1|0][0|2][0|3][6|0][0|3]            1
+   3  kaldrin       [E]=[milk^]=[pigs]=[logs]=[milk^]\n[E]=…  [E]=[pigs]=[pigs]=[pigs]=[pigs^]=[sand]…  0
+   4  mestrel       [6|1][1|4][0|3][0|0][0|0][3|6][0|6]\n[3…  [0|0][2|2][6|6][1|1]                      1
+   5  kaldrin       [E]=[wool^]=[logs]=[milk^]=[milk]=[wool…  [E]=[pigs]=[logs]=[sand]=[wool^]          0
+   6  tresk         BBGGGBGGGB\nBBBBBRBBRR\n\nRRBBBBGB\nGBB…  GBBGGBGB                                  1
+   7  tresk         GGRRGGGG\nBGBRBRRGB\n\nRGRRBBRB\nRGRRRB…  GBBRBRRB                                  0
+   8  wisbek        2:11\n10:55\n\n6:15\n4:22\n5:23\n8:53\n…  6:15                                      0
+   9  ospren        .#.#.\n.#...\n##..#\n.#...\n.#.#.\n\n.#…  .###.\n#####\n...#.\n..#.#\n..#..         0
+  10  wisbek        6:30\n10:10\n\n7:25\n3:34\n2:45\n8:22\n…  2:45                                      0
+  11  wisbek        8:21\n12:01\n\n6:44\n11:37\n5:56\n3:36\…  1:58                                      0
+  12  dornic        4S 7H 9C 10D 10S\n4H 8C 9D 10H JH\n\n2C…  2S 3H 10S JC QC                           0
+  13  tavrik        boom\nglass\n\nclick\nbunny\nbases\ntha…  limit                                     0
+  14  mestrel       [6|1][2|2][2|2][2|2]\n[0|0][0|0][0|2][0…  [6|6][6|6][5|3][0|0]                      0
+  15  dornic        2H 2D 3S 4D 10S\n6D 6S JD QD KH\n\n4H 4…  4H 4D 4S 8D 9H                            1
+  16  tresk         BRGRGGGRR\nRGBBBBRGB\n\nBBGRGGGRB\nRGBB…  BBGRGGGRB                                 0
+  17  kaldrin       [E]=[coal]=[logs^]=[sand]=[logs]=[coal]…  [E]=[wool^]=[sand]=[logs^]=[pigs^]=[san…  0
+  18  kaldrin       [E]=[pigs]=[pigs]=[sand^]=[pigs^]=[pigs…  [E]=[sand^]=[milk]=[wool^]=[pigs^]=[mil…  0
+  19  tavrik        starter\nmarried\n\namazing\necology\ne…  extinct                                   0
+  20  tresk         RGRBGGGGG\nGRBBBBBR\n\nBGGGBBGB\nBGBGBG…  BGBGBGGG                                  0
+  21  wisbek        5:50\n10:40\n\n8:33\n6:24\n3:16\n1:51\n…  1:51                                      1
+  22  dornic        4C 5D 8C 10S AD\n2H 2C JD JC KH\n\n5C 7…  5S 6D 8C 10C AC                           0
+  23  wisbek        4:20\n11:51\n\n12:13\n8:58\n9:50\n1:54\…  12:13                                     0
+  24  tresk         RGRBBRRRR\nGRBRGBBRB\n\nRBRGGGBRRB\nRGG…  RGGBRGRBBR                                0
+  25  wisbek        2:28\n12:20\n\n8:44\n1:44\n10:30\n11:47…  8:44                                      0
+  26  dornic        2S 6H 8S JS KD\n3D 5D 7H 9C 10S\n\n2C 7…  2D 5C QH KD AH                            0
+  27  ospren        ...#.\n...##\n...#.\n..#..\n#....\n\n#.…  ##...\n##.#.\n.#..#\n#.#.#\n...#.         0
+  28  tavrik        pete\nframed\n\nbecome\nsierra\nbelief\…  sierra                                    0
+  29  mestrel       [0|5][0|2][5|4][0|5]\n[1|6][4|3][0|3][6…  [0|0][1|1][0|2][1|5]                      0
+  30  kaldrin       [E]=[logs^]=[sand^]=[logs]=[coal]=[pigs…  [E]=[wool]=[pigs^]=[logs^]=[sand]=[coal]  0
+  31  mestrel       [3|4][3|5][3|5][2|1][2|6][6|3][3|0]\n[6…  [4|6][6|5][5|6][3|0][0|1]                 0
+  32  wisbek        10:09\n11:51\n\n5:34\n12:11\n9:10\n4:19…  9:10                                      0
+  33  ospren        #...#\n.....\n#...#\n#.#.#\n##.##\n\n.#…  .....\n.#...\n.....\n.....\n..##.         0
+  34  mestrel       [4|4][4|4][5|4][4|5][4|4][4|4]\n[2|6][0…  [1|1][5|4][6|1][1|5][5|5]                 0
+  35  ospren        .....\n.#.#.\n..#..\n.#.#.\n#...#\n\n..…  ..#..\n..#..\n.....\n.....\n..#..         1
+  36  tresk         BRGRGGRBGG\nGGBRBGGBBG\n\nGGRBGGBGGG\nG…  BGGGRGRBGG                                0
+  37  kaldrin       [E]=[pigs^]=[sand^]=[sand^]=[logs^]=[lo…  [E]=[wool^]=[sand]=[coal^]=[coal]         1
+  38  kaldrin       [E]=[milk^]=[milk^]=[milk]=[logs]=[logs…  [E]=[coal]=[coal^]=[coal^]=[pigs^]=[pig…  1
+  39  kaldrin       [E]=[milk]=[milk]=[milk]=[coal]=[milk]=…  [E]=[pigs]=[sand^]=[sand^]=[coal^]=[san…  0
+  40  tavrik        pink\nthere\n\nstylish\ncurrent\nhealth…  stylish                                   0
+  41  mestrel       [1|2][2|1][6|6][2|6][1|1][6|2][2|6]\n[2…  [3|4][1|4][3|3][1|1][1|1]                 0
+  42  mestrel       [1|5][3|1][4|3][6|2][6|0]\n[3|3][3|3][3…  [1|1][0|3][3|2][0|6]                      0
+  43  tresk         GBBBBGGRG\nBBGBBBGRRR\n\nRRRRRRG\nGRRRR…  RRRRRRG                                   0
+  44  dornic        2H 5H 6D 7D QD\n4H 6S 7C 10D 10S\n\n4H …  3D 4H 7H 7D 9H                            0
+  45  tavrik        strong\nwind\n\nunder\nonset\nowner\now…  owing                                     1
+  46  kaldrin       [E]=[wool^]=[milk]=[coal]=[milk]=[pigs]…  [E]=[milk^]=[wool^]=[coal]=[logs]=[pigs]  0
+  47  tavrik        chess\ntill\n\ntopped\nsister\nresist\n…  resist                                    0
+  48  wisbek        2:05\n6:35\n\n1:40\n10:00\n4:50\n5:45\n…  10:00                                     0
+  49  tresk         BBBRBGBBR\nBGBRBRRB\n\nBRRBBGRRRB\nBRBR…  BRGRBGBBRR                                0
+  50  tavrik        loyalty\ndrawn\n\nsavage\ntrauma\nrelat…  relate                                    0
+  51  kaldrin       [E]=[logs^]=[milk]=[sand]=[milk]=[coal]…  [E]=[pigs]=[wool]=[milk^]=[coal]=[sand]…  0
+  52  ospren        #.#.#\n.#.#.\n#...#\n.....\n#...#\n\n##…  .###.\n..#.#\n....#\n###.#\n.#.#.         0
+  53  mestrel       [0|2][0|0][6|6][1|1][1|3][4|3][1|6]\n[1…  [0|0][6|4][0|2][1|1][4|4][6|3]            0
+  54  kaldrin       [E]=[wool]=[pigs^]=[coal]=[pigs]=[coal^…  [E]=[pigs^]=[logs^]=[milk^]=[wool^]=[lo…  1
+  55  tavrik        pattern\ncorrect\n\nsincere\ndiverse\nr…  passive                                   1
+  56  dornic        3C 7H 7C 9D KD\n10H 10C 10S JH AD\n\n3H…  3H 4H 10D QD KD                           1
+  57  tavrik        engaged\nflare\n\nshower\nshadow\nthron…  ethics                                    0
+  58  mestrel       [0|3][5|4][6|2][1|1][3|3][2|2]\n[4|6][2…  [0|0][6|5][0|6][4|5][1|1]                 1
+  59  tavrik        reserve\ncycling\n\nchili\nchess\nthree…  serve                                     0
+  60  kaldrin       [E]=[milk]=[coal]=[pigs^]=[pigs]=[pigs]…  [E]=[logs]=[sand^]=[milk^]=[sand]         1
+  61  ospren        .....\n.....\n#....\n#....\n.#...\n\n..…  .#.#.\n.#.##\n.#.##\n.#.##\n.#.#.         1
+  62  wisbek        4:57\n12:53\n\n2:39\n10:49\n3:27\n6:29\…  3:27                                      0
+  63  kaldrin       [E]=[pigs]=[pigs]=[pigs]=[pigs]=[pigs]=…  [E]=[pigs]=[logs]=[logs^]=[logs^]=[logs…  0
+  64  tresk         GRRRRRRRRG\nGGRGRBBBB\n\nGGBBBGG\nGBBGG…  GGBGGGG                                   0
+  65  tresk         RGRBGRBBRG\nGRBRGBGGR\n\nGBGGGRBBRB\nBG…  BGBRBBBGRG                                0
+  66  kaldrin       [E]=[wool^]=[pigs^]=[pigs^]=[milk]=[woo…  [E]=[coal^]=[wool^]=[milk^]=[milk^]=[mi…  0
+  67  mestrel       [3|0][5|6][0|6][0|4]\n[5|1][1|5][5|1][1…  [2|3][3|3][3|0][3|4][3|6]                 0
+  68  tavrik        filthy\nflame\n\nsame\nveto\nline\ncute…  line                                      0
+  69  dornic        3D JH JD JC KD\n2S 5S 6C 10H QC\n\n2C 3…  2C 3C 8D JD KS                            0
+  70  wisbek        3:50\n5:37\n\n6:57\n9:48\n8:36\n12:13\n…  6:57                                      1
+  71  ospren        ##...\n.....\n.#...\n..#.#\n.....\n\n..…  .....\n.....\n.....\n#....\n###..         0
+  72  tavrik        neglect\nmonarch\n\nsadness\nrestart\nm…  restart                                   1
+  73  ospren        .....\n.....\n.####\n###.#\n###.#\n\n..…  .....\n#....\n.##.#\n..#.#\n..#..         0
+  74  dornic        6H 7S 8H 9S JS\n4H QD QC QS KH\n\n3H 4H…  3H 4H 4S 10H KC                           0
+  75  tresk         BRBRRGGRB\nGBGRBBG\n\nRBGGGRRBRR\nRGBBG…  RBGGGRRBRR                                0
+  76  dornic        3D 3C 8H 9C AC\n4S 9D 10D JS QS\n\n2H 7…  2H 7H 8D 8S AD                            0
+  77  dornic        4H 5H 7C 8D 9D\n3S 6C 9H 9S QD\n\n2H 5D…  2S 4D 7H 8C KD                            0
+  78  ospren        .....\n#..#.\n.....\n#..#.\n.##.#\n\n..…  .#.#.\n.#.#.\n.....\n#####\n#...#         0
+  79  tavrik        seminar\nskin\n\nbait\ndean\nloud\ngoes…  leak                                      1
+  80  wisbek        2:01\n7:54\n\n3:57\n5:24\n12:46\n9:12\n…  3:57                                      0
+  81  tresk         GBRRGRGGG\nGBBGBGRRRG\n\nRRGRRGB\nBRGGG…  RRGRRGB                                   0
+  82  dornic        4H 5D 8H JS AD\n5S 6C 10C QS KH\n\n3C 6…  2H 4S 8S 10S JS                           0
+  83  ospren        #####\n.##.#\n.#...\n.....\n.....\n\n#.…  .....\n.....\n##...\n#####\n#####         0
+  84  wisbek        4:59\n12:26\n\n5:56\n2:56\n11:34\n1:17\…  5:56                                      0
+  85  mestrel       [1|1][2|5][1|1][2|5]\n[5|0][0|1][1|1][1…  [1|1][4|4][4|5][4|0][2|2][5|1][4|3]       0
+  86  wisbek        7:56\n10:09\n\n3:12\n6:14\n5:02\n2:40\n…  6:14                                      0
+  87  tavrik        hers\ngray\n\nexact\nought\nawful\nunti…  onset                                     1
+  88  ospren        ..#..\n..#..\n.###.\n.#.#.\n.###.\n\n..…  ..##.\n.#...\n...#.\n#...#\n.....         0
+  89  dornic        7C 9D 10S JC KC\n4D 5H 9S 10C KS\n\n7C …  7C 8H QC AD AS                            0
+  90  tavrik        well\nawhile\n\ntractor\nathlete\ncolle…  collect                                   0
+  91  ospren        ...#.\n.....\n.....\n...##\n.#...\n\n##…  ###.#\n...#.\n....#\n#....\n#....         0
+  92  wisbek        1:40\n5:42\n\n12:53\n7:59\n3:18\n9:31\n…  6:44                                      0
+  93  ospren        #....\n.#...\n#...#\n....#\n#...#\n\n##…  ...#.\n....#\n#...#\n..#..\n....#         0
+  94  tavrik        slow\nraven\n\ntrilogy\nvictory\nproudl…  trilogy                                   0
+  95  ospren        .##.#\n....#\n###..\n....#\n.##.#\n\n#.…  .....\n....#\n...#.\n.#...\n.....         0
+  96  wisbek        1:05\n6:08\n\n12:02\n2:04\n9:03\n11:33\…  3:35                                      0
+  97  tavrik        window\neager\n\nvincent\ncartoon\ncons…  develop                                   0
+  98  tavrik        energy\nclass\n\nhaired\nautism\nmedian…  median                                    1
+  99  ospren        ..#.#\n##.##\n...##\n##.##\n..#.#\n\n..…  ..#.#\n..###\n.#.#.\n.#.##\n..#.#         0
+ 100  ospren        .....\n##.##\n.#.#.\n#####\n#...#\n\n.#…  ##.#.\n...##\n..##.\n...##\n##.#.         0
+ 101  kaldrin       [E]=[sand^]=[pigs^]=[milk]=[sand^]=[pig…  [E]=[pigs^]=[sand^]=[pigs^]=[milk^]       0
+ 102  tresk         RGBBGGBBGR\nBBRRGGRGR\n\nBBRBGBG\nRBGBG…  BGGBBRB                                   0
+ 103  dornic        4D 4S 9D 9C QH\n6H 6C 6S KH AC\n\n6H 8D…  4D 7C 8S 9H AC                            0
+ 104  wisbek        3:45\n4:40\n\n10:10\n2:02\n6:36\n1:00\n…  9:18                                      0
+ 105  mestrel       [3|4][4|0][0|4][4|4][5|4]\n[0|1][0|5][1…  [3|6][6|4][4|5][5|2][6|2][1|2]            0
+ 106  tavrik        stupid\npassage\n\nethics\ninsert\nimpa…  island                                    0
+ 107  tavrik        veto\ngrove\n\nhooked\nvacuum\ncereal\n…  vacuum                                    1
+ 108  tavrik        gold\nvast\n\ndating\nparent\ngerman\nl…  bounty                                    1
+ 109  dornic        3D 8C 9D KH KC\n3S 4C 5S 7H 10S\n\n3S 4…  7C 8H JD JC KS                            0
+ 110  wisbek        1:00\n7:11\n\n11:49\n12:44\n2:25\n5:49\…  2:25                                      0
+ 111  ospren        #.###\n.....\n...#.\n...#.\n#.###\n\n#.…  .###.\n#####\n...#.\n..#.#\n..#..         0
+ 112  tavrik        boycott\nhell\n\nevent\nupper\naward\ne…  award                                     0
+ 113  dornic        2C 4D 4C 6H 8H\n5D JC QS KD AH\n\n3D 4H…  3D 4H QD QS AH                            0
+ 114  kaldrin       [E]=[sand^]=[logs^]=[sand^]=[logs]\n[E]…  [E]=[pigs^]=[milk^]=[wool^]=[logs^]=[lo…  0
+ 115  ospren        .....\n.....\n...#.\n#.###\n#####\n\n..…  ##...\n###.#\n.##.#\n.#...\n...#.         1
+ 116  tresk         GGRRGBRRBG\nRGBBGGB\n\nGRGRRBRG\nRGBGGR…  RRBGRRGG                                  1
+ 117  mestrel       [6|6][6|6][6|6][3|5]\n[2|0][4|4][4|6][4…  [3|3][3|4][4|4][5|1]                      0
+ 118  dornic        2S 6S 9C JH JD\n3C 3S 4S 6H 8S\n\n4S 5D…  2S 9D 9C JS KC                            0
+ 119  tresk         BGBGBGRGRG\nGGRGGGGGG\n\nGRGBBGGRB\nGGB…  GRGBGBBGR                                 0
+ 120  tresk         RRRBBRB\nRRRBGBBGB\n\nBGGRGB\nGGRBRB\nG…  GGRBRB                                    1
+ 121  kaldrin       [E]=[coal^]=[coal^]=[milk^]=[milk]=[pig…  [E]=[coal^]=[coal]=[milk]=[coal]=[pigs^]  0
+ 122  ospren        .#...\n.###.\n.##..\n##...\n.###.\n\n#.…  #####\n#...#\n#...#\n#...#\n.###.         0
+ 123  tresk         GGGGRBRB\nGBBRRRRBBG\n\nBBGBBBG\nBBGGBB…  BBBGGGG                                   1
+ 124  kaldrin       [E]=[milk^]=[wool^]=[coal^]=[milk^]=[wo…  [E]=[pigs]=[coal]=[wool]=[coal]=[wool^]…  0
+ 125  dornic        3H 4S 8D 10D AD\n2H 3D 6H 6D JC\n\n3H 4…  2D 6C 8C 10H JC                           0
+ 126  dornic        3H 4H 5C 8C JS\n2H 5D 6S 8S QD\n\n5D 7C…  2H 3D 5D 8C QC                            1
+ 127  kaldrin       [E]=[sand]=[logs^]=[sand]=[logs]=[milk^…  [E]=[pigs]=[milk^]=[logs]=[milk^]=[sand…  0
+ 128  tresk         RRRRRBRB\nRGRBBBBBRR\n\nGRBRBGRRRR\nGRB…  GRBRBGRRRR                                0
+ 129  dornic        2S 4H 7H 9C KD\n7C 10D 10C KC AC\n\n2C …  2S 3C 5C 8S JS                            0
+ 130  wisbek        7:17\n11:10\n\n10:13\n3:21\n6:16\n1:24\…  6:16                                      1
+ 131  ospren        .##.#\n..#..\n#.##.\n#####\n#..#.\n\n..…  ..#..\n..#..\n...#.\n#....\n#...#         0
+ 132  wisbek        9:43\n11:30\n\n5:14\n2:48\n1:40\n3:35\n…  3:35                                      0
+ 133  wisbek        6:44\n12:00\n\n5:33\n1:49\n11:52\n4:06\…  1:49                                      0
+ 134  tavrik        opening\ncanal\n\nissuing\nfilling\nkic…  issuing                                   0
+ 135  mestrel       [2|0][1|1][6|3][5|0][5|0][3|3][6|2]\n[3…  [0|5][1|1][1|6][1|6][4|4]                 0
+ 136  kaldrin       [E]=[milk^]=[milk]=[milk^]=[wool^]=[mil…  [E]=[wool^]=[pigs]=[logs]=[milk^]=[pigs…  1
+ 137  tavrik        passion\ndrummer\n\nreduced\nrecover\nn…  needing                                   1
+ 138  mestrel       [4|6][0|2][2|4][4|3][3|6][6|4]\n[5|6][0…  [1|1][1|1][2|4][1|2][2|0][4|5][3|1]       1
+ 139  dornic        4D 6D 10C KH AH\n7H 8H 8C 9H 9C\n\n3S 8…  3C 5H 6C 10C JD                           0
+ 140  dornic        8D 10D 10S QS KD\n5H 9H 9D JH AC\n\n2D …  2D 3S 4H 10H KS                           0
+ 141  dornic        5C 7D 8S 10S QD\n2D 3D 6D QH AH\n\n4D 5…  6D 7D 10S JH AH                           0
+ 142  mestrel       [3|3][5|5][6|6][0|2]\n[0|0][3|6][4|3][1…  [5|1][4|2][0|2][2|4][0|5][6|6]            1
+ 143  wisbek        3:31\n11:01\n\n1:37\n7:37\n4:11\n9:23\n…  7:37                                      1
+ 144  tavrik        behalf\nmanly\n\nanswer\nitself\ninsert…  itself                                    0
+ 145  wisbek        3:10\n4:25\n\n10:45\n12:30\n8:30\n7:55\…  7:55                                      0
+ 146  dornic        6H 6S 8H 9D AH\n2H 2S 4S 10H KC\n\n2H 2…  2H 2D 7S 9D KD                            1
+ 147  mestrel       [0|3][5|1][4|6][3|2][2|3][5|4]\n[2|6][0…  [6|3][5|4][0|1][4|6][6|1][5|1]            0
+ 148  kaldrin       [E]=[milk]=[milk^]=[sand]=[logs]=[sand^…  [E]=[logs]=[sand^]=[sand^]=[wool^]=[mil…  0
+ 149  dornic        3S 8D QH QC AD\n4D 5D 5S 9D KD\n\n3S 5H…  5D 6S 8D JC AD                            1
+ 150  tresk         GBBGGGR\nGRRBRRGRR\n\nRGGRBBGG\nBBRGGGR…  BBRGGGRG                                  0
+ 151  mestrel       [6|3][2|6][1|2][0|3][3|6]\n[6|5][5|4][4…  [5|4][3|5][5|0][3|5][4|5]                 1
+ 152  kaldrin       [E]=[logs^]=[logs]=[wool^]=[wool^]\n[E]…  [E]=[logs^]=[wool]=[wool^]=[logs^]=[woo…  1
+ 153  dornic        2C 8D 9C 10H AC\n2H 3D 6H 6D 9D\n\n8H 8…  8H 8D JH QS KC                            1
+ 154  dornic        4C 6H 6C 8H AD\n2C 4S 8S JD QD\n\n2S 3S…  5S 7H 8H AH AD                            0
+ 155  mestrel       [6|6][1|5][2|2][3|6][4|0][4|4]\n[5|6][4…  [6|5][5|4][3|3][2|2][1|1][1|1][0|0]       0
+ 156  ospren        ..#..\n.#.#.\n#.#..\n.....\n....#\n\n..…  #..##\n#....\n.....\n.....\n#....         1
+ 157  wisbek        9:33\n12:55\n\n6:00\n7:04\n1:09\n2:16\n…  1:09                                      0
+ 158  dornic        2H 7H 8S 10C 10S\n2D 6H 8H 9H AC\n\n2H …  6D 9C 10C KD AS                           0
+ 159  dornic        4D 4S 7H 10S AS\n7C 9H 9C JH QH\n\n7S 9…  7S 9S JD QS AS                            1
+ 160  dornic        2H 2C 6D JS QC\n3H 3C 4H 6H 9H\n\n4D 4C…  4D 4C 7C KH AC                            1
+ 161  mestrel       [3|3][3|0][3|0][3|0][0|3][3|0][0|3]\n[3…  [3|0][0|3][5|3][3|5][5|5][5|5][5|3]       0
+ 162  ospren        .....\n.....\n#....\n#....\n#.#..\n\n##…  .....\n.....\n...#.\n##.#.\n#####         0
+ 163  dornic        3S 5C 6S 7C 10D\n4S 7H JH QH KH\n\n3S 5…  5C 7C 8S JC AH                            1
+ 164  tresk         RGGBBGRR\nRBBGRRB\n\nGRBRBRGBG\nGGBRRBG…  GRBRBRGBG                                 0
+ 165  dornic        2H 9D JD KD AC\n3D 4C 6D 7C 10D\n\n2H 5…  2H 5S 9D 9C JH                            0
+ 166  tresk         BRBBGGBBR\nRGRBBRRBRG\n\nGGRBBRBB\nBRBB…  GGRBBRBB                                  0
+ 167  tresk         GRGGBGGR\nGGGRGBBGGB\n\nGRRGBRRR\nGRBBG…  GRBBGGRR                                  0
+ 168  tresk         BBRBRGGGGG\nGGGRBGRGBR\n\nBGGGGBRBGG\nG…  GBGGBBRGBG                                1
+ 169  mestrel       [4|4][3|0][1|1][0|2][2|5]\n[3|3][6|2][0…  [5|2][5|5][4|6][3|3][1|6]                 0
+ 170  dornic        3H 4H 4S 6S 7S\n3C 4D 8H 10D QC\n\n2H 3…  2D 2S QD KH AS                            0
+ 171  tresk         RGGRRGBBRG\nRGBGBBBRRG\n\nBGBBBR\nGBBGR…  BRGGRB                                    0
+ 172  tavrik        earnest\nsanders\n\ncrossed\nwhipped\nt…  theorem                                   0
+ 173  tavrik        road\nwake\n\ngrowth\nplenty\nwhilst\nt…  growth                                    0
+ 174  mestrel       [6|3][2|2][1|0][6|0][6|1][2|0]\n[1|6][2…  [6|1][1|0][1|4][6|3][2|3]                 1
+ 175  kaldrin       [E]=[sand]=[coal^]=[wool^]=[coal^]\n[E]…  [E]=[sand^]=[sand^]=[coal^]=[coal]=[coa…  1
+ 176  dornic        5C JD JS KC KS\n2S 6S 7C QD QS\n\n5D 5C…  5D 5C 8S 9D 10C                           0
+ 177  wisbek        5:47\n6:27\n\n9:54\n1:30\n11:00\n7:31\n…  9:54                                      0
+ 178  kaldrin       [E]=[sand]=[pigs]=[sand^]=[coal]=[logs^…  [E]=[logs]=[sand^]=[sand^]=[logs^]=[log…  1
+ 179  tavrik        trim\ntrapped\n\nmade\nluke\ncase\npose…  bike                                      0
+ 180  wisbek        4:44\n10:09\n\n2:02\n1:04\n11:53\n6:51\…  2:02                                      1
+ 181  ospren        .###.\n#...#\n.#.#.\n#...#\n.#.#.\n\n#.…  .....\n..##.\n.#...\n..#..\n.....         0
+ 182  wisbek        2:10\n12:00\n\n3:30\n1:25\n4:20\n10:20\…  4:20                                      1
+ 183  wisbek        2:11\n6:52\n\n8:32\n3:45\n4:42\n11:58\n…  11:58                                     0
+ 184  mestrel       [1|0][0|1][1|0][2|1][0|1]\n[6|2][4|2][2…  [0|6][6|3][3|1][4|1][1|1][1|3]            0
+ 185  ospren        ...#.\n...#.\n.....\n...#.\n.....\n\n..…  .#.##\n.#.##\n#....\n.#.##\n.#.##         0
+ 186  tresk         GBGRGBGBB\nBRGGRBBGGG\n\nBBBGBGGRBR\nBB…  BBBGBBGRGB                                1
+ 187  kaldrin       [E]=[sand]=[wool]=[wool]=[logs^]=[sand^…  [E]=[pigs^]=[wool]=[wool]=[logs]          0
+ 188  kaldrin       [E]=[sand^]=[logs]=[sand^]=[pigs]=[logs…  [E]=[coal^]=[wool^]=[logs^]=[sand^]=[wo…  0
+ 189  kaldrin       [E]=[pigs^]=[logs]=[coal]=[pigs]=[logs]…  [E]=[coal^]=[milk]=[sand]=[logs^]=[pigs…  0
+ 190  ospren        ....#\n.#..#\n.#..#\n#...#\n#...#\n\n.#…  ##.#.\n#...#\n#...#\n##.#.\n#...#         1
+ 191  kaldrin       [E]=[milk^]=[milk]=[sand^]=[coal^]=[coa…  [E]=[logs]=[pigs]=[logs^]=[wool^]=[sand…  0
+ 192  tresk         BRRGGBBR\nGRGGBBGR\n\nGRGGGBG\nGGBRGGG\…  GRGGGBG                                   0
+ 193  dornic        3D 3S 8C 9H AD\n5H 5C 7C JH QC\n\n6C 6S…  3C 8S QD KD KS                            0
+ 194  tresk         BGBBGBGBG\nGBRBBBBRGB\n\nRRRBRBR\nRBRRR…  RBRRBBR                                   0
+ 195  kaldrin       [E]=[logs^]=[logs^]=[logs]=[logs]=[coal…  [E]=[logs^]=[logs]=[logs]=[sand^]=[pigs…  0
+ 196  dornic        3D 7H 10H JS QH\n2H 3C 3S AH AD\n\n4H 4…  4H 4D 5H 9C KH                            1
+ 197  mestrel       [6|5][0|0][0|0][0|0]\n[0|1][0|0][0|5][5…  [6|4][0|6][3|4][6|6][2|0][3|3]            0
+ 198  wisbek        1:44\n2:00\n\n7:22\n11:50\n3:36\n4:40\n…  11:50                                     0
+ 199  tresk         GBRBRRRB\nGBRRGRGBR\n\nGRRRBGRBBR\nGRRR…  GRRGRBBRBR                                0
+ 200  ospren        .....\n.....\n##...\n.....\n.##..\n\n..…  #####\n.#.#.\n.#.#.\n.....\n##.##         0
+ 201  ospren        #.###\n#.###\n#.###\n.....\n..#.#\n\n#.…  ..#..\n..#.#\n#####\n.#...\n..#.#         0
+ 202  ospren        .##.#\n..##.\n##.##\n..##.\n.##.#\n\n#.…  .....\n..#..\n....#\n#....\n.....         0
+ 203  tavrik        phantom\nscarf\n\nteacher\nrelaxed\nhea…  heavens                                   0
+ 204  kaldrin       [E]=[coal^]=[pigs^]=[pigs]=[coal^]=[coa…  [E]=[logs^]=[pigs]=[pigs^]=[wool]=[wool…  0
+ 205  kaldrin       [E]=[coal^]=[sand^]=[wool]=[logs^]=[san…  [E]=[wool^]=[sand^]=[pigs^]=[wool^]=[sa…  0
+ 206  kaldrin       [E]=[logs^]=[logs^]=[milk^]=[milk^]=[pi…  [E]=[logs]=[coal^]=[milk^]=[coal^]=[log…  0
+ 207  dornic        2H 4S 5D 7D QS\n7C 8D 10C QH KH\n\n2H 3…  2D 4D 5H 7H 9S                            0
+ 208  dornic        4D 6S 7H JH AC\n3D 9D 10C AH AD\n\n2H 2…  2H 8H 9D QS KS                            0
+ 209  wisbek        4:39\n7:28\n\n11:17\n8:35\n12:20\n3:05\…  8:35                                      0
+ 210  wisbek        1:33\n2:42\n\n5:53\n10:09\n4:51\n7:30\n…  5:53                                      1
+ 211  dornic        5C 7S 10D AH AS\n2S 3D 4C 9H 10C\n\n3C …  3S 7D 8H JC JS                            0
+ 212  dornic        4H 7D 8C 10D KD\n5D 5C 6D KH KC\n\n2C 4…  2C 4H 5S 7H 7S                            0
+ 213  ospren        ..###\n....#\n.....\n.....\n...#.\n\n..…  #####\n####.\n#.##.\n.....\n.....         1
+ 214  tavrik        imply\nthermal\n\nbell\ntilt\ntoll\nmis…  miss                                      1
+ 215  wisbek        2:15\n6:51\n\n3:21\n7:09\n4:03\n9:29\n5…  3:21                                      1
+ 216  tresk         BRRBRGG\nGRGGGRRRB\n\nRGRGRGGBB\nGRRRBB…  RBRRGBBRG                                 0
+ 217  dornic        4H 4D 5S 6D JS\n3C 7D 8C 9C 10D\n\n2C 3…  2D 6H 10S QC KD                           1
+ 218  ospren        ...#.\n.....\n.....\n...#.\n...#.\n\n#.…  .....\n.....\n#....\n#....\n#....         1
+ 219  kaldrin       [E]=[milk]=[milk]=[logs]=[logs^]=[coal]…  [E]=[wool]=[coal]=[pigs^]=[sand]=[sand]   0
+ 220  ospren        .....\n.##..\n.....\n#....\n.....\n\n..…  #.#..\n.#...\n.#.#.\n#....\n.....         0
+ 221  tavrik        funded\naiming\n\nesteem\nexcess\nassis…  effect                                    0
+ 222  tavrik        champ\niris\n\nabuse\narise\namino\nalo…  amino                                     1
+ 223  tavrik        domain\nblake\n\ndiet\nduel\nlure\nfour…  diet                                      0
+ 224  tavrik        mixture\nnose\n\nhull\nwatt\nkill\npull…  watt                                      0
+ 225  tavrik        again\nmicro\n\ncommit\nlionel\npickup\…  manila                                    0
+ 226  kaldrin       [E]=[coal^]=[coal^]=[coal^]=[milk^]=[co…  [E]=[logs^]=[pigs^]=[milk]=[milk^]=[pig…  1
+ 227  tresk         RGGBBRG\nRRRRBRBBRR\n\nRGBRRRGG\nRRRGGR…  RRRGGBRG                                  0
+ 228  tresk         GBRBBB\nRGBGGGGGRB\n\nRRGGRGRGR\nRGRGRR…  GGRRRGGRG                                 0
+ 229  kaldrin       [E]=[pigs]=[wool]=[pigs^]=[pigs^]=[pigs…  [E]=[logs]=[pigs]=[wool^]=[logs]=[wool^]  0
+ 230  mestrel       [2|2][2|4][4|5][5|2][2|2][0|6][6|0]\n[1…  [6|6][0|0][3|3][1|2]                      0
+ 231  tavrik        exactly\namen\n\nknock\ncrack\nwhich\nt…  crack                                     0
+ 232  wisbek        11:01\n12:25\n\n6:10\n7:22\n10:57\n4:55…  6:10                                      0
+ 233  mestrel       [1|2][2|3][5|5][6|6]\n[4|2][0|0][2|3][6…  [3|5][6|3][4|6][1|1][2|3][3|2][3|5]       1
+ 234  ospren        ..#..\n.....\n.##..\n.....\n.##..\n\n.#…  ..###\n.#...\n.....\n.####\n.####         0
+ 235  kaldrin       [E]=[sand]=[sand]=[sand^]=[wool]\n[E]=[…  [E]=[milk^]=[milk]=[wool]=[milk]=[milk^]  0
+ 236  dornic        2C 8C JH QD AD\n3S 4D 8H AH AS\n\n5H 6D…  4D 7H 8D JD KC                            0
+ 237  kaldrin       [E]=[wool^]=[wool^]=[pigs]=[pigs]=[wool…  [E]=[wool^]=[wool]=[wool]=[wool]=[logs^…  0
+ 238  mestrel       [6|6][5|5][3|5][5|5]\n[6|3][3|3][3|3][2…  [6|2][6|0][4|4][2|0][3|5]                 0
+ 239  wisbek        4:41\n12:28\n\n8:08\n7:13\n9:15\n2:40\n…  2:40                                      0
+ 240  dornic        2S 8C 9D 10C QH\n6D 6S 7C 8H AS\n\n5C J…  5C JH JC QH QS                            0
+ 241  kaldrin       [E]=[wool^]=[wool^]=[wool]=[coal^]=[woo…  [E]=[sand^]=[wool^]=[logs]=[milk^]=[san…  0
+ 242  tresk         GBBGBBBG\nGBBBRGBG\n\nGGGGRGBB\nGGGGBGB…  GBBGGGGR                                  0
+ 243  mestrel       [3|0][4|5][5|1][1|5][5|4][0|3]\n[2|6][5…  [3|3][1|0][0|0][2|2][0|0][5|1]            0
+ 244  wisbek        3:53\n4:28\n\n10:39\n9:40\n6:40\n5:52\n…  5:52                                      0
+ 245  dornic        3H 8S 10D QD KD\n2D 3D 7H 10C AH\n\n3S …  3C 4C 8D 9C 10C                           0
+ 246  tresk         RRRBRBGGRB\nBRBGBBGRR\n\nGGRBRRGRRR\nRR…  RRRGGRRRBG                                0
+ 247  dornic        4D 5H 6S 8D QS\n3C 8C 8S QD AC\n\n3S 4H…  7H 8C 10H 10S KS                          0
+ 248  mestrel       [3|1][1|5][1|3][5|3][1|1][1|1][3|3]\n[5…  [0|0][1|1][2|3][4|6]                      1
+ 249  tavrik        leader\nprogram\n\nthere\ntense\ntheme\…  plaza                                     0
+ 250  tavrik        wolf\nmeaning\n\naward\nallow\noffer\no…  offer                                     0
+ 251  mestrel       [5|1][1|5][1|5][1|5][1|5]\n[6|3][2|6][1…  [6|2][2|3][2|4][2|4][2|2][3|2]            0
+ 252  wisbek        8:28\n12:28\n\n6:04\n3:46\n7:59\n4:18\n…  9:49                                      1
+ 253  tavrik        rear\nwing\n\nevent\nashes\nupper\nalta…  event                                     0
+ 254  kaldrin       [E]=[sand^]=[pigs^]=[wool^]=[pigs^]=[wo…  [E]=[milk^]=[sand^]=[sand^]=[sand^]=[sa…  0
+ 255  wisbek        10:40\n12:29\n\n4:07\n3:19\n11:55\n9:09…  2:08                                      0
+ 256  tavrik        relaxed\nintent\n\nfood\nanal\niris\naw…  food                                      1
+ 257  kaldrin       [E]=[pigs^]=[wool]=[wool]=[coal]=[logs]…  [E]=[sand^]=[logs]=[logs]=[pigs]=[coal^…  0
+ 258  mestrel       [4|6][4|6][5|5][4|3][3|6][6|6]\n[2|2][0…  [6|0][6|4][6|5][3|6][2|3][0|6][6|4]       1
+ 259  tresk         GBBBGRGGGR\nBBGBRRRGRR\n\nRRRBBG\nRRBBR…  RBRRRG                                    0
+ 260  dornic        2D 4D 7C 10H QD\n5D 5S 6S JD QH\n\n3S 4…  3S 9S 10H 10S KH                          0
+ 261  tresk         GRRRRBGGBB\nRBRBBBBR\n\nGBGGBGRR\nGRGGB…  GRBGGGRB                                  0
+ 262  dornic        4S 6D JS KH AD\n2S 9H 9S 10D QS\n\n3H 5…  3H 5S 6H 8D QD                            1
+ 263  kaldrin       [E]=[pigs]=[coal^]=[coal^]=[milk]=[pigs…  [E]=[logs^]=[coal]=[wool^]=[logs^]=[mil…  0
+ 264  mestrel       [0|2][3|1][1|4][4|3][2|6]\n[5|6][6|3][6…  [3|0][0|4][5|3][1|4][6|1]                 0
+ 265  mestrel       [0|6][0|2][6|0][4|0][1|0][3|4][5|0]\n[1…  [4|6][6|0][0|3][3|4][5|6][6|1][1|4]       1
+ 266  tavrik        coke\ntrack\n\nsteal\nwhose\nsteak\ncro…  whose                                     0
+ 267  tresk         GGRGBGRGG\nBRRGGBR\n\nGRGBRRBGR\nRRGGRB…  GRRGGBGRR                                 0
+ 268  tresk         RBBGGGB\nRGGGRR\n\nRRBRRBRB\nRBBRRRBR\n…  RRRBBBRB                                  0
+ 269  tavrik        ball\nvalued\n\nprobe\nshore\ndrake\npr…  probe                                     0
+ 270  tavrik        goose\nvast\n\nsailing\nservice\npassio…  service                                   0
+ 271  tresk         RBRBBRBG\nRBRGGRGR\n\nBRBGGBRRG\nBBGBRR…  BBGBRRGRG                                 0
+ 272  mestrel       [6|0][4|4][6|5][2|2][5|5][2|3]\n[0|6][1…  [4|4][2|4][5|5][0|3]                      0
+ 273  wisbek        5:50\n11:30\n\n9:22\n2:19\n8:10\n1:52\n…  1:52                                      0
+ 274  tresk         GGGGGBRB\nBGRRRRBG\n\nBRGBGGBR\nGRBGBGR…  GGGGBRRB                                  1
+ 275  tresk         BBGBGBGGB\nGRBGBRGGR\n\nRGBGGBGBRR\nGBR…  RGBGGBGBRR                                1
+ 276  tresk         GBBGBGR\nRRBGGGGG\n\nBGBBBB\nBBGBBB\nGB…  GBBBBB                                    1
+ 277  tavrik        highest\ngood\n\nvarsity\ncountry\nmaje…  servant                                   1
+ 278  tavrik        weight\nmice\n\nwizard\nsignal\nbanker\…  wizard                                    0
+ 279  dornic        3H 3C 6S 9H QC\n4H 4S 5D 8D AS\n\n3H 5S…  3H 5S 7S JD JC                            0
+ 280  ospren        #####\n#..##\n....#\n.....\n.....\n\n.#…  .....\n.....\n..#..\n#####\n#####         0
+ 281  dornic        2C 5D 10H JH AC\n5H 5S 7C 9C 10S\n\n2D …  5C 8D JD QD AC                            1
+ 282  tavrik        gang\nbring\n\njunk\nrant\ndrag\nbind\n…  rant                                      0
+ 283  tavrik        school\nclearly\n\npenguin\nfirearm\nsu…  sustain                                   0
+ 284  ospren        #..#.\n#..#.\n.....\n#..#.\n#..#.\n\n..…  ...##\n..##.\n#..##\n#....\n#.##.         0
+ 285  ospren        #...#\n.....\n#...#\n.###.\n.###.\n\n..…  .....\n.....\n.....\n.....\n#.#.#         1
+ 286  mestrel       [6|1][6|0][6|2][6|2][0|6][6|6][6|4]\n[4…  [3|1][4|0][1|4][1|6][1|0][6|4]            0
+ 287  ospren        ####.\n#.#.#\n##...\n#..#.\n#....\n\n.#…  #...#\n#...#\n#.#.#\n#...#\n##.##         0
+ 288  tresk         RRGBRGGRBG\nBRGBRRB\n\nBRGRBBR\nRGGBBRR…  RGGBBRR                                   1
+ 289  ospren        ....#\n.....\n...#.\n....#\n.....\n\n#.…  ..##.\n..##.\n#....\n..##.\n..##.         1
+ 290  mestrel       [0|0][4|4][0|0][3|4]\n[5|4][5|5][2|2][3…  [4|4][2|2][1|1][2|4][0|3][5|0][6|2]       1
+ 291  dornic        2C 8H 8D 8C 8S\n4S 7D 7C 9C 10S\n\n2S 5…  2C 8H 9C JS KC                            0
+ 292  kaldrin       [E]=[milk]=[milk^]=[sand]=[sand^]=[pigs…  [E]=[coal^]=[milk^]=[wool^]=[sand]=[san…  0
+ 293  mestrel       [6|0][0|1][4|0][0|6][2|0]\n[6|0][3|6][0…  [0|0][2|2][2|3][4|4][5|5][6|6][6|6]       0
+ 294  wisbek        3:25\n6:56\n\n2:47\n4:42\n1:34\n5:44\n1…  4:42                                      0
+ 295  dornic        3H 5H 7H 7D 9S\n2H 2D 5C 6S 9C\n\n2D 4D…  2D 3S 10H QC AS                           0
+ 296  tresk         RRRBRBRGGB\nGBBRRRGRGR\n\nRRRRRBGBGR\nB…  BBGBGRRRRR                                1
+ 297  ospren        .....\n####.\n##.#.\n.....\n####.\n\n.#…  ....#\n..###\n.#...\n.....\n.#..#         0
+ 298  mestrel       [4|5][5|0][3|6][6|5][3|6][5|1]\n[1|3][1…  [5|3][4|5][5|1][0|4][6|5][1|3]            0
+ 299  dornic        3C 4C 6S 8D QH\n6C 8H 10D 10S KS\n\n6S …  6S 8S JC KH KC                            0
+ 300  kaldrin       [E]=[wool^]=[milk]=[pigs]=[coal]=[logs]…  [E]=[coal^]=[wool]=[sand]=[pigs]=[logs^]  0
+ 301  tavrik        selfish\ndecade\n\nupdate\nintake\ninco…  ethnic                                    1
+ 302  wisbek        1:15\n2:00\n\n4:43\n6:14\n9:12\n7:19\n1…  4:43                                      0
+ 303  tresk         BGBBGR\nBRBBGRBR\n\nGGBRGBBBG\nGGBRGGBB…  RBGGGBGRB                                 0
+ 304  tresk         BGGBBRBBGB\nBGGBGRBRB\n\nBBRGBGBRB\nBGB…  BRBBGRGBB                                 0
+ 305  tresk         BGGBGBRR\nBGBGRGR\n\nGRGGRBG\nGRGGRGB\n…  GBGRRGG                                   1
+ 306  dornic        2C 9D 10S QH AD\n4C 5C 6C 7H 7D\n\n5C 7…  2S 10S JC JS KD                           0
+ 307  mestrel       [4|4][2|4][3|5][2|0][3|2][4|5]\n[6|3][0…  [2|4][4|4][2|3][2|2]                      0
+ 308  dornic        2H 3S 4H 8S KS\n2S 8H 8C 10D AD\n\n4H 6…  4H 6S 7D KD AD                            1
+ 309  tavrik        yale\nticket\n\nship\ndrop\nflip\nfrom\…  swap                                      0
+ 310  tavrik        finance\nhandful\n\ncurious\nfurious\nc…  leisure                                   0
+ 311  tavrik        barrel\nimmune\n\nmagical\nbargain\nrad…  bargain                                   0
+ 312  wisbek        3:45\n6:00\n\n5:50\n2:20\n10:20\n1:40\n…  4:25                                      0
+ 313  ospren        #.##.\n..##.\n#..##\n..##.\n#.##.\n\n..…  ..#..\n.#.#.\n##.##\n#####\n..#..         0
+ 314  kaldrin       [E]=[pigs^]=[sand]=[pigs]=[sand]=[pigs^…  [E]=[pigs]=[sand^]=[sand]=[pigs]          0
+ 315  dornic        3H 3D 4H 10C KD\n2H 2C 6D JS QC\n\n6H 8…  3H 4H 4D 5D 6D                            0
+ 316  tavrik        buyer\nenable\n\nbidding\neffects\nappa…  trustee                                   0
+ 317  tavrik        rick\nscrap\n\nbore\nfake\nsave\npace\n…  bore                                      0
+ 318  tavrik        streak\nkiss\n\naddress\ninstant\nunkno…  instant                                   0
+ 319  mestrel       [1|0][4|0][1|6][0|0]\n[6|5][1|0][1|5][6…  [6|2][3|2][2|0][6|0][6|3][4|1][3|3]       1
+ 320  wisbek        2:20\n5:19\n\n6:48\n10:55\n3:29\n9:47\n…  10:55                                     0
+ 321  mestrel       [5|1][2|4][5|3][1|6][5|3][3|4]\n[2|1][1…  [2|0][3|5][5|2][6|2][5|1][0|4][1|6]       0
+ 322  wisbek        5:53\n12:29\n\n10:20\n1:37\n2:11\n6:09\…  10:20                                     1
+ 323  wisbek        2:52\n4:52\n\n10:51\n7:44\n5:13\n9:37\n…  5:13                                      0
+ 324  wisbek        1:35\n8:10\n\n9:05\n7:30\n6:00\n3:25\n5…  7:30                                      0
+ 325  dornic        3S 4D 6C 7S 8C\n3H 6H 8H 10C KC\n\n2H 3…  2H 3H 7C 8D 9C                            1
+ 326  ospren        #....\n.....\n.....\n.....\n#####\n\n##…  .#.#.\n##.##\n.###.\n.#.#.\n.#.#.         0
+ 327  dornic        2S 7S 8D AC AS\n2H 3H 5C 9D 10S\n\n6H 6…  2S 3D QC KC AS                            0
+ 328  tavrik        flee\nsilly\n\nmarshal\nhealthy\npollin…  lifting                                   0
+ 329  mestrel       [5|2][2|2][5|2][2|5]\n[5|5][5|6][2|0][5…  [5|5][1|1][4|4][1|6]                      0
+ 330  kaldrin       [E]=[wool^]=[logs]=[coal]=[milk]=[wool^…  [E]=[milk]=[coal^]=[milk]=[logs]          0
+ 331  tresk         RRBBGRR\nRGGRBRGG\n\nGGRRBRBGB\nGRBRRBG…  GGRRBRBGB                                 1
+ 332  tresk         GRGGRGGBB\nGGBRGRRGBG\n\nBGGGGRGBGG\nRG…  BGRBGGGGBB                                1
+ 333  wisbek        3:39\n11:41\n\n6:25\n12:23\n2:44\n8:04\…  1:59                                      0
+ 334  tavrik        stunt\narmor\n\ncoach\nlocal\ncivil\nbo…  fully                                     0
+ 335  ospren        ..#.#\n.....\n#....\n#....\n.....\n\n##…  .....\n.....\n...#.\n#..#.\n#.##.         0
+ 336  dornic        5S 7S 10D KH AH\n2C 2S 4C 7C JS\n\n3C 4…  5S 9D 10S JS KH                           0
+ 337  wisbek        1:35\n4:20\n\n6:22\n8:11\n11:49\n9:34\n…  11:49                                     0
+ 338  mestrel       [2|2][3|3][3|3][3|4][5|5][6|6]\n[4|5][4…  [3|5][5|5][4|4][0|6]                      0
+ 339  ospren        .##..\n#....\n....#\n#....\n.##..\n\n.#…  ..###\n...##\n....#\n...##\n....#         1
+ 340  kaldrin       [E]=[coal]=[logs]=[coal]=[pigs]=[sand^]…  [E]=[wool]=[logs]=[coal]=[coal^]          0
+ 341  kaldrin       [E]=[wool]=[milk^]=[wool^]=[logs^]\n[E]…  [E]=[pigs]=[milk^]=[sand]=[logs^]=[logs…  0
+ 342  tavrik        billion\nunless\n\nrabbit\nrented\nforg…  biting                                    0
+ 343  tresk         BRGGGGGBBR\nGRGBBBBRG\n\nRBGBRRGBB\nRRR…  BRRBBBBGB                                 0
+ 344  kaldrin       [E]=[sand^]=[coal^]=[wool^]=[logs]\n[E]…  [E]=[milk^]=[logs]=[coal]=[coal]          0
+ 345  dornic        3H 4H 7C 9C QS\n2H 4D 5C 8S 10D\n\n3H 6…  6H 8D 9C KC AC                            1
+ 346  dornic        2D 4S 7D 8C 10H\n6D 8D JS KD AS\n\n2H 4…  2H 4D 6S 7H 8D                            0
+ 347  kaldrin       [E]=[coal]=[wool]=[wool]=[wool]=[pigs^]…  [E]=[wool^]=[wool^]=[sand^]=[milk]=[mil…  0
+ 348  wisbek        5:35\n12:27\n\n2:17\n3:47\n8:41\n1:09\n…  8:41                                      0
+ 349  dornic        3S 5D 8S QD AD\n2H 3H 6C 10C JC\n\n4H 5…  3D 10C QC KH AC                           0
+ 350  tavrik        fluid\ntrading\n\nuniform\nexhaust\norg…  uniform                                   0
+ 351  mestrel       [3|3][2|3][4|3][3|3][3|3][3|5][4|3]\n[6…  [1|1][1|1][1|4][2|4]                      0
+ 352  tresk         GBGRGBGB\nGGBGBGG\n\nBRBGGBR\nBRBGGRB\n…  BRBGBGR                                   0
+ 353  ospren        ..###\n..#..\n##...\n.#.#.\n#..##\n\n#.…  #.##.\n..#..\n#..#.\n#....\n##.##         1
+ 354  ospren        .....\n#....\n.....\n..##.\n#.##.\n\n..…  .....\n#....\n..#.#\n.....\n.....         0
+ 355  tresk         RGGGGGBBG\nRRRRGRRG\n\nRBBBGG\nRBBGRG\n…  RBGBBG                                    0
+ 356  ospren        .....\n#....\n.##..\n.##..\n.##..\n\n..…  .....\n####.\n.#...\n####.\n####.         0
+ 357  ospren        ....#\n.....\n..#..\n.....\n.#...\n\n.#…  .....\n.....\n...#.\n.####\n..###         0
+ 358  kaldrin       [E]=[pigs^]=[coal]=[coal]=[wool]=[pigs]…  [E]=[wool]=[milk]=[sand^]=[coal]=[coal]…  0
+ 359  ospren        .....\n.....\n##.##\n##.##\n.....\n\n..…  .#.#.\n.....\n.#.#.\n##.##\n.#.#.         0
+ 360  ospren        ..##.\n.###.\n.##..\n..#..\n..##.\n\n.#…  ###..\n.##.#\n#....\n.##.#\n###..         0
+ 361  ospren        .....\n###..\n####.\n...#.\n.....\n\n..…  .....\n##...\n#..#.\n##.##\n#..#.         0
+ 362  tresk         RGGBGGGG\nGGBGGRBBG\n\nBBBGRG\nBRGBBG\n…  RBBBGG                                    1
+ 363  mestrel       [1|1][1|1][5|5][2|0][0|4]\n[5|4][3|2][1…  [4|4][1|6][4|5][2|4][3|3]                 0
+ 364  tresk         GRGBBRRRBB\nGGGGRGRGBB\n\nGGRRGBBGG\nGB…  GGBGBBRRR                                 0
+ 365  kaldrin       [E]=[wool^]=[sand]=[milk]=[coal]=[logs]…  [E]=[sand^]=[pigs^]=[pigs^]=[pigs^]=[mi…  0
+ 366  tresk         BBGBBBGGR\nBRRBRRRRB\n\nRBGBRBR\nRRGGBB…  RBGBRBR                                   0
+ 367  tresk         GBBRGB\nRRGGRRGBBG\n\nBBGRBRBR\nRBBRRBG…  GRRBRRBB                                  0
+ 368  kaldrin       [E]=[milk]=[sand^]=[pigs^]=[wool^]=[woo…  [E]=[coal]=[pigs]=[wool^]=[pigs]          0
+ 369  ospren        .....\n##.##\n#.###\n##.##\n.....\n\n..…  ....#\n####.\n.....\n.....\n.....         0
+ 370  tresk         BBBRGR\nBBRGGGGB\n\nBBGBRRB\nBBGBGRR\nB…  BBBBRRG                                   1
+ 371  tavrik        farmer\nongoing\n\ndepend\nrunner\nmorm…  runner                                    0
+ 372  tavrik        villain\nscratch\n\nsheet\nrenew\nbelly…  going                                     0
+ 373  tresk         RBBRRBBRR\nGRRGBRRGBB\n\nGGBRGBRR\nGGRG…  GGRGRBBR                                  0
+ 374  tresk         RGRBBBG\nRGRBBBBR\n\nBRBBRRRGR\nBRRBBRB…  GBBBRRRRG                                 1
+ 375  dornic        8D 8S JH QC AS\n2D 4C 6C 8C 10C\n\n2D 6…  2D 3D 7C 7S AD                            0
+ 376  mestrel       [5|2][5|4][5|6][5|5][5|3]\n[0|0][0|1][1…  [1|1][1|2][3|5][5|5][5|6]                 1
+ 377  tresk         RGGGRBRBBG\nRRBBBBBG\n\nGGRBRRGRG\nGRRB…  GRBRGGGGG                                 0
+ 378  kaldrin       [E]=[milk]=[wool^]=[sand]=[pigs]=[pigs]…  [E]=[wool]=[coal]=[pigs^]=[milk^]=[wool…  0
+ 379  wisbek        2:21\n10:50\n\n6:14\n1:54\n3:52\n9:19\n…  9:19                                      1
+ 380  tresk         BGRGRGRGGB\nBGGRRRRGRR\n\nGBGRBGBGRG\nR…  GBGRBGBGRG                                0
+ 381  tresk         RRRRGBGRGG\nGRRRBGR\n\nGRGRGGGRB\nGBGRG…  RGBGRGRGB                                 0
+ 382  tavrik        cannot\nslipped\n\naward\norder\nenter\…  award                                     0
+ 383  wisbek        3:17\n6:40\n\n5:46\n12:16\n4:11\n9:08\n…  4:11                                      0
+ 384  wisbek        10:43\n12:45\n\n5:07\n1:25\n4:13\n6:12\…  5:07                                      0
+ 385  tavrik        antique\nmedia\n\nbypass\noccupy\nscotc…  occupy                                    0
+ 386  dornic        5H 8C 8S JC AC\n7D 7S 9D KH AD\n\n2D 4D…  3H 5S 8D 8C KD                            0
+ 387  mestrel       [0|4][0|3][2|2][4|4][1|4][5|5]\n[6|3][3…  [1|0][4|3][6|0][6|5][5|5]                 0
+ 388  tavrik        iron\njunior\n\nallow\ninner\nsided\nro…  inner                                     0
+ 389  tavrik        repeal\nfull\n\ncooler\nleader\nlethal\…  lethal                                    1
+ 390  dornic        7H 8H 10C JD JS\n3D 8C 9C QH QC\n\n5D 6…  5D 10H 10C KC AC                          0
+ 391  kaldrin       [E]=[logs]=[logs^]=[logs^]=[logs]=[logs…  [E]=[coal]=[wool^]=[wool]=[logs]=[logs^…  1
+ 392  tresk         RBGRRGG\nBGGRRGBBGR\n\nGGBRBBG\nGBGRBGB…  RBGGBBG                                   1
+ 393  kaldrin       [E]=[pigs^]=[logs^]=[milk^]=[wool^]=[lo…  [E]=[milk^]=[pigs^]=[wool^]=[wool]=[log…  0
+ 394  dornic        4C 6C 10D JD AS\n3H 6D 6S 8H 8D\n\n4D 6…  5H 7D 9C 10D AD                           0
+ 395  ospren        ..##.\n.....\n#.#.#\n#.#.#\n..##.\n\n..…  #...#\n.##.#\n.###.\n.##.#\n...#.         0
+ 396  kaldrin       [E]=[pigs]=[pigs]=[pigs]=[wool]=[sand]=…  [E]=[milk]=[milk]=[wool]=[milk^]          1
+ 397  wisbek        5:52\n12:26\n\n4:06\n2:13\n7:54\n1:01\n…  7:54                                      0
+ 398  kaldrin       [E]=[wool^]=[sand^]=[milk^]=[logs]=[pig…  [E]=[sand^]=[sand^]=[pigs^]=[pigs^]=[pi…  1
+ 399  wisbek        3:41\n7:08\n\n9:03\n10:35\n8:07\n12:06\…  10:35                                     0
+ 400  dornic        3H 4D 6D JH QS\n2H 3D 4H 5C KH\n\n4S 6C…  6S 8C 10C JD QD                           0
+ 401  mestrel       [4|4][0|3][0|6][5|4][0|2][2|5][4|4]\n[2…  [6|6][4|0][4|1][4|1][5|6][1|4][3|6]       1
+ 402  dornic        2H 2C 4H 10S KH\n6C 9D JH QH QS\n\n2D 6…  6H 7H 9H JC QC                            1
+ 403  ospren        #####\n.....\n.....\n.....\n#####\n\n#.…  .....\n.#...\n#...#\n.....\n...#.         0
+ 404  kaldrin       [E]=[wool]=[milk^]=[sand^]=[milk]=[pigs…  [E]=[coal^]=[wool]=[milk^]=[logs]         0
+ 405  dornic        2H 4D 5C 10H KD\n2D 2C 9H JS AD\n\n2D 7…  2D 4S 6D QD KH                            0
+ 406  dornic        3D 3S 7S 8S AD\n4H 4C 4S 5D QC\n\n2S 5C…  2C 3S 8C 8S QH                            0
+ 407  dornic        2H 7H 8H QD KD\n3H 3C 4S 5C JD\n\n4H 6D…  2D 6C 8H QD AD                            0
+ 408  tavrik        minded\nlocal\n\nunsafe\nawhile\nupside…  upside                                    1
+ 409  kaldrin       [E]=[sand]=[wool^]=[wool^]=[sand]=[sand…  [E]=[wool^]=[coal^]=[sand^]=[sand]=[coa…  0
+ 410  tresk         RGBGBBG\nGGBRBBR\n\nRRGBRRGGR\nRGRRGBBR…  RGRRGBBRG                                 0
+ 411  tavrik        that\npulp\n\ntell\ntilt\nwell\njeff\np…  tilt                                      1
+ 412  tresk         BGGBGGRBG\nRGRGGGGRBB\n\nGBBRGGGBGR\nGB…  RBGGGGBGGG                                0
+ 413  wisbek        1:21\n11:17\n\n2:37\n6:44\n8:56\n12:52\…  2:37                                      0
+ 414  tresk         RRRGGGRR\nRRGRGRRGR\n\nGRGGBBBBB\nGGGGB…  GRGGBBBBB                                 0
+ 415  tresk         RBRBBBRB\nGGGBGBBGB\n\nGBRBRG\nRBRGRG\n…  GBRBRG                                    0
+ 416  dornic        2C 3H 7D JC AS\n2D 3D 8C 8S 9S\n\n3D 5S…  5S 8H 9D JH AD                            0
+ 417  tresk         GGRBBBBR\nBGGGRRRG\n\nBRBBRRBRG\nBBGRRB…  GRBBRBBBR                                 1
+ 418  kaldrin       [E]=[pigs^]=[sand^]=[pigs^]=[wool]=[pig…  [E]=[wool]=[coal]=[coal]=[milk]=[wool]=…  0
+ 419  kaldrin       [E]=[pigs]=[milk]=[milk]=[coal]=[coal]=…  [E]=[pigs^]=[pigs]=[milk]=[pigs^]=[milk]  0
+ 420  dornic        3S 6D 9C 10H QH\n5S 7H QD KS AD\n\n3H 5…  3D 4D 6H 8H KH                            0
+ 421  mestrel       [0|6][1|0][4|4][6|2]\n[1|3][6|6][2|3][1…  [2|2][3|3][3|6][6|3][3|2][2|1]            1
+ 422  wisbek        2:20\n12:25\n\n5:03\n7:56\n1:35\n6:46\n…  3:10                                      0
+ 423  tresk         BBRRBGBRBB\nGRGRRRGBGR\n\nBBGGBB\nGGGBB…  BBGGBB                                    1
+ 424  tresk         GRRRGBB\nBGGGRBBB\n\nGRRRGRRB\nRGRRGGGB…  GRRRGRRB                                  1
+ 425  tresk         GGRRGRRRR\nBBGGBGGGRG\n\nBGBRGGGGGB\nGG…  GGGGGBBRRR                                0
+ 426  dornic        2D 3D 7D QD QC\n2H 8S 9H 9D 10S\n\n5H 7…  3H 4H 5D JC QD                            0
+ 427  ospren        #..#.\n.##..\n...##\n#..#.\n#...#\n\n#.…  #.#.#\n#..##\n##...\n#..##\n#.#.#         0
+ 428  kaldrin       [E]=[sand^]=[logs^]=[coal]=[coal]=[milk…  [E]=[milk^]=[milk^]=[logs]=[coal]=[pigs]  0
+ 429  ospren        #####\n..#..\n..#..\n#.#.#\n##.##\n\n..…  #####\n#....\n.....\n#....\n#####         0
+ 430  wisbek        1:25\n6:53\n\n9:18\n2:49\n11:05\n3:29\n…  11:05                                     0
+ 431  ospren        ..#.#\n...#.\n#..#.\n##.#.\n#...#\n\n##…  #.##.\n.##.#\n#.#.#\n..#..\n##...         0
+ 432  tresk         RGBBGBGB\nBGRBRGRG\n\nRGBBRBB\nBGBGBRB\…  RBGBBGB                                   1
+ 433  mestrel       [5|4][1|2][3|4][6|6]\n[3|3][1|0][1|3][3…  [2|4][3|1][0|5][4|3][6|6][2|1][5|5]       0
+ 434  dornic        7C 9S QC QS AD\n2S 5D 9H KH KD\n\n3S 4C…  7C 8S 10D JC AH                           0
+ 435  wisbek        2:33\n7:38\n\n5:46\n1:51\n10:11\n11:46\…  10:11                                     0
+ 436  wisbek        3:55\n4:57\n\n10:22\n8:49\n12:37\n2:15\…  10:22                                     0
+ 437  wisbek        1:55\n2:50\n\n8:20\n9:04\n3:49\n5:31\n1…  12:33                                     0
+ 438  tavrik        motion\nranging\n\naboard\nevenly\namaz…  aboard                                    1
+ 439  mestrel       [3|1][4|2][4|5][5|3][6|2]\n[0|5][0|4][6…  [5|3][5|3][3|2][2|6][2|1]                 0
+ 440  mestrel       [4|1][1|3][6|2][4|1][5|4][4|4]\n[0|0][3…  [1|5][0|5][1|3][4|2][6|6][0|3]            0
+ 441  wisbek        2:50\n3:45\n\n1:55\n7:12\n5:04\n4:41\n9…  4:41                                      0
+ 442  tavrik        assumed\njust\n\ncome\ncape\nsave\nnote…  come                                      1
+ 443  wisbek        8:20\n10:10\n\n12:51\n6:57\n2:50\n9:31\…  1:40                                      0
+ 444  ospren        ..#..\n.....\n.....\n.#.#.\n.....\n\n.#…  ..#..\n.#.#.\n.....\n.....\n.....         1
+ 445  tresk         GBBRGBGBBR\nBRRGBGBGGR\n\nRRGBBR\nGRGBB…  GRBRGR                                    0
+ 446  mestrel       [1|6][6|6][3|3][3|3][6|3][3|1]\n[4|6][0…  [0|0][0|1][1|2][3|3][5|5][5|5][6|6]       0
+ 447  dornic        2H 6C 7S QD AC\n3H 7H 9H 10S JS\n\n5D 7…  JD QC KH KS AH                            0
+ 448  kaldrin       [E]=[logs]=[logs]=[logs^]=[logs^]=[logs…  [E]=[logs]=[pigs]=[pigs]=[milk^]          0
+ 449  dornic        3H 6H 7S 9D 10C\n7C 8D 10H QD KD\n\n3C …  9C 10S JH KD AS                           1
+ 450  ospren        ...##\n.....\n...#.\n...#.\n.....\n\n.#…  ..#..\n..#..\n#....\n.....\n.....         0
+ 451  tresk         GGBBGBGBB\nGRGRGGG\n\nRBGGBRGGB\nBRGBGB…  BGBGBGBGB                                 1
+ 452  ospren        #.#.#\n.#.#.\n..#..\n.....\n##.##\n\n..…  ##..#\n#...#\n..##.\n.....\n.###.         0
+ 453  ospren        ....#\n...#.\n.....\n...#.\n#...#\n\n##…  #....\n.....\n...##\n#...#\n...#.         0
+ 454  kaldrin       [E]=[sand^]=[coal]=[wool^]=[sand^]=[woo…  [E]=[sand^]=[pigs^]=[sand]=[logs^]        0
+ 455  ospren        .....\n.###.\n..###\n##...\n.##..\n\n..…  ...##\n..###\n..###\n..###\n...##         1
+ 456  dornic        3D 7S 10H KD KC\n5C 10D QS AC AS\n\n4C …  3C 3S 6D 7D 8S                            0
+ 457  tresk         GRBBRGBR\nBRGGBGRGRG\n\nGBRBRBR\nBGRBRB…  RGBRBBR                                   0
+ 458  dornic        3D 5H 7H QC AC\n2H 5C 6S 7S 10D\n\n2H 8…  2H 2C 3D 4C 9H                            0
+ 459  mestrel       [5|3][5|4][2|5][6|6]\n[4|3][5|4][0|0][2…  [3|2][3|1][5|0][4|3][5|5]                 0
+ 460  mestrel       [5|3][5|5][5|3][5|5][2|5][5|0]\n[0|0][3…  [5|2][0|5][2|5][3|4][5|5][5|1][5|5]       1
+ 461  kaldrin       [E]=[coal]=[milk^]=[sand]=[pigs^]=[logs…  [E]=[coal]=[sand]=[coal]=[coal^]          1
+ 462  kaldrin       [E]=[logs]=[sand^]=[sand]=[coal]=[logs]…  [E]=[coal]=[coal]=[sand^]=[wool^]=[logs…  0
+ 463  wisbek        10:10\n11:13\n\n5:26\n9:01\n12:42\n1:04…  5:26                                      0
+ 464  mestrel       [6|4][6|0][5|3][2|4][5|2][1|1]\n[5|5][5…  [6|0][4|0][0|1][5|5][3|1]                 0
+ 465  ospren        .....\n.....\n#.#..\n#.#..\n#.#..\n\n..…  .....\n.....\n.#...\n.#...\n.#...         1
+ 466  wisbek        4:46\n10:50\n\n2:19\n3:47\n8:58\n6:57\n…  3:47                                      0
+ 467  kaldrin       [E]=[wool^]=[milk]=[coal]=[coal]=[pigs]…  [E]=[sand]=[sand]=[coal^]=[milk]=[logs]…  0
+ 468  mestrel       [0|5][4|3][1|3][6|2][0|2][5|2][0|5]\n[3…  [2|5][6|1][0|2][5|4]                      1
+ 469  tavrik        skies\nanalogy\n\nexit\noral\nitem\nedi…  item                                      0
+ 470  wisbek        1:43\n3:51\n\n12:20\n9:52\n10:02\n6:32\…  4:20                                      0
+ 471  tresk         GBGRRRRGB\nGRRBGGBGR\n\nGGRGGRBR\nGGBRR…  GBRRRRGG                                  0
+ 472  mestrel       [6|0][3|4][6|3][2|4]\n[4|2][0|4][2|0][1…  [2|1][4|1][6|3][2|1]                      0
+ 473  kaldrin       [E]=[logs]=[logs]=[pigs]=[logs]=[logs]=…  [E]=[milk]=[pigs^]=[pigs]=[pigs]=[milk]   0
+ 474  kaldrin       [E]=[wool^]=[pigs^]=[wool^]=[pigs^]=[wo…  [E]=[coal]=[pigs]=[coal]=[wool]=[wool]    1
+ 475  kaldrin       [E]=[coal]=[sand]=[milk^]=[pigs]=[pigs]…  [E]=[milk^]=[sand]=[pigs^]=[milk^]=[coa…  0
+ 476  mestrel       [0|1][1|1][4|1][0|4][1|1][2|6]\n[3|4][4…  [2|0][4|5][2|2][2|6][1|4][2|2][6|0]       1
+ 477  mestrel       [0|3][0|0][0|0][0|5][0|0]\n[2|0][4|4][4…  [3|0][3|5][5|3][5|5][2|2]                 0
+ 478  tresk         BRBGGGBR\nGBGBBGRR\n\nRGGRBG\nGBGRRG\nR…  BRGRGG                                    0
+ 479  dornic        2C 2S 7S 8C QC\n4C 5S 7D KS AH\n\n3C 4C…  3C 4C 5S 8C 10S                           1
+ 480  ospren        #.#.#\n#...#\n.##..\n#...#\n#.#.#\n\n##…  #...#\n....#\n#.#..\n....#\n#...#         1
+ 481  tavrik        peer\nassume\n\nsoon\nguru\nsolo\nlava\…  guru                                      0
+ 482  ospren        ...##\n.....\n.##..\n.##.#\n.##..\n\n..…  ..###\n#..##\n..#.#\n.##.#\n.#...         0
+ 483  kaldrin       [E]=[coal]=[coal]=[logs^]=[sand]=[logs^…  [E]=[milk^]=[sand^]=[logs]=[logs^]        0
+ 484  ospren        ....#\n...#.\n.....\n...#.\n#...#\n\n.#…  #....\n#....\n##.##\n##.##\n#..##         0
+ 485  tavrik        anxious\ntypical\n\nformed\nrocket\nkid…  period                                    1
+ 486  dornic        7S 8C 9S QC AH\n5C 7H 8D JD KH\n\n4C 6D…  3S 9D 9S 10C QH                           0
+ 487  ospren        .##..\n.....\n.##..\n.##..\n.##..\n\n#.…  ###.#\n#.#..\n#.#..\n###.#\n#.#..         1
+ 488  tresk         GBRGGB\nGGRRGGB\n\nBBGGBBGRBR\nBBRGBGBG…  BBRGBGBGBG                                0
+ 489  kaldrin       [E]=[sand^]=[wool^]=[coal^]=[logs^]\n[E…  [E]=[sand]=[coal]=[sand]=[logs]=[milk]=…  0
+ 490  tresk         GRRRGGRR\nGBGBGGGGB\n\nRGGGGRBB\nRGBGGB…  RGBGGBBG                                  0
+ 491  tresk         BRGGGGGRGG\nGRBBBBBG\n\nBRRRBBBG\nRBRBR…  RBRBRRBG                                  0
+ 492  ospren        #...#\n##..#\n....#\n##..#\n#...#\n\n#.…  #...#\n.....\n.....\n#...#\n#...#         1
+ 493  tavrik        brain\nspouse\n\nclassic\nstatute\nclas…  griffin                                   0
+ 494  tresk         RGGGGGRBB\nGBGRGGGGGR\n\nBBGRRRRGRG\nRB…  BBGRRRRGRG                                0
+ 495  ospren        .##..\n.##..\n.##..\n.#...\n.....\n\n#.…  ..##.\n##.##\n..##.\n..##.\n..##.         0
+ 496  ospren        .....\n##...\n#....\n..#..\n..###\n\n.#…  #..##\n###..\n....#\n###..\n#..##         0
+ 497  ospren        .#.#.\n.....\n.#.#.\n.#.#.\n.....\n\n.#…  .#...\n.#...\n.#...\n##...\n.....         0
+ 498  mestrel       [5|5][1|5][5|5][6|5][4|5][4|5][5|5]\n[2…  [6|6][6|2][2|3][3|1][1|4][4|3][3|2]       0
+ 499  wisbek        3:45\n6:30\n\n12:16\n4:39\n1:02\n7:25\n…  4:39                                      0
+ 500  tresk         GBGBRGRRBR\nRBRGBRGBRR\n\nGBGGRRG\nRGBR…  GBGGRRG                                   0
+ 501  ospren        .....\n#...#\n..#..\n.#.#.\n#####\n\n..…  ###..\n...##\n#..##\n#####\n#....         1
+ 502  tavrik        drug\neighty\n\nnavy\nknit\nford\nspun\…  spun                                      0
+ 503  kaldrin       [E]=[milk]=[coal]=[sand]=[coal]=[milk^]…  [E]=[coal]=[sand^]=[logs^]=[milk]=[milk…  0
+ 504  tavrik        gravel\nreckon\n\nfreedom\nsweater\npro…  federal                                   0
+ 505  tresk         BRRBGGB\nGRRRGRRG\n\nBBRRGRG\nRBBGRRG\n…  GBGRRBB                                   0
+ 506  mestrel       [6|1][1|3][6|5][4|6][6|6]\n[5|2][2|3][5…  [6|1][2|2][2|0][6|1]                      0
+ 507  tresk         GRBGRRRR\nRBGRRGBBBR\n\nRBRGRGRR\nGRRGR…  GRRGRBRR                                  1
+ 508  mestrel       [6|6][6|3][0|0][2|4][6|0][5|2][4|6]\n[2…  [2|4][0|0][0|1][1|1][6|4]                 0
+ 509  ospren        ...#.\n##...\n....#\n##...\n...#.\n\n..…  ...#.\n.#...\n.....\n#....\n...#.         0
+ 510  tavrik        engage\nfitting\n\nraging\ngotten\nrang…  aiming                                    1
+ 511  kaldrin       [E]=[coal^]=[pigs^]=[sand]=[logs^]=[woo…  [E]=[wool]=[logs^]=[logs]=[sand]=[sand^…  0
+ 512  dornic        3D 4H 4D 8D 10C\n2S 5C 7C 9C QC\n\n5H 7…  4H 6D 7H QD AC                            1
+ 513  ospren        .####\n.#.##\n..#..\n...##\n.#.#.\n\n..…  .#...\n...##\n.....\n...##\n.#...         1
+ 514  ospren        #..##\n#..#.\n...#.\n###..\n.#.##\n\n#.…  #.##.\n..##.\n#..##\n..##.\n#.##.         0
+ 515  dornic        3H 4C 10C 10S AS\n4H 7H 9H 9D JS\n\n3H …  5H 6D 7S JC KS                            1
+ 516  tavrik        driver\nlevy\n\nnova\nzone\ndime\ncure\…  dime                                      0
+ 517  mestrel       [4|0][6|1][4|1][6|2][2|3][1|3][5|5]\n[2…  [2|3][3|3][3|0][0|4][3|2]                 0
+ 518  kaldrin       [E]=[wool^]=[wool]=[wool]=[coal]=[coal]…  [E]=[sand^]=[sand^]=[sand]=[sand]=[milk…  1
+ 519  tresk         RRBGRRGGGR\nRRBRBBRRB\n\nRRBGRRRGBR\nRR…  RGRRGGRBRR                                0
+ 520  tresk         RRRBBRBRR\nRRGGRGG\n\nGGBRRBGRR\nGRGRGG…  GRRRGGBRR                                 0
+ 521  kaldrin       [E]=[logs^]=[milk^]=[sand]=[logs^]\n[E]…  [E]=[logs^]=[coal^]=[logs^]=[sand^]       1
+ 522  tavrik        escort\nfoul\n\ntunnel\nsister\ninland\…  arrest                                    1
+ 523  ospren        ..###\n.##..\n.....\n...##\n.....\n\n..…  .###.\n...#.\n.....\n...##\n...##         1
+ 524  mestrel       [0|6][6|2][5|1][1|2][5|0][0|1]\n[6|5][1…  [5|6][6|5][1|0][0|6][6|2][4|2]            0
+ 525  wisbek        2:04\n5:49\n\n1:16\n9:27\n4:15\n8:28\n1…  10:29                                     0
+ 526  ospren        .....\n###..\n##...\n.....\n##...\n\n#.…  .....\n.....\n##...\n###..\n###.#         0
+ 527  ospren        #####\n..##.\n#..#.\n....#\n#....\n\n..…  #####\n##.##\n#...#\n..#..\n.....         1
+ 528  tresk         GRGGRRG\nBGGGRGRGR\n\nGRRGGBBRR\nRRGGRR…  GGRRRBBRG                                 0
+ 529  ospren        ##.##\n.##..\n...#.\n.....\n.#..#\n\n..…  ....#\n#.#..\n....#\n.#.#.\n.....         0
+ 530  dornic        2D 4S 6C JS AH\n2S 5S 8S 10C QS\n\n5C 5…  4D 4S 6C 9D 9S                            0
+ 531  mestrel       [4|6][0|2][2|4][4|3][3|6][6|4]\n[6|2][2…  [0|4][4|4][1|1][1|1][0|3]                 0
+ 532  kaldrin       [E]=[logs^]=[sand^]=[logs^]=[pigs^]\n[E…  [E]=[milk]=[wool^]=[pigs^]=[wool^]=[pig…  0
+ 533  wisbek        2:54\n11:50\n\n5:52\n1:10\n8:40\n12:51\…  8:40                                      0
+ 534  mestrel       [2|5][1|3][2|1][5|2][0|3][2|1][4|4]\n[4…  [5|2][2|2][2|4][4|5][5|1]                 0
+ 535  kaldrin       [E]=[coal]=[pigs^]=[pigs]=[pigs]=[coal]…  [E]=[sand]=[sand]=[sand]=[coal^]=[wool]   0
+ 536  ospren        #....\n#..#.\n##..#\n.....\n#...#\n\n##…  #####\n#####\n.....\n.....\n#.#.#         0
+ 537  dornic        2C 4C 4S 8S QD\n3S 6D 8H 9H 9D\n\n5S 8H…  5S 8H JS QC KD                            0
+ 538  tresk         GRGRRGRGB\nGGBGBBRRR\n\nBGBGGB\nBBBGGG\…  BGBGGB                                    0
+ 539  ospren        #...#\n.##..\n.###.\n...##\n...##\n\n#.…  #...#\n##.##\n..#..\n.###.\n.###.         0
+ 540  dornic        6H 10D JC AH AD\n3H 7H 8C 10H 10C\n\n2D…  2H 2C 7D 9S AS                            0
+ 541  tresk         BBRRGRRR\nBBBBRBG\n\nRGGGBG\nGGRRBR\nGB…  GGRRBR                                    0
+ 542  kaldrin       [E]=[pigs]=[coal]=[logs]=[pigs]=[pigs^]…  [E]=[wool^]=[wool^]=[sand]=[logs^]=[woo…  1
+ 543  tresk         RGGBRRRG\nGRRGBBG\n\nRRBGGRGG\nGGBGGRRG…  BRRRGGRG                                  0
+ 544  kaldrin       [E]=[coal^]=[milk]=[sand]=[pigs^]\n[E]=…  [E]=[milk^]=[pigs]=[coal]=[sand^]=[coal…  1
+ 545  wisbek        5:57\n10:00\n\n1:33\n3:11\n11:41\n2:38\…  9:50                                      0
+ 546  tresk         GGBGBBBBG\nBGRBGGBBB\n\nRGBBBBGGBB\nGBR…  BRBBGGBBBG                                0
+ 547  mestrel       [0|3][3|5][6|3][3|3]\n[3|3][2|6][6|0][5…  [3|0][0|0][4|4][5|5][1|5]                 0
+ 548  kaldrin       [E]=[wool]=[sand^]=[pigs]=[coal]=[sand]…  [E]=[wool^]=[logs^]=[milk]=[sand^]=[san…  0
+ 549  tavrik        rapper\nextinct\n\nmodest\ntucker\noxyg…  tucker                                    0
+ 550  dornic        4D 5C 8D AD AS\n3S 7D 8H 8S KC\n\n2S 3C…  2H 4D 5C 8S 10D                           0
+ 551  tresk         RRRGBRR\nRBRRBGGRB\n\nBRBGRR\nGRBRRG\nG…  BRBGRR                                    0
+ 552  wisbek        2:00\n12:44\n\n11:23\n8:33\n10:19\n6:30…  6:30                                      0
+ 553  tavrik        refresh\nwashed\n\ntutor\nguess\nsided\…  ruler                                     0
+ 554  tavrik        pathway\nending\nrelaxed\n\nmanga\nther…  manga                                     0
+ 555  wisbek        1:42\n4:51\n\n8:35\n2:20\n9:56\n6:30\n1…  9:56                                      0
+ 556  dornic        3D 6D 9D 10C JC\n2D 7H 8S 9S QH\n\n2D 2…  4D 6C 9H 9C 10C                           1
+ 557  dornic        6C 7H 8S 9S JS\n6H 10H 10D QC AS\n\n2C …  2C 4C 4S 7C AC                            0
+ 558  dornic        9C 9S JH JC AS\n3S 6D 6C 8H 10S\n\n10C …  3C 5S 9S QC KS                            0
+ 559  wisbek        2:33\n11:00\n\n4:11\n3:30\n8:36\n1:16\n…  1:16                                      0
+ 560  tavrik        stellar\nprotest\n\ncopied\nregain\nden…  denial                                    0
+ 561  dornic        4C 6H 7S 10C JH\n6D 8H JD KD KC\n\n2C 3…  2S 4S JS QS KC                            1
+ 562  tresk         GGBGBR\nRRRBBGGB\n\nRBRBRB\nBBRRBB\nBBR…  RBRBRB                                    0
+ 563  ospren        .....\n.....\n.##.#\n.#..#\n.....\n\n.#…  ....#\n.#...\n.#.##\n.....\n.#...         0
+ 564  dornic        7H 7C 8S 10H KD\n2H 5S 9C QD AD\n\n3H 8…  7D 8H 8C JD QD                            0
+ 565  wisbek        3:20\n4:15\n\n6:50\n8:50\n7:30\n11:40\n…  9:25                                      0
+ 566  mestrel       [5|5][3|3][2|1][2|0][2|0]\n[6|6][5|3][3…  [2|0][1|0][4|0][6|1][4|4][4|5][6|6]       0
+ 567  kaldrin       [E]=[wool]=[sand^]=[pigs^]=[pigs^]\n[E]…  [E]=[wool^]=[coal]=[coal^]=[wool^]        0
+ 568  mestrel       [4|4][4|0][0|1][2|3][3|5][5|1]\n[2|4][3…  [2|5][5|0][1|1][4|5][5|0][0|1][3|5]       0
+ 569  mestrel       [1|5][0|2][6|6][1|6][5|5][6|4][0|6]\n[3…  [3|0][3|5][6|4][0|5][4|0][3|6]            0
+ 570  wisbek        3:59\n12:34\n\n11:17\n7:39\n2:26\n1:53\…  1:53                                      1
+ 571  kaldrin       [E]=[coal]=[pigs]=[logs]=[logs]=[wool^]…  [E]=[pigs]=[wool^]=[pigs]=[logs]          0
+ 572  tavrik        ever\ndaddy\n\nsides\naltar\nsheer\natl…  sheer                                     0
+ 573  ospren        #.###\n.....\n#.###\n#.###\n#..#.\n\n#.…  #....\n.#...\n#....\n..#.#\n..#..         0
+ 574  tavrik        harper\nupgrade\n\ncostume\nnetwork\nvo…  network                                   0
+ 575  wisbek        1:55\n10:10\n\n12:24\n5:12\n9:15\n3:05\…  9:15                                      1
+ 576  tavrik        utilize\nupgrade\n\ndumping\nfaculty\nd…  dumping                                   1
+ 577  tresk         RRBRBGRBBG\nBBRGRGGRR\n\nRRBBBRBGR\nRRR…  RRBBBRBGR                                 1
+ 578  mestrel       [1|0][0|2][1|2][4|2][4|5][0|5][0|6]\n[4…  [5|4][4|3][3|6][0|6][1|1][0|0]            0
+ 579  tavrik        stray\nstroke\n\nsticky\nsketch\nspider…  sticky                                    0
+ 580  dornic        7H 7C JD JS AS\n6D 6S 8H 9H QD\n\n4H 4C…  5H 7S KD KS AD                            0
+ 581  ospren        ..##.\n.....\n.....\n.....\n..#..\n\n..…  #.##.\n.....\n...#.\n...#.\n#.##.         0
+ 582  wisbek        2:23\n5:44\n\n8:01\n10:58\n3:02\n9:01\n…  12:03                                     0
+ 583  mestrel       [5|0][1|3][5|1][0|1][6|3][1|4][5|3]\n[3…  [0|1][2|3][3|4][4|6]                      0
+ 584  wisbek        2:08\n7:37\n\n11:26\n3:38\n10:00\n8:00\…  11:26                                     0
+ 585  tresk         BBRRGGBBGG\nRRGGRRBBGR\n\nBGRBGG\nBRGGB…  GRGGBB                                    0
+ 586  tavrik        silicon\ngame\n\npope\npara\ndude\nrear…  none                                      0
+ 587  tresk         BBRBBBRBRG\nGRGRRGBBB\n\nGRBRGGGGG\nRBB…  GRBRGGGGG                                 0
+ 588  wisbek        1:51\n12:29\n\n2:16\n7:27\n10:33\n3:01\…  10:33                                     0
+ 589  ospren        #..##\n..###\n....#\n..#.#\n#..##\n\n#.…  ...#.\n..#..\n.##.#\n###..\n..#..         0
+ 590  tresk         BGRGBBBBRG\nGBRBBBRB\n\nBBGRBGBBB\nBBBR…  RGBGBBGBB                                 1
+ 591  tavrik        channel\ntrigger\n\nstart\ntract\nstunt…  tract                                     0
+ 592  tresk         BRGGRGB\nRGGBGGBG\n\nGGGRGB\nGGGBGR\nRG…  GGGRGB                                    1
+ 593  tresk         BRGGRRRB\nGRGBRRGR\n\nGRBRBRR\nRRGRRRB\…  GRBRBRR                                   1
+ 594  wisbek        4:15\n11:00\n\n2:40\n6:40\n3:25\n7:35\n…  2:40                                      0
+ 595  tresk         BGGGBB\nRBBRRRGBB\n\nGGGGGBRGGG\nGBRBGG…  BGRRGGGGBR                                0
+ 596  tresk         BGBRBRRBGG\nBBRBRGBBB\n\nRBBBBGBGR\nRRR…  RBBBBGBGR                                 0
+ 597  tavrik        warfare\ntorch\n\ngrown\ncrane\nbrace\n…  wrote                                     1
+ 598  tresk         GRBRGGRR\nRBRGRRRRGR\n\nRGRRBGGR\nGRGRR…  GRGRRBRR                                  1
+ 599  ospren        #...#\n..##.\n.....\n#...#\n#...#\n\n#.…  .#.#.\n#####\n#...#\n#...#\n..#..         0
+ 600  dornic        3D 6C 7C 10C KH\n2D 7D 8H 8C AC\n\n9H 1…  9H 10C QD QC KD                           0
+ 601  wisbek        4:00\n12:44\n\n5:28\n10:15\n7:55\n11:59…  6:08                                      0
+ 602  kaldrin       [E]=[logs^]=[pigs]=[milk]=[logs]=[coal]…  [E]=[sand]=[milk]=[pigs^]=[pigs]=[milk]…  0
+ 603  kaldrin       [E]=[pigs^]=[logs]=[logs^]=[milk^]=[mil…  [E]=[coal]=[coal^]=[logs]=[logs]=[logs]   0
+ 604  tresk         BGGGRBBB\nGBBGBBBG\n\nGRBBGBRRR\nBBBRRG…  BBBRRGRRR                                 1
+ 605  dornic        2D 3H 7D 8S JC\n3D 6H 6S 7C 9C\n\n3D 4C…  4D 5C 7C JH KS                            0
+ 606  wisbek        9:15\n10:10\n\n12:16\n2:05\n7:12\n8:20\…  2:05                                      0
+ 607  mestrel       [6|6][5|6][3|0][3|6]\n[1|0][3|0][0|1][0…  [6|6][6|2][2|3][3|1][1|4][4|3][3|2]       0
+ 608  tresk         BGGGBBRG\nRBBRGB\n\nGGRGBR\nGGRBRB\nGBB…  RGGBRG                                    1
+ 609  wisbek        2:06\n5:35\n\n7:44\n9:33\n8:17\n6:41\n3…  3:05                                      0
+ 610  mestrel       [3|3][3|6][3|5][6|5][3|0]\n[3|3][5|1][1…  [5|4][5|4][1|4][4|4][0|4]                 0
+ 611  ospren        .....\n.....\n.#.#.\n.#.#.\n####.\n\n..…  .##..\n###.#\n.##..\n.....\n.####         0
+ 612  tresk         RRRGGGGRR\nBBRRBRB\n\nRGRGRBR\nBRGRRBB\…  RBBRRRR                                   1
+ 613  kaldrin       [E]=[pigs^]=[logs]=[wool]=[milk]\n[E]=[…  [E]=[milk^]=[sand]=[pigs^]=[wool]=[pigs…  0
+ 614  tresk         RBBRBGRBBG\nGRGBBBGBBG\n\nGBBGBGBRBB\nR…  RBRBGBGBRB                                1
+ 615  tresk         RBGGGRG\nGBRBRRR\n\nRRRGBG\nGGGRBR\nBRR…  GGGRBR                                    0
+ 616  dornic        3S 9H 10D JD AS\n3C 4S 6C 9D 10C\n\n3C …  8S JH KC KS AS                            1
+ 617  mestrel       [5|2][2|1][1|5][5|4][4|0][0|1][6|5]\n[1…  [0|1][1|6][2|5][0|1][0|6][0|1]            0
+ 618  tavrik        calling\nregret\n\nperiod\nviolet\nweap…  weapon                                    0
+ 619  dornic        4H 7H 9D 9C 10S\n5S 8C 10C QD KD\n\n3S …  2S 3C 9H 9D QS                            0
+ 620  dornic        2D 5C 7C 7S 10S\n2H 2C 5H 8C KC\n\n4D 6…  2D 4D 10C QD QS                           0
+ 621  tavrik        smoking\nhank\n\nleaving\ndealing\ntouc…  touched                                   0
+ 622  tavrik        serve\nzinc\n\ndivide\nreader\nseries\n…  series                                    0
+ 623  dornic        2D 4C 8H 8D AS\n3H 4H 6H 9S JS\n\n3S 4D…  3C 5D JC QC AS                            1
+ 624  mestrel       [6|5][5|5][5|5][2|0]\n[6|6][5|3][6|6][6…  [0|0][2|2][5|5][6|0]                      0
+ 625  tresk         RBGGGRBB\nGBBBRRB\n\nRGGRRGRBB\nBRGGGRG…  RGGRRGRBB                                 0
+ 626  wisbek        2:15\n6:56\n\n5:04\n4:31\n10:34\n12:47\…  8:45                                      0
+ 627  tresk         GRRBRBBR\nBBBRGGR\n\nBGGRRGRRG\nGBRGGGR…  GBRGGGRRG                                 0
+ 628  tavrik        food\nberry\n\noption\naboard\nagreed\n…  option                                    0
+ 629  kaldrin       [E]=[milk]=[milk]=[logs]=[milk]=[milk^]…  [E]=[milk^]=[milk^]=[pigs]=[milk]=[milk…  1
+ 630  ospren        #####\n#..#.\n#....\n##...\n.#...\n\n##…  .....\n.....\n#....\n##...\n..#..         0
+ 631  tresk         BRRRRGBGGR\nBBBRBBBBBB\n\nRRRRRRB\nRGRR…  RGRRGGR                                   0
+ 632  mestrel       [4|2][3|3][4|4][3|3]\n[5|4][6|6][1|1][4…  [3|3][2|1][0|0][6|6]                      0
+ 633  wisbek        1:12\n2:51\n\n11:48\n5:52\n9:54\n4:43\n…  11:48                                     0
+ 634  tavrik        cycling\nlever\n\nreveal\nleader\ndeale…  casual                                    0
+ 635  kaldrin       [E]=[coal]=[coal]=[coal]=[coal^]=[logs^…  [E]=[wool^]=[wool^]=[logs^]=[wool^]       0
+ 636  tavrik        knock\ndoesnt\n\nsided\nwidow\nboots\nt…  boots                                     1
+ 637  tresk         RBRGGG\nGRRRRGG\n\nRGBBBBR\nBBRRGGB\nRR…  RGBBBBR                                   1
+ 638  ospren        #.#.#\n#.#.#\n..#..\n.....\n#.#.#\n\n##…  ....#\n####.\n#.#..\n.#..#\n#.#.#         0
+ 639  ospren        #....\n...#.\n....#\n.#...\n#.###\n\n#.…  #.##.\n...#.\n.##..\n....#\n#....         0
+ 640  ospren        .....\n.#...\n..##.\n##...\n.....\n\n..…  .##.#\n.#..#\n.##.#\n.#..#\n..##.         0
+ 641  dornic        2H 10C JH KD AS\n2C 5D 7H 8S 10S\n\n5C …  3C 9S 10C JC QC                           0
+ 642  ospren        #.#..\n#...#\n#....\n#..#.\n##..#\n\n#.…  .#.#.\n##.##\n.#.#.\n..#..\n#####         0
+ 643  mestrel       [1|0][0|0][2|2][2|2]\n[6|1][1|4][0|3][0…  [2|2][4|1][3|6][2|2]                      0
+ 644  tavrik        fold\nremove\n\ntopped\nporter\ncopper\…  lesson                                    0
+ 645  ospren        ##.##\n#####\n.....\n.#.#.\n#.#.#\n\n#.…  #.###\n.....\n#..#.\n#.###\n#.###         1
+ 646  mestrel       [1|0][1|0][1|3][5|1][5|2]\n[1|6][3|1][5…  [1|0][0|1][1|0][0|6][6|0]                 0
+ 647  dornic        3D 4H 7H 7D 9H\n2D 3C 5H 5C JS\n\n2H 3S…  3H 7H 8C 10H 10C                          0
+ 648  tavrik        conquer\nstab\n\nseating\npyramid\npain…  painted                                   0
+ 649  mestrel       [1|6][5|5][3|0][3|1]\n[0|6][5|5][0|0][4…  [3|1][0|5][0|0][5|5][0|5][0|6]            0
+ 650  dornic        2D 2S 5H 5S 8S\n3C 3S 5D 8C KD\n\n3D 5H…  2D 3S 5D 5S 10D                           0
+ 651  kaldrin       [E]=[milk^]=[milk^]=[milk^]=[logs]=[mil…  [E]=[milk]=[wool^]=[logs^]=[milk]=[pigs…  0
+ 652  tresk         RBRBBBG\nGGBBRBRBBG\n\nGBGGBGRGBG\nGBGB…  BGRGGBBGGG                                0
+ 653  kaldrin       [E]=[sand^]=[logs^]=[coal]=[sand^]=[woo…  [E]=[wool^]=[coal^]=[sand^]=[sand^]=[sa…  0
+ 654  kaldrin       [E]=[sand^]=[sand^]=[logs]=[coal]=[coal…  [E]=[coal]=[wool]=[coal^]=[coal^]=[pigs…  0
+ 655  kaldrin       [E]=[logs^]=[sand^]=[logs]=[logs]=[sand…  [E]=[milk^]=[sand^]=[wool^]=[coal^]=[co…  0
+ 656  kaldrin       [E]=[pigs]=[pigs^]=[logs]=[logs^]=[logs…  [E]=[sand^]=[logs^]=[sand]=[logs]=[wool…  1
+ 657  tresk         RRGRGRBB\nRGRRBGGBGG\n\nRBBRRGBRGB\nRRB…  RBBRRGBRGB                                0
+ 658  tresk         GBBRBGBGB\nRGBRGBGRG\n\nGBRBRGRBRB\nRBR…  GRBGBBRBRB                                0
+ 659  wisbek        2:50\n3:45\n\n12:05\n11:05\n5:34\n7:19\…  5:34                                      0
+ 660  kaldrin       [E]=[milk^]=[wool^]=[wool^]=[wool]=[pig…  [E]=[wool^]=[wool^]=[logs^]=[milk]=[mil…  0
+ 661  dornic        2H 4C 10S AC AS\n5H 7H 9H 9D 10C\n\n2H …  2H 5S 6H 10C KS                           0
+ 662  kaldrin       [E]=[logs^]=[wool]=[milk]=[pigs]=[wool]…  [E]=[coal]=[milk^]=[pigs]=[logs^]=[wool…  0
+ 663  ospren        ##.##\n.##..\n.#...\n...#.\n....#\n\n..…  ##.##\n...##\n..#..\n.#..#\n...#.         1
+ 664  ospren        ..#.#\n.#..#\n..###\n.##.#\n....#\n\n..…  .....\n.#...\n.....\n....#\n....#         0
+ 665  tresk         BRBRGGGR\nRRBBGGBGB\n\nBBBGGBBGGR\nBGGB…  BBBGGBBGGR                                0
+ 666  kaldrin       [E]=[milk^]=[sand^]=[logs^]=[coal^]=[mi…  [E]=[milk]=[milk^]=[wool^]=[wool^]=[mil…  1
+ 667  tavrik        justice\nmosque\n\nupload\nequity\narou…  equity                                    0
+ 668  mestrel       [1|5][2|5][2|5][5|5]\n[4|0][4|2][0|4][3…  [1|2][4|1][1|1][3|1][1|6][1|4]            0
+ 669  kaldrin       [E]=[sand]=[wool]=[wool]=[milk^]\n[E]=[…  [E]=[wool]=[milk^]=[logs]=[wool^]=[logs…  0
+ 670  ospren        .....\n.##.#\n.....\n.##.#\n.....\n\n#.…  ...#.\n...#.\n.....\n.####\n...#.         0
+ 671  tavrik        rich\nthen\n\nvolcano\nbizarre\nbicycle…  bicycle                                   0
+ 672  tavrik        stereo\nruin\n\nsprint\ntrucks\nhardly\…  clergy                                    0
+ 673  tavrik        rented\nodds\n\nmissing\ntotally\nkilli…  totally                                   0
+ 674  dornic        3S 5H 6C 6S QC\n2S 6H 7S 9S JS\n\n5D 9H…  5D 6D 7C 7S AH                            0
+ 675  kaldrin       [E]=[wool]=[pigs^]=[sand^]=[logs^]=[san…  [E]=[logs]=[coal]=[coal^]=[sand]=[pigs^]  1
+ 676  tavrik        fulfill\ncount\n\nspray\ngrasp\nwreck\n…  glory                                     1
+ 677  tresk         BRGGBGGB\nRGGBBBRGB\n\nRGBRGB\nRBGRGB\n…  GRBGRB                                    0
+ 678  tavrik        runner\nopenly\n\nfoul\nmain\nalec\nhou…  hour                                      0
+ 679  mestrel       [3|0][1|2][2|6][0|2][5|3]\n[6|6][2|1][6…  [2|4][4|1][1|2][2|3][3|5][5|1]            0
+ 680  kaldrin       [E]=[milk^]=[pigs^]=[pigs^]=[wool^]=[sa…  [E]=[milk]=[milk]=[logs^]=[pigs]=[wool^…  0
+ 681  tavrik        trucks\ncolors\n\nattic\noffer\nexcel\n…  excel                                     0
+ 682  kaldrin       [E]=[pigs^]=[milk^]=[milk^]=[milk^]=[co…  [E]=[milk^]=[wool^]=[logs]=[pigs^]=[mil…  0
+ 683  mestrel       [4|1][0|1][6|5][5|6][6|5]\n[5|2][0|6][1…  [0|1][1|1][3|0][4|1][4|3][6|1]            0
+ 684  kaldrin       [E]=[milk^]=[sand]=[wool]=[sand]=[milk^…  [E]=[milk]=[milk^]=[sand]=[logs^]         1
+ 685  mestrel       [2|4][0|2][1|3][1|5][3|2][4|0][6|2]\n[2…  [6|5][4|2][1|1][4|2]                      0
+ 686  dornic        2H 5C 6S KD AS\n3S 4D 8D 10C QH\n\n3S 4…  3S 4H 6S 8D 10C                           0
+ 687  dornic        2D 5H 5D 10H KH\n4H 4D 8C 10S AH\n\n2H …  7D 9S 10H KH AH                           1
+ 688  wisbek        2:28\n10:01\n\n9:26\n3:34\n6:13\n7:38\n…  7:38                                      0
+ 689  dornic        2S 3S 7C 10D 10S\n8H 9C 9S JC AC\n\n2S …  2S 8H 9C QH KD                            0
+ 690  dornic        4D 4C 6H 8D 8C\n3D 7D KH KD KS\n\n3C 6H…  3C 3S 4D 5H 10C                           0
+ 691  kaldrin       [E]=[sand^]=[milk]=[milk]=[sand^]=[sand…  [E]=[pigs]=[pigs]=[milk]=[pigs^]=[logs^…  0
+ 692  ospren        #...#\n#.##.\n#..#.\n#.##.\n#...#\n\n..…  ...##\n.....\n.....\n....#\n.....         0
+ 693  ospren        ###.#\n...#.\n..#..\n###..\n..###\n\n#.…  #....\n.....\n.#..#\n.....\n.#...         0
+ 694  kaldrin       [E]=[sand]=[milk^]=[coal]=[pigs]=[milk]…  [E]=[logs]=[milk^]=[wool^]=[milk]         0
+ 695  ospren        ....#\n.....\n..#.#\n.....\n.....\n\n..…  .....\n..#.#\n.....\n#...#\n..#.#         1
+ 696  wisbek        2:34\n5:54\n\n3:06\n4:04\n11:41\n10:43\…  3:06                                      0
+ 697  dornic        2D 3H 8C JC AC\n2S 4S 7C 10D QC\n\n3C 5…  6D 7H 8H QH KD                            0
+ 698  tavrik        park\nseason\n\nfierce\npursue\ndefine\…  pursue                                    0
+ 699  wisbek        4:15\n7:40\n\n3:45\n11:00\n8:00\n1:05\n…  3:45                                      0
+ 700  wisbek        2:55\n3:22\n\n4:33\n11:36\n10:16\n9:28\…  4:33                                      1
+ 701  tresk         RBRGRR\nGGGRGB\n\nRGBBBBRB\nBBBBRRRG\nB…  RGBBBBRB                                  0
+ 702  tavrik        unarmed\nwonder\n\nmotor\nproof\nupper\…  upper                                     1
+ 703  tresk         RGGBBBBBGG\nBGBGBBBRRG\n\nBBBGBBGRGB\nB…  BBBGBBGRGB                                0
+ 704  kaldrin       [E]=[wool^]=[sand]=[wool^]=[wool^]\n[E]…  [E]=[wool^]=[wool]=[wool^]=[sand^]=[mil…  0
+ 705  wisbek        10:30\n12:01\n\n9:09\n8:13\n5:27\n11:55…  11:55                                     0
+ 706  tresk         BGBRBBRRGR\nGBRRGGBB\n\nBRRBBBGB\nBRRRG…  BRRBBBGB                                  0
+ 707  kaldrin       [E]=[pigs^]=[wool^]=[sand^]=[milk]=[pig…  [E]=[logs]=[sand]=[wool^]=[pigs^]=[logs…  1
+ 708  mestrel       [6|4][6|0][5|6][1|6]\n[6|0][4|6][4|0][1…  [5|4][3|5][4|0][3|1][4|1]                 0
+ 709  ospren        .....\n#..#.\n.....\n.#..#\n..#..\n\n#.…  #...#\n..#.#\n###..\n.#..#\n.#.##         0
+ 710  tavrik        tobacco\nhappen\n\nthree\nwhere\nchili\…  photo                                     0
+ 711  tavrik        repeal\ntransit\n\nprecise\nculture\nma…  resolve                                   0
+ 712  mestrel       [5|4][4|6][3|1][1|1][5|4][4|5]\n[2|5][6…  [1|2][0|5][0|4][3|2][6|6][2|1]            1
+ 713  mestrel       [3|5][3|0][3|3][3|3][5|3][3|5][4|3]\n[3…  [2|3][2|0][4|5][6|3]                      0
+ 714  dornic        2C 3D 4H 8D 9H\n6H 8H 8S KH KS\n\n5C 6S…  2C 2S 5C 6S 9D                            0
+ 715  wisbek        4:22\n6:55\n\n3:03\n1:15\n5:40\n11:40\n…  2:44                                      1
+ 716  kaldrin       [E]=[milk^]=[logs^]=[logs^]=[milk^]\n[E…  [E]=[coal^]=[pigs^]=[coal]=[logs]         0
+ 717  tresk         GRRRBG\nRRRRRRRR\n\nGGRGBG\nGGBRGG\nBRG…  BGGRRB                                    0
+ 718  dornic        3H 5H 6C 10D QH\n2D 5D 9D 9S JS\n\n2C 3…  4C 5H 8H 8D 10C                           0
+ 719  kaldrin       [E]=[coal^]=[logs]=[sand]=[coal]=[milk^…  [E]=[sand^]=[sand]=[logs]=[sand]=[wool]…  1
+ 720  mestrel       [3|0][5|2][6|2][2|3][5|3][3|6][6|3]\n[6…  [4|4][0|0][3|3][6|4][2|5][3|5]            0
+ 721  tresk         RGGRRBG\nRBBGRBBGR\n\nRGBBRR\nRRBRBG\nR…  RRBRRG                                    0
+ 722  dornic        3S 6S 8D QC KD\n4H 6C 7D 9C 10H\n\n3D 4…  3S 6D 7C 9H QC                            0
+ 723  ospren        #....\n#..#.\n...##\n.#...\n#..##\n\n#.…  ...#.\n.####\n...#.\n.####\n#.###         0
+ 724  mestrel       [5|1][3|3][4|4][2|2]\n[4|4][6|2][5|1][5…  [3|6][4|1][2|4][5|5]                      0
+ 725  ospren        .##..\n#...#\n..##.\n#...#\n.##..\n\n..…  .....\n....#\n.#...\n....#\n.....         1
+ 726  kaldrin       [E]=[coal]=[coal]=[logs]=[milk^]=[coal^…  [E]=[logs]=[coal]=[pigs^]=[coal^]         0
+ 727  ospren        .....\n#..#.\n.....\n#..#.\n.....\n\n##…  .....\n#....\n#..##\n....#\n.....         0
+ 728  kaldrin       [E]=[wool]=[pigs]=[milk^]=[wool]=[pigs]…  [E]=[milk]=[coal^]=[sand^]=[wool]=[wool…  0
+ 729  dornic        2C 2S 8C 9D KD\n5H 6D 10S JS QD\n\n2S 7…  2H 4D 4S QD KD                            0
+ 730  tresk         BBRRBBRBBR\nGGGRGGRG\n\nBRRRRGBGGR\nBGB…  RBBBBRRBRB                                1
+ 731  wisbek        4:33\n12:11\n\n3:12\n1:16\n5:38\n2:27\n…  5:38                                      0
+ 732  tresk         GRGRRRRB\nRRBGRRGBR\n\nBGBRGRRRRB\nBGRR…  BGBRGRRRRB                                1
+ 733  dornic        6H 10D JH QS KS\n7S 9C QH QD AC\n\n2C 2…  2C 2S 5H 6S 8S                            0
+ 734  tresk         RRBBGR\nBRRGBRGB\n\nRGGBGGRRBR\nRGRGGBB…  GGRRGGRBBG                                1
+ 735  ospren        .....\n.....\n..#..\n.##..\n.#...\n\n.#…  ....#\n.....\n.##..\n#.#..\n.#...         0
+ 736  tresk         BRBRBRGGR\nBRGBRRG\n\nGBGRRRBRB\nGBGRRB…  GBGRRRBRB                                 0
+ 737  tresk         GGBRGBB\nRGGRGBRRB\n\nBBRBRBRG\nRRBRRBG…  BBRBRBRG                                  0
+ 738  dornic        3S 5C 6S 7D 10C\n2C 3C 4S 10H 10D\n\n2C…  7C 7S JC QC AC                            0
+ 739  kaldrin       [E]=[milk^]=[logs]=[pigs^]=[pigs^]=[woo…  [E]=[sand^]=[pigs^]=[logs^]=[milk^]=[wo…  1
+ 740  tavrik        tomb\npocket\n\nprison\nbreath\nbright\…  bright                                    0
+ 741  ospren        .....\n...##\n##.##\n...##\n...##\n\n..…  ...##\n##...\n.#...\n.....\n.....         0
+ 742  wisbek        3:45\n12:30\n\n9:20\n10:25\n6:25\n4:25\…  5:55                                      1
+ 743  wisbek        6:30\n10:10\n\n4:43\n1:14\n2:40\n12:00\…  12:00                                     1
+ 744  tresk         BGGRRRB\nGGGBBRBRR\n\nBGBBGBR\nRBBBGBG\…  GBRGBRB                                   0
+ 745  mestrel       [4|4][6|4][5|3][4|4][4|4]\n[1|1][1|1][0…  [4|2][2|2][4|6][3|0][3|3][4|5][5|3]       0
+ 746  tresk         GBBBGGGB\nBRBRRBBBRB\n\nBRBBBBGB\nRBBBB…  GBBBBBGB                                  1
+ 747  tavrik        zombie\nsang\n\napex\noven\nugly\nacid\…  acid                                      0
+ 748  ospren        ###..\n###..\n#....\n#....\n##...\n\n#.…  ###..\n##...\n###..\n###..\n###..         0
+ 749  tresk         BBRGRGGB\nRBGBBRGB\n\nRBRGRBRG\nRGRGBGR…  RGRGBGRG                                  0
+ 750  tavrik        keep\ngrade\n\nrotten\nreward\nsudden\n…  center                                    1
+ 751  kaldrin       [E]=[sand]=[wool]=[coal^]=[sand^]\n[E]=…  [E]=[milk^]=[milk]=[milk]=[coal^]         1
+ 752  wisbek        10:43\n11:50\n\n2:21\n5:21\n7:01\n1:10\…  4:51                                      1
+ 753  mestrel       [0|0][0|4][6|2][5|0][1|0][0|0]\n[2|2][3…  [6|5][4|4][3|3][3|2][2|2][0|0]            0
+ 754  tavrik        pacific\nwreck\n\nscoring\ncrushed\nclu…  scoring                                   1
+ 755  wisbek        5:35\n6:48\n\n10:51\n1:13\n2:11\n11:56\…  11:56                                     0
+ 756  tresk         BRBRBBGGB\nRBRBBGRB\n\nBRBBBGBBGR\nGBBR…  BRBBBGBBGR                                0
+ 757  mestrel       [5|2][2|5][1|0][4|6][5|0]\n[0|4][6|4][4…  [6|0][4|2][4|0][5|1][3|1][2|0]            0
+ 758  tavrik        merge\nglance\n\nphone\nvista\nmonte\nw…  monte                                     0
+ 759  tresk         BBGGBGBRRR\nRRRGGB\n\nRGBRRBRGGG\nGBRGR…  GGGRBRBBRB                                0
+ 760  mestrel       [0|6][4|4][0|3][6|0][1|1][2|2]\n[0|1][0…  [3|4][3|5][0|1][3|4]                      0
+ 761  tresk         RRRBGB\nBBGRRRRBG\n\nRGBRBGGBG\nGGBRGRB…  BBGGGBRBG                                 0
+ 762  kaldrin       [E]=[milk^]=[milk]=[coal^]=[logs^]=[woo…  [E]=[coal]=[milk^]=[sand]=[logs^]=[wool…  0
+ 763  tavrik        tactics\nfemale\n\nfather\ncampus\nmark…  campus                                    0
+ 764  kaldrin       [E]=[pigs]=[pigs]=[pigs]=[sand]\n[E]=[l…  [E]=[milk^]=[pigs]=[pigs^]=[pigs]=[sand]  0
+ 765  tavrik        capital\nwhoever\n\nmike\nwave\nhero\nf…  wave                                      0
+ 766  tavrik        pill\ncheek\n\nfinding\ncontent\nlocall…  locally                                   1
+ 767  mestrel       [5|1][5|6][5|2][3|5]\n[0|2][0|0][0|1][2…  [4|2][2|5][2|1][2|2][5|2][2|6][2|2]       0
+ 768  wisbek        2:24\n12:22\n\n6:44\n9:26\n3:32\n8:31\n…  3:32                                      1
+ 769  mestrel       [3|2][4|2][6|2][3|2][2|5][2|2][2|2]\n[2…  [6|3][3|6][5|3][3|6][6|2][2|2]            0
+ 770  kaldrin       [E]=[sand]=[sand^]=[sand^]=[logs^]=[log…  [E]=[logs^]=[sand^]=[sand]=[sand]=[coal…  0
+ 771  ospren        .##.#\n.....\n.....\n....#\n...#.\n\n#.…  ###..\n.....\n.....\n###..\n#..##         0
+ 772  wisbek        2:51\n4:54\n\n7:28\n8:32\n5:43\n9:13\n1…  5:43                                      0
+ 773  ospren        ##...\n.#..#\n.##..\n#..##\n#..##\n\n#.…  #....\n.....\n.##..\n..#.#\n..###         0
+ 774  mestrel       [0|6][0|2][0|4][3|5][0|0][0|4][1|2]\n[3…  [0|6][1|1][3|2][3|4]                      0
+ 775  ospren        ..#..\n.....\n#...#\n..#..\n.#.#.\n\n##…  ##.##\n#...#\n.....\n#...#\n##.##         1
+ 776  tavrik        explode\nimpulse\n\ndraw\nthan\nclan\nc…  draw                                      0
+ 777  mestrel       [2|6][0|3][2|5][6|2]\n[4|0][0|5][5|1][1…  [1|1][1|2][3|3][0|6]                      0
+ 778  dornic        2D 4C 8H 9D 10H\n4D 5D 7S QD KD\n\n3H 3…  4D 5H 8C 8S 10S                           0
+ 779  ospren        ###..\n#..##\n.##..\n#..##\n###..\n\n##…  ..#..\n.....\n..#..\n.....\n..#..         1
+ 780  tavrik        blah\nsquare\n\ninjury\ninform\noverly\…  income                                    1
+ 781  mestrel       [1|1][2|2][2|2][1|2]\n[5|1][4|2][0|3][6…  [4|5][1|0][5|3][6|6]                      0
+ 782  mestrel       [1|1][4|0][2|0][0|3][5|0][6|5][0|5]\n[5…  [3|6][6|4][4|0][0|3][1|1][2|6][3|5]       1
+ 783  tresk         RRGGGGGBBR\nRGRBBBGGGG\n\nGGGGRGRGBG\nG…  GGBGRRGGRG                                0
+ 784  dornic        7H 9H 10H JC KH\n2D 4H 8H 9S QC\n\n3H 4…  3H 5H 6D 10D KH                           1
+ 785  mestrel       [2|1][6|2][1|2][2|6][2|0]\n[5|6][6|5][6…  [1|2][2|2][3|2][3|2][2|5][6|2]            0
+ 786  ospren        #####\n###.#\n..#.#\n.....\n.....\n\n..…  ...##\n##.##\n..#.#\n##.##\n...##         0
+ 787  kaldrin       [E]=[wool^]=[coal]=[sand]=[sand]=[coal]…  [E]=[milk^]=[milk]=[milk^]=[wool^]=[mil…  0
+ 788  dornic        2H 2S 4D JH JS\n4C 5C 6C 7H 8H\n\n2S 5D…  6S 8H 9H 9C QD                            1
+ 789  dornic        2S 5H 8H JC QH\n3C 4D 5D KS AC\n\n6S 7D…  6S 7D QC AH AD                            0
+ 790  kaldrin       [E]=[sand]=[logs]=[wool]=[pigs^]=[wool]…  [E]=[milk]=[coal^]=[wool]=[wool]=[wool]   1
+ 791  dornic        2S 4H 7H 10C JS\n5C 8H 9C QD AC\n\n4S 6…  4C 5S 9C 10D JS                           0
+ 792  wisbek        11:19\n12:27\n\n10:16\n8:31\n4:13\n1:12…  1:12                                      1
+ 793  wisbek        1:22\n9:11\n\n11:59\n3:14\n5:53\n10:00\…  3:14                                      0
+
+per-name tally this round
+name             presented correct  hit-rate
+dornic                 118      28     23.7%
+kaldrin                116      28     24.1%
+mestrel                102      21     20.6%
+ospren                 110      27     24.5%
+tavrik                 117      31     26.5%
+tresk                  132      38     28.8%
+wisbek                  99      21     21.2%

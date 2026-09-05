@@ -217,3 +217,13 @@ line, no error, process alive with no TCP socket. Killed by the pid in `sim/resu
 (never `pkill` by name: the pattern also matches the players' shells), arena dir and results dir
 removed, `arena.py setup` re-run; the second start bound in ~10 s. Players were told to re-source
 `connection.txt` and start over. If it recurs, suspect the sandbox warm-up with 7 heavy modules.
+Lineup pool run 4, `lad-dornic-v3-1` (dornic v3, wisbek v4, mestrel v1, kaldrin v1, tavrik/tresk/ospren
+v3): 368 (default, demos → ospren ×2, mestrel) and 194 (kidproxy, demos → tavrik, ospren, dornic).
+Without demos (default): wisbek 57, kaldrin 53, tavrik 47, tresk 45, dornic 43; with: ospren 47,
+mestrel 40 — every Revision 3 class in the band on first contact. The kidproxy player read the LAST
+example line of every clue as a NEGATIVE example (the relational rule was not in its bank, so "no
+predicate fits both examples" looked like a contradiction) and capped itself at 21–29 % on every
+class; it asked for +/− marks. All example lines are positives — now said in the guide. Its other
+ask, two positives everywhere, is Revision 3 lever 2 (measured as noise at n = 1500; keep pairs).
+ospren v3 and tresk v3 reach `calibrated` (45 % / 39 %, kid 4.5 both) and are promoted to
+challenges/; tavrik v3 is calibrated on rate (40 %) but kid 3.8 — trim the counted relations.

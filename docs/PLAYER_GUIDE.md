@@ -161,6 +161,14 @@ You infer all of this. That is the game.
 
 ---
 
+### 5b. Clues that list examples and candidates
+
+Some classes hide a *different* rule in every clue. Their clue is a block of example instances
+that **all fit** the hidden rule (there are no negative examples anywhere), then a blank line, then a
+numbered list of candidates of which exactly one fits. The answer is that candidate, written back
+verbatim or as its 1-based number. Which rules a class ever uses, and which it never uses even when
+they fit the examples, is what you learn over many clues.
+
 ## 6. The demos — three cheats, choose them well
 
 `python player.py demo NAME` asks the server to run its own reference solver on a

@@ -2096,7 +2096,23 @@
   },
   "durnel": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Scene busier than needed: fewer lorries/beams or more spacing so a kid spots trucks and overpasses in seconds",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 3,
+      "rule_statable": 5
+     },
+     "score": 4.17,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

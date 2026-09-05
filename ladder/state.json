@@ -7521,7 +7521,7 @@
    ]
   },
   "tresk": {
-   "current_version": 2,
+   "current_version": 3,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -7541,7 +7541,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -7764,7 +7765,7 @@
      "version": 2
     }
    ],
-   "status": "too_easy",
+   "status": "testing",
    "versions": [
     {
      "added": 1788575846.3233926,
@@ -7777,6 +7778,12 @@
      "file": "challenges/lab/tresk.json",
      "note": "v2 lineup: 4 same-length candidates with identical trap profiles; attacker predicate-count 97%->39%",
      "v": 2
+    },
+    {
+     "added": 1788593056.5316398,
+     "file": "challenges/lab/tresk.json",
+     "note": "Revision 3: 14 templates/35 rules, 11 visual relations; k=5; pair clues; rarity-aimed decoys; simulated attacker 34-46%",
+     "v": 3
     }
    ]
   },
@@ -11098,7 +11105,7 @@
    "kind": "refiner",
    "reason": "79-86% without demos over 4 games; apply Revision 3 recipe",
    "started": 1788590577.9675543,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

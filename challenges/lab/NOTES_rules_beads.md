@@ -13,6 +13,12 @@ Shipped file: `challenges/lab/tresk.json` (name checked unique against `challeng
 > RULE_FAMILIES.md revision 2: the clue carries four candidates and the answer is *which one*.
 > U, the antichain argument and the exclusion list are unchanged; the answer format, the
 > witness table and the fresh-length clause are not. Start at **section 9**.
+>
+> **2026-09-05, later — sections 9–14 describe v2**, archived byte-identical as
+> `challenges/lab/tresk.v2.json`. The shipped `tresk.json` is the **revision-3** build: five
+> candidates, two-example clues, and a universe of RELATIONS between two beads / two clumps /
+> two places, because every rule of v2's U turned out to be a single predicate in the players'
+> own feature banks. Start at **section 15**.
 
 ---
 
@@ -486,3 +492,306 @@ check four short strings against a hypothesis by hand in seconds, and the 0/1 si
 the rule rather than about an invisible novelty convention. The one loss: the v1 lesson
 ("they never say *at least*") no longer pays on its own, because the traps have been made
 exactly neutral; the game is now purely "which rules does this class use".
+
+---
+
+# v3 — 2026-09-05 — the RELATIONAL universe (RULE_FAMILIES.md revision 3)
+
+`challenges/lab/tresk.json` is now the revision-3 build; v2 is kept byte-identical as
+`challenges/lab/tresk.v2.json` (v1 is `tresk.v1.json`). Not committed; no arena run from this
+job (the orchestrator opens the arena).
+
+## 15. What the two lineup arenas showed
+
+Four Opus players met tresk v2 in `lad-tresk-v2-1` and `lad-ospren-v2-1`. **None of them spent a
+demo on it** and they scored **79 / 81 / 83 / 86 %** (target ≈ 50 %). The attack, in their own
+words (`tresk1a/NOTES.md`, `tresk1b/NOTES.md`, `ospren1a/NOTES.md`, `ospren1b/NOTES.md`):
+
+1. **Round 1: skip everything** — ~350 clues per class harvested free = the base-rate corpus.
+2. **Round 2: answer a RANDOM candidate.** With k = 4 a quarter come back correct: **~30 gold
+   labels per class for nothing** — ospren1b's "30× what a demo gives".
+3. **Per clue**: enumerate the bead-predicate bank, keep what is true of every example and of
+   **exactly one candidate**, weight by rarity (`freq^-2.5 / satisfiers^6`), answer the candidate
+   the rarest survivor points at.
+4. **Learn U from the labels**: which predicate was the unique explanation of each known-correct
+   answer. Both players also reported the excluded traps by name ("contains RG" for beads).
+
+Revision 2's two defences (§5b matched trap profiles, §5c rarity-aware decoys) were *both* in v2
+and both lost, for one reason: **every rule of v2's U was itself a cheap predicate in the
+attacker's bank**. Measured against the 660-predicate reconstruction below:
+
+| v2 rule | the bank predicate that says the same thing | Jaccard |
+|---|---|---|
+| exactly *n* red / green / blue beads | `n_R == n` | **1.00** |
+| the longest block is *n* beads | `maxrun == n` | **1.00** |
+| there are exactly *n* blocks | `nruns == n` | **1.00** |
+| it reads the same backwards | `palin` | **1.00** |
+| only two colours are used | `ndistinct == 2` | **1.00** |
+| all the blocks are the same size | `ndistinctrun == 1` | **1.00** |
+| as many R as G / R as B / B as G | `eq_RG` … | **1.00** |
+| **all the X beads come before all the Y beads** | `sub_YX == False` | **0.25** |
+
+Only the last one — v2's single *relational* template — survives the test, and it is the only
+rule of v2's U that is still in U.
+
+### The attacker's bank (rebuilt inside `generate`)
+
+Union of the two bead banks the players actually brought — tresk1b's `build_tresk()` +
+`extra_tresk()` (182 predicates: start/end/has/no/dbl/tri per colour, counts and parities and
+majorities, 2-grams and 3-grams, `more_XY`, `eq_XY`, `firstlast`, `palin`, `all3`, `two`,
+`noadjeq`, runs ==/≥/≤, `maxrun` ==/≥/≤, `nruns_C_j`, `startrun`, `endrun`, `twodblkinds`,
+`pos0..3_C`, `neg0..3_C`, `sortedstr`, `countsalldiff`…) and ospren1a's `f_tresk()` (n, n%2, n%3,
+counts, `maj`, `first`, `last`, `fl`, `nruns`, `maxrun`, `run>=k`, `palin`, `allthree`, `nzero`,
+**`maxrunchar`**, `nchanges`, `setcolors`, `runlens`, `nrunsR/G/B`, `hasRR/GG/BB`, `R-G`…) — plus
+the obvious extensions a second round would add (`minrun` and `minrun>=k`, the first and last
+clump's length, the number of one-bead clumps, 2-gram counts, per-colour longest clump, the
+shortest clump's colour, which colour owns the most clumps). **184 feature keys, 660 realised
+(key, value) predicates** over the 14 916-string pool. Jaccard is measured over **all 88 209**
+strings of length 6–10.
+
+## 16. The universe U — 14 templates, 35 rules
+
+"density" = the share of random strings of a random length 6–10 that obey the rule (exact, over
+all 88 209). **"bank J"** = the best Jaccard against any of the 660 bank predicates — the number
+that decides whether the attacker can even *express* the rule.
+
+| # | kid sentence | params | density | bank J | in U? |
+|---|---|---|---|---|---|
+| 0 | "the 2nd bead and the 2nd-from-last bead are the same colour" | — | .333 | **.33** | **IN** |
+| 1 | "the biggest clump is the colour it starts with / ends with" | 2 | .295 | **.33** | **IN** |
+| 2 | "the colour it starts with / ends with is all in one clump" | 2 | .136 | **.21** | **IN** |
+| 3 | "the colour it starts with / ends with is the one there is least of" | 2 | .099 | **.15** | **IN** |
+| 4 | "every red bead has a blue bead right after it" | 6 pairs | .112 | **.32** | **IN** |
+| 5 | "there are just as many red clumps as green clumps" | 3 pairs | .317 | **.35** | **IN** |
+| 6 | "all the red beads come before all the green beads" | 6 pairs | .120 | **.25** | **IN** (the one v2 rule that passed) |
+| 7 | "every clump is a different size from the clump next to it" | — | .128 | **.33** | **IN** |
+| 8 | "the first two beads and the last two beads are the same pair" | — | .111 | **.12** | **IN** |
+| 9 | "no bead has the same colour on both sides of it" | — | .103 | **.12** | **IN** |
+| 10 | "the colour there is most of is all in one clump" | — | .078 | **.27** | **IN** |
+| 11 | "there are exactly *n* red / green / blue beads" | n = 4,5 ×3 | .163 / .072 | 1.00 | **IN** (cheap, ×2 weight) |
+| 12 | "the biggest clump is exactly *n* beads long" | n = 4,5 | .097 / .027 | 1.00 | **IN** (cheap) |
+| 13 | "only two colours are used" | — | .135 | 1.00 | **IN** (cheap) |
+| — | exactly 2 / 3 red beads · the longest block is 2 / 3 | | .25–.50 | 1.00 | EXCLUDED (v2 rule) |
+| — | there are exactly *n* blocks (3–7) | | .06–.24 | 1.00 | EXCLUDED (v2 rule) |
+| — | it reads the same backwards | | .021 | 1.00 | EXCLUDED (v2 rule) |
+| — | all the blocks are the same size | | .076 | 1.00 | EXCLUDED (v2 rule) |
+| — | as many R as G / R as B / B as G | | .171 | 1.00 | EXCLUDED (v2 rule) |
+| — | the string is *n* beads long | | .200 | 1.00 | DROPPED (v2's competitor-only template; not needed once no rule reads the length) |
+| — | the two end beads are the same colour | | .333 | 1.00 | EXCLUDED (trap since v1) |
+| — | every bead has a neighbour of its own colour (`minrun ≥ 2`) | | .023 | 1.00 | EXCLUDED (the obvious `minrunge2` extension) |
+| — | each colour is all in one clump | | .046 | .57 | EXCLUDED (⊂ templates 2 and 10) |
+
+|U| = **35 rules over 14 templates**, eleven of them relational. Mean density of the hidden rule
+**0.154**; template mix over 500 clues 23–39 each, the three cheap templates 30 % of clues
+between them (template 11 is drawn at double weight — that is what moves the label-spending
+attacker from ~35 % to ~42 %). Antichain verified by brute force over **all 88 209** strings *and*
+over the generator's 14 916-string pool: **0 nesting violations**, every rule ≥ 2811 instances.
+
+### Templates measured and thrown out this round
+
+| template | density | bank J | why not |
+|---|---|---|---|
+| "the clump at the start and the clump at the end are the same size" | **.502** | .62 | too dense: with five candidates, four decoys all *lacking* it is itself a signature |
+| "the colour it starts with is the one there is **most** of" | .430 | .45 | same |
+| "every red bead has a green bead somewhere **next to** it" | .280 | .46 | contains template 4 (antichain) |
+| "the biggest clump is right at the start / the end" | .126 | .38 | inside template 1 |
+| "no two clumps are the same size" | .049 | .47 | inside template 7 |
+| "the clumps get bigger / smaller as you go along" | .012 | .26 | inside templates 1 and 7, and far too rare |
+| "the first bead and the last bead are the only ones of their colour" | .002 | .10 | inside 0, 2, 5 and 7; rarer than the whole pool can support |
+| "somewhere the same colour comes back with one bead in between" | .897 | .95 | with three colours the positive form is nearly universal — only its negation (template 9) is usable |
+| "every clump of two or more is the same colour" | .462 | **1.00** | it is `onedblkind` |
+| "the biggest clump and the smallest clump are the same colour" | .196 | .66 | half a bank predicate (`maxrunchar`) |
+| "as many beads of the end colour as of the start colour" | .132 | .27 | a *counted* relation — fails the kid test (RULE_FAMILIES §9) |
+
+**The kid constraint drove the choice, not just the Jaccard.** The tavrik v3 judge dropped 4.7 →
+3.83 on rules that read as puzzle-book tricks ("*n* apart in the alphabet", halves-counting), so
+every relation here is one a kid **spots by eye**: the two end pairs, a sandwiched bead, a clump
+that never comes back, the biggest clump's colour, one colour always followed by another. The two
+counted candidates from the recipe's own list — "exactly *n* beads between the two greens" and
+"the back half has more reds than the front half" — were **not used** for that reason.
+
+## 17. What changed, item by item
+
+| | v2 | v3 |
+|---|---|---|
+| candidates | 4 (floor 25 %) | **5** (floor 20 %) |
+| examples | 2 in 34 %, 3 in 66 % | **2 in 99.8 %**, 3 in 0.2 % |
+| example lengths | forced all different (to kill the length rules) | free — no rule reads the length any more |
+| U | 8 templates / 38 rules, bank J 1.00 except one | **14 templates / 35 rules**, 11 relational, bank J .12–.35 |
+| competitor-only rules | 15 (loose counts, block counts, all five lengths) | **none** — every rule of U may be the hidden one |
+| traps | 19 families, mean 7.15 fit | **16 families**, mean 8.30 fit, 9 of them v2's own rules |
+| decoys aimed at | the *count* of surviving outside predicates | **the rarity order**, then the count order, then the look-alike order |
+| bank carried inside `generate` | 249 predicates | **660** |
+| `score` | 805 chars | **1019 chars** |
+| simulated attack, 30 labels | **89.8 %** | **41.2 %** |
+
+## 18. Levers, measured (identical conditions, 400 test clues, 60 labels)
+
+| build | k | floor | attack at 60 labels |
+|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **41.8 %** |
+| minus lever 3 — **v2 as shipped** (the same engine, the same bank) | 4 | 25 % | **90.5 %** |
+| minus lever 5 (decoys not aimed at all) | 5 | 20 % | 53.2 % |
+| minus lever 1 (k = 4) | 4 | 25 % | 48.5 % |
+| minus lever 2 (three-example clues) | 5 | 20 % | 46.5 % |
+| lever 1 pushed (k = 6) | 6 | 16.7 % | 45.2 % |
+
+Read off the differences: **the relational universe (lever 3) is worth ≈ 49 points**, the rarity
+aiming (lever 5) **≈ 11**, the fifth candidate (lever 1) **≈ 7**, the two-example clue (lever 2)
+**≈ 5**. k = 6 is *worse* than k = 5 (−3.4): a matched-profile group of six is harder to fill, so
+the aiming falls back more often. **Five is the number**, exactly as on tavrik.
+
+## 19. The attacker table, v2 vs v3
+
+Full engine: skip-harvest 300 clues for base rates → answer a random candidate on a disjoint 1600
+clues, keeping the ~1/k that come back correct as gold labels → per-predicate unique-explanation
+weights → rarity-weighted pick. 400 fresh test clues (seeds 1e6 …), 660-predicate bead bank.
+
+| labels | v2 as shipped (k = 4, floor 25 %) | **v3 (k = 5, floor 20 %)** | v3 with a bank that also holds all of U |
+|---|---|---|---|
+| 0 | 83.8 % | **33.8 %** | 70.2 % |
+| 30 | 89.8 % | **41.2 %** | 82.8 % |
+| 60 | 90.5 % | **41.8 %** | 86.2 % |
+| 120 | 91.5 % | **42.0 %** | 88.5 % |
+| 240 | 91.0 % | **45.8 %** | 96.2 % |
+
+The shape is the point: v2 is a lookup from the first free labels; v3 pays ~8 points for the first
+30 labels (the three cheap templates, 30 % of clues) and then **goes flat**. The simulator scored
+83–91 % on v2 where the real players scored 79–86 %, so it is ~5 points *stronger* than a real
+Opus centaur and its v3 numbers are the pessimistic end.
+
+**The honest ceiling stays where it belongs.** The in-U intersection is **100.0 %**. An attacker
+whose bank also contains all of U reaches 86 % at 60 labels and 96 % at 240, and learns U to
+**90 % coverage in ≈ 360 labels** (coverage = the share of fresh clues whose true rule the learner
+has confidently identified, `m ≥ 4` firings and `n/m ≥ 0.7`). With the generic bank alone,
+coverage can never pass the three cheap templates (30 % of clues). The gap **42 % → 96 %** *is*
+the class, and it is paid for by inventing the vocabulary: looking at `GRGBRBGBGR / GRGGRGGBGR`
+and thinking "first two, last two".
+
+## 20. Three demos
+
+```
+CLUE                          LINEUP        ANSWER          hidden rule (private)
+
+GRGBRBGBGR                    GGRGBR
+GRGGRGGBGR                    GBGRGR
+                              GGBRGR   ->   GRBGGR (5)      the first two beads and the last two
+                              GGRBGR                        beads are the same pair
+                              GRBGGR
+
+GBBGGRGG                      GBRBGGB
+RGBGRGRG                      RBGGBGB
+                              RGGBGBB  ->   RGGBGBB (3)     every red bead has a green bead
+                              BGBGBGR                       right after it
+                              BGBRBGB
+
+RRRRRBRGB                     GRGBGRGGR
+RGRBBBBBG                     GBRGGRGRG
+                              GGRGBGGRG ->  GGGRRRRRB (4)   the biggest clump is exactly
+                              GGGRRRRRB                     5 beads long   (a CHEAP template)
+                              BGGGRRGRG
+```
+(seeds 1000009, 1000005, 1000007; in the real clue the five candidates are one per line under a
+blank line.) Demo 1 is the class in one picture: every candidate is six beads, every one starts
+with G and ends with R (so "the ends match" is worth nothing), all five fire exactly the same
+excluded rules, and the answer is the only one whose first pair `GR` is also its last pair.
+Demo 3 is the learnable slope: a kid counts the biggest clump and so does a predicate bank.
+
+## 21. Witness table — 500 fresh clues (seeds 1e6 … 1e6+499)
+
+| witness | score |
+|---|---|
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| the true rule (`solve`), verbatim and by index | **100.0 % / 100.0 %** |
+| **the full revision-3 attack, 660-predicate bank, 30 labels** | **41.2 %** |
+| … at 0 / 60 / 120 / 240 labels | 33.8 / 41.8 / 42.0 / 45.8 % |
+| the candidate with the **biggest clump** | **33.0 %** |
+| the alphabetically first candidate | 25.6 % |
+| the candidate with the most red beads | 25.0 % |
+| the candidate most like an example, bead by bead | 22.0 % |
+| the candidate least like the other four (the odd one out) | 21.4 % |
+| the candidate satisfying the MOST example-consistent bank predicates | 20.4 % |
+| **pick a random candidate (the floor)** | **17.6 %** (nominal 20 %) |
+| pick candidate 1 | 19.2 % |
+| the candidate with the most clumps | 16.8 % |
+| the candidate most like the other four (the medoid) | 15.6 % |
+| the candidate satisfying the FEWEST such predicates | 15.0 % |
+| **each of the 16 excluded rules, fitted to the clue** | **17.9 – 22.7 %** (pure tie-breaking) |
+| a player who knows U minus its two rarest templates | 91.8 % |
+
+The excluded rules are *structurally* dead, not merely weak: over 500 clues all **4149** fitted
+traps are satisfied by **all five candidates or by none** (4149/4149), so no trap, no count of
+traps and no combination of traps separates the lineup. Fit rates: no clump longer than the
+clue's 100 % · at least *n* C beads 100 % · exactly the clue's colours 71 % · all three colours
+69 % · more X than Y 69 % · no two C touch 59 % · starts/ends with the clue's colour 34 %/32 % ·
+exactly *n* clumps 19 % · the two ends the same 10 % · as many X as Y 8 %.
+
+The one row above chance is **"the candidate with the biggest clump" (33.0 %)**: when template 12
+is the truth the true candidate has the strictly longest clump, because the trap "no clump longer
+than the clue's longest" caps the decoys. That is the honest price of keeping a cheap template,
+it is inside the attack figure already (the bank holds `maxrun`), and it is a *foothold* rather
+than a leak — a demo-less player who plays it scores 33 %, ten points over the floor.
+
+Other measured numbers (500 clues): uniqueness 500/500 · minimality 500/500 · exactly one
+candidate obeys the rule 500/500 · all five candidates the same length 500/500 · five distinct
+candidates 500/500 · no candidate equal to an example 500/500 · matched trap profiles 500/500 ·
+examples per clue 2 → 499, 3 → 1 · candidate length 6/7/8/9/10 → 81/85/99/98/137 · true-candidate
+position 96/93/109/95/107 · over **20 000 seeds, 20 000 distinct clues and 0 fallback clues**.
+
+## 22. Validation
+
+`python tools/quickcheck.py challenges/lab/tresk.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK tresk  gen=6.51ms score=0.66ms solve=0.53ms`, **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **1019 chars** (v1 761, v2 805) | 1024 (the rule-family raise, RULE_FAMILIES §4) |
+| `generate` source | 21 701 | 50 000 |
+| `solve` source | 2 412 | 5 000 |
+| `generate` | **1.94 ms mean**, 15.8 ms max over 5000 seeds | 100 ms |
+| `score` | 0.43 ms max (junk included) | 50 ms |
+| `solve` | 0.39 ms mean, 0.55 ms max | 2 000 ms |
+| clue | ≤ 77 chars | 1024 |
+| answer | ≤ 10 chars | 1024 |
+
+`score` was checked candidate-by-candidate against `solve` on 600 clues × 5 candidates ×
+(verbatim + index + lower-case-with-spaces) — **9000 checks, 0 disagreements** — and returns 0
+without raising for `""`, `"0"`, `"6"`, `"9"`, `"x"`, `"1"*100`, `"R"*4000`, the clue itself,
+`"R G B"`, the unicode digits `"١"` / `"²"`, `"-1"` and `"1.0"`; `"rrbrrb "`, `"RRBRRB"` and
+`"1"` all score 1 when `RRBRRB` is right. The 35 rules are rebuilt in the scorer from a
+149-character table (`"0-- 7-- 8-- … 12-5"`, each entry a template id plus a two-character
+parameter), which is what bought the room for eleven relational templates inside 1024 chars.
+Module-level tables cost **≈ 3.1 s once per worker** (v2: 0.34 s): the 14 916-string pool, its
+35-bit U mask (computed by `MASKOF`, verified equal to the readable `P` table on all 88 209
+strings), its 660-bit bank mask and its trap features. Not charged to `max_generate_ms`.
+
+## 23. Predicted classification
+
+**Calibrated**, with the risk on the easy side rather than the hard side.
+
+* **Without a demo** the clue still reads as multiple choice from round 1 (two bead strings, a
+  gap, five of the same length), so every probe is well formed and the floor is a free 20 %. The
+  v2 engine that scored 79–86 % now pays **34 % at zero labels, 41–42 % once the free labels
+  arrive, and stops improving** (45.8 % at 240 labels). The cheap "answer the one with the biggest
+  clump" foothold is worth 33 %. Expect **25–45 %**.
+* **With a demo** the demo teaches the format in one look and one worked rule. The way up is to
+  notice that this class talks about *pairs of beads and pairs of clumps* and to write those
+  predicates down; a player who does scores 86–96 %, one who maps 12 of the 14 templates scores
+  92 %. Expect **40–65 %**.
+
+Mean across two Opus teams ≈ **0.35–0.55** → `calibrated`. If it comes back **too easy**, the
+lever is to drop template 11 back to single weight (measured: 29 / 35 / 37 / 40 / 42 %) or to
+retire template 5 (the only one that needs counting); if **too hard**, put template 12 back on
+double weight (measured: 41 / 45 / 51 / 51 / 52 %).
+
+**12-year-old test (target: keep 4.0+).** The object is unchanged — a bead necklace, and the task
+is still "which of these five fits?". What changed is *what the rules talk about*, and every one
+of them is something a kid sees rather than counts: **the first two beads and the last two beads
+are the same pair · no bead has the same colour on both sides · the colour it starts with never
+comes back · the biggest clump is the colour it starts with · every red has a blue right after it
+· all the reds come before all the greens · every clump is a different size from the one next to
+it**. Read them aloud (RULE_FAMILIES §9) — each is one breath and each can be checked on a
+six-bead string in about two seconds. The three cheap rules ("exactly four greens", "the biggest
+clump is five", "only two colours") keep the class's old flavour and give a kid an entry point on
+a third of the clues. The one rule that needs any counting at all is "just as many red clumps as
+green clumps", and clumps are visible objects, not positions.

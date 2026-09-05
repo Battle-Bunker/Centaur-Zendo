@@ -3925,7 +3925,7 @@
    ]
   },
   "garrow": {
-   "current_version": 5,
+   "current_version": 6,
    "qual": [
     {
      "advice": "The bordered grid of dots and letter pairs does not read as pizza on sight; add a crust/cheese visual cue.",
@@ -3990,7 +3990,8 @@
     1,
     2,
     3,
-    4
+    4,
+    5
    ],
    "runs": [
     {
@@ -4659,7 +4660,7 @@
      "version": 5
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "added": 1788532815.6070344,
@@ -4690,6 +4691,12 @@
      "file": "challenges/lab/garrow.json",
      "note": "refiner: 'm 0 slices' foothold (13%, echo); every demo shows the halves convention (a halved piece counted on both sides)",
      "v": 5
+    },
+    {
+     "added": 1788605177.969118,
+     "file": "challenges/lab/garrow.json",
+     "note": "caption moved to the last line (house convention); rule, trays and answers byte-identical to v5",
+     "v": 6
     }
    ]
   },
@@ -13930,7 +13937,7 @@
    "kind": "refiner",
    "reason": "players: garrow puts its caption on the first line while every other class puts it last; move it, rule unchanged",
    "started": 1788604345.2039027,
-   "status": "running",
+   "status": "done",
    "version": 5
   },
   {
@@ -14005,6 +14012,16 @@
     "dornic1b": "opus-kidproxy"
    },
    "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "refiner-garrow-v6-soft",
+   "kind": "refiner",
+   "reason": "too_hard: three demo-holders in a row (26/14/24%) bought the cut glyph but not the placement; the halves rule is too fiddly for one demo",
+   "started": 1788605178.0063534,
+   "status": "running",
+   "version": 6
   }
  ],
  "profiles": {

@@ -792,3 +792,104 @@ alone, which is the thing durnel1a asked for by name. Predicted mean final 55–
 the halves-convention rows 50/62/91 % → 32/37/15 %), then dropping the nought rate to 6 %.
 Levers the other way if the arena says too_hard: raise the nought rate; make "both sides need their
 half" a gate in `generate()` as well as a preference in `solve()` (demo 84 % → 100 %, ~2.0 → ~2.6 ms).
+
+## garrow v6 — the caption moves to the last line (2026-09-05)
+
+v5 kept as `challenges/lab/garrow.v5.json` (byte-identical copy); v6 is `challenges/lab/garrow.json`.
+**A house-consistency fix and nothing else**: same rule, same tray for every seed, same answer for
+every tray, same witness profile. Only the caption's line moved.
+
+### Why
+
+Two Opus players in a row filed the same complaint: *"garrow puts its count on the first line while
+every other class puts it last; that inconsistency cost me a parsing bug's worth of attention and
+adds no puzzle value."* durnel1b had already noted it in passing in `lad-durnel-v2-1` — "all 7
+classes are picture classes with a trailing (garrow: leading) text line `N verb`". basten, durnel,
+fennick and kelmar all print the caption after the picture and all accept the answer with that line
+kept or dropped; garrow was the one class in the pool that did not, and the position carries no
+information the caption does not carry anyway.
+
+### The whole diff
+
+* `generate()` — one format string. The caption is emitted after the bottom crust row instead of
+  before the top one; the draw order is untouched, so the tray drawn for a given seed is unchanged.
+* `solve()` — takes the caption from the last line (`"slice" in a[-1]`, and only the caption ever
+  says "slice") and still from the first line if it is not there, so v5 clues still solve. It seeds
+  its search on the clue's lines **in v5's order**, so the cutting it returns is byte-for-byte v5's
+  on every seed; the answer never contained the caption, so its text is unchanged too.
+* `score()` — same fallback for the caption's letter and digit. The picture comparison already
+  ignored every line without a `:`, so it needed no change: the answer is still accepted with the
+  caption line kept or dropped, at either end, and a v5-format clue still grades.
+* Description bumped to v6 with a "WHAT V6 CHANGES" paragraph and the new sizes; the count of clue
+  lines in it corrected while passing (six lines, not five).
+
+### One demo as it renders (seed 4020) — the v5 record's demo, caption moved
+
+```
+clue:                               answer:
+#################################   ###|####|############|###|########|###
+##pp::mm:::::cc:::::::pp::pp:::##   ##p|p::m|m:::::cc::::|:::|pp::pp::|:##
+##:::mm::cc::cc::::pp:::::mm:::##   ##:|::mm|::cc::cc::::|pp:|::::mm::|:##
+##::pp::::::::mm::::mm::cc:::pp##   ##:|:pp:|:::::::mm:::|:mm|::cc:::p|p##
+#################################   ###|####|############|###|########|###
+m 2 slices
+```
+
+The answer is character-for-character the one in the v5 record; the caption is now the last line of
+the clue. A nought clue (seed 4011) reads the same way: three dough rows between two crust rows, then
+`b 0 slices`, and the answer is that tray handed back whole.
+
+### Checks
+
+* **1503 clues** (seeds 0–999, 100000–100499, plus the v5 record's three demo seeds): the v6 clue is
+  exactly the v5 clue with line 1 moved to the end on **every** one; `solve()` returns the **identical
+  string** on every one; `score(clue, solve(clue)) == 1` on all 1503; and the v6 scorer grades every
+  v5-format (clue, answer) pair 1 while v6 `solve()` still reads a v5-format clue. Max clue 205 chars
+  and max solution 229 chars, both unchanged.
+* **The echo foothold**, 500 fresh clues (seeds 100000–100499): the caption says 0 on **13.20 %**, and
+  the echoed clue scores on exactly those clues and no others — caption line **kept 13.20 %, dropped
+  13.20 %**. Unchanged from v5.
+* **Shape and junk attacks**, 250 clues (seeds 100000–100249, 33 of them noughts), every attack run
+  against v5 in v5's line order and against v6 in v6's, same seeds, same harness:
+
+| attack | v5 | v6 |
+|---|---|---|
+| reference | 100.00 % | **100.00 %** |
+| caption line kept (last, house order) | 100.00 % | **100.00 %** |
+| caption line kept (first, v5 order) | 100.00 % | **100.00 %** |
+| crust rows removed | 100.00 % | 100.00 % |
+| trailing spaces | 100.00 % | 100.00 % |
+| blank lines inserted | 100.00 % | 100.00 % |
+| leading/trailing blank lines | 100.00 % | 100.00 % |
+| all cuts removed | 13.20 % | 13.20 % ← exactly the noughts |
+| the clue itself | 13.20 % | 13.20 % ← exactly the noughts |
+| a dough row deleted / duplicated / reordered | 0.00 % | 0.00 % |
+| upper-cased | 0.00 % | 0.00 % |
+| cheese turned to spaces | 0.00 % | 0.00 % |
+| reversed left-right | 0.00 % | 0.00 % |
+| one cut missing in one row (217 cut clues) | 0.00 % | 0.00 % |
+| cuts shifted by one in one row (217) | 0.00 % | 0.00 % |
+| one extra cut in the widest slice (217) | 32.26 % | 32.26 % |
+
+  Every rate is identical. (The noughts are 13.2 % of *this* batch, where the v5 record's 250-clue
+  batch happened to hold 10.4 %; and the extra-cut row is over the 217 clues that have cuts, so
+  neither number is comparable with the v5 record's — only the v5/v6 columns above are.)
+* `python tools/quickcheck.py challenges/lab/garrow.json --seeds 200`: **OK**, gen 8.39 ms max, score
+  0.16 ms, solve 328.62 ms max, one warning — "score accepts the clue itself as a solution", which on
+  a nought clue is the point, exactly as in v5.
+* `generate` over 500 seeds: mean 2.08 / median 1.54 / p99 8.4 / max 17.2 ms (v5 over 20000 seeds:
+  2.04 / 1.56 / 7.7 / 18.3).
+
+The v5 witness table, demo table and levers all stand unaltered — no measured behaviour changed, so
+nothing in them was re-derived beyond the rows above.
+
+### Size
+
+| | v5 | v6 |
+|---|---|---|
+| scorer / solve / generate chars | 423 / 4839 / 8832 | **448 / 4960 / 8967** (caps 512 / 5000 / –) |
+| clue / solution chars | 205 / 229 | 205 / 229 |
+
+The 25 scorer characters buy `q=a[-1]if"slice"in a[-1]else a[0]` — the caption read from the last
+line, with the first still accepted so that transcripts and clues from v5 keep grading during the
+changeover. That fallback can be deleted once no v5 clue is in play.

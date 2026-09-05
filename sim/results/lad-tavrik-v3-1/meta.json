@@ -1,0 +1,33 @@
+{
+ "run": "lad-tavrik-v3-1",
+ "arena": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tavrik-v3-1",
+ "hidden": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tavrik-v3-1/.pool-cbab2941",
+ "port": 57321,
+ "pid": 5318,
+ "teams": [
+  "tavrik1a",
+  "tavrik1b"
+ ],
+ "tokens": {
+  "tavrik1a": "7f0a386bcc7d",
+  "tavrik1b": "c536ad4bd56a"
+ },
+ "admin_token": "03f45385fce33502",
+ "config": {
+  "cooldown_seconds": 5,
+  "max_training_rounds": 4,
+  "max_demos": 3,
+  "training_seconds": 21600,
+  "final_window_seconds": 3600,
+  "round_seconds": 0.5,
+  "final_seconds": 3.0,
+  "open_registration": true,
+  "challenge_dir": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tavrik-v3-1/.pool-cbab2941/challenges",
+  "event_log": "/tmp/claude-0/-home-user-Centaur-Zendo/7b495634-616e-5f1b-9d7a-c4523ae5e261/scratchpad/lad-tavrik-v3-1/.pool-cbab2941/events.jsonl",
+  "host": "127.0.0.1",
+  "port": 57321,
+  "admin_token": "03f45385fce33502"
+ },
+ "pool_size": 7,
+ "started_at": 1788597188.9742517
+}

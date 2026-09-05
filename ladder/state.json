@@ -7538,6 +7538,21 @@
      },
      "score": 4.0,
      "version": 1
+    },
+    {
+     "advice": "Render the beads visually rather than raw R/G/B letters so the object reads as a necklace on sight.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 5,
+      "no_prereqs": 5,
+      "object": 4,
+      "rule_statable": 4
+     },
+     "score": 4.5,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -11161,6 +11176,16 @@
    "started": 1788592735.972883,
    "status": "running",
    "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "ospren",
+   "id": "refiner-ospren-v2-rev3",
+   "kind": "refiner",
+   "reason": "80-87% without demos over 2 games; apply Revision 3 recipe",
+   "started": 1788593136.1097085,
+   "status": "running",
+   "version": 2
   }
  ],
  "profiles": {

@@ -5972,6 +5972,21 @@
      },
      "score": 4.67,
      "version": 2
+    },
+    {
+     "advice": "Trim U toward relations a kid spots by eye without counting (double letter, vowels climb, 2nd==2nd-from-last is fine) and drop alphabet-distance / comes-back-after-n-letters, which read as puzzle-book tricks.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 3,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 3
+     },
+     "score": 3.83,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -10533,6 +10548,16 @@
    "kind": "players",
    "status": "pending",
    "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "tresk",
+   "id": "refiner-tresk-v2-rev3",
+   "kind": "refiner",
+   "reason": "79-86% without demos over 4 games; apply Revision 3 recipe",
+   "started": 1788590577.9675543,
+   "status": "running",
+   "version": 2
   }
  ],
  "profiles": {

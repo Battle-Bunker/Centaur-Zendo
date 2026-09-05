@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 05:32 UTC
+# Ladder report — 2026-09-05 05:35 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -15,7 +15,6 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | LegoZendo2 | 1 | testing | 8% | 0.17 | 8% (2) | - | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 100% (1) |
 | quaich | 2 | testing | 8% | 0.16 | - | 8% (2) | 2.6 | 2 | 0 | opus-lowdemo,opus-theorist | 62% (2) |
 | kelmar | 2 | too_hard | 5% | 0.11 | 9% (5) | 0% (3) | 4.7 | 8 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 0% (4) |
-| virel | 2 | too_hard | 5% | 0.11 | 11% (3) | 0% (3) | 4.3 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 28% (4) |
 | norvel | 3 | too_hard | 4% | 0.08 | 0% (1) | 5% (5) | 4.3 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 39% (4) |
 | AHMES | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | ALLWIN | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
@@ -55,6 +54,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | trico | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | velk | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.4 | 2 | 0 | opus-default,opus-kidproxy | 100% (2) |
+| virel | 3 | testing | - | - | - | - | - | 0 | 0 | - | 15% (10) |
 | volute | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | warren | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | wolf | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

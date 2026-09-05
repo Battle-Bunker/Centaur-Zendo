@@ -296,3 +296,128 @@ to carry exactly N twins, so the foothold pays without revealing what N counts.
   bottom junction, or widen N's range upward (7–10) so twins must be packed.
 * neither cracks with a demo ⇒ soften by salience first (raise the minimum twin width to 4 and
   force two triple stacks), not by touching the rule.
+
+---------------------------------------------------------------------------
+
+## virel v3 — collapse the construction to one course (2026-09-05, refiner)
+
+New-format evidence on v2: **too_hard**. Four Opus finals at 14 %, 16 %, 0 %, 2 %, three of them
+*with* a demo. The demo taught the format perfectly — players rebuilt the drawing grammar and sent
+well-formed walls — but the task it set was a *search*: invent a whole wall of ≥5 courses whose
+adjacent-course pairs share exactly N spans in total. Nobody finished it in ~60 probes a round, and
+the tell is in the player notes: "identical answers scored 1 with one clue and 0 with another" —
+i.e. they were sampling the wall space and reading the twin count as noise. v2 is kept byte-identical
+as `challenges/lab/virel.v2.json`.
+
+v3 keeps the counted relation (a **twin stack** = a brick sitting exactly on a brick of the same
+span) and removes the search: **the clue is already a finished wall and the answer adds one course.**
+
+### What changed
+
+| | v2 | v3 |
+|---|---|---|
+| clue | the **bottom** course + N | a **finished wall**, 3–4 courses, top course first, each a gapless tiling of the same width W ∈ 14..20 by bricks 2–6 (`[]`=2 … `[----]`=6), then N |
+| answer | invent a whole wall ≥5 courses on that course | the **same wall with one more course on top** — line 1 is new, lines 2.. are the clue unchanged |
+| what N counts | twins summed over **every** junction of an invented wall | twins between the **new course and the one below it** — one junction, one row to design |
+| N | 2,3,4,6,7 | **0..3**, drawn 0:15 / 1:30 / 2:35 / 3:20 % |
+| foothold | random 5–6-course wall, 9–14 % | random gapless course on top, 15–23 %; on the ~15 % of clues with N=0 *any* twin-free course scores, so a plain running bond pays 12.2 % on its own |
+| search cost | ~10⁴ walls to sift | **one row**: the whole answer is the clue plus 20 characters |
+| parameter line | dropped only | **kept or dropped** (house rule 2026-09-05), both score 1 |
+
+Rule, one clause a kid says in a breath: **"add one row so that exactly N bricks sit right on top of
+a brick the same size."** Everything else in the scorer is "and it is still the same wall": the lower
+courses must equal the clue's wall, the new course must be a gapless tiling of the same width out of
+bricks 2–6 wide.
+
+### One demo as it renders (seed 186, N = 2)
+
+```
+clue                       answer
+[--][][][][][--][][]       [--][--][-][][][-][]   <- the new course
+[--][-][--][---][--]       [--][][][][][--][][]
+[----][----][--][--]       [--][-][--][---][--]
+2                          [----][----][--][--]
+```
+
+`[--]` at columns 0–4 sits exactly on the `[--]` at 0–4, and `[]` at 18–20 sits exactly on the `[]`
+at 18–20: **2 twins = N**. In the *same* picture the rivals are on show and wrong: `[]` at 13–15 sits
+**centred** inside the `[--]` at 12–16 (one column of overhang each side) and `[]` at 11–13 is the
+**same width** as the `[]` at 10–12 but one column to the right — neither is a twin, so "sits inside"
+and "same size" both give 3, not 2. The joint at column 8 lines up in both courses with no twin above
+it, so "count the joints that line up" gives 3, not 2. And the wall below already carries 2 twins of
+its own (one at each of its junctions, neither of them 2), so "count the twins in the whole wall"
+gives 4, not 2. Bricks in the new course 7, courses 4, joints that line up 3, pairs sharing exactly
+one edge 4: none of them is 2.
+
+How the demo is guaranteed: `generate()` builds the clue's top course **and a witness new course
+together**, out of a library of 463 two-row gadgets tagged by (twins, has-a-centred-brick,
+has-an-offset-brick, widest twin, shared interior joints), so a course satisfying every demo
+constraint provably exists before the clue is emitted; `solve()` then enumerates *every* tiling of
+the width (≤2618), keeps the ones that satisfy the rule and the constraints (median 2 candidates)
+and picks among them with `random.Random(clue)`.
+
+### Witness table (500 fresh clues, run against the shipped JSON through the quickcheck exec model)
+
+| template | score |
+|---|---|
+| clue returned unchanged | **0.0 %** |
+| copy the top course again on top | **0.0 %** |
+| running-bond course (every joint offset) | 12.2 % |
+| **random gapless course (uniform over tilings)** | **22.4 %** |
+| **random gapless course (4–6 bricks)** | **15.4 %** |
+| **random gapless course (5–7 bricks)** | **22.6 %** |
+| N bricks sharing exactly one edge | 12.5 % |
+| N bricks the same width as some brick below | 19.5 % |
+| N same-width bricks anywhere in the course | 23.4 % |
+| N joints line up with the course below | 31.2 % |
+| N bricks centred on a wider brick | 27.1 % |
+| a fixed brick count (N+4 bricks) | 26.4 % |
+| demo replay (one fixed wall for every clue) | 0.2 % |
+| demo replay: its new row over this clue's wall | 3.4 % |
+| constant string / empty / `x` / `1`×100 / the clue's top course | 0.0 % each |
+| the true rule (`solve`) | **100.0 %** |
+| the true rule, parameter line kept | **100.0 %** |
+
+Foothold by N (random gapless course): **N=0 41.0 %**, N=1 28.8 %, N=2 24.6 %, N=3 13.1 % — overall
+15–23 % depending on how many bricks the player's course uses, inside the 5–30 % band, and the N=0
+clues are the deliberate free rung ("any course with no twin scores"). No template exceeds ~31 %.
+The stacking attack is dead by arithmetic: the clue's courses have 4–8 bricks, so copying one up is
+4–8 twins and N ≤ 3.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/virel.json --seeds 200` → `OK virel gen=0.62ms
+score=0.13ms solve=29.13ms`, no warnings. Sources: generate 10347 (a 6.2 KB gadget library; cap
+50000), solve 1948/5000, score **358**/512. 12000 fresh clues: generate mean **0.140 ms**, p99
+0.40 ms, max 1.02 ms, deterministic, clue ≤ 85 chars. 500 clues: 0 solve failures, solve mean
+4.6 ms / max 12.4 ms, longest solution 104 chars, 3 courses 69 % / 4 courses 31 %. score: 0.0004 ms
+on empty, 0.001 ms on 1 KB junk, 0.004 ms on a 60-course wall, 0.007 ms on real answers.
+Cross-check against an independent un-golfed implementation of the rule: **10400/10400** pairs agree
+(correct answers with the parameter line dropped / kept / first / trailing newline, 18 mutation
+families — dropped or extra or reversed courses, ragged top or bottom course, width-7 brick,
+too-wide course, whitespace noise, space-separated rows, the clue itself, shuffled garbage — plus
+random valid-width courses and random 2–6-course walls).
+Demo quality over 500 clues: a centred brick **100 %**, an offset same-width brick **100 %**, a
+stray aligned joint 78 %, widest twin ≥ 4 (or N=0) 50 %, and `joints-that-line-up`, `brick count`
+and `one-edge pairs` all ≠ N in **100 %**.
+
+### What a demo-less player can read off the clue
+
+"Here is a wall and the number 2 — send the wall back with one more row on top." That is a
+well-formed answer, and about one random row in five happens to make exactly N twins, so the
+foothold pays without saying what N counts; the demo is what turns 20 % into the rule.
+
+### Known residual ambiguity (deliberate)
+
+The new course carries exactly one centred brick and one offset same-width brick, and there is no
+room in W ≤ 20 for two of either. So on the 30 % of clues with N=1 the demo alone does not separate
+"twins" from "centred" from "same width, shifted"; one round of probes does, and each of those
+rivals tops out at 27 % on its own. If a run shows players parked at ~30 %, that is the
+`joints that line up` rung.
+
+### If it drifts
+
+* cracked by both with a demo ⇒ harden by raising N's ceiling to 4 (needs W up to 22) or by
+  counting only twins that are **not** at the wall's left or right edge.
+* neither cracks with a demo ⇒ soften by salience first: force the widest twin to 4+ on every clue
+  (currently 50 %) and force a stray aligned joint (currently 78 %), not by touching the rule.

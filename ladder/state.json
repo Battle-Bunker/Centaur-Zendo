@@ -6991,7 +6991,7 @@
    ]
   },
   "virel": {
-   "current_version": 2,
+   "current_version": 3,
    "note": "run1: crack r3 (3 demos, exact rule) + partial 14% (four of five clauses, never found what k counts). Mixed. Kid-proxy asked the right question three times and the AI ignored it.",
    "qual": [
     {
@@ -7025,7 +7025,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -7398,7 +7399,7 @@
      "version": 2
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/virel.json",
@@ -7409,6 +7410,12 @@
      "file": "challenges/lab/virel.json",
      "note": "v2 demo economy: bottom course drawn in the clue; 5-6 course demos with every rival falsified; foothold ~12%",
      "v": 2
+    },
+    {
+     "added": 1788586538.5633497,
+     "file": "challenges/lab/virel.json",
+     "note": "v3: clue is a finished wall; answer adds one top course with exactly N twins; N 0-3",
+     "v": 3
     }
    ]
   },
@@ -9693,7 +9700,7 @@
    "kind": "refiner",
    "reason": "too_hard",
    "started": 1788583903.5100362,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -9781,14 +9788,30 @@
    "version": 2
   },
   {
+   "agents": 1,
+   "class": "garrow",
    "id": "refiner-garrow-v3-reskin",
    "kind": "refiner",
-   "class": "garrow",
-   "version": 3,
-   "agents": 1,
-   "status": "running",
+   "reason": "reads as fish tank; 0% with two demos",
    "started": 1788586385.971511,
-   "reason": "reads as fish tank; 0% with two demos"
+   "status": "running",
+   "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "virel",
+   "id": "players-virel-v3-94d9",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "virel",
+   "id": "judge-virel-v3-1b27",
+   "kind": "judge",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

@@ -1062,3 +1062,161 @@ pool   $SCRATCH/pool-tovel-6/tovel.json
 setup  python sim/arena.py setup --run lad-tovel-v6-1 --teams tovel6a,tovel6b \
          --challenge-dir $SCRATCH/pool-tovel-6 --arena-root $SCRATCH/lad-tovel-v6-1
 ```
+
+---------------------------------------------------------------------------
+## Iteration 7 - 2026-09-05 - `challenges/lab/tovel.json` (v7; v6 kept as `tovel.v6.json`)
+
+### Why: six versions, eighteen finals, ~17 % mean, never cracked
+
+`lad-kelmar-v3-1` (picture pool run 4) ended tovel **5 %** (opus-default) and **15 %**
+(opus-kidproxy), **with no demo from either player**, which is the whole story. Both players'
+notes say the same thing in their own words:
+
+* **kelmar1a**, demo plan, verbatim: *"Deliberately left without a demo: durnel (already cracked
+  from clues), basten and tovel (answer shape obvious from the clue: grow the plants / fill the
+  dots) and norvel (answer shape obvious: fill the snare row)."* Its tovel reading was
+  *"Hypothesis T1: write letter X in the slot of days d, d+n, d+2n, ..."*, and its post-mortem
+  row is *"tovel - 'every n days from d, code line dropped' scored once in 13; rule still
+  wrong"* - 20/437.
+* **kelmar1b** hard-coded `solve_tovel`: *for m <= 2 mark 3 days (d, d+2, d+4); for m >= 3 guess
+  `m+1` or `2m-1` marks*, alternating on `memory["_index"]`. That is the v6 `k=1` foothold and a
+  coin flip above it. Nothing in the clue could decide between `m+1` and `2m-1`.
+* v5's players had said it first: *"tovel: the calendar's `.` placeholders looked like an easy
+  fill-in ... in hindsight tovel deserved kelmar's demo"* (tovel2b, 0 %).
+
+So the class had passed the demo economy's **first** half since v5 (the clue is the calendar, so
+everyone is well formed at once) and failed the **second** half in the worst way: because the
+answer's shape was obvious nobody spent a demo, and because `X/n/d` was a **free parameter** no
+hypothesis could be falsified offline, so every guess cost a slice of a round. That is exactly the
+diagnosis `sim/DESIGN_LOOP.md` "The checksum caption" was written from, and it is the same
+diagnosis basten v4 and norvel v4 were rebuilt on today.
+
+### The change: the calendar is FINISHED in the clue, and the caption counts the edits
+
+> **"When there is something on three days running, the one in the middle gets bumped on to
+> the next free day."**
+
+* **The clue is a finished family calendar.** Every day carries exactly one mark: `.` for a free
+  day or a capital letter for something that is on (`17S`). 8-17 busy days, drawn from a pool of
+  five letters, in blocks of 1..5 consecutive days. The `X/n/d` code line is gone.
+* **The caption is a checksum**: `3 bump` names the verb and counts the edits, so any candidate
+  *selection* rule can be tested against ~70 harvested clues in round 1 for free.
+* **The edit needs the demo.** A bumped day is drawn `>` (not returned to `.`), its own letter is
+  written on the first day after it whose slot is still free, and when a block is four or five
+  long the two or three middles **queue up** into the free days after it, in order.
+* **Letters are pure decoration** (they are never told apart) - the kelmar `*`/`Y` decoy
+  dimension, killed by the checksum in one round.
+* **A busy run never crosses a week row**, so "three days running" and "three in a row in the
+  same week" are the *same* rule on every page: the class hides no second clause there
+  (measured: the week-row reading scores 100 %, i.e. it is not a rival, it is the rule).
+
+### Guaranteed in every clue, so that ONE demo teaches the whole thing
+
+* >= 2 blocks of exactly two busy days and >= 2 lone busy days - none of them ever moves;
+* `n >= 2`: a block of **four or more**, so two bumps queue and **no fixed distance** renders the
+  answer (three-block bumps two days on, four-block bumps three days on, twice);
+* `n >= 2`: at least one bump **lands on a Sat or Sun**, so "it skips the weekend" is false;
+* every moving block carries three different letters ("three of the same thing" is false);
+* `n = 0` in ~12 % of clues, where the echoed clue page scores (the format foothold, lever 7);
+* `n` is rejected whenever it coincides with a count read straight off the picture (busy days,
+  free days, blocks, blocks of two, lone days, blocks of >= 2, longest block, distinct letters,
+  week rows, busy weekend days).
+
+### One demo as it renders (seed 900011, n = 3)
+
+```
+CLUE                            ANSWER
+ Mo  Tu  We  Th  Fr  Sa  Su      Mo  Tu  We  Th  Fr  Sa  Su
+                 1.  2.  3C                      1.  2.  3C
+ 4.  5C  6T  7W  8D  9. 10.      4.  5C  6>  7>  8D  9T 10W
+11. 12D 13C 14. 15C 16W 17.     11. 12D 13C 14. 15C 16W 17.
+18C 19D 20L 21. 22T 23. 24.     18C 19> 20L 21D 22T 23. 24.
+25. 26. 27. 28. 29.             25. 26. 27. 28. 29.
+3 bump                          3 bump
+```
+
+Days **5-8** are four days running, so the two in the middle (6 and 7) are bumped: 6 goes to the
+9th (a Saturday) and 7 queues behind it on to the 10th. Days **18-20** are three running, so 19
+is bumped to the 21st. Every near-miss is on the same page: 12-13 and 15-16 are blocks of two and
+stay put; 3 and 22 are lone days; 5, 8, 18 and 20 are the *outside* days of a block and stay put;
+one bump lands on a weekend and one on a weekday, at distances of three and two.
+
+### Witness table - v7, 1500 fresh clues, measured against the shipped JSON (`scratchpad/time7/final.py`)
+
+| attack | v6 | v7 |
+|---|---|---|
+| clue page returned unchanged, caption **kept** | 0.00 % | **12.13 %** (the n = 0 share, by design) |
+| clue page returned unchanged, caption **dropped** | 0.00 % | **12.13 %** |
+| **the true rule**, caption kept / dropped | 100 % | **100.00 % / 100.00 %** |
+| BLIND: middles -> next free day, `.` / `-` / `x` left | - | **12.13 %** each |
+| middles COPIED to the next free day (letter stays) | - | 12.13 % |
+| middles deleted, no landing, `>` left / `.` left | - | 12.13 % / 12.13 % |
+| middles -> the PREVIOUS free day, `>` left | - | 12.13 % |
+| middles -> exactly two days on, `.` left | - | 12.13 % |
+| every day of a block of >= 3 bumps | - | 12.13 % |
+| the two OUTER days of a block of >= 3 bump | - | 12.13 % |
+| the whole block of >= 3 slides one day later | - | 12.13 % |
+| the second day of every block of >= 2 bumps | - | **0.00 %** |
+| **middles -> exactly two days on, `>` left** | - | **22.53 %** <- strongest wrong rule |
+| only the FIRST middle of each block bumps | - | 22.53 % |
+| only the LAST middle of each block bumps | - | 22.53 % |
+| only blocks of EXACTLY three act | - | 22.53 % |
+| the queue resolved right-to-left | - | 22.53 % |
+| the landing skips Sat/Sun | - | 20.27 % |
+| "three in a row inside one week row" reading | - | **100.00 %** (the same rule, by construction) |
+| a mark on every day / all `>` / a random capital | 0.00 % | **0.00 %** |
+| best single constant answer over 200 clues | 0.00 % | **0.07 %** |
+| **demo replay**, another clue with the same (L, S, n) | 13.17 % | **0.00 %** |
+| no header / tabs / blank lines / caption first / trailing spaces | 100 % | **100.00 %** |
+| one long row / one token per line / lower case | 0.00 % | **0.00 %** |
+| page laid out from column 0 (S ignored) | 11 % | 15.80 % (= exactly the S = 0 clues) |
+
+`n` distribution over 1500 clues: **0 12.1 %, 1 10.4 %, 2 28.5 %, 3 30.3 %, 4 18.7 %**.
+`score()` never raises and never returns a non-binary value on 20 000 random junk strings (worst
+0.17 ms), scores 0 on empty / spaces / newlines / `0` / `1` / `x` / `"1"*100` / a 4000-char junk
+string, and agrees with an independent re-implementation of the stated rule on 8000 mutated
+well-formed answers with **0 disagreements**. `solve()` scores 1 on **3000/3000** fresh seeds.
+
+### Sizes and speed
+
+`score` **501** chars (cap 512), `solve` 874, `generate` 4586 (most of it the design comment).
+Clue <= **182** chars, solution <= 182. `generate` **0.29 ms** average (1.55 ms worst over
+quickcheck's 200 seeds), `solve` 0.08 ms, `score` 0.05 ms.
+`python tools/quickcheck.py challenges/lab/tovel.json --seeds 200` -> **OK**, one warning
+("score accepts the clue itself as a solution") which is the intended `0 bump` foothold and is
+emitted identically by fennick v3, kelmar v3 and norvel v4.
+
+### What a demo-less player can infer, and what still costs a demo
+
+From the clue alone: the answer is *this* calendar page with exactly `n` days changed, and round
+1's free harvest settles **which** days - "the one in the middle of three days running" is the
+only member of the natural selection family that makes exactly `n` edits on every page. What no
+count can reveal, and what every measured blind rendering pays exactly the echo rate for (12.13 %):
+that the day left behind becomes `>` rather than `.`, that the letter reappears on the *first free
+day*, and that two bumps out of one block **queue** instead of piling up. That is the fennick
+split (11 % blind / 95 % with a demo) reproduced by construction: the picture shows *what*
+changes, the demo shows *how*.
+
+### Predicted classification
+
+Tiers: junk 0 %, echo/blind rendering **12.1 %**, the best wrong rule **22.5 %**, the rule 100 %.
+Expect the player who spends a demo here to crack it (one demo shows the queue, the weekend
+landing and four kinds of near-miss at once) and the player who does not to bank the `0 bump`
+clues, i.e. a split near **12 % / 100 %** and a mean around 0.55 - **testing, aimed at
+calibrated**. The risk is now the opposite of v6's: with the selection findable offline the class
+could be cracked *without* a demo by a player who guesses `>`; the measured blind ceiling says
+that costs at least one probing round. Kid rubric should rise from 4.2: the page is a family
+calendar with the appointments already on it, the rule is one breath ("you can't do three days
+running, so the middle one gets pushed to the next free day"), and there is no arithmetic beyond
+counting days along a row.
+Levers if it lands too_easy, in order: (i) count only the landings ("3 land"), so the `>` days are
+not in the checksum; (ii) make the bump jump the weekend (the first free *weekday*), a clause the
+checksum cannot see; (iii) bump only middles that have a free day within three, so a block that
+cannot move stays put. If too_hard: draw one bump into the clue page as a worked instance.
+
+### Arena (NOT run this iteration; the orchestrator opens it)
+```
+pool   $SCRATCH/pool-tovel-7/tovel.json
+setup  python sim/arena.py setup --run lad-tovel-v7-1 --teams tovel7a,tovel7b \
+         --challenge-dir $SCRATCH/pool-tovel-7 --arena-root $SCRATCH/lad-tovel-v7-1
+```

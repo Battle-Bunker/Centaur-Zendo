@@ -8623,6 +8623,21 @@
      },
      "score": 4.17,
      "version": 2
+    },
+    {
+     "advice": "Trim the arithmetic templates (minutes = hour+n, n*hour) and the fold-along-a-diameter one toward purely eye-checkable hand/digit relations.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.33,
+     "version": 3
     }
    ],
    "refined_versions": [
@@ -11297,6 +11312,39 @@
    "kind": "judge",
    "status": "pending",
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "durnel",
+   "id": "players-picture-pool-5",
+   "kind": "players",
+   "members": [
+    "durnel",
+    "basten",
+    "garrow",
+    "molvic",
+    "kelmar",
+    "virel",
+    "fennick"
+   ],
+   "pool": {
+    "basten": 4,
+    "durnel": 2,
+    "fennick": 3,
+    "garrow": 4,
+    "kelmar": 3,
+    "molvic": 1,
+    "virel": 3
+   },
+   "reason": "first finals for durnel v2, basten v4, garrow v4, molvic v1",
+   "run": "lad-durnel-v2-1",
+   "started": 1788595539.1524596,
+   "status": "running",
+   "teams": {
+    "durnel1a": "opus-lowdemo",
+    "durnel1b": "opus-theorist"
+   },
+   "version": 2
   }
  ],
  "profiles": {

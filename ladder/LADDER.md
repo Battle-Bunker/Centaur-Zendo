@@ -126,3 +126,16 @@ candidate), and both players reported the excluded traps by name as "rules the c
 the rates are above target for words/beads/clock and near it for cards/dice. Levers if the next
 pair confirms: 5–6 candidates, always two examples, a larger U. garrow: 0 % even with two demos
 (the theorist read "cut count = fish count − 1"); the tray reads as a fish tank — needs a re-skin.
+Lineup pool run 2, `lad-ospren-v2-1` (ospren/tresk/wisbek/tavrik/dornic/borsel v2 + fennick v3):
+1155 (default) and 945 (kidproxy). fennick 100 %/100 % with a demo again (7 of 8 demo-holders).
+Lineup classes without demos: tavrik 89/89, ospren 87/80, wisbek 85/88, tresk 83/86; with a demo
+dornic 66/63, borsel 59/63. Both players used the same engine: round 1 skip-harvest, round 2
+answer a random candidate (25 % free gold labels — "30× what a demo gives"), then keep the
+predicates true of all positives and of exactly one candidate and pick the *rarest*. Player a
+measured which predicate uniquely explained each known-correct answer, i.e. learned U from ~30
+labels per class. Verdict: tavrik/tresk/wisbek(/ospren) too_easy, dornic/borsel calibrated by
+luck (families "wide and cheap" — several natural rules survive two positives; a kid would call
+borsel unfair). Both players said the fennick "n fall" checksum is the best design touch in the
+pool and asked for more self-checks. Index answers do score on all six (a player claimed not).
+Next: Revision 3 hardening on the too-easy lineup classes (see docs/RULE_FAMILIES.md) — the
+attack to beat is now "learn U from free labels, then rarest surviving in-U predicate".

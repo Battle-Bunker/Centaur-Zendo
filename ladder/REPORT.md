@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 12:28 UTC
+# Ladder report — 2026-09-05 12:57 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -11,7 +11,6 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | basten | 4 | calibrated | 42% | 0.84 | 100% (2) | 13% (4) | 4.5 | 6 | 2 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 12% (16) |
 | borsel | 2 | calibrated | 59% | 0.82 | 58% (3) | 59% (5) | 4.2 | 8 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 42% (2) |
 | kelmar | 3 | calibrated | 60% | 0.80 | 76% (6) | 13% (2) | 4.2 | 8 | 4 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 4% (12) |
-| tavrik | 3 | calibrated | 40% | 0.79 | 26% (1) | 44% (3) | 3.8 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 83% (6) |
 | dornic | 3 | calibrated | 39% | 0.77 | 29% (2) | 48% (2) | 4.3 | 4 | 0 | opus-default,opus-kidproxy | 57% (8) |
 | tresk | 3 | calibrated | 38% | 0.76 | 37% (1) | 38% (5) | 4.5 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 77% (6) |
 | wisbek | 4 | calibrated | 38% | 0.76 | 39% (1) | 37% (3) | 4.3 | 4 | 0 | opus-default,opus-kidproxy | 69% (8) |
@@ -44,7 +43,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | morvin | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 76% (4) |
-| norvel | 5 | testing | - | - | - | - | 3.7 | 0 | 0 | - | 29% (20) |
+| norvel | 6 | testing | - | - | - | - | - | 0 | 0 | - | 29% (20) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
@@ -56,6 +55,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | SPQ | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | SUNZI | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TARE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
+| tavrik | 4 | testing | - | - | - | - | 4.5 | 0 | 0 | - | 65% (10) |
 | TOPPLE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | trico | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TWINE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

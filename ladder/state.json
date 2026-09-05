@@ -7229,6 +7229,21 @@
      },
      "score": 3.67,
      "version": 5
+    },
+    {
+     "advice": "Add a one-line glyph legend or a bolder grid so the notation reads as a drum tab on first look.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 3,
+      "object": 3,
+      "rule_statable": 5
+     },
+     "score": 3.83,
+     "version": 6
     }
    ],
    "refined_versions": [
@@ -15840,6 +15855,30 @@
     "tovel4b": "opus-kidproxy"
    },
    "version": 7
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v6-de0b",
+   "kind": "players",
+   "status": "pending",
+   "version": 6
+  },
+  {
+   "agents": 2,
+   "class": "tavrik",
+   "id": "players-tavrik-v4-38bb",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "judge-norvel-v6-f1ba",
+   "kind": "judge",
+   "status": "pending",
+   "version": 6
   }
  ],
  "profiles": {

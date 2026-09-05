@@ -860,8 +860,8 @@ draw, n ≈ 150 per template, so ±4).
 | 11 | **IN** (slope) | it has a double letter | — | .170 | **1.00** | 87 % |
 | 12 | **IN** (slope) | it ends with *c* | d g l n r s t y | .028–.116 | **1.00** | 82 % |
 | — | **EXCLUDED in v4** | the first and last letters are exactly *n* apart in the alphabet (v3 T0, 4 rules) | n = 1–4 | .058–.089 | .08–.13 | retired: **counts alphabet steps** |
-| — | **EXCLUDED in v4** | a letter comes back after exactly one / two other letters (v3 T1, T2) | — | .101/.123 | .24/.29 | retired: **counts positions** |
-| — | **EXCLUDED in v4** | the first / last letter is the earliest / latest in the alphabet of all its letters (v3 T4–T7) | — | .169–.268 | .35–.49 | retired: **an alphabet scan over up to seven letters** |
+| — | **EXCLUDED in v4** | a letter comes back after exactly one / two other letters (v3 T1, T2) | — | .153/.163 | .24/.29 | retired: **counts positions** |
+| — | **EXCLUDED in v4** | the first / last letter is the earliest / latest in the alphabet of all its letters (v3 T4–T7) | — | .191–.227 | .35–.49 | retired: **an alphabet scan over up to seven letters** |
 | — | EXCL (as v3) | contains every letter the examples share · at least / at most as many vowels as the least / most vowelly example · more consonants than vowels · starts with a consonant · the 2nd letter is a vowel / a consonant · the same number of letters · no letter is repeated · the same first letter · it rhymes · two vowels side by side · it ends with a vowel / a consonant · **all of v2's universe** | | | | the kid traps |
 
 **Read aloud, all thirteen:** *the 2nd letter and the 2nd-from-last letter are the same · the back
@@ -1052,8 +1052,9 @@ distinct candidates 500/500 · no candidate equal to an example 500/500 · match
 500/500 · examples per clue 2 → 1975, 3 → 25 · candidate length 4/5/6/7 → 115/124/123/138 of 500 ·
 true-candidate position 104/98/92/98/108 of 500 · template mix 26–50 of 500 (5.2–10.0 %) ·
 true-candidate rank in the rarity order 254/142/82/22/0 of 500 and in the count order
-160/119/118/61/42 — **on the nine relational templates the rarity rank is 134/157/97/30/1
-(rank 0 in 32 %, against v3's 33 % overall); on the four slope templates it is rank 0 in 93 %,
+160/119/118/61/42 — **on the nine relational templates the rarity rank is 116/131/82/22/0
+(rank 0 in 33 %, exactly v3's overall figure); on the four slope templates it is 138/11/0/0/0,
+rank 0 in 93 %,
 which is unaimable by construction and is precisely what makes them the slope** ·
 **0 duplicate clues and 0 fallback clues over 2000 seeds**.
 

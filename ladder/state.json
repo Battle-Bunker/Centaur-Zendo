@@ -9321,7 +9321,7 @@
    ]
   },
   "tavrik": {
-   "current_version": 3,
+   "current_version": 4,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -9357,7 +9357,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -9726,7 +9727,7 @@
      "version": 3
     }
    ],
-   "status": "calibrated",
+   "status": "testing",
    "versions": [
     {
      "added": 1788575982.3877316,
@@ -9745,6 +9746,12 @@
      "file": "challenges/lab/tavrik.json",
      "note": "Revision 3: relational U (18 templates/41 rules), k=5, minimal pair, decoys aimed in the attacker's rarity order; simulated attacker 40-44% at any label count",
      "v": 3
+    },
+    {
+     "added": 1788611644.3495467,
+     "file": "challenges/lab/tavrik.json",
+     "note": "trim: counted relations retired (alphabet distance, comes-back-after-n, earliest/latest letter); 13 templates/33 rules; simulated attacker 45-52%",
+     "v": 4
     }
    ]
   },
@@ -15715,7 +15722,7 @@
    "kind": "refiner",
    "reason": "calibrated on rate (40%) but kid 3.83: drop counted relations (alphabet distance, comes-back-after-n) for eye-checkable ones",
    "started": 1788609426.7565873,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

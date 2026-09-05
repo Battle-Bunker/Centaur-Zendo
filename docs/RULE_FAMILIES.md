@@ -108,3 +108,142 @@ Rules for the lineup:
    satisfies the most predicates from a broad outside pool; pick the candidate satisfying every
    rule in U that the examples allow (the in-U intersection — must be 100 %); pick by each excluded
    rule; a player who knows U minus its two rarest templates; the true rule.
+
+## Revision 3 (2026-09-05): beat the free-label attack
+
+**What runs 1 and 2 of the lineup pool showed.** Four Opus centaurs met the six lineup classes in
+`lad-tresk-v2-1` and `lad-ospren-v2-1`. They spent **no demo** on the good ones and scored tavrik
+85/96/89/89 %, tresk 79–86, wisbek 77–88, ospren 80–87; only dornic (59–66) and borsel (58–65) sat
+on target, and only because their families are wide and cheap — several natural rules survive two
+positives, which the players fairly called unfair. Both revision-2 defences were anticipated and
+both lost.
+
+**The attack to beat**, in the players' own words (`ospren1a`, `ospren1b`, `tresk1b` NOTES):
+
+1. **Round 1: skip everything** — ~300 clues per class harvested free; that is the base-rate corpus.
+2. **Round 2: answer a RANDOM candidate on every item.** With k candidates, 1/k come back correct:
+   **~30 gold-labelled clues per class, for nothing** — "30× what a demo gives". A demo is one
+   worked example; a round of random guessing is thirty. *This is the number that broke revision 2:
+   the lineup that made the answer a choice also made every wrong guess a labelled datum.*
+3. **Per clue**: enumerate 60–350 cheap predicates over the instance; keep those true of every
+   example and of **exactly one candidate**; weight by rarity (`freq^-2.5 / satisfiers^6`, or
+   −log base rate); answer the candidate the **rarest** survivor points at.
+4. **Learn U from the labels**: measure which predicate was the *unique explanation* of each
+   known-correct answer. ospren1a's learned list for tavrik was our U almost rule for rule, with
+   the complement written out: "does not use word length, vowel count, palindromes, suffixes,
+   semantics." Once U is learned the in-U intersection is 100 % and the lineup is a lookup.
+
+**The diagnosis.** Matched trap profiles (§5b) and rarity-aware decoys (§5c) both failed for one
+reason: **every rule of a revision-2 U was itself a cheap predicate in the attacker's bank.**
+Measured for tavrik against a 627-predicate reconstruction of the three player banks, every rule of
+v2's U had best Jaccard **0.97–1.00**. When the truth is in the bank *and* is by construction the
+rarest thing the examples share, no amount of decoy matching helps: the truth is the answer to a
+question the attacker already knows how to ask.
+
+**The fix, in one line: put U outside the bank.** Make the rules **relations between two elements
+or two positions** of the instance instead of properties of one element — and aim the decoys at the
+attacker's *rarity* order rather than his count.
+
+### Levers, measured on tavrik v3 (identical conditions, 400 clues, 60 free labels)
+
+| build | k | floor | simulated attack |
+|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **40.8 %** |
+| minus lever 3: v2's own universe | 4 | 25 % | **98.0 %** |
+| minus lever 5: decoys not aimed | 5 | 20 % | 54.2 % |
+| minus lever 1: k = 4 | 4 | 25 % | 47.8 % |
+| minus lever 2: three-example clues | 5 | 20 % | 44.2 % |
+| lever 1 pushed: k = 6 | 6 | 16.7 % | 40.0 % |
+
+**Worked.**
+* **Lever 3 — a universe of RELATIONS (≈ 41 points, the whole game).** 15 of tavrik v3's 18
+  templates relate two letters or two places: *the first and last letters are exactly n apart in
+  the alphabet · a letter comes back after exactly one other letter · the 2nd letter and the
+  2nd-from-last letter are the same · the first letter is the earliest in the alphabet of all its
+  letters · the back half has more vowels than the front half · the first vowel is an e · the
+  vowels go up the alphabet*. Best Jaccard against the 627-predicate bank: **0.08–0.75** (v2:
+  0.97–1.00). They are still one-breath kid sentences — a kid is *good* at looking at two letters
+  at once, and a predicate bank is bad at it.
+* **Lever 5 — aim the RARITY order, not the count (≈ 13 points).** Revision 2 aimed the true
+  candidate's rank on the *number* of surviving outside predicates. No player used that statistic.
+  Both used **the rarest predicate that selects exactly one candidate**. So: carry the attacker's
+  bank inside `generate`, intersect it over the examples, compute for every candidate the surprise
+  of the rarest bank predicate that picks it *alone*, and aim the true candidate's rank in **that**
+  order at a uniformly random place (then the count order, then the mutual-similarity order, as
+  secondary aims). This works only once lever 3 is in place: when the truth's rule is not
+  expressible in the bank, the truth's cheapest explanation is an accident of exactly the same kind
+  as a decoy's, and a decoy carrying one at least as rare can always be found.
+* **Lever 1 — five candidates (≈ 7 points).** Floor 20 %, one more decoy that must carry a rare
+  example-consistent explanation, and a predicate is less likely to select uniquely. **k = 6 buys
+  nothing** (−0.8, inside noise) and costs a clue line and a kid's patience. Five is the number.
+* **Lever 2 — always the minimal example set, a PAIR wherever one exists (≈ 3 points).** tavrik v3
+  is 99.8 % two-word clues. Every extra example is free information for the attacker's
+  intersection and buys the designer nothing once U is an antichain.
+* **Keep §5b.** Matched trap profiles now hold in the strong form: over 500 clues **all 3001 fitted
+  traps are satisfied by all five candidates or by none**, so a player whose universe is U *plus*
+  the excluded rules is worth exactly a player who knows U.
+
+**Did not work / not used.**
+* **Lever 4 (skew the draw toward the rare part of U) — dropped.** Once the rarity *order* is
+  aimed, the truth's own base rate carries no signal, so skewing the draw only distorts the mix a
+  kid feels. Measured: the truth's rank in the rarity order is uniform by construction; nothing
+  left to buy.
+* **Rules with density > .5** (e.g. "a letter and the very next letter of the alphabet are both in
+  the word", .603) look attractive as anti-rarity rules but are unusable in a lineup: with five
+  candidates, four decoys all *lacking* a common property is itself a signature.
+* **Length-conditioned templates** ("the middle letter is a vowel", odd words only) leak through
+  the lineup, because all candidates share a length.
+* **Competitor-only templates** (§Revision 2, "exactly n vowels") turned out to be unnecessary once
+  the loose vowel-count cousins are pure traps: dropping them shortened the clue to two words.
+* **More labels stop paying.** The point of the design is the *shape* of the curve: tavrik v3 goes
+  39.6 % (0 labels) → 42.2 (30) → 42.4 (60) → 44.2 (240), i.e. flat, where v2 went 91.2 → 97.6 →
+  98.0 → 99.4. Free labels are only worth something if the vocabulary can express U.
+
+**The ceiling stays where it belongs.** The in-U intersection is **100.0 %** on v3. An attacker
+handed the bank *plus* all of U scores 79.8 / 88.0 / 95.6 / 99.2 % at 0 / 30 / 60 / 120 labels and
+learns 90 % of U in ~360 labels. With the generic bank alone, U-coverage can never pass the cheap
+templates (24.6 % of tavrik's clues). The gap 42 % → 96 % **is** the class: it is paid for by
+inventing the right vocabulary, which is the insight the ladder wants to reward.
+
+### Recipe for the other five lineup classes
+
+tresk (beads), wisbek (clock), ospren (5×5 pictures), dornic (cards), borsel (dice) should each
+run this, in order:
+
+1. **Rebuild the attacker's bank for your world** from the players' own code — their feature banks
+   are in `sim/results/lad-tresk-v2-1/players/*/strategy.py` and
+   `sim/results/lad-ospren-v2-1/players/*/{strategy.py,features.py}` — and add the obvious
+   extensions. 200–650 realised (key, value) predicates.
+2. **Score every rule of your U against it by Jaccard** over your instance pool. **Any rule with
+   J > 0.8 is a gift.** Retire it to the trap list.
+3. **Replace it with a relation between two elements or two positions**, still one breath:
+   * *tresk*: the two ends are different colours · the 2nd bead matches the 2nd-from-last · there
+     are exactly n beads between the two greens · every red has a blue right after it · the back
+     half has more reds than the front half · the longest run is the colour it starts with.
+   * *wisbek*: the two minute digits differ by n · the hour is one of the minute digits · the
+     minute digits add up to the hour · the second minute digit is bigger than the first.
+   * *ospren*: every filled cell has a filled cell directly below it · the top row and the bottom
+     row are the same · row n matches column n · the left half holds as many marks as the right.
+   * *dornic*: the highest card is a heart · two cards are next to each other in value · there are
+     as many hearts as spades · the first and last card share a colour.
+   * *borsel*: two dice differ by exactly n · the biggest die is the last one · the first two add
+     up to the last · no two dice are next to each other in value.
+4. **Keep two or three CHEAP templates on purpose, at double draw weight** (~25 % of clues) as the
+   learnable slope and as continuity with your v2. Without them the attack sits at the floor and
+   the class reads as arbitrary; with them it sits at ~40 % and rewards labels.
+5. **k = 5 candidates**, one length/size, minimal example set, **pair first**.
+6. **Verify the antichain** over the example pool *and* the full instance universe.
+7. **Aim three orders** in `generate` (rarity first, then count, then mutual similarity) and keep
+   §5b's matched trap profiles; check the strong form (every fitted trap all-or-none).
+8. **Simulate the attack before shipping.** The witness table for revision 3 must add:
+   the full engine (skip-harvest base rates → random-candidate labels → per-predicate
+   unique-explanation weights → rarity-weighted pick) at **0 / 30 / 60 / 120 / 240 labels**; the
+   same engine with a bank that also contains all of U (the honest ceiling); the **in-U
+   intersection, which must be 100 %**; the number of labels to learn U to 90 % coverage; and the
+   lever ablation (k, aiming on/off, example count).
+   **Target: 35–55 % at 30–60 labels**, and a curve that is flat in the number of labels. The
+   simulator is a *lower* bound on a real Opus centaur — on tavrik v2 it scored 91–98 % where they
+   scored 85–96 % — so aim at the middle of the band, not the bottom.
+9. **Re-read the rules aloud.** If a 12-year-old cannot check a candidate against the rule by hand
+   in a few seconds, the relation is too clever. "The second letter and the second-from-last letter
+   are the same" passes; "the letters' alphabet positions sum to a multiple of the length" does not.

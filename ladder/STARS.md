@@ -347,3 +347,30 @@ in and turns round". The judge's 4.17 docks it for a busy road; the lever is few
 demo. **Reflection.** Durnel is the cleanest case of the two halves of the checksum design: the
 caption gives away *which* lorries, and only the demo shows *where they go*. Make the second half
 carry the rule and the class is calibrated; leave it guessable and the class is a lookup.
+
+## The lineup family at Revision 3 — kaldrin, mestrel, dornic v3, wisbek v4 (calibrated 2026-09-05)
+
+Seven rule-family classes now sit in the band with two or three Opus finals each and kid scores
+of 4.2–4.5: words (tavrik, rate only — kid 3.8, trim in progress), beads (tresk), clock times
+(wisbek), 5×5 pictures (ospren), card hands (dornic), dice (borsel), dominoes (mestrel) and a goods
+train (kaldrin). Means: kaldrin 49 %, ospren 47, borsel 59, dornic 39, tresk 38, wisbek 38,
+mestrel 34. The two newest universes were designed straight to the recipe: **mestrel** (a line of
+dominoes; "every double is at one of the two ends", "the right-hand numbers never go down",
+"the two end halves match"; the proper chain is the loudest trap) and **kaldrin** (an engine and
+wagons of coal, logs, milk, pigs, sand, wool, each heaped or flat; "every heaped wagon is at one
+of the two ends", "every flat wagon is coupled to a wagon carrying the same load" — rules that
+join a wagon's load to its heap, which a feature bank holds one at a time and cannot combine).
+
+**What the players say, every time.** "The kid answer — that one has a domino with the same number
+twice on it — was the rule"; "a child looks at where the hands point, which is exactly the family;
+I spent two rounds on digits and scored 6 %"; "the best moment was realising the uniqueness
+constraint alone is a supervision signal". That last one is the honest ceiling: a player who
+invents the vocabulary reaches 100 %, a player who enumerates cheap features sits at 35–55 %.
+
+**Reflection.** The paradigm the organiser asked for — a seed-generated rule from a family, a
+minimal identifying example set, players learning which rules the class never uses — needed three
+revisions to survive contact with Opus: construct-an-answer was beaten by predicate intersection,
+the first lineup by free-label learning of the universe, and only a universe of *relations that a
+kid sees and a bank cannot express* holds. The players' own complaint about the last pool —
+seven lineup classes together make the demo decision trivial — is the reason the collection mixes
+the two paradigms in every real game.

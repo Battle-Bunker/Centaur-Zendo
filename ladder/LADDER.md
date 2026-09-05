@@ -238,3 +238,12 @@ as intended — the caption gives away the selection, the demo sells the renderi
 the optimal demo policy "demo the class you understand best", which the player asked us to keep
 and tell nobody. durnel v2 reaches `calibrated` (69 % with a demo over 3, 10 % without over 5;
 kid 4.2) and is promoted. The kidproxy player asked for a more evocative felsim verb ("topple").
+Lineup pool run 5, `lad-wisbek-v4-2` (wisbek v4, dornic v3, mestrel v1, kaldrin v1, borsel v2, ospren
+v3, tresk v3): 334 (default) and 334 (kidproxy) — a tie at 47 %. Per class (default/kidproxy):
+borsel 67/54, kaldrin 62/58, ospren 53/53, mestrel 41/34, wisbek 39/34, tresk 37/38, dornic 34/54.
+All seven lineup classes are now `calibrated` with kid ≥ 4.2; kaldrin, dornic v3, wisbek v4 and
+mestrel promoted to challenges/. Both players again said the kid reading beat their arithmetic
+("that one has a domino with the same number twice on it"; "a kid looks at the hands, not at h
+and m"). Both complained the pool was homogeneous (seven lineup classes) so demos were nearly
+worthless — the real collection mixes paradigms, and the next pools do too. Watch borsel/kaldrin
+(59 %/49 % means, their cheap templates carry the crack) — the lever is single weight on those.

@@ -2136,6 +2136,79 @@
      "run": "lad-tavrik-v3-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 72,
+       "final_presented": 107,
+       "final_rate": 0.6728971962616822,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         26
+        ],
+        [
+         14,
+         25
+        ],
+        [
+         14,
+         20
+        ],
+        [
+         10,
+         18
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 58,
+       "final_presented": 108,
+       "final_rate": 0.5370370370370371,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         22
+        ],
+        [
+         11,
+         19
+        ],
+        [
+         6,
+         21
+        ],
+        [
+         8,
+         18
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": false,
+     "version": 2
     }
    ],
    "status": "calibrated",
@@ -2801,9 +2874,82 @@
      "run": "lad-dornic-v3-1",
      "target": true,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 35,
+       "final_presented": 104,
+       "final_rate": 0.33653846153846156,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         23
+        ],
+        [
+         5,
+         21
+        ],
+        [
+         5,
+         16
+        ],
+        [
+         10,
+         25
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 57,
+       "final_presented": 106,
+       "final_rate": 0.5377358490566038,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         29
+        ],
+        [
+         4,
+         16
+        ],
+        [
+         14,
+         26
+        ],
+        [
+         9,
+         14
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788567950.2991617,
@@ -5164,9 +5310,82 @@
      "run": "lad-dornic-v3-1",
      "target": false,
      "version": 1
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 53,
+       "final_presented": 86,
+       "final_rate": 0.6162790697674418,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         20
+        ],
+        [
+         6,
+         23
+        ],
+        [
+         12,
+         20
+        ],
+        [
+         9,
+         18
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 52,
+       "final_presented": 89,
+       "final_rate": 0.5842696629213483,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         27
+        ],
+        [
+         4,
+         14
+        ],
+        [
+         7,
+         14
+        ],
+        [
+         9,
+         19
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": false,
+     "version": 1
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788604795.5648835,
@@ -6088,9 +6307,82 @@
      "run": "lad-dornic-v3-1",
      "target": false,
      "version": 1
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 40,
+       "final_presented": 98,
+       "final_rate": 0.40816326530612246,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         26
+        ],
+        [
+         6,
+         20
+        ],
+        [
+         5,
+         18
+        ],
+        [
+         11,
+         25
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 34,
+       "final_presented": 99,
+       "final_rate": 0.3434343434343434,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         22
+        ],
+        [
+         4,
+         16
+        ],
+        [
+         4,
+         13
+        ],
+        [
+         5,
+         10
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": false,
+     "version": 1
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788600798.3773894,
@@ -8325,6 +8617,79 @@
       "wisbek"
      ],
      "run": "lad-dornic-v3-1",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 56,
+       "final_presented": 105,
+       "final_rate": 0.5333333333333333,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         22
+        ],
+        [
+         11,
+         22
+        ],
+        [
+         11,
+         25
+        ],
+        [
+         7,
+         15
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 57,
+       "final_presented": 107,
+       "final_rate": 0.5327102803738317,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         22
+        ],
+        [
+         10,
+         20
+        ],
+        [
+         12,
+         19
+        ],
+        [
+         5,
+         15
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
      "target": false,
      "version": 3
     }
@@ -10916,6 +11281,79 @@
      "run": "lad-dornic-v3-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 43,
+       "final_presented": 117,
+       "final_rate": 0.36752136752136755,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         16
+        ],
+        [
+         4,
+         16
+        ],
+        [
+         7,
+         16
+        ],
+        [
+         6,
+         20
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 45,
+       "final_presented": 119,
+       "final_rate": 0.37815126050420167,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         19
+        ],
+        [
+         7,
+         17
+        ],
+        [
+         4,
+         15
+        ],
+        [
+         6,
+         14
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "calibrated",
@@ -12263,9 +12701,82 @@
      "run": "lad-dornic-v3-1",
      "target": false,
      "version": 4
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 35,
+       "final_presented": 89,
+       "final_rate": 0.39325842696629215,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         22
+        ],
+        [
+         1,
+         18
+        ],
+        [
+         8,
+         17
+        ],
+        [
+         6,
+         18
+        ]
+       ],
+       "team": "wisbek2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 31,
+       "final_presented": 90,
+       "final_rate": 0.34444444444444444,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         24
+        ],
+        [
+         6,
+         19
+        ],
+        [
+         7,
+         17
+        ],
+        [
+         8,
+         23
+        ]
+       ],
+       "team": "wisbek2b"
+      }
+     ],
+     "pool": [
+      "borsel",
+      "dornic",
+      "kaldrin",
+      "mestrel",
+      "ospren",
+      "tresk",
+      "wisbek"
+     ],
+     "run": "lad-wisbek-v4-2",
+     "target": true,
+     "version": 4
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788576965.7567341,
@@ -15233,7 +15744,7 @@
    "reason": "second finals for wisbek v4, dornic v3, mestrel v1, kaldrin v1",
    "run": "lad-wisbek-v4-2",
    "started": 1788609584.1985168,
-   "status": "running",
+   "status": "done",
    "teams": {
     "wisbek2a": "opus-default",
     "wisbek2b": "opus-kidproxy"
@@ -15253,12 +15764,53 @@
   {
    "agents": 1,
    "class": "new-15",
+   "direction": "playground and table games (second pass, checksum-caption house style)",
    "id": "designer-new-15-man",
    "kind": "designer",
-   "version": null,
-   "status": "running",
    "started": 1788611154.7084854,
-   "direction": "playground and table games (second pass, checksum-caption house style)"
+   "status": "running",
+   "version": null
+  },
+  {
+   "agents": 2,
+   "class": "norvel",
+   "id": "players-norvel-v5-c4a9",
+   "kind": "players",
+   "status": "pending",
+   "version": 5
+  },
+  {
+   "agents": 0,
+   "class": "tovel",
+   "id": "players-mixed-pool-9",
+   "kind": "players",
+   "members": [
+    "tovel",
+    "felsim",
+    "garrow",
+    "molvic",
+    "kaldrin",
+    "mestrel",
+    "borsel"
+   ],
+   "pool": {
+    "borsel": 2,
+    "felsim": 1,
+    "garrow": 7,
+    "kaldrin": 1,
+    "mestrel": 1,
+    "molvic": 3,
+    "tovel": 7
+   },
+   "reason": "mixed paradigms: finals for tovel v7, felsim v1, garrow v7 with demo-holders; borsel/kaldrin cheap-template watch",
+   "run": "lad-tovel-v7-4",
+   "started": 1788611344.9063022,
+   "status": "running",
+   "teams": {
+    "tovel4a": "opus-default",
+    "tovel4b": "opus-kidproxy"
+   },
+   "version": 7
   }
  ],
  "profiles": {

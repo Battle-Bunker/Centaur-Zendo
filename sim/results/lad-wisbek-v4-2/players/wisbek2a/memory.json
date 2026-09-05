@@ -1,0 +1,795 @@
+{
+ "rounds_played": 5,
+ "examples": {
+  "tresk": [
+   {
+    "clue": "RGRRRRRRB\nBGRGRGRB\n\nGRRGRGBBG\nRGBGBBRRR\nRRRBBGBRR\nGBRRRRBBG\nGRBBBRRRR",
+    "answer": "RGRRRRRRB\nBGRGRGRB\n\nGRRGRGBBG\nRGBGBBRRR\nRRRBBGBRR\nGBRRRRBBG\nGRBBBRRRR",
+    "score": 0
+   },
+   {
+    "clue": "RGRBGRGG\nRRGBRGBR\n\nBRBBGGGGGR\nGBBBRBBBRG\nBGGRRGGBBB\nGGGBBBBGRG\nBGBBBGGRRG",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "BRGRRGG\nBGGRRGRGB\n\nGRBBBGR\nGBBRBBB\nRGBGBBB\nGGRRBBB\nRBGBBBR",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "BGRRRRRGB\nGBRBBRRRR\n\nGRRRGBRGRG\nGRRBRRGRRG\nRRBGRRRGRG\nBRRRRGRRRR\nRRRBGRRRGR",
+    "answer": "BGRRRRRGB\nGBRBBRRRR\n\nGRRRGBRGRG\nGRRBRRGRRG\nRRBGRRRGRG\nBRRRRGRRRR\nRRRBGRRRGR",
+    "score": 0
+   },
+   {
+    "clue": "GRGBBBR\nBGGGGRBR\n\nRBGGRBB\nRGRBBGG\nRBRBGGG\nBBRBRGG\nGRGGRBB",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "RRRGGGRBRR\nGGGBGRRGGB\n\nBBRGBRB\nBBGBRRB\nRGBBRRR\nGRRBBBR\nGRRBBRG",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "GBGRBRGRGB\nRRRRBGGRR\n\nBGGGGBB\nGBBGGGG\nGGBBBGG\nGGGGBBB\nGBBGGBG",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "GBBBBBBG\nBGRRBGRGGB\n\nBBGRBRBGBG\nGRBRBGBGGB\nRGRBGGBRBG\nRRBGGBGGGB\nGRBBRGGBGB",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "RRGGRGBBB\nGRBRBRBBBR\n\nGRRRRBG\nBRGRRRR\nGBRRRRR\nRRRRBGR\nRBRRRRG",
+    "answer": "RRGGRGBBB\nGRBRBRBBBR\n\nGRRRRBG\nBRGRRRR\nGBRRRRR\nRRRRBGR\nRBRRRRG",
+    "score": 0
+   },
+   {
+    "clue": "GBRRBBGGB\nGBGBGGRGB\n\nGRBGBBGBB\nGRBGBRGGB\nGBBGRBGGB\nGBGGRGGBB\nGRGBBGGRB",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "BGBRRRRGG\nBRRRBGG\n\nBGRGBRB\nBRGGRGB\nBGBRBGR\nBGGGRBR\nBRGRBGB",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "RGBRGGGRRB\nGGRGRG\n\nGGBRBGGB\nGRGBGGGB\nGGBGGRGG\nGBGGGRBG\nGRBGGBGG",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "GBGGBBRBB\nBBGBGBGGB\n\nBRBRGRBBBB\nBBBRBGRBGB\nGRBBBBGRBB\nRBBBGRBRGB\nGGBRBBBRBB",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "BBBGBRRBB\nBGGRGRGBBG\n\nBBGGRRR\nBGRRBRR\nBRRGBRG\nBGGGRRG\nBGRRRBG",
+    "answer": "BBBGBRRBB\nBGGRGRGBBG\n\nBBGGRRR\nBGRRBRR\nBRRGBRG\nBGGGRRG\nBGRRRBG",
+    "score": 0
+   },
+   {
+    "clue": "GRBBRGGRG\nBGRGBGGGB\n\nRRRRRGGGB\nGRRRRRGBR\nBRRRRGGRG\nRRRRRBRGG\nRRRRBRGGG",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "RRBBBR\nGBBBRRBRR\n\nRBGRGRR\nGRGRBBR\nBRRGRRR\nRGRBGBR\nRGRRGBR",
+    "answer": null,
+    "score": 0
+   }
+  ],
+  "mestrel": [
+   {
+    "clue": "[3|3][3|2][3|2][3|3]\n[0|0][1|5][3|6][2|6][2|3][4|3]\n\n[1|1][5|6][6|6][3|3][4|4][0|0]\n[6|6][1|5][6|0][4|1][2|5][5|5]\n[6|6][5|5][1|5][1|3][1|0][4|4]\n[0|0][1|1][4|2][1|3][4|5][5|3]\n[0|0][5|1][6|6][6|2][3|1][0|0]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[1|2][5|1][0|6][4|0]\n[1|4][2|0][1|2][6|3][3|6][5|4][2|3]\n\n[3|0][2|3][6|4][3|6][4|3]\n[2|2][0|4][1|0][4|2][6|6]\n[0|1][6|2][2|4][4|0][2|4]\n[4|1][6|4][4|0][6|0][0|2]\n[4|1][4|6][0|0][2|6][2|6]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[6|4][6|6][6|4][6|4]\n[2|5][2|5][4|2][0|2][2|2][2|2]\n\n[2|6][6|0][2|0][2|6][0|6][6|0][6|6]\n[5|6][5|5][5|5][5|6][5|3][3|3][6|3]\n[0|5][3|0][0|5][5|3][0|5][3|5][5|5]\n[2|0][2|0][2|2][0|2][0|2][2|3][2|0]\n[5|6][6|6][6|5][6|0][0|5][6|5][6|5]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[6|6][6|2][2|3][4|4][3|1][1|2]\n[0|6][1|5][5|1][1|5][3|6]\n\n[2|6][6|2][2|4][1|5][5|2][2|0][0|3]\n[3|4][3|5][3|5][2|1][2|6][6|3][3|0]\n[6|6][5|5][5|4][4|3][2|2][2|1][0|0]\n[1|4][2|3][2|2][0|5][5|6][6|4][3|6]\n[6|4][5|3][3|0][0|3][2|1][0|6][3|6]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|6][4|4][2|2][0|0][0|3][0|6]\n[3|6][2|2][5|6][5|5][0|2]\n\n[4|3][0|5][4|4][5|0][3|4]\n[0|5][5|5][0|5][3|5][6|5]\n[5|3][0|3][5|3][2|3][3|0]\n[3|0][0|0][3|0][0|2][0|5]\n[0|5][5|5][5|1][5|3][5|1]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[2|0][0|4][0|0][2|0]\n[3|0][3|0][3|4][4|3]\n\n[0|2][2|6][2|5][2|2][2|6]\n[3|3][1|3][2|3][3|3][3|5]\n[5|2][2|3][3|3][3|6][6|3]\n[6|1][1|2][5|1][6|1][5|1]\n[1|6][1|2][0|1][1|2][1|2]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[3|5][3|5][0|3][1|1]\n[6|6][6|2][2|4][4|1][1|5][5|3][5|5]\n\n[4|2][0|5][2|2][6|0][3|0][1|1][1|3]\n[2|1][4|4][4|4][3|2][0|4][6|5][2|1]\n[2|2][5|0][6|3][4|0][1|6][1|4][4|6]\n[4|6][6|6][3|2][4|2][5|4][4|1][0|1]\n[6|0][6|3][5|1][0|3][1|6][6|6][2|4]",
+    "answer": "[3|5][3|5][0|3][1|1]\n[6|6][6|2][2|4][4|1][1|5][5|3][5|5]\n\n[4|2][0|5][2|2][6|0][3|0][1|1][1|3]\n[2|1][4|4][4|4][3|2][0|4][6|5][2|1]\n[2|2][5|0][6|3][4|0][1|6][1|4][4|6]\n[4|6][6|6][3|2][4|2][5|4][4|1][0|1]\n[6|0][6|3][5|1][0|3][1|6][6|6][2|4]",
+    "score": 0
+   },
+   {
+    "clue": "[0|0][0|5][0|2][1|4][2|4][3|0][4|4]\n[6|5][5|2][5|6][3|6][6|6]\n\n[4|4][3|2][2|1][1|1][0|0]\n[0|0][1|3][4|3][2|0][0|0]\n[1|2][1|4][4|3][1|1][6|6]\n[6|4][4|3][3|2][2|2][1|1]\n[1|2][2|2][3|3][3|4][6|6]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[3|2][0|2][5|0][2|3][6|3]\n[2|1][5|2][2|3][2|4][0|2]\n\n[4|6][1|6][5|0][0|3][3|2][3|3]\n[0|1][2|4][3|4][0|5][5|6][3|6]\n[0|1][0|2][4|6][3|3][5|0][0|6]\n[0|0][2|2][1|4][3|6][6|6][5|0]\n[0|0][6|0][2|6][5|4][3|1][6|5]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|1][5|0][5|5][5|0][5|3]\n[5|5][6|5][2|5][5|5][0|5]\n\n[6|3][3|3][3|6][3|6][0|3][5|3]\n[3|2][2|2][2|0][2|2][5|2][2|0]\n[1|6][4|6][6|0][6|6][1|6][6|6]\n[0|0][0|2][2|0][0|4][4|4][4|1]\n[0|1][3|0][0|3][0|0][4|0][0|0]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|4][2|0][6|1][3|5][5|1][5|3]\n[1|0][4|0][4|0][2|0]\n\n[1|1][1|4][0|6][0|0][4|6][0|4][3|5]\n[5|0][6|1][4|3][3|4][3|0][5|0][0|4]\n[4|3][3|5][5|5][5|0][0|6][6|1][1|5]\n[0|0][1|1][6|6][0|1][6|1][3|4][5|1]\n[4|3][4|0][1|5][1|4][6|4][1|1][3|4]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[0|3][0|0][3|5][5|6][0|2]\n[1|6][6|6][1|1][1|6]\n\n[6|2][2|3][4|1][2|5]\n[3|0][4|2][2|5][5|6]\n[4|6][6|0][1|3][3|5]\n[6|2][3|1][4|6][6|5]\n[6|2][5|4][4|0][4|1]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[6|0][0|4][2|4][4|4][2|0][4|0][6|0]\n[4|2][1|0][6|5][6|6][0|5]\n\n[0|0][2|6][4|4][5|5][5|5][6|3]\n[3|4][4|2][0|0][4|1][4|6][6|4]\n[6|1][2|4][0|4][6|2][5|5][0|0]\n[3|1][0|6][1|4][3|3][2|0][6|6]\n[0|2][6|6][4|4][0|0][1|0][3|3]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[1|6][4|0][1|4][3|2][0|4][5|0][3|4]\n[3|4][4|0][0|6][6|1][2|5][4|2]\n\n[1|2][3|1][0|1][4|4][1|5][0|1]\n[4|3][5|0][0|3][3|4][5|1][2|2]\n[5|0][2|3][1|5][2|0][4|3][5|2]\n[0|5][0|1][0|4][4|5][1|2][0|3]\n[3|4][5|3][0|4][2|0][1|3][3|1]",
+    "answer": "[1|6][4|0][1|4][3|2][0|4][5|0][3|4]\n[3|4][4|0][0|6][6|1][2|5][4|2]\n\n[1|2][3|1][0|1][4|4][1|5][0|1]\n[4|3][5|0][0|3][3|4][5|1][2|2]\n[5|0][2|3][1|5][2|0][4|3][5|2]\n[0|5][0|1][0|4][4|5][1|2][0|3]\n[3|4][5|3][0|4][2|0][1|3][3|1]",
+    "score": 0
+   },
+   {
+    "clue": "[0|0][0|1][1|1][1|2][2|3][3|4][6|6]\n[5|3][6|6][5|5][4|5][3|5]\n\n[6|6][6|6][5|4][2|1][1|1]\n[6|6][2|2][5|6][4|2][4|3]\n[2|4][1|0][0|4][1|1][6|6]\n[4|4][1|6][4|4][5|6][1|2]\n[5|5][4|1][6|6][0|6][0|1]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[4|5][5|3][3|6][6|1][1|1][4|6]\n[5|0][0|3][3|4][4|1][1|3][3|0][0|6]\n\n[3|6][6|3][3|5][6|2][3|1]\n[3|5][3|0][6|3][3|2][3|3]\n[2|5][5|3][0|5][5|3][0|6]\n[1|0][5|3][6|5][6|3][0|0]\n[0|0][2|3][3|3][6|5][6|6]",
+    "answer": "[4|5][5|3][3|6][6|1][1|1][4|6]\n[5|0][0|3][3|4][4|1][1|3][3|0][0|6]\n\n[3|6][6|3][3|5][6|2][3|1]\n[3|5][3|0][6|3][3|2][3|3]\n[2|5][5|3][0|5][5|3][0|6]\n[1|0][5|3][6|5][6|3][0|0]\n[0|0][2|3][3|3][6|5][6|6]",
+    "score": 0
+   },
+   {
+    "clue": "[5|4][4|1][5|4][5|4][4|0][3|4]\n[1|5][1|1][4|1][1|1]\n\n[0|6][6|1][3|6][6|1]\n[2|0][0|6][0|1][0|0]\n[0|2][2|6][2|0][0|1]\n[3|3][3|6][6|0][0|1]\n[6|0][2|6][6|1][1|2]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|0][5|0][5|4][4|0]\n[1|0][2|5][5|5][1|2]\n\n[1|1][1|6][0|2][2|5][5|0][0|1][6|5]\n[5|2][0|6][5|3][5|6][6|5][0|2][6|2]\n[0|5][5|1][5|5][6|6][6|6][6|0][6|3]\n[0|5][4|0][2|5][5|4][4|2][0|0][4|6]\n[4|5][0|5][5|6][5|5][5|3][5|3][5|6]",
+    "answer": "[5|0][5|0][5|4][4|0]\n[1|0][2|5][5|5][1|2]\n\n[1|1][1|6][0|2][2|5][5|0][0|1][6|5]\n[5|2][0|6][5|3][5|6][6|5][0|2][6|2]\n[0|5][5|1][5|5][6|6][6|6][6|0][6|3]\n[0|5][4|0][2|5][5|4][4|2][0|0][4|6]\n[4|5][0|5][5|6][5|5][5|3][5|3][5|6]",
+    "score": 0
+   },
+   {
+    "clue": "[6|5][0|0][1|4][4|4][4|1][0|0][5|6]\n[5|4][1|1][2|5][4|1][5|2][3|5]\n\n[2|3][2|5][3|5][0|0][6|1]\n[0|1][0|0][2|5][4|6][5|6]\n[0|5][2|2][5|0][5|3][4|6]\n[5|5][3|5][5|5][6|0][2|4]\n[0|3][1|6][4|5][0|0][5|0]",
+    "answer": "[6|5][0|0][1|4][4|4][4|1][0|0][5|6]\n[5|4][1|1][2|5][4|1][5|2][3|5]\n\n[2|3][2|5][3|5][0|0][6|1]\n[0|1][0|0][2|5][4|6][5|6]\n[0|5][2|2][5|0][5|3][4|6]\n[5|5][3|5][5|5][6|0][2|4]\n[0|3][1|6][4|5][0|0][5|0]",
+    "score": 0
+   },
+   {
+    "clue": "[1|3][4|3][0|2][3|0][1|3][4|1][1|5]\n[3|5][6|0][1|3][6|5][4|6][2|1][2|6]\n\n[1|6][5|2][0|4][5|2][3|5]\n[4|6][6|0][5|5][4|1][3|2]\n[0|2][0|4][5|6][1|2][2|3]\n[2|6][3|5][4|5][0|1][5|5]\n[6|0][6|4][3|1][2|0][5|2]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|6][2|0][3|3][0|2][6|5]\n[0|1][0|0][1|1][0|0][1|0]\n\n[0|5][3|2][0|5][5|0]\n[4|2][2|0][0|6][6|2]\n[5|0][0|4][0|2][5|0]\n[6|1][2|1][1|0][6|0]\n[0|2][6|0][3|0][0|2]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|3][0|4][4|3][3|3][3|2][2|5]\n[0|4][4|6][6|6][6|4][6|6][1|0]\n\n[2|2][5|0][3|4][0|0][1|1]\n[4|2][1|0][6|5][6|6][0|5]\n[1|1][5|3][0|1][2|2][4|1]\n[1|1][6|5][4|3][6|0][1|5]\n[2|5][2|4][1|0][3|3][3|5]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[1|4][0|1][4|1][1|4][1|1][1|4]\n[0|0][2|0][2|2][1|2]\n\n[0|0][5|2][3|3][5|5][6|6][3|3][5|4]\n[5|4][3|3][4|0][4|2][4|2][2|2][6|5]\n[3|5][2|3][2|2][3|4][2|5][2|5][0|6]\n[0|5][2|2][6|0][4|0][2|6][6|3][0|5]\n[4|0][0|2][3|5][5|5][5|0][6|6][6|4]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[4|1][1|6][4|0][4|4][0|1][3|6][3|4]\n[5|5][6|2][3|2][3|3][5|5]\n\n[1|2][1|3][5|4][5|2][6|5][0|5]\n[2|0][5|1][4|2][6|4][3|4][5|4]\n[6|0][1|6][3|2][0|6][4|2][5|6]\n[3|4][4|0][0|6][6|1][2|5][4|2]\n[2|6][3|1][1|4][6|4][4|5][2|0]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[5|5][1|5][1|3][3|6][6|3][2|5][3|1]\n[1|1][2|6][6|0][2|2]\n\n[6|4][4|6][0|4][4|5][5|2][2|5][1|1]\n[0|6][6|6][6|4][4|2][2|6][6|1][1|3]\n[4|6][5|3][2|2][3|2][4|4][6|1][1|5]\n[6|0][2|6][6|6][6|4][1|6][3|6][1|6]\n[5|1][1|4][0|0][0|6][6|1][1|5][5|2]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[6|0][6|5][6|0][1|5]\n[4|6][3|1][3|4][0|3]\n\n[0|3][1|3][0|5][3|3][4|1]\n[0|4][3|5][0|4][0|4][0|1]\n[5|5][3|1][4|0][4|1][5|5]\n[1|1][3|2][3|2][1|0][4|1]\n[5|1][5|2][5|0][2|5][4|5]",
+    "answer": null,
+    "score": 0
+   }
+  ],
+  "wisbek": [
+   {
+    "clue": "5:43\n6:45\n\n1:42\n2:10\n12:17\n8:57\n3:59",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2:12\n5:47\n\n7:25\n9:37\n4:30\n11:23\n1:54",
+    "answer": "2:12\n5:47\n\n7:25\n9:37\n4:30\n11:23\n1:54",
+    "score": 0
+   },
+   {
+    "clue": "2:12\n12:25\n\n7:38\n1:14\n6:19\n11:57\n8:49",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3:10\n4:23\n\n6:41\n9:12\n8:42\n1:49\n7:11",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4:55\n6:58\n\n8:15\n7:19\n3:04\n12:50\n2:15",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2:19\n8:59\n\n12:14\n5:54\n3:50\n11:18\n10:42",
+    "answer": "2:19\n8:59\n\n12:14\n5:54\n3:50\n11:18\n10:42",
+    "score": 0
+   },
+   {
+    "clue": "5:35\n12:28\n\n8:45\n2:08\n7:33\n10:30\n3:47",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2:05\n11:00\n\n5:20\n8:20\n10:10\n6:20\n9:20",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3:23\n5:10\n\n1:34\n8:58\n6:36\n2:29\n11:42",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "8:20\n12:00\n\n6:10\n1:36\n9:02\n10:40\n2:50",
+    "answer": "8:20\n12:00\n\n6:10\n1:36\n9:02\n10:40\n2:50",
+    "score": 0
+   },
+   {
+    "clue": "2:04\n11:55\n\n9:43\n4:56\n5:52\n6:34\n3:31",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "1:12\n7:32\n\n2:39\n3:17\n12:05\n5:10\n9:22",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3:22\n11:55\n\n10:00\n8:08\n12:18\n4:41\n2:29",
+    "answer": "3:22\n11:55\n\n10:00\n8:08\n12:18\n4:41\n2:29",
+    "score": 0
+   },
+   {
+    "clue": "4:15\n11:00\n\n12:20\n2:10\n3:10\n6:10\n8:25",
+    "answer": "4:15\n11:00\n\n12:20\n2:10\n3:10\n6:10\n8:25",
+    "score": 0
+   },
+   {
+    "clue": "5:54\n8:42\n\n9:32\n2:00\n1:36\n12:41\n7:25",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "7:30\n11:00\n\n6:55\n4:20\n1:25\n3:10\n8:15",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4:56\n12:33\n\n3:37\n2:24\n1:35\n5:59\n8:15",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "9:32\n11:01\n\n12:18\n2:05\n6:43\n10:51\n8:20",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3:21\n7:30\n\n12:49\n2:11\n4:20\n1:14\n11:05",
+    "answer": "3:21\n7:30\n\n12:49\n2:11\n4:20\n1:14\n11:05",
+    "score": 0
+   },
+   {
+    "clue": "10:00\n11:19\n\n7:22\n4:38\n1:17\n6:33\n9:13",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2:15\n5:20\n\n12:05\n9:10\n1:45\n8:25\n7:35",
+    "answer": "2:15\n5:20\n\n12:05\n9:10\n1:45\n8:25\n7:35",
+    "score": 0
+   },
+   {
+    "clue": "4:35\n6:52\n\n7:56\n12:41\n10:16\n11:58\n2:16",
+    "answer": null,
+    "score": 0
+   }
+  ],
+  "dornic": [
+   {
+    "clue": "2C 10C JD JS KH\n3C 5S 8D 9S 10S\n\n8C 8S 10D JD QH\n4S 6C 9D 10D QH\n6C 9D JH QH QS\n3S 6D 7D 8H 10C\n8C 8S 10H JH JD",
+    "answer": "2C 10C JD JS KH\n3C 5S 8D 9S 10S\n\n8C 8S 10D JD QH\n4S 6C 9D 10D QH\n6C 9D JH QH QS\n3S 6D 7D 8H 10C\n8C 8S 10H JH JD",
+    "score": 0
+   },
+   {
+    "clue": "4C 6S 7S 9C QH\n2H 4H 10H 10D KC\n\n3C 4D 7D 9S JS\n7C 8S 9D 10D KD\n3C 3S 4C 5C KD\n2S 4C 5S 10D JD\n2S 4S 6D 8C QS",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2H 6H 6S 7S 10C\n2S 3S 10D 10S JS\n\n5D 7D 7S JH KC\n4H 4C 6H KH KS\n4H 7D 10D 10C AS\n3H 6C 9H QH QS\n2S 5H 9H AH AC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2S 4S 9C 10S KH\n3S 4H 6S 9D QS\n\n6D 6S 8C 9S 10H\n4H 4C 5C KD KS\n2H 2C 6D JS QC\n6D 7C 9H 9C 10S\n6H 6C 7D 7S 9C",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "5H 8H 10D 10S AS\n2H 6D 8D 10C KS\n\n2H 4H KH AD AS\n6D 8H 9H 10H 10S\n2D 3D 9H 10H JS\n3D 4H JH QH QS\n2H QH KD AH AS",
+    "answer": "5H 8H 10D 10S AS\n2H 6D 8D 10C KS\n\n2H 4H KH AD AS\n6D 8H 9H 10H 10S\n2D 3D 9H 10H JS\n3D 4H JH QH QS\n2H QH KD AH AS",
+    "score": 0
+   },
+   {
+    "clue": "6H 7D 9C 9S AC\n2H 3S 7H QS KS\n\n9D QC KD KC AS\n6D 10S JS KD KS\n2D 8D 8S 9C 10C\n2D 4S 5C 8D AC\n4D 5C 9C QD QS",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2H 4C 7S 9C JC\n2D 4H 4D 7C AS\n\n3H 3C 6S 7S 9S\n4H 5S 8H 8D AC\n3D 4S 6S 7H 8C\n2H 9D 10H JC JS\n5H 8S 10H JH AC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "5C 7C 7S 9S AC\n2S 6H 10H 10S KD\n\n3S 4D 6S 8H 10S\n4S 5H 8S 9D JS\n2S 3C 4H 7S 8D\n4S 6H 7S 8C KS\n2S 7D 9S 10C KS",
+    "answer": "5C 7C 7S 9S AC\n2S 6H 10H 10S KD\n\n3S 4D 6S 8H 10S\n4S 5H 8S 9D JS\n2S 3C 4H 7S 8D\n4S 6H 7S 8C KS\n2S 7D 9S 10C KS",
+    "score": 0
+   },
+   {
+    "clue": "3D 5D 6D 9C 10C\n4S 5H 6S JH KS\n\n2D 4H 4C 6D 9C\n2C 4H 4S 6C 9S\n2D 2S 5H 8H QC\n2H 2C 4C 9D 9S\n2S 6D 8S JH JC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2H 7C 8S 10C 10S\n4D 6D 8D KH AS\n\n2D 2C 4H 6H KS\n2H 2D 6S AH AC\n3H 3D 9S JC AS\n2D 2S 6H QD QC\n3H 6H 6S 10S AS",
+    "answer": "2H 7C 8S 10C 10S\n4D 6D 8D KH AS\n\n2D 2C 4H 6H KS\n2H 2D 6S AH AC\n3H 3D 9S JC AS\n2D 2S 6H QD QC\n3H 6H 6S 10S AS",
+    "score": 0
+   },
+   {
+    "clue": "2C 3C 8S JS KD\n4C 7D 9H QS AH\n\n3S 5H QC AH AD\n8S 9D 9C 10D QH\n4S 6D 6C 7H 10D\n2C 5H 6H 6S 9D\n2S 6H 6C 9D 10H",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2S 6D 8H 8D 9C\n2C 9H JH JS QC\n\n3C 5D 6S 9S 10C\n3C 5D 8S 9S JS\n3S 4D 8D 9S QC\n2S 4C 5D 10D QS\n3C 5C 6C 7C 9S",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "5D 6C 8D 8C 8S\n3D 3C 7S QS KH\n\n5S 6H 6D 8C 9S\n3S 4S 9H 9C JD\n4S 5C 10H 10D JS\n5C 7S 8D 8C 10D\n3C 3S 4C 6D JD",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2S 3H 4C 5H 9D\n3S 5S 9H 10C KC\n\n3S 9C JD AD AC\n2C 4C 4S 7C AC\n6S 8S QD QS AC\n3S 5D 8S AC AS\n5C 9S JC AC AS",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3H 3D 9S 10S AS\n6D 7D JH JD QC\n\n7D 9H 10D QS KC\n4H 9C 10D KH AS\n5D 9S 10H QC AS\n5D KS AH AD AC\n5D 9S 10C JH QC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2D 2C 5H KH KS\n2H 3H 4H 5D 8H\n\n5D 6D 8H JC AH\n4H 6D 10D QC AH\n8H 9H 10S QH AD\n4H 6D 7H KS AS\n3D 9C JH KH AC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2C 3S 10H JH AC\n3H 3D 3C 4D 10C\n\n3C 6H 7C 8S AC\n3C 3S 4H 9C QS\n3C 8H 9C 10S KC\n3D 5C 6H 7C 10C\n3C 10C JH QC KS",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "6H 6S 8D QH KD\n2C 2S 4C 7D 9H\n\n3S 10D 10C JC KH\n6D 6S 8H 9H QD\n3C 6C JH JS QD\n3H 6S JH JD KD\n2C 6C 6S 10D JH",
+    "answer": "6H 6S 8D QH KD\n2C 2S 4C 7D 9H\n\n3S 10D 10C JC KH\n6D 6S 8H 9H QD\n3C 6C JH JS QD\n3H 6S JH JD KD\n2C 6C 6S 10D JH",
+    "score": 0
+   },
+   {
+    "clue": "2D 5H 6H 8C QC\n6D 6S JD JS KC\n\n2S 4S 7C 8C 10S\n2C 3C 4C 8C 10S\n2S 4C 4S 6C KS\n2C 8H JH JC KC\n2S 3S 5S 10S JC",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3H 7H 8C 10H 10C\n5S 7S 9S 10S KH\n\n5C 6H 7C QS KS\n4C 8H 8D 9S 10S\n3S 6S 7C 8H JH\n3H 3C 8D 9D 10C\n8D 10H QH QC KC",
+    "answer": "3H 7H 8C 10H 10C\n5S 7S 9S 10S KH\n\n5C 6H 7C QS KS\n4C 8H 8D 9S 10S\n3S 6S 7C 8H JH\n3H 3C 8D 9D 10C\n8D 10H QH QC KC",
+    "score": 0
+   },
+   {
+    "clue": "3D 4S 6S 10C 10S\n2H 3S 6D JH KH\n\n3S JD JC JS QD\n6S 7D 7C 10S JD\n7S 10H JD QH KD\n2C 2S 10C QD KS\n4C 4S 7D 8C 10D",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3H 4C 5S 8D AH\n2S 6C 7H 9H KH\n\n5S 7D 8S 10H AH\n2S 5H 6H KS AD\n3S 6H 10H JS KH\n5S 6H 9S JH QD\n3D 4S 7H QS KH",
+    "answer": "3H 4C 5S 8D AH\n2S 6C 7H 9H KH\n\n5S 7D 8S 10H AH\n2S 5H 6H KS AD\n3S 6H 10H JS KH\n5S 6H 9S JH QD\n3D 4S 7H QS KH",
+    "score": 0
+   },
+   {
+    "clue": "6D 7D QC KH AS\n2D 6C 7S 8H 8C\n\n3D 3S 8H 10C QD\n3H 3C 7C 7S QD\n2D 5D JC JS KH\n2D 4C 4S 8D JH\n8D 10S QC AH AD",
+    "answer": "6D 7D QC KH AS\n2D 6C 7S 8H 8C\n\n3D 3S 8H 10C QD\n3H 3C 7C 7S QD\n2D 5D JC JS KH\n2D 4C 4S 8D JH\n8D 10S QC AH AD",
+    "score": 0
+   }
+  ],
+  "borsel": [
+   {
+    "clue": "5 4 5 4 5\n6 4 5 5 6\n4 4 6 4 4\n\n6 6 6 6 5\n5 5 6 5 6\n6 4 6 6 6\n5 5 6 6 6",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 1 2 2 1\n4 4 4 4 4\n\n3 3 4 3 3\n2 3 1 2 2\n3 2 1 1 3\n2 2 2 2 2",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2 3 2 2 2\n3 3 3 3 1\n3 1 2 3 1\n\n1 3 1 1 3\n1 1 1 1 2\n1 2 1 1 2\n2 2 2 2 1",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2 2 2 2 2\n6 6 6 6 6\n\n4 2 2 2 6\n2 6 2 2 6\n4 4 2 4 4\n4 4 4 4 4",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 4 5 1\n4 2 4 1\n\n6 6 3 2\n4 6 3 4\n3 6 6 6\n1 6 6 5",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 3 3 3 4\n6 3 6 3 4\n4 4 2 4 4\n\n5 4 5 4 5\n5 5 5 5 5\n4 6 5 6 4\n5 3 6 3 6",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 4 2 3\n6 3 3 5\n3 4 3 4\n\n6 3 2 6\n3 3 5 5\n5 3 3 3\n2 4 3 4",
+    "answer": "3 4 2 3\n6 3 3 5\n3 4 3 4\n\n6 3 2 6\n3 3 5 5\n5 3 3 3\n2 4 3 4",
+    "score": 0
+   },
+   {
+    "clue": "1 1 4 1 1\n4 3 2 4 3\n\n3 3 1 3 2\n4 2 2 2 4\n3 3 2 2 2\n2 1 3 1 1",
+    "answer": "1 1 4 1 1\n4 3 2 4 3\n\n3 3 1 3 2\n4 2 2 2 4\n3 3 2 2 2\n2 1 3 1 1",
+    "score": 0
+   },
+   {
+    "clue": "4 4 2 6\n5 6 6 1\n\n5 5 5 1\n4 4 4 4\n5 4 3 4\n3 5 5 5",
+    "answer": "4 4 2 6\n5 6 6 1\n\n5 5 5 1\n4 4 4 4\n5 4 3 4\n3 5 5 5",
+    "score": 0
+   },
+   {
+    "clue": "3 3 1 1\n1 1 4 3\n4 1 4 1\n\n1 6 5 1\n6 6 2 6\n2 2 5 3\n4 5 4 1",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "6 4 6 3 3\n4 4 2 2 2\n\n6 5 2 3 2\n5 6 3 3 3\n5 3 5 2 5\n4 4 3 5 2",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 6 5 6 5\n2 6 6 4 6\n\n6 6 3 3 3\n5 6 6 3 3\n5 5 2 6 3\n2 2 4 6 5",
+    "answer": "4 6 5 6 5\n2 6 6 4 6\n\n6 6 3 3 3\n5 6 6 3 3\n5 5 2 6 3\n2 2 4 6 5",
+    "score": 0
+   },
+   {
+    "clue": "1 4 3 1\n3 3 4 3\n1 1 6 1\n\n1 5 1 2\n2 5 3 3\n5 1 5 2\n6 3 1 1",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "2 2 1 1\n3 1 1 3\n2 2 1 3\n\n5 2 5 5\n1 1 6 1\n2 4 2 3\n3 3 6 3",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "5 5 5\n4 4 4\n\n4 6 6\n5 6 6\n6 6 6\n6 5 5",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 3 4 4\n6 3 6 3\n5 6 3 4\n\n5 4 4 4\n5 5 3 3\n5 4 5 4\n4 4 4 4",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 4 4 2 4\n2 2 1 4 1\n\n3 3 4 4 4\n3 2 2 3 2\n2 3 1 1 3\n2 2 2 2 2",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 3 1 1\n2 2 1 1\n3 1 2 2\n\n4 4 2 1\n3 4 4 6\n1 6 1 1\n5 2 5 5",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 3 2 3 3\n4 4 6 1 4\n\n5 4 3 4 5\n5 6 4 6 5\n6 5 1 5 4\n6 4 2 5 4",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "6 5 2 6\n3 4 5 4\n\n4 1 6 6\n6 1 3 6\n1 6 5 6\n6 1 6 6",
+    "answer": "6 5 2 6\n3 4 5 4\n\n4 1 6 6\n6 1 3 6\n1 6 5 6\n6 1 6 6",
+    "score": 0
+   },
+   {
+    "clue": "4 2 4 4 2\n4 2 4 4 1\n2 1 4 1 2\n\n3 3 1 3 3\n3 3 3 4 3\n2 2 2 2 2\n3 3 3 3 3",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "6 6 6 6 5\n2 4 6 6 6\n\n1 6 2 2 2\n2 1 1 1 6\n5 5 6 1 3\n5 5 6 6 1",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 1 4\n5 2 2\n\n4 3 3\n5 2 4\n3 4 4\n2 3 5",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "1 2 1 4 1\n4 4 4 4 2\n\n2 3 3 3 3\n1 2 2 2 3\n1 3 4 1 4\n3 3 1 1 2",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "3 1 1 3 3\n5 2 2 1 1\n2 3 1 2 3\n\n3 4 1 5 1\n5 5 5 2 3\n5 1 1 4 1\n3 4 2 3 4",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "4 2 3 2 3\n5 5 6 3 5\n\n4 4 4 4 4\n4 2 4 4 4\n4 3 3 4 4\n4 4 5 4 5",
+    "answer": null,
+    "score": 0
+   }
+  ],
+  "ospren": [
+   {
+    "clue": "#####\n.....\n#..#.\n.####\n.##.#\n\n#....\n#....\n#####\n....#\n..#..\n\n1\n..#..\n#.#.#\n#####\n.....\n.###.\n\n2\n.#..#\n.#..#\n.#.#.\n.####\n##...\n\n3\n##.##\n....#\n#.#.#\n#...#\n..#.#\n\n4\n.#.##\n..##.\n.#.##\n#..#.\n..##.\n\n5\n..#.#\n#..##\n....#\n.####\n.#..#",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n.#...\n....#\n...#.\n#....\n\n#....\n##...\n.....\n#....\n#....\n\n1\n.....\n.####\n#....\n#####\n.....\n\n2\n..#..\n#.#.#\n#...#\n#.#.#\n..#..\n\n3\n#.###\n.....\n.....\n#.#..\n#.###\n\n4\n.#..#\n....#\n.#.#.\n#..#.\n.#.##\n\n5\n....#\n##.##\n.#..#\n#.#..\n...#.",
+    "answer": ".....\n.#...\n....#\n...#.\n#....\n\n#....\n##...\n.....\n#....\n#....\n\n1\n.....\n.####\n#....\n#####\n.....\n\n2\n..#..\n#.#.#\n#...#\n#.#.#\n..#..\n\n3\n#.###\n.....\n.....\n#.#..\n#.###\n\n4\n.#..#\n....#\n.#.#.\n#..#.\n.#.##\n\n5\n....#\n##.##\n.#..#\n#.#..\n...#.",
+    "score": 0
+   },
+   {
+    "clue": ".##..\n.##..\n..#..\n.....\n.....\n\n....#\n#.#.#\n.....\n..#..\n#..##\n\n1\n.....\n.....\n#....\n##...\n##...\n\n2\n.#.#.\n.....\n.#...\n#...#\n.....\n\n3\n#..#.\n#....\n.....\n.....\n.#..#\n\n4\n.....\n#..#.\n....#\n#..#.\n.....\n\n5\n....#\n.#..#\n.#...\n....#\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n#..#.\n#..#.\n..#..\n..#..\n\n.....\n#####\n.....\n#####\n.....\n\n1\n...#.\n#.#..\n##.#.\n..#..\n....#\n\n2\n##..#\n.##.#\n.....\n.....\n..#.#\n\n3\n.##.#\n#....\n...#.\n#....\n..#.#\n\n4\n#....\n#.#.#\n...##\n.....\n.##..\n\n5\n.##.#\n.....\n.....\n.##.#\n.#..#",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n.....\n#....\n###.#\n#####\n\n#####\n....#\n..#..\n..##.\n#.##.\n\n1\n#.#.#\n###..\n#.#..\n#..#.\n#....\n\n2\n.##..\n##.#.\n.##.#\n.#...\n.##..\n\n3\n##...\n##...\n##...\n#.##.\n#...#\n\n4\n.#..#\n##...\n.###.\n##...\n.#..#\n\n5\n#...#\n..#..\n#.#.#\n#####\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".#..#\n.#..#\n..#..\n.....\n..#..\n\n.....\n.##.#\n.....\n.##.#\n..#..\n\n1\n#...#\n.....\n.#.#.\n.....\n.....\n\n2\n.....\n#..#.\n.....\n.....\n#..#.\n\n3\n.#...\n.....\n#....\n...#.\n....#\n\n4\n...#.\n.....\n#....\n.#..#\n.....\n\n5\n.#.#.\n.....\n.....\n.#.#.\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "###.#\n#.#.#\n.....\n.....\n.....\n\n####.\n...#.\n.#..#\n.#...\n.#...\n\n1\n.....\n.....\n....#\n...##\n#####\n\n2\n..#..\n#..#.\n.#.#.\n....#\n..##.\n\n3\n....#\n.#.#.\n...##\n.#..#\n..#..\n\n4\n.##..\n..##.\n.....\n.##..\n.##..\n\n5\n.#...\n..#..\n#...#\n.##..\n##...",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".#..#\n.#..#\n#..#.\n.#..#\n.#..#\n\n.....\n#.###\n#....\n#.###\n.....\n\n1\n.#...\n....#\n.....\n..#..\n.#...\n\n2\n.#...\n...#.\n.....\n.#...\n.#...\n\n3\n.....\n.#.#.\n.....\n#..#.\n.....\n\n4\n.....\n..##.\n.....\n..##.\n.....\n\n5\n.....\n.#...\n##...\n#....\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n.....\n#....\n###..\n.##..\n\n.....\n.#.#.\n.#.#.\n.#.#.\n.....\n\n#..#.\n#..#.\n..#..\n#.##.\n#.##.\n\n1\n.....\n.....\n#...#\n##..#\n#####\n\n2\n..###\n....#\n....#\n...##\n..###\n\n3\n#...#\n#...#\n#...#\n#...#\n#...#\n\n4\n.....\n..###\n....#\n..###\n..###\n\n5\n.#...\n##...\n##...\n....#\n.####",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "..##.\n.####\n..#.#\n.####\n..##.\n\n##.#.\n.#.#.\n...##\n...##\n##.#.\n\n1\n##.##\n#...#\n##.##\n#...#\n#...#\n\n2\n..##.\n..##.\n.####\n..##.\n.####\n\n3\n...#.\n...#.\n#.###\n#.###\n#.###\n\n4\n.#.#.\n.#.#.\n.####\n.#.#.\n.####\n\n5\n.#.#.\n.#.#.\n##.##\n.#.#.\n##.##",
+    "answer": "..##.\n.####\n..#.#\n.####\n..##.\n\n##.#.\n.#.#.\n...##\n...##\n##.#.\n\n1\n##.##\n#...#\n##.##\n#...#\n#...#\n\n2\n..##.\n..##.\n.####\n..##.\n.####\n\n3\n...#.\n...#.\n#.###\n#.###\n#.###\n\n4\n.#.#.\n.#.#.\n.####\n.#.#.\n.####\n\n5\n.#.#.\n.#.#.\n##.##\n.#.#.\n##.##",
+    "score": 0
+   },
+   {
+    "clue": ".....\n#####\n#####\n.....\n.....\n\n#..#.\n.....\n.#..#\n.....\n#..#.\n\n1\n.....\n.##..\n.##..\n..#..\n...##\n\n2\n.....\n#..#.\n.....\n#..#.\n.##.#\n\n3\n.....\n###..\n.#...\n...##\n....#\n\n4\n..#.#\n#....\n##...\n....#\n...#.\n\n5\n.#.##\n#....\n....#\n.....\n.##..",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "#...#\n.#.#.\n.#.#.\n#...#\n.#.#.\n\n##.##\n#....\n#....\n##.##\n##.##\n\n1\n##..#\n....#\n..#.#\n.#.#.\n#..##\n\n2\n.#...\n##.##\n.###.\n..#..\n...##\n\n3\n...##\n.##..\n###..\n#...#\n##...\n\n4\n#.#..\n##...\n#.##.\n...##\n#..#.\n\n5\n##.#.\n##..#\n#.##.\n..#..\n..#..",
+    "answer": "#...#\n.#.#.\n.#.#.\n#...#\n.#.#.\n\n##.##\n#....\n#....\n##.##\n##.##\n\n1\n##..#\n....#\n..#.#\n.#.#.\n#..##\n\n2\n.#...\n##.##\n.###.\n..#..\n...##\n\n3\n...##\n.##..\n###..\n#...#\n##...\n\n4\n#.#..\n##...\n#.##.\n...##\n#..#.\n\n5\n##.#.\n##..#\n#.##.\n..#..\n..#..",
+    "score": 0
+   },
+   {
+    "clue": "##...\n.....\n.#..#\n...#.\n#...#\n\n....#\n..##.\n.#.#.\n##..#\n#...#\n\n1\n..#.#\n.....\n.....\n#.##.\n###.#\n\n2\n.#.#.\n#...#\n.....\n.###.\n.#.#.\n\n3\n....#\n#....\n...#.\n#####\n.#...\n\n4\n#...#\n.#...\n.....\n###..\n##..#\n\n5\n.####\n.....\n#....\n....#\n#.##.",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "##.##\n#...#\n...#.\n.....\n....#\n\n#...#\n#.#..\n.#.##\n...#.\n.#.##\n\n1\n..#..\n#....\n...#.\n.#...\n....#\n\n2\n....#\n..#..\n...#.\n....#\n#....\n\n3\n#..##\n#....\n.....\n.....\n#....\n\n4\n.#...\n.....\n#....\n#....\n...##\n\n5\n#..##\n.....\n.....\n.....\n#...#",
+    "answer": "##.##\n#...#\n...#.\n.....\n....#\n\n#...#\n#.#..\n.#.##\n...#.\n.#.##\n\n1\n..#..\n#....\n...#.\n.#...\n....#\n\n2\n....#\n..#..\n...#.\n....#\n#....\n\n3\n#..##\n#....\n.....\n.....\n#....\n\n4\n.#...\n.....\n#....\n#....\n...##\n\n5\n#..##\n.....\n.....\n.....\n#...#",
+    "score": 0
+   },
+   {
+    "clue": "#...#\n#...#\n#....\n##.##\n#.#.#\n\n#...#\n.###.\n#...#\n#.#.#\n##.##\n\n1\n.#.#.\n...#.\n#..##\n#.##.\n.#...\n\n2\n..#..\n#...#\n#...#\n#.#.#\n.#.#.\n\n3\n..#..\n#.#..\n....#\n..###\n.###.\n\n4\n#.#.#\n...#.\n##...\n...#.\n#.#.#\n\n5\n...#.\n.####\n#..##\n#....\n..#..",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".#...\n#.##.\n.#...\n.....\n.#...\n\n..#..\n....#\n...#.\n...#.\n...#.\n\n1\n#####\n.....\n#.#.#\n.#.#.\n..#..\n\n2\n....#\n.##.#\n.##.#\n#..#.\n#.#..\n\n3\n..#..\n.##.#\n..#.#\n#.#.#\n##...\n\n4\n#.###\n....#\n#.##.\n.....\n#.##.\n\n5\n.#..#\n.##.#\n..###\n...#.\n#.#..",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n..#..\n..#..\n.....\n#.##.\n\n.....\n#....\n#....\n#....\n..###\n\n1\n.##.#\n.#.##\n#....\n.#.##\n.##.#\n\n2\n.#.#.\n#.#.#\n#...#\n##.##\n#...#\n\n3\n#...#\n##.##\n#...#\n#####\n.....\n\n4\n##.##\n#.#.#\n.#.#.\n#...#\n#...#\n\n5\n.#.##\n#.#..\n#.##.\n#.#..\n.#.##",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "...##\n.....\n.....\n....#\n...##\n\n.....\n.....\n##...\n##...\n##..#\n\n1\n#.###\n#..#.\n...#.\n#..#.\n#.###\n\n2\n#..##\n.#..#\n#..##\n.#..#\n#..##\n\n3\n##.##\n...#.\n.#...\n##.##\n##..#\n\n4\n##.##\n##.##\n.....\n..#..\n##.##\n\n5\n#.#.#\n.#.#.\n.....\n#####\n#.#.#",
+    "answer": "...##\n.....\n.....\n....#\n...##\n\n.....\n.....\n##...\n##...\n##..#\n\n1\n#.###\n#..#.\n...#.\n#..#.\n#.###\n\n2\n#..##\n.#..#\n#..##\n.#..#\n#..##\n\n3\n##.##\n...#.\n.#...\n##.##\n##..#\n\n4\n##.##\n##.##\n.....\n..#..\n##.##\n\n5\n#.#.#\n.#.#.\n.....\n#####\n#.#.#",
+    "score": 0
+   },
+   {
+    "clue": ".#.#.\n.....\n.....\n.....\n.#.#.\n\n#...#\n#####\n..#..\n.....\n#.#.#\n\n1\n.....\n..#..\n...#.\n.#...\n.....\n\n2\n...#.\n.....\n.....\n.#...\n..#..\n\n3\n.....\n..#..\n...#.\n.....\n.#...\n\n4\n.#.#.\n..#..\n.....\n.....\n.....\n\n5\n...#.\n.....\n.....\n.##..\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".....\n#..#.\n.....\n#.#..\n.....\n\n.....\n..##.\n..#..\n..###\n.....\n\n1\n###..\n#....\n.....\n.....\n.....\n\n2\n#.#..\n..#..\n.....\n.....\n...#.\n\n3\n..#.#\n#....\n.....\n..#..\n.....\n\n4\n....#\n..#..\n.....\n...##\n.....\n\n5\n....#\n.....\n#.#..\n#....\n.....",
+    "answer": ".....\n#..#.\n.....\n#.#..\n.....\n\n.....\n..##.\n..#..\n..###\n.....\n\n1\n###..\n#....\n.....\n.....\n.....\n\n2\n#.#..\n..#..\n.....\n.....\n...#.\n\n3\n..#.#\n#....\n.....\n..#..\n.....\n\n4\n....#\n..#..\n.....\n...##\n.....\n\n5\n....#\n.....\n#.#..\n#....\n.....",
+    "score": 0
+   },
+   {
+    "clue": "...##\n#...#\n.###.\n#...#\n...##\n\n...#.\n..#..\n.####\n..#..\n...#.\n\n1\n.....\n#....\n#....\n#....\n.....\n\n2\n.....\n...#.\n...#.\n.#...\n.....\n\n3\n.....\n...#.\n#....\n....#\n.....\n\n4\n.....\n#....\n#....\n....#\n.....\n\n5\n.....\n....#\n....#\n#....\n.....",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": ".#...\n...#.\n.....\n.#.##\n....#\n\n.....\n...#.\n..##.\n..##.\n..#..\n\n1\n.....\n..#..\n#.#.#\n...##\n.#..#\n\n2\n##...\n#.##.\n..##.\n..#..\n.....\n\n3\n.....\n###..\n#....\n##...\n##...\n\n4\n.....\n.###.\n..##.\n#....\n...##\n\n5\n.....\n..#.#\n...#.\n..##.\n##.#.",
+    "answer": null,
+    "score": 0
+   }
+  ],
+  "kaldrin": [
+   {
+    "clue": "[E]=[logs]=[logs]=[logs]=[pigs^]=[milk]=[milk^]=[milk]\n[E]=[sand^]=[pigs^]=[pigs^]=[milk^]=[milk]=[coal]\n\n[E]=[milk]=[milk]=[milk]=[milk^]=[milk]=[milk^]=[logs^]\n[E]=[milk^]=[milk^]=[milk^]=[wool]=[milk]=[milk^]=[milk^]\n[E]=[milk^]=[logs]=[milk^]=[logs]=[milk^]=[milk]=[milk^]\n[E]=[milk]=[milk^]=[milk]=[milk^]=[milk^]=[sand^]=[milk^]\n[E]=[milk^]=[sand^]=[sand]=[sand^]=[sand]=[sand^]=[milk^]",
+    "answer": "[E]=[logs]=[logs]=[logs]=[pigs^]=[milk]=[milk^]=[milk]\n[E]=[sand^]=[pigs^]=[pigs^]=[milk^]=[milk]=[coal]\n\n[E]=[milk]=[milk]=[milk]=[milk^]=[milk]=[milk^]=[logs^]\n[E]=[milk^]=[milk^]=[milk^]=[wool]=[milk]=[milk^]=[milk^]\n[E]=[milk^]=[logs]=[milk^]=[logs]=[milk^]=[milk]=[milk^]\n[E]=[milk]=[milk^]=[milk]=[milk^]=[milk^]=[sand^]=[milk^]\n[E]=[milk^]=[sand^]=[sand]=[sand^]=[sand]=[sand^]=[milk^]",
+    "score": 0
+   },
+   {
+    "clue": "[E]=[wool^]=[wool^]=[coal^]=[coal]=[coal^]=[wool^]=[wool]\n[E]=[pigs^]=[pigs^]=[pigs^]=[pigs^]=[pigs^]=[wool^]\n\n[E]=[pigs]=[logs]=[coal^]=[milk^]=[milk^]\n[E]=[pigs]=[logs^]=[logs^]=[milk^]=[coal]\n[E]=[coal]=[logs^]=[logs^]=[logs]=[coal^]\n[E]=[sand]=[milk^]=[milk^]=[milk]=[coal^]\n[E]=[pigs]=[sand^]=[sand^]=[milk]=[pigs^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal^]=[coal^]=[sand]=[sand^]=[milk^]\n[E]=[milk^]=[wool]=[pigs^]=[sand^]=[logs^]=[logs^]\n\n[E]=[pigs]=[milk^]=[milk^]=[wool]=[milk]=[milk]\n[E]=[logs]=[logs^]=[milk]=[logs]=[milk]=[wool]\n[E]=[pigs]=[milk^]=[pigs]=[wool]=[milk]=[milk]\n[E]=[logs]=[logs^]=[milk^]=[coal]=[logs^]=[logs]\n[E]=[milk]=[coal]=[logs^]=[pigs]=[pigs]=[pigs]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal^]=[coal]=[sand]=[wool^]\n[E]=[sand^]=[logs]=[sand]=[milk]=[sand]=[coal]=[milk]\n\n[E]=[logs]=[wool^]=[sand]=[coal]=[wool^]\n[E]=[milk]=[sand]=[milk]=[coal]=[milk^]\n[E]=[logs]=[wool]=[coal^]=[sand]=[wool]\n[E]=[coal]=[coal^]=[pigs]=[coal]=[sand^]\n[E]=[logs]=[coal]=[sand^]=[wool]=[sand^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[sand^]=[sand]=[logs^]=[sand^]=[sand]=[logs^]=[wool^]\n[E]=[logs^]=[logs]=[pigs]=[coal]=[pigs^]\n\n[E]=[sand^]=[milk^]=[coal^]=[pigs^]\n[E]=[sand^]=[coal]=[wool^]=[pigs^]\n[E]=[milk^]=[coal^]=[sand^]=[logs^]\n[E]=[wool^]=[coal]=[sand^]=[coal^]\n[E]=[pigs^]=[milk]=[coal]=[logs^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[milk]=[milk]=[milk]=[milk]=[milk]=[milk]\n[E]=[logs]=[pigs]=[coal^]=[pigs]=[pigs]\n\n[E]=[sand]=[sand]=[wool]=[sand]=[pigs^]=[coal]=[milk]\n[E]=[milk]=[wool^]=[sand]=[sand]=[coal]=[pigs^]=[sand]\n[E]=[sand]=[pigs]=[milk]=[milk]=[wool]=[coal^]=[pigs]\n[E]=[wool]=[pigs^]=[logs]=[logs]=[coal^]=[milk]=[wool]\n[E]=[coal]=[pigs]=[sand]=[coal]=[coal]=[logs]=[milk]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal^]=[coal]=[sand^]=[sand]=[logs]=[wool]\n[E]=[sand]=[coal^]=[coal^]=[coal^]=[sand]=[sand^]\n\n[E]=[logs^]=[coal^]=[logs^]=[logs^]\n[E]=[milk]=[pigs^]=[pigs^]=[milk]\n[E]=[wool^]=[wool^]=[pigs]=[wool^]\n[E]=[wool^]=[sand]=[wool^]=[wool^]\n[E]=[pigs^]=[wool]=[pigs^]=[wool]",
+    "answer": "[E]=[coal^]=[coal]=[sand^]=[sand]=[logs]=[wool]\n[E]=[sand]=[coal^]=[coal^]=[coal^]=[sand]=[sand^]\n\n[E]=[logs^]=[coal^]=[logs^]=[logs^]\n[E]=[milk]=[pigs^]=[pigs^]=[milk]\n[E]=[wool^]=[wool^]=[pigs]=[wool^]\n[E]=[wool^]=[sand]=[wool^]=[wool^]\n[E]=[pigs^]=[wool]=[pigs^]=[wool]",
+    "score": 0
+   },
+   {
+    "clue": "[E]=[logs^]=[milk]=[milk]=[coal^]=[wool^]=[sand]=[pigs^]\n[E]=[pigs]=[pigs]=[pigs]=[pigs]=[pigs^]=[pigs]\n\n[E]=[milk^]=[milk^]=[sand^]=[milk]=[milk]\n[E]=[logs^]=[sand^]=[coal^]=[coal^]=[logs^]\n[E]=[sand^]=[sand^]=[coal]=[coal]=[coal^]\n[E]=[milk]=[milk]=[sand]=[milk^]=[milk]\n[E]=[logs^]=[sand]=[sand^]=[sand^]=[logs^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[pigs]=[coal]=[pigs]=[coal]=[coal]=[pigs]\n[E]=[pigs]=[pigs]=[milk]=[sand]=[milk]\n\n[E]=[wool]=[coal]=[wool]=[milk^]=[pigs]\n[E]=[sand]=[logs]=[coal]=[wool]=[logs]\n[E]=[sand^]=[wool]=[milk]=[wool]=[logs]\n[E]=[wool]=[coal]=[logs]=[sand^]=[wool]\n[E]=[sand]=[logs]=[milk^]=[coal]=[sand]",
+    "answer": "[E]=[pigs]=[coal]=[pigs]=[coal]=[coal]=[pigs]\n[E]=[pigs]=[pigs]=[milk]=[sand]=[milk]\n\n[E]=[wool]=[coal]=[wool]=[milk^]=[pigs]\n[E]=[sand]=[logs]=[coal]=[wool]=[logs]\n[E]=[sand^]=[wool]=[milk]=[wool]=[logs]\n[E]=[wool]=[coal]=[logs]=[sand^]=[wool]\n[E]=[sand]=[logs]=[milk^]=[coal]=[sand]",
+    "score": 0
+   },
+   {
+    "clue": "[E]=[pigs^]=[pigs]=[wool]=[wool]=[wool]\n[E]=[logs^]=[pigs^]=[pigs^]=[coal^]=[coal^]=[pigs^]\n\n[E]=[logs]=[pigs^]=[pigs^]=[logs^]\n[E]=[pigs]=[coal]=[logs^]=[pigs]\n[E]=[pigs]=[pigs]=[coal]=[wool^]\n[E]=[coal]=[pigs]=[wool^]=[pigs]\n[E]=[pigs]=[milk^]=[sand^]=[pigs]",
+    "answer": "[E]=[pigs^]=[pigs]=[wool]=[wool]=[wool]\n[E]=[logs^]=[pigs^]=[pigs^]=[coal^]=[coal^]=[pigs^]\n\n[E]=[logs]=[pigs^]=[pigs^]=[logs^]\n[E]=[pigs]=[coal]=[logs^]=[pigs]\n[E]=[pigs]=[pigs]=[coal]=[wool^]\n[E]=[coal]=[pigs]=[wool^]=[pigs]\n[E]=[pigs]=[milk^]=[sand^]=[pigs]",
+    "score": 0
+   },
+   {
+    "clue": "[E]=[wool^]=[logs]=[milk^]=[milk^]=[coal^]=[pigs^]=[sand]\n[E]=[pigs^]=[wool^]=[logs^]=[milk^]=[sand]=[logs^]\n\n[E]=[milk]=[coal]=[pigs]=[milk]\n[E]=[coal]=[coal]=[pigs^]=[milk^]\n[E]=[coal]=[coal]=[milk^]=[pigs^]\n[E]=[milk]=[pigs]=[coal]=[coal]\n[E]=[pigs]=[coal^]=[milk]=[pigs]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal]=[logs^]=[wool]=[coal]=[pigs^]=[sand^]=[coal]\n[E]=[pigs^]=[sand]=[coal]=[logs]=[pigs^]\n\n[E]=[milk^]=[milk^]=[milk]=[wool]=[wool]=[wool]=[wool^]\n[E]=[milk^]=[milk]=[milk^]=[milk]=[milk]=[wool^]=[wool]\n[E]=[milk]=[wool^]=[wool^]=[wool]=[milk^]=[milk]=[milk^]\n[E]=[milk^]=[milk^]=[milk]=[milk^]=[wool^]=[wool^]=[wool]\n[E]=[wool^]=[milk^]=[milk]=[wool^]=[wool^]=[wool]=[milk]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[pigs]=[sand]=[sand]=[pigs]=[pigs]=[coal^]\n[E]=[milk]=[wool^]=[coal^]=[milk^]=[logs^]=[wool^]=[logs^]\n\n[E]=[logs^]=[wool]=[logs]=[sand]=[pigs]=[coal^]\n[E]=[sand^]=[coal]=[pigs^]=[logs]=[milk]=[logs^]\n[E]=[wool]=[milk^]=[pigs]=[coal]=[pigs^]=[logs^]\n[E]=[wool]=[logs^]=[milk]=[coal]=[pigs]=[pigs^]\n[E]=[sand]=[wool]=[milk]=[milk^]=[coal]=[wool^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[sand^]=[logs]=[logs]=[sand]\n[E]=[logs^]=[logs^]=[wool^]=[wool^]=[wool]=[wool^]\n\n[E]=[wool]=[wool]=[wool]=[milk^]=[sand]=[wool]\n[E]=[wool]=[wool^]=[wool]=[wool]=[wool^]=[coal]\n[E]=[coal]=[coal]=[coal]=[sand^]=[wool]=[coal]\n[E]=[logs]=[milk]=[milk]=[milk]=[sand^]=[sand^]\n[E]=[wool]=[milk^]=[wool]=[pigs^]=[milk^]=[milk^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal]=[coal]=[wool^]=[milk^]\n[E]=[coal]=[logs^]=[pigs]=[coal^]=[milk]=[milk^]=[logs]\n\n[E]=[pigs^]=[milk^]=[wool]=[wool]=[wool^]=[sand]\n[E]=[logs]=[logs^]=[logs^]=[sand^]=[milk^]=[coal^]\n[E]=[pigs^]=[logs^]=[pigs]=[pigs^]=[milk]=[coal^]\n[E]=[pigs^]=[pigs]=[logs^]=[logs^]=[logs]=[milk^]\n[E]=[milk^]=[pigs^]=[pigs]=[logs^]=[milk]=[pigs^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[milk^]=[wool^]=[logs^]=[wool^]=[wool^]=[logs^]=[pigs^]\n[E]=[coal]=[coal^]=[coal^]=[milk^]=[milk]=[milk]=[milk]\n\n[E]=[pigs^]=[pigs]=[pigs^]=[milk^]=[milk^]\n[E]=[milk^]=[milk]=[coal^]=[coal^]=[coal^]\n[E]=[logs]=[logs^]=[milk]=[logs^]=[logs^]\n[E]=[logs^]=[logs^]=[milk]=[milk]=[milk^]\n[E]=[milk^]=[milk^]=[logs^]=[coal]=[coal]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[milk^]=[pigs^]=[coal]=[wool^]=[wool^]\n[E]=[logs^]=[wool^]=[logs]=[milk^]=[pigs^]=[wool^]=[sand]\n\n[E]=[sand]=[wool]=[pigs^]=[coal]=[sand^]=[wool]=[coal]\n[E]=[sand]=[wool^]=[wool^]=[coal]=[sand^]=[coal]=[pigs]\n[E]=[wool]=[coal]=[wool]=[logs]=[pigs]=[logs]=[pigs^]\n[E]=[sand]=[sand]=[pigs^]=[wool]=[coal]=[wool]=[logs]\n[E]=[wool]=[sand^]=[logs]=[wool]=[logs]=[pigs]=[sand]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[milk^]=[milk]=[pigs^]=[pigs^]=[sand]=[coal^]=[logs]\n[E]=[milk]=[milk]=[milk]=[milk]=[milk^]=[milk]\n\n[E]=[coal]=[wool]=[wool^]=[wool^]=[milk^]=[milk]=[milk]\n[E]=[sand]=[milk]=[coal]=[coal]=[coal]=[milk^]=[pigs]\n[E]=[coal^]=[sand^]=[coal^]=[milk^]=[milk^]=[pigs]=[pigs^]\n[E]=[wool]=[coal]=[milk^]=[milk^]=[milk]=[wool^]=[milk^]\n[E]=[pigs^]=[wool]=[pigs^]=[pigs]=[logs]=[milk^]=[milk^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal^]=[pigs^]=[milk]=[logs^]=[coal^]\n[E]=[wool]=[wool^]=[pigs^]=[wool^]=[wool]\n\n[E]=[pigs]=[pigs]=[coal]=[coal^]=[coal^]\n[E]=[pigs^]=[pigs]=[sand]=[pigs^]=[pigs]\n[E]=[pigs]=[sand^]=[wool]=[sand^]=[wool]\n[E]=[pigs]=[pigs^]=[pigs^]=[pigs]=[wool]\n[E]=[sand]=[pigs]=[pigs]=[pigs]=[pigs^]",
+    "answer": null,
+    "score": 0
+   },
+   {
+    "clue": "[E]=[coal^]=[coal]=[pigs^]=[pigs]=[pigs^]\n[E]=[milk]=[sand]=[coal]=[sand]\n\n[E]=[milk^]=[logs^]=[wool]=[milk]=[pigs^]=[milk^]=[milk^]\n[E]=[pigs^]=[sand^]=[logs]=[wool]=[sand]=[sand]=[sand]\n[E]=[pigs^]=[pigs^]=[pigs]=[pigs^]=[wool]=[sand^]=[logs]\n[E]=[sand^]=[logs^]=[pigs]=[milk^]=[sand^]=[sand]=[sand^]\n[E]=[logs]=[logs^]=[pigs]=[milk^]=[sand^]=[logs^]=[logs]",
+    "answer": null,
+    "score": 0
+   }
+  ]
+ },
+ "_index": 705
+}

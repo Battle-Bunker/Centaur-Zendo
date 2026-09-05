@@ -1,23 +1,22 @@
-# Ladder report — 2026-09-05 12:02 UTC
+# Ladder report — 2026-09-05 12:28 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
 | class | v | status | mean final | balance | with demo | no demo | kid score | finals | cracks | profiles | old-cadence history |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| norvel | 4 | calibrated | 47% | 0.93 | 100% (3) | 15% (5) | 3.7 | 8 | 3 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 17% (12) |
+| kaldrin | 1 | calibrated | 49% | 0.98 | - | 49% (4) | 4.5 | 4 | 0 | opus-default,opus-kidproxy | - |
+| ospren | 3 | calibrated | 47% | 0.95 | 42% (3) | 53% (3) | 4.5 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 83% (2) |
 | molvic | 3 | calibrated | 46% | 0.92 | 76% (3) | 16% (3) | 3.3 | 6 | 2 | opus-default,opus-kidproxy | 100% (2) |
-| ospren | 3 | calibrated | 45% | 0.89 | 36% (2) | 53% (2) | 4.5 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 83% (2) |
 | virel | 3 | calibrated | 57% | 0.86 | 69% (5) | 0% (1) | 3.7 | 6 | 3 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 15% (10) |
 | basten | 4 | calibrated | 42% | 0.84 | 100% (2) | 13% (4) | 4.5 | 6 | 2 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 12% (16) |
-| borsel | 2 | calibrated | 58% | 0.83 | 61% (2) | 57% (4) | 4.2 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 42% (2) |
+| borsel | 2 | calibrated | 59% | 0.82 | 58% (3) | 59% (5) | 4.2 | 8 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 42% (2) |
 | kelmar | 3 | calibrated | 60% | 0.80 | 76% (6) | 13% (2) | 4.2 | 8 | 4 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 4% (12) |
 | tavrik | 3 | calibrated | 40% | 0.79 | 26% (1) | 44% (3) | 3.8 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 83% (6) |
-| wisbek | 4 | testing | 39% | 0.78 | - | 39% (2) | 4.3 | 2 | 0 | opus-default,opus-kidproxy | 69% (8) |
-| tresk | 3 | calibrated | 39% | 0.77 | - | 39% (4) | 4.5 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 77% (6) |
-| kaldrin | 1 | testing | 38% | 0.77 | - | 38% (2) | 4.5 | 2 | 0 | opus-default,opus-kidproxy | - |
-| dornic | 3 | testing | 33% | 0.67 | 24% (1) | 43% (1) | 4.3 | 2 | 0 | opus-default,opus-kidproxy | 57% (8) |
+| dornic | 3 | calibrated | 39% | 0.77 | 29% (2) | 48% (2) | 4.3 | 4 | 0 | opus-default,opus-kidproxy | 57% (8) |
+| tresk | 3 | calibrated | 38% | 0.76 | 37% (1) | 38% (5) | 4.5 | 6 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 77% (6) |
+| wisbek | 4 | calibrated | 38% | 0.76 | 39% (1) | 37% (3) | 4.3 | 4 | 0 | opus-default,opus-kidproxy | 69% (8) |
+| mestrel | 1 | calibrated | 34% | 0.68 | 37% (2) | 31% (2) | 4.2 | 4 | 0 | opus-default,opus-kidproxy | - |
 | durnel | 2 | calibrated | 32% | 0.65 | 69% (3) | 10% (5) | 4.2 | 8 | 1 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 100% (2) |
-| mestrel | 1 | testing | 30% | 0.61 | 40% (1) | 21% (1) | 4.2 | 2 | 0 | opus-default,opus-kidproxy | - |
 | fennick | 3 | testing | 72% | 0.56 | 93% (12) | 11% (4) | 4.2 | 16 | 11 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 17% (6) |
 | tovel | 7 | testing | 27% | 0.55 | 56% (2) | 13% (4) | 4.7 | 6 | 1 | opus-default,opus-kidproxy | 17% (20) |
 | felsim | 1 | testing | 13% | 0.26 | - | 13% (2) | 3.8 | 2 | 0 | opus-default,opus-kidproxy | - |
@@ -45,6 +44,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | morvin | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 76% (4) |
+| norvel | 5 | testing | - | - | - | - | 3.7 | 0 | 0 | - | 29% (20) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

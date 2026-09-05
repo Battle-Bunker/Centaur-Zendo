@@ -1736,7 +1736,7 @@
    ]
   },
   "garrow": {
-   "current_version": 2,
+   "current_version": 3,
    "qual": [
     {
      "advice": "The bordered grid of dots and letter pairs does not read as pizza on sight; add a crust/cheese visual cue.",
@@ -1768,7 +1768,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -1939,6 +1940,12 @@
      "file": "challenges/lab/garrow.json",
      "note": "v2: uneven reference cuts, digits 1-3, halved+whole in a counted slice, fast generate",
      "v": 2
+    },
+    {
+     "added": 1788566881.5115652,
+     "file": "challenges/lab/garrow.json",
+     "note": "v3 demo economy: one topping/one digit, food-looking tray, rare digit per tray, every demo shows the halved piece",
+     "v": 3
     }
    ]
   },
@@ -5660,7 +5667,7 @@
    "class": "garrow",
    "id": "players-garrow-v2-a507",
    "kind": "players",
-   "status": "pending",
+   "status": "done",
    "version": 2
   },
   {
@@ -6108,7 +6115,7 @@
    "kind": "refiner",
    "reason": "demo_economy",
    "started": 1788564551.2230492,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -6192,7 +6199,8 @@
    "id": "rfdesigner-1",
    "kind": "designer",
    "paradigm": "rule_family",
-   "status": "pending",
+   "started": 1788566881.5416028,
+   "status": "running",
    "version": null,
    "world": "a roll of 3-5 dice"
   },
@@ -6251,6 +6259,22 @@
    "kind": "judge",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v3-2152",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "garrow",
+   "id": "judge-garrow-v3-a762",
+   "kind": "judge",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

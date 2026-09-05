@@ -291,3 +291,140 @@ under `memory["_index"]`; make it more prominent).
 Status: testing, mean over v2 64% (2 finals), over all versions 40% (4). One more Opus pair on v2
 and it may calibrate. The 4–8 pens / no-empty-pen clauses were the theorist's only complaint
 ("why four to eight?") — a v3 could drop the pen-count bound if it stays clean.
+
+## garrow v3 — the demo-economy pass for the 7-class / 3-demo format (2026-09-05)
+
+v2 kept as `challenges/lab/garrow.v2.json` (byte-identical copy); v3 is `challenges/lab/garrow.json`.
+**The rule is again unchanged** — every version of this class has changed only what the picture says
+out loud. What changed is the budget the class asks for. v2's 64 % was earned under 6×0.5 s rounds
+with 6 demos and a 272-answer designed experiment; the new format gives a class ~60 probes a round
+for 4 rounds and a team only 3 demo requests for 7 classes, so v2 as it stood was unreachable.
+
+### What v3 changes
+
+* **One topping, one digit.** The clue is now `m2` over the tray. v2 kept two letters and two digits
+  because on v1 clues a player who had only the format and cut at random satisfied one count 25 % of
+  the time. Re-measured on v3: **8.6 %** (n drawn at random), 13.2 % (n = 6 always), 15.4 % (n = 5
+  always). The 25 % is gone because `generate()` now picks, for each tray, a count that is *rare
+  among random cuttings of that tray* — it histograms 48 sampled cuttings and keeps only counts
+  occurring on 2–15 of them (4–31 %), rarest first. So the blind floor sits in the 5–30 % foothold
+  band with a single digit, and the second letter/digit — the thing that made the clue look like a
+  code — is dropped.
+* **Every demo shows the counted relation in one look.** `generate()` keeps a tray only if it can be
+  cut so that a counted slice holds **exactly two** pieces of the named topping with one of them
+  halved by the knife, the neighbouring slice holds **just the other half**, and the slices are
+  visibly hand-cut (one ≤ 4 wide, spread ≥ 5 between widest and thinnest). 97 % of demos are that
+  picture with every rival reading dead; `solve()` additionally prefers (46 % of demos) a cutting
+  that has a slice holding *three*, so "exactly two" is visibly not the rule.
+  Requiring exactly-two on the counted slice is also what kills two rivals for free: that slice has
+  only one whole piece, so "slices with two **whole** pieces" and "slices the topping touches at all"
+  can no longer come to k in a demo. Severed ≠ k is required explicitly (v1's trap).
+* **The 4–8 slice bound is gone.** The theorist's only complaint about v2 was "why four to eight?".
+  The scorer now says only *at least four slices, each at least three wide*; the upper bound is
+  whatever the tray allows (10–12) and demos run 4–9 slices. The table stayed clean: equal-width
+  slices are still **0.00 %**, because `generate()` rejects any count achieved by *any* equal cutting
+  of that tray for every n from 4 to width//3 (restricting that check to n ≤ 8 was tried: the
+  equal-width row jumps to 12.7 % at n = 9–11, so the full range stays).
+  The "no plain slice" clause is gone too — one clause fewer to discover, and demos now sometimes
+  show a slice of pure cheese.
+* **The tray reads as food.** Cheese is `~` instead of `.`, the crust is two columns thick at each
+  end plus a solid row above and below, and toppings are 3 cells wide with three of them a row
+  (v2: 2 cells, 4–5 a row). Fewer, bigger pieces on a textured base; no labels, no legend.
+
+### One demo as it renders (seed 77)
+
+```
+clue:                                   answer:
+b1                                      ###|###############|######|#####|###|####
+####################################    ##~|~~~~ttt~~~~~~oo|o~~~~~|~~~~~|~oo|o~##
+##~~~~~ttt~~~~~~ooo~~~~~~~~~~~ooo~##    ##~|~~~~ooo~~~~~~~~|~~~ooo|~~~~~|~~t|tt##
+##~~~~~ooo~~~~~~~~~~~ooo~~~~~~~ttt##    ##b|bb~~~~~~~~~~~~~|~ttt~~|~~~~~|~bb|b~##
+##bbb~~~~~~~~~~~~~~ttt~~~~~~~~bbb~##    ##~|~~ttt~~bbb~~~~~|~bbb~~|~~~~~|~~~|~~##
+##~~~ttt~~bbb~~~~~~bbb~~~~~~~~~~~~##    ###|###############|######|#####|###|####
+####################################
+```
+Slice widths 3/15/6/5/3/4; pieces of `b` per slice 1/2/1/0/1/1 → one slice holds two → `b1`. The
+headline is the first cut: `##b|bb` — the knife halves a bacon, slice 1 gets the single half and
+nothing else, slice 2 gets the other half *plus* a whole `bbb`, and that is the slice the digit
+counts. Slice 4 is plain cheese (legal now), and the six slices are wildly uneven.
+
+### Witness table (500 fresh clues, seeds 100000–100499)
+
+A strategy "builds" an answer by searching up to 400 well-formed cuttings for one satisfying its own
+law, then is scored by the real scorer; "built" is how often such a cutting was found at all.
+
+| strategy | v3 |
+|---|---|
+| true rule (`solve`) | 100.00 % |
+| **clue returned uncut** | **0.00 %** |
+| **equal-width slices, any n, any rounding** | **0.00 %** |
+| **random cut positions, n random** | **8.60 %** ← the blind floor |
+| random cut positions, n = 6 always | 13.20 % |
+| random cut positions, n = 5 always | 15.40 % |
+| **"severed = n"** (v1's trap) | **9.80 %** (built 100 %) |
+| **"slices the topping touches at all = n"** | **27.20 %** (built 92 %) |
+| **"slices with two whole pieces = n"** (halves not counted) | **33.60 %** (built 34 %) |
+| "2+, a half counting only for its left slice = n" | 44.20 % (built 46 %) |
+| "slices with two of any one topping = n" | 13.20 % (built 100 %) |
+| "slices with two pieces of anything = n" | 25.80 % (built 93 %) |
+| "number of slices = n" / "number of cuts = n" | 6.20 % / 8.60 % |
+| "slices with three or more = n" | 10.00 % (built 8 %) |
+| "slices with none of it = n" | 6.60 % |
+| "the fullest slice holds n" | 10.00 % |
+| "slices with **exactly** two = n" | 86.20 % (built 91 %) |
+| **demo replay** (previous clue's answer) | **0.00 %** |
+| one constant answer for every clue | 0.20 % |
+| junk: empty / whitespace / 4000 chars / the clue itself | 0.00 % |
+
+No template exceeds ~50 % except the last, and that one is **not a rival law but a synonym**: a
+player counting "slices with exactly two, a halved piece counting for both sides" has the whole
+insight — object, format, measurement and halves convention — and differs from the rule only on
+slices holding three or more. (v2's equivalent row was 52.8 %; it rose because v3's digit is 2 or 3
+far more often than 1: k = 1 needs two severed pieces to keep the severed decoy dead, so it is only
+~2 % of clues. This is why `solve()` puts a slice of three in 46 % of demos.) The ladder that matters
+is the one below it: **8.6–15 % (well-formed, no idea) → 10 % (the knife family) → 26–34 % (right
+family, wrong readout) → 34–44 % (right measurement, wrong halves convention) → 100 %.**
+
+Shape and junk attacks on an otherwise correct answer (300 clues): reference 100 %; trailing spaces,
+crust rows removed, blank lines inserted, an extra header line — all 100 % (forgiving about form).
+All cuts removed, one cut missing in one row, cuts shifted by one in one row, an extra cut at the far
+left, a dough row deleted, a dough row duplicated, upper-cased, cheese turned to spaces, a topping
+moved one cell, reversed left-right, dough rows reordered — all 0.00 %. An extra cut added in the
+middle of every row: 16 % (that is simply another cutting; it lands on the count about as often as a
+blind one does).
+
+### Speed and size
+
+| | v2 | v3 |
+|---|---|---|
+| `generate` mean / median / p99 / max | 0.54 / 0.42 / 1.5 / 11.6 ms | **1.08 / 0.79 / 4.3 / 9.4 ms** (20000 seeds, no empty clue) |
+| `solve` mean / median / max | 13.2 / 1.6 / 322 ms | 8.0 / 8.6 / 80 ms |
+| scorer / solve / clue / solution chars | 474 / 4997 / 214 / 251 | **379 / 3820 / 224 / 269** |
+
+`quickcheck --seeds 200`: OK, gen 4.9 ms max, score 0.1 ms, solve 75.7 ms max. `generate()` draws one
+tray size and its 48 sample cuttings per batch and reuses them across attempts, keeps prefix sums so
+one candidate cutting costs O(slices), and does the equal-cutting rejection before any sampling.
+The median is under the 1 ms target; the mean is 1.08 ms, paid almost entirely for the equal-cutting
+filter (dropping it to n ≤ 8 buys 0.25 ms and costs the 0.00 % row above — not worth it).
+
+### What a demo-less player can infer about the answer's shape
+
+Everything except the rule: the clue *is* the tray, so the answer is a picture of the same six lines,
+same characters, same order, with something added — and the only thing anyone adds to a tray bake is
+cuts. Bars down the picture at a few columns is a well-formed answer and scores **8.6–15 %** by
+accident, which is the foothold that stops a team concluding the grader is exact-match. What they
+cannot get without a demo is *which* cuts: that the digit counts slices, that it counts slices with
+two of the clue's letter, and above all that a topping the knife goes through belongs to both sides.
+
+### Prediction
+
+Two Opus players in a 7-class pool: the one who spends a demo here cracks it in round 2–3 about half
+the time (one demo now carries the whole sentence, and ~120 probes are enough to fix the halves
+convention because the wrong convention scores 34–44 % rather than 0); the one who does not sits at
+8–15 % from the foothold. Predicted mean final 40–60 %. Kid score should move off v2's 3.2 object
+score: the tray now has a thick crust, cheese texture and three fat toppings a row, and the demo
+draws "that slice has two mushrooms, one of them cut in half" instead of implying it.
+Levers left if it is too hard: force one of the two pieces on the counted slice to be whole (costs
+generate 1.08 → 1.73 ms); allow k = 1 more often by dropping the severed requirement there. If too
+easy: narrow the rarity band to 2–8 of 48 (blind floor ~5 %), or require the counted slice to hold
+nothing but that topping.

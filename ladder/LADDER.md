@@ -97,3 +97,10 @@ green was tallest). Demos went on fennick / kelmar / crandel and taught only "an
 pictures"; nobody could read a shape off `B12`, `GBRBGB…`, `2452/5`. Confirms the pass: object in
 the clue, one clause, demo teaches the rule in one look. Players also asked for an example of
 the house style in the guide (added) and noted that a skip costs 0.4 ms vs 1.05 ms per answer.
+
+## Recovery note (2026-09-05)
+The container restarted mid-run once. Arena servers survived (they are detached processes) but every
+subagent died. Recovery: check `arena.py status` and the team `logs/`; if the game is still in
+training, relaunch the player agents with a "you are resuming; run status first" preface — team
+state lives on the server and in the team dir. Designers/refiners that had not written files are
+simply relaunched. Player prompts must never assume a fresh start.

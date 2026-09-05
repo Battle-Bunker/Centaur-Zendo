@@ -2094,6 +2094,20 @@
     }
    ]
   },
+  "durnel": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788587978.7506173,
+     "file": "challenges/lab/durnel.json",
+     "note": "designer new-12: road with low bridges; lorries turn iff a beam ahead is lower than their height; clue = picture + 'n turn'; foothold 12% echo",
+     "v": 1
+    }
+   ]
+  },
   "erewhon": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -9835,7 +9849,7 @@
    "id": "designer-new-12-man",
    "kind": "designer",
    "started": 1788586617.887969,
-   "status": "running",
+   "status": "done",
    "version": null
   }
  ],

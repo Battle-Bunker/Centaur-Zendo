@@ -1557,6 +1557,79 @@
      "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 44,
+       "final_presented": 333,
+       "final_rate": 0.13213213213213212,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         66
+        ],
+        [
+         8,
+         51
+        ],
+        [
+         3,
+         55
+        ],
+        [
+         10,
+         65
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 44,
+       "final_presented": 327,
+       "final_rate": 0.1345565749235474,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         57
+        ],
+        [
+         5,
+         44
+        ],
+        [
+         4,
+         54
+        ],
+        [
+         6,
+         60
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 4
     }
    ],
    "status": "testing",
@@ -2445,6 +2518,79 @@
      "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 1
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 34,
+       "final_presented": 345,
+       "final_rate": 0.09855072463768116,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         65
+        ],
+        [
+         5,
+         58
+        ],
+        [
+         5,
+         51
+        ],
+        [
+         5,
+         63
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 34,
+       "final_presented": 334,
+       "final_rate": 0.10179640718562874,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         54
+        ],
+        [
+         6,
+         56
+        ],
+        [
+         7,
+         51
+        ],
+        [
+         7,
+         46
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": true,
+     "version": 2
     }
    ],
    "status": "testing",
@@ -3193,6 +3339,79 @@
      "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 304,
+       "final_presented": 304,
+       "final_rate": 1.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         68
+        ],
+        [
+         45,
+         45
+        ],
+        [
+         54,
+         54
+        ],
+        [
+         69,
+         69
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 32,
+       "final_presented": 288,
+       "final_rate": 0.1111111111111111,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         42
+        ],
+        [
+         5,
+         47
+        ],
+        [
+         8,
+         57
+        ],
+        [
+         5,
+         54
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -3728,6 +3947,79 @@
      "run": "lad-tresk-v2-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 311,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         56
+        ],
+        [
+         0,
+         51
+        ],
+        [
+         0,
+         53
+        ],
+        [
+         0,
+         50
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 78,
+       "final_presented": 298,
+       "final_rate": 0.26174496644295303,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         59
+        ],
+        [
+         10,
+         42
+        ],
+        [
+         10,
+         46
+        ],
+        [
+         18,
+         62
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 4
     }
    ],
    "status": "testing",
@@ -4347,9 +4639,82 @@
      "run": "lad-kelmar-v3-1",
      "target": true,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 43,
+       "final_presented": 324,
+       "final_rate": 0.13271604938271606,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         54
+        ],
+        [
+         10,
+         56
+        ],
+        [
+         5,
+         52
+        ],
+        [
+         6,
+         50
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 308,
+       "final_presented": 308,
+       "final_rate": 1.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         61
+        ],
+        [
+         49,
+         49
+        ],
+        [
+         47,
+         47
+        ],
+        [
+         50,
+         50
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788559056.696556,
@@ -4403,8 +4768,82 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 322,
+       "final_presented": 322,
+       "final_rate": 1.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         56
+        ],
+        [
+         64,
+         64
+        ],
+        [
+         47,
+         47
+        ],
+        [
+         58,
+         58
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": 2,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 313,
+       "final_presented": 313,
+       "final_rate": 1.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         52
+        ],
+        [
+         55,
+         55
+        ],
+        [
+         53,
+         53
+        ],
+        [
+         60,
+         60
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788592137.9489799,
@@ -8601,9 +9040,82 @@
      "run": "lad-kelmar-v3-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 305,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         64
+        ],
+        [
+         0,
+         55
+        ],
+        [
+         0,
+         61
+        ],
+        [
+         0,
+         62
+        ]
+       ],
+       "team": "durnel1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 59,
+       "final_presented": 291,
+       "final_rate": 0.2027491408934708,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         39
+        ],
+        [
+         4,
+         29
+        ],
+        [
+         11,
+         54
+        ],
+        [
+         13,
+         66
+        ]
+       ],
+       "team": "durnel1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "molvic",
+      "virel"
+     ],
+     "run": "lad-durnel-v2-1",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "file": "challenges/lab/virel.json",
@@ -11383,7 +11895,7 @@
    "reason": "first finals for durnel v2, basten v4, garrow v4, molvic v1",
    "run": "lad-durnel-v2-1",
    "started": 1788595539.1524596,
-   "status": "running",
+   "status": "done",
    "teams": {
     "durnel1a": "opus-lowdemo",
     "durnel1b": "opus-theorist"
@@ -11448,6 +11960,24 @@
     "tavrik1b": "opus-theorist"
    },
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "ospren",
+   "id": "players-ospren-v3-3ea2",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "molvic",
+   "id": "refiner-molvic-v1-hard",
+   "kind": "refiner",
+   "reason": "100/100 without demo: swap edit guessable from the clue; checksum pins the rule offline",
+   "started": 1788597717.6083076,
+   "status": "running",
+   "version": 1
   }
  ],
  "profiles": {

@@ -155,3 +155,15 @@ every picture class needs a checksum caption; the without-demo rate is then set 
 edit is from the clue (durnel: guessable → 100 %; fennick: not → 11 %). Scorers of virel/tovel do
 accept the parameter line either way (a player claimed not; verified 30/30 both ways).
 Next: harden durnel (edit not guessable from the clue), add checksum captions to basten/norvel/tovel.
+Picture pool run 5, `lad-durnel-v2-1` (durnel v2, basten v4, garrow v4, molvic v1, kelmar v3, virel v3,
+fennick v3): 747 (lowdemo, 1 demo → fennick) and 868 (theorist, demos → virel/kelmar/garrow).
+Demo splits, exactly the fennick shape: kelmar 100 (demo) / 13 (none); fennick 100 / 11.
+durnel v2 held blind at 10/10 (v1 was 100/100) — the lay-by hardening worked; its with-demo rate
+is untested. basten v4 13/13 blind (nobody bought it). garrow 26 % with a demo, 0 without (no
+`0 slices` clues → no foothold; player asked for them). virel 20 % with a demo (the theorist never
+fixed the brick mix), 0 without. molvic 100/100 with NO demo — the swap edit is guessable from
+the picture and the `n swap` checksum pins the rule offline: durnel v1's failure again. Both
+players said the "N verb" convention is the scaffolding that makes four rounds enough; the
+theorist called the n=0 freebie "possibly too generous" (~11 % for nothing). kelmar v3 and
+virel v3 reach `calibrated` (4 finals each, means 57 % / 55 %) — STARS entries written.
+Next: harden molvic (edit must need the demo); give garrow a `0 slices` foothold.

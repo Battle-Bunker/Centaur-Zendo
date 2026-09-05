@@ -101,3 +101,126 @@ brief stopped at self-testing.
 5. **Scorer 572 → 497 chars**: read the picture column-wise once (`zip(*P)`), let `rfind('#') == -1`
    supply the "no beam" sentinel for free, and compare right-stripped rows on both sides instead of
    padding the answer.
+
+
+## Refinement record — `durnel` v2 (2026-09-05, refiner)
+
+### What the players did to v1 (`sim/results/lad-kelmar-v3-1/`)
+
+Both Opus players finished **100 % / 100 % on durnel without spending a demo** (512/512 and
+620/779 in training, 100 % of the final). Neither of them probed it: player a's NOTES say
+"durnel — SOLVED (no demo) … Verified on 6/6 clues (N matched)" and it appears in the
+"deliberately left without a demo: durnel (already cracked from clues)" list; player b's
+`strategy.py` header says "durnel — a car whose load would hit a bridge ahead turns round
+(100 %)" and calls the moment it recognised lorries-versus-low-bridges the best part of the game.
+The mechanism was exactly the one DESIGN_LOOP's new "checksum caption" section describes: the
+`n turn` caption is a checksum on the answer, so a rule can be falsified offline against ~80
+harvested clues with no training cost — and the very first sensible rule (the famous fact: a
+lorry too tall for a bridge ahead of it) reproduced n on 81/81 clues. The edit (swap the nose end
+for end) was guessable from the picture alone, so knowing the rule was the whole game. Measured
+now against v1's shipped scorer over 1500 fresh clues: **that blind reading scores 100.0 %.**
+
+### The v2 change (levers (a) + (b) of the brief, in one physical story)
+
+A lorry cannot turn round on a narrow road — **it turns round in a lay-by**. The road now carries
+four lay-bys drawn `\_/` in the tarmac, and the rule is one clause a kid says in a breath:
+
+> there's a bridge ahead it can't get under, so it pulls into the first lay-by it comes to and
+> turns round.
+
+* **(a) the edit is no longer guessable.** The turning lorry is *erased* from where it stood (its
+  three columns become plain road) and *redrawn whole* in the lay-by, nose at the other end. A
+  blind player cannot render that: the caption tells them how many turn, never where they end up.
+* **(b) the rule is no longer the famous fact.** If the bridge it cannot fit under comes *before*
+  any lay-by, the lorry never reaches one: it just stops and **nothing changes**. Every clue
+  plants such a lorry (100 %, audited over 4000 clues), so "too tall for a bridge ahead" no longer
+  reproduces n — the offline checksum now *falsifies* the first sensible rule instead of
+  confirming it. With a demo the checksum is a full 100 % verifier again, which is what it is for.
+
+Everything that made v1 legible is kept: the object (a road, lorries with noses, `#` bridges), the
+caption `n turn`, heights given by the drawing, the ~12 % `0 turn` foothold, and the whole family
+of near-miss plants (later bridge, bridge behind, exact fit, room to spare, a stander taller than a
+turner), plus two new ones: a turner that drives **past a second lay-by** (it takes the first), and
+the blocked-with-no-lay-by lorry above.
+
+### Witness table, before → after (1500 fresh clues each, shipped scorers)
+
+| template (rendered with the true drawing convention unless marked BLIND) | v1 | v2 |
+|---|---|---|
+| **BLIND: famous fact + v1's edit (swap the nose where it stands)** | **100.0 %** | **0.0 %** |
+| BLIND: famous fact + a lay-by ahead, nose swapped in place | — | 1.1 % |
+| clue returned unchanged (the foothold) | 13.9 % | 12.1 % |
+| clue unchanged, caption dropped | 11.9 % | 12.1 % |
+| famous fact, rendered as a move into the first lay-by | — | 12.5 % |
+| true rule, moved but not turned round | — | 12.1 % |
+| true rule, turned round on the spot (no move) | — | 12.1 % |
+| true rule, into the LAST lay-by before the bridge | — | 12.1 % |
+| an equal-height bridge blocks too (`<=`) | 0.0 % | 0.0 % |
+| a lorry can squeeze under a bridge one row too low | 18.4 % | 15.2 % |
+| only the NEXT bridge ahead counts | 11.9 % | 12.1 % |
+| only the first bridge PAST the lay-by counts | — | 9.5 % |
+| mirrored: look behind instead of ahead | 0.0 % | 0.0 % |
+| any too-low bridge anywhere (direction ignored) | 0.0 % | 3.2 % |
+| a lorry ahead / a lorry coming the other way stops you | — | 12.5 / 10.5 % |
+| a lay-by then ANY bridge ahead (heights ignored) | — | 0.0 % |
+| every lorry with a lay-by ahead | — | 0.0 % |
+| the n tallest / n shortest | 11.9 / 11.9 % | 12.1 / 12.3 % |
+| the first n, left to right | 15.6 % | 14.2 % |
+| n random lorries | 16.7 % | 17.0 % |
+| blocked by a beam within 12 columns (v1's top rival) | **30.7 %** | n/a |
+| each lorry moves with probability 1/2 | 0.9 % | 3.3 % |
+| true rule, vacated slot blanked with spaces | — | 12.1 % |
+| true rule, lorry copied into the lay-by (not moved) | — | 12.1 % |
+| caption forced to `0 turn` | 11.9 % | 12.1 % |
+| demo replay / junk / empty / half the picture / the caption | 0.0 % | 0.0 % |
+| **TRUE RULE (solve), caption kept / dropped / rows padded** | 100 % | **100 %** |
+
+Twenty well-formedness attacks (no tarmac, two tarmac rows, dashes, one column short, blank row on
+top, rows reversed, picture mirrored, all noses flipped, lowercased, beams erased, lay-bys erased,
+caption count changed, junk line appended, 4000 chars of junk, noses as `v`, road dots as spaces,
+caption alone, empty string) all score 0.0 %; trailing newlines, trailing whitespace per row and
+the caption present-or-absent are the declared leniencies and score 100 %.
+
+### One rendered demo (clue, then the answer solve() returns)
+
+                 CCC                 SSS ###              ###
+     ###         CCC LLL      ####   SSS                      HHH
+                 CCC LLL             SSS                      HHH
+         GGG     CCC LLL             SSS                      HHH
+    .....<GG.JJ>.<CC.LL>.\_/.........<SS.....\_/.\_/..\_/.....<HH.
+    ==============================================================
+    2 turn
+
+                 CCC                 SSS ###              ###
+     ###         CCC     LLL  ####   SSS              HHH
+                 CCC     LLL         SSS              HHH
+         GGG     CCC     LLL         SSS              HHH
+    .....<GG.JJ>.<CC.....<LL.........<SS.....\_/.\_/..HH>.........
+    ==============================================================
+    2 turn
+
+`LL>` cannot fit under the `####` further right, and the first lay-by it reaches is the one just
+past it, so it sits there as `<LL`; `<HH` is stopped by the bridge on its left and turns round in
+the lay-by it passed, becoming `HH>`. `<CC` and `<SS` are as tall but every bridge that would stop
+them lies before any lay-by they could use — they stand still. `JJ>` fits under everything.
+
+### Engineering (4000 fresh seeds)
+
+generate mean 0.83 ms, p99 3.6, max 5.0, **0 fallback uses**, 3000/3000 clues distinct and
+deterministic; solve 0.037 ms; score 0.037 ms real / 0.036 ms junk; **scorer 506/512 chars**,
+solve 1492, clue 260–519 chars, 1500/1500 answers distinct. `n` is 0 (12.2 %) or 2–4; no two
+lorries ever want the same lay-by (generation rejects it, so the answer stays unique — the first
+version of the check compared *relative* item indices and let two lorries merge in one lay-by on
+34 % of clues, which is the one real bug this build found).
+`python tools/quickcheck.py challenges/lab/durnel.json --seeds 200` → **OK**
+(`gen=4.58 ms score=0.13 ms solve=0.14 ms` worst call in the sandbox; the single warning "score
+accepts the clue itself" is the intended `0 turn` foothold, exactly as fennick).
+
+### Prediction
+
+**testing → calibrated, on fennick's profile: ~12 % without a demo, ~100 % with one** (mean ≈ 50 %
+over two players in a 7-class pool where one of them spends a demo here). The risk is the other
+way now: the demo-holder must read four things off one picture pair (which lorries, the move, the
+first-vs-last lay-by, the nose flip). If a pair of demo-holders comes back at 0–10 %, soften with
+the "too hard" levers in the JSON: draw one lorry already sitting in a lay-by in the clue as a
+worked instance, or drop the nose flip so the edit is only "it moves into the lay-by".

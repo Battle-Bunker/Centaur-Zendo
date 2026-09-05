@@ -2314,7 +2314,7 @@
    ]
   },
   "durnel": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Scene busier than needed: fewer lorries/beams or more spacing so a kid spots trucks and overpasses in seconds",
@@ -2331,6 +2331,9 @@
      "score": 4.17,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -2414,6 +2417,12 @@
      "file": "challenges/lab/durnel.json",
      "note": "designer new-12: road with low bridges; lorries turn iff a beam ahead is lower than their height; clue = picture + 'n turn'; foothold 12% echo",
      "v": 1
+    },
+    {
+     "added": 1788594578.9382336,
+     "file": "challenges/lab/durnel.json",
+     "note": "refiner: lay-bys; a blocked lorry turns in the first lay-by it reaches (erased and redrawn); blind famous-fact reading 0%, foothold 12%",
+     "v": 2
     }
    ]
   },
@@ -11164,7 +11173,7 @@
    "kind": "refiner",
    "reason": "100/100 without demo: edit guessable from the clue, famous theme",
    "started": 1788592735.9728816,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {

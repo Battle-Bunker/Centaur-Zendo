@@ -502,3 +502,289 @@ a hypothesis by hand in seconds, and a wrong guess is now informative (one of fo
 blemish inherited from v1: the 4501-word pool still contains a few proper nouns the drop list
 missed (`jimmy`, `larry`, `lucy`, `warsaw`, `canada`), which can now surface as candidates as well
 as examples.
+
+---
+
+# Revision 3 — the relational universe (2026-09-05, v3)
+
+`docs/RULE_FAMILIES.md` §"Revision 3 (2026-09-05)". v1 and v2 are kept byte-identical as
+`challenges/lab/tavrik.v1.json` and `challenges/lab/tavrik.v2.json`; the shipped file is
+`challenges/lab/tavrik.json`.
+
+## 16. What the two lineup arenas showed
+
+Four Opus players met tavrik v2 in `lad-tresk-v2-1` and `lad-ospren-v2-1`. **None of them spent
+a demo on it** and they scored **85 / 96 / 89 / 89 %** (target ≈ 50 %). tresk 79–86, wisbek 77–88,
+ospren 80–87 are the same story; only dornic (59–66) and borsel (58–65) sat on target, and the
+players called those two unfair because several natural rules survive two positives.
+
+The attack, in the players' own words (`ospren1a/NOTES.md`, `ospren1b/NOTES.md`,
+`tresk1b/NOTES.md`):
+
+1. **Round 1: skip everything.** ~300 clues harvested per class at zero cost — the base rates.
+2. **Round 2: answer a RANDOM candidate on every item.** With k = 4, a quarter of them come back
+   correct: **~30 gold-labelled examples per class, free** — ospren1b's phrase is "30× what a
+   demo gives". A demo is one worked example; a round of random guessing is thirty.
+3. **Per clue**: enumerate 60–350 cheap string predicates; keep those true of every example and
+   of **exactly one candidate**; weight each by rarity (`freq^-2.5 / satisfiers^6`, or
+   −log of the base rate); answer the candidate the rarest survivor points at.
+4. **Learn U from the labels**: over the labelled clues, measure which predicate was the *unique
+   explanation* of the known-correct answer. ospren1a's learned list for tavrik was almost exactly
+   our U — "starts with a vowel, last letter, first == last letter, number of distinct letters,
+   contains j/q/x/z, letters in alphabetical order, a doubled letter / longest run", and he even
+   recorded the complement: "does **not** use: word length, vowel count, palindromes, suffixes,
+   semantics."
+
+Matched trap profiles (§5b) and the rarity attack (§5c) had both been anticipated and both lost.
+The reason is one line long: **every rule of v2's U was itself a cheap predicate in the attacker's
+bank.** Measured against a 627-predicate reconstruction of the three player banks (ospren1a's
+`f_tavrik` + ospren1b's word features + dornic1b's `tavrik_preds`), every rule of v2's U has best
+Jaccard **0.97–1.00**. Once the truth is in the bank and is by construction the rarest thing the
+examples share, the lineup is a lookup; and once U is learned from labels, the in-U intersection
+is 100 % and the game is over.
+
+**Simulated honestly** (`scratchpad/attacker.py`, the same engine: skip-harvest → random-candidate
+labels → per-predicate unique-explanation weights → rarity-weighted pick, 627 predicates):
+
+| labels | v2 (k = 4, floor 25 %) | v3 (k = 5, floor 20 %) |
+|---|---|---|
+| 0 | **91.2 %** | **39.6 %** |
+| 30 | **97.6 %** | **42.2 %** |
+| 60 | **98.0 %** | **42.4 %** |
+| 120 | 98.4 % | 42.4 % |
+| 240 | 99.4 % | 44.2 % |
+
+(500 fresh test clues, seeds 1e6…, base rates from 300 harvested clues, labels from a disjoint
+400. The simulator is slightly *stronger* than the real players — it scores 91–98 % where they
+scored 85–96 % — so its v3 figure is a lower bound on a real Opus centaur.)
+
+## 17. The universe U — 18 templates, 41 rules
+
+"kid sentence" is the whole rule, one breath. "density" = fraction of the 4485-word pool
+satisfying it = what a player who answered with a random *word* would score if this rule were the
+truth. **"bank J"** = the best Jaccard overlap with any of the 627 predicates in the attacker's
+reconstructed bank — the number that decides whether the attacker can even *express* the rule.
+
+| # | kid sentence | parameters | density | bank J | in U? |
+|---|---|---|---|---|---|
+| 0 | "the first and last letters are exactly *n* apart in the alphabet" | n = 1, 2, 3, 4 | .086 .089 .060 .064 | **.08–.13** | **IN** |
+| 1 | "a letter comes back after exactly one other letter" (`l**e**v**e**l`) | — | .101 | .24 | **IN** |
+| 2 | "a letter comes back after exactly two other letters" | — | .123 | .29 | **IN** |
+| 3 | "the 2nd letter and the 2nd-from-last letter are the same" | — | .060 | .19 | **IN** |
+| 4 | "the first letter is the earliest in the alphabet of all its letters" | — | .219 | .40 | **IN** |
+| 5 | "the first letter is the latest in the alphabet" | — | .210 | .43 | **IN** |
+| 6 | "the last letter is the earliest in the alphabet" | — | .169 | .35 | **IN** |
+| 7 | "the last letter is the latest in the alphabet" | — | .268 | .49 | **IN** |
+| 8 | "the back half of the word has more vowels than the front half" | — | .203 | .34 | **IN** |
+| 9 | "the front half has more vowels than the back half" | — | .245 | .50 | **IN** |
+| 10 | "the first vowel is an *c*" | c ∈ a e i o u | .277 .235 .168 .225 .095 | .48–.75 | **IN** |
+| 11 | "the last vowel is an *c*" | c ∈ a i o u | .180 .180 .126 .068 | .41–.53 | **IN** |
+| 12 | "the same vowel turns up twice" | — | .222 | .53 | **IN** |
+| 13 | "the vowels go up the alphabet" (≥ 2 vowels) | — | .341 | .50 | **IN** |
+| 14 | "the vowels go down the alphabet" (≥ 2 vowels) | — | .400 | .57 | **IN** |
+| 15 | "there is a *c* in it" | c ∈ b f k m p v w | .070–.149 | **1.00** | **IN** (cheap, ×2 weight) |
+| 16 | "it has a double letter" | — | .158 | **1.00** | **IN** (cheap, ×2 weight) |
+| 17 | "it ends with *c*" | c ∈ d g l n r s t y | .046–.114 | **1.00** | **IN** (cheap, ×2 weight) |
+
+|U| = **41 rules over 18 templates**. Mean density of the hidden rule **0.170**; template mix over
+500 clues 2.4–10.0 % each (the three cheap templates are drawn with double weight and take 24.6 %
+of clues between them). Antichain verified by brute force over the 4485-word pool **and** over all
+56 176 dictionary words of length 4–7: **0 nesting violations**, every rule ≥ 1592 dictionary
+instances.
+
+### EXCLUDED — what the class never asks (unchanged from v2, 14 traps)
+
+contains every letter the examples share · at least as many vowels as the least vowelly example ·
+at most as many as the most vowelly one · more consonants than vowels · it starts with a
+consonant · the 2nd letter is a vowel · the 2nd letter is a consonant · the same number of letters
+as the examples · no letter is repeated · the same first letter · it rhymes (same last two
+letters) · two vowels side by side · it ends with a vowel · it ends with a consonant.
+Also excluded by construction: **length** (all five candidates are the same length), **sound**,
+**meaning**, the common letters (only b f k m p v w are ever asked for), and every loose
+statement. Mean **6.0** traps fit any one clue (min 2, max 9).
+
+### Templates measured and thrown out this round
+
+| template | why not |
+|---|---|
+| "the middle letter is a vowel" | only definable for odd lengths, and all five candidates share a length — the lineup's length would leak the template |
+| "a letter and the very next letter of the alphabet are both in the word" | density .603: with five candidates the four decoys would all have to *lack* it, which is itself a signature |
+| "exactly two different consonants" | bank J .64 (`nc == 2`) — a cheap predicate in disguise |
+| "the letters are in alphabetical order", "it starts and ends with the same letter", "only three different letters", "some letter turns up three times", "it has a j/q/x/z", "it starts with a vowel", "exactly *n* vowels" | all of v2's U: bank J 0.97–1.00. Retired to the trap list |
+| "the last vowel is an e" | bank J .78 against `has_e` — the one member of family 11 that is a cheap predicate; dropped, which is why 11 has four parameters and 10 has five |
+
+## 18. What changed, item by item
+
+| | v2 | v3 |
+|---|---|---|
+| candidates | 4 (floor 25 %) | **5** (floor 20 %) |
+| examples | 2 in 56 %, 3 in 44 % | **2 in 99.8 %**, 3 in 0.2 % |
+| U | 10 templates / 25 rules, all bank J ≥ .97 | **18 templates / 41 rules**, 15 of them relational, bank J .08–.75 |
+| eligible as the hidden rule | 9 templates (vowel-count was competitor-only) | **all 18** (no competitor-only template is needed: "exactly *n* vowels" is out of U altogether) |
+| decoys aimed at | the *count* of surviving outside predicates | **the rarity order** (the rarest unique explanation), then the count order, then the letter-overlap order |
+| `score` | 689 chars | **946 chars** |
+| simulated attack, 30 labels | 97.6 % | **42.2 %** |
+
+### The one lever that mattered: aim the RARITY order, not the count
+
+v2 aimed the true candidate's rank on `popcount(surviving predicates)`. The players never used
+that statistic. Both of them used **the rarest predicate that selects exactly one candidate** —
+ospren1b's `freq^-2.5 / satisfiers^6` makes anything with two satisfiers worth 1/64 of a unique
+one, and ospren1a keeps only the unique ones by construction. v3 therefore computes, for every
+candidate, the *surprise of the rarest bank predicate that picks it alone*, and aims the true
+candidate's rank in **that** order at a uniformly random place (plus the count order and the
+letter-overlap order as secondary aims). This is only possible because most of U is outside the
+bank: when the truth's rule is not expressible in the bank, the truth's own cheapest explanation
+is an accident of exactly the same kind as a decoy's, so a decoy can always be found that carries
+one at least as rare. On v2's universe this aiming is impossible — the truth's rule *is* in the
+bank and *is* the rarest thing the examples share.
+
+## 19. Levers, measured (identical conditions, 400 test clues, 60 labels)
+
+| build | k | floor | attack at 60 labels |
+|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **40.8 %** |
+| minus lever 1 (k = 4) | 4 | 25 % | 47.8 % |
+| lever 1 pushed (k = 6) | 6 | 16.7 % | 40.0 % |
+| minus lever 5 (decoys not aimed) | 5 | 20 % | 54.2 % |
+| minus lever 2 (three-example clues) | 5 | 20 % | 44.2 % |
+| minus levers 1 + 2 + 5 (= the v2 machinery on the new U) | 4 | 25 % | 57.0 % |
+| **v2's own universe** (lever 3 off) | 4 | 25 % | **98.0 %** |
+
+Read off the differences: **the relational universe (lever 3) is worth ≈ 41 points**, the rarity
+aiming (lever 5) **≈ 13**, the fifth candidate (lever 1) **≈ 7**, the two-word clue (lever 2)
+**≈ 3**. k = 6 buys nothing over k = 5 (−0.8, inside noise) while costing a line of the clue and a
+kid's patience, so **five is the right number**. Lever 4 (drawing the hidden rule from the rare
+part of U more often than base rates expect) was **not** used: once the rarity order is aimed, the
+truth's own base rate carries no signal, and skewing the draw would only make the class's mix
+harder for a kid to feel.
+
+## 20. Learning U — the honest ceiling
+
+The in-U intersection is **100.0 %**: a player who has mapped U wins every clue. That is the
+ceiling, and it must stay there. What v3 changes is the *price*.
+
+| labels | attacker whose bank ALSO contains all of U | U-coverage learned |
+|---|---|---|
+| 0 | 79.8 % | 0 % |
+| 30 | 88.0 % | 0 % |
+| 60 | 95.6 % | 13 % |
+| 120 | 99.2 % | 58 % |
+| 240 | 99.2 % | 81 % |
+| 360 | — | **91 %** |
+
+(coverage = fraction of fresh clues whose true rule the learner has confidently identified,
+`m ≥ 4` firings and `n/m ≥ 0.7`.) v2 reached 90 % coverage at ≈ 300 labels over a universe less
+than half the size. The point is not the label count — it is that **with the generic bank alone
+coverage can never pass 24.6 % of clues**, because only the three cheap templates (16 of the 41
+rules) are expressible in it at all. The way up is to *invent the vocabulary*: to look at
+`closely / villain → hallway` and think "second letter, second-from-last". That is precisely the
+insight the ladder wants to be rewarding, and it is worth 42 % → 96 %.
+
+## 21. Three demos
+
+```
+CLUE                     LINEUP                       ANSWER            hidden rule (private)
+
+forest                   blocked justify rocking
+flare                    grounds cluster        ->    justify (2)       there is an f in it
+
+closely                  swallow linking willing
+villain                  colonel hallway        ->    hallway (5)       the 2nd letter and the
+                                                                        2nd-from-last are the same
+
+plastic                  vote lane wife
+ever                     visa wise              ->    lane (2)          the vowels go up the alphabet
+```
+(seeds 1000004, 1000088, 1000023; in the real clue the five candidates are one per line.)
+Demo 2 is the class in one picture: every candidate is seven letters, every candidate fires the
+same excluded rules, and the answer is the only one whose 2nd letter (`a`) matches its
+2nd-from-last (`a`).
+
+## 22. Witness table — 500 fresh clues (seeds 1e6 … 1e6+499)
+
+| witness | score |
+|---|---|
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| the true rule (`solve`), verbatim and by index | **100.0 %** |
+| **the full Revision-2 attack, 627-predicate bank, 30 labels** | **42.2 %** |
+| … at 0 / 60 / 120 / 240 labels | 39.6 / 42.4 / 42.4 / 44.2 % |
+| the candidate satisfying the MOST example-consistent bank predicates | 27.2 % |
+| the candidate with the smallest letter-distance to an example | 24.0 % |
+| the candidate sharing the most letters with an example | 22.8 % |
+| the alphabetically first candidate | 21.2 % |
+| the outlier of the five by shared letters | 21.0 % |
+| the candidate with the most vowels | 20.6 % |
+| **pick a random candidate (the floor)** | **19.6 %** |
+| pick candidate 1 | 17.8 % |
+| the candidate with the most different letters | 17.4 % |
+| the candidate satisfying the FEWEST such predicates | 13.6 % |
+| the medoid of the five | 11.0 % |
+| **each of the 14 excluded rules** | **12.5–27.3 %** (all random tie-breaking; see below) |
+| a player who knows U minus two templates | 84.4–91.0 % |
+
+The excluded rules are *structurally* dead, not merely weak: over 500 clues, all **3001** fitted
+traps are satisfied by **all five candidates or by none** (3001/3001). So no trap, no count of
+traps and no combination of traps separates the lineup, and a player whose universe is U *plus*
+the 14 traps is worth exactly a player who knows U. The spread 12.5–27.3 % is the random
+tie-break on the clues where a trap fires for all five, on samples of 3–430 clues.
+
+Other measured numbers (500 clues unless stated): uniqueness 500/500 · minimality 500/500 ·
+exactly one candidate obeys the rule 500/500 · all five candidates the same length 500/500 · five
+distinct candidates 500/500 · no candidate equal to an example 500/500 · matched trap profiles
+500/500 · all five with the same number of different letters 392/400 · examples per clue 2 → 499,
+3 → 1 · candidate length 4/5/6/7 → 131/142/126/101 · true-candidate position 89/123/91/92/105 ·
+over 20 000 seeds, **0** duplicate clues and **0** fallback clues.
+
+## 23. Validation
+
+`python tools/quickcheck.py challenges/lab/tavrik.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK tavrik gen=13.6ms score=6.04ms solve=12.53ms`, **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **946 chars** (v1 821, v2 689) | 1024 (the rule-family raise, `RULE_FAMILIES.md` §4) |
+| `generate` source | 21 732 (3.4 KB of it is the dropped-word list) | 50 000 |
+| `solve` source | 2 012 | 5 000 |
+| `generate` | **1.98 ms mean**, 16.6 ms max over 2000 seeds | 100 ms |
+| `score` | 0.52 ms mean (junk included) | 50 ms |
+| `solve` | 0.49 ms mean | 2 000 ms |
+| clue | ≤ 60 chars | 1024 |
+| answer | ≤ 7 chars | 1024 |
+
+`score` was checked candidate-by-candidate against `solve` on 600 clues × 5 candidates ×
+(verbatim + index) — **6000 checks, 0 disagreements** — and rejects `""`, `"0"`, `"6"`, `"9"`,
+`"x"`, `"1"*100`, the clue itself, an example word, `"hel lo"`, `"élan"`, the unicode digits
+`"١"`/`"²"`, `"-1"` and `"1.0"` without raising; `"ANTHEM"`, `" anthem "`, `"  Anthem\n"`, `"4"`
+and `" 4 "` all score 1 when `anthem` is right. Module-level tables (the 4485-word pool, its
+41-bit U mask, its trap features and its 627-bit bank mask) cost **≈ 1.9 s once per worker**
+(v2: 0.69 s) and are not charged to `max_generate_ms`. The drop list gained 16 more proper nouns
+(`warsaw canada jimmy larry lucy bali emma berlin york hong brazil chile japan yahoo boston
+jordan`) — the blemish v2's §15 flagged.
+
+## 24. Predicted classification
+
+**Calibrated.** Two Opus players in a 7-class pool:
+
+* **Without a demo** the shape still reads as multiple choice from round 1, so every probe is well
+  formed and the floor is a free 20 %. The v2 engine — skip-harvest, random-candidate labels,
+  rarest surviving predicate — now pays **40–44 %** and, crucially, **stops improving**: 0 labels
+  39.6 %, 240 labels 44.2 %. Expect **25–40 %**.
+* **With a demo** the demo teaches the format in one look and one worked rule. The way up is to
+  notice that the class talks about *relations between two letters* and to write the predicates
+  down; a player who does scores 96 % at 60 labels, one who maps 16 of 18 templates scores 84–91 %.
+  Expect **40–60 %**.
+
+Mean across the two ≈ **0.35–0.5** → `calibrated`. The risk is on the **easy** side only if an
+Opus player generalises quickly from three or four labelled clues to "it's about pairs of
+letters"; on the **hard** side if nobody spends a demo and everybody plateaus at 42 %, which is
+still inside the calibrated band.
+
+**12-year-old test (target: keep 4.7).** The object is still a word, the task is still "which of
+these fits?", and the clue is now almost always **two words** — a kid reads `closely, villain`
+aloud and starts guessing in one breath. Every rule is still a game a kid has played: *find a word
+with a double letter · the first vowel is an e · the vowels go a, e, i · the first and last letters
+are next-door in the alphabet · the second letter matches the second-from-last*. What v3 adds is
+exactly the kind of noticing a kid is **good** at and a predicate bank is bad at — looking at two
+letters at once — so the kid's contribution goes *up*, not down. Five candidates instead of four
+is one more short word to check by hand.

@@ -4766,6 +4766,21 @@
      },
      "score": 3.67,
      "version": 1
+    },
+    {
+     "advice": "Rule engineering excellent but the rendering is an abstract letter table; draw the shelves and goods as a real scene (labelled shelves, icons) so the object reads instantly and the moving pair pops out.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 2,
+      "kid_contributes": 2,
+      "no_prereqs": 3,
+      "object": 2,
+      "rule_statable": 3
+     },
+     "score": 2.67,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -12060,6 +12075,16 @@
    "id": "judge-molvic-v2-72f9",
    "kind": "judge",
    "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "molvic",
+   "id": "refiner-molvic-v2-reskin",
+   "kind": "refiner",
+   "reason": "kid score 2.67: letter table, not a shop; re-skin so it reads as shelves of goods",
+   "started": 1788599164.5111156,
+   "status": "running",
    "version": 2
   }
  ],

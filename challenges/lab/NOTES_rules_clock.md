@@ -823,3 +823,277 @@ left is "the minutes are 25 more than the hour" and "the minutes are three times
 kid does on two short numbers. The clue is now always **two** times plus five candidates, so a kid
 reads the whole thing aloud in one breath, and checking a candidate by hand is one glance at a
 drawn face.
+
+# 2026-09-05 — v4: the look-only trim
+
+`docs/RULE_FAMILIES.md` §"Revision 3" plus its addenda. v1/v2/v3 are kept byte-identical as
+`challenges/lab/wisbek.v1.json`, `.v2.json`, `.v3.json`; the shipped file is
+`challenges/lab/wisbek.json`. No arena run from this job. Working files:
+`scratchpad/wis4/` (`uni4.py`, `gen4.py`, `sim.py`, `per.py`, `abl.py`, `wit.py`, `check.py`).
+
+## 18. What v3's arena and its judge said
+
+`lad-tavrik-v3-1` measured wisbek v3 **without demos at 32 % and 35 %** — the weakest class in the
+lineup pool and just under the 35–55 % band. Two complaints, and they are the same complaint:
+
+* the player, in `sim/results/lad-tavrik-v3-1/players/*/NOTES.md`: *"wisbek is the weakest class
+  (34.7 %, against a 20 % floor). Its family mixes visual rules (a repeated digit, digits going up)
+  with arithmetic ones (minutes divisible by 9, (m−5h) mod 10 = 0), and the last of those is not
+  something a 12-year-old would phrase. Lean fully into the clock face: both hands point at a
+  number, the hands are mirror images."*
+* the judge (kid **4.33**, `nameable: no`): *"trim the arithmetic templates (minutes = hour+n,
+  minutes = n × hour) and the fold-along-a-diameter one toward purely eye-checkable hand/digit-
+  position relations."*
+
+So v4 is a **trim, not a rebuild**: same world, same lineup machinery, same 1332-predicate attacker
+bank, same levers 0–5. Every rule that needs a calculation is retired to the trap list, and the
+class is softened back up the way the recipe says to soften — by **doubling the two cheap dense
+templates** (addendum: retire by J × rarity; a dense bank predicate is worthless to a lineup
+attacker, so dense cheap rules are free kid-legible material).
+
+## 19. The universe — v3 (13 templates / 32 rules) → v4 (8 templates / 14 rules)
+
+Antichain re-verified by brute force over **all 720 times: 0 violations**. Mean density 0.121
+(0.137 as actually drawn). "J" = best Jaccard against the 1332-predicate bank; "atk" = the
+simulated free-label attack on that template's clues at 60 labels (600 clues).
+
+| w | # | IN/EXCL | kid sentence, read aloud | params | density | J | atk |
+|---|---|---|---|---|---|---|---|
+| 1 | 0 | **IN** | the two hands point at the same number · at next-door numbers · at opposite numbers | n = 0,1,6 | .017/.033/.017 | 1.00/.50/1.00 | 72 % |
+| 1 | 1 | **IN** | the two hands are mirror images in the line from the 12 to the 6 (3:45 → 3 and 9) | — | .017 | **.20** | 55 % |
+| 1 | 2 | **IN** | the hour is between the two minute digits | — | .189 | **.31** | 7 % |
+| 1 | 3 | **IN** | the time starts with its smallest digit · ends with its smallest digit · its biggest digit is in the middle, not at either end | 3 | .142/.174/.119 | .53/.69/.45 | 15 % |
+| 1 | 4 | **IN** | the hour and the first (last) minute digit are next-door numbers | 2 | .139/.150 | .28/.50 | 8 % |
+| 1 | 5 | **IN** | the digits are all one kind — all odd, or all even | — | .208 | .60 | 18 % |
+| 2 | 6 | **IN** (cheap) | the two minute digits are twins · are next-door numbers | 2 | .100/.183 | 1.00 | 89 % |
+| 2 | 7 | **IN** (cheap) | the hour turns up again in the minutes | — | .200 | 1.00 | 68 % |
+| — | — | **EXCLUDED in v4** | the minutes are *n* more than the hour (v3 T11) · the minutes are *n* times the hour (v3 T12) | | .017 | 1.00 | retired: arithmetic |
+| — | — | **EXCLUDED in v4** | the two hands are *n* numbers apart, counted by sector (v3 T1) | | .167 | .50 | retired: a minute hand between two numbers has no honest count |
+| — | — | **EXCLUDED in v4** | the big hand points at half / at double the little hand's number (v3 T2, T3) | | .042 | .23/.50 | retired: multiplication, and the same sector problem |
+| — | — | **EXCLUDED in v4** | fold the face along the *n*↔*n+6* line, *n* = 1…5 (v3 T0) | | .017 | .20 | retired: only the 12–6 mirror has a name a kid says |
+| — | — | EXCL (as v3) | minutes even/odd · first/second half of the hour · the minute hand points straight at a number · all the digits different · the hour even/odd · the hour goes exactly into the minutes · both hands in the same half of the face · o'clock/quarter past/half past/quarter to · the minutes bigger than the hour · the time reads the same backwards · the digits go up / go down · the time starts and ends with the same digit · the hands make a square corner · the minutes in the same ten · the minute digits / all the digits / the hour and the minutes add up to the same total · the two range traps · **all of v2's universe** (digit sums, *m* mod *k*, *m* = *k·h*) | | | | the kid traps |
+
+**Read aloud, all fourteen:** *the two hands point at the same number · at next-door numbers · at
+opposite numbers · the two hands are mirror images in the line from the 12 to the 6 · the hour is
+between the two minute digits · the time starts with its smallest digit · the time ends with its
+smallest digit · the biggest digit is in the middle · the hour and the first minute digit are
+next-door numbers · the hour and the last minute digit are next-door numbers · the digits are all
+one kind · the two minute digits are twins · the two minute digits are next-door numbers · the hour
+turns up again in the minutes.* Not one of them contains a sum, a product, a remainder or a count.
+
+**Three things the trim taught.**
+
+1. **"The big hand points straight up or straight down" is unbuildable here, however lovely it
+   reads.** Its satisfying set uses only the minutes `:00` and `:30`; the two examples sit at
+   different hours but consume both minutes, and every candidate must be at a minute the clue does
+   not use — so no candidate can obey the rule. Measured: template drawn 0 times in 300 clues.
+   A rule whose satisfying set spans fewer minute values than (examples + 1) cannot live in a
+   lineup class with a fresh-minute rule. It stays on the trap list inside "o'clock / quarter past
+   / half past / quarter to".
+2. **The mirror survives the fold family because it is the one axis with a name.** `(5h+m) % 60 = 0`
+   means the two hand *numbers* add to 12 — 3 and 9, 2 and 10, 5 and 7 — and the minute hand is
+   always exactly on a number, so a kid checks it by folding the drawn face down the middle. The
+   other five diameters are the same arithmetic wearing a different hat.
+3. **The complement half of a digit-position family is a trap, not a rule.** "The smallest digit is
+   in the middle" (.476) and "the biggest digit is at the back" (.428) look like the natural mirror
+   images of the three kept rules, but the minutes' tens digit only runs 0–5 and the units digit
+   0–9, so those three are dense by construction and (RULE_FAMILIES) a lineup cannot carry a rule
+   near density .5: four decoys all lacking a common property is itself a signature. Kept out.
+
+## 20. The attacker table — v3 vs v4
+
+Same simulator for both (`scratchpad/wis4/sim.py` = the players' own engine: skip-harvest base
+rates from 300 clues → random-candidate answers on a disjoint pool, of which 1/k come back correct
+= the gold labels → per-key unique-explanation reliabilities → rarity-weighted pick). 600 test
+clues, seeds 1e6…, identical conditions for both rows.
+
+| free labels | **v3** (13 templates, 32 rules) | **v4** (8 templates, 14 rules) |
+|---|---|---|
+| 0 | 39.0 % | **29.5 %** |
+| 30 | 41.8 % | **41.0 %** |
+| 60 | 43.2 % | **45.5 %** |
+| 120 | 43.7 % | **50.8 %** |
+| 240 | 49.5 % | **55.8 %** |
+| bank + all of U (the honest ceiling) | — | 54.8 / 88.0 / 88.3 / 93.3 / 95.3 % |
+| the in-U intersection (a player who has mapped U) | 100.0 % | **100.0 %** |
+| U-coverage learned with the generic bank | 34 % | **37 %** (stalls; 100 % at 120 labels once U is in the bank) |
+
+**How to read it.** v4 starts *lower* than v3 (29.5 vs 39.0: the two 100-%-at-zero-labels arithmetic
+families are gone) and finishes *higher* (55.8 vs 49.5: the doubled cheap slope is learnable). The
+shape is the point — this class now rewards labels on the part of U a predicate bank can express
+and stalls on the rest, which is exactly what the recipe asks a "learnable slope" to do.
+
+**Calibration, which is what the target has to be read through.** The simulator scored 94.7 % on v2
+where four real Opus centaurs scored 77–88 %, and 43–49 % on v3 where two scored 32 and 35 %. It
+runs **≈ 13 points hot** on this class. Both pool-3 players harvested **170–535 free labels**, so
+the column to read is 120–240: v4 simulates **51–56 %** there → **≈ 38–43 % for a real demo-less
+Opus player**, against v3's measured 33.5 %. That is the middle of the 35–55 % band.
+
+## 21. Lever ablation (identical conditions, 300 clues, 60 labels)
+
+| build | k | floor | simulated attack |
+|---|---|---|---|
+| **v4 as shipped** | 5 | 20 % | **46.7 %** |
+| minus lever 1: k = 4 | 4 | 25 % | 48.0 % |
+| lever 1 pushed: k = 6 | 6 | 16.7 % | 45.0 % |
+| minus lever 0: example set not chosen to hide the rule | 5 | 20 % | 48.7 % |
+| minus lever 5: decoys not aimed | 5 | 20 % | 51.7 % |
+| minus lever 2: three-example clues | 5 | 20 % | 61.0 % |
+| **minus step 4: the two cheap templates not doubled** | 5 | 20 % | **36.0 %** |
+| minus lever 3: v2's own universe (measured on v3, unchanged) | 4 | 25 % | 95.0 % |
+
+**The softening lever is step 4, and it is worth 10.7 points** — more than aiming (5.0), lever 0
+(2.0) and the fifth candidate (1.3) put together. This is the addendum "retire by J × rarity"
+paying off twice: the dense cheap templates are the only place a designer can add attack rate
+without adding arithmetic. `k = 6` again buys nothing, and the two-example clue is still worth
+14 points, so the pool-3 request for a third positive stays refused (it is free intersection
+material for the attacker); the fairness answer is the *smaller, plainer* universe instead.
+
+**One new sub-lever (v4).** When the rule is template 0 the decoys are now HARD-matched on the trap
+"the minute hand points straight at a number": four of the fourteen rules force `m % 5 == 0` on the
+true candidate, and without the match "pick the candidate whose minutes end in 0 or 5" was worth
+**30.6 %** against a 20 % floor (now **26.5 %**). It is deliberately *not* applied to the mirror
+template — there the rule *is* "on a number, and the two hand numbers add to 12", so forcing every
+candidate onto a number hands the bank's hand-sum predicate the answer (measured 55 % → 88 %).
+That is the concrete form of v3's note that this 720-time world cannot hold §5b in the strong form.
+
+## 22. Three demos
+
+```
+CLUE            LINEUP                             ANSWER        the rule, in a kid's words
+5:55            3:35 12:35 9:15 1:25 10:50    ->   9:15  (3)     the two hands point at opposite
+8:10                                                             numbers (5 and 11; 8 and 2; 9 and 3)
+
+2:30            9:57 5:14 8:03 11:26 4:16     ->   4:16  (5)     the hour is between the two minute
+7:08                                                             digits (0<2<3, 0<7<8, 1<4<6)
+
+2:33            6:04 11:57 4:00 7:46 12:39    ->   4:00  (3)     the two minute digits are twins
+5:11
+```
+(seeds 1000002, 1000001, 1000004; in the real clue the five candidates are one per line, after a
+blank line. Demo 3 is a *cheap* clue — the learnable slope. Demo 1 is the class in one picture:
+draw the five candidate faces and only one has its hands pointing straight across the dial.)
+
+## 23. Witness table — 500 fresh clues (seeds 1 000 000 – 1 000 499)
+
+Floor 20 % (one of five). All ties broken uniformly at random.
+
+| witness | score |
+|---|---|
+| **the true rule (`solve`), verbatim and by index** | **100.0 %** |
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| a player who knows U minus the two face templates | 81.6 % |
+| a player who knows U minus the two cheap templates | 69.9 % |
+| **the full revision-3 attack, 1332-predicate bank, 60 labels** | **45.5 %** |
+| … at 0 / 30 / 120 / 240 labels | 29.5 / 41.0 / 50.8 / 55.8 % |
+| EXCLUDED ††: fold the face along the *n*↔*n+6* line (fits 13 %) | 85.3 % |
+| EXCLUDED ††: the two hands are *n* numbers apart, by sector (fits 16 %) | 63.3 % |
+| EXCLUDED †: the hour turns up again in the minutes (fits 69 %) | 40.2 % |
+| EXCLUDED: all the digits are different (fits 64 %) | 36.1 % |
+| the candidate firing the MOST example-consistent excluded rules | 34.4 % |
+| the candidate the rarest surviving bank predicate points at, no labels | 33.0 % |
+| EXCLUDED †: the minute digits are next-door numbers (fits 72 %) | 32.2 % |
+| the candidate satisfying the MOST example-consistent bank predicates | 28.3 % |
+| the candidate whose minutes are a multiple of 5 | 26.5 % |
+| EXCLUDED: all the digits add up to the same total (fits 5 %) | 25.4 % |
+| EXCLUDED: the minutes end in 0 or 5 (fits 73 %) | 23.6 % |
+| EXCLUDED: both hands in the same half of the face / the digits go up (fits 56 / 57 %) | 22.4 / 22.4 % |
+| EXCLUDED: the digits go down (fits 58 %) | 21.6 % |
+| the candidate with the smallest hour | 21.4 % |
+| EXCLUDED: the hour goes exactly into the minutes (fits 53 %) | 21.3 % |
+| EXCLUDED: the hands make a square corner, exactly (fits 96 %) | 20.3 % |
+| **pick a random candidate (the floor)** | **20.0 %** |
+| EXCLUDED: o'clock / quarter past / half past / quarter to (fits 76 %) | 19.1 % |
+| EXCLUDED: the minutes are bigger than the hour (fits 77 %) | 19.0 % |
+| the candidate with the smallest minutes | 18.7 % |
+| EXCLUDED: the time starts and ends with the same digit (fits 77 %) | 17.8 % |
+| the candidate sharing the most digits with an example | 17.8 % |
+| EXCLUDED: the time reads the same backwards (fits 79 %) | 17.6 % |
+| EXCLUDED: the minutes are in the same ten (fits 16 %) | 17.4 % |
+| EXCLUDED: the hour is even / odd (fits 36 %) | 16.9 % |
+| EXCLUDED: the minutes are *n* times the hour (fits 33 %) | 16.8 % |
+| the candidate firing the FEWEST example-consistent excluded rules | 15.5 % |
+| **pick candidate 1** | **15.4 %** |
+| EXCLUDED: the minute digits add up to the same total / first-second half (fits 8 / 50 %) | 15.1 / 15.1 % |
+| the candidate in a minute-decade the clue uses | 14.7 % |
+| EXCLUDED: the minutes are even / odd (fits 38 %) | 14.2 % |
+| EXCLUDED: the minutes are *n* more than the hour (fits 1 %) | 13.3 % |
+| **INVERTED: the candidate the rarest unique bank predicate does NOT point at** | **12.5 %** |
+| the candidate whose minutes are nearest an example's | 12.4 % |
+| the candidate satisfying the FEWEST example-consistent bank predicates | 11.8 % |
+
+† Two trap features are *also* U templates (they are bank predicates the class does use, and they
+are the doubled slope), so following one blindly is worth 32–40 % — that is the slope, not a leak.
+†† Two trap features are the **shadows of the face templates**: when both examples share a hand
+offset, or fold onto the same diameter, it is nearly always *because* the rule is a face rule, and
+no decoy can share the value without satisfying the rule. Following them is therefore worth 63 and
+85 % on the 13–16 % of clues where they fit — i.e. a player who has invented the words "the two
+hands" collects the face family, which is the insight the class exists to reward.
+The honest cost of doubling the slope: "most excluded rules" is **34.4 %** against v3's 26.4 %, and
+almost all of the rise comes from those two † templates. "Fewest" is 15.5 % and the **inverted**
+rarity attack is 12.5 %, so there is no free heuristic pointing away from the truth either.
+
+Other measured numbers (500 clues unless stated): uniqueness 500/500 · minimality 500/500 · exactly
+one candidate obeys the rule 500/500 · five distinct candidates 500/500 · every candidate at a fresh
+hour **and** a fresh minute 500/500 · five different candidate hours 500/500 · examples per clue
+**2 → 2000/2000 seeds** · template mix 33–98 of 500 · true-candidate rank in the rarity order
+163/109/97/68/63 and in the count order 142/122/105/73/58 · fitted traps all-or-none 2620/5626
+(47 %) · **0 duplicate clues and 0 fallback clues over 2000 seeds**.
+
+## 24. Validation
+
+`python tools/quickcheck.py challenges/lab/wisbek.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK wisbek  gen=3.74ms score=0.12ms solve=0.11ms` (maxima), **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **816 chars** (v1 895, v2 812, v3 1009) | 1024 (the rule-family raise) |
+| `generate` source | 27 554 (11 KB of it is the attackers' bank) | 50 000 |
+| `solve` source | 1 186 | 5 000 |
+| `generate` | **1.87 ms mean**, 1.83 median, 3.45 p99, 5.02 max over 2000 seeds | 100 |
+| `score` | 0.11 ms max (junk included) | 50 |
+| `solve` | 0.08 ms max; correct on 1000/1000 clues | 2000 |
+| clue | ≤ 38 chars | 1024 |
+| answer | ≤ 5 chars | 1024 |
+
+Module-level tables (the 14-bit U mask, the 24 trap features and the 1332-bit bank mask for each of
+the 720 times) cost ≈ 0.2 s once per worker and are not charged to `max_generate_ms`.
+`score` was checked against the reference predicate on **400 clues × (the 5 candidates + all 720
+times)** — 0 disagreements — in four answer forms (verbatim, 1-based index, surrounding whitespace,
+leading zero on the hour): 1200/1200. It rejects `''`, `x`, `0`, `6`, `9`, `-1`, `1.0`, `'1'*100`,
+`'9'*4000`, the clue itself, `12:60`, `13:05`, `7:5`, `hel lo`, `1:23:45`, `[1]`, `None`, a two-line
+answer and the unicode digits `١` / `²` without raising. `solve` re-derives the survivor exactly as
+the scorer does and returns the true candidate verbatim.
+
+*(One inherited convention, unchanged from v3: for the two-digit hours 10, 11, 12 "the hour turns up
+again in the minutes" reads the hour's **last** digit — 12:23 counts because of the 2. It is the
+only place in U where a written time is not treated one digit at a time.)*
+
+## 25. Predicted classification
+
+**Calibrated, with the risk now on the easy side rather than the hard side.**
+
+* **Without a demo** the clue reads as multiple choice from probe 1, so every attempt is well formed
+  and the 20 % floor is free. The pool-2/3 engine — skip-harvest, random-candidate labels, rarest
+  surviving predicate — simulates 45.5 % at 60 labels and **50.8 / 55.8 % at the 120–240 labels the
+  real players actually harvested**, i.e. **≈ 38–43 %** once the simulator's measured 13-point head
+  start is removed (v3: 33.5 % measured). Expect **35–45 %**.
+* **With a demo** the demo teaches the format in one look and one worked rule, and the vocabulary is
+  now small and concrete enough that a player who says "it is always about the two hands, or about
+  where the smallest and biggest digits sit" can write U down. A player who does scores 100 %.
+  Expect **50–70 %**.
+
+Mean across the two ≈ **0.45–0.55** → `calibrated`, against v3's measured 0.335 and v2's 0.83. The
+residual risk is the other way from v3's: U is now only 14 rules and an Opus player who spends a
+demo may map it inside four rounds. If the next run comes back above 0.7, the lever to pull is step
+4 in reverse (un-double the cheap templates: −10.7 points), not more arithmetic.
+
+**12-year-old test (target 4.5+, v3 scored 4.33 with `nameable: no`).** The object is still a clock,
+and every one of the fourteen rules is now something a kid **sees**: two hands pointing at the same
+number, at next-door numbers, at opposite numbers, or mirrored down the middle of the face; the hour
+squeezed between the two minute digits; the smallest digit at the front or the back; the biggest one
+in the middle; the digits all odd or all even; twin minute digits; next-door minute digits; the hour
+turning up again. The three families the judge named — `minutes = hour + n`, `minutes = n × hour`,
+the fold along an unnamed diameter — are gone, and so are the sector-counted hand offsets and the
+half/double pair that shared their flaw. There is no sum, product, remainder or count left anywhere
+in U, and the clue is still two times plus five candidates, read aloud in one breath.

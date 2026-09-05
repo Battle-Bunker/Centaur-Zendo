@@ -10269,7 +10269,7 @@
    ]
   },
   "wisbek": {
-   "current_version": 3,
+   "current_version": 4,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -10305,7 +10305,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -10620,6 +10621,12 @@
      "file": "challenges/lab/wisbek.json",
      "note": "Revision 3: 13 templates/32 rules, 20 clock-face relations; k=5; pair clues; example set chosen to hide the rule from the bank; simulated attacker 38-49%",
      "v": 3
+    },
+    {
+     "added": 1788603354.900482,
+     "file": "challenges/lab/wisbek.json",
+     "note": "trim: 8 templates/14 rules, no arithmetic anywhere; cheap dense templates doubled; simulated attacker 30-56%",
+     "v": 4
     }
    ]
   },
@@ -13289,7 +13296,7 @@
    "kind": "refiner",
    "reason": "32-35% no-demo (on target) but judge + both players: drop the arithmetic templates (minutes = hour+n, n*hour, (m-5h) mod 10, fold along a diameter) for eye-checkable ones",
    "started": 1788602057.3687334,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

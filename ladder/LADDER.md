@@ -104,6 +104,6 @@ subagent died. Recovery: check `arena.py status` and the team `logs/`; if the ga
 training, relaunch the player agents with a "you are resuming; run status first" preface — team
 state lives on the server and in the team dir. Designers/refiners that had not written files are
 simply relaunched. Player prompts must never assume a fresh start.
-Quota note (2026-09-05 ~00:30 UTC): all four relaunched agents were refused (session limit, resets
-01:00 UTC). Jobs reset to pending; the validation arena `lad-fennick-v3-1` is still running with
+Quota note (2026-09-05): all four relaunched agents were refused (session limit, reset at
+01:00 UTC; relaunched at 02:16). The validation arena `lad-fennick-v3-1` stayed up throughout with
 both teams one round in — resume the players first (see the recovery note), then the designers.

@@ -5259,7 +5259,7 @@
    ]
   },
   "tresk": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -5277,6 +5277,9 @@
      "score": 4.0,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -5360,6 +5363,12 @@
      "file": "challenges/lab/tresk.json",
      "note": "v1 rule family (beads): 8 templates, 38 rules, answer must use a length not in the clue; scorer 761",
      "v": 1
+    },
+    {
+     "added": 1788581113.6080964,
+     "file": "challenges/lab/tresk.json",
+     "note": "v2 lineup: 4 same-length candidates with identical trap profiles; attacker predicate-count 97%->39%",
+     "v": 2
     }
    ]
   },
@@ -7667,7 +7676,7 @@
    "class": "tresk",
    "id": "judge-tresk-v1-7e2d",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -7807,7 +7816,7 @@
    "kind": "refiner",
    "reason": "lineup",
    "started": 1788579542.7689595,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -7842,6 +7851,32 @@
    "agents": 1,
    "class": "wisbek",
    "id": "judge-wisbek-v2-9ba1",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tavrik",
+   "id": "refiner-tavrik-v1-lineup",
+   "kind": "refiner",
+   "reason": "lineup",
+   "started": 1788581113.6409276,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tresk",
+   "id": "players-tresk-v2-6f44",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tresk",
+   "id": "judge-tresk-v2-79fe",
    "kind": "judge",
    "status": "pending",
    "version": 2

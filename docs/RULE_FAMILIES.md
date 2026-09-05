@@ -95,6 +95,10 @@ Rules for the lineup:
 4. The clue format: examples, a blank line, then the candidates one per line. The scorer accepts
    the chosen candidate verbatim (whitespace-insensitive) or its 1-based index.
 5. Drop the "fresh instance" clauses — they are no longer needed and were never legible.
+5b. Refinement measured on tresk v2: give every candidate the SAME trap profile (the true one and the
+   decoys fire exactly the same set of example-consistent excluded rules), otherwise "pick the
+   candidate that satisfies the fewest excluded rules" is a free crack. With matched profiles every
+   trap heuristic scores exactly chance and the only way up is reconstructing U.
 6. Witness table for revision 2: pick candidate 1 / a random candidate; pick the candidate that
    satisfies the most predicates from a broad outside pool; pick the candidate satisfying every
    rule in U that the examples allow (the in-U intersection — must be 100 %); pick by each excluded

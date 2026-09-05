@@ -122,3 +122,85 @@ first class whose split is by *reading* rather than by *probing*: the same demo 
 **Levers.** Too easy: require the caption to be dropped (removes the identity foothold) or draw
 some books already leaning in the clue so the answer is "which further ones fall". Too hard:
 put a single fallen book into the clue as a worked instance.
+
+## kelmar v3 — rain over a garden (calibrated 2026-09-05)
+
+**Rule.** The clue is a finished weather picture: a cloud row `(~~)`, three rows of falling drops
+`''''` under each cloud (some showers stop in mid-air), a garden row of flowers `*` and trees `Y`
+on the ground, and a caption `2 lean`. The answer is the same picture with exactly the right
+plants redrawn leaning (`/` or `\`): a plant leans over for a drink iff the shower right next to
+it comes all the way down to the ground. A shower that hangs in the air is no use to anyone.
+Nothing else may change; the caption may be kept or dropped.
+
+**Record (4 Opus finals): 100 %, 13 %, 13 %, 100 % — mean 57 %; with a demo 71 % (3 players),
+without 13 % (1).** The 13 % scores are the `0 lean` clues (the echoed clue). The two 100 %
+players both bought the demo and both cracked it in round 2 *offline*: one verified "every plant
+touching a full-height tree leans" on 67/67 harvested clues before answering a single one; the
+other wrote "a mushroom whose stem reaches full height pushes over the plant beside it". Neither
+saw rain — they saw trees or mushrooms — and it did not matter, because the relation they read
+(the column reaches the ground) is the rule. The one demo-holder who failed had an imagined kid
+say "clouds with rain under them" and ignored it, parking on the foothold.
+
+**What a kid sees.** Clouds, rain, a garden, and a caption saying how many plants lean. The
+question "why did *those* lean?" has an everyday answer once the kid notices that some showers
+stop short: the plants next to rain that actually lands lean towards it. Every clue plants the
+near-misses in one picture: a flower standing in the rain (does not lean), one directly under a
+hanging shower, one beside a hanging shower, and a tree two columns clear.
+
+**Why it works.** This is the fennick recipe applied to a class that had scored 0–9 % across
+twelve finals: the object that had been the *answer* (the rain) moved into the clue, the answer
+became the smallest edit of the picture, and the caption became a checksum. v2 had asked players
+to invent the rain, so the picture read as arbitrary blocks and the plants read as decoration; v3
+asks only "which plants?", and the caption lets the answer be tested against 80 clues for free.
+The reading is what splits players: read it as weather (or trees, or mushrooms — anything
+physical) and it is one clause; read it as bookkeeping and the numeric thresholds never fit.
+
+**Reflection.** Three versions of kelmar carried the same relation (plant beside landing rain) and
+scored 0, 5 and 57 %. The rule was never the problem; what changed was *which half of the picture
+the player had to produce*. When the answer is the complicated half (rain), the class is opaque;
+when the answer is the small edit (a lean), it is fair. That is now the house rule for every
+picture class: finished object in the clue, verb and count in the caption, the demo shows how the
+edit is drawn.
+
+**Levers.** Too easy: make the reach depend on the plant (trees drink from two columns away,
+flowers from one) so "nearest landing rain" stops being enough. Too hard: draw one plant already
+leaning in the clue as a worked instance.
+
+## virel v3 — the next course of bricks (calibrated 2026-09-05)
+
+**Rule.** The clue is a finished wall, three or four courses of bricks `[--][---][]…`, every
+course the same width, plus a number N in 0..3. The answer is the same wall with ONE more course
+laid on top, a gapless row of bricks 2–6 wide, such that exactly N of the new bricks sit
+precisely on top of a brick of the same span (same left and right edge) in the course below. Any
+course that does it scores; the reference builds one at random.
+
+**Record (4 Opus finals): 100 %, 100 %, 0 %, 20 % — mean 55 %; with a demo 73 % (3 players),
+without 0 % (1).** The two 100 % players both bought the demo and both reported that their
+imagined 12-year-old got there first: "it's a brick wall, you put the next row on top, and look —
+no brick is sitting right on top of another brick"; "a child would have counted: one brick in my
+new row sits exactly on a brick below". Both AIs first measured joints (the famous fact about
+walls: stagger the joints) and lost most of an hour before trying the kid's sentence. The
+theorist who scored 20 % with the demo never fixed the brick mix and treated it as number
+theory; the low-demo player never learned the format at all (0 %).
+
+**What a kid sees.** A wall, and the job of laying the next row. The number is how many bricks are
+allowed to sit *exactly* on a brick the same size. Virel is the one class in the pool whose
+answer's shape is NOT readable from the clue — the clue is a wall and a number, and nothing says
+"add a row" — so every player who scored bought the demo, and the demo teaches the format and the
+rule in one look.
+
+**Why it works.** v2 asked for a whole wall of five courses carrying exactly N twin stacks — a
+search that players never finished, so identical answers scored 1 on one clue and 0 on another
+and looked unfair. v3 collapses the construction to one course, which makes the answer a
+sentence ("add one row so that exactly N bricks sit right on top of a brick the same size") and
+keeps the measurement unnameable: "resting on its twin" sits below "the joints line up" in a
+model's list and near the top of a kid's. The generator makes the width budget force decoys
+(near-twins, aligned joints) into every clue.
+
+**Reflection.** Virel is calibrated for a different reason from fennick and kelmar: it is
+demo-gated by *format*, not by rendering. That is fine as one class in seven — the players
+said so themselves — but it means the class's rate is decided almost entirely by whether a
+player chooses to spend a demo on the opaque clue. A pool should carry at most one such class.
+
+**Levers.** Too easy: count only twins that are not adjacent to another twin. Too hard: draw the
+new course's first brick already in place.

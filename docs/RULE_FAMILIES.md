@@ -247,3 +247,21 @@ run this, in order:
 9. **Re-read the rules aloud.** If a 12-year-old cannot check a candidate against the rule by hand
    in a few seconds, the relation is too clever. "The second letter and the second-from-last letter
    are the same" passes; "the letters' alphabet positions sum to a multiple of the length" does not.
+
+### Addenda from tresk v3 and wisbek v3 (2026-09-05)
+
+* **Retire by J × rarity, not J alone.** A bank predicate helps the attacker only when it selects
+  exactly one candidate, so a *dense* predicate is worthless even at J = 1.00 (wisbek: "twins",
+  density .10, pays 47 %; "the hour turns up again", .20, pays 19 %; the one-per-hour families,
+  .017, pay 98–100 %). Cheap templates kept as the learnable slope should be the dense ones.
+* **Lever 0 — choose the example set that hides the rule from the bank.** Among minimal example
+  pairs, prefer one for which no surviving bank predicate implies the rule (wisbek: opposite sides
+  of the face for "n apart"; one all-odd and one all-even time for "all one kind"). Worth ~5 points;
+  took wisbek's "n apart" family from 47 % to 6 %.
+* **Small universes cannot hold §5b in the strong form** (wisbek: 720 times; forcing agreement on
+  ~9 fitted traps empties the pool). Make trap matching a preference inside the aimed rank and
+  measure "most/fewest excluded rules" against the floor instead (wisbek: 26 % / 17 % vs 20 %).
+* **Kid score follows the kind of relation.** tavrik v3 (counted relations: alphabet distance,
+  "comes back after n letters") fell 4.7 → 3.83; tresk v3 (visual relations only: ends match, a
+  clump touches the end, every red followed by a blue) rose 4.0 → 4.5. Relations must be things a
+  kid spots by eye.

@@ -407,3 +407,131 @@ in every single one.
 **Predicted classification:** on target with a demo (≈ 50 % crack in ~2 rounds), 5–10 % without
 one; overshoot is the risk, not undershoot. Previous version kept byte-identical at
 `challenges/lab/basten.v2.json`.
+
+## basten v4 — the checksum-caption pass after `lad-kelmar-v3-1` (2026-09-05)
+
+**Diagnosis carried in.** v3 scored **0 % for six Opus players without a demo and 30 % over four
+with one**. In `lad-kelmar-v3-1` neither player spent a demo on it and both scored 0 (0/790 and
+0/497). Their notes say exactly why:
+
+* kelmar1a, demo policy: *"Deliberately left without a demo: durnel (already cracked from clues),
+  basten and tovel (answer shape obvious from the clue: grow the plants / fill the dots)."*
+* kelmar1a, post-mortem: *"basten — never cracked. N (3..5) is independent of the picture (all 9
+  combinations of N × water-depth occur, max plant height is always 3), so it is not a height, a
+  depth or a count of anything visible. 15 rules tried, 0/790."*
+* kelmar1b: *"basten — skipped (a skip costs no time and helps the precision tiebreak)."*
+* fennick1b (run 3): *"basten, kelmar — each of those clues contains a canvas with obvious empty
+  slots"* … and then *"basten/kelmar/tovel skipped"*.
+* dornic1b (lineup run) had the format perfectly — *"it is a FISH TANK. Answer = same picture with
+  fish `><>` / `<><` added"* — and still finished at **1.5 %**.
+
+So v3 passed the first half of the demo economy (the clue reveals the answer's shape) and failed the
+second in the worst way: because the shape was obvious, nobody spent a demo, and because the caption
+was a **free parameter** ("draw N fish"), no hypothesis could be tested against a harvested clue.
+Every candidate rule cost a slice of a round. LADDER.md run 4's conclusion, in the players' own
+words: *a caption that is a checksum on the answer lets a hypothesis be falsified offline against
+~70 clues; a caption that is a free parameter cannot be tested at all, so the class is
+demo-or-nothing — and nobody spends a demo on a class whose answer shape is already obvious.*
+
+**The v4 change, in one line: the fish are now IN the clue, and the caption counts the edits.**
+
+1. **The clue is the finished tank** — surface, water, weeds growing out of the gravel, gravel, and
+   5-8 fish already swimming — with the caption `<n> nibble`. The answer is that picture edited.
+2. **The verb is the natural one for a fish tank and the count is a checksum.** `n` is the number of
+   fish that swim over and nibble, i.e. exactly the number of edits, so a team can test a candidate
+   rule offline against every clue it harvests, which is how fennick's and durnel's crackers worked.
+3. **The rule (one physical clause):** *each fish swims over to the weed it is looking straight at
+   and nibbles the top off — if it can reach the top.* Formally: the first thing ahead of its nose
+   in its own row is a weed, and that weed's tip is in the fish's row or one row above. The edit:
+   the fish slides until its nose is beside the weed, and the weed's topmost segment goes.
+4. **12.2 % of clues are `0 nibble`**, where the answer is the clue echoed — the fennick foothold.
+
+**Why "can it reach?" and not "is something in the way?".** The first build of v4 used blocking as
+the near-miss (a fish queued behind another cannot get to the weed). It measured beautifully on the
+rule rivals but leaked through *ranking heuristics*: because a blocker always sits between the fish
+and the weed, blocked fish are systematically further from their weed, so **"the n facing fish
+closest to their weed" scored 89 %** — a demo-holder cracks it with no insight at all. The reach
+clause is orthogonal to the horizontal geometry: the generator can put an out-of-reach fish nearer
+its weed than a nibbler (79.9 % of clues), further away than a nibbler (79.2 %), and higher in the
+tank than a nibbler (78.4 %), so distance, depth and left-to-right order are all worthless. Those
+three constraints are the whole reason the witness table has no row above 31 %. (Blocking is still
+in the scorer — a fish cannot swim through a fish — but the generator never lets it decide a count,
+so it is drawing, not law.)
+
+**Witness table** (4000 fresh clues; every attacker but the echoes knows the drawing convention and
+the caption — a player who has seen a demo and holds the wrong rule):
+
+| attacker's law | v4 |
+|---|---|
+| **the true rule** (and the true rule with the caption dropped) | **100.0 %** |
+| only the short weeds get nibbled | 31.4 % |
+| the n facing fish furthest from their weed | 26.2 % |
+| the n facing fish closest to their weed | 24.9 % |
+| n random facing fish | 24.9 % |
+| the n facing fish nearest the surface | 24.4 % |
+| swim over, but bite the segment level with the fish | 18.1 % |
+| only fish level with the top nibble (reach nothing) | 18.1 % |
+| n random fish, either way round | 16.6 % |
+| **swim over, weed untouched** — the natural blind reading | **12.8 %** |
+| the top eaten but the fish stays put / bottom eaten / whole weed eaten | 12.8 % |
+| **the clue echoed** (kept or caption dropped) — the foothold | **12.8 %** |
+| reach two rows instead of one | 2.8 % |
+| every fish facing a weed nibbles | 0.0 % |
+| demo replay, one fixed answer, fish deleted, empty, junk, caption alone, rows alone | 0.0 % |
+| shotgun (two answers in one), rows reversed, row duplicated, picture shifted | 0.0 % |
+
+Nothing insight-free beats 31 %, and 12.8 of every one of those points is the n = 0 echo. The
+18-31 % band is the partial tier: the picture grammar and the render, with the wrong half of the
+reach clause.
+
+**The offline checksum** (how often a rival law's own count agrees with the caption on one clue):
+every fish facing a weed 0.0 %, reach two rows 3.1 %, only weeds 3+ tall 5.5 %, only bottom-row fish
+11.8 %, reach nothing 16.9 %, only weeds shorter than 3 30.8 %, **the true rule 100 %**. Five
+harvested clues kill the field for free; the laws that fit the count by construction (any "n of the
+facing fish" tie-break) are killed by one demo, which shows a nibbler and an out-of-reach fish in the
+*same row* 86.4 % of the time.
+
+**What every demo shows** (4000 clues): a fish looking straight at a weed it cannot reach 100 %
+(two or more 94.1 %), a fish with a weed behind its tail 100 %, a fish nowhere near a weed 53.9 %, a
+weed nobody touches 100 %; on the clues with a nibble, a bite one row above the fish 93.8 % and a
+bite level with the fish 45.8 %.
+
+**One rendered demo** (seed 400021, `2 nibble`):
+
+```
+clue                                answer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.....................<><......      .....................<><......
+.......................|......      .......................|......
+.......................|......      .......................|......
+......<><..|....><>....|...<><      ......<><.......><>....|...<><
+...|..><>..|.....|.....|..<><.      ........><>|.....|.....|..<><.
+...|...<><.|.....|.....|..<><.      ...|<><....|.....|.....|..<><.
+##############################      ##############################
+2 nibble                            2 nibble
+```
+
+Four fish are staring at the big weed at column 23 and its top is two, three and four rows above
+them; the two that moved had a top one row up.
+
+**Validation.** quickcheck --seeds 200 OK (one warning: "score accepts the clue itself", which is
+the n = 0 foothold). 10 000 random 32-bit seeds: deterministic, 10 000 distinct clues, no fallback,
+generate mean 0.38 ms / p99 0.95 / worst 4.5 (cap 100); solve scores 1 on 10 000/10 000, 0.019 ms;
+score 484 chars (cap 512), 0.020 ms, 0.019 ms on 4000 chars of junk, always 0/1; clue and solution
+225-336 chars. Scorer vs an independent re-implementation written from the prose (column walk, no
+regex) on 50 000 (clue, answer) pairs — shipped demos plus 24 structural mutations each — 0
+disagreements. 12 000 junk strings and every prefix/suffix of 600 clues: 0 raises, 0 false positives
+(the 216 accepted fragments are all n = 0 echoes, which are correct answers).
+
+**Kid score, expected 4.5** (unchanged: the object was always the class's strength — every player who
+saw the picture named the fish tank in one line). The new measurement is the one a kid makes first:
+*"he can't reach that one"*.
+
+**Predicted classification:** on target. Without a demo ≈ 13 % (the echo) and no crack: the render
+(swim over AND the weed loses its tip) is not guessable from the clue, exactly fennick's 11 %. With
+a demo, a player who asks the vertical question cracks it in one look and one who does not sits in
+the 18-31 % partial band. The risk is a *third* outcome that v3 could not have: a team that never
+spends a demo but reads the caption as a checksum can still get there offline — that is the intended
+new attack surface, and it is the reason to keep watching the without-demo score.
+
+Previous version kept byte-identical at `challenges/lab/basten.v3.json`.

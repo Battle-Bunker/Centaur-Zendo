@@ -8584,7 +8584,7 @@
    ]
   },
   "wisbek": {
-   "current_version": 2,
+   "current_version": 3,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -8604,7 +8604,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -8827,7 +8828,7 @@
      "version": 2
     }
    ],
-   "status": "too_easy",
+   "status": "testing",
    "versions": [
     {
      "added": 1788576965.7567341,
@@ -8840,6 +8841,12 @@
      "file": "challenges/lab/wisbek.json",
      "note": "v2 lineup: 4 candidates, decoys satisfy traps and beat the truth on the attacker's predicate count 61% of the time",
      "v": 2
+    },
+    {
+     "added": 1788595430.20858,
+     "file": "challenges/lab/wisbek.json",
+     "note": "Revision 3: 13 templates/32 rules, 20 clock-face relations; k=5; pair clues; example set chosen to hide the rule from the bank; simulated attacker 38-49%",
+     "v": 3
     }
    ]
   },
@@ -11154,7 +11161,7 @@
    "kind": "refiner",
    "reason": "77-88% without demos over 4 games; apply Revision 3 recipe",
    "started": 1788592233.9583952,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

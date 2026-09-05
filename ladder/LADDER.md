@@ -167,3 +167,17 @@ players said the "N verb" convention is the scaffolding that makes four rounds e
 theorist called the n=0 freebie "possibly too generous" (~11 % for nothing). kelmar v3 and
 virel v3 reach `calibrated` (4 finals each, means 57 % / 55 %) — STARS entries written.
 Next: harden molvic (edit must need the demo); give garrow a `0 slices` foothold.
+Lineup pool run 3, `lad-tavrik-v3-1` (tavrik/tresk/wisbek/ospren v3 = Revision 3, dornic/borsel v2,
+norvel v4): 584 (lowdemo, 1 demo → norvel) and 570 (theorist, 2 demos → norvel, 1 → wisbek).
+Revision 3 measured exactly as simulated, WITHOUT demos: ospren 57/50, tavrik 45/40, tresk 37/44,
+wisbek 32/35 (v2 was 77–96 on all four); dornic 59/45, borsel 51/53 unchanged. norvel v4 100/100
+with a demo (the theorist needed two: the first demo fitted "slip the first N pairs" by
+coincidence — a non-discriminating demo; ask for demos to be drawn maximally informative).
+Both players ran the same free-label engine as pool 2 (~170–535 labels) and both reported the
+gap the redesign meant to open: "my engine wins on arithmetic families and loses on perceptual
+and phonetic ones"; "the true rules are all things you can see or say in one short sentence; my
+engine kept proposing arithmetic no human would". Complaints to act on: wisbek still carries
+arithmetic members ((m−5h) mod 10) — drop them (judge said the same); two-positive clues are
+sometimes underdetermined (a third positive would help — Revision 3 says minimal pairs; keep, but
+watch fairness); the picture classes are "much more satisfying" than the lineups. dornic and
+borsel reach `calibrated` on 6 finals each (means 60 % / 58 %) — judges still needed.

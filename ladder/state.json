@@ -3041,7 +3041,23 @@
   },
   "felsim": {
    "current_version": 1,
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Demos sampled were dense (3-5 tips on a 6-row picture); prefer sparser demos so the cup glyph reads as cups on first glance.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 4,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 3,
+      "rule_statable": 4
+     },
+     "score": 3.83,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [

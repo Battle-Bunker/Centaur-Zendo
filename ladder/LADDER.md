@@ -107,3 +107,13 @@ simply relaunched. Player prompts must never assume a fresh start.
 Quota note (2026-09-05): all four relaunched agents were refused (session limit, reset at
 01:00 UTC; relaunched at 02:16). The validation arena `lad-fennick-v3-1` stayed up throughout with
 both teams one round in — resume the players first (see the recovery note), then the designers.
+Run 3 (validation of the demo-economy versions), `lad-fennick-v3-1` rerun: fennick v3, tovel v5,
+basten v3, virel v2, kelmar v2, garrow v3, norvel v3. opus-default 134 (fennick 11 % from the
+`0 fall` clues, virel 14 %, else 0 — demos on virel/fennick/norvel); opus-kidproxy **707**
+(fennick 100 % — cracked in round 3 from the kid line "the shorter one falls into the gap next
+door"; garrow 35 %; virel 16 %; norvel 12 % without a demo; demos on virel/garrow/fennick).
+First result in the target shape: the same class split 11 % / 100 % on the demo-spending
+players, and the two players succeeded on different classes according to what they asked for.
+tovel/basten/kelmar got no demo from either player (their clues read as probeable) and 0 %:
+the "clue shows the canvas" classes are now the ones nobody spends a demo on — and nobody
+cracks them blind. Next: more finals on this pool with other profiles; then decide per class.

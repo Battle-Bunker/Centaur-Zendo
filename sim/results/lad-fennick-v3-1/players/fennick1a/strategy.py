@@ -1,24 +1,26 @@
-"""Round 1: pure harvest. Skip everything instantly to see as many clues as possible."""
+"""Final brain: answer only the two classes with a measured positive hit-rate.
+Everything else is skipped (instant, and skips help the fewer-answers tiebreak)."""
 
-MAX_EXAMPLES_PER_NAME = 400
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import final_core
 
 
 def on_round_start(memory):
-    memory.setdefault("rounds_played", 0)
-    memory.setdefault("examples", {})
-    memory["rounds_played"] += 1
+    memory["rounds_played"] = memory.get("rounds_played", 0) + 1
+    memory.setdefault("cache", {})
 
 
 def solve(name, clue, memory):
+    try:
+        if name == "virel":
+            return final_core.virel(clue)
+        if name == "fennick":
+            return final_core.fennick(clue)
+    except Exception:
+        return None
     return None
 
 
 def on_round_end(items, memory):
-    examples = memory.setdefault("examples", {})
-    for it in items:
-        bucket = examples.setdefault(it.get("name", "?"), [])
-        bucket.append({"clue": it.get("clue"),
-                       "answer": it.get("solution"),
-                       "score": it.get("score")})
-        if len(bucket) > MAX_EXAMPLES_PER_NAME:
-            examples[it.get("name", "?")] = bucket[-MAX_EXAMPLES_PER_NAME:]
+    pass

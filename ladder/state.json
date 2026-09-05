@@ -1176,6 +1176,79 @@
      "run": "lad-kelmar-v1-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 560,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         84
+        ],
+        [
+         0,
+         57
+        ],
+        [
+         0,
+         51
+        ],
+        [
+         0,
+         50
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 448,
+       "final_rate": 0.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         84
+        ],
+        [
+         0,
+         55
+        ],
+        [
+         0,
+         54
+        ],
+        [
+         0,
+         82
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -1766,6 +1839,79 @@
      "run": "lad-crandel-v3-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 62,
+       "final_presented": 578,
+       "final_rate": 0.10726643598615918,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         98
+        ],
+        [
+         8,
+         53
+        ],
+        [
+         1,
+         41
+        ],
+        [
+         5,
+         44
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 455,
+       "final_presented": 455,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         76
+        ],
+        [
+         15,
+         66
+        ],
+        [
+         64,
+         64
+        ],
+        [
+         58,
+         58
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": true,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -1993,6 +2139,79 @@
      ],
      "run": "lad-garrow-v2-1",
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 508,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         95
+        ],
+        [
+         0,
+         68
+        ],
+        [
+         0,
+         65
+        ],
+        [
+         0,
+         70
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 139,
+       "final_presented": 397,
+       "final_rate": 0.3501259445843829,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         62
+        ],
+        [
+         8,
+         50
+        ],
+        [
+         17,
+         59
+        ],
+        [
+         21,
+         68
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -2225,6 +2444,79 @@
      "run": "lad-crandel-v3-1",
      "target": false,
      "version": 1
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 537,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         74
+        ],
+        [
+         0,
+         80
+        ],
+        [
+         0,
+         54
+        ],
+        [
+         0,
+         80
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 425,
+       "final_rate": 0.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         86
+        ],
+        [
+         0,
+         67
+        ],
+        [
+         0,
+         59
+        ],
+        [
+         0,
+         67
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 2
     }
    ],
    "status": "testing",
@@ -2860,6 +3152,79 @@
      "run": "lad-norvel-v2-1",
      "target": true,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 0,
+       "final_presented": 539,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         88
+        ],
+        [
+         0,
+         47
+        ],
+        [
+         0,
+         54
+        ],
+        [
+         0,
+         52
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 50,
+       "final_presented": 417,
+       "final_rate": 0.11990407673860912,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         79
+        ],
+        [
+         2,
+         63
+        ],
+        [
+         3,
+         54
+        ],
+        [
+         4,
+         66
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "testing",
@@ -4402,6 +4767,79 @@
      "run": "lad-kelmar-v1-1",
      "target": false,
      "version": 4
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 496,
+       "final_rate": 0.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         84
+        ],
+        [
+         0,
+         63
+        ],
+        [
+         0,
+         74
+        ],
+        [
+         0,
+         59
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 408,
+       "final_rate": 0.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         86
+        ],
+        [
+         0,
+         56
+        ],
+        [
+         0,
+         49
+        ],
+        [
+         0,
+         63
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 5
     }
    ],
    "status": "testing",
@@ -4852,6 +5290,79 @@
      "run": "lad-crandel-v3-1",
      "target": false,
      "version": 1
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 72,
+       "final_presented": 511,
+       "final_rate": 0.14090019569471623,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         82
+        ],
+        [
+         3,
+         69
+        ],
+        [
+         10,
+         60
+        ],
+        [
+         3,
+         65
+        ]
+       ],
+       "team": "fennick1a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 63,
+       "final_presented": 396,
+       "final_rate": 0.1590909090909091,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         0,
+         68
+        ],
+        [
+         1,
+         63
+        ],
+        [
+         5,
+         57
+        ],
+        [
+         4,
+         63
+        ]
+       ],
+       "team": "fennick1b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 2
     }
    ],
    "status": "testing",

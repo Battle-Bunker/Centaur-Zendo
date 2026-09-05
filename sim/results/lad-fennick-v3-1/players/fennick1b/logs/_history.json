@@ -3,42 +3,82 @@
   {
    "label": "1",
    "kind": "training",
-   "ts": 1788567683.545759,
-   "presented": 612,
+   "ts": 1788574732.7184155,
+   "presented": 541,
    "answered": 0,
    "correct": 0,
-   "skipped": 613,
-   "mean_ms": 0.086
+   "skipped": 542,
+   "mean_ms": 0.093
+  },
+  {
+   "label": "2",
+   "kind": "training",
+   "ts": 1788575890.9870002,
+   "presented": 420,
+   "answered": 420,
+   "correct": 26,
+   "skipped": 0,
+   "mean_ms": 0.141
+  },
+  {
+   "label": "3",
+   "kind": "training",
+   "ts": 1788576883.671059,
+   "presented": 396,
+   "answered": 396,
+   "correct": 89,
+   "skipped": 0,
+   "mean_ms": 0.159
+  },
+  {
+   "label": "4",
+   "kind": "training",
+   "ts": 1788577499.5145345,
+   "presented": 467,
+   "answered": 467,
+   "correct": 87,
+   "skipped": 0,
+   "mean_ms": 0.146
+  },
+  {
+   "label": "final",
+   "kind": "final",
+   "ts": 1788577726.325354,
+   "presented": 2946,
+   "answered": 1381,
+   "correct": 707,
+   "skipped": 1565,
+   "mean_ms": 0.112
   }
  ],
  "names": {
-  "norvel": {
-   "presented": 79,
-   "correct": 0
-  },
-  "kelmar": {
-   "presented": 104,
-   "correct": 0
-  },
-  "fennick": {
-   "presented": 84,
-   "correct": 0
-  },
-  "virel": {
-   "presented": 80,
-   "correct": 0
-  },
-  "garrow": {
-   "presented": 92,
-   "correct": 0
-  },
   "basten": {
-   "presented": 86,
+   "presented": 723,
    "correct": 0
   },
   "tovel": {
-   "presented": 87,
+   "presented": 662,
    "correct": 0
+  },
+  "garrow": {
+   "presented": 636,
+   "correct": 185
+  },
+  "norvel": {
+   "presented": 679,
+   "correct": 59
+  },
+  "kelmar": {
+   "presented": 704,
+   "correct": 0
+  },
+  "fennick": {
+   "presented": 719,
+   "correct": 592
+  },
+  "virel": {
+   "presented": 647,
+   "correct": 73
   }
  }
 }

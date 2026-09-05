@@ -1,624 +1,623 @@
 Centaur Zendo round 1 (training)
-round_id : bdb778a6dc2144a596f4d46df8a42bf7
-written  : 2026-09-05 00:21:24Z
-presented=606  answered=0  correct=0  skipped=607
-client answer latency: mean 0.092 ms  median 0.090 ms  max 1.088 ms  (n=607)
+round_id : c480f285c07b402c9293d1dca516b407
+written  : 2026-09-05 02:18:46Z
+presented=605  answered=0  correct=0  skipped=606
+client answer latency: mean 0.091 ms  median 0.085 ms  max 1.327 ms  (n=606)
 
  idx  name          clue                                      answer                                    score
 ------------------------------------------------------------------------------------------------------------
-   0  norvel        kick  |xxx.|....|.xx.|....|..x.|....|.x…  None                                      0
-   1  garrow        m3\n#################################\n…  None                                      0
-   2  fennick       _        _  _       __             _\nH…  None                                      0
-   3  fennick              _  _ _   _  _  _         _  _\n …  None                                      0
-   4  garrow        p2\n###################################…  None                                      0
-   5  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
-   6  garrow        o3\n#################################\n…  None                                      0
-   7  garrow        c2\n###################################…  None                                      0
-   8  virel         [-][-][---][---]\n6                       None                                      0
+   0  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+   1  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+   2  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+   3  garrow        a2\n##################################\…  None                                      0
+   4  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
+   5  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+   6  kelmar        ................................\n.....…  None                                      0
+   7  norvel        kick  |xx..|..xx|x...|.xx.|...x|x...|.x…  None                                      0
+   8  garrow        m3\n################################\n#…  None                                      0
    9  kelmar        .............................\n........…  None                                      0
-  10  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
-  11  kelmar        ..............................\n.......…  None                                      0
-  12  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
-  13  garrow        m3\n##################################\…  None                                      0
-  14  virel         [][----][--][--]\n6                       None                                      0
-  15  fennick        _   _    _ _           _  _\n M   F   …  None                                      0
-  16  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
-  17  garrow        b3\n##################################\…  None                                      0
-  18  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
-  19  garrow        a3\n###############################\n##…  None                                      0
-  20  garrow        s2\n###################################…  None                                      0
-  21  fennick              _                    _\n__     J…  None                                      0
-  22  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
-  23  fennick             _                     _\n    _ D …  None                                      0
-  24  fennick          _   _ _ _       _      _ _    _\n   …  None                                      0
-  25  kelmar        ................................\n.....…  None                                      0
-  26  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
-  27  virel         [-][--][--][---][-]\n6                    None                                      0
-  28  kelmar        ..........................\n...........…  None                                      0
-  29  kelmar        .............................\n........…  None                                      0
-  30  virel         [---][--][-][-]\n7                        None                                      0
-  31  virel         [-][-][-][-][-]\n6                        None                                      0
-  32  norvel        kick  |xx..|....|.xx.|....|.xx.|....|.x…  None                                      0
-  33  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
-  34  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
-  35  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
-  36  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
-  37  virel         [][-][----][--]\n6                        None                                      0
-  38  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
-  39  norvel        kick  |xx..|....|.x..|....|..xx|x...|..…  None                                      0
-  40  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
-  41  kelmar        ...............................\n......…  None                                      0
-  42  garrow        m2\n##################################\…  None                                      0
-  43  norvel        kick  |x...|...x|....|.x..|...x|x...|..…  None                                      0
-  44  norvel        kick  |xx..|.xx.|.x..|.xx.|.x..|.x..|.x…  None                                      0
-  45  virel         [-][--][---][-]\n4                        None                                      0
-  46  norvel        kick  |xx..|.xx.|..x.|..x.|.x..|.x..|.x…  None                                      0
-  47  norvel        kick  |x...|..xx|....|.x..|..x.|....|xx…  None                                      0
-  48  virel         [---][----][-][----]\n3                   None                                      0
-  49  virel         [----][---][-][-][-]\n4                   None                                      0
-  50  fennick                   _ _    _  _     _      _\n …  None                                      0
-  51  fennick        _     _      _     _           _\n R  …  None                                      0
-  52  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
-  53  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
-  54  fennick                           _         _  _\n   …  None                                      0
-  55  garrow        s3\n###################################…  None                                      0
-  56  kelmar        ............................\n.........…  None                                      0
-  57  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  None                                      0
-  58  norvel        kick  |x...|..xx|....|..x.|....|xx..|..…  None                                      0
-  59  virel         [--][-][---][]\n2                         None                                      0
-  60  norvel        kick  |xx..|.xx.|..x.|.xx.|.x..|.xx.|..…  None                                      0
-  61  fennick           _     _           _\n    A     J_  …  None                                      0
-  62  fennick         _ _                __   _ _  _   __\n…  None                                      0
-  63  fennick        _   _        _                     _\n…  None                                      0
-  64  virel         [-][--][][--][-]\n6                       None                                      0
-  65  fennick        _       _  _  __           _    _\n G …  None                                      0
-  66  kelmar        ...............................\n......…  None                                      0
-  67  kelmar        ................................\n.....…  None                                      0
-  68  kelmar        ............................\n.........…  None                                      0
-  69  fennick       _              _       _    _ _    _\nW…  None                                      0
-  70  garrow        b2\n###################################…  None                                      0
-  71  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
-  72  norvel        kick  |xx..|...x|....|.x..|...x|....|.x…  None                                      0
-  73  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
-  74  garrow        a3\n##################################\…  None                                      0
-  75  garrow        t2\n###################################…  None                                      0
-  76  norvel        kick  |xx..|....|.xx.|....|..x.|....|..…  None                                      0
-  77  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
-  78  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
-  79  norvel        kick  |xx..|....|.xx.|....|.x..|....|.x…  None                                      0
-  80  fennick       _       _  _                _\nP       …  None                                      0
-  81  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
-  82  virel         [][---][-][--][----]\n3                   None                                      0
-  83  kelmar        ..........................\n...........…  None                                      0
-  84  garrow        p3\n#################################\n…  None                                      0
-  85  virel         [-][---][---][--]\n3                      None                                      0
-  86  norvel        kick  |x...|.xx.|...x|x...|..x.|....|xx…  None                                      0
-  87  kelmar        .............................\n........…  None                                      0
-  88  norvel        kick  |xx..|.xx.|..x.|.xx.|.xx.|..x.|.x…  None                                      0
-  89  kelmar        ...............................\n......…  None                                      0
-  90  fennick               _ _          _            _\n_ …  None                                      0
-  91  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
-  92  garrow        o2\n##################################\…  None                                      0
-  93  kelmar        ..............................\n.......…  None                                      0
-  94  fennick       _    _         _ _ _         _  _   _\n…  None                                      0
-  95  garrow        a3\n###################################…  None                                      0
-  96  fennick        _   _    _ _    _  _   _\n J  _N   _J …  None                                      0
-  97  norvel        kick  |xx..|..x.|...x|x...|.x..|...x|..…  None                                      0
-  98  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
-  99  kelmar        ..........................\n...........…  None                                      0
- 100  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 101  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 102  fennick          _   _   _           _             _\…  None                                      0
- 103  fennick           _             _  _    _     _\n_   …  None                                      0
- 104  virel         [----][--][--][-][-]\n4                   None                                      0
- 105  kelmar        .............................\n........…  None                                      0
- 106  virel         [---][-][--][---][-]\n3                   None                                      0
- 107  virel         [][-][--][-][--]\n4                       None                                      0
- 108  kelmar        ................................\n.....…  None                                      0
- 109  virel         [--][-][--][-][-]\n6                      None                                      0
- 110  fennick       _              _ _             __ _\nH_…  None                                      0
- 111  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 112  virel         [----][--][--][-][-]\n6                   None                                      0
- 113  norvel        kick  |xxx.|....|x...|...x|xx..|....|x.…  None                                      0
- 114  norvel        kick  |x...|..xx|x...|...x|x...|...x|xx…  None                                      0
- 115  kelmar        ..........................\n...........…  None                                      0
- 116  norvel        kick  |xxx.|..x.|.x..|.xx.|..x.|.x..|.x…  None                                      0
- 117  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
- 118  norvel        kick  |xx..|..x.|...x|xx..|..x.|....|xx…  None                                      0
- 119  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
- 120  garrow        m2\n################################\n#…  None                                      0
- 121  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 122  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 123  kelmar        ...............................\n......…  None                                      0
- 124  norvel        kick  |xx..|.xx.|.xx.|..x.|.xx.|.x..|.x…  None                                      0
- 125  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 126  virel         [--][---][--][-]\n4                       None                                      0
- 127  norvel        kick  |x...|....|.x..|....|..x.|....|..…  None                                      0
- 128  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 129  kelmar        ................................\n.....…  None                                      0
- 130  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 131  virel         [--][---][-][-][-]\n3                     None                                      0
- 132  kelmar        ..........................\n...........…  None                                      0
- 133  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 134  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 135  garrow        b3\n#################################\n…  None                                      0
- 136  fennick                    _         _          _\n  …  None                                      0
- 137  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 138  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 139  norvel        kick  |xxx.|.xx.|..x.|..x.|.xx.|..x.|..…  None                                      0
- 140  norvel        kick  |xx..|.xx.|.xx.|.x..|.xx.|.x..|.x…  None                                      0
- 141  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 142  garrow        p3\n###################################…  None                                      0
- 143  norvel        kick  |xx..|....|.xx.|....|.xx.|....|.x…  None                                      0
- 144  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 145  fennick       _\nV_       _  _           __          …  None                                      0
- 146  norvel        kick  |xxx.|..x.|.x..|.x..|.xx.|.xx.|.x…  None                                      0
- 147  norvel        kick  |xx..|.x..|.x..|.xx.|..x.|.xx.|.x…  None                                      0
- 148  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 149  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 150  virel         [---][---][--][--]\n2                     None                                      0
- 151  norvel        kick  |x...|..x.|....|x...|.x..|...x|x.…  None                                      0
- 152  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
- 153  garrow        b2\n##############################\n##~…  None                                      0
- 154  garrow        c3\n#################################\n…  None                                      0
- 155  kelmar        ...........................\n..........…  None                                      0
- 156  kelmar        ...........................\n..........…  None                                      0
- 157  garrow        m3\n###################################…  None                                      0
- 158  kelmar        ................................\n.....…  None                                      0
- 159  virel         [--][--][---][][]\n3                      None                                      0
- 160  fennick         _            _ _  _   _\n  B    _    …  None                                      0
- 161  virel         [-][---][-][-]\n3                         None                                      0
- 162  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 163  fennick                _                   __\n      …  None                                      0
- 164  garrow        c3\n################################\n#…  None                                      0
- 165  virel         [----][--][-][-][-]\n3                    None                                      0
- 166  garrow        s3\n##############################\n##~…  None                                      0
- 167  norvel        kick  |xx..|.x..|.xx.|..x.|.x..|.x..|.x…  None                                      0
- 168  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 169  virel         [][---][-][---][-]\n4                     None                                      0
- 170  virel         [][---][--][-][---]\n2                    None                                      0
- 171  virel         [-][----][][--]\n2                        None                                      0
- 172  norvel        kick  |x...|...x|x...|..x.|....|xx..|..…  None                                      0
- 173  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 174  fennick        _ _        _   _       _  _ __   _\n M…  None                                      0
- 175  virel         [---][---][---][---]\n4                   None                                      0
- 176  norvel        kick  |xx..|.xx.|..x.|.x..|.x..|.xx.|.x…  None                                      0
- 177  virel         [--][----][-][--]\n6                      None                                      0
- 178  fennick       __ _              _\nJJ P_   _         …  None                                      0
- 179  garrow        b3\n###############################\n##…  None                                      0
- 180  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 181  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 182  fennick                                    _    _\n  …  None                                      0
- 183  virel         [--][--][---][---]\n6                     None                                      0
- 184  garrow        m3\n##################################\…  None                                      0
- 185  garrow        t1\n###################################…  None                                      0
- 186  fennick             __ _           _          _\n_  _…  None                                      0
- 187  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 188  virel         [--][--][--][---][-]\n3                   None                                      0
- 189  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 190  fennick                    _        _  __       _\n_ …  None                                      0
- 191  garrow        m3\n###################################…  None                                      0
- 192  garrow        m2\n##############################\n##~…  None                                      0
- 193  fennick               _      _ _   _              _\n…  None                                      0
- 194  fennick               _              _\n        D    …  None                                      0
- 195  norvel        kick  |xxx.|.xx.|..x.|.xx.|..x.|..x.|..…  None                                      0
- 196  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 197  virel         [][----][][---]\n6                        None                                      0
- 198  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 199  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 200  garrow        b3\n###############################\n##…  None                                      0
- 201  virel         [-][--][---][--]\n6                       None                                      0
- 202  fennick           _                      _ _\n  _ C  …  None                                      0
- 203  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 204  kelmar        ..............................\n.......…  None                                      0
- 205  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 206  virel         [---][--][][---]\n7                       None                                      0
- 207  fennick          _            _      _\n   G       _ …  None                                      0
- 208  fennick                       _ _ __             _\n_…  None                                      0
- 209  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 210  virel         [---][--][----][--]\n2                    None                                      0
- 211  fennick             _ _             _        _    _\n…  None                                      0
- 212  kelmar        ...............................\n......…  None                                      0
- 213  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 214  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 215  kelmar        ................................\n.....…  None                                      0
- 216  kelmar        .............................\n........…  None                                      0
- 217  norvel        kick  |xxx.|....|.x..|....|.xx.|....|..…  None                                      0
- 218  virel         [--][-][--][--][---]\n6                   None                                      0
- 219  virel         [][---][----][----]\n7                    None                                      0
- 220  virel         [---][--][--][-][--]\n4                   None                                      0
- 221  kelmar        ..........................\n...........…  None                                      0
- 222  virel         [][--][--][--]\n6                         None                                      0
- 223  garrow        b2\n#################################\n…  None                                      0
- 224  kelmar        ................................\n.....…  None                                      0
- 225  virel         [---][--][--][-][--]\n7                   None                                      0
+  10  fennick                 _           _  __   _  __\n _…  None                                      0
+  11  garrow        c2\n###################################…  None                                      0
+  12  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  13  garrow        o2\n################################\n#…  None                                      0
+  14  garrow        a3\n###############################\n##…  None                                      0
+  15  virel         [-][---][--][---]\n4                      None                                      0
+  16  garrow        a3\n###################################…  None                                      0
+  17  fennick        __     _        _      _    __ _\n MW …  None                                      0
+  18  virel         [--][][---][--]\n4                        None                                      0
+  19  fennick                                  _\n   _     …  None                                      0
+  20  virel         [----][][][][-]\n4                        None                                      0
+  21  virel         [-][----][---][--]\n3                     None                                      0
+  22  virel         [--][--][--][-][]\n4                      None                                      0
+  23  kelmar        .............................\n........…  None                                      0
+  24  kelmar        ...........................\n..........…  None                                      0
+  25  kelmar        ...............................\n......…  None                                      0
+  26  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+  27  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+  28  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  29  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  30  garrow        a3\n###################################…  None                                      0
+  31  garrow        m3\n###############################\n##…  None                                      0
+  32  norvel        kick  |xx..|.xx.|.xx.|..x.|.xx.|.xx.|..…  None                                      0
+  33  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  34  garrow        s3\n###################################…  None                                      0
+  35  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+  36  fennick        __ _ _   _              _       _ __\n…  None                                      0
+  37  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+  38  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+  39  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  40  virel         [--][-][-][---]\n3                        None                                      0
+  41  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  42  norvel        kick  |xx..|....|..x.|....|..x.|....|..…  None                                      0
+  43  garrow        c2\n###################################…  None                                      0
+  44  norvel        kick  |xx..|.x..|.x..|.xx.|.xx.|.xx.|..…  None                                      0
+  45  norvel        kick  |xx..|...x|....|.x..|....|xx..|..…  None                                      0
+  46  fennick                __\n     _   PT         _     …  None                                      0
+  47  norvel        kick  |xx..|..x.|....|xx..|...x|....|.x…  None                                      0
+  48  garrow        o3\n################################\n#…  None                                      0
+  49  garrow        a3\n#################################\n…  None                                      0
+  50  virel         [----][-][-][]\n6                         None                                      0
+  51  garrow        o3\n##################################\…  None                                      0
+  52  virel         [----][----][][----]\n3                   None                                      0
+  53  kelmar        ..............................\n.......…  None                                      0
+  54  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+  55  fennick         _                    _            _\n…  None                                      0
+  56  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+  57  kelmar        ...........................\n..........…  None                                      0
+  58  garrow        b3\n##################################\…  None                                      0
+  59  fennick             _            __        _ __\n_   …  None                                      0
+  60  kelmar        ..........................\n...........…  None                                      0
+  61  kelmar        ............................\n.........…  None                                      0
+  62  garrow        s3\n###################################…  None                                      0
+  63  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+  64  kelmar        ...........................\n..........…  None                                      0
+  65  fennick         _   _       _           _\n__J _ B_  …  None                                      0
+  66  garrow        m2\n##################################\…  None                                      0
+  67  kelmar        ............................\n.........…  None                                      0
+  68  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+  69  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+  70  garrow        a3\n###################################…  None                                      0
+  71  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+  72  virel         [-][---][----][----]\n4                   None                                      0
+  73  fennick              _ _  _    _                _ _\n…  None                                      0
+  74  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+  75  norvel        kick  |xxx.|....|.xx.|....|..x.|....|.x…  None                                      0
+  76  garrow        c2\n##################################\…  None                                      0
+  77  norvel        kick  |x...|...x|xx..|...x|....|..x.|..…  None                                      0
+  78  fennick         _  _ _           _\n_ C  P P_       _…  None                                      0
+  79  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+  80  virel         [-][---][-][-]\n3                         None                                      0
+  81  virel         [---][--][--][][]\n4                      None                                      0
+  82  virel         [][---][-][---][---]\n2                   None                                      0
+  83  garrow        t3\n###################################…  None                                      0
+  84  fennick              _   _  _      _  _   _  _\n     …  None                                      0
+  85  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+  86  virel         [--][--][-][---]\n4                       None                                      0
+  87  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  88  virel         [-][----][-][]\n6                         None                                      0
+  89  garrow        c2\n#################################\n…  None                                      0
+  90  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  91  garrow        t2\n##############################\n##~…  None                                      0
+  92  kelmar        ................................\n.....…  None                                      0
+  93  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  94  garrow        c2\n#################################\n…  None                                      0
+  95  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+  96  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+  97  norvel        kick  |xx..|...x|xx..|..x.|...x|x...|..…  None                                      0
+  98  garrow        t3\n################################\n#…  None                                      0
+  99  garrow        b3\n################################\n#…  None                                      0
+ 100  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 101  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 102  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 103  virel         [][---][----][-]\n7                       None                                      0
+ 104  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
+ 105  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 106  garrow        m3\n################################\n#…  None                                      0
+ 107  garrow        c2\n###################################…  None                                      0
+ 108  fennick                                       _   _\n…  None                                      0
+ 109  norvel        kick  |x...|...x|....|..x.|....|xx..|..…  None                                      0
+ 110  norvel        kick  |xxx.|.xx.|..x.|..x.|..x.|..x.|.x…  None                                      0
+ 111  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 112  fennick               _  _         _      _\n        …  None                                      0
+ 113  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 114  fennick               _       _   _          _  _\n__…  None                                      0
+ 115  virel         [----][][-][--]\n4                        None                                      0
+ 116  norvel        kick  |xx..|...x|x...|...x|x...|...x|..…  None                                      0
+ 117  norvel        kick  |xxx.|....|..x.|....|..x.|....|.x…  None                                      0
+ 118  kelmar        .............................\n........…  None                                      0
+ 119  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  None                                      0
+ 120  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 121  virel         [----][-][-][---]\n7                      None                                      0
+ 122  fennick                                   _ __\n     …  None                                      0
+ 123  fennick                       _    _      _\n    _   …  None                                      0
+ 124  kelmar        ...........................\n..........…  None                                      0
+ 125  norvel        kick  |xx..|.xx.|..x.|.x..|.x..|.xx.|..…  None                                      0
+ 126  garrow        o2\n##############################\n##a…  None                                      0
+ 127  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 128  fennick                   _           _   _   _\n    …  None                                      0
+ 129  virel         [---][---][-][]\n7                        None                                      0
+ 130  garrow        a3\n###################################…  None                                      0
+ 131  virel         [----][][][-][--]\n4                      None                                      0
+ 132  kelmar        .............................\n........…  None                                      0
+ 133  kelmar        ............................\n.........…  None                                      0
+ 134  fennick                 _   _       _  _   _  _\n _  …  None                                      0
+ 135  virel         [---][-][---][-][--]\n3                   None                                      0
+ 136  kelmar        ................................\n.....…  None                                      0
+ 137  fennick                  __ ___\n           LL LMW   …  None                                      0
+ 138  virel         [--][-][--][][]\n6                        None                                      0
+ 139  kelmar        ............................\n.........…  None                                      0
+ 140  norvel        kick  |xxx.|....|.xx.|....|.x..|....|.x…  None                                      0
+ 141  fennick       _        _                 _    _ _\nM …  None                                      0
+ 142  kelmar        ...............................\n......…  None                                      0
+ 143  kelmar        ..........................\n...........…  None                                      0
+ 144  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 145  garrow        s2\n###################################…  None                                      0
+ 146  garrow        a3\n################################\n#…  None                                      0
+ 147  garrow        t2\n#################################\n…  None                                      0
+ 148  fennick                             _ __      _  _\n …  None                                      0
+ 149  norvel        kick  |xx..|...x|x...|..x.|...x|....|.x…  None                                      0
+ 150  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 151  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 152  kelmar        ...........................\n..........…  None                                      0
+ 153  norvel        kick  |xxx.|....|.x..|....|.x..|....|.x…  None                                      0
+ 154  fennick          _              _   _            _\n …  None                                      0
+ 155  kelmar        ..........................\n...........…  None                                      0
+ 156  kelmar        ...............................\n......…  None                                      0
+ 157  garrow        s2\n###############################\n##…  None                                      0
+ 158  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 159  virel         [---][-][--][---]\n6                      None                                      0
+ 160  garrow        b3\n###################################…  None                                      0
+ 161  fennick                               _     _\n      …  None                                      0
+ 162  norvel        kick  |xx..|...x|....|.x..|..xx|x...|.x…  None                                      0
+ 163  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 164  virel         [--][-][--][--][-]\n3                     None                                      0
+ 165  fennick            _ _  _ _                  _\n_    …  None                                      0
+ 166  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 167  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 168  kelmar        ...........................\n..........…  None                                      0
+ 169  fennick       _  _             _        _      _ _\nR…  None                                      0
+ 170  fennick             _              _\n      F _ __  _…  None                                      0
+ 171  fennick                       _        _   _\n  _    …  None                                      0
+ 172  virel         [----][-][][-][--]\n2                     None                                      0
+ 173  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 174  norvel        kick  |xxx.|....|..x.|....|..x.|....|..…  None                                      0
+ 175  garrow        t3\n###################################…  None                                      0
+ 176  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 177  garrow        c3\n################################\n#…  None                                      0
+ 178  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 179  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 180  fennick        _   _      _   _           _   _ _\n J…  None                                      0
+ 181  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 182  virel         [--][---][-][---]\n2                      None                                      0
+ 183  norvel        kick  |x...|....|.x..|....|.x..|....|..…  None                                      0
+ 184  virel         [-][----][][---]\n2                       None                                      0
+ 185  kelmar        ..............................\n.......…  None                                      0
+ 186  norvel        kick  |x...|..x.|....|x...|...x|....|..…  None                                      0
+ 187  norvel        kick  |xxx.|.x..|.xx.|..x.|.x..|.xx.|..…  None                                      0
+ 188  virel         [-][-][---][--][-]\n6                     None                                      0
+ 189  fennick          __          __ __   _ _\n _ WS      …  None                                      0
+ 190  virel         [----][--][---][---]\n3                   None                                      0
+ 191  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 192  norvel        kick  |xxx.|...x|....|.x..|..x.|...x|..…  None                                      0
+ 193  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 194  virel         [--][-][---][---]\n7                      None                                      0
+ 195  kelmar        ..........................\n...........…  None                                      0
+ 196  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 197  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 198  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 199  garrow        b3\n##################################\…  None                                      0
+ 200  norvel        kick  |xx..|..xx|x...|.x..|..x.|....|x.…  None                                      0
+ 201  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  None                                      0
+ 202  norvel        kick  |x...|..xx|....|..x.|....|xxx.|..…  None                                      0
+ 203  fennick                    _\n _           D_    _\n …  None                                      0
+ 204  fennick             _       _  __            __  _\n …  None                                      0
+ 205  fennick                      _     _ _            _\n…  None                                      0
+ 206  fennick             _   _   _             _  _ _\n___…  None                                      0
+ 207  virel         [-][--][--][--][-]\n3                     None                                      0
+ 208  garrow        t2\n###################################…  None                                      0
+ 209  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 210  virel         [][-][----][--][-]\n2                     None                                      0
+ 211  kelmar        .............................\n........…  None                                      0
+ 212  fennick               _           _  _       __   _\n…  None                                      0
+ 213  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 214  garrow        p2\n################################\n#…  None                                      0
+ 215  fennick        _                     _\n C     _     …  None                                      0
+ 216  kelmar        ............................\n.........…  None                                      0
+ 217  norvel        kick  |xx..|.xx.|.x..|.x..|.x..|.xx.|.x…  None                                      0
+ 218  norvel        kick  |xx..|...x|xx..|...x|x...|..x.|..…  None                                      0
+ 219  norvel        kick  |xxx.|....|..x.|....|..x.|....|..…  None                                      0
+ 220  garrow        o3\n#################################\n…  None                                      0
+ 221  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 222  garrow        m3\n###############################\n##…  None                                      0
+ 223  norvel        kick  |xxx.|.xx.|.xx.|..x.|.x..|.xx.|..…  None                                      0
+ 224  virel         [-][---][-][-][---]\n6                    None                                      0
+ 225  garrow        t3\n###################################…  None                                      0
  226  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 227  norvel        kick  |xxx.|.x..|.xx.|.xx.|..x.|.x..|.x…  None                                      0
- 228  virel         [][][-][---][]\n4                         None                                      0
- 229  virel         [----][-][-][-]\n4                        None                                      0
- 230  garrow        b2\n###############################\n##…  None                                      0
- 231  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 232  norvel        kick  |xx..|.xx.|.x..|.x..|.xx.|.x..|.x…  None                                      0
- 233  garrow        c2\n#################################\n…  None                                      0
- 234  virel         [][-][-][-][--]\n7                        None                                      0
- 235  fennick               _                      _\n  _  …  None                                      0
- 236  garrow        p3\n################################\n#…  None                                      0
- 237  virel         [--][--][--][-][-]\n6                     None                                      0
- 238  garrow        s2\n##################################\…  None                                      0
- 239  garrow        b2\n################################\n#…  None                                      0
- 240  fennick       __       _               _ _\nJH       …  None                                      0
- 241  fennick                                  _\n         …  None                                      0
- 242  fennick           _   _          _    _       _  _\n …  None                                      0
- 243  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
- 244  fennick        __              _     _\n FJ       _ _…  None                                      0
- 245  virel         [-][----][][--]\n4                        None                                      0
- 246  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 247  norvel        kick  |xx..|....|x...|...x|....|..xx|x.…  None                                      0
- 248  garrow        s3\n##############################\n##~…  None                                      0
- 249  garrow        c3\n################################\n#…  None                                      0
- 250  garrow        s2\n###################################…  None                                      0
- 251  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 252  fennick           _       _            __ _    __\n  …  None                                      0
- 253  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 254  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 255  norvel        kick  |x...|....|.x..|....|..x.|....|..…  None                                      0
- 256  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 257  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 258  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 259  virel         [--][--][-][][-]\n6                       None                                      0
- 260  fennick        _       _ _           _ _       _  __\…  None                                      0
- 261  fennick            _ _                          _\n  …  None                                      0
- 262  virel         [---][][][-][----]\n2                     None                                      0
- 263  fennick                    _        _    _\n  _ _    …  None                                      0
- 264  fennick           _       _          _  _\n    T     …  None                                      0
- 265  kelmar        ................................\n.....…  None                                      0
- 266  kelmar        ..........................\n...........…  None                                      0
- 267  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 268  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 269  virel         [-][--][----][]\n3                        None                                      0
- 270  kelmar        ...............................\n......…  None                                      0
- 271  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 272  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 273  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 274  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 275  virel         [--][][-][---]\n4                         None                                      0
- 276  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 277  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 278  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 279  virel         [-][---][---][-]\n3                       None                                      0
- 280  norvel        kick  |xxx.|....|..x.|....|..xx|x...|..…  None                                      0
- 281  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 282  virel         [--][--][---][--]\n3                      None                                      0
- 283  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 284  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 285  kelmar        ................................\n.....…  None                                      0
- 286  fennick       _    _ __     _  ___           _ ___\nT…  None                                      0
- 287  virel         [][----][][---][--]\n3                    None                                      0
- 288  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 289  norvel        kick  |xxx.|....|..xx|x...|....|.x..|..…  None                                      0
- 290  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 291  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
- 292  kelmar        ...........................\n..........…  None                                      0
- 293  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 294  fennick           _                 _    _ _     __\n…  None                                      0
- 295  virel         [---][--][--][----]\n4                    None                                      0
- 296  kelmar        ..........................\n...........…  None                                      0
- 297  norvel        kick  |xx..|....|.xx.|....|.xx.|....|..…  None                                      0
- 298  fennick        _     _ _    _   _    _    _  __\n F  …  None                                      0
- 299  fennick                       _          __     _\n  …  None                                      0
- 300  garrow        p3\n###################################…  None                                      0
- 301  garrow        t3\n###################################…  None                                      0
- 302  garrow        s2\n###################################…  None                                      0
- 303  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 304  garrow        m2\n##################################\…  None                                      0
- 305  kelmar        ...........................\n..........…  None                                      0
- 306  garrow        c2\n##############################\n##a…  None                                      0
- 307  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 308  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 309  virel         [][---][---][-]\n4                        None                                      0
- 310  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 311  garrow        p3\n##################################\…  None                                      0
- 312  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 313  virel         [---][-][---][----]\n4                    None                                      0
- 314  norvel        kick  |x...|..xx|....|..xx|x...|...x|..…  None                                      0
- 315  garrow        t2\n##################################\…  None                                      0
- 316  virel         [][---][-][--][--]\n4                     None                                      0
- 317  kelmar        ............................\n.........…  None                                      0
- 318  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 319  fennick         _      _     _ _ _        __     _\n …  None                                      0
- 320  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 321  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 322  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
- 323  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 324  garrow        c3\n##################################\…  None                                      0
- 325  virel         [---][-][-][--][---]\n6                   None                                      0
- 326  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 327  kelmar        ................................\n.....…  None                                      0
- 328  kelmar        .............................\n........…  None                                      0
- 329  kelmar        ................................\n.....…  None                                      0
- 330  fennick                       _       _    _      _\n…  None                                      0
- 331  fennick                                       _\n_   …  None                                      0
- 332  garrow        b2\n###################################…  None                                      0
- 333  kelmar        .............................\n........…  None                                      0
- 334  norvel        kick  |xxx.|....|.x..|....|.x..|....|.x…  None                                      0
- 335  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
- 336  garrow        b3\n##############################\n##~…  None                                      0
- 337  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 338  virel         [----][-][-][--]\n2                       None                                      0
- 339  kelmar        ..........................\n...........…  None                                      0
- 340  virel         [----][][-][-]\n2                         None                                      0
- 341  kelmar        ...............................\n......…  None                                      0
- 342  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 343  virel         [][---][-][--][--]\n6                     None                                      0
- 344  garrow        a3\n################################\n#…  None                                      0
- 345  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 346  kelmar        ..........................\n...........…  None                                      0
- 347  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
- 348  fennick                __   _ __\n _  _    AS   A AW …  None                                      0
- 349  kelmar        ..........................\n...........…  None                                      0
- 350  norvel        kick  |xx..|...x|....|.x..|...x|....|.x…  None                                      0
- 351  garrow        m2\n##############################\n##~…  None                                      0
- 352  kelmar        ...............................\n......…  None                                      0
- 353  kelmar        ............................\n.........…  None                                      0
- 354  fennick                    _                    __\n …  None                                      0
- 355  kelmar        .............................\n........…  None                                      0
- 356  virel         [-][-][-][---][--]\n6                     None                                      0
- 357  fennick                        _\n     _         _ G …  None                                      0
- 358  garrow        o2\n################################\n#…  None                                      0
- 359  garrow        s3\n################################\n#…  None                                      0
- 360  virel         [-][][---][---]\n3                        None                                      0
- 361  garrow        s2\n###################################…  None                                      0
+ 227  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 228  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 229  kelmar        ..............................\n.......…  None                                      0
+ 230  virel         [---][-][-][----]\n4                      None                                      0
+ 231  fennick        _       _     _    _  _          _\n W…  None                                      0
+ 232  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 233  kelmar        .............................\n........…  None                                      0
+ 234  garrow        p3\n##############################\n##p…  None                                      0
+ 235  norvel        kick  |xx..|....|.xx.|....|..x.|....|..…  None                                      0
+ 236  fennick                           _\n                …  None                                      0
+ 237  norvel        kick  |x...|..x.|....|x...|.xx.|...x|x.…  None                                      0
+ 238  garrow        s2\n##############################\n##o…  None                                      0
+ 239  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 240  norvel        kick  |x...|....|.x..|....|..x.|....|..…  None                                      0
+ 241  fennick       _   _     __    _          _ _  _ __\nJ…  None                                      0
+ 242  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 243  fennick       _                                     _…  None                                      0
+ 244  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 245  virel         [---][-][----][]\n4                       None                                      0
+ 246  virel         [---][----][---][]\n3                     None                                      0
+ 247  virel         [----][][---][-]\n3                       None                                      0
+ 248  norvel        kick  |xx..|..xx|....|.xx.|....|x...|.x…  None                                      0
+ 249  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 250  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 251  virel         [---][--][-][----]\n3                     None                                      0
+ 252  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  None                                      0
+ 253  norvel        kick  |xxx.|....|.xx.|....|..x.|....|.x…  None                                      0
+ 254  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 255  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 256  garrow        p3\n###############################\n##…  None                                      0
+ 257  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 258  virel         [--][-][---][][-]\n4                      None                                      0
+ 259  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 260  norvel        kick  |xxx.|.xx.|..x.|.xx.|..x.|..x.|.x…  None                                      0
+ 261  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  None                                      0
+ 262  garrow        a3\n#################################\n…  None                                      0
+ 263  fennick         _  _ _ _ _           _   __  _     _\…  None                                      0
+ 264  fennick       _        _        __      _      _ _ _\…  None                                      0
+ 265  fennick       _                 _           _\nU  _  …  None                                      0
+ 266  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 267  garrow        m3\n###############################\n##…  None                                      0
+ 268  virel         [-][--][---][-][--]\n2                    None                                      0
+ 269  virel         [-][--][--][--]\n6                        None                                      0
+ 270  garrow        c2\n################################\n#…  None                                      0
+ 271  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 272  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 273  kelmar        ...........................\n..........…  None                                      0
+ 274  fennick                    _ __ _\n _  _        E MM …  None                                      0
+ 275  virel         [---][--][--][][---]\n4                   None                                      0
+ 276  kelmar        ...........................\n..........…  None                                      0
+ 277  garrow        s3\n###################################…  None                                      0
+ 278  kelmar        ...........................\n..........…  None                                      0
+ 279  norvel        kick  |xx..|....|.xx.|....|..x.|....|.x…  None                                      0
+ 280  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 281  garrow        c3\n#################################\n…  None                                      0
+ 282  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 283  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 284  virel         [-][---][---][][--]\n7                    None                                      0
+ 285  virel         [---][-][----][--]\n4                     None                                      0
+ 286  fennick           _                 _  _\n_   S _   _…  None                                      0
+ 287  fennick       _     _ _  _   _          _    _\nN   _…  None                                      0
+ 288  kelmar        ............................\n.........…  None                                      0
+ 289  virel         [-][---][--][-][---]\n3                   None                                      0
+ 290  fennick               _            _\n  _ _   H_     …  None                                      0
+ 291  norvel        kick  |xxx.|....|.xx.|....|..x.|....|..…  None                                      0
+ 292  fennick       __           _      _  _\nMP           …  None                                      0
+ 293  norvel        kick  |x...|.x..|...x|....|.x..|...x|xx…  None                                      0
+ 294  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 295  kelmar        .............................\n........…  None                                      0
+ 296  fennick                               _          _\n …  None                                      0
+ 297  norvel        kick  |xxx.|....|xxx.|...x|xx..|..x.|..…  None                                      0
+ 298  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 299  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 300  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 301  fennick                _       _            _ _\n    …  None                                      0
+ 302  norvel        kick  |xxx.|....|.xx.|....|..x.|....|..…  None                                      0
+ 303  virel         [--][---][--][---]\n4                     None                                      0
+ 304  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
+ 305  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 306  fennick           _   __                          _\n…  None                                      0
+ 307  kelmar        ................................\n.....…  None                                      0
+ 308  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 309  virel         [--][-][----][---]\n3                     None                                      0
+ 310  fennick        __    _  _     _  _     _  _     _\n_T…  None                                      0
+ 311  kelmar        .............................\n........…  None                                      0
+ 312  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 313  garrow        m2\n##################################\…  None                                      0
+ 314  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 315  fennick          _             _     _\n _ E        _…  None                                      0
+ 316  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 317  garrow        c2\n###################################…  None                                      0
+ 318  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
+ 319  virel         [][-][--][---]\n4                         None                                      0
+ 320  fennick                  __     _               _\n  …  None                                      0
+ 321  fennick                          _            _\n__ _…  None                                      0
+ 322  virel         [-][--][--][][---]\n3                     None                                      0
+ 323  norvel        kick  |xx..|....|.xx.|....|.xx.|....|..…  None                                      0
+ 324  kelmar        ...........................\n..........…  None                                      0
+ 325  virel         [--][----][-][---]\n2                     None                                      0
+ 326  fennick       _         _    _       _ __   _\nF     …  None                                      0
+ 327  garrow        b2\n#################################\n…  None                                      0
+ 328  garrow        c2\n##############################\n##~…  None                                      0
+ 329  norvel        kick  |xx..|.xx.|..x.|.x..|.xx.|..x.|.x…  None                                      0
+ 330  garrow        o2\n###################################…  None                                      0
+ 331  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 332  kelmar        ..........................\n...........…  None                                      0
+ 333  fennick       _        _                         __\n…  None                                      0
+ 334  kelmar        ...........................\n..........…  None                                      0
+ 335  fennick        _  _  _                    _ _\n G  D_…  None                                      0
+ 336  norvel        kick  |xx..|.xx.|..x.|.x..|.xx.|.xx.|.x…  None                                      0
+ 337  garrow        b3\n###################################…  None                                      0
+ 338  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 339  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 340  norvel        kick  |x...|.x..|..xx|....|.x..|..x.|..…  None                                      0
+ 341  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 342  kelmar        ...........................\n..........…  None                                      0
+ 343  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 344  virel         [----][-][---][--]\n3                     None                                      0
+ 345  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 346  virel         [-][][-][-][--]\n6                        None                                      0
+ 347  kelmar        ............................\n.........…  None                                      0
+ 348  kelmar        ..........................\n...........…  None                                      0
+ 349  norvel        kick  |xxx.|..x.|..x.|.x..|.xx.|..x.|.x…  None                                      0
+ 350  garrow        m3\n###################################…  None                                      0
+ 351  virel         [--][--][-][-][-]\n2                      None                                      0
+ 352  garrow        p3\n###################################…  None                                      0
+ 353  kelmar        .............................\n........…  None                                      0
+ 354  kelmar        ..............................\n.......…  None                                      0
+ 355  norvel        kick  |x...|.xx.|...x|x...|..x.|....|x.…  None                                      0
+ 356  virel         [--][----][--][---]\n3                    None                                      0
+ 357  fennick       _                _  _     _   _\nV_    …  None                                      0
+ 358  garrow        a3\n##################################\…  None                                      0
+ 359  norvel        kick  |xxx.|....|.xx.|....|.x..|....|.x…  None                                      0
+ 360  garrow        s2\n###################################…  None                                      0
+ 361  norvel        kick  |xx..|....|.xx.|....|.xx.|....|..…  None                                      0
  362  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 363  kelmar        ...............................\n......…  None                                      0
- 364  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 365  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 366  virel         [----][-][--][---]\n4                     None                                      0
- 367  garrow        m3\n###################################…  None                                      0
- 368  virel         [][-][---][--]\n4                         None                                      0
- 369  norvel        kick  |xxx.|.xx.|.xx.|.xx.|.x..|.x..|.x…  None                                      0
- 370  virel         [--][-][--][---][--]\n6                   None                                      0
- 371  fennick                       _ _  _            _\n_ …  None                                      0
- 372  garrow        o2\n###################################…  None                                      0
- 373  norvel        kick  |xx..|.xx.|.xx.|..x.|.x..|.xx.|..…  None                                      0
- 374  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 375  garrow        p3\n##################################\…  None                                      0
- 376  virel         [--][-][--][-]\n3                         None                                      0
- 377  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 378  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 379  virel         [-][][---][--]\n2                         None                                      0
- 380  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 381  kelmar        ...............................\n......…  None                                      0
- 382  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 383  virel         [][---][---][-]\n7                        None                                      0
- 384  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
- 385  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 386  fennick                 _      __ __   _      _  _\n …  None                                      0
- 387  fennick       __           _ _ _        _  _       _\…  None                                      0
- 388  norvel        kick  |xx..|....|.x..|....|.xx.|....|.x…  None                                      0
- 389  norvel        kick  |x...|.xx.|....|xxx.|....|xx..|..…  None                                      0
- 390  norvel        kick  |xxx.|...x|x...|..xx|....|.xx.|..…  None                                      0
- 391  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 392  norvel        kick  |xx..|.xx.|.x..|.x..|.xx.|..x.|.x…  None                                      0
- 393  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 394  virel         [][--][---][--][--]\n6                    None                                      0
- 395  fennick        _  _      _ _       _ _     __\n J  D_…  None                                      0
- 396  virel         [--][---][-][--]\n6                       None                                      0
- 397  virel         [--][][-][-][--]\n3                       None                                      0
- 398  garrow        m2\n#################################\n…  None                                      0
- 399  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 400  fennick                   _ _                      _\…  None                                      0
- 401  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 402  norvel        kick  |x...|.x..|..x.|...x|x...|.x..|..…  None                                      0
- 403  kelmar        ................................\n.....…  None                                      0
- 404  fennick                            _\n__             …  None                                      0
- 405  kelmar        ...............................\n......…  None                                      0
- 406  norvel        kick  |xxx.|....|.xx.|....|..x.|....|.x…  None                                      0
- 407  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 408  garrow        t3\n################################\n#…  None                                      0
- 409  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  None                                      0
- 410  garrow        b2\n##############################\n##~…  None                                      0
- 411  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 412  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 413  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
- 414  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 415  virel         [][---][---][][-]\n3                      None                                      0
- 416  virel         [--][---][----][-]\n3                     None                                      0
- 417  virel         [----][---][---][-]\n7                    None                                      0
- 418  virel         [--][--][--][--][-]\n2                    None                                      0
- 419  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 420  garrow        c2\n##################################\…  None                                      0
- 421  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 422  fennick       _                     __\nH  _         …  None                                      0
- 423  fennick                                _         _\n_…  None                                      0
- 424  norvel        kick  |xx..|.x..|.xx.|.xx.|.xx.|..x.|..…  None                                      0
- 425  virel         [---][--][][---][--]\n3                   None                                      0
- 426  kelmar        ............................\n.........…  None                                      0
- 427  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 428  norvel        kick  |x...|.xx.|...x|xx..|...x|xx..|..…  None                                      0
- 429  fennick                          __                 _…  None                                      0
- 430  kelmar        ................................\n.....…  None                                      0
- 431  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 432  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 433  kelmar        ..............................\n.......…  None                                      0
- 434  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 435  virel         [--][-][--][---][--]\n6                   None                                      0
- 436  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 437  fennick         _  _      __       _              _\n…  None                                      0
+ 363  virel         [----][][-][---]\n4                       None                                      0
+ 364  garrow        a3\n##############################\n##~…  None                                      0
+ 365  garrow        o1\n###################################…  None                                      0
+ 366  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 367  virel         [--][---][-][--]\n7                       None                                      0
+ 368  virel         [---][--][--][----]\n3                    None                                      0
+ 369  fennick             _                  _\n      A    …  None                                      0
+ 370  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 371  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 372  fennick             _ _                  _   _  _\n  …  None                                      0
+ 373  fennick       _            _   _      _   _     _\nD …  None                                      0
+ 374  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 375  fennick                  __ _ _\n         _ BB D P_  …  None                                      0
+ 376  norvel        kick  |x...|....|.x..|....|..x.|....|..…  None                                      0
+ 377  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 378  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 379  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 380  norvel        kick  |xx..|.xx.|..x.|.xx.|.x..|.xx.|..…  None                                      0
+ 381  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 382  garrow        m2\n###################################…  None                                      0
+ 383  fennick        _  _             _                 _\n…  None                                      0
+ 384  virel         [----][-][-][]\n3                         None                                      0
+ 385  norvel        kick  |xx..|....|.x..|....|.xx.|....|..…  None                                      0
+ 386  virel         [][---][][----][--]\n3                    None                                      0
+ 387  norvel        kick  |xxx.|.x..|.xx.|.xx.|..x.|.xx.|..…  None                                      0
+ 388  kelmar        .............................\n........…  None                                      0
+ 389  virel         [-][---][-][--]\n2                        None                                      0
+ 390  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 391  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 392  garrow        a3\n#################################\n…  None                                      0
+ 393  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 394  norvel        kick  |xx..|....|x...|..xx|....|.x..|..…  None                                      0
+ 395  fennick              _ _           _              _\n…  None                                      0
+ 396  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 397  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 398  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 399  kelmar        ............................\n.........…  None                                      0
+ 400  fennick       _             _        _ _   _\nC__ _  …  None                                      0
+ 401  virel         [--][---][][----]\n6                      None                                      0
+ 402  fennick                                       _  _\n …  None                                      0
+ 403  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 404  fennick       _        _       _  _ _ _       _\nW   …  None                                      0
+ 405  kelmar        ................................\n.....…  None                                      0
+ 406  garrow        p1\n##################################\…  None                                      0
+ 407  garrow        s2\n#################################\n…  None                                      0
+ 408  fennick                                         _   _…  None                                      0
+ 409  fennick               _               _   _\n _ _    …  None                                      0
+ 410  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 411  garrow        s3\n###################################…  None                                      0
+ 412  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 413  virel         [----][][-][][-]\n3                       None                                      0
+ 414  norvel        kick  |xx..|....|.xx.|....|.xx.|....|.x…  None                                      0
+ 415  kelmar        ................................\n.....…  None                                      0
+ 416  kelmar        ................................\n.....…  None                                      0
+ 417  virel         [-][----][-][-]\n3                        None                                      0
+ 418  virel         [----][--][][--][-]\n3                    None                                      0
+ 419  fennick           _  _         _        _    _   _\n …  None                                      0
+ 420  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 421  garrow        b2\n################################\n#…  None                                      0
+ 422  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 423  virel         [---][--][][----]\n3                      None                                      0
+ 424  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 425  norvel        kick  |xxx.|....|..x.|....|..x.|....|..…  None                                      0
+ 426  virel         [][-][-][----]\n6                         None                                      0
+ 427  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 428  norvel        kick  |x...|..x.|....|xx..|..xx|x...|..…  None                                      0
+ 429  garrow        m2\n################################\n#…  None                                      0
+ 430  garrow        c2\n#################################\n…  None                                      0
+ 431  garrow        b2\n###############################\n##…  None                                      0
+ 432  fennick       _  _  _         _      _        _\nV_ N…  None                                      0
+ 433  kelmar        ...............................\n......…  None                                      0
+ 434  garrow        o3\n###############################\n##…  None                                      0
+ 435  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 436  fennick                 __  _       _ _      _  __\n_…  None                                      0
+ 437  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
  438  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 439  fennick                       _       _   _   _   _\n…  None                                      0
- 440  kelmar        .............................\n........…  None                                      0
- 441  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 442  fennick        _  _           _          __     _\n N…  None                                      0
- 443  fennick        _  _    _  _ _ _     _     _\n M  U   …  None                                      0
- 444  kelmar        ...........................\n..........…  None                                      0
- 445  fennick         _                 _\n_ P _           …  None                                      0
- 446  kelmar        ................................\n.....…  None                                      0
- 447  norvel        kick  |xx..|.xx.|.xx.|..x.|..x.|..x.|..…  None                                      0
- 448  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 449  norvel        kick  |xxx.|...x|x...|.x..|...x|x...|..…  None                                      0
- 450  kelmar        ...............................\n......…  None                                      0
- 451  norvel        kick  |xxx.|.x..|.x..|.xx.|..x.|..x.|.x…  None                                      0
- 452  fennick        _              _    _ _            _\n…  None                                      0
- 453  kelmar        ................................\n.....…  None                                      0
- 454  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 455  kelmar        ...........................\n..........…  None                                      0
- 456  virel         [--][--][---][---]\n4                     None                                      0
- 457  fennick              _     __                 _\n    …  None                                      0
- 458  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 459  norvel        kick  |x...|...x|xx..|...x|....|.x..|..…  None                                      0
- 460  virel         [----][--][-][---]\n6                     None                                      0
- 461  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 462  garrow        s3\n###################################…  None                                      0
- 463  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 464  garrow        a2\n##################################\…  None                                      0
- 465  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 466  norvel        kick  |xx..|...x|....|.x..|...x|xx..|..…  None                                      0
- 467  garrow        p2\n###################################…  None                                      0
- 468  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 469  kelmar        ............................\n.........…  None                                      0
- 470  norvel        kick  |xx..|....|..x.|....|...x|xx..|..…  None                                      0
- 471  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 472  fennick        _            __     _ _       _\n_U   …  None                                      0
- 473  garrow        t2\n##############################\n##~…  None                                      0
- 474  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  None                                      0
- 475  garrow        s3\n###################################…  None                                      0
- 476  kelmar        ...............................\n......…  None                                      0
- 477  fennick        _          _ _   _\n A     _ _  A W   …  None                                      0
- 478  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 479  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 480  fennick                      _         _  _     _\n _…  None                                      0
- 481  fennick         _           _              _\n  F    …  None                                      0
- 482  norvel        kick  |xxx.|.xx.|..x.|.x..|.xx.|.x..|.x…  None                                      0
- 483  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 484  norvel        kick  |xxx.|....|.xx.|....|..x.|....|..…  None                                      0
- 485  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
- 486  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
- 487  fennick       _   _   _      _                   _\nS…  None                                      0
- 488  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 489  norvel        kick  |xxx.|....|.xx.|....|.xx.|....|.x…  None                                      0
- 490  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 491  garrow        c3\n##############################\n##~…  None                                      0
- 492  kelmar        ...............................\n......…  None                                      0
- 493  kelmar        .............................\n........…  None                                      0
- 494  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 495  garrow        s3\n#################################\n…  None                                      0
- 496  fennick             _        _      _    _    _\n_   …  None                                      0
- 497  kelmar        ................................\n.....…  None                                      0
- 498  norvel        kick  |xx..|....|.x..|....|.xx.|....|..…  None                                      0
- 499  norvel        kick  |xx..|.xx.|.x..|.x..|.x..|.xx.|.x…  None                                      0
- 500  norvel        kick  |xx..|....|.x..|....|.x..|....|..…  None                                      0
- 501  virel         [-][--][---][---]\n6                      None                                      0
- 502  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
- 503  garrow        s2\n###############################\n##…  None                                      0
- 504  garrow        s3\n##############################\n##~…  None                                      0
- 505  norvel        kick  |xxx.|..x.|..x.|.x..|.x..|.xx.|.x…  None                                      0
- 506  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
- 507  fennick        _    _   _            _        _\n L  …  None                                      0
- 508  fennick        _      _ _                     _\n B  …  None                                      0
- 509  norvel        kick  |x...|..xx|x...|..x.|....|xx..|..…  None                                      0
- 510  kelmar        .............................\n........…  None                                      0
- 511  virel         [-][--][-][--]\n2                         None                                      0
- 512  virel         [---][-][---][--]\n4                      None                                      0
- 513  fennick                    _  _  _    __ __       _\n…  None                                      0
- 514  virel         [---][--][][-][]\n7                       None                                      0
- 515  norvel        kick  |xx..|.xx.|.xx.|.x..|.xx.|.xx.|.x…  None                                      0
- 516  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 517  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 518  fennick        _   _        __\n C   K        KK_\n C…  None                                      0
- 519  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
- 520  virel         [][--][][--][---]\n2                      None                                      0
- 521  fennick             _        _         _  _\n      P …  None                                      0
- 522  garrow        t3\n###################################…  None                                      0
- 523  virel         [----][----][-][--]\n6                    None                                      0
- 524  kelmar        .............................\n........…  None                                      0
- 525  garrow        s3\n################################\n#…  None                                      0
- 526  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 527  garrow        a2\n###################################…  None                                      0
- 528  norvel        kick  |xx..|.xx.|..x.|.xx.|.x..|.x..|.x…  None                                      0
- 529  norvel        kick  |xx..|.xx.|..x.|.xx.|..x.|..x.|.x…  None                                      0
- 530  garrow        t3\n##############################\n##~…  None                                      0
- 531  kelmar        ...............................\n......…  None                                      0
- 532  virel         [---][--][--][-]\n6                       None                                      0
- 533  fennick       __ __   _     _\nHT SS   T     D\nHT SS…  None                                      0
- 534  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 535  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
- 536  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 537  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 538  fennick        _  _            _   _       _      _\n…  None                                      0
- 539  norvel        kick  |xx..|....|.x..|....|.xx.|....|..…  None                                      0
- 540  norvel        kick  |xx..|....|..x.|....|..x.|....|..…  None                                      0
- 541  norvel        kick  |xxx.|.xx.|.xx.|.x..|.x..|.x..|.x…  None                                      0
- 542  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 543  garrow        t2\n###############################\n##…  None                                      0
- 544  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 545  norvel        kick  |x...|.x..|...x|xx..|..xx|x...|.x…  None                                      0
- 546  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 547  fennick               _ _         _\n        H N     …  None                                      0
+ 439  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 440  fennick           _          _ _ __    _     _ _\n   …  None                                      0
+ 441  fennick           _     _ _      _ _         _ _\n _ …  None                                      0
+ 442  fennick        _ _                 _        _\n J P  …  None                                      0
+ 443  norvel        kick  |x...|...x|....|..xx|....|..xx|x.…  None                                      0
+ 444  norvel        kick  |x...|....|.xx.|....|...x|x...|..…  None                                      0
+ 445  garrow        p3\n###################################…  None                                      0
+ 446  fennick             _                          _\n___…  None                                      0
+ 447  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 448  norvel        kick  |xx..|....|.xx.|....|..x.|....|..…  None                                      0
+ 449  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 450  garrow        p2\n##################################\…  None                                      0
+ 451  kelmar        ............................\n.........…  None                                      0
+ 452  fennick       _    _    _                       _\nS …  None                                      0
+ 453  norvel        kick  |xxx.|....|.xx.|....|.x..|....|.x…  None                                      0
+ 454  kelmar        .............................\n........…  None                                      0
+ 455  kelmar        ................................\n.....…  None                                      0
+ 456  norvel        kick  |x...|..x.|....|xx..|...x|xx..|..…  None                                      0
+ 457  fennick                        _  _        _\n __    …  None                                      0
+ 458  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 459  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 460  norvel        kick  |xx..|...x|....|.x..|...x|x...|..…  None                                      0
+ 461  fennick       _\nF _ _   _ _     _          _\nF N R …  None                                      0
+ 462  garrow        s2\n##############################\n##~…  None                                      0
+ 463  virel         [][--][---][-][]\n4                       None                                      0
+ 464  virel         [----][-][][-]\n6                         None                                      0
+ 465  norvel        kick  |xx..|....|.xx.|....|.xx.|....|.x…  None                                      0
+ 466  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 467  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 468  kelmar        ..............................\n.......…  None                                      0
+ 469  fennick       __       _        _      _   _  _ _\nLT…  None                                      0
+ 470  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 471  norvel        kick  |x...|.xxx|....|.x..|...x|....|.x…  None                                      0
+ 472  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 473  kelmar        .............................\n........…  None                                      0
+ 474  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 475  garrow        o3\n###################################…  None                                      0
+ 476  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 477  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 478  kelmar        ...........................\n..........…  None                                      0
+ 479  norvel        kick  |xxx.|....|.xx.|....|..x.|....|..…  None                                      0
+ 480  fennick                        _            _\n    _ …  None                                      0
+ 481  kelmar        ...............................\n......…  None                                      0
+ 482  kelmar        ...............................\n......…  None                                      0
+ 483  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 484  fennick       _  _                  _   _\nJ  U_ _  _…  None                                      0
+ 485  virel         [----][----][--][-]\n4                    None                                      0
+ 486  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 487  garrow        t3\n##################################\…  None                                      0
+ 488  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 489  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 490  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 491  virel         [][-][--][---]\n3                         None                                      0
+ 492  norvel        kick  |xxx.|....|..x.|....|.x..|....|.x…  None                                      0
+ 493  garrow        p2\n###################################…  None                                      0
+ 494  fennick         _ _      _    _\n  U F   _  U _  T   …  None                                      0
+ 495  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  None                                      0
+ 496  virel         [-][---][-][---]\n3                       None                                      0
+ 497  norvel        kick  |xx..|....|.x..|....|.xx.|....|..…  None                                      0
+ 498  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 499  virel         [---][--][][-]\n6                         None                                      0
+ 500  fennick          _   _                    _\n_  A  _R…  None                                      0
+ 501  fennick                                    _\n       …  None                                      0
+ 502  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 503  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 504  fennick        _    _ _    _     _    _          _\n …  None                                      0
+ 505  garrow        m3\n###################################…  None                                      0
+ 506  kelmar        .............................\n........…  None                                      0
+ 507  kelmar        ...........................\n..........…  None                                      0
+ 508  norvel        kick  |xx..|....|.xx.|....|.xx.|....|..…  None                                      0
+ 509  fennick             _    _  _                _ _\n   …  None                                      0
+ 510  garrow        b3\n###############################\n##…  None                                      0
+ 511  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 512  kelmar        ...........................\n..........…  None                                      0
+ 513  kelmar        ...........................\n..........…  None                                      0
+ 514  norvel        kick  |xx..|..x.|....|x...|.xx.|....|xx…  None                                      0
+ 515  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 516  fennick        _  _      _                   _    _\n…  None                                      0
+ 517  kelmar        ..........................\n...........…  None                                      0
+ 518  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 519  garrow        o2\n################################\n#…  None                                      0
+ 520  norvel        kick  |xx..|.xx.|.x..|.x..|.x..|.xx.|..…  None                                      0
+ 521  garrow        m3\n###############################\n##…  None                                      0
+ 522  garrow        b2\n##############################\n##~…  None                                      0
+ 523  garrow        p3\n###################################…  None                                      0
+ 524  virel         [-][-][-][---][-]\n3                      None                                      0
+ 525  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 526  fennick                                _\n   __      …  None                                      0
+ 527  virel         [--][----][--][--]\n6                     None                                      0
+ 528  fennick                             _   _     _   _\n…  None                                      0
+ 529  norvel        kick  |xx..|....|.xx.|....|.xx.|....|.x…  None                                      0
+ 530  norvel        kick  |x...|.xx.|....|xxx.|....|x...|.x…  None                                      0
+ 531  virel         [-][-][----][----]\n6                     None                                      0
+ 532  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 533  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 534  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
+ 535  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  None                                      0
+ 536  norvel        kick  |xx..|.xx.|..x.|..x.|.xx.|.xx.|..…  None                                      0
+ 537  garrow        m2\n###################################…  None                                      0
+ 538  norvel        kick  |x...|....|.xx.|....|...x|xx..|..…  None                                      0
+ 539  garrow        m2\n#################################\n…  None                                      0
+ 540  kelmar        ..............................\n.......…  None                                      0
+ 541  virel         [-][--][][---]\n4                         None                                      0
+ 542  kelmar        ............................\n.........…  None                                      0
+ 543  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 544  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
+ 545  norvel        kick  |xx..|.xx.|..x.|.xx.|.x..|.xx.|..…  None                                      0
+ 546  garrow        c2\n###################################…  None                                      0
+ 547  kelmar        ...............................\n......…  None                                      0
  548  kelmar        ..............................\n.......…  None                                      0
- 549  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 550  garrow        t3\n###################################…  None                                      0
- 551  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 552  virel         [----][-][-][--][--]\n7                   None                                      0
- 553  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 554  kelmar        .............................\n........…  None                                      0
- 555  virel         [---][--][--][-][-]\n6                    None                                      0
- 556  fennick                _  _  _          _\n _    _ _H…  None                                      0
- 557  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
- 558  fennick               _  _  __                  _   _…  None                                      0
- 559  fennick       __         _   __  _\nEH      _  B  _PH…  None                                      0
- 560  kelmar        ...........................\n..........…  None                                      0
- 561  virel         [-][--][--][---]\n7                       None                                      0
- 562  norvel        kick  |xx..|.xx.|..x.|.xx.|..x.|..x.|.x…  None                                      0
- 563  virel         [---][--][][---]\n6                       None                                      0
- 564  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 565  garrow        c3\n###############################\n##…  None                                      0
- 566  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  None                                      0
- 567  virel         [-][--][---][----]\n6                     None                                      0
- 568  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 569  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 570  kelmar        ...............................\n......…  None                                      0
- 571  virel         [-][-][-][--][--]\n3                      None                                      0
- 572  norvel        kick  |xx..|.x..|.xx.|.xx.|.xx.|..x.|..…  None                                      0
- 573  fennick       _    _            __              __\nU…  None                                      0
- 574  virel         [---][-][-][---]\n2                       None                                      0
- 575  norvel        kick  |x...|...x|....|.xxx|....|.x..|..…  None                                      0
- 576  fennick       _     _     _ _   _ _      _ _     _\nV…  None                                      0
- 577  garrow        a2\n###################################…  None                                      0
- 578  virel         [][---][-][--][---]\n4                    None                                      0
- 579  garrow        t3\n###################################…  None                                      0
- 580  fennick               _    _        _           _\n  …  None                                      0
- 581  virel         [----][----][-][-]\n4                     None                                      0
+ 549  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 550  kelmar        ...............................\n......…  None                                      0
+ 551  garrow        a2\n################################\n#…  None                                      0
+ 552  virel         [-][--][---][----]\n4                     None                                      0
+ 553  virel         [][---][-][--]\n7                         None                                      0
+ 554  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 555  kelmar        ...........................\n..........…  None                                      0
+ 556  norvel        kick  |xxx.|....|..x.|....|.xx.|....|..…  None                                      0
+ 557  garrow        t3\n##############################\n##~…  None                                      0
+ 558  garrow        t2\n##############################\n##~…  None                                      0
+ 559  virel         [--][-][---][-]\n3                        None                                      0
+ 560  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 561  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  None                                      0
+ 562  fennick       _ _ _         _       _    _\nE B U__ _…  None                                      0
+ 563  fennick       _                            _ _\nJ    …  None                                      0
+ 564  kelmar        .............................\n........…  None                                      0
+ 565  norvel        kick  |xx..|.xx.|.xx.|.xx.|..x.|..x.|.x…  None                                      0
+ 566  norvel        kick  |xx..|....|.xx.|....|..x.|....|..…  None                                      0
+ 567  norvel        kick  |xx..|....|x...|...x|....|..xx|..…  None                                      0
+ 568  garrow        m2\n#################################\n…  None                                      0
+ 569  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 570  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 571  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 572  garrow        o3\n##############################\n##~…  None                                      0
+ 573  norvel        kick  |xx..|....|.x..|....|.x..|....|.x…  None                                      0
+ 574  fennick           _ __  _                _\n    J RE …  None                                      0
+ 575  norvel        kick  |x...|.x..|..x.|....|x...|.xx.|..…  None                                      0
+ 576  norvel        kick  |x...|.xx.|...x|x...|..xx|x...|.x…  None                                      0
+ 577  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 578  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 579  norvel        kick  |xxx.|....|..x.|....|.xx.|....|..…  None                                      0
+ 580  norvel        kick  |xx..|....|.xx.|....|..x.|....|.x…  None                                      0
+ 581  norvel        kick  |xx..|.xx.|.xx.|.x..|.xx.|.xx.|.x…  None                                      0
  582  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 583  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 584  fennick                               _ _ _      __\n…  None                                      0
- 585  norvel        kick  |xxx.|.xx.|..x.|..x.|.xx.|.xx.|.x…  None                                      0
- 586  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
- 587  virel         [-][----][--][---]\n6                     None                                      0
- 588  fennick        _  _                  _ _            _…  None                                      0
- 589  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…  None                                      0
- 590  kelmar        ............................\n.........…  None                                      0
- 591  virel         [-][--][][---]\n4                         None                                      0
- 592  garrow        b2\n###################################…  None                                      0
- 593  kelmar        ..............................\n.......…  None                                      0
- 594  garrow        c3\n#################################\n…  None                                      0
- 595  norvel        kick  |xx..|.xx.|.x..|.xx.|..x.|..x.|.x…  None                                      0
- 596  norvel        kick  |xx..|.x..|.xx.|.x..|.xx.|.x..|.x…  None                                      0
- 597  virel         [][-][--][--][-]\n4                       None                                      0
- 598  kelmar        ..............................\n.......…  None                                      0
- 599  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 600  fennick       __ _      __\nDD B_ _   JB      __ _   …  None                                      0
- 601  garrow        b2\n###################################…  None                                      0
- 602  kelmar        ............................\n.........…  None                                      0
- 603  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
- 604  fennick           _             _                 _\n…  None                                      0
- 605  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 583  virel         [--][-][--][--]\n2                        None                                      0
+ 584  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 585  kelmar        .............................\n........…  None                                      0
+ 586  virel         [---][][-][--]\n3                         None                                      0
+ 587  fennick                           _                _\…  None                                      0
+ 588  kelmar        ...........................\n..........…  None                                      0
+ 589  garrow        s3\n##################################\…  None                                      0
+ 590  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 591  virel         [--][-][---][---]\n4                      None                                      0
+ 592  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 593  fennick                       _ _           _ __\n  _…  None                                      0
+ 594  garrow        m3\n##############################\n##~…  None                                      0
+ 595  fennick       _                   _       _       _\n…  None                                      0
+ 596  garrow        s2\n###############################\n##…  None                                      0
+ 597  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  None                                      0
+ 598  virel         [--][---][-][----]\n3                     None                                      0
+ 599  fennick          _ _  _        _   _      __       _\…  None                                      0
+ 600  kelmar        ............................\n.........…  None                                      0
+ 601  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …  None                                      0
+ 602  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+ 603  fennick          _  _  _     _     _ _   _\n_  B _T  …  None                                      0
+ 604  garrow        s2\n##############################\n##~…  None                                      0
 
 per-name tally this round
 name             presented correct  hit-rate
-basten                  86       0      0.0%
-fennick                 96       0      0.0%
-garrow                  82       0      0.0%
-kelmar                  78       0      0.0%
-norvel                  86       0      0.0%
-tovel                   80       0      0.0%
-virel                   98       0      0.0%
+basten                  84       0      0.0%
+fennick                 98       0      0.0%
+garrow                  95       0      0.0%
+kelmar                  74       0      0.0%
+norvel                  88       0      0.0%
+tovel                   84       0      0.0%
+virel                   82       0      0.0%

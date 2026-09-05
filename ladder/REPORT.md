@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 02:56 UTC
+# Ladder report — 2026-09-05 03:07 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -36,6 +36,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | norvel | 3 | testing | - | - | - | - | 4.3 | 0 | 0 | - | 39% (4) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
+| ospren | 1 | untested | - | - | - | - | - | 0 | 0 | - | - |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | quilm | 3 | retired | - | - | - | - | 1.8 | 0 | 0 | - | 100% (4) |
 | regina | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

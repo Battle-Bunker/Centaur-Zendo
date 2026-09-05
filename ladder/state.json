@@ -3212,6 +3212,21 @@
     }
    ]
   },
+  "ospren": {
+   "current_version": 1,
+   "paradigm": "rule_family",
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788577623.6591926,
+     "file": "challenges/lab/ospren.json",
+     "note": "v1 rule family (5x5 pictures): 10 templates, 29 rules, fresh-count + 2-square clauses; scorer 1004",
+     "v": 1
+    }
+   ]
+  },
   "quaich": {
    "current_version": 2,
    "qual": [
@@ -6380,7 +6395,7 @@
    "kind": "designer",
    "paradigm": "rule_family",
    "started": 1788575982.418592,
-   "status": "running",
+   "status": "done",
    "version": null,
    "world": "a 5x5 picture of two symbols"
   },
@@ -6634,6 +6649,22 @@
     "dornic1a": "opus-default",
     "dornic1b": "opus-kidproxy"
    },
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "ospren",
+   "id": "players-ospren-v1-b0f4",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "ospren",
+   "id": "judge-ospren-v1-259a",
+   "kind": "judge",
+   "status": "pending",
    "version": 1
   }
  ],

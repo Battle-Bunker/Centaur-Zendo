@@ -6863,7 +6863,7 @@
    ]
   },
   "norvel": {
-   "current_version": 4,
+   "current_version": 5,
    "qual": [
     {
      "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
@@ -6927,7 +6927,8 @@
    "refined_versions": [
     1,
     2,
-    3
+    3,
+    4
    ],
    "runs": [
     {
@@ -7675,7 +7676,7 @@
      "version": 4
     }
    ],
-   "status": "calibrated",
+   "status": "testing",
    "versions": [
     {
      "added": 1788550070.76554,
@@ -7700,6 +7701,12 @@
      "file": "challenges/lab/norvel.json",
      "note": "refiner: full drum grid in clue; a snare hit with no hat above and no kick under skids to the next hat tick; caption 'n slip'; foothold 12%",
      "v": 4
+    },
+    {
+     "added": 1788610652.4724844,
+     "file": "challenges/lab/norvel.json",
+     "note": "salience: 4-6 bars (was 7), caption 'n snare slip', right-aligned labels; solve/score byte-identical to v4",
+     "v": 5
     }
    ]
   },
@@ -15164,7 +15171,7 @@
    "kind": "refiner",
    "reason": "calibrated on rate (100% demo / 14% none) but kid 3.67: shrink the grid, caption n snare slip; rule unchanged",
    "started": 1788609064.199741,
-   "status": "running",
+   "status": "done",
    "version": 4
   },
   {

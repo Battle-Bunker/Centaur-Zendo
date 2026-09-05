@@ -669,3 +669,131 @@ in the same bar.
 
 Scratch harness for every number above (not committed):
 `$SCRATCH/music4/{v4,attack,narrow,fair,selftest,build_json,DESC}.py`.
+
+## norvel v5 (2026-09-05) — refiner: salience only (smallest grid, `n snare slip`)
+
+Brief: v4 is **calibrated on rate** — 100 %, 100 %, 100 % with a demo and 15 %, 14 %, 14 % without
+over six Opus finals — but the judge scores the 12-year-old test **3.67**: *"the grid's width and
+glyph vocabulary ask a lot of visual bookkeeping before the which-row question even opens up;
+shrink to the minimum bar count that still plants all four near-misses, and rename the caption
+`n snare slip` so a demo-less reader is nudged toward the snare row without the count giving away
+which hits move."* This pass changes **nothing but the drawing**. The rule, the four planted
+near-miss kinds, the one-step/two-step pair, the kick/empty landing pair, the `n` refusal list, the
+`n` distribution and therefore the ~12 % `0` foothold are the v4 design untouched, and `solve` and
+`score` are **byte-identical to v4** (`norvel.v4.json` is the byte-identical previous version).
+
+### 1. How small can the grid go? (measured, 3000 clues per policy)
+
+The mandatory hat holes in a clue are `n` (skid origins) + 1 (the two-step skid) + 2 (over kicked
+snare hits) + 1 (over a lone kick) + 2 (over empty steps), and at most 2 may fall in one bar. That
+is a hard floor on the bar count, and the generator hits it exactly:
+
+| bars | n = 0 | n = 1 | n = 2 | n = 3 | n = 4 |
+|---|---|---|---|---|---|
+| 3 | placeable, but see below | placeable, but see below | fails | fails | fails |
+| 4 | **ok** | **ok** | fails 300/300 tries | fails | fails |
+| 5 | ok | ok | **ok** | **ok** | fails 300/300 (10 holes into 10 slots) |
+| 6 | ok | ok | ok | ok | **ok** |
+
+3 bars *is* placeable for n ≤ 1 — and rejected anyway: 12 steps is too small a canvas, only
+**70 % of the n = 1 clues are distinct** (one picture recurs 15× in 60 000 seeds, 95 % distinct
+for n = 0) against **100 %** at 4 bars, and the offline elimination the caption pays for needs
+~30 *different* harvested clues. v5 ships the smallest grid that keeps the clue space intact,
+`B = (4,4,5,5,6)[n]`. **4.97 bars mean against v4's 7.07**; 60 cells to read
+against 84; clue lines of 27/32/37 chars against 37/42/47; longest clue 126 chars against 150.
+Snare and kick counts are scaled with the grid (`m = B..B+3` hits, `B-2..B+1` free kicks) so the
+groove keeps its v4 texture — snare 33 % → 37 % of steps, kick 35 % → 36 %. The one density that
+really rises is the hat's holes, **32 % → 43 %**, which is forced: the same 6–11 holes with 29 %
+fewer steps to put them in. 0 fallbacks in 50 000 seeds; all four near-miss kinds and both skid
+lengths present in 3000/3000 sampled clues.
+
+### 2. The caption, the labels, the glyphs
+
+* Caption is now **`3 snare slip`**. It still names the verb and counts the edits and still says
+  nothing about *which* hits move, so it is exactly the v4 checksum — it only tells a demo-less
+  reader which row to edit. The scorer drops any line with no `x`/`.`/`-` in it, so the answer may
+  keep it, **drop it**, reword it, move it, or use v4's old **`3 slip`** — all measured at 100 %
+  on 1000 clues (house rule, 2026-09-05).
+* Rows are right-aligned onto the staff (`  hat |`, `snare |`, ` kick |`) so the bar lines make one
+  clean left edge.
+* **Rejected, with reasons.** `hi-hat` as a label: `-` is a glyph the scorer compares, so a dash in
+  a label corrupts the row it labels (this is a real trap — `hat`/`snare`/`kick` are safe because
+  none of their letters is `x`, `.` or `-`). A fancier bar line (`:`, `||`): `solve`/`score` walk
+  the grid by skipping `|`, so any other separator needs the scorer *and* the whole witness table
+  rebuilt, for no legibility gain — `|` every four steps already *is* the drum-tab bar line.
+  Rests as `-` (real drum tab): `-` is the ghost glyph, so rests stay `.` and the vocabulary is
+  three glyphs with maximum contrast — `x` tick, `.` silence, `-` the skid's trail.
+* Exactly **one two-step skid** per clue when n ≥ 2 (v4: one *or more*), so the demo still refutes
+  "it moves one step later" from inside one picture but carries fewer dash runs.
+
+### 3. Readable landings
+
+New in v5: the skidding hits are chosen, where the grid allows, so that the two steps after the
+hit are free and no other skid is within four steps (a second pass takes anything if that fails).
+Measured over 2649 demos (n ≥ 1): the share where **every** skid's origin and landing read as
+separate marks — the landing is a new mark, no other trail touches it, and it does not merge into
+a neighbouring hit — goes **13 % → 37 %**, and per skid **40 % → 62 %**. (Component rates in v5:
+new mark 100 %, no trail touches another 86 %, does not merge into a hit 75 %.)
+
+The one measured side effect: rivals that pick the skidding hits by the **gap after them** instead
+of by lone-ness gain a few points — "the n hits with the biggest gap after them" 14.5 % (v4) →
+17.4 % (v5 geometry alone) → **20.3 %** (with the preference), "every hit with ≥ 2 free steps
+after it" 7.2 % → 12.8 %. Both stay under the 24.5 % of the best half-insight rival, and a player
+who reaches them still has to find the drawing. If a demo-holder ever plateaus at ~20 %, delete the
+two lines marked *"prefer a landing that reads clearly"*.
+
+### 4. Witness table (3000 fresh clues, the identical v4 attacks)
+
+| strategy | v4 | v5 |
+|---|---|---|
+| the true rule (`solve`) | **100.00 %** | **100.00 %** |
+| **clue echoed unchanged** (the foothold — the `0 snare slip` clues) | **11.70 %** | **11.70 %** |
+| right rule, hit just moves one step (no ghost) | 11.70 % | 11.70 % |
+| **right rule, ghost + hit one step later** (the demo-less best) | **21.23 %** | **21.23 %** |
+| right rule, hit stays + copy one step later / glyph change in place | 11.70 % | 11.70 % |
+| right rule, moves past the gap without ghosts / stays + copy past the gap | 11.70 % | 11.70 % |
+| right rule, ghosts but skidding EARLIER | 11.70 % | 11.70 % |
+| every snare hit with no hat above it / with no kick under it (true drawing) | 0.00 % | 0.00 % |
+| every snare hit over a kick · every snare hit · the same rule on the kick row | 0.00 % | 0.00 % |
+| the n leftmost snare hits (true drawing) | 13.10 % | 12.77 % |
+| **n random snare hits chosen from those with no hat above** | **24.40 %** | **24.50 %** |
+| lone hits, but only when no kick lands on the landing step | 31.60 % | 31.73 % |
+| lone hits, but only when the hat is off on the next step too | 11.70 % | 11.70 % |
+| demo replay · empty · junk · unicode · 4000 chars · one row · rows swapped · row shifted | 0.00 % | 0.00 % |
+| leniency: bare rows, other labels, beat header, blanks, CRLF, tabs, prose, spaces, caption dropped | 100 % | 100 % |
+| leniency (new): caption reworded · caption moved · **v4's old `n slip` caption** | — | 100 % |
+| strictness: rows swapped/two/four rows, snare shifted, ghosts→rests, ghosts→hits, one line, wrong hat cell | 0.00 % | 0.00 % |
+
+**Nothing moved by more than 0.5 points, and every row that was 0 % or 100 % is still 0 % or
+100 %.** The only movement is sampling noise on the two rivals that depend on where the lone hits
+happen to sit. The gradient is the v4 gradient: 0 % (well-formed, wrong hits) → 12 % (the format
+and the `0` clues) → 21–32 % (right hits, drawing or one spurious extra condition wrong) → 100 %.
+The "true rule plus one redundant clause" family (`narrow.py`) is unchanged too: the highest
+non-vacuous rival is 30 % (v4: 32 %).
+
+### 5. Validation
+
+`python tools/quickcheck.py challenges/lab/norvel.json --seeds 200` → **OK**, one warning
+(`score accepts the clue itself as a solution`) which is the intended `0 snare slip` foothold and
+is raised identically by v4, kelmar, fennick and durnel. Sizes: score **312/512** (unchanged from
+v4 — the caption never reaches the comparison), solve 472/5000, generate 5303/50000; clue ≤ **126**
+chars, solution ≤ 126. `generate` deterministic, **0.34 ms** mean over 20 000 seeds (p99 1.8 ms,
+max 3.4 ms, **0 fallbacks in 50 000**); `solve` 0.003 ms and scores 1 on **3000/3000** fresh clues;
+`score` 0.020 ms (worst 0.43 ms on junk). Scorer: **0 raises, 0 non-binary results, 0 false
+positives on 12 000 junk strings**; **0 disagreements** with an independent re-implementation on
+12 000 mutated answers. The JSON's code reproduces the scratch harness on 5000 seeds exactly.
+
+### 6. The kid reading expected
+
+Same rule, less to hold in the head: four to six bars, three rows, three glyphs, and a caption
+that says *snare*. A 12-year-old reads the clue as a drum part, the caption tells them the snare
+row is the one to edit and how many hits move, and one demo shows a hit stepping out of its slot
+and sliding to the right until the hat comes back — with, in the same picture, one hit that slid
+two steps, two hits under a hat gap that stayed because the kick was holding them, and two hits
+that stayed because the hat was ticking. The remaining risk is unchanged from v4: without a demo
+the *drawing* (ghost dashes and the landing) is still unguessable, which is the fennick shape and
+the reason for the 12 % / 100 % split. Rate is expected to hold; this pass is aimed at the judge's
+kid score, not at the rate.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/music5/{v5,attack5,narrow5,selftest5,extra,distinct,stats,sweep,build_json5,DESC}.py`.

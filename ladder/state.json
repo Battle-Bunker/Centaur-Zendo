@@ -1200,6 +1200,21 @@
     }
    ]
   },
+  "borsel": {
+   "current_version": 1,
+   "paradigm": "rule_family",
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788568201.2196176,
+     "file": "challenges/lab/borsel.json",
+     "note": "v1 rule family (dice): 11 templates, antichain universe, tight statements only; scorer 653",
+     "v": 1
+    }
+   ]
+  },
   "carre": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -6274,7 +6289,7 @@
    "kind": "designer",
    "paradigm": "rule_family",
    "started": 1788566881.5416028,
-   "status": "running",
+   "status": "done",
    "version": null,
    "world": "a roll of 3-5 dice"
   },
@@ -6295,7 +6310,8 @@
    "id": "rfdesigner-3",
    "kind": "designer",
    "paradigm": "rule_family",
-   "status": "pending",
+   "started": 1788568201.2490005,
+   "status": "running",
    "version": null,
    "world": "4-7 letter English words (use the words module)"
   },
@@ -6437,6 +6453,22 @@
    "agents": 1,
    "class": "dornic",
    "id": "judge-dornic-v1-3bfe",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "borsel",
+   "id": "players-borsel-v1-03f5",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "borsel",
+   "id": "judge-borsel-v1-6d17",
    "kind": "judge",
    "status": "pending",
    "version": 1

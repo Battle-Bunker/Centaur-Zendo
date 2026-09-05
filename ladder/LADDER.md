@@ -247,3 +247,10 @@ mestrel promoted to challenges/. Both players again said the kid reading beat th
 and m"). Both complained the pool was homogeneous (seven lineup classes) so demos were nearly
 worthless — the real collection mixes paradigms, and the next pools do too. Watch borsel/kaldrin
 (59 %/49 % means, their cheap templates carry the crack) — the lever is single weight on those.
+STOPPED 2026-09-05 (organiser's instruction) after writing docs/REPORT_2026-09-05.md. In flight and
+NOT ingested: `lad-tovel-v7-4` (mixed pool 9; player a finished — garrow v7 100 % with a demo, tovel
+100 %, molvic 35 %, felsim 12 %, kaldrin 63 %, borsel 55 %, mestrel 39 %; player b was in round 3) and
+the designer job `designer-new-15-man` (playground games, pass 2; writes NOTES_games2.md + a class).
+To resume: `python sim/arena.py teardown --run lad-tovel-v7-4; python ladder/ladder.py ingest
+lad-tovel-v7-4; report`; quickcheck + add-version the designer's class if its JSON exists; then the
+queue in `ladder.py status`.

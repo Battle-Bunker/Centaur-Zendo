@@ -211,3 +211,9 @@ classes whose answer is a property; "three demos for seven classes when four are
 means the score is decided at the demo choice". Next: garrow softening (the halves rule is too
 fiddly to land from one demo), a pool with tovel demo-holders, lineup pool 4 for dornic v3 /
 wisbek v4 / mestrel / kaldrin.
+Recovery note 2 (2026-09-05 11:16): arena `lad-dornic-v3-1` (seven Revision 3 lineup classes, the
+heaviest pool so far) logged "pool loaded" and then never bound its port — no "training started"
+line, no error, process alive with no TCP socket. Killed by the pid in `sim/results/<run>/meta.json`
+(never `pkill` by name: the pattern also matches the players' shells), arena dir and results dir
+removed, `arena.py setup` re-run; the second start bound in ~10 s. Players were told to re-source
+`connection.txt` and start over. If it recurs, suspect the sandbox warm-up with 7 heavy modules.

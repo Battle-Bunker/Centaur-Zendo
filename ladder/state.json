@@ -3497,7 +3497,7 @@
    ]
   },
   "kelmar": {
-   "current_version": 2,
+   "current_version": 3,
    "qual": [
     {
      "advice": "Make the edge columns more visually salient (narrower ground rows) so a kid can spot right-at-the-edge by eye instead of counting characters across 50 columns.",
@@ -3530,7 +3530,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -3972,7 +3973,7 @@
      "version": 2
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "added": 1788559056.696556,
@@ -3985,6 +3986,12 @@
      "file": "challenges/lab/kelmar.json",
      "note": "v2 demo economy: scene in the clue (sky + garden), one count, narrower garden, showers 3-6 wide",
      "v": 2
+    },
+    {
+     "added": 1788589682.5424862,
+     "file": "challenges/lab/kelmar.json",
+     "note": "refiner: rain in the clue, answer leans the plants next to landing rain; caption 'n lean'; foothold 12%",
+     "v": 3
     }
    ]
   },
@@ -10395,7 +10402,7 @@
    "kind": "refiner",
    "reason": "9% with demo over 5 games, 0% without; too_hard",
    "started": 1788588119.2513285,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

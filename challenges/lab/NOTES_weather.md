@@ -421,3 +421,186 @@ pool   $SCRATCH/pool-kelmar-2/kelmar.json   (cp challenges/lab/kelmar.json into 
 setup  python sim/arena.py setup --run lad-kelmar-v2-1 --teams kelmar2a,kelmar2b \
          --challenge-dir $SCRATCH/pool-kelmar-2 --arena-root $SCRATCH/lad-kelmar-v2-1
 ```
+
+---------------------------------------------------------------------------
+
+# Iteration 3 — 2026-09-05 (v3, "the plants that lean out for a drink")
+
+Status going in: **too_hard**. v2's mean final rate over eight Opus players is **5 %** — 9 % for the
+five who spent a demo on it, **0 %** for the three who did not. Previous version kept as
+`challenges/lab/kelmar.v2.json`; v1 is `kelmar.v1.json`.
+
+## What the players actually did with v2 (all runs whose pool contained kelmar)
+
+| run / player | demo? | what they believed | score |
+|---|---|---|---|
+| `lad-kelmar-v1-1` (v1, 2 players) | 1 | "sky rows are houses that grow by one" | 0 % |
+| `lad-crandel-v3-1` (v1, 2 players) | 0 | "a ~45-char track plus a legend"; logged as a possible bar chart | 0 % |
+| `lad-fennick-v3-1` / fennick1a | 0 | "2-3 blank sky rows over a road plus n in 1..3 … 18 edits tried" | **0/825** |
+| `lad-fennick-v3-1` / fennick1b | 0 | "dot canvas above a ground line + a number; answer is that picture edited, but the rule is a pure guess. Lowest priority." | skipped in the final |
+| `lad-tovel-v5-2` / tovel2a | 0 | "~65 grow / lift / add rules → 0" | 0 % |
+| `lad-tovel-v5-2` / tovel2b | **1** | "sky rows filled with `'`/`.` in alternating bands; boundary after symbol i is p_i+1−(count of type-A symbols)… which type is A varies per clue and I never found the discriminator" | 8.7 % |
+| `lad-tovel-v5-3` / tovel3a | **1** | "answer = solid `\|` blocks in the sky, N = ? … the geometry is not yet cracked" | 0 % |
+| `lad-tovel-v5-3` / tovel3b | **1** | "vertical stripes of `'` (grass) and `.`, 3 on / 3 off, phase anchored at the right edge" | 20 % |
+| `lad-dornic-v1-1` / dornic1a | 0 | "`num` evenly spaced 3-wide bands, glyph `\|`" | 5/18 on num=2, 0 elsewhere |
+| `lad-dornic-v1-1` / dornic1b | **1** (two demos) | "the dot rows replaced by blocks of `\|`, identical on every row, ground line kept, number line dropped; **the block geometry is still unexplained**" | skipped |
+
+**The clause nobody ever conceived is the whole rule.** Not one player wrote a sentence in which the
+number counts *plants*. Four of them reconstructed the grammar of the sky perfectly (identical rows,
+blocks of one glyph, widths 3-6, gaps ≥2) and then hunted for a formula that predicts the *block
+boundaries* from the marker positions — tovel2b even fitted one and got within a single binary choice
+of a 100 % score without ever suspecting that the picture was rain and the markers were plants.
+One called the `'` glyph "grass". The relation between a shower and the plant beside it was invisible
+because **the rain was the answer, not the clue**: the player had to invent the object before they
+could see the relation, and the plants — which the answer never touches — read as decoration.
+
+That is the demo-economy lesson from the other direction. v2 satisfied "the clue carries a canvas"
+but not "**the clue carries the object**": fennick1b deliberately spent no demo here precisely
+because the clue "contains a canvas with obvious empty slots, so the format is readable and I can
+probe the rule" — and then the rule was unprobeable, because the thing being counted was not drawn.
+
+## What v3 changes (and why, one lever at a time)
+
+Modelled directly on `STARS.md` → **fennick v3**, the only calibrated class: object in the clue,
+caption names the verb, one physical sentence, a free checksum, answer = a small edit of the clue.
+
+| | v2 | v3 |
+|---|---|---|
+| clue | empty sky + garden + a bare digit | **the finished weather picture**: cloud row, K rows of drops, garden, caption `2 lean` |
+| answer | invent the rain (a 26-32 column pattern) | **the same picture with the right plants drawn leaning** (`/`, `\`) — one glyph changed per counted plant |
+| caption | `2` | **`2 lean`** — names the verb, like fennick's `4 fall`, and is a free checksum over every harvested clue |
+| what varies | which columns are wet | **how far down each shower comes** — the one dimension the rule turns on, and it varies *inside every picture* |
+| rule | "N plants stand at the edge of a shower" (a relation between two things, only one of which was drawn) | **"a plant leans over for a drink if the rain right next to it comes all the way down to the ground"** |
+| foothold | a stripe plateau worth 20-35 % that taught nothing | **12.6 % of clues say `0 lean`** and the answer is the picture echoed — fennick's foothold exactly |
+| plant glyphs | a decoy count dimension | still a decoy, but now killed by the checksum in one round |
+
+The edge relation itself is **kept but made visible**: it is now stated by the answer, because a
+leaning plant is drawn tilting *towards* the rain (`/` = rain on its right, `\` = rain on its left).
+The scorer accepts either glyph, so the tilt is a free teaching signal rather than a second hurdle.
+
+The clause that was **added** in exchange (the class needed one non-obvious step, or it is a one-look
+class) is the most kid-legible one available in this scene: **rain that stops in the air**. Every
+clue has 2-3 showers that reach the ground and at least 2 that hang. A kid says "that rain isn't even
+getting to him". It is also the clause a *model* is least likely to write down, because the default
+move is to flatten the sky into "columns that contain a drop" — which is exactly the wrong reading.
+
+The species clause of an intermediate draft (a tree reaches two columns, a flower only one) was
+measured and **dropped**: it left the template "mark the `n` plants nearest the rain" at 60-64 %,
+because the rule was still monotone in distance and only the tie at the boundary depended on the
+glyph. The hanging showers break the monotonicity instead (the nearest plant to *some* rain is often
+beside rain that never lands), which is why the same template now sits at 33-40 %.
+
+## The demo (seed 44) — clue on the left, the answer on the right
+
+```
+..(~~)....(~~~).....(~)....(~)...(~~)....      ..(~~)....(~~~).....(~)....(~)...(~~)....
+..''''....'''''.....'''....'''...''''....      ..''''....'''''.....'''....'''...''''....
+..''''....'''''.....'''....'''...''''....  ->  ..''''....'''''.....'''....'''...''''....
+..''''....'''''..................''''....      ..''''....'''''..................''''....
+__*_*_Y_Y___*_Y____*____Y_Y_*___*___*_Y__      __*_*_\_Y___*_Y____*____Y_Y_*___/___*_Y__
+2 lean                                         2 lean
+```
+
+Three showers reach the ground (columns 2-5, 10-14, 33-36); two stop in the air (20-22, 27-29).
+The tree at column 6 and the flower at column 32 stand dry right beside rain that lands, so they
+lean towards it. Every near miss is in the same picture: two flowers stand *in* the rain, a flower
+stands right beside the hanging shower at 20-22, a flower stands directly *under* the hanging shower
+at 27-29, a tree is two columns clear, and several plants are nowhere near any rain.
+
+Measured over 4000 clues, every demo contains: a plant standing in landing rain, upright (100 %); a
+plant under rain that never lands, upright (100 %); a plant beside rain that never lands, upright
+(96.4 %, two or more in 88.7 %); a plant far from all rain (100 %). 87.7 % of clues have at least one
+leaner; in 63.3 % of those a leaner and an upright plant-beside-hanging-rain are within 8 columns of
+each other, and in 96.9 % a leaner and a wet plant are.
+
+## Witness table — v2 (measured 2026-09-04) vs v3 (2000 fresh clues)
+
+Attackers know the drawing convention (they model a player who has seen a demo and holds a wrong
+rule). "—" = the attack does not exist in that version.
+
+| attacker's law | v2 | v3 |
+|---|---|---|
+| **the true rule (`solve`)** | **100.0 %** | **100.0 %** |
+| the same insight restated (v2: counted per shower; v3: the `n` plants nearest rain that *lands*) | 79.2 % | 100.0 % |
+| only one side of the relation counts (v2: left / right edge) | 49.4 / 49.8 % | — |
+| only the TREES / only the FLOWERS beside landing rain | — | 43.4 / 40.8 % |
+| the `n` plants nearest ANY rain, hanging showers counted (leftmost / random ties) | — | 39.9 / 32.6 % |
+| plants within two dry columns of the rain | 35.8 % | 20.6 % |
+| **best blind sampler / best insight-free construction** | **34.6 %** | **16.4 %** (= the echo plus luck) |
+| random legal picture / `n` random plants | 28.4 % | 16.4 % |
+| the natural first probe (v2: rain on exactly N plants) | 25.8 % | — |
+| N showers / N showers each over a plant | 23.0 / 19.6 % | — |
+| plants on the last WET column (the nose-vs-tail near miss) | 21.6 % | — |
+| **the clue echoed unchanged (the foothold)** | 0.0 % | **12.2 %** |
+| beside ANY rain, the hanging showers counted too | — | 4.0 % |
+| demo replay / one constant answer | 15.4 / 4.4 % | 0.0 / 0.0 % |
+| shotgun: 22 candidate garden rows in one answer | — | 0.0 % |
+| the edited garden row alone / rain redrawn as `\|` | — | 0.0 % |
+| empty / junk / a line of text / the ground row alone | 0.0 % | 0.0 % |
+
+Two structural changes show up in that table. (1) v2's foothold was a *stripe plateau* (20-35 % for
+any regular pattern of legal widths) that paid a player who had understood nothing about the rule —
+and, worse, taught them that the class was a pattern-matching exercise. v3's foothold is the fennick
+one: echo the picture and bank the `0 lean` clues, which is 12 % and is *correct behaviour*.
+(2) v2's top rivals were the true relation weakened (49-79 %); v3's top rivals below the rule are at
+33-43 % and every one of them requires reading the picture as rain first.
+
+## Fairness floor
+
+20 hand-built "the caption counts THIS relation" laws, evaluated on shipped demos: **3.8 survive one
+demo, 2.0 survive two, 1.4 survive three**, and in 267/400 trials exactly one law survives three
+demos and it is the true rule. In practice the floor is much lower than that, because the caption is
+a **free checksum**: a team can test any candidate against all ~80 clues it harvested in round 1
+without spending a single answer (fennick1b verified its rule "91/91 on round-1 clues before I ever
+spent a round on it"). The difficulty is generating the hypothesis, not testing it.
+
+## Validation
+
+`python tools/quickcheck.py challenges/lab/kelmar.json --seeds 200` → **OK**, one warning, "score
+accepts the clue itself as a solution" — that is the `0 lean` foothold, and **fennick v3 emits the
+identical warning**. Sizes: **score 415 / 512**, solve 348, generate 2987; clue 171-264 chars,
+solution 171-264.
+
+* 5000 fresh seeds: `generate` deterministic, **5000/5000 distinct**, mean 0.13 ms, fallback never
+  used; `solve()` scores 1 on **5000/5000** (mean 0.006 ms); `score` mean 0.009 ms, worst 0.043 ms.
+* Scorer vs an **independent re-implementation** (column walk, no regex) on **49 500** (clue, answer)
+  pairs — shipped demos plus 33 structural mutations each: **0 disagreements**.
+* Junk (17 strings × 500 clues, plus clue fragments): 0 raises, 0 non-binary returns, 0 false
+  positives.
+* Lenient, all **100 %**: the `<n> lean` line kept or dropped (house rule), leading and trailing
+  blank lines, rows right-padded, CRLF, either lean glyph, both lean glyphs swapped.
+* Strict, all **0 %**: dry sky redrawn with spaces, rain redrawn as `|`, the cloud row dropped, an
+  extra sky row, the garden row alone, a leaning plant straightened, one extra plant leaned, leans
+  drawn as `v`, a text label added, rows reversed, the picture shifted one column. (The three
+  "0 %" attacks that score 10.7 % — echo, straighten, redraw the lean glyph — are exactly the
+  `0 lean` clues, where the answer *is* the clue.)
+
+## Predicted classification
+
+**testing, mean final 40-65 %.** Expected split, by analogy with fennick v3 (11 / 100 / 11 / 100):
+a player who spends a demo here and reads the picture as weather sees "that one is leaning over
+because the rain next to it reaches the ground" and takes it to 100 %; a player who reads it as
+bookkeeping marks the `n` plants nearest any rain and parks at 33-40 %; a player who spends no demo
+echoes the picture and banks 12 %.
+
+**The risk is now too_easy, not too_hard** — deliberately, from 5 %. Hardening levers in order:
+1. bring back the species reach (a tree leans from two columns away, a flower only from one): one
+   extra breath, and it costs the "nearest `n` plants" reader a round;
+2. draw the rain slanting under one wind direction per clue, so only the downwind edge gets a drink
+   (watch the binary-parameter trap: a player who always guesses one side wins half the clues);
+3. let a shower's drops stop one row short of the *plants* rather than of the ground row, so the
+   virga has to be read off the picture's geometry instead of off the bottom row alone.
+Softening levers if it still comes back under 15 %: make every shower land except one (the hanging
+clause becomes a single visible exception per picture), or put one already-leaning plant into the
+clue as a worked instance.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/k3/{src_generate,src_solve,src_score,attack,selftest,selftest2,floor,lenient,sweep}.py`.
+
+## Arena (players NOT run; the orchestrator opens it)
+
+```
+pool   $SCRATCH/pool-kelmar-3/kelmar.json   (cp challenges/lab/kelmar.json into it)
+setup  python sim/arena.py setup --run lad-kelmar-v3-1 --teams kelmar3a,kelmar3b \
+         --challenge-dir $SCRATCH/pool-kelmar-3 --arena-root $SCRATCH/lad-kelmar-v3-1
+```

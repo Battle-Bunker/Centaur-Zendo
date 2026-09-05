@@ -4932,6 +4932,21 @@
     }
    ]
   },
+  "mestrel": {
+   "current_version": 1,
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788600798.3773894,
+     "file": "challenges/lab/mestrel.json",
+     "note": "designer rule-family (Revision 3): dominoes in a line; 14 templates/27 rules, k=5; simulated attacker 26-45%",
+     "v": 1
+    }
+   ],
+   "paradigm": "rule_family"
+  },
   "molvic": {
    "current_version": 3,
    "qual": [
@@ -12618,7 +12633,7 @@
    "id": "designer-rulefamily-dominoes",
    "kind": "designer",
    "started": 1788598026.430788,
-   "status": "running",
+   "status": "done",
    "version": null
   },
   {

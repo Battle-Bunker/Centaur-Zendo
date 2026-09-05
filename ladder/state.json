@@ -3611,7 +3611,7 @@
    ]
   },
   "garrow": {
-   "current_version": 4,
+   "current_version": 5,
    "qual": [
     {
      "advice": "The bordered grid of dots and letter pairs does not read as pizza on sight; add a crust/cheese visual cue.",
@@ -3675,7 +3675,8 @@
    "refined_versions": [
     1,
     2,
-    3
+    3,
+    4
    ],
    "runs": [
     {
@@ -4223,6 +4224,12 @@
      "file": "challenges/lab/garrow.json",
      "note": "refiner re-skin: caption 'm 2 slices', ':' cheese, 2-cell toppings, 3 dough rows, thick crust; rule unchanged; foothold 11%",
      "v": 4
+    },
+    {
+     "added": 1788600215.0386686,
+     "file": "challenges/lab/garrow.json",
+     "note": "refiner: 'm 0 slices' foothold (13%, echo); every demo shows the halves convention (a halved piece counted on both sides)",
+     "v": 5
     }
    ]
   },
@@ -12621,7 +12628,7 @@
    "kind": "refiner",
    "reason": "26% with demo, 0% without; no n=0 clues so no foothold; players asked for them",
    "started": 1788598584.9817238,
-   "status": "running",
+   "status": "done",
    "version": 4
   },
   {
@@ -12659,6 +12666,14 @@
    "started": 1788599879.2974794,
    "status": "running",
    "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "molvic",
+   "id": "players-molvic-v3-d63d",
+   "kind": "players",
+   "status": "pending",
+   "version": 3
   }
  ],
  "profiles": {

@@ -4934,7 +4934,24 @@
   },
   "mestrel": {
    "current_version": 1,
-   "qual": [],
+   "paradigm": "rule_family",
+   "qual": [
+    {
+     "advice": "Weight the draw toward local two-tile templates over global scans; consider drawing tiles with dots rather than bracketed digits.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 4,
+      "rule_statable": 5
+     },
+     "score": 4.17,
+     "version": 1
+    }
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4944,8 +4961,7 @@
      "note": "designer rule-family (Revision 3): dominoes in a line; 14 templates/27 rules, k=5; simulated attacker 26-45%",
      "v": 1
     }
-   ],
-   "paradigm": "rule_family"
+   ]
   },
   "molvic": {
    "current_version": 3,

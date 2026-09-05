@@ -31,7 +31,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | MARIENBAD | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | morvin | 2 | testing | - | - | - | - | 3.2 | 0 | 0 | - | 100% (2) |
 | murn | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 76% (4) |
-| norvel | 3 | testing | - | - | - | - | - | 0 | 0 | - | 39% (4) |
+| norvel | 3 | testing | - | - | - | - | 4.3 | 0 | 0 | - | 39% (4) |
 | OKRIN | 2 | testing | - | - | - | - | 2.6 | 0 | 0 | - | 86% (2) |
 | orlan | 3 | testing | 0% | 0.00 | 0% (1) | 0% (1) | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 24% (6) |
 | PP | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

@@ -8,6 +8,12 @@ rules the class never uses. Learning **what this class never says about a clock*
 Shipped file: `challenges/lab/wisbek.json` (name checked unique against `challenges/` and
 `challenges/lab/`). Not committed; no arena run (out of scope for this job).
 
+> **Superseded on 2026-09-05 by v2, the lineup answer — see the dated record at the end of this
+> file.** Everything below describes v1 (`challenges/lab/wisbek.v1.json`), whose answer was a
+> freshly constructed time at an hour not in the clue. v2 keeps the universe U, the example sets and
+> the exclusions unchanged and replaces the answer with a choice among four candidates; the
+> fresh-hour clause is gone.
+
 ---
 
 ## 1. The world
@@ -337,3 +343,208 @@ two short times, and is *better* placed than an adult to notice the lesson — t
 "before", "after", "odd", "even", "morning" or "on a five"; it only ever says *exactly*. The
 nameable-pattern risk is real (these are all nameable rules) but the difficulty lives in the size of
 U, the loose-cousin traps and the thin 0/1 channel, not in any single rule being obscure.
+
+---
+
+# 2026-09-05 — v2: the lineup answer
+
+`challenges/lab/wisbek.json` is now the lineup version; v1 is kept byte-identical as
+`challenges/lab/wisbek.v1.json`. Written for `docs/RULE_FAMILIES.md` **"Revision 2: the lineup
+answer"**. No arena run from this job.
+
+## 1. Why v1 had to change
+
+Both Opus teams in `lad-dornic-v1-1` took **no demo** on wisbek and still scored **95 %**
+(dornic1b: 222/234). Their method (`sim/results/lad-dornic-v1-1/players/dornic1b/strategy.py`,
+pool in `zpools.py::wisbek_preds`, 307 predicates over `(h, m)`):
+
+1. keep every predicate of the pool that is true of **all** the example times;
+2. walk the 720 times and emit the first one that satisfies **all** of them, subject to one
+   learned novelty filter (`_nov_wisbek`: the hour must not appear in the clue).
+
+The hidden rule is *in* their pool (the pool contains `hmsum=k`, `diff=k`, `mdig=k`, `alldig=k`,
+`m=kh`, `m5off_k`, `hmdiff12=k` — i.e. templates 0, 3, 5, 6, 7, 8 almost verbatim), so the answer
+satisfies it by construction. **They never named a rule.** The excluded traps cost them nothing:
+satisfying an extra rule is free when you are constructing. The only thing that ever hurt them was
+the fresh-hour clause (0/4 → 40/41 once they found it), which players called invisible and unfair.
+
+## 2. What v2 changes
+
+* **Clue** = the same minimal identifying example set (2 or 3 times, all hours different), a blank
+  line, then **4 candidate times**, one per line.
+* **Answer** = the one candidate that obeys the hidden rule, written back verbatim (whitespace- and
+  leading-zero-tolerant) or as its **1-based index** `1`–`4`.
+* **U is unchanged** — the same 10 templates / 66 rules / antichain / density ceiling 0.11. The
+  example-set logic (unique inside U, minimal, one example per hour) is unchanged.
+* **The fresh-hour clause is gone.** It is no longer a rule about the answer; it is now a property
+  of the whole lineup (below), so it cannot single the true candidate out.
+
+## 3. How the decoys are built (revision-2 rules 1–5)
+
+1. **Exactly one candidate obeys the rule** — verified in `generate` on every clue (500/500).
+2. Every decoy **fails** the rule and is an instance of at least one **excluded** rule that is
+   consistent with the examples (500/500 clues; on average 3.2 of the eleven excluded rules are
+   consistent on top of the two always-consistent range traps).
+3. **No shape tell.** Every candidate — true and decoy — sits at an hour **not in the clue** and at
+   a minute **not in the clue**, and the four candidates use four different hours. So v1's 34.8 %
+   "keep the minutes, move the hour" foothold has nothing to point at, and neither has "the one at a
+   new hour".
+4. **The count defence.** `generate` carries the winner's own pool (`wisbek_preds()`, 307
+   predicates, verbatim) and scores every candidate by *how many pool predicates that survive the
+   examples it satisfies* — that is what their attack degenerates to when the answer is a choice.
+   It then aims the **rank** of the true candidate by that count:
+   * on the **66 %** of clues where some minimal example set allows it (up to 12 sets are tried),
+     the rank is drawn uniformly from **1..3** — at least one decoy beats the truth on the
+     attacker's own measure;
+   * on the other 34 % no time outside the rule can match the truth's count at all, because the
+     truth owns pool predicates (`m5off_k`, `hmdiff12=k`) that a non-instance cannot have. These
+     are almost entirely template 3 (clock-face offsets: 0/10 of its rules ever admit a full-range
+     example set) and template 7.
+
+   Measured: **"most surviving predicates" picks the truth 39.4 %** of the time (floor 25 %), i.e.
+   it picks a **decoy 60.6 %** — revision 2 asks for ≥ 40 %. "Fewest predicates" scores 17.8 %, so
+   the count is not usefully reversible either.
+   **Honest leak:** on the 31 % of clues whose example minutes are *all* multiples of 5, "most
+   predicates" rises to **54.5 %** (elsewhere 32.6 %). A player who discovers that conditional gains
+   roughly five points. It is the price of keeping the clock-face templates, which are the most
+   kid-legible rules in the class.
+
+## 4. Three demos
+
+```
+CLUE                     ANSWER                 hidden rule (private)
+
+2:35                     12:25   (index 1)      the minute hand points 5 numbers
+7:00                                            past the hour number
+9:10
+
+12:25
+3:29
+5:33
+8:45
+--------------------------------------------------------------------------
+9:46                     5:37    (index 4)      the minute digits add up to 10
+12:19
+
+1:14
+6:58
+8:41
+5:37
+--------------------------------------------------------------------------
+4:35                     8:25    (index 3)      the hands make a square corner
+7:50
+10:05
+
+1:09
+6:48
+8:25
+2:30
+```
+(seeds 4, 31, 5; answers straight from `solve`. Note the third lineup: `2:30` is the o'clock/half
+past trap, `6:48` keeps the clue's "minutes bigger than the hour" and `1:09` has all its digits
+different — three different excluded rules, and every candidate is at a new hour with new minutes.)
+
+## 5. Witness table — 500 fresh clues (seeds 1 000 000 – 1 000 499)
+
+Every answer is a choice among four, so the floor is **25 %** and there is no well-formedness column
+any more.
+
+| witness | score |
+|---|---|
+| **the true rule (`solve`)** | **100.0 %** |
+| **the in-U intersection** (the candidate satisfying every rule of U the examples allow) | **100.0 %** |
+| a player who knows U minus its two rarest templates (2 and 8) | 87.5 % |
+| **the candidate satisfying the MOST surviving predicates of the round-1 pool** | **39.4 %** |
+| … the same attack, restricted to clues whose example minutes are all multiples of 5 (31 %) | 54.5 % |
+| … the same attack, on all other clues | 32.6 % |
+| universe = U + the excluded rules, pick one surviving hypothesis uniformly | 38.3 % |
+| EXCLUDED: the minutes end in 0 or 5 (fits 31.2 % of clues) | 37.9 % |
+| the candidate whose minutes are a multiple of 5 | 36.0 % |
+| EXCLUDED: minutes inside the clue's minute range (fits 100 %) | 30.6 % |
+| EXCLUDED: the hour goes exactly into the minutes (fits 25.8 %) | 30.4 % |
+| the candidate whose minutes are nearest an example's | 27.7 % |
+| EXCLUDED: hour inside the clue's hour range (fits 100 %) | 27.3 % |
+| the candidate with the smallest hour | 26.0 % |
+| the candidate in a minute-decade the clue uses | 25.8 % |
+| EXCLUDED: all the digits are different (fits 27.0 %) | 25.7 % |
+| EXCLUDED: both hands in the same half of the face (fits 18.0 %) | 25.4 % |
+| EXCLUDED: the minutes are bigger than the hour (fits 71.4 %) | 25.3 % |
+| **pick candidate 1** | **25.2 %** |
+| **pick a random candidate (the floor)** | **25.0 %** |
+| the candidate with the smallest minutes | 25.0 % |
+| EXCLUDED: o'clock / quarter past / half past / quarter to (fits 1.0 %) | 24.9 % |
+| EXCLUDED: the same half of the hour as the examples (fits 51.2 %) | 24.5 % |
+| EXCLUDED: the minutes are all even / all odd (fits 52.6 %) | 23.4 % |
+| EXCLUDED: the hour is odd / even (fits 40.6 %) | 17.1 % |
+| the candidate satisfying the FEWEST surviving pool predicates | 17.8 % |
+
+True-candidate rank by pool-predicate count over the 500 clues: 197 / 103 / 111 / 89 (rank 0 = the
+sole top scorer).
+
+Other measured numbers (500 clues unless stated):
+
+* uniqueness 500/500, minimality 500/500, exactly one candidate obeys the rule 500/500;
+* all example hours distinct 500/500; every candidate at a fresh hour **and** a fresh minute 500/500;
+* every decoy an instance of a consistent excluded rule 500/500;
+* example counts (2000 seeds): 2 → 48.2 %, 3 → 51.8 %;
+* template mix 38–69 of 500 each (unchanged from v1); mean density of the hidden rule 0.048.
+
+## 6. Validation
+
+`python tools/quickcheck.py challenges/lab/wisbek.json --seeds 300` →
+`OK wisbek  gen=2.83ms score=0.12ms solve=0.12ms`, **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **812 chars** (v1: 895) | 1024 (the rule-family raise) |
+| `generate` source | 11 418 | 50 000 |
+| `solve` source | 1 212 | 5 000 |
+| `generate` | **1.13 ms mean**, 2.9 ms max over 2000 seeds | 100 ms |
+| `score` | 0.08 ms max on junk | 50 ms |
+| `solve` | 0.05 ms mean, 0.10 ms max | 2000 ms |
+| clue | ≤ 38 chars | 1024 |
+| answer | ≤ 5 chars | 1024 |
+
+**`generate` is over the 1 ms target and this is deliberate**: scoring the decoy pool against the
+307 attacker predicates costs ~0.2 ms per example set, and up to 12 minimal example sets are tried
+to find one that lets a decoy out-count the truth. The module-level tables (the 66-bit U mask, the
+12-bit excluded-rule mask and the 307-bit pool mask for each of the 720 times) cost ~60 ms once per
+worker and are not charged to `max_generate_ms`. Dropping to 5 example sets would give 1.08 ms and
+cost nothing measurable; dropping the search altogether gives 0.6 ms and pushes "most predicates" up
+to 54 %.
+
+`score` was checked against the reference predicate on **all 720 times × 300 clues** (0
+disagreements) and rejects `''`, `x`, `0`, `5` (an out-of-range index), the clue itself, unicode
+digits and any well-formed time that is not one of the four candidates. It forgives surrounding
+whitespace and a leading zero on the hour. `solve` re-derives the survivor exactly as the scorer
+does and returns the true candidate verbatim.
+
+## 7. Predicted classification
+
+**Calibrated, and materially harder than v1.** Two Opus players, 7-class pool, 4 rounds:
+
+* **Without a demo**: the shape is self-evident (examples, gap, four times, pick one), so every
+  probe is well formed from round 1 and the floor is a free **25 %**. The round-1 method degrades
+  to counting surviving predicates: **~39 %**. Add the cheap conditional (trust the count when the
+  example minutes are all multiples of 5, guess otherwise) and a very good team reaches ~45 %.
+  Expect **25–45 %**.
+* **With a demo**: a demo now teaches almost nothing about a *convention* (there is none left to
+  learn) — it only confirms the format. The way up is to reconstruct U, and the moment a player
+  filters U correctly they score **100 %**, because the in-U intersection is exact. That is a cliff,
+  not a slope: 10 templates and 66 rules from ~120 probes and 2–3 example times, with three
+  clock-face templates nobody enumerates by default. Expect **35–65 %**, with the upper half
+  requiring a player who explicitly hypothesises and tests rule *families*.
+
+Mean across the two ≈ **0.35–0.5** → `calibrated`, now with the risk on the **hard** side rather
+than the easy one (v1's graded 0 → 5 → 35 → 100 ladder is gone; v2's ladder is 25 → 39 → 100).
+Levers if it comes back too hard: (i) go to k = 3 candidates (floor 33 %); (ii) let one decoy be an
+instance of a *U* rule the examples nearly allow, so a partly-mapped player is rewarded rather than
+punished. Too easy: (iii) spend the example-set search on the template-3/7 clues too, by allowing
+decoys that reuse a clue minute when the truth does as well — that would pull "most predicates"
+towards the 25 % floor.
+
+**12-year-old test**: unchanged and slightly better. The object is still a clock, every rule is still
+one breath said over a drawn face, and "which one of these four fits?" is an easier question to *ask*
+a child than "make me another one" — the four candidates are themselves a hint about what kind of
+thing the rule can be. What a kid loses is the freedom to answer with the first time they think of;
+what they gain is that a wrong guess is now informative (one of four, not one of 720).

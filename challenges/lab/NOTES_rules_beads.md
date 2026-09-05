@@ -8,6 +8,12 @@ rules the class never uses. Learning **what this class never says** is the game.
 Shipped file: `challenges/lab/tresk.json` (name checked unique against `challenges/` and
 `challenges/lab/`). Not committed; no arena run (out of scope for this job).
 
+> **2026-09-05 — sections 1–8 below describe v1**, which is now archived byte-identical as
+> `challenges/lab/tresk.v1.json`. The shipped `tresk.json` is the **lineup** build of
+> RULE_FAMILIES.md revision 2: the clue carries four candidates and the answer is *which one*.
+> U, the antichain argument and the exclusion list are unchanged; the answer format, the
+> witness table and the fresh-length clause are not. Start at **section 9**.
+
 ---
 
 ## 1. The world
@@ -286,3 +292,197 @@ the class — "they never say *at least*, they always say *exactly*" — is the 
 notices before an adult does. The nameable-pattern risk is real (these are all nameable rules), but
 the difficulty lives in the size of U, the loose-cousin traps, and the thin 0/1 channel, not in any
 single rule being obscure.
+
+---
+
+# v2 — 2026-09-05 — the LINEUP answer (RULE_FAMILIES.md revision 2)
+
+`challenges/lab/tresk.json` is now the lineup build; the shipped v1 is kept byte-identical as
+`challenges/lab/tresk.v1.json`. Not committed; no arena run (out of scope for this job).
+
+## 9. Why v1 had to change
+
+In `sim/results/lad-dornic-v1-1`, team **dornic1b** scored **97 %** on tresk and team dornic1a
+**47 %**, both with **no demo** and without ever naming a rule. Their method (`strategy.py` +
+`zpools.tresk_preds`): build a pool of **249 generic bead predicates** (counts per colour and
+their parities/majorities/thirds, longest block overall and per colour, block counts, `noadj`,
+`pal`, substring `XY` present/absent, all-X-before-Y, first/last bead, length, run-shape…), keep
+every predicate true of **every** example, then emit a fresh string satisfying **all** of them at
+once. The hidden rule is somewhere in the pool, so the answer satisfies it *by construction*. The
+23 eligible rules of U and the 10 excluded traps were both irrelevant: satisfying an extra rule
+costs nothing. The only thing that held them for a round was the fresh-length clause
+(`1/12 → 10/12` once they found it) — and that clause is not part of the rule, which is exactly
+what players called unfair.
+
+**The fix (revision 2): the answer is a choice, not a construction.**
+
+## 10. The v2 format
+
+```
+BRBBBRGB            <- 2 or 3 examples, one per line, all of DIFFERENT lengths
+BRBRBBRBG
+BRBBBGG
+                    <- one blank line
+GGBGGRGBG           <- 4 candidates, one per line, ALL OF THE SAME length
+GGGRBBBGG
+RBGGGBBGG
+GGBGGRBGG
+```
+
+The answer is the one candidate that obeys the hidden rule — written back verbatim
+(whitespace- and case-insensitive) **or as its 1-based index `1`–`4`**. A string that is not in
+the lineup scores **0**, which is what kills the construction attack.
+
+* **U is unchanged** (8 templates, 38 rules, 23 eligible, antichain, the 15 loose competitors
+  still there) — so §2's table, the density figures and the antichain argument all still hold.
+  The examples still have distinct lengths, because that is the only way the five length rules of
+  U can die; but that is now purely a generator invariant, **not** a scorer clause.
+* **The unused-length clause is gone** (revision 2 §5). Nothing about the answer has to be
+  "fresh" any more: the lineup does that work.
+* **The floor is 1/4 = 25 %** (was 4.6 %), the ceiling for a player who has mapped U is still
+  100 %, and the whole 30-point spread that used to come from *guessing a legal string* is gone.
+
+### How the decoys are built
+
+Each decoy has the same length as the true candidate, is not an example, breaks the rule, and
+fires at least one excluded rule that is consistent with the examples (revision 2 §2–3). Two
+extra invariants do the real work:
+
+1. **Same trap profile.** The generator groups sampled rule-breaking strings by *which* of the
+   example-consistent excluded rules they satisfy, and then picks the true candidate from the
+   rule's satisfiers **inside the same group**. All four lines therefore satisfy exactly the same
+   excluded rules, so every trap — and any count of traps — is worth exactly 25 %.
+   *Deviation from revision 2 §2, deliberately:* the doc suggests decoys that satisfy traps the
+   true candidate fails. That makes "the candidate satisfying the fewest excluded rules" a free
+   crack; matching the profile instead makes the traps exactly neutral, which is stronger.
+2. **Balanced outside-predicate count.** `generate` rebuilds dornic1b's 249-predicate pool
+   bit-for-bit (grouped by what each predicate reads off the string and memoised on that key, so
+   a string costs five dict lookups and ~4 µs), intersects it over the examples (mean **35.8**
+   surviving predicates), and then chooses the true candidate so that its **rank** among the four
+   on that count is spread over all four places — realised rank distribution
+   **213 / 110 / 86 / 91** over 500 clues. "Answer with the thing that satisfies most of my
+   predicates" therefore scores **39 %**, not 97 %, and its inverse scores **20.8 %**.
+
+## 11. Three demos
+
+```
+CLUE                         ANSWER              hidden rule (private)
+
+BRBBBRGB
+BRBRBBRBG
+BRBBBGG
+                       ->    RBGGGBBGG (3)       all the red beads come before all the green
+GGBGGRGBG
+GGGRBBBGG
+RBGGGBBGG
+GGBGGRBGG
+
+RRBRGRG
+BRRRGGBR
+BRGGGRRRG
+                       ->    GBGRBRRBR (3)       there are exactly 4 red beads
+GRGBRRRBR
+BRRGGRRGR
+GBGRBRRBR
+RGRRGBRRR
+
+RGBBGR
+BRRRBBRRRB
+RBRBBRBR
+                       ->    BRRGRRB (2)         it reads the same backwards
+RBRRBBR
+BRRGRRB
+BRRBRGB
+RRRGBBR
+```
+(seeds 2, 18, 24 — the same seeds as v1's demos.) Note in demo 3 that the three decoys are
+*near*-palindromes: they share the examples' colour set, their block-length profile and their
+trap profile, and two of them satisfy more of the 249-predicate pool than the answer does.
+
+## 12. Witness table — 500 fresh clues
+
+| witness | score |
+|---|---|
+| pick candidate 1 | 25.8 % |
+| pick a random candidate | 25.0 % |
+| **the candidate satisfying the most example-consistent predicates of the 249-strong outside pool** | **39.0 %** |
+| the same, but requiring *all* of them (the exact v1 attack), falling back to the most | 39.0 % |
+| the candidate satisfying the FEWEST such predicates (the inverse heuristic) | 20.8 % |
+| the candidate closest to the other three by Hamming distance (medoid) | 25.2 % |
+| the candidate furthest from the other three (outlier) | 25.1 % |
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| EXCLUDED: no block longer than the clue's longest (fits 100 %) | 25.0 % |
+| EXCLUDED: at least *n* R / G / B beads, the clue's minimum (fits 100 %) | 25.0 % |
+| EXCLUDED: exactly the clue's set of colours (fits 51 %) | 25.0 % |
+| EXCLUDED: all three colours appear (fits 49 %) | 25.0 % |
+| EXCLUDED: no two R / G / B beads ever touch (fits 24–27 %) | 25.0 % |
+| EXCLUDED: more X beads than Y, 6 pairs (fits 9–14 %) | 25.0 % |
+| EXCLUDED: starts with / ends with the clue's colour (fits 19 % / 22 %) | 25.0 % |
+| EXCLUDED: the two end beads are the same colour (fits 16 %) | 25.0 % |
+| EXCLUDED: it alternates (fits 9 %) | 25.0 % |
+| a player whose universe is U + the excluded rules, committing to a random survivor | 34.8 % |
+| a player who knows U minus its two rarest templates (blocks, equal-blocks) | 80.7 % |
+| the true rule (`solve`) | 100.0 % |
+| the true rule, answered by INDEX rather than verbatim | 100.0 % |
+
+All nineteen excluded-rule rows are **exactly** 25.0 %: by construction the true candidate and its
+three decoys satisfy the same excluded rules, so committing to a trap tells a player nothing at
+all. That is the whole difference from v1, where those rows paid 8.6–21.0 %.
+
+Other measured numbers (500 clues): uniqueness 500/500, minimality 500/500, all example lengths
+distinct 500/500, all four candidates the same length 500/500, four distinct candidates 500/500,
+no candidate equal to an example 500/500, exactly one candidate obeying the rule 500/500, every
+decoy firing ≥1 consistent trap 500/500. Examples per clue 2 → 34 %, 3 → 66 %. Candidate length
+6/7/8/9/10 → 86/88/100/112/114. True-candidate position 129/125/124/122. Template mix (500):
+blocks 72, maxrun 69, twocol 66, before 64, equal 63, palin 60, eqblk 57, count 49. Mean 7.15
+excluded rules are consistent with any one clue (min 4, max 12).
+
+## 13. Validation
+
+`python tools/quickcheck.py challenges/lab/tresk.json --seeds 300`
+→ `OK tresk  gen=2.49ms score=0.29ms solve=0.28ms`, no warnings.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **805 chars** (v1: 761) | 1024 (RULE_FAMILIES §4 raise) |
+| `generate` source | 14 300 | 50 000 |
+| `solve` source | 1 100 | 5 000 |
+| `generate` | **0.645 ms mean**, 2.97 ms max over 5000 seeds | 100 ms |
+| `score` | 0.29 ms max (incl. junk: `""`, `"0"`, `"9"`, `"1"*100`, `"R"*4000`, the clue itself) | 50 ms |
+| `solve` | 0.28 ms max (v1: 12.3 ms — nothing to rejection-sample any more) | 2 000 ms |
+| clue | ≤ 74 chars (v1: 29) | 1024 |
+| answer | ≤ 10 chars | 1024 |
+
+`generate` is ~14× slower than v1's 0.047 ms because a call now samples ~150 rule-breaking and
+~60 rule-keeping strings and scores each against the outside pool; it is still 150× inside the
+cap. Module-level tables cost **≈ 340 ms** per worker (v1: 192 ms): the 14 916-string pool, its
+38-bit U mask, its 249-bit outside-pool mask and its trap features. Not charged to
+`max_generate_ms`. `score` no longer needs the freshness test, and the 44 characters it saves pay
+for splitting the clue on the blank line and resolving an index.
+
+## 14. Predicted classification
+
+**Calibrated, leaning easy-for-a-good-player, and much flatter than v1.**
+
+* **Without a demo**: the clue shape (3 lines, a gap, 4 lines) reads as a multiple choice, but a
+  player who has not worked that out will answer with a constructed string and score **0** until
+  the feedback teaches them. Expect a round of near-zero, then **25 %**.
+* **With a demo**: the demo shows one of the four lines echoed back, so the format costs one
+  look. From there every cheap statistic is worth exactly 25 % — traps, predicate counts, medoid,
+  position — and the only way up is to reconstruct U. A player who gets 6 of the 8 templates
+  scores **81 %**; a player who has all 8 scores **100 %**. That is a steep, honest cliff: the
+  expected score is 25 % + 75 % × P(the clue's template is one they have mapped).
+* Mean across two Opus teams ≈ **0.35–0.6**, i.e. `calibrated`. The 97 % v1 result should drop to
+  ≈ 39 % for the same unchanged strategy, and the 4.6 % floor rises to 25 %.
+
+Levers if it comes back **too easy**: (i) k = 5 or 6 candidates (floor 20 % / 17 %); (ii) put two
+rule-satisfying candidates in and ask for both — no, that breaks the one-line answer; better
+(iii) grow U with a ninth template so "I have mapped U" costs more probes. Too **hard**: drop to
+k = 3 (floor 33 %), or emit 3 examples always instead of 66 % of the time.
+
+**12-year-old test**: unchanged and arguably better. The clue is still a bead necklace, and the
+task is now the one every kid knows from a puzzle book — *which of these four fits?* A kid can
+check four short strings against a hypothesis by hand in seconds, and the 0/1 signal is now about
+the rule rather than about an invisible novelty convention. The one loss: the v1 lesson
+("they never say *at least*") no longer pays on its own, because the traps have been made
+exactly neutral; the game is now purely "which rules does this class use".

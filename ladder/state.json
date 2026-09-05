@@ -5880,9 +5880,12 @@
    ]
   },
   "wisbek": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [],
+   "refined_versions": [
+    1
+   ],
    "runs": [
     {
      "cadence": "4x0.5s/5s/3s/7cls/3demos",
@@ -5965,6 +5968,12 @@
      "file": "challenges/lab/wisbek.json",
      "note": "v1 rule family (clock times): 10 templates, 66 rules, fresh-hour clause; scorer 895",
      "v": 1
+    },
+    {
+     "added": 1788580989.394901,
+     "file": "challenges/lab/wisbek.json",
+     "note": "v2 lineup: 4 candidates, decoys satisfy traps and beat the truth on the attacker's predicate count 61% of the time",
+     "v": 2
     }
    ]
   },
@@ -7690,7 +7699,7 @@
    "class": "wisbek",
    "id": "judge-wisbek-v1-f621",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -7792,24 +7801,50 @@
    "version": 2
   },
   {
+   "agents": 1,
+   "class": "tresk",
    "id": "refiner-tresk-v1-lineup",
    "kind": "refiner",
-   "class": "tresk",
-   "version": 1,
-   "agents": 1,
-   "status": "running",
+   "reason": "lineup",
    "started": 1788579542.7689595,
-   "reason": "lineup"
+   "status": "running",
+   "version": 1
   },
   {
+   "agents": 1,
+   "class": "wisbek",
    "id": "refiner-wisbek-v1-lineup",
    "kind": "refiner",
-   "class": "wisbek",
-   "version": 1,
-   "agents": 1,
-   "status": "running",
+   "reason": "lineup",
    "started": 1788579542.768961,
-   "reason": "lineup"
+   "status": "done",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "dornic",
+   "id": "refiner-dornic-v1-lineup",
+   "kind": "refiner",
+   "reason": "lineup",
+   "started": 1788580989.4269178,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "wisbek",
+   "id": "players-wisbek-v2-c051",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "wisbek",
+   "id": "judge-wisbek-v2-9ba1",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

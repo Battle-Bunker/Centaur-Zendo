@@ -706,3 +706,343 @@ squares so the cheap "count them" answer is visibly useless, and the 0/1 signal 
 rule rather than about an invisible novelty convention. The one loss is the v1 lesson ("they never
 say *at least*"), which no longer pays on its own because the traps have been made exactly
 neutral.
+
+---
+
+# Iteration 3 — 2026-09-05, **v3: a universe of RELATIONS** (`docs/RULE_FAMILIES.md` "Revision 3")
+
+v2 is kept as `challenges/lab/ospren.v2.json`; the shipped file is `challenges/lab/ospren.json`.
+
+## 17. What the arena showed, and the attack to beat
+
+`lad-ospren-v2-1`: two Opus centaurs, **neither spent a demo on ospren**, and they scored
+**87 % and 80 %** (target ≈ 50 %). Their notes describe one engine, used on all six lineup
+classes:
+
+1. **Round 1: skip everything** — ~300 clues harvested free, the base-rate corpus.
+2. **Round 2: answer a RANDOM candidate.** With k = 4 a quarter come back correct: **~30 gold
+   labels for nothing** — `ospren1b`'s "30× what a demo gives".
+3. **Per clue**: enumerate the 5×5 predicate bank, keep what is true of every example and of
+   **exactly one candidate**, weight by rarity (`freq^-2.5 / satisfiers^6`), answer the
+   candidate the rarest survivor points at.
+4. **Learn U from the labels**: which predicate uniquely explained each known-correct answer.
+
+Revision 2's defences (matched trap profiles, rarity-aware decoys) were both in v2 and both
+lost, for one reason: **every rule of v2's U was itself a predicate in the attacker's bank.**
+
+### The attacker's bank, rebuilt (recipe step 1)
+
+Union of the two 5×5 banks the players actually brought — `ospren1a/strategy.py::f_ospren`
+(44 keys: `k`, `k%2`, `hmir/vmir/rot180/tr/atr/rot90`, `nrows`, `ncols`, `nfullrow`, `ncorner`,
+`border`, `rowc`, `colc`, `rowc_sorted`, `ncomp`, `maxcomp`, `isolated`, `noadj`, `nsq`,
+`top/bot/left/right`, `topbot`, `leftright`, `maindiag`, `antidiag`…) and
+`ospren1b/features.py::f_ospren` (80 keys: `tot%m`, `rmin/rmax/cmin/cmax`, `rowsame`, `symd`,
+`syma`, `diag`, `anti`, `inner`, `n2x2`, `maxrunrow/col`, `niso`, `rowparity`, `npalrow`,
+`quad`, `qsorted`, `adjpairs`, `ndistrow`, `parA/parB`, `ncomp0`, `nholes`, `deg`, `totge k`,
+`halffull`…) — **plus the obvious extensions a second round adds**: the count in each
+individual row and column, the bounding box (`bw`, `bh`, `barea`, `btop`, `bleft`), which sides
+of the frame are touched (`ttop/tbot/tleft/tright`, `nsides`), `tb_same`, `lr_same`,
+`neqrowpairs`, `neqcolpairs`, 8-connected blobs, `mincomp`, `compsizes`, `diagpairs`,
+`emptyrows`, `nsinglerow`. **153 feature keys, 3 442 realised (key, value) predicates** over the
+20 000-picture pool; the 808 with base rate ≥ 1.5 % are the ones `generate` carries as a bit
+mask for aiming (the players floor their own frequency estimates at 5 %, so nothing below that
+is usable to them anyway).
+
+### The retirement test (recipe step 2) — **all 29 of v2's rules are gifts**
+
+| v2 rule | the bank predicate that says the same thing | J |
+|---|---|---|
+| exactly *n* marks (5, 6, 7) | `k == n` | **1.00** |
+| its own mirror / flip / half turn | `hmir` / `vmir` / `rot180` | **1.00** |
+| exactly *n* corners (1–4) | `corners == n` | **1.00** |
+| the marks sit in exactly *n* rows / columns | `nrows == n` / `ncols == n` | **1.00** |
+| exactly *n* blobs (1–4) | `ncomp == n` | **1.00** |
+| exactly one row / column completely full | `nfullrow == 1` / `nfullcol == 1` | **1.00** |
+| the middle square is marked | `centre == 1` | **1.00** |
+| every row / column the same number | `rowsame` / `colsame` | **1.00** |
+| the biggest blob is *n* (2–4) | `maxcomp == n` | **1.00** |
+| exactly *n* marks stand alone (3–5) | `niso == n` | **1.00** |
+
+**29 of 29 at J = 1.00.** Every one is retired to the trap list. (`tavrik` measured 0.97–1.00
+and `tresk` 1.00 on their own v2 universes — the same result three times.)
+
+## 18. The universe U — 12 templates, 33 rules
+
+"density" = the share of the 20 000-picture generator pool that obeys the rule (the uniform-noise
+figure is in brackets where it differs sharply). **"bank J"** = best Jaccard against any of the
+3 442 realised bank predicates — the number that decides whether the attacker can *express* the
+rule at all. Parameter convention, shared with the scorer: **A = the rows if q < 2 else the
+columns**.
+
+| t | kid sentence (read it aloud) | params | density | bank J | in U? |
+|---|---|---|---|---|---|
+| 0 | "every row of marks reaches the **left / right wall**" · "every column of marks reaches the **top / the floor**" | q = 0,1,2,3 | .108–.112 (.027) | **.23–.24** | **IN** |
+| 1 | "every mark has a mark **right beside it**, left or right" · "…**right above it or right below it**" | q = 0,2 | .060–.062 (.006) | **.23** | **IN** |
+| 3 | "the **first two rows** come back again as the **last two rows**" · same for columns | q = 0,2 | .021 (.004) | **.17** | **IN** |
+| 4 | "the **top row and the middle row** are exactly the same" · "the **middle row and the bottom row**…" · same for columns | q = 0,1,2,3 | .116–.121 | **.19** | **IN** |
+| 5 | "**two rows next to each other** are exactly the same" · same for columns | q = 0,2 | .277 | **.34–.39** | **IN** |
+| 6 | "the **top row and the first column** have their marks in the same places" · 2nd · middle · 4th · bottom/last | q = 0..4 | .112–.128 | **.21–.26** | **IN** |
+| 7 | "in **every row** the marks are all **in one piece**" · same for columns | q = 0,2 | .307 | **.40** | **IN** |
+| 8 | "every **row of marks starts in the same column**" · "every column of marks starts in the same row" | q = 0,2 | .153–.155 | **.28** | **IN** |
+| 9 | "every mark in the **top row** has a mark **right under it**" · bottom · first column · last column | q = 0..3 | .198–.202 | **.31** | **IN** |
+| 10 | "the picture looks the same **in a mirror**" · "**flipped top to bottom**" | q = 0,1 | .057 / .062 | 1.00 | **IN** (cheap, ×2 weight) |
+| 11 | "**exactly one row** is completely full" · "exactly one column is" | q = 0,2 | .041 | 1.00 | **IN** (cheap, ×2) |
+| 12 | "**exactly three corners** are marked" · "**all four corners** are marked" | q = 3,4 | .057 / .031 | 1.00 | **IN** (cheap, ×2) |
+| — | exactly *n* marks · *n* corners · *n* blobs · biggest blob *n* · *n* lonely marks · marks in *n* rows/columns · the middle square · every row the same number · half turn | | .004–.36 | **1.00** | EXCLUDED (all of v2's U) |
+| — | at least / at most *n* marks · every square marked in all the examples · a mark in the middle column · every row has a mark · as many above as below · as many left as right · the corners all alike · top row = bottom row · first column = last column · the top row is empty · no two marks touch · touches the frame on *n* sides · has a hole · longest run *n* | | | 1.00 | EXCLUDED (v2's trap list + the bank's own extensions) |
+
+|U| = **33 rules over 12 templates**, **27 of them relational** (bank J .17–.40) and 6 cheap
+(J 1.00, on purpose). Antichain verified by brute force over the 20 000-picture pool **and**
+150 000 uniform-random pictures: **0 nesting violations**, minimum support 420 pictures.
+
+### Templates measured and thrown out this round
+
+| template | density | bank J | why not |
+|---|---|---|---|
+| "every mark touches another mark **corner to corner**" | .086 | .31 | passed every test — **dropped for scorer room only** (128 of the 1024 chars for one rule) |
+| "the marks all **rest on the floor** or on another mark" (gravity, 4 walls) | .036 | .34–.39 | ⊂ template 0 ("every column of marks reaches the floor"), which is denser and reads better |
+| "**two lumps are exactly the same shape**" | .538 | .73 | density > .5: four decoys all *lacking* it is itself a signature |
+| "**all the lumps are the same shape**" | .091 | .84 | it is `maxcomp == 1` in disguise |
+| "the drawing is **as wide as it is tall**" | .465 | .81 | `barea == 25`, and too dense |
+| "the picture touches the frame on exactly *n* **sides**" | .053–.38 | **1.00** | `nsides == n` — a gift; kept as a trap |
+| "the **top row is the same as the bottom row**" / first = last column | .16 | **1.00** | `tb_same` / `lr_same` — gifts (they were v2 traps and stay traps) |
+| "**no two marks share a row or a column**" | .014 | .38 | forces ≤ 5 marks, so the clue leaks the count; and ⊂ "no two marks touch" |
+| "every **lump is a straight line**" | .317 | .55 | half a bank predicate (`maxruncol == 1`) |
+| "the **biggest lump is wider than it is tall**" | .277 | .30 | needs blob-finding in the scorer; 1024 chars would not hold it |
+| "the **first mark and the last mark** (reading like a book) are in the same column" | .154 | .20 | reading order is a puzzle-book device, not something a kid *sees* |
+| "**all the lumps are different sizes**" · "the two biggest lumps are the same size" | .27 / .24 | .64 / .35 | counted relations — the tavrik lesson (§ kid constraint) |
+
+**The kid constraint drove the final cut, not only the Jaccard.** `tavrik` v3's judge score fell
+4.7 → 3.83 on rules that read as puzzle-book tricks; `tresk` v3 held 4.5 by keeping only
+relations a kid **spots by eye**. Every rule of ospren v3 is one of those: a row against a
+column, a mark against its neighbour, a line of marks against a wall, two rows against each
+other. Nothing here counts anything except "three corners" and "one full row", which a kid
+counts on one hand. The two counted candidates on the recipe's own list — "the left half holds
+as many marks as the right" and "the marks touch the frame on exactly two sides" — were **not
+used** (the first is a v2 trap already, the second is `nsides` in the bank).
+
+**One extra legibility rule**, new here: for templates 3, 4 and 6 the examples and the true
+candidate are always drawn from pictures that satisfy the rule **visibly** — "the top row and
+the middle row are exactly the same" is technically true of two *empty* rows, and a kid reading
+such an example learns nothing.
+
+## 19. What changed, item by item
+
+| | v2 | v3 |
+|---|---|---|
+| candidates | 4 (floor 25 %) | **5** (floor 20 %) |
+| examples | 2 in 90 %, 3 in 10 % | 2 in **95.6 %**, 3 in 4.4 % |
+| U | 10 templates / 29 rules, **all bank J 1.00** | **12 templates / 33 rules**, 27 relational, bank J **.17–.40** |
+| competitor-only rules | 8 (counts, 1–2 corners, 3–4 blobs, middle square) | **none** — every rule of U may be the hidden one |
+| what forces the clue's layout | the COUNT competitors (examples must differ in mark count) | nothing: no rule reads the total, so example counts are free |
+| traps | 14 families, mean 6.5 fit | **31 families**, mean 7.15 fit, 29 of them v2's own rules |
+| decoys aimed at | the count and rarity ranks | **rarity, then count, then look-alike, then family resemblance** (4 orders) |
+| bank carried inside `generate` | 300 predicates | **808** (of 3 442 realised) |
+| instance distribution | uniform noise (a count 2–15, then random squares) | a **mixture of little pictures** (scatter, lumps, repeated lines, mirrored halves, stacks) |
+| `score` | 899 chars | **1 017 chars** |
+| simulated attack, 30 labels | **87.3 %** | **46.4 %** |
+
+## 20. Levers, measured (identical conditions, 400 test clues, 60 labels)
+
+| build | k | floor | simulated attack |
+|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | **47.2 %** |
+| minus lever 3 — **v2 as shipped** (same engine, same bank) | 4 | 25 % | **85.3 %** |
+| minus lever 5 (decoys not aimed at all) | 5 | 20 % | 54.2 % |
+| minus lever 1 (k = 4) | 4 | 25 % | 51.0 % |
+| lever 1 pushed (k = 6) | 6 | 16.7 % | 44.5 % |
+| minus lever 2 (three-example clues) | 5 | 20 % | 44.8 % |
+
+Read off the differences: **the relational universe (lever 3) is worth ≈ 38 points**, the
+aiming (lever 5) **≈ 7**, the fifth candidate (lever 1) **≈ 4**. Two honest departures from the
+recipe's expectations: **k = 6 does buy 2.7 points here** (tavrik: nothing; tresk: −3.4) and
+**three-example clues buy 2.4** rather than costing 3 — but a sixth candidate is a sixth block
+of five lines in an already 7-block clue and a third example is a third picture to hold in the
+head, so both were declined on the 12-year-old test rather than on the attack number. They are
+the first two levers to reach for if the class comes back too easy.
+
+## 21. The attacker table, v2 vs v3
+
+Full engine: skip-harvest 300 clues for base rates → answer a random candidate on a disjoint
+1 600 clues, keeping the ~1/k that come back correct as gold labels **and the wrong picks as
+negatives** → per-predicate unique-explanation weights → rarity-weighted pick. 500 fresh test
+clues (seeds 1e6 …), live unfiltered feature bank (every realised (key, value) pair, base rate
+floored at 5 % as the players do).
+
+| labels | v2 as shipped (k = 4, floor 25 %) | **v3 (k = 5, floor 20 %)** | v3 with a bank that also holds all of U |
+|---|---|---|---|
+| 0 | 76.8 % | **44.2 %** | 82.8 % |
+| 30 | 87.3 % | **46.4 %** | 87.2 % |
+| 60 | 85.3 % | **47.0 %** | 88.6 % |
+| 120 | 87.8 % | **48.0 %** | 90.0 % |
+| 240 | 88.0 % | **47.4 %** | 91.4 % |
+
+The shape is the point: v2 is a lookup from the first free labels, v3 is **flat**. The simulator
+scored 85–88 % on v2 where the real players scored 80–87 %, so it is a fair-to-slightly-strong
+model of an Opus centaur and its v3 figure is not an optimistic one.
+
+**The honest ceiling.** The **in-U intersection is 100.0 %**. An attacker whose bank also
+contains all of U reaches 88.6 % at 60 labels and learns U to **90 % coverage in ≈ 360 labels**
+(coverage = the share of fresh clues whose true rule the learner has confidently identified,
+*m* ≥ 4 firings and *n*/*m* ≥ 0.7: 0 % at 30 labels, 17 % at 60, 60 % at 120, 89 % at 240,
+91 % at 360). With the generic bank alone, coverage can never pass the three cheap templates
+(36.6 % of clues). The gap **47 % → 90 %** *is* the class.
+
+## 22. Three demos
+
+```
+seed 1000035   hidden rule: every column of marks reaches the floor
+
+  EXAMPLES             CANDIDATES 1      2      3      4      5
+   .....  .....       #####  .####  .##.#  ###..  #####
+   ..##.  .....       #####  #...#  .###.  ##..#  #.#..
+   ..#..  ..#..       .#..#  #...#  .#.#.  .#..#  .....
+   ..##.  ..##.       #...#  .#..#  .###.  ##..#  #.#..
+   ..##.  #.###       .....  .####  .##.#  ###..  #####
+  ANSWER: 5
+
+seed 1000023   hidden rule: the middle row and the bottom row are exactly the same
+
+  EXAMPLES             CANDIDATES 1      2      3      4      5
+   .#...  ###..       .....  .....  .....  #.#..  .....
+   #.#..  ##.##       #....  .##..  .....  ..#..  #.#.#
+   #....  ..#.#       #....  #..#.  .....  .....  .....
+   #....  .....       ###..  ....#  .#.#.  .#..#  .....
+   #....  ..#.#       #....  .#...  #.###  ..#..  #.#.#
+  ANSWER: 1
+
+seed 1000011   hidden rule: exactly one column is completely full   (a CHEAP template)
+
+  EXAMPLES             CANDIDATES 1      2      3      4      5
+   #.#..  .#.#.       .##.#  #...#  ...#.  ..#.#  #....
+   #.##.  #..##       .##..  #####  ..#..  #....  ...##
+   ##...  .#.#.       .##..  ..#..  #####  ..##.  #####
+   #.##.  ...#.       ..#..  ...#.  ###..  #####  ....#
+   #.#..  ..###       ..###  ..##.  ..#..  ..#..  .#.#.
+  ANSWER: 1
+```
+(In the real clue the five candidates are five six-line blocks, each headed by its number.)
+Demo 1 is the class in one picture: every candidate has fourteen marks, every one fires exactly
+the same excluded rules, and the only one whose every marked column reaches the bottom row is
+number 5. Demo 2 is the pure relation — two rows compared by eye, nothing counted. Demo 3 is
+the learnable slope: a kid looks for the full column and so does a predicate bank.
+
+## 23. Witness table — 500 fresh clues (seeds 1e6 … 1e6+499)
+
+Five candidates, so the floor is 20 %.
+
+| witness | score |
+|---|---|
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| the true rule (`solve`), verbatim and by index | **100.0 % / 100.0 %** |
+| a player who knows U minus **two templates** | 80.6 – 93.2 % (median 86.8) |
+| **the full revision-3 attack, 30 labels** | **46.4 %** |
+| … at 0 / 60 / 120 / 240 labels | 44.2 / 47.0 / 48.0 / 47.4 % |
+| the **rarest unique surviving bank predicate** (the players' own rule) | 44.8 % |
+| the candidate with the most **touching pairs** | **30.8 %** |
+| the candidate with the fewest **lonely marks** | 30.6 % |
+| the candidate with the longest **straight run** | 30.4 % |
+| the candidate with the most **marked corners** | 30.4 % |
+| the candidate **least like the other four** (the odd one out) | 28.6 % |
+| the candidate with the fewest **lumps** | 27.6 % |
+| the candidate **least like an example** | 25.0 % |
+| **MOST surviving bank predicates** (the round-1 count attack) | **24.2 %** |
+| pick candidate 1 | 21.8 % |
+| the candidate **most like an example** | 20.2 % |
+| **pick a random candidate (the floor)** | **19.0 %** |
+| the candidate with the most lumps / most lonely marks / fewest touching pairs | 17.4 / 16.0 / 14.6 % |
+| the candidate closest to the other four (the medoid) | 15.2 % |
+| **each of the 21 trap families that ever fit** | **0 – 33 %** (pure tie-breaking) |
+
+A decoy strictly **out-counts** the truth on **74.0 %** of clues (revision 2 rule 2 asks for
+≥ 40 %) and carries a **rarer** unique explanation on 52.0 %.
+
+The excluded rules are *structurally* dead, not merely weak: over 500 clues **all 3 574 fitted
+traps are satisfied by all five candidates or by none (3 574/3 574)**, so no trap, no count of
+traps and no combination of traps separates the lineup, and a player whose universe is U *plus*
+the 31 trap families is worth exactly a player who knows U. The 0–33 % spread in the table is
+the random tie-break on samples of 1–362 fits. Fit rates over the 500 clues: at least *n*
+marks 72 % · at most *n* marks 66 % · a mark in the middle column 56 % · the middle square is
+empty 40 % · the touched sides of the frame 20 % · every square marked in all the examples
+16 % · the longest straight run 15 % · the columns used 13 % · as many marks left of the middle
+as right 12 % · as many above as below 11 % · the rows used 9 % · every row has a mark 8 % ·
+the top row is the same as the bottom row 7 % · the first column is the same as the last 6 % ·
+the count-agreement traps (exactly *n* marks, *n* blobs, *n* lonely marks, one full line) 0–5 %.
+
+Other measured numbers (500 clues unless stated): uniqueness 500/500 · minimality 500/500 ·
+exactly one candidate obeys the rule 500/500 · all five candidates the same number of marks
+500/500 · five distinct candidates 500/500 · no candidate equal to an example 500/500 ·
+examples per clue 2 → 478, 3 → 22 · true-candidate position 109/96/94/107/94 · candidate mark
+counts 3–14, every count drawn · template mix 19–65 per template, all **33 rules drawn** ·
+cheap templates 36.6 % of clues · over **20 000 seeds, 20 000 distinct clues and 0 fallback
+clues**.
+
+## 24. Validation
+
+`python tools/quickcheck.py challenges/lab/ospren.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK ospren  gen=14.75ms score=0.21ms solve=0.21ms`, **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **1 017 chars** (v1 1004, v2 899) | 1024 (the rule-family raise, RULE_FAMILIES §4) |
+| `generate` source | 26 504 | 50 000 |
+| `solve` source | 1 661 | 5 000 |
+| `generate` | **2.45 ms mean**, 1.76 ms median, 11.3 ms p99, 24.9 ms max over 5000 seeds | 100 ms |
+| `score` | 0.083 ms mean, 0.21 ms max (junk included) | 50 ms |
+| `solve` | 0.088 ms mean, 0.21 ms max | 2 000 ms |
+| clue | 225–256 chars | 1024 |
+| answer | 29 chars, or 1 | 1024 |
+
+Module-level tables cost **≈ 6 s once per worker** (v2: 4.3 s): the 20 000-picture pool, its
+33-bit U mask, its trap readouts and its 808-bit bank mask. Not charged to `max_generate_ms`,
+but it is the reason the pool is 20 000 and not 30 000 — the sandbox gives a **60 s budget to
+compile the whole seven-class pool**, and a bigger pool bought only 1.5 points of attack
+(measured: 30 000 → 45.6 %, 20 000 → 46.4 %, 16 000 → 49.4 % at 30 labels).
+
+`score` was checked candidate-by-candidate against `solve` on 600 clues × 5 candidates × 7
+answer forms (verbatim · index · index with spaces · the candidate with its number line · one
+space-separated line · a trailing newline · surrounding spaces) — **21 000 checks, 0
+disagreements** — and returns 0 without raising for `""`, `"x"`, `"0"`, `"6"`, `"9"`, `"55"`,
+`"1 2"`, `"1"×100`, `"#"×4000`, `"-1"`, `"1.0"`, the unicode digits `"١"` / `"²"`, a
+well-formed picture that is not in the lineup, the clue itself, the example block alone and a
+single example. The 33 rules are rebuilt in the scorer from a **33-character table** — one
+character per rule, `chr(48 + 5*template + parameter)` — plus one thirteen-branch predicate
+function, which is what bought room for nine relational templates inside 1024 chars.
+`generate` is deterministic across processes and hash seeds (md5 of the first 200 clues
+identical under `PYTHONHASHSEED` 0 / 1 / 12345). `solve` re-derives the survivor exactly as the
+scorer does and returns the true candidate verbatim — it constructs nothing, so there is
+nothing to leak.
+
+## 25. Predicted classification
+
+**Calibrated**, with the risk on the **easy** side and named.
+
+* **Without a demo** the clue still reads as multiple choice from round 1 (two little pictures,
+  a gap, five numbered ones of the same size), so every probe is well formed and the floor is a
+  free 20 %. The engine that scored 80–87 % on v2 now pays **44 % at zero labels, 46–48 % once
+  the free labels arrive, and stops improving.** The best cheap heuristic — "answer the
+  candidate whose marks touch each other most" — is worth 31 %. Expect **30–50 %**.
+* **With a demo** the demo teaches the format in one look and one worked rule. The way up is to
+  notice that this class talks about **two rows, two columns, a mark and its neighbour, a line
+  and a wall**, and to write those predicates down; a player who does scores 87–91 %, one who
+  maps 10 of the 12 templates scores 81–93 %. Expect **45–70 %**.
+
+Mean across two Opus teams ≈ **0.4–0.55** → `calibrated`. If it comes back **too easy**, the
+levers in order are: drop the three cheap templates to single draw weight (measured: 30.8 % of
+clues, attack 43.5 / 45.0 / 45.3 % at 0/30/60 labels), then k = 6 (−2.7), then three-example
+clues (−2.4). If **too hard**: k = 4 (+3.8) or cheap templates at triple weight.
+
+**12-year-old test (target: keep 4.3+).** The object is unchanged — a little pixel picture,
+cross-stitch or Minecraft or a Game Boy sprite — and the task is still the puzzle-book one,
+*which of these five fits?* What changed is **what the rules talk about**, and every one of
+them is something a kid sees rather than counts. Read them aloud (RULE_FAMILIES §9): *every
+column of marks reaches the floor · every mark has a mark right beside it · the top row and the
+middle row are exactly the same · two rows next to each other are exactly the same · the top
+row and the first column have their marks in the same places · in every row the marks are all
+in one piece · every row of marks starts in the same column · every mark in the top row has a
+mark right under it · the first two rows come back again as the last two.* Each is one breath
+and each can be checked on a 5×5 picture with a finger in about three seconds — which is
+exactly what a predicate bank is bad at and a kid is good at. The three cheap rules (its own
+mirror, one full row, three corners) keep the v1/v2 flavour and give a kid an entry point on a
+third of the clues. All five candidates have the same number of marks, so "count them" is
+visibly useless, and the examples now *show* their relation rather than satisfying it vacuously.

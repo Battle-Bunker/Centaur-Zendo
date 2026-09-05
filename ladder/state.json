@@ -5701,7 +5701,7 @@
    ]
   },
   "ospren": {
-   "current_version": 2,
+   "current_version": 3,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -5721,7 +5721,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -5811,6 +5812,12 @@
      "file": "challenges/lab/ospren.json",
      "note": "v2 lineup: numbered candidate blocks, matched trap profiles and black counts; count attack 32%, rarity 47%",
      "v": 2
+    },
+    {
+     "added": 1788597058.090677,
+     "file": "challenges/lab/ospren.json",
+     "note": "Revision 3: 12 templates/33 rules, 27 visual relations; k=5; pair clues; four aimed orders; simulated attacker 44-48%",
+     "v": 3
     }
    ]
   },
@@ -11274,7 +11281,7 @@
    "kind": "refiner",
    "reason": "80-87% without demos over 2 games; apply Revision 3 recipe",
    "started": 1788593136.1097085,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {

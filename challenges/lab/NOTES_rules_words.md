@@ -639,25 +639,37 @@ is an accident of exactly the same kind as a decoy's, so a decoy can always be f
 one at least as rare. On v2's universe this aiming is impossible — the truth's rule *is* in the
 bank and *is* the rarest thing the examples share.
 
-## 19. Levers, measured (identical conditions, 400 test clues, 60 labels)
+## 19. Levers, measured (identical conditions, **1500 test clues**, mean of 3 disjoint label draws)
 
-| build | k | floor | attack at 60 labels |
-|---|---|---|---|
-| **v3 as shipped** | 5 | 20 % | **40.8 %** |
-| minus lever 1 (k = 4) | 4 | 25 % | 47.8 % |
-| lever 1 pushed (k = 6) | 6 | 16.7 % | 40.0 % |
-| minus lever 5 (decoys not aimed) | 5 | 20 % | 54.2 % |
-| minus lever 2 (three-example clues) | 5 | 20 % | 44.2 % |
-| minus levers 1 + 2 + 5 (= the v2 machinery on the new U) | 4 | 25 % | 57.0 % |
-| **v2's own universe** (lever 3 off) | 4 | 25 % | **98.0 %** |
+| build | k | floor | attack at 0 labels | attack at 60 labels | delta vs shipped |
+|---|---|---|---|---|---|
+| **v3 as shipped** | 5 | 20 % | 40.3 % | **42.6 % ± 1.3** | — |
+| minus lever 5 (decoys not aimed) | 5 | 20 % | 50.9 % | 50.7 % ± 1.3 | **+8.1** |
+| minus lever 1 (k = 4) | 4 | 25 % | 41.1 % | 48.4 % ± 1.3 | **+5.8** |
+| lever 1 pushed (k = 6) | 6 | 16.7 % | 39.5 % | 41.8 % ± 1.3 | −0.8 (noise) |
+| minus lever 2 (three-example clues) | 5 | 20 % | 40.0 % | 41.5 % ± 1.3 | −1.1 (noise) |
+| **v2's own universe** (lever 3 off) | 4 | 25 % | 91.2 % | **98.0 %** | **+55** |
 
-Read off the differences: **the relational universe (lever 3) is worth ≈ 41 points**, the rarity
-aiming (lever 5) **≈ 13**, the fifth candidate (lever 1) **≈ 7**, the two-word clue (lever 2)
-**≈ 3**. k = 6 buys nothing over k = 5 (−0.8, inside noise) while costing a line of the clue and a
-kid's patience, so **five is the right number**. Lever 4 (drawing the hidden rule from the rare
-part of U more often than base rates expect) was **not** used: once the rarity order is aimed, the
-truth's own base rate carries no signal, and skewing the draw would only make the class's mix
-harder for a kid to feel.
+**Measurement note (important).** An earlier pass of this table was run at n = 400 on a single
+label draw and reported +7 for lever 1, +13 for lever 5 and +3 for lever 2. At n = 400 the standard
+error is 2.5 points, so differences under ~5 points were not resolvable and the lever-2 figure was
+noise — it changes sign at higher n. The table above (n = 1500, SE 1.3, three disjoint label draws
+shown per cell in `scratchpad/tavrik_priv/tavrik_abl_big.out`) supersedes it. Only three effects
+survive:
+
+* **Lever 3, the relational universe: it dominates everything else.** The same attacker scores
+  **98.0 %** against v2's universe and **42.6 %** against v3's. Nothing else in this table is worth
+  more than a seventh of that.
+* **Lever 5, aiming the rarity order: +8.1 points** (6 σ).
+* **Lever 1, the fifth candidate: +5.8 points** (4 σ). **k = 6 buys nothing** (−0.8, inside noise)
+  while costing a clue line and a kid's patience, so **five is the right number**.
+* **Lever 2, the two-word clue: no measurable effect on the attack** (−1.1 ± 1.3). It is kept for
+  reasons that are not about this attacker — a shorter clue, less positive evidence handed over in
+  absolute terms, and a kid who can read the whole clue in one breath — but it must not be claimed
+  as a defence. Honest verdict: **lever 2 did not work as a hardening lever.**
+* Lever 4 (drawing the hidden rule from the rare part of U more often than base rates expect) was
+  **not used**: once the rarity order is aimed, the truth's own base rate carries no signal, and
+  skewing the draw would only make the class's mix harder for a kid to feel.
 
 ## 20. Learning U — the honest ceiling
 

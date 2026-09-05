@@ -800,3 +800,324 @@ are next-door in the alphabet · the second letter matches the second-from-last*
 exactly the kind of noticing a kid is **good** at and a predicate bank is bad at — looking at two
 letters at once — so the kid's contribution goes *up*, not down. Five candidates instead of four
 is one more short word to check by hand.
+
+---
+
+# tavrik v4 — the kid-legibility trim (2026-09-05)
+
+## 25. What v3's arena and its judge said
+
+v3 was **calibrated on rate and only on rate**. Four demo-less Opus centaurs met it in
+`lad-tavrik-v3-1` and `lad-dornic-v3-1` and scored **45 % (tavrik1a, 69/153) · 42 % (tavrik1b,
+91/216) · 47 % (dornic1a, 54/116) · 24 % (dornic1b, 38/158)** — 252/643 = **39 % overall**, inside
+the 35–55 band and almost exactly what the simulator predicted (42.5 %). Nobody spent a demo on it.
+
+The judge scored it **kid 3.83** (`nameable: no`), down from v2's 4.67, and said why:
+
+> half the universe reads like a puzzle-book trick (alphabet-distance, 2nd==2nd-from-last,
+> comes-back-after-n-letters) rather than a playground observation; trim toward templates a kid
+> spots by eye without counting: double letter, contains-letter, ends-with, vowels climb.
+
+RULE_FAMILIES.md's own addendum had already predicted this: *"Kid score follows the kind of
+relation. tavrik v3 (counted relations) fell 4.7 → 3.83; tresk v3 (visual relations only) rose
+4.0 → 4.5. Relations must be things a kid spots by eye."*
+
+One more thing the arena showed, worth recording because it is a **clue-shape** finding and not a
+rule finding: `dornic1b` read the class as *positive, then NEGATIVE* — "the pos/negative split was
+NOT guessable from the clue — the tavrik demo settled it: for `tommy / heat -> unity`, ~1000
+predicates were tested and ZERO were true of both `tommy` and `heat` while singling out `unity`."
+He is right that no cheap predicate fits both; that is exactly lever 3 working. But he spent a
+demo to find out, and scored 24 % — the lowest of the four — on a misreading that a two-line clue
+invites. v4 does not change the format (the pool needs one shape), but the effect is real: with
+two positives and no label, "the second line is a negative" is a live hypothesis, and it costs
+about 15 points to the player who takes it.
+
+So v4 is a **trim, not a rebuild**: same world, same lineup machinery, same 627-predicate attacker
+bank, same levers 0–5, same k = 5.
+
+## 26. The universe — v3 (18 templates / 41 rules) → v4 (13 templates / 33 rules)
+
+Antichain re-verified by brute force over the **4412-word example pool** and over **all 56 176
+dictionary words of length 4–7: 0 nesting violations**, every rule ≥ 1592 dictionary instances.
+Mean density of the hidden rule **0.184**. "dens" = fraction of the 56 176-word dictionary; "J" =
+best Jaccard against the 627-predicate reconstruction of the three player banks; "atk" = the
+simulated free-label attack on that template's own clues at 60 labels (2000 test clues, one label
+draw, n ≈ 150 per template, so ±4).
+
+| # | IN/EXCL | kid sentence, read aloud | params | dens | J | atk |
+|---|---|---|---|---|---|---|
+| 0 | **IN** | the 2nd letter and the 2nd-from-last letter are the same | — | .073 | **.19** | 21 % |
+| 1 | **IN** | the back half has more vowels than the front half | — | .251 | **.34** | 29 % |
+| 2 | **IN** | the front half has more vowels than the back half | — | .184 | .49 | 51 % |
+| 3 | **IN** | the first vowel is an *c* | a e i o u | .140–.299 | .47–.75 | 34 % |
+| 4 | **IN** | the last vowel is an *c* | a i o u | .082–.241 | .41–.53 | 36 % |
+| 5 | **IN** | the same vowel turns up twice | — | .328 | .53 | 33 % |
+| 6 | **IN** (new) | the same consonant turns up twice | — | .292 | .60 | 56 % |
+| 7 | **IN** | the vowels go up the alphabet | — | .346 | .50 | 16 % |
+| 8 | **IN** | the vowels go down the alphabet | — | .418 | .58 | 20 % |
+| 9 | **IN** (new, slope) | the same letter starts and ends it | — | .046 | **1.00** | 100 % |
+| 10 | **IN** (slope) | there is a *c* in it | b f k m p v w | .055–.176 | **1.00** | 90 % |
+| 11 | **IN** (slope) | it has a double letter | — | .170 | **1.00** | 87 % |
+| 12 | **IN** (slope) | it ends with *c* | d g l n r s t y | .028–.116 | **1.00** | 82 % |
+| — | **EXCLUDED in v4** | the first and last letters are exactly *n* apart in the alphabet (v3 T0, 4 rules) | n = 1–4 | .058–.089 | .08–.13 | retired: **counts alphabet steps** |
+| — | **EXCLUDED in v4** | a letter comes back after exactly one / two other letters (v3 T1, T2) | — | .101/.123 | .24/.29 | retired: **counts positions** |
+| — | **EXCLUDED in v4** | the first / last letter is the earliest / latest in the alphabet of all its letters (v3 T4–T7) | — | .169–.268 | .35–.49 | retired: **an alphabet scan over up to seven letters** |
+| — | EXCL (as v3) | contains every letter the examples share · at least / at most as many vowels as the least / most vowelly example · more consonants than vowels · starts with a consonant · the 2nd letter is a vowel / a consonant · the same number of letters · no letter is repeated · the same first letter · it rhymes · two vowels side by side · it ends with a vowel / a consonant · **all of v2's universe** | | | | the kid traps |
+
+**Read aloud, all thirteen:** *the 2nd letter and the 2nd-from-last letter are the same · the back
+half has more vowels than the front half · the front half has more vowels than the back half · the
+first vowel is an e · the last vowel is an o · the same vowel turns up twice · the same consonant
+turns up twice · the vowels go up the alphabet · the vowels go down the alphabet · the same letter
+starts and ends it · there is a k in it · it has a double letter · it ends with t.* **Not one of
+them contains a count, a distance, a sum or an alphabet scan.** The only ordering left is
+a-e-i-o-u over two or three vowels, which is a chant a kid already knows and which the judge
+explicitly blessed ("vowels climb").
+
+**Four decisions worth recording.**
+
+1. **The four "earliest/latest letter" templates went too, though the judge did not name them.**
+   "The first letter is the earliest in the alphabet of all its letters" needs a kid to alphabetise
+   seven letters; "the vowels go up" needs two or three. That is the line v4 draws, and `dornic1a`
+   had already learned the feature by name ("first letter is alphabetically smallest"), so it was
+   costing legibility without buying hardness.
+2. **"The same letter starts and ends it" is added even though it fails J × rarity** (J 1.00
+   against the bank's `fl`, density .046 → the attack scores **100 %** on its clues). It is added
+   *as slope*, not as a relation: it is the most kid-visible sentence in the whole family, and the
+   ablation prices it exactly (−4.6 points if dropped). v3 had retired it to the trap list; v4
+   promotes it and accepts the bill.
+3. **Two items from the brief were measured and refused.** *"Every vowel is followed by a
+   consonant"* has density **.572** — RULE_FAMILIES: a lineup cannot carry a rule near .5, because
+   four decoys all *lacking* one property is itself a signature. *"Two letters in a row are in
+   alphabetical order somewhere"* has density **.988** (useless); its sharp cousin *"two letters in
+   a row are next-door in the alphabet"* is .195 with J .59 — but it is the n = 1 case of the very
+   family this revision retires ("is s right after r?" is an alphabet step), so **excluded, for
+   consistency**. Both are on the trap list and both are dead there: 19.1 % and 13.6 % in the
+   witness table.
+4. **"The vowels are all the same"** (.106, J .39) reads beautifully but is **nested inside "the
+   same vowel turns up twice"** — it would break the antichain, so it stays out.
+
+**The slope share is the dial, and it is set by arithmetic, not by taste.** The recipe asks for
+"two or three cheap templates at double draw weight (~25 % of clues)". With v3's 18 templates,
+double weight *was* 25 %; with v4's 13 it would be 42 %, and the attack goes to **58.1 %** — off
+the top of the band. What the recipe actually wants is the **share**, so v4 spends the doubling on
+having a *fourth* cheap template instead of on drawing three of them twice: at the plain
+one-slot-per-template draw the four slope templates take **30 % of clues** and the attack lands at
+47.7 %. Measured split at 60 labels: **the four slope templates 90 %, the nine relations 33 %.**
+
+## 27. The attacker table — v3 vs v4
+
+Same simulator for both rows (`scratchpad/tav4/{big,attacker,bank}.py` = the players' own engine:
+skip-harvest base rates from 300 clues → random-candidate answers on a disjoint pool, of which 1/k
+come back correct = the gold labels → per-predicate unique-explanation weights → rarity-weighted
+pick). **1500 test clues** (seeds 1e6…), labels drawn from a disjoint 1200, **mean of 3 disjoint
+label draws, SE 1.3**; identical conditions for both rows.
+
+| free labels | **v3** (18 templates, 41 rules) | **v4** (13 templates, 33 rules) |
+|---|---|---|
+| 0 | 39.9 ± 1.3 % | **44.6 ± 1.3 %** |
+| 30 | 41.5 | **46.8** |
+| 60 | 42.5 | **47.7** |
+| 120 | 43.9 | **51.2** |
+| 240 | 45.0 | **52.0** |
+| bank + all of U (the honest ceiling) | — | 74.7 / 88.3 / 91.4 / 96.2 / 98.3 % |
+| U-coverage learned with the bank + U | — | 0 / 21 / 44 / 75 / 82 % |
+| U-coverage learned with the generic bank | 25 % (ceiling) | **30 %** (ceiling: the four slope templates, 17 of 33 rules) |
+| **the in-U intersection (a player who has mapped U)** | 100.0 % | **100.0 %** |
+
+**How to read it.** v4 is **+5 points everywhere** and the curve is a little less flat (+7.4 over
+240 labels against v3's +5.1). Both effects come from the same place: the eleven retired templates
+were the *least* bank-expressible in U (J .08–.49), so removing them raises the average
+expressibility of what is left, and the fourth slope template adds one more fully-learnable family.
+This is the honest cost of legibility, and it was budgeted: the class was at 39 % measured and the
+band is 35–55.
+
+**Calibration.** The simulator scored 42.5 % on v3 where four real demo-less Opus centaurs scored
+39 % — it runs **≈ 3 points hot** on this class (on wisbek it runs 13 hot; on tavrik the players'
+own engine *is* the simulator, which is why the gap is small). Both pool-3 players harvested
+170–535 free labels, so the column to read is 120–240: v4 simulates **51–52 %** there →
+**≈ 44–49 % for a real demo-less Opus player**, against v3's measured 39 %.
+
+## 28. Lever ablation (identical conditions, 1500 clues, 60 labels, SE 1.3)
+
+A difference must clear **2 SE ≈ 3.6 points** to be published as a lever (recipe step 8).
+
+| build | k | floor | attack, 0 labels | attack, 60 labels | delta |
+|---|---|---|---|---|---|
+| **v4 as shipped** | 5 | 20 % | 44.2 % | **47.4 %** | — |
+| **step 4 pushed: the three cheap templates at DOUBLE weight** | 5 | 20 % | 54.1 % | **58.1 %** | **+10.7** |
+| **minus lever 5: decoys not aimed** | 5 | 20 % | 54.5 % | **54.6 %** | **+7.2** |
+| **minus template 9 ("the same letter starts and ends it")** | 5 | 20 % | 40.3 % | **42.8 %** | **−4.6** |
+| minus lever 1: k = 4 | 4 | 25 % | 43.5 % | 50.6 % | +3.2 (under 2 SE) |
+| lever 1 pushed: k = 6 | 6 | 16.7 % | 43.3 % | 46.2 % | −1.2 (noise) |
+| minus lever 2: three-example clues | 5 | 20 % | 43.8 % | 45.8 % | −1.6 (noise) |
+| minus lever 0: example set not chosen to hide the rule | 5 | 20 % | 43.8 % | 47.2 % | −0.2 (noise) |
+| minus lever 3: v2's own universe (measured on v3, unchanged) | 4 | 25 % | 91.2 % | **98.0 %** | **+55** |
+
+**Three things this table says.**
+
+* **The softening dial is step 4, worth +10.7 points**, exactly as on wisbek v4 (+10.7 there too).
+  It is the only knob that moves difficulty without touching what the class *asks*, and it is the
+  knob to reach for in either direction next time.
+* **Lever 1 has stopped paying.** On v3 the fifth candidate was worth +5.8 (4 σ); on v4 it measures
+  +3.2 in one run and +1.1 in a repeat of the whole table — **inside noise**. A smaller, more
+  bank-expressible universe means the attacker's rarest unique explanation is more often the truth
+  regardless of how many decoys stand next to it. k = 5 is kept for consistency with the rest of
+  the lineup pool, **not claimed as a defence**.
+* **Lever 0 measured null here (−0.2 ± 1.8).** It is implemented (`ENT`/`LEAK`/`EXAMPLES` prefer,
+  among up to six minimal pairs, the one on which the rarest surviving bank predicate *entailed by
+  the rule* is dullest) and kept, because it costs nothing and is the recipe's step — but on words
+  it does not measure. Wisbek's +5 came from a 720-instance world where one pair choice could hide
+  a whole family; the 4412-word pool is dense enough that some rule-entailed predicate survives
+  almost any pair. **Honest verdict: lever 0 does not work on tavrik.**
+
+## 29. Three demos
+
+```
+CLUE                LINEUP                                     ANSWER        the rule, in a kid's words
+
+statute             sheet tenth taste reset treat        ->    reset  (4)    the 2nd letter and the
+neither                                                                      2nd-from-last letter are
+                                                                             the same
+
+nexus               priest tribal credit smoked priced   ->    credit (3)    the vowels go up the
+popcorn                                                                      alphabet (e-u, o-o, e-i)
+
+allied              arrange textile texture expense      ->    arrange (1)   it has a double letter
+roof                defense                                                  (the learnable slope)
+```
+(seeds 1000002, 1000004, 1000015; in the real clue the five candidates are one per line, after a
+blank line.) Demo 1 is the class in one picture: five six- and five-letter words, all firing the
+same excluded rules, and only `reset` has its 2nd letter (`e`) matching its 2nd-from-last (`e`).
+Demo 3 is a slope clue — the kind a label-spending attacker learns, and the reason the curve in
+§27 rises at all.
+
+## 30. Witness table — 2000 fresh clues (seeds 1e6 … 1e6+1999)
+
+Floor 20 % (one of five). All ties broken uniformly at random. Attack rows are the 1500-clue,
+3-label-draw figures from §27.
+
+| witness | score |
+|---|---|
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| **the true rule (`solve`), verbatim and by index** | **100.0 % / 100.0 %** |
+| a player who knows U minus two templates | 85.5 – 89.4 % |
+| **the full revision-3 attack, 627-predicate bank, 60 labels** | **47.7 %** |
+| … at 0 / 30 / 120 / 240 labels | 44.6 / 46.8 / 51.2 / 52.0 % |
+| RETIRED †: the first and last letters are *n* apart (fits 12 %) | 73.3 % |
+| … of which: the hidden rule IS "starts and ends the same" (n = 154) | **100.0 %** |
+| … of which: the hidden rule is anything else (n = 86) | **19.8 %** |
+| RETIRED ††: the last letter is the latest in the alphabet (fits 6 %) | 37.6 % |
+| … of which: the hidden rule is "it ends with *c*" (n = 34) | 58.8 % |
+| … of which: anything else (n = 83) | ~24 % |
+| RETIRED: a letter comes back after one other letter (fits 2 %, n = 30) | 36.7 % |
+| the candidate satisfying the MOST example-consistent bank predicates | 27.6 % |
+| the candidate with the smallest letter-distance to an example | 25.1 % |
+| RETIRED: a letter comes back after two other letters (fits 4 %, n = 78) | 24.4 % |
+| the outlier of the five by shared letters | 22.6 % |
+| EXCLUDED: more consonants than vowels (fits 56 %) | 22.4 % |
+| RETIRED: the last letter is the earliest in the alphabet (fits 3 %, n = 54) | 22.2 % |
+| EXCLUDED: no letter is repeated (fits 23 %) | 21.5 % |
+| the candidate with the most vowels | 21.4 % |
+| EXCLUDED: two vowels side by side (fits 6 %) | 21.1 % |
+| **pick a random candidate (the floor)** | **21.0 %** |
+| pick candidate 1 | 20.6 % |
+| the alphabetically first candidate | 20.5 % |
+| EXCLUDED: the letters the examples share are all in it (fits 81 %) | 20.4 % |
+| the candidate sharing the most letters with an example | 20.4 % |
+| EXCLUDED: the same first letter as the examples (fits 6 %) | 20.0 % |
+| EXCLUDED: it ends with a consonant (fits 60 %) | 19.5 % |
+| EXCLUDED: every vowel is followed by a consonant (fits 26 %) | 19.1 % |
+| EXCLUDED: at least as many vowels as the least vowelly example (fits 100 %) | 18.9 % |
+| RETIRED: the first letter is the earliest in the alphabet (fits 5 %, n = 99) | 18.2 % |
+| the candidate with the most different letters | 17.9 % |
+| EXCLUDED: the 2nd letter is a vowel (fits 33 %) | 17.2 % |
+| RETIRED: the first letter is the latest in the alphabet (fits 4 %, n = 76) | 17.1 % |
+| EXCLUDED: two letters in a row are next-door in the alphabet (fits 3 %, n = 66) | 13.6 % |
+| the medoid of the five | 12.4 % |
+| the candidate satisfying the FEWEST example-consistent bank predicates | 11.8 % |
+| EXCLUDED: it rhymes — same last two letters (fits 2 %, n = 43) | 11.6 % |
+
+† and †† are the two **shadows**, and both are rules of U wearing another hat, not leaks: when both
+examples are the same alphabet distance apart it is almost always *because* the rule is "the same
+letter starts and ends it" (distance 0), and when both end with their latest letter it is usually
+because the rule is "it ends with y/t/s/r". Off those clues both sit at chance. A player who
+follows either is not cracking the class from outside — he has half-guessed a template of U, which
+is what the slope is for. Every other retired and excluded rule is **structurally dead**: over
+2000 clues **all 11 592 fitted traps are satisfied by all five candidates or by none (100 %)**, so
+no trap, no count of traps and no combination of traps separates the lineup.
+
+Other measured numbers (2000 seeds unless stated): uniqueness 500/500 · minimality 500/500 ·
+exactly one candidate obeys the rule 500/500 · all five candidates the same length 500/500 · five
+distinct candidates 500/500 · no candidate equal to an example 500/500 · matched trap profiles
+500/500 · examples per clue 2 → 1975, 3 → 25 · candidate length 4/5/6/7 → 115/124/123/138 of 500 ·
+true-candidate position 104/98/92/98/108 of 500 · template mix 26–50 of 500 (5.2–10.0 %) ·
+true-candidate rank in the rarity order 254/142/82/22/0 of 500 and in the count order
+160/119/118/61/42 — **on the nine relational templates the rarity rank is 134/157/97/30/1
+(rank 0 in 32 %, against v3's 33 % overall); on the four slope templates it is rank 0 in 93 %,
+which is unaimable by construction and is precisely what makes them the slope** ·
+**0 duplicate clues and 0 fallback clues over 2000 seeds**.
+
+## 31. Validation
+
+`python tools/quickcheck.py challenges/lab/tavrik.json --seeds 300 --cap max_score_code_chars=1024`
+→ `OK tavrik gen=10.97ms score=0.42ms solve=0.4ms` (maxima), **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **894 chars** (v1 821, v2 689, v3 946) | 1024 (the rule-family raise, `RULE_FAMILIES.md` §4) |
+| `generate` source | 23 098 (3.7 KB of it is the dropped-word list, 11 KB the attackers' bank) | 50 000 |
+| `solve` source | 1 934 | 5 000 |
+| `generate` | **1.55 ms mean**, 1.40 median, 4.67 p99, 10.61 max over 2000 seeds | 100 ms |
+| `score` | 0.24 ms mean (0.11 ms on junk) | 50 ms |
+| `solve` | 0.23 ms mean; correct on 500/500 clues | 2 000 ms |
+| clue | ≤ 62 chars | 1024 |
+| answer | ≤ 7 chars | 1024 |
+
+`score` was checked candidate-by-candidate against the reference predicate on **600 clues × 5
+candidates × 4 answer forms** (verbatim, 1-based index, upper case with surrounding whitespace,
+spaced index) — **12 000 checks, 0 disagreements** — and it rejects `""`, `"0"`, `"6"`, `"9"`,
+`"x"`, `"1"*100`, `"9"*4000`, the clue itself, an example word, `"hel lo"`, `"élan"`, the unicode
+digits `"١"`/`"²"`, `"-1"`, `"1.0"`, `"None"`, `"[1]"` and a two-line answer without raising.
+`solve` re-derives the survivor exactly as the scorer does and returns the true candidate verbatim.
+Module-level tables (the 4412-word pool, its 33-bit U mask, its trap features, the 627-bit bank
+mask and the new per-rule entailment mask `ENT`) cost **≈ 1.3 s once per worker** (v3: 1.9 s) and
+are not charged to `max_generate_ms`.
+
+The drop list gained **73 more proper nouns** this round (`anna aurora beth carl donna irene jeff
+jenny jerry jess josh kelly kerry kirk kyle laura maria mick mike molly morgan nancy pete phoenix
+ralph rita ross russia seth stella tara tommy travis vera victor walter alan alec betty billy bobby
+carr chester colin cyrus eric geneva gilbert iceland kent lewis lionel montana morocco murphy nash
+pablo panama pedro rick rory silva sonny toby wang webster rodney riley bangkok shah yale timothy
+sanders hanna reid lars ollie freda`), taking the pool from 4485 to **4412** words: `pete / donna`
+in a clue is the sort of blemish a 12-year-old notices before anything else. Words that are also
+ordinary English (`grace hope june jack will rose pearl penny violet holly daisy flora olive amber
+duke grant cooper newton morris`) were deliberately kept.
+
+## 32. Predicted classification
+
+**Calibrated, with the risk on the easy side.**
+
+* **Without a demo** the clue reads as multiple choice from probe 1, so every attempt is well
+  formed and the 20 % floor is free. The pool-2/3 engine — skip-harvest, random-candidate labels,
+  rarest surviving predicate — simulates **47.7 % at 60 labels and 51–52 % at the 120–240 labels
+  the real players actually harvested**, i.e. **≈ 44–49 %** once the simulator's measured 3-point
+  head start is removed (v3: 39 % measured). Expect **35–45 %**.
+* **With a demo** the demo teaches the format in one look and one worked rule, and U is now only
+  thirteen templates, every one of them a sentence about two letters or about the vowels. A player
+  who writes them down scores **91 %** at 60 labels; one who maps 11 of 13 scores 85–89 %. Expect
+  **50–65 %**.
+
+Mean across the two ≈ **0.45–0.55** → `calibrated`, against v3's measured 0.39 and v2's 0.90. If a
+run comes back above 0.7 the lever is **step 4 in reverse** — drop template 9 and un-double nothing
+(−4.6), or trim a slope letter set — **not** putting the counted relations back.
+
+**12-year-old test (target 4.3+, v3 scored 3.83 with `nameable: no`).** The object is still a word,
+the clue is still two words read aloud in one breath, and every one of the thirteen rules is now
+something a kid **sees**: the 2nd letter matching the 2nd-from-last · more vowels in the back half
+than the front · the first vowel being an *e* · the last vowel being an *o* · the same vowel twice
+· the same consonant twice · the vowels climbing a-e-i-o-u · the vowels falling · the same letter
+at both ends · a *k* somewhere · a double letter · ending in *t*. The three families the judge
+named — alphabet distance, "comes back after *n* letters", and (by the same argument) the
+earliest/latest-letter scans — are gone, and there is **no count, distance, sum or alphabet scan
+left anywhere in U**. What the class still rewards is the thing a kid is good at and a predicate
+bank is bad at: looking at two letters at once.

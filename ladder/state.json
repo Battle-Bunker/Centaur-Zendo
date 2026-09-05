@@ -4652,9 +4652,12 @@
    ]
   },
   "ospren": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [],
+   "refined_versions": [
+    1
+   ],
    "runs": [],
    "status": "untested",
    "versions": [
@@ -4663,6 +4666,12 @@
      "file": "challenges/lab/ospren.json",
      "note": "v1 rule family (5x5 pictures): 10 templates, 29 rules, fresh-count + 2-square clauses; scorer 1004",
      "v": 1
+    },
+    {
+     "added": 1788585454.2291098,
+     "file": "challenges/lab/ospren.json",
+     "note": "v2 lineup: numbered candidate blocks, matched trap profiles and black counts; count attack 32%, rarity 47%",
+     "v": 2
     }
    ]
   },
@@ -8838,7 +8847,7 @@
    "class": "ospren",
    "id": "judge-ospren-v1-259a",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -9052,7 +9061,7 @@
    "kind": "refiner",
    "reason": "lineup",
    "started": 1788582807.3089488,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -9129,14 +9138,30 @@
    "version": 3
   },
   {
+   "agents": 1,
+   "class": "virel",
    "id": "refiner-virel-v2-topcourse",
    "kind": "refiner",
-   "class": "virel",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
+   "reason": "too_hard",
    "started": 1788583903.5100362,
-   "reason": "too_hard"
+   "status": "running",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "ospren",
+   "id": "players-ospren-v2-8930",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "ospren",
+   "id": "judge-ospren-v2-fafd",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

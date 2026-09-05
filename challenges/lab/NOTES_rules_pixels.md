@@ -378,3 +378,331 @@ joined up", "the biggest lump is three squares". A kid contributes hypotheses im
 always say *exactly*" — is the kind of thing a kid notices before an adult does. The
 nameable-pattern risk is real (these *are* nameable rules), but the difficulty lives in the size of
 U, the loose-cousin traps and the thin 0/1 channel, not in any single rule being obscure.
+
+---
+
+# Revision 2 — the lineup answer (2026-09-05)
+
+`challenges/lab/ospren.json` is now the **lineup** version; the version described in §§1–8 above is
+kept byte-identical as `challenges/lab/ospren.v1.json`. Not committed; no arena run.
+
+## 9. Why v1 had to change
+
+Nobody has played `ospren` yet, so unlike `dornic`/`tresk`/`tavrik` there is no arena log to point
+at. But the attack that took **77–97 %** off those three v1 classes is world-independent
+(`docs/RULE_FAMILIES.md` "Revision 2"): build a pool of 250–350 generic predicates about the
+object, keep every predicate true of **every** example, then emit an object satisfying all of them
+at once. The hidden rule is somewhere in the pool, so the answer obeys it *by construction*; the
+excluded traps cost nothing, because satisfying an extra rule is harmless. A 5×5 picture is if
+anything an easier target than a bead string — the pool below writes itself. And v1's own witness
+table already named the thing that was actually holding players: the **fresh-count** clause, which
+is not part of the rule and which players fairly called invisible.
+
+**The fix (revision 2): the answer is a choice, not a construction.** Both freshness clauses are
+gone; the answer is which of four candidate pictures obeys the hidden rule.
+
+## 10. The v2 format
+
+Blocks separated by one blank line. The first 2–3 blocks are the **examples** (five lines of five
+characters each); the last four are the **candidates**, each a block of six lines whose first line
+is just the candidate's number:
+
+```
+....#              <- example 1
+#....
+...#.
+#....
+....#
+
+.###.              <- example 2
+#..##
+#.#.#
+##..#
+.###.
+
+1                  <- candidate 1
+#...#
+#...#
+##...
+#...#
+#...#
+
+2
+.#...
+...
+```
+
+A five-line block is an example, a six-line block starting with a digit is a candidate, and the
+candidates are always the last four blocks — three independent ways to parse the same layout, which
+is why the digit lines are there at all (a blank line alone cannot separate the two halves when the
+objects are themselves multi-line). The answer is the candidate that obeys the rule, written back
+**verbatim** (whitespace-insensitive, with or without its number line) **or as its index 1–4**.
+
+* **U is unchanged** — 10 templates, 29 rules, 21 eligible, 8 competitors, still an antichain — so
+  §2's table, the density figures and the antichain argument all still hold.
+* **The fresh-count and ≥ 2-squares clauses are gone** (revision 2 §5). The examples still have
+  distinct black-counts, but that is now purely a generator invariant forced by the COUNT
+  competitors, **not** a scorer clause.
+* **The floor is 1/4 = 25 %** (was ~7 %), and the ceiling for a player who has mapped U is 100 %.
+
+## 11. How the lineup is built (revision-2 rules 1–5, 5b, 5c)
+
+1. **Exactly one candidate obeys the rule** — verified in `generate` on every clue (500/500).
+2. **Same size.** All four candidates have the **same number of black squares** (500/500). This is
+   the picture world's version of `tresk`'s equal lengths, and it is worth more here than there: it
+   makes every count-shaped statement — and three of the fourteen traps, and the ~70 count-shaped
+   predicates of the outside pool — matched for free.
+3. **Matched trap profiles (§5b).** The generator buckets sampled pictures by *which* of the
+   example-consistent excluded rules they fire and assembles the lineup inside one bucket, so all
+   four candidates fire exactly the same traps (500/500). Every trap heuristic, and any count of
+   traps, is therefore worth **exactly 25.0 %** — see the table in §14.
+4. **The count defence, both readings.** `generate` carries a **300-predicate** outside pool
+   (§12) plus a base rate for each, measured on its own 16 000-picture pool. It scores every
+   candidate by the plain count of surviving predicates it satisfies **and** by their
+   rarity-weighted total (−log base rate), and aims the true candidate's **rank on both** at a
+   place drawn uniformly from the sixteen (count rank, rarity rank) squares, falling back through
+   the rest in order of distance. Decoys are drawn at random, **targeted** at the tight surviving
+   predicates through a per-predicate index, and finally taken from the near or far end of their
+   distance order from the truth so that "the odd one out" is aimed too.
+5. Uniqueness and minimality inside U are unchanged and still verified on every clue; no candidate
+   is an example and all four are distinct (500/500 each).
+
+### The outside pool (300 predicates)
+
+No player has played `ospren`, so the pool is the one a strong player *would* enumerate, written in
+the style of the round-1 winner's `zpools.py`: `n=k` for every k and every `n>=k` / `n<=k` bound;
+the count in each of the five rows and each of the five columns; rows/columns used, full and
+equal; max/min row and column; corners (each one, the count, "all the same colour"); blobs, biggest
+blob, smallest blob, "has a blob of size k", lonely squares, touching pairs; the five symmetries
+(mirror, top-bottom, half turn, both diagonals) plus 4-way and 8-way; top row = bottom row, first
+column = last column; the two halves above/below and left/right; the border count and the middle
+3×3 count; 2×2 blocks, runs of 3 and 4 across and down, repeated rows, a solid rectangle, a
+straight line; and the parities. It expresses **most of U** — which is exactly what makes the
+rarity attack hard to beat (§12).
+
+## 12. The findings
+
+**The count attack is beaten.** "Pick the candidate satisfying the most surviving pool predicates"
+— the direct port of the round-1 method — scores **31.6 %** (floor 25 %), with at least one decoy
+strictly out-counting the truth on **68.4 %** of clues (revision 2 asks ≥ 40 %). "Fewest" scores
+23.4 %, so it is not reversible either.
+
+**The rarity-weighted attack is only blunted: 46.8 %** (42.5 % over a 2000-seed re-run). This is
+the same wall `dornic` hit at 47.2 %, and for the same reason: on the clues where the hidden rule
+is itself in the attacker's pool it is the rarest thing all the examples share, and no picture that
+fails it can look as specially chosen. Two levers moved it:
+
+| lever | effect on the rarity attack |
+|---|---|
+| matched trap profiles + equal black-counts + rank aiming (the base build) | ~58 % |
+| **prefer example sets that leave the most rare outside predicates alive** | 58 % → ~47 % |
+| **re-weight the templates toward the derived readouts** (blobs, lonely, maxblob) | 47 % → **43 %** |
+
+Per-template rarity attack, measured over 600 clues before the re-weighting: **spread 70 %,
+corners 60 %, eqline 51 %, fullline 47 %, sym 43 %, maxblob 40 %, lonely 33 %, blobs 30 %**. The
+ordering is exactly RULE_FAMILIES §5c's prediction: a rule over a **derived** quantity — how many
+separate blobs there are, how many squares stand alone, how big the biggest lump is — takes two
+steps to read off a picture, so a decoy can be built to imitate it; a rule you can see in one
+glance (how many corners are black, how many rows the blacks use) cannot. The weights now lean
+the other way (blobs 1.4, lonely 1.4, maxblob 1.25, sym 1.05, fullline 1.0, eqline 0.9,
+corners 0.7, spread 0.55); the template is still drawn **before** its parameter.
+
+**Two examples beat three.** The generator builds up to four minimal example sets of each size and
+prefers the one that leaves the most **rare** outside predicates alive, because those are the
+coincidences a decoy can be built to carry. Two-example sets win that criterion almost always:
+**2 examples 90.5 %, 3 examples 9.4 %** over 2000 seeds (v1 was 52/48). The measurement behind the
+choice is blunt — with the set drawn without that preference, a decoy could out-score the truth on
+only **19 %** of three-example clues against **62 %** of two-example ones (mean rare surviving
+predicates 3.8 vs 5.8). *A third example removes exactly the coincidences the decoys need.* This is
+the constructive version of `dornic`'s discarded "anchor" idea: rather than forcing the examples to
+share a second tight non-U property (which broke uniqueness there), simply prefer, among example
+sets that are already unique and minimal, the ones that happen to share more.
+
+**No template had to be demoted** (the brief asked for the check). `tavrik` had to demote "exactly
+*n* vowels" because two of its traps were "at least as many vowels as…" and "at most as many
+as…", whose conjunction on such a clue **is** the rule, so no decoy could share the truth's trap
+profile. `ospren` has exactly one at-least/at-most pair among its fourteen exclusions — "at least
+*n* black squares" / "at most *n* black squares", fitted to the clue's smallest and biggest — and
+their conjunction is a **range**, never a single count, because the examples always disagree about
+the number of blacks; and COUNT is a competitor-only template anyway. Empirically a matched-profile
+lineup was found on **500/500** clues and all 21 eligible rules are drawn over 2000 seeds.
+
+**The residue that is left: "pick the odd one out" scores 32.2 %** (and its inverse, the medoid,
+13.6 %). A picture that obeys a structural rule is genuinely a little unlike three that do not —
+mean truth-to-decoy Hamming distance 10.3 against 9.8 decoy-to-decoy — and aiming the truth's
+place in the look-alike order (each decoy taken from the near or the far end of its group's
+distance order, all eight patterns tried plus random draws) only halves the tell. It is named
+here rather than hidden: it is the second-best cheap heuristic in the class after the
+rarity-weighted count.
+
+## 13. Three demos
+
+```
+seed 25   hidden rule: exactly one row is completely black          (2 examples)
+
+  EXAMPLES               CANDIDATES 1      2      3      4
+   ...#.  .....        ..##.  ..#.#  .....  #####
+   #####  #####        ##..#  ..##.  #####  ##..#
+   ....#  ##.#.        ...#.  .#.#.  .....  .....
+   ...#.  ####.        ..#.#  #...#  .....  ..##.
+   .#...  .....        ##...  .#.#.  #####  .....
+  ANSWER: 4   (##### ##..# ..... ..##. .....)
+
+seed 15   hidden rule: the picture looks the same in a mirror       (2 examples)
+
+  EXAMPLES               CANDIDATES 1      2      3      4
+   #.#.#  #...#        .###.  ..#..  .##..  .###.
+   ..#..  #...#        #..##  ##.##  #..##  ##..#
+   .###.  .....        .#...  #.#.#  #.###  #.#.#
+   ..#..  .....        #.###  ##.##  #####  #..##
+   #.#.#  .#.#.        ###.#  #.#.#  .#...  .###.
+  ANSWER: 2   (..#.. ##.## #.#.# ##.## #.#.#)
+
+seed 21   hidden rule: there are exactly 2 blobs                    (3 examples)
+
+  EXAMPLES                      CANDIDATES 1      2      3      4
+   ....#  #....  .#...        .....  .....  .....  .....
+   .....  .....  .....        .....  ....#  ##...  ..#..
+   .....  .....  .....        ...#.  #....  .....  .#.#.
+   #....  .....  .....        ...#.  .....  ##...  ..#..
+   #....  ..###  ....#        ...##  #...#  .....  .....
+  ANSWER: 3   (..... ##... ..... ##... .....)
+```
+
+Note demo 1: all four candidates have **ten** black squares, candidate 3 has *two* full rows (so it
+fails "exactly one"), and candidate 2 has two blacks in every row — a U rule (`every row the same
+number`) that the examples have already killed. Demo 2: all four have fifteen blacks and all four
+have `first column = last column`, the mirror's loose cousin and one of the fourteen traps; only
+candidate 2 is actually its own mirror. Demo 3: four blacks each, and candidate 1's four squares
+are joined into one blob while candidate 4's four stand apart in three.
+
+## 14. Witness table — 500 fresh clues (seeds 1 000 000 – 1 000 499)
+
+The answer is a choice among four, so the floor is **25 %** and there is no well-formedness column.
+
+| witness | score |
+|---|---|
+| **the true rule (`solve`)** | **100.0 %** |
+| **the in-U intersection** (the candidate satisfying every rule of U the examples allow) | **100.0 %** |
+| a player who knows U minus its **two rarest templates** (spread, corners) | 89.4 % |
+| a player who knows U minus sym + eqline | 81.8 % |
+| a player who knows U minus blobs + lonely | 74.6 % |
+| **MOST surviving pool predicates, weighted by rarity (−log base rate)** | **46.8 %** |
+| a player whose universe is U + the 14 exclusions, random survivor | 35.0 % |
+| the candidate **least like the other three** (outlier) | 32.2 % |
+| **MOST surviving pool predicates (the round-1 attack, 300 preds)** | **31.6 %** |
+| the candidate least like any example | 29.0 % |
+| **pick candidate 1** | 27.8 % |
+| the candidate firing the MOST fitted traps | 26.8 % |
+| EXCLUDED: **each of the fourteen, when it fits** | **exactly 25.0 %** |
+| a player whose universe is U + the 14 exclusions, a **wrong** survivor | 24.4 % |
+| the candidate most like an example | 23.8 % |
+| the candidate satisfying the FEWEST surviving pool predicates | 23.4 % |
+| the candidate firing the FEWEST fitted traps | 23.4 % |
+| **pick a random candidate (the floor)** | 22.4 % |
+| the candidate closest to the other three (medoid) | 13.6 % |
+
+The fourteen excluded rules, with how often the trap fitted to the clue is consistent with *every*
+example:
+
+| excluded rule (fitted to the clue) | fits | scores |
+|---|---|---|
+| every square black in all the examples is black | 100 % | **25.0 %** |
+| at least *n* black squares (the clue's smallest) | 100 % | **25.0 %** |
+| at most *n* black squares (the clue's biggest) | 100 % | **25.0 %** |
+| the same number of blacks as an example | 100 % | **25.0 %** |
+| there is a black square in the middle column | 56.4 % | **25.0 %** |
+| the middle square is white | 49.0 % | **25.0 %** |
+| every row has at least one black | 33.8 % | **25.0 %** |
+| as many blacks above the middle row as below | 30.8 % | **25.0 %** |
+| as many blacks left of the middle column as right | 24.2 % | **25.0 %** |
+| the four corners are all the same colour | 19.6 % | **25.0 %** |
+| the top row is the same as the bottom row | 14.2 % | **25.0 %** |
+| the first column is the same as the last | 10.6 % | **25.0 %** |
+| the top row is all white | 5.8 % | **25.0 %** |
+| no two black squares touch | 2.8 % | **25.0 %** |
+
+In v1 these paid 9.4–19.4 %; matched profiles make them exactly neutral. Mean **6.5** of them are
+consistent with any one clue (min 4, max 10). The v1 lesson — "this class never says *at least*" —
+no longer pays on its own; the game is now purely **which** rules the class uses.
+
+Other measured numbers (500 clues unless stated):
+
+* uniqueness 500/500, minimality 500/500, all example black-counts distinct 500/500, examples
+  pairwise ≥ 3 squares apart 2000/2000;
+* exactly one candidate obeys the rule 500/500; all four the same number of blacks 500/500; four
+  distinct candidates 500/500; no candidate equal to an example 500/500;
+* matched trap profiles 500/500; every decoy fires ≥ 1 consistent trap 500/500;
+* true-candidate position 139/124/127/110; example counts 2 → 90.5 %, 3 → 9.4 % (2000 seeds);
+* rank of the truth by plain predicate count 158/100/125/117 (a decoy beats it on **68.4 %**), by
+  rarity-weighted total 234/108/106/52 (**53.2 %**);
+* mean 33.1 outside predicates survive the examples, of which ~5 are rare (base rate ≤ 0.25);
+* hidden-rule mix over 2000 seeds: 2 blobs 202, 1 blob 170, 3 lonely 127, one full row 126,
+  5 lonely 121, one full column 121, equal rows 114, 4 lonely 108, biggest blob 2 → 103, equal
+  columns 97, 3 corners 89, biggest blob 3 → 89, biggest blob 4 → 89, 4 corners 87, top-bottom
+  flip 85, mirror 82, half turn 72, 1 row 32, 2 columns 30, 2 rows 29, 1 column 27.
+
+## 15. Validation
+
+`python tools/quickcheck.py challenges/lab/ospren.json --seeds 300` →
+`OK ospren  gen=12.74ms score=0.18ms solve=0.21ms`, **no warnings** (the 1024 scorer cap is the
+quickcheck default).
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **899 chars** (v1: 1004) | 1024 (the rule-family raise) |
+| `generate` source | 29 821 | 50 000 |
+| `solve` source | 1 841 | 5 000 |
+| `generate` | **2.39 ms mean**, 1.11 ms median, 12.5 ms p99, 17.9 ms max over 5000 seeds | 100 ms |
+| `score` | 0.07 ms mean, 0.18 ms max | 50 ms |
+| `solve` | 0.11 ms mean, 0.28 ms max (v1: 27 ms — nothing to rejection-sample any more) | 2000 ms |
+| clue | 192–223 chars (v1: ≤ 91) | 1024 |
+| answer | 29 chars, or 1 | 1024 |
+
+Module-level tables cost **≈ 4.3 s** once per worker (v1: 0.46 s): the 16 000-picture pool, its
+29-bit U mask, 10-bit trap mask, 25-bit square mask and 300-bit outside-pool mask, plus the
+per-predicate rarity index. Not charged to `max_generate_ms`; a call is then integer ANDs,
+`bit_count`s and a handful of small sorts. `generate` is deterministic across processes and hash
+seeds (md5 of the first 200 clues checked in three interpreters).
+
+`score` was checked on 500 clues × every candidate and × every index (exactly one scores 1 each
+time) and rejects `''`, `x`, `0`, `5`, `9`, `1 2`, `1`×100, `#`×4000, the clue itself, the example
+block alone, a Unicode digit, a well-formed picture that is not in the lineup, and the true
+candidate with one square rubbed out. It forgives surrounding and internal whitespace, accepts the
+answer written as one space-separated line, and accepts the candidate's number line if the player
+copies it. `solve` re-derives the survivor exactly as the scorer does and returns the true
+candidate verbatim — it constructs nothing, so there is nothing to leak.
+
+## 16. Predicted classification
+
+**Calibrated, and much flatter than v1.**
+
+* **Without a demo**: the shape reads as a multiple choice (two little pictures, a gap, four
+  numbered ones), so a player who works that out is on the **25 %** floor from probe one; a player
+  who answers with a constructed picture scores 0 until the 0/1 feedback teaches them. The
+  round-1 method degrades to counting surviving predicates: **32 %**. A team that weights its
+  predicates by rarity — and the round-1 winner already computed base rates — reaches **47 %**.
+  Expect **25–45 %**.
+* **With a demo**: a demo now teaches only the format, because there is no invisible convention
+  left to learn. The way up is to reconstruct U, and the moment a player filters U correctly they
+  score **100 %**, because the in-U intersection is exact. Eight templates and 21 rules from two
+  example pictures per clue is a real climb, but a much shorter one than `dornic`'s 91 rules, and
+  every rule is nameable at a glance. Expect **45–70 %**.
+
+Mean across two Opus teams ≈ **0.4–0.55** → `calibrated`, with the risk on the **easy** side and
+named: the rarity-weighted count is a free ~47 %, and "the odd one out" a free ~32 %. Levers if it
+comes back too easy: (i) push the template weights further toward blobs/lonely/maxblob (spread and
+corners are the leaky ones); (ii) go to k = 5 candidates (floor 20 %); (iii) add templates whose
+readout no natural pool carries — "the blacks make a shape that is the same width as it is tall"
+was rejected in v1 for density, but "exactly *n* squares touch the edge" is available and is
+outside the pool. Too hard: (iv) k = 3 (floor 33 %); (v) let one decoy obey a rule of U that all
+but one example allows, so a partly-mapped player is rewarded rather than punished.
+
+**12-year-old test**: better than v1, for the same reason `tresk` v2 was. The object is still a
+little pixel picture — cross-stitch, Minecraft, a Game Boy sprite — and the question is now the
+one every kid knows from a puzzle book: *which of these four fits?* A kid can check four 5×5
+pictures against a hypothesis with a finger in seconds, all four have the same number of black
+squares so the cheap "count them" answer is visibly useless, and the 0/1 signal is now about the
+rule rather than about an invisible novelty convention. The one loss is the v1 lesson ("they never
+say *at least*"), which no longer pays on its own because the traps have been made exactly
+neutral.

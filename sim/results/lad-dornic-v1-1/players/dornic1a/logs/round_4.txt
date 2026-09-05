@@ -1,0 +1,382 @@
+Centaur Zendo round 4 (training)
+round_id : a5dd0654f2c94d3cb0bc010adf43bbf3
+written  : 2026-09-05 03:26:41Z
+presented=364  answered=344  correct=113  skipped=20
+client answer latency: mean 0.445 ms  median 0.364 ms  max 2.881 ms  (n=365)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  dornic        2C 5C 7D KS\n2D 3S 5D 6D\nAD AS 3H 3D 4…  2S 5S 7H KC                               1
+   1  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  0
+   2  wisbek        8:55\n9:00\n12:15                         2:25                                      1
+   3  dornic        2D 5D 6H 7D JS\nAH 3D 8C JH\n2H 10H QC …  2H 5H 6D 7H JC                            0
+   4  dornic        2S 7D 7C QS KC KS\nAC 6C 9H JD JS KH\n4…  2C 7H 7S QC KC KS                         0
+   5  borsel        2 5 3 6 5\n1 4 4 5 4                      1 2 5 5 5                                 0
+   6  tavrik        somehow\nalways                           worked                                    1
+   7  borsel        4 3 2 4 5\n5 2 3 3 4\n3 3 2 4 4           2 3 3 4 4                                 0
+   8  wisbek        3:35\n5:25                                1:11                                      0
+   9  dornic        2H 2C 2S 9D\nAC 5C 6C 6S 9S\n5S 7S 8D 9H  2D 2C 2S 9H                               0
+  10  dornic        2S 3D 5C 8D 9S 10D\n3C 4C 7C 8H JH        2C 3H 5S 8H 9C 10H                        0
+  11  wisbek        6:40\n12:13                               1:01                                      0
+  12  dornic        8D 9D 10C JH\n3C 4C 9S 10S QC\n6H 9C JS…  8H 9H 10S JD                              0
+  13  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+  14  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  1
+  15  kelmar        ............................\n.........…  ......|||...........|||.....\n......|||…  0
+  16  tresk         RGGGGG\nBBBBBGR                           RBBBBB                                    0
+  17  borsel        3 5 5 6 5\n5 5 5 5 5                      3 3 3 5 5                                 0
+  18  wisbek        3:35\n6:14\n12:08                         1:02                                      0
+  19  dornic        2H 3S 4H 5H 8C JC\n3H 7H 7D 9H            2D 3C 4D 5D 8S JS                         0
+  20  borsel        5 5 5 3 6\n6 5 6 6 6                      6 5 5 5 6                                 1
+  21  tresk         RRBBBGR\nGGGGRBBBR\nRRBBBGGB              GGGRBB                                    0
+  22  tresk         GGGGRRG\nGBRRGGGGRR\nBGBGGRGRG            GRGRBGBGGB                                0
+  23  kelmar        ................................\n.....…  .......|||.............|||......\n.....…  0
+  24  kelmar        ............................\n.........…  ......|||...........|||.....\n......|||…  1
+  25  borsel        3 3 3\n5 5 5                              None                                      0
+  26  wisbek        3:58\n4:48                                7:36                                      1
+  27  wisbek        5:00\n6:05\n12:35                         9:20                                      1
+  28  borsel        2 1 1\n1 1 1                              2 2 1                                     1
+  29  tavrik        admit\nugly                               outrage                                   1
+  30  wisbek        2:53\n9:17                                1:07                                      0
+  31  tresk         RRBBRG\nBBRBRGRGRR\nRRBRRRG               GGRRRR                                    0
+  32  tresk         GBGBGBG\nRGGGGR\nBGRBBRGB                 RBRGRBR                                   0
+  33  kelmar        ............................\n.........…  None                                      0
+  34  kelmar        ...............................\n......…  ......|||.............|||......\n......…  0
+  35  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  0
+  36  borsel        2 2 2 6\n5 3 2 3                          2 2 2 5                                   0
+  37  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  1
+  38  tavrik        kitty\ngreen                              expert                                    0
+  39  wisbek        2:44\n5:11                                1:44                                      1
+  40  tresk         GGGRRGGG\nRBRRRRRBR\nBGRRGB               GGGGGG                                    0
+  41  tresk         BRRRRBBRR\nRRGRRRRGRR\nBGBBBG             RRGGGGRR                                  1
+  42  wisbek        4:30\n8:00                                1:18                                      0
+  43  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+  44  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  0
+  45  tresk         BBBBRBBGBG\nBRRGBGG                       GGGGGG                                    0
+  46  dornic        5H 7H 10H 10C\n3H 3C 5D 8S\n6H 9H 9C JH…  5D 7D 10D 10S                             0
+  47  borsel        2 2 3\n2 1 2                              None                                      0
+  48  borsel        3 4 6 3\n6 3 6 6\n3 3 3 5                 5 5 3 6                                   1
+  49  wisbek        8:05\n11:47                               12:37                                     1
+  50  tresk         GRBBGRBBRR\nRGGBRGRBB\nBRGBGRB            GGRBRRBRGG                                0
+  51  tavrik        defense\ninitial                          sadness                                   1
+  52  borsel        3 5 2 2 1\n4 3 2 4 3                      1 1 2 2 3                                 0
+  53  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+  54  kelmar        ...........................\n..........…  ..."""......"""......"""...\n..."""....…  0
+  55  wisbek        6:52\n9:34                                1:01                                      0
+  56  tavrik        accent\nbent\nfill                        boot                                      1
+  57  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+  58  tavrik        poll\ntweet\nbulb                         mommy                                     1
+  59  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  0
+  60  wisbek        3:28\n10:35\n12:37                        5:30                                      1
+  61  tresk         GRGBBBB\nBBBBRGGGB\nRRRRGB                GGGGBB                                    0
+  62  tavrik        kick\npepper                              zoom                                      1
+  63  dornic        5H 9D 9S 10D JD JC\n5S 7C 8S 9C QD        5D 9H 9C 10H JH JS                        0
+  64  dornic        AS 5D 6D 7D 8C 10H\n6C 8H JH QD\n5H 6H …  AC 5H 6H 7H 8S 10D                        0
+  65  tresk         BGRGBRBGBR\nRBGRGBR\nGBRBGR               BGRBGBRGB                                 1
+  66  dornic        2H 4S 5D 6D\n4D 5S 6C 7D 9H\n2D 3S 6H 6…  2D 4C 5H 6H                               0
+  67  kelmar        .............................\n........…  ......|||...........|||......\n......||…  1
+  68  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  1
+  69  tavrik        statute\nswiss                            mommy                                     1
+  70  dornic        7C 8H 10H 10C\nAD 4H 5C JD\n3C 4D 6C JH…  7S 8D 10D 10S                             1
+  71  borsel        2 3 6 3 1\n1 5 5 3 1                      3 1 5 5 1                                 0
+  72  borsel        2 2 4 4 4\n3 2 4 2 2\n4 3 4 1 1           2 4 2 4 4                                 0
+  73  borsel        2 4 3 4 3\n4 3 3 6 5\n4 6 3 4 6           3 6 4 4 6                                 0
+  74  kelmar        ................................\n.....…  None                                      0
+  75  borsel        4 2 3 4\n6 3 3 3                          4 2 4 3                                   0
+  76  tresk         GRGGGRB\nRGRGGRRBBG\nRBGGBG               GGGGGG                                    0
+  77  borsel        2 2 2 2\n4 4 4 4                          None                                      0
+  78  tavrik        mixture\npizza                            plaque                                    1
+  79  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+  80  tresk         RGBBGBRBRG\nBRBRGG\nRRBRGGG               GBRGBRGRB                                 1
+  81  tresk         RGBRBGBGB\nGBRGRBGBRB\nRBGRBGB            GRBGBRB                                   0
+  82  tresk         GGGRGB\nRBBRGGBGR                         BGRBGR                                    0
+  83  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  0
+  84  wisbek        9:48\n11:12                               7:00                                      1
+  85  wisbek        1:36\n12:47                               7:42                                      1
+  86  dornic        4H 4S 6H 6S 9D QS\nAC JC QC KC            4D 4C 6D 6C 9H QC                         0
+  87  wisbek        1:31\n2:32\n10:40                         1:01                                      0
+  88  tresk         RRGGRR\nGBGGRRGGBG\nBGRBGBRGB             GGGGGG                                    0
+  89  borsel        6 6 4 6 6\n1 1 2 1 1                      1 1 4 1 1                                 1
+  90  borsel        3 5 3 3 2\n4 4 4 2 2                      2 2 5 5 2                                 0
+  91  dornic        6S 7H 8D 10H JD JC\n5H 5C 7S 8H 10C\n8S…  6C 7D 8H 10D JH JS                        0
+  92  tresk         RBBGRGBG\nRBRRGR\nGGRRGBBBBG              GBRGBRGRB                                 1
+  93  wisbek        4:08\n7:14\n8:16                          2:04                                      1
+  94  wisbek        10:50\n11:49                              12:48                                     1
+  95  dornic        6C 8D 9D QD QS\n4H 5S 7D JH\n3H 3S 9C Q…  6S 8H 9H QH QC                            0
+  96  tavrik        pill\nunhappy\nmarry                      zoom                                      1
+  97  wisbek        11:39\n12:57                              3:15                                      0
+  98  wisbek        3:05\n6:20\n7:25                          2:00                                      1
+  99  borsel        2 1 6 5 5\n2 5 5 2 5                      2 2 5 5 5                                 0
+ 100  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 101  wisbek        3:12\n4:16\n12:48                         1:12                                      0
+ 102  wisbek        8:20\n9:25\n11:35                         1:50                                      0
+ 103  tavrik        copy\nloop\nhill                          boot                                      1
+ 104  borsel        4 1 2 5 4\n3 1 3 4 4                      1 2 3 4 4                                 1
+ 105  dornic        6C 7C 10H JH\n5H 9H JC QH KS              6S 7S 10D JD                              0
+ 106  dornic        7H 7S 8S 10D JC QD\n2C 4S KD KC\nAC 3D …  7D 7C 8C 10H JS QH                        1
+ 107  kelmar        ..............................\n.......…  ..............'''.............\n.......…  0
+ 108  kelmar        ..............................\n.......…  ...."""......."""......."""...\n...."""…  0
+ 109  kelmar        ..............................\n.......…  ......|||............|||......\n......|…  1
+ 110  tavrik        begging\nbizarre\nneedles                 zoom                                      1
+ 111  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  1
+ 112  kelmar        ..............................\n.......…  None                                      0
+ 113  dornic        3H 4H 8H KS\nAS 4D 6D JS QC               3D 4D 8D KC                               0
+ 114  tavrik        area\nranger                              trait                                     1
+ 115  kelmar        ...........................\n..........…  .....|||...........|||.....\n.....|||..…  0
+ 116  borsel        5 4 3 4 2\n3 2 4 6 3                      4 2 5 3 4                                 0
+ 117  dornic        4H 10C JC KC\n4S 5H 7H 8D 10H             4D 10S JS KS                              1
+ 118  tavrik        removed\nupload\nesteem                   zoom                                      0
+ 119  kelmar        .............................\n........…  ..."""......."""......."""...\n..."""..…  0
+ 120  tavrik        famous\namusing\noutfit                   plaque                                    1
+ 121  dornic        2H 6C 7H 8C JD QC\n3S 5H 6S 8S QH QS\n4…  2D 6S 7D 8S JH QS                         0
+ 122  tresk         RGGGGBBR\nRRRRGRBGB\nGGBBBB               GGGGRR                                    0
+ 123  dornic        AS 2C 3C 5C 7H\n2S 6D 6C 8H\n3S 6H 7S 9…  AC 2S 3S 5S 7D                            0
+ 124  tresk         BRGBGR\nBGRGBRBRGR\nRBGRBRB               BGRBGBRGB                                 1
+ 125  tresk         RGRGBGBRB\nRBRBRBRB\nRBGRBRBGBG           GRGRGR                                    1
+ 126  tresk         GGGGBBBRB\nBBBGGGGR\nRGBBBB               GGGGRBB                                   1
+ 127  tresk         BRGRGBG\nRGRBGRBGBR\nBGRBGR               GRGBRB                                    0
+ 128  borsel        1 3 3 3 5\n3 3 3 3 3                      None                                      0
+ 129  tavrik        bulb\ntweet\nbeen                         mommy                                     1
+ 130  wisbek        1:47\n9:29                                2:37                                      0
+ 131  tavrik        attract\nunknown\ntwitter                 panama                                    1
+ 132  wisbek        1:45\n8:20\n9:25                          1:01                                      0
+ 133  tresk         RRBRBBRB\nGGGBBBBGG\nBBRRRRRBBB           RRGGGGRR                                  0
+ 134  borsel        3 5 5 4 2\n6 4 1 6 6                      1 1 4 5 6                                 0
+ 135  dornic        4D 7C 9D 10D JD\nAC 4S 5D 8D 9C KH\n3H …  4H 7S 9H 10H JH                           0
+ 136  wisbek        6:15\n7:50\n8:55                          1:14                                      0
+ 137  tresk         GGRRBB\nGBGRBRBRBR\nRBRBRGR               GGGGGG                                    0
+ 138  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  0
+ 139  wisbek        9:20\n10:25\n12:35                        3:50                                      1
+ 140  tavrik        embassy\nempty\nbuddy                     early                                     1
+ 141  tresk         RGRRRG\nRRBBBBRBB\nRRRRBBGBBB             GRBRBB                                    0
+ 142  borsel        6 1 3 2 3\n4 3 1 3 4\n4 4 1 5 1           1 1 2 6 5                                 1
+ 143  borsel        2 3 3 5 6\n3 3 1 6 2                      1 2 3 3 6                                 0
+ 144  wisbek        2:24\n8:00\n11:42                         12:36                                     0
+ 145  tavrik        bell\nknot\naccent                        boot                                      1
+ 146  kelmar        ................................\n.....…  .......|||.............|||......\n.....…  0
+ 147  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  0
+ 148  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+ 149  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  1
+ 150  tresk         BGGBGBGBBG\nGRGRRGGR\nGBGBBGGGB           GGGGGB                                    1
+ 151  dornic        4S 8S 9S JS QD KC\nAC 4H 5S 8C\n2S 6S 8…  4C 8C 9C JC QH KS                         0
+ 152  tavrik        empire\nassured\nunhappy                  zoom                                      0
+ 153  tavrik        anxious\nsqueeze\nunusual                 outrage                                   1
+ 154  wisbek        10:30\n11:29                              1:01                                      0
+ 155  tresk         BBGGGBB\nRGBBBBBGR                        GBBBBG                                    1
+ 156  dornic        2C 5S 6H 8H\n5C 6D 6C 7C 8C\nAC 7H 7S 8D  2S 5C 6D 8D                               0
+ 157  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  0
+ 158  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 159  tavrik        survey\nugly                              None                                      0
+ 160  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 161  borsel        2 5 3 2 3\n3 4 4 4 3\n4 4 1 4 2           3 2 3 2 2                                 0
+ 162  wisbek        5:29\n8:35                                3:58                                      1
+ 163  tresk         GBRBRB\nGBRBGRG\nBRGBGBGRGR               GRGRGR                                    0
+ 164  borsel        5 6 6 5 5\n6 6 3 5 2                      2 5 6 6 2                                 1
+ 165  kelmar        .............................\n........…  None                                      0
+ 166  tavrik        abbey\ninning\nbobby                      expert                                    0
+ 167  dornic        AD 6D 9H JH KH\n4S 5H 7S QH\nAH 2C 8C 1…  AH 6H 9D JD KD                            0
+ 168  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  1
+ 169  tavrik        belly\nboom\nbaby                         zoom                                      0
+ 170  tavrik        malaria\nunified                          outrage                                   1
+ 171  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 172  tresk         GRRBRB\nRRRGRBR\nGRRBRBBRR                RBRGRBR                                   0
+ 173  kelmar        ................................\n.....…  .......|||.............|||......\n.....…  0
+ 174  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  0
+ 175  dornic        AD 2D 6H 7D JH KD\n3C 4D 8H 8S            AH 2H 6D 7H JD KH                         1
+ 176  kelmar        .............................\n........…  ..."""......."""......."""...\n..."""..…  0
+ 177  borsel        4 2 4 4 5\n6 1 3 6 3                      1 3 6 6 3                                 0
+ 178  kelmar        ............................\n.........…  ......|||...........|||.....\n......|||…  0
+ 179  wisbek        1:16\n8:23                                1:50                                      0
+ 180  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 181  borsel        2 3 3 2\n1 2 2 4\n4 4 1 4                 3 3 2 3                                   1
+ 182  borsel        2 4 2 4\n3 3 5 1\n2 3 4 3                 3 3 4 2                                   0
+ 183  tresk         BRBRBR\nGBRBGBR\nBRGBRBRBRG               GRBRBR                                    0
+ 184  borsel        2 2 3\n1 2 4\n3 3 2                       1 1 2                                     0
+ 185  dornic        AC 4S 6S 8S 9S 10C\n3H 7D 9H QC           AS 4C 6C 8C 9C 10S                        1
+ 186  borsel        5 6 3 3\n4 2 3 2                          2 4 3 2                                   0
+ 187  borsel        1 5 5 1 1\n6 3 2 1 1                      1 1 5 5 1                                 0
+ 188  kelmar        ................................\n.....…  None                                      0
+ 189  tresk         RBGRBRGBR\nBRGGRB\nGGBBGGBBGG             BGBBGB                                    0
+ 190  wisbek        4:12\n10:30\n12:36                        6:18                                      1
+ 191  dornic        AH 5D 6H 6D 8D\n9H 10S JH QH\n7D JC KD …  AD 5H 6H 6D 8H                            0
+ 192  kelmar        ..............................\n.......…  ...."""......."""......."""...\n...."""…  0
+ 193  dornic        AS 7S 8D 9D KH KD\nAH 2D 3C 9S JH\n3D 5…  AC 7C 8H 9H KH KD                         0
+ 194  kelmar        ..........................\n...........…  ..."""......"""....."""...\n...""".....…  0
+ 195  dornic        5D 6D 6S 7H\n5S 8H 9S QH\n5H 7C JH KH KS  5H 6H 6C 7D                               0
+ 196  tresk         RRGGBBBBRR\nRBRRBBB\nRGGGRRRG             GGGGGG                                    0
+ 197  borsel        6 4 5 6 5\n6 2 2 6 2                      6 2 2 2 6                                 0
+ 198  wisbek        3:33\n5:35\n12:42                         1:01                                      0
+ 199  dornic        4S 9S JD KD\nAD AS 7H 9C KS\nAC 5D 7D 1…  4C 9C JH KH                               0
+ 200  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  1
+ 201  tresk         RBBBRRRBG\nBRRRGBGB\nGGGGBRRBBR           GBRGBRGRB                                 0
+ 202  wisbek        9:47\n11:38                               1:02                                      0
+ 203  borsel        1 3 1 3 1\n3 1 2 2 3\n1 1 1 2 2           1 1 1 3 3                                 0
+ 204  tresk         RBBBGRRRR\nRGRRRR\nGRRRGGRR               RRGRRR                                    0
+ 205  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  0
+ 206  wisbek        8:24\n11:33\n12:36                        5:15                                      1
+ 207  dornic        2C 5H 6C 8S JS QH\nAD 4D 8H 8D 10C\nAC …  2S 5D 6S 8C JC QD                         0
+ 208  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  0
+ 209  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  0
+ 210  tavrik        unique\njimmy                             zoom                                      1
+ 211  wisbek        3:21\n6:12                                6:30                                      0
+ 212  wisbek        7:50\n11:20                               1:03                                      0
+ 213  wisbek        8:20\n10:30\n11:35                        1:02                                      0
+ 214  tresk         RRRRBRB\nGGRGGGRR\nRRRBRBBBR              RRGGGGRR                                  0
+ 215  borsel        1 3 1 2 6\n1 5 1 5 1                      1 2 1 6 3                                 0
+ 216  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  0
+ 217  wisbek        6:06\n11:11                               2:02                                      1
+ 218  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  0
+ 219  dornic        2D 5C 7D 8H\nAH AD 9S 10S\n3S 4C 4S 5S …  2H 5S 7H 8D                               0
+ 220  borsel        3 2 2 2 3\n1 4 4 2 1\n4 1 4 4 4           1 4 1 1 1                                 1
+ 221  tavrik        getting\nriver                            trait                                     1
+ 222  dornic        5S 7S 10C JC\n5H 10S JD JS KD\n5C 8C 9S…  5C 7C 10S JS                              0
+ 223  tresk         BRGRBRBGBG\nGRBRBG\nBBRRBBRR              GGGGGG                                    0
+ 224  kelmar        ...............................\n......…  ......|||.............|||......\n......…  0
+ 225  tresk         BGBBGGB\nGRRRRGGR\nBRRRBRRBBB             BGBBGB                                    1
+ 226  tresk         BGGBBGGRBB\nBGBGRRBBB\nGGBBRBR            GGRBBB                                    1
+ 227  kelmar        .............................\n........…  None                                      0
+ 228  tresk         GGGGGB\nBRGGGGGBR\nBRBRRRRR               RRRRRGRG                                  0
+ 229  borsel        3 3 3 3 3\n3 3 1 1 1                      None                                      0
+ 230  tresk         RGRBGGBGGB\nGGGRGBBG\nBRGGRGGGB           GGGGGB                                    1
+ 231  tresk         GGGRGRRRRR\nRBBRRR                        RRRRRGRG                                  1
+ 232  borsel        1 5 3 3\n3 3 3 3                          None                                      0
+ 233  tavrik        aiming\ncooking\nmanning                  issuing                                   1
+ 234  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 235  wisbek        5:12\n8:00\n10:16                         4:08                                      0
+ 236  borsel        4 2 2 1\n4 3 3 3                          4 3 2 2                                   1
+ 237  tresk         BBGBGG\nGBGBBBGBBB\nRRRBRBB               GGGGGB                                    0
+ 238  dornic        AD 2S 4D 6D 8S\n3H 8C JS KD               AH 2C 4H 6H 8C                            0
+ 239  kelmar        ...........................\n..........…  ............'''............\n..........…  0
+ 240  borsel        3 2 3 2 3\n1 3 3 3 3\n3 2 2 1 1           3 3 3 3 3                                 1
+ 241  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  0
+ 242  tresk         BRBBRB\nRRRRRRR                           RRGGGGRR                                  1
+ 243  dornic        2C 8D 10D JH\n3S 6H 9C 9S 10S\n2H 7H 9H…  2S 8H 10H JD                              1
+ 244  borsel        1 2 1 1 1\n6 3 3 6 4                      3 2 4 4 3                                 1
+ 245  tavrik        ally\nempty\nloop                         boot                                      1
+ 246  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+ 247  wisbek        9:09\n12:12                               3:03                                      1
+ 248  kelmar        ...............................\n......…  ......|||.............|||......\n......…  1
+ 249  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  0
+ 250  wisbek        4:00\n8:20\n11:35                         1:02                                      0
+ 251  wisbek        10:20\n11:19                              12:18                                     1
+ 252  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  1
+ 253  borsel        4 6 3\n5 2 5                              2 5 2                                     0
+ 254  dornic        2H 4H 4D 8H JH\nAH AD 2D 3H 5S QC\n2S 7…  2D 4H 4D 8D JD                            0
+ 255  wisbek        7:11\n12:44                               7:00                                      0
+ 256  tresk         BBRRBGBG\nRBRBRRBBGG\nRRBBBG              GRRBRB                                    0
+ 257  tavrik        quick\nexposed                            relaxed                                   1
+ 258  tavrik        object\nbrett\ntext                       expert                                    1
+ 259  tavrik        prop\nthee                                mommy                                     1
+ 260  borsel        5 5 1 6\n4 5 5 6                          5 5 4 6                                   0
+ 261  dornic        3H 3D 3S 8C\nAD 2S 4D 4C 6S\n5H 8S 9D 1…  3H 3D 3C 8S                               0
+ 262  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  1
+ 263  borsel        3 3 1 1\n2 3 2 3\n2 3 2 1                 3 2 3 2                                   0
+ 264  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 265  dornic        4D 8H 10H 10S KD KS\nAS 4S 7D QD\n5S 6H…  4H 8D 10D 10C KH KC                       0
+ 266  kelmar        ..........................\n...........…  .....|||..........|||.....\n.....|||...…  0
+ 267  wisbek        5:50\n11:20\n12:25                        1:01                                      0
+ 268  wisbek        6:11\n9:00                                1:44                                      1
+ 269  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  0
+ 270  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  0
+ 271  dornic        4C 10C JD QS\n4H 7C 10D QD KD\n4D 9C 10…  4S 10S JH QC                              1
+ 272  wisbek        1:41\n12:52                               1:50                                      0
+ 273  dornic        5C 5S 8C 8S JD QD\n6H 9S JC KH KC\n4D 9…  5C 5S 8C 8S JH QH                         0
+ 274  wisbek        4:50\n6:00\n7:05                          3:15                                      0
+ 275  kelmar        ................................\n.....…  None                                      0
+ 276  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 277  dornic        4S 6C 8D JH QH\n5H 7H 10H 10C\n5D 6H 8S…  4C 6S 8H JD QD                            0
+ 278  kelmar        ............................\n.........…  ..."""......."""......"""...\n..."""...…  0
+ 279  wisbek        1:50\n2:55\n4:05                          1:02                                      0
+ 280  dornic        4H 7C 10D QD KD\n5D 6D 9H JD JC KS\n2D …  2D 4H 6D 6C KD                            0
+ 281  dornic        AS 5D 5C 7C 9H\nAD 4C 8C 9D\n6H 6D 8H 9S  AC 5H 5S 7S 9D                            0
+ 282  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  1
+ 283  kelmar        ..............................\n.......…  ......|||............|||......\n......|…  0
+ 284  kelmar        ...........................\n..........…  .....|||...........|||.....\n.....|||..…  1
+ 285  tresk         GGBRGRRRG\nBGBGBRGG\nGBBBGR               GRBRBB                                    0
+ 286  kelmar        .............................\n........…  None                                      0
+ 287  kelmar        ..............................\n.......…  ......|||............|||......\n......|…  0
+ 288  tavrik        pope\nbuzz                                zoom                                      1
+ 289  tresk         GGBGGG\nRGBRRGGGGR                        GGGGBG                                    0
+ 290  dornic        3H 6H 6D JC KH KS\n3S 4H 7S 9H            3D 6H 6D JS KD KC                         0
+ 291  tresk         BRBRRBRB\nBGRGRGB\nBGRBGBRGB              BGGGRRGGGB                                1
+ 292  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  0
+ 293  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 294  tresk         RGBRBBR\nRBBGGRBRG\nRBRGBG                GGGGGG                                    0
+ 295  tresk         RBRGBBR\nBGRBRBRG\nGBRGBR                 GBRGBRGRB                                 1
+ 296  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.........…  0
+ 297  tresk         BGBBGG\nGGGBBBGGG\nBBRRBBRR               GGGGGB                                    0
+ 298  dornic        AC 2D 2C 2S 4S 6H\n4D 6D 9C 10S\nAD 3C …  AS 2H 2C 2S 4C 6D                         0
+ 299  tresk         BRGGGBBGG\nRRGGBGBG                       GGGGRGBB                                  0
+ 300  kelmar        ...............................\n......…  ...."""......."""......."""....\n....""…  0
+ 301  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 302  wisbek        1:12\n7:48                                4:48                                      1
+ 303  kelmar        ............................\n.........…  .............'''............\n.........…  0
+ 304  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  0
+ 305  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 306  tavrik        empty\nadopted\nobesity                   zoom                                      0
+ 307  borsel        6 3 5\n3 5 5\n6 4 3                       3 5 6                                     0
+ 308  kelmar        ............................\n.........…  None                                      0
+ 309  tresk         RGBBRG\nBRBGRRBGG\nGRGBBBR                GGRRBB                                    0
+ 310  dornic        3D 5S 7S 8C\n2S 4S 7D 8S\n3H 4D 6H 7C 8D  3H 5C 7C 8S                               0
+ 311  tavrik        beer\nbanana\npepper                      zoom                                      1
+ 312  dornic        9H 9C JD QH\n4H 4D 7D 7S JS QS\n3D 8C 1…  9D 9S JH QD                               1
+ 313  borsel        5 5 4 4\n6 4 4 5\n5 5 4 5                 5 4 4 4                                   1
+ 314  tavrik        zoom\npretty                              panama                                    0
+ 315  borsel        5 6 5 5 3\n3 4 3 2 4                      2 3 4 4 3                                 0
+ 316  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  0
+ 317  tavrik        prep\nease\nally                          zoom                                      1
+ 318  wisbek        2:35\n5:50\n7:00                          1:50                                      0
+ 319  borsel        4 4 2 4 4\n2 2 2 2 5                      2 4 4 4 4                                 0
+ 320  tavrik        exodus\nrequest\nextent                   zoom                                      1
+ 321  dornic        6C 8H 9H 10C QD\n2C 8D 8S 10H JD KD       6S 8D 9D 10S QH                           0
+ 322  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 323  wisbek        3:28\n10:35\n12:37                        1:26                                      1
+ 324  tresk         RRGRGRGRR\nRBGGBR\nRRGGGGRR               RBRGRBR                                   1
+ 325  borsel        5 4 5 6 3\n4 4 4 2 2                      2 4 4 4 2                                 0
+ 326  tresk         GGGRGG\nGBGBGGGR\nBGBGGGG                 GGGGGB                                    0
+ 327  tavrik        develop\nvery                             expert                                    0
+ 328  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n........…  0
+ 329  tresk         GRRRRR\nRBGRRRRRGR                        RRRRRGBG                                  1
+ 330  tresk         BRGRGRRGR\nBGGBBRG\nBGGGRGGR              GGGGGG                                    0
+ 331  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  0
+ 332  dornic        AD 2D 6S 8C 9C 10C\nAH 3D 6C 7S 8D 10H\…  AH 2H 6C 8S 9S 10S                        0
+ 333  borsel        3 3 3 1\n2 2 2 2                          1 1 1 1                                   0
+ 334  tavrik        scrub\nstrip                              extra                                     0
+ 335  borsel        6 4 4 2\n2 6 6 2                          None                                      0
+ 336  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+ 337  tavrik        variety\nwhereby                          mommy                                     1
+ 338  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  1
+ 339  borsel        3 5 5 4 6\n6 6 6 2 4                      4 6 3 3 3                                 0
+ 340  dornic        AS 7H 7D 9C KH\n2D 2C QH KD\nAD 2S 9H 1…  AC 7H 7D 9S KD                            0
+ 341  wisbek        10:40\n12:38                              2:48                                      1
+ 342  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~\n...........…  0
+ 343  tresk         GGGBGBRRRR\nGBBGRR\nBGBBRRB               GRBRBB                                    0
+ 344  wisbek        8:50\n10:00\n11:05                        1:02                                      0
+ 345  tavrik        digging\nreceive                          mommy                                     1
+ 346  wisbek        2:43\n4:34                                1:50                                      0
+ 347  dornic        AS 7S 9C JH JD KH\nAH AC 5S 10H 10S QD\…  AC 7C 9S JH JD KD                         0
+ 348  kelmar        .............................\n........…  ......|||...........|||......\n......||…  0
+ 349  kelmar        ..............................\n.......…  ......|||............|||......\n......|…  0
+ 350  kelmar        ...............................\n......…  ...."""......."""......."""....\n....""…  0
+ 351  wisbek        6:12\n8:16\n12:24                         3:06                                      1
+ 352  borsel        2 2 1\n2 2 5                              None                                      0
+ 353  tresk         BBBGGGR\nGGBGBRRRRG                       GGGGGG                                    0
+ 354  borsel        4 6 3\n3 3 3                              4 4 3                                     1
+ 355  dornic        AH 6H 6S 8C\n4S 8H 8S 10C QD\n5D 9D 9S …  AD 6D 6C 8S                               0
+ 356  borsel        2 2 2 2\n3 3 3 1                          3 1 1 1                                   1
+ 357  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  0
+ 358  tresk         BBBBGBGBR\nGGRGBBBB                       GBBBBRGB                                  0
+ 359  tresk         RRGGBGG\nGGBBBBGGGR                       GGGGGG                                    0
+ 360  wisbek        4:05\n7:20\n8:25                          1:02                                      0
+ 361  borsel        4 3 2 3\n3 1 3 1                          None                                      0
+ 362  kelmar        .............................\n........…  None                                      0
+ 363  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..........…  0
+
+per-name tally this round
+name             presented correct  hit-rate
+basten                  58      11     19.0%
+borsel                  56      15     26.8%
+dornic                  53       9     17.0%
+kelmar                  40       5     12.5%
+tavrik                  42      32     76.2%
+tresk                   60      18     30.0%
+wisbek                  55      23     41.8%

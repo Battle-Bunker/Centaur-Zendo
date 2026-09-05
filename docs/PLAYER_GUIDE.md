@@ -176,7 +176,9 @@ demo PP
 Rules: **three demos per game, total**, on any classes you like (the same class
 twice is allowed), at any time during training when you are not in a round. There
 are seven classes in the pool, so at least four of them you must crack from clues
-and 0/1 feedback alone. `status` shows `demos remaining`.
+and 0/1 feedback alone. `status` shows `demos remaining`. A demo never shows you a
+clue whose answer is the clue unchanged (a "0 fall" case): the server redraws until the
+answer actually differs, so every demo shows the edit.
 
 How to spend them:
 

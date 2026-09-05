@@ -426,6 +426,41 @@ async def test_training_time_limit():
 
 
 # ----------------------------------------------------------------------- demo
+class HalfIdentityPool(FakePool):
+    """ZERO: half the seeds are "n = 0" instances whose answer is the clue unchanged."""
+
+    def __init__(self):
+        super().__init__(names=("ZERO",))
+
+    async def generate(self, name, seed):
+        self.generate_calls += 1
+        self.generated.append((name, seed))
+        return f"{seed % 2} fall\nshelf"
+
+    async def solve(self, name, clue):
+        self.solve_calls += 1
+        return clue if clue.startswith("0") else clue.replace("shelf", "shelf/")
+
+    async def score(self, name, clue, solution):
+        self.score_calls += 1
+        return 1 if solution == await self.solve(name, clue) else 0
+
+
+@pytest.mark.asyncio
+async def test_demo_never_shows_an_identity_example():
+    """A demo whose answer is the clue unchanged teaches nothing; the game re-draws the seed
+    (up to a few times) until the answer differs, and still charges one demo."""
+    pool = HalfIdentityPool()
+    game, _p, _c = make_game(pool=pool, training_seconds=10_000, max_demos=3)
+    game.start_training()
+    team = game.join("a", "t")
+    for _ in range(3):
+        res = await game.demo(team, "ZERO")
+        assert res["solution"] != res["clue"] and res["score"] == 1
+    assert game.demos_remaining(team) == 0
+    assert pool.generate_calls >= 3          # re-draws happened when the first seed was even
+
+
 @pytest.mark.asyncio
 async def test_demo_budget_is_per_game():
     """SPEC §5: a team has max_demos demo requests for the whole game, usable at any time

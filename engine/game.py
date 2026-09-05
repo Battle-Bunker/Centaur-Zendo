@@ -34,6 +34,13 @@ if TYPE_CHECKING:  # pragma: no cover - the real dataclass lives in engine/confi
 
 log = logging.getLogger("zendo.game")
 
+DEMO_REDRAWS = 8  # demo(): re-draw a seed this many times to avoid an identity (n = 0) example
+
+
+def _norm(text: Any) -> str:
+    return "\n".join(line.rstrip() for line in str(text).strip().splitlines())
+
+
 LOBBY = "lobby"
 TRAINING = "training"
 FINAL = "final"
@@ -665,13 +672,18 @@ class Game:
             raise GameError("no_demo", f"all {self.max_demos} demo requests of this game are used")
         if name not in set(self.pool.names):
             raise GameError("unknown_challenge", f"no challenge named {name!r}")
-        seed = self._rng.getrandbits(32)
+        # A demo whose answer is the clue unchanged (an "n = 0" instance) teaches nothing, and a
+        # team has only three of them: draw again, a few times, until the answer differs.
         lease = getattr(self.pool, "lease", None)
-        if callable(lease):
-            async with lease() as sb:
-                clue, solution, score = await self._demo_calls(sb, name, seed)
-        else:
-            clue, solution, score = await self._demo_calls(self.pool, name, seed)
+        for _attempt in range(DEMO_REDRAWS):
+            seed = self._rng.getrandbits(32)
+            if callable(lease):
+                async with lease() as sb:
+                    clue, solution, score = await self._demo_calls(sb, name, seed)
+            else:
+                clue, solution, score = await self._demo_calls(self.pool, name, seed)
+            if _norm(solution) != _norm(clue):
+                break
         team.demos_used += 1
         result = {"type": "demo_result", "name": name, "clue": clue,
                   "solution": solution, "score": score}

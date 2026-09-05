@@ -198,6 +198,9 @@ final. A production organiser loads the whole collection and lets each game draw
 **Training round** (`start_round`): allowed iff phase==training, now < training_ends_at,
 `rounds_used < max_training_rounds`, and `now - last_round_started_at >= cooldown_seconds`
 (no cooldown before the first round). Rounds neither grant nor consume demos.
+**Demo** (`demo`): allowed iff phase==training, no round running, `demos_used < max_demos`;
+the server draws a fresh seed, and re-draws (up to `DEMO_REDRAWS` = 8 times) while the
+reference solution equals the clue, so a demo never shows an identity ("n = 0") example.
 Refusals return `error{code: "cooldown"|"phase"|"round_cap"|"busy", retry_at}`.
 
 Round loop (server side, per team, one at a time):

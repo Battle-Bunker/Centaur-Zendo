@@ -181,3 +181,6 @@ arithmetic members ((m−5h) mod 10) — drop them (judge said the same); two-po
 sometimes underdetermined (a third positive would help — Revision 3 says minimal pairs; keep, but
 watch fairness); the picture classes are "much more satisfying" than the lineups. dornic and
 borsel reach `calibrated` on 6 finals each (means 60 % / 58 %) — judges still needed.
+Engine change (2026-09-05, after picture pool 6 player b lost a demo to a `0 bump` tovel clue):
+`Game.demo` re-draws the seed while the reference answer equals the clue, so a demo never shows
+an identity example. Guide §6 and SPEC updated; test `test_demo_never_shows_an_identity_example`.

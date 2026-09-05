@@ -1991,6 +1991,21 @@
      },
      "score": 4.0,
      "version": 1
+    },
+    {
+     "advice": "Demos are dense (all rivals falsified at once); consider one demo with a single isolated wet/dry-edge contrast.",
+     "judge": "sonnet",
+     "nameable": "no",
+     "rubric": {
+      "clue_shape": 4,
+      "fun": 5,
+      "kid_contributes": 4,
+      "no_prereqs": 5,
+      "object": 5,
+      "rule_statable": 5
+     },
+     "score": 4.67,
+     "version": 2
     }
    ],
    "refined_versions": [
@@ -6318,13 +6333,13 @@
    "version": 3
   },
   {
+   "agents": 1,
+   "class": "kelmar",
    "id": "judge-kelmar-v2-man",
    "kind": "judge",
-   "class": "kelmar",
-   "version": 2,
-   "agents": 1,
-   "status": "running",
-   "started": 1788567039.9001083
+   "started": 1788567039.9001083,
+   "status": "done",
+   "version": 2
   }
  ],
  "profiles": {

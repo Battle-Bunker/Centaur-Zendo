@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 04:05 UTC
+# Ladder report — 2026-09-05 04:28 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -7,7 +7,6 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | dornic | 1 | testing | 50% | 1.00 | - | 50% (2) | 3.7 | 2 | 0 | opus-default,opus-kidproxy | - |
 | fennick | 3 | calibrated | 55% | 0.89 | 70% (3) | 11% (1) | 4.2 | 4 | 2 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 17% (6) |
 | borsel | 1 | testing | 42% | 0.85 | - | 42% (2) | 4.5 | 2 | 0 | opus-default,opus-kidproxy | - |
-| tavrik | 1 | testing | 68% | 0.63 | - | 68% (2) | - | 2 | 0 | opus-default,opus-kidproxy | - |
 | garrow | 3 | testing | 18% | 0.36 | 36% (2) | 0% (2) | 4.0 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 40% (4) |
 | LegoZendo2 | 1 | testing | 8% | 0.17 | 8% (2) | - | 2.6 | 2 | 0 | opus-default,opus-kidproxy | 100% (1) |
 | virel | 2 | too_hard | 8% | 0.16 | 11% (3) | 0% (1) | 4.3 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 28% (4) |
@@ -48,6 +47,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | SPQ | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | SUNZI | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | TARE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
+| tavrik | 2 | testing | - | - | - | - | - | 0 | 0 | - | 68% (2) |
 | TOPPLE | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | tovel | 5 | too_hard | 0% | 0.00 | - | 0% (4) | 3.5 | 4 | 0 | opus-default,opus-kidproxy,opus-lowdemo,opus-theorist | 26% (12) |
 | tresk | 2 | testing | - | - | - | - | - | 0 | 0 | - | 68% (2) |

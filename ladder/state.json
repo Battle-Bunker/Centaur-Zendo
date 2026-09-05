@@ -4888,9 +4888,12 @@
    ]
   },
   "tavrik": {
-   "current_version": 1,
+   "current_version": 2,
    "paradigm": "rule_family",
    "qual": [],
+   "refined_versions": [
+    1
+   ],
    "runs": [
     {
      "cadence": "4x0.5s/5s/3s/7cls/3demos",
@@ -4973,6 +4976,12 @@
      "file": "challenges/lab/tavrik.json",
      "note": "v1 rule family (words): 10 templates, 25 rules, one-letter-copy clause; scorer 821",
      "v": 1
+    },
+    {
+     "added": 1788582510.0693753,
+     "file": "challenges/lab/tavrik.json",
+     "note": "v2 lineup: 4 same-length candidates, matched trap profiles and letter counts; attacker 66%->34%",
+     "v": 2
     }
    ]
   },
@@ -8203,7 +8212,7 @@
    "class": "tavrik",
    "id": "judge-tavrik-v1-17eb",
    "kind": "judge",
-   "status": "pending",
+   "status": "done",
    "version": 1
   },
   {
@@ -8373,7 +8382,7 @@
    "kind": "refiner",
    "reason": "lineup",
    "started": 1788581113.6409276,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -8448,6 +8457,32 @@
     "tovel3b": "opus-kidproxy"
    },
    "version": 5
+  },
+  {
+   "agents": 1,
+   "class": "borsel",
+   "id": "refiner-borsel-v1-lineup",
+   "kind": "refiner",
+   "reason": "lineup",
+   "started": 1788582510.1020203,
+   "status": "running",
+   "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "tavrik",
+   "id": "players-tavrik-v2-04dc",
+   "kind": "players",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "tavrik",
+   "id": "judge-tavrik-v2-b9cc",
+   "kind": "judge",
+   "status": "pending",
+   "version": 2
   }
  ],
  "profiles": {

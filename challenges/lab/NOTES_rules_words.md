@@ -272,3 +272,233 @@ and every one of them is a game a kid has played ("find a word with a double let
 shows a word obeying a rule; and a kid contributes hypotheses immediately ("they all start and end
 the same!"). The nameable-pattern risk is real — these *are* nameable rules — but the difficulty
 lives in the size of U and in the excluded set, not in any single rule being obscure.
+
+---
+
+# Revision 2 — the lineup answer (2026-09-05)
+
+`docs/RULE_FAMILIES.md` §"Revision 2" + §5b. v1 is kept byte-identical as
+`challenges/lab/tavrik.v1.json`; the shipped file is `challenges/lab/tavrik.json`.
+
+## 9. What the first arena showed
+
+Both Opus teams took **no demo** on tavrik and scored **71 %** (dornic1a) and **66 %** (dornic1b)
+without ever naming a rule. Their method (`players/dornic1b/strategy.py`, `zpools.py`): build a
+pool of 273 word predicates, keep those true of *every* example, and emit a word satisfying **all**
+of them at once. The true rule is somewhere in the pool, so the answer satisfies it by
+construction; the eleven excluded traps cost nothing, because satisfying an *extra* rule is
+harmless. The only thing that actually held them was the novelty clause — their own notes record
+`tavrik – the answer must be >= 2 edits from every clue word. 0/4 -> 29/38` — i.e. a rule that is
+not part of the hidden rule at all, and which players fairly called invisible.
+
+**The fix.** The answer is now a *choice*: the clue is the same minimal identifying example set,
+then a blank line, then **four candidate words**, and the answer is which one obeys the rule.
+The intersection attack has nothing to intersect. The "≥ 2 edits" clause is **gone**, and with it
+the whole notion of a well-formed answer: `score` no longer even calls `words.is_word`.
+
+## 10. What changed, item by item
+
+| | v1 | v2 |
+|---|---|---|
+| clue | 2–3 example words | 2–3 example words, blank line, **4 candidate words of one length** |
+| answer | any dictionary word obeying R, ≥ 2 edits from every example | **one of the four**, verbatim (case/space-insensitive) or its index 1–4 |
+| floor | 6.8 % (random common word) | **25 %** |
+| freshness clause | "≥ 2 edits from every example" | **dropped** |
+| U | 10 templates, 25 rules | **unchanged** (still an antichain) |
+| eligible as the hidden rule | all 25 | **22** — template 0 is a competitor only (see below) |
+| excluded traps | 11, worth 0.6–21.4 % | 14, worth **exactly 25.0 % each** |
+| `score` | 821 chars, `words.is_word` + edit-distance test | **689 chars**, no dictionary at all |
+| `solve` | rejection-samples a valid word, 22 ms | picks the obeying candidate, **0.13 ms** |
+
+### Why "exactly *n* vowels" had to stop being the answer
+§5b wants **matched trap profiles**: the truth and all three decoys must fire the *same* set of
+example-consistent excluded rules. Two of the traps are "at least as many vowels as the least
+vowelly example" and "at most as many as the most vowelly one" — both consistent with 100 % of
+clues, both measured in v1. On a clue whose rule is "exactly *n* vowels", every example has *n*
+vowels, so those two traps fitted to the clue are `≥ n` and `≤ n`, whose conjunction **is** the
+rule. The truth fires both; a decoy, having ≠ *n* vowels, must fail one. Matching is impossible,
+and the generator rejected 100 % of those clues. So template 0 keeps its place in U — the examples
+must still kill "exactly 1 / 3 / 4 vowels" for the clue to be unique — but it is never drawn as
+the hidden rule. This is the same COMPETITOR device `tresk` uses for its 15 loose rules and
+`wisbek` for its minute-decades template. The other **9 templates / 22 rules** are drawn uniformly
+by template first, then parameter (mix over 2000 clues: 201–247 per template, expected 222).
+
+### How a decoy is built
+Three matching conditions, in order:
+
+1. **Trap profile** (§5b). `TRAPS()` fits the 14 excluded rules to the examples; `TBITS()` turns a
+   word into a bit per fitted trap. Decoys are grouped by that bit-vector, true candidates are
+   grouped the same way, and a lineup is only assembled from a bucket where both exist. Result:
+   all four candidates fire exactly the same traps on **500/500** clues, and every decoy fires at
+   least one (**500/500**).
+2. **Shape.** The decoys use the *same number of different letters* as the truth wherever the rule
+   allows (it cannot for "only three different letters", where 4 is the nearest legal value). This
+   was added after measuring: without it "pick the odd one out by shared letters" scored **46 %**,
+   and 73–74 % on the three-different-letters and letter-three-times clues, whose answers are
+   naturally the letter-poorest word of the four.
+3. **The attacker's own count.** `generate` carries `dornic1b`'s `tavrik_preds()` — all **273**
+   predicates, rebuilt bit for bit inside the challenge, including the six duplicate dict keys
+   (`stv`, `stc`, `env`, `enc`, `dblv`, `dblc`) that silently shadow the per-letter versions in
+   their own code. It intersects that pool over the examples (`C`) and then *aims* the true
+   candidate's rank on `popcount(PMS & C)`. Realised rank 237 / 86 / 98 / 79 over 500 clues, i.e.
+   at least one decoy out-counts the truth on **52.6 %** of clues (§2 asks for ≥ 40 %).
+   Finally `BUILD` picks, among the triples that respect that split, one that also puts the truth
+   at a randomly aimed place in the mutual letter-overlap order, which is what pulls "odd one out"
+   and "medoid" back to chance.
+
+## 11. The excluded rules (fitted to the clue)
+
+`fits` = the rule, fitted to the examples, is consistent with every one of them, so a player who
+forms it is never contradicted. `scores` = a player who always picks a candidate satisfying it.
+
+| excluded rule | fits | scores |
+|---|---|---|
+| at least as many vowels as the least vowelly example | 100 % | **25.0 %** |
+| at most as many vowels as the most vowelly example | 100 % | **25.0 %** |
+| it ends with a consonant | 67.8 % | **25.0 %** |
+| it contains every letter the examples share | 62.8 % | **25.0 %** |
+| it starts with a consonant | 49.0 % | **25.0 %** |
+| more consonants than vowels | 48.6 % | **25.0 %** |
+| the second letter is a vowel | 29.4 % | **25.0 %** |
+| the same number of letters as the examples | 24.2 % | **25.0 %** |
+| the second letter is a consonant | 17.2 % | **25.0 %** |
+| no letter is repeated | 9.0 % | **25.0 %** |
+| two vowels side by side | 4.4 % | **25.0 %** |
+| it rhymes (same last two letters) | 4.2 % | **25.0 %** |
+| the same first letter as the examples | 2.2 % | **25.0 %** |
+| it ends with a vowel | 1.0 % | **25.0 %** |
+
+Mean **5.2** of them are consistent with any one clue (min 2, max 9). In v1 the strongest of these,
+"contains every letter the examples share", paid 21.4 % and was the intended foothold; it now pays
+exactly chance, and so does its inverse and any count of traps. The v1 lesson ("this class never
+says *at least*") no longer pays on its own — the game is now purely *which* rules the class uses.
+Note one structural point: when the examples share exactly one letter and the rule is "it has a
+*c* in it", that trap **is** the rule, and no matched profile exists; the generator simply tries
+another minimal example set for the same rule (up to four), which is why `contains c` clues
+overwhelmingly share two or more letters.
+
+## 12. Three demos
+
+```
+CLUE                            ANSWER            hidden rule (private)
+
+tissue
+capped
+                          ->    decree (2)        it has a double letter
+reader
+decree
+madame
+decade
+
+kick
+food
+                          ->    level (4)         it uses only three different letters
+rural
+dummy
+rebel
+level
+
+squeeze
+execute
+express
+                          ->    major (4)         it has a j, q, x or z in it
+yours
+human
+today
+major
+```
+(seeds 19, 9, 24.) Note demo 2: all four candidates are five letters, all four fire the same
+traps, and `rural` (4 different letters), `dummy` (4) and `rebel` (4) sit one letter away from
+`level`'s 3 — the nearest a decoy can legally get.
+
+## 13. Witness table — 500 fresh clues (seeds 1e6 … 1e6+499)
+
+| witness | score |
+|---|---|
+| **the in-U intersection — a player who knows U** | **100.0 %** |
+| the true rule (`solve`) | **100.0 %** |
+| the true rule, answered by INDEX rather than verbatim | **100.0 %** |
+| **the candidate satisfying the MOST example-consistent predicates of the 273-strong outside pool** | **34.0 %** |
+| the candidate with the smallest edit distance to an example | 28.7 % |
+| the candidate with the most vowels | 28.3 % |
+| the candidate with the most letters in place with an example | 27.9 % |
+| the alphabetically first candidate | 27.6 % |
+| **pick candidate 1** | 27.0 % |
+| the candidate satisfying the FEWEST such predicates (the inverse heuristic) | 26.9 % |
+| **pick a random candidate (the floor)** | **25.0 %** |
+| the outlier of the four by shared letters | 24.3 % |
+| the candidate sharing the most letters with an example | 23.0 % |
+| the candidate with the most different letters | 22.6 % |
+| the medoid of the four | 21.0 % |
+| **each of the 14 excluded rules** | **exactly 25.0 %** |
+| a player whose universe is U + those 14, committing to a random survivor | 38.6 % |
+| a player who knows U minus its two rarest templates (alphabetical order .016, a letter three times .023) | 83.7 % |
+| … minus (starts-and-ends-the-same, three-different-letters) | 83.5 % |
+| … minus (contains-*c*, ends-with-*c*) | 82.6 % |
+| … minus (double letter, starts with a vowel) | 84.7 % |
+| … minus (j/q/x/z, three-different-letters) | 83.5 % |
+
+Other measured numbers (500 clues unless stated): uniqueness 500/500, minimality 500/500, exactly
+one candidate obeys the rule 500/500, all four candidates the same length 500/500, four distinct
+candidates 500/500, no candidate equal to an example 500/500, matched trap profiles 500/500, every
+decoy fires ≥ 1 consistent trap 500/500. Examples per clue (20 000 seeds): 2 → 56.5 %, 3 → 43.5 %.
+Candidate length 4/5/6/7 → 92/141/154/113. True-candidate position 135/113/122/130. Mean density
+of the hidden rule 0.073. The seed-0..19999 sweep produced **0** fallback clues and **0** duplicate
+clues.
+
+## 14. Validation
+
+`python tools/quickcheck.py challenges/lab/tavrik.json --seeds 300` →
+`OK tavrik gen=9.2ms score=0.25ms solve=0.25ms`, **no warnings**.
+
+| quantity | value | cap |
+|---|---|---|
+| `score` source | **689 chars** (v1: 821) | 1024 (the rule-family raise, `RULE_FAMILIES.md` §4) |
+| `generate` source | 19 328 (3.3 KB of it is the dropped-word list) | 50 000 |
+| `solve` source | 839 (v1: 4267) | 5 000 |
+| `generate` | **1.21 ms mean**, 12.1 ms max over 2000 seeds | 100 ms |
+| `score` | 0.12 ms mean, 0.51 ms max (junk included) | 50 ms |
+| `solve` | 0.13 ms mean, 1.5 ms max (v1: 22 ms) | 2 000 ms |
+| clue | ≤ 56 chars (v1: 23) | 1024 |
+| answer | ≤ 7 chars | 1024 |
+
+`generate` is ~14× slower than v1's 0.088 ms because a call now samples ~260 rule-breaking and
+~100 rule-keeping words *per candidate length*, computes each one's trap bits and scores it
+against the 273-predicate pool. Module-level tables (the 4501-word pool, its 25-bit U mask, its
+10-field trap features and its 273-bit outside-pool mask) cost **≈ 690 ms** once per worker
+(v1: 420 ms) and are not charged to `max_generate_ms`. `score` was checked candidate-by-candidate
+against `solve` on 600 clues × 4 candidates × (verbatim + index) with 0 disagreements, and rejects
+`""`, `"0"`, `"5"` (an out-of-range index), `"x"`, `"1"*100`, the clue itself, an example word, a
+word one letter from the answer, `"hel lo"` and the unicode digits `"١"`/`"²"` without raising; it
+forgives case and surrounding spaces (`" DECREE "` scores 1).
+
+## 15. Predicted classification
+
+**Calibrated, and materially harder than v1, with the risk now on the hard side.**
+
+* **Without a demo**: the shape (2–3 words, a gap, 4 words) reads as multiple choice, so every
+  probe is well formed from round 1 and the floor is a free 25 %. The round-1 method degrades from
+  "emit the intersection" to "pick the candidate satisfying the most surviving predicates", worth
+  **34 %**. Expect **25–40 %**.
+* **With a demo**: a demo now teaches only the format (echo one of the four lines), because there
+  is no convention left to learn. The way up is to reconstruct U, and the moment a player filters
+  U correctly they score 100 %, because the in-U intersection is exact. That is a cliff, not a
+  slope: 9 eligible templates from ~120 probes; a player who maps 7 of 9 scores **83 %**, one who
+  maps all 9 scores **100 %**. Expect **40–70 %**.
+
+Mean across the two ≈ **0.35–0.55** → `calibrated`. v1's ladder (6 % random → 21 % best trap →
+100 %) is replaced by 25 % → 34 % → 100 %.
+
+Levers if it comes back **too easy**: (i) k = 5 or 6 candidates (floor 20 % / 17 %); (ii) widen the
+contains/ends grids to more letters, which makes each *rule* rarer without adding a new *idea*;
+(iii) 2-example clues only. Too **hard**: (iv) k = 3 (floor 33 %); (v) let one decoy be an instance
+of a *U* rule the examples nearly allow, so a partly-mapped player is rewarded rather than punished.
+
+**12-year-old test**: better than v1. The object is still a word, every rule is still one breath
+and a game a kid has played ("find a word with a double letter"), and the task is now the one every
+kid knows from a puzzle book — *which of these four fits?* A kid can check four short words against
+a hypothesis by hand in seconds, and a wrong guess is now informative (one of four, not one of
+56 176). What is lost is the freedom to answer with the first word they think of. One residual
+blemish inherited from v1: the 4501-word pool still contains a few proper nouns the drop list
+missed (`jimmy`, `larry`, `lucy`, `warsaw`, `canada`), which can now surface as candidates as well
+as examples.

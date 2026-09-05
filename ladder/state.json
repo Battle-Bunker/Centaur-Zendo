@@ -7155,7 +7155,7 @@
    ]
   },
   "norvel": {
-   "current_version": 5,
+   "current_version": 6,
    "qual": [
     {
      "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
@@ -7235,7 +7235,8 @@
     1,
     2,
     3,
-    4
+    4,
+    5
    ],
    "runs": [
     {
@@ -8014,6 +8015,12 @@
      "file": "challenges/lab/norvel.json",
      "note": "salience: 4-6 bars (was 7), caption 'n snare slip', right-aligned labels; solve/score byte-identical to v4",
      "v": 5
+    },
+    {
+     "added": 1788612998.1982467,
+     "file": "challenges/lab/norvel.json",
+     "note": "two rows (hat/snare), hat gaps drawn _; a snare hit under a gap skids to the next tick; caption 'n snare slip'; foothold 13%, best blind rendering 18%",
+     "v": 6
     }
    ]
   },
@@ -15780,7 +15787,7 @@
    "kind": "refiner",
    "reason": "kid 3.67 twice: the three-row column bookkeeping is the friction; try a two-row version and a visual anchor",
    "started": 1788610762.6750824,
-   "status": "running",
+   "status": "done",
    "version": 5
   },
   {

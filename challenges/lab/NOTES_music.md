@@ -797,3 +797,157 @@ kid score, not at the rate.
 
 Scratch harness for every number above (not committed):
 `$SCRATCH/music5/{v5,attack5,narrow5,selftest5,extra,distinct,stats,sweep,build_json5,DESC}.py`.
+
+## norvel v6 (2026-09-05) — refiner: one comparison, and the gaps drawn as gaps
+
+Brief: v5 is **calibrated on rate** (the v4 design, byte-identical in `solve`/`score`: 100 %,
+100 %, 100 % with a demo; 15 %, 14 %, 14 % without, over six Opus finals) but the kid judge scored
+it **3.67 twice running**. The v5 verdict named the residue exactly: *"the remaining friction is
+the three-row, multi-bar column bookkeeping itself — matching hat-column to snare-column to
+kick-column by eye; try a visual anchor that lets the eye find 'hat hole above a snare hit'
+without manual column counting."* v6 takes that to its conclusion — **one comparison instead of
+two, and a glyph that makes the comparison a shape rather than a count**. `norvel.v5.json` is the
+byte-identical previous version.
+
+### The three drawings that were measured (same rule throughout, 3000 fresh clues each)
+
+| | rows to cross-match | glyph cells to read | longest line | demos where every skid reads clearly | best blind rendering | best wrong rule |
+|---|---|---|---|---|---|---|
+| **A — two rows, gaps `_`** (shipped) | **1** | **39.8** | **37** | **68 %** (83 % per skid) | **17.70 %** | **20.90 %** |
+| B — three rows, gaps `_` (v5 + the anchor only) | 2 | 59.7 | 37 | 35 % (62 %) | 21.40 % | 31.73 %* |
+| C — one row of two-character beats `beat x. _x x. x. \| xx x. _. x.` | 0 | 39.8 | **72** | n/a | — | — |
+
+* **B** is v5 with one glyph changed. Every witness row comes back **identical to v5 to the
+  second decimal** (echo 12.80 %, "ghost + one step later" 21.40 %, the strongest v5 rival
+  18.83 %): the anchor is free, but it does not touch what the judge objected to — the kick
+  column still has to be matched by eye, in the other direction, before the question opens.
+* **C** collapses the pairing into a token (`_x` is *literally* "gap over a hit") and needs no
+  eye-tracking at all — and it stops being a drum tab. One 72-character line of two-character
+  cells is the "opaque code" DESIGN_LOOP scores 2/5 on `clue_shape`; rejected on the object, not
+  on the rate.
+* **A** wins on both halves: the read burden falls by a third *and* the number that decides the
+  blind rate improves (best blind rendering 21.4 % → 17.7 %). \* B's "best wrong rule" is v5's own
+  table (the rivals differ between a two-row and a three-row rule, so the columns are not directly
+  comparable); the three v5 rows I did re-run against B came back identical to v5's.
+
+### The class as shipped (seed 77)
+
+```
+  hat |x_xx|xx_x|_xxx|_x_x|x__x|        hat |x_xx|xx_x|_xxx|_x_x|x__x|
+snare |.x..|x...|x...|.x..|.x..|   ->  snare |.-x.|x...|-x..|.x..|.--x|
+3 snare slip                            3 snare slip
+```
+
+**The rule (one clause).** A snare hit with **no hat above it** — a hit sitting under a gap in the
+hat's ticking — **skids late**: it is drawn `-` where it stood, `-` on across the gap, and lands
+`x` on the first step where the hat is ticking again. Kid sentence: *"if the hat isn't ticking
+over a snare hit there's nothing holding it, so it slides along until the hat comes back in."*
+In that one picture: two hits skid one step, one sits under a two-step gap and skids two, one has
+the hat above it and stays, and one stays although a gap is right beside it — **the gap has to be
+above the hit, not next to it**.
+
+### What changed
+
+1. **The kick row is gone.** v4/v5 asked for "no hat above it AND no kick under it": two columns,
+   in opposite directions. The selection is now visible in the picture, and that is deliberate —
+   the caption's offline checksum becomes nearly free, but the checksum was never the difficulty.
+   The player evidence is unambiguous: tovel3a (`lad-tovel-v7-3`) wrote *"norvel | columns with a
+   snare hit and no hat and no kick | UNKNOWN (11 edits tried) | count certain, edit unknown"*,
+   and tavrik1b, who spent a demo, verified the count on 63/63 clues and then needed the demo
+   only for the drawing. What the demo sells is the **rendering**, and no rendering is guessable:
+   the best blind attack scores **17.70 %**.
+2. **Hat gaps are drawn `_`.** A gap in the ticking looks like a gap; `_` over `x` is one local
+   shape. In the answer the dash trail lies exactly under the `_` run, so the demo shows the hit
+   crossing the gap and landing where the hat comes back. The scorer maps `_` → `.` before
+   comparing, so an answer that redraws the gaps as dots scores identically (100 %).
+3. **Two new plants, both about "above".** Every clue carries a gap **right after** a snare hit
+   and a gap **right before** one, with those hits staying put. They take the two rivals that the
+   single comparison invites — "lone hits + the hits just after a gap" and "… just before a gap" —
+   from 18.9 % and 34.0 % to **0.00 %**.
+4. **The n = 1 skid is two steps half the time** (v5: never), so "it moves one step later" is
+   contradicted by the harvest as well as by every n ≥ 2 picture: 21.4 % → **17.7 %**.
+5. **One hit that stays has more room after it (≥ 3 free steps) than any hit that skids.** v5's
+   readable-landing preference had leaked into "the n hits with the biggest gap after them"
+   (20.3 %); with this decorrelation the preference is kept at full strength, that rival sits at
+   **18.5 %**, and readable demos go **35 % → 68 %**.
+6. **The grid is v5's** — `B = (4,4,5,5,6)[n]`, 4.97 bars — **with one row fewer**: 39.8 glyph
+   cells against 59.7, clue ≤ 88 chars against 126. Four bars was tried and rejected: the n = 2
+   and n = 3 clue spaces collapse to **27 %** and **2 %** distinct pictures over 60 000 seeds
+   (97 % and 83 % at five bars).
+7. **The caption is unchanged**, `<n> snare slip`. Kept / dropped / reworded / moved / replaced by
+   v4's `n slip`: all 100 %. Rejected again, with reasons: `hi-hat` as a label (`-` is a compared
+   glyph); a fancier bar line (`solve`/`score` walk the grid by skipping `|`); drum-tab `o` for
+   the snare (it would put `o` in the compared alphabet, and a prose line like "moved two" would
+   become a spurious row — the new `len > 3` line filter covers that case, but the risk is not
+   worth the leniency).
+
+### Witness table (3000 fresh clues, recomputed from the shipped JSON)
+
+| strategy | v5 | v6 |
+|---|---|---|
+| the true rule (`solve`) | **100.00 %** | **100.00 %** |
+| **clue echoed unchanged** (the foothold — the `0 snare slip` clues) | 11.70 % | **12.80 %** |
+| right hits, hit moves one step later, no ghost | 11.70 % | 12.80 % |
+| **right hits, ghost + hit one step later** (the demo-less best) | **21.23 %** | **17.70 %** |
+| right hits, ghost at the origin only, lands right | — | 17.70 % |
+| right hits, stays + a copy one step later / glyph change in place | 11.70 % | 12.80 % |
+| right hits, moves to the landing without ghosts / stays + a copy there | 11.70 % | 12.80 % |
+| right hits, ghosts but skidding EARLIER / landing on the previous tick | 11.70 % | 12.80 % |
+| right hits, deleted / dashes over the gap but the hit stays / lands in the gap | — | 12.80 % |
+| right hits, skids one step too far | — | 15.37 % |
+| every snare hit skids · the same edit applied to the hat row | 0.00 % | **0.00 %** |
+| **lone hits + the hits just AFTER a gap / just BEFORE a gap** | — | **0.00 %** |
+| every hit just before a gap (not under one) | — | 0.00 % |
+| every hit with ≥ 2 free steps after it | 12.8 % | 0.03 % |
+| all the lone hits but the last | — | 12.80 % |
+| the n leftmost snare hits | 12.77 % | 14.30 % |
+| only the hits under a TWO-step gap / only under a ONE-step gap | — | 16.50 / 17.70 % |
+| the n hits with the biggest gap after them | 20.3 % | 18.53 % |
+| the n rightmost snare hits | — | 20.90 % |
+| n random lone hits · lone hits with a spurious extra condition | 24.5–31.7 % | (no kick row) |
+| demo replay · empty · junk · unicode · 4000 chars · one row · rows swapped · row shifted · one line · one wrong hat cell · a third row added | 0.00 % | **0.00 %** |
+| leniency: bare rows, other labels, beat header, blanks, CRLF, tabs, prose (with and without full stops), spaces round the bars, gaps redrawn as dots, caption kept/dropped/reworded/moved/`n slip` | 100 % | **100 %** |
+
+Gradient: 0 % (well-formed but the wrong hits) → 12.8 % (the format and the `0` clues) → 15–21 %
+(the right hits with the drawing wrong, or a plausible wrong selection) → 100 %. **Nothing
+without the insight exceeds 21 %**, against v5's 31.7 %.
+
+### Plants (3000 clues)
+
+| planted near-miss | share |
+|---|---|
+| ≥ 2 hits that stay under a ticking hat | 100.00 % |
+| a gap right AFTER a hit that stays | 100.00 % |
+| a gap right BEFORE a hit that stays | 100.00 % |
+| ≥ 2 gaps over empty steps | 100.00 % |
+| a gap with nothing beside it at all | 53.93 % |
+| a one-step / a two-step skid (of the n ≥ 1 clues) | 95.76 % / 94.38 % |
+| both skid lengths in one picture (of the n ≥ 2 clues) | 100.00 % |
+| **every skid's origin and landing read as separate marks** (per demo / per skid) | **68.3 % / 83.1 %** (v5: 35.4 % / 62.3 %) |
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/norvel.json --seeds 200` → **OK**, one warning
+(`score accepts the clue itself as a solution`) which is the intended `0 snare slip` foothold and
+is raised identically by kelmar, fennick and durnel. Sizes: score **317/512**, solve 488/5000,
+generate 4982/50000; clue ≤ **88** chars (v5: 126), solution ≤ 88. `generate` deterministic,
+**0.26 ms** mean over 60 000 seeds (worst 3.9 ms, **1 fallback in 60 000**, 92 % distinct
+pictures — 86/95/97/83/98 % for n = 0..4); `solve` 0.002 ms and scores 1 on **3000/3000** fresh
+clues; `score` 0.016 ms (0.082 ms on junk). Scorer: **0 raises, 0 non-binary results, 0 false
+positives on 12 000 junk strings**; **0 disagreements** with an independent re-implementation on
+24 000 mutated answers; the JSON reproduces the scratch harness on 20 000 seeds exactly.
+
+### The kid reading expected
+
+Two rows and a caption. The hat ticks along the top and stops in places you can *see* (`_`); the
+snare plays underneath. The caption says how many snare hits slip. One demo shows a hit stepping
+out of its slot and sliding along under the gap until the hat comes back in — and in the same
+picture, a hit that stayed because the hat was ticking over it, and a hit that stayed although
+the gap was right beside it. Read aloud: **"if the hat isn't ticking over a snare hit there's
+nothing holding it, so it slides along until the hat comes back in."** That is one breath, one
+comparison, one row above. The risk is unchanged from v4/v5 and is the fennick shape: without a
+demo the *drawing* (the dash trail and the landing) is not guessable, which is where the 12 % /
+100 % split comes from.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/music6/{designA,designB,attack,selftest,compare,sweep,gen_src,build_json,verify_json,DESC}.py`.

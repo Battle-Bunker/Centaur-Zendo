@@ -6445,7 +6445,23 @@
   "wisbek": {
    "current_version": 2,
    "paradigm": "rule_family",
-   "qual": [],
+   "qual": [
+    {
+     "advice": "Draw a small clock face so geometric rules pop; bias demo seeds so three demos sample different template families.",
+     "judge": "sonnet",
+     "nameable": "yes",
+     "rubric": {
+      "clue_shape": 5,
+      "fun": 3,
+      "kid_contributes": 4,
+      "no_prereqs": 4,
+      "object": 5,
+      "rule_statable": 4
+     },
+     "score": 4.17,
+     "version": 2
+    }
+   ],
    "refined_versions": [
     1
    ],

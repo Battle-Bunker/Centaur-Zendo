@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 04:48 UTC
+# Ladder report — 2026-09-05 04:50 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -56,7 +56,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | velk | 2 | testing | 0% | 0.00 | - | 0% (2) | 2.4 | 2 | 0 | opus-default,opus-kidproxy | 100% (2) |
 | volute | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | warren | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
-| wisbek | 2 | testing | - | - | - | - | - | 0 | 0 | - | 75% (2) |
+| wisbek | 2 | testing | - | - | - | - | 4.2 | 0 | 0 | - | 75% (2) |
 | wolf | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | Wordz | 1 | testing | 0% | 0.00 | - | 0% (2) | 2.8 | 2 | 0 | opus-lowdemo,opus-theorist | 100% (2) |
 | zebu | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

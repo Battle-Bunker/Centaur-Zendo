@@ -1703,6 +1703,79 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 4
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 44,
+       "final_presented": 331,
+       "final_rate": 0.13293051359516617,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         5,
+         56
+        ],
+        [
+         7,
+         54
+        ],
+        [
+         8,
+         57
+        ],
+        [
+         17,
+         67
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 360,
+       "final_presented": 360,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         5,
+         68
+        ],
+        [
+         15,
+         58
+        ],
+        [
+         41,
+         41
+        ],
+        [
+         40,
+         40
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
+     "target": false,
+     "version": 4
     }
    ],
    "status": "calibrated",
@@ -3081,9 +3154,82 @@
      "run": "lad-garrow-v5-2",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 339,
+       "final_presented": 339,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         2,
+         49
+        ],
+        [
+         24,
+         60
+        ],
+        [
+         67,
+         67
+        ],
+        [
+         47,
+         47
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 38,
+       "final_presented": 374,
+       "final_rate": 0.10160427807486631,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         4,
+         50
+        ],
+        [
+         11,
+         57
+        ],
+        [
+         7,
+         50
+        ],
+        [
+         7,
+         45
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "added": 1788587978.7506173,
@@ -3131,8 +3277,82 @@
      "version": 1
     }
    ],
-   "runs": [],
-   "status": "untested",
+   "runs": [
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 41,
+       "final_presented": 301,
+       "final_rate": 0.1362126245847176,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         1,
+         49
+        ],
+        [
+         5,
+         54
+        ],
+        [
+         3,
+         57
+        ],
+        [
+         8,
+         50
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 42,
+       "final_presented": 332,
+       "final_rate": 0.12650602409638553,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         11,
+         70
+        ],
+        [
+         7,
+         51
+        ],
+        [
+         11,
+         55
+        ],
+        [
+         6,
+         53
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
+     "target": false,
+     "version": 1
+    }
+   ],
+   "status": "testing",
    "versions": [
     {
      "added": 1788606658.4828022,
@@ -5665,6 +5885,79 @@
      "run": "lad-tovel-v7-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 310,
+       "final_presented": 310,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         6,
+         63
+        ],
+        [
+         58,
+         58
+        ],
+        [
+         61,
+         61
+        ],
+        [
+         49,
+         49
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 46,
+       "final_presented": 344,
+       "final_rate": 0.13372093023255813,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         7,
+         44
+        ],
+        [
+         10,
+         41
+        ],
+        [
+         9,
+         57
+        ],
+        [
+         5,
+         40
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "calibrated",
@@ -6077,6 +6370,79 @@
       "virel"
      ],
      "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 322,
+       "final_presented": 322,
+       "final_rate": 1.0,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         0,
+         48
+        ],
+        [
+         53,
+         53
+        ],
+        [
+         45,
+         45
+        ],
+        [
+         48,
+         48
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 97,
+       "final_presented": 347,
+       "final_rate": 0.27953890489913547,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         5,
+         53
+        ],
+        [
+         16,
+         53
+        ],
+        [
+         9,
+         52
+        ],
+        [
+         14,
+         55
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
      "target": false,
      "version": 3
     }
@@ -7232,6 +7598,79 @@
       "virel"
      ],
      "run": "lad-garrow-v5-2",
+     "target": false,
+     "version": 4
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 48,
+       "final_presented": 320,
+       "final_rate": 0.15,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         4,
+         65
+        ],
+        [
+         7,
+         58
+        ],
+        [
+         6,
+         58
+        ],
+        [
+         4,
+         62
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 53,
+       "final_presented": 344,
+       "final_rate": 0.15406976744186046,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         6,
+         52
+        ],
+        [
+         5,
+         54
+        ],
+        [
+         5,
+         41
+        ],
+        [
+         5,
+         53
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
      "target": false,
      "version": 4
     }
@@ -9932,9 +10371,82 @@
      "run": "lad-garrow-v5-2",
      "target": false,
      "version": 7
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 34,
+       "final_presented": 304,
+       "final_rate": 0.1118421052631579,
+       "profile": "opus-default",
+       "rounds": [
+        [
+         3,
+         53
+        ],
+        [
+         4,
+         63
+        ],
+        [
+         8,
+         62
+        ],
+        [
+         6,
+         66
+        ]
+       ],
+       "team": "tovel3a"
+      },
+      {
+       "cracked_round": 3,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 321,
+       "final_presented": 321,
+       "final_rate": 1.0,
+       "profile": "opus-kidproxy",
+       "rounds": [
+        [
+         4,
+         54
+        ],
+        [
+         14,
+         51
+        ],
+        [
+         52,
+         52
+        ],
+        [
+         48,
+         48
+        ]
+       ],
+       "team": "tovel3b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "durnel",
+      "felsim",
+      "kelmar",
+      "molvic",
+      "norvel",
+      "tovel"
+     ],
+     "run": "lad-tovel-v7-3",
+     "target": true,
+     "version": 7
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -14614,7 +15126,7 @@
    "reason": "demo-holder evidence for tovel v7 and felsim v1; more finals for durnel v2 and molvic v3",
    "run": "lad-tovel-v7-3",
    "started": 1788606760.8285558,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel3a": "opus-default",
     "tovel3b": "opus-kidproxy"
@@ -14674,7 +15186,7 @@
    "version": 3
   },
   {
-   "agents": 1,
+   "agents": 2,
    "class": "wisbek",
    "id": "players-lineup-pool-5",
    "kind": "players",

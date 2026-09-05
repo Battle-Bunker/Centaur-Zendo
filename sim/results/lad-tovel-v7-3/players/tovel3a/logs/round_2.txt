@@ -1,0 +1,418 @@
+Centaur Zendo round 2 (training)
+round_id : bdc62c8e93f94e9d9576b2a26ff5f0e2
+written  : 2026-09-05 11:45:22Z
+presented=400  answered=353  correct=158  skipped=47
+client answer latency: mean 0.136 ms  median 0.126 ms  max 1.240 ms  (n=401)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+   1  kelmar        .(~~)....(~~)....(~).....(~~).....(~).\…  .(~~)....(~~)....(~).....(~~).....(~).\…  1
+   2  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+   3  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+   4  kelmar        ..(~~~)...(~)...(~).....(~~~)...(~~~).\…  ..(~~~)...(~)...(~).....(~~~)...(~~~).\…  1
+   5  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+   6  felsim                      \__/        \__/    \__/\…                \__/                \__/\…  0
+   7  kelmar        .(~)....(~~~)...(~~).....(~)...(~~~)..\…  .(~)....(~~~)...(~~).....(~)...(~~~)..\…  1
+   8  durnel              RRR\n #### RRR           KKK     …        RRR\n #### RRR           KKK     …  1
+   9  felsim                      \__/    \__/\n           …                \__/\n            \__/\__…  0
+  10  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  11  durnel                    ####          UUU          …              ####          UUU          …  0
+  12  durnel                          KKK\n                …                        KKK\n            …  1
+  13  felsim                          \__/    \__/\__/\n   …                            \__/\n       …  0
+  14  norvel        hat   |x..x|x..x|xx..|xx.x|xx.x|..xx|\n…  hat   |x..x|x..x|xx..|xx.x|xx.x|..xx|\n…  0
+  15  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+  16  kelmar        ..(~)....(~~)...(~~)...(~)...(~)....\n.…  ..(~)....(~~)...(~~)...(~)...(~)....\n.…  1
+  17  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  18  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  19  durnel                                 ###           …                           ###           …  0
+  20  felsim                                  \__/\__/\n   …                            \__/\n       …  0
+  21  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  22  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  23  norvel        hat   |..xx|xxx.|x.xx|x..x|x.x.|xx.x|\n…  hat   |..xx|xxx.|x.xx|x..x|x.x.|xx.x|\n…  0
+  24  felsim                                      \__/\n   …                                \__/\n   …  0
+  25  kelmar        ..(~~).....(~)...(~~).....(~)...(~)..\n…  ..(~~).....(~)...(~~).....(~)...(~)..\n…  1
+  26  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+  27  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  28  norvel        hat   |.xxx|.xxx|xxx.|..xx|..xx|xx.x|\n…  hat   |.xxx|.xxx|xxx.|..xx|..xx|xx.x|\n…  0
+  29  kelmar        ..(~).....(~~).....(~~~)....(~).....(~~…  ..(~).....(~~).....(~~~)....(~).....(~~…  1
+  30  norvel        hat   |x.x.|xx.x|.xx.|xx..|.xxx|xxxx|\n…  hat   |xxxx|xx.x|xxx.|xx.x|.xxx|xxxx|\n…  0
+  31  felsim                          \__/    \__/\__/\__/\…                                \__/\__/\…  0
+  32  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  33  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n......…  None                                      0
+  34  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  35  norvel        hat   |x..x|x.x.|x.xx|xxxx|x..x|.x.x|\n…  hat   |x..x|x.x.|x.xx|xxxx|x..x|.x.x|\n…  0
+  36  norvel        hat   |x.xx|xx.x|xxx.|.xxx|.xx.|xxxx|\n…  hat   |xxxx|xxxx|xxxx|.xxx|.xx.|xxxx|\n…  0
+  37  kelmar        .(~).....(~)...(~~)....(~~)....(~~~)...…  .(~).....(~)...(~~)....(~~)....(~~~)...…  1
+  38  felsim                  \__/\__/        \__/        \…                            \__/        \…  0
+  39  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  40  durnel                                               …                                         …  1
+  41  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  42  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  43  norvel        hat   |x..x|xxx.|.xx.|xxx.|xx.x|xx..|x.…  hat   |x..x|xxx.|.xx.|xxx.|xx.x|xx..|x.…  0
+  44  norvel        hat   |x.x.|xx.x|.xx.|xx.x|x..x|.xxx|.x…  hat   |x.x.|xx.x|.xx.|xx.x|x..x|.xxx|.x…  0
+  45  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+  46  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1A  2X  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1A  2X  3…  0
+  47  felsim                      \__/\__/\__/        \__/\…                \__/\__/            \__/\…  0
+  48  norvel        hat   |..xx|..xx|x.x.|xx.x|..xx|x..x|\n…  hat   |..xx|.xxx|xxxx|xx.x|x.xx|xx.x|\n…  0
+  49  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+  50  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  51  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  52  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1Q  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1Q  2…  0
+  53  felsim                      \__/    \__/\n        \__…                \__/\n        \__/\__/\__…  0
+  54  felsim                  \__/        \__/\__/\__/\__/\…            \__/        \__/\__/\__/\__/\…  1
+  55  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+  56  norvel        hat   |xxxx|x.xx|.xxx|.xx.|.xxx|.xxx|\n…  hat   |xxxx|x.xx|.xxx|.xx.|.xxx|.xxx|\n…  1
+  57  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  58  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+  59  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  60  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  61  durnel                     ###     LLL\n             …               ###     LLL\n             …  0
+  62  durnel         NNN                                   …   NNN                                   …  0
+  63  kelmar        .(~~)...(~~~)...(~)....(~)...(~)......\…  .(~~)...(~~~)...(~)....(~)...(~)......\…  1
+  64  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  65  felsim                      \__/\__/    \__/\__/\n   …                \__/\__/    \__/\__/\n   …  1
+  66  durnel                       ####                    …                 ####                    …  1
+  67  norvel        hat   |xx.x|xx..|x.x.|.x.x|x..x|xx.x|\n…  hat   |xx.x|xx..|x.x.|.x.x|x..x|xx.x|\n…  0
+  68  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  69  durnel                           KKK                 …                         KKK             …  0
+  70  kelmar        ..(~)...(~~~)....(~)...(~~)....(~~).\n.…  ..(~)...(~~~)....(~)...(~~)....(~~).\n.…  1
+  71  durnel                           GGG\n               …                     GGG\n               …  1
+  72  felsim                  \__/\__/\__/\__/            \…            \__/\__/\__/\__/            \…  1
+  73  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  1
+  74  kelmar        ..(~).....(~~~)....(~~~)....(~)...(~~).…  ..(~).....(~~~)....(~~~)....(~)...(~~).…  1
+  75  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+  76  felsim                  \__/    \__/        \__/\n   …                    \__/        \__/\n   …  0
+  77  durnel                             ###\n             …                       ###\n             …  1
+  78  kelmar        .(~)...(~~)...(~).....(~~)....(~~~)....…  .(~)...(~~)...(~).....(~~)....(~~~)....…  1
+  79  kelmar        .(~)...(~~~)...(~~~)...(~~)....(~~~)...…  .(~)...(~~~)...(~~~)...(~~)....(~~~)...…  1
+  80  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  1
+  81  durnel                                     EEE       …                          EEE            …  1
+  82  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+  83  norvel        hat   |x..x|x.x.|.x.x|xxx.|xxx.|.xxx|\n…  hat   |x..x|x.x.|.x.x|xxx.|xxx.|.xxx|\n…  0
+  84  durnel               ###                   ####\n\n  …         ###                   ####\n\n  …  0
+  85  kelmar        .(~~~)...(~~)....(~~~)...(~~~)...(~~)..…  .(~~~)...(~~)....(~~~)...(~~~)...(~~)..…  1
+  86  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  87  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2T  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1T  2T  3…  0
+  88  kelmar        .(~)....(~~~)....(~)...(~).....(~~~)...…  .(~)....(~~~)....(~)...(~).....(~~~)...…  1
+  89  kelmar        .(~)...(~~~)....(~)....(~~)....(~)....\…  .(~)...(~~~)....(~)....(~~)....(~)....\…  1
+  90  durnel         ###     #### WWW                      …   ###     ####      WWW                 …  0
+  91  norvel        hat   |.xxx|xxxx|.xx.|x.xx|.xx.|.xxx|\n…  hat   |.xxx|xxxx|.xx.|x.xx|.xx.|.xxx|\n…  0
+  92  durnel                                    ###\n      …                              ###\n      …  1
+  93  felsim                      \__/\__/\n        \__/\__…                \__/\__/\n        \__/\__…  0
+  94  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+  95  norvel        hat   |xxxx|xxx.|xxx.|xxxx|.xx.|xx.x|xx…  hat   |xxxx|xxx.|xxx.|xxxx|.xx.|xx.x|xx…  0
+  96  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  97  felsim                  \__/        \__/        \__/\…                        \__/        \__/\…  0
+  98  kelmar        ..(~).....(~)....(~).....(~~~)...(~~)..…  ..(~).....(~)....(~).....(~~~)...(~~)..…  1
+  99  durnel                                 BBB ####\n    …                           BBB ####\n    …  1
+ 100  felsim                          \__/\__/\n        \__…                        \__/\n           …  0
+ 101  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 102  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 103  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 104  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 105  norvel        hat   |xx.x|x.x.|xx.x|xx.x|x..x|xx..|.x…  hat   |xx.x|xxxx|xx.x|xxxx|xx.x|xx.x|.x…  0
+ 106  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 107  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 108  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 109  felsim                  \__/    \__/        \__/\n   …            \__/\n        \__/\__/\__/\__…  0
+ 110  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 111  norvel        hat   |xx.x|xxxx|x.xx|x..x|x.x.|xx.x|x.…  hat   |xx.x|xxxx|x.xx|xx.x|xxxx|xx.x|xx…  0
+ 112  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  1
+ 113  kelmar        .(~~).....(~).....(~)....(~~~)...(~~)..…  .(~~).....(~).....(~)....(~~~)...(~~)..…  1
+ 114  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 115  felsim                  \__/\__/\__/                \…            \__/\__/                    \…  0
+ 116  durnel             DDD                               …       DDD                               …  0
+ 117  felsim                  \__/\__/    \__/\n        \__…            \__/\__/\n        \__/\__/\__…  0
+ 118  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 119  norvel        hat   |x.xx|xx..|x..x|xxxx|x.xx|x.xx|x.…  hat   |x.xx|xx..|x..x|xxxx|x.xx|x.xx|x.…  0
+ 120  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 121  felsim                  \__/\__/    \__/            \…            \__/\__/\n        \__/\__/\__…  0
+ 122  durnel              VVV             WWW  ###\n      V…            VVV         WWW  ###\n       …  1
+ 123  felsim                  \__/        \__/        \__/\…                                    \__/\…  0
+ 124  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 125  kelmar        ..(~~~)...(~~~)...(~).....(~)...(~~)...…  ..(~~~)...(~~~)...(~).....(~)...(~~)...…  1
+ 126  durnel         VVV      ####                   WWW\n …       VVV  ####                   WWW\n …  0
+ 127  felsim                  \__/            \__/\__/\n   …                                \__/\n   …  0
+ 128  felsim                  \__/    \__/\__/\__/\n       …            \__/    \__/\__/\__/\n       …  1
+ 129  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 130  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  1
+ 131  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 132  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 133  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 134  kelmar        .(~)....(~~)....(~~).....(~)...(~~)....…  .(~)....(~~)....(~~).....(~)...(~~)....…  1
+ 135  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 136  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 137  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 138  kelmar        .(~~).....(~~~)....(~)...(~)...(~).\n.'…  .(~~).....(~~~)....(~)...(~)...(~).\n.'…  1
+ 139  durnel                                   ####\n      …                             ####\n      …  0
+ 140  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.......…  None                                      0
+ 141  durnel                       ####           GGG\n    …                 ####           GGG\n    …  1
+ 142  kelmar        ..(~~~)....(~~)....(~).....(~~)...(~~).…  ..(~~~)....(~~)....(~).....(~~)...(~~).…  1
+ 143  durnel                                               …                                         …  1
+ 144  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 145  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 146  durnel         MMM      ###                         #…   MMM      ###                         #…  0
+ 147  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n<>…  None                                      0
+ 148  durnel                       DDD        ####      LLL…                 DDD        ####      LLL…  0
+ 149  norvel        hat   |.xx.|xxx.|x..x|..xx|..xx|xx.x|xx…  hat   |.xx.|xxx.|x..x|..xx|..xx|xx.x|xx…  0
+ 150  felsim                  \__/            \__/\n       …                            \__/\n       …  0
+ 151  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  1
+ 152  durnel              EEE      ####              CCC\n …             EEE ####          CCC\n     …  1
+ 153  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 154  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 155  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 156  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  0
+ 157  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2Q  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2Q  3…  0
+ 158  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 159  felsim                              \__/\__/\n       …                        \__/\__/\n       …  0
+ 160  norvel        hat   |xxxx|xxxx|.x.x|.xx.|xxxx|.x.x|x.…  hat   |xxxx|xxxx|.x.x|.xx.|xxxx|.x.x|x.…  0
+ 161  kelmar        .(~~~)...(~~)...(~)....(~)....(~~~).\n.…  .(~~~)...(~~)...(~)....(~)....(~~~).\n.…  1
+ 162  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2J  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2J  3…  0
+ 163  kelmar        ..(~~~)....(~~~)...(~)....(~)...(~~).\n…  ..(~~~)....(~~~)...(~)....(~)...(~~).\n…  1
+ 164  felsim                      \__/    \__/\__/\n       …                \__/        \__/\n       …  0
+ 165  durnel                                          TTT  …                                    TTT  …  1
+ 166  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 167  norvel        hat   |xxxx|.xxx|.xx.|xxxx|.x.x|.xxx|xx…  hat   |xxxx|.xxx|.xx.|xxxx|.x.x|.xxx|xx…  0
+ 168  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 169  durnel                       UUU                     …                 UUU                     …  1
+ 170  durnel         ####                                ##…   ####                                ##…  1
+ 171  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 172  kelmar        ..(~~~).....(~)...(~)....(~).....(~~~).…  ..(~~~).....(~)...(~)....(~).....(~~~).…  1
+ 173  felsim                  \__/        \__/    \__/\n   …            \__/                \__/\n   …  0
+ 174  kelmar        .(~~)...(~)...(~~~)...(~~).....(~)....(…  .(~~)...(~)...(~~~)...(~~).....(~)....(…  1
+ 175  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 176  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 177  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 178  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 179  felsim                      \__/\__/            \__/\…                \__/\__/\n            \__…  0
+ 180  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 181  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 182  durnel             WWW ###                           …       WWW ###                           …  0
+ 183  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 184  kelmar        ..(~)...(~~~)....(~~~)...(~~~)...(~~~).…  ..(~)...(~~~)....(~~~)...(~~~)...(~~~).…  1
+ 185  kelmar        .(~~)....(~).....(~~)...(~)...(~)...\n.…  .(~~)....(~).....(~~)...(~)...(~)...\n.…  1
+ 186  felsim                  \__/    \__/        \__/\__/\…            \__/                \__/\__/\…  0
+ 187  felsim                  \__/        \__/\n        \__…                        \__/\n        \__…  0
+ 188  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 189  felsim                              \__/    \__/\n   …                                \__/\n   …  0
+ 190  felsim                  \__/    \__/\n        \__/\__…            \__/\n        \__/\__/    \__…  0
+ 191  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 192  kelmar        .(~).....(~~)...(~~)...(~).....(~).\n.'…  .(~).....(~~)...(~~)...(~).....(~).\n.'…  1
+ 193  norvel        hat   |xxxx|.xxx|xx.x|..xx|xx.x|xxxx|x.…  hat   |xxxx|.xxx|xx.x|..xx|xx.x|xxxx|x.…  0
+ 194  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 195  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 196  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 197  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 198  kelmar        .(~)...(~~)...(~~~)....(~~~)....(~)....…  .(~)...(~~)...(~~~)....(~~~)....(~)....…  1
+ 199  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 200  felsim                      \__/\__/        \__/\n   …                \__/\__/\n            \__…  0
+ 201  norvel        hat   |xx.x|..xx|x.x.|x.xx|xx..|xxxx|\n…  hat   |xxxx|x.xx|x.xx|xxxx|xx..|xxxx|\n…  0
+ 202  norvel        hat   |xxxx|xxxx|.x.x|xx..|xx.x|x.xx|x.…  hat   |xxxx|xxxx|.x.x|xx..|xx.x|x.xx|x.…  0
+ 203  durnel              LLL     ###               SSS    …            LLL ###               SSS    …  0
+ 204  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 205  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 206  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 207  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 208  norvel        hat   |.xxx|xxxx|xxx.|xx.x|x..x|xxx.|xx…  hat   |.xxx|xxxx|xxx.|xx.x|x..x|xxx.|xx…  0
+ 209  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\…  None                                      0
+ 210  durnel                                    DDD        …                              DDD        …  0
+ 211  norvel        hat   |.xxx|xx.x|xxxx|x.xx|xxx.|.x.x|xx…  hat   |.xxx|xx.x|xxxx|x.xx|xxx.|.x.x|xx…  1
+ 212  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 213  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 214  norvel        hat   |xxxx|x.x.|xxxx|xxxx|.xxx|x..x|..…  hat   |xxxx|x.x.|xxxx|xxxx|.xxx|x..x|..…  0
+ 215  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 216  kelmar        .(~~)...(~~~).....(~~)...(~~~)...(~).\n…  .(~~)...(~~~).....(~~)...(~~~)...(~).\n…  1
+ 217  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 218  durnel          ###                       ###     PPP…    ###                       ###        …  1
+ 219  norvel        hat   |.x.x|xxx.|xxxx|xxxx|x..x|xxxx|xx…  hat   |.x.x|xxx.|xxxx|xxxx|x..x|xxxx|xx…  1
+ 220  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  1
+ 221  durnel                                    BBB      ##…                              BBB      ##…  0
+ 222  norvel        hat   |..xx|x..x|xx..|xxxx|xxxx|..xx|\n…  hat   |x.xx|x.xx|xxx.|xxxx|xxxx|.xxx|\n…  0
+ 223  kelmar        .(~~)...(~~)....(~~)....(~~)...(~).....…  .(~~)...(~~)....(~~)....(~~)...(~).....…  1
+ 224  felsim                  \__/                \__/\n   …            \__/                \__/\n   …  0
+ 225  felsim                  \__/        \__/    \__/\__/\…                        \__/    \__/\__/\…  0
+ 226  felsim                  \__/\__/\__/        \__/\n   …                \__/            \__/\n   …  0
+ 227  kelmar        .(~~~)....(~)....(~~)...(~)...(~).\n.''…  .(~~~)....(~)....(~~)...(~)...(~).\n.''…  1
+ 228  kelmar        ..(~)...(~~)...(~~)...(~)...(~)..\n..''…  ..(~)...(~~)...(~~)...(~)...(~)..\n..''…  1
+ 229  durnel                       MMM                     …                 MMM                     …  0
+ 230  norvel        hat   |xx..|xx..|x.x.|xx..|xx..|xxxx|.x…  hat   |xx..|xx..|x.x.|xx..|xx..|xxxx|.x…  0
+ 231  felsim                  \__/        \__/\__/\n       …                        \__/\__/\n       …  0
+ 232  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 233  norvel        hat   |x..x|xxx.|.xxx|xx.x|xx.x|x.xx|xx…  hat   |x..x|xxx.|.xxx|xx.x|xx.x|x.xx|xx…  0
+ 234  durnel                           #### ###            …                     #### ###            …  0
+ 235  norvel        hat   |x..x|xxx.|x.xx|xx..|x..x|.x.x|.x…  hat   |x..x|xxx.|x.xx|xx..|x..x|.x.x|.x…  0
+ 236  norvel        hat   |xxx.|..xx|.xx.|xx..|xxx.|.xxx|.x…  hat   |xxx.|..xx|.xx.|xx..|xxx.|.xxx|.x…  0
+ 237  felsim                          \__/    \__/\__/\n   …                            \__/\__/\n   …  0
+ 238  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1S  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1S  2…  0
+ 239  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 240  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 241  durnel         LLL     DDD                           …   LLL     DDD                           …  0
+ 242  kelmar        .(~~~)...(~).....(~~~)...(~).....(~)...…  .(~~~)...(~).....(~~~)...(~).....(~)...…  1
+ 243  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 244  kelmar        .(~)....(~)...(~~)....(~).....(~~~)....…  .(~)....(~)...(~~)....(~).....(~~~)....…  1
+ 245  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  1
+ 246  norvel        hat   |xx.x|x.x.|xxx.|.xx.|.xxx|x.xx|xx…  hat   |xx.x|xxx.|xxxx|.xx.|xxxx|xxxx|xx…  0
+ 247  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 248  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 249  kelmar        .(~~)...(~)....(~~).....(~~).....(~~)..…  .(~~)...(~)....(~~).....(~~).....(~~)..…  1
+ 250  felsim                          \__/    \__/\__/\n   …                            \__/\__/\n   …  0
+ 251  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 252  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 253  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 254  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 255  durnel              NNN               FFF            …   NNN                        FFF        …  0
+ 256  durnel           WWW      ####          MMM          …     WWW      ####      MMM              …  0
+ 257  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 258  felsim                  \__/    \__/            \__/\…            \__/    \__/\n        \__/\__…  0
+ 259  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 260  felsim                      \__/            \__/\__/\…                \__/                \__/\…  0
+ 261  felsim                  \__/\__/\__/\__/\n        \__…            \__/\__/\__/\__/\n        \__…  0
+ 262  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  0
+ 263  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 264  norvel        hat   |xx..|x.x.|x..x|xx..|.xxx|.xxx|\n…  hat   |xxx.|x.x.|x.xx|xxx.|xxxx|xxxx|\n…  0
+ 265  durnel                 KKK               FFF         …           KKK               FFF         …  0
+ 266  kelmar        .(~).....(~)....(~~~)....(~)...(~~)....…  .(~).....(~)....(~~~)....(~)...(~~)....…  1
+ 267  durnel                      KKK                   ###…            KKK                       ###…  0
+ 268  norvel        hat   |xx..|.xx.|xx.x|..xx|xxx.|.x.x|..…  hat   |xx..|.xx.|xx.x|..xx|xxx.|.x.x|..…  0
+ 269  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 270  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 271  felsim                      \__/\__/        \__/\n   …                    \__/\n            \__…  0
+ 272  norvel        hat   |xxxx|x..x|..xx|..xx|x.xx|xxxx|\n…  hat   |xxxx|x..x|..xx|..xx|x.xx|xxxx|\n…  0
+ 273  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 274  durnel                               ### ###         …                         ### ###         …  0
+ 275  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 276  norvel        hat   |.xxx|x.xx|x.x.|.xx.|xx..|x..x|x.…  hat   |xxxx|x.xx|x.xx|.xxx|xxx.|x.xx|x.…  0
+ 277  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 278  kelmar        ..(~)....(~~~).....(~)....(~).....(~~).…  ..(~)....(~~~).....(~)....(~).....(~~).…  1
+ 279  kelmar        .(~~)....(~~)...(~~~)...(~~~)....(~~)..…  .(~~)....(~~)...(~~~)...(~~~)....(~~)..…  1
+ 280  felsim                  \__/\__/    \__/\__/\__/\n   …            \__/        \__/\__/\__/\n   …  0
+ 281  durnel               WWW              UUU\n ####  WWW…         WWW      UUU\n ####  WWW ###  UU…  0
+ 282  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 283  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 284  durnel                                BBB\n          …                          BBB\n          …  0
+ 285  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...…  None                                      0
+ 286  norvel        hat   |.xxx|x.x.|xx.x|x.xx|xxxx|xxxx|xx…  hat   |.xxx|x.x.|xx.x|x.xx|xxxx|xxxx|xx…  0
+ 287  kelmar        ..(~).....(~~).....(~~~)....(~)...(~~~)…  ..(~).....(~~).....(~~~)....(~)...(~~~)…  1
+ 288  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 289  durnel                    EEE       PPP           AAA…              EEE       PPP           AAA…  0
+ 290  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 291  norvel        hat   |.x.x|xxx.|xx..|xx..|xx.x|.xxx|\n…  hat   |xxxx|xxx.|xxx.|xxx.|xx.x|.xxx|\n…  0
+ 292  durnel         ####  LLL               ###      ###\n…   ####  LLL               ###      ###\n…  0
+ 293  kelmar        ..(~).....(~~)....(~~).....(~).....(~).…  ..(~).....(~~)....(~~).....(~).....(~).…  1
+ 294  felsim                                          \__/\…                                    \__/\…  0
+ 295  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 296  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 297  felsim                  \__/        \__/\__/        \…                        \__/\__/\n       …  0
+ 298  felsim                      \__/\__/\__/\__/\n       …                \__/\__/\__/\__/\n       …  1
+ 299  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 300  durnel         ###            EEE                    …   ###                 EEE               …  0
+ 301  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 302  norvel        hat   |xxxx|xxx.|x.xx|x..x|..xx|x.xx|xx…  hat   |xxxx|xxx.|x.xx|x..x|..xx|x.xx|xx…  0
+ 303  norvel        hat   |xx.x|xxxx|xxxx|xxxx|xx.x|xxx.|.x…  hat   |xx.x|xxxx|xxxx|xxxx|xx.x|xxx.|.x…  1
+ 304  kelmar        .(~)...(~~)....(~).....(~~).....(~~)...…  .(~)...(~~)....(~).....(~~).....(~~)...…  1
+ 305  kelmar        .(~~~)...(~).....(~~)...(~~~)....(~~)..…  .(~~~)...(~).....(~~)...(~~~)....(~~)..…  1
+ 306  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 307  norvel        hat   |x..x|xx.x|xxx.|xxxx|xxx.|x.xx|xx…  hat   |x..x|xx.x|xxx.|xxxx|xxx.|x.xx|xx…  0
+ 308  durnel         JJJ     KKK                SSS     ###…   JJJ         KKK                SSS ###…  0
+ 309  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 310  kelmar        .(~)....(~~)....(~~).....(~~)....(~~)..…  .(~)....(~~)....(~~).....(~~)....(~~)..…  1
+ 311  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n...><>.…  None                                      0
+ 312  felsim                      \__/    \__/    \__/    \…                \__/\n            \__/\__…  0
+ 313  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 314  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2F  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1S  2F  3…  0
+ 315  norvel        hat   |xxx.|.xxx|xxxx|x.xx|xxx.|x.x.|xx…  hat   |xxx.|.xxx|xxxx|x.xx|xxx.|x.x.|xx…  1
+ 316  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 317  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 318  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 319  norvel        hat   |xxxx|xx..|.xxx|x..x|..xx|..xx|xx…  hat   |xxxx|xx..|.xxx|x..x|..xx|..xx|xx…  0
+ 320  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 321  norvel        hat   |..xx|x..x|xx..|xxxx|..xx|xxxx|.x…  hat   |x.xx|x.xx|xxx.|xxxx|x.xx|xxxx|.x…  0
+ 322  kelmar        .(~~).....(~)....(~).....(~~~)...(~)...…  .(~~).....(~)....(~).....(~~~)...(~)...…  1
+ 323  durnel                      ###                      …                ###                      …  0
+ 324  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 325  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 326  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 327  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n..…  None                                      0
+ 328  kelmar        ..(~)...(~).....(~)....(~~)...(~).\n..'…  ..(~)...(~).....(~)....(~~)...(~).\n..'…  1
+ 329  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 330  kelmar        .(~~)...(~)...(~~)...(~~)....(~)....\n.…  .(~~)...(~)...(~~)...(~~)....(~)....\n.…  1
+ 331  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…  0
+ 332  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 333  kelmar        ..(~~)....(~)...(~~~)...(~)....(~~).\n.…  ..(~~)....(~)...(~~~)...(~)....(~~).\n.…  1
+ 334  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 335  durnel         JJJ                      #### ####  ##…   JJJ                      #### ####  ##…  1
+ 336  kelmar        ..(~~)....(~)....(~)....(~)...(~).....\…  ..(~~)....(~)....(~)....(~)...(~).....\…  1
+ 337  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~…  None                                      0
+ 338  kelmar        ..(~~).....(~~)...(~)...(~)....(~~~)...…  ..(~~).....(~~)...(~)...(~)....(~~~)...…  1
+ 339  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 340  durnel                              CCC          GGG …                    CCC              GGG …  1
+ 341  kelmar        .(~)...(~)....(~)...(~~~)....(~~~).....…  .(~)...(~)....(~)...(~~~)....(~~~).....…  1
+ 342  norvel        hat   |xxxx|.xxx|xx.x|.xxx|xx.x|xx.x|xx…  hat   |xxxx|.xxx|xx.x|.xxx|xxxx|xxxx|xx…  0
+ 343  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.…  None                                      0
+ 344  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 345  kelmar        ..(~~~)...(~~).....(~).....(~~)...(~)..…  ..(~~~)...(~~).....(~).....(~~)...(~)..…  1
+ 346  norvel        hat   |.xx.|xx..|xxx.|.xxx|xxxx|.xx.|.x…  hat   |.xx.|xx..|xxx.|.xxx|xxxx|.xx.|.x…  0
+ 347  durnel                       SSS  ###                …                 SSS  ###                …  1
+ 348  durnel                                               …                                         …  1
+ 349  kelmar        .(~~)...(~).....(~)...(~~~)...(~)......…  .(~~)...(~).....(~)...(~~~)...(~)......…  1
+ 350  kelmar        ..(~~).....(~).....(~~~)....(~).....(~)…  ..(~~).....(~).....(~~~)....(~).....(~)…  1
+ 351  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 352  durnel                       ####\n                  …                 ####\n                  …  1
+ 353  norvel        hat   |x..x|x..x|x.x.|.x.x|x.xx|x.xx|.x…  hat   |x..x|x..x|x.x.|.x.x|x.xx|x.xx|.x…  0
+ 354  durnel         TTT        ###                        …   TTT        ###                        …  1
+ 355  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 356  durnel              SSS          ###                 …        SSS          ###                 …  0
+ 357  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n.....…  None                                      0
+ 358  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 359  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 360  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 361  felsim                              \__/\__/        \…                        \__/            \…  0
+ 362  norvel        hat   |x.x.|xx..|xxxx|..xx|xxxx|x..x|xx…  hat   |x.x.|xx..|xxxx|..xx|xxxx|x..x|xx…  0
+ 363  kelmar        ..(~)...(~)....(~).....(~)...(~).......…  ..(~)...(~)....(~).....(~)...(~).......…  1
+ 364  durnel         RRR                        ###        …       RRR                    ###        …  0
+ 365  felsim                          \__/    \__/\__/    \…                            \__/\__/\n   …  0
+ 366  kelmar        ..(~~)...(~).....(~)...(~~)...(~)......…  ..(~~)...(~).....(~)...(~~)...(~)......…  1
+ 367  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 368  norvel        hat   |..xx|..xx|xxxx|xx.x|.x.x|x..x|xx…  hat   |..xx|..xx|xxxx|xx.x|.x.x|x..x|xx…  0
+ 369  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 370  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  0
+ 371  felsim                      \__/\__/    \__/\__/    \…                \__/        \__/\n       …  0
+ 372  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n....…  None                                      0
+ 373  kelmar        .(~~~)....(~)....(~~~)....(~~~)....(~~~…  .(~~~)....(~)....(~~~)....(~~~)....(~~~…  1
+ 374  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 375  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 376  felsim                      \__/    \__/\__/\n       …                \__/\n            \__/\__…  0
+ 377  norvel        hat   |xxxx|xx..|.xxx|.xx.|xx..|x..x|\n…  hat   |xxxx|xx..|.xxx|.xx.|xx..|x..x|\n…  0
+ 378  norvel        hat   |xx..|xx..|xxxx|.xxx|.xxx|xxxx|xx…  hat   |xx..|xxx.|xxxx|xxxx|.xxx|xxxx|xx…  0
+ 379  durnel                                               …                                         …  0
+ 380  felsim                      \__/        \__/\n       …                \__/\n            \__/\__…  0
+ 381  kelmar        ..(~~).....(~~).....(~).....(~)...(~~).…  ..(~~).....(~~).....(~).....(~)...(~~).…  1
+ 382  norvel        hat   |xx..|xxxx|xxx.|x.x.|.xxx|xx..|xx…  hat   |xx..|xxxx|xxx.|x.x.|.xxx|xx..|xx…  0
+ 383  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 384  durnel                                        PPP ###…                                  PPP ###…  0
+ 385  felsim                  \__/\__/    \__/\n           …                \__/    \__/\n        \__…  0
+ 386  norvel        hat   |.xxx|x.xx|xxx.|xxxx|..xx|.xxx|.x…  hat   |.xxx|x.xx|xxx.|xxxx|..xx|.xxx|.x…  0
+ 387  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  0
+ 388  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 389  basten        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n…  None                                      0
+ 390  norvel        hat   |xxxx|xx.x|.x.x|x.xx|xxxx|xx.x|..…  hat   |xxxx|xx.x|xxxx|x.xx|xxxx|xxxx|x.…  0
+ 391  norvel        hat   |xxx.|xxxx|xx.x|xxx.|.xxx|.x.x|xx…  hat   |xxx.|xxxx|xx.x|xxx.|.xxx|.x.x|xx…  1
+ 392  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  0
+ 393  durnel              ###                 ####  GGG    …        ###                 ####  GGG    …  1
+ 394  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1Q  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1Q  2…  0
+ 395  durnel                   ####         WWW      KKK   …             ####         WWW      KKK   …  0
+ 396  norvel        hat   |xxx.|xx..|xx.x|x.x.|x..x|xxx.|xx…  hat   |xxx.|xx.x|xx.x|xxxx|xx.x|xxxx|xx…  0
+ 397  norvel        hat   |xx.x|xxx.|x.x.|xx..|xxxx|xxxx|\n…  hat   |xx.x|xxx.|x.x.|xx..|xxxx|xxxx|\n…  1
+ 398  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 399  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+
+per-name tally this round
+name             presented correct  hit-rate
+basten                  54       7     13.0%
+durnel                  60      24     40.0%
+felsim                  54       5      9.3%
+kelmar                  58      58    100.0%
+molvic                  53      53    100.0%
+norvel                  58       7     12.1%
+tovel                   63       4      6.3%

@@ -227,3 +227,14 @@ class; it asked for +/− marks. All example lines are positives — now said in
 ask, two positives everywhere, is Revision 3 lever 2 (measured as noise at n = 1500; keep pairs).
 ospren v3 and tresk v3 reach `calibrated` (45 % / 39 %, kid 4.5 both) and are promoted to
 challenges/; tavrik v3 is calibrated on rate (40 %) but kid 3.8 — trim the counted relations.
+Picture pool run 8, `lad-tovel-v7-3` (tovel v7, felsim v1, durnel v2, basten v4, kelmar v3, molvic v3,
+norvel v4): 1138 (default, demos → molvic/durnel/kelmar, all 100 %) and 957 (kidproxy, demos →
+molvic/tovel/basten: tovel 100 — the FIRST crack of tovel in eight versions, verified 105/105 —
+basten 100, molvic 28). Without a demo every class sat at the foothold, including three where the
+default player had proved the SELECTION rule on 100+ clues (felsim 103/103, norvel 123/123, tovel
+116/116) and still scored 0 on the edit after 33 renderings: "knowing which N things are special
+is worth exactly zero without knowing what happens to them". That is the checksum design working
+as intended — the caption gives away the selection, the demo sells the rendering — and it makes
+the optimal demo policy "demo the class you understand best", which the player asked us to keep
+and tell nobody. durnel v2 reaches `calibrated` (69 % with a demo over 3, 10 % without over 5;
+kid 4.2) and is promoted. The kidproxy player asked for a more evocative felsim verb ("topple").

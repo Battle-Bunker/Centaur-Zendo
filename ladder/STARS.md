@@ -321,3 +321,29 @@ entirely, and the measurement that mattered was not "how rare is the rule" but "
 vocabulary express it at all". The same lesson, in the other direction, produced the one player
 who read the last example line as a negative: a relation that is not in your bank looks like a
 contradiction.
+
+## durnel v2 — the road with low bridges (calibrated 2026-09-05)
+
+**Rule.** The clue is a road from the side: six or seven lorries, each a block of its own letter
+with a nose `>` or `<`, three or four bridges `####` overhead with different clearances, and four
+lay-bys `\_/` cut into the kerb; caption `2 turn`. A lorry that cannot get under a bridge ahead
+of it pulls into the first lay-by it comes to and turns round: it is erased from where it stood
+and redrawn whole in the lay-by, nose the other way. A lorry whose blocking bridge comes before
+any lay-by has nowhere to turn and stays. **Record (8 Opus finals): 100, 82, 24 % with a demo;
+10, 10, 10, 10, 12 % without.**
+
+**Why v1 failed and v2 works.** v1 had no lay-bys: a blocked lorry simply swapped its nose. Both
+players cracked it blind at 100 % — the lorry-and-low-bridge fact is famous, the edit (swap two
+characters) is guessable, and the `n turn` checksum let them confirm the rule on 81 harvested
+clues before answering once. v2 keeps the fact and the checksum but makes the rendering carry the
+rule: where the lorry ends up depends on the first lay-by ahead, which nothing in the clue
+explains, and the planted "blocked before any lay-by" lorry makes the famous fact reproduce the
+count on 0 % of clues. The blind natural reading went from 100 % to 0 %; the with-demo rate is
+the fennick shape, with a real gradient (the 24 % player had the mechanism and lost the tie-break
+for a contested lay-by).
+
+**What a kid sees.** Lorries, bridges, lay-bys, and the sentence "that one's too tall, so it pulls
+in and turns round". The judge's 4.17 docks it for a busy road; the lever is fewer lorries in the
+demo. **Reflection.** Durnel is the cleanest case of the two halves of the checksum design: the
+caption gives away *which* lorries, and only the demo shows *where they go*. Make the second half
+carry the rule and the class is calibrated; leave it guessable and the class is a lookup.

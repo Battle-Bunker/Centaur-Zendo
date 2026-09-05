@@ -4390,6 +4390,21 @@
     }
    ]
   },
+  "tresk": {
+   "current_version": 1,
+   "paradigm": "rule_family",
+   "qual": [],
+   "runs": [],
+   "status": "untested",
+   "versions": [
+    {
+     "added": 1788575846.3233926,
+     "file": "challenges/lab/tresk.json",
+     "note": "v1 rule family (beads): 8 templates, 38 rules, answer must use a length not in the clue; scorer 761",
+     "v": 1
+    }
+   ]
+  },
   "trico": {
    "current_version": 1,
    "note": "100% finals for all players in sim1/sim2 (12x1s cadence)",
@@ -6301,7 +6316,7 @@
    "note": "agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in",
    "paradigm": "rule_family",
    "started": 1788574592.4696758,
-   "status": "running",
+   "status": "done",
    "version": null,
    "world": "a string of 6-10 coloured beads"
   },
@@ -6323,7 +6338,8 @@
    "id": "rfdesigner-4",
    "kind": "designer",
    "paradigm": "rule_family",
-   "status": "pending",
+   "started": 1788575846.3542798,
+   "status": "running",
    "version": null,
    "world": "clock times hh:mm"
   },
@@ -6507,6 +6523,22 @@
     "fennick1b": "opus-kidproxy"
    },
    "version": 3
+  },
+  {
+   "agents": 2,
+   "class": "tresk",
+   "id": "players-tresk-v1-c0e6",
+   "kind": "players",
+   "status": "pending",
+   "version": 1
+  },
+  {
+   "agents": 1,
+   "class": "tresk",
+   "id": "judge-tresk-v1-7e2d",
+   "kind": "judge",
+   "status": "pending",
+   "version": 1
   }
  ],
  "profiles": {

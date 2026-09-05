@@ -87,3 +87,38 @@ decoys (aligned joints, near-twins) into every demo, so the famous fact about wa
 joints) is visibly false. Partial understanding pays 10–20 %, a real gradient without a cliff.
 **Lever if it drifts easy.** Count only twins that are not adjacent to another twin; pin the bottom
 course by width alone plus a second clause.
+
+## fennick v3 — the bookshelf (calibrated 2026-09-05, new format)
+
+**Rule.** The clue is a shelf drawn from the side: books as columns of one letter with a `_` cap,
+arbitrary heights, gaps between them, a `====` shelf line, and a caption `4 fall`. The answer is
+the same picture with exactly the right books tipped over: a book falls iff one side of it is a
+single empty slot, the other side is a touching book, and the book across the gap is strictly
+taller (it has something to lean on); a fallen book keeps its foot in its slot and its body and
+cap slide one column into the gap, the cap becoming `/` or `\`. Nothing else may change.
+
+**Record (4 Opus finals, 4 profiles): 11 %, 100 %, 11 %, 100 % — mean 55 %; with a demo 70 %
+(3 players), without 11 % (1).** The 11 % scores are the `0 fall` clues, where the correct answer
+is the clue unchanged: a player who has understood only the *format* banks them. The two 100 %
+players were the kid-proxy ("the shorter one falls into the gap next door", round 3) and the
+theorist ("that one's fallen over onto the tall one", round 2). The two who failed with the demo
+in hand tried arithmetic — "the four shortest", "heights summing to 4" — and never asked the
+physical question.
+
+**What a kid sees.** A bookshelf, some books knocked over, and a caption saying how many. The
+question "why did *those* fall?" has an everyday answer: a book falls into a gap when there is a
+taller book on the far side to lean on and a neighbour behind it to push from. Every demo shows
+the positive case beside its three near-misses (equal heights across a gap stand; a book with
+gaps on both sides stands; a two-slot gap is out of reach), so one demo can teach the whole rule.
+
+**Why it works under the demo economy.** The clue carries the object (the upright shelf) and the
+verb (`fall`), so a demo-less player sends well-formed attempts and even scores the identity
+cases; the *rule* still needs the example — every player who cracked it spent a demo here, and
+no one cracked it blind. The red herring of v1/v2 (a height formula) is gone because heights are
+given in the clue; the only work left is the tipping physics, which is one clause. It is the
+first class whose split is by *reading* rather than by *probing*: the same demo produced 11 % and
+100 % depending on whether the player looked at the picture as a shelf.
+
+**Levers.** Too easy: require the caption to be dropped (removes the identity foothold) or draw
+some books already leaning in the clue so the answer is "which further ones fall". Too hard:
+put a single fallen book into the clue as a worked instance.

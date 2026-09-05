@@ -1322,6 +1322,79 @@
      "run": "lad-dornic-v1-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 538,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         78
+        ],
+        [
+         0,
+         54
+        ],
+        [
+         0,
+         57
+        ],
+        [
+         0,
+         60
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 432,
+       "final_rate": 0.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         104
+        ],
+        [
+         0,
+         56
+        ],
+        [
+         0,
+         69
+        ],
+        [
+         0,
+         75
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
+     "target": false,
+     "version": 3
     }
    ],
    "status": "too_hard",
@@ -2149,9 +2222,82 @@
      "run": "lad-fennick-v3-1",
      "target": true,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 60,
+       "final_presented": 555,
+       "final_rate": 0.10810810810810811,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         75
+        ],
+        [
+         6,
+         66
+        ],
+        [
+         7,
+         59
+        ],
+        [
+         11,
+         61
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": 2,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 446,
+       "final_presented": 446,
+       "final_rate": 1.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         90
+        ],
+        [
+         55,
+         55
+        ],
+        [
+         49,
+         49
+        ],
+        [
+         58,
+         58
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "calibrated",
    "versions": [
     {
      "file": "challenges/lab/fennick.json",
@@ -2447,6 +2593,79 @@
       "virel"
      ],
      "run": "lad-fennick-v3-1",
+     "target": false,
+     "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 178,
+       "final_presented": 486,
+       "final_rate": 0.3662551440329218,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         87
+        ],
+        [
+         3,
+         64
+        ],
+        [
+         4,
+         54
+        ],
+        [
+         10,
+         48
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 387,
+       "final_rate": 0.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         78
+        ],
+        [
+         0,
+         51
+        ],
+        [
+         0,
+         65
+        ],
+        [
+         0,
+         56
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
      "target": false,
      "version": 3
     }
@@ -2825,6 +3044,79 @@
       "wisbek"
      ],
      "run": "lad-dornic-v1-1",
+     "target": false,
+     "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 518,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         76
+        ],
+        [
+         0,
+         50
+        ],
+        [
+         0,
+         50
+        ],
+        [
+         0,
+         66
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 36,
+       "final_presented": 413,
+       "final_rate": 0.08716707021791767,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         94
+        ],
+        [
+         2,
+         54
+        ],
+        [
+         8,
+         53
+        ],
+        [
+         8,
+         66
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
      "target": false,
      "version": 2
     }
@@ -3535,9 +3827,82 @@
      "run": "lad-fennick-v3-1",
      "target": false,
      "version": 3
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 507,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         83
+        ],
+        [
+         1,
+         72
+        ],
+        [
+         0,
+         39
+        ],
+        [
+         0,
+         67
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 409,
+       "final_rate": 0.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         92
+        ],
+        [
+         0,
+         60
+        ],
+        [
+         0,
+         53
+        ],
+        [
+         0,
+         56
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
+     "target": false,
+     "version": 3
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "added": 1788550070.76554,
@@ -5224,9 +5589,82 @@
      "run": "lad-fennick-v3-1",
      "target": false,
      "version": 5
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 480,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         89
+        ],
+        [
+         0,
+         64
+        ],
+        [
+         0,
+         53
+        ],
+        [
+         0,
+         49
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 396,
+       "final_rate": 0.0,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         86
+        ],
+        [
+         0,
+         67
+        ],
+        [
+         0,
+         36
+        ],
+        [
+         0,
+         69
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
+     "target": true,
+     "version": 5
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "file": "challenges/lab/tovel.json",
@@ -5846,9 +6284,82 @@
      "run": "lad-fennick-v3-1",
      "target": false,
      "version": 2
+    },
+    {
+     "cadence": "4x0.5s/5s/3s/7cls/3demos",
+     "players": [
+      {
+       "cracked_round": null,
+       "demo": false,
+       "demos": 0,
+       "final_correct": 0,
+       "final_presented": 485,
+       "final_rate": 0.0,
+       "profile": "opus-lowdemo",
+       "rounds": [
+        [
+         0,
+         79
+        ],
+        [
+         0,
+         59
+        ],
+        [
+         0,
+         62
+        ],
+        [
+         0,
+         47
+        ]
+       ],
+       "team": "tovel2a"
+      },
+      {
+       "cracked_round": null,
+       "demo": true,
+       "demos": 1,
+       "final_correct": 9,
+       "final_presented": 386,
+       "final_rate": 0.023316062176165803,
+       "profile": "opus-theorist",
+       "rounds": [
+        [
+         0,
+         101
+        ],
+        [
+         0,
+         74
+        ],
+        [
+         2,
+         60
+        ],
+        [
+         1,
+         57
+        ]
+       ],
+       "team": "tovel2b"
+      }
+     ],
+     "pool": [
+      "basten",
+      "fennick",
+      "garrow",
+      "kelmar",
+      "norvel",
+      "tovel",
+      "virel"
+     ],
+     "run": "lad-tovel-v5-2",
+     "target": false,
+     "version": 2
     }
    ],
-   "status": "testing",
+   "status": "too_hard",
    "versions": [
     {
      "file": "challenges/lab/virel.json",
@@ -7786,7 +8297,7 @@
    },
    "run": "lad-tovel-v5-2",
    "started": 1788577830.426947,
-   "status": "running",
+   "status": "done",
    "teams": {
     "tovel2a": "opus-lowdemo",
     "tovel2b": "opus-theorist"
@@ -7880,6 +8391,63 @@
    "kind": "judge",
    "status": "pending",
    "version": 2
+  },
+  {
+   "agents": 1,
+   "class": "norvel",
+   "id": "refiner-norvel-v3-c127",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 3
+  },
+  {
+   "agents": 1,
+   "class": "tovel",
+   "id": "refiner-tovel-v5-549d",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 5
+  },
+  {
+   "agents": 1,
+   "class": "virel",
+   "id": "refiner-virel-v2-69c1",
+   "kind": "refiner",
+   "status": "pending",
+   "version": 2
+  },
+  {
+   "agents": 2,
+   "class": "tovel",
+   "id": "players-canvas-pool-1",
+   "kind": "players",
+   "members": [
+    "tovel",
+    "norvel",
+    "basten",
+    "kelmar",
+    "garrow",
+    "virel",
+    "fennick"
+   ],
+   "note": "canvas classes only, so demos must land on them",
+   "pool": {
+    "basten": 3,
+    "fennick": 3,
+    "garrow": 3,
+    "kelmar": 2,
+    "norvel": 3,
+    "tovel": 5,
+    "virel": 2
+   },
+   "run": "lad-tovel-v5-3",
+   "started": 1788581172.528135,
+   "status": "running",
+   "teams": {
+    "tovel3a": "sonnet-default",
+    "tovel3b": "sonnet-kidproxy"
+   },
+   "version": 5
   }
  ],
  "profiles": {

@@ -546,3 +546,126 @@ demo, put a second worked example in the demo, or shrink the wide family so ever
 
 Scratch harness for every number above (not committed):
 `$SCRATCH/music3/{gen,v3,sweep,sweep2,sweep3,sweep4,try,try2,try3,attack3,selftest,hyp,build_json}.py`.
+
+## norvel v4 (2026-09-05) — refiner: the checksum caption (new rule, new picture)
+
+Brief: `norvel` came back **too_hard** — 7 % over seven Opus players without a demo, 0 % for the
+one who had one — and, worse, *nobody ever spent a demo on it* in three pool runs. This pass
+rebuilds the class in the shape that worked for fennick/kelmar/durnel: the clue is a finished
+picture, the answer is that picture edited by one physical clause, and the caption **names the
+verb and counts the edits**. `norvel.v3.json` is the byte-identical previous version. The rule
+that survived v1→v3 unchanged (snare runs filling kick gaps exactly) is **retired**: it was not
+the difficulty, the free parameter `n` was.
+
+### What the players actually did (the evidence for the rebuild)
+
+* `lad-kelmar-v3-1` (picture pool run 4), both players left norvel undemoed **on purpose**.
+  kelmar1a's notes: *"Deliberately left without a demo: durnel (already cracked from clues),
+  basten and tovel (answer shape obvious from the clue: grow the plants / fill the dots) and
+  norvel (answer shape obvious: fill the snare row) — those get probed by cycling variants."*
+  Final: norvel **54/459 (12 %)**, understood only as *"for n = 2 the snare is the kick rotated
+  n steps"*; n = 3 and n = 4 never cracked.
+* kelmar1b coded a different n = 2-only reading: *"the snare copies each kick group placed at the
+  floor midpoint between consecutive kick group starts"* (`solve_norvel` returns `None` unless
+  `n == 2`), i.e. it answered nothing at all on two thirds of the clues.
+* `lad-fennick-v3-1`: norvel 12 % / 11 %, again with no demo spent.
+* v1/v2 players (the old single-class format, 4–6 demos each) never wrote a sentence about a
+  snare run matching a kick gap either; they tuned silence counts to 26–49 %.
+
+The diagnosis is DESIGN_LOOP's new section: **the clue showed the kick row and an EMPTY snare
+row, so the answer's shape was obvious and no team paid a demo for it — but `n = 3` is a free
+parameter, so no hypothesis could be falsified offline and every one cost a slice of a round.**
+Demo-or-nothing, and nobody spends a demo on a class whose answer shape they can already see.
+
+### v4: the picture is finished, the caption is a checksum
+
+Clue and demo answer (seed 227), the whole class in one look:
+
+```
+hat   |x..x|xx.x|.x.x|.xxx|.x.x|x.xx|        hat   |x..x|xx.x|.x.x|.xxx|.x.x|x.xx|
+snare |.x..|x...|x.x.|x.x.|..x.|x.x.|   ->   snare |.--x|x...|x.x.|-xx.|..-x|x.x.|
+kick  |x.x.|.x.x|x.xx|.x.x|....|.x..|        kick  |x.x.|.x.x|x.xx|.x.x|....|.x..|
+3 slip                                       3 slip
+```
+
+**The rule (one clause).** A snare hit with **no hat above it and no kick under it** — a step
+where the snare is left playing on its own — **skids late**: it is drawn `-` where it stood, `-`
+on across the hat's gap, and lands `x` on the first step where the hat is ticking again.
+Kid sentence from one demo: *"when the hat stops ticking and the kick isn't there either, the
+snare hit has nothing to hold it, so it skids along until the hat catches it."*
+In the picture above the hit at step 1 skids two steps, the hits at 12 and 18 skid one; the hits
+at 8 and 10 are under hat holes too but a kick is under them, so they stay; the hits at 4, 14,
+20, 22 have the hat above them. Four kinds of near-miss, one demo.
+
+**What the caption buys.** Over a family of 30 rival "which snare hits are edited" rules, the
+caption alone (no demo, no probe, just harvested clues) leaves **1.02 rules alive after 10 clues
+and exactly 1.00 after 30** — the true one. A demo alone leaves 5.7 (2.6 after two, 1.7 after
+three). So the *selection* is findable offline, exactly as fennick's `n fall` was; the round
+budget is spent on nothing.
+
+**What still needs the demo.** Every natural way of *drawing* "that hit moves late" scores
+11.7–21.2 %, i.e. it banks the ~12 % of clues that say `0 slip` and nothing else: move it one
+step, ghost it and move it one step, keep it and add a hit after, change its glyph in place,
+move it past the gap without ghosts, keep it and copy it past the gap, skid it earlier. And the
+distance is not constant — **every clue with n ≥ 2 contains one skid of one step and one of two
+steps**, so "it moves one step later" is contradicted inside the demo picture itself.
+
+**Construction.** 6–8 bars; 7–10 snare hits, never adjacent, never on the last step; 2–4 of them
+over a kick; 4–9 further kicks; the hat plays every step except ~25 % holes, at most 2 per bar.
+`n` is drawn 0 (12 %) / 1 (10 %) / 2 (29 %) / 3 (29 %) / 4 (20 %) *before* any retry. Every clue
+plants ≥ 2 snare hits with the hat ticking and no kick (they stay), ≥ 2 under a hat hole but with
+a kick (they stay), ≥ 1 hat hole over a lone kick and ≥ 2 over empty steps (nothing happens), and
+for n ≥ 2 one skid landing on a kick and one on an empty step. `n` is refused whenever it equals
+a count readable off the picture (snare hits, kicks, hat holes, snare hits over a kick, snare
+hits with no hat, kicks with no hat, holes with no snare, bars, two-step gaps).
+
+### Witness table (3000 fresh clues)
+
+| strategy | v4 |
+|---|---|
+| the true rule (`solve`) | **100.00 %** |
+| **clue echoed unchanged** (the foothold — the `0 slip` clues) | **11.70 %** |
+| right rule, hit just moves one step (no ghost) | 11.70 % |
+| **right rule, ghost + hit one step later** (the demo-less best) | **21.23 %** |
+| right rule, hit stays + copy one step later / glyph change in place | 11.70 % |
+| right rule, moves past the gap without ghosts / stays + copy past the gap | 11.70 % |
+| right rule, ghosts but skidding EARLIER | 11.70 % |
+| **every snare hit with no hat above it** (true drawing) | **0.00 %** |
+| **every snare hit with no kick under it** (true drawing) | **0.00 %** |
+| every snare hit over a kick · every snare hit · the same rule on the kick row | 0.00 % |
+| the n leftmost snare hits (true drawing) | 13.10 % |
+| **n random snare hits chosen from those with no hat above** | **24.40 %** |
+| lone hits, but only when no kick lands on the landing step | 31.60 % |
+| lone hits, but only when the hat is off on the next step too | 11.70 % |
+| demo replay · empty · junk · unicode · 4000 chars · one row · rows swapped · row shifted | 0.00 % |
+| leniency: bare rows, other labels, beat header, blank lines, CRLF, tabs, prose, caption dropped | 100 % |
+| strictness: rows swapped/two/four rows, snare shifted, ghosts→rests, ghosts→hits, one line, wrong hat cell | 0.00 % |
+
+Gradient: 0 % (well-formed, wrong hits) → 12 % (the format and the `0 slip` clues) → 21–32 % (the
+right hits, the drawing or one spurious extra condition wrong) → 100 % (the rule). Nothing that
+does not contain the insight exceeds **25 %**.
+
+### Validation
+
+`python tools/quickcheck.py challenges/lab/norvel.json --seeds 200` → **OK**, one warning
+(`score accepts the clue itself as a solution`) which is the intended `0 slip` foothold and is
+raised identically by kelmar, fennick and durnel. Sizes: score **312/512**, solve 472/5000,
+generate 4674/50000; clue ≤ 150 chars, solution ≤ 150. `generate` deterministic, **0.23 ms** mean
+over 20 000 seeds (p99 1.1 ms, 0 fallbacks); `solve` 0.003 ms and scores 1 on **3000/3000** fresh
+clues; `score` 0.023 ms. Scorer: **0 raises, 0 non-binary results, 0 false positives on 12 000
+junk strings**; **0 disagreements** with an independent re-implementation on 12 000 mutated
+answers. The JSON's code reproduces the scratch harness on 5000 seeds exactly.
+
+### Predicted classification
+
+**on target — expect ~12 % without a demo and 70–100 % with one** (the fennick split, whose
+record over four Opus finals is 11 / 100 / 11 / 100). The clue now advertises what the answer
+looks like *and* hands over a free checksum, so this should finally be a class a team chooses to
+spend a demo on; the risk that remains is a strong player brute-forcing the drawing blind after
+finding the selection offline — that would show up as a *without-demo* rate above 30 %, and the
+lever then is to drop the ghost dashes (less to see) or to widen the hat gap to three steps.
+Too hard (a demo-holder under 30 %): let the skid always be one step, or guarantee two lone hits
+in the same bar.
+
+Scratch harness for every number above (not committed):
+`$SCRATCH/music4/{v4,attack,narrow,fair,selftest,build_json,DESC}.py`.

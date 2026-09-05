@@ -4808,7 +4808,7 @@
    ]
   },
   "norvel": {
-   "current_version": 3,
+   "current_version": 4,
    "qual": [
     {
      "advice": "Keep the near-miss density in every demo; make sure the biggest hole is part of the counted fill in at least one demo.",
@@ -4856,7 +4856,8 @@
    ],
    "refined_versions": [
     1,
-    2
+    2,
+    3
    ],
    "runs": [
     {
@@ -5312,7 +5313,7 @@
      "version": 3
     }
    ],
-   "status": "too_hard",
+   "status": "testing",
    "versions": [
     {
      "added": 1788550070.76554,
@@ -5331,6 +5332,12 @@
      "file": "challenges/lab/norvel.json",
      "note": "v3 demo economy: grid in the clue with empty snare row; gaps straddle bar lines; n anti-correlated with gap width",
      "v": 3
+    },
+    {
+     "added": 1788596537.8401546,
+     "file": "challenges/lab/norvel.json",
+     "note": "refiner: full drum grid in clue; a snare hit with no hat above and no kick under skids to the next hat tick; caption 'n slip'; foothold 12%",
+     "v": 4
     }
    ]
   },
@@ -11262,7 +11269,7 @@
    "kind": "refiner",
    "reason": "7% without demo x7, 0% with x1; free-parameter caption; needs checksum caption",
    "started": 1788594667.9935117,
-   "status": "running",
+   "status": "done",
    "version": 3
   },
   {

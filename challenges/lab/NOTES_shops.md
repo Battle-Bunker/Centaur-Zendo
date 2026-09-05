@@ -108,3 +108,151 @@ brief stopped at self-testing.
 * **Too hard**: (a) drop the alignment clause (measured: that is the blind-canonical guess, so it
   would make the class much easier); (b) draw one swap already done into the clue as a worked
   instance; (c) drop to three shelves.
+
+---------------------------------------------------------------------------
+
+## Refinement record — `molvic` v2 (2026-09-05, refiner)
+
+### What the players did to v1 (`sim/results/lad-durnel-v2-1/`)
+
+Both Opus players finished **100 % / 100 % on molvic without spending a demo** (56/56 and 52/52
+verified in training, then 100 % of the final; cracked in round 2 by both). Player a's NOTES:
+*"5 rows, each with a majority letter. Event = two cells in the SAME COLUMN, rows i,j, with
+cell(i)=maj(j) and cell(j)=maj(i). N = number of such mutual pairs (verified 56/56). Answer =
+grid with those swaps applied."* Player b spent its three demos on virel, kelmar and garrow and
+wrote *"deliberately no demo on molvic (I had already reasoned the swap rule)"*.
+
+This is durnel v1's failure, exactly as DESIGN_LOOP's "checksum caption" section predicts: the
+`n swap` caption is a checksum, so a rule can be falsified offline against ~55 harvested clues at
+zero cost — and v1's rule reproduced `n` on 100 % of them at the second guess, while the edit
+(swap the two letters) was guessable from the picture, so knowing the rule was the whole game.
+The judge added the other half of the problem (kid 3.67): *"the demo picture is dense (7-14 strays
+across 5 shelves) so the in-line+mutual signal is buried"*.
+
+### The v2 change (levers (a) + (b) + (c) of the brief, in one physical story)
+
+A shop assistant does not swap two tins over the aisle — **he puts each one back on its own
+shelf, in the first free space, and if that shelf is chock-a-block he leaves it where it is.**
+
+> those two are in line and each one's on the other's shelf, so they go home — into the first gap
+> on their own shelf; and if a shelf is full there's nowhere to put it, so it stays.
+
+* **(a) the edit needs the demo.** The mover is erased from where it stood (its slot becomes a
+  gap) and redrawn in the FIRST GAP of its own shelf — a slot nothing in the clue points at, and
+  usually far from the column it stood in (82 % of movers land to the *left* of their old column).
+  Every clue is built so that at least one mover's landing gap is neither the nearest gap to its
+  column nor the nearest gap on its left, so "the first gap" is forced by one demo but cannot be
+  guessed. Measured: v1's rule rendered v1's way (swap in place) now scores **0.0 %**.
+* **(b) the natural blind rule is now wrong.** Because a good needs somewhere to land, a **full
+  shelf refuses it**. Every clue plants an in-line mutual good whose own shelf has no gap at all
+  (100 %, audited over 4000 clues), so the players' rule — "n = the mutual pairs in the same
+  column" — reproduces the caption on **0.0 %** of clues instead of 100 %. The offline checksum
+  now falsifies the first sensible reading instead of confirming it; with a demo it is a 100 %
+  verifier again, which is what it is for.
+* **(c) the judge.** 4 shelves (was 5), 5–8 strays (was 7–14), 9–12 slots. The only thing that
+  ever happens is in a column where two strays stand one above the other, and the shelf that
+  refuses is visibly packed solid. No count-based crack was opened: every count/position template
+  in the table below sits at or under the 12 % foothold.
+
+Kept from v1: the object (a drawn shelf unit, goods as letters, gaps as holes), the checksum
+caption (`n home` — the verb changed because the goods no longer swap), the one-clause rule, the
+unique answer, the ~12 % `0 home` foothold, and the whole family of near-miss plants.
+
+### An exhaustive check of what the caption alone can tell a player
+
+A search over conjunctions of nine natural per-stray predicates (in line with a mutual partner /
+mutual anywhere / in line with any stray / room at home / standing on a full shelf / a gap in line
+at home / home above or below / left half / a gap next door) finds exactly **two** rules that
+reproduce the caption on all 1200 clues: the true one, and its **twin** *"in line, mutual, and the
+shelf it is STANDING on is not full"* — which counts the same in every pair but picks the *other*
+good, and cannot be drawn at all (it would send a good to a full shelf). Nothing simpler survives:
+"in-line mutual pairs" reproduces the caption on 30.8 % of clues, "pairs with room for both" on
+11.8 %, v1's rule and every alignment- or mutuality-free reading on 0.0 %.
+
+### Witness table, before → after (1500 fresh clues each, shipped scorers)
+
+| template (rendered with the true drawing convention unless marked BLIND) | v1 | v2 |
+|---|---|---|
+| **BLIND: v1's rule + v1's edit (the two swap over where they stand)** | **100.0 %** | **0.0 %** |
+| BLIND: the same, only the pairs with room, swapped in place | — | 12.3 % |
+| BLIND: in-line mutual goods rubbed out | — | 0.0 % |
+| BLIND: tidy up — every stray put right where it stands | 0.0 % | 0.0 % |
+| clue returned unchanged (the foothold) | 11.8 % | 12.3 % |
+| clue unchanged, caption dropped | 11.8 % | 12.3 % |
+| n mutual pairs picked at random (v1's top rival) | **23.8 %** | n/a |
+| only the good on the LOWER shelf of each pair goes home | — | **20.7 %** |
+| only the good on the UPPER shelf of each pair goes home | — | 19.9 % |
+| n strays at random go home | 12.1 % | 16.1 % |
+| every in-line mutual good goes home (fullness ignored) | — | 0.0 % |
+| the whole pair goes home if either of the two has room | — | 12.3 % |
+| TWIN rule (the good on a shelf that has room), moved / swapped | — | 12.3 / 12.3 % |
+| true movers → the LAST gap / nearest gap / nearest gap on the left | — | 12.3 % each |
+| true movers → the first gap on the shelf they were standing on | — | 12.3 % |
+| true movers, old slot filled by the partner (swap AND move) | — | 12.3 % |
+| true movers, old slot filled by the shelf's own letter | — | 12.3 % |
+| true movers copied home, old slot left as it was | — | 12.3 % |
+| true movers rubbed out, never arriving | — | 12.3 % |
+| true movers, and the refused goods vanish too | — | 0.0 % |
+| a good needs a gap IN LINE at home | 0.0 % | 12.3 % |
+| any stray with a gap on its own shelf goes home | 0.0 % | 0.0 % |
+| any stray in line with another stray goes home | 0.0 % | 0.0 % |
+| any mutual stray (alignment ignored) goes home | 0.0 % | 0.0 % |
+| any stray on a FULL shelf with room at home goes home | — | 0.0 % |
+| the first n strays in reading order / on the fullest shelf | 11.8 % | 12.3 / 6.4 % |
+| the swapping columns tidied completely | 15.9 % | n/a |
+| one fixed real answer for every clue / demo replay | 0.1 / 0.0 % | 0.0 / 0.0 % |
+| **TRUE RULE (solve), caption kept / dropped / rows padded** | 100 % | **100 %** |
+
+Fourteen well-formedness attacks (gaps as dots, lowercased, shelf edges removed, slot spacing
+squeezed out, rows reversed, caption count changed, the answer twice, a junk line appended, half
+the picture, the caption alone, the empty string, 4000 chars of junk, one fixed answer, another
+clue's answer) all score 0.0 %; trailing newlines, trailing whitespace per row and the caption
+present-or-absent are the declared leniencies and score 100 %. 15 390 single-character mutations
+of true answers: **0** still scored 1.
+
+### One rendered demo (clue, then the answer solve() returns)
+
+    |H H S J H     H  |            |H H S J H H   H  |
+    +-----------------+            +-----------------+
+    |S   S J S   C S  |            |S S S J S     S  |
+    +-----------------+            +-----------------+
+    |J J J H J S C J J|            |J J J   J S C J J|
+    +-----------------+            +-----------------+
+    |C   C C C C S   C|            |C C C C C C     C|
+    +-----------------+            +-----------------+
+    3 home                         3 home
+
+The shelves are for H, S, J and C. The **J shelf is packed solid** — no gaps anywhere. In slot 3
+an `H` stands on the J shelf and a `J` stands on the H shelf: in line, each on the other's shelf.
+The `H` goes home into the first gap on the H shelf (slot 5, four slots away from where it was);
+the `J` cannot go anywhere, because the J shelf is full, so it stays. In slot 6 a `C` stands on
+the S shelf and an `S` stands on the C shelf: both shelves have gaps, so both go home, each into
+the first gap on its own shelf (slot 1 both times). The `C` on the J shelf (slot 6) is in line
+with that pair and has room at home, but nothing on the C shelf stands in line with it, so it
+stays; the `S` on the J shelf (slot 5) has a *gap* in line on its own shelf and still stays; the
+`S` on the H shelf (slot 2) is a lone stray. Six characters change, `3 home`.
+
+### Engineering (4000 fresh seeds)
+
+generate mean 0.34 ms, p99 1.26, max 4.1, **0 fallback uses**, 2000/2000 clues distinct and
+deterministic (byte-identical under four PYTHONHASHSEEDs — the majority read is safe because the
+shelf letter wins by ≥ 2 on every row); solve 0.012 ms; score 0.014 ms real / 0.015 ms junk;
+**scorer 494/512 chars**, solve 1077, generate 8.0 k, clue and solution 166–198 chars, 1000/1000
+answers distinct. `n` is 0 (12.1 %), 1 (15 %), 2 (22 %) or 3 (51 %); no two goods ever want the
+same shelf (generation rejects it, so the first-gap rule stays unambiguous and the answer unique).
+An independent re-implementation agreed with solve/score on 1200/1200 clues.
+`python tools/quickcheck.py challenges/lab/molvic.json --seeds 200` → **OK**
+(`gen=2.03 ms score=0.08 ms solve=0.04 ms` worst call in the sandbox; the single warning "score
+accepts the clue itself" is the intended `0 home` foothold, exactly as fennick/durnel).
+
+### Prediction
+
+**too_easy → testing, on fennick's profile: ~12 % without a demo, ~95–100 % with one** (mean ≈ 50 %
+over two players in a 7-class pool where one of them spends a demo here). The risk is now the
+durnel v2 risk in both directions: the demo-holder must read three things off one picture pair
+(which goods, where they land, and why one of them didn't move), and a theorist without a demo
+might still find the count rule offline — it needs two conjuncts, one of which ("there is room at
+home") only makes sense once you believe the good *moves* — and then buy the landing convention
+with live probes. If a pair of demo-holders comes back at 0–10 %, soften with the JSON's "too
+hard" levers: draw one good already put away in the clue as a worked instance, or give every
+mover's shelf exactly one gap so that "the first gap" is just "the gap".

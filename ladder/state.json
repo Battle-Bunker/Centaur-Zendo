@@ -4750,7 +4750,7 @@
    ]
   },
   "molvic": {
-   "current_version": 1,
+   "current_version": 2,
    "qual": [
     {
      "advice": "Demo picture is dense (7-14 strays across 5 shelves) so the in-line+mutual signal is buried; fewer decoys or stronger visual emphasis on the swapping column.",
@@ -4767,6 +4767,9 @@
      "score": 3.67,
      "version": 1
     }
+   ],
+   "refined_versions": [
+    1
    ],
    "runs": [
     {
@@ -4850,6 +4853,12 @@
      "file": "challenges/lab/molvic.json",
      "note": "designer new-13: shop shelves; two strays swap iff same slot, one above the other, each on the other's shelf; caption 'n swap'; foothold 12%",
      "v": 1
+    },
+    {
+     "added": 1788599083.4151819,
+     "file": "challenges/lab/molvic.json",
+     "note": "refiner: in-line mutual strays go home to the first gap on their own shelf, a full shelf refuses; caption 'n home'; 4 shelves, 5-8 strays; blind v1 rule 0%",
+     "v": 2
     }
    ]
   },
@@ -11998,7 +12007,7 @@
    "kind": "refiner",
    "reason": "100/100 without demo: swap edit guessable from the clue; checksum pins the rule offline",
    "started": 1788597717.6083076,
-   "status": "running",
+   "status": "done",
    "version": 1
   },
   {
@@ -12020,12 +12029,12 @@
   {
    "agents": 1,
    "class": "new-rf-7",
+   "direction": "rule family: dominoes laid in a line (Revision 3)",
    "id": "designer-rulefamily-dominoes",
    "kind": "designer",
-   "version": null,
-   "status": "running",
    "started": 1788598026.430788,
-   "direction": "rule family: dominoes laid in a line (Revision 3)"
+   "status": "running",
+   "version": null
   },
   {
    "agents": 1,

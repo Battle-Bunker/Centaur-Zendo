@@ -1,4 +1,4 @@
-# Ladder report — 2026-09-05 00:11 UTC
+# Ladder report — 2026-09-05 00:13 UTC
 
 Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-round/one-demo-per-window runs are kept in state.json as history); balance = 1 − |mean − 0.5| / 0.5 (1.0 is perfect). 'with demo' / 'no demo' = mean final rate of players who did / did not spend a demo on the class (count). Kid score is the mean judge rubric (1–5).
 
@@ -18,7 +18,7 @@ Cadence 4x0.5s/5s/3s/7cls/3demos (only runs at this cadence count; earlier 6-rou
 | DUOMASK | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | erewhon | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | fennick | 3 | testing | - | - | - | - | 4.2 | 0 | 0 | - | 17% (6) |
-| garrow | 3 | testing | - | - | - | - | - | 0 | 0 | - | 40% (4) |
+| garrow | 3 | testing | - | - | - | - | 4.0 | 0 | 0 | - | 40% (4) |
 | GRAYLING | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | HAIL | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |
 | hanjie | 1 | too_easy_textbook | - | - | - | - | - | 0 | 0 | - | - |

@@ -5955,7 +5955,7 @@
    ]
   },
   "tavrik": {
-   "current_version": 2,
+   "current_version": 3,
    "paradigm": "rule_family",
    "qual": [
     {
@@ -5975,7 +5975,8 @@
     }
    ],
    "refined_versions": [
-    1
+    1,
+    2
    ],
    "runs": [
     {
@@ -6198,7 +6199,7 @@
      "version": 2
     }
    ],
-   "status": "too_easy",
+   "status": "testing",
    "versions": [
     {
      "added": 1788575982.3877316,
@@ -6211,6 +6212,12 @@
      "file": "challenges/lab/tavrik.json",
      "note": "v2 lineup: 4 same-length candidates, matched trap profiles and letter counts; attacker 66%->34%",
      "v": 2
+    },
+    {
+     "added": 1788590479.360188,
+     "file": "challenges/lab/tavrik.json",
+     "note": "Revision 3: relational U (18 templates/41 rules), k=5, minimal pair, decoys aimed in the attacker's rarity order; simulated attacker 40-44% at any label count",
+     "v": 3
     }
    ]
   },
@@ -10473,7 +10480,7 @@
    "kind": "refiner",
    "reason": "90% without demos over 4 games; Revision 3 hardening study for all lineup classes",
    "started": 1788588421.1914153,
-   "status": "running",
+   "status": "done",
    "version": 2
   },
   {
@@ -10512,12 +10519,20 @@
   {
    "agents": 1,
    "class": "new-13",
+   "direction": "shops, money and swapping",
    "id": "designer-new-13-man",
    "kind": "designer",
-   "version": null,
-   "status": "running",
    "started": 1788590434.2905679,
-   "direction": "shops, money and swapping"
+   "status": "running",
+   "version": null
+  },
+  {
+   "agents": 2,
+   "class": "garrow",
+   "id": "players-garrow-v4-f024",
+   "kind": "players",
+   "status": "pending",
+   "version": 4
   }
  ],
  "profiles": {

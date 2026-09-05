@@ -229,8 +229,8 @@ Other measured numbers, 500 clues:
 | quantity | value | cap |
 |---|---|---|
 | `score` source | **821 chars** | 1024 (the raise `RULE_FAMILIES.md` §4 allows for this paradigm) |
-| `generate` source | 7634 (3.3 KB of it is the dropped-word list) | 50 000 |
-| `solve` source | 4269 (ditto) | 5 000 |
+| `generate` source | 7632 (3.3 KB of it is the dropped-word list) | 50 000 |
+| `solve` source | 4267 (ditto) | 5 000 |
 | `generate` | 0.088 ms mean, 0.24 ms max | 100 |
 | `score` | 0.13 ms mean, 0.04 ms on junk | 50 |
 | `solve` | 18 ms mean, 24 ms max | 2 000 |

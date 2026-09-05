@@ -6298,24 +6298,24 @@
    "class": "rf-2",
    "id": "rfdesigner-2",
    "kind": "designer",
+   "note": "agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in",
    "paradigm": "rule_family",
    "started": 1788574592.4696758,
    "status": "running",
    "version": null,
-   "world": "a string of 6-10 coloured beads",
-   "note": "agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in"
+   "world": "a string of 6-10 coloured beads"
   },
   {
    "agents": 1,
    "class": "rf-3",
    "id": "rfdesigner-3",
    "kind": "designer",
+   "note": "agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in",
    "paradigm": "rule_family",
    "started": 1788574592.4696765,
    "status": "running",
    "version": null,
-   "world": "4-7 letter English words (use the words module)",
-   "note": "agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in"
+   "world": "4-7 letter English words (use the words module)"
   },
   {
    "agents": 1,
@@ -6383,7 +6383,7 @@
     "garrow",
     "norvel"
    ],
-   "note": "validation pool of demo-economy versions | agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in",
+   "note": "validation pool of demo-economy versions | agents died: quota limit until 01:00 UTC 2026-09-05; arena lad-fennick-v3-1 still up, teams 1 round in | server died in the container restart after round 1; no finals; rerun as players-econ-pool-2",
    "pool": {
     "basten": 3,
     "fennick": 3,
@@ -6395,7 +6395,7 @@
    },
    "run": "lad-fennick-v3-1",
    "started": 1788574592.4696777,
-   "status": "running",
+   "status": "done",
    "teams": {
     "fennick1a": "opus-default",
     "fennick1b": "opus-kidproxy"
@@ -6474,6 +6474,39 @@
    "kind": "judge",
    "status": "pending",
    "version": 1
+  },
+  {
+   "agents": 2,
+   "class": "fennick",
+   "id": "players-econ-pool-2",
+   "kind": "players",
+   "members": [
+    "fennick",
+    "tovel",
+    "basten",
+    "virel",
+    "kelmar",
+    "garrow",
+    "norvel"
+   ],
+   "note": "validation pool of demo-economy versions (rerun)",
+   "pool": {
+    "basten": 3,
+    "fennick": 3,
+    "garrow": 3,
+    "kelmar": 2,
+    "norvel": 3,
+    "tovel": 5,
+    "virel": 2
+   },
+   "run": "lad-fennick-v3-1",
+   "started": 1788574661.219013,
+   "status": "running",
+   "teams": {
+    "fennick1a": "opus-default",
+    "fennick1b": "opus-kidproxy"
+   },
+   "version": 3
   }
  ],
  "profiles": {

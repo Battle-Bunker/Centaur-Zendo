@@ -1,0 +1,199 @@
+Centaur Zendo round 4 (training)
+round_id : c35ce521e90e4c66818f9a65c2b669f6
+written  : 2026-09-05 12:59:07Z
+presented=181  answered=181  correct=107  skipped=0
+client answer latency: mean 0.658 ms  median 0.227 ms  max 3.169 ms  (n=181)
+
+ idx  name          clue                                      answer                                    score
+------------------------------------------------------------------------------------------------------------
+   0  mestrel       [4|5][0|3][3|3][6|5][3|3]\n[6|6][5|2][5…  [0|0][5|6][0|0][4|6][1|3]                 1
+   1  kaldrin       [E]=[milk^]=[sand^]=[sand^]=[sand^]=[lo…  [E]=[pigs]=[logs]=[sand^]=[logs]=[sand]…  0
+   2  kaldrin       [E]=[logs^]=[wool]=[wool^]=[wool^]=[log…  [E]=[coal^]=[wool]=[milk^]=[milk^]=[mil…  0
+   3  kaldrin       [E]=[coal^]=[milk]=[milk]=[sand]=[coal^…  [E]=[pigs]=[coal]=[coal]=[pigs^]=[pigs^]  0
+   4  garrow        ##########|####|########|#####|######|#…  ##########|####|########|#####|######|#…  1
+   5  kaldrin       [E]=[milk^]=[pigs]=[logs]=[coal]=[coal]…  [E]=[sand]=[sand^]=[wool]=[wool^]=[sand…  0
+   6  felsim                      \__/        \__/\__/\n   …                \__/        /__\/__\\n   …  0
+   7  kaldrin       [E]=[coal]=[wool]=[logs]=[sand^]=[sand^…  [E]=[logs]=[logs]=[sand^]=[sand^]=[coal]  1
+   8  kaldrin       [E]=[sand^]=[sand]=[pigs^]=[sand]=[sand…  [E]=[sand^]=[coal^]=[wool]=[wool^]        1
+   9  felsim                      \__/\__/\__/    \__/\__/\…                \__/\__/\__/    \__/\__/\…  1
+  10  kaldrin       [E]=[sand^]=[pigs^]=[sand]=[wool^]=[pig…  [E]=[coal]=[wool^]=[wool^]=[coal]=[sand…  0
+  11  kaldrin       [E]=[sand^]=[logs^]=[sand]=[sand]=[sand…  [E]=[coal^]=[coal^]=[coal^]=[sand]=[san…  0
+  12  mestrel       [1|1][5|0][2|2][3|3][0|1]\n[1|0][2|0][2…  [6|4][0|1][1|5][1|4][2|1][0|1][3|1]       1
+  13  mestrel       [1|3][6|1][3|1][4|3][5|3][1|0]\n[5|4][3…  [6|6][5|6][0|2][1|6][0|1]                 0
+  14  borsel        1 3 3 1\n4 2 1 1\n1 1 1 4\n\n4 3 1 3\n4…  4 3 1 3                                   0
+  15  garrow        ######|#######|#######|#########|######…  ######|#######|#######|#########|######…  1
+  16  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  17  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  18  borsel        5 6 3\n4 4 5\n5 5 3\n\n4 5 3\n4 4 4\n3 …  4 5 3                                     0
+  19  felsim                                  \__/\__/\n   …                            \__/\__/\n   …  0
+  20  borsel        3 1 3 2\n3 2 2 2\n3 1 3 3\n\n1 1 1 1\n3…  3 1 3 1                                   1
+  21  mestrel       [6|4][0|1][2|2][6|5][3|6]\n[2|2][3|3][6…  [6|2][2|3][5|2][2|2][2|0]                 0
+  22  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  23  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  24  mestrel       [5|0][5|4][1|1][1|4][0|6][1|1]\n[4|5][1…  [5|5][5|6][0|0][0|4][0|4][3|1]            0
+  25  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  26  felsim                  \__/\__/    \__/        \__/\…            \__/\  /    \  /        \__/\…  0
+  27  mestrel       [3|5][4|6][2|1][3|3][0|0][6|6]\n[4|1][2…  [0|0][1|2][2|3][3|4][4|5][5|5]            0
+  28  mestrel       [1|6][6|6][4|6][2|6][1|6][2|6]\n[6|2][0…  [3|2][6|2][3|2][6|2][0|2]                 1
+  29  borsel        5 6 6 3\n4 4 6 6\n6 6 3 6\n\n6 6 6 1\n1…  1 4 6 1                                   0
+  30  kaldrin       [E]=[coal^]=[coal^]=[pigs]=[pigs]=[pigs…  [E]=[wool^]=[wool^]=[wool^]=[logs]        1
+  31  garrow        #########|#####|#######|##########|####…  #########|#####|#######|##########|####…  1
+  32  kaldrin       [E]=[pigs]=[pigs]=[pigs^]=[pigs^]=[pigs…  [E]=[pigs^]=[wool]=[wool]=[milk]=[wool^]  0
+  33  felsim                  \__/                \__/\__/\…            \__/                \XX/\__/\…  0
+  34  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  35  mestrel       [0|0][2|0][3|1][4|3][5|5][6|6][2|6]\n[5…  [0|4][5|5][1|6][0|6][0|2][1|2]            1
+  36  garrow        ####|######|#####|####|########|#####|#…  ####|######|#####|####|########|#####|#…  1
+  37  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  38  kaldrin       [E]=[sand^]=[logs^]=[wool^]=[pigs]=[woo…  [E]=[coal]=[logs^]=[logs]=[logs]=[coal^]  0
+  39  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n         1…   Mo  Tu  We  Th  Fr  Sa  Su\n         1…  1
+  40  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  41  borsel        4 4 4 2\n4 1 1 1\n1 4 3 4\n\n3 3 3 3\n3…  3 4 3 4                                   1
+  42  borsel        2 2 4 4 2\n3 3 6 3 3\n4 3 4 6 3\n\n1 1 …  1 1 1 2 1                                 1
+  43  garrow        ##########|#########|########|######|##…  ##########|#########|########|######|##…  1
+  44  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  45  felsim                      \__/    \__/\__/\__/\n   …                \__/    \__/\__/\__/\n   …  1
+  46  kaldrin       [E]=[sand^]=[milk^]=[coal^]=[sand^]=[pi…  [E]=[wool^]=[pigs]=[sand^]=[sand^]        0
+  47  garrow        ########|#########|########|#########|#…  ########|#########|########|#########|#…  1
+  48  felsim                  \__/\__/\__/        \__/\__/\…            \__/\__/\__/        \__/\__/\…  1
+  49  garrow        #########|######|##########|#########|#…  #########|######|##########|#########|#…  1
+  50  felsim                  \__/            \__/\__/    \…            \__/            \__/\oo/    \…  0
+  51  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1.  2…  1
+  52  mestrel       [3|1][0|2][5|1][0|6][2|1][1|3][1|0]\n[6…  [1|6][0|1][1|6][1|3]                      0
+  53  kaldrin       [E]=[wool^]=[logs^]=[logs^]=[milk]=[san…  [E]=[sand^]=[milk^]=[pigs]=[pigs]=[sand…  0
+  54  borsel        3 4 4 3\n3 2 4 3\n3 1 4 4\n\n1 1 1 4\n2…  1 1 1 4                                   1
+  55  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  56  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  57  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  58  garrow        #########|###########|########|########…  #########|###########|########|########…  1
+  59  mestrel       [0|3][3|0][0|2][6|0][1|0][0|6][0|3]\n[3…  [2|5][0|2][4|2][0|2][2|1][3|2][2|3]       1
+  60  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  1
+  61  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+  62  felsim                      \__/\__/\__/    \__/    \…                /__/\__/\__/    \__\    /…  0
+  63  felsim                  \__/            \__/    \__/\…            /__/            \__/    \__/\…  0
+  64  kaldrin       [E]=[pigs]=[coal]=[coal^]=[sand^]=[coal…  [E]=[sand^]=[wool]=[sand^]=[coal^]=[san…  1
+  65  kaldrin       [E]=[sand]=[logs]=[coal]=[coal]=[milk]=…  [E]=[wool]=[wool^]=[logs]=[wool^]=[milk]  0
+  66  borsel        5 6 5 6\n1 3 5 5\n\n4 6 4 2\n5 3 3 3\n5…  5 2 4 5                                   1
+  67  borsel        1 6 6 6\n6 6 3 4\n4 3 4 4\n\n2 5 2 6\n4…  4 6 6 1                                   0
+  68  kaldrin       [E]=[pigs]=[pigs]=[sand]=[sand]=[logs]\…  [E]=[pigs]=[coal^]=[coal^]=[coal]=[milk…  0
+  69  garrow        ######|#######|######|####|####|######|…  ######|#######|######|####|####|######|…  1
+  70  mestrel       [0|5][1|6][1|5][3|4][1|1][5|5][2|0]\n[0…  [3|4][0|0][5|2][6|0][6|1][0|0][0|2]       0
+  71  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  72  felsim                      \__/        \__/\__/\n   …                \__/            \__/\n   …  0
+  73  felsim                  \__/\__/\__/\n        \__/\__…            \__/\__/\__/\n        \__/\__…  1
+  74  felsim                  \__/    \__/\__/\__/\n       …                    \__/\__/\__/\n       …  0
+  75  garrow        #######|#####|#######|########|########…  #######|#####|#######|########|########…  1
+  76  mestrel       [0|6][6|5][6|0][3|2][3|0][6|0]\n[6|2][2…  [5|1][0|0][0|0][0|6]                      0
+  77  borsel        3 4 4 6\n5 3 3 4\n\n6 6 6 3\n4 5 5 5\n6…  6 4 5 4                                   0
+  78  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  79  kaldrin       [E]=[coal]=[coal]=[milk]=[milk]=[milk^]…  [E]=[coal^]=[coal^]=[coal]=[wool^]        1
+  80  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  81  borsel        3 6 6 6 6\n6 6 5 4 4\n\n6 3 2 3 4\n4 6 …  6 3 2 3 4                                 0
+  82  borsel        2 4 6 2\n3 2 5 2\n\n4 2 1 1\n5 2 1 2\n1…  5 2 1 2                                   1
+  83  borsel        2 5 5 3 4\n1 1 1 5 5\n\n5 2 5 5 4\n5 5 …  4 5 4 3 5                                 1
+  84  felsim                  \__/\__/                \__/\…            \__/\__/                \__/\…  0
+  85  mestrel       [1|3][1|3][3|5][3|3]\n[1|4][2|0][3|0][4…  [5|2][2|6][6|4][4|2][4|0]                 0
+  86  felsim                      \__/\__/\n        \__/   …                \**/\__/\n        \__/   …  0
+  87  garrow        ############|#########|##########|#####…  ############|#########|##########|#####…  1
+  88  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  89  mestrel       [0|0][2|6][3|6][4|0][5|0][5|1][6|0]\n[2…  [1|1][3|1][3|5][3|5][4|0][6|4][6|0]       1
+  90  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+  91  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+  92  mestrel       [5|2][2|3][3|3][3|2][2|0][0|5][5|3]\n[0…  [1|1][3|3][4|5][6|2][6|5][6|5]            0
+  93  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+  94  felsim                      \__/                \__/\…                \  /                \__/\…  0
+  95  garrow        #######|#####|#########|#######|#####|#…  #######|#####|#########|#######|#####|#…  1
+  96  mestrel       [3|4][6|3][1|3][4|3][1|3][3|6][5|3]\n[2…  [0|2][2|3][2|6][2|6][2|5]                 0
+  97  borsel        6 1 6\n3 4 5\n\n4 5 2\n6 1 1\n4 4 3\n4 …  4 5 2                                     0
+  98  felsim                  \__/\__/\__/    \__/\__/\__/\…            \__/\__/\__/    \__/\__/\__/\…  1
+  99  felsim                      \__/            \__/\n   …                \XX/            \__/\n   …  0
+ 100  borsel        2 2 3 3\n1 2 3 3\n2 1 2 3\n\n3 1 1 1\n1…  3 1 1 1                                   1
+ 101  mestrel       [6|5][3|2][2|1][4|1][0|4][3|5]\n[1|5][5…  [4|2][4|3][2|1][6|4]                      0
+ 102  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…   Mo  Tu  We  Th  Fr  Sa  Su\n     1Z  2…  1
+ 103  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 104  mestrel       [0|0][0|4][2|1][2|1][6|0][2|0][6|6]\n[3…  [6|6][2|0][3|4][1|3][4|6][6|4]            1
+ 105  kaldrin       [E]=[logs]=[milk]=[logs^]=[coal^]=[wool…  [E]=[coal^]=[logs^]=[sand^]=[logs]        0
+ 106  mestrel       [3|3][3|6][6|6][2|6]\n[2|3][5|2][0|5][3…  [1|5][5|6][1|2][2|2][2|1][6|5][5|1]       0
+ 107  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 108  mestrel       [6|5][0|1][3|2][5|6][3|3]\n[4|4][1|0][4…  [1|1][1|0][2|2][2|3][1|6][4|5]            0
+ 109  kaldrin       [E]=[milk^]=[logs]=[coal]=[logs]\n[E]=[…  [E]=[coal^]=[milk]=[pigs^]=[logs]=[pigs…  0
+ 110  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 111  mestrel       [2|2][0|0][2|2][0|0][1|3]\n[0|6][5|5][0…  [1|1][2|6][6|0][2|2]                      0
+ 112  borsel        4 6 3\n4 2 2\n\n1 5 1\n1 4 2\n2 1 2\n1 …  1 4 2                                     0
+ 113  mestrel       [6|4][0|6][1|0][5|1]\n[2|0][1|2][0|2][4…  [2|5][4|0][0|1][5|2][0|2]                 0
+ 114  kaldrin       [E]=[wool^]=[milk^]=[pigs^]=[wool]=[mil…  [E]=[logs]=[milk^]=[wool^]=[milk]         1
+ 115  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 116  kaldrin       [E]=[wool]=[sand^]=[coal^]=[sand^]=[log…  [E]=[sand]=[sand]=[wool^]=[wool^]=[sand…  0
+ 117  mestrel       [4|4][0|6][2|4][3|3][2|3][2|4]\n[1|5][2…  [1|6][2|1][3|4][4|6][5|5][6|6][6|4]       1
+ 118  garrow        ######|####|#######|#######|########|##…  ######|####|#######|#######|########|##…  1
+ 119  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 120  kaldrin       [E]=[wool^]=[milk]=[coal]=[sand^]=[milk…  [E]=[coal]=[sand^]=[wool^]=[pigs^]=[mil…  0
+ 121  garrow        #####|######|#####|#########|######|###…  #####|######|#####|#########|######|###…  1
+ 122  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 123  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 124  borsel        6 5 4 4\n2 4 4 3\n\n4 6 1 6\n6 6 6 1\n6…  6 4 4 1                                   1
+ 125  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 126  kaldrin       [E]=[sand^]=[wool]=[sand]=[milk]=[wool^…  [E]=[pigs]=[wool^]=[pigs]=[logs^]=[wool…  0
+ 127  kaldrin       [E]=[milk^]=[pigs^]=[sand^]=[milk^]=[co…  [E]=[coal^]=[coal]=[milk]=[coal^]=[sand]  1
+ 128  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 129  garrow        #########|#####|########|#######|#####|…  #########|#####|########|#######|#####|…  1
+ 130  garrow        #########|############|######|#######|#…  #########|############|######|#######|#…  1
+ 131  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 132  felsim                          \__/    \__/\__/\__/\…                    \__/    \__/\__/\__/\…  1
+ 133  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 134  mestrel       [1|0][1|4][2|2][2|1]\n[5|5][4|5][3|5][5…  [0|5][3|0][4|0][2|3]                      0
+ 135  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+ 136  borsel        1 1 2 1 1\n1 3 3 1 2\n\n1 3 1 3 3\n3 3 …  2 3 3 2 3                                 0
+ 137  borsel        2 4 4 4\n3 3 4 4\n3 5 6 3\n\n5 2 5 2\n5…  5 2 5 2                                   0
+ 138  kaldrin       [E]=[sand]=[coal]=[sand]=[pigs^]=[logs]…  [E]=[coal^]=[coal]=[coal^]=[wool]=[wool…  0
+ 139  garrow        #####|#######|#######|########|#####|##…  #####|#######|#######|########|#####|##…  1
+ 140  felsim                          \__/        \__/\__/\…                    \oo/        \__/\__/\…  0
+ 141  garrow        ######|########|####|######|#########|#…  ######|########|####|######|#########|#…  1
+ 142  felsim                  \__/\__/\__/\__/        \__/\…            \__/\__/\__/\__/        \__/\…  1
+ 143  borsel        3 6 6 6\n3 2 2 4\n\n1 2 1 1\n1 6 1 1\n3…  3 2 1 1                                   0
+ 144  kaldrin       [E]=[milk]=[coal]=[pigs^]=[pigs]=[milk]…  [E]=[pigs]=[wool^]=[pigs^]=[pigs^]=[pig…  0
+ 145  garrow        ####|#####|########|#########|########|…  ####|#####|########|#########|########|…  1
+ 146  garrow        ###########|######|######|#######|#####…  ###########|######|######|#######|#####…  1
+ 147  felsim                      \__/\__/        \__/\n   …                \__/\__/        /__/\n   …  0
+ 148  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…   Mo  Tu  We  Th  Fr  Sa  Su\n 1.  2.  3…  1
+ 149  kaldrin       [E]=[sand]=[sand]=[milk^]=[milk]=[sand]…  [E]=[pigs]=[wool]=[logs^]=[sand^]=[wool…  1
+ 150  kaldrin       [E]=[sand^]=[coal^]=[logs^]=[milk]=[mil…  [E]=[milk^]=[sand^]=[coal^]=[logs]=[log…  1
+ 151  garrow        ########|########|#####|####|########|#…  ########|########|#####|####|########|#…  1
+ 152  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 153  felsim                  \__/        \__/\__/\n       …            \__/        \__//__/\n       …  0
+ 154  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 155  kaldrin       [E]=[milk]=[wool^]=[wool]=[wool^]=[wool…  [E]=[logs^]=[logs]=[coal^]=[wool]=[logs…  1
+ 156  mestrel       [0|5][5|0][6|1][2|3][4|4][0|5][2|6]\n[0…  [0|6][6|6][6|3][1|3]                      0
+ 157  garrow        ####|#####|#####|#######|#########|####…  ####|#####|#####|#######|#########|####…  1
+ 158  felsim                      \__/            \__/\n   …                                \__/\n   …  0
+ 159  felsim                  \__/\__/\__/        \__/\__/\…            \__/\__/\__/            \__/\…  0
+ 160  borsel        6 5 5 6\n6 5 4 6\n5 5 4 6\n\n6 4 2 2\n6…  5 3 6 3                                   0
+ 161  borsel        4 4 4 5 4\n4 5 1 4 2\n\n1 1 1 1 1\n2 5 …  5 1 3 4 1                                 1
+ 162  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 163  felsim                  \__/\__/    \__/\__/        \…            /__\/__\    \__/\__/        /…  0
+ 164  mestrel       [1|1][0|3][5|6][2|0][3|2][4|4]\n[3|1][2…  [3|6][4|6][1|1][6|6][2|4][4|3][5|5]       0
+ 165  mestrel       [1|1][2|0][3|4][2|2]\n[0|4][2|1][3|5][4…  [0|3][3|4][3|4][0|2]                      0
+ 166  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 167  mestrel       [2|5][5|2][4|0][0|2][2|2][2|3][3|6]\n[0…  [2|2][1|5][5|1][1|6][3|2][1|5][0|3]       1
+ 168  felsim                  \__/        \__/    \__/    \…            \__/        \**/    \__/    \…  0
+ 169  kaldrin       [E]=[milk]=[coal]=[pigs^]=[milk]=[milk^…  [E]=[milk^]=[logs]=[logs^]=[logs^]=[woo…  0
+ 170  borsel        2 4 2 4\n3 4 4 4\n3 6 6 6\n\n1 1 5 1\n1…  1 1 3 2                                   0
+ 171  molvic             +========= THE CORNER SHOP =======…       +========= THE CORNER SHOP =======…  1
+ 172  mestrel       [0|0][4|4][0|0][4|0][4|4][0|0][0|0]\n[6…  [2|2][5|5][4|0][2|4][2|3][4|4]            0
+ 173  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 174  mestrel       [0|1][6|0][1|0][0|1][0|2][2|0]\n[2|3][2…  [0|2][0|6][0|4][0|3][0|4][6|0][0|1]       1
+ 175  molvic             +=========== THE CORNER SHOP =====…       +=========== THE CORNER SHOP =====…  1
+ 176  tovel          Mo  Tu  We  Th  Fr  Sa  Su\n          …   Mo  Tu  We  Th  Fr  Sa  Su\n          …  1
+ 177  garrow        ##########|########|#####|######|######…  ##########|########|#####|######|######…  1
+ 178  garrow        #####|#####|#########|#######|#####|###…  #####|#####|#########|#######|#####|###…  1
+ 179  borsel        1 1 3 1 3\n6 3 2 5 3\n\n5 3 3 4 6\n5 2 …  2 6 6 4 3                                 0
+ 180  molvic             +============= THE CORNER SHOP ===…       +============= THE CORNER SHOP ===…  1
+
+per-name tally this round
+name             presented correct  hit-rate
+borsel                  24      10     41.7%
+felsim                  27       7     25.9%
+garrow                  24      24    100.0%
+kaldrin                 30      10     33.3%
+mestrel                 30      10     33.3%
+molvic                  23      23    100.0%
+tovel                   23      23    100.0%
